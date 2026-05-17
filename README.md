@@ -1,8 +1,11 @@
 # Dragons Down
 
-Extracts the Dragons Down rulebook PDFs in `pdf/` into structured JSON in `data/`.
+Extracts the Dragons Down rulebook PDFs in `pdf/` into structured JSON in `data/`, plus deduplicated images in `public/images/`.
 
-Each output file is a flat array of `{ level, title, content }` entries, where `level` (1–4) reflects the heading hierarchy in the source PDF.
+Each output file is a flat array of `{ level, title, content }` entries:
+- `level` — 1–4, reflects the heading hierarchy in the source PDF
+- `title` — plain text
+- `content` — **Markdown**: `**bold**`, `*italic*`, bullet lists (`- `), and image references like `![](/images/<sha1>.<ext>)`
 
 ## Setup
 
@@ -45,3 +48,16 @@ Derived from the source styling:
 | 4     | MinionPro-Bold  | 14   | black           | `Half-Elves`, `Assassin`      |
 
 Levels can be sparse per document (e.g. Desolation has no L3 headings).
+
+## Images
+
+All embedded images are extracted to `public/images/<sha1>.<ext>` and referenced from markdown as `/images/<sha1>.<ext>`. Filenames are content-hashed, so duplicates across PDFs (and across pages) share a single file.
+
+Filtering: an image is skipped if it covers >70% of any page it appears on, or appears on >50% of pages — this drops the parchment backgrounds and cover-page textures.
+
+## Known quirks
+
+- Empty-content L1/L2 headings are section banners with no body before the next subheading — not a bug.
+- A few sections may have a stray image mid-content where the source had a floating illustration alongside the text.
+- Consecutive bullets that lived in separate text blocks in the PDF end up with a blank line between them (`- foo\n\n- bar`). Most markdown renderers still treat them as one list, just slightly more spaced.
+- The hyphen-wrap fix collapses `[word][-/] [word]` → `[word][-/][word]`. It correctly fixes ~20 line-wrap artifacts but slightly mis-collapses one heading in the core book (`Sneak - or-Make Noise`) where the source had unusual spacing.
