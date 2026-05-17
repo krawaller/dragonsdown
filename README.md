@@ -1,13 +1,30 @@
 # Dragons Down
 
-Extracts the Dragons Down rulebook PDFs in `pdf/` into structured JSON in `data/`, plus deduplicated images in `public/images/`.
+A Next.js web app that presents the Dragons Down rulebooks, built from JSON extracted from the official PDFs.
 
-Each output file is a flat array of `{ level, title, content }` entries:
+- `pdf/` — source PDFs
+- `data/` — extracted JSON (flat array of `{ level, title, content }`)
+- `public/images/` — extracted, deduplicated images (served as `/images/<sha1>.<ext>`)
+- `scripts/` — Python extractor (PyMuPDF)
+- `src/` — Next.js App Router source
+
+Each JSON entry:
 - `level` — 1–4, reflects the heading hierarchy in the source PDF
 - `title` — plain text
 - `content` — **Markdown**: `**bold**`, `*italic*`, bullet lists (`- `), and image references like `![](/images/<sha1>.<ext>)`
 
-## Setup
+## Web app (Next.js)
+
+Stack: Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · ESLint.
+
+```sh
+npm install
+npm run dev      # http://localhost:3000
+npm run build
+npm run lint
+```
+
+## PDF extractor (Python)
 
 Requires Python 3.10+ (developed on 3.13).
 
@@ -16,24 +33,22 @@ python3 -m venv .venv
 .venv/bin/pip install pymupdf
 ```
 
-## Usage
-
 Extract all PDFs in `pdf/` → `data/`:
 
 ```sh
-.venv/bin/python scripts/extract.py --all
+npm run extract
 ```
 
-Extract a single PDF:
+Extract a single PDF (call the script directly):
 
 ```sh
-.venv/bin/python scripts/extract.py pdf/dragons_down_desolation_1.2.pdf
+.venv/bin/python scripts/extract.py pdf/desolation_1.2.pdf
 ```
 
 Inspect font/size/color distribution of a PDF (used to derive heading rules):
 
 ```sh
-.venv/bin/python scripts/inspect_fonts.py pdf/dragons_down_core_1.2.pdf
+npm run inspect-fonts pdf/core_1.2.pdf
 ```
 
 ## Heading conventions

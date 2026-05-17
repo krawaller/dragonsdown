@@ -327,7 +327,24 @@ def extract(pdf_path: Path) -> list[dict]:
     # End of doc: flush remaining
     flush_pending_to_current()
 
-    return [s.render() for s in sections if s.title]
+    rendered = [s.render() for s in sections if s.title]
+    assign_ids(rendered)
+    return rendered
+
+
+def assign_ids(sections: list[dict]) -> None:
+    """Assign hierarchical ids in place. Examples: "1", "2.1", "2.1.0.1".
+
+    A "0" placeholder fills slots for skipped levels (e.g. L2 -> L4 yields
+    `X.Y.0.Z`) so the digit count always equals the section's level.
+    """
+    counters = [0, 0, 0, 0]
+    for s in sections:
+        lvl = s["level"]
+        counters[lvl - 1] += 1
+        for i in range(lvl, 4):
+            counters[i] = 0
+        s["id"] = ".".join(str(c) for c in counters[:lvl])
 
 
 def process_one(pdf: Path, out: Path) -> None:
