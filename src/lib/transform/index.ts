@@ -1,20 +1,9 @@
 import type { Section } from "../rulebooks";
-
-/**
- * Targets are designed to grow. Today we support:
- *   "ALL"                          — every section in every doc
- *   { doc: "core" }                — every section in one doc
- *   { doc: "core", id: "2.2.0.12" } — one specific entry
- *
- * New fields on DocTarget (e.g. titleRegex, level) can be added without
- * breaking existing rules.
- */
-export type Target = "ALL" | DocTarget;
-
-export type DocTarget = {
-  doc: string;
-  id?: string;
-};
+import {
+  docMatchesTarget,
+  sectionMatchesTarget,
+  type Target,
+} from "../doc-query";
 
 /** Discriminated union of all rule operations. Extend as new ops appear. */
 export type Rule = IgnoreImagesRule;
@@ -42,17 +31,6 @@ export function applyTransforms(
     result = applyRule(result, rule);
   }
   return result;
-}
-
-function docMatchesTarget(target: Target, docSlug: string): boolean {
-  if (target === "ALL") return true;
-  return target.doc === docSlug;
-}
-
-function sectionMatchesTarget(target: Target, section: Section): boolean {
-  if (target === "ALL") return true;
-  if (target.id !== undefined && target.id !== section.id) return false;
-  return true;
 }
 
 function applyRule(sections: Section[], rule: Rule): Section[] {
