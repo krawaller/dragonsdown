@@ -28,7 +28,7 @@ async function main(): Promise<void> {
 function countChangedSections(before: Section[], after: Section[]): number {
   let n = 0;
   for (let i = 0; i < before.length; i++) {
-    if (before[i].content !== after[i].content) n++;
+    if (JSON.stringify(before[i]) !== JSON.stringify(after[i])) n++;
   }
   return n;
 }

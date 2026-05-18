@@ -1,18 +1,24 @@
 import type { Section } from "../rulebooks";
 import {
   docMatchesTarget,
-  sectionMatchesTarget,
+  selectMatchingIds,
   type Target,
 } from "../doc-query";
 
 /** Discriminated union of all rule operations. Extend as new ops appear. */
-export type Rule = IgnoreImagesRule;
+export type Rule = IgnoreImagesRule | AddTagRule;
 
 export type IgnoreImagesRule = {
   op: "ignoreImages";
   target: Target;
   /** SHA1 hashes without extension, matching `/images/<hash>.<ext>` refs. */
   imageIds: string[];
+};
+
+export type AddTagRule = {
+  op: "addTag";
+  target: Target;
+  tag: string;
 };
 
 /**
@@ -34,13 +40,22 @@ export function applyTransforms(
 }
 
 function applyRule(sections: Section[], rule: Rule): Section[] {
+  const ids = selectMatchingIds(rule.target, sections);
+  if (ids.size === 0) return sections;
   switch (rule.op) {
     case "ignoreImages":
       return sections.map((s) =>
-        sectionMatchesTarget(rule.target, s)
+        ids.has(s.id)
           ? { ...s, content: stripImages(s.content, rule.imageIds) }
           : s,
       );
+    case "addTag":
+      return sections.map((s) => {
+        if (!ids.has(s.id)) return s;
+        const existing = s.tags ?? [];
+        if (existing.includes(rule.tag)) return s;
+        return { ...s, tags: [...existing, rule.tag] };
+      });
   }
 }
 

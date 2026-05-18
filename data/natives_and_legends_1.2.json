@@ -255,49 +255,73 @@
     "level": 4,
     "title": "Beastmaster (Faunamancy)",
     "content": "Beastmasters can speak to wandering monsters and control them. Wandering monsters (summoned by the gray dice) do not block, challenge, or target a beastmaster, nor may a beastmaster target them. All other monsters act normally with the beastmaster. A beastmaster may attempt to hire a wandering monster via a hire action. To succeed, the beastmaster must reduce the hire price to 1x. The beastmaster only fails in a haggle attempt by rolling a door symbol. The beastmaster pays no actual cost to hire a wandering monster. All other hired natives rules apply (page 3). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the beastmaster from hiring other wandering monsters on that same turn, even the same monster type (e.g. 2 giant bats). Beastmasters lose fame for hired monsters that are killed.\n\n![](/images/15b88aed557f5416f86ff6e96b2ada1da8af8e35.png)\n\nThe beastmaster may only have one wandering monster hired at a time. A beastmaster with a hired flying monster may choose to fly with the wandering monster during a move action, carrying only the beastmaster and no others natives. Beastmasters begin the game with no gold.",
-    "id": "5.2.0.1"
+    "id": "5.2.0.1",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Berserker (Berserk)",
     "content": "Berserkers can go into a frenzy in combat. Once per combat during the challenge step, the berserker may convert one action cube of any type into a heart for the duration of combat. At the end of combat, the heart converts back to the replaced cube (killing the berserker if they lose their last heart). Berserkers begin the game with no gold.",
-    "id": "5.2.0.2"
+    "id": "5.2.0.2",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Brigand (Brotherhood)",
     "content": "![](/images/93dc6b2b68a7a7f4fc472c6017f18dc771f9d01c.png)\n\nThe brigand is the former leader of the bandits that have been plaguing the land of **Dragons Down**. The brigand begins the game with an outlaw token. The bandits are a native group to the brigand that will neither block, nor attack, the brigand. The brigand may hire them in any order (bandit leader last). The bandits respect cunning for any haggle attempts. If the brigand performs a loot action at the hideout or attacks any unhired bandit, the bandits treat the brigand like any other hero for the rest of the game and all current bandit hires of the brigand are placed back in the native tray immediately.\n\n![](/images/aaa008d380614ca5eb75f99b39e7ac3c4f234cb9.png)\n\nWhen the brigand searches for the hideout, secret stash, or wrecked wagons, the search succeeds without rolling any dice and without triggering any hidden traps. The brigand draws one treasure from the main treasure deck, in addition to any other rewards they may receive, when they find each of these sites.",
-    "id": "5.2.0.3"
+    "id": "5.2.0.3",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Burgess (Shrewd)",
     "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\nBurgesses became wealthy by being shrewd and clever negotiators. The starting price for the burgess to hire a native is 3x the fame value of the native, not 4x the fame value.",
-    "id": "5.2.0.4"
+    "id": "5.2.0.4",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Explorer (Perceptive)",
     "content": "![](/images/bad51201627bf24b5392ffac4c9b346071ceb88c.png)\n\nExplorers have a keen eye for the unknown, often seeing clues that others miss. Once per explore or move action, upon revealing a wilderness token in a map tile, the explorer may mix the token back into the pool of wilderness tokens and draw another one. The explorer must accept this newly drawn wilderness token.",
-    "id": "5.2.0.5"
+    "id": "5.2.0.5",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Necromancer (Gravecalling)",
     "content": "![](/images/bde291b97ac31a6bdf4779ffbcd981a68816a8d8.png)\n\nNecromancers have the ability to reanimate the dead as skeletal minions. If no monsters or enemy natives remain in the clearing at the end of combat, place one animated skeleton counter in the clearing for each hero, native, or non-undead monster that was killed in the clearing this turn, but not removed (e.g., fiery chasm removes all that it kills and does not produce animated skeletons). The necromancer may have a maximum of 4 animated skeletons in play at any time. Animated skeletons act as permanent hired natives until killed. If the necromancer is killed, all animated skeletons are also immediately killed earning fame for the hero that killed the necromancer. A necromancer earns no fame for killing their own animated skeletons, nor do they lose fame for animated skeletons that are killed. Skeletons are undead for all game purposes.",
-    "id": "5.2.0.6"
+    "id": "5.2.0.6",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Outcast (Overlooked)",
     "content": "![](/images/37ae98d7d04a5b217297646c98b9b8c73633d0f2.png)\n\nThe outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The outcast may not use a trade action to look at the possessions of a merchant or buy them. They may still do all of the other options of a trade action, including looking at and taking missions normally. When selling possessions, the outcast receives half of the gold value, rounded up. The outcast may loot a merchant’s treasures and items as if it were a found treasure site (the outcast does not have to search for the merchant first). Organize merchant possessions as follows: deep treasures on top of treasures on top of items. New cards that are added to the merchant for any reason are placed on top of their respective cards already with the merchant. Players may not adjust the order of cards. The outcast takes the card at the spot indicated by the loot roll.\n\n![](/images/0555e8aabd2619efc65975d4443c2099c6ba4ea5.png)\n\nAfter looting (successful or not), the outcast must roll to hide (using all lineage, treasure, and sneak bonuses). If the outcast fails this hide roll, they are blocked, receive one outlaw token and may never again interact with that merchant in any way. Use the adventure journal to track merchants that are closed to the outcast.",
-    "id": "5.2.0.7"
+    "id": "5.2.0.7",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Wizard (Studious)",
     "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one learn spells die once per learn spells action.",
-    "id": "5.2.0.8"
+    "id": "5.2.0.8",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 2,

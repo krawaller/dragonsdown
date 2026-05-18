@@ -13,4 +13,11 @@ export const TRANSFORMS: Rule[] = [
       "ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a",
     ],
   },
+  {
+    op: "addTag",
+    tag: "classAdvantage",
+    target: {
+      childrenOf: { parent: { titleRegex: "Class Advantages" } },
+    },
+  },
 ];

@@ -39,73 +39,109 @@
     "level": 4,
     "title": "Assassin (Backstab)",
     "content": "The assassin is skilled at stalking their target. Assassins may ambush with a melee weapon, after which the assassin becomes unhidden.",
-    "id": "2.2.0.1"
+    "id": "2.2.0.1",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Bard (Musical)",
     "content": "![](/images/3307f8231477bb30b009b5e271d39219fade2c05.png)\n\nBards are entertainers and minstrels in addition to being heroic. If the bard is in a civilization location at the end of the combat phase, they roll one mission die and receive the reward rolled.",
-    "id": "2.2.0.2"
+    "id": "2.2.0.2",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Battle Mage (Power)",
     "content": "![](/images/d024baacb93541ff86c7fd553523de763fa0bc1c.png)\n\nThe Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple magic cube as if it is a red might cube each combat round.",
-    "id": "2.2.0.3"
+    "id": "2.2.0.3",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Black Knight (Feared)",
     "content": "![](/images/1228425c2c90b4f3861887004a47862f43452c96.png)\n\nThe Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one haggle die once per trade action.",
-    "id": "2.2.0.4"
+    "id": "2.2.0.4",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Executioner (Intimidation)",
     "content": "![](/images/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png)\n\nThe Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of combat, the attack speed of all natives targeting the executioner is -1.",
-    "id": "2.2.0.5"
+    "id": "2.2.0.5",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Magician (Knowledge)",
     "content": "![](/images/10f58884e706ac5949aaea08475320671a0b26a7.png)\n\nMagicians know a little bit about many types of magic colors. Magicians may use any color of magic cube on the 2nd box of a spell card.",
-    "id": "2.2.0.6"
+    "id": "2.2.0.6",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Paladin (Honor)",
     "content": "![](/images/67e7b20d13c4a7c7864cc0afdcb84505f8809f71.png)\n\n![](/images/c9fe1c3dc66ed1ac1e6458f1761f98d9afbf27c2.png)\n\nPaladins are very honorable in all of their dealings. When a paladin earn one or more LPs on a title, they earn +1 LP.",
-    "id": "2.2.0.7"
+    "id": "2.2.0.7",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Ranger (Woods Lore)",
     "content": "Rangers know the woods after spending years in the wilderness. When in woods clearings, rangers may reroll one search die during each search action.",
-    "id": "2.2.0.8"
+    "id": "2.2.0.8",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Runesword (Control)",
     "content": "![](/images/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png)\n\nRuneswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue magic cube on any color of magic box on treasure cards.",
-    "id": "2.2.0.9"
+    "id": "2.2.0.9",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Soulless (Incorporeal)",
     "content": "![](/images/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png)\n\nThe Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all hidden paths when in their normal form (not shape shifted, etc).",
-    "id": "2.2.0.10"
+    "id": "2.2.0.10",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Trickster (Illusionary Speed)",
     "content": "![](/images/a483a7f20e98594440dacbf50a9667670a124f80.png)\n\nThe trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the trickster an advantage in combat. When attacking, the trickster may change one hit die result from an equal symbol to a hit symbol.",
-    "id": "2.2.0.11"
+    "id": "2.2.0.11",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Witch (Familiar)",
     "content": "![](/images/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png)\n\nThe Witch is a purveyor of arcane magic and has an familiar which does the Witch’s bidding. The familiar is psychically linked to the Witch and shares what it learns with the Witch. When playing the Witch, also take the 2 familiar tokens. Use one as the familiar hero counter and the other for turn order.  The familiar has the following rules:\n\n![](/images/db25aee0295d59b4cbd5183977b801832248698a.jpeg)\n\n![](/images/7f84b6c0635fc10bbdfa731aa25e995d6abe8af8.png)\n\n- When the familiar’s turn order token is selected, the witch takes actions for the familiar only, using the familiar’s hero counter.\n\n- The familiar follows the same rules as any other hero. The familiar may only move, explore, and search. The familiar does not fly.\n\n- When an familiar moves onto a map tile, place a wilderness token/civilization tokens in the tile **face-down**. The witch may not look at the token(s).\n\n- When searching, the familiar may only search for a single wilderness or civilization token in the same map tile as the familiar or a hidden path in the same clearing as the familiar. Upon a successful search for any one token, the witch may look at the face-down token, but does not reveal it.\n\n- The familiar may not search for treasure sites or receive rewards from wilderness tokens (Forgotten City, items, treasures, etc.).\n\n- The witch may not look at face-down tokens except immediately after a successful search. It is good practice to record what the familiar sees in the adventure journal.\n\n- The familiar does not summon monsters and may not target, be targeted, block, or be blocked. It does not participate in combat. Spells may not be cast on, nor affect the familiar.\n\n- If a hero moves onto a map tile containing face-down token(s) placed by the familiar, reveal the tokens in the tile instead of selecting new token(s) for the map tile.",
-    "id": "2.2.0.12"
+    "id": "2.2.0.12",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 2,

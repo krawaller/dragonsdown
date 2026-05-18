@@ -183,25 +183,37 @@
     "level": 4,
     "title": "Disciple (Chosen)",
     "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the chosen takes possession of any spell books or spell scrolls containing white spells, they immediately learn the spells without rolling any dice or taking any actions. The disciple earns +1 LP and +5 fame for each spell learned this way.",
-    "id": "3.1.0.1"
+    "id": "3.1.0.1",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Marauder (Fury)",
     "content": "![](/images/9e3fa5009d9e192061d7326952a545aebd76a8d3.jpeg)\n\nMarauders fight with a barely contained ferocity that they can choose to unleash in combat. Once per combat round, the marauder may place one heart in either a might box or a speed box as if it was a matching cube. This placement counts against the cube limit for the combat round. During the cleanup phase of combat, a placed heart is moved to the wounded box.",
-    "id": "3.1.0.2"
+    "id": "3.1.0.2",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Pit Fighter (Weaponmaster)",
     "content": "![](/images/7c2014271d6bbd04017e8625e1146c31b18b23d8.jpeg)\n\nPit Fighters were bred for combat and the glory of the fighting pits. The pit fighter has two targeting tokens - one for the left hand and one for the right hand. Only use one to determine turn order and place the other near the pit fighter’s hero board. The pit fighter may equip two one-handed weapons simultaneously. During the targeting phase of combat, the pit fighter may place both target tokens to attack the same target twice or two different targets. Both attacks use the pit fighter’s attack speed as normal and are processed normally as two separate attacks.",
-    "id": "3.1.0.3"
+    "id": "3.1.0.3",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 4,
     "title": "Vanguard (Primal Strike)",
     "content": "![](/images/09bb35adefcbc909c3d470d162ceaab9e9f06d9a.jpeg)\n\n![](/images/3d421858be148e2f5e1f56a8f0ab7557d9ca1b9c.png)\n\n![](/images/0911d263359a7ed8100ba8eaae74b05417f360fa.png)\n\nVanguards are experts at moving fast and striking first. The attack of a vanguard in the first round of combat is done at +1 attack speed.",
-    "id": "3.1.0.4"
+    "id": "3.1.0.4",
+    "tags": [
+      "classAdvantage"
+    ]
   },
   {
     "level": 2,

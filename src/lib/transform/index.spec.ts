@@ -129,3 +129,49 @@ describe("Pipeline", () => {
     expect(out[1]).toMatchObject({ id: "1.1", title: "Sub", level: 2 });
   });
 });
+
+describe("addTag", () => {
+  const sections = () => [
+    s("1", "", { title: "Class Advantages", level: 2 }),
+    s("1.0.0.1", "", { title: "Assassin", level: 4 }),
+    s("1.0.0.2", "", { title: "Bard", level: 4 }),
+    s("2", "", { title: "Treasure", level: 2 }),
+  ];
+
+  it("tags every matching section", () => {
+    const rules: Rule[] = [
+      {
+        op: "addTag",
+        tag: "classAdvantage",
+        target: {
+          childrenOf: { parent: { titleRegex: "Class Advantages" } },
+        },
+      },
+    ];
+    const out = applyTransforms(sections(), rules, "core");
+    expect(out[0].tags).toBeUndefined(); // the parent itself isn't tagged
+    expect(out[1].tags).toEqual(["classAdvantage"]);
+    expect(out[2].tags).toEqual(["classAdvantage"]);
+    expect(out[3].tags).toBeUndefined(); // unrelated section
+  });
+
+  it("is idempotent (same tag added twice)", () => {
+    const rules: Rule[] = [
+      { op: "addTag", tag: "x", target: { id: "1.0.0.1" } },
+      { op: "addTag", tag: "x", target: { id: "1.0.0.1" } },
+    ];
+    const out = applyTransforms(sections(), rules, "core");
+    expect(out[1].tags).toEqual(["x"]);
+  });
+
+  it("appends to existing tags", () => {
+    const start = [{ ...sections()[1], tags: ["existing"] }];
+    const rules: Rule[] = [
+      { op: "addTag", tag: "new", target: "ALL" },
+    ];
+    expect(applyTransforms(start, rules, "core")[0].tags).toEqual([
+      "existing",
+      "new",
+    ]);
+  });
+});
