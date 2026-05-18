@@ -2,7 +2,7 @@
   {
     "level": 1,
     "title": "INTRODUCTION",
-    "content": "![](/images/1b1d0359b1f69b8268179f99ef4c1b70c9f90bd0.jpeg)\n\n![](/images/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\n*“We discovered new lands, new heroes, new treasures, new sites...* *...and new ways to die”.*\n\nDragons Down: Desolation expands your Dragons Down experience by adding many new treasures, two new terrain packs, 2 new lineages to use with new and existing classes, and 12 new classes to use with new or existing lineages.\n\nEach terrain pack consists of all new map tiles, new and additional monsters, new treasure sites, new tokens, new missions, etc.\n\nMost new components will have a swamp or plains symbol on them or are marked with a small       in one corner of the card. Counters, round cardboard tokens, and hero boards do not have this mark.",
+    "content": "![](/images/1b1d0359b1f69b8268179f99ef4c1b70c9f90bd0.jpeg)\n\n*“We discovered new lands, new heroes, new treasures, new sites...* *...and new ways to die”.*\n\nDragons Down: Desolation expands your Dragons Down experience by adding many new treasures, two new terrain packs, 2 new lineages to use with new and existing classes, and 12 new classes to use with new or existing lineages.\n\nEach terrain pack consists of all new map tiles, new and additional monsters, new treasure sites, new tokens, new missions, etc.\n\nMost new components will have a swamp or plains symbol on them or are marked with a small       in one corner of the card. Counters, round cardboard tokens, and hero boards do not have this mark.",
     "id": "1"
   },
   {
@@ -152,7 +152,7 @@
   {
     "level": 4,
     "title": "Bandits",
-    "content": "Dragons Down: Desolation introduces additional treasure sites to which the Bandits may be summoned. The Bandits may appear at the Hideout, Secret Cache, and/or Wrecked Wagons. The red arrow next to the bandits on the setup cards indicates that the bandits counters might be located on another setup card.\n\nThe bandits may summon from the setup cards or the map. If on the map, the bandits will not leave a treasure site clearing that contains a hero. If the bandits are\n\n![](/images/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\nsummoned to multiple clearings simultaneously, they all summon to the clearing containing the hero earliest in the turn order.",
+    "content": "Dragons Down: Desolation introduces additional treasure sites to which the Bandits may be summoned. The Bandits may appear at the Hideout, Secret Cache, and/or Wrecked Wagons. The red arrow next to the bandits on the setup cards indicates that the bandits counters might be located on another setup card.\n\nThe bandits may summon from the setup cards or the map. If on the map, the bandits will not leave a treasure site clearing that contains a hero. If the bandits are\n\nsummoned to multiple clearings simultaneously, they all summon to the clearing containing the hero earliest in the turn order.",
     "id": "2.4.0.1"
   },
   {
@@ -218,7 +218,7 @@
   {
     "level": 4,
     "title": "Foci of the Spellcaster",
-    "content": "![](/images/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\nEpic treasure. May place one magic cube in a might box. This cube must come from the hero’s healthy box and counts against the combat round limit.",
+    "content": "Epic treasure. May place one magic cube in a might box. This cube must come from the hero’s healthy box and counts against the combat round limit.",
     "id": "2.5.0.8"
   },
   {

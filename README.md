@@ -33,13 +33,14 @@ python3 -m venv .venv
 .venv/bin/pip install pymupdf
 ```
 
-Extract all PDFs in `pdf/` → `data/`:
+Extract all PDFs in `pdf/` → `data/`, then apply the transform rules:
 
 ```sh
-npm run extract
+npm run extract     # extract PDFs to data/, then run transform automatically
+npm run transform   # re-apply transform.ts to data/ without re-extracting
 ```
 
-Extract a single PDF (call the script directly):
+Extract a single PDF (call the Python script directly; you'll then want to run `npm run transform` to re-apply rules):
 
 ```sh
 .venv/bin/python scripts/extract.py pdf/desolation_1.2.pdf
@@ -50,6 +51,16 @@ Inspect font/size/color distribution of a PDF (used to derive heading rules):
 ```sh
 npm run inspect-fonts pdf/core_1.2.pdf
 ```
+
+## Transforms
+
+`transform.ts` at the repo root is a typed list of rules ("manual massaging") that mutate the extracted JSON in place. The rules run as a separate script after extraction, so:
+
+- The state in `data/` reflects what the app actually renders — no runtime cost.
+- Adding or changing a rule and running `npm run transform` produces a git diff that shows exactly what the rule did. That diff is the audit trail.
+- Rules apply in array order; later rules see the output of earlier ones (no merge semantics — last-write-wins by virtue of order).
+
+Currently supported ops: `ignoreImages` (drops `![](/images/<hash>.<ext>)` refs by hash).
 
 ## Heading conventions
 
