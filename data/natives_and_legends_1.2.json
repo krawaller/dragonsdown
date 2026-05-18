@@ -351,169 +351,253 @@
     "level": 4,
     "title": "Alchemical Lure",
     "content": "One-time use. During the challenge step of combat, select one monster in the clearing and choose a hero, native, or monster (*other than itself*) in the clearing to be challenged, targeted, and attacked by the monster this combat round. The monster returns to normal behavior next combat round.",
-    "id": "5.4.0.1"
+    "id": "5.4.0.1",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Arcane Bond",
     "content": "One-time use. During one hire action, the hire cost in gold is equal to the fame value. Must be used prior to any haggle attempts.",
-    "id": "5.4.0.2"
+    "id": "5.4.0.2",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Arcane Sword",
     "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. One box of this weapon must be filled with a magic cube. An enchantment cube in the map tile may be used to fill this box, in which case it does not count against the cube limit for that combat round.",
-    "id": "5.4.0.3"
+    "id": "5.4.0.3",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Banner of the Brigands",
     "content": "All heroes in the clearing with the banner gain 1 matching respected icon with the bashkirs, rogues, and sellswords. All heroes in the clearing with the banner lose 1 matching respected icon with knights, soldiers, and watch.  The effects are cumulative with other treasures.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
-    "id": "5.4.0.4"
+    "id": "5.4.0.4",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Banner of Legitimacy",
     "content": "All heroes in the clearing with the banner lose 1 matching respected icon with the bashkirs, rogues, and sellswords. All heroes in the clearing with the banner gain 1 matching respected icon with the knights, soldiers, and watch. The effects are cumulative with other treasures.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
-    "id": "5.4.0.5"
+    "id": "5.4.0.5",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bard’s Bouzouki",
     "content": "Epic treasure. The hero has +1 cunning, wisdom, and charisma while equipped. The effects are cumulative with other treasures.",
-    "id": "5.4.0.6"
+    "id": "5.4.0.6",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Baton of the Lost Prince",
     "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
-    "id": "5.4.0.7"
+    "id": "5.4.0.7",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Casting Lens",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the hero selects one spell on an active treasure card they possess (*not in the backpack*) to be cast. No magic cubes are needed to cast this spell. The spell is removed from the game when the spell expires.",
-    "id": "5.4.0.8"
+    "id": "5.4.0.8",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Champion’s Blade",
     "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. The attack speed of the champion’s blade is always +1.",
-    "id": "5.4.0.9"
+    "id": "5.4.0.9",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Champion’s Plate",
     "content": "Legendary treasure (earns a reward as an epic treasure). Armor. Armor value of 4. Weight of 3. Cancels two swords.",
-    "id": "5.4.0.10"
+    "id": "5.4.0.10",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Cipherstone",
     "content": "One-time use. Prior to rolling the dice, automatically learn one spell on an active treasure card in the hero’s possession (*not in the backpack*) during a learn spells action. The hero must have a magic cube that matches the color of the learned spell.",
-    "id": "5.4.0.11"
+    "id": "5.4.0.11",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Coronet of the Lost Prince",
     "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
-    "id": "5.4.0.12"
+    "id": "5.4.0.12",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Elven Helm",
     "content": "Armor. Armor value of 1. No weight. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.13"
+    "id": "5.4.0.13",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Elven Shield",
     "content": "Armor. Armor value of 1. No weight. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.14"
+    "id": "5.4.0.14",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Elven Vest",
     "content": "Armor. Armor value of 1. No weight. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.15"
+    "id": "5.4.0.15",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Eternium Grimoire",
     "content": "Legendary treasure (earns a reward as an epic treasure). When equipped, the player selects one of their hero’s healthy magic cubes and replaces it with a another magic cube of their choice. Place the original magic cube near the hero board for reference. During an alert action, the hero may change the transformed cube to any color of magic cube they wish (in addition to the other benefits of the alert action). If unequipped, the original magic cube replaces the transformed magic cube.",
-    "id": "5.4.0.16"
+    "id": "5.4.0.16",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Fade Essence",
     "content": "One-time use. The hero is immediately hidden. Can be used during the action phase or the cleanup step of combat, including after a failed hide roll.",
-    "id": "5.4.0.17"
+    "id": "5.4.0.17",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Figurine of the Stalk",
     "content": "Epic treasure. Valuable. During the challenge step of combat, monsters always challenge an unhidden hero that possesses the figurine of the stalk. Spells and other treasures take precedence over the figurine (*e.g. alchemical lure, discord, etc.*).\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
-    "id": "5.4.0.18"
+    "id": "5.4.0.18",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Galdric of Enchantment",
     "content": "One-time use. The tile containing the hero immediately flips over and is enchanted with a magic color of the hero’s choice. If used while the disenchanter is in the tile, the galdric is discarded with no effect.",
-    "id": "5.4.0.19"
+    "id": "5.4.0.19",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Harmonic Hand Axe",
     "content": "Melee and ranged weapon. Does not lose a sword icon when striking armor.",
-    "id": "5.4.0.20"
+    "id": "5.4.0.20",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Hex of Servitude",
     "content": "One-time use. The hero may attempt to hire any native in the clearing during one hire action, not just the highest numbered native of a native group.",
-    "id": "5.4.0.21"
+    "id": "5.4.0.21",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Holdfast Leathers",
     "content": "Legendary treasure (earns a reward as an epic treasure). Armor. Armor value of 2. Weight of 1. Cancels one sword. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.22"
+    "id": "5.4.0.22",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mageshift Medallion",
     "content": "Legendary treasure (earns a reward as an epic treasure). When equipped, the player selects one of the hero’s magic cubes and replaces it with 2 might cubes. Place the cube near the hero board for reference. If unequipped, the two might cubes are returned to the supply and the original magic cube is returned to the hero. If either might cube being returned to the supply was wounded, the magic cube returns to the hero wounded. Once equipped, the magic cube that was replaced may not be changed unless the medallion is unequipped and then reequipped.",
-    "id": "5.4.0.23"
+    "id": "5.4.0.23",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Panacea of Persuasion",
     "content": "One-time use. The hero has +1 cunning, wisdom, and charisma this turn. The effects are cumulative with other treasures.",
-    "id": "5.4.0.24"
+    "id": "5.4.0.24",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shield of the Lost Prince",
     "content": "Epic Treasure. Armor. Armor value of 2. Weight of 2. Cancels 1 extra sword icon.",
-    "id": "5.4.0.25"
+    "id": "5.4.0.25",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Skull Splitter",
     "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. One mandatory might cube box on this card is automatically filled and does not count against the cube limit.",
-    "id": "5.4.0.26"
+    "id": "5.4.0.26",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sword of the Lost Prince",
     "content": "Epic treasure. Has a sword icon on two different might boxes. Valuable.",
-    "id": "5.4.0.27"
+    "id": "5.4.0.27",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Whispering Compass",
     "content": "One-time use. May use all hidden paths this turn, even if not found. Used hidden paths are not found.",
-    "id": "5.4.0.28"
+    "id": "5.4.0.28",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 2,

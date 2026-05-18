@@ -1005,601 +1005,901 @@
     "level": 4,
     "title": "Adamantium Blade",
     "content": "Melee weapon. The optional might cube box on this card is automatically filled and does not count against the cube limit.",
-    "id": "9.5.0.1"
+    "id": "9.5.0.1",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Alchemist’s mixture",
     "content": "One-time use. Permanently replace one color of magic cube with another color.",
-    "id": "9.5.0.2"
+    "id": "9.5.0.2",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Artificer’s Concoction",
     "content": "One-time use. Ranged weapon.",
-    "id": "9.5.0.3"
+    "id": "9.5.0.3",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ascendant Ornament",
     "content": "Epic treasure. A purple magic cube placed on this treasure counts as a might cube on any might box on an active card of this hero. This card can have cubes placed on it in addition to other cards.",
-    "id": "9.5.0.4"
+    "id": "9.5.0.4",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Band of Sagacity",
     "content": "Epic treasure. A yellow magic cube placed on this treasure allows the hero to reroll a hit die roll by or against them one time per combat round. This card can have cubes placed on it in addition to other cards.",
-    "id": "9.5.0.5"
+    "id": "9.5.0.5",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Battle Staff",
     "content": "Melee weapon. The required might box on this card is automatically filled and does not count against the hero’s cube limit.",
-    "id": "9.5.0.6"
+    "id": "9.5.0.6",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bauble of Cunning",
     "content": "Increases the cunning attribute of the hero by one.",
-    "id": "9.5.0.7"
+    "id": "9.5.0.7",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bejeweled Breastplate",
     "content": "Armor. Valuable.",
-    "id": "9.5.0.8"
+    "id": "9.5.0.8",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bejeweled Helm",
     "content": "Armor. Valuable.",
-    "id": "9.5.0.9"
+    "id": "9.5.0.9",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bejeweled Shield",
     "content": "Armor. Valuable.",
-    "id": "9.5.0.10"
+    "id": "9.5.0.10",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Belt of Expansion",
     "content": "Gain two additional miscellaneous positions in which to carry cards.",
-    "id": "9.5.0.11"
+    "id": "9.5.0.11",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Belt of the Beast",
     "content": "Epic treasure. Receive one might cube while the treasure is equipped.",
-    "id": "9.5.0.12"
+    "id": "9.5.0.12",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bow of the Hunt",
     "content": "Epic treasure. Extra sharp. Ranged weapon.",
-    "id": "9.5.0.13"
+    "id": "9.5.0.13",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bracelets of Finesse",
     "content": "May place one red might cube from the hero’s healthy box in an attack speed or maneuver speed box. This cube counts against the combat round limit.",
-    "id": "9.5.0.14"
+    "id": "9.5.0.14",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Bracers of Vigor",
     "content": "May place one brown speed cube from the hero’s healthy box in a might box. This cube counts against the combat round limit.",
-    "id": "9.5.0.15"
+    "id": "9.5.0.15",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Broche of Deflection",
     "content": "One-time use. Cancel one hit against the equipped hero.",
-    "id": "9.5.0.16"
+    "id": "9.5.0.16",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Cape of Alteration",
     "content": "Epic treasure. Healthy might cubes may only be placed in speed boxes. Healthy speed cubes may only be placed in might action boxes. *Remember: Might cubes and* *boxes are red; speed cubes and boxes are brown.*",
-    "id": "9.5.0.17"
+    "id": "9.5.0.17",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Charismatic Gemstone",
     "content": "Increases the charisma attribute of the hero by one.",
-    "id": "9.5.0.18"
+    "id": "9.5.0.18",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Clashing Ring",
     "content": "Placing a brown speed cube here increases the attack speed of the hero by one. This card can have cubes placed on it in addition to other cards.",
-    "id": "9.5.0.19"
+    "id": "9.5.0.19",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Cursed Treasure",
     "content": "Instant. Draw a treasure card from the pool to replace this card (if the Cursed Treasure card is a deep treasure card, draw a deep treasure card from the pool). Then roll on the curse table to determine a curse that affects the hero. The curse occurs even if the hero simply viewed the treasure (e,g. merchant, treasure site, etc.). Then remove the Cursed Treasure card from the game. Multiple Cursed Treasures can be drawn in succession when replacing a Cursed Treasure.",
-    "id": "9.5.0.20"
+    "id": "9.5.0.20",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Dagger of Bite",
     "content": "Melee and ranged weapon. Extra sharp.",
-    "id": "9.5.0.21"
+    "id": "9.5.0.21",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Decimation",
     "content": "Epic treasure. A black magic cube may be placed on Decimation to increase the damage delivered.",
-    "id": "9.5.0.22"
+    "id": "9.5.0.22",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Digger’s Ruin",
     "content": "May reroll one search die once per search action while in a cave clearing.",
-    "id": "9.5.0.23"
+    "id": "9.5.0.23",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Disenchanter",
     "content": "While revealed, immediately remove any magic cube on the map tile containing the Disenchanter. Disenchanting does not flip the map tile over. The map tile in which the Disenchanter is located may not be enchanted for any reason.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
-    "id": "9.5.0.24"
+    "id": "9.5.0.24",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Dust of Destiny",
     "content": "One-time use. Reroll any one die or dice roll in which you are the active hero, the target, or the attacker.",
-    "id": "9.5.0.25"
+    "id": "9.5.0.25",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Earthen Cincture",
     "content": "Epic treasure. Receive one green magic cube while the treasure is equipped.",
-    "id": "9.5.0.26"
+    "id": "9.5.0.26",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Elemental Spherule",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Elemental, is cast. No magic cubes are needed to cast this spell.",
-    "id": "9.5.0.27"
+    "id": "9.5.0.27",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Elven Amulet",
     "content": "May reroll one search die once per search action while in a woods clearing.",
-    "id": "9.5.0.28"
+    "id": "9.5.0.28",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Elven Slippers",
     "content": "Epic treasure. A green magic cube placed on this treasure increases maneuver speed by one. This card can have cubes placed on it in addition to other cards.",
-    "id": "9.5.0.29"
+    "id": "9.5.0.29",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Enchanted Treasure",
     "content": "Instant. Draw a treasure card from the pool to replace this treasure, even if the hero simply viewed the treasure (e,g. merchant, treasure site, etc.). The map tile is flipped over and enchanted. Place a magic cube in the map tile matching the color of magic cube shown in the enchantment circle on the Enchanted Treasure card. Then remove the Enchanted Treasure card from the game.",
-    "id": "9.5.0.30"
+    "id": "9.5.0.30",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Gage of the Thief",
     "content": "May reroll one loot die once per loot action.",
-    "id": "9.5.0.31"
+    "id": "9.5.0.31",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Garb of the Gate",
     "content": "Epic treasure. May move to any revealed gate clearing paying normal movement costs as if connected by a path.",
-    "id": "9.5.0.32"
+    "id": "9.5.0.32",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Gauntlets of Brawn",
     "content": "Counts as one might cube in an existing might box on a card. Does not add a might box to the card. This cube does not count against the combat round limit.",
-    "id": "9.5.0.33"
+    "id": "9.5.0.33",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Gloves of Aggression",
     "content": "Counts as one brown speed cube in an existing attack speed box. Does not add an attack speed box. This cube does not count against the combat round limit.",
-    "id": "9.5.0.34"
+    "id": "9.5.0.34",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Golden Icon",
     "content": "Epic treasure. Valuable.",
-    "id": "9.5.0.35"
+    "id": "9.5.0.35",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Guard Charm",
     "content": "One-time use. May discard this treasure instead of taking one wound.",
-    "id": "9.5.0.36"
+    "id": "9.5.0.36",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Hamblen’s Pendant",
     "content": "May reroll one search die once per search action while in a mountain clearing.",
-    "id": "9.5.0.37"
+    "id": "9.5.0.37",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Hawkeye",
     "content": "May reroll one search die once per search action while in a plains clearing.",
-    "id": "9.5.0.38"
+    "id": "9.5.0.38",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Horn of the Dark Angel",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Fiery Chasm, is cast. No magic cubes are needed to cast this spell.",
-    "id": "9.5.0.39"
+    "id": "9.5.0.39",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Icon of the Dragon",
     "content": "Epic treasure. Valuable. During monster activation, it summons as if a malevolent mountain summoning symbol (Juvenile Dragons) and a Sound summoning symbol (Adult Dragon) are printed on the map tile, if not already present. Printed summoning symbols on the map tile summon normally. If the malevolent mountain and sound summoning symbols are already printed on the map tile, dragons are not summoned twice.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
-    "id": "9.5.0.40"
+    "id": "9.5.0.40",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Incanter’s Jewel",
     "content": "Epic treasure. Receive one blue magic cube while the treasure is equipped.",
-    "id": "9.5.0.41"
+    "id": "9.5.0.41",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "King’s Pardon",
     "content": "One-time use. When in a civilization location, the hero may discard up to two of their outlaw tokens. May not be used to discard other player’s outlaw tokens.",
-    "id": "9.5.0.42"
+    "id": "9.5.0.42",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mace of Smiting",
     "content": "Melee weapon. A required might box is automatically filled and does not count against the hero’s cube limit.",
-    "id": "9.5.0.43"
+    "id": "9.5.0.43",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Magical Bowl of Mixing",
     "content": "Epic treasure. A blue magic cube placed on this treasure permanently converts a single magic cube from one color to another color, in either direction, as shown.",
-    "id": "9.5.0.44"
+    "id": "9.5.0.44",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mirror of Idolatry",
     "content": "Epic treasure. The hero may not sneak or alert while possessing this card.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
-    "id": "9.5.0.45"
+    "id": "9.5.0.45",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mithral Chainmail",
     "content": "Epic treasure. Armor. Cancels one sword. Lighter than normal chainmail.",
-    "id": "9.5.0.46"
+    "id": "9.5.0.46",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mithral Plate Armor",
     "content": "Epic treasure. Armor. Cancels one sword. Lighter than normal plate armor.",
-    "id": "9.5.0.47"
+    "id": "9.5.0.47",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mithral Shield",
     "content": "Epic treasure. Armor. Cancels one sword. Lighter than a normal shield.",
-    "id": "9.5.0.48"
+    "id": "9.5.0.48",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Potion of Energy",
     "content": "One-time use. One additional speed cube from the healthy box may be played each combat round until the end of combat.",
-    "id": "9.5.0.49"
+    "id": "9.5.0.49",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Potion of Flight",
     "content": "One-time use. Until the end of the next Action phase, this hero may fly.",
-    "id": "9.5.0.50"
+    "id": "9.5.0.50",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Potion of Healing",
     "content": "One-time use. Move all cubes from the wounded box to the healthy box.",
-    "id": "9.5.0.51"
+    "id": "9.5.0.51",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Potion of Maneuver",
     "content": "One-time use. Receive one brown speed cube permanently.",
-    "id": "9.5.0.52"
+    "id": "9.5.0.52",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Potion of Might",
     "content": "One-time use. Receive one red might cube permanently.",
-    "id": "9.5.0.53"
+    "id": "9.5.0.53",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Potion of Relief",
     "content": "One-time use. Remove all curses and permanent spell effects. May not be used to selectively remove curses and permanent spells.",
-    "id": "9.5.0.54"
+    "id": "9.5.0.54",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Quick Ring",
     "content": "Placing a brown speed cube here increases the maneuver speed of the hero by one.",
-    "id": "9.5.0.55"
+    "id": "9.5.0.55",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ring of Malevolence",
     "content": "Epic treasure. Receive one black magic cube while the treasure is equipped.",
-    "id": "9.5.0.56"
+    "id": "9.5.0.56",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ring of Strength",
     "content": "The optional might box on one equipped weapon is automatically filled without using a might cube.",
-    "id": "9.5.0.57"
+    "id": "9.5.0.57",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ring of the Magi",
     "content": "Enchanting a tile requires one enchant action less to take effect.",
-    "id": "9.5.0.58"
+    "id": "9.5.0.58",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ring of Truth",
     "content": "Epic treasure. Receive one white magic cube while the treasure is equipped.",
-    "id": "9.5.0.59"
+    "id": "9.5.0.59",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Robe of the Chanter",
     "content": "Epic treasure. Receive one yellow magic cube while the treasure is equipped.",
-    "id": "9.5.0.60"
+    "id": "9.5.0.60",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Robust Ring",
     "content": "Receive +1 health while the treasure is equipped.",
-    "id": "9.5.0.61"
+    "id": "9.5.0.61",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Satchel of a Giant",
     "content": "Instant. The hero draws and keeps two treasure cards (not deep treasure cards), then remove the Satchel of a Giant card from the game.",
-    "id": "9.5.0.62"
+    "id": "9.5.0.62",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Scepter of the Sorcerer",
     "content": "Epic treasure. Receive one purple magic cube while the item is equipped.",
-    "id": "9.5.0.63"
+    "id": "9.5.0.63",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shadow Cloak",
     "content": "Epic treasure. Reroll any hide reaction once per turn. Must reroll all dice.",
-    "id": "9.5.0.64"
+    "id": "9.5.0.64",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shaman’s Kaftan",
     "content": "Epic treasure. Any magic cube placed on this treasure turns it into armor. If no magic cube is on the kaftan, then the kaftan is ignored and cannot be damaged. This card can have cubes placed on it in addition to other cards.",
-    "id": "9.5.0.65"
+    "id": "9.5.0.65",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shield of Defiance",
     "content": "Epic treasure. Armor. Armor value of 3. Weight of 2.",
-    "id": "9.5.0.66"
+    "id": "9.5.0.66",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shield of Mercy",
     "content": "Epic treasure. This treasure may be used as a normal shield. If a white magic cube is placed on this treasure during a combat round, the hero takes no wounds from any hits that are blocked by this shield, even if the shield is destroyed. This card can have cubes placed on it in addition to other cards.",
-    "id": "9.5.0.67"
+    "id": "9.5.0.67",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shoes of the Thief",
     "content": "May evade as if the hero had placed three maneuver cubes. No cubes are placed and no additional cubes may be added to make it faster.",
-    "id": "9.5.0.68"
+    "id": "9.5.0.68",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Skeleton Key",
     "content": "Opens the monolith and chamber. Avoids hidden traps at the secret cache, hideout, and wrecked wagons.",
-    "id": "9.5.0.69"
+    "id": "9.5.0.69",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sparkler of Wisdom",
     "content": "Increases the wisdom attribute of the hero by one.",
-    "id": "9.5.0.70"
+    "id": "9.5.0.70",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Spear of Piercing",
     "content": "Melee or ranged weapon. Extra sharp. If used two-handed, damage may be optionally increased by one.",
-    "id": "9.5.0.71"
+    "id": "9.5.0.71",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Spell Book and Spell Scroll",
     "content": "Contains 1-3 spells. When a spell book or scroll is revealed, draw the indicated number of spell cards from the deck and place them face-down under the treasure card. A hero performing a trade action with a merchant may reveal the spell book to all players in order to draw and secretly look at the spells attached to the treasure card. The base price of the treasure card is the sum of the spells remaining with the spell book or spell scroll.\n\nThe hero possessing the spell book or spell scroll may freely look at the attached spells at any time. These spells are available for a spell caster to learn if the hero has a magic cube matching the spell type.\n\nThe treasure card is discarded if the last spell is removed from it, typically because a spell caster learned the spell.",
-    "id": "9.5.0.72"
+    "id": "9.5.0.72",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Summoning Marcation",
     "content": "Epic treasure. Valuable. During monster activation, it summons as if all local monster die summoning icons printed on map tiles in adjacent tiles are also located in the map tile containing the summoning marcation.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
-    "id": "9.5.0.73"
+    "id": "9.5.0.73",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Alertness",
     "content": "May perform one alert action which does not count against the turn’s action limit.",
-    "id": "9.5.0.74"
+    "id": "9.5.0.74",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Commerce",
     "content": "May perform one trade action which does not count against the turn’s action limit.",
-    "id": "9.5.0.75"
+    "id": "9.5.0.75",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Greed",
     "content": "May perform one loot action which does not count against the turn’s action limit.",
-    "id": "9.5.0.76"
+    "id": "9.5.0.76",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Knowledge",
     "content": "May perform one learn spells action which does not count against the turn’s action limit.",
-    "id": "9.5.0.77"
+    "id": "9.5.0.77",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Magic",
     "content": "May perform one enchant action which does not count against the turn’s action limit.",
-    "id": "9.5.0.78"
+    "id": "9.5.0.78",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Motion",
     "content": "May perform one move action which does not count against the turn’s action limit.",
-    "id": "9.5.0.79"
+    "id": "9.5.0.79",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Rest",
     "content": "May perform one rest action which does not count against the turn’s action limit.",
-    "id": "9.5.0.80"
+    "id": "9.5.0.80",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Stealth",
     "content": "May perform one sneak action which does not count against the turn’s action limit.",
-    "id": "9.5.0.81"
+    "id": "9.5.0.81",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Symbol of Vision",
     "content": "May perform one search action which does not count against the turn’s action limit.",
-    "id": "9.5.0.82"
+    "id": "9.5.0.82",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Talaria of the Gladiator",
     "content": "Counts as one brown speed cube in an existing maneuver speed box. Does not add a maneuver box. This cube does not count against the combat round limit.",
-    "id": "9.5.0.83"
+    "id": "9.5.0.83",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Taper of Illumination",
     "content": "Epic Treasure. Do not lose an action when in a cave clearing on the hero’s turn.",
-    "id": "9.5.0.84"
+    "id": "9.5.0.84",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Thief’s Lucky Coin",
     "content": "One-time use. Roll one die during one loot action.",
-    "id": "9.5.0.85"
+    "id": "9.5.0.85",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Time Stone",
     "content": "One-time use. One attack in the clearing that ties on maneuver speed hits the target.",
-    "id": "9.5.0.86"
+    "id": "9.5.0.86",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of Conjuring",
     "content": "One-time use. Receive one blue magic cube permanently.",
-    "id": "9.5.0.87"
+    "id": "9.5.0.87",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of Fay",
     "content": "One-time use. Receive one yellow magic cube permanently.",
-    "id": "9.5.0.88"
+    "id": "9.5.0.88",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of Nature",
     "content": "One-time use. Receive one green magic cube permanently.",
-    "id": "9.5.0.89"
+    "id": "9.5.0.89",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of Power",
     "content": "One-time use. Receive one purple magic cube permanently.",
-    "id": "9.5.0.90"
+    "id": "9.5.0.90",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of Righteousness",
     "content": "One-time use. Receive one white magic cube permanently.",
-    "id": "9.5.0.91"
+    "id": "9.5.0.91",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of the Black Arts",
     "content": "One-time use. Receive one black magic cube permanently.",
-    "id": "9.5.0.92"
+    "id": "9.5.0.92",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of Tricks",
     "content": "One-time use. Receive one grey magic cube permanently.",
-    "id": "9.5.0.93"
+    "id": "9.5.0.93",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tome of Wizardry",
     "content": "One-time use. Receive one magic cube of the hero’s choice permanently.",
-    "id": "9.5.0.94"
+    "id": "9.5.0.94",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Trickster’s Stone",
     "content": "Epic treasure. Receive one grey magic cube while the treasure is equipped.",
-    "id": "9.5.0.95"
+    "id": "9.5.0.95",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tricky Ring",
     "content": "Epic treasure. A grey magic cube placed on this treasure increases the hero’s attack speed by one. This card can have cubes placed on it in addition to other cards.",
-    "id": "9.5.0.96"
+    "id": "9.5.0.96",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Vorpal Cutlass",
     "content": "Melee weapon. Extra sharp.",
-    "id": "9.5.0.97"
+    "id": "9.5.0.97",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Wand of the Magician",
     "content": "Epic treasure. When casting targeted spells, may reroll one or two hit dice on each hit dice roll.",
-    "id": "9.5.0.98"
+    "id": "9.5.0.98",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Warblade",
     "content": "Melee weapon. Requires that one speed cube be placed on this treasure in lieu of a might cube.",
-    "id": "9.5.0.99"
+    "id": "9.5.0.99",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Writ of Redemption",
     "content": "One-time use. The price to buy any one card from a merchant is 1x the base price.",
-    "id": "9.5.0.100"
+    "id": "9.5.0.100",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 2,

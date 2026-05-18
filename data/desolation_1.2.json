@@ -213,162 +213,243 @@
     "level": 4,
     "title": "Armageddon Hammer",
     "content": "Epic treasure. Melee weapon. Optional might cube box on this card is automatically filled and does not count against the cube limit.",
-    "id": "2.5.0.1"
+    "id": "2.5.0.1",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Brogans of the Birds",
     "content": "Epic treasure. May fly during combat and for one move action taken each turn.",
-    "id": "2.5.0.2"
+    "id": "2.5.0.2",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Clodpoll Club",
     "content": "Melee weapon. Must have less than 8 total active attribute icons in order to equip. If the hero has 8 or more active attribute icons at any time, the card is immediately unequipped to the backpack.",
-    "id": "2.5.0.3"
+    "id": "2.5.0.3",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Codex of Cognition",
     "content": "Epic treasure. May reroll one die during each learn spells action.",
-    "id": "2.5.0.4"
+    "id": "2.5.0.4",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Cursed Axe",
     "content": "Melee weapon. Extra sharp. May not roll the hit dice. This weapon must be faster than its target’s maneuver speed to hit.",
-    "id": "2.5.0.5"
+    "id": "2.5.0.5",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Dancing Sword",
     "content": "Epic treasure. The attack speed of the Dancing Sword is always +1.",
-    "id": "2.5.0.6"
+    "id": "2.5.0.6",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Explorer’s Boots",
     "content": "May use all hidden paths without finding them. Hidden paths do not become known by the hero, but they may be used.",
-    "id": "2.5.0.7"
+    "id": "2.5.0.7",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Foci of the Spellcaster",
     "content": "Epic treasure. May place one magic cube in a might box. This cube must come from the hero’s healthy box and counts against the combat round limit.",
-    "id": "2.5.0.8"
+    "id": "2.5.0.8",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Grommel’s Talisman",
     "content": "May reroll one search die once per search action while in a swamp clearing.",
-    "id": "2.5.0.9"
+    "id": "2.5.0.9",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Hand of the Lich",
     "content": "Epic treasure. The hero must wound one cube each turn at the end of their action phase. The attack speed of all spells cast by this hero is +1.",
-    "id": "2.5.0.10"
+    "id": "2.5.0.10",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Igneous Flame",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Fireball, is cast. No magic cubes are needed to cast this spell.",
-    "id": "2.5.0.11"
+    "id": "2.5.0.11",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Helm of True Sight",
     "content": "Epic treasure. May reroll any number of dice once during each search action.",
-    "id": "2.5.0.12"
+    "id": "2.5.0.12",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Jeweled Thief’s Skull",
     "content": "Epic treasure. Valuable.",
-    "id": "2.5.0.13"
+    "id": "2.5.0.13",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mace of Absolution",
     "content": "Melee weapon. Must have 3 or more active wisdom attribute icons in order to equip. If the hero has less then 3 active wisdom attribute icons at any time, the card is immediately unequipped to the backpack. The optional might cube box on this card is automatically filled and does not count against the cube limit.",
-    "id": "2.5.0.14"
+    "id": "2.5.0.14",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Orb of Far Sight",
     "content": "Epic treasure. May perform a search action in any clearing in the current map tile or an adjacent map tile. Upon a successful search of an adjacent tile which has no wilderness or civilization tokens in it, place a matching token(s) in the tile. The hero may then look at the token and decide to place it face-down or face-up (receiving any rewards for revealing tokens).\n\nIf playing using the exploration rules, the hero may explore as if in a mountain clearing regardless of the actual clearing type.",
-    "id": "2.5.0.15"
+    "id": "2.5.0.15",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Peace Pendant",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Peace, is cast. No magic cubes are needed to cast this spell.",
-    "id": "2.5.0.16"
+    "id": "2.5.0.16",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Pebble of Irritation",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Discord, is cast. No magic cubes are needed to cast this spell.",
-    "id": "2.5.0.17"
+    "id": "2.5.0.17",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Portable Hole",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Teleport, is cast. No magic cubes are needed to cast this spell.",
-    "id": "2.5.0.18"
+    "id": "2.5.0.18",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sabre of the Fencer",
     "content": "Melee weapon. May place one speed cube on this card to count as a might cube. Has the attack length of a great sword.",
-    "id": "2.5.0.19"
+    "id": "2.5.0.19",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sending Stones",
     "content": "One-time use. May perform one trade action as if they were in any clearing already on the map. The hero is not actually in the selected clearing and so cannot be blocked by monsters in that clearing.",
-    "id": "2.5.0.20"
+    "id": "2.5.0.20",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sin Sword",
     "content": "Melee weapon. Must have 3 or more active intelligence attribute icons in order to equip. If the hero has less then 3 active intelligence attribute icons at any time, the card is immediately unequipped to the backpack. The optional might cube box on this card is automatically filled and does not count against the cube limit.",
-    "id": "2.5.0.21"
+    "id": "2.5.0.21",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Staff of Souls",
     "content": "Whenever the staff hits an unarmored, non-undead target, the hero wielding the staff heals one wound.",
-    "id": "2.5.0.22"
+    "id": "2.5.0.22",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Staff of the Magi",
     "content": "Epic treasure. The hero may choose to ignore one wound symbol on a spell card.",
-    "id": "2.5.0.23"
+    "id": "2.5.0.23",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sword of Torment",
     "content": "Epic treasure. Extra sharp. The hero loses one health while this treasure is equipped. The hero regains the health if the treasure is unequipped.",
-    "id": "2.5.0.24"
+    "id": "2.5.0.24",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Temporary Mist Stone",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, a temporary version of the spell, Vapor Form, is cast. The spell expires at the end of the action phase of the next turn. No magic cubes are needed to cast this spell.",
-    "id": "2.5.0.25"
+    "id": "2.5.0.25",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tinkerer’s Timepiece",
     "content": "One-time use. The hero may take 2 extra actions of their choice on their turn.",
-    "id": "2.5.0.26"
+    "id": "2.5.0.26",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Vain Blade",
     "content": "Melee weapon. Must have 3 or more active charisma attribute icons in order to equip. If the hero has less then 3 active charisma attribute icons at any time, the card is immediately unequipped to the backpack.\n\n![](/images/c3da7217b84ea35d5c3a8c61f337855b5ed7c2d5.jpeg)\n\n![](/images/9a12c552445934092b7e20cebb7174109959f0fc.png)\n\nthis product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games. Mr. B Games logo is a trademark of Mr. B Games.",
-    "id": "2.5.0.27"
+    "id": "2.5.0.27",
+    "tags": [
+      "treasure"
+    ]
   }
 ]

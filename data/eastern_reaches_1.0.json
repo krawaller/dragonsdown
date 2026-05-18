@@ -237,307 +237,460 @@
     "level": 4,
     "title": "Adventurer’s Toolkit",
     "content": "When first revealed, draw one treasure, one item, one mission, and one spell. The base price of the toolkit is the sum of the attached cards. The treasure,  item, and mission may immediately be possessed by the hero or left in the toolkit. The spell may be learned as if the toolkit was a spell scroll. If not immediately possessed, the hero muyst spent an alert action to take the treasure, item, or mission from the toolkit.",
-    "id": "3.3.0.1"
+    "id": "3.3.0.1",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Amaranth of Action",
     "content": "One-time use. +1 attack speed for the duration of combat this turn. Does not count against the cube limit each combat round.",
-    "id": "3.3.0.2"
+    "id": "3.3.0.2",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Amber Spire",
     "content": "Epic treasure. When first revealed, draw three spells to attach to the spire. The base price of the amber spire is 5 + the price of the 3 attached spells. Cubes may not be placed on other weapons or spell cards when using this card. Each spell may be cast one time during combat by placing a might cube and a speed cube on the amber spire. When a spell is this way, process it normally, and then remove the spell from the treasure and the game. The amber spire is not a spell book and spells attached to it may not be learned. No magic cubes are needed to cast these spells.",
-    "id": "3.3.0.3"
+    "id": "3.3.0.3",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ancient Map",
     "content": "Subtract 1 from both dice when performing an action to take treasure from the treasure site in which the ancient map was found. It has no bonus at any other treasure site. Examples: If found in the trove, all loot die rolls at the trove are at -1. If found in the cavernous pit, future dexterity rolls are at -1. A die roll of 1 while using the ancient map equals a grabby hands result when looting.",
-    "id": "3.3.0.4"
+    "id": "3.3.0.4",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Aquaria’s Enchiridion",
     "content": "Epic treasure. This is a spell book for all game purposes except that it contains 6 spells.",
-    "id": "3.3.0.5"
+    "id": "3.3.0.5",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Blade of the Scorpion",
     "content": "Epic treasure. Melee weapon. Two optional might boxes, which may be filled in any order. Any might cube placed in the second might box is placed in the hero’s wounded box during the cleanup phase of combat.",
-    "id": "3.3.0.6"
+    "id": "3.3.0.6",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Book of Eternal Sand",
     "content": "Epic treasure. This is a spell book for all game purposes except that it contains 6 spells.",
-    "id": "3.3.0.7"
+    "id": "3.3.0.7",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Canopic Jar",
     "content": "Epic treasure. There are two canopic jars in the game and they have no game effect if possessed individually (heroes still earn the reward for possessing an epic treasure). If a single hero possesses both canopic jars simultaneously, immediately discard both jars, select any revealed civilization location, and note the location in the adventure journal.\n\nFrom that point forward, should the hero die in any way, they instead place their hero counter in the noted civilization location and do not die. They do not lose\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nany fame points, spells, or possessions, including cards gained after they found the canopic jars. All cubes remain where they are - healthy or wounded. The hero is undead for the remainder of the game. Should the hero die again, they die normally.",
-    "id": "3.3.0.8"
+    "id": "3.3.0.8",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Coin of Passage",
     "content": "One-time use. Only in play if using the ruthless riverlands terrain pack. May use a ferry during a move action without paying any gold.",
-    "id": "3.3.0.9"
+    "id": "3.3.0.9",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Dastanas of the Scorpion",
     "content": "Epic treasure. The hero may equip two one-handed weapons simultaneously. They may still only place cubes on one weapon per combat round, but may select either weapon each combat round.",
-    "id": "3.3.0.10"
+    "id": "3.3.0.10",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Duffel of Displacement",
     "content": "During an alert action, any treasure or item card may be placed in a random clearing in an adjacent map tile.",
-    "id": "3.3.0.11"
+    "id": "3.3.0.11",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Fish Fluke Statuette",
     "content": "Epic treasure. Only in play if using the ruthless riverlands terrain pack. May use ferries at a cost of 0 gold.",
-    "id": "3.3.0.12"
+    "id": "3.3.0.12",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ghutra of the Scorpion",
     "content": "Only in play if using the dreadful deserts terrain pack. The hero does not receive a wound at the end of their action phase when in a desert clearing.",
-    "id": "3.3.0.13"
+    "id": "3.3.0.13",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Golden Shroud",
     "content": "Armor. Cancel one sword. The golden shroud may not be struck or destroyed by attacks that hit the hero.",
-    "id": "3.3.0.14"
+    "id": "3.3.0.14",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Healer’s Flask",
     "content": "Each time a hero heals a cube due to a rest action, heal two cubes.",
-    "id": "3.3.0.15"
+    "id": "3.3.0.15",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Khatam of the Quick",
     "content": "Only in play if using the dreadful deserts terrain pack. +1 maneuver speed for combat occuring in a desert clearing.",
-    "id": "3.3.0.16"
+    "id": "3.3.0.16",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Kolah of the Horus’ Eye",
     "content": "Epic treasure. Once per turn, may look at the top treasure of a treasure site in the same clearing as the hero.",
-    "id": "3.3.0.17"
+    "id": "3.3.0.17",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Magewright’s Quill",
     "content": "Epic treasure. May use a learn spells action to write a spell that the hero has learned into a spell book or spell scroll. The hero receives one cube that matches the banner color of the spell. If a universal spell, the hero may choose any magic color. The spell is no longer known by the hero and is placed with the spell book or spell scroll. The hero does not earn any reward if they later relearn the spell using normal learn spell actions, but other heroes may do so normally.",
-    "id": "3.3.0.18"
+    "id": "3.3.0.18",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Magic Carpet",
     "content": "Epic treasure. The hero may fly. See flying in the core game rulebook.",
-    "id": "3.3.0.19"
+    "id": "3.3.0.19",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Mantle of the Djinn",
     "content": "The hero is considered hidden to all undead without performing a hide reaction.\n\nThey may not be blocked or targeted by the undead, though they can still be affected by the effects of non-targeted spells cast by the undead. Example: A hero wearing the mantle of the djinn could strike at an undead monster using a melee weapon and not be targeted by undead in the clearing.",
-    "id": "3.3.0.20"
+    "id": "3.3.0.20",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Moon Crystal",
     "content": "Only in play if using the dreadful deserts terrain pack. May reroll one search die per search action while in a desert clearing.",
-    "id": "3.3.0.21"
+    "id": "3.3.0.21",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Moon Mirror",
     "content": "Epic treasure. May reroll either of the numbered summoning die once per turn. The effects apply to the hero’s clearing only with the original die roll applying everywhere else.",
-    "id": "3.3.0.22"
+    "id": "3.3.0.22",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Morsel of Might",
     "content": "One-time use. Counts as a might cube in a might box for the duration of combat this turn. This cube does not count against the cube limit and a different card may be selected each round of combat.",
-    "id": "3.3.0.23"
+    "id": "3.3.0.23",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Obsidian Dagger",
     "content": "Melee or ranged weapon. Cubes may not be placed on other weapons or spell cards when using this card. May be used as a regular melee or ranged weapon by placing a might cube in the upper box or may be be used to cast the spell, rule undead, by placing a might cube and speed cube in the lower boxes. No magic cubes are needed to cast this spell. May not be used for both abilities in a single combat round.",
-    "id": "3.3.0.24"
+    "id": "3.3.0.24",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Pearl of Riversight",
     "content": "Only in play if using the ruthless riverlands terrain pack. May reroll one search die per search action while in a river clearing.",
-    "id": "3.3.0.25"
+    "id": "3.3.0.25",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Ripple Strike",
     "content": "Melee or ranged weapon. Only in play if using the ruthless riverlands terrain pack. Ripplestrike has +1 attack speed when combat is occurring in a river clearing.",
-    "id": "3.3.0.26"
+    "id": "3.3.0.26",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Riverwalkers",
     "content": "Only in play if using the ruthless riverlands terrain pack. The hero may choose to swim during a move action.",
-    "id": "3.3.0.27"
+    "id": "3.3.0.27",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Roc Egg",
     "content": "Epic treasure. No effect other than being valuable.",
-    "id": "3.3.0.28"
+    "id": "3.3.0.28",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sandglass of Eternity",
     "content": "Only in play if using the dreadful deserts terrain pack. Once per turn, receive one additional free action during any turn the hero is in a desert clearing.",
-    "id": "3.3.0.29"
+    "id": "3.3.0.29",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sandstrider Boots",
     "content": "Only in play if using the dreadful deserts terrain pack. When entering a desert clearing, the hero may continue moving to an adjacent desert clearing at no action cost. There is no limit to the number of desert clearings that a hero mayenter during a single action.",
-    "id": "3.3.0.30"
+    "id": "3.3.0.30",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Satchel of Suppression",
     "content": "During an alert action, may place any one red backpack treasure face-down underneath the satchel of suppression. Only one treasure may be in the satchel at any time. If a red backpack treasure is already underneath the satchel, it is placed face-up in the hero’s backpack.",
-    "id": "3.3.0.31"
+    "id": "3.3.0.31",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Seafang",
     "content": "Melee weapon. Extra sharp.",
-    "id": "3.3.0.32"
+    "id": "3.3.0.32",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Seal of the False King",
     "content": "All hiring is done at 2x price without rolling any haggle dice. Heroes in the same clearing as the seal of the false king have no attributes for any game effects.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
-    "id": "3.3.0.33"
+    "id": "3.3.0.33",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Seed of Speed",
     "content": "One-time use. +1 Maneuver speed for the duration of combat this turn. Does not count against the cube limit each combat round.",
-    "id": "3.3.0.34"
+    "id": "3.3.0.34",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Serpent Helm",
     "content": "Epic treasure. Armor. A hero may attempt to hire any monster with serpent in their name. There is no cost to pay for this hire, but the hero must haggle 3 times in a row without rolling any door symbols. Any door result cancels the hire attempt and prevents the hero from attempting to hire that monster for the rest of the turn (but not other serpents in the clearing).\n\nNote that the serpent helm does not prevent unhired serpents from blocking  and attacking the wearer of the helm. Thus, a hero most likely will be hidden while attempting to hire serpents to avoid being blocked and attacked.",
-    "id": "3.3.0.35"
+    "id": "3.3.0.35",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shekel of Captivation",
     "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Charismagic, is cast. No magic cubes are needed to cast this spell.",
-    "id": "3.3.0.36"
+    "id": "3.3.0.36",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shekel of Future Sight",
     "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Foresight, is cast. No magic cubes are needed to cast this spell.",
-    "id": "3.3.0.37"
+    "id": "3.3.0.37",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shekel of Gloom",
     "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Dark Presence, is cast. No magic cubes are needed to cast this spell.",
-    "id": "3.3.0.38"
+    "id": "3.3.0.38",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shekel of Shaking",
     "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Earthquake, is cast. No magic cubes are needed to cast this spell.",
-    "id": "3.3.0.39"
+    "id": "3.3.0.39",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shekel of Subjugation",
     "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\nOne-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Orc Call, is cast. No magic cubes are needed to cast this spell.",
-    "id": "3.3.0.40"
+    "id": "3.3.0.40",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shekel of the Sun",
     "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Safe Haven, is cast. No magic cubes are needed to cast this spell.",
-    "id": "3.3.0.41"
+    "id": "3.3.0.41",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Shekel of the Wind",
     "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Gale Blast, is cast. No magic cubes are needed to cast this spell.",
-    "id": "3.3.0.42"
+    "id": "3.3.0.42",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Staff of the Sharp Sands",
     "content": "Melee weapon. Only in play if the dreadful deserts terrain pack is in use. +1 sword if the combat is occurring in a desert clearing.",
-    "id": "3.3.0.43"
+    "id": "3.3.0.43",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Staff of Thaumaturgy",
     "content": "Epic treasure. Melee weapon. When the possessing hero performs and enchant action, they may choose to enchant the staff of thaumaturgy instead of the map tile. Do not flip over the map tile and place the chosen magic cube on the staff card instead. If the magic cube is used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the magic cube is discarded.",
-    "id": "3.3.0.44"
+    "id": "3.3.0.44",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "The Sting",
     "content": "One-time use. Attacks by this hero gain +1 sword for the duration of combat.",
-    "id": "3.3.0.45"
+    "id": "3.3.0.45",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Storm’s Eye",
     "content": "Epic treasure. Only in play if using the ruthless riverlands terrain pack. No movement during a move action may end on a river clearing. Thus, a hero could ferry from dock clearing to dock clearing, or river clearing to dock clearing, but may not swim, or ferry to a river clearing.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
-    "id": "3.3.0.46"
+    "id": "3.3.0.46",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Sunblade",
     "content": "Melee weapon. +1 sword when targeting undead.",
-    "id": "3.3.0.47"
+    "id": "3.3.0.47",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tactician’s Grasp",
     "content": "Epic treasure. After tactics are revealed, but before attacks are processed (Step 7 of combat), the hero may move one speed cube from attack speed to maneuver speed or vice versa (as long as their is any open speed box). During the clean up phase of combat, any moved cube is placed in the wounded box.",
-    "id": "3.3.0.48"
+    "id": "3.3.0.48",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Tail of the Scorpion",
     "content": "Epic treasure. Only in play if using the dreadful deserts terrain pack. If the tail of the scorpion is in a plains clearing, that clearing is treated as if it was a desert clearing for all effects.\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
-    "id": "3.3.0.49"
+    "id": "3.3.0.49",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "Trinket of Transmutation",
     "content": "One-time use. Remove any treasure or item card from the game that possessed by the hero and receive the gold price of it immediately.",
-    "id": "3.3.0.50"
+    "id": "3.3.0.50",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 4,
     "title": "War Weaver’s Needle",
     "content": "One-time use. Perform an immediate alert action, even during combat, including being allowed to place an additional speed cube if not already alerted this turn. If used after hero tactics are revealed (step 5), the hero may place the extra speed cube beginning in the next combat round.",
-    "id": "3.3.0.51"
+    "id": "3.3.0.51",
+    "tags": [
+      "treasure"
+    ]
   },
   {
     "level": 2,

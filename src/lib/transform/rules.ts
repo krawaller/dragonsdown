@@ -20,4 +20,11 @@ export const TRANSFORMS: Rule[] = [
       childrenOf: { parent: { titleRegex: "Class Advantages" } },
     },
   },
+  {
+    op: "addTag",
+    tag: "treasure",
+    target: {
+      childrenOf: { parent: { titleRegex: "Treasure Manifest" } },
+    },
+  },
 ];
