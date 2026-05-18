@@ -347,8 +347,32 @@ def assign_ids(sections: list[dict]) -> None:
         s["id"] = ".".join(str(c) for c in counters[:lvl])
 
 
+def derive_slug(stem: str) -> str:
+    """Convert a PDF filename stem into a URL slug.
+
+    `core_1.2`            -> `core`
+    `eastern_reaches_1.0` -> `eastern-reaches`
+
+    Strips a trailing `_<digits>.<digits>` version suffix, then swaps `_` for `-`.
+    """
+    return re.sub(r"_\d+\.\d+$", "", stem).replace("_", "-")
+
+
 def process_one(pdf: Path, out: Path) -> None:
     sections = extract(pdf)
+    slug = derive_slug(pdf.stem)
+    # Stamp `source` on every section and put identifier fields first for
+    # readable JSON output.
+    sections = [
+        {
+            "id": s["id"],
+            "source": slug,
+            "level": s["level"],
+            "title": s["title"],
+            "content": s["content"],
+        }
+        for s in sections
+    ]
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(sections, indent=2, ensure_ascii=False))
     print(f"{pdf.name}: {len(sections)} sections → {out}")

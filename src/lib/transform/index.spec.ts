@@ -9,6 +9,7 @@ function s(
 ): Section {
   return {
     id,
+    source: "test",
     level: opts.level ?? 1,
     title: opts.title ?? `Section ${id}`,
     content,

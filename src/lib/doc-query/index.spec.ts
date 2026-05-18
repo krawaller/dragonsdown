@@ -5,6 +5,7 @@ import type { Section, SectionLevel } from "../rulebooks";
 function s(id: string, opts: { level?: SectionLevel; title?: string } = {}): Section {
   return {
     id,
+    source: "test",
     level: opts.level ?? 1,
     title: opts.title ?? `Section ${id}`,
     content: "",

@@ -6,6 +6,8 @@ export type SectionLevel = 1 | 2 | 3 | 4;
 export type Section = {
   /** Hierarchical id like "2.1.0.3"; digit count equals `level`. */
   id: string;
+  /** Doc slug this section was extracted from (e.g. "core", "eastern-reaches"). */
+  source: string;
   level: SectionLevel;
   title: string;
   /** Markdown: **bold**, *italic*, `- ` bullets, `![](/images/<hash>.<ext>)` */

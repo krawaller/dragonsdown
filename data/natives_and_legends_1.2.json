@@ -1,686 +1,782 @@
 [
   {
+    "id": "1",
+    "source": "natives-and-legends",
     "level": 1,
     "title": "DRAGONS DOWN: NATIVES & LEGENDS",
-    "content": "![](/images/c21b8fff7a780b55ecfe62764bf7407526fc948c.jpeg)\n\n![](/images/e8cb9bbb48e1c75d87da7fce004d8972992ad8a5.jpeg)\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\n**Dragons Down: Natives & Legends** is organized into two expansions that may be played independently of each other or with both at the same time.\n\n**Natives** expands **Dragons Down** by introducing new natives that move across the land and can be hired by heroes, along with new civilization locations, merchants, treasures, missions, and hero classes to play. New components for the Natives expansion are marked with a small      in one corner.\n\n![](/images/615ce06ff72450e4e6ef781ba96375280c2e0583.jpeg)\n\n**Legends** adds new treasure sites that heroes must find buried within other sites. In addition, this expansion provides legendary treasures that are the most powerful artifacts in the game and monsters that may be your friends or foes. New components for the Legends expansion are marked with a small       in one corner and are explained later in these rules.\n\n![](/images/8431021571a2f823fde3a27cd6ecd7431dfba5c8.jpeg)\n\nCounters, round cardboard tokens, and hero chips do not have a mark.",
-    "id": "1"
+    "content": "![](/images/c21b8fff7a780b55ecfe62764bf7407526fc948c.jpeg)\n\n![](/images/e8cb9bbb48e1c75d87da7fce004d8972992ad8a5.jpeg)\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\n**Dragons Down: Natives & Legends** is organized into two expansions that may be played independently of each other or with both at the same time.\n\n**Natives** expands **Dragons Down** by introducing new natives that move across the land and can be hired by heroes, along with new civilization locations, merchants, treasures, missions, and hero classes to play. New components for the Natives expansion are marked with a small      in one corner.\n\n![](/images/615ce06ff72450e4e6ef781ba96375280c2e0583.jpeg)\n\n**Legends** adds new treasure sites that heroes must find buried within other sites. In addition, this expansion provides legendary treasures that are the most powerful artifacts in the game and monsters that may be your friends or foes. New components for the Legends expansion are marked with a small       in one corner and are explained later in these rules.\n\n![](/images/8431021571a2f823fde3a27cd6ecd7431dfba5c8.jpeg)\n\nCounters, round cardboard tokens, and hero chips do not have a mark."
   },
   {
+    "id": "2",
+    "source": "natives-and-legends",
     "level": 1,
     "title": "DRAGONS DOWN: NATIVES",
-    "content": "*“We were not the first people to enter the devastated lands. Some folks, like* *the elves and dwarves, had never left. Far more resilient than most, not all of* *those who returned were there for the purposes of rebuilding. Each of them* *had their own motives and aspirations....”*\n\nNatives represent the various civilized people that moved back into the land of Dragons Down. These people have organized into native groups for common goals and protection. They populate the land and move around it semi-randomly. Natives move onto and off of the map during monster activation. Heroes may hire natives on the map to follow them and fight on their behalf. But, beware! The natives can be fickle and will sometimes fight heroes for insults, both real and perceived.",
-    "id": "2"
+    "content": "*“We were not the first people to enter the devastated lands. Some folks, like* *the elves and dwarves, had never left. Far more resilient than most, not all of* *those who returned were there for the purposes of rebuilding. Each of them* *had their own motives and aspirations....”*\n\nNatives represent the various civilized people that moved back into the land of Dragons Down. These people have organized into native groups for common goals and protection. They populate the land and move around it semi-randomly. Natives move onto and off of the map during monster activation. Heroes may hire natives on the map to follow them and fight on their behalf. But, beware! The natives can be fickle and will sometimes fight heroes for insults, both real and perceived."
   },
   {
+    "id": "2.1",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Game Components",
-    "content": "Add the new components prior to normal game setup. The components should be incorporated as follows:\n\n- One new wilderness token for each terrain pack (5 new tokens in total). Mix these in with their matching wilderness tokens.\n\n- 3 new civilization locations (inn, campfire, encampment).\n\n- 12 new treasures. Mix these in with the other treasure cards.\n\n- 9 new deep treasures. Mix these in with the other deep treasure cards.\n\n- 18 new missions. Mix these in with the mission cards in play.\n\n- A new White native summoning die. Place near the other summoning dice.\n\n- 6 new civilization tokens. Mix these in with the civilization tokens in play.\n\n- One merchant board and 7 new civilization cards (see Natives Setup below).\n\n- 32 white native chips. Place these in the provided chip tray (see Natives Setup below).\n\n- 8 new class cards. Place these in the deck with the other class cards.\n\n- 4 new lineage cards. Place these in the deck with the other lineage cards.\n\n- 8 new hero chips + 4 animated skeleton chips + 1 witch’s familiar chip. Place these in the chip tray containing the other hero chips.\n\n- 6 hiring/trophy reference cards. One for each player to place near their hero board. One side shows the new hire action. The other side has a place to store monster trophies and hired natives.\n\n- 6 attribute tokens (some of the new missions grant permanent attributes which a player may mark using these tokens).\n\n- 25 fame tokens with a value of 10 for ease of making change during play.",
-    "id": "2.1"
+    "content": "Add the new components prior to normal game setup. The components should be incorporated as follows:\n\n- One new wilderness token for each terrain pack (5 new tokens in total). Mix these in with their matching wilderness tokens.\n\n- 3 new civilization locations (inn, campfire, encampment).\n\n- 12 new treasures. Mix these in with the other treasure cards.\n\n- 9 new deep treasures. Mix these in with the other deep treasure cards.\n\n- 18 new missions. Mix these in with the mission cards in play.\n\n- A new White native summoning die. Place near the other summoning dice.\n\n- 6 new civilization tokens. Mix these in with the civilization tokens in play.\n\n- One merchant board and 7 new civilization cards (see Natives Setup below).\n\n- 32 white native chips. Place these in the provided chip tray (see Natives Setup below).\n\n- 8 new class cards. Place these in the deck with the other class cards.\n\n- 4 new lineage cards. Place these in the deck with the other lineage cards.\n\n- 8 new hero chips + 4 animated skeleton chips + 1 witch’s familiar chip. Place these in the chip tray containing the other hero chips.\n\n- 6 hiring/trophy reference cards. One for each player to place near their hero board. One side shows the new hire action. The other side has a place to store monster trophies and hired natives.\n\n- 6 attribute tokens (some of the new missions grant permanent attributes which a player may mark using these tokens).\n\n- 25 fame tokens with a value of 10 for ease of making change during play."
   },
   {
+    "id": "2.2",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Player Setup",
-    "content": "Players may choose from any of the lineages and classes**.** Note that many of the new classes are designed to take advantage of native relationships.",
-    "id": "2.2"
+    "content": "Players may choose from any of the lineages and classes**.** Note that many of the new classes are designed to take advantage of native relationships."
   },
   {
+    "id": "2.3",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Natives Setup",
-    "content": "Place the **Natives expansion** content as follows within easy reach of all players:\n\n- The new merchants setup card with a random side face-up..\n\n- The new civilization cards with a random side face-up (one civilization card for each native group).\n\n- The new natives in the new chip tray. The new native groups do not start the game on the map. *Note: the consul and bodyguard no longer start on the* *map at game start and are always in play when using the Natives expansion.*",
-    "id": "2.3"
+    "content": "Place the **Natives expansion** content as follows within easy reach of all players:\n\n- The new merchants setup card with a random side face-up..\n\n- The new civilization cards with a random side face-up (one civilization card for each native group).\n\n- The new natives in the new chip tray. The new native groups do not start the game on the map. *Note: the consul and bodyguard no longer start on the* *map at game start and are always in play when using the Natives expansion.*"
   },
   {
+    "id": "2.4",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "New Map Tokens",
-    "content": "",
-    "id": "2.4"
+    "content": ""
   },
   {
+    "id": "2.4.0.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Civilization Tokens",
-    "content": "The **Natives expansion** includes 6 new civilization tokens. When an empty token is revealed, it behaves exactly the same as empty tokens in Dragons Down. When one of the tokens with a merchant name is revealed, fill the location on the new merchant board with the listed numbers of treasures, items, and missions. The merchant behaves exactly the same as a merchant in Dragons Down.",
-    "id": "2.4.0.1"
+    "content": "The **Natives expansion** includes 6 new civilization tokens. When an empty token is revealed, it behaves exactly the same as empty tokens in Dragons Down. When one of the tokens with a merchant name is revealed, fill the location on the new merchant board with the listed numbers of treasures, items, and missions. The merchant behaves exactly the same as a merchant in Dragons Down."
   },
   {
+    "id": "2.4.0.2",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Wilderness Tokens",
-    "content": "The **Natives expansion** adds 5 wilderness tokens (1 for each terrain pack). As described in the setup rules, mix each of these tokens into the wilderness tokens from the terrain packs in play. Each of these tokens is marked with a + sign on the front face of the token and is described below.\n\n- **Discovery:** Draw another wilderness token from the same terrain pack and place it in the map tile. The hero then rolls the two mission dice and receives the rewards indicated by the dice roll.\n\n![](/images/221736c10e77d8c95c28e709f0996b13be311c77.jpeg)\n\n- **Campfire/Encampment/Inn:** Draw an additional wilderness token from the same terrain pack and place it in the map tile per normal rules. Then, roll a die and place the matching larger civilization location counter in the indicated clearing. *Exception:* *If the die roll indicates a clearing with a treasure site or civilization* *location, reroll the die, unless there are no available clearings.* Draw two civilization tokens and place them in the map tile near the new civilization location. For all game purposes, these are civilization locations (like the keep, mine, outpost, sanctuary, and village).",
-    "id": "2.4.0.2"
+    "content": "The **Natives expansion** adds 5 wilderness tokens (1 for each terrain pack). As described in the setup rules, mix each of these tokens into the wilderness tokens from the terrain packs in play. Each of these tokens is marked with a + sign on the front face of the token and is described below.\n\n- **Discovery:** Draw another wilderness token from the same terrain pack and place it in the map tile. The hero then rolls the two mission dice and receives the rewards indicated by the dice roll.\n\n![](/images/221736c10e77d8c95c28e709f0996b13be311c77.jpeg)\n\n- **Campfire/Encampment/Inn:** Draw an additional wilderness token from the same terrain pack and place it in the map tile per normal rules. Then, roll a die and place the matching larger civilization location counter in the indicated clearing. *Exception:* *If the die roll indicates a clearing with a treasure site or civilization* *location, reroll the die, unless there are no available clearings.* Draw two civilization tokens and place them in the map tile near the new civilization location. For all game purposes, these are civilization locations (like the keep, mine, outpost, sanctuary, and village)."
   },
   {
+    "id": "2.5",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Basic Natives Rules",
-    "content": "![](/images/6d957bb38c5e6a6a71b1d3f0ac91bf5cbda1f4b5.jpeg)\n\n![](/images/9174cf25b2342dbeb5a38bb3eff20e043e110d94.jpeg)\n\n![](/images/eef6698c00c4d9cf92f255734ebd8e0315b531b9.jpeg)\n\nNatives counters are placed at the civilization location listed on the terrain setup card. All other natives are kept in the native trays until they are summoned to the map. *Exception: In the Natives expansion, the consul and bodyguard are in play for* *all terrain packs and stay in the native tray at game start. They summon as a group.*\n\nAll heroes are friendly to all natives unless one of the following occurs:\n\n- If a hero insults a native group, that hero becomes a **temporary** enemy to that entire native group. (see Insults below).\n\n- If a hero, or their hired native, targets an unhired native during combat, the hero become **temporary** enemies to all native groups in the clearing with the same respect icon until the end of combat.\n\n- If a hero, or their hired native, kills an unhired native, that hero becomes a **permanent** enemy to that entire native group for the rest of the game.\n\n- Temporary enemies become friendly at the end of combat each turn.\n\nHeroes may not perform trade or hire actions with natives that consider them an enemy. Unhired natives behave as monsters to their enemies. *i.e. they will block,* *challenge, target, and attack enemy heroes and their hired natives.* Unhired natives do not block or attack friendly heroes. Hired natives are controlled by their hiring hero (see Hired Natives on page 3 of these rules). Heroes may only claim a title or complete a mission with the **unhired native leader**.",
-    "id": "2.5"
+    "content": "![](/images/6d957bb38c5e6a6a71b1d3f0ac91bf5cbda1f4b5.jpeg)\n\n![](/images/9174cf25b2342dbeb5a38bb3eff20e043e110d94.jpeg)\n\n![](/images/eef6698c00c4d9cf92f255734ebd8e0315b531b9.jpeg)\n\nNatives counters are placed at the civilization location listed on the terrain setup card. All other natives are kept in the native trays until they are summoned to the map. *Exception: In the Natives expansion, the consul and bodyguard are in play for* *all terrain packs and stay in the native tray at game start. They summon as a group.*\n\nAll heroes are friendly to all natives unless one of the following occurs:\n\n- If a hero insults a native group, that hero becomes a **temporary** enemy to that entire native group. (see Insults below).\n\n- If a hero, or their hired native, targets an unhired native during combat, the hero become **temporary** enemies to all native groups in the clearing with the same respect icon until the end of combat.\n\n- If a hero, or their hired native, kills an unhired native, that hero becomes a **permanent** enemy to that entire native group for the rest of the game.\n\n- Temporary enemies become friendly at the end of combat each turn.\n\nHeroes may not perform trade or hire actions with natives that consider them an enemy. Unhired natives behave as monsters to their enemies. *i.e. they will block,* *challenge, target, and attack enemy heroes and their hired natives.* Unhired natives do not block or attack friendly heroes. Hired natives are controlled by their hiring hero (see Hired Natives on page 3 of these rules). Heroes may only claim a title or complete a mission with the **unhired native leader**."
   },
   {
+    "id": "2.6",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Native Summoning",
-    "content": "![](/images/80fe4889e6a78097d954aac6f7f32a3d395bb0cd.jpeg)\n\nThe **Natives expansion includes** a white native summoning die. During monster activation, when rolling the summoning dice, also roll this die.\n\nWhen a Monsters Return result is rolled on the wandering monster die, return all unhired natives in map tiles containing no heroes to the native tray. *Exception: The natives that begin on the map do not return to the* *monster tray via a Monsters Return result (e.g. knights, dwarves, etc.).*\n\n![](/images/18d7acd1ba9e728fd2a69ee676cc7644eabe8909.png)\n\nAfter processing the Gray and Black summoning dice, consult the native summoning die. The various symbols on the native summoning die match the symbols printed on the civilization cards. Four things need to be true for a native group to be summoned to a civilization location.\n\n1.\t The native summoning die result needs to match the symbol on the native group’s civilization card or the die shows the infinity symbol.\n\n2.\t A hero needs to be in a map **tile** containing a civilization location listed on the native group’s civilization card.\n\n3.\t There are no heroes in the **clearing** where the natives are currently located.\n\n4.\t There are no monsters in the clearing to which the natives are being summoned.\n\nIf all of the above are true, then move all unhired members of the matching native group from their current locations to the **civilization location** in the map tile (not necessarily the same clearing of the hero in the tile). Multiple native groups can be summoned to the same civilization location in a single turn.\n\nIf a native group is summoned to multiple civilization locations simultaneously,\n\n![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\nsummon the native group to the map tile containing the player closest to the start player in turn order. If there are multiple civilization locations that summon a native group in a single map tile, randomly determine which civilization location summons the natives.\n\n**Natives Flee:** At the end of monster and native summoning, any unhired natives that are in the same clearing with one or more monsters are returned to the native tray, including the natives that begin the game on the map (e.g. knights, dwarves, etc.).",
-    "id": "2.6"
+    "content": "![](/images/80fe4889e6a78097d954aac6f7f32a3d395bb0cd.jpeg)\n\nThe **Natives expansion includes** a white native summoning die. During monster activation, when rolling the summoning dice, also roll this die.\n\nWhen a Monsters Return result is rolled on the wandering monster die, return all unhired natives in map tiles containing no heroes to the native tray. *Exception: The natives that begin on the map do not return to the* *monster tray via a Monsters Return result (e.g. knights, dwarves, etc.).*\n\n![](/images/18d7acd1ba9e728fd2a69ee676cc7644eabe8909.png)\n\nAfter processing the Gray and Black summoning dice, consult the native summoning die. The various symbols on the native summoning die match the symbols printed on the civilization cards. Four things need to be true for a native group to be summoned to a civilization location.\n\n1.\t The native summoning die result needs to match the symbol on the native group’s civilization card or the die shows the infinity symbol.\n\n2.\t A hero needs to be in a map **tile** containing a civilization location listed on the native group’s civilization card.\n\n3.\t There are no heroes in the **clearing** where the natives are currently located.\n\n4.\t There are no monsters in the clearing to which the natives are being summoned.\n\nIf all of the above are true, then move all unhired members of the matching native group from their current locations to the **civilization location** in the map tile (not necessarily the same clearing of the hero in the tile). Multiple native groups can be summoned to the same civilization location in a single turn.\n\nIf a native group is summoned to multiple civilization locations simultaneously,\n\n![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\nsummon the native group to the map tile containing the player closest to the start player in turn order. If there are multiple civilization locations that summon a native group in a single map tile, randomly determine which civilization location summons the natives.\n\n**Natives Flee:** At the end of monster and native summoning, any unhired natives that are in the same clearing with one or more monsters are returned to the native tray, including the natives that begin the game on the map (e.g. knights, dwarves, etc.)."
   },
   {
+    "id": "2.7",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Insults",
-    "content": "As the final step of monster activation, all heroes in a clearing with one or more unhired natives must roll two haggle dice:\n\n- If neither die shows a closed door, the clearing is peaceful. Nothing happens.\n\n- If both dice show doors, the hero has insulted all native groups in the clearing (see Buy Drinks below).\n\n- If one die shows a door, compare the number rolled on the other die to the matching respected icons of the hero for **each** native group in the clearing. Modify the number of icons by the titles, outlaw tokens, spells, treasures, and elf/dwarf kin rules as explained in the haggling section below. If the number rolled is higher than the modified number of icons, the hero has insulted that native group. This roll is not a hire or trade haggle attempt, so advantages, treasures, etc. that impact those specific actions do not apply.\n\n*Exception: A native group is never insulted by a hero that currently has a hired native* *from that native group.*\n\nExample: A dwarf warrior is in a clearing with the dwarves and the soldiers. The players rolls the haggle dice and rolls a closed door and a 3. The hero possesses two wisdom icons (respected by the dwarves) and receives +1 for being dwarf kin, thus the dwarves leave the hero alone. The hero possesses only 1 charisma icon (respected by the soldiers) and so the hero has insulted the soldiers.\n\n**Buy Drinks:** To keep the peace with insulted natives, the hero must spend 1 gold per unhired member of each insulted native group in the clearing. The hero may choose to buy drinks for none, some, or all insulted native groups, but must do so as a native group (not by individual native member). If the hero cannot, or chooses not to, buy drinks for a native group, the hero becomes temporary enemies with that native group (this may trigger a hide reaction).",
-    "id": "2.7"
+    "content": "As the final step of monster activation, all heroes in a clearing with one or more unhired natives must roll two haggle dice:\n\n- If neither die shows a closed door, the clearing is peaceful. Nothing happens.\n\n- If both dice show doors, the hero has insulted all native groups in the clearing (see Buy Drinks below).\n\n- If one die shows a door, compare the number rolled on the other die to the matching respected icons of the hero for **each** native group in the clearing. Modify the number of icons by the titles, outlaw tokens, spells, treasures, and elf/dwarf kin rules as explained in the haggling section below. If the number rolled is higher than the modified number of icons, the hero has insulted that native group. This roll is not a hire or trade haggle attempt, so advantages, treasures, etc. that impact those specific actions do not apply.\n\n*Exception: A native group is never insulted by a hero that currently has a hired native* *from that native group.*\n\nExample: A dwarf warrior is in a clearing with the dwarves and the soldiers. The players rolls the haggle dice and rolls a closed door and a 3. The hero possesses two wisdom icons (respected by the dwarves) and receives +1 for being dwarf kin, thus the dwarves leave the hero alone. The hero possesses only 1 charisma icon (respected by the soldiers) and so the hero has insulted the soldiers.\n\n**Buy Drinks:** To keep the peace with insulted natives, the hero must spend 1 gold per unhired member of each insulted native group in the clearing. The hero may choose to buy drinks for none, some, or all insulted native groups, but must do so as a native group (not by individual native member). If the hero cannot, or chooses not to, buy drinks for a native group, the hero becomes temporary enemies with that native group (this may trigger a hide reaction)."
   },
   {
+    "id": "2.8",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Hiring Natives",
-    "content": "During the action phase, heroes may now perform an additional action: Hire. A hero may attempt to hire a single unhired native from a native group in the same clearing as the hero. The native targeted for the hire attempt must be the highest numbered unhired native in the native group in the clearing. If there are no numbered, unhired natives in the selected native group, the hero may attempt to hire the native leader.\n\n![](/images/f14384bea88beeee7a5542ab998c7c06e3d70a07.png)\n\n**Consul Exception:** The consul and bodyguard may never be hired. They are in **Dragons Down** on the king’s business.\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nHiring of natives is subject to the following rules:\n\n- A native may not be hired if the hero is an enemy to the native group.\n\n- The base price to hire a native is 4x the fame value shown on the front of the native counter.\n\n- If the hero cannot, or does not want to, pay the full price, they may haggle over the price to hire the native (see Haggling with Natives below).\n\nOnce a native is hired, place the native token on the hero’s hire card. They are now a hired native (see Hired Natives below).\n\nIf the native is not hired for any reason, they remain with their native group.",
-    "id": "2.8"
+    "content": "During the action phase, heroes may now perform an additional action: Hire. A hero may attempt to hire a single unhired native from a native group in the same clearing as the hero. The native targeted for the hire attempt must be the highest numbered unhired native in the native group in the clearing. If there are no numbered, unhired natives in the selected native group, the hero may attempt to hire the native leader.\n\n![](/images/f14384bea88beeee7a5542ab998c7c06e3d70a07.png)\n\n**Consul Exception:** The consul and bodyguard may never be hired. They are in **Dragons Down** on the king’s business.\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nHiring of natives is subject to the following rules:\n\n- A native may not be hired if the hero is an enemy to the native group.\n\n- The base price to hire a native is 4x the fame value shown on the front of the native counter.\n\n- If the hero cannot, or does not want to, pay the full price, they may haggle over the price to hire the native (see Haggling with Natives below).\n\nOnce a native is hired, place the native token on the hero’s hire card. They are now a hired native (see Hired Natives below).\n\nIf the native is not hired for any reason, they remain with their native group."
   },
   {
+    "id": "2.8.1",
+    "source": "natives-and-legends",
     "level": 3,
     "title": "Haggling with Natives",
-    "content": "A hero may haggle with a native group over the price of a native they are trying to hire during a hire action.\n\nEach native group has a respect icon printed on their civilization card and on the front side of all native counters.\n\nThe haggle number the hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the hero’s lineage and class cards that match the native’s respect icon.\n\n- **Title:** +1 if the hero has placed one or more cubes on the native group’s civilization card.\n\n- **Outlaw:** If the hero possesses one or more outlaw tokens, +1 if haggling with a native that respects only cunning and -1 if haggling with a native that respects only wisdom. The number of outlaw tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or treasures.\n\n- **Elf Kin:** An elf hero attempting to hire from the elves native group receives a +1 bonus. An elf hero attempting to hire from the dwarves native group receives a -1 penalty.\n\n- **Dwarf Kin:** A dwarf hero attempting to hire from the dwarves native group receives a +1 bonus. A dwarf hero attempting to hire from the elves native group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling hero rolls two haggle dice:\n\n- If either die shows a closed door, the haggle attempt fails and the native group closes communication with the hero for the rest of the turn. No more hire attempts may be made with that native group by that hero until the following turn.\n\n![](/images/83acdc879ec59177c3b3fcfee0bbb084d8ec444f.png)\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the hire action is terminated. The hero may attempt to hire and haggle with the native group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the native during this hire action is reduced by a factor of one (from 4x to 3x to 2x to 1x). The hero may accept, reject, or continue haggling as part of the same hire action, if they wish. The price to hire a native is never less than 1x.",
-    "id": "2.8.1"
+    "content": "A hero may haggle with a native group over the price of a native they are trying to hire during a hire action.\n\nEach native group has a respect icon printed on their civilization card and on the front side of all native counters.\n\nThe haggle number the hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the hero’s lineage and class cards that match the native’s respect icon.\n\n- **Title:** +1 if the hero has placed one or more cubes on the native group’s civilization card.\n\n- **Outlaw:** If the hero possesses one or more outlaw tokens, +1 if haggling with a native that respects only cunning and -1 if haggling with a native that respects only wisdom. The number of outlaw tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or treasures.\n\n- **Elf Kin:** An elf hero attempting to hire from the elves native group receives a +1 bonus. An elf hero attempting to hire from the dwarves native group receives a -1 penalty.\n\n- **Dwarf Kin:** A dwarf hero attempting to hire from the dwarves native group receives a +1 bonus. A dwarf hero attempting to hire from the elves native group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling hero rolls two haggle dice:\n\n- If either die shows a closed door, the haggle attempt fails and the native group closes communication with the hero for the rest of the turn. No more hire attempts may be made with that native group by that hero until the following turn.\n\n![](/images/83acdc879ec59177c3b3fcfee0bbb084d8ec444f.png)\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the hire action is terminated. The hero may attempt to hire and haggle with the native group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the native during this hire action is reduced by a factor of one (from 4x to 3x to 2x to 1x). The hero may accept, reject, or continue haggling as part of the same hire action, if they wish. The price to hire a native is never less than 1x."
   },
   {
+    "id": "2.9",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Hired Natives",
-    "content": "Once a native has been hired, the following rules apply:\n\n- The length of the hire term is 15 turns, starting on the turn of hire. Record the expiration date in the adventure journal. There is no limit to the number of natives a hero may hire.\n\n- At the end of combat on the turn a hire expires, place the newly unhired native(s) in the native tray, including natives that started the game on the map. e.g. knights. They will only return to the map via native summoning.\n\n- A hero may not hire a native that is hired by another hero until the hire term expires. A hero may attempt to extend the hire term of a native they currently have hired. To do so, select a native they have hired, perform a hire action, and follow the normal procedures for hiring. If successful, subtract the gold cost and add 15 turns to the end of the hire term.\n\n- Hired natives are fully controlled by the hiring hero. The hiring hero is responsible for all conduct of a hired native. e.g. if a hired native targets another native group the hero and all their hired natives become enemies.\n\n- Hired natives may not move or perform actions independently. Hired natives are assumed to be in the same location as the hero’s counter. *Exception: See Evade under “Hired Natives in Combat” below.*\n\n- Either side of a hired native chip may be used to satisfy the requirements of various in-game effects. *Example: A hired native with a 4 strength attack* *can open the massive door on the chamber.*\n\n- A hired native leader grants the hiring hero +1 action per turn. Multiple hired native leaders do not grant additional free actions.\n\n- Hired natives always have the same hidden status as the hiring hero.\n\n- An unblocked hero may terminate the hire of their hired natives during their action phase. If a hero flies out of a clearing, they immediately terminate the hire of any hired natives that cannot also fly. When a hero terminates a hire, place the native in the native tray.\n\n- A hired native is immune to spells cast by others to calm or control them. If a hero or hired native is gated/teleported/etc. away so that they are in different clearings at the end of combat, the hire is terminated and the native is returned to the native tray.",
-    "id": "2.9"
+    "content": "Once a native has been hired, the following rules apply:\n\n- The length of the hire term is 15 turns, starting on the turn of hire. Record the expiration date in the adventure journal. There is no limit to the number of natives a hero may hire.\n\n- At the end of combat on the turn a hire expires, place the newly unhired native(s) in the native tray, including natives that started the game on the map. e.g. knights. They will only return to the map via native summoning.\n\n- A hero may not hire a native that is hired by another hero until the hire term expires. A hero may attempt to extend the hire term of a native they currently have hired. To do so, select a native they have hired, perform a hire action, and follow the normal procedures for hiring. If successful, subtract the gold cost and add 15 turns to the end of the hire term.\n\n- Hired natives are fully controlled by the hiring hero. The hiring hero is responsible for all conduct of a hired native. e.g. if a hired native targets another native group the hero and all their hired natives become enemies.\n\n- Hired natives may not move or perform actions independently. Hired natives are assumed to be in the same location as the hero’s counter. *Exception: See Evade under “Hired Natives in Combat” below.*\n\n- Either side of a hired native chip may be used to satisfy the requirements of various in-game effects. *Example: A hired native with a 4 strength attack* *can open the massive door on the chamber.*\n\n- A hired native leader grants the hiring hero +1 action per turn. Multiple hired native leaders do not grant additional free actions.\n\n- Hired natives always have the same hidden status as the hiring hero.\n\n- An unblocked hero may terminate the hire of their hired natives during their action phase. If a hero flies out of a clearing, they immediately terminate the hire of any hired natives that cannot also fly. When a hero terminates a hire, place the native in the native tray.\n\n- A hired native is immune to spells cast by others to calm or control them. If a hero or hired native is gated/teleported/etc. away so that they are in different clearings at the end of combat, the hire is terminated and the native is returned to the native tray."
   },
   {
+    "id": "2.9.1",
+    "source": "natives-and-legends",
     "level": 3,
     "title": "Hired Natives in Combat",
-    "content": "",
-    "id": "2.9.1"
+    "content": ""
   },
   {
+    "id": "2.9.1.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Ambush",
-    "content": "Hidden natives that have ranged weapons or spells may ambush. The hero must roll to stay hidden during the cleanup step as if the hero ambushed. If multiple hired natives, and/or the hero, ambushes in a single combat round, the hero need only attempt one hide attempt. A failed hide roll unhides the hero and all hired natives.",
-    "id": "2.9.1.1"
+    "content": "Hidden natives that have ranged weapons or spells may ambush. The hero must roll to stay hidden during the cleanup step as if the hero ambushed. If multiple hired natives, and/or the hero, ambushes in a single combat round, the hero need only attempt one hide attempt. A failed hide roll unhides the hero and all hired natives."
   },
   {
+    "id": "2.9.1.2",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Challenge:",
-    "content": "All hired natives become unhidden if the hiring hero chooses to become unhidden. Hired natives always have the same hidden status as the hiring hero.\n\nHired natives are considered heroes, and not natives, for all combat purposes. i.e. Monsters, and possibly unhired natives, will challenge them.\n\nIf playing with the player vs. player optional rules, hired natives may challenge other heroes.\n\nHired natives will never challenge unhired members of their own native group.",
-    "id": "2.9.1.2"
+    "content": "All hired natives become unhidden if the hiring hero chooses to become unhidden. Hired natives always have the same hidden status as the hiring hero.\n\nHired natives are considered heroes, and not natives, for all combat purposes. i.e. Monsters, and possibly unhired natives, will challenge them.\n\nIf playing with the player vs. player optional rules, hired natives may challenge other heroes.\n\nHired natives will never challenge unhired members of their own native group."
   },
   {
+    "id": "2.9.1.3",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Evade:",
-    "content": "Hired natives never evade. If a hero evades, the hired natives will continue fighting.",
-    "id": "2.9.1.3"
+    "content": "Hired natives never evade. If a hero evades, the hired natives will continue fighting."
   },
   {
+    "id": "2.9.1.4",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Target:",
-    "content": "A hired native that challenges a hero must target that hero. If a hero evades a hired native that challenged them, the hired native targets no one that combat round, but may still be targeted by attacks.\n\nHired natives select a target at the same time as their hiring hero. When the hiring hero selects a target for a hired native, they also select which side of the native counter to place face-up.\n\nIf a hiring hero, or any hired natives of that hero, targets an unhired member of a native group, all natives of the same native group hired by that hero instantly unhire and become enemies.\n\n*In simple terms: A hero with hired natives cannot target a native group from which* *they have hired without consequences.*\n\nAt the end of the targeting step, each unhired native in the clearing that does not already have a target will target a random enemy in the clearing.",
-    "id": "2.9.1.4"
+    "content": "A hired native that challenges a hero must target that hero. If a hero evades a hired native that challenged them, the hired native targets no one that combat round, but may still be targeted by attacks.\n\nHired natives select a target at the same time as their hiring hero. When the hiring hero selects a target for a hired native, they also select which side of the native counter to place face-up.\n\nIf a hiring hero, or any hired natives of that hero, targets an unhired member of a native group, all natives of the same native group hired by that hero instantly unhire and become enemies.\n\n*In simple terms: A hero with hired natives cannot target a native group from which* *they have hired without consequences.*\n\nAt the end of the targeting step, each unhired native in the clearing that does not already have a target will target a random enemy in the clearing."
   },
   {
+    "id": "2.9.1.5",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Monster Tactics:",
-    "content": "Monster tactics do not apply to hired natives. Hired natives do not change tactics from what is selected during the target step by their hiring hero.",
-    "id": "2.9.1.5"
+    "content": "Monster tactics do not apply to hired natives. Hired natives do not change tactics from what is selected during the target step by their hiring hero."
   },
   {
+    "id": "2.9.1.6",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Resolve:",
-    "content": "Resolve all combat using the normal combat rules.",
-    "id": "2.9.1.6"
+    "content": "Resolve all combat using the normal combat rules."
   },
   {
+    "id": "2.9.1.7",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Clean-Up:",
-    "content": "A hero must attempt to stay hidden if any of the hero’s hired natives ambushed this combat round. The results of the attempt apply to the hero and all of their hired natives.\n\nDuring cleanup, all hired natives of heroes that died are returned to the native tray.",
-    "id": "2.9.1.7"
+    "content": "A hero must attempt to stay hidden if any of the hero’s hired natives ambushed this combat round. The results of the attempt apply to the hero and all of their hired natives.\n\nDuring cleanup, all hired natives of heroes that died are returned to the native tray."
   },
   {
+    "id": "2.9.1.8",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Hired Native Death",
-    "content": "When a hired native is killed, the hiring hero loses fame equal to the fame value on the hired native counter, even if that results in negative fame for the hero. Track negative fame values in the adventure journal until the hero has positive fame. *Exception: the necromancer’s animated skeletons do not cause a loss in fame.*",
-    "id": "2.9.1.8"
+    "content": "When a hired native is killed, the hiring hero loses fame equal to the fame value on the hired native counter, even if that results in negative fame for the hero. Track negative fame values in the adventure journal until the hero has positive fame. *Exception: the necromancer’s animated skeletons do not cause a loss in fame.*"
   },
   {
+    "id": "2.9.1.9",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "End of Combat",
-    "content": "Discard all pink status cubes from hired natives.\n\nAll surviving hired natives, even if heroes evaded, are placed on the hero’s hire card.\n\nTemporary enemies become friends with all natives.",
-    "id": "2.9.1.9"
+    "content": "Discard all pink status cubes from hired natives.\n\nAll surviving hired natives, even if heroes evaded, are placed on the hero’s hire card.\n\nTemporary enemies become friends with all natives."
   },
   {
+    "id": "3",
+    "source": "natives-and-legends",
     "level": 1,
     "title": "DRAGONS DOWN: LEGENDS",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\n*“While looting the dead lich’s crypt, I noticed a small crack in the wall opposite* *the headstone. I started digging at it with my dagger and it gave way! Behind* *it I found a hidden passage marked with mysterious symbols. Will the tricks* *of this devious land never stop? I stepped inside....”*",
-    "id": "3"
+    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\n*“While looting the dead lich’s crypt, I noticed a small crack in the wall opposite* *the headstone. I started digging at it with my dagger and it gave way! Behind* *it I found a hidden passage marked with mysterious symbols. Will the tricks* *of this devious land never stop? I stepped inside....”*"
   },
   {
+    "id": "3.1",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Game Components",
-    "content": "Add the new components prior to normal game setup. The components should be incorporated as follows:\n\n![](/images/2ecdacd6df4cf0c28ccbefbef4bf4896cc37bc08.jpeg)\n\n- 10 legendary locations. These cards have a purple treasure chest on the card face and the same card back as deep treasures. Mix these cards in with the other deep treasure cards prior to play.\n\n- 7 legendary treasures with a Purple banner on the card face and the same card back as deep treasures. Set these cards to the side, Do **not** shuffle nor mix them in with the other deep treasure cards. All legendary treasures are epic treasures for the purposes of earning LPs and fame.\n\n- 10 legendary site tokens that will be placed in a map clearing to indicate a legendary location. You may leave these in the game box until needed.\n\n- 2 new monster tokens for the Imp and the Statue of the Templar. Place these chips in a monster tray until needed in the game.",
-    "id": "3.1"
+    "content": "Add the new components prior to normal game setup. The components should be incorporated as follows:\n\n![](/images/2ecdacd6df4cf0c28ccbefbef4bf4896cc37bc08.jpeg)\n\n- 10 legendary locations. These cards have a purple treasure chest on the card face and the same card back as deep treasures. Mix these cards in with the other deep treasure cards prior to play.\n\n- 7 legendary treasures with a Purple banner on the card face and the same card back as deep treasures. Set these cards to the side, Do **not** shuffle nor mix them in with the other deep treasure cards. All legendary treasures are epic treasures for the purposes of earning LPs and fame.\n\n- 10 legendary site tokens that will be placed in a map clearing to indicate a legendary location. You may leave these in the game box until needed.\n\n- 2 new monster tokens for the Imp and the Statue of the Templar. Place these chips in a monster tray until needed in the game."
   },
   {
+    "id": "3.2",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Legendary Locations",
-    "content": "",
-    "id": "3.2"
+    "content": ""
   },
   {
+    "id": "3.2.0.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Types of Legendary Locations",
-    "content": "A legendary location will always have one of the two symbols below printed on the legendary location card.\n\n![](/images/0d33c62755b527c1879291390208aac6f2fa5caf.jpeg)\n\n- **Sites:** Sites are permanent once revealed. A hero may search for and loot a site like any other treasure site.\n\n![](/images/732b156bb4c78bb399865531afbcf7445f4b83ae.png)\n\n- **Tests:** Tests are temporary obstacles a hero may attempt to overcome to gain rewards. Tests are removed from the game once completed.",
-    "id": "3.2.0.1"
+    "content": "A legendary location will always have one of the two symbols below printed on the legendary location card.\n\n![](/images/0d33c62755b527c1879291390208aac6f2fa5caf.jpeg)\n\n- **Sites:** Sites are permanent once revealed. A hero may search for and loot a site like any other treasure site.\n\n![](/images/732b156bb4c78bb399865531afbcf7445f4b83ae.png)\n\n- **Tests:** Tests are temporary obstacles a hero may attempt to overcome to gain rewards. Tests are removed from the game once completed."
   },
   {
+    "id": "3.2.0.2",
+    "source": "natives-and-legends",
     "level": 4,
     "title": ".Appearance of Legendary Locations",
-    "content": "During the course of the game, a loot action by a hero may reveal a legendary location when a hero draws a deep treasure card. When a legendary location is drawn, it must be revealed and the following things happen:\n\n- Place the legendary location card near the terrain setup cards (with the normal treasure sites).\n\n![](/images/8861030d8b1a7ce280765fec7553a1a1fef4b9c4.png)\n\n![](/images/632921b55414130081e15850fdca4f79482c2e9c.png)\n\nºº Follow any setup instructions that appear above the or symbols on the card.\n\nºº Should there be any confusion on the legendary location, each of them is explained in detail in the appendix of these rules.\n\n- Place the matching legendary location token in the clearing containing the active hero.\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\n- The hero that revealed the legendary location automatically finds it and may begin looting the site or attempting the test.\n\n- All other heroes must search or trade for the legendary location before they may loot the site or attempt the test.\n\nºº A hero may find the legendary location by searching for it using the normal search rules for a treasure site.\n\nºº A hero may find the legendary location by trading for it with another hero that knows the location while both are in the clearing containing the legendary location token.\n\nºº A hero does not have to find the treasure site in which the legendary location was found before searching for a legendary location.\n\n- There is no reward for revealing or finding a legendary location.",
-    "id": "3.2.0.2"
+    "content": "During the course of the game, a loot action by a hero may reveal a legendary location when a hero draws a deep treasure card. When a legendary location is drawn, it must be revealed and the following things happen:\n\n- Place the legendary location card near the terrain setup cards (with the normal treasure sites).\n\n![](/images/8861030d8b1a7ce280765fec7553a1a1fef4b9c4.png)\n\n![](/images/632921b55414130081e15850fdca4f79482c2e9c.png)\n\nºº Follow any setup instructions that appear above the or symbols on the card.\n\nºº Should there be any confusion on the legendary location, each of them is explained in detail in the appendix of these rules.\n\n- Place the matching legendary location token in the clearing containing the active hero.\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\n- The hero that revealed the legendary location automatically finds it and may begin looting the site or attempting the test.\n\n- All other heroes must search or trade for the legendary location before they may loot the site or attempt the test.\n\nºº A hero may find the legendary location by searching for it using the normal search rules for a treasure site.\n\nºº A hero may find the legendary location by trading for it with another hero that knows the location while both are in the clearing containing the legendary location token.\n\nºº A hero does not have to find the treasure site in which the legendary location was found before searching for a legendary location.\n\n- There is no reward for revealing or finding a legendary location."
   },
   {
+    "id": "3.2.0.3",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Interacting with Legendary Locations",
-    "content": "Each legendary location has special rules on how heroes interact which are explained in detail in the appendix of these rules. Some general rules apply.\n\n- Interacting with both tests and sites are optional. A hero does not have to loot a site or attempt a test. A hero may ignore a legendary location.\n\n- Each test includes a new action that heroes may perform. Performing the action listed on a legendary location counts as one of the 4 actions for the hero that turn. *Example: If a hero has found the Arcanis Enigma, they may* *attempt to solve the puzzle as one of their 4 actions that turn.*\n\n- Most tests compare a haggle dice roll to the attributes or skills of a hero in order to receive a reward. This is not a haggle attempt and no bonuses pertaining to haggling apply.\n\n- Heroes that are the first to possess a legendary treasure found in a legendary location earn the same reward as being the first to possess an epic treasure.",
-    "id": "3.2.0.3"
+    "content": "Each legendary location has special rules on how heroes interact which are explained in detail in the appendix of these rules. Some general rules apply.\n\n- Interacting with both tests and sites are optional. A hero does not have to loot a site or attempt a test. A hero may ignore a legendary location.\n\n- Each test includes a new action that heroes may perform. Performing the action listed on a legendary location counts as one of the 4 actions for the hero that turn. *Example: If a hero has found the Arcanis Enigma, they may* *attempt to solve the puzzle as one of their 4 actions that turn.*\n\n- Most tests compare a haggle dice roll to the attributes or skills of a hero in order to receive a reward. This is not a haggle attempt and no bonuses pertaining to haggling apply.\n\n- Heroes that are the first to possess a legendary treasure found in a legendary location earn the same reward as being the first to possess an epic treasure."
   },
   {
+    "id": "4",
+    "source": "natives-and-legends",
     "level": 1,
     "title": "OPTIONAL RULES",
-    "content": "",
-    "id": "4"
+    "content": ""
   },
   {
+    "id": "4.1",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Difficult Natives",
-    "content": "The buy drinks step of insults occurs before the hero rolls the haggle dice to determine if natives are insulted. Do not roll the dice for any native groups for which drinks were bought. Heroes may not buy drinks once the dice are rolled.",
-    "id": "4.1"
+    "content": "The buy drinks step of insults occurs before the hero rolls the haggle dice to determine if natives are insulted. Do not roll the dice for any native groups for which drinks were bought. Heroes may not buy drinks once the dice are rolled."
   },
   {
+    "id": "4.2",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Roaming Monsters",
-    "content": "During monster activation, roll the d6 along with the summoning dice. When wandering monsters are first summoned to a map tile (gray dice), they summon to the clearing indicated by the die roll, not the location of any heroes. If the rolled clearing does not exist, the monsters summon to the clearing of a hero as normal. Once on a map tile, wandering monsters move as per normal rules.\n\nIf a hero makes noise, all monsters summoned on the second summoning roll are summoned directly to the hero’s clearing.",
-    "id": "4.2"
+    "content": "During monster activation, roll the d6 along with the summoning dice. When wandering monsters are first summoned to a map tile (gray dice), they summon to the clearing indicated by the die roll, not the location of any heroes. If the rolled clearing does not exist, the monsters summon to the clearing of a hero as normal. Once on a map tile, wandering monsters move as per normal rules.\n\nIf a hero makes noise, all monsters summoned on the second summoning roll are summoned directly to the hero’s clearing."
   },
   {
+    "id": "4.3",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Expanded Enchantment",
-    "content": "Magic cubes in enchanted map tiles can be used on treasure cards that require a magic cube (e.g. Band of Sagacity). Each hero may use each enchanted cube in one magic box each combat round. Thus, a hero could use one enchanted cube on a treasure or use it to cast a spell, but not both. Two different heroes can each use the same enchanted cube independently. Enchanted cubes used in this manner do not count against the cube limit for the combat round.",
-    "id": "4.3"
+    "content": "Magic cubes in enchanted map tiles can be used on treasure cards that require a magic cube (e.g. Band of Sagacity). Each hero may use each enchanted cube in one magic box each combat round. Thus, a hero could use one enchanted cube on a treasure or use it to cast a spell, but not both. Two different heroes can each use the same enchanted cube independently. Enchanted cubes used in this manner do not count against the cube limit for the combat round."
   },
   {
+    "id": "4.4",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Enchantment Depletion",
-    "content": "When casting a spell in an enchanted map tile, the spell caster may use the enchantment cube for any spell box on the spell card. If the enchanted cube is used on a spell box with a wound symbol, the enchantment cube is discarded after the spell is cast, disenchanting the map tile immediately. The map tile does not flip over. This rule is a middle ground between the core rules and the Enchantment Limit optional rule from **Dragons Down**.",
-    "id": "4.4"
+    "content": "When casting a spell in an enchanted map tile, the spell caster may use the enchantment cube for any spell box on the spell card. If the enchanted cube is used on a spell box with a wound symbol, the enchantment cube is discarded after the spell is cast, disenchanting the map tile immediately. The map tile does not flip over. This rule is a middle ground between the core rules and the Enchantment Limit optional rule from **Dragons Down**."
   },
   {
+    "id": "4.5",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Native Possessions",
-    "content": "When a native group is first summoned to the map, including during initial placement, deal one face-down mission, item, and treasure card next to the native civilization card. Heroes may use a trade action while in the same clearing as an **unhired** native leader to look at the cards the native leader possesses and take the mission or buy the item or treasure (as if the native leader was a merchant, including all haggle rules). Heroes may not use any other trade steps with native leaders.\n\nIf a mission is to be completed with the native group possessing it, discard the mission and draw a new mission for the native group.\n\nIf the native leader is killed discard these cards. *Exception: If no enemy natives* *remain at the end of combat in which the native leader was killed, the hero that struck* *the death blow receives the item and treasure card.*",
-    "id": "4.5"
+    "content": "When a native group is first summoned to the map, including during initial placement, deal one face-down mission, item, and treasure card next to the native civilization card. Heroes may use a trade action while in the same clearing as an **unhired** native leader to look at the cards the native leader possesses and take the mission or buy the item or treasure (as if the native leader was a merchant, including all haggle rules). Heroes may not use any other trade steps with native leaders.\n\nIf a mission is to be completed with the native group possessing it, discard the mission and draw a new mission for the native group.\n\nIf the native leader is killed discard these cards. *Exception: If no enemy natives* *remain at the end of combat in which the native leader was killed, the hero that struck* *the death blow receives the item and treasure card.*"
   },
   {
+    "id": "4.6",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Mission Cycling",
-    "content": "Do not create a discard pile for missions. Whenever a hero **discards** missions, they are immediately shuffled back into the mission deck. When a hero completes a mission, it is removed from the game. This rule prevents players from trying to cycle through the mission deck looking for a specific mission that they know exists.",
-    "id": "4.6"
+    "content": "Do not create a discard pile for missions. Whenever a hero **discards** missions, they are immediately shuffled back into the mission deck. When a hero completes a mission, it is removed from the game. This rule prevents players from trying to cycle through the mission deck looking for a specific mission that they know exists."
   },
   {
+    "id": "4.7",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Earned Rewards",
-    "content": "When a discovery, item, or treasure wilderness token is drawn, the hero does not automatically receive the reward. Place it face-up in a random clearing in the map tile. The first hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the wilderness token face-up in a part of the map tile not containing a clearing.",
-    "id": "4.7"
+    "content": "When a discovery, item, or treasure wilderness token is drawn, the hero does not automatically receive the reward. Place it face-up in a random clearing in the map tile. The first hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the wilderness token face-up in a part of the map tile not containing a clearing."
   },
   {
+    "id": "5",
+    "source": "natives-and-legends",
     "level": 1,
     "title": "APPENDIX",
-    "content": "",
-    "id": "5"
+    "content": ""
   },
   {
+    "id": "5.1",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Lineage Advantages",
-    "content": "",
-    "id": "5.1"
+    "content": ""
   },
   {
+    "id": "5.1.0.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Gnome (Inventive)",
-    "content": "Gnomes are very inventive and crafty, often creating their own items. After all players have selected their starting items, the gnome draws 3 cards from the item deck and keeps one of them. Shuffle the unselected item cards back into the item deck.",
-    "id": "5.1.0.1"
+    "content": "Gnomes are very inventive and crafty, often creating their own items. After all players have selected their starting items, the gnome draws 3 cards from the item deck and keeps one of them. Shuffle the unselected item cards back into the item deck."
   },
   {
+    "id": "5.2",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Class Advantages",
-    "content": "![](/images/2a3d10014d1b77da7577a021c919bbe5dd6d5e65.png)",
-    "id": "5.2"
+    "content": "![](/images/2a3d10014d1b77da7577a021c919bbe5dd6d5e65.png)"
   },
   {
+    "id": "5.2.0.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Beastmaster (Faunamancy)",
     "content": "Beastmasters can speak to wandering monsters and control them. Wandering monsters (summoned by the gray dice) do not block, challenge, or target a beastmaster, nor may a beastmaster target them. All other monsters act normally with the beastmaster. A beastmaster may attempt to hire a wandering monster via a hire action. To succeed, the beastmaster must reduce the hire price to 1x. The beastmaster only fails in a haggle attempt by rolling a door symbol. The beastmaster pays no actual cost to hire a wandering monster. All other hired natives rules apply (page 3). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the beastmaster from hiring other wandering monsters on that same turn, even the same monster type (e.g. 2 giant bats). Beastmasters lose fame for hired monsters that are killed.\n\n![](/images/15b88aed557f5416f86ff6e96b2ada1da8af8e35.png)\n\nThe beastmaster may only have one wandering monster hired at a time. A beastmaster with a hired flying monster may choose to fly with the wandering monster during a move action, carrying only the beastmaster and no others natives. Beastmasters begin the game with no gold.",
-    "id": "5.2.0.1",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.2.0.2",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Berserker (Berserk)",
     "content": "Berserkers can go into a frenzy in combat. Once per combat during the challenge step, the berserker may convert one action cube of any type into a heart for the duration of combat. At the end of combat, the heart converts back to the replaced cube (killing the berserker if they lose their last heart). Berserkers begin the game with no gold.",
-    "id": "5.2.0.2",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.2.0.3",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Brigand (Brotherhood)",
     "content": "![](/images/93dc6b2b68a7a7f4fc472c6017f18dc771f9d01c.png)\n\nThe brigand is the former leader of the bandits that have been plaguing the land of **Dragons Down**. The brigand begins the game with an outlaw token. The bandits are a native group to the brigand that will neither block, nor attack, the brigand. The brigand may hire them in any order (bandit leader last). The bandits respect cunning for any haggle attempts. If the brigand performs a loot action at the hideout or attacks any unhired bandit, the bandits treat the brigand like any other hero for the rest of the game and all current bandit hires of the brigand are placed back in the native tray immediately.\n\n![](/images/aaa008d380614ca5eb75f99b39e7ac3c4f234cb9.png)\n\nWhen the brigand searches for the hideout, secret stash, or wrecked wagons, the search succeeds without rolling any dice and without triggering any hidden traps. The brigand draws one treasure from the main treasure deck, in addition to any other rewards they may receive, when they find each of these sites.",
-    "id": "5.2.0.3",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.2.0.4",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Burgess (Shrewd)",
     "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\nBurgesses became wealthy by being shrewd and clever negotiators. The starting price for the burgess to hire a native is 3x the fame value of the native, not 4x the fame value.",
-    "id": "5.2.0.4",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.2.0.5",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Explorer (Perceptive)",
     "content": "![](/images/bad51201627bf24b5392ffac4c9b346071ceb88c.png)\n\nExplorers have a keen eye for the unknown, often seeing clues that others miss. Once per explore or move action, upon revealing a wilderness token in a map tile, the explorer may mix the token back into the pool of wilderness tokens and draw another one. The explorer must accept this newly drawn wilderness token.",
-    "id": "5.2.0.5",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.2.0.6",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Necromancer (Gravecalling)",
     "content": "![](/images/bde291b97ac31a6bdf4779ffbcd981a68816a8d8.png)\n\nNecromancers have the ability to reanimate the dead as skeletal minions. If no monsters or enemy natives remain in the clearing at the end of combat, place one animated skeleton counter in the clearing for each hero, native, or non-undead monster that was killed in the clearing this turn, but not removed (e.g., fiery chasm removes all that it kills and does not produce animated skeletons). The necromancer may have a maximum of 4 animated skeletons in play at any time. Animated skeletons act as permanent hired natives until killed. If the necromancer is killed, all animated skeletons are also immediately killed earning fame for the hero that killed the necromancer. A necromancer earns no fame for killing their own animated skeletons, nor do they lose fame for animated skeletons that are killed. Skeletons are undead for all game purposes.",
-    "id": "5.2.0.6",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.2.0.7",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Outcast (Overlooked)",
     "content": "![](/images/37ae98d7d04a5b217297646c98b9b8c73633d0f2.png)\n\nThe outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The outcast may not use a trade action to look at the possessions of a merchant or buy them. They may still do all of the other options of a trade action, including looking at and taking missions normally. When selling possessions, the outcast receives half of the gold value, rounded up. The outcast may loot a merchant’s treasures and items as if it were a found treasure site (the outcast does not have to search for the merchant first). Organize merchant possessions as follows: deep treasures on top of treasures on top of items. New cards that are added to the merchant for any reason are placed on top of their respective cards already with the merchant. Players may not adjust the order of cards. The outcast takes the card at the spot indicated by the loot roll.\n\n![](/images/0555e8aabd2619efc65975d4443c2099c6ba4ea5.png)\n\nAfter looting (successful or not), the outcast must roll to hide (using all lineage, treasure, and sneak bonuses). If the outcast fails this hide roll, they are blocked, receive one outlaw token and may never again interact with that merchant in any way. Use the adventure journal to track merchants that are closed to the outcast.",
-    "id": "5.2.0.7",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.2.0.8",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Wizard (Studious)",
     "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one learn spells die once per learn spells action.",
-    "id": "5.2.0.8",
     "tags": [
       "classAdvantage"
     ]
   },
   {
+    "id": "5.3",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Native Reference",
-    "content": "![](/images/3e63787a4108e3c579adae1164ce6bdddac71e9a.png)\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)",
-    "id": "5.3"
+    "content": "![](/images/3e63787a4108e3c579adae1164ce6bdddac71e9a.png)\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)"
   },
   {
+    "id": "5.3.0.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Elf 2",
-    "content": "Elf 2 casts hesitation depending on her tactics. She will not target a hero, native, or monster that is already under the effects of a hesitation spell with another hesitation spell, if possible.",
-    "id": "5.3.0.1"
+    "content": "Elf 2 casts hesitation depending on her tactics. She will not target a hero, native, or monster that is already under the effects of a hesitation spell with another hesitation spell, if possible."
   },
   {
+    "id": "5.3.0.2",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Rogue 4",
-    "content": "Rogue 4 casts affliction and illusion depending on his tactics. When casting illusion, he will cast it on a random unhired native, including himself, not already under the effects of an illusion spell.",
-    "id": "5.3.0.2"
+    "content": "Rogue 4 casts affliction and illusion depending on his tactics. When casting illusion, he will cast it on a random unhired native, including himself, not already under the effects of an illusion spell."
   },
   {
+    "id": "5.4",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Treasure Manifest",
-    "content": "",
-    "id": "5.4"
+    "content": ""
   },
   {
+    "id": "5.4.0.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Alchemical Lure",
     "content": "One-time use. During the challenge step of combat, select one monster in the clearing and choose a hero, native, or monster (*other than itself*) in the clearing to be challenged, targeted, and attacked by the monster this combat round. The monster returns to normal behavior next combat round.",
-    "id": "5.4.0.1",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.2",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Arcane Bond",
     "content": "One-time use. During one hire action, the hire cost in gold is equal to the fame value. Must be used prior to any haggle attempts.",
-    "id": "5.4.0.2",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.3",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Arcane Sword",
     "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. One box of this weapon must be filled with a magic cube. An enchantment cube in the map tile may be used to fill this box, in which case it does not count against the cube limit for that combat round.",
-    "id": "5.4.0.3",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.4",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Banner of the Brigands",
     "content": "All heroes in the clearing with the banner gain 1 matching respected icon with the bashkirs, rogues, and sellswords. All heroes in the clearing with the banner lose 1 matching respected icon with knights, soldiers, and watch.  The effects are cumulative with other treasures.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
-    "id": "5.4.0.4",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.5",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Banner of Legitimacy",
     "content": "All heroes in the clearing with the banner lose 1 matching respected icon with the bashkirs, rogues, and sellswords. All heroes in the clearing with the banner gain 1 matching respected icon with the knights, soldiers, and watch. The effects are cumulative with other treasures.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
-    "id": "5.4.0.5",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.6",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Bard’s Bouzouki",
     "content": "Epic treasure. The hero has +1 cunning, wisdom, and charisma while equipped. The effects are cumulative with other treasures.",
-    "id": "5.4.0.6",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.7",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Baton of the Lost Prince",
     "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
-    "id": "5.4.0.7",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.8",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Casting Lens",
     "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the hero selects one spell on an active treasure card they possess (*not in the backpack*) to be cast. No magic cubes are needed to cast this spell. The spell is removed from the game when the spell expires.",
-    "id": "5.4.0.8",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.9",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Champion’s Blade",
     "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. The attack speed of the champion’s blade is always +1.",
-    "id": "5.4.0.9",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.10",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Champion’s Plate",
     "content": "Legendary treasure (earns a reward as an epic treasure). Armor. Armor value of 4. Weight of 3. Cancels two swords.",
-    "id": "5.4.0.10",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.11",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Cipherstone",
     "content": "One-time use. Prior to rolling the dice, automatically learn one spell on an active treasure card in the hero’s possession (*not in the backpack*) during a learn spells action. The hero must have a magic cube that matches the color of the learned spell.",
-    "id": "5.4.0.11",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.12",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Coronet of the Lost Prince",
     "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
-    "id": "5.4.0.12",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.13",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Elven Helm",
     "content": "Armor. Armor value of 1. No weight. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.13",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.14",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Elven Shield",
     "content": "Armor. Armor value of 1. No weight. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.14",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.15",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Elven Vest",
     "content": "Armor. Armor value of 1. No weight. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.15",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.16",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Eternium Grimoire",
     "content": "Legendary treasure (earns a reward as an epic treasure). When equipped, the player selects one of their hero’s healthy magic cubes and replaces it with a another magic cube of their choice. Place the original magic cube near the hero board for reference. During an alert action, the hero may change the transformed cube to any color of magic cube they wish (in addition to the other benefits of the alert action). If unequipped, the original magic cube replaces the transformed magic cube.",
-    "id": "5.4.0.16",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.17",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Fade Essence",
     "content": "One-time use. The hero is immediately hidden. Can be used during the action phase or the cleanup step of combat, including after a failed hide roll.",
-    "id": "5.4.0.17",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.18",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Figurine of the Stalk",
     "content": "Epic treasure. Valuable. During the challenge step of combat, monsters always challenge an unhidden hero that possesses the figurine of the stalk. Spells and other treasures take precedence over the figurine (*e.g. alchemical lure, discord, etc.*).\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
-    "id": "5.4.0.18",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.19",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Galdric of Enchantment",
     "content": "One-time use. The tile containing the hero immediately flips over and is enchanted with a magic color of the hero’s choice. If used while the disenchanter is in the tile, the galdric is discarded with no effect.",
-    "id": "5.4.0.19",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.20",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Harmonic Hand Axe",
     "content": "Melee and ranged weapon. Does not lose a sword icon when striking armor.",
-    "id": "5.4.0.20",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.21",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Hex of Servitude",
     "content": "One-time use. The hero may attempt to hire any native in the clearing during one hire action, not just the highest numbered native of a native group.",
-    "id": "5.4.0.21",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.22",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Holdfast Leathers",
     "content": "Legendary treasure (earns a reward as an epic treasure). Armor. Armor value of 2. Weight of 1. Cancels one sword. Attacks that hit this armor cause no wounds.",
-    "id": "5.4.0.22",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.23",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Mageshift Medallion",
     "content": "Legendary treasure (earns a reward as an epic treasure). When equipped, the player selects one of the hero’s magic cubes and replaces it with 2 might cubes. Place the cube near the hero board for reference. If unequipped, the two might cubes are returned to the supply and the original magic cube is returned to the hero. If either might cube being returned to the supply was wounded, the magic cube returns to the hero wounded. Once equipped, the magic cube that was replaced may not be changed unless the medallion is unequipped and then reequipped.",
-    "id": "5.4.0.23",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.24",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Panacea of Persuasion",
     "content": "One-time use. The hero has +1 cunning, wisdom, and charisma this turn. The effects are cumulative with other treasures.",
-    "id": "5.4.0.24",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.25",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Shield of the Lost Prince",
     "content": "Epic Treasure. Armor. Armor value of 2. Weight of 2. Cancels 1 extra sword icon.",
-    "id": "5.4.0.25",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.26",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Skull Splitter",
     "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. One mandatory might cube box on this card is automatically filled and does not count against the cube limit.",
-    "id": "5.4.0.26",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.27",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Sword of the Lost Prince",
     "content": "Epic treasure. Has a sword icon on two different might boxes. Valuable.",
-    "id": "5.4.0.27",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.4.0.28",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Whispering Compass",
     "content": "One-time use. May use all hidden paths this turn, even if not found. Used hidden paths are not found.",
-    "id": "5.4.0.28",
     "tags": [
       "treasure"
     ]
   },
   {
+    "id": "5.5",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Legendary Location Manifest",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)",
-    "id": "5.5"
+    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)"
   },
   {
+    "id": "5.5.0.1",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Adventurer’s Corpse",
-    "content": "A hero that has found the Adventurer’s Corpse may approach the corpse as one of their actions during their turn. Upon approaching the corpse, complete the following steps.\n\n- Shuffle the Holdfast Leathers and the Skull Splitter legendary treasure cards together with any deep treasure cards that are in the site containing the Adventurer’s Corpse. Place the shuffled deep treasure cards on top of any treasure cards in the treasure site. The site is looted per normal rules.\n\n- The hero receives one random curse.\n\n- Remove the Adventurer’s Corpse legendary location card and token from the game.",
-    "id": "5.5.0.1"
+    "content": "A hero that has found the Adventurer’s Corpse may approach the corpse as one of their actions during their turn. Upon approaching the corpse, complete the following steps.\n\n- Shuffle the Holdfast Leathers and the Skull Splitter legendary treasure cards together with any deep treasure cards that are in the site containing the Adventurer’s Corpse. Place the shuffled deep treasure cards on top of any treasure cards in the treasure site. The site is looted per normal rules.\n\n- The hero receives one random curse.\n\n- Remove the Adventurer’s Corpse legendary location card and token from the game."
   },
   {
+    "id": "5.5.0.2",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Arcanis Engima",
-    "content": "A hero that has found the arcanis enigma may attempt to solve the puzzle as one of their actions during their turn. Roll the 2 haggle dice.\n\n- If either die shows a closed door, the hero receives one random curse and the attempt fails.\n\n- If the hero rolls higher than their cunning, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their cunning, the attempt succeeds.\n\nºº If the map tile is not enchanted with both blue and purple cubes, flip the map tile and enchant it with both blue and purple magic cubes.\n\nºº If the map tile is already enchanted with both blue and purple cubes when a success is rolled, the hero receives the Mageshift Medalion. Remove the Arcanis Engima legendary location card and token from the game.",
-    "id": "5.5.0.2"
+    "content": "A hero that has found the arcanis enigma may attempt to solve the puzzle as one of their actions during their turn. Roll the 2 haggle dice.\n\n- If either die shows a closed door, the hero receives one random curse and the attempt fails.\n\n- If the hero rolls higher than their cunning, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their cunning, the attempt succeeds.\n\nºº If the map tile is not enchanted with both blue and purple cubes, flip the map tile and enchant it with both blue and purple magic cubes.\n\nºº If the map tile is already enchanted with both blue and purple cubes when a success is rolled, the hero receives the Mageshift Medalion. Remove the Arcanis Engima legendary location card and token from the game."
   },
   {
+    "id": "5.5.0.3",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Cavernous Pit",
-    "content": "When the Cavernous Pit is first revealed, draw two cards from the deep treasure pile and place them on top of the Cavernous Pit legendary location card.\n\nA hero that has found the Cavernous Pit may attempt to climb into the pit as one of their actions during their turn. The player places cubes to fill **attack** speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.\n\n- If either die shows a closed door, the hero receives one wound.\n\n- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one deep treasure card from the Cavernous Pit card.\n\nºº If the final deep treasure card is drawn from the Cavernous Pit, remove the Cavernous Pit legendary location card and token from the game.",
-    "id": "5.5.0.3"
+    "content": "When the Cavernous Pit is first revealed, draw two cards from the deep treasure pile and place them on top of the Cavernous Pit legendary location card.\n\nA hero that has found the Cavernous Pit may attempt to climb into the pit as one of their actions during their turn. The player places cubes to fill **attack** speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.\n\n- If either die shows a closed door, the hero receives one wound.\n\n- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one deep treasure card from the Cavernous Pit card.\n\nºº If the final deep treasure card is drawn from the Cavernous Pit, remove the Cavernous Pit legendary location card and token from the game."
   },
   {
+    "id": "5.5.0.4",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Collapsed Passage",
-    "content": "![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nWhen the Collapsed Passage is first revealed, draw two cards from the deep treasure pile and place them on top of the Collapsed Passage legendary location card.\n\nA hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 haggle dice and compare the result to the number of might cubes in the hero’s healthy box.\n\n- If either die shows a closed door, the hero receives one wound.\n\n- If the hero rolls higher than their might cubes, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their might cubes, the attempt succeeds.\n\nºº Draw one deep treasure card from the Collapsed Passage card.\n\nºº If the final deep treasure card is drawn from the Collapsed Passage, remove the legendary location card and token from the game.",
-    "id": "5.5.0.4"
+    "content": "![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nWhen the Collapsed Passage is first revealed, draw two cards from the deep treasure pile and place them on top of the Collapsed Passage legendary location card.\n\nA hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 haggle dice and compare the result to the number of might cubes in the hero’s healthy box.\n\n- If either die shows a closed door, the hero receives one wound.\n\n- If the hero rolls higher than their might cubes, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their might cubes, the attempt succeeds.\n\nºº Draw one deep treasure card from the Collapsed Passage card.\n\nºº If the final deep treasure card is drawn from the Collapsed Passage, remove the legendary location card and token from the game."
   },
   {
+    "id": "5.5.0.5",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Grave of the Champion",
-    "content": "When the Grave of the Champion is first revealed, draw one card from the deep treasure pile and shuffle it together with the Champion’s Plate and Champion’s Blade legendary treasure cards. Place these cards on top of the Grave of the Champion legendary location card.\n\nOnce found, heroes may use a loot action to loot the Grave of the Champion as they would any other treasure site. When looting the Grave of the Champion, a loot roll of 5 on either loot die causes the hero to receive a random curse.",
-    "id": "5.5.0.5"
+    "content": "When the Grave of the Champion is first revealed, draw one card from the deep treasure pile and shuffle it together with the Champion’s Plate and Champion’s Blade legendary treasure cards. Place these cards on top of the Grave of the Champion legendary location card.\n\nOnce found, heroes may use a loot action to loot the Grave of the Champion as they would any other treasure site. When looting the Grave of the Champion, a loot roll of 5 on either loot die causes the hero to receive a random curse."
   },
   {
+    "id": "5.5.0.6",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Infernal Glyphs",
-    "content": "A hero that has found the Infernal Glyphs may attempt to read the glyphs as one of their actions during their turn. Roll the 2 learn spells dice and compare the results to the Infernal Glyphs card. Apply any benefits that would normally apply when learning spells (lineage  and class advantages, treasures, spells, etc.).\n\n- If both dice show curse symbols, roll both of the **numbered** summoning dice and summon a number of wandering monsters equal to the gray die and a number of local monsters equal to the black die to the hero’s clearing. Monsters already in the map tile do not move. Arriving monsters will attempt to block the hero immediately.\n\n- If one die shows a curse symbol, but the other does not, the hero receives one random curse.\n\n- If the hero rolls two spell book symbols, the attempt succeeds.\n\nºº If the map tile is not enchanted with both a black and gray cube, flip the map tile and enchant it with a black and a gray cube.\n\nºº If the map tile is already enchanted with both a black and gray cube when a success is rolled, draw 3 cards from the top of the spell deck and look at them. The player may select any one spell from those drawn and learn it, earning the reward for learning a spell. The hero must be able to learn the selected spell. Shuffle all spells not learned back into the spells deck.\n\n- A hero taking subsequent read the glyphs actions on the same turn after a failed attempt does not need to reroll dice that show spell book symbols.\n\nThe Infernal Glyphs are a site, and thus permanent. There is no limit to the number of times a hero may attempt to read the glyphs.",
-    "id": "5.5.0.6"
+    "content": "A hero that has found the Infernal Glyphs may attempt to read the glyphs as one of their actions during their turn. Roll the 2 learn spells dice and compare the results to the Infernal Glyphs card. Apply any benefits that would normally apply when learning spells (lineage  and class advantages, treasures, spells, etc.).\n\n- If both dice show curse symbols, roll both of the **numbered** summoning dice and summon a number of wandering monsters equal to the gray die and a number of local monsters equal to the black die to the hero’s clearing. Monsters already in the map tile do not move. Arriving monsters will attempt to block the hero immediately.\n\n- If one die shows a curse symbol, but the other does not, the hero receives one random curse.\n\n- If the hero rolls two spell book symbols, the attempt succeeds.\n\nºº If the map tile is not enchanted with both a black and gray cube, flip the map tile and enchant it with a black and a gray cube.\n\nºº If the map tile is already enchanted with both a black and gray cube when a success is rolled, draw 3 cards from the top of the spell deck and look at them. The player may select any one spell from those drawn and learn it, earning the reward for learning a spell. The hero must be able to learn the selected spell. Shuffle all spells not learned back into the spells deck.\n\n- A hero taking subsequent read the glyphs actions on the same turn after a failed attempt does not need to reroll dice that show spell book symbols.\n\nThe Infernal Glyphs are a site, and thus permanent. There is no limit to the number of times a hero may attempt to read the glyphs."
   },
   {
+    "id": "5.5.0.7",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Riddle of the Imp",
-    "content": "A hero that has found the Riddle of the Imp may attempt to solve the riddle as one of their actions during their turn. Roll the 2 haggle dice.\n\n- If both dice show a closed door, the imp monster chip is placed in the clearing and the imp blocks the hero, even if the hero was hidden.\n\nºº During the combat phase, the imp will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.\n\nºº If this hero is killed, the imp is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.\n\nºº A hero that kills the imp receives the fame value as normal. If killed, the imp chip is taken as a reward and the Riddle of the Imp legendary location card and token is removed from the game.\n\nºº If combat ends in the round, the imp chip is returned to the chip tray.\n\n- If the hero rolls higher than their wisdom, the hero receives one random curse.\n\n- If the hero rolls less than or equal to their wisdom, the attempt succeeds.\n\nºº If the map tile is not enchanted with both yellow and another cube, flip the map tile and enchant it with a yellow cube and a magic cube of the player’s choice (other than yellow).\n\nºº If the map tile is already enchanted with both yellow and another cube when a success is rolled, the hero takes the imp chip as a reward and earns the indicated fame value. In addition, the hero may choose any magic cube they wish and places it in their healthy box. Remove the Riddle of the Imp legendary location card and token from the game.",
-    "id": "5.5.0.7"
+    "content": "A hero that has found the Riddle of the Imp may attempt to solve the riddle as one of their actions during their turn. Roll the 2 haggle dice.\n\n- If both dice show a closed door, the imp monster chip is placed in the clearing and the imp blocks the hero, even if the hero was hidden.\n\nºº During the combat phase, the imp will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.\n\nºº If this hero is killed, the imp is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.\n\nºº A hero that kills the imp receives the fame value as normal. If killed, the imp chip is taken as a reward and the Riddle of the Imp legendary location card and token is removed from the game.\n\nºº If combat ends in the round, the imp chip is returned to the chip tray.\n\n- If the hero rolls higher than their wisdom, the hero receives one random curse.\n\n- If the hero rolls less than or equal to their wisdom, the attempt succeeds.\n\nºº If the map tile is not enchanted with both yellow and another cube, flip the map tile and enchant it with a yellow cube and a magic cube of the player’s choice (other than yellow).\n\nºº If the map tile is already enchanted with both yellow and another cube when a success is rolled, the hero takes the imp chip as a reward and earns the indicated fame value. In addition, the hero may choose any magic cube they wish and places it in their healthy box. Remove the Riddle of the Imp legendary location card and token from the game."
   },
   {
+    "id": "5.5.0.8",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Spellcaster’s Simulacrum",
-    "content": "When the Spellcaster’s Simulacrum is first revealed, draw one card from the deep treasure pile and shuffle it together with the Eternium Grimoire and Arcane Sword legendary treasure cards. Place these cards on top of the Spellcaster’s Simulacrum legendary location card.\n\nOnce found, heroes may use a loot action to loot the Spellcaster’s Simulacrum as they would any other treasure site. If a hero rolls a 5 on either loot die, they receive a random curse.",
-    "id": "5.5.0.8"
+    "content": "When the Spellcaster’s Simulacrum is first revealed, draw one card from the deep treasure pile and shuffle it together with the Eternium Grimoire and Arcane Sword legendary treasure cards. Place these cards on top of the Spellcaster’s Simulacrum legendary location card.\n\nOnce found, heroes may use a loot action to loot the Spellcaster’s Simulacrum as they would any other treasure site. If a hero rolls a 5 on either loot die, they receive a random curse."
   },
   {
+    "id": "5.5.0.9",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Statue of the Templar",
-    "content": "A hero that has found the Statue of the Templar may attempt to awaken the statue as one of their actions during their turn. Roll the 2 haggle dice.\n\n- If both dice show a closed door, the statue monster chip is placed in the clearing and the statue blocks the hero, even if the hero was hidden.\n\nºº During the combat phase, the statue will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.\n\nºº If this hero is killed, the statue is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.\n\nºº A hero that kills the statue receives the fame value as normal. If killed, the statue chip is taken as a reward and the Statue of the Templar legendary location card and token is removed from the game.\n\nºº If combat ends in the round, the statue chip is returned to the chip tray.\n\n- If one die shows a closed door, the hero receives one random curse.\n\n- If the hero rolls higher than their charisma, the attempt fails.\n\n- If the hero rolls less than or equal to their charisma, the attempt succeeds.\n\nºº If the map tile is not enchanted with both white and green cubes, flip the map tile and enchant it with both white and green cubes.\n\nºº If the map tile is already enchanted with both white and green cubes when a success is rolled, the hero takes the statue chip as a hired native at no cost. The statue has an infinite hire term. All other hired natives rules apply (page 3). Remove the Statue of the Templar legendary location card and token from the game.",
-    "id": "5.5.0.9"
+    "content": "A hero that has found the Statue of the Templar may attempt to awaken the statue as one of their actions during their turn. Roll the 2 haggle dice.\n\n- If both dice show a closed door, the statue monster chip is placed in the clearing and the statue blocks the hero, even if the hero was hidden.\n\nºº During the combat phase, the statue will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.\n\nºº If this hero is killed, the statue is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.\n\nºº A hero that kills the statue receives the fame value as normal. If killed, the statue chip is taken as a reward and the Statue of the Templar legendary location card and token is removed from the game.\n\nºº If combat ends in the round, the statue chip is returned to the chip tray.\n\n- If one die shows a closed door, the hero receives one random curse.\n\n- If the hero rolls higher than their charisma, the attempt fails.\n\n- If the hero rolls less than or equal to their charisma, the attempt succeeds.\n\nºº If the map tile is not enchanted with both white and green cubes, flip the map tile and enchant it with both white and green cubes.\n\nºº If the map tile is already enchanted with both white and green cubes when a success is rolled, the hero takes the statue chip as a hired native at no cost. The statue has an infinite hire term. All other hired natives rules apply (page 3). Remove the Statue of the Templar legendary location card and token from the game."
   },
   {
+    "id": "5.5.0.10",
+    "source": "natives-and-legends",
     "level": 4,
     "title": "Treacherous Ledge",
-    "content": "When the Treacherous Ledge is first revealed, draw two cards from the deep treasure pile and place them on top of the Treacherous Ledge legendary location card.\n\nA hero that has found the Treacherous Ledge may attempt to cross the ledge as one of their actions during their turn. The player places cubes to fill **maneuver** speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.\n\n- If either die shows a closed door, the hero receives one wound.\n\n- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one deep treasure card from the Treacherous Ledge card.\n\nºº If the final deep treasure card is drawn from the Treacherous Ledge, remove the legendary location card and token from the game.",
-    "id": "5.5.0.10"
+    "content": "When the Treacherous Ledge is first revealed, draw two cards from the deep treasure pile and place them on top of the Treacherous Ledge legendary location card.\n\nA hero that has found the Treacherous Ledge may attempt to cross the ledge as one of their actions during their turn. The player places cubes to fill **maneuver** speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.\n\n- If either die shows a closed door, the hero receives one wound.\n\n- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.\n\n- If the hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one deep treasure card from the Treacherous Ledge card.\n\nºº If the final deep treasure card is drawn from the Treacherous Ledge, remove the legendary location card and token from the game."
   },
   {
+    "id": "6",
+    "source": "natives-and-legends",
     "level": 1,
     "title": "CREDITS AND ACKNOWLEDGMENTS",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\n*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\n![](/images/8357d79ffea11965fd5eccf779a824cea27abb45.png)\n\nHiring Natives *(abbreviated: see full rules)*\n\nAlways hire the highest numbered unhired native in the native group.\n\nIf there are no numbered, unhired natives in the selected native group, the hero may attempt to hire the native leader.\n\nThe consul and bodyguard may never be hired.\n\nThe price to hire a native is 4x the fame value on the native counter.\n\nThe hero may haggle over the price to hire the native.\n\nThe hire term is 15 turns starting on the turn of hire.",
-    "id": "6"
+    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\n*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\n![](/images/8357d79ffea11965fd5eccf779a824cea27abb45.png)\n\nHiring Natives *(abbreviated: see full rules)*\n\nAlways hire the highest numbered unhired native in the native group.\n\nIf there are no numbered, unhired natives in the selected native group, the hero may attempt to hire the native leader.\n\nThe consul and bodyguard may never be hired.\n\nThe price to hire a native is 4x the fame value on the native counter.\n\nThe hero may haggle over the price to hire the native.\n\nThe hire term is 15 turns starting on the turn of hire."
   },
   {
+    "id": "6.1",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Haggling",
-    "content": "The haggle number the hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the hero’s lineage and class cards that match the native’s respect icon.\n\n- **Title:** +1 if the hero has placed one or more cubes on the native group’s civilization card.\n\n- **Outlaw:** If the hero possesses one or more outlaw tokens, +1 if haggling with a native that respects only cunning and -1 if haggling with a native that respects only wisdom. The number of outlaw tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or treasures.\n\n- **Elf Kin:** An elf hero attempting to hire from the elves native group receives a +1 bonus. An elf hero attempting to hire from the dwarves native group receives a -1 penalty.\n\n- **Dwarf Kin:** A dwarf hero attempting to hire from the dwarves native group receives a +1 bonus. A dwarf hero attempting to hire from the elves native group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling hero rolls two haggle dice:\n\n- If either die shows a closed door, the haggle attempt fails and the native group closes communication with the hero for the rest of the turn. No more hire attempts may be made with that native group by that hero until the following turn.\n\n![](/images/83acdc879ec59177c3b3fcfee0bbb084d8ec444f.png)\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the hire action is terminated. The hero may attempt to hire and haggle with the native group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the native during this hire action is reduced by a factor of one (from 4x to 3x to 2x to 1x). The hero may continue haggling as part of the same hire action, if they wish. The price to hire a native is never less than 1x.\n\nDown logo and Active Magic Games logo are a trademark of Active Magic Games.\n\nInsults *(abbreviated: see full rules)*\n\nAfter monster summoning, all heroes in a clearing with one or more unhired natives must roll two haggle dice:\n\n- No closed doors: The clearing is peaceful. Nothing happens.\n\n- Two closed doors: The hero must buy drinks for all native groups in the clearing (see buy drinks in main rules).\n\n- One closed door: Compare the number rolled on the other die to the matching respected icons of the hero for **each** native group in the clearing, modified by titles, outlaw tokens, spells, treasures, and elf/dwarf kin rules. If the number rolled is higher than the modified number of icons, the hero must buy drinks for that native group.",
-    "id": "6.1"
+    "content": "The haggle number the hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the hero’s lineage and class cards that match the native’s respect icon.\n\n- **Title:** +1 if the hero has placed one or more cubes on the native group’s civilization card.\n\n- **Outlaw:** If the hero possesses one or more outlaw tokens, +1 if haggling with a native that respects only cunning and -1 if haggling with a native that respects only wisdom. The number of outlaw tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or treasures.\n\n- **Elf Kin:** An elf hero attempting to hire from the elves native group receives a +1 bonus. An elf hero attempting to hire from the dwarves native group receives a -1 penalty.\n\n- **Dwarf Kin:** A dwarf hero attempting to hire from the dwarves native group receives a +1 bonus. A dwarf hero attempting to hire from the elves native group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling hero rolls two haggle dice:\n\n- If either die shows a closed door, the haggle attempt fails and the native group closes communication with the hero for the rest of the turn. No more hire attempts may be made with that native group by that hero until the following turn.\n\n![](/images/83acdc879ec59177c3b3fcfee0bbb084d8ec444f.png)\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the hire action is terminated. The hero may attempt to hire and haggle with the native group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the native during this hire action is reduced by a factor of one (from 4x to 3x to 2x to 1x). The hero may continue haggling as part of the same hire action, if they wish. The price to hire a native is never less than 1x.\n\nDown logo and Active Magic Games logo are a trademark of Active Magic Games.\n\nInsults *(abbreviated: see full rules)*\n\nAfter monster summoning, all heroes in a clearing with one or more unhired natives must roll two haggle dice:\n\n- No closed doors: The clearing is peaceful. Nothing happens.\n\n- Two closed doors: The hero must buy drinks for all native groups in the clearing (see buy drinks in main rules).\n\n- One closed door: Compare the number rolled on the other die to the matching respected icons of the hero for **each** native group in the clearing, modified by titles, outlaw tokens, spells, treasures, and elf/dwarf kin rules. If the number rolled is higher than the modified number of icons, the hero must buy drinks for that native group."
   },
   {
+    "id": "6.2",
+    "source": "natives-and-legends",
     "level": 2,
     "title": "Native Summoning",
-    "content": "Below are the locations to which native groups may be summoned.\n\n![](/images/4cd43983274164b84a73e0a2d6ab9f818ec1148d.jpeg)\n\n![](/images/9140388e109622dc8a20484cec6a8de63f35d4bd.jpeg)\n\n![](/images/535e3f3d4f0ac4ba155d0107164d846e0e11da36.jpeg)\n\n**Civilization** **Location** **Terrain** **Pack**\n\n![](/images/1e4076d7ce1f85c009a7be153036433c16e31c73.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/6b46c333720bb0cfbaf88fd2f94e499730940201.png)\n\nBashkirs Sellswords\n\nEncampment\n\n![](/images/c22234bd5dfc1c76fad7ad6c7365983c23a95e1e.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/a3c8d646198a1bc85afe2bc7173ba943c8df6e2f.png)\n\nWatch Soldiers\n\nKeep\n\nConsul **Dwarves**\n\n![](/images/a3cba440af9d24df901dde9f84020bd572827c5e.png)\n\nWatch Soldiers\n\nMine\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/6b46c333720bb0cfbaf88fd2f94e499730940201.png)\n\nOutpost\n\nBashkirs Consul **Priests**\n\n![](/images/1e4076d7ce1f85c009a7be153036433c16e31c73.png)\n\nElves\n\nSanctuary\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/c22234bd5dfc1c76fad7ad6c7365983c23a95e1e.png)\n\nVillage\n\nNatives that begin in the native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing monsters. Natives that are in a clearing with monsters are placed in the native tray.\n\n![](/images/8b5e9cf484d2c9efbfb325ccc69a1b13e3ab4179.jpeg)",
-    "id": "6.2"
+    "content": "Below are the locations to which native groups may be summoned.\n\n![](/images/4cd43983274164b84a73e0a2d6ab9f818ec1148d.jpeg)\n\n![](/images/9140388e109622dc8a20484cec6a8de63f35d4bd.jpeg)\n\n![](/images/535e3f3d4f0ac4ba155d0107164d846e0e11da36.jpeg)\n\n**Civilization** **Location** **Terrain** **Pack**\n\n![](/images/1e4076d7ce1f85c009a7be153036433c16e31c73.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/6b46c333720bb0cfbaf88fd2f94e499730940201.png)\n\nBashkirs Sellswords\n\nEncampment\n\n![](/images/c22234bd5dfc1c76fad7ad6c7365983c23a95e1e.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/a3c8d646198a1bc85afe2bc7173ba943c8df6e2f.png)\n\nWatch Soldiers\n\nKeep\n\nConsul **Dwarves**\n\n![](/images/a3cba440af9d24df901dde9f84020bd572827c5e.png)\n\nWatch Soldiers\n\nMine\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/6b46c333720bb0cfbaf88fd2f94e499730940201.png)\n\nOutpost\n\nBashkirs Consul **Priests**\n\n![](/images/1e4076d7ce1f85c009a7be153036433c16e31c73.png)\n\nElves\n\nSanctuary\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/c22234bd5dfc1c76fad7ad6c7365983c23a95e1e.png)\n\nVillage\n\nNatives that begin in the native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing monsters. Natives that are in a clearing with monsters are placed in the native tray.\n\n![](/images/8b5e9cf484d2c9efbfb325ccc69a1b13e3ab4179.jpeg)"
   }
 ]
