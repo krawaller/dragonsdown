@@ -2808,6 +2808,13 @@
     "source": "core",
     "level": 3,
     "title": "Living Legend",
-    "content": "- +1 LP if the hero is on the map at game end.\n\n![](/images/56f0e346a0e4b7c8ee2ed726ccd6095b17d19505.jpeg)\n\n![](/images/85c8984d4d0e1c537c9b5dc78e739b9cbc3de31a.png)"
+    "content": "- +1 LP if the hero is on the map at game end."
+  },
+  {
+    "id": "15",
+    "source": "core",
+    "level": 1,
+    "title": "Credits",
+    "content": "![](/images/56f0e346a0e4b7c8ee2ed726ccd6095b17d19505.jpeg)\n\n![](/images/85c8984d4d0e1c537c9b5dc78e739b9cbc3de31a.png)"
   }
 ]

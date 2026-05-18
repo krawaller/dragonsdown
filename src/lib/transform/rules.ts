@@ -49,4 +49,9 @@ export const TRANSFORMS: Rule[] = [
     },
   },
   ...spellColorRules(),
+  {
+    op: "extractFooter",
+    target: "ALL",
+    title: "Credits",
+  },
 ];

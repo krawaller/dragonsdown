@@ -131,6 +131,112 @@ describe("Pipeline", () => {
   });
 });
 
+describe("extractFooter", () => {
+  it("splits a trailing image pair (no copyright text) into a new L1 section", () => {
+    const sections = [
+      s("1", "Intro body", { level: 1, title: "Intro" }),
+      s(
+        "2",
+        `Last entry body.\n\n${IMG("aa")}\n\n${IMG("bb")}`,
+        { level: 1, title: "Last" },
+      ),
+    ];
+    const rules: Rule[] = [
+      { op: "extractFooter", target: "ALL", title: "Credits" },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    expect(out).toHaveLength(3);
+    expect(out[1].content).toBe("Last entry body.");
+    expect(out[2]).toMatchObject({
+      id: "3",
+      level: 1,
+      title: "Credits",
+      source: "test",
+    });
+    expect(out[2].content).toContain(IMG("aa"));
+    expect(out[2].content).toContain(IMG("bb"));
+  });
+
+  it("includes trailing copyright text after the image pair", () => {
+    const sections = [
+      s(
+        "1",
+        `Body.\n\n${IMG("aa")}\n\n${IMG("bb")}\n\nCopyright Active Magic Games, all rights reserved.`,
+        { level: 1, title: "Last" },
+      ),
+    ];
+    const rules: Rule[] = [
+      { op: "extractFooter", target: "ALL", title: "Credits" },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    expect(out).toHaveLength(2);
+    expect(out[0].content).toBe("Body.");
+    expect(out[1].content).toContain("Copyright Active Magic Games");
+    expect(out[1].content).toContain(IMG("aa"));
+  });
+
+  it("is a no-op when the last section has fewer than 2 trailing images", () => {
+    const sections = [
+      s("1", `Body.\n\n${IMG("aa")}`, { level: 1, title: "Last" }),
+    ];
+    const rules: Rule[] = [
+      { op: "extractFooter", target: "ALL", title: "Credits" },
+    ];
+    expect(applyTransforms(sections, rules, "core")).toEqual(sections);
+  });
+
+  it("is a no-op when consecutive images aren't at the end", () => {
+    const sections = [
+      s(
+        "1",
+        `${IMG("aa")}\n\n${IMG("bb")}\n\nBody text follows the images.`,
+        { level: 1, title: "Last" },
+      ),
+    ];
+    const rules: Rule[] = [
+      { op: "extractFooter", target: "ALL", title: "Credits" },
+    ];
+    expect(applyTransforms(sections, rules, "core")).toEqual(sections);
+  });
+
+  it("assigns the next L1 id to the new section", () => {
+    const sections = [
+      s("1", "", { level: 1, title: "One" }),
+      s("2", "", { level: 1, title: "Two" }),
+      s("2.1", "", { level: 2, title: "Sub" }),
+      s(
+        "3",
+        `Body.\n\n${IMG("aa")}\n\n${IMG("bb")}`,
+        { level: 1, title: "Three" },
+      ),
+    ];
+    const rules: Rule[] = [
+      { op: "extractFooter", target: "ALL", title: "Credits" },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    expect(out[out.length - 1].id).toBe("4");
+  });
+
+  it("respects doc-level target gating", () => {
+    const sections = [
+      s(
+        "1",
+        `Body.\n\n${IMG("aa")}\n\n${IMG("bb")}`,
+        { level: 1, title: "Last" },
+      ),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "extractFooter",
+        target: { doc: "core" },
+        title: "Credits",
+      },
+    ];
+    expect(applyTransforms(sections, rules, "desolation")).toEqual(sections);
+    expect(applyTransforms(sections, rules, "core")).toHaveLength(2);
+  });
+});
+
 describe("addTag", () => {
   const sections = () => [
     s("1", "", { title: "Class Advantages", level: 2 }),

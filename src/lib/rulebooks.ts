@@ -1,4 +1,4 @@
-import { promises as fs } from "node:fs";
+import { readdirSync, readFileSync, promises as fs } from "node:fs";
 import path from "node:path";
 
 export type SectionLevel = 1 | 2 | 3 | 4;
@@ -22,19 +22,59 @@ export type Rulebook = {
   fileName: string;
 };
 
-export const RULEBOOKS: Rulebook[] = [
-  { slug: "core", title: "Core Rulebook", fileName: "core_1.2.json" },
-  { slug: "desolation", title: "Desolation", fileName: "desolation_1.2.json" },
-  { slug: "eastern-reaches", title: "Eastern Reaches", fileName: "eastern_reaches_1.0.json" },
-  { slug: "natives-and-legends", title: "Natives & Legends", fileName: "natives_and_legends_1.2.json" },
-];
+const DATA_DIR = path.join(process.cwd(), "data");
+
+/**
+ * Display-title overrides per slug. Slugs not listed here fall back to a
+ * title-cased version of the slug (e.g. "eastern-reaches" → "Eastern Reaches").
+ * Add an override when the auto-derived title doesn't read well.
+ */
+const TITLE_OVERRIDES: Record<string, string> = {
+  core: "Core Rulebook",
+  "natives-and-legends": "Natives & Legends",
+};
+
+function titleCase(slug: string): string {
+  return slug
+    .split("-")
+    .map((w) => (w ? w[0].toUpperCase() + w.slice(1) : w))
+    .join(" ");
+}
+
+/**
+ * Build the rulebook registry by reading every `*.json` in `data/` and pulling
+ * the `source` slug from each. The Python extractor is the single source of
+ * truth for slugs; this file only adds display titles on top.
+ */
+function discoverRulebooks(): Rulebook[] {
+  const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));
+  return files
+    .map((fileName): Rulebook => {
+      const text = readFileSync(path.join(DATA_DIR, fileName), "utf-8");
+      const data = JSON.parse(text) as Section[];
+      if (data.length === 0) {
+        throw new Error(`Empty data file: ${fileName}`);
+      }
+      const slug = data[0].source;
+      if (typeof slug !== "string" || !slug) {
+        throw new Error(
+          `Missing 'source' in ${fileName}; re-run \`npm run extract\` to regenerate.`,
+        );
+      }
+      const title = TITLE_OVERRIDES[slug] ?? titleCase(slug);
+      return { slug, title, fileName };
+    })
+    .sort((a, b) => a.slug.localeCompare(b.slug));
+}
+
+export const RULEBOOKS: Rulebook[] = discoverRulebooks();
 
 export function findRulebook(slug: string): Rulebook | undefined {
   return RULEBOOKS.find((book) => book.slug === slug);
 }
 
 export async function loadSections(book: Rulebook): Promise<Section[]> {
-  const file = path.join(process.cwd(), "data", book.fileName);
+  const file = path.join(DATA_DIR, book.fileName);
   const raw = await fs.readFile(file, "utf-8");
   return JSON.parse(raw) as Section[];
 }
