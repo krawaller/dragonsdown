@@ -7,7 +7,7 @@
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { TRANSFORMS } from "../transform";
+import { TRANSFORMS } from "../src/lib/transform/rules";
 import { applyTransforms } from "../src/lib/transform";
 import { RULEBOOKS, type Section } from "../src/lib/rulebooks";
 

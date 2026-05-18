@@ -1,4 +1,4 @@
-import type { Rule } from "./src/lib/transform";
+import type { Rule } from ".";
 
 /**
  * Manual massaging applied on top of the extracted JSON in `data/`.

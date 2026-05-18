@@ -1,4 +1,4 @@
-import type { Section } from "./rulebooks";
+import type { Section } from "../rulebooks";
 
 /**
  * Targets are designed to grow. Today we support:
