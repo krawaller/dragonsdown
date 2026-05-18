@@ -18,7 +18,8 @@ export type IgnoreImagesRule = {
 export type AddTagRule = {
   op: "addTag";
   target: Target;
-  tag: string;
+  /** A single tag or several to apply at once. Duplicates are skipped. */
+  tag: string | string[];
 };
 
 /**
@@ -49,13 +50,16 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
           ? { ...s, content: stripImages(s.content, rule.imageIds) }
           : s,
       );
-    case "addTag":
+    case "addTag": {
+      const toAdd = typeof rule.tag === "string" ? [rule.tag] : rule.tag;
       return sections.map((s) => {
         if (!ids.has(s.id)) return s;
         const existing = s.tags ?? [];
-        if (existing.includes(rule.tag)) return s;
-        return { ...s, tags: [...existing, rule.tag] };
+        const missing = toAdd.filter((t) => !existing.includes(t));
+        if (missing.length === 0) return s;
+        return { ...s, tags: [...existing, ...missing] };
       });
+    }
   }
 }
 

@@ -1,5 +1,26 @@
 import type { Rule } from ".";
 
+const SPELL_COLORS = [
+  "Universal",
+  "Black",
+  "Blue",
+  "Gray",
+  "Green",
+  "Purple",
+  "White",
+  "Yellow",
+] as const;
+
+function spellColorRules(): Rule[] {
+  return SPELL_COLORS.map((color) => ({
+    op: "addTag",
+    tag: ["spell", `${color[0].toLowerCase()}${color.slice(1)}Magic`],
+    target: {
+      childrenOf: { parent: { titleRegex: `${color} Spells` } },
+    },
+  }));
+}
+
 /**
  * Manual massaging applied on top of the extracted JSON in `data/`.
  * Rules run in order; later rules see the output of earlier ones.
@@ -27,4 +48,5 @@ export const TRANSFORMS: Rule[] = [
       childrenOf: { parent: { titleRegex: "Treasure Manifest" } },
     },
   },
+  ...spellColorRules(),
 ];

@@ -155,6 +155,29 @@ describe("addTag", () => {
     expect(out[3].tags).toBeUndefined(); // unrelated section
   });
 
+  it("accepts an array of tags and adds them all at once", () => {
+    const rules: Rule[] = [
+      {
+        op: "addTag",
+        tag: ["spell", "blackMagic"],
+        target: { id: "1.0.0.1" },
+      },
+    ];
+    const out = applyTransforms(sections(), rules, "core");
+    expect(out[1].tags).toEqual(["spell", "blackMagic"]);
+  });
+
+  it("array form is idempotent and partial-overlap safe", () => {
+    const start = [{ ...sections()[1], tags: ["spell"] }];
+    const rules: Rule[] = [
+      { op: "addTag", tag: ["spell", "blackMagic"], target: "ALL" },
+    ];
+    expect(applyTransforms(start, rules, "core")[0].tags).toEqual([
+      "spell",
+      "blackMagic",
+    ]);
+  });
+
   it("is idempotent (same tag added twice)", () => {
     const rules: Rule[] = [
       { op: "addTag", tag: "x", target: { id: "1.0.0.1" } },
