@@ -18,6 +18,18 @@ export const DERIVED_DOCS: DerivedDoc[] = [
     sortBy: "title",
   },
   {
+    slug: "treasure-manifest",
+    title: "Treasure Manifest",
+    pick: { tags: "treasure" },
+    sortBy: "title",
+  },
+  {
+    slug: "deep-treasure-manifest",
+    title: "Deep Treasure Manifest",
+    pick: { tags: "deepTreasure" },
+    sortBy: "title",
+  },
+  {
     slug: "spell-manifest",
     title: "Spell Manifest",
     groups: SPELL_COLORS().map((color) => ({

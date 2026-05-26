@@ -458,7 +458,7 @@
     "title": "Bard’s Bouzouki",
     "content": "Epic treasure. The hero has +1 cunning, wisdom, and charisma while equipped. The effects are cumulative with other treasures.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -468,7 +468,7 @@
     "title": "Baton of the Lost Prince",
     "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -518,7 +518,7 @@
     "title": "Coronet of the Lost Prince",
     "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -578,7 +578,7 @@
     "title": "Figurine of the Stalk",
     "content": "Epic treasure. Valuable. During the challenge step of combat, monsters always challenge an unhidden hero that possesses the figurine of the stalk. Spells and other treasures take precedence over the figurine (*e.g. alchemical lure, discord, etc.*).\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -668,7 +668,7 @@
     "title": "Sword of the Lost Prince",
     "content": "Epic treasure. Has a sword icon on two different might boxes. Valuable.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {

@@ -297,7 +297,7 @@
     "title": "Amber Spire",
     "content": "Epic treasure. When first revealed, draw three spells to attach to the spire. The base price of the amber spire is 5 + the price of the 3 attached spells. Cubes may not be placed on other weapons or spell cards when using this card. Each spell may be cast one time during combat by placing a might cube and a speed cube on the amber spire. When a spell is this way, process it normally, and then remove the spell from the treasure and the game. The amber spire is not a spell book and spells attached to it may not be learned. No magic cubes are needed to cast these spells.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -317,7 +317,7 @@
     "title": "Aquaria’s Enchiridion",
     "content": "Epic treasure. This is a spell book for all game purposes except that it contains 6 spells.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -327,7 +327,7 @@
     "title": "Blade of the Scorpion",
     "content": "Epic treasure. Melee weapon. Two optional might boxes, which may be filled in any order. Any might cube placed in the second might box is placed in the hero’s wounded box during the cleanup phase of combat.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -337,7 +337,7 @@
     "title": "Book of Eternal Sand",
     "content": "Epic treasure. This is a spell book for all game purposes except that it contains 6 spells.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -347,7 +347,7 @@
     "title": "Canopic Jar",
     "content": "Epic treasure. There are two canopic jars in the game and they have no game effect if possessed individually (heroes still earn the reward for possessing an epic treasure). If a single hero possesses both canopic jars simultaneously, immediately discard both jars, select any revealed civilization location, and note the location in the adventure journal.\n\nFrom that point forward, should the hero die in any way, they instead place their hero counter in the noted civilization location and do not die. They do not lose\n\nany fame points, spells, or possessions, including cards gained after they found the canopic jars. All cubes remain where they are - healthy or wounded. The hero is undead for the remainder of the game. Should the hero die again, they die normally.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -367,7 +367,7 @@
     "title": "Dastanas of the Scorpion",
     "content": "Epic treasure. The hero may equip two one-handed weapons simultaneously. They may still only place cubes on one weapon per combat round, but may select either weapon each combat round.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -387,7 +387,7 @@
     "title": "Fish Fluke Statuette",
     "content": "Epic treasure. Only in play if using the ruthless riverlands terrain pack. May use ferries at a cost of 0 gold.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -437,7 +437,7 @@
     "title": "Kolah of the Horus’ Eye",
     "content": "Epic treasure. Once per turn, may look at the top treasure of a treasure site in the same clearing as the hero.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -447,7 +447,7 @@
     "title": "Magewright’s Quill",
     "content": "Epic treasure. May use a learn spells action to write a spell that the hero has learned into a spell book or spell scroll. The hero receives one cube that matches the banner color of the spell. If a universal spell, the hero may choose any magic color. The spell is no longer known by the hero and is placed with the spell book or spell scroll. The hero does not earn any reward if they later relearn the spell using normal learn spell actions, but other heroes may do so normally.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -457,7 +457,7 @@
     "title": "Magic Carpet",
     "content": "Epic treasure. The hero may fly. See flying in the core game rulebook.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -487,7 +487,7 @@
     "title": "Moon Mirror",
     "content": "Epic treasure. May reroll either of the numbered summoning die once per turn. The effects apply to the hero’s clearing only with the original die roll applying everywhere else.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -547,7 +547,7 @@
     "title": "Roc Egg",
     "content": "Epic treasure. No effect other than being valuable.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -617,7 +617,7 @@
     "title": "Serpent Helm",
     "content": "Epic treasure. Armor. A hero may attempt to hire any monster with serpent in their name. There is no cost to pay for this hire, but the hero must haggle 3 times in a row without rolling any door symbols. Any door result cancels the hire attempt and prevents the hero from attempting to hire that monster for the rest of the turn (but not other serpents in the clearing).\n\nNote that the serpent helm does not prevent unhired serpents from blocking  and attacking the wearer of the helm. Thus, a hero most likely will be hidden while attempting to hire serpents to avoid being blocked and attacked.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -707,7 +707,7 @@
     "title": "Staff of Thaumaturgy",
     "content": "Epic treasure. Melee weapon. When the possessing hero performs and enchant action, they may choose to enchant the staff of thaumaturgy instead of the map tile. Do not flip over the map tile and place the chosen magic cube on the staff card instead. If the magic cube is used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the magic cube is discarded.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -727,7 +727,7 @@
     "title": "Storm’s Eye",
     "content": "Epic treasure. Only in play if using the ruthless riverlands terrain pack. No movement during a move action may end on a river clearing. Thus, a hero could ferry from dock clearing to dock clearing, or river clearing to dock clearing, but may not swim, or ferry to a river clearing.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -747,7 +747,7 @@
     "title": "Tactician’s Grasp",
     "content": "Epic treasure. After tactics are revealed, but before attacks are processed (Step 7 of combat), the hero may move one speed cube from attack speed to maneuver speed or vice versa (as long as their is any open speed box). During the clean up phase of combat, any moved cube is placed in the wounded box.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -757,7 +757,7 @@
     "title": "Tail of the Scorpion",
     "content": "Epic treasure. Only in play if using the dreadful deserts terrain pack. If the tail of the scorpion is in a plains clearing, that clearing is treated as if it was a desert clearing for all effects.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -1258,13 +1258,6 @@
   },
   {
     "id": "5",
-    "source": "eastern-reaches",
-    "level": 1,
-    "title": "Credits",
-    "content": ""
-  },
-  {
-    "id": "6",
     "source": "eastern-reaches",
     "level": 1,
     "title": "Credits",

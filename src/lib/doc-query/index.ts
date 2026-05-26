@@ -10,12 +10,15 @@ import type { Section, SectionLevel } from "../rulebooks";
  *   { doc: "core" }                        — every section in one doc
  *   { doc: "core", id: "2.2.0.12" }        — one specific entry
  *   { titleRegex: "Class Advantages" }     — sections whose title matches
+ *   { contentRegex: "^Epic treasure\\." }  — sections whose markdown content matches
  *   { level: 2 } / { level: [2, 4] }       — sections at given level(s)
+ *   { tags: ["spell", "blackMagic"] }      — sections having all listed tags
  *   { childrenOf: { parent: <Target> } }   — every section under a matched parent
  *                                             (by hierarchical id prefix)
  *   { and: [<Target>, <Target>] }          — intersection: must match all
+ *   { not: <Target> }                      — complement: sections NOT matched by inner
  */
-export type Target = "ALL" | DocTarget | ChildrenOfTarget | AndTarget;
+export type Target = "ALL" | DocTarget | ChildrenOfTarget | AndTarget | NotTarget;
 
 export type DocTarget = {
   /** Match against doc slug. Omit to match any doc. */
@@ -24,6 +27,8 @@ export type DocTarget = {
   id?: string;
   /** Pattern against section title. String form is compiled flagless. */
   titleRegex?: string | RegExp;
+  /** Pattern against section markdown content. String form is compiled flagless. */
+  contentRegex?: string | RegExp;
   /** Single level or set of levels. */
   level?: SectionLevel | SectionLevel[];
   /** Required tags. Array means every listed tag must be present (AND). */
@@ -38,6 +43,10 @@ export type AndTarget = {
   and: Target[];
 };
 
+export type NotTarget = {
+  not: Target;
+};
+
 /**
  * Coarse doc-level filter. Recurses through compound targets so a nested
  * `doc` field still gates the outer rule.
@@ -46,6 +55,12 @@ export function docMatchesTarget(target: Target, docSlug: string): boolean {
   if (target === "ALL") return true;
   if ("and" in target) {
     return target.and.every((t) => docMatchesTarget(t, docSlug));
+  }
+  if ("not" in target) {
+    // Defensive: NOT can match any doc unless the inner target gates by doc
+    // alone (the only case where we can confidently negate at doc level).
+    // Per-section filtering in selectMatchingIds enforces correctness.
+    return true;
   }
   if ("childrenOf" in target) {
     return docMatchesTarget(target.childrenOf.parent, docSlug);
@@ -73,6 +88,13 @@ export function selectMatchingIds(
       if (acc.size === 0) break;
     }
     return acc ?? new Set();
+  }
+
+  if ("not" in target) {
+    const inner = selectMatchingIds(target.not, sections);
+    return new Set(
+      sections.filter((s) => !inner.has(s.id)).map((s) => s.id),
+    );
   }
 
   if ("childrenOf" in target) {
@@ -106,6 +128,13 @@ function docTargetMatches(target: DocTarget, section: Section): boolean {
         ? new RegExp(target.titleRegex)
         : target.titleRegex;
     if (!re.test(section.title)) return false;
+  }
+  if (target.contentRegex !== undefined) {
+    const re =
+      typeof target.contentRegex === "string"
+        ? new RegExp(target.contentRegex)
+        : target.contentRegex;
+    if (!re.test(section.content)) return false;
   }
   if (target.level !== undefined) {
     const levels = Array.isArray(target.level) ? target.level : [target.level];

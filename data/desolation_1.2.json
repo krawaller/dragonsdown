@@ -245,7 +245,7 @@
     "title": "Armageddon Hammer",
     "content": "Epic treasure. Melee weapon. Optional might cube box on this card is automatically filled and does not count against the cube limit.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -255,7 +255,7 @@
     "title": "Brogans of the Birds",
     "content": "Epic treasure. May fly during combat and for one move action taken each turn.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -275,7 +275,7 @@
     "title": "Codex of Cognition",
     "content": "Epic treasure. May reroll one die during each learn spells action.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -295,7 +295,7 @@
     "title": "Dancing Sword",
     "content": "Epic treasure. The attack speed of the Dancing Sword is always +1.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -315,7 +315,7 @@
     "title": "Foci of the Spellcaster",
     "content": "Epic treasure. May place one magic cube in a might box. This cube must come from the hero’s healthy box and counts against the combat round limit.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -335,7 +335,7 @@
     "title": "Hand of the Lich",
     "content": "Epic treasure. The hero must wound one cube each turn at the end of their action phase. The attack speed of all spells cast by this hero is +1.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -355,7 +355,7 @@
     "title": "Helm of True Sight",
     "content": "Epic treasure. May reroll any number of dice once during each search action.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -365,7 +365,7 @@
     "title": "Jeweled Thief’s Skull",
     "content": "Epic treasure. Valuable.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -385,7 +385,7 @@
     "title": "Orb of Far Sight",
     "content": "Epic treasure. May perform a search action in any clearing in the current map tile or an adjacent map tile. Upon a successful search of an adjacent tile which has no wilderness or civilization tokens in it, place a matching token(s) in the tile. The hero may then look at the token and decide to place it face-down or face-up (receiving any rewards for revealing tokens).\n\nIf playing using the exploration rules, the hero may explore as if in a mountain clearing regardless of the actual clearing type.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -465,7 +465,7 @@
     "title": "Staff of the Magi",
     "content": "Epic treasure. The hero may choose to ignore one wound symbol on a spell card.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -475,7 +475,7 @@
     "title": "Sword of Torment",
     "content": "Epic treasure. Extra sharp. The hero loses one health while this treasure is equipped. The hero regains the health if the treasure is unequipped.",
     "tags": [
-      "treasure"
+      "deepTreasure"
     ]
   },
   {
@@ -510,13 +510,6 @@
   },
   {
     "id": "3",
-    "source": "desolation",
-    "level": 1,
-    "title": "Credits",
-    "content": ""
-  },
-  {
-    "id": "4",
     "source": "desolation",
     "level": 1,
     "title": "Credits",

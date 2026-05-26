@@ -47,7 +47,20 @@ export const TRANSFORMS: Rule[] = [
     op: "addTag",
     tag: "treasure",
     target: {
-      childrenOf: { parent: { titleRegex: "Treasure Manifest" } },
+      and: [
+        { childrenOf: { parent: { titleRegex: "Treasure Manifest" } } },
+        { not: { contentRegex: "^Epic treasure\\." } },
+      ],
+    },
+  },
+  {
+    op: "addTag",
+    tag: "deepTreasure",
+    target: {
+      and: [
+        { childrenOf: { parent: { titleRegex: "Treasure Manifest" } } },
+        { contentRegex: "^Epic treasure\\." },
+      ],
     },
   },
   ...spellColorRules(),

@@ -1,0 +1,622 @@
+[
+  {
+    "id": "3.3.0.3",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Amber Spire",
+    "content": "Epic treasure. When first revealed, draw three spells to attach to the spire. The base price of the amber spire is 5 + the price of the 3 attached spells. Cubes may not be placed on other weapons or spell cards when using this card. Each spell may be cast one time during combat by placing a might cube and a speed cube on the amber spire. When a spell is this way, process it normally, and then remove the spell from the treasure and the game. The amber spire is not a spell book and spells attached to it may not be learned. No magic cubes are needed to cast these spells.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.5",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Aquaria’s Enchiridion",
+    "content": "Epic treasure. This is a spell book for all game purposes except that it contains 6 spells.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.1",
+    "source": "desolation",
+    "level": 4,
+    "title": "Armageddon Hammer",
+    "content": "Epic treasure. Melee weapon. Optional might cube box on this card is automatically filled and does not count against the cube limit.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.4",
+    "source": "core",
+    "level": 4,
+    "title": "Ascendant Ornament",
+    "content": "Epic treasure. A purple magic cube placed on this treasure counts as a might cube on any might box on an active card of this hero. This card can have cubes placed on it in addition to other cards.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.5",
+    "source": "core",
+    "level": 4,
+    "title": "Band of Sagacity",
+    "content": "Epic treasure. A yellow magic cube placed on this treasure allows the hero to reroll a hit die roll by or against them one time per combat round. This card can have cubes placed on it in addition to other cards.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "5.4.0.6",
+    "source": "natives-and-legends",
+    "level": 4,
+    "title": "Bard’s Bouzouki",
+    "content": "Epic treasure. The hero has +1 cunning, wisdom, and charisma while equipped. The effects are cumulative with other treasures.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "5.4.0.7",
+    "source": "natives-and-legends",
+    "level": 4,
+    "title": "Baton of the Lost Prince",
+    "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.12",
+    "source": "core",
+    "level": 4,
+    "title": "Belt of the Beast",
+    "content": "Epic treasure. Receive one might cube while the treasure is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.6",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Blade of the Scorpion",
+    "content": "Epic treasure. Melee weapon. Two optional might boxes, which may be filled in any order. Any might cube placed in the second might box is placed in the hero’s wounded box during the cleanup phase of combat.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.7",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Book of Eternal Sand",
+    "content": "Epic treasure. This is a spell book for all game purposes except that it contains 6 spells.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.13",
+    "source": "core",
+    "level": 4,
+    "title": "Bow of the Hunt",
+    "content": "Epic treasure. Extra sharp. Ranged weapon.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.2",
+    "source": "desolation",
+    "level": 4,
+    "title": "Brogans of the Birds",
+    "content": "Epic treasure. May fly during combat and for one move action taken each turn.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.8",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Canopic Jar",
+    "content": "Epic treasure. There are two canopic jars in the game and they have no game effect if possessed individually (heroes still earn the reward for possessing an epic treasure). If a single hero possesses both canopic jars simultaneously, immediately discard both jars, select any revealed civilization location, and note the location in the adventure journal.\n\nFrom that point forward, should the hero die in any way, they instead place their hero counter in the noted civilization location and do not die. They do not lose\n\nany fame points, spells, or possessions, including cards gained after they found the canopic jars. All cubes remain where they are - healthy or wounded. The hero is undead for the remainder of the game. Should the hero die again, they die normally.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.17",
+    "source": "core",
+    "level": 4,
+    "title": "Cape of Alteration",
+    "content": "Epic treasure. Healthy might cubes may only be placed in speed boxes. Healthy speed cubes may only be placed in might action boxes. *Remember: Might cubes and* *boxes are red; speed cubes and boxes are brown.*",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.4",
+    "source": "desolation",
+    "level": 4,
+    "title": "Codex of Cognition",
+    "content": "Epic treasure. May reroll one die during each learn spells action.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "5.4.0.12",
+    "source": "natives-and-legends",
+    "level": 4,
+    "title": "Coronet of the Lost Prince",
+    "content": "Epic treasure. The hero has +1 matching respected icon during a hire action. The effects are cumulative with other treasures.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.6",
+    "source": "desolation",
+    "level": 4,
+    "title": "Dancing Sword",
+    "content": "Epic treasure. The attack speed of the Dancing Sword is always +1.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.10",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Dastanas of the Scorpion",
+    "content": "Epic treasure. The hero may equip two one-handed weapons simultaneously. They may still only place cubes on one weapon per combat round, but may select either weapon each combat round.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.22",
+    "source": "core",
+    "level": 4,
+    "title": "Decimation",
+    "content": "Epic treasure. A black magic cube may be placed on Decimation to increase the damage delivered.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.26",
+    "source": "core",
+    "level": 4,
+    "title": "Earthen Cincture",
+    "content": "Epic treasure. Receive one green magic cube while the treasure is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.29",
+    "source": "core",
+    "level": 4,
+    "title": "Elven Slippers",
+    "content": "Epic treasure. A green magic cube placed on this treasure increases maneuver speed by one. This card can have cubes placed on it in addition to other cards.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "5.4.0.18",
+    "source": "natives-and-legends",
+    "level": 4,
+    "title": "Figurine of the Stalk",
+    "content": "Epic treasure. Valuable. During the challenge step of combat, monsters always challenge an unhidden hero that possesses the figurine of the stalk. Spells and other treasures take precedence over the figurine (*e.g. alchemical lure, discord, etc.*).\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.12",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Fish Fluke Statuette",
+    "content": "Epic treasure. Only in play if using the ruthless riverlands terrain pack. May use ferries at a cost of 0 gold.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.8",
+    "source": "desolation",
+    "level": 4,
+    "title": "Foci of the Spellcaster",
+    "content": "Epic treasure. May place one magic cube in a might box. This cube must come from the hero’s healthy box and counts against the combat round limit.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.32",
+    "source": "core",
+    "level": 4,
+    "title": "Garb of the Gate",
+    "content": "Epic treasure. May move to any revealed gate clearing paying normal movement costs as if connected by a path.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.35",
+    "source": "core",
+    "level": 4,
+    "title": "Golden Icon",
+    "content": "Epic treasure. Valuable.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.10",
+    "source": "desolation",
+    "level": 4,
+    "title": "Hand of the Lich",
+    "content": "Epic treasure. The hero must wound one cube each turn at the end of their action phase. The attack speed of all spells cast by this hero is +1.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.12",
+    "source": "desolation",
+    "level": 4,
+    "title": "Helm of True Sight",
+    "content": "Epic treasure. May reroll any number of dice once during each search action.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.40",
+    "source": "core",
+    "level": 4,
+    "title": "Icon of the Dragon",
+    "content": "Epic treasure. Valuable. During monster activation, it summons as if a malevolent mountain summoning symbol (Juvenile Dragons) and a Sound summoning symbol (Adult Dragon) are printed on the map tile, if not already present. Printed summoning symbols on the map tile summon normally. If the malevolent mountain and sound summoning symbols are already printed on the map tile, dragons are not summoned twice.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.41",
+    "source": "core",
+    "level": 4,
+    "title": "Incanter’s Jewel",
+    "content": "Epic treasure. Receive one blue magic cube while the treasure is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.13",
+    "source": "desolation",
+    "level": 4,
+    "title": "Jeweled Thief’s Skull",
+    "content": "Epic treasure. Valuable.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.17",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Kolah of the Horus’ Eye",
+    "content": "Epic treasure. Once per turn, may look at the top treasure of a treasure site in the same clearing as the hero.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.18",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Magewright’s Quill",
+    "content": "Epic treasure. May use a learn spells action to write a spell that the hero has learned into a spell book or spell scroll. The hero receives one cube that matches the banner color of the spell. If a universal spell, the hero may choose any magic color. The spell is no longer known by the hero and is placed with the spell book or spell scroll. The hero does not earn any reward if they later relearn the spell using normal learn spell actions, but other heroes may do so normally.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.19",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Magic Carpet",
+    "content": "Epic treasure. The hero may fly. See flying in the core game rulebook.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.44",
+    "source": "core",
+    "level": 4,
+    "title": "Magical Bowl of Mixing",
+    "content": "Epic treasure. A blue magic cube placed on this treasure permanently converts a single magic cube from one color to another color, in either direction, as shown.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.45",
+    "source": "core",
+    "level": 4,
+    "title": "Mirror of Idolatry",
+    "content": "Epic treasure. The hero may not sneak or alert while possessing this card.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.46",
+    "source": "core",
+    "level": 4,
+    "title": "Mithral Chainmail",
+    "content": "Epic treasure. Armor. Cancels one sword. Lighter than normal chainmail.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.47",
+    "source": "core",
+    "level": 4,
+    "title": "Mithral Plate Armor",
+    "content": "Epic treasure. Armor. Cancels one sword. Lighter than normal plate armor.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.48",
+    "source": "core",
+    "level": 4,
+    "title": "Mithral Shield",
+    "content": "Epic treasure. Armor. Cancels one sword. Lighter than a normal shield.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.22",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Moon Mirror",
+    "content": "Epic treasure. May reroll either of the numbered summoning die once per turn. The effects apply to the hero’s clearing only with the original die roll applying everywhere else.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.15",
+    "source": "desolation",
+    "level": 4,
+    "title": "Orb of Far Sight",
+    "content": "Epic treasure. May perform a search action in any clearing in the current map tile or an adjacent map tile. Upon a successful search of an adjacent tile which has no wilderness or civilization tokens in it, place a matching token(s) in the tile. The hero may then look at the token and decide to place it face-down or face-up (receiving any rewards for revealing tokens).\n\nIf playing using the exploration rules, the hero may explore as if in a mountain clearing regardless of the actual clearing type.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.56",
+    "source": "core",
+    "level": 4,
+    "title": "Ring of Malevolence",
+    "content": "Epic treasure. Receive one black magic cube while the treasure is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.59",
+    "source": "core",
+    "level": 4,
+    "title": "Ring of Truth",
+    "content": "Epic treasure. Receive one white magic cube while the treasure is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.60",
+    "source": "core",
+    "level": 4,
+    "title": "Robe of the Chanter",
+    "content": "Epic treasure. Receive one yellow magic cube while the treasure is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.28",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Roc Egg",
+    "content": "Epic treasure. No effect other than being valuable.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.63",
+    "source": "core",
+    "level": 4,
+    "title": "Scepter of the Sorcerer",
+    "content": "Epic treasure. Receive one purple magic cube while the item is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.35",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Serpent Helm",
+    "content": "Epic treasure. Armor. A hero may attempt to hire any monster with serpent in their name. There is no cost to pay for this hire, but the hero must haggle 3 times in a row without rolling any door symbols. Any door result cancels the hire attempt and prevents the hero from attempting to hire that monster for the rest of the turn (but not other serpents in the clearing).\n\nNote that the serpent helm does not prevent unhired serpents from blocking  and attacking the wearer of the helm. Thus, a hero most likely will be hidden while attempting to hire serpents to avoid being blocked and attacked.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.64",
+    "source": "core",
+    "level": 4,
+    "title": "Shadow Cloak",
+    "content": "Epic treasure. Reroll any hide reaction once per turn. Must reroll all dice.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.65",
+    "source": "core",
+    "level": 4,
+    "title": "Shaman’s Kaftan",
+    "content": "Epic treasure. Any magic cube placed on this treasure turns it into armor. If no magic cube is on the kaftan, then the kaftan is ignored and cannot be damaged. This card can have cubes placed on it in addition to other cards.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.66",
+    "source": "core",
+    "level": 4,
+    "title": "Shield of Defiance",
+    "content": "Epic treasure. Armor. Armor value of 3. Weight of 2.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.67",
+    "source": "core",
+    "level": 4,
+    "title": "Shield of Mercy",
+    "content": "Epic treasure. This treasure may be used as a normal shield. If a white magic cube is placed on this treasure during a combat round, the hero takes no wounds from any hits that are blocked by this shield, even if the shield is destroyed. This card can have cubes placed on it in addition to other cards.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.44",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Staff of Thaumaturgy",
+    "content": "Epic treasure. Melee weapon. When the possessing hero performs and enchant action, they may choose to enchant the staff of thaumaturgy instead of the map tile. Do not flip over the map tile and place the chosen magic cube on the staff card instead. If the magic cube is used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the magic cube is discarded.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.23",
+    "source": "desolation",
+    "level": 4,
+    "title": "Staff of the Magi",
+    "content": "Epic treasure. The hero may choose to ignore one wound symbol on a spell card.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.46",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Storm’s Eye",
+    "content": "Epic treasure. Only in play if using the ruthless riverlands terrain pack. No movement during a move action may end on a river clearing. Thus, a hero could ferry from dock clearing to dock clearing, or river clearing to dock clearing, but may not swim, or ferry to a river clearing.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.73",
+    "source": "core",
+    "level": 4,
+    "title": "Summoning Marcation",
+    "content": "Epic treasure. Valuable. During monster activation, it summons as if all local monster die summoning icons printed on map tiles in adjacent tiles are also located in the map tile containing the summoning marcation.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "5.4.0.27",
+    "source": "natives-and-legends",
+    "level": 4,
+    "title": "Sword of the Lost Prince",
+    "content": "Epic treasure. Has a sword icon on two different might boxes. Valuable.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "2.5.0.24",
+    "source": "desolation",
+    "level": 4,
+    "title": "Sword of Torment",
+    "content": "Epic treasure. Extra sharp. The hero loses one health while this treasure is equipped. The hero regains the health if the treasure is unequipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.48",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Tactician’s Grasp",
+    "content": "Epic treasure. After tactics are revealed, but before attacks are processed (Step 7 of combat), the hero may move one speed cube from attack speed to maneuver speed or vice versa (as long as their is any open speed box). During the clean up phase of combat, any moved cube is placed in the wounded box.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "3.3.0.49",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Tail of the Scorpion",
+    "content": "Epic treasure. Only in play if using the dreadful deserts terrain pack. If the tail of the scorpion is in a plains clearing, that clearing is treated as if it was a desert clearing for all effects.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.95",
+    "source": "core",
+    "level": 4,
+    "title": "Trickster’s Stone",
+    "content": "Epic treasure. Receive one grey magic cube while the treasure is equipped.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.96",
+    "source": "core",
+    "level": 4,
+    "title": "Tricky Ring",
+    "content": "Epic treasure. A grey magic cube placed on this treasure increases the hero’s attack speed by one. This card can have cubes placed on it in addition to other cards.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.98",
+    "source": "core",
+    "level": 4,
+    "title": "Wand of the Magician",
+    "content": "Epic treasure. When casting targeted spells, may reroll one or two hit dice on each hit dice roll.",
+    "tags": [
+      "deepTreasure"
+    ]
+  }
+]

@@ -4,14 +4,19 @@ import type { Section, SectionLevel } from "../rulebooks";
 
 function s(
   id: string,
-  opts: { level?: SectionLevel; title?: string; tags?: string[] } = {},
+  opts: {
+    level?: SectionLevel;
+    title?: string;
+    tags?: string[];
+    content?: string;
+  } = {},
 ): Section {
   return {
     id,
     source: "test",
     level: opts.level ?? 1,
     title: opts.title ?? `Section ${id}`,
-    content: "",
+    content: opts.content ?? "",
     ...(opts.tags ? { tags: opts.tags } : {}),
   };
 }
@@ -151,6 +156,48 @@ describe("selectMatchingIds", () => {
     expect(
       selectMatchingIds({ tags: ["spell", "blackMagic"] }, tagged),
     ).toEqual(new Set(["2"]));
+  });
+
+  it("DocTarget contentRegex matches against content", () => {
+    const items = [
+      s("1", { content: "Epic treasure. Glows in the dark." }),
+      s("2", { content: "Melee weapon. +2 might." }),
+      s("3", { content: "Epic treasure. Heals one wound." }),
+    ];
+    expect(
+      selectMatchingIds({ contentRegex: "^Epic treasure\\." }, items),
+    ).toEqual(new Set(["1", "3"]));
+  });
+
+  it("NotTarget complements its inner target", () => {
+    const items = [
+      s("1", { content: "Epic treasure. A" }),
+      s("2", { content: "Mundane weapon." }),
+      s("3", { content: "Epic treasure. B" }),
+    ];
+    expect(
+      selectMatchingIds({ not: { contentRegex: "^Epic treasure\\." } }, items),
+    ).toEqual(new Set(["2"]));
+  });
+
+  it("AND + NOT composes: childrenOf X but not contentRegex Y", () => {
+    const items = [
+      s("p", { title: "Treasure Manifest", level: 2 }),
+      s("p.1", { content: "Epic treasure. Foo" }),
+      s("p.2", { content: "Mundane sword" }),
+      s("other", { content: "unrelated" }),
+    ];
+    expect(
+      selectMatchingIds(
+        {
+          and: [
+            { childrenOf: { parent: { titleRegex: "Treasure Manifest" } } },
+            { not: { contentRegex: "^Epic treasure\\." } },
+          ],
+        },
+        items,
+      ),
+    ).toEqual(new Set(["p.2"]));
   });
 
   it("DocTarget tags returns empty when no section is tagged", () => {
