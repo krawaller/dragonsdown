@@ -7,9 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "extract": ".venv/bin/python scripts/extract.py --all && npm run transform && npm run derive",
+    "extract": ".venv/bin/python scripts/extract.py --all && npm run transform && npm run derive && npm run extract-tts",
     "transform": "tsx scripts/transform.ts",
     "derive": "tsx scripts/derive.ts",
+    "extract-tts": "tsx scripts/extract-tts.ts",
     "inspect-fonts": ".venv/bin/python scripts/inspect_fonts.py",
     "test": "vitest run",
     "test:watch": "vitest"

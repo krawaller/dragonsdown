@@ -2,6 +2,8 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import type { Section, SectionLevel } from "@/lib/rulebooks";
 import { shortNameForSource } from "@/lib/docs";
+import { findCards } from "@/lib/tts/lookup";
+import { CardImages } from "./CardImages";
 
 const HEADING_TAG: Record<SectionLevel, "h2" | "h3" | "h4" | "h5"> = {
   1: "h2",
@@ -39,6 +41,7 @@ export function SectionView({
 }) {
   const Heading = HEADING_TAG[section.level];
   const anchorId = anchorIdFor(section);
+  const cards = findCards(section.title);
   return (
     <section className="mb-2">
       <Heading className={HEADING_CLASS[section.level]} id={anchorId}>
@@ -56,6 +59,7 @@ export function SectionView({
           </span>
         )}
       </Heading>
+      {cards.length > 0 && <CardImages cards={cards} />}
       {section.content && (
         <div className="prose prose-zinc dark:prose-invert max-w-none">
           <ReactMarkdown>{section.content}</ReactMarkdown>
