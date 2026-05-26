@@ -26,6 +26,8 @@ export type DocTarget = {
   titleRegex?: string | RegExp;
   /** Single level or set of levels. */
   level?: SectionLevel | SectionLevel[];
+  /** Required tags. Array means every listed tag must be present (AND). */
+  tags?: string | string[];
 };
 
 export type ChildrenOfTarget = {
@@ -108,6 +110,11 @@ function docTargetMatches(target: DocTarget, section: Section): boolean {
   if (target.level !== undefined) {
     const levels = Array.isArray(target.level) ? target.level : [target.level];
     if (!levels.includes(section.level)) return false;
+  }
+  if (target.tags !== undefined) {
+    const required = typeof target.tags === "string" ? [target.tags] : target.tags;
+    const have = section.tags ?? [];
+    if (!required.every((t) => have.includes(t))) return false;
   }
   return true;
 }

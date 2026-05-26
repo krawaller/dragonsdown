@@ -7,11 +7,17 @@ import {
 
 /**
  * A "derived doc" is a virtual rulebook assembled by picking sections out of
- * the real rulebooks. The picker uses the same Target language as transforms,
- * so any selector available there (childrenOf, titleRegex, level, AND ...)
- * works here too.
+ * the real rulebooks. There are two shapes:
+ *
+ * - Flat: one `pick` selector, results sorted into a single ordered list.
+ * - Grouped: a sequence of `groups`, each with a `header` (a single section
+ *   used as the group's heading) and `items` (the entries listed under it).
+ *
+ * Both shapes share the same Target language as transforms.
  */
-export type DerivedDoc = {
+export type DerivedDoc = FlatDerivedDoc | GroupedDerivedDoc;
+
+export type FlatDerivedDoc = {
   slug: string;
   title: string;
   /** Selector applied across every rulebook. */
@@ -20,36 +26,85 @@ export type DerivedDoc = {
   sortBy?: SortBy;
 };
 
+export type GroupedDerivedDoc = {
+  slug: string;
+  title: string;
+  groups: DerivedGroup[];
+  /** How to order items within each group. Default is "title". */
+  sortBy?: SortBy;
+};
+
+export type DerivedGroup = {
+  /** Selects one section across all rulebooks to act as the group's header. */
+  header: Target;
+  /** Selects items to list under that header. */
+  items: Target;
+};
+
 export type SortBy = "title" | "source" | "id";
 
-/** A single rulebook's worth of input to the picker. */
 export type RulebookInput = {
   slug: string;
   sections: Section[];
 };
 
 /**
- * Run a derived-doc spec against every rulebook and return the ordered list
- * of picked sections. Pure: no side effects.
+ * Run a derived-doc spec against every rulebook and return the resulting
+ * section list. Pure: no side effects.
  *
- * Sections are returned with all original fields intact — `id`, `source`,
- * `title`, `content`, `level`, and `tags`. Original ids are retained so the
- * renderer can compose `<source>-<id>` for unique anchors and link back to
- * the source rulebook.
+ * For grouped docs, headers are normalized to level 1 and items to level 2,
+ * regardless of their source levels, so they render at consistent sizes.
+ * Original `source`, `id`, `title`, `content`, and `tags` are preserved.
  */
 export function deriveDocument(
   spec: DerivedDoc,
   rulebooks: readonly RulebookInput[],
 ): Section[] {
-  const picked: Section[] = [];
-  for (const book of rulebooks) {
-    if (!docMatchesTarget(spec.pick, book.slug)) continue;
-    const ids = selectMatchingIds(spec.pick, book.sections);
-    for (const s of book.sections) {
-      if (ids.has(s.id)) picked.push(s);
+  if ("groups" in spec) return deriveGrouped(spec, rulebooks);
+  return deriveFlat(spec, rulebooks);
+}
+
+function deriveFlat(
+  spec: FlatDerivedDoc,
+  rulebooks: readonly RulebookInput[],
+): Section[] {
+  const picked = selectAcrossRulebooks(spec.pick, rulebooks);
+  return sortSections(picked, spec.sortBy ?? "title");
+}
+
+function deriveGrouped(
+  spec: GroupedDerivedDoc,
+  rulebooks: readonly RulebookInput[],
+): Section[] {
+  const out: Section[] = [];
+  for (const group of spec.groups) {
+    const headers = selectAcrossRulebooks(group.header, rulebooks);
+    if (headers.length === 0) continue;
+    out.push({ ...headers[0], level: 1 });
+    const items = sortSections(
+      selectAcrossRulebooks(group.items, rulebooks),
+      spec.sortBy ?? "title",
+    );
+    for (const item of items) {
+      out.push({ ...item, level: 2 });
     }
   }
-  return sortSections(picked, spec.sortBy ?? "title");
+  return out;
+}
+
+function selectAcrossRulebooks(
+  target: Target,
+  rulebooks: readonly RulebookInput[],
+): Section[] {
+  const out: Section[] = [];
+  for (const book of rulebooks) {
+    if (!docMatchesTarget(target, book.slug)) continue;
+    const ids = selectMatchingIds(target, book.sections);
+    for (const s of book.sections) {
+      if (ids.has(s.id)) out.push(s);
+    }
+  }
+  return out;
 }
 
 function sortSections(sections: Section[], sortBy: SortBy): Section[] {

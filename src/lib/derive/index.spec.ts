@@ -6,7 +6,7 @@ function s(
   source: string,
   id: string,
   title: string,
-  opts: { level?: SectionLevel; content?: string } = {},
+  opts: { level?: SectionLevel; content?: string; tags?: string[] } = {},
 ): Section {
   return {
     id,
@@ -14,6 +14,7 @@ function s(
     level: opts.level ?? 2,
     title,
     content: opts.content ?? "",
+    ...(opts.tags ? { tags: opts.tags } : {}),
   };
 }
 
@@ -107,6 +108,67 @@ describe("deriveDocument", () => {
       "natives-and-legends/Difficult Natives",
       "natives-and-legends/Roaming Monsters",
     ]);
+  });
+
+  it("grouped: emits header + items per group, headers→L1, items→L2", () => {
+    const fixtures: RulebookInput[] = [
+      {
+        slug: "core",
+        sections: [
+          s("core", "9.6.2", "Black Spells", { level: 3 }),
+          s("core", "9.6.2.1", "Affliction", { level: 4, tags: ["spell", "blackMagic"] }),
+          s("core", "9.6.3", "Blue Spells", { level: 3 }),
+          s("core", "9.6.3.1", "Calm", { level: 4, tags: ["spell", "blueMagic"] }),
+        ],
+      },
+      {
+        slug: "eastern-reaches",
+        sections: [
+          s("eastern-reaches", "3.4.1.1", "Banshee", {
+            level: 4,
+            tags: ["spell", "blackMagic"],
+          }),
+        ],
+      },
+    ];
+    const spec: DerivedDoc = {
+      slug: "spells",
+      title: "Spells",
+      groups: ["Black", "Blue"].map((color) => ({
+        header: { doc: "core", titleRegex: `^${color} Spells$` },
+        items: {
+          tags: ["spell", `${color[0].toLowerCase()}${color.slice(1)}Magic`],
+        },
+      })),
+    };
+    const out = deriveDocument(spec, fixtures);
+    expect(out.map((s) => `${s.level} ${s.source}/${s.id} ${s.title}`)).toEqual([
+      "1 core/9.6.2 Black Spells",
+      "2 core/9.6.2.1 Affliction",
+      "2 eastern-reaches/3.4.1.1 Banshee",
+      "1 core/9.6.3 Blue Spells",
+      "2 core/9.6.3.1 Calm",
+    ]);
+  });
+
+  it("grouped: skips groups whose header has no match", () => {
+    const fixtures: RulebookInput[] = [
+      {
+        slug: "core",
+        sections: [s("core", "9.6.2", "Black Spells", { level: 3 })],
+      },
+    ];
+    const spec: DerivedDoc = {
+      slug: "spells",
+      title: "Spells",
+      groups: [
+        { header: { titleRegex: "Black Spells" }, items: { tags: "blackMagic" } },
+        { header: { titleRegex: "Nonexistent" }, items: { tags: "x" } },
+      ],
+    };
+    // Only one group is emitted (the Black one with no items); skipped group
+    // contributes nothing.
+    expect(deriveDocument(spec, fixtures)).toHaveLength(1);
   });
 
   it("respects doc-level gating on the pick target", () => {

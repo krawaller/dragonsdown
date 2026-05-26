@@ -17,4 +17,30 @@ export const DERIVED_DOCS: DerivedDoc[] = [
     },
     sortBy: "title",
   },
+  {
+    slug: "spell-manifest",
+    title: "Spell Manifest",
+    groups: SPELL_COLORS().map((color) => ({
+      // Use the core book's color heading as the canonical group header.
+      header: { doc: "core", titleRegex: `^${color} Spells$` },
+      // Items: any section tagged "spell" + the color's magic tag, across all docs.
+      items: { tags: ["spell", `${color[0].toLowerCase()}${color.slice(1)}Magic`] },
+    })),
+    sortBy: "title",
+  },
 ];
+
+// Order in this list controls the order of groups in the Spell Manifest.
+// Kept in sync with the spell-color rules in src/lib/transform/rules.ts.
+function SPELL_COLORS() {
+  return [
+    "Universal",
+    "Black",
+    "Blue",
+    "Gray",
+    "Green",
+    "Purple",
+    "White",
+    "Yellow",
+  ] as const;
+}

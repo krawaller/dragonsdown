@@ -2,13 +2,17 @@ import { describe, it, expect } from "vitest";
 import { docMatchesTarget, selectMatchingIds } from ".";
 import type { Section, SectionLevel } from "../rulebooks";
 
-function s(id: string, opts: { level?: SectionLevel; title?: string } = {}): Section {
+function s(
+  id: string,
+  opts: { level?: SectionLevel; title?: string; tags?: string[] } = {},
+): Section {
   return {
     id,
     source: "test",
     level: opts.level ?? 1,
     title: opts.title ?? `Section ${id}`,
     content: "",
+    ...(opts.tags ? { tags: opts.tags } : {}),
   };
 }
 
@@ -124,6 +128,34 @@ describe("selectMatchingIds", () => {
     expect(selectMatchingIds({ level: [1, 4] }, sections)).toEqual(
       new Set(["1", "2", "2.1.0.1", "2.1.0.2", "2.2.0.1", "2.2.0.2"]),
     );
+  });
+
+  it("DocTarget tags (single) selects sections having that tag", () => {
+    const tagged = [
+      s("1", { tags: ["spell"] }),
+      s("2", { tags: ["treasure"] }),
+      s("3", { tags: ["spell", "blackMagic"] }),
+      s("4"),
+    ];
+    expect(selectMatchingIds({ tags: "spell" }, tagged)).toEqual(
+      new Set(["1", "3"]),
+    );
+  });
+
+  it("DocTarget tags (array) requires ALL listed tags", () => {
+    const tagged = [
+      s("1", { tags: ["spell"] }),
+      s("2", { tags: ["spell", "blackMagic"] }),
+      s("3", { tags: ["spell", "blueMagic"] }),
+    ];
+    expect(
+      selectMatchingIds({ tags: ["spell", "blackMagic"] }, tagged),
+    ).toEqual(new Set(["2"]));
+  });
+
+  it("DocTarget tags returns empty when no section is tagged", () => {
+    const tagged = [s("1"), s("2")];
+    expect(selectMatchingIds({ tags: "spell" }, tagged)).toEqual(new Set());
   });
 
   it("AndTarget returns the intersection of its children", () => {
