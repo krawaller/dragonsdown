@@ -38,6 +38,13 @@ export const TRANSFORMS: Rule[] = [
   },
   {
     op: "addTag",
+    tag: "lineageAdvantage",
+    target: {
+      childrenOf: { parent: { titleRegex: "Lineage Advantages" } },
+    },
+  },
+  {
+    op: "addTag",
     tag: "classAdvantage",
     target: {
       childrenOf: { parent: { titleRegex: "Class Advantages" } },

@@ -17,21 +17,26 @@ import {
  */
 export type DerivedDoc = FlatDerivedDoc | GroupedDerivedDoc;
 
-export type FlatDerivedDoc = {
+type BaseDerivedDoc = {
   slug: string;
   title: string;
-  /** Selector applied across every rulebook. */
-  pick: Target;
-  /** How to order the result. Default is "title". */
+  /** How to order the result (within each group, for grouped docs). Default "title". */
   sortBy?: SortBy;
+  /**
+   * Whether the leaves of this doc are expected to correspond to TTS cards.
+   * Defaults to true; set to false for rule lists or other non-card content
+   * so audits like `missing-cards` skip it.
+   */
+  linksToCards?: boolean;
 };
 
-export type GroupedDerivedDoc = {
-  slug: string;
-  title: string;
+export type FlatDerivedDoc = BaseDerivedDoc & {
+  /** Selector applied across every rulebook. */
+  pick: Target;
+};
+
+export type GroupedDerivedDoc = BaseDerivedDoc & {
   groups: DerivedGroup[];
-  /** How to order items within each group. Default is "title". */
-  sortBy?: SortBy;
 };
 
 export type DerivedGroup = {

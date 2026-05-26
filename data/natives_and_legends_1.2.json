@@ -284,7 +284,10 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Gnome (Inventive)",
-    "content": "Gnomes are very inventive and crafty, often creating their own items. After all players have selected their starting items, the gnome draws 3 cards from the item deck and keeps one of them. Shuffle the unselected item cards back into the item deck."
+    "content": "Gnomes are very inventive and crafty, often creating their own items. After all players have selected their starting items, the gnome draws 3 cards from the item deck and keeps one of them. Shuffle the unselected item cards back into the item deck.",
+    "tags": [
+      "lineageAdvantage"
+    ]
   },
   {
     "id": "5.2",

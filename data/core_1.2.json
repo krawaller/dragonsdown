@@ -928,28 +928,40 @@
     "source": "core",
     "level": 4,
     "title": "Dwarf (Caver)",
-    "content": "Dwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a cave clearing."
+    "content": "Dwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a cave clearing.",
+    "tags": [
+      "lineageAdvantage"
+    ]
   },
   {
     "id": "9.1.0.2",
     "source": "core",
     "level": 4,
     "title": "Elf (Magical)",
-    "content": "![](/images/266e31b2777d2856070a952c049680684ec32366.png)\n\nElves are raised around magic and begin the game with an extra spell from the hero starting spells deck. The selected spell must match the color of a magic cube they select for their hero."
+    "content": "![](/images/266e31b2777d2856070a952c049680684ec32366.png)\n\nElves are raised around magic and begin the game with an extra spell from the hero starting spells deck. The selected spell must match the color of a magic cube they select for their hero.",
+    "tags": [
+      "lineageAdvantage"
+    ]
   },
   {
     "id": "9.1.0.3",
     "source": "core",
     "level": 4,
     "title": "Halfling (Stealthy)",
-    "content": "![](/images/e58dd7043dffd7517153100785ac79473fcb646b.png)\n\nHalflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one monster die per hide attempt, except during the cleanup step of combat."
+    "content": "![](/images/e58dd7043dffd7517153100785ac79473fcb646b.png)\n\nHalflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one monster die per hide attempt, except during the cleanup step of combat.",
+    "tags": [
+      "lineageAdvantage"
+    ]
   },
   {
     "id": "9.1.0.4",
     "source": "core",
     "level": 4,
     "title": "Human (Adapted)",
-    "content": "![](/images/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png)\n\nHumans are very comfortable in civilization locations and receive one additional free action during any turn they are in a civilization location."
+    "content": "![](/images/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png)\n\nHumans are very comfortable in civilization locations and receive one additional free action during any turn they are in a civilization location.",
+    "tags": [
+      "lineageAdvantage"
+    ]
   },
   {
     "id": "9.2",

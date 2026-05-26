@@ -16,6 +16,19 @@ export const DERIVED_DOCS: DerivedDoc[] = [
       ],
     },
     sortBy: "title",
+    linksToCards: false,
+  },
+  {
+    slug: "lineage-advantages",
+    title: "Lineage Advantages",
+    pick: { tags: "lineageAdvantage" },
+    sortBy: "title",
+  },
+  {
+    slug: "class-advantages",
+    title: "Class Advantages",
+    pick: { tags: "classAdvantage" },
+    sortBy: "title",
   },
   {
     slug: "treasure-manifest",

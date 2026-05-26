@@ -25,14 +25,20 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Elves (Two-Worlds)",
-    "content": "![](/images/282dd05f57e30725bb324e51bf6d60c8bb2f6f6d.jpeg)\n\nHalf-Elves straddle the worlds of elves and humans. At the beginning of the game, half-elves choose either the elven advantage or the human advantage to use for the entirety of this game session."
+    "content": "![](/images/282dd05f57e30725bb324e51bf6d60c8bb2f6f6d.jpeg)\n\nHalf-Elves straddle the worlds of elves and humans. At the beginning of the game, half-elves choose either the elven advantage or the human advantage to use for the entirety of this game session.",
+    "tags": [
+      "lineageAdvantage"
+    ]
   },
   {
     "id": "2.1.0.2",
     "source": "desolation",
     "level": 4,
     "title": "Half-Orc (Mountaineer)",
-    "content": "![](/images/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png)\n\n![](/images/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png)\n\nHalf-orcs are very comfortable in mountains and do not pay the additional action cost to enter a mountain clearing."
+    "content": "![](/images/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png)\n\n![](/images/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png)\n\nHalf-orcs are very comfortable in mountains and do not pay the additional action cost to enter a mountain clearing.",
+    "tags": [
+      "lineageAdvantage"
+    ]
   },
   {
     "id": "2.2",

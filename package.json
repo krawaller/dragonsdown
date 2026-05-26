@@ -11,6 +11,7 @@
     "transform": "tsx scripts/transform.ts",
     "derive": "tsx scripts/derive.ts",
     "extract-tts": "tsx scripts/extract-tts.ts",
+    "missing-cards": "tsx scripts/missing-cards.ts",
     "inspect-fonts": ".venv/bin/python scripts/inspect_fonts.py",
     "test": "vitest run",
     "test:watch": "vitest"

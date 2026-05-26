@@ -1,0 +1,72 @@
+[
+  {
+    "id": "9.1.0.1",
+    "source": "core",
+    "level": 4,
+    "title": "Dwarf (Caver)",
+    "content": "Dwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a cave clearing.",
+    "tags": [
+      "lineageAdvantage"
+    ]
+  },
+  {
+    "id": "9.1.0.2",
+    "source": "core",
+    "level": 4,
+    "title": "Elf (Magical)",
+    "content": "![](/images/266e31b2777d2856070a952c049680684ec32366.png)\n\nElves are raised around magic and begin the game with an extra spell from the hero starting spells deck. The selected spell must match the color of a magic cube they select for their hero.",
+    "tags": [
+      "lineageAdvantage"
+    ]
+  },
+  {
+    "id": "5.1.0.1",
+    "source": "natives-and-legends",
+    "level": 4,
+    "title": "Gnome (Inventive)",
+    "content": "Gnomes are very inventive and crafty, often creating their own items. After all players have selected their starting items, the gnome draws 3 cards from the item deck and keeps one of them. Shuffle the unselected item cards back into the item deck.",
+    "tags": [
+      "lineageAdvantage"
+    ]
+  },
+  {
+    "id": "2.1.0.1",
+    "source": "desolation",
+    "level": 4,
+    "title": "Half-Elves (Two-Worlds)",
+    "content": "![](/images/282dd05f57e30725bb324e51bf6d60c8bb2f6f6d.jpeg)\n\nHalf-Elves straddle the worlds of elves and humans. At the beginning of the game, half-elves choose either the elven advantage or the human advantage to use for the entirety of this game session.",
+    "tags": [
+      "lineageAdvantage"
+    ]
+  },
+  {
+    "id": "2.1.0.2",
+    "source": "desolation",
+    "level": 4,
+    "title": "Half-Orc (Mountaineer)",
+    "content": "![](/images/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png)\n\n![](/images/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png)\n\nHalf-orcs are very comfortable in mountains and do not pay the additional action cost to enter a mountain clearing.",
+    "tags": [
+      "lineageAdvantage"
+    ]
+  },
+  {
+    "id": "9.1.0.3",
+    "source": "core",
+    "level": 4,
+    "title": "Halfling (Stealthy)",
+    "content": "![](/images/e58dd7043dffd7517153100785ac79473fcb646b.png)\n\nHalflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one monster die per hide attempt, except during the cleanup step of combat.",
+    "tags": [
+      "lineageAdvantage"
+    ]
+  },
+  {
+    "id": "9.1.0.4",
+    "source": "core",
+    "level": 4,
+    "title": "Human (Adapted)",
+    "content": "![](/images/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png)\n\nHumans are very comfortable in civilization locations and receive one additional free action during any turn they are in a civilization location.",
+    "tags": [
+      "lineageAdvantage"
+    ]
+  }
+]
