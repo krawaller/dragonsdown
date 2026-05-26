@@ -31,7 +31,7 @@ export function ChipGrid({ entries }: { entries: ChipEntry[] }) {
                   <button
                     type="button"
                     onClick={() => setZoom({ chip, name: prettyName })}
-                    className="block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition"
+                    className="block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
                     aria-label={`Zoom ${prettyName}${chip.count > 1 ? ` (×${chip.count})` : ""}`}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}
