@@ -12,6 +12,7 @@ import {
   extractChips,
   isSameCell,
   mergeTags,
+  sameAncestry,
   type CardIndex,
   type ChipIndex,
 } from "../src/lib/tts";
@@ -59,7 +60,7 @@ async function main(): Promise<void> {
         }
       }
     }
-    // Chips dedup by URL pair across sources; physical-copy counts are summed.
+    // Chips dedup by URL pair across sources; per-ancestry counts are summed.
     for (const [name, items] of Object.entries(chipIndex)) {
       const bucket = (chips[name] ??= []);
       for (const item of items) {
@@ -69,9 +70,18 @@ async function main(): Promise<void> {
             c.imageSecondaryURL === item.imageSecondaryURL,
         );
         if (existing) {
-          existing.count += item.count;
+          for (const loc of item.locations) {
+            const match = existing.locations.find((l) =>
+              sameAncestry(l.ancestry, loc.ancestry),
+            );
+            if (match) match.count += loc.count;
+            else existing.locations.push({ ...loc });
+          }
         } else {
-          bucket.push({ ...item });
+          bucket.push({
+            ...item,
+            locations: item.locations.map((l) => ({ ...l })),
+          });
         }
       }
     }

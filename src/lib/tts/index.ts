@@ -27,6 +27,13 @@ export type TTSCardImage = {
   uniqueBack: boolean;
   /** TTS `Tags` array (e.g. ["Item", "Merchant", "Steal"]). Omitted when empty. */
   tags?: string[];
+  /**
+   * Nicknames of every enclosing container, outermost first, that had a
+   * non-empty `Nickname`. Container kind doesn't matter — any object the
+   * walker descended through is considered. Useful for grouping or
+   * disambiguating cards by their physical location in the TTS save.
+   */
+  ancestry?: string[];
 };
 
 /** Output written to data/tts/cards.json. Keyed by normalized `Nickname`. */
@@ -41,9 +48,19 @@ export type TTSChip = {
   source: string;
   imageURL: string;
   imageSecondaryURL: string;
-  /** How many physical copies of this chip exist in the TTS save(s). */
-  count: number;
+  /**
+   * Per-ancestry breakdown of physical copies. Each entry is one unique
+   * ancestry (same shape as a Card's `ancestry`, outermost first; empty
+   * array for chips with no nicknamed ancestors) and the number of copies
+   * residing there. The total physical count is the sum across entries.
+   */
+  locations: { ancestry: string[]; count: number }[];
 };
+
+/** Sum of physical copies across every `locations` entry. */
+export function chipTotalCount(chip: TTSChip): number {
+  return chip.locations.reduce((n, l) => n + l.count, 0);
+}
 
 /** Output written to data/tts/chips.json. Keyed by normalized `GMNotes`. */
 export type ChipIndex = Record<string, TTSChip[]>;
@@ -141,24 +158,29 @@ type TTSContainer = {
  * Walk a TTS save object recursively and return every Card.
  * Bags and Decks contain nested ContainedObjects.
  */
+type CardWithAncestry = { card: TTSCardObject; ancestry: string[] };
+
 export function extractCards(root: unknown, source: string): CardIndex {
   const index: CardIndex = {};
-  const cards: TTSCardObject[] = [];
-  walk(root, cards);
-  for (const card of cards) {
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
     const raw = (card.Nickname ?? "").trim();
     if (!raw) continue;
     const key = normalizeTitle(raw);
-    const image = imageFor(card, source);
+    const image = imageFor(card, source, ancestry);
     if (!image) continue;
     const bucket = (index[key] ??= []);
     // De-duplicate within a source: same nickname can map to multiple physical
     // cards in TTS (e.g. multiple copies of the same card in a bag), but they
     // point at the same sheet cell. Keep one entry per cell; merge tags
-    // across copies so we don't lose any.
+    // across copies, and capture an ancestry if the first copy lacked one.
     const existing = bucket.find((c) => isSameCell(c, image));
     if (existing) {
       existing.tags = mergeTags(existing.tags, image.tags);
+      if (!existing.ancestry?.length && image.ancestry?.length) {
+        existing.ancestry = image.ancestry;
+      }
     } else {
       bucket.push(image);
     }
@@ -189,39 +211,69 @@ type ChipObject = {
   CustomImage: { ImageURL?: string; ImageSecondaryURL?: string };
 };
 
+type ChipWithAncestry = { chip: ChipObject; ancestry: string[] };
+
 /**
  * Walk a TTS save object recursively and return every Chip. The mod tags
  * chip-tiles with a `LuaScript` starting `chipName =`, distinguishing them
  * from other Custom_Tile objects.
+ *
+ * Physical copies are deduped by `(imageURL, imageSecondaryURL)`, with their
+ * count broken down per unique ancestry (nicknamed-container path).
  */
 export function extractChips(root: unknown, source: string): ChipIndex {
   const index: ChipIndex = {};
-  const chips: ChipObject[] = [];
-  walkChips(root, chips);
-  for (const chip of chips) {
+  const chips: ChipWithAncestry[] = [];
+  walkChips(root, [], chips);
+  for (const { chip, ancestry } of chips) {
     const gm = (chip.GMNotes ?? "").trim();
     if (!gm) continue;
     const key = normalizeTitle(gm);
     const imageURL = chip.CustomImage.ImageURL ?? "";
     const imageSecondaryURL = chip.CustomImage.ImageSecondaryURL ?? "";
     if (!imageURL) continue;
-    // Dedup by URL pair, but track physical-copy count so the UI can choose
-    // whether to show the duplicates (e.g. as a "×N" badge) or hide them.
     const bucket = (index[key] ??= []);
     const existing = bucket.find(
       (c) =>
         c.imageURL === imageURL && c.imageSecondaryURL === imageSecondaryURL,
     );
     if (existing) {
-      existing.count += 1;
+      addToLocations(existing.locations, ancestry);
     } else {
-      bucket.push({ source, imageURL, imageSecondaryURL, count: 1 });
+      bucket.push({
+        source,
+        imageURL,
+        imageSecondaryURL,
+        locations: [{ ancestry, count: 1 }],
+      });
     }
   }
   return index;
 }
 
-function walkChips(obj: unknown, out: ChipObject[]): void {
+export function addToLocations(
+  locations: { ancestry: string[]; count: number }[],
+  ancestry: string[],
+): void {
+  const match = locations.find((l) => sameAncestry(l.ancestry, ancestry));
+  if (match) {
+    match.count += 1;
+  } else {
+    locations.push({ ancestry, count: 1 });
+  }
+}
+
+export function sameAncestry(a: string[], b: string[]): boolean {
+  if (a.length !== b.length) return false;
+  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
+  return true;
+}
+
+function walkChips(
+  obj: unknown,
+  ancestry: string[],
+  out: ChipWithAncestry[],
+): void {
   if (!isRecord(obj)) return;
   const ls = obj.LuaScript;
   if (
@@ -229,31 +281,52 @@ function walkChips(obj: unknown, out: ChipObject[]): void {
     ls.startsWith("chipName =") &&
     isRecord(obj.CustomImage)
   ) {
-    out.push(obj as unknown as ChipObject);
+    out.push({ chip: obj as unknown as ChipObject, ancestry });
   }
+  const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+  const childAncestry = nick ? [...ancestry, nick] : ancestry;
   const states = obj.ObjectStates;
-  if (Array.isArray(states)) for (const s of states) walkChips(s, out);
+  if (Array.isArray(states))
+    for (const s of states) walkChips(s, childAncestry, out);
   const contained = (obj as TTSContainer).ContainedObjects;
-  if (Array.isArray(contained)) for (const s of contained) walkChips(s, out);
+  if (Array.isArray(contained))
+    for (const s of contained) walkChips(s, childAncestry, out);
 }
 
-function walk(obj: unknown, out: TTSCardObject[]): void {
+/**
+ * Walk the TTS tree depth-first, capturing each Card together with the
+ * ancestry of nicknamed ancestors (outermost first). Any object whose
+ * `Nickname` is non-empty contributes to the ancestry; Card's own Nickname
+ * is not included (only its ancestors).
+ */
+function walk(
+  obj: unknown,
+  ancestry: string[],
+  out: CardWithAncestry[],
+): void {
   if (!isRecord(obj)) return;
   if (
     (obj.Name === "Card" || obj.Name === "CardCustom") &&
     obj.CustomDeck &&
     typeof obj.CardID === "number"
   ) {
-    out.push(obj as unknown as TTSCardObject);
+    out.push({ card: obj as unknown as TTSCardObject, ancestry });
   }
+  const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+  const childAncestry = nick ? [...ancestry, nick] : ancestry;
   // ObjectStates is the top-level array; ContainedObjects is the nested one.
   const states = obj.ObjectStates;
-  if (Array.isArray(states)) for (const s of states) walk(s, out);
+  if (Array.isArray(states)) for (const s of states) walk(s, childAncestry, out);
   const contained = (obj as TTSContainer).ContainedObjects;
-  if (Array.isArray(contained)) for (const s of contained) walk(s, out);
+  if (Array.isArray(contained))
+    for (const s of contained) walk(s, childAncestry, out);
 }
 
-function imageFor(card: TTSCardObject, source: string): TTSCardImage | null {
+function imageFor(
+  card: TTSCardObject,
+  source: string,
+  ancestry: string[],
+): TTSCardImage | null {
   const deckId = Object.keys(card.CustomDeck)[0];
   if (!deckId) return null;
   const deck = card.CustomDeck[deckId];
@@ -272,6 +345,7 @@ function imageFor(card: TTSCardObject, source: string): TTSCardImage | null {
   if (Array.isArray(card.Tags) && card.Tags.length > 0) {
     out.tags = [...card.Tags].sort();
   }
+  if (ancestry.length > 0) out.ancestry = ancestry;
   return out;
 }
 

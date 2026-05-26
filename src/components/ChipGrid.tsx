@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { TTSChip } from "@/lib/tts";
+import { chipTotalCount, type TTSChip } from "@/lib/tts";
 import type { ChipEntry } from "@/lib/tts/lookup";
 
 type Zoom = { chip: TTSChip; name: string };
@@ -26,28 +26,31 @@ export function ChipGrid({ entries }: { entries: ChipEntry[] }) {
           <section key={name} className="flex flex-col gap-2">
             <h2 className="text-base font-semibold">{prettyName}</h2>
             <div className="flex flex-wrap gap-2">
-              {chips.map((chip, i) => (
-                <div key={`${chip.imageURL}-${i}`} className="relative">
-                  <button
-                    type="button"
-                    onClick={() => setZoom({ chip, name: prettyName })}
-                    className="block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
-                    aria-label={`Zoom ${prettyName}${chip.count > 1 ? ` (×${chip.count})` : ""}`}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={chip.imageURL}
-                      alt={prettyName}
-                      className="w-20 h-20 object-cover block bg-zinc-100 dark:bg-zinc-900"
-                    />
-                  </button>
-                  {chip.count > 1 && (
-                    <span className="pointer-events-none absolute -top-1 -right-1 min-w-[1.5rem] text-center px-1.5 py-0.5 text-xs font-semibold bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 rounded-full shadow">
-                      ×{chip.count}
-                    </span>
-                  )}
-                </div>
-              ))}
+              {chips.map((chip, i) => {
+                const total = chipTotalCount(chip);
+                return (
+                  <div key={`${chip.imageURL}-${i}`} className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setZoom({ chip, name: prettyName })}
+                      className="block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
+                      aria-label={`Zoom ${prettyName}${total > 1 ? ` (×${total})` : ""}`}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={chip.imageURL}
+                        alt={prettyName}
+                        className="w-20 h-20 object-cover block bg-zinc-100 dark:bg-zinc-900"
+                      />
+                    </button>
+                    {total > 1 && (
+                      <span className="pointer-events-none absolute -top-1 -right-1 min-w-[1.5rem] text-center px-1.5 py-0.5 text-xs font-semibold bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 rounded-full shadow">
+                        ×{total}
+                      </span>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </section>
         ))}

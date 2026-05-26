@@ -24,6 +24,9 @@
       "tags": [
         "Mariners",
         "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
       ]
     }
   ],
@@ -36,7 +39,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Adventurers Toolkit": [
@@ -48,7 +54,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Affliction": [
@@ -84,7 +93,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Alchemists mixture": [
@@ -115,6 +127,9 @@
         "Natives",
         "Rogues",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -130,6 +145,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
       ]
     }
   ],
@@ -142,7 +160,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Amber Spire": [
@@ -154,7 +175,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Ancient Map": [
@@ -166,7 +190,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Anti-Magic": [
@@ -190,7 +217,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Arcane Bond": [
@@ -202,7 +232,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Arcane Sword": [
@@ -214,7 +247,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Arcanis Engima": [
@@ -226,7 +262,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Archer (Steady)": [
@@ -238,7 +277,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 0,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Artifacts": [
@@ -256,6 +298,9 @@
         "Merchant",
         "Mission",
         "Steal"
+      ],
+      "ancestry": [
+        "Swamps Chips"
       ]
     }
   ],
@@ -268,7 +313,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -302,7 +350,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 2,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Band of Sagacity": [
@@ -331,6 +382,9 @@
         "Astrologer",
         "Merchant",
         "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
       ]
     }
   ],
@@ -343,7 +397,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Banner of the Brigands": [
@@ -355,7 +412,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Barbarian (Mountain Lore)": [
@@ -367,7 +427,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 1,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Bard (Musical)": [
@@ -379,7 +442,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 3,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Bards Bouzouki": [
@@ -391,7 +457,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Bashkirian Tools": [
@@ -410,6 +479,9 @@
         "Mission",
         "Natives",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -422,7 +494,10 @@
       "numHeight": 2,
       "row": 0,
       "col": 2,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "NATIVES Groups"
+      ]
     }
   ],
   "Bat Hawker": [
@@ -437,6 +512,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
       ]
     }
   ],
@@ -449,7 +527,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Battle Axe": [
@@ -464,6 +545,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -476,7 +560,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 4,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Battle Staff": [
@@ -519,6 +606,9 @@
         "Natives",
         "Steal",
         "Wardens"
+      ],
+      "ancestry": [
+        "BT Swamps"
       ]
     }
   ],
@@ -531,7 +621,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 4,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "Bejeweled Breastplate": [
@@ -603,7 +696,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 5,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "Betrayer": [
@@ -618,6 +714,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],
@@ -633,6 +732,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
       ]
     }
   ],
@@ -645,7 +747,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 5,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Blade of the Scorpion": [
@@ -657,7 +762,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Blood Offerer": [
@@ -672,6 +780,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -689,6 +800,9 @@
         "Crone",
         "Merchant",
         "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -701,7 +815,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Bow of the Hunt": [
@@ -749,7 +866,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Break Spell"
+      ]
     }
   ],
   "Breastplate": [
@@ -764,6 +884,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -776,7 +899,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 6,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "Broche of Deflection": [
@@ -800,7 +926,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Buckler": [
@@ -815,6 +944,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -827,7 +959,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 7,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "Calm": [
@@ -851,7 +986,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     },
     {
       "source": "eastern",
@@ -861,7 +999,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Cape of Alteration": [
@@ -885,7 +1026,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Caustic Blast": [
@@ -897,7 +1041,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Cavernous Pit": [
@@ -909,7 +1056,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Centaur Scourge": [
@@ -924,6 +1074,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],
@@ -939,6 +1092,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -951,7 +1107,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Champions Plate": [
@@ -963,7 +1122,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Charismagic": [
@@ -975,7 +1137,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Charismatic Gemstone": [
@@ -1011,7 +1176,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Clashing Ring": [
@@ -1035,7 +1203,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 2,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Clodpoll Club": [
@@ -1047,7 +1218,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Clothing": [
@@ -1063,6 +1237,9 @@
       "tags": [
         "CivTile",
         "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],
@@ -1075,7 +1252,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Coin of Passage": [
@@ -1087,7 +1267,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ]
     }
   ],
   "Collapsed Passage": [
@@ -1099,7 +1282,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Confuse": [
@@ -1123,7 +1309,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 3,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Consul": [
@@ -1135,7 +1324,10 @@
       "numHeight": 2,
       "row": 0,
       "col": 3,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Consul"
+      ]
     }
   ],
   "Coronet of the Lost Prince": [
@@ -1147,7 +1339,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Counterplay": [
@@ -1159,7 +1354,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Crafting Gear": [
@@ -1177,6 +1375,9 @@
         "Merchant",
         "Mission",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -1207,6 +1408,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
       ]
     }
   ],
@@ -1231,7 +1435,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Cursed Treasure": [
@@ -1278,6 +1485,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -1302,7 +1512,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Dark Matter": [
@@ -1326,7 +1539,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Dark Worshipper": [
@@ -1341,6 +1557,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
       ]
     }
   ],
@@ -1353,7 +1572,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Decapitator": [
@@ -1370,6 +1592,9 @@
         "Consul",
         "Mission",
         "Natives"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -1397,6 +1622,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
       ]
     }
   ],
@@ -1412,6 +1640,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
       ]
     }
   ],
@@ -1430,6 +1661,9 @@
         "Mission",
         "Mystic",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -1454,7 +1688,10 @@
       "numHeight": 5,
       "row": 3,
       "col": 2,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class EASTERN"
+      ]
     }
   ],
   "Discord": [
@@ -1514,7 +1751,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Down Payment": [
@@ -1533,6 +1773,9 @@
         "Natives",
         "Sellswords",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -1548,6 +1791,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
       ]
     }
   ],
@@ -1560,7 +1806,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 4,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Duffel of Displacement": [
@@ -1572,7 +1821,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Dust of Destiny": [
@@ -1641,6 +1893,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
       ]
     }
   ],
@@ -1653,7 +1908,10 @@
       "numHeight": 2,
       "row": 0,
       "col": 4,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Caves  Chips"
+      ]
     }
   ],
   "Earthen Cincture": [
@@ -1677,7 +1935,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Eldritch Goods": [
@@ -1695,6 +1956,9 @@
         "Merchant",
         "Mission",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -1785,7 +2049,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Elven Shield": [
@@ -1797,7 +2064,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Elven Slippers": [
@@ -1821,7 +2091,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Elves": [
@@ -1833,7 +2106,10 @@
       "numHeight": 2,
       "row": 0,
       "col": 5,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "NATIVES Groups"
+      ]
     }
   ],
   "Enchanted Treasure": [
@@ -1845,7 +2121,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -1855,7 +2134,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -1865,7 +2147,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -1875,7 +2160,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -1917,7 +2205,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 5,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Enfeeble": [
@@ -1929,7 +2220,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Envenom": [
@@ -1953,7 +2247,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Errant Convict": [
@@ -1969,6 +2266,9 @@
       "tags": [
         "Mission",
         "Wardens"
+      ],
+      "ancestry": [
+        "BT Swamps"
       ]
     }
   ],
@@ -1981,7 +2281,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Evil Minion": [
@@ -1996,6 +2299,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],
@@ -2008,7 +2314,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 6,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Explorer (Perceptive)": [
@@ -2020,7 +2329,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 8,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "Explorers Boots": [
@@ -2032,7 +2344,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Fade Essence": [
@@ -2044,7 +2359,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Feud Stopper": [
@@ -2061,6 +2379,9 @@
         "Elves",
         "Mission",
         "Natives"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -2085,7 +2406,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Fire Blighter": [
@@ -2100,6 +2424,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "BT Woods"
       ]
     }
   ],
@@ -2124,7 +2451,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ]
     }
   ],
   "Floating Disk": [
@@ -2160,7 +2490,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Food & Ale": [
@@ -2176,6 +2509,9 @@
       "tags": [
         "CivTile",
         "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
       ]
     }
   ],
@@ -2188,7 +2524,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Forester": [
@@ -2203,6 +2542,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -2222,6 +2564,9 @@
         "Mission",
         "Natives",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -2246,7 +2591,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Gale Blast": [
@@ -2258,7 +2606,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Garb of the Gate": [
@@ -2294,7 +2645,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ]
     }
   ],
   "Giant Hunter": [
@@ -2309,6 +2663,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
       ]
     }
   ],
@@ -2333,7 +2690,10 @@
       "numHeight": 4,
       "row": 2,
       "col": 3,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage NATIVES"
+      ]
     },
     {
       "source": "eastern",
@@ -2343,7 +2703,10 @@
       "numHeight": 4,
       "row": 2,
       "col": 5,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage NATIVES"
+      ]
     },
     {
       "source": "eastern",
@@ -2353,7 +2716,10 @@
       "numHeight": 4,
       "row": 2,
       "col": 4,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage NATIVES"
+      ]
     },
     {
       "source": "eastern",
@@ -2363,7 +2729,10 @@
       "numHeight": 4,
       "row": 2,
       "col": 2,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage NATIVES"
+      ]
     }
   ],
   "Goblin Blight": [
@@ -2378,6 +2747,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
       ]
     }
   ],
@@ -2402,7 +2774,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Good Wind": [
@@ -2414,7 +2789,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Grave of the Champion": [
@@ -2426,7 +2804,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Great Axe": [
@@ -2453,7 +2834,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Great Sword": [
@@ -2468,6 +2852,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -2484,6 +2871,9 @@
       "tags": [
         "Knights",
         "Mission"
+      ],
+      "ancestry": [
+        "BT Mountains"
       ]
     }
   ],
@@ -2496,7 +2886,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Guard Charm": [
@@ -2508,7 +2901,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -2530,7 +2926,10 @@
       "numHeight": 4,
       "row": 1,
       "col": 8,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage DESOLATION"
+      ]
     },
     {
       "source": "eastern",
@@ -2540,7 +2939,10 @@
       "numHeight": 4,
       "row": 1,
       "col": 7,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage DESOLATION"
+      ]
     },
     {
       "source": "eastern",
@@ -2550,7 +2952,10 @@
       "numHeight": 4,
       "row": 1,
       "col": 9,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage DESOLATION"
+      ]
     },
     {
       "source": "eastern",
@@ -2560,7 +2965,10 @@
       "numHeight": 4,
       "row": 1,
       "col": 6,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage DESOLATION"
+      ]
     }
   ],
   "Half-Orc (Mountaineer)": [
@@ -2572,7 +2980,10 @@
       "numHeight": 4,
       "row": 2,
       "col": 0,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage DESOLATION"
+      ]
     },
     {
       "source": "eastern",
@@ -2582,7 +2993,10 @@
       "numHeight": 4,
       "row": 2,
       "col": 1,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Lineage DESOLATION"
+      ]
     }
   ],
   "Halfling (Stealthy)": [
@@ -2651,6 +3065,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -2663,7 +3080,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Harmonic Hand Axe": [
@@ -2675,7 +3095,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Hawkeye": [
@@ -2711,7 +3134,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Helm of True Sight": [
@@ -2723,7 +3149,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Hesitation": [
@@ -2747,7 +3176,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Holdfast Leathers": [
@@ -2759,7 +3191,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Horn of the Dark Angel": [
@@ -2829,6 +3264,9 @@
       "tags": [
         "Mission",
         "Priests"
+      ],
+      "ancestry": [
+        "BT Woods"
       ]
     }
   ],
@@ -2853,7 +3291,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Illegal Goods": [
@@ -2870,6 +3311,9 @@
         "Merchant",
         "Mission",
         "Smuggler"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],
@@ -2894,7 +3338,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 6,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Incanters Jewel": [
@@ -2918,7 +3365,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Iron Helm": [
@@ -2933,6 +3383,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -2960,6 +3413,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
       ]
     }
   ],
@@ -2972,7 +3428,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Khatam of the Quick": [
@@ -2984,7 +3443,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ]
     }
   ],
   "Kings Edicts": [
@@ -3003,6 +3465,9 @@
         "Natives",
         "Soldiers",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -3027,7 +3492,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 7,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Knights": [
@@ -3039,7 +3507,10 @@
       "numHeight": 2,
       "row": 0,
       "col": 8,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Mountains Chips"
+      ]
     }
   ],
   "Kolah of the Horus eye": [
@@ -3051,7 +3522,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Leather Helm": [
@@ -3066,6 +3540,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -3081,6 +3558,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -3105,7 +3585,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Lizard Ruin": [
@@ -3120,6 +3603,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
       ]
     }
   ],
@@ -3150,6 +3636,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -3166,6 +3655,9 @@
       "tags": [
         "Knights",
         "Mission"
+      ],
+      "ancestry": [
+        "BT Mountains"
       ]
     }
   ],
@@ -3181,6 +3673,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -3193,7 +3688,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Mace of Smiting": [
@@ -3217,7 +3715,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Magewrights Quill": [
@@ -3229,7 +3730,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Magic Carpet": [
@@ -3241,7 +3745,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Magic Snare": [
@@ -3253,7 +3760,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Magical Bowl of Mixing": [
@@ -3277,7 +3787,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 7,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Major Heal": [
@@ -3289,7 +3802,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Malediction": [
@@ -3301,7 +3817,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Mana Shield": [
@@ -3313,7 +3832,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Mantle of the Djinn": [
@@ -3325,7 +3847,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Marauder (Fury)": [
@@ -3337,7 +3862,10 @@
       "numHeight": 5,
       "row": 3,
       "col": 3,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class EASTERN"
+      ]
     }
   ],
   "Mariners": [
@@ -3349,7 +3877,10 @@
       "numHeight": 2,
       "row": 0,
       "col": 9,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Riverlands Chips"
+      ]
     }
   ],
   "Medicine": [
@@ -3368,6 +3899,9 @@
         "Natives",
         "Steal",
         "Villagers"
+      ],
+      "ancestry": [
+        "BT Plains"
       ]
     }
   ],
@@ -3380,7 +3914,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Message": [
@@ -3396,6 +3933,9 @@
       "tags": [
         "CivTile",
         "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
       ]
     }
   ],
@@ -3408,7 +3948,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Mirror of Idolatry": [
@@ -3436,6 +3979,9 @@
       "tags": [
         "Dwarves",
         "Mission"
+      ],
+      "ancestry": [
+        "BT Caves"
       ]
     }
   ],
@@ -3452,6 +3998,9 @@
       "tags": [
         "Mission",
         "Villagers"
+      ],
+      "ancestry": [
+        "BT Plains"
       ]
     }
   ],
@@ -3500,7 +4049,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ]
     }
   ],
   "Moon Mirror": [
@@ -3512,7 +4064,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Morning Star": [
@@ -3539,7 +4094,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Move Earth": [
@@ -3563,7 +4121,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Natures Help": [
@@ -3587,7 +4148,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 9,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "New Maps": [
@@ -3606,6 +4170,9 @@
         "Natives",
         "Steal",
         "Watch"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -3623,6 +4190,9 @@
         "Mission",
         "Natives",
         "Watch"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -3635,7 +4205,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Oculus Reaper": [
@@ -3650,6 +4223,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
       ]
     }
   ],
@@ -3668,6 +4244,9 @@
         "Natives",
         "Sellswords",
         "Soldiers"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -3685,6 +4264,9 @@
         "Merchant",
         "Mission",
         "Scholar"
+      ],
+      "ancestry": [
+        "Mountains Chips"
       ]
     }
   ],
@@ -3709,7 +4291,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Orc Call": [
@@ -3721,7 +4306,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Othersight": [
@@ -3733,7 +4321,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Outcast (Overlooked)": [
@@ -3745,7 +4336,10 @@
       "numHeight": 5,
       "row": 3,
       "col": 0,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "Package": [
@@ -3762,6 +4356,9 @@
         "CivTile",
         "Mission",
         "Steal"
+      ],
+      "ancestry": [
+        "Mountains Chips"
       ]
     }
   ],
@@ -3774,7 +4371,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 8,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Panacea of Persuasion": [
@@ -3786,7 +4386,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Panoply": [
@@ -3798,7 +4401,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Peace": [
@@ -3822,7 +4428,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Pearl of Riversight": [
@@ -3834,7 +4443,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ]
     }
   ],
   "Pebble of Irritation": [
@@ -3846,7 +4458,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Pit Fighter (Weaponmaster)": [
@@ -3858,7 +4473,10 @@
       "numHeight": 5,
       "row": 3,
       "col": 4,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class EASTERN"
+      ]
     }
   ],
   "Plate Armor": [
@@ -3873,6 +4491,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -3888,6 +4509,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
       ]
     }
   ],
@@ -3900,7 +4524,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Possess": [
@@ -3912,7 +4539,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Potion of Energy": [
@@ -3924,7 +4554,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -3946,7 +4579,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -3968,7 +4604,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -4014,7 +4653,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -4036,7 +4678,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Proven Rogue": [
@@ -4053,6 +4698,9 @@
         "Mission",
         "Natives",
         "Rogues"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -4071,6 +4719,9 @@
         "Mission",
         "Peddler",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -4083,7 +4734,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Quick Ring": [
@@ -4107,7 +4761,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 9,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Raw Material": [
@@ -4124,6 +4781,9 @@
         "Merchant",
         "Mission",
         "Smith"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -4136,7 +4796,10 @@
       "numHeight": 1,
       "row": 0,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "RED Player Setup"
+      ]
     }
   ],
   "Renewal": [
@@ -4148,7 +4811,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Riddle of the Imp": [
@@ -4160,7 +4826,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Ring of Malevolence": [
@@ -4220,7 +4889,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ]
     }
   ],
   "Riverwalkers": [
@@ -4232,7 +4904,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ]
     }
   ],
   "Robe of the Chanter": [
@@ -4268,7 +4943,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Rogue (Elusive)": [
@@ -4280,7 +4958,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 8,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Rogues": [
@@ -4292,7 +4973,10 @@
       "numHeight": 2,
       "row": 1,
       "col": 2,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "NATIVES Groups"
+      ]
     }
   ],
   "Rot": [
@@ -4304,7 +4988,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Rule Undead": [
@@ -4328,7 +5015,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 0,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Ruthless Raider": [
@@ -4345,6 +5035,9 @@
         "Bashkirs",
         "Mission",
         "Natives"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -4357,7 +5050,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Safe Haven": [
@@ -4369,7 +5065,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Sale Goods": [
@@ -4387,6 +5086,9 @@
         "Mission",
         "Steal",
         "Vendor"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],
@@ -4402,6 +5104,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
       ]
     }
   ],
@@ -4414,7 +5119,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ]
     }
   ],
   "Sandstrider Boots": [
@@ -4426,7 +5134,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ]
     }
   ],
   "Satchel of a Giant": [
@@ -4450,7 +5161,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Scepter of the Sorcerer": [
@@ -4474,7 +5188,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Sea Explorer": [
@@ -4490,6 +5207,9 @@
       "tags": [
         "Mariners",
         "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
       ]
     }
   ],
@@ -4502,7 +5222,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Seal of the False King": [
@@ -4514,7 +5237,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Seed of Speed": [
@@ -4526,7 +5252,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Sellswords": [
@@ -4538,7 +5267,10 @@
       "numHeight": 2,
       "row": 1,
       "col": 3,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "NATIVES Groups"
+      ]
     }
   ],
   "Sending Stones": [
@@ -4550,7 +5282,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Serpent Helm": [
@@ -4562,7 +5297,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shadow Cloak": [
@@ -4586,7 +5324,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shamans Kaftan": [
@@ -4622,7 +5363,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shekel of Future Sight": [
@@ -4634,7 +5378,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shekel of Gloom": [
@@ -4646,7 +5393,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shekel of Shaking": [
@@ -4658,7 +5408,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shekel of Subjucation": [
@@ -4670,7 +5423,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shekel of the Sun": [
@@ -4682,7 +5438,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shekel of the Wind": [
@@ -4694,7 +5453,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shield": [
@@ -4709,6 +5471,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -4745,7 +5510,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Shift Focus": [
@@ -4757,7 +5525,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Shoes of the Thief": [
@@ -4784,6 +5555,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -4799,6 +5573,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -4811,7 +5588,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Skeleton Key": [
@@ -4839,6 +5619,9 @@
       "tags": [
         "Dwarves",
         "Mission"
+      ],
+      "ancestry": [
+        "BT Caves"
       ]
     }
   ],
@@ -4851,7 +5634,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Sling": [
@@ -4866,6 +5652,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -4881,6 +5670,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
       ]
     }
   ],
@@ -4893,7 +5685,10 @@
       "numHeight": 2,
       "row": 1,
       "col": 4,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "NATIVES Groups"
+      ]
     }
   ],
   "Sorcerer (Specialized)": [
@@ -4905,7 +5700,10 @@
       "numHeight": 5,
       "row": 0,
       "col": 9,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Soul Save": [
@@ -4929,7 +5727,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 1,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Sparkler of Wisdom": [
@@ -4956,6 +5757,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -4980,7 +5784,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -4990,7 +5797,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -5052,7 +5862,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -5062,7 +5875,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     },
     {
       "source": "eastern",
@@ -5124,7 +5940,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Spelunker": [
@@ -5139,6 +5958,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
       ]
     }
   ],
@@ -5154,6 +5976,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -5169,6 +5994,9 @@
       "uniqueBack": false,
       "tags": [
         "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
       ]
     }
   ],
@@ -5181,7 +6009,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Staff of Thaumaturgy": [
@@ -5193,7 +6024,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Staff of the Magi": [
@@ -5205,7 +6039,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Staff of the Sharp Sands": [
@@ -5217,7 +6054,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ]
     }
   ],
   "Statue of the Templar": [
@@ -5229,7 +6069,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Sting Breaker": [
@@ -5244,6 +6087,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
       ]
     }
   ],
@@ -5256,7 +6102,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ]
     }
   ],
   "Strength": [
@@ -5292,7 +6141,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Sunder": [
@@ -5304,7 +6156,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Supplies": [
@@ -5320,6 +6175,9 @@
       "tags": [
         "CivTile",
         "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -5335,6 +6193,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],
@@ -5350,6 +6211,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
       ]
     }
   ],
@@ -5365,6 +6229,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
       ]
     }
   ],
@@ -5377,7 +6244,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Sword of Torment": [
@@ -5389,7 +6259,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Symbol of Alertness": [
@@ -5473,7 +6346,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Symbol of Rest": [
@@ -5521,7 +6397,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Tail of the Scorpion": [
@@ -5533,7 +6412,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Talaria of the Gladiator": [
@@ -5584,6 +6466,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -5596,7 +6481,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Tent Burner": [
@@ -5611,6 +6499,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "BT Swamps"
       ]
     }
   ],
@@ -5635,7 +6526,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "The Watch": [
@@ -5647,7 +6541,10 @@
       "numHeight": 2,
       "row": 1,
       "col": 8,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "NATIVES Groups"
+      ]
     }
   ],
   "Thiefs Lucky Coin": [
@@ -5674,6 +6571,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
       ]
     }
   ],
@@ -5698,7 +6598,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Tome of Conjuring": [
@@ -5806,7 +6709,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Trade Goods": [
@@ -5824,6 +6730,9 @@
         "Merchant",
         "Mission",
         "Steal"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
       ]
     }
   ],
@@ -5848,7 +6757,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ]
     }
   ],
   "Treant Seeds": [
@@ -5864,6 +6776,9 @@
       "tags": [
         "Mission",
         "Priests"
+      ],
+      "ancestry": [
+        "BT Woods"
       ]
     }
   ],
@@ -5879,6 +6794,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
       ]
     }
   ],
@@ -5891,7 +6809,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 2,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Tricksters Stone": [
@@ -5927,7 +6848,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Turn Undead": [
@@ -5958,6 +6882,9 @@
         "Mission",
         "Natives",
         "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -5973,6 +6900,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "BT Plains"
       ]
     }
   ],
@@ -5985,7 +6915,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ]
     }
   ],
   "Vanguard (Primal Strike)": [
@@ -5997,7 +6930,10 @@
       "numHeight": 5,
       "row": 3,
       "col": 5,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class EASTERN"
+      ]
     }
   ],
   "Vapor Form": [
@@ -6024,6 +6960,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
       ]
     }
   ],
@@ -6060,7 +6999,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Warblade": [
@@ -6084,7 +7026,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 0,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Warrior (Adept)": [
@@ -6096,7 +7041,10 @@
       "numHeight": 5,
       "row": 1,
       "col": 1,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DRAGONS DOWN"
+      ]
     }
   ],
   "Water Weird": [
@@ -6108,7 +7056,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Watercourser": [
@@ -6123,6 +7074,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
       ]
     }
   ],
@@ -6135,7 +7089,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ]
     }
   ],
   "Whispers": [
@@ -6152,6 +7109,9 @@
         "Mission",
         "Natives",
         "Sellswords"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
       ]
     }
   ],
@@ -6164,7 +7124,10 @@
       "numHeight": 7,
       "row": 5,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ]
     }
   ],
   "Witch (Imp Familiar)": [
@@ -6176,7 +7139,10 @@
       "numHeight": 5,
       "row": 2,
       "col": 3,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class DESOLATION"
+      ]
     }
   ],
   "Wizard (Studious)": [
@@ -6188,7 +7154,10 @@
       "numHeight": 5,
       "row": 3,
       "col": 1,
-      "uniqueBack": true
+      "uniqueBack": true,
+      "ancestry": [
+        "Class NATIVES"
+      ]
     }
   ],
   "Wolf Butcher": [
@@ -6203,6 +7172,9 @@
       "uniqueBack": false,
       "tags": [
         "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
       ]
     }
   ],

@@ -185,6 +185,85 @@ describe("extractCards", () => {
     ]);
   });
 
+  it("records the full ancestry of nicknamed containers, outermost first", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "DESOLATION Cards",
+          ContainedObjects: [
+            {
+              Name: "Bag",
+              Nickname: "Inner Bag",
+              ContainedObjects: [card("Buried", 100, "1", SAMPLE_DECK)],
+            },
+            card("Top", 101, "1", SAMPLE_DECK),
+            {
+              Name: "Deck",
+              ContainedObjects: [card("InDeck", 102, "1", SAMPLE_DECK)],
+            },
+          ],
+        },
+      ],
+    };
+    const out = extractCards(save, "eastern");
+    expect(out["Top"][0].ancestry).toEqual(["DESOLATION Cards"]);
+    expect(out["Buried"][0].ancestry).toEqual([
+      "DESOLATION Cards",
+      "Inner Bag",
+    ]);
+    // The Deck has no Nickname so it doesn't contribute; only the Bag does.
+    expect(out["InDeck"][0].ancestry).toEqual(["DESOLATION Cards"]);
+  });
+
+  it("records ancestry for any nicknamed container, not just Bag", () => {
+    // Custom_Model_Bag, Deck, anything that contains the card and carries a
+    // Nickname is included.
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Custom_Model_Bag",
+          Nickname: "Adult Dragons",
+          ContainedObjects: [
+            {
+              Name: "Deck",
+              Nickname: "Subdeck",
+              ContainedObjects: [card("X", 100, "1", SAMPLE_DECK)],
+            },
+          ],
+        },
+      ],
+    };
+    expect(extractCards(save, "eastern")["X"][0].ancestry).toEqual([
+      "Adult Dragons",
+      "Subdeck",
+    ]);
+  });
+
+  it("omits `ancestry` for cards with no nicknamed ancestors", () => {
+    const save = { ObjectStates: [card("Loose", 100, "1", SAMPLE_DECK)] };
+    expect("ancestry" in extractCards(save, "eastern")["Loose"][0]).toBe(false);
+  });
+
+  it("skips ancestors with an empty Nickname while keeping deeper named ones", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "",
+          ContainedObjects: [
+            {
+              Name: "Bag",
+              Nickname: "Named",
+              ContainedObjects: [card("X", 100, "1", SAMPLE_DECK)],
+            },
+          ],
+        },
+      ],
+    };
+    expect(extractCards(save, "eastern")["X"][0].ancestry).toEqual(["Named"]);
+  });
+
   it("preserves source identifier across all extracted cards", () => {
     const save = { ObjectStates: [card("A", 100, "1", SAMPLE_DECK)] };
     const out = extractCards(save, "my-source");
@@ -212,7 +291,7 @@ describe("extractChips", () => {
         source: "eastern",
         imageURL: "front.png",
         imageSecondaryURL: "back.png",
-        count: 1,
+        locations: [{ ancestry: [], count: 1 }],
       },
     ]);
   });
@@ -231,7 +310,7 @@ describe("extractChips", () => {
     expect(extractChips(save, "eastern")).toEqual({});
   });
 
-  it("dedups physical copies but sums their count", () => {
+  it("dedups physical copies into one entry with per-ancestry counts", () => {
     const save = {
       ObjectStates: [
         chip("Trolls", "front.png", "back.png"),
@@ -241,10 +320,10 @@ describe("extractChips", () => {
     };
     const out = extractChips(save, "eastern")["Trolls"];
     expect(out).toHaveLength(1);
-    expect(out[0].count).toBe(3);
+    expect(out[0].locations).toEqual([{ ancestry: [], count: 3 }]);
   });
 
-  it("keeps distinct URL pairs separate and counts each independently", () => {
+  it("keeps distinct URL pairs separate", () => {
     const save = {
       ObjectStates: [
         chip("Bandits", "a.png", "back.png"),
@@ -254,7 +333,43 @@ describe("extractChips", () => {
     };
     const out = extractChips(save, "eastern")["Bandits"];
     expect(out).toHaveLength(2);
-    expect(out.map((c) => c.count).sort()).toEqual([1, 2]);
+    const totals = out.map((c) =>
+      c.locations.reduce((n, l) => n + l.count, 0),
+    );
+    expect(totals.sort()).toEqual([1, 2]);
+  });
+
+  it("groups physical copies under their nicknamed-ancestor location", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Plains Chips",
+          ContainedObjects: [
+            chip("Goblins", "g.png", "b.png"),
+            chip("Goblins", "g.png", "b.png"),
+            chip("Goblins", "g.png", "b.png"),
+          ],
+        },
+        {
+          Name: "Bag",
+          Nickname: "Woods Chips",
+          ContainedObjects: [
+            chip("Goblins", "g.png", "b.png"),
+            chip("Goblins", "g.png", "b.png"),
+          ],
+        },
+        // One copy not in any nicknamed container.
+        chip("Goblins", "g.png", "b.png"),
+      ],
+    };
+    const out = extractChips(save, "eastern")["Goblins"];
+    expect(out).toHaveLength(1);
+    expect(out[0].locations).toEqual([
+      { ancestry: ["Plains Chips"], count: 3 },
+      { ancestry: ["Woods Chips"], count: 2 },
+      { ancestry: [], count: 1 },
+    ]);
   });
 
   it("normalizes GMNotes the same way as card nicknames", () => {
