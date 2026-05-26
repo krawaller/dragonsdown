@@ -45,6 +45,18 @@ export type TTSChip = {
 export type ChipIndex = Record<string, TTSChip[]>;
 
 /**
+ * Turn a chip's raw GMNotes key into a display name. The mod's GMNotes are
+ * mostly PascalCase (`AdultDragons` → `Adult Dragons`), with a handful of
+ * lowercase ones (`aurorans` → `Aurorans`). We split at lower→upper
+ * boundaries and then capitalize each word.
+ */
+export function prettifyChipName(s: string): string {
+  return s
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/(^|\s)([a-z])/g, (_, sep: string, c: string) => sep + c.toUpperCase());
+}
+
+/**
  * Manually-curated aliases for cases that normalization can't handle:
  * word-boundary differences ("Ripple Strike" → "Ripplestrike"), typos in the
  * source data ("Subjugation" → "Subjucation"), or one section that maps to

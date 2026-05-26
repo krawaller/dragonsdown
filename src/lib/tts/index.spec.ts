@@ -1,5 +1,30 @@
 import { describe, it, expect } from "vitest";
-import { extractCards, extractChips, normalizeTitle, resolveCards } from ".";
+import {
+  extractCards,
+  extractChips,
+  normalizeTitle,
+  prettifyChipName,
+  resolveCards,
+} from ".";
+
+describe("prettifyChipName", () => {
+  it("splits at lower→upper boundaries", () => {
+    expect(prettifyChipName("AdultDragons")).toBe("Adult Dragons");
+    expect(prettifyChipName("DeathHound")).toBe("Death Hound");
+    expect(prettifyChipName("GiantSpiders")).toBe("Giant Spiders");
+  });
+
+  it("leaves single-word PascalCase names alone", () => {
+    expect(prettifyChipName("Bandits")).toBe("Bandits");
+    expect(prettifyChipName("Banshees")).toBe("Banshees");
+  });
+
+  it("capitalizes the first letter when GMNotes is fully lowercase", () => {
+    expect(prettifyChipName("aurorans")).toBe("Aurorans");
+    expect(prettifyChipName("consul")).toBe("Consul");
+    expect(prettifyChipName("watch")).toBe("Watch");
+  });
+});
 
 function card(nickname: string, cardID: number, deckId: string, deck: object) {
   return {

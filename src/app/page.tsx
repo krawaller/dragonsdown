@@ -30,7 +30,7 @@ export default function Home() {
           <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 mb-3">
             Aggregations
           </h2>
-          <ul className="space-y-3">
+          <ul className="space-y-3 mb-10">
             {derived.map((doc) => (
               <li key={doc.slug}>
                 <Link
@@ -44,6 +44,19 @@ export default function Home() {
           </ul>
         </>
       )}
+      <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 mb-3">
+        References
+      </h2>
+      <ul className="space-y-3">
+        <li>
+          <Link
+            href="/chips"
+            className="block rounded-lg border border-zinc-200 dark:border-zinc-800 px-5 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+          >
+            <span className="text-lg font-medium">Chips</span>
+          </Link>
+        </li>
+      </ul>
     </main>
   );
 }
