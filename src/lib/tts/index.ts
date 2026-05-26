@@ -66,6 +66,31 @@ export function chipTotalCount(chip: TTSChip): number {
 export type ChipIndex = Record<string, TTSChip[]>;
 
 /**
+ * A "site" is a Custom_Tile whose front (`ImageURL`) is the generic site card
+ * back. Each site has a unique Nickname (`Grotto`, `Tarn`, ...) and a unique
+ * `ImageSecondaryURL` showing the actual site art.
+ */
+export type TTSSite = {
+  source: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+  ancestry: string[];
+  /** GMNotes string from the TTS tile, often a small numeric tag. */
+  gmNotes?: string;
+};
+
+/** Output written to data/tts/sites.json. Keyed by normalized `Nickname`. */
+export type SiteIndex = Record<string, TTSSite[]>;
+
+/**
+ * The face URL the TTS mod uses for every site card-back. Tiles with this
+ * URL as their `ImageURL` are sites; their unique art is in
+ * `ImageSecondaryURL`.
+ */
+export const SITE_FACE_URL =
+  "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/";
+
+/**
  * Turn a chip's raw GMNotes key into a display name. The mod's GMNotes are
  * mostly PascalCase (`AdultDragons` → `Adult Dragons`), with a handful of
  * lowercase ones (`aurorans` → `Aurorans`). We split at lower→upper
@@ -267,6 +292,54 @@ export function sameAncestry(a: string[], b: string[]): boolean {
   if (a.length !== b.length) return false;
   for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
   return true;
+}
+
+/**
+ * Walk a TTS save object recursively and return every Site — identified by
+ * `CustomImage.ImageURL === SITE_FACE_URL`. Each site is keyed by its
+ * normalized `Nickname`; the unique art lives in `ImageSecondaryURL`.
+ */
+export function extractSites(root: unknown, source: string): SiteIndex {
+  const index: SiteIndex = {};
+  type SiteObj = {
+    Nickname?: string;
+    GMNotes?: string;
+    CustomImage: { ImageURL?: string; ImageSecondaryURL?: string };
+  };
+  const sites: { site: SiteObj; ancestry: string[] }[] = [];
+  const walkSites = (obj: unknown, ancestry: string[]) => {
+    if (!isRecord(obj)) return;
+    const ci = obj.CustomImage as
+      | { ImageURL?: string; ImageSecondaryURL?: string }
+      | undefined;
+    if (ci && ci.ImageURL === SITE_FACE_URL) {
+      sites.push({ site: obj as unknown as SiteObj, ancestry });
+    }
+    const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+    const childAncestry = nick ? [...ancestry, nick] : ancestry;
+    const states = obj.ObjectStates;
+    if (Array.isArray(states))
+      for (const s of states) walkSites(s, childAncestry);
+    const contained = (obj as TTSContainer).ContainedObjects;
+    if (Array.isArray(contained))
+      for (const s of contained) walkSites(s, childAncestry);
+  };
+  walkSites(root, []);
+  for (const { site, ancestry } of sites) {
+    const nick = (site.Nickname ?? "").trim();
+    if (!nick) continue;
+    const key = normalizeTitle(nick);
+    const entry: TTSSite = {
+      source,
+      imageURL: site.CustomImage.ImageURL ?? "",
+      imageSecondaryURL: site.CustomImage.ImageSecondaryURL ?? "",
+      ancestry,
+    };
+    const gm = (site.GMNotes ?? "").trim();
+    if (gm) entry.gmNotes = gm;
+    (index[key] ??= []).push(entry);
+  }
+  return index;
 }
 
 function walkChips(

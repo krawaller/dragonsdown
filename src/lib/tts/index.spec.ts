@@ -2,9 +2,11 @@ import { describe, it, expect } from "vitest";
 import {
   extractCards,
   extractChips,
+  extractSites,
   normalizeTitle,
   prettifyChipName,
   resolveCards,
+  SITE_FACE_URL,
 } from ".";
 
 describe("prettifyChipName", () => {
@@ -393,6 +395,61 @@ describe("extractChips", () => {
       ],
     };
     expect(extractChips(save, "eastern")).toEqual({});
+  });
+});
+
+describe("extractSites", () => {
+  const site = (nick: string, gm: string, secondary: string, opts: { face?: string } = {}) => ({
+    Name: "Custom_Tile",
+    Nickname: nick,
+    GMNotes: gm,
+    CustomImage: {
+      ImageURL: opts.face ?? SITE_FACE_URL,
+      ImageSecondaryURL: secondary,
+    },
+  });
+
+  it("extracts tiles whose ImageURL is the site face URL", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Sinister SWAMPS",
+          ContainedObjects: [site("Grotto", "6", "art-grotto.png")],
+        },
+      ],
+    };
+    const out = extractSites(save, "eastern");
+    expect(out["Grotto"]).toEqual([
+      {
+        source: "eastern",
+        imageURL: SITE_FACE_URL,
+        imageSecondaryURL: "art-grotto.png",
+        ancestry: ["Sinister SWAMPS"],
+        gmNotes: "6",
+      },
+    ]);
+  });
+
+  it("skips tiles whose ImageURL does not match SITE_FACE_URL", () => {
+    const save = {
+      ObjectStates: [site("Decoy", "1", "art.png", { face: "different.png" })],
+    };
+    expect(extractSites(save, "eastern")).toEqual({});
+  });
+
+  it("omits gmNotes when empty", () => {
+    const save = { ObjectStates: [site("Mystery", "", "art.png")] };
+    expect("gmNotes" in extractSites(save, "eastern")["Mystery"][0]).toBe(
+      false,
+    );
+  });
+
+  it("normalizes the nickname key", () => {
+    const save = { ObjectStates: [site("King’s Hideout", "3", "art.png")] };
+    expect(Object.keys(extractSites(save, "eastern"))).toEqual([
+      "Kings Hideout",
+    ]);
   });
 });
 

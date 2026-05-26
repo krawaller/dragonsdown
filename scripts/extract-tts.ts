@@ -10,11 +10,13 @@ import path from "node:path";
 import {
   extractCards,
   extractChips,
+  extractSites,
   isSameCell,
   mergeTags,
   sameAncestry,
   type CardIndex,
   type ChipIndex,
+  type SiteIndex,
 } from "../src/lib/tts";
 
 const SOURCES_DIR = path.join(process.cwd(), "sources");
@@ -35,6 +37,7 @@ async function main(): Promise<void> {
 
   const cards: CardIndex = {};
   const chips: ChipIndex = {};
+  const sites: SiteIndex = {};
 
   for (const file of files) {
     const stem = path.basename(file, ".json");
@@ -43,9 +46,10 @@ async function main(): Promise<void> {
 
     const cardIndex = extractCards(save, stem);
     const chipIndex = extractChips(save, stem);
+    const siteIndex = extractSites(save, stem);
     console.log(
-      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips ` +
-        `(${Object.keys(cardIndex).length} card names, ${Object.keys(chipIndex).length} chip names)`,
+      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites ` +
+        `(${Object.keys(cardIndex).length} card names, ${Object.keys(chipIndex).length} chip names, ${Object.keys(siteIndex).length} site names)`,
     );
 
     // Merge into combined indexes, de-duping by cell (cards) / image URL (chips).
@@ -59,6 +63,11 @@ async function main(): Promise<void> {
           bucket.push(item);
         }
       }
+    }
+    // Sites: no dedup needed (each site appears once per save). Cross-source
+    // collisions just append (so we can spot duplicate entries if any).
+    for (const [name, items] of Object.entries(siteIndex)) {
+      (sites[name] ??= []).push(...items);
     }
     // Chips dedup by URL pair across sources; per-ancestry counts are summed.
     for (const [name, items] of Object.entries(chipIndex)) {
@@ -89,11 +98,15 @@ async function main(): Promise<void> {
 
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
+  await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
   );
   console.log(
     `→ chips.json: ${Object.keys(chips).length} names, ${countEntries(chips)} chips total`,
+  );
+  console.log(
+    `→ sites.json: ${Object.keys(sites).length} names, ${countEntries(sites)} sites total`,
   );
 }
 
