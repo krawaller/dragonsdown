@@ -6,7 +6,14 @@ import type { CardEntry } from "@/lib/tts/lookup";
 
 type Zoom = { card: TTSCardImage; name: string };
 
-export function CardGrid({ entries }: { entries: CardEntry[] }) {
+export function CardGrid({
+  entries,
+  excludeTag,
+}: {
+  entries: CardEntry[];
+  /** Tag to omit from each card's per-card tag list (the page's own tag). */
+  excludeTag?: string;
+}) {
   const [zoom, setZoom] = useState<Zoom | null>(null);
 
   useEffect(() => {
@@ -24,7 +31,7 @@ export function CardGrid({ entries }: { entries: CardEntry[] }) {
         {entries.map(({ name, cards }) => (
           <section key={name} className="flex flex-col gap-2">
             <h2 className="text-sm font-medium">{name}</h2>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               {cards.map((card, i) => (
                 <button
                   key={`${card.faceURL}-${card.row}-${card.col}-${i}`}
@@ -40,13 +47,49 @@ export function CardGrid({ entries }: { entries: CardEntry[] }) {
           </section>
         ))}
       </div>
-      {zoom && <CardLightbox zoom={zoom} onClose={() => setZoom(null)} />}
+      {zoom && (
+        <CardLightbox
+          zoom={zoom}
+          excludeTag={excludeTag}
+          onClose={() => setZoom(null)}
+        />
+      )}
     </>
   );
 }
 
-function CardLightbox({ zoom, onClose }: { zoom: Zoom; onClose: () => void }) {
+function otherTagsFor(card: TTSCardImage, excludeTag?: string): string[] {
+  if (!card.tags) return [];
+  if (!excludeTag) return card.tags;
+  return card.tags.filter((t) => t !== excludeTag);
+}
+
+function TagBadges({ tags }: { tags: string[] }) {
+  return (
+    <div className="flex flex-wrap gap-2 justify-center">
+      {tags.map((t) => (
+        <span
+          key={t}
+          className="text-sm px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300"
+        >
+          {t}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function CardLightbox({
+  zoom,
+  excludeTag,
+  onClose,
+}: {
+  zoom: Zoom;
+  excludeTag?: string;
+  onClose: () => void;
+}) {
   const { card, name } = zoom;
+  const otherTags = otherTagsFor(card, excludeTag);
   return (
     <div
       onClick={onClose}
@@ -57,6 +100,11 @@ function CardLightbox({ zoom, onClose }: { zoom: Zoom; onClose: () => void }) {
     >
       <div className="relative max-w-5xl w-full flex flex-col items-center gap-4">
         <h2 className="text-2xl font-semibold text-white">{name}</h2>
+        {otherTags.length > 0 && (
+          <div onClick={(e) => e.stopPropagation()}>
+            <TagBadges tags={otherTags} />
+          </div>
+        )}
         <div
           onClick={(e) => e.stopPropagation()}
           className="flex flex-wrap justify-center gap-6"
