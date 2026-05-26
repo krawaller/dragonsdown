@@ -59,6 +59,7 @@ export function ChipGrid({ entries }: { entries: ChipEntry[] }) {
 
 function ChipLightbox({ zoom, onClose }: { zoom: Zoom; onClose: () => void }) {
   const { chip, name } = zoom;
+  const hasBack = Boolean(chip.imageSecondaryURL);
   return (
     <div
       onClick={onClose}
@@ -67,24 +68,24 @@ function ChipLightbox({ zoom, onClose }: { zoom: Zoom; onClose: () => void }) {
       aria-label={`${name} chip`}
       className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-6"
     >
-      <div className="relative max-w-5xl w-full flex flex-col items-center gap-4">
+      <div className="relative w-full max-w-3xl flex flex-col items-center gap-4">
         <h2 className="text-2xl font-semibold text-white">{name}</h2>
         <div
           onClick={(e) => e.stopPropagation()}
-          className="flex flex-wrap justify-center gap-6"
+          className={`grid gap-6 w-full ${hasBack ? "grid-cols-2" : "grid-cols-1 justify-items-center"}`}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={chip.imageURL}
             alt={`${name} face`}
-            className="max-h-[70vh] max-w-[45vw] rounded-full object-contain bg-zinc-100"
+            className="w-full aspect-square object-cover rounded-full bg-zinc-100"
           />
-          {chip.imageSecondaryURL && (
+          {hasBack && (
             // eslint-disable-next-line @next/next/no-img-element
             <img
               src={chip.imageSecondaryURL}
               alt={`${name} back`}
-              className="max-h-[70vh] max-w-[45vw] rounded-full object-contain bg-zinc-100"
+              className="w-full aspect-square object-cover rounded-full bg-zinc-100"
             />
           )}
         </div>
