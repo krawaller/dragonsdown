@@ -81,3 +81,24 @@ export function getAllChips(): ChipEntry[] {
     .map(([name, chips]) => ({ name, prettyName: prettifyChipName(name), chips }))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
+
+/** A card name with the card variants that carry a specific tag. */
+export type CardEntry = {
+  name: string;
+  cards: TTSCardImage[];
+};
+
+/**
+ * Return cards from `cards.json` whose `tags` include the given tag (e.g.
+ * "Item", "Mission", "Merchant"), grouped by nickname and sorted A→Z.
+ */
+export function getCardsWithTag(tag: string): CardEntry[] {
+  const idx = getCardIndex();
+  return Object.entries(idx)
+    .map(([name, cards]) => ({
+      name,
+      cards: cards.filter((c) => c.tags?.includes(tag)),
+    }))
+    .filter(({ cards }) => cards.length > 0)
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
