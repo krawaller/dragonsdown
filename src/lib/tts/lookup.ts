@@ -13,16 +13,20 @@ import {
   type AliasMap,
   type CardIndex,
   type ChipIndex,
+  type SiteIndex,
   type TTSCardImage,
   type TTSChip,
+  type TTSSite,
 } from ".";
 import aliasesData from "./aliases.json";
 
 const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
 const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
+const SITES_FILE = path.join(process.cwd(), "data", "tts", "sites.json");
 
 let cachedCardIndex: CardIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
+let cachedSiteIndex: SiteIndex | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -35,6 +39,12 @@ function getChipIndex(): ChipIndex {
   if (cachedChipIndex !== null) return cachedChipIndex;
   cachedChipIndex = readJsonOrEmpty<ChipIndex>(CHIPS_FILE);
   return cachedChipIndex;
+}
+
+function getSiteIndex(): SiteIndex {
+  if (cachedSiteIndex !== null) return cachedSiteIndex;
+  cachedSiteIndex = readJsonOrEmpty<SiteIndex>(SITES_FILE);
+  return cachedSiteIndex;
 }
 
 function readJsonOrEmpty<T>(file: string): T {
@@ -87,6 +97,20 @@ export type CardEntry = {
   name: string;
   cards: TTSCardImage[];
 };
+
+/** A site entry for the /sites listing. */
+export type SiteEntry = {
+  name: string;
+  site: TTSSite;
+};
+
+/** Return all sites, sorted alphabetically by name. */
+export function getAllSites(): SiteEntry[] {
+  const idx = getSiteIndex();
+  return Object.entries(idx)
+    .flatMap(([name, sites]) => sites.map((site) => ({ name, site })))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
 
 /**
  * Return cards from `cards.json` whose `tags` include the given tag (e.g.
