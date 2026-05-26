@@ -32,6 +32,8 @@ export const TRANSFORMS: Rule[] = [
     imageIds: [
       "3486f0f0a099b0ad2c78ad2473e124ce7773ac41",
       "ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a",
+      "a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2",
+      "cfc11a9615ed255df02a0854ad00c1bcb30520d8",
     ],
   },
   {

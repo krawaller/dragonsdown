@@ -4,7 +4,7 @@
     "source": "eastern-reaches",
     "level": 1,
     "title": "DRAGONS DOWN: EASTERN REACHES",
-    "content": "![](/images/c21b8fff7a780b55ecfe62764bf7407526fc948c.jpeg)\n\n![](/images/c2f0e29555150ace675a1fdec11ab8d27760dc59.jpeg)\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\n*“The lands to the East had been unexplored even before the dragons devastated* *this place. But there were thriving communities and vast wastelands beyond* *what we knew. I could see boundless deserts and gorges cut by deep riverlands.* *I decided to set foot in these lands to see what adventures await....”*\n\n**Dragons Down: Eastern Reaches** expands **Dragons Down** by introducing new lands to explore, new terrain types, new monsters to fight, new natives with whom to interact, new treasure sites to find, new treasures to loot, new spells to cast, new classes to play, and new lineages to be. New components, other than counters, round tokens, and hero chips, are marked with a small      in one corner."
+    "content": "![](/images/c21b8fff7a780b55ecfe62764bf7407526fc948c.jpeg)\n\n![](/images/c2f0e29555150ace675a1fdec11ab8d27760dc59.jpeg)\n\n*“The lands to the East had been unexplored even before the dragons devastated* *this place. But there were thriving communities and vast wastelands beyond* *what we knew. I could see boundless deserts and gorges cut by deep riverlands.* *I decided to set foot in these lands to see what adventures await....”*\n\n**Dragons Down: Eastern Reaches** expands **Dragons Down** by introducing new lands to explore, new terrain types, new monsters to fight, new natives with whom to interact, new treasure sites to find, new treasures to loot, new spells to cast, new classes to play, and new lineages to be. New components, other than counters, round tokens, and hero chips, are marked with a small      in one corner."
   },
   {
     "id": "1.1",
@@ -137,7 +137,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Ruthless Riverlands",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)"
+    "content": ""
   },
   {
     "id": "1.7.1",
@@ -165,7 +165,7 @@
     "source": "eastern-reaches",
     "level": 3,
     "title": "Ferries",
-    "content": "![](/images/2e0b89bd06c63a671b8ea67fd35f77a25d3ae44e.jpeg)\n\n![](/images/1f866aa5f487e32f95d7b10632de4dd40b888fb4.jpeg)\n\nLocal ferries service passengers on the river between each dock and will transport a hero on the river for a small fee. To use a ferry, a hero must be in a dock or water clearing. A dock is considered adjacent to each water clearing on either side of the dock. Example: All clearings in the image on the right are adjacent to each other. Movement on a ferry follows these rules:\n\n![](/images/fe2f350a543113f6974e562252271da00d81aa2e.png)\n\n- Ferrying on the river costs a single move action regardless of the distance traveled. A hero may move in either direction any number of clearings on the river, up to and including the dock.\n\n- The ferry will transport a hero no further than the next dock.\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\n- Movement is done one clearing at a time. Should a hero enter a new map tile containing no wilderness or civilization tokens, reveal and place the appropriate tokens in the map tile before deciding whether to proceed further via ferry movement.\n\n- The hero may stop at any water clearing they wish, but may not bypass a dock.  To use a ferry to proceed on the river beyond a dock, the hero must first enter the dock clearing and and end their move action. They may then continue ferrying further on the river using a subsequent action.\n\n- If the hero enters a dock clearing that has additional movement cost (e.g. mountain or swamp), the hero must spend an additional action to enter the clearing per normal movement rules.\n\n- A ferry will drop off or pick up a hero in a clearing containing a monster. But, a ferry will not move through a clearing containing a monster in a single move action.\n\n- Heroes that use ferry movement to enter a clearing containing monsters will be blocked by the monsters (heroes may attempt to hide). Heroes that performed a sneak action this turn may not ignore any monster symbol results on this hide attempt. However, treasure bonuses and the halfling’s lineage advantage would still apply.\n\n- Heroes may leave a clearing containing monsters via ferry movement.\n\n- Natives have no effect on the movement of ferries, unless the native group is an enemy of the hero, in which case they will block the hero as normal.\n\n- Ferries cost 1 gold per clearing entered during the move action. Should a hero wish to use a ferry, but not have enough gold to pay the cost, the hero may pay with treasure or item cards of equal or greater value than the cost of the entire ferry ride in lieu of gold. Ferries will not refund any difference between the value of the card and the cost of the ferry ride. Ferries will not accept red backpack treasures as payment."
+    "content": "![](/images/2e0b89bd06c63a671b8ea67fd35f77a25d3ae44e.jpeg)\n\n![](/images/1f866aa5f487e32f95d7b10632de4dd40b888fb4.jpeg)\n\nLocal ferries service passengers on the river between each dock and will transport a hero on the river for a small fee. To use a ferry, a hero must be in a dock or water clearing. A dock is considered adjacent to each water clearing on either side of the dock. Example: All clearings in the image on the right are adjacent to each other. Movement on a ferry follows these rules:\n\n![](/images/fe2f350a543113f6974e562252271da00d81aa2e.png)\n\n- Ferrying on the river costs a single move action regardless of the distance traveled. A hero may move in either direction any number of clearings on the river, up to and including the dock.\n\n- The ferry will transport a hero no further than the next dock.\n\n- Movement is done one clearing at a time. Should a hero enter a new map tile containing no wilderness or civilization tokens, reveal and place the appropriate tokens in the map tile before deciding whether to proceed further via ferry movement.\n\n- The hero may stop at any water clearing they wish, but may not bypass a dock.  To use a ferry to proceed on the river beyond a dock, the hero must first enter the dock clearing and and end their move action. They may then continue ferrying further on the river using a subsequent action.\n\n- If the hero enters a dock clearing that has additional movement cost (e.g. mountain or swamp), the hero must spend an additional action to enter the clearing per normal movement rules.\n\n- A ferry will drop off or pick up a hero in a clearing containing a monster. But, a ferry will not move through a clearing containing a monster in a single move action.\n\n- Heroes that use ferry movement to enter a clearing containing monsters will be blocked by the monsters (heroes may attempt to hide). Heroes that performed a sneak action this turn may not ignore any monster symbol results on this hide attempt. However, treasure bonuses and the halfling’s lineage advantage would still apply.\n\n- Heroes may leave a clearing containing monsters via ferry movement.\n\n- Natives have no effect on the movement of ferries, unless the native group is an enemy of the hero, in which case they will block the hero as normal.\n\n- Ferries cost 1 gold per clearing entered during the move action. Should a hero wish to use a ferry, but not have enough gold to pay the cost, the hero may pay with treasure or item cards of equal or greater value than the cost of the entire ferry ride in lieu of gold. Ferries will not refund any difference between the value of the card and the cost of the ferry ride. Ferries will not accept red backpack treasures as payment."
   },
   {
     "id": "1.7.5",
@@ -268,7 +268,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Treasure Manifest",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)"
+    "content": ""
   },
   {
     "id": "3.3.0.1",
@@ -345,7 +345,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Canopic Jar",
-    "content": "Epic treasure. There are two canopic jars in the game and they have no game effect if possessed individually (heroes still earn the reward for possessing an epic treasure). If a single hero possesses both canopic jars simultaneously, immediately discard both jars, select any revealed civilization location, and note the location in the adventure journal.\n\nFrom that point forward, should the hero die in any way, they instead place their hero counter in the noted civilization location and do not die. They do not lose\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nany fame points, spells, or possessions, including cards gained after they found the canopic jars. All cubes remain where they are - healthy or wounded. The hero is undead for the remainder of the game. Should the hero die again, they die normally.",
+    "content": "Epic treasure. There are two canopic jars in the game and they have no game effect if possessed individually (heroes still earn the reward for possessing an epic treasure). If a single hero possesses both canopic jars simultaneously, immediately discard both jars, select any revealed civilization location, and note the location in the adventure journal.\n\nFrom that point forward, should the hero die in any way, they instead place their hero counter in the noted civilization location and do not die. They do not lose\n\nany fame points, spells, or possessions, including cards gained after they found the canopic jars. All cubes remain where they are - healthy or wounded. The hero is undead for the remainder of the game. Should the hero die again, they die normally.",
     "tags": [
       "treasure"
     ]
@@ -665,7 +665,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Shekel of Subjugation",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\nOne-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Orc Call, is cast. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Orc Call, is cast. No magic cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
@@ -755,7 +755,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Tail of the Scorpion",
-    "content": "Epic treasure. Only in play if using the dreadful deserts terrain pack. If the tail of the scorpion is in a plains clearing, that clearing is treated as if it was a desert clearing for all effects.\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "content": "Epic treasure. Only in play if using the dreadful deserts terrain pack. If the tail of the scorpion is in a plains clearing, that clearing is treated as if it was a desert clearing for all effects.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "treasure"
     ]
@@ -996,7 +996,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Good Wind",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\nSelf or other. Combat. Wound one green cube. May reroll any number of dice on the next ranged attack die roll.",
+    "content": "Self or other. Combat. Wound one green cube. May reroll any number of dice on the next ranged attack die roll.",
     "tags": [
       "spell",
       "greenMagic"
@@ -1080,7 +1080,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Lightning",
-    "content": "Targeted. Ranged Attack. Instantaneous. Wound one Purple cube.  The target is\n\n![](/images/cfc11a9615ed255df02a0854ad00c1bcb30520d8.jpeg)\n\nattacked by a ranged attack with a base damage of 1 + 2 swords. If in a mountain or water clearing, the spell does and additional +1 sword in damage. All ranged damage bonuses and penalties rolled are doubled (e.g. +1 is +2, -2 is -4, etc.).",
+    "content": "Targeted. Ranged Attack. Instantaneous. Wound one Purple cube.  The target is\n\nattacked by a ranged attack with a base damage of 1 + 2 swords. If in a mountain or water clearing, the spell does and additional +1 sword in damage. All ranged damage bonuses and penalties rolled are doubled (e.g. +1 is +2, -2 is -4, etc.).",
     "tags": [
       "spell",
       "purpleMagic"
@@ -1233,7 +1233,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Ferrying",
-    "content": "![](/images/a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2.jpeg)\n\n![](/images/fe2f350a543113f6974e562252271da00d81aa2e.png)\n\nTo use a ferry, a hero must be in a dock or water clearing. A dock is considered adjacent to each water clearing on either side of the dock.\n\n- Ferrying on the river costs a single move action regardless of the distance traveled. A hero may move in either direction any number of clearings on the river, up to and including a dock.\n\n- The ferry will transport a hero no further than the next dock.\n\n- Movement is done one clearing at a time. Should a hero enter a new map tile containing no wilderness or civilization tokens, reveal and place the appropriate tokens in the map tile before deciding whether to proceed further via ferry movement.\n\n- The hero may stop at any water clearing they wish, but may not bypass a dock.  To use a ferry to proceed on the river beyond a dock, the hero must first enter the dock clearing and and end their move action. They may then continue ferrying further on the river using a subsequent action.\n\n- If the hero enters a dock clearing that has additional movement cost (e.g. mountain or swamp), the hero must spend an additional action to enter the clearing per normal movement rules.\n\n- A ferry will drop off or pick up a hero in a clearing containing a monster. A ferry will not move through a clearing containing a monster.\n\n- Heroes that use ferry movement to enter a clearing containing monsters will be blocked by the monsters (heroes may attempt to hide). Heroes that performed a sneak action this turn may not ignore any monster symbol results on this hide attempt. However, treasure bonuses and the halfling’s lineage advantage would still apply.Heroes may leave a clearing containing monsters via ferry movement.\n\n- Natives have no effect on the movement of ferries, unless the native group is an enemy of the hero, in which case they will block the hero as normal.\n\n- Hero may pay for ferries with treasure or item cards of equal or greater value than the cost of the entire ferry ride in lieu of gold. Ferries will not refund any difference between the value of the card and the cost of the ferry ride. Ferries will not accept red backpack treasures as payment."
+    "content": "![](/images/fe2f350a543113f6974e562252271da00d81aa2e.png)\n\nTo use a ferry, a hero must be in a dock or water clearing. A dock is considered adjacent to each water clearing on either side of the dock.\n\n- Ferrying on the river costs a single move action regardless of the distance traveled. A hero may move in either direction any number of clearings on the river, up to and including a dock.\n\n- The ferry will transport a hero no further than the next dock.\n\n- Movement is done one clearing at a time. Should a hero enter a new map tile containing no wilderness or civilization tokens, reveal and place the appropriate tokens in the map tile before deciding whether to proceed further via ferry movement.\n\n- The hero may stop at any water clearing they wish, but may not bypass a dock.  To use a ferry to proceed on the river beyond a dock, the hero must first enter the dock clearing and and end their move action. They may then continue ferrying further on the river using a subsequent action.\n\n- If the hero enters a dock clearing that has additional movement cost (e.g. mountain or swamp), the hero must spend an additional action to enter the clearing per normal movement rules.\n\n- A ferry will drop off or pick up a hero in a clearing containing a monster. A ferry will not move through a clearing containing a monster.\n\n- Heroes that use ferry movement to enter a clearing containing monsters will be blocked by the monsters (heroes may attempt to hide). Heroes that performed a sneak action this turn may not ignore any monster symbol results on this hide attempt. However, treasure bonuses and the halfling’s lineage advantage would still apply.Heroes may leave a clearing containing monsters via ferry movement.\n\n- Natives have no effect on the movement of ferries, unless the native group is an enemy of the hero, in which case they will block the hero as normal.\n\n- Hero may pay for ferries with treasure or item cards of equal or greater value than the cost of the entire ferry ride in lieu of gold. Ferries will not refund any difference between the value of the card and the cost of the ferry ride. Ferries will not accept red backpack treasures as payment."
   },
   {
     "id": "4.1.1",
@@ -1258,6 +1258,13 @@
   },
   {
     "id": "5",
+    "source": "eastern-reaches",
+    "level": 1,
+    "title": "Credits",
+    "content": ""
+  },
+  {
+    "id": "6",
     "source": "eastern-reaches",
     "level": 1,
     "title": "Credits",
