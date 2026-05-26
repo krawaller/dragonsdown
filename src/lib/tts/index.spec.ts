@@ -102,6 +102,21 @@ describe("extractCards", () => {
     expect(normalizeTitle("“foo”")).toBe('"foo"');
   });
 
+  it("treats CardCustom the same as Card", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "CardCustom",
+          Nickname: "Beastmaster (Faunamancy)",
+          CardID: 100,
+          CustomDeck: { "1": SAMPLE_DECK },
+        },
+      ],
+    };
+    const out = extractCards(save, "eastern");
+    expect(Object.keys(out)).toEqual(["Beastmaster (Faunamancy)"]);
+  });
+
   it("preserves source identifier across all extracted cards", () => {
     const save = { ObjectStates: [card("A", 100, "1", SAMPLE_DECK)] };
     const out = extractCards(save, "my-source");

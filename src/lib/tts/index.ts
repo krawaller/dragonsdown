@@ -86,7 +86,7 @@ export function normalizeTitle(s: string): string {
 }
 
 type TTSCardObject = {
-  Name: "Card";
+  Name: "Card" | "CardCustom";
   Nickname?: string;
   CardID: number;
   CustomDeck: Record<
@@ -139,7 +139,11 @@ function isSameCell(a: TTSCardImage, b: TTSCardImage): boolean {
 
 function walk(obj: unknown, out: TTSCardObject[]): void {
   if (!isRecord(obj)) return;
-  if (obj.Name === "Card" && obj.CustomDeck && typeof obj.CardID === "number") {
+  if (
+    (obj.Name === "Card" || obj.Name === "CardCustom") &&
+    obj.CustomDeck &&
+    typeof obj.CardID === "number"
+  ) {
     out.push(obj as unknown as TTSCardObject);
   }
   // ObjectStates is the top-level array; ContainedObjects is the nested one.

@@ -477,6 +477,18 @@
       "uniqueBack": false
     }
   ],
+  "Beastmaster (Faunamancy)": [
+    {
+      "source": "core_desolation_natives",
+      "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+      "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+      "numWidth": 10,
+      "numHeight": 5,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": true
+    }
+  ],
   "Bejeweled Breastplate": [
     {
       "source": "core_desolation_natives",
@@ -3816,6 +3828,18 @@
       "numHeight": 7,
       "row": 6,
       "col": 2,
+      "uniqueBack": false
+    }
+  ],
+  "Reference/Curse card": [
+    {
+      "source": "core_desolation_natives",
+      "faceURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306017318939749/70003FF2A216047FBD8C8F9B18427CFB6D426FA1/",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986097388957275/C0DDC96149025085C040AA19EC6E288F1156D01C/",
+      "numWidth": 1,
+      "numHeight": 1,
+      "row": 0,
+      "col": 0,
       "uniqueBack": false
     }
   ],
