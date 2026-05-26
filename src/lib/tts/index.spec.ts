@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   extractCards,
   extractChips,
+  extractCivLocations,
   extractSites,
   normalizeTitle,
   prettifyChipName,
@@ -450,6 +451,66 @@ describe("extractSites", () => {
     expect(Object.keys(extractSites(save, "eastern"))).toEqual([
       "Kings Hideout",
     ]);
+  });
+});
+
+describe("extractCivLocations", () => {
+  const tile = (nick: string, sameUrl: string) => ({
+    Name: "Custom_Tile",
+    Nickname: nick,
+    CustomImage: { ImageURL: sameUrl, ImageSecondaryURL: sameUrl },
+  });
+  const asymmetric = (nick: string) => ({
+    Name: "Custom_Tile",
+    Nickname: nick,
+    CustomImage: { ImageURL: "a", ImageSecondaryURL: "b" },
+  });
+
+  it("extracts tiles where ImageURL equals ImageSecondaryURL", () => {
+    const save = {
+      ObjectStates: [
+        { Name: "Bag", Nickname: "Campfire", ContainedObjects: [tile("Campfire", "fire.png")] },
+        tile("Inn", "inn.png"),
+      ],
+    };
+    const out = extractCivLocations(save, "eastern");
+    expect(Object.keys(out).sort()).toEqual(["Campfire", "Inn"]);
+    expect(out["Campfire"]).toEqual([
+      { source: "eastern", imageURL: "fire.png", ancestry: ["Campfire"] },
+    ]);
+  });
+
+  it("ignores tiles whose face and back differ", () => {
+    const save = { ObjectStates: [asymmetric("Mismatch")] };
+    expect(extractCivLocations(save, "eastern")).toEqual({});
+  });
+
+  it("excludes currency / point tokens (starts with a digit)", () => {
+    const save = {
+      ObjectStates: [
+        tile("5 Gold", "g.png"),
+        tile("1 Legend Point", "p.png"),
+        tile("50 Fame", "f.png"),
+        tile("Inn", "inn.png"),
+      ],
+    };
+    expect(Object.keys(extractCivLocations(save, "eastern"))).toEqual(["Inn"]);
+  });
+
+  it("excludes attribute Tokens (nickname contains 'Token')", () => {
+    const save = {
+      ObjectStates: [
+        tile("Cunning Token", "c.png"),
+        tile("Wisdom Token", "w.png"),
+        tile("Keep", "k.png"),
+      ],
+    };
+    expect(Object.keys(extractCivLocations(save, "eastern"))).toEqual(["Keep"]);
+  });
+
+  it("skips tiles with empty Nickname", () => {
+    const save = { ObjectStates: [tile("", "x.png")] };
+    expect(extractCivLocations(save, "eastern")).toEqual({});
   });
 });
 

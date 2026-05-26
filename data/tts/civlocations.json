@@ -1,0 +1,74 @@
+{
+  "Campfire": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012513538/D64946A821F88E4BBEEAA23B93EDE8F9F008D1B6/",
+      "ancestry": [
+        "Campfire"
+      ]
+    }
+  ],
+  "Encampment": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012515098/83A2B7E736115178904268D3697B1B8DE15B401B/",
+      "ancestry": [
+        "Encampment"
+      ]
+    }
+  ],
+  "Inn": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045294752/D6EC045851D1866CA5A197CCD40D508BA5EA6F1E/",
+      "ancestry": [
+        "Inn"
+      ]
+    }
+  ],
+  "Keep": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260326564/5E286D61B755DF54C400C53B42DD35C31230BCFE/",
+      "ancestry": [
+        "Keep"
+      ]
+    }
+  ],
+  "Mine": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260327544/D152EE319A438A5252B3AF58F1A901254C9405E5/",
+      "ancestry": [
+        "Mine"
+      ]
+    }
+  ],
+  "Outpost": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453710346/67516649C330B90ABFBE0DADCC4BC50C7AA6C046/",
+      "ancestry": [
+        "Outpost"
+      ]
+    }
+  ],
+  "Sanctuary": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260328529/A7EF57A400BF0473FD2151A4DECDAA0B843523B3/",
+      "ancestry": [
+        "Sanctuary"
+      ]
+    }
+  ],
+  "Village": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453709463/BB681A939046A30DA7264D31CE0D9007A5B7DCA3/",
+      "ancestry": [
+        "Village"
+      ]
+    }
+  ]
+}

@@ -91,6 +91,21 @@ export const SITE_FACE_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/";
 
 /**
+ * A "civ location" is a double-sided Custom_Tile where face and back URL are
+ * identical. The mod also uses double-sided tiles for currency / point
+ * tokens (`5 Gold`, `1 Fame`, attribute tokens, ...), so we exclude those by
+ * rejecting nicknames that start with a digit or contain "Token".
+ */
+export type TTSCivLocation = {
+  source: string;
+  imageURL: string;
+  ancestry: string[];
+};
+
+/** Output written to data/tts/civlocations.json. Keyed by normalized `Nickname`. */
+export type CivLocationIndex = Record<string, TTSCivLocation[]>;
+
+/**
  * Turn a chip's raw GMNotes key into a display name. The mod's GMNotes are
  * mostly PascalCase (`AdultDragons` → `Adult Dragons`), with a handful of
  * lowercase ones (`aurorans` → `Aurorans`). We split at lower→upper
@@ -340,6 +355,61 @@ export function extractSites(root: unknown, source: string): SiteIndex {
     (index[key] ??= []).push(entry);
   }
   return index;
+}
+
+/**
+ * Walk a TTS save and return every civ-location tile: a Custom_Tile whose
+ * `ImageURL === ImageSecondaryURL` (the same art on both sides). We also
+ * require a non-token-shaped Nickname so currency/point/attribute tokens —
+ * which share the same double-sided convention — are excluded.
+ */
+export function extractCivLocations(
+  root: unknown,
+  source: string,
+): CivLocationIndex {
+  const index: CivLocationIndex = {};
+  type LocObj = {
+    Nickname?: string;
+    CustomImage: { ImageURL?: string; ImageSecondaryURL?: string };
+  };
+  const tiles: { obj: LocObj; ancestry: string[] }[] = [];
+  const walkLocs = (obj: unknown, ancestry: string[]) => {
+    if (!isRecord(obj)) return;
+    const ci = obj.CustomImage as
+      | { ImageURL?: string; ImageSecondaryURL?: string }
+      | undefined;
+    if (ci?.ImageURL && ci.ImageURL === ci.ImageSecondaryURL) {
+      tiles.push({ obj: obj as unknown as LocObj, ancestry });
+    }
+    const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+    const childAncestry = nick ? [...ancestry, nick] : ancestry;
+    const states = obj.ObjectStates;
+    if (Array.isArray(states))
+      for (const s of states) walkLocs(s, childAncestry);
+    const contained = (obj as TTSContainer).ContainedObjects;
+    if (Array.isArray(contained))
+      for (const s of contained) walkLocs(s, childAncestry);
+  };
+  walkLocs(root, []);
+  for (const { obj, ancestry } of tiles) {
+    const nick = (obj.Nickname ?? "").trim();
+    if (!isCivLocationNickname(nick)) continue;
+    const key = normalizeTitle(nick);
+    (index[key] ??= []).push({
+      source,
+      imageURL: obj.CustomImage.ImageURL ?? "",
+      ancestry,
+    });
+  }
+  return index;
+}
+
+function isCivLocationNickname(nick: string): boolean {
+  if (!nick) return false;
+  // Reject token-shaped names: "5 Gold", "1 Legend Point", "Cunning Token", ...
+  if (/^\d/.test(nick)) return false;
+  if (/\bToken\b/i.test(nick)) return false;
+  return true;
 }
 
 function walkChips(

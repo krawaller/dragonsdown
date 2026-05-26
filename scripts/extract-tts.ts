@@ -10,12 +10,14 @@ import path from "node:path";
 import {
   extractCards,
   extractChips,
+  extractCivLocations,
   extractSites,
   isSameCell,
   mergeTags,
   sameAncestry,
   type CardIndex,
   type ChipIndex,
+  type CivLocationIndex,
   type SiteIndex,
 } from "../src/lib/tts";
 
@@ -38,6 +40,7 @@ async function main(): Promise<void> {
   const cards: CardIndex = {};
   const chips: ChipIndex = {};
   const sites: SiteIndex = {};
+  const civLocations: CivLocationIndex = {};
 
   for (const file of files) {
     const stem = path.basename(file, ".json");
@@ -47,9 +50,9 @@ async function main(): Promise<void> {
     const cardIndex = extractCards(save, stem);
     const chipIndex = extractChips(save, stem);
     const siteIndex = extractSites(save, stem);
+    const civIndex = extractCivLocations(save, stem);
     console.log(
-      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites ` +
-        `(${Object.keys(cardIndex).length} card names, ${Object.keys(chipIndex).length} chip names, ${Object.keys(siteIndex).length} site names)`,
+      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations`,
     );
 
     // Merge into combined indexes, de-duping by cell (cards) / image URL (chips).
@@ -68,6 +71,10 @@ async function main(): Promise<void> {
     // collisions just append (so we can spot duplicate entries if any).
     for (const [name, items] of Object.entries(siteIndex)) {
       (sites[name] ??= []).push(...items);
+    }
+    // Civ locations: same shape — append, no dedup.
+    for (const [name, items] of Object.entries(civIndex)) {
+      (civLocations[name] ??= []).push(...items);
     }
     // Chips dedup by URL pair across sources; per-ancestry counts are summed.
     for (const [name, items] of Object.entries(chipIndex)) {
@@ -99,6 +106,7 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
+  await writeSorted(path.join(OUT_DIR, "civlocations.json"), civLocations);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
   );
@@ -107,6 +115,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ sites.json: ${Object.keys(sites).length} names, ${countEntries(sites)} sites total`,
+  );
+  console.log(
+    `→ civlocations.json: ${Object.keys(civLocations).length} names, ${countEntries(civLocations)} entries total`,
   );
 }
 
