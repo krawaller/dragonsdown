@@ -142,6 +142,49 @@ describe("extractCards", () => {
     expect(Object.keys(out)).toEqual(["Beastmaster (Faunamancy)"]);
   });
 
+  it("preserves Tags as a sorted array when present", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Tagged", 100, "1", SAMPLE_DECK),
+          Tags: ["Merchant", "Item", "Steal"],
+        },
+      ],
+    };
+    expect(extractCards(save, "eastern")["Tagged"][0].tags).toEqual([
+      "Item",
+      "Merchant",
+      "Steal",
+    ]);
+  });
+
+  it("omits tags when the Tags array is missing or empty", () => {
+    const save = {
+      ObjectStates: [
+        card("Untagged", 100, "1", SAMPLE_DECK),
+        { ...card("EmptyTags", 101, "1", SAMPLE_DECK), Tags: [] },
+      ],
+    };
+    const out = extractCards(save, "eastern");
+    expect("tags" in out["Untagged"][0]).toBe(false);
+    expect("tags" in out["EmptyTags"][0]).toBe(false);
+  });
+
+  it("merges tags across duplicate cells (union, sorted)", () => {
+    const save = {
+      ObjectStates: [
+        { ...card("Twin", 100, "1", SAMPLE_DECK), Tags: ["A", "B"] },
+        { ...card("Twin", 100, "1", SAMPLE_DECK), Tags: ["B", "C"] },
+      ],
+    };
+    expect(extractCards(save, "eastern")["Twin"]).toHaveLength(1);
+    expect(extractCards(save, "eastern")["Twin"][0].tags).toEqual([
+      "A",
+      "B",
+      "C",
+    ]);
+  });
+
   it("preserves source identifier across all extracted cards", () => {
     const save = { ObjectStates: [card("A", 100, "1", SAMPLE_DECK)] };
     const out = extractCards(save, "my-source");

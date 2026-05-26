@@ -25,6 +25,8 @@ export type TTSCardImage = {
   col: number;
   /** When false, `backURL` is a single shared back (no positioning). */
   uniqueBack: boolean;
+  /** TTS `Tags` array (e.g. ["Item", "Merchant", "Steal"]). Omitted when empty. */
+  tags?: string[];
 };
 
 /** Output written to data/tts/cards.json. Keyed by normalized `Nickname`. */
@@ -117,6 +119,7 @@ type TTSCardObject = {
   Name: "Card" | "CardCustom";
   Nickname?: string;
   CardID: number;
+  Tags?: string[];
   CustomDeck: Record<
     string,
     {
@@ -151,18 +154,33 @@ export function extractCards(root: unknown, source: string): CardIndex {
     const bucket = (index[key] ??= []);
     // De-duplicate within a source: same nickname can map to multiple physical
     // cards in TTS (e.g. multiple copies of the same card in a bag), but they
-    // point at the same sheet cell. Keep only one entry per cell.
-    if (!bucket.some((c) => isSameCell(c, image))) bucket.push(image);
+    // point at the same sheet cell. Keep one entry per cell; merge tags
+    // across copies so we don't lose any.
+    const existing = bucket.find((c) => isSameCell(c, image));
+    if (existing) {
+      existing.tags = mergeTags(existing.tags, image.tags);
+    } else {
+      bucket.push(image);
+    }
   }
   return index;
 }
 
-function isSameCell(a: TTSCardImage, b: TTSCardImage): boolean {
+export function isSameCell(a: TTSCardImage, b: TTSCardImage): boolean {
   return (
     a.faceURL === b.faceURL &&
     a.row === b.row &&
     a.col === b.col
   );
+}
+
+export function mergeTags(
+  a: string[] | undefined,
+  b: string[] | undefined,
+): string[] | undefined {
+  if (!a?.length && !b?.length) return undefined;
+  const set = new Set<string>([...(a ?? []), ...(b ?? [])]);
+  return [...set].sort();
 }
 
 type ChipObject = {
@@ -241,7 +259,7 @@ function imageFor(card: TTSCardObject, source: string): TTSCardImage | null {
   const deck = card.CustomDeck[deckId];
   const index = card.CardID - Number.parseInt(deckId, 10) * 100;
   if (!Number.isFinite(index) || index < 0) return null;
-  return {
+  const out: TTSCardImage = {
     source,
     faceURL: deck.FaceURL,
     backURL: deck.BackURL,
@@ -251,6 +269,10 @@ function imageFor(card: TTSCardObject, source: string): TTSCardImage | null {
     col: index % deck.NumWidth,
     uniqueBack: Boolean(deck.UniqueBack),
   };
+  if (Array.isArray(card.Tags) && card.Tags.length > 0) {
+    out.tags = [...card.Tags].sort();
+  }
+  return out;
 }
 
 function isRecord(v: unknown): v is Record<string, unknown> {

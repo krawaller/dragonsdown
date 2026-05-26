@@ -10,6 +10,8 @@ import path from "node:path";
 import {
   extractCards,
   extractChips,
+  isSameCell,
+  mergeTags,
   type CardIndex,
   type ChipIndex,
 } from "../src/lib/tts";
@@ -49,14 +51,10 @@ async function main(): Promise<void> {
     for (const [nick, items] of Object.entries(cardIndex)) {
       const bucket = (cards[nick] ??= []);
       for (const item of items) {
-        if (
-          !bucket.some(
-            (c) =>
-              c.faceURL === item.faceURL &&
-              c.row === item.row &&
-              c.col === item.col,
-          )
-        ) {
+        const existing = bucket.find((c) => isSameCell(c, item));
+        if (existing) {
+          existing.tags = mergeTags(existing.tags, item.tags);
+        } else {
           bucket.push(item);
         }
       }

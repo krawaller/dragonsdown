@@ -20,7 +20,11 @@
       "numHeight": 7,
       "row": 2,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mariners",
+        "Mission"
+      ]
     }
   ],
   "Adventurers Corpse": [
@@ -104,7 +108,14 @@
       "numHeight": 7,
       "row": 2,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Rogues",
+        "Steal"
+      ]
     }
   ],
   "Alpiner": [
@@ -116,7 +127,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Amaranth of Action": [
@@ -236,7 +250,13 @@
       "numHeight": 7,
       "row": 3,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Artificer",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ]
     }
   ],
   "Artificers Concoction": [
@@ -306,7 +326,12 @@
       "numHeight": 7,
       "row": 3,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Astrologer",
+        "Merchant",
+        "Mission"
+      ]
     }
   ],
   "Banner of Legitimacy": [
@@ -378,7 +403,14 @@
       "numHeight": 7,
       "row": 3,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Bashkirs",
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal"
+      ]
     }
   ],
   "Bashkirs": [
@@ -402,7 +434,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Baton of the Lost Prince": [
@@ -426,7 +461,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Battle Mage (Power)": [
@@ -474,7 +512,14 @@
       "numHeight": 7,
       "row": 3,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal",
+        "Wardens"
+      ]
     }
   ],
   "Beastmaster (Faunamancy)": [
@@ -570,7 +615,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Black Follower": [
@@ -582,7 +630,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Black Knight (Feared)": [
@@ -618,7 +669,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Body Parts": [
@@ -630,7 +684,12 @@
       "numHeight": 7,
       "row": 3,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Crone",
+        "Merchant",
+        "Mission"
+      ]
     }
   ],
   "Book of Eternal Sand": [
@@ -702,7 +761,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Brigand (Brotherhood)": [
@@ -750,7 +812,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Burgess (Shrewd)": [
@@ -856,7 +921,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Chainmail": [
@@ -868,7 +936,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Champions Blade": [
@@ -988,7 +1059,11 @@
       "numHeight": 7,
       "row": 3,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ]
     }
   ],
   "Codex of Cognition": [
@@ -1096,7 +1171,13 @@
       "numHeight": 7,
       "row": 3,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Armorer",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ]
     }
   ],
   "Crossbow": [
@@ -1108,7 +1189,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Cruel Kidnapper": [
@@ -1120,7 +1204,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Curse": [
@@ -1188,7 +1275,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Dagger of Bite": [
@@ -1248,7 +1338,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Dastanas of the Scorpion": [
@@ -1272,7 +1365,12 @@
       "numHeight": 7,
       "row": 0,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Consul",
+        "Mission",
+        "Natives"
+      ]
     }
   ],
   "Decimation": [
@@ -1296,7 +1394,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Desert Water": [
@@ -1308,7 +1409,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Detrium": [
@@ -1320,7 +1424,13 @@
       "numHeight": 7,
       "row": 4,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Mystic",
+        "Steal"
+      ]
     }
   ],
   "Diggers Ruin": [
@@ -1416,7 +1526,14 @@
       "numHeight": 7,
       "row": 4,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Sellswords",
+        "Steal"
+      ]
     }
   ],
   "Dragon Slayer": [
@@ -1428,7 +1545,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Druid (Natural Emanation)": [
@@ -1518,7 +1638,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Dwarves": [
@@ -1566,7 +1689,13 @@
       "numHeight": 7,
       "row": 4,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Fortune Teller",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ]
     }
   ],
   "Elemental": [
@@ -1836,7 +1965,11 @@
       "numHeight": 7,
       "row": 4,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Wardens"
+      ]
     }
   ],
   "Eternium Grimoire": [
@@ -1860,7 +1993,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Executioner (Intimidation)": [
@@ -1920,7 +2056,12 @@
       "numHeight": 7,
       "row": 1,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Elves",
+        "Mission",
+        "Natives"
+      ]
     }
   ],
   "Fiery Chasm": [
@@ -1956,7 +2097,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Fireball": [
@@ -2028,7 +2172,11 @@
       "numHeight": 7,
       "row": 4,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ]
     }
   ],
   "Foresight": [
@@ -2052,7 +2200,10 @@
       "numHeight": 7,
       "row": 4,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Foul Letters": [
@@ -2064,7 +2215,14 @@
       "numHeight": 7,
       "row": 4,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Consul",
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal"
+      ]
     }
   ],
   "Gage of the Thief": [
@@ -2148,7 +2306,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Gloves of Aggression": [
@@ -2214,7 +2375,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Golden Icon": [
@@ -2274,7 +2438,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Great Parley": [
@@ -2298,7 +2465,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Griffon Tamer": [
@@ -2310,7 +2480,11 @@
       "numHeight": 7,
       "row": 2,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Knights",
+        "Mission"
+      ]
     }
   ],
   "Grommels Talisman": [
@@ -2474,7 +2648,10 @@
       "numHeight": 3,
       "row": 0,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Hand of the Lich": [
@@ -2648,7 +2825,11 @@
       "numHeight": 7,
       "row": 1,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Priests"
+      ]
     }
   ],
   "Icon of the Dragon": [
@@ -2684,7 +2865,12 @@
       "numHeight": 7,
       "row": 4,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Smuggler"
+      ]
     }
   ],
   "Illusion": [
@@ -2744,7 +2930,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Iron Skin": [
@@ -2768,7 +2957,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Jeweled Thiefs Skull": [
@@ -2804,7 +2996,14 @@
       "numHeight": 7,
       "row": 4,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Soldiers",
+        "Steal"
+      ]
     }
   ],
   "Kings Pardon": [
@@ -2864,7 +3063,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Leathers": [
@@ -2876,7 +3078,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Life Armor": [
@@ -2912,7 +3117,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Long Bow": [
@@ -2924,7 +3132,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Long Sword": [
@@ -2936,7 +3147,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Lost Banner": [
@@ -2948,7 +3162,11 @@
       "numHeight": 7,
       "row": 5,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Knights",
+        "Mission"
+      ]
     }
   ],
   "Mace": [
@@ -2960,7 +3178,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Mace of Absolution": [
@@ -3140,7 +3361,14 @@
       "numHeight": 7,
       "row": 5,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal",
+        "Villagers"
+      ]
     }
   ],
   "Mesmerize": [
@@ -3164,7 +3392,11 @@
       "numHeight": 7,
       "row": 5,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ]
     }
   ],
   "Minor Mend": [
@@ -3200,7 +3432,11 @@
       "numHeight": 7,
       "row": 5,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Dwarves",
+        "Mission"
+      ]
     }
   ],
   "Missing Figure": [
@@ -3212,7 +3448,11 @@
       "numHeight": 7,
       "row": 5,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Villagers"
+      ]
     }
   ],
   "Mithral Chainmail": [
@@ -3284,7 +3524,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Morsel of Might": [
@@ -3356,7 +3599,14 @@
       "numHeight": 7,
       "row": 5,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal",
+        "Watch"
+      ]
     }
   ],
   "New Patrol Route": [
@@ -3368,7 +3618,12 @@
       "numHeight": 7,
       "row": 2,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Watch"
+      ]
     }
   ],
   "Obsidian Dagger": [
@@ -3392,7 +3647,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Offer Letter": [
@@ -3404,7 +3662,13 @@
       "numHeight": 7,
       "row": 5,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Sellswords",
+        "Soldiers"
+      ]
     }
   ],
   "Old Books": [
@@ -3416,7 +3680,12 @@
       "numHeight": 7,
       "row": 5,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Scholar"
+      ]
     }
   ],
   "Open Gate": [
@@ -3488,7 +3757,12 @@
       "numHeight": 7,
       "row": 5,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission",
+        "Steal"
+      ]
     }
   ],
   "Paladin (Honor)": [
@@ -3596,7 +3870,10 @@
       "numHeight": 3,
       "row": 1,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Port Sacker": [
@@ -3608,7 +3885,10 @@
       "numHeight": 7,
       "row": 1,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Portable Hole": [
@@ -3768,7 +4048,12 @@
       "numHeight": 7,
       "row": 1,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Rogues"
+      ]
     }
   ],
   "Provisions": [
@@ -3780,7 +4065,13 @@
       "numHeight": 7,
       "row": 6,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Peddler",
+        "Steal"
+      ]
     }
   ],
   "Pyroclasm": [
@@ -3828,7 +4119,12 @@
       "numHeight": 7,
       "row": 6,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Smith"
+      ]
     }
   ],
   "Reference/Curse card": [
@@ -4044,7 +4340,12 @@
       "numHeight": 7,
       "row": 1,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Bashkirs",
+        "Mission",
+        "Natives"
+      ]
     }
   ],
   "Sabre of the Fencer": [
@@ -4080,7 +4381,13 @@
       "numHeight": 7,
       "row": 6,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Steal",
+        "Vendor"
+      ]
     }
   ],
   "Sand Trekker": [
@@ -4092,7 +4399,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Sandglass of Eternity": [
@@ -4176,7 +4486,11 @@
       "numHeight": 7,
       "row": 6,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mariners",
+        "Mission"
+      ]
     }
   ],
   "Seafang": [
@@ -4392,7 +4706,10 @@
       "numHeight": 3,
       "row": 2,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Shield of Defiance": [
@@ -4464,7 +4781,10 @@
       "numHeight": 3,
       "row": 2,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Short Sword": [
@@ -4476,7 +4796,10 @@
       "numHeight": 3,
       "row": 2,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Sin Sword": [
@@ -4512,7 +4835,11 @@
       "numHeight": 7,
       "row": 2,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Dwarves",
+        "Mission"
+      ]
     }
   ],
   "Skull Splitter": [
@@ -4536,7 +4863,10 @@
       "numHeight": 3,
       "row": 2,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Snake Grinder": [
@@ -4548,7 +4878,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Soldiers": [
@@ -4620,7 +4953,10 @@
       "numHeight": 3,
       "row": 2,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Spear of Piercing": [
@@ -4800,7 +5136,10 @@
       "numHeight": 7,
       "row": 6,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Spider Smiter": [
@@ -4812,7 +5151,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Staff": [
@@ -4824,7 +5166,10 @@
       "numHeight": 3,
       "row": 2,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ]
     }
   ],
   "Staff of Souls": [
@@ -4896,7 +5241,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 9,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Storms Eye": [
@@ -4968,7 +5316,11 @@
       "numHeight": 7,
       "row": 0,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ]
     }
   ],
   "Surveyor": [
@@ -4980,7 +5332,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Swamper": [
@@ -4992,7 +5347,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Swarm Bane": [
@@ -5004,7 +5362,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 0,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Sword of the Lost Prince": [
@@ -5220,7 +5581,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Temporary Mist Stone": [
@@ -5244,7 +5608,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Tentacles": [
@@ -5304,7 +5671,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 1,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Time Stone": [
@@ -5448,7 +5818,13 @@
       "numHeight": 7,
       "row": 0,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Foreigner",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ]
     }
   ],
   "Trail Blaze": [
@@ -5484,7 +5860,11 @@
       "numHeight": 7,
       "row": 0,
       "col": 4,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Priests"
+      ]
     }
   ],
   "Tree Herder": [
@@ -5496,7 +5876,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 2,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Trickster (Illusionary speed)": [
@@ -5568,7 +5951,14 @@
       "numHeight": 7,
       "row": 0,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Elves",
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal"
+      ]
     }
   ],
   "Unwelcome Guest": [
@@ -5580,7 +5970,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 5,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Vain Blade": [
@@ -5628,7 +6021,10 @@
       "numHeight": 7,
       "row": 2,
       "col": 6,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Vorpal Cutlass": [
@@ -5724,7 +6120,10 @@
       "numHeight": 7,
       "row": 0,
       "col": 7,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Whispering Compass": [
@@ -5748,7 +6147,12 @@
       "numHeight": 7,
       "row": 0,
       "col": 8,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Sellswords"
+      ]
     }
   ],
   "Wildshape": [
@@ -5796,7 +6200,10 @@
       "numHeight": 7,
       "row": 3,
       "col": 3,
-      "uniqueBack": false
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ]
     }
   ],
   "Writ of Redemption": [
