@@ -1,0 +1,142 @@
+[
+  {
+    "id": "2.2",
+    "source": "eastern-reaches",
+    "level": 2,
+    "title": "Banished Heroes",
+    "content": "When playing with the ruthless riverlands terrain pack, players may instead choose to start their hero in any ruthless riverlands map tile. Place the hero counter in a dock clearing of their choice. If starting in a map tile containing no tokens, reveal and place the appropriate wilderness token or civilization tokens before the player takes any actions."
+  },
+  {
+    "id": "8.3",
+    "source": "core",
+    "level": 2,
+    "title": "Closing the Distance",
+    "content": "During the first round of combat, attack length, not attack speed, determines the order of attacks. Attack speed breaks attack length ties. Attacks still hit based on the attack speed compared to the maneuver speed and/or the results of rolling the hit dice. On all other combat rounds, order of attack is determined using attack speed."
+  },
+  {
+    "id": "4.1",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Difficult Natives",
+    "content": "The buy drinks step of insults occurs before the hero rolls the haggle dice to determine if natives are insulted. Do not roll the dice for any native groups for which drinks were bought. Heroes may not buy drinks once the dice are rolled."
+  },
+  {
+    "id": "4.7",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Earned Rewards",
+    "content": "When a discovery, item, or treasure wilderness token is drawn, the hero does not automatically receive the reward. Place it face-up in a random clearing in the map tile. The first hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the wilderness token face-up in a part of the map tile not containing a clearing."
+  },
+  {
+    "id": "8.7",
+    "source": "core",
+    "level": 2,
+    "title": "Enchanted Paths",
+    "content": "If a map tile is enchanted with a magic cube that matches the color of a hidden path in the map tile, the hidden path may be used freely as if it was a normal path. A hero using the hidden path does not automatically discover it. Hidden paths in enchanted map tiles may still be searched for by heroes."
+  },
+  {
+    "id": "8.8",
+    "source": "core",
+    "level": 2,
+    "title": "Enchanted Realm",
+    "content": "Whenever the wandering monster die shows a return arrow, in addition to returning monsters that are alone in map tiles to the monster tray, flip over all tiles that match the symbol rolled on the local monster die and place a magic cube matching the color of any hidden paths in the tile as if the tile had been enchanted by a hero normally. Remove any magic cube if there is already one present."
+  },
+  {
+    "id": "4.4",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Enchantment Depletion",
+    "content": "When casting a spell in an enchanted map tile, the spell caster may use the enchantment cube for any spell box on the spell card. If the enchanted cube is used on a spell box with a wound symbol, the enchantment cube is discarded after the spell is cast, disenchanting the map tile immediately. The map tile does not flip over. This rule is a middle ground between the core rules and the Enchantment Limit optional rule from **Dragons Down**."
+  },
+  {
+    "id": "8.4",
+    "source": "core",
+    "level": 2,
+    "title": "Enchantment Limit",
+    "content": "When casting a spell in an enchanted map tile, the spell caster ignores the rightmost solid-color spell box that matches the color of the enchantment rather than any spell box of their choice. This makes casting more powerful spells more difficult."
+  },
+  {
+    "id": "8.9",
+    "source": "core",
+    "level": 2,
+    "title": "Endless Monsters",
+    "content": "For players looking for an additional challenge, return monsters that are killed to the monster tray rather than placing them by your hero board. On future summoning results, the monsters may return to the game. Be sure to note the accomplishment in the adventure journal for future reference (mission completion, posterity, etc.).\n\nNatives and unique monsters are not returned to the monster tray (see the Monster Reference on page 26 for a complete list of unique monsters)."
+  },
+  {
+    "id": "4.3",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Expanded Enchantment",
+    "content": "Magic cubes in enchanted map tiles can be used on treasure cards that require a magic cube (e.g. Band of Sagacity). Each hero may use each enchanted cube in one magic box each combat round. Thus, a hero could use one enchanted cube on a treasure or use it to cast a spell, but not both. Two different heroes can each use the same enchanted cube independently. Enchanted cubes used in this manner do not count against the cube limit for the combat round."
+  },
+  {
+    "id": "2.1",
+    "source": "eastern-reaches",
+    "level": 2,
+    "title": "Known River",
+    "content": "Instead of building the river randomly, players build the river to their liking. Normal river placement rules apply, including placing the port on one end and the headlands on the other. Note that side 1 of each ruthless riverlands map tile is typically easier to traverse than side 2."
+  },
+  {
+    "id": "8.1",
+    "source": "core",
+    "level": 2,
+    "title": "Luring",
+    "content": "During the challenge step in player order, prior to monsters challenging heroes, unhidden heroes may lure a single monster in the clearing. Monsters that are lured will challenge the hero that lures them. Once a monster is lured, it may not be lured by another hero. Monsters that are not lured will still challenge heroes randomly."
+  },
+  {
+    "id": "4.6",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Mission Cycling",
+    "content": "Do not create a discard pile for missions. Whenever a hero **discards** missions, they are immediately shuffled back into the mission deck. When a hero completes a mission, it is removed from the game. This rule prevents players from trying to cycle through the mission deck looking for a specific mission that they know exists."
+  },
+  {
+    "id": "4.5",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Native Possessions",
+    "content": "When a native group is first summoned to the map, including during initial placement, deal one face-down mission, item, and treasure card next to the native civilization card. Heroes may use a trade action while in the same clearing as an **unhired** native leader to look at the cards the native leader possesses and take the mission or buy the item or treasure (as if the native leader was a merchant, including all haggle rules). Heroes may not use any other trade steps with native leaders.\n\nIf a mission is to be completed with the native group possessing it, discard the mission and draw a new mission for the native group.\n\nIf the native leader is killed discard these cards. *Exception: If no enemy natives* *remain at the end of combat in which the native leader was killed, the hero that struck* *the death blow receives the item and treasure card.*"
+  },
+  {
+    "id": "8.11",
+    "source": "core",
+    "level": 2,
+    "title": "Player vs Player",
+    "content": "Heroes may block, challenge, and attack other unhidden heroes."
+  },
+  {
+    "id": "8.10",
+    "source": "core",
+    "level": 2,
+    "title": "Red Meat",
+    "content": "For players who wish to make armor even more valuable in the game, whenever a hero takes a non-fatal hit that does not strike armor, they must wound a heart."
+  },
+  {
+    "id": "4.2",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Roaming Monsters",
+    "content": "During monster activation, roll the d6 along with the summoning dice. When wandering monsters are first summoned to a map tile (gray dice), they summon to the clearing indicated by the die roll, not the location of any heroes. If the rolled clearing does not exist, the monsters summon to the clearing of a hero as normal. Once on a map tile, wandering monsters move as per normal rules.\n\nIf a hero makes noise, all monsters summoned on the second summoning roll are summoned directly to the hero’s clearing."
+  },
+  {
+    "id": "8.6",
+    "source": "core",
+    "level": 2,
+    "title": "Shared Fame",
+    "content": "The fame for killing monsters is shared by all heroes that wound the monster. Keep track of who placed which pink wound cubes on a monster. When the monster is killed, heroes receive the amount of fame in proportion to the number of cubes they placed up to the maximum health of the monster (including the death blow). Round down the amount of fame received by each player. Excess fame remaining is given to the hero that dealt the death blow."
+  },
+  {
+    "id": "8.2",
+    "source": "core",
+    "level": 2,
+    "title": "Tough Monsters",
+    "content": "Monsters do not take wounds. If a single hit does not kill a monster, it does not harm the monster. This optional rule makes for a much more difficult game."
+  },
+  {
+    "id": "8.5",
+    "source": "core",
+    "level": 2,
+    "title": "Wits Only",
+    "content": "All heroes begin the game with 0 gold. Note that this impacts some hero classes more than others as all classes have different starting gold to account for the value of starting equipment and spells."
+  }
+]

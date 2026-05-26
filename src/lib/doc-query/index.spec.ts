@@ -33,6 +33,14 @@ describe("docMatchesTarget", () => {
     expect(docMatchesTarget(target, "core")).toBe(true);
     expect(docMatchesTarget(target, "desolation")).toBe(false);
   });
+
+  it("AndTarget requires every child to match the doc", () => {
+    const target = {
+      and: [{ doc: "core" }, { titleRegex: "anything" }],
+    } as const;
+    expect(docMatchesTarget(target, "core")).toBe(true);
+    expect(docMatchesTarget(target, "desolation")).toBe(false);
+  });
 });
 
 describe("selectMatchingIds", () => {
@@ -104,6 +112,50 @@ describe("selectMatchingIds", () => {
         sections,
       ),
     ).toEqual(new Set());
+  });
+
+  it("DocTarget level (single) selects sections at that level", () => {
+    expect(selectMatchingIds({ level: 2 }, sections)).toEqual(
+      new Set(["2.1", "2.2"]),
+    );
+  });
+
+  it("DocTarget level (array) selects sections at any listed level", () => {
+    expect(selectMatchingIds({ level: [1, 4] }, sections)).toEqual(
+      new Set(["1", "2", "2.1.0.1", "2.1.0.2", "2.2.0.1", "2.2.0.2"]),
+    );
+  });
+
+  it("AndTarget returns the intersection of its children", () => {
+    // childrenOf "Class Advantages" gives [2.2.0.1, 2.2.0.2]; intersect with
+    // level=4 keeps them; intersect with level=2 yields empty.
+    expect(
+      selectMatchingIds(
+        {
+          and: [
+            { childrenOf: { parent: { titleRegex: "Class Advantages" } } },
+            { level: 4 },
+          ],
+        },
+        sections,
+      ),
+    ).toEqual(new Set(["2.2.0.1", "2.2.0.2"]));
+
+    expect(
+      selectMatchingIds(
+        {
+          and: [
+            { childrenOf: { parent: { titleRegex: "Class Advantages" } } },
+            { level: 2 },
+          ],
+        },
+        sections,
+      ),
+    ).toEqual(new Set());
+  });
+
+  it("AndTarget with empty list selects nothing", () => {
+    expect(selectMatchingIds({ and: [] }, sections)).toEqual(new Set());
   });
 
   it("ChildrenOfTarget can nest (children of children)", () => {
