@@ -1,55 +1,97 @@
 /**
- * Build the TTS card index from sources/*.json into data/tts/cards.json.
+ * Build the TTS card index and chip index from sources/*.json into
+ * data/tts/cards.json and data/tts/chips.json.
  *
  * Each source file is a TTS save export. The source identifier (used in the
  * output) is the file's stem (e.g. "eastern", "core_desolation_natives").
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { extractCards, type CardIndex } from "../src/lib/tts";
+import {
+  extractCards,
+  extractChips,
+  type CardIndex,
+  type ChipIndex,
+} from "../src/lib/tts";
 
 const SOURCES_DIR = path.join(process.cwd(), "sources");
-const OUT_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
+const OUT_DIR = path.join(process.cwd(), "data", "tts");
 
 async function main(): Promise<void> {
-  await fs.mkdir(path.dirname(OUT_FILE), { recursive: true });
+  await fs.mkdir(OUT_DIR, { recursive: true });
   const files = (await fs.readdir(SOURCES_DIR))
     .filter((f) => f.endsWith(".json"))
     .sort();
 
-  const merged: CardIndex = {};
-  let totalCards = 0;
+  const cards: CardIndex = {};
+  const chips: ChipIndex = {};
+
   for (const file of files) {
     const stem = path.basename(file, ".json");
     const raw = await fs.readFile(path.join(SOURCES_DIR, file), "utf-8");
     const save = JSON.parse(raw) as unknown;
-    const index = extractCards(save, stem);
-    const cardCount = Object.values(index).reduce((n, arr) => n + arr.length, 0);
-    totalCards += cardCount;
-    console.log(`${file}: ${cardCount} cards under ${Object.keys(index).length} nicknames`);
-    // Merge into combined index, de-duping by face cell (a card present in
-    // multiple TTS saves with the same sheet position is a single logical card).
-    for (const [nick, cards] of Object.entries(index)) {
-      const bucket = (merged[nick] ??= []);
-      for (const card of cards) {
+
+    const cardIndex = extractCards(save, stem);
+    const chipIndex = extractChips(save, stem);
+    console.log(
+      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips ` +
+        `(${Object.keys(cardIndex).length} card names, ${Object.keys(chipIndex).length} chip names)`,
+    );
+
+    // Merge into combined indexes, de-duping by cell (cards) / image URL (chips).
+    for (const [nick, items] of Object.entries(cardIndex)) {
+      const bucket = (cards[nick] ??= []);
+      for (const item of items) {
         if (
           !bucket.some(
-            (c) => c.faceURL === card.faceURL && c.row === card.row && c.col === card.col,
+            (c) =>
+              c.faceURL === item.faceURL &&
+              c.row === item.row &&
+              c.col === item.col,
           )
         ) {
-          bucket.push(card);
+          bucket.push(item);
+        }
+      }
+    }
+    for (const [name, items] of Object.entries(chipIndex)) {
+      const bucket = (chips[name] ??= []);
+      for (const item of items) {
+        if (
+          !bucket.some(
+            (c) =>
+              c.imageURL === item.imageURL &&
+              c.imageSecondaryURL === item.imageSecondaryURL,
+          )
+        ) {
+          bucket.push(item);
         }
       }
     }
   }
-  // Sort keys for stable diffs
-  const sorted = Object.fromEntries(
-    Object.entries(merged).sort(([a], [b]) => a.localeCompare(b)),
-  );
-  await fs.writeFile(OUT_FILE, JSON.stringify(sorted, null, 2));
+
+  await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
+  await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   console.log(
-    `→ ${OUT_FILE}: ${Object.keys(sorted).length} nicknames, ${totalCards} cards total`,
+    `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
   );
+  console.log(
+    `→ chips.json: ${Object.keys(chips).length} names, ${countEntries(chips)} chips total`,
+  );
+}
+
+function countEntries<T>(index: Record<string, T[]>): number {
+  return Object.values(index).reduce((n, arr) => n + arr.length, 0);
+}
+
+async function writeSorted(
+  file: string,
+  index: Record<string, unknown>,
+): Promise<void> {
+  const sorted = Object.fromEntries(
+    Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
+  );
+  await fs.writeFile(file, JSON.stringify(sorted, null, 2));
 }
 
 main().catch((err: unknown) => {

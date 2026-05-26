@@ -31,6 +31,20 @@ export type TTSCardImage = {
 export type CardIndex = Record<string, TTSCardImage[]>;
 
 /**
+ * A "chip" is a TTS Custom_Tile whose `LuaScript` begins with `chipName =` —
+ * a convention the mod uses to mark game chips (monster counters etc). Unlike
+ * cards, chips don't use a sprite sheet; they have full face/back images.
+ */
+export type TTSChip = {
+  source: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+};
+
+/** Output written to data/tts/chips.json. Keyed by normalized `GMNotes`. */
+export type ChipIndex = Record<string, TTSChip[]>;
+
+/**
  * Manually-curated aliases for cases that normalization can't handle:
  * word-boundary differences ("Ripple Strike" → "Ripplestrike"), typos in the
  * source data ("Subjugation" → "Subjucation"), or one section that maps to
@@ -135,6 +149,61 @@ function isSameCell(a: TTSCardImage, b: TTSCardImage): boolean {
     a.row === b.row &&
     a.col === b.col
   );
+}
+
+type ChipObject = {
+  GMNotes?: string;
+  LuaScript?: string;
+  CustomImage: { ImageURL?: string; ImageSecondaryURL?: string };
+};
+
+/**
+ * Walk a TTS save object recursively and return every Chip. The mod tags
+ * chip-tiles with a `LuaScript` starting `chipName =`, distinguishing them
+ * from other Custom_Tile objects.
+ */
+export function extractChips(root: unknown, source: string): ChipIndex {
+  const index: ChipIndex = {};
+  const chips: ChipObject[] = [];
+  walkChips(root, chips);
+  for (const chip of chips) {
+    const gm = (chip.GMNotes ?? "").trim();
+    if (!gm) continue;
+    const key = normalizeTitle(gm);
+    const img: TTSChip = {
+      source,
+      imageURL: chip.CustomImage.ImageURL ?? "",
+      imageSecondaryURL: chip.CustomImage.ImageSecondaryURL ?? "",
+    };
+    if (!img.imageURL) continue;
+    const bucket = (index[key] ??= []);
+    if (
+      !bucket.some(
+        (c) =>
+          c.imageURL === img.imageURL &&
+          c.imageSecondaryURL === img.imageSecondaryURL,
+      )
+    ) {
+      bucket.push(img);
+    }
+  }
+  return index;
+}
+
+function walkChips(obj: unknown, out: ChipObject[]): void {
+  if (!isRecord(obj)) return;
+  const ls = obj.LuaScript;
+  if (
+    typeof ls === "string" &&
+    ls.startsWith("chipName =") &&
+    isRecord(obj.CustomImage)
+  ) {
+    out.push(obj as unknown as ChipObject);
+  }
+  const states = obj.ObjectStates;
+  if (Array.isArray(states)) for (const s of states) walkChips(s, out);
+  const contained = (obj as TTSContainer).ContainedObjects;
+  if (Array.isArray(contained)) for (const s of contained) walkChips(s, out);
 }
 
 function walk(obj: unknown, out: TTSCardObject[]): void {

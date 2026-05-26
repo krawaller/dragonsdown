@@ -1,0 +1,808 @@
+{
+  "AdultDragons": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953770480/035E79263724A9E43C6613F529305A44367F1C58/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2462985923136970061/6B400C265642C574955ADFD929395667E13CE252/"
+    }
+  ],
+  "aurorans": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12088926178196991054/382524AEE93531F6C9DED13081A5F1C574D4C6C6/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15390529101690067372/1F572C97959E71C72BED3E34EC2FD1B846526BB3/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14626846797950717660/4EC38100DBE6740DE3D827F841B2E5314CA81798/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11500791103754301704/9C4C9CE5C9923C7389205B4367776F24D0F74946/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13641080114364159652/99806F56E4200EA8B8FDF382CB843C997F5D47D1/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17715811173941858197/E67728C262FA65685D3406CE444119A659477220/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16572469079734493619/7F974CC87091D19199EE8E33FD095C2F6246ECDE/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16378771767721342059/F1549724B5991A6681EFB0D3C204B3FF729CC2FD/"
+    }
+  ],
+  "Bandits": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986344525/A3D9E57428943FCCDB0F0CDE9CCC2A09BE0FEBE9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131638856/D0C1499218138C2782EB092F0573DE2CBF477322/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986340733/0F93177294365781A5458C24803BD47F39B2E664/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131642364/89764375FC67BF67C70BBBDB56D62EF0BADAE081/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986343529/728FEF48C2C53DFA0D7BABFF548267E0505E5C70/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131637121/244733E3C5E65308086B8762EA5129B496E10F93/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986342297/FD0A964E7661B4F458426E38EC807C034F3E5E60/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131640495/8ECCDE1891DD3BFDC7404BEA6BCF1F67F58C3380/"
+    }
+  ],
+  "Banshees": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16779432257256360189/5BA714943877237FB7C332E899A8AA7B49DF7DEF/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16564750578035170725/8E6CD2304DF127C080EDDCCD3AFAE13489CB71DB/"
+    }
+  ],
+  "bashkirs": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725690286/3DCF51860DF669D6382DB8658C41F2FDFD9EAEED/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012580554/51FD57F6D289A02BE64F7B4C6690832EB5AB5931/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725673493/63E89D7ED4FE43C4AA48FEC12CFA0A554FC245D2/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012591927/FB05FF08454FAC0B6987BA4033C209B27CAD4BF5/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725675578/F825C0B405575DA4177ED149586AB55963D389C4/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012589629/10CFCC691FA09DCFED5781D641F44B91394D3852/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725676617/A67EE5B4BED84B84D50DC5CAA7F670AF6A4649E8/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012588326/110C0AE5C6C8F56BACC97A479581188ABD45301C/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725674465/8F701E29F561D940FE158E4E39264746AA318B58/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012590824/5BC2DB692E2C58B884E2869F6B96D8B27BB804A1/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725678157/468A0A334DD41A90E52AC108BB001075D420D313/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012582416/B70A846F42BFC53A73DEAC66D516D8D451D83280/"
+    }
+  ],
+  "Centaurs": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2484367894807565968/7AAA1FF055425BD875115CCDFC23E966247BBBE6/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2484367894807566507/67D6B1061D888EFF4FA4AFD79FB1A06882402C47/"
+    }
+  ],
+  "consul": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951428748/1470869C156F3BC314FFA3CF03BAA01FC7F1B62C/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453764426/CE3C9E09B5338238C6AF8EB7777035BAFA6D2433/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951429540/CE39B41AA8BEFEDE5310616E4972F863627E43F9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453765680/3F2FE0709EBDDA57A78654B222A069392BAD419E/"
+    }
+  ],
+  "Cylops": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16802706747119418331/F69CCAA251F1D73531120AA75525F92D0613B8A2/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11129252367246089015/BFF79DD2BDED1918D18FAF9A01165C4E5D694BDB/"
+    }
+  ],
+  "DeathHound": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16714131508828381191/B45F5A4D347A0038BA3AA6D6ED8F14FB1B1676FB/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10343891748676556696/8887D6FC86A4D7B7C1E8FDAE81A72CF978D0B200/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15950956020902826458/88F6E8ED89FDFA7088C3E1A4AD4B19EFC9D0A12A/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13855624410426592139/A3039CCEAE23290EA237E5929907B539997C0185/"
+    }
+  ],
+  "DeathKnight": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986330260/60B2F4F43094D2CDA748B939E31D47F9DC2FD06E/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131646196/5759821CF6361BA04A5CAE17A99FB218FCF7894E/"
+    }
+  ],
+  "Demon": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986322777/C1DE2CDEE6C31BF6D7A5C894FBB2825DBE2F7879/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762062062/A4D229744CDBFFC041F0F968CA860961C9C0DB26/"
+    }
+  ],
+  "DireWolves": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952250749/4EEED0B5ADCDDBF9D5F7D628F617C9C6D302F8D1/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453849445/1A10FF48877676325389B70A247B18DD028FDBC5/"
+    }
+  ],
+  "dwarves": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951411085/03D76D332782FB01B560957657CAE3C9F450F621/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951411725/00763E42D46AE08AB0C4239F547199CB55629F7B/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951412540/56A5DA528A02DE5F7367CC9D220DB65BB2C0C1B6/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951412916/7B897D06A7DEB2C253C93FB862E8901594F7E5F1/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951406623/30AB7CAAF45DA99E3D08CF7EFF796122B793A525/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951406972/87928E2A63C4EECA56942A948125AA0D225F939E/"
+    }
+  ],
+  "Elementals": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953847160/2F3D9299624515A74D873333FF2D10A323BE173C/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773849651/3908499109531DA8249211C8EF0E9ADCBF6F8390/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953846423/A1D6EC5AC753DD768BA7351F406735C31A722263/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773851069/BA7F2A25E539365653C09E88EBA39B0835442374/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953845581/BF546349A72AFAC94721E61FB42F56125772773C/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773847779/AA7E350C070281D56DF4F19D0961FC3CC53A87B1/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953847866/4C11CE7698F9D9999223527CF649F767E41400D2/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773852433/6F584E70DADEE62031C087B928E8B83B6F353FE4/"
+    }
+  ],
+  "elves": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012598832/8B2D517B0375B071F4BFB0BCA5C1042FF607D84D/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012599193/6B075299588204519BC59F565AF27952E8D1A9D5/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012600288/D02D45E4FA1BA7FA43E40609439B09ED9B32F7E4/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012600733/EEED13F972EFBD8734F71805871E726A6C82D81E/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012597338/A6BE52BC2F0EFC5467C2FBB727F9CA218C78F794/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012597727/79B8B281C817DC96F54BFF2657FDAA12372D4C8E/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810043220355/5750B432E1A882129B39ADCE858657652759D83A/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810043220589/18A3F8276B8BFB711AA41D3CE4EE960865E10252/"
+    }
+  ],
+  "GiantBats": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953779997/BA3225E3971450074AD8D051F0728DE285C6185B/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798492826/F12145FB16BFB06CBA240AD21FCEAB0D998203AE/"
+    }
+  ],
+  "Giants": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953767081/F9D827EE6B95AA72D4CD4890F5BE36EEF8925D34/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798488124/175E58A0ABE1616836FD207F843C3DDAB78EB5F6/"
+    }
+  ],
+  "GiantScarabs": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11812190535723167778/DB6F22DF5B32674CD388C7A51E7A046E5AE3C6BC/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11335312953714593677/55A3942CF878E96699B0C87F3187A5B6C13F7B63/"
+    }
+  ],
+  "GiantScorpions": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13459836082337654529/E22E7203AD809BB5173702FB2B41C0EB25EBB90D/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16138781514901222000/42C3B80D1E59B38FC06CDE9D48AF8D0F2DB941E5/"
+    }
+  ],
+  "GiantSerpents": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952401772/C400D453DE7A1EE6AC241ECC9A0B78B1AC4DE017/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952402054/0B943B9A3E0CC2B7BD6A998CA77F5CCC5B61F463/"
+    }
+  ],
+  "GiantSpiders": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953827708/08EF6CBB7FA1DB0CC678CBFDF0E3E70B9F1F0309/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131653668/C84C692093FD41E6BB2035365E1A5A50898123E0/"
+    }
+  ],
+  "Gnolls": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953836059/1F476246DF6DEB623605EAB57D7F3AB28EFBA304/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131656353/C62BBF16879A2C2AB10C469E3B97A0BF5036B29E/"
+    }
+  ],
+  "Goblins": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953788058/576D7F0E1FA1A7DCCA458D709BD5ED5FC11C31DA/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131659281/EF404BF2A0A631B09DBCF9C69F3F473887B898A6/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953787080/F985688A1B5C6C176A4DD363A4E3A9F7EE8445AB/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798521454/BEF1422D3CB2DCE3B28E17F083AF5D84A747A50B/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953791441/8DC12F9E1227D4243415FD9DF26D65B174E9EA89/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131661176/56DC6154C000E5390683314E07296B68AEACA2DE/"
+    }
+  ],
+  "GreatDrake": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986319542/C9C592B39BE7410F2AEE44A9CB62D61A93441FFF/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131649190/7A988121EFD3D96822BA716D55DAFCE75239CA36/"
+    }
+  ],
+  "Greatmanes": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10577474962316013632/F7BFD64AE0C9B2FBBE5E73063F6C1037FE82E45E/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10920605771964950456/0F853FA1AA0D0756F7CB5319EF34FEAED4E02294/"
+    }
+  ],
+  "GreatWyrm": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986326126/ABDCFB7355F2181A3FF5322F1513418996E1E8AE/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762057235/F9907AED3F6A536C929D857450415CE57D999345/"
+    }
+  ],
+  "Griffons": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953750931/F4BDE094C4751217EBAD60EBACEB023812A78C2E/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798530385/1EE7A12B6398CA9B57C1B75A21DFB0D5D3FE2B41/"
+    }
+  ],
+  "Hag": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16671475153710260215/A885E88A3A38DD6BE6A126B4E23E6F4E518E4B24/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14169490951856203457/E04D6A41A619F5FE03175736353C651B25CD454F/"
+    }
+  ],
+  "Hydra": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952423209/A2E34E4824F2CA69E19744ED02A60ACF65EEB201/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053719822/064CDB06E90274169B34EBB23F1B6C4CA0AFD285/"
+    }
+  ],
+  "Ifrit": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11638639314925117915/829F2A0165718E161E878301DB31E326AEFCFDD9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13475297502325450398/8340838E187093AA879D844EB5BA41EB0A22F31D/"
+    }
+  ],
+  "JuvenileDragons": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953762616/DB3839DDDE58F1257ED9837836C34F302C2A38FA/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798496217/2B2BE54F6DBCFDB6DCEDA9C6CD6B04CE51F6DF30/"
+    }
+  ],
+  "knights": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951417953/9B98FD8F78ACCE9893C8A68A13C57A5A745CCB12/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131804014/5C1266BED25D2633780B3B5EAB1D88999BB315F2/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951419018/04165A290AFE5FB6C1558E355A6D6B3B5A53A03A/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951419352/8FECF9D5296F33EB194E7ACF7A20B1A3A112626E/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951416302/41DCD057DC2E6502D406E7095F2073C669B2FFFC/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131802873/242942441548B92F40610119135D56482D7B006A/"
+    }
+  ],
+  "Kobolds": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953776644/26369A5657DC1FEFD848D3DF2DB6B4B1BA8F1D34/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798535562/9D4F6AC9D736F264236F96083773F25C6F2227C6/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953775875/B11E9AFA4F63F3B47F2D0F0E97D1E2B203D96604/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798537574/94E14BAF34FC2B2AB12DA5EC7639BF2F778FEB1D/"
+    }
+  ],
+  "Lamias": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17786934274830911164/AD707DD881BEE0D7FAAE1AF9754CBC3D67CA667F/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9970538831240232277/FA8E803FC753D9B135683FE7D9CB97E3830F0971/"
+    }
+  ],
+  "Leviathon": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15738523781931443933/D3D0B9607C7991EE6DD9557B1F9B0143B802E985/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15345235984982507411/EDE32D955D68F6AD549319D9594069A493B02780/"
+    }
+  ],
+  "Lich": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986321348/9DB30C803CB05FDA9C53640DCCB7593B3CBCFD41/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762018417/B34E2D6619C4A73E9A89CC888C02691D44D7FE2B/"
+    }
+  ],
+  "Lizardfolk": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952405480/E94A0881799BEF89A499DD921C817DFBA54A0C13/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952406124/7709C16CF2930C7E7128C0300031CB4E8DD19489/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952409644/59750815C01F867E7A41393207512304A1B6EB10/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952410080/32DA7B00D5545A0834C68E6122B0DDD9D9D41E62/"
+    }
+  ],
+  "LostBattalion": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952420703/8EA6AE37DED57F274501F1A9E842AB6C8F30C7E2/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053733933/EFD7C0E8EFCAE024069C89B44A439F8E675AE9F9/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952419948/8B8D5F091E367B144B25EF9BB27F1193C8DDAAD9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053732487/08E61F7F213DC91A943A8F475E9D6B054F054765/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952418646/5E94DA196E19E0CECAAD4B77DA29A80184A617C7/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053731164/495C2C58A3CAB2C947A5CA08F2AAF163D5491CDB/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952415890/E9FC3D3C190829C9A891ED513007F8FF8DC6131A/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053727310/0460AECF6109E276197F93301ADE7B11097648E7/"
+    }
+  ],
+  "Manticore": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11426498328880956234/C055C8C14E54F4D6A304C351D3AC7D82B890312B/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17568247505485982883/9DA461A1C7546DD18BB09C93B4469CC99195A1E7/"
+    }
+  ],
+  "mariners": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11142898611934360885/15DC343C6DC671334DC886068CE12E2401AFD9A9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16579491103949521439/4541172A60622AB0530C692B44E0387154791871/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16610782663697067579/90E45C8FBAA687D1EFB31E815EAEE3EBBC6D9391/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16252521360614033732/385E524A4D6496957C205A6B3403CF8B7D12BFC6/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9871876268881231400/97914B75CA64728D57A4066E743E939F99853818/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11698904483945935515/E8F81C9F4A2A6F340AD088BD826C1B731927A83B/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11609108222288891706/DB55672765D5FA72F3460588968E67615DDEEA00/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12473327886700110485/F254CC88871B96B394424AE8943C4166DCE606DC/"
+    }
+  ],
+  "Merfolk": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15106064978386320859/78192335BCC5A2059E8F91216CC00A794796D092/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12751125273453748152/C36BCDEA20414EADFDFD416658EB6E19CB026A07/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13057197507121166927/B2EF500BBF5FE62B3ED15CA20C3E4C85E1CC0837/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9225658430800702647/38693AAC365818CA8E4DE5772D0CC924ED6AF5A9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17945833962132182002/9CA42FF9D96152C619B954266C710483C7906D60/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11690454804909599748/480978F7A9619D6291442BE117656763F8419902/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9583676347847606844/FC86C60E1684E2227899DE6EF2EF2EB028CC7781/"
+    }
+  ],
+  "Mummy": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14140756844214267205/59855DCD441551C04D85EC98FBB696B694CFA3F5/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17439490147579168919/F13D952D979F92A22D8855982A41EC4E9E264DED/"
+    }
+  ],
+  "Ogres": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953745432/BC1F53C9D68BAFE2C2C7F516783404E07325AC71/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798556979/AC02C94A0762667785EAF091B32DC2F8D05A833F/"
+    }
+  ],
+  "Omnicrux": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952266587/7051352450546B8DFCA7689407FEF978FAB27AC9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952267105/3561AE11BEABAB62E3CF83A7492754FCE68C21E0/"
+    }
+  ],
+  "Orcs": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953820639/31F1B096A31F7D0A16BDC1E67C9FA4B410E64AD3/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131677728/1D2E880758CC9F110D8BBA962F0405C800E2496B/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953800624/34BAF525354B9319C4C43AD9F924DEA9C1DE5D52/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131668740/006ECD1813952F77CF99CFB1C5778D17A2D4B2E4/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953808462/56DFB8BFE7C69747EAF0B87335C0FC80FD485EAD/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131675607/77FC935371D5965D81E85D31AFE4484095DE8A13/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953797954/D72776703997FE2E4970D5CD4A78537264590469/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131673793/4E634A9A6288B2B94244E18F70F79489AE02DAE2/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953798967/6BFEC08D9498B09FDCFAE168691B88F5063FA034/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131667628/39AB82540AE6678372128E68FFF70F4FBC9029A4/"
+    }
+  ],
+  "Owlbears": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462985923136961148/2DBE22C814853C17CA3A5C6EFCFB66FCF42AA7AB/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798589401/F7DA9CD06C2F9079419290F23906D173F46CFEDE/"
+    }
+  ],
+  "Pirates": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12501296330059821983/7171918BDD4FFA6B1BCF22FAC65C40142026F161/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14645777771124407839/2965BE1EAA61182EDD6CD613D9B7AC4AEE5E6920/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10585245099384554849/05CFC8277BB75BB8FE3609D563E18456B87AC9AF/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13730077077099269598/8C4D1E1244BB15017730787D5CBD568E092BBFC7/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13403101809927545496/B8B1229978CE6B54CEB3EA5A1EBDF3FBE3303B36/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16021899067304039134/4384562515FEFD6FF8F31EDF7D9C52BDC8F51350/"
+    },
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17491937182034965384/198FCA45D98207ABA0294D12BB4D3B9639EB0B04/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/18437235051697202240/B2CF21012ED3E304A576DEE4AD2556A5C7AB4D4A/"
+    }
+  ],
+  "priests": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951421443/B0ADB0E7E8D019F5C15AAC7741123EB9477534AC/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131797793/0ADE002CF2EBBB96B3D4C61F4DA8FA24C72D714C/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951423175/81D26220748C1FE07D03FC5F532BF457C77A71F3/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763153776/06B3C3CE10DA037FF191F3468177C8DA486C3A15/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951422455/5339ABFDD187F4F6E4E7DA27E6C4C871A923CB68/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763148249/E1770EDE3BC7586A5AEEC7C952E01E79F1855979/"
+    }
+  ],
+  "rogues": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126889392/29EC26D3AF3E4E06EA7BA7405779ECB3660D8B39/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012615131/EA6EF64BF53ACC993A70AF943B004E757AB47667/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126889863/67CF164266AF942763EB9B258E68C62ED29DC616/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012616738/9931D5B99BD5D248968017C3FB975EC24FD59F21/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126885279/D2B5164A741CA943B03A3810FEB5A322456220C1/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012607774/4DB68A3CD5476ED4B796E591B5AF3DE2BF768802/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126884748/3BBCC6AFD1E66E81656E505176168CDB68270DED/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012606485/799911970307EE946DDF5657E5E29A376F74E9E7/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126887110/C3ADA95A05341698D0766AC6D5E5EE28D67428D8/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012609593/9B3F7BD4E0CF5EA34D74F34E29E08945EDD35E6C/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126882650/F62A6F42C83D3C45E4C1591F9D99056A25782010/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012604382/4ADD68A3A2D543F223365F0752F34F5998197DD7/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126887647/BAAA3676EEB437134B7E60A71B21862FE57557F2/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012613632/E8A7D5A8C77B0B9E015936A859E1403A1BF16396/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126881343/EA30A9732240F73AF08DDAD04BA6F1C7EA59B455/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012618637/6BD50E690C911E58577460A0C7DB734FAABDB83D/"
+    }
+  ],
+  "SandWyrms": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15317614513284938221/CB0637ED88DD9C062885CED16DFAC522AF6964B8/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15948052616507750339/E75EB34D523A91B63205A8D2D3A8F35FD5A9787D/"
+    }
+  ],
+  "SeaSerpents": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12603986159459852645/51D6D304AA58914BA21341BDF4DC9E674DFAF045/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16496535781159042413/46340F78AFBB4044337AC5EF5E915B2C80516883/"
+    }
+  ],
+  "sellswords": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012628024/F1A6A2CAFD0FA4565AE759A36837DD82FC28B4B2/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012628509/BBD8CBF14C6957EBA01C502A8D83C286A49D0F76/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012637397/AE764E883D1EC3FC6C6F060E55EC09622143174D/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012637799/EAC6613F67F035E897B043CB93874628DF8C37D3/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012634902/0D3C95DBE2818AF852EC1E618690663200878629/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012633244/3B429D097B68D2D5636ADE8CBCCBA40044C37D10/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012626565/6FEFAAFEBA8E44963542C2B92FF276A890723AA5/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012626902/942891821118986003C91609B2146EEB8726A3BF/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012629846/4C8BB27F0F47AAEB50B61EB7C352355F3DD41E24/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012631092/34C81F13B0D60669E8BCAA750B1E7024C97D4A93/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012625002/B1A28EAB447EC842FFB39778BB052A85C88D1A9A/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012625353/1DF0BC9D154170EB9DE422AB3C3558BE01B15218/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012635990/05181DDCD0CC1111D8036FF82FE8562542B1B360/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012636293/9695B3A9B5ACB0FED71BBA82BB45558228E25180/"
+    }
+  ],
+  "ShardWings": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9486802730148981443/BF38CCFF3D5D9B02174700371FAB204A1CC201C5/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17291186217871575480/909AD4307157DE409CA0100FFCE4738B35344517/"
+    }
+  ],
+  "Siren": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11309353207436598206/2A461EFEB1D7DC146D9877DB19A2D7A81B6BAB04/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9740354744870008714/517529254FA9F13CE30FF6FCEA3EC80291D106AB/"
+    }
+  ],
+  "soldiers": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012642542/030B636AF3954F34F5469203B62DD66FBAE86BDB/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012642868/4E9F21BE414061859ECDA42983F18CEDC9B1DD84/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810043222316/6AFA4731A31415EE2843AC7AAA600B96A9E27579/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012641418/92E618A0DCA01FC875C3AE03FFE42E0B4AAB8D60/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012643946/3FA9E588C85E47FFB30E65F81985433A1BCE02A1/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012644484/D99D743EABB2E24A2313ADCBAA99D22D3302111E/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012639420/B7321948F9AEF6293AD88952D0316AD978C72C29/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012639794/3B171A635E570EFD56BB2DCBA8F045C37240C257/"
+    }
+  ],
+  "StormDrakes": [
+    {
+      "source": "eastern",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16175927250570744102/C7A22D39306256BD243CC8FEB51E90DA1CC6B3A1/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11731094107476669209/242B5A09AA0055F3E95317BDAE86FCAB390B94A9/"
+    }
+  ],
+  "Titan": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986318271/69B73C2C2EDC5C8B78B08DF43B5CE48CA06652F9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762015691/100FFE38693F878181F72FE1895F0BBD5D138516/"
+    }
+  ],
+  "Treants": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953831791/3576F8CC5E3CD18EC102C57F39228C0552E3C642/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798593768/CA1347D028A8016110C6807BA701B2DD973C4E16/"
+    }
+  ],
+  "Trolls": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462985923136955675/510ECF822BA4DC07573E4EE43A40DC30B1AAAF5A/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798596453/10C3A9A85E8B5EFD099F4E0FD5E65D6199CD17C7/"
+    }
+  ],
+  "villagers": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951445417/A4489BEE530075CB4CE2FE0890BBAF7F3A227B4D/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663198104/A2524A1B3D442B44D9369FD55644F521ADD15A52/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951452032/DFB24268277EB61E547E3D178A0A2FDE2B77CC79/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663199851/C1F88F1904DC2EB211A48BCC9137901309C8A61B/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951449817/0C2B1350EB15D5A2C2A92F9A0EEE0684D769730B/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663201997/EA74FE5CE2688E69A0053537103DEC3D99D19225/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951448374/1B7E6EFBBAD3092CD1621D73C4354254E6CDB4A3/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663204194/8E28F238DADBC475179E891CFA109D27224B1A83/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951446596/3427907CFD41C441856B71E1CD42FFCF16C53D79/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453762416/33C24141F971DF0EDA4973374CD5A050A4603A7C/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951437447/44A83C0E297D10F8C5FA89B578B149A794A325F6/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053799013/EDA0298CBACF8C7632526E70405C5C608724A77C/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951453816/B8EDD498A76A2EA7A9A4207FA6D8B7F4EC98F7EA/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951454244/8BFBC5D71CB8560394088B0CF6F82AC7E167B0FE/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951443028/E7F0BC6BD7D32F3EE587006DADAC0699D52BEA63/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767632295/128B4CEC89A19968B40B686C9BF1DFDE2D3A853D/"
+    }
+  ],
+  "wardens": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951431875/6727F53D3F7BBB9469ED2654B277392D6BC6435F/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2267067515264318189/5BE1D52894E2D6B10744A1997C90B0324A1BCB34/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951431018/A578BEF13A18CD34BC0FB4AD4F655E2AC8712A6F/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453767091/B746A18A1C6D266ECE23792AB4AF32C5E8AD1359/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951432623/5A2E16EAFA25C7E9B3A7C3B0751F7DB59662DF29/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453770259/8F0D52F5B8C2767CA5F0CCD10A84792FD8592B2F/"
+    }
+  ],
+  "watch": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012575007/2B5EFA6E9D333C0989A640EC59A6924936F145BA/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012575436/D44945FDA1822790275283E21F6509962C444A97/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012572194/6E121FFBC462DFA1EF80E1F75D84745D8C848BA3/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012572502/22203AFD420DD4FCDDA0B449CBB3B27ABAE07AC7/"
+    },
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012573498/D1BA5A030FB2EBD5F70010C5A30CCB39A043408D/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012574049/BF2B4B7318027357935B2E305E43D3A48E35C7BA/"
+    }
+  ],
+  "Wraith": [
+    {
+      "source": "core_desolation_natives",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986334862/B98D783D90BDB4C4740E6EB6B9404D1A84C080E5/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2175862346721512097/8A8A2675E2AFE05EDC8CC8FCA2FFD51FE17DCD54/"
+    }
+  ]
+}

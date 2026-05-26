@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { extractCards, normalizeTitle, resolveCards } from ".";
+import { extractCards, extractChips, normalizeTitle, resolveCards } from ".";
 
 function card(nickname: string, cardID: number, deckId: string, deck: object) {
   return {
@@ -121,6 +121,79 @@ describe("extractCards", () => {
     const save = { ObjectStates: [card("A", 100, "1", SAMPLE_DECK)] };
     const out = extractCards(save, "my-source");
     expect(out["A"][0].source).toBe("my-source");
+  });
+});
+
+function chip(gmNotes: string, imageURL: string, secondary = "") {
+  return {
+    Name: "Custom_Tile",
+    GMNotes: gmNotes,
+    LuaScript: "chipName = self.getGMNotes()\n",
+    CustomImage: { ImageURL: imageURL, ImageSecondaryURL: secondary },
+  };
+}
+
+describe("extractChips", () => {
+  it("extracts chips by GMNotes when LuaScript starts with chipName =", () => {
+    const save = {
+      ObjectStates: [chip("Trolls", "front.png", "back.png")],
+    };
+    const out = extractChips(save, "eastern");
+    expect(out["Trolls"]).toEqual([
+      {
+        source: "eastern",
+        imageURL: "front.png",
+        imageSecondaryURL: "back.png",
+      },
+    ]);
+  });
+
+  it("skips Custom_Tile objects without the chipName marker", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Custom_Tile",
+          GMNotes: "Map",
+          LuaScript: "function onLoad() end",
+          CustomImage: { ImageURL: "x" },
+        },
+      ],
+    };
+    expect(extractChips(save, "eastern")).toEqual({});
+  });
+
+  it("dedups physical copies sharing the same URLs", () => {
+    const save = {
+      ObjectStates: [
+        chip("Trolls", "front.png", "back.png"),
+        chip("Trolls", "front.png", "back.png"),
+        chip("Trolls", "front.png", "back.png"),
+      ],
+    };
+    expect(extractChips(save, "eastern")["Trolls"]).toHaveLength(1);
+  });
+
+  it("normalizes GMNotes the same way as card nicknames", () => {
+    const save = {
+      ObjectStates: [chip("King’s Edict", "f", "b")],
+    };
+    expect(Object.keys(extractChips(save, "eastern"))).toEqual([
+      "Kings Edict",
+    ]);
+  });
+
+  it("skips chips without an ImageURL", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Custom_Tile",
+          GMNotes: "Trolls",
+          LuaScript: "chipName = x",
+          CustomImage: {},
+        },
+      ],
+    };
+    expect(extractChips(save, "eastern")).toEqual({});
   });
 });
 
