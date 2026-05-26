@@ -169,6 +169,7 @@ describe("extractChips", () => {
         source: "eastern",
         imageURL: "front.png",
         imageSecondaryURL: "back.png",
+        count: 1,
       },
     ]);
   });
@@ -187,7 +188,7 @@ describe("extractChips", () => {
     expect(extractChips(save, "eastern")).toEqual({});
   });
 
-  it("dedups physical copies sharing the same URLs", () => {
+  it("dedups physical copies but sums their count", () => {
     const save = {
       ObjectStates: [
         chip("Trolls", "front.png", "back.png"),
@@ -195,7 +196,22 @@ describe("extractChips", () => {
         chip("Trolls", "front.png", "back.png"),
       ],
     };
-    expect(extractChips(save, "eastern")["Trolls"]).toHaveLength(1);
+    const out = extractChips(save, "eastern")["Trolls"];
+    expect(out).toHaveLength(1);
+    expect(out[0].count).toBe(3);
+  });
+
+  it("keeps distinct URL pairs separate and counts each independently", () => {
+    const save = {
+      ObjectStates: [
+        chip("Bandits", "a.png", "back.png"),
+        chip("Bandits", "a.png", "back.png"),
+        chip("Bandits", "b.png", "back.png"),
+      ],
+    };
+    const out = extractChips(save, "eastern")["Bandits"];
+    expect(out).toHaveLength(2);
+    expect(out.map((c) => c.count).sort()).toEqual([1, 2]);
   });
 
   it("normalizes GMNotes the same way as card nicknames", () => {

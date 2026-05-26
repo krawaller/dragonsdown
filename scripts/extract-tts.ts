@@ -17,11 +17,18 @@ import {
 const SOURCES_DIR = path.join(process.cwd(), "sources");
 const OUT_DIR = path.join(process.cwd(), "data", "tts");
 
+/**
+ * The Eastern Reaches TTS save is a strict superset of the
+ * core_desolation_natives save (verified: every card and chip in the latter
+ * appears in the former with identical URLs and copy counts), so we only
+ * need to read this one file. Add to this list if a future save adds
+ * content not present in `eastern.json`.
+ */
+const SOURCE_FILES = ["eastern.json"];
+
 async function main(): Promise<void> {
   await fs.mkdir(OUT_DIR, { recursive: true });
-  const files = (await fs.readdir(SOURCES_DIR))
-    .filter((f) => f.endsWith(".json"))
-    .sort();
+  const files = SOURCE_FILES;
 
   const cards: CardIndex = {};
   const chips: ChipIndex = {};
@@ -54,17 +61,19 @@ async function main(): Promise<void> {
         }
       }
     }
+    // Chips dedup by URL pair across sources; physical-copy counts are summed.
     for (const [name, items] of Object.entries(chipIndex)) {
       const bucket = (chips[name] ??= []);
       for (const item of items) {
-        if (
-          !bucket.some(
-            (c) =>
-              c.imageURL === item.imageURL &&
-              c.imageSecondaryURL === item.imageSecondaryURL,
-          )
-        ) {
-          bucket.push(item);
+        const existing = bucket.find(
+          (c) =>
+            c.imageURL === item.imageURL &&
+            c.imageSecondaryURL === item.imageSecondaryURL,
+        );
+        if (existing) {
+          existing.count += item.count;
+        } else {
+          bucket.push({ ...item });
         }
       }
     }

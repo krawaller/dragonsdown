@@ -39,6 +39,8 @@ export type TTSChip = {
   source: string;
   imageURL: string;
   imageSecondaryURL: string;
+  /** How many physical copies of this chip exist in the TTS save(s). */
+  count: number;
 };
 
 /** Output written to data/tts/chips.json. Keyed by normalized `GMNotes`. */
@@ -182,21 +184,20 @@ export function extractChips(root: unknown, source: string): ChipIndex {
     const gm = (chip.GMNotes ?? "").trim();
     if (!gm) continue;
     const key = normalizeTitle(gm);
-    const img: TTSChip = {
-      source,
-      imageURL: chip.CustomImage.ImageURL ?? "",
-      imageSecondaryURL: chip.CustomImage.ImageSecondaryURL ?? "",
-    };
-    if (!img.imageURL) continue;
+    const imageURL = chip.CustomImage.ImageURL ?? "";
+    const imageSecondaryURL = chip.CustomImage.ImageSecondaryURL ?? "";
+    if (!imageURL) continue;
+    // Dedup by URL pair, but track physical-copy count so the UI can choose
+    // whether to show the duplicates (e.g. as a "×N" badge) or hide them.
     const bucket = (index[key] ??= []);
-    if (
-      !bucket.some(
-        (c) =>
-          c.imageURL === img.imageURL &&
-          c.imageSecondaryURL === img.imageSecondaryURL,
-      )
-    ) {
-      bucket.push(img);
+    const existing = bucket.find(
+      (c) =>
+        c.imageURL === imageURL && c.imageSecondaryURL === imageSecondaryURL,
+    );
+    if (existing) {
+      existing.count += 1;
+    } else {
+      bucket.push({ source, imageURL, imageSecondaryURL, count: 1 });
     }
   }
   return index;
