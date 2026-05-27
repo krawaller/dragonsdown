@@ -40,7 +40,7 @@ export type ChildrenOfTarget = {
 };
 
 export type AndTarget = {
-  and: Target[];
+  and: readonly Target[];
 };
 
 export type NotTarget = {

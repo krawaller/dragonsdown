@@ -42,7 +42,12 @@ const analyseObjectState = (
   };
 };
 
-const states = [...(eastern as DragonsDownWorkshop).ObjectStates];
+// JSON-import inference widens the tuple fields (e.g. `PlayingTime` becomes
+// `number[]`) so a direct cast fails. Bridge via `unknown` — we trust the
+// shape because it's our own TTS save export.
+const states = [
+  ...(eastern as unknown as DragonsDownWorkshop).ObjectStates,
+];
 
 const all = states.reduce(
   (memo, obj) => ({
