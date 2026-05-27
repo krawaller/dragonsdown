@@ -26,6 +26,15 @@ function spellColorRules(): Rule[] {
  * Rules run in order; later rules see the output of earlier ones.
  */
 export const TRANSFORMS: Rule[] = [
+  // PDF flow sometimes drops images under the wrong heading or in awkward
+  // positions inside a long content block. Use `moveImage` to relocate them
+  // by image-hash + anchor text.
+  {
+    op: "moveImage",
+    target: { doc: "core" },
+    imageId: "f926bc83f1a9b531c74fd4044e138cf9d65ed37e",
+    before: "**Active:**",
+  },
   {
     op: "ignoreImages",
     target: "ALL",

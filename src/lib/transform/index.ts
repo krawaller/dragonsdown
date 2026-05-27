@@ -6,7 +6,11 @@ import {
 } from "../doc-query";
 
 /** Discriminated union of all rule operations. Extend as new ops appear. */
-export type Rule = IgnoreImagesRule | AddTagRule | ExtractFooterRule;
+export type Rule =
+  | IgnoreImagesRule
+  | AddTagRule
+  | ExtractFooterRule
+  | MoveImageRule;
 
 export type IgnoreImagesRule = {
   op: "ignoreImages";
@@ -34,6 +38,25 @@ export type ExtractFooterRule = {
   op: "extractFooter";
   target: Target;
   title: string;
+};
+
+/**
+ * Relocate an image to a different place within a doc — useful when PDF flow
+ * order put it under the wrong heading or in an awkward spot.
+ *
+ * The image (matched by hash) is stripped from every section in the matching
+ * doc(s); a single instance is then re-inserted as its own paragraph just
+ * before or just after the first occurrence of `before`/`after` text in any
+ * section. Exactly one of `before`/`after` should be set; if both, `before`
+ * wins. If the image or the anchor isn't found, the rule is a no-op.
+ */
+export type MoveImageRule = {
+  op: "moveImage";
+  target: Target;
+  /** SHA1 (no extension) — same form as `IgnoreImagesRule.imageIds`. */
+  imageId: string;
+  before?: string;
+  after?: string;
 };
 
 /**
@@ -79,7 +102,76 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
     }
     case "extractFooter":
       return extractFooter(sections, rule);
+    case "moveImage":
+      return moveImage(sections, rule);
   }
+}
+
+function moveImage(sections: Section[], rule: MoveImageRule): Section[] {
+  const refRe = new RegExp(
+    `!\\[\\]\\(/images/(?:[a-z]+/)?${rule.imageId}\\.[a-z]+\\)`,
+  );
+  // Capture the original ref so we can re-insert with the right extension.
+  let imageRef: string | null = null;
+  for (const s of sections) {
+    const m = s.content.match(refRe);
+    if (m) {
+      imageRef = m[0];
+      break;
+    }
+  }
+  if (!imageRef) return sections;
+
+  const anchor = rule.before ?? rule.after;
+  if (!anchor) return sections;
+  const insertAfter = rule.before === undefined;
+
+  // No-op if the anchor isn't anywhere — don't risk stripping the image and
+  // having nowhere to put it back.
+  const anchorIdx = sections.findIndex((s) => s.content.includes(anchor));
+  if (anchorIdx < 0) return sections;
+
+  // Strip every occurrence, collapsing the whitespace around the image so
+  // inline removals don't leave double spaces and paragraph removals don't
+  // leave triple newlines.
+  const surroundRe = new RegExp(
+    `(\\s*)${refRe.source}(\\s*)`,
+    "g",
+  );
+  const strip = (content: string): string => {
+    const out = content.replace(surroundRe, (_m, before: string, after: string) => {
+      if (!before && !after) return "";
+      return (before + after).includes("\n") ? "\n\n" : " ";
+    });
+    return out.trim();
+  };
+  const stripped = sections.map((s) => {
+    if (!s.content.includes(rule.imageId)) return s;
+    const content = strip(s.content);
+    return content === s.content ? s : { ...s, content };
+  });
+
+  // Insert into the anchor section, as its own paragraph.
+  return stripped.map((s, i) => {
+    if (i !== anchorIdx) return s;
+    const pos = s.content.indexOf(anchor);
+    if (pos < 0) return s;
+    if (insertAfter) {
+      const cut = pos + anchor.length;
+      const head = s.content.slice(0, cut);
+      const tail = s.content.slice(cut).replace(/^\s+/, "");
+      const content = tail
+        ? `${head}\n\n${imageRef}\n\n${tail}`
+        : `${head}\n\n${imageRef}`;
+      return { ...s, content };
+    }
+    const head = s.content.slice(0, pos).replace(/\s+$/, "");
+    const tail = s.content.slice(pos);
+    const content = head
+      ? `${head}\n\n${imageRef}\n\n${tail}`
+      : `${imageRef}\n\n${tail}`;
+    return { ...s, content };
+  });
 }
 
 // Accepts both legacy refs (`/images/<hash>.<ext>`) and the current subdir
@@ -143,6 +235,10 @@ function extractFooter(
   const body = last.content.slice(0, splitAt).trim();
   const footer = last.content.slice(splitAt).trim();
   if (!footer) return sections;
+  // Idempotency: if there's nothing before the footer pattern, the section is
+  // already the credits-style entry — running again would just split it into
+  // an empty stub plus a duplicate Credits section.
+  if (!body) return sections;
 
   const maxL1 = Math.max(
     0,

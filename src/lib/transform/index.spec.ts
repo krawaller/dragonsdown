@@ -235,6 +235,124 @@ describe("extractFooter", () => {
     expect(applyTransforms(sections, rules, "desolation")).toEqual(sections);
     expect(applyTransforms(sections, rules, "core")).toHaveLength(2);
   });
+
+  it("is idempotent — running again leaves the existing Credits section alone", () => {
+    const sections = [
+      s("1", "Body.", { level: 1, title: "Real" }),
+      s(
+        "2",
+        `${IMG("aa")}\n\n${IMG("bb")}\n\nCopyright Active Magic Games.`,
+        { level: 1, title: "Credits" },
+      ),
+    ];
+    const rules: Rule[] = [
+      { op: "extractFooter", target: "ALL", title: "Credits" },
+    ];
+    expect(applyTransforms(sections, rules, "core")).toEqual(sections);
+  });
+});
+
+describe("moveImage", () => {
+  it("moves an image from its current position to just before the anchor", () => {
+    const sections = [
+      s(
+        "1",
+        `Intro.\n\n${IMG("abc")}\n\n**Permanent:** body text\n\n**Active:** body text`,
+        { level: 1, title: "Spells" },
+      ),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "moveImage",
+        target: "ALL",
+        imageId: "abc",
+        before: "**Active:**",
+      },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    expect(out[0].content).toBe(
+      `Intro.\n\n**Permanent:** body text\n\n${IMG("abc")}\n\n**Active:** body text`,
+    );
+  });
+
+  it("supports after-anchor placement", () => {
+    const sections = [
+      s("1", `${IMG("abc")}\n\nBody.\n\nDONE.`, { level: 1, title: "X" }),
+    ];
+    const rules: Rule[] = [
+      { op: "moveImage", target: "ALL", imageId: "abc", after: "DONE." },
+    ];
+    expect(applyTransforms(sections, rules, "core")[0].content).toBe(
+      `Body.\n\nDONE.\n\n${IMG("abc")}`,
+    );
+  });
+
+  it("can move an image across sections in the same doc", () => {
+    const sections = [
+      s("1", `Here is ${IMG("abc")} an image.`, { level: 1, title: "Wrong" }),
+      s("2", `Body.\n\n**Anchor:** here.`, { level: 1, title: "Right" }),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "moveImage",
+        target: "ALL",
+        imageId: "abc",
+        before: "**Anchor:**",
+      },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    expect(out[0].content).toBe("Here is an image.");
+    expect(out[1].content).toBe(
+      `Body.\n\n${IMG("abc")}\n\n**Anchor:** here.`,
+    );
+  });
+
+  it("is a no-op when the image hash isn't found in any section", () => {
+    const sections = [s("1", "no images here", { level: 1, title: "X" })];
+    const rules: Rule[] = [
+      {
+        op: "moveImage",
+        target: "ALL",
+        imageId: "abc",
+        before: "anything",
+      },
+    ];
+    expect(applyTransforms(sections, rules, "core")).toEqual(sections);
+  });
+
+  it("is a no-op when the anchor isn't found anywhere", () => {
+    const sections = [
+      s("1", `Body ${IMG("abc")} more body.`, { level: 1, title: "X" }),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "moveImage",
+        target: "ALL",
+        imageId: "abc",
+        before: "nonexistent",
+      },
+    ];
+    // Image was found, but no anchor → entire transform is a no-op (image stays put).
+    const out = applyTransforms(sections, rules, "core");
+    expect(out[0].content).toBe(`Body ${IMG("abc")} more body.`);
+  });
+
+  it("matches /images/<subdir>/<hash>.<ext> too (pdf/...)", () => {
+    const sections = [
+      s(
+        "1",
+        `before\n\n![](/images/pdf/abc.png)\n\nMARKER end`,
+        { level: 1, title: "X" },
+      ),
+    ];
+    const rules: Rule[] = [
+      { op: "moveImage", target: "ALL", imageId: "abc", after: "MARKER" },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    expect(out[0].content).toBe(
+      `before\n\nMARKER\n\n![](/images/pdf/abc.png)\n\nend`,
+    );
+  });
 });
 
 describe("addTag", () => {
