@@ -4,7 +4,7 @@
     "source": "core",
     "level": 1,
     "title": "Universal Spells",
-    "content": "![](/images/cb33661a999ce2226bc10f45c9dd365f62991849.jpeg)\n\nUniversal spells are accessible to all magic users and represent magic that requires no specific discipline of study. All casters of magic have access to spells from the universal arts."
+    "content": "![](/images/pdf/cb33661a999ce2226bc10f45c9dd365f62991849.jpeg)\n\nUniversal spells are accessible to all magic users and represent magic that requires no specific discipline of study. All casters of magic have access to spells from the universal arts."
   },
   {
     "id": "9.6.1.1",
@@ -22,7 +22,7 @@
     "source": "core",
     "level": 1,
     "title": "Black Spells",
-    "content": "![](/images/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nBlack spells are from the realm of death and evil. Black spells tend to bring misfortune, curses, and death  to those targeted by it. Black magic is not subtle."
+    "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nBlack spells are from the realm of death and evil. Black spells tend to bring misfortune, curses, and death  to those targeted by it. Black magic is not subtle."
   },
   {
     "id": "9.6.2.1",
@@ -168,7 +168,7 @@
     "source": "core",
     "level": 2,
     "title": "Floating Disk",
-    "content": "![](/images/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)\n\nSelf or other. Turn. The targeted hero may have any number of active treasures in their miscellaneous locations.",
+    "content": "![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)\n\nSelf or other. Turn. The targeted hero may have any number of active treasures in their miscellaneous locations.",
     "tags": [
       "spell",
       "blueMagic"
@@ -190,7 +190,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Move Gate",
-    "content": "![](/images/9187d30abe1a389818eada9e4d2900cc9e28d24b.jpeg)\n\nInstantaneous. Wound one blue cube. Move a gate in the hero’s map tile to any other clearing of the caster’s choice in the same map tile.",
+    "content": "![](/images/pdf/9187d30abe1a389818eada9e4d2900cc9e28d24b.jpeg)\n\nInstantaneous. Wound one blue cube. Move a gate in the hero’s map tile to any other clearing of the caster’s choice in the same map tile.",
     "tags": [
       "spell",
       "blueMagic"
@@ -274,7 +274,7 @@
     "source": "core",
     "level": 2,
     "title": "Divination",
-    "content": "![](/images/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nSelf or other. Turn. The targeted hero may reroll any number of dice during one loot action.",
+    "content": "![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nSelf or other. Turn. The targeted hero may reroll any number of dice during one loot action.",
     "tags": [
       "spell",
       "grayMagic"
@@ -285,7 +285,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Enfeeble",
-    "content": "![](/images/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nTargeted. Combat. Wound one gray cube. The target’s next hit during this turn causes -1 damage. Enfeeble spells are not cumulative. Does not affect the undead.",
+    "content": "![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nTargeted. Combat. Wound one gray cube. The target’s next hit during this turn causes -1 damage. Enfeeble spells are not cumulative. Does not affect the undead.",
     "tags": [
       "spell",
       "grayMagic"
@@ -435,7 +435,7 @@
     "source": "core",
     "level": 2,
     "title": "Nature’s Help",
-    "content": "![](/images/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nSelf or other. Turn. The targeted hero may reroll any number of dice during one search action.",
+    "content": "![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nSelf or other. Turn. The targeted hero may reroll any number of dice during one search action.",
     "tags": [
       "spell",
       "greenMagic"
@@ -446,7 +446,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Scout",
-    "content": "![](/images/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nSelf or other. Turn. Wound one green cube. Once next turn the hero may reject a drawn wilderness token and mix it back into the pool of matching wilderness tokens and draw a new one, which must be put into play.",
+    "content": "![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nSelf or other. Turn. Wound one green cube. Once next turn the hero may reject a drawn wilderness token and mix it back into the pool of matching wilderness tokens and draw a new one, which must be put into play.",
     "tags": [
       "spell",
       "greenMagic"
@@ -530,7 +530,7 @@
     "source": "core",
     "level": 2,
     "title": "Iron Skin",
-    "content": "![](/images/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)\n\nSelf or other. Combat. A hit against this target that does not strike armor follows the rules for armored monsters (removes one sword icon).",
+    "content": "![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)\n\nSelf or other. Combat. A hit against this target that does not strike armor follows the rules for armored monsters (removes one sword icon).",
     "tags": [
       "spell",
       "purpleMagic"
@@ -563,7 +563,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Mana Shield",
-    "content": "![](/images/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)\n\nSelf or other. Combat. Wound one purple cube. The next hit of damage one or more against this target deals no damage or wounds, but destroys the mana shield.",
+    "content": "![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)\n\nSelf or other. Combat. Wound one purple cube. The next hit of damage one or more against this target deals no damage or wounds, but destroys the mana shield.",
     "tags": [
       "spell",
       "purpleMagic"
@@ -647,7 +647,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Minor Mend",
-    "content": "![](/images/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nSelf or other. Instantaneous. Repair one damaged armor card.",
+    "content": "![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nSelf or other. Instantaneous. Repair one damaged armor card.",
     "tags": [
       "spell",
       "whiteMagic"
@@ -702,7 +702,7 @@
     "source": "core",
     "level": 2,
     "title": "Soul Save",
-    "content": "![](/images/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nSelf or other. Combat. Undead that attack this hero or monster must reroll the most favorable single hit die result rolled, unless both die results were blank.",
+    "content": "![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nSelf or other. Combat. Undead that attack this hero or monster must reroll the most favorable single hit die result rolled, unless both die results were blank.",
     "tags": [
       "spell",
       "whiteMagic"
@@ -797,7 +797,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Great Parley",
-    "content": "![](/images/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nSelf or other. Turn. Wound one yellow cube. Reroll any number of dice during one haggle attempt.",
+    "content": "![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nSelf or other. Turn. Wound one yellow cube. Reroll any number of dice during one haggle attempt.",
     "tags": [
       "spell",
       "yellowMagic"
@@ -808,7 +808,7 @@
     "source": "core",
     "level": 2,
     "title": "Hesitation",
-    "content": "![](/images/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nTargeted. Combat. If the spell hits, the target suffers -1 to their maneuver speed the next time this target is attacked. The spell expires immediately after resolving that attack. Hesitation is not cumulative with other hesitation spells.",
+    "content": "![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nTargeted. Combat. If the spell hits, the target suffers -1 to their maneuver speed the next time this target is attacked. The spell expires immediately after resolving that attack. Hesitation is not cumulative with other hesitation spells.",
     "tags": [
       "spell",
       "yellowMagic"

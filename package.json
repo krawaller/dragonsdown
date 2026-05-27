@@ -13,6 +13,9 @@
     "extract-tts": "tsx scripts/extract-tts.ts",
     "missing-cards": "tsx scripts/missing-cards.ts",
     "inspect-fonts": ".venv/bin/python scripts/inspect_fonts.py",
+    "find-images": "tsx scripts/find-images.ts",
+    "download-images": "tsx scripts/download-images.ts",
+    "download-activemagic-images": "tsx scripts/download-activemagic-images.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -25,11 +28,13 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "fs-extra": "^11.3.5",
     "tailwindcss": "^4",
     "tsx": "^4.22.1",
     "typescript": "^5",

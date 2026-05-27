@@ -236,6 +236,7 @@
     "title": "Foci of the Spellcaster",
     "content": "Epic treasure. May place one magic cube in a might box. This cube must come from the hero’s healthy box and counts against the combat round limit.",
     "tags": [
+      "treasure",
       "deepTreasure"
     ]
   },

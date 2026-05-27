@@ -82,7 +82,10 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
   }
 }
 
-const IMAGE_REF_RE = /!\[\]\(\/images\/([a-f0-9]+)\.[a-z]+\)/g;
+// Accepts both legacy refs (`/images/<hash>.<ext>`) and the current subdir
+// layout (`/images/pdf/<hash>.<ext>`); the hash group is what we match against
+// `imageIds`.
+const IMAGE_REF_RE = /!\[\]\(\/images\/(?:[a-z]+\/)?([a-f0-9]+)\.[a-z]+\)/g;
 
 function stripImages(content: string, imageIds: readonly string[]): string {
   if (!imageIds.length) return content;
@@ -100,7 +103,7 @@ function stripImages(content: string, imageIds: readonly string[]): string {
  * or if non-footer body content follows the run.
  */
 function findTrailingImageRunStart(content: string): number | null {
-  const re = /!\[\]\(\/images\/[a-f0-9]+\.[a-z]+\)/g;
+  const re = /!\[\]\(\/images\/(?:[a-z]+\/)?[a-f0-9]+\.[a-z]+\)/g;
   const matches: { start: number; end: number }[] = [];
   let m: RegExpExecArray | null;
   while ((m = re.exec(content)) !== null) {

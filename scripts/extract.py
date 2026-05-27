@@ -2,7 +2,7 @@
 
 Output:
   data/<stem>.json — array of { level, title, content (markdown) }
-  public/images/<sha1>.<ext> — extracted, deduplicated, referenced as /images/<sha1>.<ext>
+  public/images/pdf/<sha1>.<ext> — extracted, deduplicated, referenced as /images/pdf/<sha1>.<ext>
 
 Heading conventions (verified across all 4 PDFs):
   L1: BreatheFireIII size 18, color #d2232a  (red — page-section banners)
@@ -33,8 +33,8 @@ import fitz
 ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = ROOT / "pdf"
 OUT_DIR = ROOT / "data"
-IMG_DIR = ROOT / "public" / "images"
-IMG_URL_PREFIX = "/images"
+IMG_DIR = ROOT / "public" / "images" / "pdf"
+IMG_URL_PREFIX = "/images/pdf"
 
 RED = 0xD2232A
 BROWN_DARK = 0x4B281C
