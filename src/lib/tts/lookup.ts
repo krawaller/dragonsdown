@@ -13,9 +13,11 @@ import {
   type AliasMap,
   type CardIndex,
   type ChipIndex,
+  type CivLocationIndex,
   type SiteIndex,
   type TTSCardImage,
   type TTSChip,
+  type TTSCivLocation,
   type TTSSite,
 } from ".";
 import aliasesData from "./aliases.json";
@@ -23,10 +25,17 @@ import aliasesData from "./aliases.json";
 const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
 const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
 const SITES_FILE = path.join(process.cwd(), "data", "tts", "sites.json");
+const CIVLOCS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "civlocations.json",
+);
 
 let cachedCardIndex: CardIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
+let cachedCivLocIndex: CivLocationIndex | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -45,6 +54,12 @@ function getSiteIndex(): SiteIndex {
   if (cachedSiteIndex !== null) return cachedSiteIndex;
   cachedSiteIndex = readJsonOrEmpty<SiteIndex>(SITES_FILE);
   return cachedSiteIndex;
+}
+
+function getCivLocationIndex(): CivLocationIndex {
+  if (cachedCivLocIndex !== null) return cachedCivLocIndex;
+  cachedCivLocIndex = readJsonOrEmpty<CivLocationIndex>(CIVLOCS_FILE);
+  return cachedCivLocIndex;
 }
 
 function readJsonOrEmpty<T>(file: string): T {
@@ -109,6 +124,20 @@ export function getAllSites(): SiteEntry[] {
   const idx = getSiteIndex();
   return Object.entries(idx)
     .flatMap(([name, sites]) => sites.map((site) => ({ name, site })))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/** A civ-location entry for the /civ-locations listing. */
+export type CivLocationEntry = {
+  name: string;
+  location: TTSCivLocation;
+};
+
+/** Return all civ locations, sorted alphabetically by name. */
+export function getAllCivLocations(): CivLocationEntry[] {
+  const idx = getCivLocationIndex();
+  return Object.entries(idx)
+    .flatMap(([name, locs]) => locs.map((location) => ({ name, location })))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
