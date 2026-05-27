@@ -269,10 +269,58 @@ def process_image_block(block: dict, stats: dict, total_pages: int) -> list[tupl
     return [("image", f"![]({url})")]
 
 
-def block_sort_key(block: dict, page_w: float) -> tuple:
-    x0, y0, *_ = block["bbox"]
-    col = 0 if x0 < page_w / 2 else 1
+def block_sort_key(block: dict, column_boundary: float) -> tuple:
+    """Sort blocks into reading order for a 2-column layout.
+
+    Column membership is decided by the block's **center x** rather than its
+    left edge. Wide blocks (e.g. a column-spanning run whose first glyph
+    happens to land a few points before the midpoint) are correctly placed
+    by where most of their content sits, not by the leftmost glyph.
+    """
+    x0, y0, x1, _ = block["bbox"]
+    cx = (x0 + x1) / 2
+    col = 0 if cx < column_boundary else 1
     return (col, y0, x0)
+
+
+def find_column_boundary(blocks: list[dict], page_w: float) -> float:
+    """Locate the gutter between the two text columns on a page.
+
+    The static page-midpoint heuristic mis-classifies blocks whose left edge
+    falls a hair on the wrong side of `page_w / 2`. Instead, look at every
+    block's horizontal extent and find the widest vertical strip no block
+    overlaps. The center of that gap is the column boundary.
+
+    Falls back to `page_w / 2` when no clear gutter is found (single-column
+    pages, cover art, etc.).
+    """
+    intervals: list[tuple[float, float]] = []
+    for b in blocks:
+        if b.get("type") not in (0, 1):
+            continue
+        x0, _, x1, _ = b["bbox"]
+        if x1 > x0:
+            intervals.append((x0, x1))
+    if not intervals:
+        return page_w / 2
+    intervals.sort()
+    merged: list[list[float]] = []
+    for x0, x1 in intervals:
+        if merged and x0 <= merged[-1][1]:
+            merged[-1][1] = max(merged[-1][1], x1)
+        else:
+            merged.append([x0, x1])
+    best_gap = 0.0
+    best_mid = page_w / 2
+    for i in range(1, len(merged)):
+        gap = merged[i][0] - merged[i - 1][1]
+        if gap > best_gap:
+            best_gap = gap
+            best_mid = (merged[i][0] + merged[i - 1][1]) / 2
+    # Only trust a gutter that's clearly more than typical inter-block padding.
+    if best_gap >= 20:
+        return best_mid
+    return page_w / 2
 
 
 def extract(pdf_path: Path) -> list[dict]:
@@ -294,9 +342,11 @@ def extract(pdf_path: Path) -> list[dict]:
         pending_images.clear()
 
     for page in doc:
+        raw_blocks = page.get_text("dict")["blocks"]
+        boundary = find_column_boundary(raw_blocks, page.rect.width)
         blocks = sorted(
-            page.get_text("dict")["blocks"],
-            key=lambda b: block_sort_key(b, page.rect.width),
+            raw_blocks,
+            key=lambda b: block_sort_key(b, boundary),
         )
         for block in blocks:
             btype = block.get("type")
