@@ -337,6 +337,36 @@ describe("moveImage", () => {
     expect(out[0].content).toBe(`Body ${IMG("abc")} more body.`);
   });
 
+  it("moveImages: relocates multiple images in one rule (toBefore + toAfter)", () => {
+    const sections = [
+      s(
+        "1",
+        `${IMG("aa")} and ${IMG("bb")} mixed in.\n\n**One:** here\n\n**Two:** here`,
+        { level: 1, title: "X" },
+      ),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "moveImages",
+        target: "ALL",
+        toBefore: { aa: "**One:**" },
+        toAfter: { bb: "**Two:**" },
+      },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    // `toAfter` inserts directly after the anchor text, so `**Two:**` is
+    // split from " here" by the image.
+    expect(out[0].content).toBe(
+      `and mixed in.\n\n${IMG("aa")}\n\n**One:** here\n\n**Two:**\n\n${IMG("bb")}\n\nhere`,
+    );
+  });
+
+  it("moveImages: empty maps is a no-op", () => {
+    const sections = [s("1", `Body ${IMG("aa")}`, { level: 1, title: "X" })];
+    const rules: Rule[] = [{ op: "moveImages", target: "ALL" }];
+    expect(applyTransforms(sections, rules, "core")).toEqual(sections);
+  });
+
   it("matches /images/<subdir>/<hash>.<ext> too (pdf/...)", () => {
     const sections = [
       s(

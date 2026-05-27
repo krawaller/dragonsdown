@@ -10,7 +10,8 @@ export type Rule =
   | IgnoreImagesRule
   | AddTagRule
   | ExtractFooterRule
-  | MoveImageRule;
+  | MoveImageRule
+  | MoveImagesRule;
 
 export type IgnoreImagesRule = {
   op: "ignoreImages";
@@ -60,6 +61,18 @@ export type MoveImageRule = {
 };
 
 /**
+ * Batch form of `moveImage` — relocate several images in one rule. Each key
+ * is an image hash, each value is the anchor text. Moves are applied in
+ * iteration order. Either or both of `toBefore` / `toAfter` may be set.
+ */
+export type MoveImagesRule = {
+  op: "moveImages";
+  target: Target;
+  toBefore?: Record<string, string>;
+  toAfter?: Record<string, string>;
+};
+
+/**
  * Run all matching rules against a doc's sections, in order. Each rule is
  * pure: it returns a new array. Later rules see the output of earlier ones,
  * so "later wins" by virtue of order (no special merge semantics).
@@ -102,14 +115,37 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
     }
     case "extractFooter":
       return extractFooter(sections, rule);
-    case "moveImage":
-      return moveImage(sections, rule);
+    case "moveImage": {
+      const anchor = rule.before ?? rule.after;
+      if (!anchor) return sections;
+      return moveOneImage(
+        sections,
+        rule.imageId,
+        anchor,
+        rule.before === undefined,
+      );
+    }
+    case "moveImages": {
+      let result = sections;
+      for (const [imageId, anchor] of Object.entries(rule.toBefore ?? {})) {
+        result = moveOneImage(result, imageId, anchor, false);
+      }
+      for (const [imageId, anchor] of Object.entries(rule.toAfter ?? {})) {
+        result = moveOneImage(result, imageId, anchor, true);
+      }
+      return result;
+    }
   }
 }
 
-function moveImage(sections: Section[], rule: MoveImageRule): Section[] {
+function moveOneImage(
+  sections: Section[],
+  imageId: string,
+  anchor: string,
+  insertAfter: boolean,
+): Section[] {
   const refRe = new RegExp(
-    `!\\[\\]\\(/images/(?:[a-z]+/)?${rule.imageId}\\.[a-z]+\\)`,
+    `!\\[\\]\\(/images/(?:[a-z]+/)?${imageId}\\.[a-z]+\\)`,
   );
   // Capture the original ref so we can re-insert with the right extension.
   let imageRef: string | null = null;
@@ -121,10 +157,6 @@ function moveImage(sections: Section[], rule: MoveImageRule): Section[] {
     }
   }
   if (!imageRef) return sections;
-
-  const anchor = rule.before ?? rule.after;
-  if (!anchor) return sections;
-  const insertAfter = rule.before === undefined;
 
   // No-op if the anchor isn't anywhere — don't risk stripping the image and
   // having nowhere to put it back.
@@ -146,7 +178,7 @@ function moveImage(sections: Section[], rule: MoveImageRule): Section[] {
     return out.trim();
   };
   const stripped = sections.map((s) => {
-    if (!s.content.includes(rule.imageId)) return s;
+    if (!s.content.includes(imageId)) return s;
     const content = strip(s.content);
     return content === s.content ? s : { ...s, content };
   });
