@@ -29,9 +29,9 @@ const OUT_DIR = path.join(process.cwd(), "data", "tts");
  * core_desolation_natives save (verified: every card and chip in the latter
  * appears in the former with identical URLs and copy counts), so we only
  * need to read this one file. Add to this list if a future save adds
- * content not present in `eastern.json`.
+ * content not present in `dd_all_exp.json`.
  */
-const SOURCE_FILES = ["eastern.json"];
+const SOURCE_FILES = ["dd_all_exp.json"];
 
 async function main(): Promise<void> {
   await fs.mkdir(OUT_DIR, { recursive: true });

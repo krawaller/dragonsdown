@@ -1,7 +1,7 @@
 import { ObjectState, DragonsDownWorkshop } from "../sources/workshop";
 import fs from "fs-extra";
 import path from "path";
-import eastern from "../sources/eastern.json";
+import eastern from "../sources/dd_all_exp.json";
 
 const nameObjectState = (obj: ObjectState): string => {
   return [
@@ -45,9 +45,7 @@ const analyseObjectState = (
 // JSON-import inference widens the tuple fields (e.g. `PlayingTime` becomes
 // `number[]`) so a direct cast fails. Bridge via `unknown` — we trust the
 // shape because it's our own TTS save export.
-const states = [
-  ...(eastern as unknown as DragonsDownWorkshop).ObjectStates,
-];
+const states = [...(eastern as unknown as DragonsDownWorkshop).ObjectStates];
 
 const all = states.reduce(
   (memo, obj) => ({

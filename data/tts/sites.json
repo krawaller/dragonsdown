@@ -1,7 +1,7 @@
 {
   "Altar": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871386158005/E054558DCB0CF03329CB8C465E52BD39EF2DC1C4/",
       "ancestry": [
@@ -12,7 +12,7 @@
   ],
   "Catacombs": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871386156512/7ABF124F9B425852FAA8AFA841F041AF82EB5ECA/",
       "ancestry": [
@@ -23,7 +23,7 @@
   ],
   "Chamber": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871386154012/4A192D7A9CA78EF555E1ABE38EED71B86AA92ED2/",
       "ancestry": [
@@ -34,7 +34,7 @@
   ],
   "Crypt": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871386155323/1B2158C6B28EA2CC6FF7D61FBF76268CFC7C8445/",
       "ancestry": [
@@ -45,7 +45,7 @@
   ],
   "Grotto": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2259182745886708388/F8D850EF91355FABD0983AE5B97E01140C29BDF3/",
       "ancestry": [
@@ -56,7 +56,7 @@
   ],
   "Hideout": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2259182745886711463/02ADDCBA2DF71456BD9397FB0C5B7FEC8D2A14EC/",
       "ancestry": [
@@ -67,7 +67,7 @@
   ],
   "Hoard": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871386161868/B6AC6BD72A2682738034C34E3762DDFE3D387C23/",
       "ancestry": [
@@ -78,7 +78,7 @@
   ],
   "Monolith": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2259182745886712448/12D877E033F25469A27AA75016DCECA3AD34CFA2/",
       "ancestry": [
@@ -89,7 +89,7 @@
   ],
   "Shrine": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871386159441/A4A3845B6ACC98BEC73FD2B591D84EAF0F7962C8/",
       "ancestry": [
@@ -100,7 +100,7 @@
   ],
   "Tarn": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13994607482277913273/EC424DBD3F350E9794EC7CD9C92512E6EF198B60/",
       "ancestry": [
@@ -111,7 +111,7 @@
   ],
   "Tomb": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14449262806783325298/22017DEBF92E61738A8F4007C81E4774B5EAA58E/",
       "ancestry": [
@@ -122,7 +122,7 @@
   ],
   "Trove": [
     {
-      "source": "eastern",
+      "source": "dd_all_exp",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871386152628/D49AC5923BAC1E078666E45764A55D4A20A0BCB0/",
       "ancestry": [
