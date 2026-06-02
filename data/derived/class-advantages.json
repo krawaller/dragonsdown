@@ -4,7 +4,7 @@
     "source": "core",
     "level": 4,
     "title": "Archer (Steady)",
-    "content": "Archers have spent a lifetime honing their targeting skills. Archers may reroll one ranged attack die per attack.",
+    "content": "Archers have spent a lifetime honing their targeting skills. Archers may reroll one Ranged Attack Die per attack.",
     "tags": [
       "classAdvantage"
     ]
@@ -14,7 +14,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Assassin (Backstab)",
-    "content": "The assassin is skilled at stalking their target. Assassins may ambush with a melee weapon, after which the assassin becomes unhidden.",
+    "content": "The Assassin is skilled at stalking their target. Assassins may ambush with a melee weapon, after which the Assassin becomes unhidden.",
     "tags": [
       "classAdvantage"
     ]
@@ -24,7 +24,7 @@
     "source": "core",
     "level": 4,
     "title": "Barbarian (Mountain Lore)",
-    "content": "![](/images/pdf/8b3f9ded134bd7eb2811f2707b729ffddcdd4441.png)\n\nBarbarians grew up in the mountains. Barbarians may reroll one die during each search action performed in a mountain clearing.",
+    "content": "![](/images/pdf/8b3f9ded134bd7eb2811f2707b729ffddcdd4441.png)\n\n![](/images/pdf/ed2daf7fadb78723035490e6a834fd80c0f139d5.png)\n\nBarbarians grew up in the mountains. Barbarians may reroll one die during each Search Action performed in a Mountain Clearing.",
     "tags": [
       "classAdvantage"
     ]
@@ -34,7 +34,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Bard (Musical)",
-    "content": "![](/images/pdf/3307f8231477bb30b009b5e271d39219fade2c05.png)\n\nBards are entertainers and minstrels in addition to being heroic. If the bard is in a civilization location at the end of the combat phase, they roll one mission die and receive the reward rolled.",
+    "content": "![](/images/pdf/3307f8231477bb30b009b5e271d39219fade2c05.png)\n\nBards are entertainers and minstrels in addition to being heroic. If the Bard is in a Civilization Location at the end of Combat, they roll one Mission Die and receive the reward rolled.",
     "tags": [
       "classAdvantage"
     ]
@@ -44,7 +44,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Battle Mage (Power)",
-    "content": "![](/images/pdf/d024baacb93541ff86c7fd553523de763fa0bc1c.png)\n\nThe Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple magic cube as if it is a red might cube each combat round.",
+    "content": "![](/images/pdf/d024baacb93541ff86c7fd553523de763fa0bc1c.png)\n\nThe Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple Magic Cube as if it is a red Might Cube each Combat Round.",
     "tags": [
       "classAdvantage"
     ]
@@ -54,7 +54,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Beastmaster (Faunamancy)",
-    "content": "Beastmasters can speak to wandering monsters and control them. Wandering monsters (summoned by the gray dice) do not block, challenge, or target a beastmaster, nor may a beastmaster target them. All other monsters act normally with the beastmaster. A beastmaster may attempt to hire a wandering monster via a hire action. To succeed, the beastmaster must reduce the hire price to 1x. The beastmaster only fails in a haggle attempt by rolling a door symbol. The beastmaster pays no actual cost to hire a wandering monster. All other hired natives rules apply (page 3). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the beastmaster from hiring other wandering monsters on that same turn, even the same monster type (e.g. 2 giant bats). Beastmasters lose fame for hired monsters that are killed.\n\n![](/images/pdf/15b88aed557f5416f86ff6e96b2ada1da8af8e35.png)\n\nThe beastmaster may only have one wandering monster hired at a time. A beastmaster with a hired flying monster may choose to fly with the wandering monster during a move action, carrying only the beastmaster and no others natives. Beastmasters begin the game with no gold.",
+    "content": "Beastmasters can speak to Wandering Monsters and control them. Wandering Monsters (*summoned by the gray dice*) do not block, challenge, or target a Beastmaster, nor may a Beastmaster target them. All other Monsters act normally with the Beastmaster. A Beastmaster may attempt to hire a Wandering Monster via a Hire action. To succeed, the Beastmaster must reduce the hire price to 1x. The Beastmaster only fails in a haggle attempt by rolling a door symbol. The Beastmaster pays no actual cost to hire a Wandering Monster. All other Hired Natives rules apply (*page 3*). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Beastmaster from hiring other Wandering Monsters on that same turn, even the same Monster type (*e.g. 2 Giant Bats*). Beastmasters lose Fame when hired Monsters are killed.\n\n![](/images/pdf/b25ff3c430f8dd5964db76868bdddbe6de62d0d6.png)\n\nThe Beastmaster may not attempt to hire a Monster while they already have a hired Monster. A Beastmaster with a hired flying Monster may choose to fly with the Wandering Monster during a Move Action, carrying only the Beastmaster and no others Natives. Beastmasters begin the game with no Gold.",
     "tags": [
       "classAdvantage"
     ]
@@ -64,7 +64,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Berserker (Berserk)",
-    "content": "Berserkers can go into a frenzy in combat. Once per combat during the challenge step, the berserker may convert one action cube of any type into a heart for the duration of combat. At the end of combat, the heart converts back to the replaced cube (killing the berserker if they lose their last heart). Berserkers begin the game with no gold.",
+    "content": "Berserkers can go into a frenzy in combat. Once per Combat during the Challenge step, the Berserker may convert one Action Cube of any type into a Heart for the duration of Combat. At the end of Combat, the Heart converts back to the replaced cube (*killing the Berserker if they lose their* *last Heart*). Berserkers begin the game with no Gold.",
     "tags": [
       "classAdvantage"
     ]
@@ -74,7 +74,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Black Knight (Feared)",
-    "content": "![](/images/pdf/1228425c2c90b4f3861887004a47862f43452c96.png)\n\nThe Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one haggle die once per trade action.",
+    "content": "![](/images/pdf/1228425c2c90b4f3861887004a47862f43452c96.png)\n\nThe Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one Haggle Die once per Trade Action.",
     "tags": [
       "classAdvantage"
     ]
@@ -84,7 +84,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Brigand (Brotherhood)",
-    "content": "![](/images/pdf/93dc6b2b68a7a7f4fc472c6017f18dc771f9d01c.png)\n\nThe brigand is the former leader of the bandits that have been plaguing the land of **Dragons Down**. The brigand begins the game with an outlaw token. The bandits are a native group to the brigand that will neither block, nor attack, the brigand. The brigand may hire them in any order (bandit leader last). The bandits respect cunning for any haggle attempts. If the brigand performs a loot action at the hideout or attacks any unhired bandit, the bandits treat the brigand like any other hero for the rest of the game and all current bandit hires of the brigand are placed back in the native tray immediately.\n\n![](/images/pdf/aaa008d380614ca5eb75f99b39e7ac3c4f234cb9.png)\n\nWhen the brigand searches for the hideout, secret stash, or wrecked wagons, the search succeeds without rolling any dice and without triggering any hidden traps. The brigand draws one treasure from the main treasure deck, in addition to any other rewards they may receive, when they find each of these sites.",
+    "content": "![](/images/pdf/f7e9a539b1db872bcf70fc0943c7b1e58cae8e54.png)\n\nThe Brigand is the former leader of the Bandits that have been plaguing the land of **Dragons Down**. The Brigand begins the game with an Outlaw Token. The Bandits are a Native Group to the Brigand that will neither block, nor attack, the Brigand. The Brigand may hire them in any order (*Bandit Leader last*). The Bandits respect Cunning for any haggle attempts. If the Brigand performs a Loot Action at the Hideout or attacks any unhired Bandit, the Bandits treat the Brigand like any other Hero for the rest of the game and all current Bandit hires of the Brigand are placed back in the Native tray immediately.\n\n![](/images/pdf/adc3cbf7a005694a54cc7864dd9d1a10520877a7.png)\n\nWhen the Brigand searches for the Hideout, Secret Stash, or Wrecked Wagons, the search succeeds without rolling any dice and without triggering any hidden traps. When the Brigand finds these Treasure Sites, they draw one Treasure Card from the main Treasure Deck (*not the Treasure Site Pile*), in addition to any normal rewards they receive (*even if not the first to find the Treasure Site*).",
     "tags": [
       "classAdvantage"
     ]
@@ -94,7 +94,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Burgess (Shrewd)",
-    "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the burgess to hire a native is 3x the fame value of the native, not 4x the fame value.",
+    "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value.",
     "tags": [
       "classAdvantage"
     ]
@@ -104,7 +104,7 @@
     "source": "core",
     "level": 4,
     "title": "Cleric (Divine Protection)",
-    "content": "![](/images/pdf/fbff53f46ccbd6b342855765ba08314f7411eca0.png)\n\nClerics have the divine on their side. Any summoning die roll that would summon or move undead monsters to the cleric’s clearing may be rerolled once per turn. The new result applies only to the Cleric’s tile, with the prior result applying everywhere else.",
+    "content": "![](/images/pdf/fbff53f46ccbd6b342855765ba08314f7411eca0.png)\n\nClerics have the divine on their side. Any Summoning Die roll that would summon or move undead Monsters to the Cleric’s clearing may be rerolled once per turn. The new result applies only to the Cleric’s tile, with the prior result applying everywhere else.",
     "tags": [
       "classAdvantage"
     ]
@@ -114,17 +114,37 @@
     "source": "core",
     "level": 4,
     "title": "Conjurer (Mastery)",
-    "content": "![](/images/pdf/27346e18388e9490e10ce36cfbf0354da725287d.png)\n\nConjurers can control the random aspects of magic. Conjurers may reroll one die for the effects of a blue spell. Examples: Reroll one hit die for an Air Sword attack or each Tentacle attack. Reroll one die for Open Gate or Teleport. Must accept the new result.",
+    "content": "![](/images/pdf/27346e18388e9490e10ce36cfbf0354da725287d.png)\n\nConjurers can control the random aspects of magic. Conjurers may reroll one die for the effects of a blue spell. *For example, reroll one Hit* *Die for an Air Sword attack or each Tentacle attack or reroll one die for* *Open Gate or Teleport.* Must accept the new result.",
     "tags": [
       "classAdvantage"
     ]
   },
   {
-    "id": "3.1.0.1",
+    "id": "5.2.0.1",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Decayed (Duality Vale)",
+    "content": "The decayed are torn between the light and the darkness. When the decayed hits an undead with a melee attack, regardless of the amount of damage dealt, they may choose one of the following:\n\n![](/images/pdf/e2af06ab919e8023dfb85aaa172701afc93bf43c.jpeg)\n\n- **Wound a white Magic Cube:** Immediately kill the undead, regardless of the damage dealt. The decayed earns double the Monster’s Fame value.\n\n- **Wound a black Magic Cube:** Cancel the undead’s attack and immediately convert the undead into a permanent Hired Native, following all Native rules. Hired undead may attack unhired undead without penalty.",
+    "tags": [
+      "classAdvantage"
+    ]
+  },
+  {
+    "id": "5.2.0.2",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Dervish (Whirling Strike)",
+    "content": "Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\n![](/images/pdf/267dd74df7b74a11bf9a30f66dded7cec6afed0c.jpeg)\n\n![](/images/pdf/f9237ab8ebfa068b7fd83a1738bf8b14134e638b.jpeg)\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
+    "tags": [
+      "classAdvantage"
+    ]
+  },
+  {
+    "id": "5.2.0.3",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Disciple (Chosen)",
-    "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the chosen takes possession of any spell books or spell scrolls containing white spells, they immediately learn the spells without rolling any dice or taking any actions. The disciple earns +1 LP and +5 fame for each spell learned this way.",
+    "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.",
     "tags": [
       "classAdvantage"
     ]
@@ -134,7 +154,17 @@
     "source": "core",
     "level": 4,
     "title": "Druid (Natural Emanation)",
-    "content": "![](/images/pdf/2918b9c72f6a16cb3722c77d54eaeccc0be245b3.png)\n\nDruids know the magic of nature. Druids may choose not to wound green magic cubes in a spell box containing a wound symbol when casting spells.",
+    "content": "![](/images/pdf/2918b9c72f6a16cb3722c77d54eaeccc0be245b3.png)\n\nDruids know the magic of nature. When casting spells, Druids may choose not to wound one green Magic Cube in a spell box containing a wound symbol.",
+    "tags": [
+      "classAdvantage"
+    ]
+  },
+  {
+    "id": "5.2.0.4",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Duelist (Parry)",
+    "content": "![](/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg)\n\n![](/images/pdf/81631eccf76ab3f24a13ad337984cb28e8bb071d.jpeg)\n\n![](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg)\n\nDuelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
     "tags": [
       "classAdvantage"
     ]
@@ -154,7 +184,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Executioner (Intimidation)",
-    "content": "![](/images/pdf/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png)\n\nThe Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of combat, the attack speed of all natives targeting the executioner is -1.",
+    "content": "![](/images/pdf/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png)\n\nThe Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of Combat, the attack speed of all Natives targeting the Executioner is -1.",
     "tags": [
       "classAdvantage"
     ]
@@ -164,7 +194,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Explorer (Perceptive)",
-    "content": "![](/images/pdf/bad51201627bf24b5392ffac4c9b346071ceb88c.png)\n\nExplorers have a keen eye for the unknown, often seeing clues that others miss. Once per explore or move action, upon revealing a wilderness token in a map tile, the explorer may mix the token back into the pool of wilderness tokens and draw another one. The explorer must accept this newly drawn wilderness token.",
+    "content": "![](/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png)\n\nExplorers have a keen eye for the unknown, often seeing clues that others miss. Once per Explore or Move Action, upon revealing a Wilderness Token in a Map Tile, the Explorer may mix the token back into the pool of Wilderness Tokens and draw another one. The Explorer must accept this newly drawn Wilderness Token.",
     "tags": [
       "classAdvantage"
     ]
@@ -174,7 +204,7 @@
     "source": "core",
     "level": 4,
     "title": "Illusionist (Focus)",
-    "content": "![](/images/pdf/be4f962188db1f9469e7b5724fd85c3d1d992288.png)\n\nIllusionists are extremely focused on their targets. When casting a spell with a “Target” or “Self or Other” symbol on it, the illusionist may choose not to wound a cube.",
+    "content": "![](/images/pdf/be4f962188db1f9469e7b5724fd85c3d1d992288.png)\n\nIllusionists are focused on their targets. When casting a spell with a “Target” or “Self or Other” symbol, Illusionists may choose not to wound one Magic Cube in a spell box containing a wound symbol.",
     "tags": [
       "classAdvantage"
     ]
@@ -184,7 +214,7 @@
     "source": "core",
     "level": 4,
     "title": "Knight (Health)",
-    "content": "![](/images/pdf/83e975b74922f8b308d187df3d91665ac9d9c3b9.png)\n\nKnights are in excellent physical shape and skilled at dressing battlefield wounds. A knight may rest 1 cube for each rest action taken.",
+    "content": "![](/images/pdf/83e975b74922f8b308d187df3d91665ac9d9c3b9.png)\n\n![](/images/pdf/266e31b2777d2856070a952c049680684ec32366.png)\n\nKnights are in excellent physical shape and skilled at dressing battlefield wounds. A Knight may rest one Action Cube for each Rest Action.",
     "tags": [
       "classAdvantage"
     ]
@@ -194,17 +224,27 @@
     "source": "desolation",
     "level": 4,
     "title": "Magician (Knowledge)",
-    "content": "![](/images/pdf/10f58884e706ac5949aaea08475320671a0b26a7.png)\n\nMagicians know a little bit about many types of magic colors. Magicians may use any color of magic cube on the 2nd box of a spell card.",
+    "content": "![](/images/pdf/10f58884e706ac5949aaea08475320671a0b26a7.png)\n\nMagicians know a little bit about many types of magic colors. Magicians may use any color of Magic Cube on the 2nd box of a Spell Card.",
     "tags": [
       "classAdvantage"
     ]
   },
   {
-    "id": "3.1.0.2",
+    "id": "5.2.0.5",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Marauder (Fury)",
-    "content": "![](/images/pdf/9e3fa5009d9e192061d7326952a545aebd76a8d3.jpeg)\n\nMarauders fight with a barely contained ferocity that they can choose to unleash in combat. Once per combat round, the marauder may place one heart in either a might box or a speed box as if it was a matching cube. This placement counts against the cube limit for the combat round. During the cleanup phase of combat, a placed heart is moved to the wounded box.",
+    "content": "Marauders fight with a barely contained ferocity that they can choose to unleash in combat. Once per Combat Round, the marauder may place one Heart in either a might box or a speed box as if it were a matching cube. This placement does **not** count against the cube limit for the Combat Round. During the Cleanup phase of Combat, the Heart is wounded. A Heart may not be placed in a box with a wound symbol.",
+    "tags": [
+      "classAdvantage"
+    ]
+  },
+  {
+    "id": "5.2.0.6",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Monk (Iron Fist)",
+    "content": "![](/images/pdf/a38442cd5bd14d3a7c28e9292ceca3c03367d7e4.png)\n\nMonks are masters of unarmed combat. If a monk has an open weapon position and places no cubes on weapon or spell cards, they strike with their fist with a base damage of 0 might and 1 sword. Additional Might Cubes may be placed on the Class Card to increase the base damage of a monk’s fist strike. If the player places a Might Cube in the box with a wound symbol, that cube is moved to the wounded box during the Cleanup step.",
     "tags": [
       "classAdvantage"
     ]
@@ -214,7 +254,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Necromancer (Gravecalling)",
-    "content": "![](/images/pdf/bde291b97ac31a6bdf4779ffbcd981a68816a8d8.png)\n\nNecromancers have the ability to reanimate the dead as skeletal minions. If no monsters or enemy natives remain in the clearing at the end of combat, place one animated skeleton counter in the clearing for each hero, native, or non-undead monster that was killed in the clearing this turn, but not removed (e.g., fiery chasm removes all that it kills and does not produce animated skeletons). The necromancer may have a maximum of 4 animated skeletons in play at any time. Animated skeletons act as permanent hired natives until killed. If the necromancer is killed, all animated skeletons are also immediately killed earning fame for the hero that killed the necromancer. A necromancer earns no fame for killing their own animated skeletons, nor do they lose fame for animated skeletons that are killed. Skeletons are undead for all game purposes.",
+    "content": "![](/images/pdf/7eaf673ecad14bfefe69a171f53142fea044f2f9.png)\n\nNecromancers have the ability to reanimate the dead as skeletal minions. If no Monsters or enemy Natives remain in the clearing at the end of Combat, place one Animated Skeleton counter in the clearing for each Hero, Native, or non-undead Monster that was killed in the clearing this turn, but not removed. F*or example, Fiery Chasm removes all that it kills and does* *not produce Animated Skeletons*. The Necromancer may have a maximum of 4 Animated Skeletons in play at any time. Animated Skeletons act as permanent Hired Natives until killed. If the Necromancer is killed, all Animated Skeletons are also immediately killed earning Fame for the Hero that killed the Necromancer. A Necromancer earns no Fame for killing their own Animated Skeletons, nor do they lose Fame for Animated Skeletons that are killed. Skeletons are undead.",
     "tags": [
       "classAdvantage"
     ]
@@ -224,7 +264,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Outcast (Overlooked)",
-    "content": "![](/images/pdf/37ae98d7d04a5b217297646c98b9b8c73633d0f2.png)\n\nThe outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The outcast may not use a trade action to look at the possessions of a merchant or buy them. They may still do all of the other options of a trade action, including looking at and taking missions normally. When selling possessions, the outcast receives half of the gold value, rounded up. The outcast may loot a merchant’s treasures and items as if it were a found treasure site (the outcast does not have to search for the merchant first). Organize merchant possessions as follows: deep treasures on top of treasures on top of items. New cards that are added to the merchant for any reason are placed on top of their respective cards already with the merchant. Players may not adjust the order of cards. The outcast takes the card at the spot indicated by the loot roll.\n\n![](/images/pdf/0555e8aabd2619efc65975d4443c2099c6ba4ea5.png)\n\nAfter looting (successful or not), the outcast must roll to hide (using all lineage, treasure, and sneak bonuses). If the outcast fails this hide roll, they are blocked, receive one outlaw token and may never again interact with that merchant in any way. Use the adventure journal to track merchants that are closed to the outcast.",
+    "content": "![](/images/pdf/3936b1933886932e291cc399547293385a6beffb.png)\n\nThe Outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The Outcast may not use a Trade Action to look at the possessions of a Merchant or buy them. They may still do all of the other options of a Trade Action, including looking at and taking missions normally. When selling possessions, the Outcast receives half of the Gold value, rounded up. The Outcast may loot a Merchant’s treasures and items as if it were a found Treasure Site (*the Outcast does not have to search* *for the Merchant first*). Organize Merchant possessions as follows: Deep Treasure Cards on top of Treasure Cards on top of Item Cards. New cards that are added to the Merchant for any reason are placed on top of their corresponding cards already with the Merchant. Players may not adjust the order of cards. The Outcast takes the card at the spot indicated by the loot roll.\n\n![](/images/pdf/887c5340fa045f2fa43203b52f8ce79e708bb197.png)\n\nAfter looting (*successful or not*), the Outcast must roll to hide (*using all Lineage,* *treasure, and Sneak bonuses*). If the Outcast fails this hide roll, they are blocked, receive one Outlaw Token and may never again interact with that Merchant in any way. Use the Adventure Journal to track Merchants that are closed to the Outcast.",
     "tags": [
       "classAdvantage"
     ]
@@ -234,17 +274,17 @@
     "source": "desolation",
     "level": 4,
     "title": "Paladin (Honor)",
-    "content": "![](/images/pdf/67e7b20d13c4a7c7864cc0afdcb84505f8809f71.png)\n\n![](/images/pdf/c9fe1c3dc66ed1ac1e6458f1761f98d9afbf27c2.png)\n\nPaladins are very honorable in all of their dealings. When a paladin earn one or more LPs on a title, they earn +1 LP.",
+    "content": "![](/images/pdf/67e7b20d13c4a7c7864cc0afdcb84505f8809f71.png)\n\n![](/images/pdf/c9fe1c3dc66ed1ac1e6458f1761f98d9afbf27c2.png)\n\nPaladins are very honorable in all of their dealings. When a Paladin earns one or more LPs on a title, they earn +1 LP.",
     "tags": [
       "classAdvantage"
     ]
   },
   {
-    "id": "3.1.0.3",
+    "id": "5.2.0.7",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Pit Fighter (Weaponmaster)",
-    "content": "![](/images/pdf/7c2014271d6bbd04017e8625e1146c31b18b23d8.jpeg)\n\nPit Fighters were bred for combat and the glory of the fighting pits. The pit fighter has two targeting tokens - one for the left hand and one for the right hand. Only use one to determine turn order and place the other near the pit fighter’s hero board. The pit fighter may equip two one-handed weapons simultaneously. During the targeting phase of combat, the pit fighter may place both target tokens to attack the same target twice or two different targets. Both attacks use the pit fighter’s attack speed as normal and are processed normally as two separate attacks.",
+    "content": "![](/images/pdf/b22c75bbdd10648a513eea9837d73880af20e010.jpeg)\n\nPit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.",
     "tags": [
       "classAdvantage"
     ]
@@ -254,7 +294,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Ranger (Woods Lore)",
-    "content": "Rangers know the woods after spending years in the wilderness. When in woods clearings, rangers may reroll one search die during each search action.",
+    "content": "Rangers know the woods after spending years in the wilderness. When in Woods Clearings, Rangers may reroll one Search Die during each Search Action.",
     "tags": [
       "classAdvantage"
     ]
@@ -264,7 +304,7 @@
     "source": "core",
     "level": 4,
     "title": "Rogue (Elusive)",
-    "content": "![](/images/pdf/d5a64c2be7b066467d59bb726e9d2d3e5398a2b9.png)\n\nRogues are quick on their feet and hard to catch. When evading, rogues that tie the maneuver speed of the fastest challenger may roll the two hit dice and successfully evade on a hit or equal sign result. The rogue is blocked on a miss result. Rogues challenge other heroes normally.",
+    "content": "![](/images/pdf/d5a64c2be7b066467d59bb726e9d2d3e5398a2b9.png)\n\n![](/images/pdf/e58dd7043dffd7517153100785ac79473fcb646b.png)\n\nRogues are quick on their feet and hard to catch. When evading, Rogues that tie the maneuver speed of the fastest challenger may roll two Hit Dice and successfully evade on a hit or equal result. The Rogue is blocked on a miss result. Rogues challenge other Heroes normally.",
     "tags": [
       "classAdvantage"
     ]
@@ -274,7 +314,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Runesword (Control)",
-    "content": "![](/images/pdf/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png)\n\nRuneswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue magic cube on any color of magic box on treasure cards.",
+    "content": "![](/images/pdf/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png)\n\nRuneswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue Magic Cube on any color of magic box on Treasure Cards.",
     "tags": [
       "classAdvantage"
     ]
@@ -284,7 +324,7 @@
     "source": "core",
     "level": 4,
     "title": "Sorcerer (Specialized)",
-    "content": "![](/images/pdf/2b5a7a4b3b30fbf1c554f6dc9fca43fdabaa634a.png)\n\nSorcerers are adept at casting magic using one discipline. If a sorcerer casts a spell using only one color of magic cube, the attack speed of the spell is +1.",
+    "content": "![](/images/pdf/2b5a7a4b3b30fbf1c554f6dc9fca43fdabaa634a.png)\n\n![](/images/pdf/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png)\n\nSorcerers are adept at casting magic using one discipline. If a Sorcerer casts a spell using only one color of Magic Cube, the attack speed of the spell is +1.",
     "tags": [
       "classAdvantage"
     ]
@@ -294,7 +334,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Soulless (Incorporeal)",
-    "content": "![](/images/pdf/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png)\n\nThe Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all hidden paths when in their normal form (not shape shifted, etc).",
+    "content": "![](/images/pdf/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png)\n\nThe Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all Hidden Paths when in their normal form (*not Shape Shifted, etc.*).",
     "tags": [
       "classAdvantage"
     ]
@@ -304,17 +344,17 @@
     "source": "desolation",
     "level": 4,
     "title": "Trickster (Illusionary Speed)",
-    "content": "![](/images/pdf/a483a7f20e98594440dacbf50a9667670a124f80.png)\n\nThe trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the trickster an advantage in combat. When attacking, the trickster may change one hit die result from an equal symbol to a hit symbol.",
+    "content": "![](/images/pdf/a483a7f20e98594440dacbf50a9667670a124f80.png)\n\nThe Trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the Trickster an advantage in combat. When attacking, the Trickster may change one Hit Die result from an equal symbol to a hit symbol.",
     "tags": [
       "classAdvantage"
     ]
   },
   {
-    "id": "3.1.0.4",
+    "id": "5.2.0.8",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Vanguard (Primal Strike)",
-    "content": "![](/images/pdf/09bb35adefcbc909c3d470d162ceaab9e9f06d9a.jpeg)\n\n![](/images/pdf/3d421858be148e2f5e1f56a8f0ab7557d9ca1b9c.png)\n\n![](/images/pdf/0911d263359a7ed8100ba8eaae74b05417f360fa.png)\n\nVanguards are experts at moving fast and striking first. The attack of a vanguard in the first round of combat is done at +1 attack speed.",
+    "content": "![](/images/pdf/1b7e35d1891256e7063bd3836f498c7442b36679.jpeg)\n\n![](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg)\n\nVanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.",
     "tags": [
       "classAdvantage"
     ]
@@ -324,7 +364,7 @@
     "source": "core",
     "level": 4,
     "title": "Warlock (Blood Lust)",
-    "content": "![](/images/pdf/737a2b778a7e6596728cd28506dbdf63fd3564c0.png)\n\nWarlocks heal at the expense of others. Warlocks heal one cube each time the warlock hits an unarmored, non-undead enemy with a non-spell attack.",
+    "content": "![](/images/pdf/737a2b778a7e6596728cd28506dbdf63fd3564c0.png)\n\n![](/images/pdf/64be4bb5845d7079708cd7fa13f537385bc53fd4.png)\n\n![](/images/pdf/2231f1ae25446c024d6920eb27e6a6bd9c62eebf.png)\n\nWarlocks heal at the expense of others. Once per round, Warlocks may immediately heal one Action Cube when the Warlock kills or wounds a non-undead enemy (*even if armored*).",
     "tags": [
       "classAdvantage"
     ]
@@ -334,7 +374,7 @@
     "source": "core",
     "level": 4,
     "title": "Warrior (Adept)",
-    "content": "![](/images/pdf/dfafe3e872f50a46c60359c3c753e2ee59bd1bc3.png)\n\nWarriors have great dexterity and coordination. During the adjust equipment step of combat, warriors may always unequip one weapon card and equip another weapon card.",
+    "content": "![](/images/pdf/dfafe3e872f50a46c60359c3c753e2ee59bd1bc3.png)\n\n![](/images/pdf/8b3f9ded134bd7eb2811f2707b729ffddcdd4441.png)\n\nWarriors have great dexterity and coordination. During the adjust equipment step of combat, Warriors may always unequip one Weapon Card and equip one Weapon Card.",
     "tags": [
       "classAdvantage"
     ]
@@ -344,7 +384,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Witch (Familiar)",
-    "content": "![](/images/pdf/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png)\n\nThe Witch is a purveyor of arcane magic and has an familiar which does the Witch’s bidding. The familiar is psychically linked to the Witch and shares what it learns with the Witch. When playing the Witch, also take the 2 familiar tokens. Use one as the familiar hero counter and the other for turn order.  The familiar has the following rules:\n\n![](/images/pdf/db25aee0295d59b4cbd5183977b801832248698a.jpeg)\n\n![](/images/pdf/7f84b6c0635fc10bbdfa731aa25e995d6abe8af8.png)\n\n- When the familiar’s turn order token is selected, the witch takes actions for the familiar only, using the familiar’s hero counter.\n\n- The familiar follows the same rules as any other hero. The familiar may only move, explore, and search. The familiar does not fly.\n\n- When an familiar moves onto a map tile, place a wilderness token/civilization tokens in the tile **face-down**. The witch may not look at the token(s).\n\n- When searching, the familiar may only search for a single wilderness or civilization token in the same map tile as the familiar or a hidden path in the same clearing as the familiar. Upon a successful search for any one token, the witch may look at the face-down token, but does not reveal it.\n\n- The familiar may not search for treasure sites or receive rewards from wilderness tokens (Forgotten City, items, treasures, etc.).\n\n- The witch may not look at face-down tokens except immediately after a successful search. It is good practice to record what the familiar sees in the adventure journal.\n\n- The familiar does not summon monsters and may not target, be targeted, block, or be blocked. It does not participate in combat. Spells may not be cast on, nor affect the familiar.\n\n- If a hero moves onto a map tile containing face-down token(s) placed by the familiar, reveal the tokens in the tile instead of selecting new token(s) for the map tile.",
+    "content": "![](/images/pdf/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png)\n\nThe Witch is a purveyor of arcane magic and has a Familiar which does the Witch’s bidding. The Familiar is psychically linked to the Witch and shares what it learns with the Witch. When playing the Witch, also take the 2 Familiar Tokens. Use one as the Familiar Hero counter and the other for Turn Order.  The Familiar has the following rules:\n\n![](/images/pdf/db25aee0295d59b4cbd5183977b801832248698a.jpeg)\n\n![](/images/pdf/7f84b6c0635fc10bbdfa731aa25e995d6abe8af8.png)\n\n- When the Familiar’s Targeting Token is selected, the Witch takes actions for the Familiar only, using the Familiar’s Hero counter.\n\n- The Familiar follows the same rules as any other Hero. The Familiar may only move, explore, and search. The Familiar does not fly.\n\n- When a Familiar moves onto a Map Tile, place a Wilderness Token/Civilization Tokens in the tile **face-down**. The Witch may not look at the token(s).\n\n- When searching, the Familiar may only search for a single wilderness or Civilization Token in the same Map Tile as the Familiar or a Hidden Path in the same clearing as the Familiar. Upon a successful search for any one token, the Witch may look at the face-down token, but does not reveal it.\n\n- The Familiar may not search for Treasure Sites or receive rewards from Wilderness Tokens (*Forgotten City, items, treasures, etc.*).\n\n- The Witch may not look at face-down tokens except immediately after a successful search. It is good practice to record what the Familiar sees in the Adventure Journal.\n\n![](/images/pdf/67e7b20d13c4a7c7864cc0afdcb84505f8809f71.png)\n\n- The Familiar does not summon Monsters and may not target, be targeted, block, or be blocked. It does not participate in Combat. Spells may not be cast on, nor affect the Familiar.\n\n![](/images/pdf/c9fe1c3dc66ed1ac1e6458f1761f98d9afbf27c2.png)\n\n- If a Hero moves onto a Map Tile containing face-down token(s) placed by the Familiar, reveal the tokens in the tile instead of selecting new token(s) for the Map Tile.",
     "tags": [
       "classAdvantage"
     ]
@@ -354,7 +394,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Wizard (Studious)",
-    "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one learn spells die once per learn spells action.",
+    "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one Learn Die once per Learn Action.",
     "tags": [
       "classAdvantage"
     ]

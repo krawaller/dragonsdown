@@ -4,17 +4,17 @@
     "source": "core",
     "level": 4,
     "title": "Adamantium Blade",
-    "content": "Melee weapon. The optional might cube box on this card is automatically filled and does not count against the cube limit.",
+    "content": "Melee weapon. The optional might box on this card is automatically filled and does not count against the cube limit.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.1",
+    "id": "5.5.0.1",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Adventurer’s Toolkit",
-    "content": "When first revealed, draw one treasure, one item, one mission, and one spell. The base price of the toolkit is the sum of the attached cards. The treasure,  item, and mission may immediately be possessed by the hero or left in the toolkit. The spell may be learned as if the toolkit was a spell scroll. If not immediately possessed, the hero muyst spent an alert action to take the treasure, item, or mission from the toolkit.",
+    "content": "When first revealed, draw one treasure, one item, one mission, and one spell and place them on the toolkit. The base price of the toolkit is the total value of the attached cards plus 2. The treasure and item may be immediately possessed by the Hero or left on the toolkit. If left on the toolkit, the Hero must later spend an Alert Action to possess the treasure and/or item. The toolkit is treated as a Spell Scroll containing one spell and also contains one mission that does not count toward the Hero’s mission limit. The mission is only removed if it is completed. Alphabetical destination missions on the toolkit are delivered to the first alphabetical Civilization Location in play.",
     "tags": [
       "treasure"
     ]
@@ -24,7 +24,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Alchemical Lure",
-    "content": "One-time use. During the challenge step of combat, select one monster in the clearing and choose a hero, native, or monster (*other than itself*) in the clearing to be challenged, targeted, and attacked by the monster this combat round. The monster returns to normal behavior next combat round.",
+    "content": "One-time use. During the Challenge step of Combat, select one Monster in the clearing and choose a Hero, Native, or Monster (*other than itself*) in the clearing to be challenged, targeted, and attacked by the Monster this Combat Round. The Monster returns to normal behavior next Combat Round.",
     "tags": [
       "treasure"
     ]
@@ -33,28 +33,28 @@
     "id": "9.5.0.2",
     "source": "core",
     "level": 4,
-    "title": "Alchemist’s mixture",
-    "content": "One-time use. Permanently replace one color of magic cube with another color.",
+    "title": "Alchemist’s Mixture",
+    "content": "One-time use. Permanently replace one color of Magic Cube with another color.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.2",
+    "id": "5.5.0.2",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Amaranth of Action",
-    "content": "One-time use. +1 attack speed for the duration of combat this turn. Does not count against the cube limit each combat round.",
+    "content": "One-time use. +1 attack speed for the duration of Combat this turn. Does not count against the cube limit each Combat Round.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.4",
+    "id": "5.5.0.4",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Ancient Map",
-    "content": "Subtract 1 from both dice when performing an action to take treasure from the treasure site in which the ancient map was found. It has no bonus at any other treasure site. Examples: If found in the trove, all loot die rolls at the trove are at -1. If found in the cavernous pit, future dexterity rolls are at -1. A die roll of 1 while using the ancient map equals a grabby hands result when looting.",
+    "content": "Subtract 1 from both dice when performing an action to take treasure from the Treasure Site in which the ancient map was found. It has no bonus at any other Treasure Site. *For example, if found in the Trove, all loot die rolls at the Trove are at* *-1. If found in the Cavernous Pit, future dexterity rolls are at -1.* A die roll of 1 while using the ancient map equals a grabby hands result when looting.",
     "tags": [
       "treasure"
     ]
@@ -64,7 +64,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Arcane Bond",
-    "content": "One-time use. During one hire action, the hire cost in gold is equal to the fame value. Must be used prior to any haggle attempts.",
+    "content": "One-time use. During one Hire action, the hire cost in Gold is equal to the Fame value. Must be used prior to any haggle attempts.",
     "tags": [
       "treasure"
     ]
@@ -74,7 +74,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Arcane Sword",
-    "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. One box of this weapon must be filled with a magic cube. An enchantment cube in the map tile may be used to fill this box, in which case it does not count against the cube limit for that combat round.",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). Melee weapon. One box of this weapon must be filled with a Magic Cube. An enchantment cube in the Map Tile may be used to fill this box, in which case it does not count against the cube limit for that Combat Round.",
     "tags": [
       "treasure"
     ]
@@ -94,7 +94,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Banner of Legitimacy",
-    "content": "All heroes in the clearing with the banner lose 1 matching respected icon with the bashkirs, rogues, and sellswords. All heroes in the clearing with the banner gain 1 matching respected icon with the knights, soldiers, and watch. The effects are cumulative with other treasures.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
+    "content": "All Heroes in the clearing with the banner lose 1 matching respected icon with the Bashkirs, Rogues, and Sellswords. All Heroes in the clearing with the banner gain 1 matching respected icon with the Knights, Soldiers, and Watch. The effects are cumulative with other Treasures.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
     "tags": [
       "treasure"
     ]
@@ -104,7 +104,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Banner of the Brigands",
-    "content": "All heroes in the clearing with the banner gain 1 matching respected icon with the bashkirs, rogues, and sellswords. All heroes in the clearing with the banner lose 1 matching respected icon with knights, soldiers, and watch.  The effects are cumulative with other treasures.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
+    "content": "All Heroes in the clearing with the banner gain 1 matching respected icon with the Bashkirs, Rogues, and Sellswords. All Heroes in the clearing with the banner lose 1 matching respected icon with Knights, Soldiers, and Watch.  The effects are cumulative with other Treasures.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
     "tags": [
       "treasure"
     ]
@@ -114,7 +114,7 @@
     "source": "core",
     "level": 4,
     "title": "Battle Staff",
-    "content": "Melee weapon. The required might box on this card is automatically filled and does not count against the hero’s cube limit.",
+    "content": "Melee weapon. The required might box on this card is automatically filled and does not count against the Hero’s cube limit.",
     "tags": [
       "treasure"
     ]
@@ -123,8 +123,8 @@
     "id": "9.5.0.7",
     "source": "core",
     "level": 4,
-    "title": "Bauble of Cunning",
-    "content": "Increases the cunning attribute of the hero by one.",
+    "title": "Bauble of Intelligence",
+    "content": "Increases the Cunning attribute of the Hero by one.",
     "tags": [
       "treasure"
     ]
@@ -174,7 +174,7 @@
     "source": "core",
     "level": 4,
     "title": "Bracelets of Finesse",
-    "content": "May place one red might cube from the hero’s healthy box in an attack speed or maneuver speed box. This cube counts against the combat round limit.",
+    "content": "May place one red Might Cube from the Hero’s healthy box in an attack speed or maneuver speed box. This cube counts against the Combat Round limit.",
     "tags": [
       "treasure"
     ]
@@ -184,7 +184,7 @@
     "source": "core",
     "level": 4,
     "title": "Bracers of Vigor",
-    "content": "May place one brown speed cube from the hero’s healthy box in a might box. This cube counts against the combat round limit.",
+    "content": "May place one brown Speed Cube from the Hero’s healthy box in a might box. This cube counts against the Combat Round limit.",
     "tags": [
       "treasure"
     ]
@@ -194,7 +194,7 @@
     "source": "core",
     "level": 4,
     "title": "Broche of Deflection",
-    "content": "One-time use. Cancel one hit against the equipped hero.",
+    "content": "One-time use. Cancel one hit against the equipped Hero.",
     "tags": [
       "treasure"
     ]
@@ -204,7 +204,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Casting Lens",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the hero selects one spell on an active treasure card they possess (*not in the backpack*) to be cast. No magic cubes are needed to cast this spell. The spell is removed from the game when the spell expires.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, the Hero selects one spell on an active Treasure Card they possess (*not in the backpack*) to be cast. No Magic Cubes are needed to cast this spell. The spell is removed from the game when the spell expires.",
     "tags": [
       "treasure"
     ]
@@ -214,7 +214,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Champion’s Blade",
-    "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. The attack speed of the champion’s blade is always +1.",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). Melee weapon. The attack speed of the Champion’s Blade is always +1.",
     "tags": [
       "treasure"
     ]
@@ -224,7 +224,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Champion’s Plate",
-    "content": "Legendary treasure (earns a reward as an epic treasure). Armor. Armor value of 4. Weight of 3. Cancels two swords.",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). Armor. Armor value of 4. Weight of 3. Cancels two swords.",
     "tags": [
       "treasure"
     ]
@@ -234,7 +234,7 @@
     "source": "core",
     "level": 4,
     "title": "Charismatic Gemstone",
-    "content": "Increases the charisma attribute of the hero by one.",
+    "content": "Increases the Charisma attribute of the Hero by one.",
     "tags": [
       "treasure"
     ]
@@ -244,7 +244,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Cipherstone",
-    "content": "One-time use. Prior to rolling the dice, automatically learn one spell on an active treasure card in the hero’s possession (*not in the backpack*) during a learn spells action. The hero must have a magic cube that matches the color of the learned spell.",
+    "content": "One-time use. Prior to rolling the dice, automatically learn one spell on an active Treasure Card in the Hero’s possession (*not in the backpack*) during a Learn Action. The Hero must have a Magic Cube matching the color of the learned spell.",
     "tags": [
       "treasure"
     ]
@@ -254,7 +254,7 @@
     "source": "core",
     "level": 4,
     "title": "Clashing Ring",
-    "content": "Placing a brown speed cube here increases the attack speed of the hero by one. This card can have cubes placed on it in addition to other cards.",
+    "content": "Placing a brown Speed Cube here increases the attack speed of the Hero by one. This card can have cubes placed on it in addition to other cards.",
     "tags": [
       "treasure"
     ]
@@ -264,17 +264,17 @@
     "source": "desolation",
     "level": 4,
     "title": "Clodpoll Club",
-    "content": "Melee weapon. Must have less than 8 total active attribute icons in order to equip. If the hero has 8 or more active attribute icons at any time, the card is immediately unequipped to the backpack.",
+    "content": "Melee weapon. Must have less than 8 total active attribute icons in order to equip. If the Hero has 8 or more active attribute icons at any time, the card is immediately unequipped to the backpack.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.9",
+    "id": "5.5.0.9",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Coin of Passage",
-    "content": "One-time use. Only in play if using the ruthless riverlands terrain pack. May use a ferry during a move action without paying any gold.",
+    "content": "One-time use. Only in play if using the Ruthless Riverlands Terrain Pack. May use a ferry during a Move Action without paying any Gold.",
     "tags": [
       "treasure"
     ]
@@ -284,7 +284,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Cursed Axe",
-    "content": "Melee weapon. Extra sharp. May not roll the hit dice. This weapon must be faster than its target’s maneuver speed to hit.",
+    "content": "Melee weapon. Extra sharp. May not roll the Hit Dice. This weapon must be faster than its target’s maneuver speed to hit.",
     "tags": [
       "treasure"
     ]
@@ -294,7 +294,7 @@
     "source": "core",
     "level": 4,
     "title": "Cursed Treasure",
-    "content": "Instant. Draw a treasure card from the pool to replace this card (if the Cursed Treasure card is a deep treasure card, draw a deep treasure card from the pool). Then roll on the curse table to determine a curse that affects the hero. The curse occurs even if the hero simply viewed the treasure (e,g. merchant, treasure site, etc.). Then remove the Cursed Treasure card from the game. Multiple Cursed Treasures can be drawn in succession when replacing a Cursed Treasure.",
+    "content": "Instant. Draw a Treasure Card from the pool to replace this card (*if the Cursed* *Treasure Card is a Deep Treasure Card, draw a Deep Treasure Card from the pool*). Then roll on the Curse Table to determine a curse that affects the Hero. The curse occurs even if the Hero simply viewed the treasure (*e,g. Merchant, Treasure Site,* *etc.*). Then remove the Cursed Treasure Card from the game. Multiple Cursed Treasure Cards can be drawn in succession when replacing a Cursed Treasure.",
     "tags": [
       "treasure"
     ]
@@ -314,7 +314,7 @@
     "source": "core",
     "level": 4,
     "title": "Digger’s Ruin",
-    "content": "May reroll one search die once per search action while in a cave clearing.",
+    "content": "May reroll one Search Die once per Search Action while in a Cave Clearing.",
     "tags": [
       "treasure"
     ]
@@ -323,18 +323,18 @@
     "id": "9.5.0.24",
     "source": "core",
     "level": 4,
-    "title": "Disenchanter",
-    "content": "While revealed, immediately remove any magic cube on the map tile containing the Disenchanter. Disenchanting does not flip the map tile over. The map tile in which the Disenchanter is located may not be enchanted for any reason.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
+    "title": "DisEnchanter",
+    "content": "While revealed, immediately remove any Magic Cube on the Map Tile containing the DisEnchanter. Disenchanting does not flip the Map Tile over. The Map Tile in which the DisEnchanter is located may not be enchanted for any reason.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.11",
+    "id": "5.5.0.11",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Duffel of Displacement",
-    "content": "During an alert action, any treasure or item card may be placed in a random clearing in an adjacent map tile.",
+    "content": "During an Alert Action, any Treasure or Item Card may be placed in a random clearing in an adjacent Map Tile.",
     "tags": [
       "treasure"
     ]
@@ -344,7 +344,7 @@
     "source": "core",
     "level": 4,
     "title": "Dust of Destiny",
-    "content": "One-time use. Reroll any one die or dice roll in which you are the active hero, the target, or the attacker.",
+    "content": "One-time use. Reroll any one die or dice roll in which you are the active Hero, the target, or the attacker.",
     "tags": [
       "treasure"
     ]
@@ -354,7 +354,7 @@
     "source": "core",
     "level": 4,
     "title": "Elemental Spherule",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Elemental, is cast. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Elemental spell is cast. No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
@@ -364,7 +364,7 @@
     "source": "core",
     "level": 4,
     "title": "Elven Amulet",
-    "content": "May reroll one search die once per search action while in a woods clearing.",
+    "content": "May reroll one Search Die once per Search Action while in a Woods Clearing.",
     "tags": [
       "treasure"
     ]
@@ -404,7 +404,7 @@
     "source": "core",
     "level": 4,
     "title": "Enchanted Treasure",
-    "content": "Instant. Draw a treasure card from the pool to replace this treasure, even if the hero simply viewed the treasure (e,g. merchant, treasure site, etc.). The map tile is flipped over and enchanted. Place a magic cube in the map tile matching the color of magic cube shown in the enchantment circle on the Enchanted Treasure card. Then remove the Enchanted Treasure card from the game.",
+    "content": "Instant. Draw a Treasure Card from the pool to replace this treasure, even if the Hero simply viewed the treasure (*e,g. Merchant, Treasure Site, etc.*). The Map Tile is flipped over and enchanted. Place a Magic Cube in the Map Tile matching the color of Magic Cube shown in the enchantment circle on the Enchanted Treasure card. Then remove the Enchanted Treasure card from the game.",
     "tags": [
       "treasure"
     ]
@@ -414,7 +414,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Eternium Grimoire",
-    "content": "Legendary treasure (earns a reward as an epic treasure). When equipped, the player selects one of their hero’s healthy magic cubes and replaces it with a another magic cube of their choice. Place the original magic cube near the hero board for reference. During an alert action, the hero may change the transformed cube to any color of magic cube they wish (in addition to the other benefits of the alert action). If unequipped, the original magic cube replaces the transformed magic cube.",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). When equipped, the player selects one of their Hero’s Magic Cubes and replaces it with a Magic Cube of their choice. Place the original Magic Cube near the Hero Board for reference. During an Alert Action, the Hero may change the transformed cube to any color of Magic Cube they wish (*in addition to the other benefits of the Alert Action*). If unequipped, the original Magic Cube replaces the transformed Magic Cube.",
     "tags": [
       "treasure"
     ]
@@ -424,7 +424,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Explorer’s Boots",
-    "content": "May use all hidden paths without finding them. Hidden paths do not become known by the hero, but they may be used.",
+    "content": "May use all Hidden Paths without finding them. Hidden Paths do not become known by the Hero, but they may be used.",
     "tags": [
       "treasure"
     ]
@@ -434,7 +434,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Fade Essence",
-    "content": "One-time use. The hero is immediately hidden. Can be used during the action phase or the cleanup step of combat, including after a failed hide roll.",
+    "content": "One-time use. The Hero is immediately hidden. Can be used during the Action Phase or the Cleanup step of Combat, including after a failed hide roll.",
     "tags": [
       "treasure"
     ]
@@ -444,7 +444,7 @@
     "source": "core",
     "level": 4,
     "title": "Gage of the Thief",
-    "content": "May reroll one loot die once per loot action.",
+    "content": "May reroll one Loot Die once per Loot Action.",
     "tags": [
       "treasure"
     ]
@@ -454,7 +454,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Galdric of Enchantment",
-    "content": "One-time use. The tile containing the hero immediately flips over and is enchanted with a magic color of the hero’s choice. If used while the disenchanter is in the tile, the galdric is discarded with no effect.",
+    "content": "One-time use. The tile containing the Hero immediately flips over and is enchanted with a Magic Cube of the Hero’s choice. If used while the DisEnchanter is in the tile, the galdric is discarded with no effect.",
     "tags": [
       "treasure"
     ]
@@ -464,17 +464,17 @@
     "source": "core",
     "level": 4,
     "title": "Gauntlets of Brawn",
-    "content": "Counts as one might cube in an existing might box on a card. Does not add a might box to the card. This cube does not count against the combat round limit.",
+    "content": "Counts as one Might Cube in an existing might box on a card. Does not add a might box to the card. This cube does not count against the Combat Round limit.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.13",
+    "id": "5.5.0.13",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Ghutra of the Scorpion",
-    "content": "Only in play if using the dreadful deserts terrain pack. The hero does not receive a wound at the end of their action phase when in a desert clearing.",
+    "content": "Only in play if using the Dreadful Deserts Terrain Pack. The Hero does not receive a wound at the end of their Action Phase when in a Desert Clearing.",
     "tags": [
       "treasure"
     ]
@@ -484,17 +484,17 @@
     "source": "core",
     "level": 4,
     "title": "Gloves of Aggression",
-    "content": "Counts as one brown speed cube in an existing attack speed box. Does not add an attack speed box. This cube does not count against the combat round limit.",
+    "content": "Counts as one brown Speed Cube in an existing attack speed box. Does not add an attack speed box. This cube does not count against the Combat Round limit.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.14",
+    "id": "5.5.0.14",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Golden Shroud",
-    "content": "Armor. Cancel one sword. The golden shroud may not be struck or destroyed by attacks that hit the hero.",
+    "content": "Armor. Cancel one sword. The golden shroud may not be struck or destroyed by attacks that hit the Hero.",
     "tags": [
       "treasure"
     ]
@@ -504,7 +504,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Grommel’s Talisman",
-    "content": "May reroll one search die once per search action while in a swamp clearing.",
+    "content": "May reroll one Search Die once per Search Action while in a Swamp Clearing.",
     "tags": [
       "treasure"
     ]
@@ -524,7 +524,7 @@
     "source": "core",
     "level": 4,
     "title": "Hamblen’s Pendant",
-    "content": "May reroll one search die once per search action while in a mountain clearing.",
+    "content": "May reroll one Search Die once per Search Action while in a Mountain Clearing.",
     "tags": [
       "treasure"
     ]
@@ -534,7 +534,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Harmonic Hand Axe",
-    "content": "Melee and ranged weapon. Does not lose a sword icon when striking armor.",
+    "content": "Melee and ranged weapon. Does not lose sword icons when striking armor.",
     "tags": [
       "treasure"
     ]
@@ -544,17 +544,17 @@
     "source": "core",
     "level": 4,
     "title": "Hawkeye",
-    "content": "May reroll one search die once per search action while in a plains clearing.",
+    "content": "May reroll one Search Die once per Search Action while in a Plains Clearing.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.15",
+    "id": "5.5.0.15",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Healer’s Flask",
-    "content": "Each time a hero heals a cube due to a rest action, heal two cubes.",
+    "content": "Each time a Hero heals a cube due to a rest action, heal two cubes.",
     "tags": [
       "treasure"
     ]
@@ -564,7 +564,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Hex of Servitude",
-    "content": "One-time use. The hero may attempt to hire any native in the clearing during one hire action, not just the highest numbered native of a native group.",
+    "content": "One-time use. The Hero may attempt to hire any Native in the clearing during one Hire action, not just the highest numbered Native of a Native Group.",
     "tags": [
       "treasure"
     ]
@@ -574,7 +574,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Holdfast Leathers",
-    "content": "Legendary treasure (earns a reward as an epic treasure). Armor. Armor value of 2. Weight of 1. Cancels one sword. Attacks that hit this armor cause no wounds.",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). Armor. Armor value of 2. Weight of 1. Cancels one sword. Attacks that hit this armor cause no wounds.",
     "tags": [
       "treasure"
     ]
@@ -584,7 +584,7 @@
     "source": "core",
     "level": 4,
     "title": "Horn of the Dark Angel",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Fiery Chasm, is cast. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Fiery Chasm spell is cast. No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
@@ -594,17 +594,17 @@
     "source": "desolation",
     "level": 4,
     "title": "Igneous Flame",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Fireball, is cast. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Fireball spell is cast. No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.16",
+    "id": "5.5.0.16",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Khatam of the Quick",
-    "content": "Only in play if using the dreadful deserts terrain pack. +1 maneuver speed for combat occuring in a desert clearing.",
+    "content": "Only in play if using the Dreadful Deserts Terrain Pack. +1 maneuver speed for Combat occuring in a Desert Clearing.",
     "tags": [
       "treasure"
     ]
@@ -614,7 +614,7 @@
     "source": "core",
     "level": 4,
     "title": "King’s Pardon",
-    "content": "One-time use. When in a civilization location, the hero may discard up to two of their outlaw tokens. May not be used to discard other player’s outlaw tokens.",
+    "content": "One-time use. When in a Civilization Location, the Hero may discard up to two of their Outlaw Tokens. May not be used to discard other player’s Outlaw Tokens.",
     "tags": [
       "treasure"
     ]
@@ -624,7 +624,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Mace of Absolution",
-    "content": "Melee weapon. Must have 3 or more active wisdom attribute icons in order to equip. If the hero has less then 3 active wisdom attribute icons at any time, the card is immediately unequipped to the backpack. The optional might cube box on this card is automatically filled and does not count against the cube limit.",
+    "content": "Melee weapon. Must have 3 or more active Wisdom attribute icons in order to equip. If the Hero has less then 3 active Wisdom attribute icons at any time, the card is immediately unequipped to the backpack. The optional might box on this card is automatically filled and does not count against the cube limit.",
     "tags": [
       "treasure"
     ]
@@ -634,7 +634,7 @@
     "source": "core",
     "level": 4,
     "title": "Mace of Smiting",
-    "content": "Melee weapon. A required might box is automatically filled and does not count against the hero’s cube limit.",
+    "content": "Melee weapon. A required might box is automatically filled and does not count against the Hero’s cube limit.",
     "tags": [
       "treasure"
     ]
@@ -644,47 +644,47 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Mageshift Medallion",
-    "content": "Legendary treasure (earns a reward as an epic treasure). When equipped, the player selects one of the hero’s magic cubes and replaces it with 2 might cubes. Place the cube near the hero board for reference. If unequipped, the two might cubes are returned to the supply and the original magic cube is returned to the hero. If either might cube being returned to the supply was wounded, the magic cube returns to the hero wounded. Once equipped, the magic cube that was replaced may not be changed unless the medallion is unequipped and then reequipped.",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). When equipped, the player selects one of the Hero’s Magic Cubes and replaces it with 2 Might Cubes. Place the cube near the Hero Board for reference. If unequipped, the two Might Cubes are returned to the supply and the original Magic Cube is returned to the Hero. If either Might Cube being returned to the supply was wounded, the Magic Cube returns to the Hero wounded. Once equipped, the Magic Cube that was replaced may not be changed unless the medallion is unequipped and then reequipped.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.20",
+    "id": "5.5.0.21",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Mantle of the Djinn",
-    "content": "The hero is considered hidden to all undead without performing a hide reaction.\n\nThey may not be blocked or targeted by the undead, though they can still be affected by the effects of non-targeted spells cast by the undead. Example: A hero wearing the mantle of the djinn could strike at an undead monster using a melee weapon and not be targeted by undead in the clearing.",
+    "content": "The Hero is considered hidden to all undead without performing a Hide reaction. They may not be blocked or targeted by the undead, though they can still be affected by the effects of non-targeted spells cast by the undead. *For example, a* *Hero wearing the Mantle of the Djinn could strike at an undead Monster using a* *melee weapon and not be targeted by undead in the clearing.*",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.21",
+    "id": "5.5.0.22",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Moon Crystal",
-    "content": "Only in play if using the dreadful deserts terrain pack. May reroll one search die per search action while in a desert clearing.",
+    "content": "Only in play if using the Dreadful Deserts Terrain Pack. May reroll one Search Die per Search Action while in a Desert Clearing.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.23",
+    "id": "5.5.0.24",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Morsel of Might",
-    "content": "One-time use. Counts as a might cube in a might box for the duration of combat this turn. This cube does not count against the cube limit and a different card may be selected each round of combat.",
+    "content": "One-time use. Counts as a Might Cube in a might box for the duration of Combat this turn. This cube does not count against the cube limit and a different card may be selected each round of Combat.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.24",
+    "id": "5.5.0.25",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Obsidian Dagger",
-    "content": "Melee or ranged weapon. Cubes may not be placed on other weapons or spell cards when using this card. May be used as a regular melee or ranged weapon by placing a might cube in the upper box or may be be used to cast the spell, rule undead, by placing a might cube and speed cube in the lower boxes. No magic cubes are needed to cast this spell. May not be used for both abilities in a single combat round.",
+    "content": "Melee or ranged weapon. Cubes may not be placed on other Weapon or Spell Cards when using this card. May be used as a regular melee or ranged weapon by placing a Might Cube in the upper box or used to cast the Rule Undead spell by placing a Might Cube and Speed Cube in the lower boxes. No Magic Cubes are needed to cast this spell. May not be used for both abilities in a single Combat Round.",
     "tags": [
       "treasure"
     ]
@@ -694,7 +694,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Panacea of Persuasion",
-    "content": "One-time use. The hero has +1 cunning, wisdom, and charisma this turn. The effects are cumulative with other treasures.",
+    "content": "One-time use. The Hero has +1 Cunning, Wisdom, and Charisma this turn. The effects are cumulative with other Treasures.",
     "tags": [
       "treasure"
     ]
@@ -704,17 +704,17 @@
     "source": "desolation",
     "level": 4,
     "title": "Peace Pendant",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Peace, is cast. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Peace spell is cast. No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.25",
+    "id": "5.5.0.26",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Pearl of Riversight",
-    "content": "Only in play if using the ruthless riverlands terrain pack. May reroll one search die per search action while in a river clearing.",
+    "content": "Only in play if using the Ruthless Riverlands Terrain Pack. May reroll one Search Die per Search Action while in a River Clearing.",
     "tags": [
       "treasure"
     ]
@@ -724,7 +724,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Pebble of Irritation",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Discord, is cast. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Discord spell is cast. No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
@@ -734,7 +734,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Portable Hole",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, the spell, Teleport, is cast. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Teleport spell is cast. No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
@@ -744,7 +744,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Energy",
-    "content": "One-time use. One additional speed cube from the healthy box may be played each combat round until the end of combat.",
+    "content": "One-time use. One additional Speed Cube from the healthy box may be played each Combat Round until the end of combat.",
     "tags": [
       "treasure"
     ]
@@ -754,7 +754,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Flight",
-    "content": "One-time use. Until the end of the next Action phase, this hero may fly.",
+    "content": "One-time use. Until the end of the next Action phase, this Hero may fly.",
     "tags": [
       "treasure"
     ]
@@ -774,7 +774,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Maneuver",
-    "content": "One-time use. Receive one brown speed cube permanently.",
+    "content": "One-time use. Receive one brown Speed Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -784,7 +784,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Might",
-    "content": "One-time use. Receive one red might cube permanently.",
+    "content": "One-time use. Receive one red Might Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -804,7 +804,7 @@
     "source": "core",
     "level": 4,
     "title": "Quick Ring",
-    "content": "Placing a brown speed cube here increases the maneuver speed of the hero by one.",
+    "content": "Placing a brown Speed Cube here increases the maneuver speed of the Hero by one.",
     "tags": [
       "treasure"
     ]
@@ -814,7 +814,7 @@
     "source": "core",
     "level": 4,
     "title": "Ring of Strength",
-    "content": "The optional might box on one equipped weapon is automatically filled without using a might cube.",
+    "content": "The optional might box on one equipped weapon is automatically filled without using a Might Cube.",
     "tags": [
       "treasure"
     ]
@@ -824,27 +824,27 @@
     "source": "core",
     "level": 4,
     "title": "Ring of the Magi",
-    "content": "Enchanting a tile requires one enchant action less to take effect.",
+    "content": "Enchanting a tile requires one Enchant Action less to take effect.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.26",
+    "id": "5.5.0.27",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Ripple Strike",
-    "content": "Melee or ranged weapon. Only in play if using the ruthless riverlands terrain pack. Ripplestrike has +1 attack speed when combat is occurring in a river clearing.",
+    "content": "Melee or ranged weapon. Only in play if using the Ruthless Riverlands Terrain Pack. Ripplestrike has +1 attack speed when Combat is occurring in a River Clearing.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.27",
+    "id": "5.5.0.28",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Riverwalkers",
-    "content": "Only in play if using the ruthless riverlands terrain pack. The hero may choose to swim during a move action.",
+    "content": "Only in play if using the Ruthless Riverlands Terrain Pack. The Hero has Swimming Ability.",
     "tags": [
       "treasure"
     ]
@@ -864,27 +864,27 @@
     "source": "desolation",
     "level": 4,
     "title": "Sabre of the Fencer",
-    "content": "Melee weapon. May place one speed cube on this card to count as a might cube. Has the attack length of a great sword.",
+    "content": "Melee weapon. May place one Speed Cube on this card to count as a Might Cube. Has the attack length of a Great Sword.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.29",
+    "id": "5.5.0.30",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Sandglass of Eternity",
-    "content": "Only in play if using the dreadful deserts terrain pack. Once per turn, receive one additional free action during any turn the hero is in a desert clearing.",
+    "content": "Only in play if using the Dreadful Deserts Terrain Pack. Once per turn, receive one additional free action during any turn the Hero is in a Desert Clearing.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.30",
+    "id": "5.5.0.31",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Sandstrider Boots",
-    "content": "Only in play if using the dreadful deserts terrain pack. When entering a desert clearing, the hero may continue moving to an adjacent desert clearing at no action cost. There is no limit to the number of desert clearings that a hero mayenter during a single action.",
+    "content": "Only in play if using the Dreadful Deserts Terrain Pack. When entering a Desert Clearing, the Hero may continue moving to an adjacent Desert Clearing at no action cost an unlimited number of times during a single action.",
     "tags": [
       "treasure"
     ]
@@ -894,23 +894,23 @@
     "source": "core",
     "level": 4,
     "title": "Satchel of a Giant",
-    "content": "Instant. The hero draws and keeps two treasure cards (not deep treasure cards), then remove the Satchel of a Giant card from the game.",
+    "content": "Instant. The Hero draws and keeps two Treasure Cards (*not Deep Treasure Cards*), then remove the Satchel of a Giant card from the game.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.31",
+    "id": "5.5.0.32",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Satchel of Suppression",
-    "content": "During an alert action, may place any one red backpack treasure face-down underneath the satchel of suppression. Only one treasure may be in the satchel at any time. If a red backpack treasure is already underneath the satchel, it is placed face-up in the hero’s backpack.",
+    "content": "During an Alert Action, may place any one Red Backpack Treasure face-down underneath the Satchel of Suppression. Only one treasure may be in the satchel at any time, but may be replaced. If a Red Backpack Treasure is already underneath the satchel, it is placed face-up in the Hero’s backpack.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.32",
+    "id": "5.5.0.33",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Seafang",
@@ -920,21 +920,21 @@
     ]
   },
   {
-    "id": "3.3.0.33",
+    "id": "5.5.0.34",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Seal of the False King",
-    "content": "All hiring is done at 2x price without rolling any haggle dice. Heroes in the same clearing as the seal of the false king have no attributes for any game effects.\n\nMust always be face-up. If face-down and viewed by a hero, it becomes active and is placed face-up  (treasure pile, merchant, etc.). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "content": "All hiring in the clearing is done at 2x price without rolling any Haggle Dice. Heroes in the same clearing as the seal of the false king have no attributes for any game effects. Must always be face-up. If viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed faceup in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.34",
+    "id": "5.5.0.35",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Seed of Speed",
-    "content": "One-time use. +1 Maneuver speed for the duration of combat this turn. Does not count against the cube limit each combat round.",
+    "content": "One-time use. +1 Maneuver speed for the duration of Combat this turn. Does not count against the cube limit each Combat Round.",
     "tags": [
       "treasure"
     ]
@@ -944,87 +944,17 @@
     "source": "desolation",
     "level": 4,
     "title": "Sending Stones",
-    "content": "One-time use. May perform one trade action as if they were in any clearing already on the map. The hero is not actually in the selected clearing and so cannot be blocked by monsters in that clearing.",
+    "content": "One-time use. May perform one Trade Action as if they were in any clearing already on the map. The Hero is not actually in the selected clearing and so cannot be blocked by Monsters in that clearing.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.36",
+    "id": "5.5.0.37",
     "source": "eastern-reaches",
     "level": 4,
-    "title": "Shekel of Captivation",
-    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Charismagic, is cast. No magic cubes are needed to cast this spell.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "3.3.0.37",
-    "source": "eastern-reaches",
-    "level": 4,
-    "title": "Shekel of Future Sight",
-    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Foresight, is cast. No magic cubes are needed to cast this spell.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "3.3.0.38",
-    "source": "eastern-reaches",
-    "level": 4,
-    "title": "Shekel of Gloom",
-    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Dark Presence, is cast. No magic cubes are needed to cast this spell.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "3.3.0.39",
-    "source": "eastern-reaches",
-    "level": 4,
-    "title": "Shekel of Shaking",
-    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Earthquake, is cast. No magic cubes are needed to cast this spell.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "3.3.0.40",
-    "source": "eastern-reaches",
-    "level": 4,
-    "title": "Shekel of Subjugation",
-    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Orc Call, is cast. No magic cubes are needed to cast this spell.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "3.3.0.41",
-    "source": "eastern-reaches",
-    "level": 4,
-    "title": "Shekel of the Sun",
-    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Safe Haven, is cast. No magic cubes are needed to cast this spell.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "3.3.0.42",
-    "source": "eastern-reaches",
-    "level": 4,
-    "title": "Shekel of the Wind",
-    "content": "One-time use. Cubes may not be placed on other weapons or spell cards when using this card. When this attack is resolved, the spell, Gale Blast, is cast. No magic cubes are needed to cast this spell.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "5.4.0.25",
-    "source": "natives-and-legends",
-    "level": 4,
-    "title": "Shield of the Lost Prince",
-    "content": "Epic Treasure. Armor. Armor value of 2. Weight of 2. Cancels 1 extra sword icon.",
+    "title": "Shekels",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, the spell listed on the card is cast (*see* *Spell Manifest on page 11*). No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
@@ -1034,7 +964,7 @@
     "source": "core",
     "level": 4,
     "title": "Shoes of the Thief",
-    "content": "May evade as if the hero had placed three maneuver cubes. No cubes are placed and no additional cubes may be added to make it faster.",
+    "content": "May evade as if the Hero had placed three maneuver cubes. No cubes are placed and no additional cubes may be added to make it faster.",
     "tags": [
       "treasure"
     ]
@@ -1044,7 +974,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Sin Sword",
-    "content": "Melee weapon. Must have 3 or more active intelligence attribute icons in order to equip. If the hero has less then 3 active intelligence attribute icons at any time, the card is immediately unequipped to the backpack. The optional might cube box on this card is automatically filled and does not count against the cube limit.",
+    "content": "Melee weapon. Must have 3 or more active Cunning attribute icons in order to equip. If the Hero has less then 3 active Cunning attribute icons at any time, the card is immediately unequipped to the backpack. The optional might box on this card is automatically filled and does not count against the cube limit.",
     "tags": [
       "treasure"
     ]
@@ -1054,7 +984,7 @@
     "source": "core",
     "level": 4,
     "title": "Skeleton Key",
-    "content": "Opens the monolith and chamber. Avoids hidden traps at the secret cache, hideout, and wrecked wagons.",
+    "content": "Opens the Monolith and Chamber. Avoids hidden traps at the Secret Cache, Hideout, and Wrecked Wagons.",
     "tags": [
       "treasure"
     ]
@@ -1064,7 +994,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Skull Splitter",
-    "content": "Legendary treasure (earns a reward as an epic treasure). Melee weapon. One mandatory might cube box on this card is automatically filled and does not count against the cube limit.",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). Melee weapon. One mandatory might box on this card is automatically filled and does not count against the cube limit.",
     "tags": [
       "treasure"
     ]
@@ -1074,7 +1004,7 @@
     "source": "core",
     "level": 4,
     "title": "Sparkler of Wisdom",
-    "content": "Increases the wisdom attribute of the hero by one.",
+    "content": "Increases the Wisdom attribute of the Hero by one.",
     "tags": [
       "treasure"
     ]
@@ -1094,7 +1024,17 @@
     "source": "core",
     "level": 4,
     "title": "Spell Book and Spell Scroll",
-    "content": "Contains 1-3 spells. When a spell book or scroll is revealed, draw the indicated number of spell cards from the deck and place them face-down under the treasure card. A hero performing a trade action with a merchant may reveal the spell book to all players in order to draw and secretly look at the spells attached to the treasure card. The base price of the treasure card is the sum of the spells remaining with the spell book or spell scroll.\n\nThe hero possessing the spell book or spell scroll may freely look at the attached spells at any time. These spells are available for a spell caster to learn if the hero has a magic cube matching the spell type.\n\nThe treasure card is discarded if the last spell is removed from it, typically because a spell caster learned the spell.",
+    "content": "Contains 1-3 spells. When a Spell Book or Scroll is revealed, draw the indicated number of Spell Cards from the deck and place them face-down under the Treasure Card. A Hero performing a Trade Action with a Merchant may reveal the Spell Book to all players in order to draw and secretly look at the spells attached to the Treasure Card. The base price of the Treasure Card is the sum of the spells remaining with the Spell Book or Spell Scroll.\n\n![](/images/pdf/cb33661a999ce2226bc10f45c9dd365f62991849.jpeg)\n\nThe Hero possessing the Spell Book or Spell Scroll may freely look at the attached spells at any time. These spells are available for a spell caster to learn if the Hero has a Magic Cube matching the spell type.\n\nThe Treasure Card is discarded if the last spell is removed from it, typically because a spell caster learned the spell.",
+    "tags": [
+      "treasure"
+    ]
+  },
+  {
+    "id": "5.5.0.38",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Spell Librams",
+    "content": "Spell Librams contain 2 spells. For all purposes they are equivalent to Spell Books.",
     "tags": [
       "treasure"
     ]
@@ -1104,23 +1044,43 @@
     "source": "desolation",
     "level": 4,
     "title": "Staff of Souls",
-    "content": "Whenever the staff hits an unarmored, non-undead target, the hero wielding the staff heals one wound.",
+    "content": "Whenever the staff hits an unarmored, non-undead target, the Hero wielding the staff heals one wound.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.43",
+    "id": "5.5.0.40",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Staff of Thaumaturgy",
+    "content": "![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)\n\nEpic Treasure. Melee weapon. When the possessing Hero performs an enchant action, they may choose to enchant the staff of thaumaturgy instead of the Map Tile. Do not flip over the Map Tile. Place the chosen Magic Cube on the staff card instead. If the Magic Cube is later used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the Magic Cube is discarded.",
+    "tags": [
+      "treasure"
+    ]
+  },
+  {
+    "id": "5.5.0.39",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Staff of the Sharp Sands",
-    "content": "Melee weapon. Only in play if the dreadful deserts terrain pack is in use. +1 sword if the combat is occurring in a desert clearing.",
+    "content": "Melee weapon. Only in play if the Dreadful Deserts Terrain Pack is in use. +1 sword if Combat is occurring in a Desert Clearing.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.47",
+    "id": "9.5.0.73",
+    "source": "core",
+    "level": 4,
+    "title": "Summoning Marcation",
+    "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nEpic Treasure. Valuable. During Monster Activation, it summons as if all Local Monster Die summoning icons printed on Map Tiles in adjacent tiles are also located in the Map Tile containing the Summoning Marcation.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "treasure"
+    ]
+  },
+  {
+    "id": "5.5.0.43",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Sunblade",
@@ -1134,7 +1094,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Alertness",
-    "content": "May perform one alert action which does not count against the turn’s action limit.",
+    "content": "May perform one Alert Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1144,7 +1104,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Commerce",
-    "content": "May perform one trade action which does not count against the turn’s action limit.",
+    "content": "May perform one Trade Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1154,7 +1114,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Greed",
-    "content": "May perform one loot action which does not count against the turn’s action limit.",
+    "content": "May perform one Loot Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1164,7 +1124,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Knowledge",
-    "content": "May perform one learn spells action which does not count against the turn’s action limit.",
+    "content": "May perform one Learn Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1174,7 +1134,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Magic",
-    "content": "May perform one enchant action which does not count against the turn’s action limit.",
+    "content": "May perform one Enchant Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1184,7 +1144,17 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Motion",
-    "content": "May perform one move action which does not count against the turn’s action limit.",
+    "content": "May perform one Move Action which does not count against the turn’s action limit.",
+    "tags": [
+      "treasure"
+    ]
+  },
+  {
+    "id": "5.5.0.44",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Symbol of Recruitment",
+    "content": "May perform one Hire action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1194,7 +1164,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Rest",
-    "content": "May perform one rest action which does not count against the turn’s action limit.",
+    "content": "May perform one Rest Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1204,7 +1174,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Stealth",
-    "content": "May perform one sneak action which does not count against the turn’s action limit.",
+    "content": "May perform one Sneak Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1214,7 +1184,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Vision",
-    "content": "May perform one search action which does not count against the turn’s action limit.",
+    "content": "May perform one Search Action which does not count against the turn’s action limit.",
     "tags": [
       "treasure"
     ]
@@ -1224,17 +1194,7 @@
     "source": "core",
     "level": 4,
     "title": "Talaria of the Gladiator",
-    "content": "Counts as one brown speed cube in an existing maneuver speed box. Does not add a maneuver box. This cube does not count against the combat round limit.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "9.5.0.84",
-    "source": "core",
-    "level": 4,
-    "title": "Taper of Illumination",
-    "content": "Epic Treasure. Do not lose an action when in a cave clearing on the hero’s turn.",
+    "content": "Counts as one brown Speed Cube in an existing maneuver speed box. Does not add a maneuver box. This cube does not count against the Combat Round limit.",
     "tags": [
       "treasure"
     ]
@@ -1244,17 +1204,27 @@
     "source": "desolation",
     "level": 4,
     "title": "Temporary Mist Stone",
-    "content": "One-time use. Cubes may not be placed on other weapon or spell cards when using this card. When this attack is resolved, a temporary version of the spell, Vapor Form, is cast. The spell expires at the end of the action phase of the next turn. No magic cubes are needed to cast this spell.",
+    "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, a temporary version of the Vapor Form spell is cast. The spell expires at the end of the Action Phase of the next turn. No Magic Cubes are needed to cast this spell.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.45",
+    "id": "5.5.0.18",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "The Lamp",
+    "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). The lamp may only be gained via the Lamp of the Djinni Legendary Treasure Site. When a Hero first takes possession of the lamp, draw 7 Spell Cards and place them on the lamp card. The possessing Hero may look at these cards at any time.\n\nThe Hero may attempt to learn spells from the lamp during the Action Phase via the Learn Action as if the lamp was a Spell Book or Spell Scroll.\n\nDuring Combat, the Hero may place cubes on the lamp in order to cast any of the spells attached to the lamp. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, the selected spell is cast and then removed from the game. No Magic Cubes are needed to cast this spell.\n\nOnce the lamp is used three times the lamp and all attached spells are removed from the game. Casting or learning a spell is counted as a use of the lamp.\n\nThe base price of the lamp is the sum of all spells currently attached to the lamp.",
+    "tags": [
+      "treasure"
+    ]
+  },
+  {
+    "id": "5.5.0.41",
     "source": "eastern-reaches",
     "level": 4,
     "title": "The Sting",
-    "content": "One-time use. Attacks by this hero gain +1 sword for the duration of combat.",
+    "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nOne-time use. Attacks by this Hero gain +1 sword for the duration of Combat.",
     "tags": [
       "treasure"
     ]
@@ -1264,7 +1234,7 @@
     "source": "core",
     "level": 4,
     "title": "Thief’s Lucky Coin",
-    "content": "One-time use. Roll one die during one loot action.",
+    "content": "One-time use. Roll one die during one Loot Action.",
     "tags": [
       "treasure"
     ]
@@ -1284,7 +1254,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Tinkerer’s Timepiece",
-    "content": "One-time use. The hero may take 2 extra actions of their choice on their turn.",
+    "content": "One-time use. The Hero may take 2 extra actions of their choice on their turn.",
     "tags": [
       "treasure"
     ]
@@ -1294,7 +1264,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Conjuring",
-    "content": "One-time use. Receive one blue magic cube permanently.",
+    "content": "One-time use. Receive one blue Magic Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -1304,7 +1274,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Fay",
-    "content": "One-time use. Receive one yellow magic cube permanently.",
+    "content": "One-time use. Receive one yellow Magic Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -1314,7 +1284,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Nature",
-    "content": "One-time use. Receive one green magic cube permanently.",
+    "content": "One-time use. Receive one green Magic Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -1324,7 +1294,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Power",
-    "content": "One-time use. Receive one purple magic cube permanently.",
+    "content": "One-time use. Receive one purple Magic Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -1334,7 +1304,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Righteousness",
-    "content": "One-time use. Receive one white magic cube permanently.",
+    "content": "One-time use. Receive one white Magic Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -1344,7 +1314,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of the Black Arts",
-    "content": "One-time use. Receive one black magic cube permanently.",
+    "content": "One-time use. Receive one black Magic Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -1354,7 +1324,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Tricks",
-    "content": "One-time use. Receive one grey magic cube permanently.",
+    "content": "One-time use. Receive one grey Magic Cube permanently.",
     "tags": [
       "treasure"
     ]
@@ -1364,17 +1334,17 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Wizardry",
-    "content": "One-time use. Receive one magic cube of the hero’s choice permanently.",
+    "content": "One-time use. Receive one Magic Cube of the Hero’s choice permanently.",
     "tags": [
       "treasure"
     ]
   },
   {
-    "id": "3.3.0.50",
+    "id": "5.5.0.47",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Trinket of Transmutation",
-    "content": "One-time use. Remove any treasure or item card from the game that possessed by the hero and receive the gold price of it immediately.",
+    "content": "One-time use. Remove any Treasure or Item Card from the game that is possessed by the Hero and receive the Gold price of it immediately.",
     "tags": [
       "treasure"
     ]
@@ -1384,7 +1354,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Vain Blade",
-    "content": "Melee weapon. Must have 3 or more active charisma attribute icons in order to equip. If the hero has less then 3 active charisma attribute icons at any time, the card is immediately unequipped to the backpack.",
+    "content": "Melee weapon. Must have 3 or more active Charisma attribute icons in order to equip. If the Hero has less then 3 active Charisma attribute icons at any time, the card is immediately unequipped to the backpack.\n\n![](/images/pdf/b758df98aac30ce9c18c5215714475d28856cadb.jpeg)\n\nbe reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
     "tags": [
       "treasure"
     ]
@@ -1400,11 +1370,11 @@
     ]
   },
   {
-    "id": "3.3.0.51",
+    "id": "5.5.0.48",
     "source": "eastern-reaches",
     "level": 4,
     "title": "War Weaver’s Needle",
-    "content": "One-time use. Perform an immediate alert action, even during combat, including being allowed to place an additional speed cube if not already alerted this turn. If used after hero tactics are revealed (step 5), the hero may place the extra speed cube beginning in the next combat round.",
+    "content": "One-time use. Perform an immediate free Alert Action as if it is the Action Phase, even during Combat. If used after the Hero tactics step, the Hero may not add/place cubes until the next Combat Round. *For example, after Monster Tactics, a Hero* *could not use the War Weaver’s Needle to equip a new weapon and place cubes on it.*",
     "tags": [
       "treasure"
     ]
@@ -1414,7 +1384,7 @@
     "source": "core",
     "level": 4,
     "title": "Warblade",
-    "content": "Melee weapon. Requires that one speed cube be placed on this treasure in lieu of a might cube.",
+    "content": "Melee weapon. Requires that one Speed Cube be placed on this treasure in lieu of a Might Cube.",
     "tags": [
       "treasure"
     ]
@@ -1424,7 +1394,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Whispering Compass",
-    "content": "One-time use. May use all hidden paths this turn, even if not found. Used hidden paths are not found.",
+    "content": "One-time use. May use all Hidden Paths this turn, even if not found. Used Hidden Paths are not found.",
     "tags": [
       "treasure"
     ]
@@ -1434,7 +1404,7 @@
     "source": "core",
     "level": 4,
     "title": "Writ of Redemption",
-    "content": "One-time use. The price to buy any one card from a merchant is 1x the base price.",
+    "content": "One-time use. The price to buy any one card from a Merchant is 1x the base price.",
     "tags": [
       "treasure"
     ]

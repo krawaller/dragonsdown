@@ -70,7 +70,7 @@ export const TRANSFORMS: Rule[] = [
     target: {
       and: [
         { childrenOf: { parent: { titleRegex: "Treasure Manifest" } } },
-        { not: { contentRegex: "^Epic treasure\\." } },
+        { not: { contentRegex: "^Epic [Tt]reasure\\." } },
       ],
     },
   },
@@ -80,7 +80,7 @@ export const TRANSFORMS: Rule[] = [
     target: {
       and: [
         { childrenOf: { parent: { titleRegex: "Treasure Manifest" } } },
-        { contentRegex: "^Epic treasure\\." },
+        { contentRegex: "^Epic [Tt]reasure\\." },
       ],
     },
   },

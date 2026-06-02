@@ -5,11 +5,12 @@ import { shortNameForSource } from "@/lib/docs";
 import { findCards } from "@/lib/tts/lookup";
 import { CardImages } from "./CardImages";
 
-const HEADING_TAG: Record<SectionLevel, "h2" | "h3" | "h4" | "h5"> = {
+const HEADING_TAG: Record<SectionLevel, "h2" | "h3" | "h4" | "h5" | "h6"> = {
   1: "h2",
   2: "h3",
   3: "h4",
   4: "h5",
+  5: "h6",
 };
 
 const HEADING_CLASS: Record<SectionLevel, string> = {
@@ -17,6 +18,7 @@ const HEADING_CLASS: Record<SectionLevel, string> = {
   2: "text-2xl font-bold mt-10 mb-3 flex items-baseline justify-between gap-4",
   3: "text-xl font-semibold mt-8 mb-2 flex items-baseline justify-between gap-4",
   4: "text-lg font-semibold mt-6 mb-2 flex items-baseline justify-between gap-4",
+  5: "text-base font-semibold mt-4 mb-2 flex items-baseline justify-between gap-4",
 };
 
 /**

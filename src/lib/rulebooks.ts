@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync, promises as fs } from "node:fs";
 import path from "node:path";
 
-export type SectionLevel = 1 | 2 | 3 | 4;
+export type SectionLevel = 1 | 2 | 3 | 4 | 5;
 
 export type Section = {
   /** Hierarchical id like "2.1.0.3"; digit count equals `level`. */
@@ -20,6 +20,14 @@ export type Rulebook = {
   slug: string;
   title: string;
   fileName: string;
+  /** Version string from the source PDF (e.g. "1.2"); empty if unknown. */
+  version: string;
+};
+
+/** On-disk shape of a rulebook JSON file. */
+export type RulebookFile = {
+  version: string;
+  content: Section[];
 };
 
 const DATA_DIR = path.join(process.cwd(), "data");
@@ -51,18 +59,20 @@ function discoverRulebooks(): Rulebook[] {
   return files
     .map((fileName): Rulebook => {
       const text = readFileSync(path.join(DATA_DIR, fileName), "utf-8");
-      const data = JSON.parse(text) as Section[];
-      if (data.length === 0) {
-        throw new Error(`Empty data file: ${fileName}`);
+      const data = JSON.parse(text) as RulebookFile;
+      if (!Array.isArray(data.content) || data.content.length === 0) {
+        throw new Error(
+          `Empty or malformed data file: ${fileName}; re-run \`npm run extract\`.`,
+        );
       }
-      const slug = data[0].source;
+      const slug = data.content[0].source;
       if (typeof slug !== "string" || !slug) {
         throw new Error(
-          `Missing 'source' in ${fileName}; re-run \`npm run extract\` to regenerate.`,
+          `Missing 'source' in ${fileName}; re-run \`npm run extract\`.`,
         );
       }
       const title = TITLE_OVERRIDES[slug] ?? titleCase(slug);
-      return { slug, title, fileName };
+      return { slug, title, fileName, version: data.version ?? "" };
     })
     .sort((a, b) => a.slug.localeCompare(b.slug));
 }
@@ -76,5 +86,6 @@ export function findRulebook(slug: string): Rulebook | undefined {
 export async function loadSections(book: Rulebook): Promise<Section[]> {
   const file = path.join(DATA_DIR, book.fileName);
   const raw = await fs.readFile(file, "utf-8");
-  return JSON.parse(raw) as Section[];
+  const parsed = JSON.parse(raw) as RulebookFile;
+  return parsed.content;
 }

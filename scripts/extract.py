@@ -1,7 +1,7 @@
 """Extract Dragons Down rulebooks into JSON with markdown content + extracted images.
 
 Output:
-  data/<stem>.json — array of { level, title, content (markdown) }
+  data/<name>.json — { version, content: [ { id, source, level, title, content (markdown) } ] }
   public/images/pdf/<sha1>.<ext> — extracted, deduplicated, referenced as /images/pdf/<sha1>.<ext>
 
 Heading conventions (verified across all 4 PDFs):
@@ -71,10 +71,29 @@ def classify_heading(font: str, size: float, color: int) -> int | None:
         if color == BROWN_DARK:
             return 2
         return None
-    if font == "MinionPro-Bold" and size_r == 16 and color in BROWNS_MID:
+    bold = font == "MinionPro-Bold"
+    bold_it = font == "MinionPro-BoldIt"
+    if not (bold or bold_it):
+        return None
+    # L3: size 16 brown; either variant (the newer PDFs italicize sub-labels
+    # like "(Optional Player vs. Player Rule)").
+    if size_r == 16 and color in BROWNS_MID:
         return 3
-    if font == "MinionPro-Bold" and size_r == 14 and color in BLACKISH:
-        return 4
+    # L4: size 14. Black accepts either variant (newer PDFs italicize the
+    # parenthetical, e.g. "Dwarf (*Caver*)"); brown requires straight Bold
+    # only — the BoldIt-brown spans we see are in-body emphasis like
+    # "**far right**", not headings.
+    if size_r == 14:
+        if color in BLACKISH:
+            return 4
+        if color in BROWNS_MID and bold:
+            return 4
+    # L5: size 12 brown, Bold (not BoldIt). These are sub-headings inside L4
+    # entries (e.g. action descriptions "Alert", "Sneak", "Move"). The black
+    # size-12 spans ("Golden Rule:", "Place Tokens:") are in-body emphasis,
+    # so this level only accepts brown.
+    if size_r == 12 and color in BROWNS_MID and bold:
+        return 5
     return None
 
 
@@ -382,35 +401,49 @@ def extract(pdf_path: Path) -> list[dict]:
     return rendered
 
 
+_MAX_LEVEL = 5
+
+
 def assign_ids(sections: list[dict]) -> None:
     """Assign hierarchical ids in place. Examples: "1", "2.1", "2.1.0.1".
 
     A "0" placeholder fills slots for skipped levels (e.g. L2 -> L4 yields
     `X.Y.0.Z`) so the digit count always equals the section's level.
     """
-    counters = [0, 0, 0, 0]
+    counters = [0] * _MAX_LEVEL
     for s in sections:
         lvl = s["level"]
         counters[lvl - 1] += 1
-        for i in range(lvl, 4):
+        for i in range(lvl, _MAX_LEVEL):
             counters[i] = 0
         s["id"] = ".".join(str(c) for c in counters[:lvl])
 
 
-def derive_slug(stem: str) -> str:
-    """Convert a PDF filename stem into a URL slug.
+def parse_stem(stem: str) -> tuple[str, str]:
+    """Split a PDF filename stem into (name, version).
 
-    `core_1.2`            -> `core`
-    `eastern_reaches_1.0` -> `eastern-reaches`
+    `core_1.2`            -> ("core", "1.2")
+    `eastern_reaches_1.0` -> ("eastern_reaches", "1.0")
+    `nameless`            -> ("nameless", "")
 
-    Strips a trailing `_<digits>.<digits>` version suffix, then swaps `_` for `-`.
+    `name` is the filename-style identifier (underscores intact); use
+    `slug_for_url` to turn it into the hyphenated URL slug.
     """
-    return re.sub(r"_\d+\.\d+$", "", stem).replace("_", "-")
+    match = re.match(r"^(.*?)_(\d+\.\d+)$", stem)
+    if match:
+        return match.group(1), match.group(2)
+    return stem, ""
 
 
-def process_one(pdf: Path, out: Path) -> None:
+def slug_for_url(name: str) -> str:
+    """`eastern_reaches` -> `eastern-reaches`."""
+    return name.replace("_", "-")
+
+
+def process_one(pdf: Path, out: Path | None = None) -> None:
     sections = extract(pdf)
-    slug = derive_slug(pdf.stem)
+    name, version = parse_stem(pdf.stem)
+    slug = slug_for_url(name)
     # Stamp `source` on every section and put identifier fields first for
     # readable JSON output.
     sections = [
@@ -423,18 +456,20 @@ def process_one(pdf: Path, out: Path) -> None:
         }
         for s in sections
     ]
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(sections, indent=2, ensure_ascii=False))
-    print(f"{pdf.name}: {len(sections)} sections → {out}")
+    payload = {"version": version, "content": sections}
+    out_path = out if out is not None else OUT_DIR / f"{name}.json"
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False))
+    print(f"{pdf.name}: {len(sections)} sections (v{version or '?'}) → {out_path}")
 
 
 def main(argv: list[str]) -> None:
     if not argv or argv[0] == "--all":
         for pdf in sorted(PDF_DIR.glob("*.pdf")):
-            process_one(pdf, OUT_DIR / (pdf.stem + ".json"))
+            process_one(pdf)
         return
     pdf = Path(argv[0])
-    out = Path(argv[1]) if len(argv) > 1 else OUT_DIR / (pdf.stem + ".json")
+    out = Path(argv[1]) if len(argv) > 1 else None
     process_one(pdf, out)
 
 
