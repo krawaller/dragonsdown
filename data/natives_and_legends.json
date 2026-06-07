@@ -286,7 +286,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Gnome (Inventive)",
-      "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.\n\n![](/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png)",
+      "icon": "/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png",
+      "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.",
       "tags": [
         "lineageAdvantage"
       ]
@@ -303,7 +304,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Beastmaster (Faunamancy)",
-      "content": "Beastmasters can speak to Wandering Monsters and control them. Wandering Monsters (*summoned by the gray dice*) do not block, challenge, or target a Beastmaster, nor may a Beastmaster target them. All other Monsters act normally with the Beastmaster. A Beastmaster may attempt to hire a Wandering Monster via a Hire action. To succeed, the Beastmaster must reduce the hire price to 1x. The Beastmaster only fails in a haggle attempt by rolling a door symbol. The Beastmaster pays no actual cost to hire a Wandering Monster. All other Hired Natives rules apply (*page 3*). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Beastmaster from hiring other Wandering Monsters on that same turn, even the same Monster type (*e.g. 2 Giant Bats*). Beastmasters lose Fame when hired Monsters are killed.\n\n![](/images/pdf/b25ff3c430f8dd5964db76868bdddbe6de62d0d6.png)\n\nThe Beastmaster may not attempt to hire a Monster while they already have a hired Monster. A Beastmaster with a hired flying Monster may choose to fly with the Wandering Monster during a Move Action, carrying only the Beastmaster and no others Natives. Beastmasters begin the game with no Gold.",
+      "icon": "/images/pdf/b25ff3c430f8dd5964db76868bdddbe6de62d0d6.png",
+      "content": "Beastmasters can speak to Wandering Monsters and control them. Wandering Monsters (*summoned by the gray dice*) do not block, challenge, or target a Beastmaster, nor may a Beastmaster target them. All other Monsters act normally with the Beastmaster. A Beastmaster may attempt to hire a Wandering Monster via a Hire action. To succeed, the Beastmaster must reduce the hire price to 1x. The Beastmaster only fails in a haggle attempt by rolling a door symbol. The Beastmaster pays no actual cost to hire a Wandering Monster. All other Hired Natives rules apply (*page 3*). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Beastmaster from hiring other Wandering Monsters on that same turn, even the same Monster type (*e.g. 2 Giant Bats*). Beastmasters lose Fame when hired Monsters are killed.\n\nThe Beastmaster may not attempt to hire a Monster while they already have a hired Monster. A Beastmaster with a hired flying Monster may choose to fly with the Wandering Monster during a Move Action, carrying only the Beastmaster and no others Natives. Beastmasters begin the game with no Gold.",
       "tags": [
         "classAdvantage"
       ]
@@ -313,7 +315,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Berserker (Berserk)",
-      "content": "Berserkers can go into a frenzy in combat. Once per Combat during the Challenge step, the Berserker may convert one Action Cube of any type into a Heart for the duration of Combat. At the end of Combat, the Heart converts back to the replaced cube (*killing the Berserker if they lose their* *last Heart*). Berserkers begin the game with no Gold.\n\n![](/images/pdf/f7e9a539b1db872bcf70fc0943c7b1e58cae8e54.png)",
+      "icon": "/images/pdf/f7e9a539b1db872bcf70fc0943c7b1e58cae8e54.png",
+      "content": "Berserkers can go into a frenzy in combat. Once per Combat during the Challenge step, the Berserker may convert one Action Cube of any type into a Heart for the duration of Combat. At the end of Combat, the Heart converts back to the replaced cube (*killing the Berserker if they lose their* *last Heart*). Berserkers begin the game with no Gold.",
       "tags": [
         "classAdvantage"
       ]
@@ -323,7 +326,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Brigand (Brotherhood)",
-      "content": "The Brigand is the former leader of the Bandits that have been plaguing the land of **Dragons Down**. The Brigand begins the game with an Outlaw Token. The Bandits are a Native Group to the Brigand that will neither block, nor attack, the Brigand. The Brigand may hire them in any order (*Bandit Leader last*). The Bandits respect Cunning for any haggle attempts. If the Brigand performs a Loot Action at the Hideout or attacks any unhired Bandit, the Bandits treat the Brigand like any other Hero for the rest of the game and all current Bandit hires of the Brigand are placed back in the Native tray immediately.\n\n![](/images/pdf/adc3cbf7a005694a54cc7864dd9d1a10520877a7.png)\n\nWhen the Brigand searches for the Hideout, Secret Stash, or Wrecked Wagons, the search succeeds without rolling any dice and without triggering any hidden traps. When the Brigand finds these Treasure Sites, they draw one Treasure Card from the main Treasure Deck (*not the Treasure Site Pile*), in addition to any normal rewards they receive (*even if not the first to find the Treasure Site*).",
+      "icon": "/images/pdf/adc3cbf7a005694a54cc7864dd9d1a10520877a7.png",
+      "content": "The Brigand is the former leader of the Bandits that have been plaguing the land of **Dragons Down**. The Brigand begins the game with an Outlaw Token. The Bandits are a Native Group to the Brigand that will neither block, nor attack, the Brigand. The Brigand may hire them in any order (*Bandit Leader last*). The Bandits respect Cunning for any haggle attempts. If the Brigand performs a Loot Action at the Hideout or attacks any unhired Bandit, the Bandits treat the Brigand like any other Hero for the rest of the game and all current Bandit hires of the Brigand are placed back in the Native tray immediately.\n\nWhen the Brigand searches for the Hideout, Secret Stash, or Wrecked Wagons, the search succeeds without rolling any dice and without triggering any hidden traps. When the Brigand finds these Treasure Sites, they draw one Treasure Card from the main Treasure Deck (*not the Treasure Site Pile*), in addition to any normal rewards they receive (*even if not the first to find the Treasure Site*).",
       "tags": [
         "classAdvantage"
       ]
@@ -343,7 +347,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Explorer (Perceptive)",
-      "content": "Explorers have a keen eye for the unknown, often seeing clues that others miss. Once per Explore or Move Action, upon revealing a Wilderness Token in a Map Tile, the Explorer may mix the token back into the pool of Wilderness Tokens and draw another one. The Explorer must accept this newly drawn Wilderness Token.\n\n![](/images/pdf/7eaf673ecad14bfefe69a171f53142fea044f2f9.png)",
+      "icon": "/images/pdf/7eaf673ecad14bfefe69a171f53142fea044f2f9.png",
+      "content": "Explorers have a keen eye for the unknown, often seeing clues that others miss. Once per Explore or Move Action, upon revealing a Wilderness Token in a Map Tile, the Explorer may mix the token back into the pool of Wilderness Tokens and draw another one. The Explorer must accept this newly drawn Wilderness Token.",
       "tags": [
         "classAdvantage"
       ]
@@ -353,7 +358,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Necromancer (Gravecalling)",
-      "content": "Necromancers have the ability to reanimate the dead as skeletal minions. If no Monsters or enemy Natives remain in the clearing at the end of Combat, place one Animated Skeleton counter in the clearing for each Hero, Native, or non-undead Monster that was killed in the clearing this turn, but not removed. F*or example, Fiery Chasm removes all that it kills and does* *not produce Animated Skeletons*. The Necromancer may have a maximum of 4 Animated Skeletons in play at any time. Animated Skeletons act as permanent Hired Natives until killed. If the Necromancer is killed, all Animated Skeletons are also immediately killed earning Fame for the Hero that killed the Necromancer. A Necromancer earns no Fame for killing their own Animated Skeletons, nor do they lose Fame for Animated Skeletons that are killed. Skeletons are undead.\n\n![](/images/pdf/3936b1933886932e291cc399547293385a6beffb.png)",
+      "icon": "/images/pdf/3936b1933886932e291cc399547293385a6beffb.png",
+      "content": "Necromancers have the ability to reanimate the dead as skeletal minions. If no Monsters or enemy Natives remain in the clearing at the end of Combat, place one Animated Skeleton counter in the clearing for each Hero, Native, or non-undead Monster that was killed in the clearing this turn, but not removed. F*or example, Fiery Chasm removes all that it kills and does* *not produce Animated Skeletons*. The Necromancer may have a maximum of 4 Animated Skeletons in play at any time. Animated Skeletons act as permanent Hired Natives until killed. If the Necromancer is killed, all Animated Skeletons are also immediately killed earning Fame for the Hero that killed the Necromancer. A Necromancer earns no Fame for killing their own Animated Skeletons, nor do they lose Fame for Animated Skeletons that are killed. Skeletons are undead.",
       "tags": [
         "classAdvantage"
       ]
@@ -363,7 +369,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Outcast (Overlooked)",
-      "content": "The Outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The Outcast may not use a Trade Action to look at the possessions of a Merchant or buy them. They may still do all of the other options of a Trade Action, including looking at and taking missions normally. When selling possessions, the Outcast receives half of the Gold value, rounded up. The Outcast may loot a Merchant’s treasures and items as if it were a found Treasure Site (*the Outcast does not have to search* *for the Merchant first*). Organize Merchant possessions as follows: Deep Treasure Cards on top of Treasure Cards on top of Item Cards. New cards that are added to the Merchant for any reason are placed on top of their corresponding cards already with the Merchant. Players may not adjust the order of cards. The Outcast takes the card at the spot indicated by the loot roll.\n\n![](/images/pdf/887c5340fa045f2fa43203b52f8ce79e708bb197.png)\n\nAfter looting (*successful or not*), the Outcast must roll to hide (*using all Lineage,* *treasure, and Sneak bonuses*). If the Outcast fails this hide roll, they are blocked, receive one Outlaw Token and may never again interact with that Merchant in any way. Use the Adventure Journal to track Merchants that are closed to the Outcast.",
+      "icon": "/images/pdf/887c5340fa045f2fa43203b52f8ce79e708bb197.png",
+      "content": "The Outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The Outcast may not use a Trade Action to look at the possessions of a Merchant or buy them. They may still do all of the other options of a Trade Action, including looking at and taking missions normally. When selling possessions, the Outcast receives half of the Gold value, rounded up. The Outcast may loot a Merchant’s treasures and items as if it were a found Treasure Site (*the Outcast does not have to search* *for the Merchant first*). Organize Merchant possessions as follows: Deep Treasure Cards on top of Treasure Cards on top of Item Cards. New cards that are added to the Merchant for any reason are placed on top of their corresponding cards already with the Merchant. Players may not adjust the order of cards. The Outcast takes the card at the spot indicated by the loot roll.\n\nAfter looting (*successful or not*), the Outcast must roll to hide (*using all Lineage,* *treasure, and Sneak bonuses*). If the Outcast fails this hide roll, they are blocked, receive one Outlaw Token and may never again interact with that Merchant in any way. Use the Adventure Journal to track Merchants that are closed to the Outcast.",
       "tags": [
         "classAdvantage"
       ]
@@ -373,7 +380,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Wizard (Studious)",
-      "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one Learn Die once per Learn Action.\n\n![](/images/pdf/247605709913fdfc186a8350f4f57efaafdd5574.png)",
+      "icon": "/images/pdf/247605709913fdfc186a8350f4f57efaafdd5574.png",
+      "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one Learn Die once per Learn Action.",
       "tags": [
         "classAdvantage"
       ]

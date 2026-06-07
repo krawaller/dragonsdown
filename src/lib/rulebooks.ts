@@ -10,6 +10,8 @@ export type Section = {
   source: string;
   level: SectionLevel;
   title: string;
+  /** Optional section icon extracted from left-floating PDF art. */
+  icon?: string;
   /** Markdown: **bold**, *italic*, `- ` bullets, `![](/images/<hash>.<ext>)` */
   content: string;
   /** Free-form labels added by transform rules (e.g. "classAdvantage"). */

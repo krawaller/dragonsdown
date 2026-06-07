@@ -1,7 +1,7 @@
 """Extract Dragons Down rulebooks into JSON with markdown content + extracted images.
 
 Output:
-  data/<name>.json — { version, content: [ { id, source, level, title, content (markdown) } ] }
+    data/<name>.json — { version, content: [ { id, source, level, title, icon?, content (markdown) } ] }
   public/images/pdf/<sha1>.<ext> — extracted, deduplicated, referenced as /images/pdf/<sha1>.<ext>
 
 Heading conventions (verified across all 4 PDFs):
@@ -55,12 +55,17 @@ _WRAP_FIX = re.compile(r"([A-Za-z0-9][-/])(\*{0,3})[ \t]+(\*{0,3})([A-Za-z])")
 class Section:
     level: int
     title: str
+    icon: str | None = None
     content_parts: list[str] = field(default_factory=list)
 
     def render(self) -> dict:
         content = "\n\n".join(p for p in self.content_parts if p).strip()
         content = _WRAP_FIX.sub(r"\1\2\3\4", content)
-        return {"level": self.level, "title": self.title, "content": content}
+        rendered = {"level": self.level, "title": self.title}
+        if self.icon:
+            rendered["icon"] = self.icon
+        rendered["content"] = content
+        return rendered
 
 
 def classify_heading(font: str, size: float, color: int) -> int | None:
@@ -221,10 +226,164 @@ def save_image(h: str, stat: dict) -> str:
     return f"{IMG_URL_PREFIX}/{h}.{ext}"
 
 
+def image_url_for_block(block: dict, stats: dict, total_pages: int) -> str | None:
+    img_bytes = block.get("image")
+    if not img_bytes:
+        return None
+    # Some PDFs contain mirrored/off-canvas image placements whose display
+    # bbox has non-positive width/height. They are effectively invisible and
+    # should not be emitted into extracted markdown.
+    bx0, by0, bx1, by1 = block["bbox"]
+    if (bx1 - bx0) <= 0 or (by1 - by0) <= 0:
+        return None
+    h = hashlib.sha1(img_bytes).hexdigest()
+    stat = stats.get(h)
+    if not stat or is_background(stat, total_pages):
+        return None
+    return save_image(h, stat)
+
+
+def line_bbox(line: dict) -> tuple[float, float, float, float] | None:
+    spans = [s for s in line.get("spans", []) if s.get("text", "").strip()]
+    if not spans:
+        return None
+    return (
+        min(s["bbox"][0] for s in spans),
+        min(s["bbox"][1] for s in spans),
+        max(s["bbox"][2] for s in spans),
+        max(s["bbox"][3] for s in spans),
+    )
+
+
+def heading_key(level: int, title: str, bbox: tuple[float, float, float, float]) -> tuple:
+    return (level, title, *(round(v, 1) for v in bbox))
+
+
+def find_section_icons(
+    blocks: list[dict], stats: dict, total_pages: int
+) -> tuple[dict[tuple, str], set[int]]:
+    """Detect section icons by their left-float geometry.
+
+    The PDFs lay these out as small square-ish images at the column margin. The
+    heading and first body lines begin to the right of the image; later lines
+    resume at the normal column margin once below the image.
+    """
+    image_blocks: list[tuple[int, str, tuple[float, float, float, float]]] = []
+    for block in blocks:
+        if block.get("type") != 1:
+            continue
+        url = image_url_for_block(block, stats, total_pages)
+        if not url:
+            continue
+        ix0, iy0, ix1, iy1 = block["bbox"]
+        width = ix1 - ix0
+        height = iy1 - iy0
+        if 24 <= width <= 90 and 24 <= height <= 90:
+            image_blocks.append((id(block), url, block["bbox"]))
+
+    icons_by_heading: dict[tuple, str] = {}
+    icon_block_ids: set[int] = set()
+    if not image_blocks:
+        return icons_by_heading, icon_block_ids
+
+    def nearby_body_lines(
+        current_block: dict,
+        current_line_idx: int,
+        heading_box: tuple[float, float, float, float],
+    ) -> list[tuple[float, float, float, float]]:
+        lines: list[tuple[float, float, float, float]] = []
+        for next_line in current_block.get("lines", [])[current_line_idx + 1 : current_line_idx + 6]:
+            next_box = line_bbox(next_line)
+            if next_box is None:
+                continue
+            next_spans = next_line.get("spans", [])
+            next_dom = max(next_spans, key=lambda s: len(s["text"]))
+            if classify_heading(next_dom["font"], next_dom["size"], next_dom["color"]) is not None:
+                break
+            lines.append(next_box)
+        if lines:
+            return lines
+
+        _, _, hx1, hy1 = heading_box
+        for other in blocks:
+            if other is current_block or other.get("type") != 0:
+                continue
+            ox0, oy0, ox1, oy1 = other["bbox"]
+            if oy0 < hy1 - 2 or oy0 > hy1 + 120:
+                continue
+            if ox1 < heading_box[0] or ox0 > hx1 + 240:
+                continue
+            for line in other.get("lines", [])[:6]:
+                next_box = line_bbox(line)
+                if next_box is None:
+                    continue
+                next_spans = line.get("spans", [])
+                next_dom = max(next_spans, key=lambda s: len(s["text"]))
+                if classify_heading(next_dom["font"], next_dom["size"], next_dom["color"]) is not None:
+                    break
+                lines.append(next_box)
+            if lines:
+                break
+        return lines
+
+    for block in blocks:
+        if block.get("type") != 0:
+            continue
+        lines = block.get("lines", [])
+        for line_idx, line in enumerate(lines):
+            spans = line.get("spans", [])
+            if not spans:
+                continue
+            dom = max(spans, key=lambda s: len(s["text"]))
+            full_text = "".join(s["text"] for s in spans).strip()
+            if not full_text or is_skippable_line(full_text, dom["font"], dom["size"]):
+                continue
+            level = classify_heading(dom["font"], dom["size"], dom["color"])
+            if level is None:
+                continue
+            title = clean_title(full_text)
+            hbox = line_bbox(line)
+            if hbox is None:
+                continue
+
+            following_lines = nearby_body_lines(block, line_idx, hbox)
+            hx0, hy0, hx1, hy1 = hbox
+            for block_id, url, ibox in image_blocks:
+                if block_id in icon_block_ids:
+                    continue
+                ix0, iy0, ix1, iy1 = ibox
+                left_of_heading = ix1 <= hx0 + 4
+                close_gap = 0 <= (hx0 - ix1) <= 18
+                aligned_top = abs(iy0 - hy0) <= 12 or hy0 <= iy0 <= hy1 + 12
+                plausible_margin = 30 <= (hx0 - ix0) <= 75
+                heading_wraps = hx0 >= ix1 - 1 and hy0 < iy1
+                body_wraps = any(lb[0] >= ix1 - 1 and lb[1] < iy1 for lb in following_lines)
+                body_returns = any(
+                    abs(lb[0] - ix0) <= 5 and lb[1] >= iy1 - 6
+                    for lb in following_lines
+                )
+                short_fully_wrapped = bool(following_lines) and max(
+                    lb[3] for lb in following_lines
+                ) <= iy1 + 12
+                if (
+                    left_of_heading
+                    and close_gap
+                    and aligned_top
+                    and plausible_margin
+                    and heading_wraps
+                    and body_wraps
+                    and (body_returns or short_fully_wrapped)
+                ):
+                    icons_by_heading[heading_key(level, title, hbox)] = url
+                    icon_block_ids.add(block_id)
+                    break
+    return icons_by_heading, icon_block_ids
+
+
 # Block processing -------------------------------------------------------------
 
 def process_text_block(block: dict) -> list[tuple]:
-    """Yield items: ('heading', level, title) | ('para', md) | ('bullets', md)."""
+    """Yield items: ('heading', level, title, key) | ('para', md) | ('bullets', md)."""
     items: list[tuple] = []
     para_buf: list[str] = []
     bullets_buf: list[str] = []
@@ -255,7 +414,9 @@ def process_text_block(block: dict) -> list[tuple]:
         if level is not None:
             flush_para()
             flush_bullets()
-            items.append(("heading", level, clean_title(full_text)))
+            title = clean_title(full_text)
+            bbox = line_bbox(line) or block["bbox"]
+            items.append(("heading", level, title, heading_key(level, title, bbox)))
             continue
         first_visible = next((s for s in spans if s["text"].strip()), None)
         is_bullet = first_visible is not None and first_visible["text"].strip() == "•"
@@ -277,20 +438,9 @@ def process_text_block(block: dict) -> list[tuple]:
 
 
 def process_image_block(block: dict, stats: dict, total_pages: int) -> list[tuple]:
-    img_bytes = block.get("image")
-    if not img_bytes:
+    url = image_url_for_block(block, stats, total_pages)
+    if not url:
         return []
-    # Some PDFs contain mirrored/off-canvas image placements whose display
-    # bbox has non-positive width/height. They are effectively invisible and
-    # should not be emitted into extracted markdown.
-    bx0, by0, bx1, by1 = block["bbox"]
-    if (bx1 - bx0) <= 0 or (by1 - by0) <= 0:
-        return []
-    h = hashlib.sha1(img_bytes).hexdigest()
-    stat = stats.get(h)
-    if not stat or is_background(stat, total_pages):
-        return []
-    url = save_image(h, stat)
     return [("image", f"![]({url})")]
 
 
@@ -368,6 +518,9 @@ def extract(pdf_path: Path) -> list[dict]:
 
     for page in doc:
         raw_blocks = page.get_text("dict")["blocks"]
+        icons_by_heading, icon_block_ids = find_section_icons(
+            raw_blocks, stats, total_pages
+        )
         boundary = find_column_boundary(raw_blocks, page.rect.width)
         blocks = sorted(
             raw_blocks,
@@ -378,6 +531,8 @@ def extract(pdf_path: Path) -> list[dict]:
             if btype == 0:
                 items = process_text_block(block)
             elif btype == 1:
+                if id(block) in icon_block_ids:
+                    continue
                 items = process_image_block(block, stats, total_pages)
             else:
                 continue
@@ -391,10 +546,14 @@ def extract(pdf_path: Path) -> list[dict]:
                     else:
                         push(item[1])
                 elif kind == "heading":
-                    _, level, title = item
+                    _, level, title, key = item
                     if not title:
                         continue
-                    current = Section(level=level, title=title)
+                    current = Section(
+                        level=level,
+                        title=title,
+                        icon=icons_by_heading.get(key),
+                    )
                     sections.append(current)
                     # Attach any pending images to the new section
                     flush_pending_to_current()
@@ -461,16 +620,19 @@ def process_one(pdf: Path, out: Path | None = None) -> None:
     slug = slug_for_url(name)
     # Stamp `source` on every section and put identifier fields first for
     # readable JSON output.
-    sections = [
-        {
+    stamped_sections = []
+    for s in sections:
+        section = {
             "id": s["id"],
             "source": slug,
             "level": s["level"],
             "title": s["title"],
-            "content": s["content"],
         }
-        for s in sections
-    ]
+        if icon := s.get("icon"):
+            section["icon"] = icon
+        section["content"] = s["content"]
+        stamped_sections.append(section)
+    sections = stamped_sections
     payload = {"version": version, "content": sections}
     out_path = out if out is not None else OUT_DIR / f"{name}.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)

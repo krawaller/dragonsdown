@@ -4,7 +4,8 @@
     "source": "core",
     "level": 1,
     "title": "Universal Spells",
-    "content": "![](/images/pdf/cb33661a999ce2226bc10f45c9dd365f62991849.jpeg)\n\nUniversal spells are accessible to all magic users and represent magic that requires no specific discipline of study. All casters of magic have access to spells from the universal arts."
+    "icon": "/images/pdf/cb33661a999ce2226bc10f45c9dd365f62991849.jpeg",
+    "content": "Universal spells are accessible to all magic users and represent magic that requires no specific discipline of study. All casters of magic have access to spells from the universal arts."
   },
   {
     "id": "9.6.1.1",
@@ -22,7 +23,8 @@
     "source": "core",
     "level": 1,
     "title": "Black Spells",
-    "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nBlack spells are from the realm of death and evil. Black spells tend to bring misfortune, curses, and death  to those targeted by it. Black magic is not subtle."
+    "icon": "/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png",
+    "content": "Black spells are from the realm of death and evil. Black spells tend to bring misfortune, curses, and death  to those targeted by it. Black magic is not subtle."
   },
   {
     "id": "9.6.2.1",
@@ -139,7 +141,8 @@
     "source": "core",
     "level": 1,
     "title": "Blue Spells",
-    "content": "Blue spells are from the realm of conjuring. Blue magic focuses on manifesting and controlling things in the real world. Blue spells tend to break the rules of the physical world for the caster.\n\n![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)"
+    "icon": "/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg",
+    "content": "Blue spells are from the realm of conjuring. Blue magic focuses on manifesting and controlling things in the real world. Blue spells tend to break the rules of the physical world for the caster."
   },
   {
     "id": "9.6.3.4",
@@ -256,7 +259,8 @@
     "source": "core",
     "level": 1,
     "title": "Gray Spells",
-    "content": "Gray spells are from the realm of trickery. Gray spells often involve altering the view of the world around the caster to confuse others, obfuscate reality, or making things disappear completely.\n\n![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)"
+    "icon": "/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png",
+    "content": "Gray spells are from the realm of trickery. Gray spells often involve altering the view of the world around the caster to confuse others, obfuscate reality, or making things disappear completely."
   },
   {
     "id": "9.6.4.4",
@@ -373,7 +377,8 @@
     "source": "core",
     "level": 1,
     "title": "Green Spells",
-    "content": "Green spells are from the realm of nature. Green magic seeks to live harmoniously with the natural world. Green magic calls upon the wild to aid the caster.\n\n![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)"
+    "icon": "/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg",
+    "content": "Green spells are from the realm of nature. Green magic seeks to live harmoniously with the natural world. Green magic calls upon the wild to aid the caster."
   },
   {
     "id": "9.6.5.4",
@@ -490,7 +495,8 @@
     "source": "core",
     "level": 1,
     "title": "Purple Spells",
-    "content": "Purple spells are from the realm of sorcery. Purple magic is about the raw power of magic calling upon sorcery to create energy and control it in the real world. Purple spells create, change, and destroy.\n\n![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)"
+    "icon": "/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg",
+    "content": "Purple spells are from the realm of sorcery. Purple magic is about the raw power of magic calling upon sorcery to create energy and control it in the real world. Purple spells create, change, and destroy."
   },
   {
     "id": "9.6.6.4",
@@ -607,7 +613,8 @@
     "source": "core",
     "level": 1,
     "title": "White Spells",
-    "content": "White spells are from the realm of life and good. White spells tend to heal, promote life, and bring peace. White magic targets the undead as an abomination.\n\n![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)"
+    "icon": "/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png",
+    "content": "White spells are from the realm of life and good. White spells tend to heal, promote life, and bring peace. White magic targets the undead as an abomination."
   },
   {
     "id": "9.6.7.2",
@@ -724,7 +731,8 @@
     "source": "core",
     "level": 1,
     "title": "Yellow Spells",
-    "content": "Yellow spells are from the realm of enchantment. Yellow spells tend to enchant, befuddle, and mesmerize. Yellow magic is subtle, but powerful for the caster who wields it well.\n\n![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)"
+    "icon": "/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg",
+    "content": "Yellow spells are from the realm of enchantment. Yellow spells tend to enchant, befuddle, and mesmerize. Yellow magic is subtle, but powerful for the caster who wields it well."
   },
   {
     "id": "5.6.7.4",

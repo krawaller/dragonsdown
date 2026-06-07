@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import type { Section, SectionLevel } from "@/lib/rulebooks";
 import { shortNameForSource } from "@/lib/docs";
@@ -45,7 +46,16 @@ export function SectionView({
   const anchorId = anchorIdFor(section);
   const cards = findCards(section.title);
   return (
-    <section className="mb-2">
+    <section className="mb-2 flow-root">
+      {section.icon && (
+        <Image
+          src={section.icon}
+          alt=""
+          width={48}
+          height={48}
+          className="float-left mr-3 mt-6 h-12 w-12 object-contain"
+        />
+      )}
       <Heading className={HEADING_CLASS[section.level]} id={anchorId}>
         <span>{section.title}</span>
         {showSource ? (

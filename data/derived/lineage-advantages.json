@@ -4,7 +4,8 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Auroran (Desert Born)",
-    "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.\n\n![](/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg)",
+    "icon": "/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg",
+    "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.",
     "tags": [
       "lineageAdvantage"
     ]
@@ -14,7 +15,8 @@
     "source": "core",
     "level": 4,
     "title": "Dwarf (Caver)",
-    "content": "Dwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a Cave Clearing.\n\n![](/images/pdf/266e31b2777d2856070a952c049680684ec32366.png)",
+    "icon": "/images/pdf/266e31b2777d2856070a952c049680684ec32366.png",
+    "content": "Dwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a Cave Clearing.",
     "tags": [
       "lineageAdvantage"
     ]
@@ -34,7 +36,8 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Gnome (Inventive)",
-    "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.\n\n![](/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png)",
+    "icon": "/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png",
+    "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.",
     "tags": [
       "lineageAdvantage"
     ]
@@ -54,7 +57,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Orc (Mountaineer)",
-    "content": "![](/images/pdf/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png)\n\nHalf-Orcs are very comfortable in mountains and do not pay the additional action cost to enter a Mountain Clearing.",
+    "icon": "/images/pdf/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png",
+    "content": "Half-Orcs are very comfortable in mountains and do not pay the additional action cost to enter a Mountain Clearing.",
     "tags": [
       "lineageAdvantage"
     ]
@@ -74,7 +78,8 @@
     "source": "core",
     "level": 4,
     "title": "Human (Adapted)",
-    "content": "Humans are very comfortable in civilization and receive one additional free action during any turn they are in a Civilization Location.\n\n![](/images/pdf/2231f1ae25446c024d6920eb27e6a6bd9c62eebf.png)",
+    "icon": "/images/pdf/2231f1ae25446c024d6920eb27e6a6bd9c62eebf.png",
+    "content": "Humans are very comfortable in civilization and receive one additional free action during any turn they are in a Civilization Location.",
     "tags": [
       "lineageAdvantage"
     ]

@@ -433,7 +433,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Auroran (Desert Born)",
-      "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.\n\n![](/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg)",
+      "icon": "/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg",
+      "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.",
       "tags": [
         "lineageAdvantage"
       ]
@@ -450,7 +451,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Decayed (Duality Vale)",
-      "content": "The decayed are torn between the light and the darkness. When the decayed hits an undead with a melee attack, regardless of the amount of damage dealt, they may choose one of the following:\n\n![](/images/pdf/e2af06ab919e8023dfb85aaa172701afc93bf43c.jpeg)\n\n- **Wound a white Magic Cube:** Immediately kill the undead, regardless of the damage dealt. The decayed earns double the Monster’s Fame value.\n\n- **Wound a black Magic Cube:** Cancel the undead’s attack and immediately convert the undead into a permanent Hired Native, following all Native rules. Hired undead may attack unhired undead without penalty.",
+      "icon": "/images/pdf/e2af06ab919e8023dfb85aaa172701afc93bf43c.jpeg",
+      "content": "The decayed are torn between the light and the darkness. When the decayed hits an undead with a melee attack, regardless of the amount of damage dealt, they may choose one of the following:\n\n- **Wound a white Magic Cube:** Immediately kill the undead, regardless of the damage dealt. The decayed earns double the Monster’s Fame value.\n\n- **Wound a black Magic Cube:** Cancel the undead’s attack and immediately convert the undead into a permanent Hired Native, following all Native rules. Hired undead may attack unhired undead without penalty.",
       "tags": [
         "classAdvantage"
       ]
@@ -460,7 +462,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Dervish (Whirling Strike)",
-      "content": "Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\n![](/images/pdf/267dd74df7b74a11bf9a30f66dded7cec6afed0c.jpeg)\n\n![](/images/pdf/f9237ab8ebfa068b7fd83a1738bf8b14134e638b.jpeg)\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
+      "icon": "/images/pdf/267dd74df7b74a11bf9a30f66dded7cec6afed0c.jpeg",
+      "content": "Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\n![](/images/pdf/f9237ab8ebfa068b7fd83a1738bf8b14134e638b.jpeg)\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
       "tags": [
         "classAdvantage"
       ]
@@ -480,7 +483,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Duelist (Parry)",
-      "content": "![](/images/pdf/81631eccf76ab3f24a13ad337984cb28e8bb071d.jpeg)\n\n![](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg)\n\nDuelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
+      "icon": "/images/pdf/81631eccf76ab3f24a13ad337984cb28e8bb071d.jpeg",
+      "content": "![](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg)\n\nDuelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
       "tags": [
         "classAdvantage"
       ]
@@ -490,7 +494,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Marauder (Fury)",
-      "content": "Marauders fight with a barely contained ferocity that they can choose to unleash in combat. Once per Combat Round, the marauder may place one Heart in either a might box or a speed box as if it were a matching cube. This placement does **not** count against the cube limit for the Combat Round. During the Cleanup phase of Combat, the Heart is wounded. A Heart may not be placed in a box with a wound symbol.\n\n![](/images/pdf/a38442cd5bd14d3a7c28e9292ceca3c03367d7e4.png)",
+      "icon": "/images/pdf/a38442cd5bd14d3a7c28e9292ceca3c03367d7e4.png",
+      "content": "Marauders fight with a barely contained ferocity that they can choose to unleash in combat. Once per Combat Round, the marauder may place one Heart in either a might box or a speed box as if it were a matching cube. This placement does **not** count against the cube limit for the Combat Round. During the Cleanup phase of Combat, the Heart is wounded. A Heart may not be placed in a box with a wound symbol.",
       "tags": [
         "classAdvantage"
       ]
@@ -500,7 +505,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Monk (Iron Fist)",
-      "content": "Monks are masters of unarmed combat. If a monk has an open weapon position and places no cubes on weapon or spell cards, they strike with their fist with a base damage of 0 might and 1 sword. Additional Might Cubes may be placed on the Class Card to increase the base damage of a monk’s fist strike. If the player places a Might Cube in the box with a wound symbol, that cube is moved to the wounded box during the Cleanup step.\n\n![](/images/pdf/b22c75bbdd10648a513eea9837d73880af20e010.jpeg)",
+      "icon": "/images/pdf/b22c75bbdd10648a513eea9837d73880af20e010.jpeg",
+      "content": "Monks are masters of unarmed combat. If a monk has an open weapon position and places no cubes on weapon or spell cards, they strike with their fist with a base damage of 0 might and 1 sword. Additional Might Cubes may be placed on the Class Card to increase the base damage of a monk’s fist strike. If the player places a Might Cube in the box with a wound symbol, that cube is moved to the wounded box during the Cleanup step.",
       "tags": [
         "classAdvantage"
       ]
@@ -510,7 +516,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Pit Fighter (Weaponmaster)",
-      "content": "Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.\n\n![](/images/pdf/1b7e35d1891256e7063bd3836f498c7442b36679.jpeg)\n\n![](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg)",
+      "icon": "/images/pdf/1b7e35d1891256e7063bd3836f498c7442b36679.jpeg",
+      "content": "Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.\n\n![](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg)",
       "tags": [
         "classAdvantage"
       ]
@@ -520,7 +527,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Vanguard (Primal Strike)",
-      "content": "Vanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.\n\n![](/images/pdf/92ec0c47d2eddfcac1807572bfb3914bc9f9ae0f.jpeg)",
+      "icon": "/images/pdf/92ec0c47d2eddfcac1807572bfb3914bc9f9ae0f.jpeg",
+      "content": "Vanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.",
       "tags": [
         "classAdvantage"
       ]
