@@ -106,7 +106,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Possess",
-    "content": "Permanent. Wound two black cubes. When the spell is resolved, replace the caster with any non-undead Monster or Native in the same clearing. When the spell is inactive, place the Monster or Native counter on the Spell Card and use the Hero Chip again.\n\nThis spell works identically to Shape Shift, except that it does not need to hit to take effect and the Hero may possess a unique Monster, including Guardians.\n\nIf the spell expires (*for example, via a Break Spells spell or other game effects*), both the Hero and the Monster or Native are immediately placed in the clearing. Possessing a Native turns the targeted Native Group into a permanent enemy. Does not affect the undead.",
+    "content": "Permanent. Wound two black cubes. When the spell is resolved, replace the caster with any non-undead Monster or Native in the same clearing. When the spell is inactive, place the Monster or Native counter on the Spell Card and use the Hero Chip again.\n\nThis spell works identically to Shape Shift, except that it does not need to hit to take effect and the Hero may possess a unique Monster, including Guardians.\n\nIf the spell expires (*for example, via a Break Spells spell or other game effects*), both the Hero and the Monster or Native are immediately placed in the clearing. Possessing a Native turns the targeted Native Group into a permanent enemy. Does not affect the undead.\n\n![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)",
     "tags": [
       "spell",
       "blackMagic"
@@ -139,7 +139,7 @@
     "source": "core",
     "level": 1,
     "title": "Blue Spells",
-    "content": "Blue spells are from the realm of conjuring. Blue magic focuses on manifesting and controlling things in the real world. Blue spells tend to break the rules of the physical world for the caster."
+    "content": "Blue spells are from the realm of conjuring. Blue magic focuses on manifesting and controlling things in the real world. Blue spells tend to break the rules of the physical world for the caster.\n\n![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)"
   },
   {
     "id": "9.6.3.4",
@@ -168,7 +168,7 @@
     "source": "core",
     "level": 2,
     "title": "Floating Disk",
-    "content": "![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)\n\nSelf or other. Turn. The targeted Hero may have any number of active treasures in their miscellaneous positions.",
+    "content": "Self or other. Turn. The targeted Hero may have any number of active treasures in their miscellaneous positions.",
     "tags": [
       "spell",
       "blueMagic"
@@ -179,7 +179,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Foresight",
-    "content": "Instantaneous. Wound two blue cubes. Set any one of the Summoning Dice to a side of your choosing. That die will not be rolled next turn and will instead use the selected die face. Should another Hero cast a second foresight spell in the same turn, they may change the already selected die or another die.",
+    "content": "Instantaneous. Wound two blue cubes. Set any one of the Summoning Dice to a side of your choosing. That die will not be rolled next turn and will instead use the selected die face. Should another Hero cast a second foresight spell in the same turn, they may change the already selected die or another die.\n\n![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)",
     "tags": [
       "spell",
       "blueMagic"
@@ -256,7 +256,7 @@
     "source": "core",
     "level": 1,
     "title": "Gray Spells",
-    "content": "Gray spells are from the realm of trickery. Gray spells often involve altering the view of the world around the caster to confuse others, obfuscate reality, or making things disappear completely."
+    "content": "Gray spells are from the realm of trickery. Gray spells often involve altering the view of the world around the caster to confuse others, obfuscate reality, or making things disappear completely.\n\n![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)"
   },
   {
     "id": "9.6.4.4",
@@ -274,7 +274,7 @@
     "source": "core",
     "level": 2,
     "title": "Divination",
-    "content": "![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nSelf or other. Turn. The targeted Hero may reroll any number of dice during one Loot Action.",
+    "content": "Self or other. Turn. The targeted Hero may reroll any number of dice during one Loot Action.",
     "tags": [
       "spell",
       "grayMagic"
@@ -307,7 +307,7 @@
     "source": "core",
     "level": 2,
     "title": "Illusion",
-    "content": "![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)\n\nSelf or other. Combat. Wound one gray cube. All attackers targeting the Hero or Monster suffer -1 to their attack speed. The effect is not cumulative with other Illusion spells.",
+    "content": "Self or other. Combat. Wound one gray cube. All attackers targeting the Hero or Monster suffer -1 to their attack speed. The effect is not cumulative with other Illusion spells.",
     "tags": [
       "spell",
       "grayMagic"
@@ -318,7 +318,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Malediction",
-    "content": "Targeted (*infinite number of targets*). Instantaneous. Wound two gray cubes. This spell affects all Monsters, Natives, and Heroes (*including hidden Heroes*) in the clearing except for the caster. The spell causes a single individual melee attack of 1 damage against each target. Does not affect the undead.",
+    "content": "Targeted (*infinite number of targets*). Instantaneous. Wound two gray cubes. This spell affects all Monsters, Natives, and Heroes (*including hidden Heroes*) in the clearing except for the caster. The spell causes a single individual melee attack of 1 damage against each target. Does not affect the undead.\n\n![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)",
     "tags": [
       "spell",
       "grayMagic"
@@ -373,7 +373,7 @@
     "source": "core",
     "level": 1,
     "title": "Green Spells",
-    "content": "![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nGreen spells are from the realm of nature. Green magic seeks to live harmoniously with the natural world. Green magic calls upon the wild to aid the caster."
+    "content": "Green spells are from the realm of nature. Green magic seeks to live harmoniously with the natural world. Green magic calls upon the wild to aid the caster.\n\n![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)"
   },
   {
     "id": "9.6.5.4",
@@ -402,7 +402,7 @@
     "source": "core",
     "level": 2,
     "title": "Elemental",
-    "content": "![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nCombat. Wound one green cube. Randomly select one of the Elemental Monster Chips and place it in the clearing. Next Combat Round, the Elemental participates\n\nin combat controlled by the caster. A caster earns no Fame for killing their own Elemental, but earns Fame for kills made by the Elemental. The spell expires if the Elemental is killed, the spell caster is killed, or the spell caster leaves the clearing.",
+    "content": "Combat. Wound one green cube. Randomly select one of the Elemental Monster Chips and place it in the clearing. Next Combat Round, the Elemental participates\n\nin combat controlled by the caster. A caster earns no Fame for killing their own Elemental, but earns Fame for kills made by the Elemental. The spell expires if the Elemental is killed, the spell caster is killed, or the spell caster leaves the clearing.",
     "tags": [
       "spell",
       "greenMagic"
@@ -435,7 +435,7 @@
     "source": "core",
     "level": 2,
     "title": "Nature’s Help",
-    "content": "![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nSelf or other. Turn. The targeted Hero may reroll any number of dice during one Search Action.",
+    "content": "Self or other. Turn. The targeted Hero may reroll any number of dice during one Search Action.",
     "tags": [
       "spell",
       "greenMagic"
@@ -457,7 +457,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Sunder",
-    "content": "Instantaneous. Wound two green cubes. May only be cast while on an edge Map Tile. Move the caster’s tile to any other empty location touching two or more Map Tiles. The affected Map Tile may be rotated as the caster wishes, but must be placed in such a way that all paths on the Map Tile and adjacent Map Tiles connect to existing paths.",
+    "content": "Instantaneous. Wound two green cubes. May only be cast while on an edge Map Tile. Move the caster’s tile to any other empty location touching two or more Map Tiles. The affected Map Tile may be rotated as the caster wishes, but must be placed in such a way that all paths on the Map Tile and adjacent Map Tiles connect to existing paths.\n\n![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)",
     "tags": [
       "spell",
       "greenMagic"
@@ -479,7 +479,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Wildshape",
-    "content": "Self. Permanent. Wound one green cube. When this spell is cast (*or active*) the caster selects any non-undead, non-unique Monster counter from the monster tray whose type is printed on the Map Tile in which the caster resides.\n\n![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nThis spell works identical to Shape Shift, except as follows:\n\n- If the Hero moves to a new Map Tile while the spell is active, they return the selected Monster Chip to the monster tray and must select a Monster as described above (*is printed on the Map Tile being entered*), gaining all characteristics of that Monster immediately.\n\nNote: In a Civilization Map Tile, the caster becomes the Wandering Monster for the Terrain Pack. *For example, in the Mine tile, the caster becomes a Giant Bat.*",
+    "content": "Self. Permanent. Wound one green cube. When this spell is cast (*or active*) the caster selects any non-undead, non-unique Monster counter from the monster tray whose type is printed on the Map Tile in which the caster resides.\n\nThis spell works identical to Shape Shift, except as follows:\n\n- If the Hero moves to a new Map Tile while the spell is active, they return the selected Monster Chip to the monster tray and must select a Monster as described above (*is printed on the Map Tile being entered*), gaining all characteristics of that Monster immediately.\n\nNote: In a Civilization Map Tile, the caster becomes the Wandering Monster for the Terrain Pack. *For example, in the Mine tile, the caster becomes a Giant Bat.*",
     "tags": [
       "spell",
       "greenMagic"
@@ -490,7 +490,7 @@
     "source": "core",
     "level": 1,
     "title": "Purple Spells",
-    "content": "Purple spells are from the realm of sorcery. Purple magic is about the raw power of magic calling upon sorcery to create energy and control it in the real world. Purple spells create, change, and destroy."
+    "content": "Purple spells are from the realm of sorcery. Purple magic is about the raw power of magic calling upon sorcery to create energy and control it in the real world. Purple spells create, change, and destroy.\n\n![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)"
   },
   {
     "id": "9.6.6.4",
@@ -530,7 +530,7 @@
     "source": "core",
     "level": 2,
     "title": "Iron Skin",
-    "content": "![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)\n\n![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)\n\nSelf or other. Combat. A hit against this target that does not strike armor follows the rules for armored Monsters (*removes one sword icon*).",
+    "content": "Self or other. Combat. A hit against this target that does not strike armor follows the rules for armored Monsters (*removes one sword icon*).",
     "tags": [
       "spell",
       "purpleMagic"
@@ -552,7 +552,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Magic Snare",
-    "content": "![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nTargeted. Instantaneous. Wound one purple cube. The target suffers -1 maneuver speed and loses Flying Ability for the duration of Combat.",
+    "content": "Targeted. Instantaneous. Wound one purple cube. The target suffers -1 maneuver speed and loses Flying Ability for the duration of Combat.",
     "tags": [
       "spell",
       "purpleMagic"
@@ -574,7 +574,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Pyroclasm",
-    "content": "![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nTargeted (*infinite targets*). Ranged Attack. Instantaneous. Wound two purple cubes.  Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 2 swords.",
+    "content": "Targeted (*infinite targets*). Ranged Attack. Instantaneous. Wound two purple cubes.  Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 2 swords.\n\n![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)",
     "tags": [
       "spell",
       "purpleMagic"
@@ -585,7 +585,7 @@
     "source": "core",
     "level": 2,
     "title": "Shape Shift",
-    "content": "![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nSelf. Permanent. Wound one Purple cube. When this spell is cast the caster selects any non-undead, non-unique Monster Chip (*no Guardians or leaders, e.g., Kobold* *Rex*) from the monster tray and replaces their Hero with it. The caster may choose either side of the Monster Chip to be face-up during Hero tactics each Combat Round and ignores the Monster tactics step. The Hero fights as a Monster using the face-up Monster characteristics, ignoring their own cubes and possessions. All Monster wounds are healed at the end of combat.\n\nWhile Shape Shift is active, the Hero may perform Sneak, Make Noise, Move, Search,  and Loot Actions. Action Cubes are unavailable. All possessions are inactive (*as if in the backpack*). Possessions gained while Shape Shifted are  placed in the backpack.\n\nWhen inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray*.*",
+    "content": "Self. Permanent. Wound one Purple cube. When this spell is cast the caster selects any non-undead, non-unique Monster Chip (*no Guardians or leaders, e.g., Kobold* *Rex*) from the monster tray and replaces their Hero with it. The caster may choose either side of the Monster Chip to be face-up during Hero tactics each Combat Round and ignores the Monster tactics step. The Hero fights as a Monster using the face-up Monster characteristics, ignoring their own cubes and possessions. All Monster wounds are healed at the end of combat.\n\nWhile Shape Shift is active, the Hero may perform Sneak, Make Noise, Move, Search,  and Loot Actions. Action Cubes are unavailable. All possessions are inactive (*as if in the backpack*). Possessions gained while Shape Shifted are  placed in the backpack.\n\nWhen inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray*.*",
     "tags": [
       "spell",
       "purpleMagic"
@@ -607,7 +607,7 @@
     "source": "core",
     "level": 1,
     "title": "White Spells",
-    "content": "![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nWhite spells are from the realm of life and good. White spells tend to heal, promote life, and bring peace. White magic targets the undead as an abomination."
+    "content": "White spells are from the realm of life and good. White spells tend to heal, promote life, and bring peace. White magic targets the undead as an abomination.\n\n![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)"
   },
   {
     "id": "9.6.7.2",
@@ -680,7 +680,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Renewal",
-    "content": "Permanent. Wound two white cubes. At the end of each Combat Round, including the two rounds at the end of Combat during which nothing happens, roll the two Monster Dice. If neither die shows a Monster symbol, heal one cube.",
+    "content": "Permanent. Wound two white cubes. At the end of each Combat Round, including the two rounds at the end of Combat during which nothing happens, roll the two Monster Dice. If neither die shows a Monster symbol, heal one cube.\n\n![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)",
     "tags": [
       "spell",
       "whiteMagic"
@@ -702,7 +702,7 @@
     "source": "core",
     "level": 2,
     "title": "Soul Save",
-    "content": "![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nSelf or other. Combat. Undead that attack this Hero or Monster must reroll the most favorable single Hit Die result rolled, unless both die results were blank.",
+    "content": "Self or other. Combat. Undead that attack this Hero or Monster must reroll the most favorable single Hit Die result rolled, unless both die results were blank.",
     "tags": [
       "spell",
       "whiteMagic"
@@ -724,7 +724,7 @@
     "source": "core",
     "level": 1,
     "title": "Yellow Spells",
-    "content": "Yellow spells are from the realm of enchantment. Yellow spells tend to enchant, befuddle, and mesmerize. Yellow magic is subtle, but powerful for the caster who wields it well."
+    "content": "Yellow spells are from the realm of enchantment. Yellow spells tend to enchant, befuddle, and mesmerize. Yellow magic is subtle, but powerful for the caster who wields it well.\n\n![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)"
   },
   {
     "id": "5.6.7.4",
@@ -764,7 +764,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Counterplay",
-    "content": "![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nTargeted. Combat. Wound one yellow cube. The target must roll one additional Hit Die when their attack speed is not faster than their target’s maneuver speed. Does not affect the undead.",
+    "content": "Targeted. Combat. Wound one yellow cube. The target must roll one additional Hit Die when their attack speed is not faster than their target’s maneuver speed. Does not affect the undead.",
     "tags": [
       "spell",
       "yellowMagic"
@@ -808,7 +808,7 @@
     "source": "core",
     "level": 2,
     "title": "Hesitation",
-    "content": "![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nTargeted. Combat. If the spell hits, the target suffers -1 to their maneuver speed the next time this target is attacked. The spell expires immediately after resolving that attack. Hesitation is not cumulative with other Hesitation spells.",
+    "content": "Targeted. Combat. If the spell hits, the target suffers -1 to their maneuver speed the next time this target is attacked. The spell expires immediately after resolving that attack. Hesitation is not cumulative with other Hesitation spells.",
     "tags": [
       "spell",
       "yellowMagic"

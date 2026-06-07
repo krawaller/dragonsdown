@@ -35,6 +35,15 @@
       ]
     }
   ],
+  "Medina": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12151218835804852862/D643B21FFAC382ED9ED7DC2C4441983325AA0AE6/",
+      "ancestry": [
+        "Medina"
+      ]
+    }
+  ],
   "Mine": [
     {
       "source": "dd_all_exp",
@@ -50,6 +59,15 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453710346/67516649C330B90ABFBE0DADCC4BC50C7AA6C046/",
       "ancestry": [
         "Outpost"
+      ]
+    }
+  ],
+  "Port": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15293060858863846884/52798182B3D9F7EF74104488BF04ECF3A23892E2/",
+      "ancestry": [
+        "Port"
       ]
     }
   ],

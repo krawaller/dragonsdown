@@ -520,6 +520,16 @@
     ]
   },
   {
+    "id": "5.5.0.40",
+    "source": "eastern-reaches",
+    "level": 4,
+    "title": "Staff of Thaumaturgy",
+    "content": "Epic Treasure. Melee weapon. When the possessing Hero performs an enchant action, they may choose to enchant the staff of thaumaturgy instead of the Map Tile. Do not flip over the Map Tile. Place the chosen Magic Cube on the staff card instead. If the Magic Cube is later used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the Magic Cube is discarded.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
     "id": "2.5.0.23",
     "source": "desolation",
     "level": 4,
@@ -535,6 +545,16 @@
     "level": 4,
     "title": "Storm’s Eye",
     "content": "Epic Treasure. No flying, swimming, or Ferry Movement within the Map Tile containing the Storm’s Eye. *Exception: If a Hero begins their Action Phase on a* *River Clearing, they may use normal Ferry Movement to move to the nearest Dock* *Clearing.*\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "tags": [
+      "deepTreasure"
+    ]
+  },
+  {
+    "id": "9.5.0.73",
+    "source": "core",
+    "level": 4,
+    "title": "Summoning Marcation",
+    "content": "Epic Treasure. Valuable. During Monster Activation, it summons as if all Local Monster Die summoning icons printed on Map Tiles in adjacent tiles are also located in the Map Tile containing the Summoning Marcation.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
     ]

@@ -1024,7 +1024,7 @@
     "source": "core",
     "level": 4,
     "title": "Spell Book and Spell Scroll",
-    "content": "Contains 1-3 spells. When a Spell Book or Scroll is revealed, draw the indicated number of Spell Cards from the deck and place them face-down under the Treasure Card. A Hero performing a Trade Action with a Merchant may reveal the Spell Book to all players in order to draw and secretly look at the spells attached to the Treasure Card. The base price of the Treasure Card is the sum of the spells remaining with the Spell Book or Spell Scroll.\n\n![](/images/pdf/cb33661a999ce2226bc10f45c9dd365f62991849.jpeg)\n\nThe Hero possessing the Spell Book or Spell Scroll may freely look at the attached spells at any time. These spells are available for a spell caster to learn if the Hero has a Magic Cube matching the spell type.\n\nThe Treasure Card is discarded if the last spell is removed from it, typically because a spell caster learned the spell.",
+    "content": "Contains 1-3 spells. When a Spell Book or Scroll is revealed, draw the indicated number of Spell Cards from the deck and place them face-down under the Treasure Card. A Hero performing a Trade Action with a Merchant may reveal the Spell Book to all players in order to draw and secretly look at the spells attached to the Treasure Card. The base price of the Treasure Card is the sum of the spells remaining with the Spell Book or Spell Scroll.\n\nThe Hero possessing the Spell Book or Spell Scroll may freely look at the attached spells at any time. These spells are available for a spell caster to learn if the Hero has a Magic Cube matching the spell type.\n\nThe Treasure Card is discarded if the last spell is removed from it, typically because a spell caster learned the spell.",
     "tags": [
       "treasure"
     ]
@@ -1050,31 +1050,11 @@
     ]
   },
   {
-    "id": "5.5.0.40",
-    "source": "eastern-reaches",
-    "level": 4,
-    "title": "Staff of Thaumaturgy",
-    "content": "![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)\n\nEpic Treasure. Melee weapon. When the possessing Hero performs an enchant action, they may choose to enchant the staff of thaumaturgy instead of the Map Tile. Do not flip over the Map Tile. Place the chosen Magic Cube on the staff card instead. If the Magic Cube is later used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the Magic Cube is discarded.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
     "id": "5.5.0.39",
     "source": "eastern-reaches",
     "level": 4,
     "title": "Staff of the Sharp Sands",
     "content": "Melee weapon. Only in play if the Dreadful Deserts Terrain Pack is in use. +1 sword if Combat is occurring in a Desert Clearing.",
-    "tags": [
-      "treasure"
-    ]
-  },
-  {
-    "id": "9.5.0.73",
-    "source": "core",
-    "level": 4,
-    "title": "Summoning Marcation",
-    "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nEpic Treasure. Valuable. During Monster Activation, it summons as if all Local Monster Die summoning icons printed on Map Tiles in adjacent tiles are also located in the Map Tile containing the Summoning Marcation.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
     "tags": [
       "treasure"
     ]
@@ -1224,7 +1204,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "The Sting",
-    "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nOne-time use. Attacks by this Hero gain +1 sword for the duration of Combat.",
+    "content": "One-time use. Attacks by this Hero gain +1 sword for the duration of Combat.",
     "tags": [
       "treasure"
     ]

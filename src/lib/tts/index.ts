@@ -114,7 +114,10 @@ export type CivLocationIndex = Record<string, TTSCivLocation[]>;
 export function prettifyChipName(s: string): string {
   return s
     .replace(/([a-z])([A-Z])/g, "$1 $2")
-    .replace(/(^|\s)([a-z])/g, (_, sep: string, c: string) => sep + c.toUpperCase());
+    .replace(
+      /(^|\s)([a-z])/g,
+      (_, sep: string, c: string) => sep + c.toUpperCase(),
+    );
 }
 
 /**
@@ -229,11 +232,7 @@ export function extractCards(root: unknown, source: string): CardIndex {
 }
 
 export function isSameCell(a: TTSCardImage, b: TTSCardImage): boolean {
-  return (
-    a.faceURL === b.faceURL &&
-    a.row === b.row &&
-    a.col === b.col
-  );
+  return a.faceURL === b.faceURL && a.row === b.row && a.col === b.col;
 }
 
 export function mergeTags(
@@ -378,7 +377,12 @@ export function extractCivLocations(
     const ci = obj.CustomImage as
       | { ImageURL?: string; ImageSecondaryURL?: string }
       | undefined;
-    if (ci?.ImageURL && ci.ImageURL === ci.ImageSecondaryURL) {
+    if (
+      ci?.ImageURL &&
+      (ci.ImageURL === ci.ImageSecondaryURL ||
+        (ci.ImageSecondaryURL === "" &&
+          (obj.Nickname === "Port" || obj.Nickname === "Medina")))
+    ) {
       tiles.push({ obj: obj as unknown as LocObj, ancestry });
     }
     const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
@@ -442,11 +446,7 @@ function walkChips(
  * `Nickname` is non-empty contributes to the ancestry; Card's own Nickname
  * is not included (only its ancestors).
  */
-function walk(
-  obj: unknown,
-  ancestry: string[],
-  out: CardWithAncestry[],
-): void {
+function walk(obj: unknown, ancestry: string[], out: CardWithAncestry[]): void {
   if (!isRecord(obj)) return;
   if (
     (obj.Name === "Card" || obj.Name === "CardCustom") &&
@@ -459,7 +459,8 @@ function walk(
   const childAncestry = nick ? [...ancestry, nick] : ancestry;
   // ObjectStates is the top-level array; ContainedObjects is the nested one.
   const states = obj.ObjectStates;
-  if (Array.isArray(states)) for (const s of states) walk(s, childAncestry, out);
+  if (Array.isArray(states))
+    for (const s of states) walk(s, childAncestry, out);
   const contained = (obj as TTSContainer).ContainedObjects;
   if (Array.isArray(contained))
     for (const s of contained) walk(s, childAncestry, out);

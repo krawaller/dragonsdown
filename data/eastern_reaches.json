@@ -20,14 +20,14 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Plus One Summoning",
-      "content": "If there is a +1 symbol next to the Summoning Die Symbol on a Map Tile, place one additional matching Monster in the Map Tile when summoned."
+      "content": "If there is a +1 symbol next to the Summoning Die Symbol on a Map Tile, place one additional matching Monster in the Map Tile when summoned.\n\n![](/images/pdf/6cc4fd619f2aa9f33e1b720bf118c8b2a9d88914.png)"
     },
     {
       "id": "1.1.0.2",
       "source": "eastern-reaches",
       "level": 4,
       "title": "Gnomes Lineage",
-      "content": "![](/images/pdf/6cc4fd619f2aa9f33e1b720bf118c8b2a9d88914.png)\n\nGnomes are inventive, but cannot invent a horse. If playing with horses (*optional* *rule*), players who select the Gnome Lineage replace any horses drawn at game start with another Item Card before choosing which card to keep."
+      "content": "Gnomes are inventive, but cannot invent a horse. If playing with horses (*optional* *rule*), players who select the Gnome Lineage replace any horses drawn at game start with another Item Card before choosing which card to keep."
     },
     {
       "id": "1.1.0.3",
@@ -139,14 +139,14 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Setup",
-      "content": "![](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg)\n\nSelect either Open Realm or Exploration sandbox as normal and set up the game according to the chosen ruleset and Terrain Packs. All rules from the selected sandbox remain in effect unless noted below."
+      "content": "Select either Open Realm or Exploration sandbox as normal and set up the game according to the chosen ruleset and Terrain Packs. All rules from the selected sandbox remain in effect unless noted below."
     },
     {
       "id": "2.0.3",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Universal Rules for All Cooperative Games",
-      "content": "![](/images/pdf/6cc4fd619f2aa9f33e1b720bf118c8b2a9d88914.png)\n\n- **Cooperation:** Heroes may not target other Heroes or hired natives without consent (*e.g. Fiery Chasm*) and gain no rewards for doing so.\n\n- **Guardian Summoning:** When one or more Guardians are summoned to the Map Tile, summon one random **Local Monster** that is native in the Map Tile for each Hero on the Map Tile beyond the first, regardless of clearing location. This is in addition to the Guardian and/or any Wandering Monsters summoned to the clearing. *For example, two* *Heroes are alone on the Grassy Plains with the Monolith. The black die* *shows a Site Symbol. Summon the Omnicrux and 1 Owlbear.*\n\n- **Monster Summoning:** When non-Guardian Monsters are summoned to a clearing containing Heroes, summon one additional Monster of the same type for each Hero in the clearing beyond the first. *For example,* *three Heroes are in a clearing and the Summoning Dice indicate that 4* *Orcs and 2 Dire Wolves should be summoned. Instead, summon 6 Orcs* *and 4 Dire Wolves.*"
+      "content": "- **Cooperation:** Heroes may not target other Heroes or hired natives without consent (*e.g. Fiery Chasm*) and gain no rewards for doing so.\n\n- **Guardian Summoning:** When one or more Guardians are summoned to the Map Tile, summon one random **Local Monster** that is native in the Map Tile for each Hero on the Map Tile beyond the first, regardless of clearing location. This is in addition to the Guardian and/or any Wandering Monsters summoned to the clearing. *For example, two* *Heroes are alone on the Grassy Plains with the Monolith. The black die* *shows a Site Symbol. Summon the Omnicrux and 1 Owlbear.*\n\n- **Monster Summoning:** When non-Guardian Monsters are summoned to a clearing containing Heroes, summon one additional Monster of the same type for each Hero in the clearing beyond the first. *For example,* *three Heroes are in a clearing and the Summoning Dice indicate that 4* *Orcs and 2 Dire Wolves should be summoned. Instead, summon 6 Orcs* *and 4 Dire Wolves.*"
     },
     {
       "id": "2.1",
@@ -209,21 +209,21 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Game Setup",
-      "content": "![](/images/pdf/77e01b0a4425aada9fe5a9ec9c7c49a6295eb88d.jpeg)\n\nPlayers may choose from any of the Terrain Packs, including the two new Terrain Packs included in the Eastern Reaches expansion, in any combination.\n\n![](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg)\n\n![](/images/pdf/4d6151c56e74b8108e2bd030cdf6223491cc1808.jpeg)\n\nThe Dreadful Deserts Terrain Pack is a place of great risk and great reward, having more Treasure Sites than any other Terrain Pack. The Dreadful Deserts are explained on page 4 of these rules.\n\n![](/images/pdf/86166c4eec6be82975f389cf1c132e8c1db497b5.jpeg)\n\nThe Ruthless Riverlands Terrain Pack is roughly equivalent to the Malevolent Mountains or Cruel Caves in terms of reward and danger. The Ruthless Riverlands provides a method to travel quickly across the map... for the Hero willing to part with their Gold. The Ruthless Riverlands are explained on page 4 of these rules.\n\nIf playing with either of the new Terrain Packs, roll the additional gray Summoning Die, along with the original gray Summoning Die, during the Monster Activation phase. Results from all Summoning Dice apply to all Map Tiles. There is no mechanical difference between the new return arrow and the original return arrow. The new arrow includes a small mark for visual distinction."
+      "content": "Players may choose from any of the Terrain Packs, including the two new Terrain Packs included in the Eastern Reaches expansion, in any combination.\n\nThe Dreadful Deserts Terrain Pack is a place of great risk and great reward, having more Treasure Sites than any other Terrain Pack. The Dreadful Deserts are explained on page 4 of these rules.\n\nThe Ruthless Riverlands Terrain Pack is roughly equivalent to the Malevolent Mountains or Cruel Caves in terms of reward and danger. The Ruthless Riverlands provides a method to travel quickly across the map... for the Hero willing to part with their Gold. The Ruthless Riverlands are explained on page 4 of these rules.\n\nIf playing with either of the new Terrain Packs, roll the additional gray Summoning Die, along with the original gray Summoning Die, during the Monster Activation phase. Results from all Summoning Dice apply to all Map Tiles. There is no mechanical difference between the new return arrow and the original return arrow. The new arrow includes a small mark for visual distinction."
     },
     {
       "id": "3.2",
       "source": "eastern-reaches",
       "level": 2,
       "title": "New Spells",
-      "content": "![](/images/pdf/7d6a986331e07cd28349494ca77a24c748f0df21.jpeg)\n\n![](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg)\n\nDragons Down: Eastern Reaches adds 70 new Spell Cards, featuring 35 new Spell types. These cards are compatible with all games of Dragons Down. Place all cards into their respective decks. Shuffle the Spell Card deck. Do not shuffle the Hero Starting Spell deck."
+      "content": "Dragons Down: Eastern Reaches adds 70 new Spell Cards, featuring 35 new Spell types. These cards are compatible with all games of Dragons Down. Place all cards into their respective decks. Shuffle the Spell Card deck. Do not shuffle the Hero Starting Spell deck."
     },
     {
       "id": "3.3",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Player Setup",
-      "content": "![](/images/pdf/f6844a13fa69d074640779670fc8c922d3b7f162.jpeg)\n\n![](/images/pdf/12834a26f5372fb42cd58502c246248573bc1607.jpeg)\n\nPlayers may choose from any of the Lineages and Classes. Note that the new Lineage and some Classes are designed to take advantage of deserts or riverlands."
+      "content": "Players may choose from any of the Lineages and Classes. Note that the new Lineage and some Classes are designed to take advantage of deserts or riverlands."
     },
     {
       "id": "3.4",
@@ -244,14 +244,14 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Wilderness Tokens",
-      "content": "The Eastern Reaches expansion adds 23 Wilderness Tokens (*one for each existing* *Terrain Pack and 9 tokens for each new Terrain Pack*). Mix each of these new tokens into the existing Wilderness Tokens for any Terrain Packs in play. Some tokens are marked with a + sign on the front face of the token. When moving or exploring a Hero may reveal one of the new tokens. Each new token is explained below:\n\n- **Discovery**: Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n![](/images/pdf/68edfc435ae28f54feacd00f28507d88a326ee03.jpeg)\n\n- **Oasis**: Draw one additional Wilderness Token from the Dreadful Desert Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the larger Oasis location counter in the\n\n![](/images/pdf/1f5d2fdbc622e3b24a7b4c326d74751d6c1b37b0.jpeg)\n\nindicated clearing. *Exception: If the die roll indicates a clearing with a* *Treasure Site or Civilization Location, reroll the die, unless there are no* *available clearings. Draw two Civilization Tokens and place them in the Map* *Tile near the Oasis. For all purposes, the Oasis is a Civilization Location.*\n\n- **Buried Temple:** Draw one additional Wilderness Token from each Terrain Setup Card in play and place them in the Map Tile. The revealing Hero receives 1 LP and 5 Fame. *Note the rule* *adjustment for Special Location Wilderness Tokens on page 1 of these rules.*"
+      "content": "The Eastern Reaches expansion adds 23 Wilderness Tokens (*one for each existing* *Terrain Pack and 9 tokens for each new Terrain Pack*). Mix each of these new tokens into the existing Wilderness Tokens for any Terrain Packs in play. Some tokens are marked with a + sign on the front face of the token. When moving or exploring a Hero may reveal one of the new tokens. Each new token is explained below:\n\n- **Discovery**: Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n![](/images/pdf/68edfc435ae28f54feacd00f28507d88a326ee03.jpeg)\n\n- **Oasis**: Draw one additional Wilderness Token from the Dreadful Desert Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the larger Oasis location counter in the\n\n![](/images/pdf/1f5d2fdbc622e3b24a7b4c326d74751d6c1b37b0.jpeg)\n\nindicated clearing. *Exception: If the die roll indicates a clearing with a* *Treasure Site or Civilization Location, reroll the die, unless there are no* *available clearings. Draw two Civilization Tokens and place them in the Map* *Tile near the Oasis. For all purposes, the Oasis is a Civilization Location.*\n\n- **Buried Temple:** Draw one additional Wilderness Token from each Terrain Setup Card in play and place them in the Map Tile. The revealing Hero receives 1 LP and 5 Fame. *Note the rule* *adjustment for Special Location Wilderness Tokens on page 1 of these rules.*\n\n![](/images/pdf/4d6151c56e74b8108e2bd030cdf6223491cc1808.jpeg)"
     },
     {
       "id": "3.5",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Dreadful Deserts",
-      "content": "![](/images/pdf/4d6151c56e74b8108e2bd030cdf6223491cc1808.jpeg)"
+      "content": ""
     },
     {
       "id": "3.5.1",
@@ -286,14 +286,14 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Map Setup for All Game Modes",
-      "content": "When playing with the Ruthless Riverlands, build the river first. 1.\t Shuffle all non-Ruthless Riverlands Map Tiles together. 2.\t Place the Port Map Tile near the center of the table. 3.\t Shuffle all Ruthless Riverlands Map Tiles except the Headlands tile. 4.\t Starting from the Port, randomly draw and connect Ruthless Riverlands tiles, random side up, to the previous tile’s river edge. 5.\t Place the Headlands Map Tile last.\n\n![](/images/pdf/68edfc435ae28f54feacd00f28507d88a326ee03.jpeg)\n\nAfter the river is built:\n\n- **Open Realm Mode:** Proceed with normal map building.\n- **Exploration Mode:** Place the Port in a random clearing on the Port tile (*incl. River Clearings*). Heroes begin the game on the Port tile."
+      "content": "When playing with the Ruthless Riverlands, build the river first. 1.\t Shuffle all non-Ruthless Riverlands Map Tiles together. 2.\t Place the Port Map Tile near the center of the table. 3.\t Shuffle all Ruthless Riverlands Map Tiles except the Headlands tile. 4.\t Starting from the Port, randomly draw and connect Ruthless Riverlands tiles, random side up, to the previous tile’s river edge. 5.\t Place the Headlands Map Tile last.\n\nAfter the river is built:\n\n- **Open Realm Mode:** Proceed with normal map building.\n- **Exploration Mode:** Place the Port in a random clearing on the Port tile (*incl. River Clearings*). Heroes begin the game on the Port tile."
     },
     {
       "id": "3.6.2",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Riverlands Treasures",
-      "content": "![](/images/pdf/1f5d2fdbc622e3b24a7b4c326d74751d6c1b37b0.jpeg)\n\nSome treasures are specific to the Ruthless Riverlands Terrain Pack (*cards are marked with a Ruthless Riverlands Terrain Pack symbol next to* *the*       ). If the Riverlands are not in play, remove these cards from play."
+      "content": "Some treasures are specific to the Ruthless Riverlands Terrain Pack (*cards are marked with a Ruthless Riverlands Terrain Pack symbol next to* *the*       ). If the Riverlands are not in play, remove these cards from play."
     },
     {
       "id": "3.6.3",
@@ -342,7 +342,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Terrain Effects",
-      "content": "Terrain effects give additional importance to the individual clearing type. The terrain effect is ignored if the clearing contains a Civilization Location.\n\n![](/images/pdf/369397a7d01ea1fd0dfce507a90b50c75e7783cc.jpeg)\n\n- **Woods Clearing:** Heroes attempting to hide in a Woods Clearing receive the benefits of sneaking, even if they did not do so this turn.\n\n- **Plains Clearing:** Heroes attempting to hide in a Plains Clearing do not receive the benefits of sneaking, even if they did so this turn.\n\n- **Swamps Clearing:** Heroes may not perform the rest action while in a Swamp Clearing due to the diseased and fetid nature of swamps.\n\n- **Caves, Mountains, Deserts, and River Clearing:** No additional effect."
+      "content": "Terrain effects give additional importance to the individual clearing type. The terrain effect is ignored if the clearing contains a Civilization Location.\n\n- **Woods Clearing:** Heroes attempting to hide in a Woods Clearing receive the benefits of sneaking, even if they did not do so this turn.\n\n- **Plains Clearing:** Heroes attempting to hide in a Plains Clearing do not receive the benefits of sneaking, even if they did so this turn.\n\n- **Swamps Clearing:** Heroes may not perform the rest action while in a Swamp Clearing due to the diseased and fetid nature of swamps.\n\n- **Caves, Mountains, Deserts, and River Clearing:** No additional effect."
     },
     {
       "id": "4.4",
@@ -377,14 +377,14 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Horses",
-      "content": "Horses are optional Item Cards that act as companions to Heroes. They provide benefits to Heroes, but introduce some additional rules complexity. We recommend playing without horses until players are familiar with Dragons Down. To include horses in your play session, shuffle the 10 horse cards into the Item Deck at game start. They are purchased, sold, traded, and looted like any other Item Card."
+      "content": "Horses are optional Item Cards that act as companions to Heroes. They provide benefits to Heroes, but introduce some additional rules complexity. We recommend playing without horses until players are familiar with Dragons Down. To include horses in your play session, shuffle the 10 horse cards into the Item Deck at game start. They are purchased, sold, traded, and looted like any other Item Card.\n\n![](/images/pdf/369397a7d01ea1fd0dfce507a90b50c75e7783cc.jpeg)"
     },
     {
       "id": "4.8.0.1",
       "source": "eastern-reaches",
       "level": 4,
       "title": "Horse Cards",
-      "content": "![](/images/pdf/ee756e7988a7ae15f073f888a357e6dd925c068d.jpeg)\n\n![](/images/pdf/369397a7d01ea1fd0dfce507a90b50c75e7783cc.jpeg)\n\nHorse cards contain information that is very similar to other Item Cards, with a few small differences.\n\n**Health**: If the health value is on a heart, the horse is unarmored. If the value is on a shield, the horse is armored (*the Heavy* *Horse shown here is unarmored*).\n\n**Strength**: The value printed on top of the red cube is the horse’s strength.\n\n**Game Effects**: Horses have two sets of benefits - passive and combat benefits.\n\n- **Passive Benefits**: The top row shows benefits that are always active when a horse is equipped (*the Heavy Horse above provides +1 Move Action and* *1 extra miscellaneous position on which to equip cards*). If a horse provides one or more extra actions as a passive benefit, these are in addition to the four actions that a Hero may perform in their turn. *For example, a Hero* *riding the Heavy Horse could perform a Move Action + any 4 other actions.*\n\n![](/images/pdf/f238439055e740c7b97a5d14005d629c1e0b3108.jpeg)\n\n- **Combat Benefits**: The bottom row shows benefits of having the horse equipped during Combat (*the Heavy Horse above has a maneuver speed of* *1 + the number of Speed Cubes the Hero places on the horse*)."
+      "content": "Horse cards contain information that is very similar to other Item Cards, with a few small differences.\n\n**Health**: If the health value is on a heart, the horse is unarmored. If the value is on a shield, the horse is armored (*the Heavy* *Horse shown here is unarmored*).\n\n**Strength**: The value printed on top of the red cube is the horse’s strength.\n\n**Game Effects**: Horses have two sets of benefits - passive and combat benefits.\n\n- **Passive Benefits**: The top row shows benefits that are always active when a horse is equipped (*the Heavy Horse above provides +1 Move Action and* *1 extra miscellaneous position on which to equip cards*). If a horse provides one or more extra actions as a passive benefit, these are in addition to the four actions that a Hero may perform in their turn. *For example, a Hero* *riding the Heavy Horse could perform a Move Action + any 4 other actions.*\n\n- **Combat Benefits**: The bottom row shows benefits of having the horse equipped during Combat (*the Heavy Horse above has a maneuver speed of* *1 + the number of Speed Cubes the Hero places on the horse*)."
     },
     {
       "id": "4.8.0.2",
@@ -405,21 +405,21 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Horse Types",
-      "content": "- **War Horse**: A Hero that has a War Horse equipped may perform a bonus Alert Action during their Action Phase. A War Horse provides two miscellaneous positions in which a Hero may place face-up Treasure Cards. During Combat, the War Horse has a base maneuver speed of 0 + up to two Speed Cubes played on the maneuver boxes on the horse card. War Horses are armored.\n\n- **Heavy Horse**: A Hero that has a Heavy Horse equipped may perform a bonus Move Action during their Action Phase. A Heavy Horse provides one miscellaneous position in which a Hero may place a face-up Treasure Card. During Combat, the Heavy Horse has a base maneuver speed of 1 +\n\nup to two Speed Cubes played on the maneuver boxes on the horse card.\n\n![](/images/pdf/81631eccf76ab3f24a13ad337984cb28e8bb071d.jpeg)\n\n![](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg)\n\n- **Light Horse**: A Hero that has a Light Horse equipped may perform 2 bonus move actions during their Action Phase. During Combat, the Light Horse has  a base maneuver speed of 2 + up to two Speed Cubes played on the maneuver boxes on the horse card."
+      "content": "- **War Horse**: A Hero that has a War Horse equipped may perform a bonus Alert Action during their Action Phase. A War Horse provides two miscellaneous positions in which a Hero may place face-up Treasure Cards. During Combat, the War Horse has a base maneuver speed of 0 + up to two Speed Cubes played on the maneuver boxes on the horse card. War Horses are armored.\n\n- **Heavy Horse**: A Hero that has a Heavy Horse equipped may perform a bonus Move Action during their Action Phase. A Heavy Horse provides one miscellaneous position in which a Hero may place a face-up Treasure Card. During Combat, the Heavy Horse has a base maneuver speed of 1 +\n\nup to two Speed Cubes played on the maneuver boxes on the horse card.\n\n- **Light Horse**: A Hero that has a Light Horse equipped may perform 2 bonus move actions during their Action Phase. During Combat, the Light Horse has  a base maneuver speed of 2 + up to two Speed Cubes played on the maneuver boxes on the horse card."
     },
     {
       "id": "4.9",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Random Map Building Technique",
-      "content": "![](/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg)\n\nThis section introduces an optional and simple technique for building random maps, which is ideal for the following situations:\n\n- Solo play.\n- Multiplayer games with new players.\n- Setup prior to the arrival of other players.\n\n![](/images/pdf/e2af06ab919e8023dfb85aaa172701afc93bf43c.jpeg)\n\nTo create a random map, perform the following steps until the map is built.\n\n1.\t Shuffle all of the Map Tiles together and place them in a single stack. Place the top Map Tile in the center of the table with the name facing you, random-side up. *Exception: If playing with the Ruthless Riverlands, build* *the entire river first as explained on page 4 of these rules and consider the* *Port tile to be the last Map Tile placed.*\n\n2.\t Move clockwise from the last tile placed to the next empty tile location that is adjacent to two Map Tiles (*ignore this when placing your second Map* *Tile*). Skip tile locations with no connected paths, continuing clock-wise.\n\n![](/images/pdf/a38442cd5bd14d3a7c28e9292ceca3c03367d7e4.png)\n\n![](/images/pdf/267dd74df7b74a11bf9a30f66dded7cec6afed0c.jpeg)\n\n![](/images/pdf/f9237ab8ebfa068b7fd83a1738bf8b14134e638b.jpeg)\n\n3.\t Take the top Map Tile into your hand.\n\n4.\t Place the Map Tile with the name facing you, random-side up, in the selected empty location. If all edges match adjacent Map Tiles: paths to paths and non-paths to non-paths, place it. If it not does fit, rotate the Map Tile clockwise until it fits.\n\n![](/images/pdf/b22c75bbdd10648a513eea9837d73880af20e010.jpeg)\n\n5.\t If it does not fit in any rotation, move clockwise around the edge of the existing map to the next empty tile location that touches two Map Tiles and repeat step 2.\n\n6.\t If the Map Tile will not fit anywhere (*per the rules of step 4 and 5*), place it on the bottom of the tile stack and return to step 2.\n\n7.\t Repeat steps 2-6 until the map is built."
+      "content": "This section introduces an optional and simple technique for building random maps, which is ideal for the following situations:\n\n- Solo play.\n- Multiplayer games with new players.\n- Setup prior to the arrival of other players.\n\nTo create a random map, perform the following steps until the map is built.\n\n1.\t Shuffle all of the Map Tiles together and place them in a single stack. Place the top Map Tile in the center of the table with the name facing you, random-side up. *Exception: If playing with the Ruthless Riverlands, build* *the entire river first as explained on page 4 of these rules and consider the* *Port tile to be the last Map Tile placed.*\n\n2.\t Move clockwise from the last tile placed to the next empty tile location that is adjacent to two Map Tiles (*ignore this when placing your second Map* *Tile*). Skip tile locations with no connected paths, continuing clock-wise.\n\n3.\t Take the top Map Tile into your hand.\n\n4.\t Place the Map Tile with the name facing you, random-side up, in the selected empty location. If all edges match adjacent Map Tiles: paths to paths and non-paths to non-paths, place it. If it not does fit, rotate the Map Tile clockwise until it fits.\n\n5.\t If it does not fit in any rotation, move clockwise around the edge of the existing map to the next empty tile location that touches two Map Tiles and repeat step 2.\n\n6.\t If the Map Tile will not fit anywhere (*per the rules of step 4 and 5*), place it on the bottom of the tile stack and return to step 2.\n\n7.\t Repeat steps 2-6 until the map is built."
     },
     {
       "id": "5",
       "source": "eastern-reaches",
       "level": 1,
       "title": "APPENDIX",
-      "content": "![](/images/pdf/1b7e35d1891256e7063bd3836f498c7442b36679.jpeg)\n\n![](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg)\n\n![](/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg)\n\n![](/images/pdf/92ec0c47d2eddfcac1807572bfb3914bc9f9ae0f.jpeg)"
+      "content": ""
     },
     {
       "id": "5.1",
@@ -433,7 +433,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Auroran (Desert Born)",
-      "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.",
+      "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.\n\n![](/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg)",
       "tags": [
         "lineageAdvantage"
       ]
@@ -443,7 +443,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Class Advantages",
-      "content": "![](/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg)"
+      "content": ""
     },
     {
       "id": "5.2.0.1",
@@ -470,7 +470,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Disciple (Chosen)",
-      "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.",
+      "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.\n\n![](/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg)",
       "tags": [
         "classAdvantage"
       ]
@@ -480,7 +480,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Duelist (Parry)",
-      "content": "![](/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg)\n\n![](/images/pdf/81631eccf76ab3f24a13ad337984cb28e8bb071d.jpeg)\n\n![](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg)\n\nDuelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
+      "content": "![](/images/pdf/81631eccf76ab3f24a13ad337984cb28e8bb071d.jpeg)\n\n![](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg)\n\nDuelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
       "tags": [
         "classAdvantage"
       ]
@@ -490,7 +490,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Marauder (Fury)",
-      "content": "Marauders fight with a barely contained ferocity that they can choose to unleash in combat. Once per Combat Round, the marauder may place one Heart in either a might box or a speed box as if it were a matching cube. This placement does **not** count against the cube limit for the Combat Round. During the Cleanup phase of Combat, the Heart is wounded. A Heart may not be placed in a box with a wound symbol.",
+      "content": "Marauders fight with a barely contained ferocity that they can choose to unleash in combat. Once per Combat Round, the marauder may place one Heart in either a might box or a speed box as if it were a matching cube. This placement does **not** count against the cube limit for the Combat Round. During the Cleanup phase of Combat, the Heart is wounded. A Heart may not be placed in a box with a wound symbol.\n\n![](/images/pdf/a38442cd5bd14d3a7c28e9292ceca3c03367d7e4.png)",
       "tags": [
         "classAdvantage"
       ]
@@ -500,7 +500,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Monk (Iron Fist)",
-      "content": "![](/images/pdf/a38442cd5bd14d3a7c28e9292ceca3c03367d7e4.png)\n\nMonks are masters of unarmed combat. If a monk has an open weapon position and places no cubes on weapon or spell cards, they strike with their fist with a base damage of 0 might and 1 sword. Additional Might Cubes may be placed on the Class Card to increase the base damage of a monk’s fist strike. If the player places a Might Cube in the box with a wound symbol, that cube is moved to the wounded box during the Cleanup step.",
+      "content": "Monks are masters of unarmed combat. If a monk has an open weapon position and places no cubes on weapon or spell cards, they strike with their fist with a base damage of 0 might and 1 sword. Additional Might Cubes may be placed on the Class Card to increase the base damage of a monk’s fist strike. If the player places a Might Cube in the box with a wound symbol, that cube is moved to the wounded box during the Cleanup step.\n\n![](/images/pdf/b22c75bbdd10648a513eea9837d73880af20e010.jpeg)",
       "tags": [
         "classAdvantage"
       ]
@@ -510,7 +510,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Pit Fighter (Weaponmaster)",
-      "content": "![](/images/pdf/b22c75bbdd10648a513eea9837d73880af20e010.jpeg)\n\nPit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.",
+      "content": "Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.\n\n![](/images/pdf/1b7e35d1891256e7063bd3836f498c7442b36679.jpeg)\n\n![](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg)",
       "tags": [
         "classAdvantage"
       ]
@@ -520,7 +520,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Vanguard (Primal Strike)",
-      "content": "![](/images/pdf/1b7e35d1891256e7063bd3836f498c7442b36679.jpeg)\n\n![](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg)\n\nVanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.",
+      "content": "Vanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.\n\n![](/images/pdf/92ec0c47d2eddfcac1807572bfb3914bc9f9ae0f.jpeg)",
       "tags": [
         "classAdvantage"
       ]
@@ -530,7 +530,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Monster Manifest",
-      "content": "![](/images/pdf/92ec0c47d2eddfcac1807572bfb3914bc9f9ae0f.jpeg)"
+      "content": ""
     },
     {
       "id": "5.3.0.1",
@@ -976,9 +976,9 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Staff of Thaumaturgy",
-      "content": "![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)\n\nEpic Treasure. Melee weapon. When the possessing Hero performs an enchant action, they may choose to enchant the staff of thaumaturgy instead of the Map Tile. Do not flip over the Map Tile. Place the chosen Magic Cube on the staff card instead. If the Magic Cube is later used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the Magic Cube is discarded.",
+      "content": "Epic Treasure. Melee weapon. When the possessing Hero performs an enchant action, they may choose to enchant the staff of thaumaturgy instead of the Map Tile. Do not flip over the Map Tile. Place the chosen Magic Cube on the staff card instead. If the Magic Cube is later used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the Magic Cube is discarded.",
       "tags": [
-        "treasure"
+        "deepTreasure"
       ]
     },
     {
@@ -986,7 +986,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "The Sting",
-      "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)\n\nOne-time use. Attacks by this Hero gain +1 sword for the duration of Combat.",
+      "content": "One-time use. Attacks by this Hero gain +1 sword for the duration of Combat.",
       "tags": [
         "treasure"
       ]
@@ -1066,14 +1066,14 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Spell Manifest",
-      "content": ""
+      "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)"
     },
     {
       "id": "5.6.1",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Black Spells",
-      "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)"
+      "content": ""
     },
     {
       "id": "5.6.1.1",
@@ -1124,7 +1124,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Possess",
-      "content": "Permanent. Wound two black cubes. When the spell is resolved, replace the caster with any non-undead Monster or Native in the same clearing. When the spell is inactive, place the Monster or Native counter on the Spell Card and use the Hero Chip again.\n\nThis spell works identically to Shape Shift, except that it does not need to hit to take effect and the Hero may possess a unique Monster, including Guardians.\n\nIf the spell expires (*for example, via a Break Spells spell or other game effects*), both the Hero and the Monster or Native are immediately placed in the clearing. Possessing a Native turns the targeted Native Group into a permanent enemy. Does not affect the undead.",
+      "content": "Permanent. Wound two black cubes. When the spell is resolved, replace the caster with any non-undead Monster or Native in the same clearing. When the spell is inactive, place the Monster or Native counter on the Spell Card and use the Hero Chip again.\n\nThis spell works identically to Shape Shift, except that it does not need to hit to take effect and the Hero may possess a unique Monster, including Guardians.\n\nIf the spell expires (*for example, via a Break Spells spell or other game effects*), both the Hero and the Monster or Native are immediately placed in the clearing. Possessing a Native turns the targeted Native Group into a permanent enemy. Does not affect the undead.\n\n![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)",
       "tags": [
         "spell",
         "blackMagic"
@@ -1135,7 +1135,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Blue Spells",
-      "content": "![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)"
+      "content": ""
     },
     {
       "id": "5.6.2.1",
@@ -1186,7 +1186,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Foresight",
-      "content": "Instantaneous. Wound two blue cubes. Set any one of the Summoning Dice to a side of your choosing. That die will not be rolled next turn and will instead use the selected die face. Should another Hero cast a second foresight spell in the same turn, they may change the already selected die or another die.",
+      "content": "Instantaneous. Wound two blue cubes. Set any one of the Summoning Dice to a side of your choosing. That die will not be rolled next turn and will instead use the selected die face. Should another Hero cast a second foresight spell in the same turn, they may change the already selected die or another die.\n\n![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)",
       "tags": [
         "spell",
         "blueMagic"
@@ -1197,7 +1197,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Gray Spells",
-      "content": "![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)"
+      "content": ""
     },
     {
       "id": "5.6.3.1",
@@ -1248,7 +1248,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Malediction",
-      "content": "Targeted (*infinite number of targets*). Instantaneous. Wound two gray cubes. This spell affects all Monsters, Natives, and Heroes (*including hidden Heroes*) in the clearing except for the caster. The spell causes a single individual melee attack of 1 damage against each target. Does not affect the undead.",
+      "content": "Targeted (*infinite number of targets*). Instantaneous. Wound two gray cubes. This spell affects all Monsters, Natives, and Heroes (*including hidden Heroes*) in the clearing except for the caster. The spell causes a single individual melee attack of 1 damage against each target. Does not affect the undead.\n\n![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)",
       "tags": [
         "spell",
         "grayMagic"
@@ -1259,7 +1259,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Green Spells",
-      "content": "![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)"
+      "content": ""
     },
     {
       "id": "5.6.4.1",
@@ -1288,7 +1288,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Wildshape",
-      "content": "Self. Permanent. Wound one green cube. When this spell is cast (*or active*) the caster selects any non-undead, non-unique Monster counter from the monster tray whose type is printed on the Map Tile in which the caster resides.\n\n![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)\n\nThis spell works identical to Shape Shift, except as follows:\n\n- If the Hero moves to a new Map Tile while the spell is active, they return the selected Monster Chip to the monster tray and must select a Monster as described above (*is printed on the Map Tile being entered*), gaining all characteristics of that Monster immediately.\n\nNote: In a Civilization Map Tile, the caster becomes the Wandering Monster for the Terrain Pack. *For example, in the Mine tile, the caster becomes a Giant Bat.*",
+      "content": "Self. Permanent. Wound one green cube. When this spell is cast (*or active*) the caster selects any non-undead, non-unique Monster counter from the monster tray whose type is printed on the Map Tile in which the caster resides.\n\nThis spell works identical to Shape Shift, except as follows:\n\n- If the Hero moves to a new Map Tile while the spell is active, they return the selected Monster Chip to the monster tray and must select a Monster as described above (*is printed on the Map Tile being entered*), gaining all characteristics of that Monster immediately.\n\nNote: In a Civilization Map Tile, the caster becomes the Wandering Monster for the Terrain Pack. *For example, in the Mine tile, the caster becomes a Giant Bat.*",
       "tags": [
         "spell",
         "greenMagic"
@@ -1310,7 +1310,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Sunder",
-      "content": "Instantaneous. Wound two green cubes. May only be cast while on an edge Map Tile. Move the caster’s tile to any other empty location touching two or more Map Tiles. The affected Map Tile may be rotated as the caster wishes, but must be placed in such a way that all paths on the Map Tile and adjacent Map Tiles connect to existing paths.",
+      "content": "Instantaneous. Wound two green cubes. May only be cast while on an edge Map Tile. Move the caster’s tile to any other empty location touching two or more Map Tiles. The affected Map Tile may be rotated as the caster wishes, but must be placed in such a way that all paths on the Map Tile and adjacent Map Tiles connect to existing paths.\n\n![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)",
       "tags": [
         "spell",
         "greenMagic"
@@ -1321,7 +1321,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Purple Spells",
-      "content": "![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)"
+      "content": ""
     },
     {
       "id": "5.6.5.1",
@@ -1339,7 +1339,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Magic Snare",
-      "content": "![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)\n\nTargeted. Instantaneous. Wound one purple cube. The target suffers -1 maneuver speed and loses Flying Ability for the duration of Combat.",
+      "content": "Targeted. Instantaneous. Wound one purple cube. The target suffers -1 maneuver speed and loses Flying Ability for the duration of Combat.",
       "tags": [
         "spell",
         "purpleMagic"
@@ -1372,7 +1372,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Pyroclasm",
-      "content": "![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)\n\nTargeted (*infinite targets*). Ranged Attack. Instantaneous. Wound two purple cubes.  Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 2 swords.",
+      "content": "Targeted (*infinite targets*). Ranged Attack. Instantaneous. Wound two purple cubes.  Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 2 swords.\n\n![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)",
       "tags": [
         "spell",
         "purpleMagic"
@@ -1383,7 +1383,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "White Spells",
-      "content": "![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)"
+      "content": ""
     },
     {
       "id": "5.6.6.1",
@@ -1434,7 +1434,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Renewal",
-      "content": "Permanent. Wound two white cubes. At the end of each Combat Round, including the two rounds at the end of Combat during which nothing happens, roll the two Monster Dice. If neither die shows a Monster symbol, heal one cube.",
+      "content": "Permanent. Wound two white cubes. At the end of each Combat Round, including the two rounds at the end of Combat during which nothing happens, roll the two Monster Dice. If neither die shows a Monster symbol, heal one cube.\n\n![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)",
       "tags": [
         "spell",
         "whiteMagic"
@@ -1445,7 +1445,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Yellow Spells",
-      "content": "![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)\n\n![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)"
+      "content": ""
     },
     {
       "id": "5.6.7.1",
@@ -1474,7 +1474,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Counterplay",
-      "content": "![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)\n\nTargeted. Combat. Wound one yellow cube. The target must roll one additional Hit Die when their attack speed is not faster than their target’s maneuver speed. Does not affect the undead.",
+      "content": "Targeted. Combat. Wound one yellow cube. The target must roll one additional Hit Die when their attack speed is not faster than their target’s maneuver speed. Does not affect the undead.",
       "tags": [
         "spell",
         "yellowMagic"
@@ -1507,21 +1507,21 @@
       "source": "eastern-reaches",
       "level": 1,
       "title": "CREDITS AND ACKNOWLEDGMENTS",
-      "content": "*Game Design, Development, and Production:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Artwork and Graphic Design:* **Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\nAdventure Journals for Eastern Reaches can be downloaded and printed at https://www.activemagicgames.com."
+      "content": "*Game Design, Development, and Production:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Artwork and Graphic Design:* **Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\nAdventure Journals for Eastern Reaches can be downloaded and printed at https://www.activemagicgames.com.\n\n![](/images/pdf/a97bca0b2be671f2646d612ba2682b58b9d32b16.jpeg)"
     },
     {
       "id": "6.1",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Ferries",
-      "content": "![](/images/pdf/a97bca0b2be671f2646d612ba2682b58b9d32b16.jpeg)\n\nLocal ferries operate along the river between Docks and will transport Heroes for a small fee. To use a ferry, a Hero must be in a Dock Clearing or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it.\n\n- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n- Movement is resolved one clearing at a time. If Ferry Movement enters a new Map Tile that does not yet contain wilderness or Civilization Tokens, reveal and place those tokens before deciding whether to continue Ferry Movement.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend that additional action to enter it, per normal movement rules.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster, but may not pass through such a clearing during a single ferry action.\n- If Ferry Movement enters a clearing with Monsters, the Hero is blocked as normal (*the Hero may attempt to hide*). The benefits of a Sneak Action do not apply to this hide attempt; treasure bonuses and the halfling Lineage Advantages still apply.\n- Natives do not affect Ferry Movement unless they are enemies of the Hero, in which case they block movement as a normal Monster.\n- Ferry Movment costs 1 Gold per clearing entered during the Ferry action. Pay the total cost at the end of the action. *Exception: The Witch’s Familiar* *pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry using Treasure or Item Cards with value equal to or greater than the Ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** If a Hero is in a River Clearing and cannot pay ferry costs, the Hero may spend an action to take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties* *randomly*)."
+      "content": "Local ferries operate along the river between Docks and will transport Heroes for a small fee. To use a ferry, a Hero must be in a Dock Clearing or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it.\n\n- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n- Movement is resolved one clearing at a time. If Ferry Movement enters a new Map Tile that does not yet contain wilderness or Civilization Tokens, reveal and place those tokens before deciding whether to continue Ferry Movement.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend that additional action to enter it, per normal movement rules.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster, but may not pass through such a clearing during a single ferry action.\n- If Ferry Movement enters a clearing with Monsters, the Hero is blocked as normal (*the Hero may attempt to hide*). The benefits of a Sneak Action do not apply to this hide attempt; treasure bonuses and the halfling Lineage Advantages still apply.\n- Natives do not affect Ferry Movement unless they are enemies of the Hero, in which case they block movement as a normal Monster.\n- Ferry Movment costs 1 Gold per clearing entered during the Ferry action. Pay the total cost at the end of the action. *Exception: The Witch’s Familiar* *pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry using Treasure or Item Cards with value equal to or greater than the Ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** If a Hero is in a River Clearing and cannot pay ferry costs, the Hero may spend an action to take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties* *randomly*).\n\n![](/images/pdf/f238439055e740c7b97a5d14005d629c1e0b3108.jpeg)"
     },
     {
       "id": "6.2",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Swimming",
-      "content": "![](/images/pdf/f238439055e740c7b97a5d14005d629c1e0b3108.jpeg)\n\nSome Monsters have Swimming Ability, and some game effects grant Swimming Ability to Heroes. Swimming is already built into the maneuver speed for Monsters with Swimming Ability. Swimming has no impact during Combat unless specified by a spell or other game effect.\n\nWhen a Hero has Swimming Ability, the Hero may use a Move Action to move between adjacent Dock and River Clearings. This is not ferrying and costs no Gold.\n\nEach move into a River Clearing while swimming costs one action. Movement into a Dock Clearing incurs the normal cost for the clearing type.\n\nThe Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
+      "content": "Some Monsters have Swimming Ability, and some game effects grant Swimming Ability to Heroes. Swimming is already built into the maneuver speed for Monsters with Swimming Ability. Swimming has no impact during Combat unless specified by a spell or other game effect.\n\nWhen a Hero has Swimming Ability, the Hero may use a Move Action to move between adjacent Dock and River Clearings. This is not ferrying and costs no Gold.\n\nEach move into a River Clearing while swimming costs one action. Movement into a Dock Clearing incurs the normal cost for the clearing type.\n\nThe Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
     },
     {
       "id": "6.3",

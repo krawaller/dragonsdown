@@ -4,7 +4,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Auroran (Desert Born)",
-    "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.",
+    "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.\n\n![](/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg)",
     "tags": [
       "lineageAdvantage"
     ]
@@ -14,7 +14,7 @@
     "source": "core",
     "level": 4,
     "title": "Dwarf (Caver)",
-    "content": "![](/images/pdf/83e975b74922f8b308d187df3d91665ac9d9c3b9.png)\n\nDwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a Cave Clearing.",
+    "content": "Dwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a Cave Clearing.\n\n![](/images/pdf/266e31b2777d2856070a952c049680684ec32366.png)",
     "tags": [
       "lineageAdvantage"
     ]
@@ -24,7 +24,7 @@
     "source": "core",
     "level": 4,
     "title": "Elf (Magical)",
-    "content": "![](/images/pdf/266e31b2777d2856070a952c049680684ec32366.png)\n\n![](/images/pdf/d5a64c2be7b066467d59bb726e9d2d3e5398a2b9.png)\n\nElves are raised around magic and begin the game with an extra spell from the Hero Starting Spell deck. The selected spell must match the color of a Magic Cube they select for their Hero.",
+    "content": "Elves are raised around magic and begin the game with an extra spell from the Hero Starting Spell deck. The selected spell must match the color of a Magic Cube they select for their Hero.\n\n![](/images/pdf/e58dd7043dffd7517153100785ac79473fcb646b.png)",
     "tags": [
       "lineageAdvantage"
     ]
@@ -34,7 +34,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Gnome (Inventive)",
-    "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.",
+    "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.\n\n![](/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png)",
     "tags": [
       "lineageAdvantage"
     ]
@@ -44,7 +44,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Elves (Two Worlds)",
-    "content": "![](/images/pdf/282dd05f57e30725bb324e51bf6d60c8bb2f6f6d.jpeg)\n\nHalf-Elves straddle the worlds of elves and humans. At the beginning of the game, Half-Elves choose either the elven advantage or the human advantage to use for the entirety of this game session.",
+    "content": "Half-Elves straddle the worlds of elves and humans. At the beginning of the game, Half-Elves choose either the elven advantage or the human advantage to use for the entirety of this game session.\n\n![](/images/pdf/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png)",
     "tags": [
       "lineageAdvantage"
     ]
@@ -54,7 +54,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Orc (Mountaineer)",
-    "content": "![](/images/pdf/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png)\n\n![](/images/pdf/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png)\n\nHalf-Orcs are very comfortable in mountains and do not pay the additional action cost to enter a Mountain Clearing.",
+    "content": "![](/images/pdf/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png)\n\nHalf-Orcs are very comfortable in mountains and do not pay the additional action cost to enter a Mountain Clearing.",
     "tags": [
       "lineageAdvantage"
     ]
@@ -64,7 +64,7 @@
     "source": "core",
     "level": 4,
     "title": "Halfling (Stealthy)",
-    "content": "![](/images/pdf/e58dd7043dffd7517153100785ac79473fcb646b.png)\n\n![](/images/pdf/2b5a7a4b3b30fbf1c554f6dc9fca43fdabaa634a.png)\n\nHalflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one Monster Die per hide attempt, except during the Cleanup step of combat.",
+    "content": "Halflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one Monster Die per hide attempt, except during the Cleanup step of combat.\n\n![](/images/pdf/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png)",
     "tags": [
       "lineageAdvantage"
     ]
@@ -74,7 +74,7 @@
     "source": "core",
     "level": 4,
     "title": "Human (Adapted)",
-    "content": "![](/images/pdf/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png)\n\n![](/images/pdf/737a2b778a7e6596728cd28506dbdf63fd3564c0.png)\n\nHumans are very comfortable in civilization and receive one additional free action during any turn they are in a Civilization Location.",
+    "content": "Humans are very comfortable in civilization and receive one additional free action during any turn they are in a Civilization Location.\n\n![](/images/pdf/2231f1ae25446c024d6920eb27e6a6bd9c62eebf.png)",
     "tags": [
       "lineageAdvantage"
     ]

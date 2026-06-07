@@ -280,6 +280,12 @@ def process_image_block(block: dict, stats: dict, total_pages: int) -> list[tupl
     img_bytes = block.get("image")
     if not img_bytes:
         return []
+    # Some PDFs contain mirrored/off-canvas image placements whose display
+    # bbox has non-positive width/height. They are effectively invisible and
+    # should not be emitted into extracted markdown.
+    bx0, by0, bx1, by1 = block["bbox"]
+    if (bx1 - bx0) <= 0 or (by1 - by0) <= 0:
+        return []
     h = hashlib.sha1(img_bytes).hexdigest()
     stat = stats.get(h)
     if not stat or is_background(stat, total_pages):
@@ -378,7 +384,12 @@ def extract(pdf_path: Path) -> list[dict]:
             for item in items:
                 kind = item[0]
                 if kind == "image":
-                    pending_images.append(item[1])
+                    # Most images are tied to the currently active section.
+                    # Buffer only when we have not seen any heading yet.
+                    if current is None:
+                        pending_images.append(item[1])
+                    else:
+                        push(item[1])
                 elif kind == "heading":
                     _, level, title = item
                     if not title:
@@ -390,8 +401,12 @@ def extract(pdf_path: Path) -> list[dict]:
                 else:  # 'para' or 'bullets'
                     flush_pending_to_current()
                     push(item[1])
-        # End of page: any trailing images stay buffered for the next page's
-        # first item to decide attachment (heading vs current section).
+        # End of page: trailing images usually belong to the section that was
+        # active on this page. Flushing here avoids cross-page mis-assignment
+        # where a positioned image gets attached to an unrelated heading on
+        # the next page.
+        if current is not None:
+            flush_pending_to_current()
 
     # End of doc: flush remaining
     flush_pending_to_current()

@@ -55,21 +55,21 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Wilderness Tokens",
-      "content": "![](/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg)\n\n![](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png)\n\nThe **Natives expansion** adds 5 Wilderness Tokens (*1 for each Terrain Pack*). As described in the setup rules, mix each of these tokens into the Wilderness Tokens from the Terrain Packs in play. Each of these tokens is marked with a + sign on the front face of the token and is described below.\n\n- **Discovery:** Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n![](/images/pdf/2b1bfb60e560868ac8af0455366c0df34c845e26.jpeg)\n\n- **Campfire/Encampment/Inn:** Draw an additional Wilderness Token from the same Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the matching larger Civilization Location counter in the indicated clearing. *Exception:* *If the die roll indicates a clearing with a Treasure Site or Civilization* *Location, reroll the die, unless there are no available clearings.* Draw two Civilization Tokens and place them in the Map Tile near the new Civilization Location. For all game purposes, these are Civilization Locations (*like the Keep, Mine, Outpost, Sanctuary,* *and Village*)."
+      "content": "The **Natives expansion** adds 5 Wilderness Tokens (*1 for each Terrain Pack*). As described in the setup rules, mix each of these tokens into the Wilderness Tokens from the Terrain Packs in play. Each of these tokens is marked with a + sign on the front face of the token and is described below.\n\n- **Discovery:** Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n![](/images/pdf/2b1bfb60e560868ac8af0455366c0df34c845e26.jpeg)\n\n- **Campfire/Encampment/Inn:** Draw an additional Wilderness Token from the same Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the matching larger Civilization Location counter in the indicated clearing. *Exception:* *If the die roll indicates a clearing with a Treasure Site or Civilization* *Location, reroll the die, unless there are no available clearings.* Draw two Civilization Tokens and place them in the Map Tile near the new Civilization Location. For all game purposes, these are Civilization Locations (*like the Keep, Mine, Outpost, Sanctuary,* *and Village*).\n\n![](/images/pdf/1852ccaf11323564a190262fbda0ecd86d58c35c.jpeg)\n\n![](/images/pdf/66d268a51351a75c20ed79ababefe7b1b4e7a420.jpeg)\n\n![](/images/pdf/aa05dbe80f5eb4bcd3831886acf333312e46dbe5.jpeg)"
     },
     {
       "id": "2.5",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Basic Natives Rules",
-      "content": "![](/images/pdf/1852ccaf11323564a190262fbda0ecd86d58c35c.jpeg)\n\n![](/images/pdf/d9fe41860d9237cc328edbb473add53c1483bcd7.png)\n\n![](/images/pdf/66d268a51351a75c20ed79ababefe7b1b4e7a420.jpeg)\n\n![](/images/pdf/aa05dbe80f5eb4bcd3831886acf333312e46dbe5.jpeg)\n\nNatives counters are placed at the Civilization Location listed on the Terrain Setup Card. All other Natives are kept in the Native trays until they are summoned to the map. *Exception: In the Natives expansion, the Consul and Bodyguard are in play for* *all Terrain Packs and stay in the Native tray at game start. They summon as a group.*\n\nAll Heroes and Natives are friendly unless one of the following occurs (*by the Hero* *or a Hired Native of the Hero*):\n\n![](/images/pdf/615ce06ff72450e4e6ef781ba96375280c2e0583.jpeg)\n\n- **Killing**: Killing an Unhired Native makes the Hero a **permanent** enemy of that Native Group for the rest of the game.\n\n- **Targeting**: Targeting an Unhired Native during the Targeting Phase makes the Hero a **temporary** enemy of that Native Group.\n\n![](/images/pdf/8431021571a2f823fde3a27cd6ecd7431dfba5c8.jpeg)\n\n- **Allies**: All Native Groups in the clearing with the same respect icon also treat the Hero as a **temporary** enemy.\n\n- **Insults**: Insulting a Native Group makes the Hero a **temporary** enemy of that group (*See Insults on this page*).\n\n*Exception: Insults and Allies do not apply if the Hero has a Hired Native of that group.*\n\nTemporary enemies become friendly at the end of Combat.\n\nHeroes may not trade with or hire enemy Natives.\n\nUnhired Natives ignore friendly Heroes and behave as Monsters to their enemies. They will block, challenge, target, and attack enemy Heroes and their Hired Natives.\n\nHeroes may only Claim a Title or Complete a Mission with **unhired Native Leaders**."
+      "content": "Natives counters are placed at the Civilization Location listed on the Terrain Setup Card. All other Natives are kept in the Native trays until they are summoned to the map. *Exception: In the Natives expansion, the Consul and Bodyguard are in play for* *all Terrain Packs and stay in the Native tray at game start. They summon as a group.*\n\nAll Heroes and Natives are friendly unless one of the following occurs (*by the Hero* *or a Hired Native of the Hero*):\n\n- **Killing**: Killing an Unhired Native makes the Hero a **permanent** enemy of that Native Group for the rest of the game.\n\n- **Targeting**: Targeting an Unhired Native during the Targeting Phase makes the Hero a **temporary** enemy of that Native Group.\n\n- **Allies**: All Native Groups in the clearing with the same respect icon also treat the Hero as a **temporary** enemy.\n\n- **Insults**: Insulting a Native Group makes the Hero a **temporary** enemy of that group (*See Insults on this page*).\n\n*Exception: Insults and Allies do not apply if the Hero has a Hired Native of that group.*\n\nTemporary enemies become friendly at the end of Combat.\n\nHeroes may not trade with or hire enemy Natives.\n\nUnhired Natives ignore friendly Heroes and behave as Monsters to their enemies. They will block, challenge, target, and attack enemy Heroes and their Hired Natives.\n\nHeroes may only Claim a Title or Complete a Mission with **unhired Native Leaders**."
     },
     {
       "id": "2.6",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Native Summoning",
-      "content": "![](/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg)\n\nThe **Natives expansion includes** a white Native Summoning Die. As part of Monster Activation, roll this die along with the other Summoning Dice.\n\nWhen a Monsters Return result is rolled on the wandering Monster Die, return all Unhired Natives in Map Tiles containing no Heroes to the Native tray. *Exception: The Natives that begin on the map do not return to* *the monster tray via a Monsters Return result (e.g. Knights, Dwarves, etc.).*\n\n![](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png)\n\nAfter processing the gray and black Summoning Dice, Consult the Native Summoning Die. The various symbols on the Native Summoning Die match the symbols printed on the Civilization Cards. Four things need to be true for a Native Group to be summoned to a Civilization Location.\n\n![](/images/pdf/2b1bfb60e560868ac8af0455366c0df34c845e26.jpeg)\n\n1.\t The Native Summoning Die result needs to match the symbol on the Native Group’s Civilization Card or the die shows the infinity symbol.\n\n![](/images/pdf/1852ccaf11323564a190262fbda0ecd86d58c35c.jpeg)\n\n2.\t A Hero needs to be in a **Map** **Tile** containing a Civilization Location listed on the Native Group’s Civilization Card.\n\n![](/images/pdf/66d268a51351a75c20ed79ababefe7b1b4e7a420.jpeg)\n\n3.\t There are no Heroes in the **clearing** where the Natives are currently located.\n\n4.\t There are no Monsters in the clearing to which the Natives are being summoned.\n\n![](/images/pdf/aa05dbe80f5eb4bcd3831886acf333312e46dbe5.jpeg)\n\nIf all of the above are true, then move all unhired members of the matching Native Group from their current locations to the **Civilization Location** in the Map Tile (*not necessarily the same clearing of the Hero in the tile*). Multiple Native Groups can be summoned to the same Civilization Location in a single turn.\n\nIf a Native Group is summoned to multiple Civilization Locations simultaneously, summon the Native Group to the Map Tile containing the player closest to the start player in Turn Order. If there are multiple Civilization Locations that summon a Native Group in a single Map Tile, randomly determine which Civilization Location summons the Natives.\n\n**Natives Flee:** At the end of Monster and Native Summoning, any Unhired Natives that are in the same clearing with one or more Monsters are returned to the Native tray, including the Natives that begin the game on the map (*e.g. Knights, Dwarves, etc.*)."
+      "content": "![](/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg)\n\nThe **Natives expansion includes** a white Native Summoning Die. As part of Monster Activation, roll this die along with the other Summoning Dice.\n\nWhen a Monsters Return result is rolled on the wandering Monster Die, return all Unhired Natives in Map Tiles containing no Heroes to the Native tray. *Exception: The Natives that begin on the map do not return to* *the monster tray via a Monsters Return result (e.g. Knights, Dwarves, etc.).*\n\n![](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png)\n\nAfter processing the gray and black Summoning Dice, Consult the Native Summoning Die. The various symbols on the Native Summoning Die match the symbols printed on the Civilization Cards. Four things need to be true for a Native Group to be summoned to a Civilization Location.\n\n1.\t The Native Summoning Die result needs to match the symbol on the Native Group’s Civilization Card or the die shows the infinity symbol.\n\n2.\t A Hero needs to be in a **Map** **Tile** containing a Civilization Location listed on the Native Group’s Civilization Card.\n\n3.\t There are no Heroes in the **clearing** where the Natives are currently located.\n\n4.\t There are no Monsters in the clearing to which the Natives are being summoned.\n\nIf all of the above are true, then move all unhired members of the matching Native Group from their current locations to the **Civilization Location** in the Map Tile (*not necessarily the same clearing of the Hero in the tile*). Multiple Native Groups can be summoned to the same Civilization Location in a single turn.\n\nIf a Native Group is summoned to multiple Civilization Locations simultaneously, summon the Native Group to the Map Tile containing the player closest to the start player in Turn Order. If there are multiple Civilization Locations that summon a Native Group in a single Map Tile, randomly determine which Civilization Location summons the Natives.\n\n**Natives Flee:** At the end of Monster and Native Summoning, any Unhired Natives that are in the same clearing with one or more Monsters are returned to the Native tray, including the Natives that begin the game on the map (*e.g. Knights, Dwarves, etc.*)."
     },
     {
       "id": "2.7",
@@ -97,7 +97,7 @@
       "source": "natives-and-legends",
       "level": 2,
       "title": "Hired Natives",
-      "content": "Once a Native has been hired, the following rules apply:\n\n- The length of the hire term is 15 turns, starting on the turn of hire. Record the expiration date in the Adventure Journal. There is no limit to the number of Natives a Hero may hire.\n\n- At the end of Combat on the turn a hire expires, place the newly Unhired Native(s) in the Native tray, including Natives that started the game on the map (*e.g. Knights)*. They will only return to the map via Native Summoning.\n\n![](/images/pdf/5fe12df6d791f759d3c63f80a4cdecf5bcb37947.jpeg)\n\n- A Hero may not hire a Native that is hired by another Hero until the hire term expires. A Hero may attempt to extend the hire term of a Native they currently have hired. To do so, select a Native they have hired, perform a Hire action, and follow the normal procedures for hiring. If successful, subtract the Gold cost and add 15 turns to the end of the hire term.\n\n- Hired Natives are fully controlled by the hiring Hero. The hiring Hero is responsible for all conduct of a Hired Native. *For example, if a Hired Native* *targets another Native Group the Hero and all their Hired Natives become* *enemies.*\n\n- Heroes receive rewards and penalties for the actions of their Hired Natives.\n\n- Hired Natives may not move or perform actions independently. Hired Natives are assumed to be in the same location as the Hero’s counter. *Exception: See Evade under “Hired Natives in Combat” below.*\n\n- Either side of a Hired Native Chip may be used to satisfy the requirements of various in-game effects. *For example, a Hired Native with a 4 strength* *attack can open the massive door on the Chamber.*\n\n- A Hired Native leader grants the hiring Hero +1 action per turn. Multiple Hired Native leaders do not grant additional free actions.\n\n- Hired Natives always have the same hidden status as the hiring Hero.\n\n![](/images/pdf/b2a4a671330bc5ce847f0574a71896fcd976106e.jpeg)\n\n- An unblocked Hero may terminate the hire of their Hired Natives during their Action Phase. If a Hero flies out of a clearing, they immediately terminate the hire of any Hired Natives that cannot also fly. When a Hero terminates a hire, place the Native in the Native tray.\n\n![](/images/pdf/d14f5b12b57fc037433ec59e9882aa77106d1a17.jpeg)\n\n- A Hired Native is immune to spells cast by others to calm or control them. If a Hero or Hired Native is gated/teleported/etc. away so that they are in different clearings at the end of Combat, the hire is terminated and the Native is returned to the Native tray."
+      "content": "Once a Native has been hired, the following rules apply:\n\n- The length of the hire term is 15 turns, starting on the turn of hire. Record the expiration date in the Adventure Journal. There is no limit to the number of Natives a Hero may hire.\n\n- At the end of Combat on the turn a hire expires, place the newly Unhired Native(s) in the Native tray, including Natives that started the game on the map (*e.g. Knights)*. They will only return to the map via Native Summoning.\n\n- A Hero may not hire a Native that is hired by another Hero until the hire term expires. A Hero may attempt to extend the hire term of a Native they currently have hired. To do so, select a Native they have hired, perform a Hire action, and follow the normal procedures for hiring. If successful, subtract the Gold cost and add 15 turns to the end of the hire term.\n\n- Hired Natives are fully controlled by the hiring Hero. The hiring Hero is responsible for all conduct of a Hired Native. *For example, if a Hired Native* *targets another Native Group the Hero and all their Hired Natives become* *enemies.*\n\n- Heroes receive rewards and penalties for the actions of their Hired Natives.\n\n- Hired Natives may not move or perform actions independently. Hired Natives are assumed to be in the same location as the Hero’s counter. *Exception: See Evade under “Hired Natives in Combat” below.*\n\n- Either side of a Hired Native Chip may be used to satisfy the requirements of various in-game effects. *For example, a Hired Native with a 4 strength* *attack can open the massive door on the Chamber.*\n\n- A Hired Native leader grants the hiring Hero +1 action per turn. Multiple Hired Native leaders do not grant additional free actions.\n\n- Hired Natives always have the same hidden status as the hiring Hero.\n\n- An unblocked Hero may terminate the hire of their Hired Natives during their Action Phase. If a Hero flies out of a clearing, they immediately terminate the hire of any Hired Natives that cannot also fly. When a Hero terminates a hire, place the Native in the Native tray.\n\n- A Hired Native is immune to spells cast by others to calm or control them. If a Hero or Hired Native is gated/teleported/etc. away so that they are in different clearings at the end of Combat, the hire is terminated and the Native is returned to the Native tray."
     },
     {
       "id": "2.9.1",
@@ -118,7 +118,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Challenge:",
-      "content": "![](/images/pdf/d14f5b12b57fc037433ec59e9882aa77106d1a17.jpeg)\n\n![](/images/pdf/b2a4a671330bc5ce847f0574a71896fcd976106e.jpeg)\n\nAll Hired Natives become unhidden if the hiring Hero chooses to become unhidden.\n\nHired Natives always have the same hidden status as the hiring Hero.\n\nHired Natives are considered Heroes, and not Natives, for all Combat purposes.\n\nIf playing with the player vs. player optional rules, Hired Natives may challenge other Heroes.\n\nHired Natives will never challenge unhired members of their own Native Group."
+      "content": "All Hired Natives become unhidden if the hiring Hero chooses to become unhidden.\n\nHired Natives always have the same hidden status as the hiring Hero.\n\nHired Natives are considered Heroes, and not Natives, for all Combat purposes.\n\nIf playing with the player vs. player optional rules, Hired Natives may challenge other Heroes.\n\nHired Natives will never challenge unhired members of their own Native Group."
     },
     {
       "id": "2.9.1.3",
@@ -160,7 +160,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Hired Native Death",
-      "content": "![](/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png)\n\nWhen a Hired Native is killed, the hiring Hero loses Fame equal to the Fame value on the Hired Native counter, even if that results in negative Fame for the Hero. Track negative Fame values in the Adventure Journal until the Hero has positive Fame. *Exception: the Necromancer’s Animated Skeletons do not cause a loss in Fame.*"
+      "content": "When a Hired Native is killed, the hiring Hero loses Fame equal to the Fame value on the Hired Native counter, even if that results in negative Fame for the Hero. Track negative Fame values in the Adventure Journal until the Hero has positive Fame. *Exception: the Necromancer’s Animated Skeletons do not cause a loss in Fame.*"
     },
     {
       "id": "2.9.1.9",
@@ -237,35 +237,35 @@
       "source": "natives-and-legends",
       "level": 2,
       "title": "Expanded Enchantment",
-      "content": "![](/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png)\n\nMagic cubes in enchanted Map Tiles can be used on Treasure Cards that require a Magic Cube (*e.g. Band of Sagacity*). Each Hero may use each enchanted cube in one magic box each Combat Round. Thus, a Hero could use one enchanted cube on a treasure or use it to cast a spell, but not both. Two different Heroes can each use the same enchanted cube independently. Enchanted cubes used in this manner do not count against the cube limit for the Combat Round."
+      "content": "Magic cubes in enchanted Map Tiles can be used on Treasure Cards that require a Magic Cube (*e.g. Band of Sagacity*). Each Hero may use each enchanted cube in one magic box each Combat Round. Thus, a Hero could use one enchanted cube on a treasure or use it to cast a spell, but not both. Two different Heroes can each use the same enchanted cube independently. Enchanted cubes used in this manner do not count against the cube limit for the Combat Round."
     },
     {
       "id": "4.4",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Enchantment Depletion",
-      "content": "![](/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png)\n\n![](/images/pdf/7eaf673ecad14bfefe69a171f53142fea044f2f9.png)\n\nWhen casting a spell in an enchanted Map Tile, the spell caster may use the enchantment cube for any spell box on the Spell Card. If the enchanted cube is used on a spell box with a wound symbol, the enchantment cube is discarded after the spell is cast, disenchanting the Map Tile immediately. The Map Tile does not flip over. This rule is a middle ground between the core rules and the Enchantment Limit optional rule from **Dragons Down**."
+      "content": "When casting a spell in an enchanted Map Tile, the spell caster may use the enchantment cube for any spell box on the Spell Card. If the enchanted cube is used on a spell box with a wound symbol, the enchantment cube is discarded after the spell is cast, disenchanting the Map Tile immediately. The Map Tile does not flip over. This rule is a middle ground between the core rules and the Enchantment Limit optional rule from **Dragons Down**."
     },
     {
       "id": "4.5",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Native Possessions",
-      "content": "![](/images/pdf/b25ff3c430f8dd5964db76868bdddbe6de62d0d6.png)\n\n![](/images/pdf/3936b1933886932e291cc399547293385a6beffb.png)\n\nWhen a Native Group is first summoned to the map, including during initial placement, deal one face-down Mission, Item, and Treasure Card next to the Native Civilization Card. Heroes may use a Trade Action while in the same clearing as an **Unhired** Native leader to look at the cards the Native leader possesses and take the mission or buy the item or treasure (*as if the Native leader was a Merchant, including* *all haggle rules*). Heroes may not perform any other trade steps with Native leaders.\n\n![](/images/pdf/887c5340fa045f2fa43203b52f8ce79e708bb197.png)\n\nIf a mission is to be completed with the Native Group possessing it, discard the Mission Card and draw a new Mission Card for the Native Group.\n\nIf the Native leader is killed discard these cards. *Exception: If no enemy Natives* *remain at the end of Combat in which the Native leader was killed, the Hero that* *struck the death blow receives the Item and Treasure Card.*"
+      "content": "When a Native Group is first summoned to the map, including during initial placement, deal one face-down Mission, Item, and Treasure Card next to the Native Civilization Card. Heroes may use a Trade Action while in the same clearing as an **Unhired** Native leader to look at the cards the Native leader possesses and take the mission or buy the item or treasure (*as if the Native leader was a Merchant, including* *all haggle rules*). Heroes may not perform any other trade steps with Native leaders.\n\nIf a mission is to be completed with the Native Group possessing it, discard the Mission Card and draw a new Mission Card for the Native Group.\n\nIf the Native leader is killed discard these cards. *Exception: If no enemy Natives* *remain at the end of Combat in which the Native leader was killed, the Hero that* *struck the death blow receives the Item and Treasure Card.*"
     },
     {
       "id": "4.6",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Mission Cycling",
-      "content": "![](/images/pdf/f7e9a539b1db872bcf70fc0943c7b1e58cae8e54.png)\n\nDo not create a discard pile for missions. Whenever a Hero **discards** missions, they are shuffled back into the Mission Deck. When a Hero completes a mission, it is removed from the game. This rule prevents players from trying to cycle through the Mission Deck looking for a specific mission that they know exists."
+      "content": "Do not create a discard pile for missions. Whenever a Hero **discards** missions, they are shuffled back into the Mission Deck. When a Hero completes a mission, it is removed from the game. This rule prevents players from trying to cycle through the Mission Deck looking for a specific mission that they know exists."
     },
     {
       "id": "4.7",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Earned Rewards",
-      "content": "![](/images/pdf/adc3cbf7a005694a54cc7864dd9d1a10520877a7.png)\n\nWhen a discovery, item, or treasure Wilderness Token is drawn, the Hero does not automatically receive the reward. Place it face-up in a random clearing in the Map Tile. The first Hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the Wilderness Token\n\n![](/images/pdf/247605709913fdfc186a8350f4f57efaafdd5574.png)\n\nface-up in a part of the Map Tile not containing a clearing."
+      "content": "When a discovery, item, or treasure Wilderness Token is drawn, the Hero does not automatically receive the reward. Place it face-up in a random clearing in the Map Tile. The first Hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the Wilderness Token\n\nface-up in a part of the Map Tile not containing a clearing."
     },
     {
       "id": "5",
@@ -286,7 +286,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Gnome (Inventive)",
-      "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.",
+      "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.\n\n![](/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png)",
       "tags": [
         "lineageAdvantage"
       ]
@@ -296,7 +296,7 @@
       "source": "natives-and-legends",
       "level": 2,
       "title": "Class Advantages",
-      "content": "![](/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png)"
+      "content": ""
     },
     {
       "id": "5.2.0.1",
@@ -313,7 +313,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Berserker (Berserk)",
-      "content": "Berserkers can go into a frenzy in combat. Once per Combat during the Challenge step, the Berserker may convert one Action Cube of any type into a Heart for the duration of Combat. At the end of Combat, the Heart converts back to the replaced cube (*killing the Berserker if they lose their* *last Heart*). Berserkers begin the game with no Gold.",
+      "content": "Berserkers can go into a frenzy in combat. Once per Combat during the Challenge step, the Berserker may convert one Action Cube of any type into a Heart for the duration of Combat. At the end of Combat, the Heart converts back to the replaced cube (*killing the Berserker if they lose their* *last Heart*). Berserkers begin the game with no Gold.\n\n![](/images/pdf/f7e9a539b1db872bcf70fc0943c7b1e58cae8e54.png)",
       "tags": [
         "classAdvantage"
       ]
@@ -323,7 +323,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Brigand (Brotherhood)",
-      "content": "![](/images/pdf/f7e9a539b1db872bcf70fc0943c7b1e58cae8e54.png)\n\nThe Brigand is the former leader of the Bandits that have been plaguing the land of **Dragons Down**. The Brigand begins the game with an Outlaw Token. The Bandits are a Native Group to the Brigand that will neither block, nor attack, the Brigand. The Brigand may hire them in any order (*Bandit Leader last*). The Bandits respect Cunning for any haggle attempts. If the Brigand performs a Loot Action at the Hideout or attacks any unhired Bandit, the Bandits treat the Brigand like any other Hero for the rest of the game and all current Bandit hires of the Brigand are placed back in the Native tray immediately.\n\n![](/images/pdf/adc3cbf7a005694a54cc7864dd9d1a10520877a7.png)\n\nWhen the Brigand searches for the Hideout, Secret Stash, or Wrecked Wagons, the search succeeds without rolling any dice and without triggering any hidden traps. When the Brigand finds these Treasure Sites, they draw one Treasure Card from the main Treasure Deck (*not the Treasure Site Pile*), in addition to any normal rewards they receive (*even if not the first to find the Treasure Site*).",
+      "content": "The Brigand is the former leader of the Bandits that have been plaguing the land of **Dragons Down**. The Brigand begins the game with an Outlaw Token. The Bandits are a Native Group to the Brigand that will neither block, nor attack, the Brigand. The Brigand may hire them in any order (*Bandit Leader last*). The Bandits respect Cunning for any haggle attempts. If the Brigand performs a Loot Action at the Hideout or attacks any unhired Bandit, the Bandits treat the Brigand like any other Hero for the rest of the game and all current Bandit hires of the Brigand are placed back in the Native tray immediately.\n\n![](/images/pdf/adc3cbf7a005694a54cc7864dd9d1a10520877a7.png)\n\nWhen the Brigand searches for the Hideout, Secret Stash, or Wrecked Wagons, the search succeeds without rolling any dice and without triggering any hidden traps. When the Brigand finds these Treasure Sites, they draw one Treasure Card from the main Treasure Deck (*not the Treasure Site Pile*), in addition to any normal rewards they receive (*even if not the first to find the Treasure Site*).",
       "tags": [
         "classAdvantage"
       ]
@@ -333,7 +333,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Burgess (Shrewd)",
-      "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value.",
+      "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value.\n\n![](/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png)",
       "tags": [
         "classAdvantage"
       ]
@@ -343,7 +343,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Explorer (Perceptive)",
-      "content": "![](/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png)\n\nExplorers have a keen eye for the unknown, often seeing clues that others miss. Once per Explore or Move Action, upon revealing a Wilderness Token in a Map Tile, the Explorer may mix the token back into the pool of Wilderness Tokens and draw another one. The Explorer must accept this newly drawn Wilderness Token.",
+      "content": "Explorers have a keen eye for the unknown, often seeing clues that others miss. Once per Explore or Move Action, upon revealing a Wilderness Token in a Map Tile, the Explorer may mix the token back into the pool of Wilderness Tokens and draw another one. The Explorer must accept this newly drawn Wilderness Token.\n\n![](/images/pdf/7eaf673ecad14bfefe69a171f53142fea044f2f9.png)",
       "tags": [
         "classAdvantage"
       ]
@@ -353,7 +353,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Necromancer (Gravecalling)",
-      "content": "![](/images/pdf/7eaf673ecad14bfefe69a171f53142fea044f2f9.png)\n\nNecromancers have the ability to reanimate the dead as skeletal minions. If no Monsters or enemy Natives remain in the clearing at the end of Combat, place one Animated Skeleton counter in the clearing for each Hero, Native, or non-undead Monster that was killed in the clearing this turn, but not removed. F*or example, Fiery Chasm removes all that it kills and does* *not produce Animated Skeletons*. The Necromancer may have a maximum of 4 Animated Skeletons in play at any time. Animated Skeletons act as permanent Hired Natives until killed. If the Necromancer is killed, all Animated Skeletons are also immediately killed earning Fame for the Hero that killed the Necromancer. A Necromancer earns no Fame for killing their own Animated Skeletons, nor do they lose Fame for Animated Skeletons that are killed. Skeletons are undead.",
+      "content": "Necromancers have the ability to reanimate the dead as skeletal minions. If no Monsters or enemy Natives remain in the clearing at the end of Combat, place one Animated Skeleton counter in the clearing for each Hero, Native, or non-undead Monster that was killed in the clearing this turn, but not removed. F*or example, Fiery Chasm removes all that it kills and does* *not produce Animated Skeletons*. The Necromancer may have a maximum of 4 Animated Skeletons in play at any time. Animated Skeletons act as permanent Hired Natives until killed. If the Necromancer is killed, all Animated Skeletons are also immediately killed earning Fame for the Hero that killed the Necromancer. A Necromancer earns no Fame for killing their own Animated Skeletons, nor do they lose Fame for Animated Skeletons that are killed. Skeletons are undead.\n\n![](/images/pdf/3936b1933886932e291cc399547293385a6beffb.png)",
       "tags": [
         "classAdvantage"
       ]
@@ -363,7 +363,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Outcast (Overlooked)",
-      "content": "![](/images/pdf/3936b1933886932e291cc399547293385a6beffb.png)\n\nThe Outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The Outcast may not use a Trade Action to look at the possessions of a Merchant or buy them. They may still do all of the other options of a Trade Action, including looking at and taking missions normally. When selling possessions, the Outcast receives half of the Gold value, rounded up. The Outcast may loot a Merchant’s treasures and items as if it were a found Treasure Site (*the Outcast does not have to search* *for the Merchant first*). Organize Merchant possessions as follows: Deep Treasure Cards on top of Treasure Cards on top of Item Cards. New cards that are added to the Merchant for any reason are placed on top of their corresponding cards already with the Merchant. Players may not adjust the order of cards. The Outcast takes the card at the spot indicated by the loot roll.\n\n![](/images/pdf/887c5340fa045f2fa43203b52f8ce79e708bb197.png)\n\nAfter looting (*successful or not*), the Outcast must roll to hide (*using all Lineage,* *treasure, and Sneak bonuses*). If the Outcast fails this hide roll, they are blocked, receive one Outlaw Token and may never again interact with that Merchant in any way. Use the Adventure Journal to track Merchants that are closed to the Outcast.",
+      "content": "The Outcast grew up on the edges of society, scorned by most, trusted by none, and surviving any way that they could. The Outcast may not use a Trade Action to look at the possessions of a Merchant or buy them. They may still do all of the other options of a Trade Action, including looking at and taking missions normally. When selling possessions, the Outcast receives half of the Gold value, rounded up. The Outcast may loot a Merchant’s treasures and items as if it were a found Treasure Site (*the Outcast does not have to search* *for the Merchant first*). Organize Merchant possessions as follows: Deep Treasure Cards on top of Treasure Cards on top of Item Cards. New cards that are added to the Merchant for any reason are placed on top of their corresponding cards already with the Merchant. Players may not adjust the order of cards. The Outcast takes the card at the spot indicated by the loot roll.\n\n![](/images/pdf/887c5340fa045f2fa43203b52f8ce79e708bb197.png)\n\nAfter looting (*successful or not*), the Outcast must roll to hide (*using all Lineage,* *treasure, and Sneak bonuses*). If the Outcast fails this hide roll, they are blocked, receive one Outlaw Token and may never again interact with that Merchant in any way. Use the Adventure Journal to track Merchants that are closed to the Outcast.",
       "tags": [
         "classAdvantage"
       ]
@@ -373,7 +373,7 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Wizard (Studious)",
-      "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one Learn Die once per Learn Action.",
+      "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one Learn Die once per Learn Action.\n\n![](/images/pdf/247605709913fdfc186a8350f4f57efaafdd5574.png)",
       "tags": [
         "classAdvantage"
       ]
@@ -383,7 +383,7 @@
       "source": "natives-and-legends",
       "level": 2,
       "title": "Native Reference",
-      "content": "![](/images/pdf/247605709913fdfc186a8350f4f57efaafdd5574.png)"
+      "content": ""
     },
     {
       "id": "5.3.0.1",
