@@ -337,7 +337,8 @@
       "source": "natives-and-legends",
       "level": 4,
       "title": "Burgess (Shrewd)",
-      "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value.\n\n![](/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png)",
+      "icon": "/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png",
+      "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value.",
       "tags": [
         "classAdvantage"
       ]

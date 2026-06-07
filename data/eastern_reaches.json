@@ -473,7 +473,8 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Disciple (Chosen)",
-      "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.\n\n![](/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg)",
+      "icon": "/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg",
+      "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.",
       "tags": [
         "classAdvantage"
       ]

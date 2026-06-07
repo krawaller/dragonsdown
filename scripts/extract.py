@@ -357,14 +357,17 @@ def find_section_icons(
                 aligned_top = abs(iy0 - hy0) <= 12 or hy0 <= iy0 <= hy1 + 12
                 plausible_margin = 30 <= (hx0 - ix0) <= 75
                 heading_wraps = hx0 >= ix1 - 1 and hy0 < iy1
-                body_wraps = any(lb[0] >= ix1 - 1 and lb[1] < iy1 for lb in following_lines)
+                wrapped_body_lines = [lb for lb in following_lines if lb[0] >= ix1 - 1]
+                body_wraps = any(lb[1] < iy1 for lb in wrapped_body_lines)
                 body_returns = any(
-                    abs(lb[0] - ix0) <= 5 and lb[1] >= iy1 - 6
+                    abs(lb[0] - ix0) <= 8 and lb[1] >= iy1 - 6
                     for lb in following_lines
                 )
-                short_fully_wrapped = bool(following_lines) and max(
-                    lb[3] for lb in following_lines
-                ) <= iy1 + 12
+                short_fully_wrapped = (
+                    bool(following_lines)
+                    and len(wrapped_body_lines) == len(following_lines)
+                    and max(lb[3] for lb in following_lines) <= iy1 + 36
+                )
                 if (
                     left_of_heading
                     and close_gap

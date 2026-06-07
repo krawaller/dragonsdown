@@ -37,7 +37,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Bard (Musical)",
-    "content": "Bards are entertainers and minstrels in addition to being heroic. If the Bard is in a Civilization Location at the end of Combat, they roll one Mission Die and receive the reward rolled.\n\n![](/images/pdf/d024baacb93541ff86c7fd553523de763fa0bc1c.png)",
+    "icon": "/images/pdf/d024baacb93541ff86c7fd553523de763fa0bc1c.png",
+    "content": "Bards are entertainers and minstrels in addition to being heroic. If the Bard is in a Civilization Location at the end of Combat, they roll one Mission Die and receive the reward rolled.",
     "tags": [
       "classAdvantage"
     ]
@@ -47,7 +48,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Battle Mage (Power)",
-    "content": "The Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple Magic Cube as if it is a red Might Cube each Combat Round.\n\n![](/images/pdf/1228425c2c90b4f3861887004a47862f43452c96.png)",
+    "icon": "/images/pdf/1228425c2c90b4f3861887004a47862f43452c96.png",
+    "content": "The Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple Magic Cube as if it is a red Might Cube each Combat Round.",
     "tags": [
       "classAdvantage"
     ]
@@ -79,7 +81,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Black Knight (Feared)",
-    "content": "The Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one Haggle Die once per Trade Action.\n\n![](/images/pdf/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png)",
+    "icon": "/images/pdf/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png",
+    "content": "The Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one Haggle Die once per Trade Action.",
     "tags": [
       "classAdvantage"
     ]
@@ -100,7 +103,8 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Burgess (Shrewd)",
-    "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value.\n\n![](/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png)",
+    "icon": "/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png",
+    "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value.",
     "tags": [
       "classAdvantage"
     ]
@@ -110,7 +114,8 @@
     "source": "core",
     "level": 4,
     "title": "Cleric (Divine Protection)",
-    "content": "Clerics have the divine on their side. Any Summoning Die roll that would summon or move undead Monsters to the Cleric’s clearing may be rerolled once per turn. The new result applies only to the Cleric’s tile, with the prior result applying everywhere else.\n\n![](/images/pdf/27346e18388e9490e10ce36cfbf0354da725287d.png)",
+    "icon": "/images/pdf/27346e18388e9490e10ce36cfbf0354da725287d.png",
+    "content": "Clerics have the divine on their side. Any Summoning Die roll that would summon or move undead Monsters to the Cleric’s clearing may be rerolled once per turn. The new result applies only to the Cleric’s tile, with the prior result applying everywhere else.",
     "tags": [
       "classAdvantage"
     ]
@@ -120,7 +125,8 @@
     "source": "core",
     "level": 4,
     "title": "Conjurer (Mastery)",
-    "content": "Conjurers can control the random aspects of magic. Conjurers may reroll one die for the effects of a blue spell. *For example, reroll one Hit* *Die for an Air Sword attack or each Tentacle attack or reroll one die for* *Open Gate or Teleport.* Must accept the new result.\n\n![](/images/pdf/2918b9c72f6a16cb3722c77d54eaeccc0be245b3.png)",
+    "icon": "/images/pdf/2918b9c72f6a16cb3722c77d54eaeccc0be245b3.png",
+    "content": "Conjurers can control the random aspects of magic. Conjurers may reroll one die for the effects of a blue spell. *For example, reroll one Hit* *Die for an Air Sword attack or each Tentacle attack or reroll one die for* *Open Gate or Teleport.* Must accept the new result.",
     "tags": [
       "classAdvantage"
     ]
@@ -152,7 +158,8 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Disciple (Chosen)",
-    "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.\n\n![](/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg)",
+    "icon": "/images/pdf/b2d5ea02f6772213f4d04c71b21db2f4c4467ed6.jpeg",
+    "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.",
     "tags": [
       "classAdvantage"
     ]
@@ -162,7 +169,8 @@
     "source": "core",
     "level": 4,
     "title": "Druid (Natural Emanation)",
-    "content": "Druids know the magic of nature. When casting spells, Druids may choose not to wound one green Magic Cube in a spell box containing a wound symbol.\n\n![](/images/pdf/38925a2e8ed76dac0920c6c402bf22314427ab1a.png)",
+    "icon": "/images/pdf/38925a2e8ed76dac0920c6c402bf22314427ab1a.png",
+    "content": "Druids know the magic of nature. When casting spells, Druids may choose not to wound one green Magic Cube in a spell box containing a wound symbol.",
     "tags": [
       "classAdvantage"
     ]
@@ -194,7 +202,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Executioner (Intimidation)",
-    "content": "The Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of Combat, the attack speed of all Natives targeting the Executioner is -1.\n\n![](/images/pdf/10f58884e706ac5949aaea08475320671a0b26a7.png)",
+    "icon": "/images/pdf/10f58884e706ac5949aaea08475320671a0b26a7.png",
+    "content": "The Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of Combat, the attack speed of all Natives targeting the Executioner is -1.",
     "tags": [
       "classAdvantage"
     ]
@@ -215,7 +224,8 @@
     "source": "core",
     "level": 4,
     "title": "Illusionist (Focus)",
-    "content": "Illusionists are focused on their targets. When casting a spell with a “Target” or “Self or Other” symbol, Illusionists may choose not to wound one Magic Cube in a spell box containing a wound symbol.\n\n![](/images/pdf/83e975b74922f8b308d187df3d91665ac9d9c3b9.png)",
+    "icon": "/images/pdf/83e975b74922f8b308d187df3d91665ac9d9c3b9.png",
+    "content": "Illusionists are focused on their targets. When casting a spell with a “Target” or “Self or Other” symbol, Illusionists may choose not to wound one Magic Cube in a spell box containing a wound symbol.",
     "tags": [
       "classAdvantage"
     ]
@@ -313,7 +323,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Ranger (Woods Lore)",
-    "content": "Rangers know the woods after spending years in the wilderness. When in Woods Clearings, Rangers may reroll one Search Die during each Search Action.\n\n![](/images/pdf/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png)",
+    "icon": "/images/pdf/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png",
+    "content": "Rangers know the woods after spending years in the wilderness. When in Woods Clearings, Rangers may reroll one Search Die during each Search Action.",
     "tags": [
       "classAdvantage"
     ]
@@ -323,7 +334,8 @@
     "source": "core",
     "level": 4,
     "title": "Rogue (Elusive)",
-    "content": "Rogues are quick on their feet and hard to catch. When evading, Rogues that tie the maneuver speed of the fastest challenger may roll two Hit Dice and successfully evade on a hit or equal result. The Rogue is blocked on a miss result. Rogues challenge other Heroes normally.\n\n![](/images/pdf/2b5a7a4b3b30fbf1c554f6dc9fca43fdabaa634a.png)",
+    "icon": "/images/pdf/2b5a7a4b3b30fbf1c554f6dc9fca43fdabaa634a.png",
+    "content": "Rogues are quick on their feet and hard to catch. When evading, Rogues that tie the maneuver speed of the fastest challenger may roll two Hit Dice and successfully evade on a hit or equal result. The Rogue is blocked on a miss result. Rogues challenge other Heroes normally.",
     "tags": [
       "classAdvantage"
     ]
@@ -333,7 +345,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Runesword (Control)",
-    "content": "Runeswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue Magic Cube on any color of magic box on Treasure Cards.\n\n![](/images/pdf/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png)",
+    "icon": "/images/pdf/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png",
+    "content": "Runeswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue Magic Cube on any color of magic box on Treasure Cards.",
     "tags": [
       "classAdvantage"
     ]
@@ -343,7 +356,8 @@
     "source": "core",
     "level": 4,
     "title": "Sorcerer (Specialized)",
-    "content": "Sorcerers are adept at casting magic using one discipline. If a Sorcerer casts a spell using only one color of Magic Cube, the attack speed of the spell is +1.\n\n![](/images/pdf/737a2b778a7e6596728cd28506dbdf63fd3564c0.png)",
+    "icon": "/images/pdf/737a2b778a7e6596728cd28506dbdf63fd3564c0.png",
+    "content": "Sorcerers are adept at casting magic using one discipline. If a Sorcerer casts a spell using only one color of Magic Cube, the attack speed of the spell is +1.",
     "tags": [
       "classAdvantage"
     ]
@@ -353,7 +367,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Soulless (Incorporeal)",
-    "content": "The Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all Hidden Paths when in their normal form (*not Shape Shifted, etc.*).\n\n![](/images/pdf/a483a7f20e98594440dacbf50a9667670a124f80.png)",
+    "icon": "/images/pdf/a483a7f20e98594440dacbf50a9667670a124f80.png",
+    "content": "The Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all Hidden Paths when in their normal form (*not Shape Shifted, etc.*).",
     "tags": [
       "classAdvantage"
     ]
@@ -363,7 +378,8 @@
     "source": "desolation",
     "level": 4,
     "title": "Trickster (Illusionary Speed)",
-    "content": "The Trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the Trickster an advantage in combat. When attacking, the Trickster may change one Hit Die result from an equal symbol to a hit symbol.\n\n![](/images/pdf/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png)",
+    "icon": "/images/pdf/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png",
+    "content": "The Trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the Trickster an advantage in combat. When attacking, the Trickster may change one Hit Die result from an equal symbol to a hit symbol.",
     "tags": [
       "classAdvantage"
     ]
@@ -384,7 +400,8 @@
     "source": "core",
     "level": 4,
     "title": "Warlock (Blood Lust)",
-    "content": "Warlocks heal at the expense of others. Once per round, Warlocks may immediately heal one Action Cube when the Warlock kills or wounds a non-undead enemy (*even if armored*).\n\n![](/images/pdf/dfafe3e872f50a46c60359c3c753e2ee59bd1bc3.png)",
+    "icon": "/images/pdf/dfafe3e872f50a46c60359c3c753e2ee59bd1bc3.png",
+    "content": "Warlocks heal at the expense of others. Once per round, Warlocks may immediately heal one Action Cube when the Warlock kills or wounds a non-undead enemy (*even if armored*).",
     "tags": [
       "classAdvantage"
     ]
@@ -394,7 +411,8 @@
     "source": "core",
     "level": 4,
     "title": "Warrior (Adept)",
-    "content": "Warriors have great dexterity and coordination. During the adjust equipment step of combat, Warriors may always unequip one Weapon Card and equip one Weapon Card.\n\n![](/images/pdf/ed2daf7fadb78723035490e6a834fd80c0f139d5.png)",
+    "icon": "/images/pdf/ed2daf7fadb78723035490e6a834fd80c0f139d5.png",
+    "content": "Warriors have great dexterity and coordination. During the adjust equipment step of combat, Warriors may always unequip one Weapon Card and equip one Weapon Card.",
     "tags": [
       "classAdvantage"
     ]

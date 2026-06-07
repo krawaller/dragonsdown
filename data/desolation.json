@@ -27,7 +27,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Half-Elves (Two Worlds)",
-      "content": "Half-Elves straddle the worlds of elves and humans. At the beginning of the game, Half-Elves choose either the elven advantage or the human advantage to use for the entirety of this game session.\n\n![](/images/pdf/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png)",
+      "icon": "/images/pdf/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png",
+      "content": "Half-Elves straddle the worlds of elves and humans. At the beginning of the game, Half-Elves choose either the elven advantage or the human advantage to use for the entirety of this game session.",
       "tags": [
         "lineageAdvantage"
       ]
@@ -66,7 +67,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Bard (Musical)",
-      "content": "Bards are entertainers and minstrels in addition to being heroic. If the Bard is in a Civilization Location at the end of Combat, they roll one Mission Die and receive the reward rolled.\n\n![](/images/pdf/d024baacb93541ff86c7fd553523de763fa0bc1c.png)",
+      "icon": "/images/pdf/d024baacb93541ff86c7fd553523de763fa0bc1c.png",
+      "content": "Bards are entertainers and minstrels in addition to being heroic. If the Bard is in a Civilization Location at the end of Combat, they roll one Mission Die and receive the reward rolled.",
       "tags": [
         "classAdvantage"
       ]
@@ -76,7 +78,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Battle Mage (Power)",
-      "content": "The Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple Magic Cube as if it is a red Might Cube each Combat Round.\n\n![](/images/pdf/1228425c2c90b4f3861887004a47862f43452c96.png)",
+      "icon": "/images/pdf/1228425c2c90b4f3861887004a47862f43452c96.png",
+      "content": "The Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple Magic Cube as if it is a red Might Cube each Combat Round.",
       "tags": [
         "classAdvantage"
       ]
@@ -86,7 +89,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Black Knight (Feared)",
-      "content": "The Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one Haggle Die once per Trade Action.\n\n![](/images/pdf/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png)",
+      "icon": "/images/pdf/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png",
+      "content": "The Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one Haggle Die once per Trade Action.",
       "tags": [
         "classAdvantage"
       ]
@@ -96,7 +100,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Executioner (Intimidation)",
-      "content": "The Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of Combat, the attack speed of all Natives targeting the Executioner is -1.\n\n![](/images/pdf/10f58884e706ac5949aaea08475320671a0b26a7.png)",
+      "icon": "/images/pdf/10f58884e706ac5949aaea08475320671a0b26a7.png",
+      "content": "The Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of Combat, the attack speed of all Natives targeting the Executioner is -1.",
       "tags": [
         "classAdvantage"
       ]
@@ -128,7 +133,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Ranger (Woods Lore)",
-      "content": "Rangers know the woods after spending years in the wilderness. When in Woods Clearings, Rangers may reroll one Search Die during each Search Action.\n\n![](/images/pdf/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png)",
+      "icon": "/images/pdf/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png",
+      "content": "Rangers know the woods after spending years in the wilderness. When in Woods Clearings, Rangers may reroll one Search Die during each Search Action.",
       "tags": [
         "classAdvantage"
       ]
@@ -138,7 +144,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Runesword (Control)",
-      "content": "Runeswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue Magic Cube on any color of magic box on Treasure Cards.\n\n![](/images/pdf/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png)",
+      "icon": "/images/pdf/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png",
+      "content": "Runeswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue Magic Cube on any color of magic box on Treasure Cards.",
       "tags": [
         "classAdvantage"
       ]
@@ -148,7 +155,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Soulless (Incorporeal)",
-      "content": "The Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all Hidden Paths when in their normal form (*not Shape Shifted, etc.*).\n\n![](/images/pdf/a483a7f20e98594440dacbf50a9667670a124f80.png)",
+      "icon": "/images/pdf/a483a7f20e98594440dacbf50a9667670a124f80.png",
+      "content": "The Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all Hidden Paths when in their normal form (*not Shape Shifted, etc.*).",
       "tags": [
         "classAdvantage"
       ]
@@ -158,7 +166,8 @@
       "source": "desolation",
       "level": 4,
       "title": "Trickster (Illusionary Speed)",
-      "content": "The Trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the Trickster an advantage in combat. When attacking, the Trickster may change one Hit Die result from an equal symbol to a hit symbol.\n\n![](/images/pdf/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png)",
+      "icon": "/images/pdf/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png",
+      "content": "The Trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the Trickster an advantage in combat. When attacking, the Trickster may change one Hit Die result from an equal symbol to a hit symbol.",
       "tags": [
         "classAdvantage"
       ]

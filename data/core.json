@@ -1047,7 +1047,8 @@
       "source": "core",
       "level": 4,
       "title": "Elf (Magical)",
-      "content": "Elves are raised around magic and begin the game with an extra spell from the Hero Starting Spell deck. The selected spell must match the color of a Magic Cube they select for their Hero.\n\n![](/images/pdf/e58dd7043dffd7517153100785ac79473fcb646b.png)",
+      "icon": "/images/pdf/e58dd7043dffd7517153100785ac79473fcb646b.png",
+      "content": "Elves are raised around magic and begin the game with an extra spell from the Hero Starting Spell deck. The selected spell must match the color of a Magic Cube they select for their Hero.",
       "tags": [
         "lineageAdvantage"
       ]
@@ -1057,7 +1058,8 @@
       "source": "core",
       "level": 4,
       "title": "Halfling (Stealthy)",
-      "content": "Halflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one Monster Die per hide attempt, except during the Cleanup step of combat.\n\n![](/images/pdf/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png)",
+      "icon": "/images/pdf/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png",
+      "content": "Halflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one Monster Die per hide attempt, except during the Cleanup step of combat.",
       "tags": [
         "lineageAdvantage"
       ]
@@ -1107,7 +1109,8 @@
       "source": "core",
       "level": 4,
       "title": "Cleric (Divine Protection)",
-      "content": "Clerics have the divine on their side. Any Summoning Die roll that would summon or move undead Monsters to the Cleric’s clearing may be rerolled once per turn. The new result applies only to the Cleric’s tile, with the prior result applying everywhere else.\n\n![](/images/pdf/27346e18388e9490e10ce36cfbf0354da725287d.png)",
+      "icon": "/images/pdf/27346e18388e9490e10ce36cfbf0354da725287d.png",
+      "content": "Clerics have the divine on their side. Any Summoning Die roll that would summon or move undead Monsters to the Cleric’s clearing may be rerolled once per turn. The new result applies only to the Cleric’s tile, with the prior result applying everywhere else.",
       "tags": [
         "classAdvantage"
       ]
@@ -1117,7 +1120,8 @@
       "source": "core",
       "level": 4,
       "title": "Conjurer (Mastery)",
-      "content": "Conjurers can control the random aspects of magic. Conjurers may reroll one die for the effects of a blue spell. *For example, reroll one Hit* *Die for an Air Sword attack or each Tentacle attack or reroll one die for* *Open Gate or Teleport.* Must accept the new result.\n\n![](/images/pdf/2918b9c72f6a16cb3722c77d54eaeccc0be245b3.png)",
+      "icon": "/images/pdf/2918b9c72f6a16cb3722c77d54eaeccc0be245b3.png",
+      "content": "Conjurers can control the random aspects of magic. Conjurers may reroll one die for the effects of a blue spell. *For example, reroll one Hit* *Die for an Air Sword attack or each Tentacle attack or reroll one die for* *Open Gate or Teleport.* Must accept the new result.",
       "tags": [
         "classAdvantage"
       ]
@@ -1127,7 +1131,8 @@
       "source": "core",
       "level": 4,
       "title": "Druid (Natural Emanation)",
-      "content": "Druids know the magic of nature. When casting spells, Druids may choose not to wound one green Magic Cube in a spell box containing a wound symbol.\n\n![](/images/pdf/38925a2e8ed76dac0920c6c402bf22314427ab1a.png)",
+      "icon": "/images/pdf/38925a2e8ed76dac0920c6c402bf22314427ab1a.png",
+      "content": "Druids know the magic of nature. When casting spells, Druids may choose not to wound one green Magic Cube in a spell box containing a wound symbol.",
       "tags": [
         "classAdvantage"
       ]
@@ -1148,7 +1153,8 @@
       "source": "core",
       "level": 4,
       "title": "Illusionist (Focus)",
-      "content": "Illusionists are focused on their targets. When casting a spell with a “Target” or “Self or Other” symbol, Illusionists may choose not to wound one Magic Cube in a spell box containing a wound symbol.\n\n![](/images/pdf/83e975b74922f8b308d187df3d91665ac9d9c3b9.png)",
+      "icon": "/images/pdf/83e975b74922f8b308d187df3d91665ac9d9c3b9.png",
+      "content": "Illusionists are focused on their targets. When casting a spell with a “Target” or “Self or Other” symbol, Illusionists may choose not to wound one Magic Cube in a spell box containing a wound symbol.",
       "tags": [
         "classAdvantage"
       ]
@@ -1169,7 +1175,8 @@
       "source": "core",
       "level": 4,
       "title": "Rogue (Elusive)",
-      "content": "Rogues are quick on their feet and hard to catch. When evading, Rogues that tie the maneuver speed of the fastest challenger may roll two Hit Dice and successfully evade on a hit or equal result. The Rogue is blocked on a miss result. Rogues challenge other Heroes normally.\n\n![](/images/pdf/2b5a7a4b3b30fbf1c554f6dc9fca43fdabaa634a.png)",
+      "icon": "/images/pdf/2b5a7a4b3b30fbf1c554f6dc9fca43fdabaa634a.png",
+      "content": "Rogues are quick on their feet and hard to catch. When evading, Rogues that tie the maneuver speed of the fastest challenger may roll two Hit Dice and successfully evade on a hit or equal result. The Rogue is blocked on a miss result. Rogues challenge other Heroes normally.",
       "tags": [
         "classAdvantage"
       ]
@@ -1179,7 +1186,8 @@
       "source": "core",
       "level": 4,
       "title": "Sorcerer (Specialized)",
-      "content": "Sorcerers are adept at casting magic using one discipline. If a Sorcerer casts a spell using only one color of Magic Cube, the attack speed of the spell is +1.\n\n![](/images/pdf/737a2b778a7e6596728cd28506dbdf63fd3564c0.png)",
+      "icon": "/images/pdf/737a2b778a7e6596728cd28506dbdf63fd3564c0.png",
+      "content": "Sorcerers are adept at casting magic using one discipline. If a Sorcerer casts a spell using only one color of Magic Cube, the attack speed of the spell is +1.",
       "tags": [
         "classAdvantage"
       ]
@@ -1189,7 +1197,8 @@
       "source": "core",
       "level": 4,
       "title": "Warlock (Blood Lust)",
-      "content": "Warlocks heal at the expense of others. Once per round, Warlocks may immediately heal one Action Cube when the Warlock kills or wounds a non-undead enemy (*even if armored*).\n\n![](/images/pdf/dfafe3e872f50a46c60359c3c753e2ee59bd1bc3.png)",
+      "icon": "/images/pdf/dfafe3e872f50a46c60359c3c753e2ee59bd1bc3.png",
+      "content": "Warlocks heal at the expense of others. Once per round, Warlocks may immediately heal one Action Cube when the Warlock kills or wounds a non-undead enemy (*even if armored*).",
       "tags": [
         "classAdvantage"
       ]
@@ -1199,7 +1208,8 @@
       "source": "core",
       "level": 4,
       "title": "Warrior (Adept)",
-      "content": "Warriors have great dexterity and coordination. During the adjust equipment step of combat, Warriors may always unequip one Weapon Card and equip one Weapon Card.\n\n![](/images/pdf/ed2daf7fadb78723035490e6a834fd80c0f139d5.png)",
+      "icon": "/images/pdf/ed2daf7fadb78723035490e6a834fd80c0f139d5.png",
+      "content": "Warriors have great dexterity and coordination. During the adjust equipment step of combat, Warriors may always unequip one Weapon Card and equip one Weapon Card.",
       "tags": [
         "classAdvantage"
       ]
