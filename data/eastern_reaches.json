@@ -1075,13 +1075,14 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Spell Manifest",
-      "content": "![](/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png)"
+      "content": ""
     },
     {
       "id": "5.6.1",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Black Spells",
+      "icon": "/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png",
       "content": ""
     },
     {
@@ -1133,7 +1134,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Possess",
-      "content": "Permanent. Wound two black cubes. When the spell is resolved, replace the caster with any non-undead Monster or Native in the same clearing. When the spell is inactive, place the Monster or Native counter on the Spell Card and use the Hero Chip again.\n\nThis spell works identically to Shape Shift, except that it does not need to hit to take effect and the Hero may possess a unique Monster, including Guardians.\n\nIf the spell expires (*for example, via a Break Spells spell or other game effects*), both the Hero and the Monster or Native are immediately placed in the clearing. Possessing a Native turns the targeted Native Group into a permanent enemy. Does not affect the undead.\n\n![](/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg)",
+      "content": "Permanent. Wound two black cubes. When the spell is resolved, replace the caster with any non-undead Monster or Native in the same clearing. When the spell is inactive, place the Monster or Native counter on the Spell Card and use the Hero Chip again.\n\nThis spell works identically to Shape Shift, except that it does not need to hit to take effect and the Hero may possess a unique Monster, including Guardians.\n\nIf the spell expires (*for example, via a Break Spells spell or other game effects*), both the Hero and the Monster or Native are immediately placed in the clearing. Possessing a Native turns the targeted Native Group into a permanent enemy. Does not affect the undead.",
       "tags": [
         "spell",
         "blackMagic"
@@ -1144,6 +1145,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Blue Spells",
+      "icon": "/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg",
       "content": ""
     },
     {
@@ -1195,7 +1197,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Foresight",
-      "content": "Instantaneous. Wound two blue cubes. Set any one of the Summoning Dice to a side of your choosing. That die will not be rolled next turn and will instead use the selected die face. Should another Hero cast a second foresight spell in the same turn, they may change the already selected die or another die.\n\n![](/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png)",
+      "content": "Instantaneous. Wound two blue cubes. Set any one of the Summoning Dice to a side of your choosing. That die will not be rolled next turn and will instead use the selected die face. Should another Hero cast a second foresight spell in the same turn, they may change the already selected die or another die.",
       "tags": [
         "spell",
         "blueMagic"
@@ -1206,6 +1208,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Gray Spells",
+      "icon": "/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png",
       "content": ""
     },
     {
@@ -1257,7 +1260,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Malediction",
-      "content": "Targeted (*infinite number of targets*). Instantaneous. Wound two gray cubes. This spell affects all Monsters, Natives, and Heroes (*including hidden Heroes*) in the clearing except for the caster. The spell causes a single individual melee attack of 1 damage against each target. Does not affect the undead.\n\n![](/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg)",
+      "content": "Targeted (*infinite number of targets*). Instantaneous. Wound two gray cubes. This spell affects all Monsters, Natives, and Heroes (*including hidden Heroes*) in the clearing except for the caster. The spell causes a single individual melee attack of 1 damage against each target. Does not affect the undead.",
       "tags": [
         "spell",
         "grayMagic"
@@ -1268,6 +1271,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Green Spells",
+      "icon": "/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg",
       "content": ""
     },
     {
@@ -1319,7 +1323,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Sunder",
-      "content": "Instantaneous. Wound two green cubes. May only be cast while on an edge Map Tile. Move the caster’s tile to any other empty location touching two or more Map Tiles. The affected Map Tile may be rotated as the caster wishes, but must be placed in such a way that all paths on the Map Tile and adjacent Map Tiles connect to existing paths.\n\n![](/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg)",
+      "content": "Instantaneous. Wound two green cubes. May only be cast while on an edge Map Tile. Move the caster’s tile to any other empty location touching two or more Map Tiles. The affected Map Tile may be rotated as the caster wishes, but must be placed in such a way that all paths on the Map Tile and adjacent Map Tiles connect to existing paths.",
       "tags": [
         "spell",
         "greenMagic"
@@ -1330,6 +1334,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Purple Spells",
+      "icon": "/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg",
       "content": ""
     },
     {
@@ -1381,7 +1386,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Pyroclasm",
-      "content": "Targeted (*infinite targets*). Ranged Attack. Instantaneous. Wound two purple cubes.  Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 2 swords.\n\n![](/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png)",
+      "content": "Targeted (*infinite targets*). Ranged Attack. Instantaneous. Wound two purple cubes.  Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 2 swords.",
       "tags": [
         "spell",
         "purpleMagic"
@@ -1392,6 +1397,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "White Spells",
+      "icon": "/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png",
       "content": ""
     },
     {
@@ -1443,7 +1449,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Renewal",
-      "content": "Permanent. Wound two white cubes. At the end of each Combat Round, including the two rounds at the end of Combat during which nothing happens, roll the two Monster Dice. If neither die shows a Monster symbol, heal one cube.\n\n![](/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg)",
+      "content": "Permanent. Wound two white cubes. At the end of each Combat Round, including the two rounds at the end of Combat during which nothing happens, roll the two Monster Dice. If neither die shows a Monster symbol, heal one cube.",
       "tags": [
         "spell",
         "whiteMagic"
@@ -1454,6 +1460,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Yellow Spells",
+      "icon": "/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg",
       "content": ""
     },
     {

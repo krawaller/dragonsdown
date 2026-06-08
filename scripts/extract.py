@@ -264,9 +264,10 @@ def find_section_icons(
 ) -> tuple[dict[tuple, str], set[int]]:
     """Detect section icons by their left-float geometry.
 
-    The PDFs lay these out as small square-ish images at the column margin. The
-    heading and first body lines begin to the right of the image; later lines
-    resume at the normal column margin once below the image.
+    The PDFs lay these out as small square-ish images at the column margin. Most
+    have heading/body lines that begin to the right of the image, then resume at
+    the normal column margin once below it. Some heading-only sections, like
+    spell color banners, only have the indented heading.
     """
     image_blocks: list[tuple[int, str, tuple[float, float, float, float]]] = []
     for block in blocks:
@@ -320,7 +321,7 @@ def find_section_icons(
                 next_spans = line.get("spans", [])
                 next_dom = max(next_spans, key=lambda s: len(s["text"]))
                 if classify_heading(next_dom["font"], next_dom["size"], next_dom["color"]) is not None:
-                    break
+                    return lines
                 lines.append(next_box)
             if lines:
                 break
@@ -368,14 +369,17 @@ def find_section_icons(
                     and len(wrapped_body_lines) == len(following_lines)
                     and max(lb[3] for lb in following_lines) <= iy1 + 36
                 )
+                heading_only_icon = not following_lines
                 if (
                     left_of_heading
                     and close_gap
                     and aligned_top
                     and plausible_margin
                     and heading_wraps
-                    and body_wraps
-                    and (body_returns or short_fully_wrapped)
+                    and (
+                        heading_only_icon
+                        or (body_wraps and (body_returns or short_fully_wrapped))
+                    )
                 ):
                     icons_by_heading[heading_key(level, title, hbox)] = url
                     icon_block_ids.add(block_id)
