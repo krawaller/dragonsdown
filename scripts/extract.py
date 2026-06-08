@@ -266,8 +266,8 @@ def find_section_icons(
 
     The PDFs lay these out as small square-ish images at the column margin. Most
     have heading/body lines that begin to the right of the image, then resume at
-    the normal column margin once below it. Some heading-only sections, like
-    spell color banners, only have the indented heading.
+    the normal column margin once below it. Some sections only indent the heading
+    itself: the body starts below the icon, or there is no body at all.
     """
     image_blocks: list[tuple[int, str, tuple[float, float, float, float]]] = []
     for block in blocks:
@@ -370,6 +370,12 @@ def find_section_icons(
                     and max(lb[3] for lb in following_lines) <= iy1 + 36
                 )
                 heading_only_icon = not following_lines
+                heading_wrapped_body_below = (
+                    bool(following_lines)
+                    and not body_wraps
+                    and body_returns
+                    and min(lb[1] for lb in following_lines) >= iy1 - 6
+                )
                 if (
                     left_of_heading
                     and close_gap
@@ -378,6 +384,7 @@ def find_section_icons(
                     and heading_wraps
                     and (
                         heading_only_icon
+                        or heading_wrapped_body_below
                         or (body_wraps and (body_returns or short_fully_wrapped))
                     )
                 ):
