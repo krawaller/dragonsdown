@@ -2,6 +2,11 @@
 
 import { useMemo, useState } from "react";
 
+const TILE_COORDINATE_EXTENT = 3;
+const TILE_DISPLAY_ROTATION_DEGREES = -30;
+const CLEARING_MARKER_CLOCKWISE_ADJUSTMENT_DEGREES = 30;
+const CLEARING_MARKER_RADIUS_SCALE = 0.76;
+
 export type MapTile = {
   name: string;
   terrain: string;
@@ -100,15 +105,52 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
         </div>
         <div className="overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
           <div className="mx-auto flex aspect-square max-h-[72vh] w-full items-center justify-center p-[4%]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={imageUrl}
-              alt={`${selectedTile.name} ${showBack ? "back" : "front"}`}
-              className="block h-full w-full -rotate-[30deg] object-contain"
-            />
+            <div className="relative h-full w-full">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={imageUrl}
+                alt={`${selectedTile.name} ${showBack ? "back" : "front"}`}
+                className="absolute inset-0 block h-full w-full -rotate-[30deg] object-contain"
+              />
+              <div className="pointer-events-none absolute inset-0">
+                {selectedTile.clearings.map((clearing, index) => (
+                  <span
+                    key={`${clearing.x}-${clearing.y}-${index}`}
+                    aria-hidden="true"
+                    className="absolute size-[15%] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/90 bg-sky-400/30 ring-1 ring-sky-700/70"
+                    style={clearingStyle(clearing)}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </div>
   );
+}
+
+function clearingStyle(clearing: { x: number; y: number }) {
+  const rotated = rotateClearing(
+    {
+      x: clearing.x * CLEARING_MARKER_RADIUS_SCALE,
+      y: clearing.y * CLEARING_MARKER_RADIUS_SCALE,
+    },
+    -TILE_DISPLAY_ROTATION_DEGREES -
+      CLEARING_MARKER_CLOCKWISE_ADJUSTMENT_DEGREES,
+  );
+  return {
+    left: `${50 + (rotated.x / (TILE_COORDINATE_EXTENT * 2)) * 100}%`,
+    top: `${50 - (rotated.y / (TILE_COORDINATE_EXTENT * 2)) * 100}%`,
+  };
+}
+
+function rotateClearing(clearing: { x: number; y: number }, degrees: number) {
+  const radians = (degrees * Math.PI) / 180;
+  const cos = Math.cos(radians);
+  const sin = Math.sin(radians);
+  return {
+    x: clearing.x * cos - clearing.y * sin,
+    y: clearing.x * sin + clearing.y * cos,
+  };
 }
