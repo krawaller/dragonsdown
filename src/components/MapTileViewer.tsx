@@ -33,9 +33,7 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
 
   function selectTerrain(nextTerrain: string) {
     setTerrain(nextTerrain);
-    setTileName(
-      tiles.find((tile) => tile.terrain === nextTerrain)?.name ?? "",
-    );
+    setTileName(tiles.find((tile) => tile.terrain === nextTerrain)?.name ?? "");
   }
 
   if (!selectedTile || !imageUrl) {
@@ -95,8 +93,8 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
           <div>
             <h2 className="text-2xl font-semibold">{selectedTile.name}</h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              {selectedTile.terrain} · {selectedTile.clearings.length} clearings ·{" "}
-              {showBack ? "back" : "front"}
+              {selectedTile.terrain} · {selectedTile.clearings.length} clearings
+              · {showBack ? "back" : "front"}
             </p>
           </div>
         </div>
