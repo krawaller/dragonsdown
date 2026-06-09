@@ -1,0 +1,1290 @@
+[
+  {
+    "name": "Ancient Hole",
+    "terrain": "Cruel Caves",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260285451/715F6E91019364B655341F0CA606A6FB3203AFB4/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260285840/DFFA0A59C6A344464AE74C0EEEC64619DB487494/",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.1
+      },
+      {
+        "x": -1.9,
+        "y": 1.2
+      },
+      {
+        "x": -0.2,
+        "y": 2.3
+      },
+      {
+        "x": 1.6,
+        "y": 1.4
+      },
+      {
+        "x": 2,
+        "y": -0.5
+      },
+      {
+        "x": 0,
+        "y": -0.5
+      }
+    ]
+  },
+  {
+    "name": "Black Caves",
+    "terrain": "Cruel Caves",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260287375/8A1C7CEA87533019CBD1792FFF22612D473C8380/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260287785/473706E31ECFA05705B62DFE80E1B0CB95FA4660/",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2
+      },
+      {
+        "x": -1.9,
+        "y": 1.2
+      },
+      {
+        "x": -0.2,
+        "y": 2.3
+      },
+      {
+        "x": -0.1,
+        "y": 0.5
+      },
+      {
+        "x": 1.9,
+        "y": 1
+      },
+      {
+        "x": 0.9,
+        "y": -1.3
+      }
+    ]
+  },
+  {
+    "name": "Dark Passes",
+    "terrain": "Cruel Caves",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260288900/BF58E4167F41001CDA9C9E911E31AD40F8F452A5/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260289295/568C1556990D247968F38A5E63D4A62FC3B29872/",
+    "clearings": [
+      {
+        "x": 1.5,
+        "y": -1.4
+      },
+      {
+        "x": -1.1,
+        "y": -1.6
+      },
+      {
+        "x": -1.9,
+        "y": 0.6
+      },
+      {
+        "x": 0.1,
+        "y": 0.2
+      },
+      {
+        "x": 2,
+        "y": 1.3
+      },
+      {
+        "x": -0.4,
+        "y": 2.2
+      }
+    ]
+  },
+  {
+    "name": "Forlorn Tunnel",
+    "terrain": "Cruel Caves",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260290858/6BE59D95B20BC347A4DC83A2A613D3CA3E05D12E/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260291187/D850266ABBEAAB0DC764BDC66D4A4CBEFEE8947C/",
+    "clearings": [
+      {
+        "x": 1.5,
+        "y": -1.4
+      },
+      {
+        "x": -1.1,
+        "y": -1.6
+      },
+      {
+        "x": -1.9,
+        "y": 0.6
+      },
+      {
+        "x": -0.4,
+        "y": 2.2
+      },
+      {
+        "x": 1.8,
+        "y": 1.3
+      },
+      {
+        "x": 0.1,
+        "y": 0.3
+      }
+    ]
+  },
+  {
+    "name": "Mine",
+    "terrain": "Cruel Caves",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260294425/7DE09682DDD93B20284896CE6A404D05EC3A618A/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260294828/8E2873F5032D8A3BBF6E7746F3B6893C17802913/",
+    "clearings": [
+      {
+        "x": -1.15,
+        "y": 1.15
+      },
+      {
+        "x": -2,
+        "y": -1.1
+      },
+      {
+        "x": 1.9,
+        "y": -1.3
+      },
+      {
+        "x": 1.4,
+        "y": 0.9
+      }
+    ]
+  },
+  {
+    "name": "Secret Dens",
+    "terrain": "Cruel Caves",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053811158/989C1B9FB276C7A91942FEDC988499CFCEBC5CB3/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053811846/67042E0392E455113ED143D8D465D254AEB03305/",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": 1.2
+      },
+      {
+        "x": -0.2,
+        "y": 0.2
+      },
+      {
+        "x": 1.8,
+        "y": 1.3
+      },
+      {
+        "x": -0.2,
+        "y": 2.2
+      },
+      {
+        "x": 1.8,
+        "y": -1.3
+      },
+      {
+        "x": -1.9,
+        "y": -1.1
+      }
+    ]
+  },
+  {
+    "name": "Cursed Canyon",
+    "terrain": "Dreadful Deserts",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/9351931205876109830/61A973F60C82D2FCCBE07E0988E1D2F959D7F4E0/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/10189335699420705566/9634FB894A87389970DC19CE837366CE6C66D2A3/",
+    "clearings": [
+      {
+        "x": 1.4,
+        "y": -1.8
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 0,
+        "y": 0.9
+      },
+      {
+        "x": -0.3,
+        "y": -0.8
+      },
+      {
+        "x": -2.5,
+        "y": -1.4
+      },
+      {
+        "x": -2.4,
+        "y": 1.3
+      }
+    ]
+  },
+  {
+    "name": "Dry Winds",
+    "terrain": "Dreadful Deserts",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/13831147834403907335/EEBB4451024D1E64024A773DA67445CC1E670165/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/15910808932055663318/45E3E786BF59B2A2FB5EBD7500A8C0D7674F984F/",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.2
+      },
+      {
+        "x": -0.1,
+        "y": 1.4
+      },
+      {
+        "x": -2.4,
+        "y": -1.3
+      },
+      {
+        "x": -2.3,
+        "y": 1
+      },
+      {
+        "x": -0.5,
+        "y": -0.6
+      },
+      {
+        "x": 1.4,
+        "y": -1.5
+      }
+    ]
+  },
+  {
+    "name": "Medina",
+    "terrain": "Dreadful Deserts",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/15074124602811603353/9CBB53B3D82746E966A85605132187B044924401/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/10818568455287007702/9D99AEF982B8BEA5E0F530A8EDE45AA9454BA60F/",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": -1
+      },
+      {
+        "x": 0.1,
+        "y": 2.4
+      },
+      {
+        "x": -2,
+        "y": -1.2
+      },
+      {
+        "x": -2,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "name": "Moving Mounds",
+    "terrain": "Dreadful Deserts",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/17853202126163612252/74C0A42D4645C3D0F0957FC136755B5FF66A8674/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/15514723616543322000/AE0D9AAFD0E996609B54B473C2DBF9F2386A2232/",
+    "clearings": [
+      {
+        "x": -0.2,
+        "y": 0.1
+      },
+      {
+        "x": 1.9,
+        "y": 1.3
+      },
+      {
+        "x": -0.3,
+        "y": 2.5
+      },
+      {
+        "x": -2.4,
+        "y": 1.3
+      },
+      {
+        "x": -2.3,
+        "y": -1.4
+      },
+      {
+        "x": 1.4,
+        "y": -1.5
+      }
+    ]
+  },
+  {
+    "name": "Rippled Expanse",
+    "terrain": "Dreadful Deserts",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/17017923567888439777/D80DE069723D96164E68AFB1C36DE1CBB8BE6630/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/13906445502119861096/19E8C2C516F6AE760D0D1C3EA6CFC8828CC36756/",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": -1.2
+      },
+      {
+        "x": 1,
+        "y": 1.8
+      },
+      {
+        "x": -1.1,
+        "y": 2
+      },
+      {
+        "x": -2.1,
+        "y": 0.4
+      },
+      {
+        "x": -1.4,
+        "y": -1.4
+      },
+      {
+        "x": 0.3,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "name": "Shifting Sands",
+    "terrain": "Dreadful Deserts",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/15376641692844807803/E4B8273CB41BA53D6B54A9C5232A60BB1FFE2754/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/13980706425639701129/A652D3989AF5AC1C1CF42DE1A77291D8DBCDFE0C/",
+    "clearings": [
+      {
+        "x": 1.6,
+        "y": -0.8
+      },
+      {
+        "x": 1.8,
+        "y": 1.2
+      },
+      {
+        "x": -0.3,
+        "y": 0.1
+      },
+      {
+        "x": -2.5,
+        "y": 1.3
+      },
+      {
+        "x": -2.4,
+        "y": -1.4
+      },
+      {
+        "x": -0.3,
+        "y": 2.5
+      }
+    ]
+  },
+  {
+    "name": "Barriers",
+    "terrain": "Malevolent Mountains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260296740/006E792FE800BC187639981756659B4DD678AEBC/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260297230/8671A4E040211BB4F21329753471653D9BFCECA2/",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": -1
+      },
+      {
+        "x": 0,
+        "y": 0.8
+      },
+      {
+        "x": -0.2,
+        "y": -1.7
+      },
+      {
+        "x": 1.9,
+        "y": 1.2
+      },
+      {
+        "x": 1.9,
+        "y": -0.7
+      },
+      {
+        "x": -1.7,
+        "y": 1.1
+      }
+    ]
+  },
+  {
+    "name": "High Pass",
+    "terrain": "Malevolent Mountains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260299948/6EC9EC572DA0C62C49B83FE5713C2B8AAF1EB000/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260300446/E9E4D9FC2F10A2B449BBF7F6BEAA7E7240CD75B5/",
+    "clearings": [
+      {
+        "x": -2.2,
+        "y": 1.2
+      },
+      {
+        "x": -1.4,
+        "y": -1.2
+      },
+      {
+        "x": 0,
+        "y": 0.2
+      },
+      {
+        "x": 1.95,
+        "y": 1.2
+      },
+      {
+        "x": 0.2,
+        "y": 2.5
+      },
+      {
+        "x": 1.7,
+        "y": -1
+      }
+    ]
+  },
+  {
+    "name": "Keep",
+    "terrain": "Malevolent Mountains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260302679/FCD3F56B6A905285600C8DB1478F975E94EE654A/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260303084/0CB7AE1AC87A6556BABC05188A33FD14598DDD96/",
+    "clearings": [
+      {
+        "x": -1.95,
+        "y": 1.15
+      },
+      {
+        "x": -0.5,
+        "y": -1.9
+      },
+      {
+        "x": 0.5,
+        "y": 1.2
+      },
+      {
+        "x": 1.8,
+        "y": -1.2
+      }
+    ]
+  },
+  {
+    "name": "Lonely Mountains",
+    "terrain": "Malevolent Mountains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260301349/B19F57951F063D20C241DDE455642BCE4043307C/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260301622/A96E36B87BAFF4C86E340FF268742F3213DC7D3F/",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": 1.2
+      },
+      {
+        "x": 0,
+        "y": 1.9
+      },
+      {
+        "x": 1.9,
+        "y": 1.1
+      },
+      {
+        "x": 1.7,
+        "y": -1
+      },
+      {
+        "x": 0.1,
+        "y": 0.1
+      },
+      {
+        "x": -1.6,
+        "y": -0.8
+      }
+    ]
+  },
+  {
+    "name": "Narrow Ridges",
+    "terrain": "Malevolent Mountains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260298373/6C7C43E4FB82C6C85AD644103C8951C2A0C0BB09/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260298717/6D3EC268C2D002F14015D8DE09A8A03B2F1E10CF/",
+    "clearings": [
+      {
+        "x": -1.6,
+        "y": 1.2
+      },
+      {
+        "x": 0,
+        "y": 2.2
+      },
+      {
+        "x": 0.2,
+        "y": 0.4
+      },
+      {
+        "x": -2,
+        "y": -1
+      },
+      {
+        "x": 0.2,
+        "y": -1.7
+      },
+      {
+        "x": 2.1,
+        "y": 0.1
+      }
+    ]
+  },
+  {
+    "name": "Tri-Peaks",
+    "terrain": "Malevolent Mountains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2259182745880197213/662C4046A5C4C9CAB03F91AE76B92A1981539C22/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260304870/ADBCF61B2655704DA596341CB018AC539FB8DACF/",
+    "clearings": [
+      {
+        "x": -1.95,
+        "y": -1
+      },
+      {
+        "x": 0,
+        "y": 0.4
+      },
+      {
+        "x": 0,
+        "y": 2.2
+      },
+      {
+        "x": 1.95,
+        "y": 1.2
+      },
+      {
+        "x": 1.7,
+        "y": -1.1
+      },
+      {
+        "x": 0,
+        "y": -1.8
+      }
+    ]
+  },
+  {
+    "name": "Flatlands",
+    "terrain": "Perilous Plains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455359406/1BC39D5E3D04484402F4213269502EA3F926701A/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455359735/220EB51C00525DB68AAA9D7D41643594489FA1A5/",
+    "clearings": [
+      {
+        "x": -1.3,
+        "y": 1.7
+      },
+      {
+        "x": 1.6,
+        "y": 1.5
+      },
+      {
+        "x": 0,
+        "y": 0.2
+      },
+      {
+        "x": -2.05,
+        "y": -1.1
+      },
+      {
+        "x": 0,
+        "y": -1.6
+      },
+      {
+        "x": 2.05,
+        "y": -0.85
+      }
+    ]
+  },
+  {
+    "name": "Grassy Plains",
+    "terrain": "Perilous Plains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455357979/D35A9111B80180798E7111EB7339880CC73B6D14/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455358290/1BA44976B4EB00B19BA85B1A99B054FB2DE6E1B7/",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": -0.9
+      },
+      {
+        "x": 0.1,
+        "y": 0.3
+      },
+      {
+        "x": -1.3,
+        "y": 1.8
+      },
+      {
+        "x": -1.9,
+        "y": -0.8
+      },
+      {
+        "x": 0,
+        "y": -1.7
+      },
+      {
+        "x": 1.1,
+        "y": 1.9
+      }
+    ]
+  },
+  {
+    "name": "The Meadows",
+    "terrain": "Perilous Plains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455356642/32DBCF28D65AFDE0FD258B2C070EFE5E52E5B926/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455356974/47D78A4BF0DA74336607D4FC65D8BF7B8BFC7252/",
+    "clearings": [
+      {
+        "x": 0,
+        "y": -1.7
+      },
+      {
+        "x": -2.1,
+        "y": -0.5
+      },
+      {
+        "x": -1.3,
+        "y": 1.7
+      },
+      {
+        "x": 0.1,
+        "y": 0.3
+      },
+      {
+        "x": 2.1,
+        "y": 0
+      },
+      {
+        "x": 1.1,
+        "y": 1.9
+      }
+    ]
+  },
+  {
+    "name": "Twisted Steppe",
+    "terrain": "Perilous Plains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455355388/EF846261E3545FA7BEA4CDA0D7C8BFC5D568B329/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455355734/869FDD510FA0BF07DB2F90A68F9272C3AEEBDD8A/",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2
+      },
+      {
+        "x": -1.9,
+        "y": 1.2
+      },
+      {
+        "x": -0.2,
+        "y": 2.3
+      },
+      {
+        "x": 0.3,
+        "y": 0.4
+      },
+      {
+        "x": 2,
+        "y": -0.5
+      },
+      {
+        "x": 0,
+        "y": -1.7
+      }
+    ]
+  },
+  {
+    "name": "Unbroken Lands",
+    "terrain": "Perilous Plains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2484367894807534525/CB7325CA9924F261A35BDF36C8C22AFB840DCC33/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2484367894807535190/A45D4F78C261BE4A972E831F2DE6A4F7C3F3B71D/",
+    "clearings": [
+      {
+        "x": -1.8,
+        "y": -0.9
+      },
+      {
+        "x": 0,
+        "y": 1.8
+      },
+      {
+        "x": 0,
+        "y": -1.6
+      },
+      {
+        "x": 1.7,
+        "y": 1.2
+      },
+      {
+        "x": 1.8,
+        "y": -0.7
+      },
+      {
+        "x": -1.7,
+        "y": 1.1
+      }
+    ]
+  },
+  {
+    "name": "Village",
+    "terrain": "Perilous Plains",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455360560/01835534FB692750B0D2BB336C129162E55386CB/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455360897/50F6B91DB391536E886237EF62DBAA9C6094098F/",
+    "clearings": [
+      {
+        "x": -1.6,
+        "y": -0.9
+      },
+      {
+        "x": 1.6,
+        "y": -1
+      },
+      {
+        "x": 1.1,
+        "y": 1.6
+      },
+      {
+        "x": -0.9,
+        "y": 1.6
+      }
+    ]
+  },
+  {
+    "name": "Brackish Span",
+    "terrain": "Ruthless Riverlands",
+    "imageUrl": "https://activemagicgames.com/TTS/DD/rBrackishSpan1.png",
+    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rBrackishSpan2.png",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": -0.6
+      },
+      {
+        "x": 0.6,
+        "y": 1.7
+      },
+      {
+        "x": -2,
+        "y": 0.1
+      },
+      {
+        "x": -1.2,
+        "y": 1.8
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": -1.2,
+        "y": -1.7
+      }
+    ]
+  },
+  {
+    "name": "Headwater",
+    "terrain": "Ruthless Riverlands",
+    "imageUrl": "https://activemagicgames.com/TTS/DD/rHeadwaters1.png",
+    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rHeadwaters2.png",
+    "clearings": [
+      {
+        "x": -2.3,
+        "y": -0.9
+      },
+      {
+        "x": -1.8,
+        "y": 1
+      },
+      {
+        "x": 0.3,
+        "y": -0.5
+      },
+      {
+        "x": 0.2,
+        "y": 2.4
+      },
+      {
+        "x": 2,
+        "y": 0.6
+      },
+      {
+        "x": 1.8,
+        "y": -1.6
+      }
+    ]
+  },
+  {
+    "name": "Port",
+    "terrain": "Ruthless Riverlands",
+    "imageUrl": "https://activemagicgames.com/TTS/DD/rPort1.png",
+    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rPort2.png",
+    "clearings": [
+      {
+        "x": 2.2,
+        "y": -0.5
+      },
+      {
+        "x": -1.6,
+        "y": 1.8
+      },
+      {
+        "x": -1,
+        "y": -0.6
+      },
+      {
+        "x": 0.8,
+        "y": 1.5
+      }
+    ]
+  },
+  {
+    "name": "Ravaging Run",
+    "terrain": "Ruthless Riverlands",
+    "imageUrl": "https://activemagicgames.com/TTS/DD/rRavagingRun1.png",
+    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rRavagingRun2.png",
+    "clearings": [
+      {
+        "x": 1.6,
+        "y": -1.1
+      },
+      {
+        "x": 0,
+        "y": 2.4
+      },
+      {
+        "x": -2,
+        "y": -0.2
+      },
+      {
+        "x": -1.6,
+        "y": 1.6
+      },
+      {
+        "x": 0.3,
+        "y": 0.4
+      },
+      {
+        "x": -1.2,
+        "y": -1.6
+      }
+    ]
+  },
+  {
+    "name": "Silver Current",
+    "terrain": "Ruthless Riverlands",
+    "imageUrl": "https://activemagicgames.com/TTS/DD/rSilverCurrent1.png",
+    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rSilverCurrent2.png",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.3
+      },
+      {
+        "x": -0.1,
+        "y": 1.3
+      },
+      {
+        "x": -2.3,
+        "y": -1.4
+      },
+      {
+        "x": -2.2,
+        "y": 0.9
+      },
+      {
+        "x": -0.3,
+        "y": -0.6
+      },
+      {
+        "x": 1.4,
+        "y": -1.7
+      }
+    ]
+  },
+  {
+    "name": "Soleford",
+    "terrain": "Ruthless Riverlands",
+    "imageUrl": "https://activemagicgames.com/TTS/DD/rSoleford1.png",
+    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rSoleford2.png",
+    "clearings": [
+      {
+        "x": 2,
+        "y": 0.1
+      },
+      {
+        "x": 0.6,
+        "y": 1.7
+      },
+      {
+        "x": -2,
+        "y": 0.1
+      },
+      {
+        "x": -1.2,
+        "y": 1.9
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1.3,
+        "y": -1.5
+      }
+    ]
+  },
+  {
+    "name": "Decayed Swamp",
+    "terrain": "Sinister Swamps",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455321055/C92C70FBA77CBC121BDD2C228D87DFA984E96F17/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455321476/1092E62065ED3BAE2F3878217117AABF9E727725/",
+    "clearings": [
+      {
+        "x": 0,
+        "y": 2.3
+      },
+      {
+        "x": -2,
+        "y": 0.7
+      },
+      {
+        "x": -1.4,
+        "y": -1.2
+      },
+      {
+        "x": 1.2,
+        "y": -1.6
+      },
+      {
+        "x": 0.1,
+        "y": 0.1
+      },
+      {
+        "x": 1.95,
+        "y": 0.6
+      }
+    ]
+  },
+  {
+    "name": "Foul Swamp",
+    "terrain": "Sinister Swamps",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455322302/AA035CF6EBCC116AA1A0F1855FF741721C56C6A8/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455322719/ADEF8645B7178ABB613B8AD2D07552CD9ACDE8B1/",
+    "clearings": [
+      {
+        "x": 1.2,
+        "y": -1.6
+      },
+      {
+        "x": -1.4,
+        "y": -1.3
+      },
+      {
+        "x": 0.1,
+        "y": 0.1
+      },
+      {
+        "x": -1.9,
+        "y": 0.6
+      },
+      {
+        "x": 2,
+        "y": 0.6
+      },
+      {
+        "x": 0,
+        "y": 2.3
+      }
+    ]
+  },
+  {
+    "name": "Moorland",
+    "terrain": "Sinister Swamps",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455326396/2676642A50D7F59FF3FD90D025AAF8D4F79631AC/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455326731/15C227768201A5CA1FF655FC148480FFEAC38DE8/",
+    "clearings": [
+      {
+        "x": 1.3,
+        "y": -1.6
+      },
+      {
+        "x": 0.1,
+        "y": 0.1
+      },
+      {
+        "x": -1.4,
+        "y": -1.3
+      },
+      {
+        "x": -2,
+        "y": 0.6
+      },
+      {
+        "x": 2,
+        "y": 0.6
+      },
+      {
+        "x": 0,
+        "y": 2.35
+      }
+    ]
+  },
+  {
+    "name": "Outpost",
+    "terrain": "Sinister Swamps",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455330957/A9A6DBBBEBB27C214C794058C870AE14A6D3631E/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455331338/6FA9B42AF6666A017AE543FD9425047C91375869/",
+    "clearings": [
+      {
+        "x": -1.5,
+        "y": -0.9
+      },
+      {
+        "x": 1.6,
+        "y": -1.1
+      },
+      {
+        "x": 1.1,
+        "y": 1.6
+      },
+      {
+        "x": -0.9,
+        "y": 1.6
+      }
+    ]
+  },
+  {
+    "name": "Putrid Waters",
+    "terrain": "Sinister Swamps",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2259182745882046116/2228767D2CAFBDD7272A183CE09BC2443ABB80FC/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455328352/2660C6D464B3DE346CF5ACD28BAC65D270AA878E/",
+    "clearings": [
+      {
+        "x": 0.7,
+        "y": 2
+      },
+      {
+        "x": 0.1,
+        "y": 0.15
+      },
+      {
+        "x": -1.9,
+        "y": 1.1
+      },
+      {
+        "x": -1.4,
+        "y": -1.3
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 1.6,
+        "y": -1.5
+      }
+    ]
+  },
+  {
+    "name": "Quiet Bog",
+    "terrain": "Sinister Swamps",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455329152/F0AF04658CC327C620EF5A3B529D55AEBE7D38A6/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2261434080455329983/A34057DCCD1C39DCB8A5D4DFA7490EE1E08488A7/",
+    "clearings": [
+      {
+        "x": 1.2,
+        "y": -1.6
+      },
+      {
+        "x": 0,
+        "y": 0.2
+      },
+      {
+        "x": -1.4,
+        "y": -1.2
+      },
+      {
+        "x": -2,
+        "y": 1.1
+      },
+      {
+        "x": 2,
+        "y": 0.5
+      },
+      {
+        "x": 0.6,
+        "y": 2
+      }
+    ]
+  },
+  {
+    "name": "Deep Woods",
+    "terrain": "Wicked Woods",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260281993/D05CD7F207AB15A5A00367B8E7100AA97F9F2C38/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260282374/A3067C5AFC894ECA8A08EDC8517FA2163DE1F5F8/",
+    "clearings": [
+      {
+        "x": -1.7,
+        "y": -1.4
+      },
+      {
+        "x": 2,
+        "y": 0.9
+      },
+      {
+        "x": 1.1,
+        "y": -1.7
+      },
+      {
+        "x": -2.1,
+        "y": 0.8
+      },
+      {
+        "x": -0.4,
+        "y": 2
+      },
+      {
+        "x": 0.1,
+        "y": 0.2
+      }
+    ]
+  },
+  {
+    "name": "Elder Woods",
+    "terrain": "Wicked Woods",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260280569/072B8BBA98F76C377FACAA4C86979980A3D0CAE3/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260281010/2198B4E4A3DB4C7F29595C971FA1E22966A8C7F2/",
+    "clearings": [
+      {
+        "x": -0.4,
+        "y": 2
+      },
+      {
+        "x": 1.9,
+        "y": 1.2
+      },
+      {
+        "x": 0,
+        "y": 0.1
+      },
+      {
+        "x": -1.9,
+        "y": -0.9
+      },
+      {
+        "x": -2,
+        "y": 1.1
+      },
+      {
+        "x": 1.6,
+        "y": -1
+      }
+    ]
+  },
+  {
+    "name": "Mirky Woods",
+    "terrain": "Wicked Woods",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053807612/2DDBFD36CAAB42BE746C6DE62217066FF74EFBE3/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053808027/E7B792D815DA5A0FFCF0B29DA2B7ECD54A2D97F0/",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.9
+      },
+      {
+        "x": 0.1,
+        "y": 0.1
+      },
+      {
+        "x": -2,
+        "y": 1.1
+      },
+      {
+        "x": -1.4,
+        "y": -1.3
+      },
+      {
+        "x": 0,
+        "y": 2.3
+      },
+      {
+        "x": 1.5,
+        "y": -1.5
+      }
+    ]
+  },
+  {
+    "name": "Oakwood",
+    "terrain": "Wicked Woods",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260277041/C82CA1752E2A1C6552FBA02536B2CBBE0DB3645F/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260277451/4A6F329767DFC65D9C86E43968248470CCC0E3BA/",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": -0.9
+      },
+      {
+        "x": 0,
+        "y": 0.5
+      },
+      {
+        "x": 0,
+        "y": 2.3
+      },
+      {
+        "x": 2,
+        "y": 1.2
+      },
+      {
+        "x": 1.7,
+        "y": -1
+      },
+      {
+        "x": 0,
+        "y": -1.9
+      }
+    ]
+  },
+  {
+    "name": "Sanctuary",
+    "terrain": "Wicked Woods",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260275206/9DD9FB6DC6E1159E65BF8238712E7C1DB9399EB9/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260275539/581993019AF5144FCD66CED1349F37ECA0D77216/",
+    "clearings": [
+      {
+        "x": -2,
+        "y": 1.1
+      },
+      {
+        "x": -0.45,
+        "y": -1.9
+      },
+      {
+        "x": 1.8,
+        "y": -1.2
+      },
+      {
+        "x": 0.55,
+        "y": 1.1
+      }
+    ]
+  },
+  {
+    "name": "Timberlands",
+    "terrain": "Wicked Woods",
+    "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260273102/070AEE2A07B8D7BFC217ACE5FCA761F579D57EE8/",
+    "imageSecondaryUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260273587/FF9E1BA2EA38CB858F7D318C993F05F58490F526/",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": -0.9
+      },
+      {
+        "x": -2,
+        "y": 1.1
+      },
+      {
+        "x": -0.4,
+        "y": 2
+      },
+      {
+        "x": 1.5,
+        "y": 1.6
+      },
+      {
+        "x": 1.6,
+        "y": -1
+      },
+      {
+        "x": 0,
+        "y": -2
+      }
+    ]
+  }
+]
