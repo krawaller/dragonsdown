@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { MapTileViewer, type MapTile } from "@/components/MapTileViewer";
 import tiles from "../../../data/tts/map-tiles.json";
 
@@ -12,7 +13,9 @@ export default function MapTilesPage() {
         ← All docs
       </Link>
       <h1 className="text-4xl font-bold mt-4 mb-8">Map Tiles</h1>
-      <MapTileViewer tiles={tiles as MapTile[]} />
+      <Suspense fallback={null}>
+        <MapTileViewer tiles={tiles as MapTile[]} />
+      </Suspense>
     </main>
   );
 }

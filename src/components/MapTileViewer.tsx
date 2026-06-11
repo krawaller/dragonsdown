@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const TILE_COORDINATE_EXTENT = 3;
 const TILE_DISPLAY_ROTATION_DEGREES = -30;
@@ -16,29 +17,93 @@ export type MapTile = {
 };
 
 export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const terrains = useMemo(
     () => [...new Set(tiles.map((tile) => tile.terrain))].sort(),
     [tiles],
   );
-  const [terrain, setTerrain] = useState(terrains[0] ?? "");
-  const [tileName, setTileName] = useState(
-    tiles.find((tile) => tile.terrain === terrain)?.name ?? "",
-  );
-  const [showBack, setShowBack] = useState(false);
+  const terrainParam = searchParams.get("terrain") ?? "";
+  const terrain = terrains.includes(terrainParam)
+    ? terrainParam
+    : (terrains[0] ?? "");
+  const sideParam = searchParams.get("side") ?? "front";
+  const showBack = sideParam === "back";
 
   const terrainTiles = useMemo(
     () => tiles.filter((tile) => tile.terrain === terrain),
     [terrain, tiles],
   );
+  const tileParam = searchParams.get("tile") ?? "";
   const selectedTile =
-    terrainTiles.find((tile) => tile.name === tileName) ?? terrainTiles[0];
+    terrainTiles.find((tile) => tile.name === tileParam) ?? terrainTiles[0];
   const imageUrl = showBack
     ? selectedTile?.imageSecondaryUrl
     : selectedTile?.imageUrl;
 
+  useEffect(() => {
+    if (!selectedTile) return;
+    const hasValidTerrain = terrains.includes(terrainParam);
+    const hasValidTile = terrainTiles.some((tile) => tile.name === tileParam);
+    const hasValidSide = sideParam === "front" || sideParam === "back";
+    if (hasValidTerrain && hasValidTile && hasValidSide) return;
+
+    const nextParams = paramsFor({
+      searchParams,
+      terrain,
+      tile: selectedTile.name,
+      side: showBack ? "back" : "front",
+    });
+    const nextUrl = `${pathname}?${nextParams.toString()}`;
+    const currentUrl = `${pathname}?${searchParams.toString()}`;
+    if (nextUrl !== currentUrl) router.replace(nextUrl, { scroll: false });
+  }, [
+    pathname,
+    router,
+    searchParams,
+    selectedTile,
+    showBack,
+    sideParam,
+    terrain,
+    terrainParam,
+    terrains,
+    terrainTiles,
+    tileParam,
+  ]);
+
   function selectTerrain(nextTerrain: string) {
-    setTerrain(nextTerrain);
-    setTileName(tiles.find((tile) => tile.terrain === nextTerrain)?.name ?? "");
+    const nextTile = tiles.find((tile) => tile.terrain === nextTerrain);
+    updateParams({
+      terrain: nextTerrain,
+      tile: nextTile?.name ?? "",
+      side: showBack ? "back" : "front",
+    });
+  }
+
+  function selectTile(nextTile: string) {
+    updateParams({
+      terrain,
+      tile: nextTile,
+      side: showBack ? "back" : "front",
+    });
+  }
+
+  function selectSide(nextShowBack: boolean) {
+    updateParams({
+      terrain,
+      tile: selectedTile?.name ?? "",
+      side: nextShowBack ? "back" : "front",
+    });
+  }
+
+  function updateParams(next: {
+    terrain: string;
+    tile: string;
+    side: "front" | "back";
+  }) {
+    const nextParams = paramsFor({ searchParams, ...next });
+    router.replace(`${pathname}?${nextParams.toString()}`, { scroll: false });
   }
 
   if (!selectedTile || !imageUrl) {
@@ -71,7 +136,7 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
           <span className="block text-sm font-medium mb-2">Tile</span>
           <select
             value={selectedTile.name}
-            onChange={(event) => setTileName(event.target.value)}
+            onChange={(event) => selectTile(event.target.value)}
             className="w-full rounded border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2 text-sm"
           >
             {terrainTiles.map((tile) => (
@@ -86,7 +151,7 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
           <input
             type="checkbox"
             checked={showBack}
-            onChange={(event) => setShowBack(event.target.checked)}
+            onChange={(event) => selectSide(event.target.checked)}
             className="size-4 rounded border-zinc-300 dark:border-zinc-700"
           />
           Back
@@ -128,6 +193,24 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
       </section>
     </div>
   );
+}
+
+function paramsFor({
+  searchParams,
+  terrain,
+  tile,
+  side,
+}: {
+  searchParams: { toString(): string };
+  terrain: string;
+  tile: string;
+  side: "front" | "back";
+}) {
+  const params = new URLSearchParams(searchParams.toString());
+  params.set("terrain", terrain);
+  params.set("tile", tile);
+  params.set("side", side);
+  return params;
 }
 
 function clearingStyle(clearing: { x: number; y: number }) {
