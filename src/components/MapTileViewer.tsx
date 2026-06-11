@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo } from "react";
+import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const TILE_COORDINATE_EXTENT = 3;
@@ -16,7 +17,19 @@ export type MapTile = {
   clearings: { x: number; y: number }[];
 };
 
-export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
+export type MapTileCivLocation = {
+  name: string;
+  slug: string;
+  imageUrl: string;
+};
+
+export function MapTileViewer({
+  tiles,
+  civLocations,
+}: {
+  tiles: MapTile[];
+  civLocations: MapTileCivLocation[];
+}) {
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -41,6 +54,10 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
   const imageUrl = showBack
     ? selectedTile?.imageSecondaryUrl
     : selectedTile?.imageUrl;
+  const selectedCivLocation =
+    selectedTile?.clearings.length === 4
+      ? civLocations.find((location) => location.name === selectedTile.name)
+      : undefined;
 
   useEffect(() => {
     if (!selectedTile) return;
@@ -190,6 +207,27 @@ export function MapTileViewer({ tiles }: { tiles: MapTile[] }) {
             </div>
           </div>
         </div>
+        {selectedCivLocation && (
+          <Link
+            href={`/civ-locations/${selectedCivLocation.slug}`}
+            className="mt-4 inline-flex max-w-full items-center gap-3 rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 p-2 pr-3 text-sm hover:ring-2 hover:ring-zinc-400 transition"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={selectedCivLocation.imageUrl}
+              alt={selectedCivLocation.name}
+              className="block size-16 shrink-0 rounded object-cover"
+            />
+            <span className="min-w-0">
+              <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                Civ location
+              </span>
+              <span className="block truncate font-medium">
+                {selectedCivLocation.name}
+              </span>
+            </span>
+          </Link>
+        )}
       </section>
     </div>
   );
