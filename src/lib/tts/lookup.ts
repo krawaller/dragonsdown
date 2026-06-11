@@ -19,6 +19,8 @@ import {
   type TTSChip,
   type TTSCivLocation,
   type TTSSite,
+  type TTSWildernessToken,
+  type WildernessTokenIndex,
 } from ".";
 import aliasesData from "./aliases.json";
 
@@ -31,11 +33,18 @@ const CIVLOCS_FILE = path.join(
   "tts",
   "civlocations.json",
 );
+const WILDERNESS_TOKENS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "wilderness-tokens.json",
+);
 
 let cachedCardIndex: CardIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
+let cachedWildernessTokenIndex: WildernessTokenIndex | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -60,6 +69,14 @@ function getCivLocationIndex(): CivLocationIndex {
   if (cachedCivLocIndex !== null) return cachedCivLocIndex;
   cachedCivLocIndex = readJsonOrEmpty<CivLocationIndex>(CIVLOCS_FILE);
   return cachedCivLocIndex;
+}
+
+function getWildernessTokenIndex(): WildernessTokenIndex {
+  if (cachedWildernessTokenIndex !== null) return cachedWildernessTokenIndex;
+  cachedWildernessTokenIndex = readJsonOrEmpty<WildernessTokenIndex>(
+    WILDERNESS_TOKENS_FILE,
+  );
+  return cachedWildernessTokenIndex;
 }
 
 function readJsonOrEmpty<T>(file: string): T {
@@ -152,6 +169,87 @@ export function getCivLocationBySlug(
   slug: string,
 ): CivLocationEntry | undefined {
   return getAllCivLocations().find((entry) => entry.slug === slug);
+}
+
+export type WildernessTokenTerrainEntry = {
+  terrain: string;
+  tokens: WildernessTokenListEntry[];
+};
+
+export type WildernessTokenListEntry = TTSWildernessToken & {
+  name: string;
+  slug: string;
+};
+
+export type WildernessTokenNameEntry = {
+  name: string;
+  slug: string;
+  tokens: WildernessTokenListEntry[];
+};
+
+export function getAllWildernessTokenTerrains(): WildernessTokenTerrainEntry[] {
+  return Object.entries(getWildernessTokenIndex())
+    .map(([terrain, tokens]) => ({
+      terrain,
+      tokens: tokens
+        .filter(hasWildernessTokenName)
+        .map((token) => ({
+          ...token,
+          name: token.name,
+          slug: slugify(token.name),
+        }))
+        .sort(compareWildernessTokens),
+    }))
+    .sort((a, b) => a.terrain.localeCompare(b.terrain));
+}
+
+export function getAllWildernessTokenNames(): WildernessTokenNameEntry[] {
+  const bySlug = new Map<string, WildernessTokenNameEntry>();
+  for (const { tokens } of getAllWildernessTokenTerrains()) {
+    for (const token of tokens) {
+      const entry = bySlug.get(token.slug);
+      if (entry) {
+        entry.tokens.push(token);
+      } else {
+        bySlug.set(token.slug, {
+          name: token.name,
+          slug: token.slug,
+          tokens: [token],
+        });
+      }
+    }
+  }
+  return [...bySlug.values()]
+    .map((entry) => ({
+      ...entry,
+      tokens: entry.tokens.sort(compareWildernessTokens),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getWildernessTokenBySlug(
+  slug: string,
+): WildernessTokenNameEntry | undefined {
+  return getAllWildernessTokenNames().find((entry) => entry.slug === slug);
+}
+
+function hasWildernessTokenName(
+  token: TTSWildernessToken,
+): token is TTSWildernessToken & { name: string } {
+  return typeof token.name === "string" && token.name.length > 0;
+}
+
+function compareWildernessTokens(
+  a: WildernessTokenListEntry,
+  b: WildernessTokenListEntry,
+): number {
+  return (
+    a.name.localeCompare(b.name) ||
+    a.terrain.localeCompare(b.terrain) ||
+    (a.clearing ?? 0) - (b.clearing ?? 0) ||
+    String(a.draw ?? "").localeCompare(String(b.draw ?? "")) ||
+    a.imageURL.localeCompare(b.imageURL)
+  );
 }
 
 function slugify(value: string): string {

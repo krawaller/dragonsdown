@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { MapTile } from "@/components/MapTileViewer";
-import { getAllCivLocations, getCivLocationBySlug } from "@/lib/tts/lookup";
+import {
+  getAllCivLocations,
+  getCivLocationBySlug,
+  getWildernessTokenBySlug,
+} from "@/lib/tts/lookup";
 import mapTiles from "../../../../data/tts/map-tiles.json";
 
 export function generateStaticParams() {
@@ -21,6 +25,7 @@ export default async function CivLocationPage({
   const mapTile = (mapTiles as MapTile[]).find(
     (tile) => tile.name === name && tile.clearings.length === 4,
   );
+  const wildernessToken = getWildernessTokenBySlug(entry.slug);
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       <div className="flex flex-wrap gap-3 text-sm text-zinc-600 dark:text-zinc-400">
@@ -65,6 +70,28 @@ export default async function CivLocationPage({
             className="mt-2 block text-sm font-medium hover:underline"
           >
             {mapTile.name}
+          </Link>
+        </section>
+      )}
+      {wildernessToken && (
+        <section className="mt-8 max-w-xs">
+          <h2 className="text-sm font-medium mb-2">Wilderness token</h2>
+          <Link
+            href={`/wilderness-tokens/${wildernessToken.slug}`}
+            className="block overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={wildernessToken.tokens[0].imageURL}
+              alt={wildernessToken.name}
+              className="block aspect-square w-full object-cover"
+            />
+          </Link>
+          <Link
+            href={`/wilderness-tokens/${wildernessToken.slug}`}
+            className="mt-2 block text-sm font-medium hover:underline"
+          >
+            {wildernessToken.name}
           </Link>
         </section>
       )}
