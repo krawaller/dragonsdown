@@ -13,6 +13,7 @@ import {
   extractCivLocations,
   extractMapTiles,
   extractSites,
+  extractWildernessTokens,
   isSameCell,
   mergeTags,
   sameAncestry,
@@ -21,6 +22,7 @@ import {
   type CivLocationIndex,
   type TTSMapTile,
   type SiteIndex,
+  type WildernessTokenIndex,
 } from "../src/lib/tts";
 
 const SOURCES_DIR = path.join(process.cwd(), "sources");
@@ -43,6 +45,7 @@ async function main(): Promise<void> {
   const chips: ChipIndex = {};
   const sites: SiteIndex = {};
   const civLocations: CivLocationIndex = {};
+  const wildernessTokens: WildernessTokenIndex = {};
   let mapTiles: TTSMapTile[] = [];
 
   for (const file of files) {
@@ -54,9 +57,10 @@ async function main(): Promise<void> {
     const chipIndex = extractChips(save, stem);
     const siteIndex = extractSites(save, stem);
     const civIndex = extractCivLocations(save, stem);
+    const wildernessIndex = extractWildernessTokens(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${mapTiles.length} map tiles`,
+      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
     );
 
     // Merge into combined indexes, de-duping by cell (cards) / image URL (chips).
@@ -79,6 +83,35 @@ async function main(): Promise<void> {
     // Civ locations: same shape — append, no dedup.
     for (const [name, items] of Object.entries(civIndex)) {
       (civLocations[name] ??= []).push(...items);
+    }
+    for (const [terrain, items] of Object.entries(wildernessIndex)) {
+      const bucket = (wildernessTokens[terrain] ??= []);
+      for (const item of items) {
+        const existing = bucket.find(
+          (token) =>
+            token.imageURL === item.imageURL &&
+            token.imageSecondaryURL === item.imageSecondaryURL,
+        );
+        if (existing) {
+          existing.nicknames = mergeStringArrays(
+            existing.nicknames,
+            item.nicknames,
+          );
+          for (const loc of item.locations) {
+            const match = existing.locations.find((l) =>
+              sameAncestry(l.ancestry, loc.ancestry),
+            );
+            if (match) match.count += loc.count;
+            else existing.locations.push({ ...loc });
+          }
+        } else {
+          bucket.push({
+            ...item,
+            nicknames: item.nicknames ? [...item.nicknames] : undefined,
+            locations: item.locations.map((l) => ({ ...l })),
+          });
+        }
+      }
     }
     // Chips dedup by URL pair across sources; per-ancestry counts are summed.
     for (const [name, items] of Object.entries(chipIndex)) {
@@ -111,6 +144,10 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
   await writeSorted(path.join(OUT_DIR, "civlocations.json"), civLocations);
+  await writeSorted(
+    path.join(OUT_DIR, "wilderness-tokens.json"),
+    wildernessTokens,
+  );
   await writeJson(path.join(OUT_DIR, "map-tiles.json"), mapTiles);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
@@ -123,6 +160,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ civlocations.json: ${Object.keys(civLocations).length} names, ${countEntries(civLocations)} entries total`,
+  );
+  console.log(
+    `→ wilderness-tokens.json: ${Object.keys(wildernessTokens).length} terrains, ${countEntries(wildernessTokens)} token images total`,
   );
   console.log(`→ map-tiles.json: ${mapTiles.length} map tiles total`);
 }
@@ -143,6 +183,16 @@ async function writeSorted(
 
 async function writeJson(file: string, data: unknown): Promise<void> {
   await fs.writeFile(file, `${JSON.stringify(data, null, 2)}\n`);
+}
+
+function mergeStringArrays(
+  a: string[] | undefined,
+  b: string[] | undefined,
+): string[] | undefined {
+  if (!a?.length && !b?.length) return undefined;
+  return [...new Set([...(a ?? []), ...(b ?? [])])].sort((x, y) =>
+    x.localeCompare(y),
+  );
 }
 
 main().catch((err: unknown) => {

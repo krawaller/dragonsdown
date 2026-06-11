@@ -105,6 +105,205 @@ export type TTSCivLocation = {
 /** Output written to data/tts/civlocations.json. Keyed by normalized `Nickname`. */
 export type CivLocationIndex = Record<string, TTSCivLocation[]>;
 
+export const WILDERNESS_TOKEN_BACK_URLS: Record<string, string> = {
+  "Cruel Caves":
+    "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
+  "Dreadful Deserts":
+    "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
+  "Malevolent Mountains":
+    "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
+  "Perilous Plains":
+    "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
+  "Ruthless Riverlands":
+    "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
+  "Sinister Swamps":
+    "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
+  "Wicked Woods":
+    "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
+};
+
+export type WildernessTokenMetadata = {
+  name: string;
+  clearing?: number;
+  draw?: 1 | "X";
+};
+
+export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
+  string,
+  WildernessTokenMetadata
+> = {
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/":
+    {
+      name: "Site",
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/":
+    {
+      name: "Item",
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953899651/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/":
+    {
+      name: "Treasure",
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953930761/8987958A6C56605B278E20F0F63330E848A84CF7/":
+    {
+      name: "Gate",
+      clearing: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2459607511012543663/6D5ED9F87F6AEC0C8337E9AF4638372EBA43F7B5/":
+    {
+      name: "Mission",
+      draw: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/11350614834800396847/2258D418AC0CAD7C823E7B1397A0133A81EB3C7F/":
+    {
+      name: "Oasis",
+      draw: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/16226642573503589325/F1816E8BA056667DAD67CE97AAAC45BF8FACFBFE/":
+    {
+      name: "Gate",
+      clearing: 6,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953950180/5A867E0E1700B5C931AD563C57A9917A43FA14E4/":
+    {
+      name: "Gate",
+      clearing: 4,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2459607511012539007/FDA70B289C0C55BF28CCB46DC03774C4336ACFB8/":
+    {
+      name: "Mission",
+      draw: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/10311233951381901798/B711DEEAB2FF2908367B1CB18B3FE7E37DD50265/":
+    {
+      name: "Battlefield",
+      clearing: 3,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953904510/E20DAE1CE5C0E52F5F0F1B4C96A87B0345ECECEC/":
+    {
+      name: "Gate",
+      clearing: 2,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953905396/BF9F863CE55BD7D3DD01CAE876EA050395403085/":
+    {
+      name: "Wrecked Wagons",
+      clearing: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953908897/BC773FB63D1582EE29D0BFA26E4278B82BA29752/":
+    {
+      name: "Mission",
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/51329810045297576/72C99BA10F336999632077D3425591AA40825828/":
+    {
+      name: "Inn",
+      draw: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/13758592113855128350/394CC0FECC062A027769EB995F775698FFCAC23D/":
+    {
+      name: "Wreck",
+      clearing: 5,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/14623211079001957653/B77D201D746C306063ADB07B6B07D276CC12B13C/":
+    {
+      name: "Mission",
+      draw: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/17179738774063635109/30D521BBEDDAB9EEE999EF45EAEE915167F46BB4/":
+    {
+      name: "Gate",
+      clearing: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/9330123526560797570/8C243FD0E0E805F1484AD3A2BB40D8AAD2CDA593/":
+    {
+      name: "Abyss",
+      clearing: 4,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953915477/4EE861753077D5749A6B767A1777B2A691489D4A/":
+    {
+      name: "Gate",
+      clearing: 5,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953916248/A2F46CF655E00E63A0F33FA8CC977B042922EAD2/":
+    {
+      name: "Lost Battalion",
+      clearing: 6,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2459607511012554060/FCF832CF54F4B867B14627AC9AA8007B141E572A/":
+    {
+      name: "Encampment",
+      draw: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/17615672600507115914/CB46632C6CF7D7D3AECCFD0F55E13661D4DC603B/":
+    {
+      name: "Grove",
+      clearing: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953921405/AAA1B4B5447C32E44B70C4AD68525B43379079B7/":
+    {
+      name: "Mission",
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953922171/BE2E08C27C4648D3D69EA52A08AE28F505E1D01D/":
+    {
+      name: "Secret Cache",
+      clearing: 5,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953923113/F1816E8BA056667DAD67CE97AAAC45BF8FACFBFE/":
+    {
+      name: "Gate",
+      clearing: 6,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2459607511012552946/0A32A559659DF2E14A5FBF3F510EC6598E79A1D4/":
+    {
+      name: "Campfire",
+      draw: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/14510350798267980535/CCE4246CCC7D306CFFCC17C1665541C33145BF19/":
+    {
+      name: "Buried Temple",
+      draw: "X",
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/9507195990435619424/69E580B794BFFF631D2CC1D0FB4EA64AA52D98C9/":
+    {
+      name: "Mausoleum",
+      clearing: 4,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/9594046903796325970/1C922450DBE9BB16229432E8D316FEA095D24BFC/":
+    {
+      name: "Terrace",
+      clearing: 2,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/16068744120689205546/39909D19B4EA98B752961D7F8793F29B7BBF9213/":
+    {
+      name: "Ziggurat",
+      clearing: 1,
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953952846/111606C60546C7120C6DF6AE3C2D90192A2FA487/":
+    {
+      name: "Forgotten City",
+      draw: "X",
+    },
+  "https://steamusercontent-a.akamaihd.net/ugc/2458481068953931806/B13DFDA0F48081D8704C74FC36455F1F3C2128A2/":
+    {
+      name: "Dwarven Ruins",
+      draw: "X",
+    },
+};
+
+export type TTSWildernessToken = {
+  source: string;
+  terrain: string;
+  name?: string;
+  clearing?: number;
+  draw?: 1 | "X";
+  imageURL: string;
+  imageSecondaryURL: string;
+  nicknames?: string[];
+  locations: { ancestry: string[]; count: number }[];
+};
+
+/** Output written to data/tts/wilderness-tokens.json. Keyed by terrain name. */
+export type WildernessTokenIndex = Record<string, TTSWildernessToken[]>;
+
 export type TTSMapTile = {
   name: string;
   terrain: string;
@@ -424,6 +623,117 @@ export function extractMapTiles(root: unknown): TTSMapTile[] {
     (a, b) =>
       a.terrain.localeCompare(b.terrain) || a.name.localeCompare(b.name),
   );
+}
+
+/**
+ * Walk a TTS save and return wilderness tokens, identified by the terrain pack
+ * back image in `CustomImage.ImageSecondaryURL`. Most of these tiles have no
+ * stable nickname, so entries are keyed by terrain and de-duped by URL pair.
+ */
+export function extractWildernessTokens(
+  root: unknown,
+  source: string,
+): WildernessTokenIndex {
+  const terrainByBackUrl = new Map(
+    Object.entries(WILDERNESS_TOKEN_BACK_URLS).map(([terrain, url]) => [
+      url,
+      terrain,
+    ]),
+  );
+  const index: WildernessTokenIndex = {};
+
+  const walkTokens = (obj: unknown, ancestry: string[]) => {
+    if (!isRecord(obj)) return;
+
+    if (obj.Name === "Custom_Tile" && isRecord(obj.CustomImage)) {
+      const imageURL = text(obj.CustomImage.ImageURL);
+      const imageSecondaryURL = text(obj.CustomImage.ImageSecondaryURL);
+      const terrain = terrainByBackUrl.get(imageSecondaryURL);
+      if (terrain && imageURL) {
+        const bucket = (index[terrain] ??= []);
+        const existing = bucket.find(
+          (token) =>
+            token.imageURL === imageURL &&
+            token.imageSecondaryURL === imageSecondaryURL,
+        );
+        const nickname = text(obj.Nickname);
+        const metadata = wildernessTokenMetadataFor(imageURL);
+        if (existing) {
+          applyWildernessTokenMetadata(existing, metadata);
+          addToLocations(existing.locations, ancestry);
+          addNickname(existing, nickname);
+        } else {
+          const entry: TTSWildernessToken = {
+            source,
+            terrain,
+            imageURL,
+            imageSecondaryURL,
+            locations: [{ ancestry, count: 1 }],
+          };
+          applyWildernessTokenMetadata(entry, metadata);
+          addNickname(entry, nickname);
+          bucket.push(entry);
+        }
+      }
+    }
+
+    const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+    const childAncestry = nick ? [...ancestry, nick] : ancestry;
+    const states = obj.ObjectStates;
+    if (Array.isArray(states))
+      for (const s of states) walkTokens(s, childAncestry);
+    const contained = (obj as TTSContainer).ContainedObjects;
+    if (Array.isArray(contained))
+      for (const s of contained) walkTokens(s, childAncestry);
+  };
+
+  walkTokens(root, []);
+  for (const bucket of Object.values(index)) {
+    bucket.sort(
+      (a, b) =>
+        (a.name ?? a.nicknames?.[0] ?? "").localeCompare(
+          b.name ?? b.nicknames?.[0] ?? "",
+        ) ||
+        (a.clearing ?? 0) - (b.clearing ?? 0) ||
+        String(a.draw ?? "").localeCompare(String(b.draw ?? "")) ||
+        a.imageURL.localeCompare(b.imageURL),
+    );
+  }
+  return index;
+}
+
+function applyWildernessTokenMetadata(
+  token: TTSWildernessToken,
+  metadata: WildernessTokenMetadata | undefined,
+): void {
+  if (!metadata) return;
+  token.name = metadata.name;
+  if (metadata.clearing !== undefined) token.clearing = metadata.clearing;
+  if (metadata.draw !== undefined) token.draw = metadata.draw;
+}
+
+function wildernessTokenMetadataFor(
+  imageURL: string,
+): WildernessTokenMetadata | undefined {
+  const exact = WILDERNESS_TOKEN_FRONT_METADATA[imageURL];
+  if (exact) return exact;
+
+  const imageHash = steamImageHash(imageURL);
+  if (!imageHash) return undefined;
+  return Object.entries(WILDERNESS_TOKEN_FRONT_METADATA).find(
+    ([url]) => steamImageHash(url) === imageHash,
+  )?.[1];
+}
+
+function steamImageHash(url: string): string {
+  return url.split("/").filter(Boolean).at(-1) ?? "";
+}
+
+function addNickname(token: TTSWildernessToken, nickname: string): void {
+  if (!nickname) return;
+  const nicknames = (token.nicknames ??= []);
+  if (!nicknames.includes(nickname)) nicknames.push(nickname);
+  nicknames.sort((a, b) => a.localeCompare(b));
 }
 
 function isCivLocationNickname(nick: string): boolean {

@@ -3,11 +3,14 @@ import {
   extractCards,
   extractChips,
   extractCivLocations,
+  extractWildernessTokens,
   extractSites,
   normalizeTitle,
   prettifyChipName,
   resolveCards,
   SITE_FACE_URL,
+  WILDERNESS_TOKEN_BACK_URLS,
+  WILDERNESS_TOKEN_FRONT_METADATA,
 } from ".";
 
 describe("prettifyChipName", () => {
@@ -100,7 +103,10 @@ describe("extractCards", () => {
 
   it("skips cards with empty or missing nicknames", () => {
     const save = {
-      ObjectStates: [card("", 100, "1", SAMPLE_DECK), card("Foo", 101, "1", SAMPLE_DECK)],
+      ObjectStates: [
+        card("", 100, "1", SAMPLE_DECK),
+        card("Foo", 101, "1", SAMPLE_DECK),
+      ],
     };
     const out = extractCards(save, "eastern");
     expect(Object.keys(out)).toEqual(["Foo"]);
@@ -336,9 +342,7 @@ describe("extractChips", () => {
     };
     const out = extractChips(save, "eastern")["Bandits"];
     expect(out).toHaveLength(2);
-    const totals = out.map((c) =>
-      c.locations.reduce((n, l) => n + l.count, 0),
-    );
+    const totals = out.map((c) => c.locations.reduce((n, l) => n + l.count, 0));
     expect(totals.sort()).toEqual([1, 2]);
   });
 
@@ -379,9 +383,7 @@ describe("extractChips", () => {
     const save = {
       ObjectStates: [chip("King’s Edict", "f", "b")],
     };
-    expect(Object.keys(extractChips(save, "eastern"))).toEqual([
-      "Kings Edict",
-    ]);
+    expect(Object.keys(extractChips(save, "eastern"))).toEqual(["Kings Edict"]);
   });
 
   it("skips chips without an ImageURL", () => {
@@ -400,7 +402,12 @@ describe("extractChips", () => {
 });
 
 describe("extractSites", () => {
-  const site = (nick: string, gm: string, secondary: string, opts: { face?: string } = {}) => ({
+  const site = (
+    nick: string,
+    gm: string,
+    secondary: string,
+    opts: { face?: string } = {},
+  ) => ({
     Name: "Custom_Tile",
     Nickname: nick,
     GMNotes: gm,
@@ -469,7 +476,11 @@ describe("extractCivLocations", () => {
   it("extracts tiles where ImageURL equals ImageSecondaryURL", () => {
     const save = {
       ObjectStates: [
-        { Name: "Bag", Nickname: "Campfire", ContainedObjects: [tile("Campfire", "fire.png")] },
+        {
+          Name: "Bag",
+          Nickname: "Campfire",
+          ContainedObjects: [tile("Campfire", "fire.png")],
+        },
         tile("Inn", "inn.png"),
       ],
     };
@@ -511,6 +522,149 @@ describe("extractCivLocations", () => {
   it("skips tiles with empty Nickname", () => {
     const save = { ObjectStates: [tile("", "x.png")] };
     expect(extractCivLocations(save, "eastern")).toEqual({});
+  });
+});
+
+describe("extractWildernessTokens", () => {
+  const cavesBack = WILDERNESS_TOKEN_BACK_URLS["Cruel Caves"];
+  const plainsBack = WILDERNESS_TOKEN_BACK_URLS["Perilous Plains"];
+  const wildernessToken = (front: string, back = cavesBack, nick = "") => ({
+    Name: "Custom_Tile",
+    Nickname: nick,
+    CustomImage: { ImageURL: front, ImageSecondaryURL: back },
+  });
+
+  it("extracts unnamed Custom_Tile objects by terrain back image", () => {
+    const save = {
+      ObjectStates: [wildernessToken("front.png")],
+    };
+    expect(extractWildernessTokens(save, "eastern")).toEqual({
+      "Cruel Caves": [
+        {
+          source: "eastern",
+          terrain: "Cruel Caves",
+          imageURL: "front.png",
+          imageSecondaryURL: cavesBack,
+          locations: [{ ancestry: [], count: 1 }],
+        },
+      ],
+    });
+  });
+
+  it("keeps terrain buckets separate", () => {
+    const save = {
+      ObjectStates: [
+        wildernessToken("caves.png"),
+        wildernessToken("plains.png", plainsBack),
+      ],
+    };
+    expect(
+      Object.keys(extractWildernessTokens(save, "eastern")).sort(),
+    ).toEqual(["Cruel Caves", "Perilous Plains"]);
+  });
+
+  it("preserves nicknames when the source has them", () => {
+    const save = {
+      ObjectStates: [wildernessToken("ruins.png", cavesBack, "Dwarven Ruins")],
+    };
+    expect(
+      extractWildernessTokens(save, "eastern")["Cruel Caves"][0].nicknames,
+    ).toEqual(["Dwarven Ruins"]);
+  });
+
+  it("augments tokens with front-image metadata", () => {
+    const siteFront = Object.entries(WILDERNESS_TOKEN_FRONT_METADATA).find(
+      ([, metadata]) => metadata.name === "Site",
+    )?.[0];
+    if (!siteFront) throw new Error("Missing Site metadata fixture");
+
+    const save = {
+      ObjectStates: [wildernessToken(siteFront)],
+    };
+    expect(
+      extractWildernessTokens(save, "eastern")["Cruel Caves"][0],
+    ).toMatchObject({
+      name: "Site",
+    });
+  });
+
+  it("maps clearing and draw suffixes from front-image metadata", () => {
+    const zigguratFront = Object.entries(WILDERNESS_TOKEN_FRONT_METADATA).find(
+      ([, metadata]) => metadata.name === "Ziggurat",
+    )?.[0];
+    const buriedTempleFront = Object.entries(
+      WILDERNESS_TOKEN_FRONT_METADATA,
+    ).find(([, metadata]) => metadata.name === "Buried Temple")?.[0];
+    if (!zigguratFront || !buriedTempleFront) {
+      throw new Error("Missing wilderness token metadata fixture");
+    }
+
+    const save = {
+      ObjectStates: [
+        wildernessToken(zigguratFront),
+        wildernessToken(buriedTempleFront),
+      ],
+    };
+    const tokens = extractWildernessTokens(save, "eastern")["Cruel Caves"];
+    expect(tokens.find((token) => token.name === "Ziggurat")).toMatchObject({
+      clearing: 1,
+    });
+    expect(
+      tokens.find((token) => token.name === "Buried Temple"),
+    ).toMatchObject({
+      draw: "X",
+    });
+  });
+
+  it("matches front metadata by Steam image hash when the UGC path differs", () => {
+    const save = {
+      ObjectStates: [
+        wildernessToken(
+          "https://steamusercontent-a.akamaihd.net/ugc/different/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
+        ),
+      ],
+    };
+    expect(
+      extractWildernessTokens(save, "eastern")["Cruel Caves"][0],
+    ).toMatchObject({
+      name: "Item",
+    });
+  });
+
+  it("dedups physical copies and records per-ancestry counts", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Caves Wilderness Tokens",
+          ContainedObjects: [
+            wildernessToken("front.png"),
+            wildernessToken("front.png"),
+          ],
+        },
+        {
+          Name: "Bag",
+          Nickname: "BT Caves",
+          ContainedObjects: [wildernessToken("front.png")],
+        },
+      ],
+    };
+    expect(
+      extractWildernessTokens(save, "eastern")["Cruel Caves"][0],
+    ).toMatchObject({
+      imageURL: "front.png",
+      locations: [
+        { ancestry: ["Caves Wilderness Tokens"], count: 2 },
+        { ancestry: ["BT Caves"], count: 1 },
+      ],
+    });
+  });
+
+  it("skips non-token custom tiles whose back is not a known terrain back", () => {
+    const save = {
+      ObjectStates: [wildernessToken("front.png", "other-back.png")],
+    };
+    expect(extractWildernessTokens(save, "eastern")).toEqual({});
   });
 });
 
