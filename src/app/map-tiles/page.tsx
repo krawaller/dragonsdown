@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MapTileViewer, type MapTile } from "@/components/MapTileViewer";
-import tiles from "../../../data/crafted/map-tiles.json";
+import tiles from "../../../data/tts/map-tiles.json";
 
 export default function MapTilesPage() {
   return (

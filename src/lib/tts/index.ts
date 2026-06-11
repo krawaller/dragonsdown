@@ -105,6 +105,14 @@ export type TTSCivLocation = {
 /** Output written to data/tts/civlocations.json. Keyed by normalized `Nickname`. */
 export type CivLocationIndex = Record<string, TTSCivLocation[]>;
 
+export type TTSMapTile = {
+  name: string;
+  terrain: string;
+  imageUrl: string;
+  imageSecondaryUrl: string;
+  clearings: { x: number; y: number }[];
+};
+
 /**
  * Turn a chip's raw GMNotes key into a display name. The mod's GMNotes are
  * mostly PascalCase (`AdultDragons` → `Adult Dragons`), with a handful of
@@ -408,12 +416,149 @@ export function extractCivLocations(
   return index;
 }
 
+export function extractMapTiles(root: unknown): TTSMapTile[] {
+  const clearingOffsets = extractClearingOffsets(root);
+  const tiles: TTSMapTile[] = [];
+  walkMapTiles(root, [], clearingOffsets, tiles);
+  return tiles.sort(
+    (a, b) =>
+      a.terrain.localeCompare(b.terrain) || a.name.localeCompare(b.name),
+  );
+}
+
 function isCivLocationNickname(nick: string): boolean {
   if (!nick) return false;
   // Reject token-shaped names: "5 Gold", "1 Legend Point", "Cunning Token", ...
   if (/^\d/.test(nick)) return false;
   if (/\bToken\b/i.test(nick)) return false;
   return true;
+}
+
+type MapTileAncestor = {
+  name?: string;
+  nickname?: string;
+};
+
+function walkMapTiles(
+  obj: unknown,
+  ancestors: MapTileAncestor[],
+  clearingOffsets: Map<string, { x: number; y: number }[]>,
+  out: TTSMapTile[],
+): void {
+  if (!isRecord(obj)) return;
+
+  const tile = mapTileFor(obj, ancestors, clearingOffsets);
+  if (tile) out.push(tile);
+
+  const nextAncestors = [...ancestors, ancestorForMapTile(obj)];
+  const states = obj.ObjectStates;
+  if (Array.isArray(states)) {
+    for (const child of states) {
+      walkMapTiles(child, nextAncestors, clearingOffsets, out);
+    }
+  }
+  const contained = (obj as TTSContainer).ContainedObjects;
+  if (Array.isArray(contained)) {
+    for (const child of contained) {
+      walkMapTiles(child, nextAncestors, clearingOffsets, out);
+    }
+  }
+}
+
+function mapTileFor(
+  obj: Record<string, unknown>,
+  ancestors: MapTileAncestor[],
+  clearingOffsets: Map<string, { x: number; y: number }[]>,
+): TTSMapTile | null {
+  if (obj.Name !== "Custom_Tile") return null;
+
+  const guid = text(obj.GUID);
+  const clearings = clearingOffsets.get(guid);
+  if (!clearings) return null;
+
+  const customImage = obj.CustomImage;
+  if (!isRecord(customImage)) return null;
+  const customTile = customImage.CustomTile;
+  if (!isRecord(customTile) || customTile.Type !== 1) return null;
+
+  const parentBag = [...ancestors]
+    .reverse()
+    .find((ancestor) => ancestor.name === "Bag" && ancestor.nickname);
+  if (!parentBag?.nickname) return null;
+
+  const name = text(obj.Nickname);
+  const imageUrl = text(customImage.ImageURL);
+  const imageSecondaryUrl = text(customImage.ImageSecondaryURL);
+  if (!guid || !name || !imageUrl || !imageSecondaryUrl) return null;
+
+  return {
+    name,
+    terrain: terrainForMapTile(parentBag.nickname),
+    imageUrl,
+    imageSecondaryUrl,
+    clearings,
+  };
+}
+
+function extractClearingOffsets(
+  root: unknown,
+): Map<string, { x: number; y: number }[]> {
+  if (!isRecord(root)) return new Map();
+  const luaScript = text(root.LuaScript);
+  const offsets = new Map<string, { x: number; y: number }[]>();
+  const tableEntry = /\["([0-9a-f]{6})"\]\s*=\s*\{([\s\S]*?)\}\s*,?\s*--/g;
+  const coordinate =
+    /\{\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*\}/g;
+
+  let entry: RegExpExecArray | null;
+  while ((entry = tableEntry.exec(luaScript))) {
+    const [, guid, body] = entry;
+    const clearings: { x: number; y: number }[] = [];
+    let match: RegExpExecArray | null;
+    while ((match = coordinate.exec(body))) {
+      clearings.push({
+        x: Number(match[1]),
+        y: Number(match[3]),
+      });
+    }
+    if (clearings.length > 0) offsets.set(guid, clearings);
+  }
+
+  return offsets;
+}
+
+function terrainForMapTile(parentNickname: string): string {
+  switch (parentNickname) {
+    case "Cruel CAVES":
+      return "Cruel Caves";
+    case "Dreadful DESERTS":
+      return "Dreadful Deserts";
+    case "Malevolent MOUNTAINS":
+      return "Malevolent Mountains";
+    case "Perilous PLAINS":
+      return "Perilous Plains";
+    case "Riverlands Tiles":
+    case "Ruthless RIVERLANDS":
+    case "Headwaters Tile":
+      return "Ruthless Riverlands";
+    case "Sinister SWAMPS":
+      return "Sinister Swamps";
+    case "Wicked WOODS":
+      return "Wicked Woods";
+    default:
+      return parentNickname;
+  }
+}
+
+function ancestorForMapTile(obj: Record<string, unknown>): MapTileAncestor {
+  return {
+    name: text(obj.Name) || undefined,
+    nickname: text(obj.Nickname) || undefined,
+  };
+}
+
+function text(value: unknown): string {
+  return typeof value === "string" ? value.trim() : "";
 }
 
 function walkChips(

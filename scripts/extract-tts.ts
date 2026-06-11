@@ -11,6 +11,7 @@ import {
   extractCards,
   extractChips,
   extractCivLocations,
+  extractMapTiles,
   extractSites,
   isSameCell,
   mergeTags,
@@ -18,6 +19,7 @@ import {
   type CardIndex,
   type ChipIndex,
   type CivLocationIndex,
+  type TTSMapTile,
   type SiteIndex,
 } from "../src/lib/tts";
 
@@ -41,6 +43,7 @@ async function main(): Promise<void> {
   const chips: ChipIndex = {};
   const sites: SiteIndex = {};
   const civLocations: CivLocationIndex = {};
+  let mapTiles: TTSMapTile[] = [];
 
   for (const file of files) {
     const stem = path.basename(file, ".json");
@@ -51,8 +54,9 @@ async function main(): Promise<void> {
     const chipIndex = extractChips(save, stem);
     const siteIndex = extractSites(save, stem);
     const civIndex = extractCivLocations(save, stem);
+    mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations`,
+      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${mapTiles.length} map tiles`,
     );
 
     // Merge into combined indexes, de-duping by cell (cards) / image URL (chips).
@@ -107,6 +111,7 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
   await writeSorted(path.join(OUT_DIR, "civlocations.json"), civLocations);
+  await writeJson(path.join(OUT_DIR, "map-tiles.json"), mapTiles);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
   );
@@ -119,6 +124,7 @@ async function main(): Promise<void> {
   console.log(
     `→ civlocations.json: ${Object.keys(civLocations).length} names, ${countEntries(civLocations)} entries total`,
   );
+  console.log(`→ map-tiles.json: ${mapTiles.length} map tiles total`);
 }
 
 function countEntries<T>(index: Record<string, T[]>): number {
@@ -133,6 +139,10 @@ async function writeSorted(
     Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
   );
   await fs.writeFile(file, JSON.stringify(sorted, null, 2));
+}
+
+async function writeJson(file: string, data: unknown): Promise<void> {
+  await fs.writeFile(file, `${JSON.stringify(data, null, 2)}\n`);
 }
 
 main().catch((err: unknown) => {
