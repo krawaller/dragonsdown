@@ -103,7 +103,11 @@ export type ChipEntry = {
 export function getAllChips(): ChipEntry[] {
   const idx = getChipIndex();
   return Object.entries(idx)
-    .map(([name, chips]) => ({ name, prettyName: prettifyChipName(name), chips }))
+    .map(([name, chips]) => ({
+      name,
+      prettyName: prettifyChipName(name),
+      chips,
+    }))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
 
@@ -130,6 +134,7 @@ export function getAllSites(): SiteEntry[] {
 /** A civ-location entry for the /civ-locations listing. */
 export type CivLocationEntry = {
   name: string;
+  slug: string;
   location: TTSCivLocation;
 };
 
@@ -137,8 +142,24 @@ export type CivLocationEntry = {
 export function getAllCivLocations(): CivLocationEntry[] {
   const idx = getCivLocationIndex();
   return Object.entries(idx)
-    .flatMap(([name, locs]) => locs.map((location) => ({ name, location })))
+    .flatMap(([name, locs]) =>
+      locs.map((location) => ({ name, slug: slugify(name), location })),
+    )
     .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getCivLocationBySlug(
+  slug: string,
+): CivLocationEntry | undefined {
+  return getAllCivLocations().find((entry) => entry.slug === slug);
+}
+
+function slugify(value: string): string {
+  return value
+    .normalize("NFKD")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 /**

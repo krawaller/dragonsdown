@@ -14,8 +14,7 @@ export default function CivLocationsPage() {
       </Link>
       <h1 className="text-4xl font-bold mt-4 mb-2">Civ Locations</h1>
       <p className="text-sm text-zinc-500 mb-8">
-        {entries.length} civilization locations from the TTS mod · click any
-        tile to zoom
+        {entries.length} civilization locations from the TTS mod
       </p>
       <CivLocationGrid entries={entries} />
     </main>
