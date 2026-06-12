@@ -77,11 +77,7 @@ export default async function BoardPage({
               <h2 className="text-xl font-semibold mb-4">Sites</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {sites.map(({ name, href, imageURL }) => (
-                  <Link
-                    key={name}
-                    href={href}
-                    className="group block"
-                  >
+                  <Link key={name} href={href} className="group block">
                     <span className="block overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 group-hover:ring-2 group-hover:ring-zinc-400 transition">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -104,11 +100,7 @@ export default async function BoardPage({
               <h2 className="text-xl font-semibold mb-4">Merchant Tokens</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {merchants.map(({ name, href, imageURL }) => (
-                  <Link
-                    key={name}
-                    href={href}
-                    className="group block"
-                  >
+                  <Link key={name} href={href} className="group block">
                     <span className="block overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 group-hover:ring-2 group-hover:ring-zinc-400 transition">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img

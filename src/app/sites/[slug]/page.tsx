@@ -1,10 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  getAllSites,
-  getBoardsForSite,
-  getSiteBySlug,
-} from "@/lib/tts/lookup";
+import { getAllSites, getBoardsForSite, getSiteBySlug } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
   return getAllSites().map((entry) => ({ slug: entry.slug }));
