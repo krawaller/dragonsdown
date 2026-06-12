@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getAllCivilisationTokenNames,
+  getBoardsForMerchant,
   getCivilisationTokenBySlug,
   type CivilisationTokenListEntry,
 } from "@/lib/tts/lookup";
@@ -23,6 +24,7 @@ export default async function CivilisationTokenPage({
     (sum, token) => sum + tokenTotalCount(token),
     0,
   );
+  const boards = getBoardsForMerchant(entry.name);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -39,6 +41,32 @@ export default async function CivilisationTokenPage({
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
         {entry.tokens.length} images · {total} physical tokens
       </p>
+
+      {boards.length > 0 && (
+        <section className="mb-8">
+          <h2 className="text-sm font-medium mb-2">Boards</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {boards.map(({ slug, title, board }) => (
+              <Link key={slug} href={`/boards/${slug}`} className="group block">
+                <span className="block overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 group-hover:ring-2 group-hover:ring-zinc-400 transition">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={board.imageURL}
+                    alt={title}
+                    className="block w-full aspect-square object-cover"
+                  />
+                </span>
+                <span className="mt-2 block text-sm font-medium group-hover:underline">
+                  {title}
+                </span>
+                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                  {board.terrain}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {entry.tokens.map((token) => (

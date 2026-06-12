@@ -11,6 +11,7 @@ import {
   prettifyChipName,
   resolveCards,
   type AliasMap,
+  type TTSBoard,
   type CardIndex,
   type ChipIndex,
   type CivLocationIndex,
@@ -46,6 +47,7 @@ const CIVILISATION_TOKENS_FILE = path.join(
   "tts",
   "civilisation-tokens.json",
 );
+const BOARDS_FILE = path.join(process.cwd(), "data", "tts", "boards.json");
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
@@ -55,6 +57,7 @@ let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
 let cachedWildernessTokenIndex: WildernessTokenIndex | null = null;
 let cachedCivilisationTokenIndex: TTSCivilisationToken[] | null = null;
+let cachedBoardIndex: TTSBoard[] | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -97,6 +100,13 @@ function getCivilisationTokenIndex(): TTSCivilisationToken[] {
     ? (data as TTSCivilisationToken[])
     : [];
   return cachedCivilisationTokenIndex;
+}
+
+function getBoardIndex(): TTSBoard[] {
+  if (cachedBoardIndex !== null) return cachedBoardIndex;
+  const data = readJsonOrEmpty<unknown>(BOARDS_FILE);
+  cachedBoardIndex = Array.isArray(data) ? (data as TTSBoard[]) : [];
+  return cachedBoardIndex;
 }
 
 function readJsonOrEmpty<T>(file: string): T {
@@ -157,6 +167,7 @@ export type CardEntry = {
 /** A site entry for the /sites listing. */
 export type SiteEntry = {
   name: string;
+  slug: string;
   site: TTSSite;
 };
 
@@ -164,8 +175,14 @@ export type SiteEntry = {
 export function getAllSites(): SiteEntry[] {
   const idx = getSiteIndex();
   return Object.entries(idx)
-    .flatMap(([name, sites]) => sites.map((site) => ({ name, site })))
+    .flatMap(([name, sites]) =>
+      sites.map((site) => ({ name, slug: slugify(name), site })),
+    )
     .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getSiteBySlug(slug: string): SiteEntry | undefined {
+  return getAllSites().find((entry) => entry.slug === slug);
 }
 
 /** A civ-location entry for the /civ-locations listing. */
@@ -325,6 +342,43 @@ export function getCivilisationTokenBySlug(
   return getAllCivilisationTokenNames().find((entry) => entry.slug === slug);
 }
 
+export type BoardEntry = {
+  slug: string;
+  title: string;
+  board: TTSBoard;
+};
+
+export function getAllBoards(): BoardEntry[] {
+  const seen = new Map<string, number>();
+  return getBoardIndex()
+    .map((board) => ({ title: boardTitle(board), board }))
+    .sort(compareBoardEntries)
+    .map(({ title, board }) => {
+      const baseSlug = slugify(`${board.terrain} ${title}`);
+      const count = seen.get(baseSlug) ?? 0;
+      seen.set(baseSlug, count + 1);
+      return {
+        title,
+        board,
+        slug: count === 0 ? baseSlug : `${baseSlug}-${count + 1}`,
+      };
+    });
+}
+
+export function getBoardBySlug(slug: string): BoardEntry | undefined {
+  return getAllBoards().find((entry) => entry.slug === slug);
+}
+
+export function getBoardsForSite(siteName: string): BoardEntry[] {
+  return getAllBoards().filter((entry) => entry.board.sites.includes(siteName));
+}
+
+export function getBoardsForMerchant(merchantName: string): BoardEntry[] {
+  return getAllBoards().filter((entry) =>
+    entry.board.merchants.includes(merchantName),
+  );
+}
+
 function hasWildernessTokenName(
   token: TTSWildernessToken,
 ): token is TTSWildernessToken & { name: string } {
@@ -371,6 +425,27 @@ function compareCivilisationTokens(
     String(a.gmNotes ?? "").localeCompare(String(b.gmNotes ?? "")) ||
     a.imageSecondaryURL.localeCompare(b.imageSecondaryURL)
   );
+}
+
+function compareBoardEntries(
+  a: { title: string; board: TTSBoard },
+  b: { title: string; board: TTSBoard },
+): number {
+  return (
+    a.board.terrain.localeCompare(b.board.terrain) ||
+    a.title.localeCompare(b.title) ||
+    a.board.imageURL.localeCompare(b.board.imageURL)
+  );
+}
+
+function boardTitle(board: TTSBoard): string {
+  if (board.sites.length > 0 && board.merchants.length === 0) {
+    return `${board.sites.join(" / ")} Board`;
+  }
+  if (board.sites.length === 0 && board.merchants.length > 0) {
+    return `${board.terrain} Merchant Board`;
+  }
+  return `${board.terrain} Board`;
 }
 
 function slugify(value: string): string {

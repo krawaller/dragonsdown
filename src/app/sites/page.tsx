@@ -21,8 +21,7 @@ export default function SitesPage() {
         className="w-32 aspect-square object-contain rounded bg-zinc-100 mb-4"
       />
       <p className="text-sm text-zinc-500 mb-8">
-        {entries.length} treasure sites from the TTS mod · click any tile to
-        zoom
+        {entries.length} treasure sites from the TTS mod
       </p>
       <SiteGrid entries={entries} />
     </main>
