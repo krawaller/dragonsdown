@@ -8,6 +8,7 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import {
+  extractBoards,
   extractCards,
   extractChips,
   extractCivilisationTokens,
@@ -18,6 +19,7 @@ import {
   isSameCell,
   mergeTags,
   sameAncestry,
+  type BoardIndex,
   type CardIndex,
   type ChipIndex,
   type CivLocationIndex,
@@ -44,6 +46,7 @@ async function main(): Promise<void> {
   const files = SOURCE_FILES;
 
   const cards: CardIndex = {};
+  const boards: BoardIndex = [];
   const chips: ChipIndex = {};
   const sites: SiteIndex = {};
   const civLocations: CivLocationIndex = {};
@@ -57,6 +60,7 @@ async function main(): Promise<void> {
     const save = JSON.parse(raw) as unknown;
 
     const cardIndex = extractCards(save, stem);
+    const boardIndex = extractBoards(save, stem);
     const chipIndex = extractChips(save, stem);
     const siteIndex = extractSites(save, stem);
     const civIndex = extractCivLocations(save, stem);
@@ -64,8 +68,10 @@ async function main(): Promise<void> {
     const wildernessIndex = extractWildernessTokens(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
     );
+
+    boards.push(...boardIndex);
 
     // Merge into combined indexes, de-duping by cell (cards) / image URL (chips).
     for (const [nick, items] of Object.entries(cardIndex)) {
@@ -163,6 +169,7 @@ async function main(): Promise<void> {
     }
   }
 
+  await writeJson(path.join(OUT_DIR, "boards.json"), boards);
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
@@ -176,6 +183,7 @@ async function main(): Promise<void> {
     wildernessTokens,
   );
   await writeJson(path.join(OUT_DIR, "map-tiles.json"), mapTiles);
+  console.log(`→ boards.json: ${boards.length} boards total`);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
   );

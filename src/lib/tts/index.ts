@@ -79,6 +79,15 @@ export type TTSCivilisationToken = {
   terrain?: string;
 };
 
+export type TTSBoard = {
+  source: string;
+  terrain: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+  merchants: string[];
+  sites: string[];
+};
+
 /**
  * A "site" is a Custom_Tile whose front (`ImageURL`) is the generic site card
  * back. Each site has a unique Nickname (`Grotto`, `Tarn`, ...) and a unique
@@ -317,6 +326,9 @@ export type TTSWildernessToken = {
 
 /** Output written to data/tts/wilderness-tokens.json. Keyed by terrain name. */
 export type WildernessTokenIndex = Record<string, TTSWildernessToken[]>;
+
+/** Output written to data/tts/boards.json. */
+export type BoardIndex = TTSBoard[];
 
 export type TTSMapTile = {
   name: string;
@@ -672,6 +684,101 @@ export function extractCivilisationTokens(
   walkTokens(root, []);
   return tokens.sort(compareCivilisationTokens);
 }
+
+export function extractBoards(root: unknown, source: string): BoardIndex {
+  const boards: TTSBoard[] = [];
+
+  const walkBoards = (obj: unknown, ancestry: string[]) => {
+    if (!isRecord(obj)) return;
+
+    if (isBoardCandidate(obj)) {
+      const board = boardFor(obj, source, ancestry);
+      if (board) boards.push(board);
+    }
+
+    const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+    const childAncestry = nick ? [...ancestry, nick] : ancestry;
+    const states = obj.ObjectStates;
+    if (Array.isArray(states))
+      for (const s of states) walkBoards(s, childAncestry);
+    const contained = (obj as TTSContainer).ContainedObjects;
+    if (Array.isArray(contained))
+      for (const s of contained) walkBoards(s, childAncestry);
+  };
+
+  walkBoards(root, []);
+  return boards.sort((a, b) => a.terrain.localeCompare(b.terrain));
+}
+
+function isBoardCandidate(obj: Record<string, unknown>): boolean {
+  return (
+    obj.Name === "Custom_Tile" &&
+    Array.isArray(obj.Tags) &&
+    obj.Tags.includes("side1") &&
+    isRecord(obj.CustomImage)
+  );
+}
+
+function boardFor(
+  obj: Record<string, unknown>,
+  source: string,
+  ancestry: string[],
+): TTSBoard | null {
+  const image = obj.CustomImage as Record<string, unknown>;
+  const imageURL = text(image.ImageURL);
+  if (!imageURL) return null;
+
+  const merchants = merchantNamesFromBoardLua(text(obj.LuaScript));
+  const sites = SETUP_CARD_PRINTED_SITES_BY_IMAGE_URL[imageURL] ?? [];
+  if (merchants.length === 0 && sites.length === 0) return null;
+
+  const terrain = terrainPackForAncestry(ancestry) || "Neutral";
+  const imageSecondaryURL =
+    text(image.ImageSecondaryURL) || stateTwoImageURL(obj) || "";
+  return {
+    source,
+    terrain,
+    imageURL,
+    imageSecondaryURL,
+    merchants,
+    sites,
+  };
+}
+
+function merchantNamesFromBoardLua(luaScript: string): string[] {
+  return [
+    ...new Set(
+      [...luaScript.matchAll(/\b[a-z_]*merc\s*=\s*"([^"]+)"/g)].map((match) =>
+        match[1].trim(),
+      ),
+    ),
+  ].sort((a, b) => a.localeCompare(b));
+}
+
+function stateTwoImageURL(obj: Record<string, unknown>): string {
+  const states = obj.States;
+  if (!isRecord(states)) return "";
+  const stateTwo = states["2"];
+  if (!isRecord(stateTwo) || !isRecord(stateTwo.CustomImage)) return "";
+  return text(stateTwo.CustomImage.ImageURL);
+}
+
+const SETUP_CARD_PRINTED_SITES_BY_IMAGE_URL: Record<string, string[]> = {
+  "https://steamusercontent-a.akamaihd.net/ugc/2323363479518849040/26D7E5834ED773BD8179A21C5D4B5EC2886A9F89/":
+    ["Altar", "Catacombs", "Trove"],
+  "https://steamusercontent-a.akamaihd.net/ugc/15429035261550998634/62807FE48E734542B1C7C08EEA7F4EB454EA110E/":
+    ["Mausoleum", "Terrace", "Tomb", "Ziggurat"],
+  "https://steamusercontent-a.akamaihd.net/ugc/2323363479519039329/41E3FD0F7E9C8A95B83A525FC80B0919F23D3563/":
+    ["Chamber", "Crypt", "Hoard"],
+  "https://steamusercontent-a.akamaihd.net/ugc/2323363479519118348/443D7796425167A331EC30CB6EB39F7881BA543F/":
+    ["Monolith", "Wrecked Wagons"],
+  "https://steamusercontent-a.akamaihd.net/ugc/16948278958954043783/FC338D6BDE29FE6BD3D2EB5E3CFD64D0E82F59F5/":
+    ["Abyss", "Tarn", "Wreck"],
+  "https://steamusercontent-a.akamaihd.net/ugc/2323363479519120254/77809A8879191279ADBE84BC48A9E12C272548A7/":
+    ["Grotto", "Hideout", "Lost Battalion"],
+  "https://steamusercontent-a.akamaihd.net/ugc/2323363479519043888/1148228148CCCE332A638EBED6176E9AE6129254/":
+    ["Secret Cache", "Shrine"],
+};
 
 function civilisationTokenFor(
   obj: Record<string, unknown>,

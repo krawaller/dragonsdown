@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
+  extractBoards,
   extractCards,
   extractChips,
   extractCivilisationTokens,
@@ -652,6 +653,161 @@ describe("extractCivilisationTokens", () => {
       ],
     };
     expect(extractCivilisationTokens(save, "eastern")).toEqual([]);
+  });
+});
+
+describe("extractBoards", () => {
+  const WICKED_WOODS_BOARD_URL =
+    "https://steamusercontent-a.akamaihd.net/ugc/2323363479519043888/1148228148CCCE332A638EBED6176E9AE6129254/";
+  const DREADFUL_DESERTS_SITES_BOARD_URL =
+    "https://steamusercontent-a.akamaihd.net/ugc/15429035261550998634/62807FE48E734542B1C7C08EEA7F4EB454EA110E/";
+
+  const board = ({
+    lua = 'function onLoad()\nwest_merc = "Crone"\neast_merc = "Smith"\nend',
+    secondary = "board-hard.png",
+    imageURL = WICKED_WOODS_BOARD_URL,
+    states = {},
+  }: {
+    lua?: string;
+    secondary?: string;
+    imageURL?: string;
+    states?: object;
+  } = {}) => ({
+    Name: "Custom_Tile",
+    Nickname: "State 1 : Standard",
+    Tags: ["side1"],
+    CustomImage: {
+      ImageURL: imageURL,
+      ImageSecondaryURL: secondary,
+    },
+    LuaScript: lua,
+    States: states,
+  });
+
+  it("extracts board terrain, images, merchants, and printed site names", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Wicked WOODS",
+          ContainedObjects: [board()],
+        },
+      ],
+    };
+
+    expect(extractBoards(save, "eastern")).toEqual([
+      {
+        source: "eastern",
+        terrain: "Wicked Woods",
+        imageURL: WICKED_WOODS_BOARD_URL,
+        imageSecondaryURL: "board-hard.png",
+        merchants: ["Crone", "Smith"],
+        sites: ["Secret Cache", "Shrine"],
+      },
+    ]);
+  });
+
+  it("does not infer add-on special locations that are not printed", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Wicked WOODS",
+          ContainedObjects: [
+            board(),
+            {
+              Name: "Custom_Tile",
+              Nickname: "Grove",
+              CustomImage: {
+                ImageURL: Object.entries(WILDERNESS_TOKEN_FRONT_METADATA).find(
+                  ([, metadata]) => metadata.name === "Grove",
+                )?.[0],
+                ImageSecondaryURL: WILDERNESS_TOKEN_BACK_URLS["Wicked Woods"],
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(extractBoards(save, "eastern")[0].sites).toEqual([
+      "Secret Cache",
+      "Shrine",
+    ]);
+  });
+
+  it("keeps setup-card site boards even when they define no merchants", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Dreadful DESERTS",
+          ContainedObjects: [
+            board({
+              imageURL: DREADFUL_DESERTS_SITES_BOARD_URL,
+              lua: "function SetMeUp() end",
+            }),
+          ],
+        },
+      ],
+    };
+
+    expect(extractBoards(save, "eastern")).toEqual([
+      {
+        source: "eastern",
+        terrain: "Dreadful Deserts",
+        imageURL: DREADFUL_DESERTS_SITES_BOARD_URL,
+        imageSecondaryURL: "board-hard.png",
+        merchants: [],
+        sites: ["Mausoleum", "Terrace", "Tomb", "Ziggurat"],
+      },
+    ]);
+  });
+
+  it("uses state two art as the secondary image when the board omits it", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "NATIVES Merchants",
+          ContainedObjects: [
+            board({
+              secondary: "",
+              states: {
+                "2": {
+                  CustomImage: { ImageURL: "board-random.png" },
+                },
+              },
+            }),
+          ],
+        },
+      ],
+    };
+
+    expect(extractBoards(save, "eastern")[0]).toMatchObject({
+      terrain: "Neutral",
+      imageSecondaryURL: "board-random.png",
+    });
+  });
+
+  it("skips side1 tiles with neither merchants nor printed sites", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Dreadful DESERTS",
+          ContainedObjects: [
+            board({
+              imageURL: "unmapped-board.png",
+              lua: "function SetMeUp() end",
+            }),
+            board({ lua: 'east_merc = "Silk Dealer"' }),
+          ],
+        },
+      ],
+    };
+
+    expect(extractBoards(save, "eastern")).toHaveLength(1);
   });
 });
 
