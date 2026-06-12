@@ -60,7 +60,7 @@ export function MonsterGroupStack({
         <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
           {group.nativeSummons.length > 0 ? (
             <>
-              {group.nativeSummons.length} civ location{" "}
+              {group.nativeSummons.length} location{" "}
               {group.nativeSummons.length === 1 ? "link" : "links"}
             </>
           ) : (

@@ -35,7 +35,7 @@ export default async function NativePage({
 
       {group.nativeSummons.length > 0 && (
         <section className="mb-10">
-          <h2 className="text-xl font-semibold mb-3">Civ Locations</h2>
+          <h2 className="text-xl font-semibold mb-3">Summoning Sources</h2>
           <div className="flex flex-wrap gap-2">
             {group.nativeSummons.map((summon) => (
               <Link

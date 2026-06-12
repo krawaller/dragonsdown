@@ -1190,6 +1190,125 @@ end`,
       ],
     });
   });
+
+  it("extracts native summons from token summonNatives functions", () => {
+    const save = {
+      LuaScript: `function onLoad()
+nativeGroups = {
+  bashkirs = {
+    "168365", --Leader
+    "571a63", --2
+  },
+  elves = {
+    "593e1c", --ElfLeader
+    "94a1a2", --Elf2
+  },
+}
+end`,
+      ObjectStates: [
+        chip("168365", "bashkirs"),
+        chip("571a63", "bashkirs"),
+        chip("593e1c", "elves"),
+        chip("94a1a2", "elves"),
+        {
+          Name: "Custom_Tile",
+          Nickname: "Campfire",
+          LuaScript: `function summonNatives()
+local _params = {
+  location = self.guid,
+  group = "bashkirs",
+}
+Global.call("setupNativeGroup", _params)
+_params = {
+  location = self.guid,
+  group = "elves",
+}
+Global.call("setupNativeGroup", _params)
+_params = {
+  location = self.guid,
+  group = "tribe",
+}
+Global.call("setupNativeGroup", _params)
+end`,
+        },
+      ],
+    };
+
+    expect(extractNativeSummons(save, "eastern")).toEqual({
+      Campfire: [
+        {
+          source: "eastern",
+          group: "Bashkirs",
+          natives: ["Bashkirs Leader", "Bashkirs 2"],
+          nativeChips: [
+            {
+              name: "Bashkirs Leader",
+              imageURL: "168365.png",
+              imageSecondaryURL: "168365-back.png",
+            },
+            {
+              name: "Bashkirs 2",
+              imageURL: "571a63.png",
+              imageSecondaryURL: "571a63-back.png",
+            },
+          ],
+        },
+        {
+          source: "eastern",
+          group: "Elves",
+          natives: ["Elf Leader", "Elf 2"],
+          nativeChips: [
+            {
+              name: "Elf Leader",
+              imageURL: "593e1c.png",
+              imageSecondaryURL: "593e1c-back.png",
+            },
+            {
+              name: "Elf 2",
+              imageURL: "94a1a2.png",
+              imageSecondaryURL: "94a1a2-back.png",
+            },
+          ],
+        },
+      ],
+      "Native Setup": [
+        {
+          source: "eastern",
+          group: "Bashkirs",
+          natives: ["Bashkirs Leader", "Bashkirs 2"],
+          nativeChips: [
+            {
+              name: "Bashkirs Leader",
+              imageURL: "168365.png",
+              imageSecondaryURL: "168365-back.png",
+            },
+            {
+              name: "Bashkirs 2",
+              imageURL: "571a63.png",
+              imageSecondaryURL: "571a63-back.png",
+            },
+          ],
+        },
+        {
+          source: "eastern",
+          group: "Elves",
+          natives: ["Elf Leader", "Elf 2"],
+          nativeChips: [
+            {
+              name: "Elf Leader",
+              imageURL: "593e1c.png",
+              imageSecondaryURL: "593e1c-back.png",
+            },
+            {
+              name: "Elf 2",
+              imageURL: "94a1a2.png",
+              imageSecondaryURL: "94a1a2-back.png",
+            },
+          ],
+        },
+      ],
+    });
+  });
 });
 
 describe("extractMapTileMonsters", () => {

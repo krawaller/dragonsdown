@@ -332,10 +332,20 @@ export function getMonsterGroupsForSite(
 export function getNativeGroupsForCivLocation(
   locationName: string,
 ): NativeGroupLink[] {
+  return getNativeGroupsForSummonSource(locationName);
+}
+
+export function getNativeGroupsForWildernessToken(
+  tokenName: string,
+): NativeGroupLink[] {
+  return getNativeGroupsForSummonSource(tokenName);
+}
+
+function getNativeGroupsForSummonSource(sourceName: string): NativeGroupLink[] {
   return getAllNativeGroups()
     .flatMap((entry) =>
       entry.nativeSummons
-        .filter((summon) => summon.name === locationName)
+        .filter((summon) => summon.name === sourceName)
         .map((summon) => ({
           name: entry.prettyName,
           slug: entry.slug,
@@ -848,8 +858,11 @@ function siteMonsterHref(name: string): string {
 }
 
 function nativeSummonHref(name: string): string {
-  const location = getCivLocationBySlug(slugify(name));
-  return location ? `/civ-locations/${location.slug}` : "";
+  const slug = slugify(name);
+  const location = getCivLocationBySlug(slug);
+  if (location) return `/civ-locations/${location.slug}`;
+  const wildernessToken = getWildernessTokenBySlug(slug);
+  return wildernessToken ? `/wilderness-tokens/${wildernessToken.slug}` : "";
 }
 
 /**

@@ -5,6 +5,7 @@ import {
   getAllWildernessTokenNames,
   getBoardsForMerchant,
   getBoardsForSite,
+  getNativeGroupsForWildernessToken,
   getWildernessTokenBySlug,
   type BoardEntry,
   type WildernessTokenListEntry,
@@ -27,6 +28,7 @@ export default async function WildernessTokenPage({
     ...getBoardsForSite(entry.name),
     ...getBoardsForMerchant(entry.name),
   ]);
+  const nativeGroups = getNativeGroupsForWildernessToken(entry.name);
 
   const total = entry.tokens.reduce(
     (sum, token) => sum + tokenTotalCount(token),
@@ -90,6 +92,26 @@ export default async function WildernessTokenPage({
                 </span>
                 <span className="block text-xs text-zinc-500 dark:text-zinc-400">
                   {board.terrain}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {nativeGroups.length > 0 && (
+        <section className="mb-8">
+          <h2 className="text-sm font-medium mb-2">Native Groups</h2>
+          <div className="flex flex-wrap gap-2">
+            {nativeGroups.map((group) => (
+              <Link
+                key={group.slug}
+                href={`/natives/${group.slug}`}
+                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+              >
+                <span className="font-medium">{group.name}</span>
+                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                  {group.natives.join(", ")}
                 </span>
               </Link>
             ))}

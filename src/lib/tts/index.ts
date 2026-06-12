@@ -896,6 +896,9 @@ export function extractNativeSummons(
 
   const rootLua = isRecord(root) ? text(root.LuaScript) : "";
   const nativeGroups = nativeGroupsFromRootLua(rootLua, chipsByGuid, source);
+  const nativeGroupsByGroup = new Map(
+    nativeGroups.map((group) => [group.group, group]),
+  );
   if (nativeGroups.length > 0) index["Native Setup"] = nativeGroups;
 
   for (const obj of objects) {
@@ -906,7 +909,17 @@ export function extractNativeSummons(
       chipsByGuid,
       source,
     );
-    if (groups.length > 0) (index[locationName] ??= []).push(...groups);
+    addNativeSummonGroups(index, locationName, groups);
+  }
+
+  for (const obj of objects) {
+    const locationName = text(obj.Nickname);
+    if (!locationName) continue;
+    const groups = nativeGroupsFromSummonNativesLua(
+      text(obj.LuaScript),
+      nativeGroupsByGroup,
+    );
+    addNativeSummonGroups(index, locationName, groups);
   }
 
   return Object.fromEntries(
@@ -1022,6 +1035,40 @@ function nativeGroupsFromSetupLua(
       };
     })
     .sort((a, b) => a.group.localeCompare(b.group));
+}
+
+function nativeGroupsFromSummonNativesLua(
+  luaScript: string,
+  nativeGroupsByGroup: Map<string, TTSNativeSummonGroup>,
+): TTSNativeSummonGroup[] {
+  const body = luaFunctionBody(luaScript, "summonNatives");
+  if (!body) return [];
+  const groups = new Map<string, TTSNativeSummonGroup>();
+  for (const match of body.matchAll(/\bgroup\s*=\s*"([^"]+)"/g)) {
+    const group = prettifyChipName(match[1]);
+    const entry = nativeGroupsByGroup.get(group);
+    if (!entry || groups.has(group)) continue;
+    groups.set(group, {
+      ...entry,
+      natives: [...entry.natives],
+      nativeChips: entry.nativeChips.map((chip) => ({ ...chip })),
+    });
+  }
+  return [...groups.values()].sort((a, b) => a.group.localeCompare(b.group));
+}
+
+function addNativeSummonGroups(
+  index: NativeSummonIndex,
+  locationName: string,
+  groups: TTSNativeSummonGroup[],
+): void {
+  if (groups.length === 0) return;
+  const bucket = (index[locationName] ??= []);
+  for (const group of groups) {
+    if (bucket.some((existing) => existing.group === group.group)) continue;
+    bucket.push(group);
+  }
+  bucket.sort((a, b) => a.group.localeCompare(b.group));
 }
 
 function sortNativeChips(chips: TTSNativeChip[]): TTSNativeChip[] {
