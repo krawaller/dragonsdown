@@ -416,6 +416,10 @@ export function getAllMissions(): MissionEntry[] {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
+export function getMissionBySlug(slug: string): MissionEntry | undefined {
+  return getAllMissions().find((entry) => entry.slug === slug);
+}
+
 export function getMissionsForTarget(targetName: string): MissionEntry[] {
   const targetKey = normalizeTitle(targetName);
   return getAllMissions().filter((entry) =>

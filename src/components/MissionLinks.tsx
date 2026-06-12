@@ -18,7 +18,7 @@ export function MissionLinks({
         {missions.map((mission) => (
           <Link
             key={mission.slug}
-            href={`/missions#${mission.slug}`}
+            href={`/missions/${mission.slug}`}
             className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
           >
             <span className="font-medium">{mission.name}</span>

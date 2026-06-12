@@ -1,19 +1,24 @@
 "use client";
 
-import { useEffect, useState, type CSSProperties } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import type { TTSCardImage } from "@/lib/tts";
 import type { CardEntry, MissionTargetKind } from "@/lib/tts/lookup";
-import type { MissionKind } from "@/lib/tts";
+import { SpriteCell } from "@/components/CardSprite";
+import { MissionKindBadge } from "@/components/MissionKindBadge";
 
 type Zoom = { card: TTSCardImage; name: string };
 
 export function CardGrid({
   entries,
   excludeTag,
+  hrefBase,
 }: {
   entries: CardEntry[];
   /** Tag to omit from each card's per-card tag list (the page's own tag). */
   excludeTag?: string;
+  /** Optional base path for linking each entry heading by its `slug`. */
+  hrefBase?: string;
 }) {
   const [zoom, setZoom] = useState<Zoom | null>(null);
 
@@ -35,7 +40,18 @@ export function CardGrid({
             id={entry.slug}
             className="flex flex-col gap-2 scroll-mt-6"
           >
-            <h2 className="text-sm font-medium">{entry.name}</h2>
+            <h2 className="text-sm font-medium">
+              {hrefBase && entry.slug ? (
+                <Link
+                  href={`${hrefBase}/${entry.slug}`}
+                  className="hover:underline"
+                >
+                  {entry.name}
+                </Link>
+              ) : (
+                entry.name
+              )}
+            </h2>
             <CardEntryDetails entry={entry} />
             <div className="flex flex-wrap gap-3">
               {entry.cards.map((card, i) => (
@@ -83,12 +99,7 @@ function CardEntryDetails({ entry }: { entry: CardEntry | undefined }) {
       {kinds.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
           {kinds.map((kind) => (
-            <span
-              key={kind}
-              className={`${missionKindClassName(kind)} rounded border px-2 py-1 font-medium`}
-            >
-              {missionKindLabel(kind)}
-            </span>
+            <MissionKindBadge key={kind} kind={kind} />
           ))}
         </div>
       )}
@@ -120,28 +131,6 @@ function CardEntryDetails({ entry }: { entry: CardEntry | undefined }) {
       )}
     </div>
   );
-}
-
-function missionKindLabel(kind: MissionKind): string {
-  switch (kind) {
-    case "atrocity":
-      return "Atrocity";
-    case "quest":
-      return "Quest";
-    case "expedition":
-      return "Expedition";
-  }
-}
-
-function missionKindClassName(kind: MissionKind): string {
-  switch (kind) {
-    case "atrocity":
-      return "border-red-200 bg-red-50 text-red-700 dark:border-red-900 dark:bg-red-950/40 dark:text-red-300";
-    case "quest":
-      return "border-zinc-200 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200";
-    case "expedition":
-      return "border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900 dark:bg-amber-950/40 dark:text-amber-300";
-  }
 }
 
 function missionTargetKindLabel(kind: MissionTargetKind): string {
@@ -240,30 +229,3 @@ function CardLightbox({
   );
 }
 
-/**
- * Renders a single card cell from its sprite sheet. Sets the sheet as a CSS
- * background and scales/positions it so one cell fills the visible box.
- * Set `useBack` to crop from `backURL` instead of `faceURL` (only valid when
- * `uniqueBack` is true).
- */
-function SpriteCell({
-  card,
-  useBack = false,
-  className = "",
-}: {
-  card: TTSCardImage;
-  useBack?: boolean;
-  className?: string;
-}) {
-  const url = useBack ? card.backURL : card.faceURL;
-  const style: CSSProperties = {
-    aspectRatio: "5 / 7",
-    backgroundImage: `url(${url})`,
-    backgroundSize: `${card.numWidth * 100}% ${card.numHeight * 100}%`,
-    backgroundPosition: `${(card.col / Math.max(card.numWidth - 1, 1)) * 100}% ${
-      (card.row / Math.max(card.numHeight - 1, 1)) * 100
-    }%`,
-    backgroundRepeat: "no-repeat",
-  };
-  return <div className={`${className} bg-zinc-100 rounded`} style={style} />;
-}
