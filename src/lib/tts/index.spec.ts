@@ -5,6 +5,7 @@ import {
   extractChips,
   extractCivilisationTokens,
   extractCivLocations,
+  extractMapTileMonsters,
   extractSiteMonsters,
   extractWildernessTokens,
   extractSites,
@@ -974,6 +975,83 @@ describe("extractSiteMonsters", () => {
         },
       ],
     });
+  });
+});
+
+describe("extractMapTileMonsters", () => {
+  const mapTile = ({
+    guid = "abc123",
+    nickname = "Ancient Hole",
+    lua = `function setupM(rotation)
+local mBags = Global.getTable("bagsMonsters")
+MixedBag = getObjectFromGUID(mBags["AdultDragons"])
+end
+function setupW(rotation)
+local mBags = Global.getTable("bagsMonsters")
+GiantBatBag = getObjectFromGUID(mBags["GiantBats"])
+end
+function setupL(rotation)
+local mBags = Global.getTable("bagsMonsters")
+TrollsBag = getObjectFromGUID(mBags["Trolls"])
+end`,
+  }: {
+    guid?: string;
+    nickname?: string;
+    lua?: string;
+  } = {}) => ({
+    GUID: guid,
+    Name: "Custom_Tile",
+    Nickname: nickname,
+    LuaScript: lua,
+    CustomImage: {
+      ImageURL: "front.png",
+      ImageSecondaryURL: "back.png",
+      CustomTile: { Type: 1 },
+    },
+  });
+
+  const saveWithTile = (tile: object) => ({
+    LuaScript: `OffsetsTable = {
+["abc123"] = {
+{0, 0, 0},
+}, -- Ancient Hole
+}`,
+    ObjectStates: [
+      {
+        Name: "Bag",
+        Nickname: "Cruel CAVES",
+        ContainedObjects: [tile],
+      },
+    ],
+  });
+
+  it("extracts wandering and local monster groups from map tile setup functions", () => {
+    expect(extractMapTileMonsters(saveWithTile(mapTile()), "eastern")).toEqual({
+      "Ancient Hole": [
+        {
+          source: "eastern",
+          terrain: "Cruel Caves",
+          wandering: ["Giant Bats"],
+          local: ["Trolls"],
+        },
+      ],
+    });
+  });
+
+  it("does not classify mixed setupM monster references as wandering or local", () => {
+    const out = extractMapTileMonsters(saveWithTile(mapTile()), "eastern");
+    expect(out["Ancient Hole"][0].wandering).not.toContain("Adult Dragons");
+    expect(out["Ancient Hole"][0].local).not.toContain("Adult Dragons");
+  });
+
+  it("skips map tiles without wandering or local monster bag references", () => {
+    const lua = `function setupW(rotation)
+end
+function setupL(rotation)
+end`;
+    expect(
+      extractMapTileMonsters(saveWithTile(mapTile({ lua })), "eastern"),
+    ).toEqual({});
   });
 });
 

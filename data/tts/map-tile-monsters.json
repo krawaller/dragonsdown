@@ -1,0 +1,422 @@
+{
+  "Ancient Hole": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Cruel Caves",
+      "wandering": [
+        "Giant Bats"
+      ],
+      "local": [
+        "Trolls"
+      ]
+    }
+  ],
+  "Barriers": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Malevolent Mountains",
+      "wandering": [
+        "Juvenile Dragons"
+      ],
+      "local": [
+        "Giants"
+      ]
+    }
+  ],
+  "Black Caves": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Cruel Caves",
+      "wandering": [
+        "Giant Bats"
+      ],
+      "local": [
+        "Adult Dragons"
+      ]
+    }
+  ],
+  "Brackish Span": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Ruthless Riverlands",
+      "wandering": [
+        "Sea Serpents"
+      ],
+      "local": [
+        "Banshees"
+      ]
+    }
+  ],
+  "Cursed Canyon": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Dreadful Deserts",
+      "wandering": [
+        "Giant Scorpions"
+      ],
+      "local": [
+        "Giant Scarabs"
+      ]
+    }
+  ],
+  "Dark Passes": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Cruel Caves",
+      "wandering": [
+        "Giant Bats"
+      ],
+      "local": [
+        "Kobolds"
+      ]
+    }
+  ],
+  "Decayed Swamp": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Sinister Swamps",
+      "wandering": [
+        "Giant Serpents"
+      ],
+      "local": [
+        "Orcs"
+      ]
+    }
+  ],
+  "Deep Woods": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Wicked Woods",
+      "wandering": [
+        "Giant Spiders"
+      ],
+      "local": [
+        "Orcs"
+      ]
+    }
+  ],
+  "Dry Winds": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Dreadful Deserts",
+      "wandering": [
+        "Giant Scorpions"
+      ],
+      "local": [
+        "Lamias"
+      ]
+    }
+  ],
+  "Elder Woods": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Wicked Woods",
+      "wandering": [
+        "Giant Spiders"
+      ],
+      "local": [
+        "Adult Dragons"
+      ]
+    }
+  ],
+  "Flatlands": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Perilous Plains",
+      "wandering": [
+        "Dire Wolves"
+      ],
+      "local": [
+        "Orcs"
+      ]
+    }
+  ],
+  "Forlorn Tunnel": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Cruel Caves",
+      "wandering": [
+        "Giant Bats"
+      ],
+      "local": [
+        "Orcs"
+      ]
+    }
+  ],
+  "Foul Swamp": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Sinister Swamps",
+      "wandering": [
+        "Giant Serpents"
+      ],
+      "local": [
+        "Lizardfolk"
+      ]
+    }
+  ],
+  "Grassy Plains": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Perilous Plains",
+      "wandering": [
+        "Dire Wolves"
+      ],
+      "local": [
+        "Owlbears"
+      ]
+    }
+  ],
+  "Headwater": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Ruthless Riverlands",
+      "wandering": [
+        "Sea Serpents"
+      ],
+      "local": [
+        "Storm Drakes"
+      ]
+    }
+  ],
+  "High Pass": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Malevolent Mountains",
+      "wandering": [
+        "Juvenile Dragons"
+      ],
+      "local": [
+        "Orcs"
+      ]
+    }
+  ],
+  "Lonely Mountains": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Malevolent Mountains",
+      "wandering": [
+        "Juvenile Dragons"
+      ],
+      "local": [
+        "Griffons"
+      ]
+    }
+  ],
+  "Mirky Woods": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Wicked Woods",
+      "wandering": [
+        "Giant Spiders"
+      ],
+      "local": [
+        "Gnolls"
+      ]
+    }
+  ],
+  "Moorland": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Sinister Swamps",
+      "wandering": [
+        "Giant Serpents"
+      ],
+      "local": [
+        "Ogres"
+      ]
+    }
+  ],
+  "Moving Mounds": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Dreadful Deserts",
+      "wandering": [
+        "Giant Scorpions"
+      ],
+      "local": [
+        "Greatmanes"
+      ]
+    }
+  ],
+  "Narrow Ridges": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Malevolent Mountains",
+      "wandering": [
+        "Juvenile Dragons"
+      ],
+      "local": [
+        "Adult Dragons"
+      ]
+    }
+  ],
+  "Oakwood": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Wicked Woods",
+      "wandering": [
+        "Giant Spiders"
+      ],
+      "local": [
+        "Treants"
+      ]
+    }
+  ],
+  "Putrid Waters": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Sinister Swamps",
+      "wandering": [
+        "Giant Serpents"
+      ],
+      "local": [
+        "Adult Dragons"
+      ]
+    }
+  ],
+  "Quiet Bog": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Sinister Swamps",
+      "wandering": [
+        "Giant Serpents"
+      ],
+      "local": [
+        "Trolls"
+      ]
+    }
+  ],
+  "Ravaging Run": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Ruthless Riverlands",
+      "wandering": [
+        "Sea Serpents"
+      ],
+      "local": [
+        "Cyclops"
+      ]
+    }
+  ],
+  "Rippled Expanse": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Dreadful Deserts",
+      "wandering": [
+        "Giant Scorpions"
+      ],
+      "local": [
+        "Sand Wyrms"
+      ]
+    }
+  ],
+  "Secret Dens": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Cruel Caves",
+      "wandering": [
+        "Giant Bats"
+      ],
+      "local": [
+        "Goblins"
+      ]
+    }
+  ],
+  "Shifting Sands": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Dreadful Deserts",
+      "wandering": [
+        "Giant Scorpions"
+      ],
+      "local": [
+        "Shard Wings"
+      ]
+    }
+  ],
+  "Silver Current": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Ruthless Riverlands",
+      "wandering": [
+        "Sea Serpents"
+      ],
+      "local": [
+        "Pirates"
+      ]
+    }
+  ],
+  "Soleford": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Ruthless Riverlands",
+      "wandering": [
+        "Sea Serpents"
+      ],
+      "local": [
+        "Merfolk"
+      ]
+    }
+  ],
+  "The Meadows": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Perilous Plains",
+      "wandering": [
+        "Dire Wolves"
+      ],
+      "local": [
+        "Adult Dragons"
+      ]
+    }
+  ],
+  "Timberlands": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Wicked Woods",
+      "wandering": [
+        "Giant Spiders"
+      ],
+      "local": [
+        "Owlbears"
+      ]
+    }
+  ],
+  "Tri-Peaks": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Malevolent Mountains",
+      "wandering": [
+        "Juvenile Dragons"
+      ],
+      "local": [
+        "Ogres"
+      ]
+    }
+  ],
+  "Twisted Steppe": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Perilous Plains",
+      "wandering": [
+        "Dire Wolves"
+      ],
+      "local": [
+        "Kobolds"
+      ]
+    }
+  ],
+  "Unbroken Lands": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Perilous Plains",
+      "wandering": [
+        "Dire Wolves"
+      ],
+      "local": [
+        "Centaurs"
+      ]
+    }
+  ]
+}

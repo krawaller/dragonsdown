@@ -349,6 +349,16 @@ export type TTSMapTile = {
   clearings: { x: number; y: number }[];
 };
 
+export type TTSMapTileMonsterGroup = {
+  source: string;
+  terrain: string;
+  wandering: string[];
+  local: string[];
+};
+
+/** Output written to data/tts/map-tile-monsters.json. Keyed by map tile name. */
+export type MapTileMonsterIndex = Record<string, TTSMapTileMonsterGroup[]>;
+
 /**
  * Turn a chip's raw GMNotes key into a display name. The mod's GMNotes are
  * mostly PascalCase (`AdultDragons` → `Adult Dragons`), with a handful of
@@ -773,6 +783,60 @@ export function extractSiteMonsters(
   );
 }
 
+export function extractMapTileMonsters(
+  root: unknown,
+  source: string,
+): MapTileMonsterIndex {
+  const clearingOffsets = extractClearingOffsets(root);
+  const index: MapTileMonsterIndex = {};
+
+  const walkTiles = (obj: unknown, ancestors: MapTileAncestor[]) => {
+    if (!isRecord(obj)) return;
+
+    const tile = mapTileFor(obj, ancestors, clearingOffsets);
+    if (tile) {
+      const luaScript = text(obj.LuaScript);
+      const wandering = monsterGroupsFromLuaFunction(luaScript, "setupW");
+      const local = monsterGroupsFromLuaFunction(luaScript, "setupL");
+      if (wandering.length > 0 || local.length > 0) {
+        (index[tile.name] ??= []).push({
+          source,
+          terrain: tile.terrain,
+          wandering,
+          local,
+        });
+      }
+    }
+
+    const nextAncestors = [...ancestors, ancestorForMapTile(obj)];
+    const states = obj.ObjectStates;
+    if (Array.isArray(states)) {
+      for (const child of states) walkTiles(child, nextAncestors);
+    }
+    const contained = (obj as TTSContainer).ContainedObjects;
+    if (Array.isArray(contained)) {
+      for (const child of contained) walkTiles(child, nextAncestors);
+    }
+  };
+
+  walkTiles(root, []);
+  return Object.fromEntries(
+    Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
+  );
+}
+
+function monsterGroupsFromLuaFunction(
+  luaScript: string,
+  functionName: string,
+): string[] {
+  const body = luaFunctionBody(luaScript, functionName);
+  const groups = new Set<string>();
+  for (const match of body.matchAll(/\bmBags\s*\[\s*"([^"]+)"\s*\]/g)) {
+    groups.add(prettifyChipName(match[1]));
+  }
+  return [...groups];
+}
+
 function collectObjects(obj: unknown, out: Record<string, unknown>[]): void {
   if (!isRecord(obj)) return;
   out.push(obj);
@@ -796,7 +860,11 @@ function siteMonsterSourceName(obj: Record<string, unknown>): string {
 }
 
 function guardianFunctionBody(luaScript: string): string {
-  const start = luaScript.indexOf("function guardian");
+  return luaFunctionBody(luaScript, "guardian");
+}
+
+function luaFunctionBody(luaScript: string, functionName: string): string {
+  const start = luaScript.indexOf(`function ${functionName}`);
   if (start < 0) return "";
   const end = luaScript.indexOf("\nfunction ", start + 1);
   return luaScript.slice(start, end < 0 ? luaScript.length : end);

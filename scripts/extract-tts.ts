@@ -13,6 +13,7 @@ import {
   extractChips,
   extractCivilisationTokens,
   extractCivLocations,
+  extractMapTileMonsters,
   extractMapTiles,
   extractSiteMonsters,
   extractSites,
@@ -24,6 +25,7 @@ import {
   type CardIndex,
   type ChipIndex,
   type CivLocationIndex,
+  type MapTileMonsterIndex,
   type TTSCivilisationToken,
   type TTSMapTile,
   type SiteIndex,
@@ -55,6 +57,7 @@ async function main(): Promise<void> {
   const civLocations: CivLocationIndex = {};
   const civilisationTokens: TTSCivilisationToken[] = [];
   const wildernessTokens: WildernessTokenIndex = {};
+  const mapTileMonsters: MapTileMonsterIndex = {};
   let mapTiles: TTSMapTile[] = [];
 
   for (const file of files) {
@@ -70,9 +73,10 @@ async function main(): Promise<void> {
     const civIndex = extractCivLocations(save, stem);
     const civilisationIndex = extractCivilisationTokens(save, stem);
     const wildernessIndex = extractWildernessTokens(save, stem);
+    const mapTileMonsterIndex = extractMapTileMonsters(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups`,
     );
 
     boards.push(...boardIndex);
@@ -149,6 +153,9 @@ async function main(): Promise<void> {
         }
       }
     }
+    for (const [name, items] of Object.entries(mapTileMonsterIndex)) {
+      (mapTileMonsters[name] ??= []).push(...items);
+    }
     // Chips dedup by URL pair across sources; per-ancestry counts are summed.
     for (const [name, items] of Object.entries(chipIndex)) {
       const bucket = (chips[name] ??= []);
@@ -191,6 +198,10 @@ async function main(): Promise<void> {
     wildernessTokens,
   );
   await writeJson(path.join(OUT_DIR, "map-tiles.json"), mapTiles);
+  await writeSorted(
+    path.join(OUT_DIR, "map-tile-monsters.json"),
+    mapTileMonsters,
+  );
   console.log(`→ boards.json: ${boards.length} boards total`);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
@@ -214,6 +225,9 @@ async function main(): Promise<void> {
     `→ wilderness-tokens.json: ${Object.keys(wildernessTokens).length} terrains, ${countEntries(wildernessTokens)} token images total`,
   );
   console.log(`→ map-tiles.json: ${mapTiles.length} map tiles total`);
+  console.log(
+    `→ map-tile-monsters.json: ${Object.keys(mapTileMonsters).length} map tiles, ${countEntries(mapTileMonsters)} groups total`,
+  );
 }
 
 function countEntries<T>(index: Record<string, T[]>): number {
