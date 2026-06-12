@@ -684,6 +684,33 @@ describe("extractBoards", () => {
     States: states,
   });
 
+  const singleSiteBoard = ({
+    gmNotes,
+    imageURL = "single-site-front.png",
+    stateTwoImageURL = "single-site-back.png",
+  }: {
+    gmNotes: string;
+    imageURL?: string;
+    stateTwoImageURL?: string;
+  }) => ({
+    Name: "Custom_Tile",
+    Nickname: "State 1 : Standard",
+    GMNotes: gmNotes,
+    CustomImage: {
+      ImageURL: imageURL,
+      ImageSecondaryURL: "",
+    },
+    LuaScript: "function SetMeUp() end",
+    States: {
+      "2": {
+        Name: "Custom_Tile",
+        Nickname: "Setup 2 : Optional (harder)",
+        GMNotes: gmNotes.replace(/ 1$/, " 2"),
+        CustomImage: { ImageURL: stateTwoImageURL, ImageSecondaryURL: "" },
+      },
+    },
+  });
+
   it("extracts board terrain, images, merchants, and printed site names", () => {
     const save = {
       ObjectStates: [
@@ -762,6 +789,48 @@ describe("extractBoards", () => {
         sites: ["Mausoleum", "Terrace", "Tomb", "Ziggurat"],
       },
     ]);
+  });
+
+  it("keeps single-site setup boards keyed by GMNotes", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Perilous PLAINS",
+          ContainedObjects: [
+            singleSiteBoard({ gmNotes: "Setup Battlefield 1" }),
+          ],
+        },
+      ],
+    };
+
+    expect(extractBoards(save, "eastern")).toEqual([
+      {
+        source: "eastern",
+        terrain: "Perilous Plains",
+        imageURL: "single-site-front.png",
+        imageSecondaryURL: "single-site-back.png",
+        merchants: [],
+        sites: ["Battlefield"],
+      },
+    ]);
+  });
+
+  it("normalizes the Grobe setup board typo to Grove", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Wicked WOODS",
+          ContainedObjects: [singleSiteBoard({ gmNotes: "Setup Grobe 1" })],
+        },
+      ],
+    };
+
+    expect(extractBoards(save, "eastern")[0]).toMatchObject({
+      terrain: "Wicked Woods",
+      sites: ["Grove"],
+    });
   });
 
   it("uses state two art as the secondary image when the board omits it", () => {

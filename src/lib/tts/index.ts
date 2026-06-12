@@ -713,9 +713,9 @@ export function extractBoards(root: unknown, source: string): BoardIndex {
 function isBoardCandidate(obj: Record<string, unknown>): boolean {
   return (
     obj.Name === "Custom_Tile" &&
-    Array.isArray(obj.Tags) &&
-    obj.Tags.includes("side1") &&
-    isRecord(obj.CustomImage)
+    isRecord(obj.CustomImage) &&
+    ((Array.isArray(obj.Tags) && obj.Tags.includes("side1")) ||
+      singleSiteBoardName(text(obj.GMNotes)) !== "")
   );
 }
 
@@ -729,7 +729,10 @@ function boardFor(
   if (!imageURL) return null;
 
   const merchants = merchantNamesFromBoardLua(text(obj.LuaScript));
-  const sites = SETUP_CARD_PRINTED_SITES_BY_IMAGE_URL[imageURL] ?? [];
+  const singleSite = singleSiteBoardName(text(obj.GMNotes));
+  const sites = singleSite
+    ? [singleSite]
+    : (SETUP_CARD_PRINTED_SITES_BY_IMAGE_URL[imageURL] ?? []);
   if (merchants.length === 0 && sites.length === 0) return null;
 
   const terrain = terrainPackForAncestry(ancestry) || "Neutral";
@@ -743,6 +746,12 @@ function boardFor(
     merchants,
     sites,
   };
+}
+
+function singleSiteBoardName(gmNotes: string): string {
+  const match = gmNotes.match(/^Setup (Battlefield|Grove|Grobe) 1$/i);
+  if (!match) return "";
+  return match[1].toLowerCase() === "battlefield" ? "Battlefield" : "Grove";
 }
 
 function merchantNamesFromBoardLua(luaScript: string): string[] {

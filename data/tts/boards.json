@@ -67,6 +67,16 @@
   {
     "source": "dd_all_exp",
     "terrain": "Perilous Plains",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16820043534445951322/082495983517AE00BE5EA0C0EE098B927482466D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13385798795784544656/B8F40B60666DFB3022A9B686344B0BE5E1A07BE4/",
+    "merchants": [],
+    "sites": [
+      "Battlefield"
+    ]
+  },
+  {
+    "source": "dd_all_exp",
+    "terrain": "Perilous Plains",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519118348/443D7796425167A331EC30CB6EB39F7881BA543F/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519118820/23D7C5EAED7620C69582AF6184F13353CA82A9E2/",
     "merchants": [
@@ -104,6 +114,16 @@
       "Grotto",
       "Hideout",
       "Lost Battalion"
+    ]
+  },
+  {
+    "source": "dd_all_exp",
+    "terrain": "Wicked Woods",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13729944545833513361/23769D896721D2D79C1FB9D1358185CBEA3DF047/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14848632290504020698/D48E7A85AE31A6F3B1DDDB11DDC19D5BC6BF1E99/",
+    "merchants": [],
+    "sites": [
+      "Grove"
     ]
   },
   {
