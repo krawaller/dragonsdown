@@ -7,7 +7,13 @@ import type { MonsterGroupChip, MonsterGroupEntry } from "@/lib/tts/lookup";
 
 type Zoom = { chip: TTSChip; name: string };
 
-export function MonsterGroupStack({ group }: { group: MonsterGroupEntry }) {
+export function MonsterGroupStack({
+  group,
+  hrefBase = "/monster-groups",
+}: {
+  group: MonsterGroupEntry;
+  hrefBase?: string;
+}) {
   const preview = group.chips.slice(0, 4);
   const totalCopies = group.chips.reduce(
     (sum, chip) => sum + chipTotalCount(chip),
@@ -16,7 +22,7 @@ export function MonsterGroupStack({ group }: { group: MonsterGroupEntry }) {
 
   return (
     <Link
-      href={`/monster-groups/${group.slug}`}
+      href={`${hrefBase}/${group.slug}`}
       className="group block rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
     >
       <div className="relative h-28 mb-4">

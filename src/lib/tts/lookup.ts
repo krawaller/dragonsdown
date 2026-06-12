@@ -238,10 +238,29 @@ export function getAllMonsterGroups(): MonsterGroupEntry[] {
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
 
+export function getAllNativeGroups(): MonsterGroupEntry[] {
+  return getAllChips()
+    .filter(isNativeChipGroup)
+    .map((entry) => ({
+      ...entry,
+      chips: entry.chips,
+      slug: slugify(entry.prettyName),
+      mapTiles: [],
+      sites: [],
+    }))
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
 export function getMonsterGroupBySlug(
   slug: string,
 ): MonsterGroupEntry | undefined {
   return getAllMonsterGroups().find((entry) => entry.slug === slug);
+}
+
+export function getNativeGroupBySlug(
+  slug: string,
+): MonsterGroupEntry | undefined {
+  return getAllNativeGroups().find((entry) => entry.slug === slug);
 }
 
 export function getMonsterGroupsForMapTile(
