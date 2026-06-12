@@ -39,6 +39,34 @@ export type TTSCardImage = {
 /** Output written to data/tts/cards.json. Keyed by normalized `Nickname`. */
 export type CardIndex = Record<string, TTSCardImage[]>;
 
+export type TTSMissionCard = TTSCardImage & {
+  /** Mission banner type printed on the card: red, white, or brown. */
+  kind?: MissionKind;
+  /** Raw TTS card description, e.g. `Complete at Mariners`. */
+  description?: string;
+  /** Parsed names from `Complete at ...` description text. */
+  completeAt?: string[];
+  /** Scripted mission effects encoded in the card Lua. */
+  rewards?: TTSMissionRewards;
+};
+
+export type MissionKind = "atrocity" | "quest" | "expedition";
+
+export type TTSMissionRewards = {
+  drawCards?: Partial<Record<"deep" | "treasure" | "item" | "spell", number>>;
+  points?: Partial<Record<"fame" | "gold", number>>;
+  attributes?: Partial<Record<"charisma" | "wisdom" | "intellect", number>>;
+  outlaw?: number;
+  steal?: {
+    drawCards?: Partial<Record<"deep" | "treasure" | "item" | "spell", number>>;
+    points?: Partial<Record<"fame" | "gold", number>>;
+    outlaw?: number;
+  };
+};
+
+/** Output written to data/tts/missions.json. Keyed by normalized `Nickname`. */
+export type MissionIndex = Record<string, TTSMissionCard[]>;
+
 /**
  * A "chip" is a TTS Custom_Tile whose `LuaScript` begins with `chipName =` —
  * a convention the mod uses to mark game chips (monster counters etc). Unlike
@@ -461,8 +489,10 @@ export function normalizeTitle(s: string): string {
 type TTSCardObject = {
   Name: "Card" | "CardCustom";
   Nickname?: string;
+  Description?: string;
   CardID: number;
   Tags?: string[];
+  LuaScript?: string;
   CustomDeck: Record<
     string,
     {
@@ -514,11 +544,296 @@ export function extractCards(root: unknown, source: string): CardIndex {
   return index;
 }
 
+export function extractMissions(root: unknown, source: string): MissionIndex {
+  const index: MissionIndex = {};
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    if (!Array.isArray(card.Tags) || !card.Tags.includes("Mission")) continue;
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image) continue;
+    const mission: TTSMissionCard = { ...image };
+    const kind = missionKindFor(mission);
+    if (kind) mission.kind = kind;
+    const rewards = missionRewardsFromLua(card.LuaScript ?? "");
+    if (rewards) mission.rewards = rewards;
+    const description = (card.Description ?? "").trim();
+    if (description) {
+      mission.description = description;
+      const completeAt = missionCompleteAtTargets(description);
+      if (completeAt.length > 0) mission.completeAt = completeAt;
+    }
+    const key = normalizeTitle(correctMissionNickname(raw, mission));
+    const bucket = (index[key] ??= []);
+    const existing = bucket.find((c) => isSameCell(c, mission));
+    if (existing) {
+      existing.tags = mergeTags(existing.tags, mission.tags);
+      if (!existing.description && mission.description) {
+        existing.description = mission.description;
+      }
+      existing.completeAt = mergeStringValues(
+        existing.completeAt,
+        mission.completeAt,
+      );
+      if (!existing.kind && mission.kind) existing.kind = mission.kind;
+      existing.rewards = mergeMissionRewards(existing.rewards, mission.rewards);
+      if (!existing.ancestry?.length && mission.ancestry?.length) {
+        existing.ancestry = mission.ancestry;
+      }
+    } else {
+      bucket.push(mission);
+    }
+  }
+  return index;
+}
+
+const MISSION_SHEET_URLS = {
+  deck1: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+  deck2: "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+} as const;
+
+const MISSION_KIND_CELLS = {
+  atrocity: [
+    [MISSION_SHEET_URLS.deck1, 0, 2],
+    [MISSION_SHEET_URLS.deck1, 0, 3],
+    [MISSION_SHEET_URLS.deck1, 0, 4],
+    [MISSION_SHEET_URLS.deck1, 0, 5],
+    [MISSION_SHEET_URLS.deck1, 0, 6],
+    [MISSION_SHEET_URLS.deck1, 0, 7],
+    [MISSION_SHEET_URLS.deck1, 0, 8],
+    [MISSION_SHEET_URLS.deck1, 0, 9],
+    [MISSION_SHEET_URLS.deck1, 1, 0],
+    [MISSION_SHEET_URLS.deck1, 1, 1],
+    [MISSION_SHEET_URLS.deck1, 1, 2],
+    [MISSION_SHEET_URLS.deck1, 1, 3],
+    [MISSION_SHEET_URLS.deck1, 1, 4],
+    [MISSION_SHEET_URLS.deck1, 1, 5],
+    [MISSION_SHEET_URLS.deck1, 1, 6],
+    [MISSION_SHEET_URLS.deck1, 1, 7],
+    [MISSION_SHEET_URLS.deck1, 1, 8],
+    [MISSION_SHEET_URLS.deck1, 1, 9],
+    [MISSION_SHEET_URLS.deck1, 2, 1],
+    [MISSION_SHEET_URLS.deck1, 2, 2],
+    [MISSION_SHEET_URLS.deck1, 2, 5],
+    [MISSION_SHEET_URLS.deck1, 2, 6],
+  ],
+  quest: [
+    [MISSION_SHEET_URLS.deck2, 1, 0],
+    [MISSION_SHEET_URLS.deck2, 1, 2],
+    [MISSION_SHEET_URLS.deck2, 1, 4],
+    [MISSION_SHEET_URLS.deck2, 1, 5],
+    [MISSION_SHEET_URLS.deck2, 1, 6],
+    [MISSION_SHEET_URLS.deck2, 1, 8],
+    [MISSION_SHEET_URLS.deck2, 1, 9],
+    [MISSION_SHEET_URLS.deck2, 2, 0],
+    [MISSION_SHEET_URLS.deck2, 2, 2],
+    [MISSION_SHEET_URLS.deck2, 2, 3],
+    [MISSION_SHEET_URLS.deck2, 2, 4],
+    [MISSION_SHEET_URLS.deck2, 2, 6],
+    [MISSION_SHEET_URLS.deck2, 2, 7],
+    [MISSION_SHEET_URLS.deck2, 2, 8],
+    [MISSION_SHEET_URLS.deck2, 2, 9],
+    [MISSION_SHEET_URLS.deck2, 3, 0],
+    [MISSION_SHEET_URLS.deck2, 3, 1],
+    [MISSION_SHEET_URLS.deck2, 3, 2],
+    [MISSION_SHEET_URLS.deck2, 3, 3],
+  ],
+} as const satisfies Record<
+  string,
+  readonly (readonly [string, number, number])[]
+>;
+
+function missionKindFor(mission: TTSMissionCard): MissionKind | undefined {
+  if (hasMissionKindCell(MISSION_KIND_CELLS.atrocity, mission)) {
+    return "atrocity";
+  }
+  if (hasMissionKindCell(MISSION_KIND_CELLS.quest, mission)) {
+    return "quest";
+  }
+  if (
+    mission.faceURL === MISSION_SHEET_URLS.deck1 ||
+    mission.faceURL === MISSION_SHEET_URLS.deck2
+  ) {
+    return "expedition";
+  }
+  return undefined;
+}
+
+function hasMissionKindCell(
+  cells: readonly (readonly [string, number, number])[],
+  mission: TTSMissionCard,
+): boolean {
+  return cells.some(
+    ([faceURL, row, col]) =>
+      mission.faceURL === faceURL && mission.row === row && mission.col === col,
+  );
+}
+
+function missionRewardsFromLua(
+  luaScript: string,
+): TTSMissionRewards | undefined {
+  const drawCards = cleanNumericRecord({
+    deep: luaNumber(luaScript, "dcount"),
+    treasure: luaNumber(luaScript, "tcount"),
+    item: luaNumber(luaScript, "icount"),
+    spell: luaNumber(luaScript, "scount"),
+  });
+  const points = cleanNumericRecord({
+    fame: luaNumber(luaScript, "famount"),
+    gold: luaNumber(luaScript, "gamount"),
+  });
+  const attributes = cleanNumericRecord({
+    charisma: luaNumber(luaScript, "charisma"),
+    wisdom: luaNumber(luaScript, "wisdom"),
+    intellect: luaNumber(luaScript, "intellect"),
+  });
+  const stealDrawCards = cleanNumericRecord({
+    deep: luaNumber(luaScript, "xdcount"),
+    treasure: luaNumber(luaScript, "xtcount"),
+    item: luaNumber(luaScript, "xicount"),
+    spell: luaNumber(luaScript, "xscount"),
+  });
+  const stealPoints = cleanNumericRecord({
+    fame: luaNumber(luaScript, "xfamount"),
+    gold: luaNumber(luaScript, "xgamount"),
+  });
+  const outlaw = positiveLuaNumber(luaScript, "outlaw");
+  const stealOutlaw = positiveLuaNumber(luaScript, "xoutlaw");
+
+  const rewards: TTSMissionRewards = {};
+  if (drawCards) rewards.drawCards = drawCards;
+  if (points) rewards.points = points;
+  if (attributes) rewards.attributes = attributes;
+  if (outlaw) rewards.outlaw = outlaw;
+  const steal: NonNullable<TTSMissionRewards["steal"]> = {};
+  if (stealDrawCards) steal.drawCards = stealDrawCards;
+  if (stealPoints) steal.points = stealPoints;
+  if (stealOutlaw) steal.outlaw = stealOutlaw;
+  if (Object.keys(steal).length > 0) rewards.steal = steal;
+  return Object.keys(rewards).length > 0 ? rewards : undefined;
+}
+
+function positiveLuaNumber(
+  luaScript: string,
+  name: string,
+): number | undefined {
+  const value = luaNumber(luaScript, name);
+  return value && value > 0 ? value : undefined;
+}
+
+function luaNumber(luaScript: string, name: string): number | undefined {
+  const match = luaScript.match(
+    new RegExp(`(?:^|\\n)\\s*${name}\\s*=\\s*(-?\\d+)`),
+  );
+  if (!match) return undefined;
+  const value = Number.parseInt(match[1], 10);
+  return Number.isFinite(value) ? value : undefined;
+}
+
+function cleanNumericRecord<T extends string>(
+  values: Partial<Record<T, number | undefined>>,
+): Partial<Record<T, number>> | undefined {
+  const out: Partial<Record<T, number>> = {};
+  for (const [key, value] of Object.entries(values) as [
+    T,
+    number | undefined,
+  ][]) {
+    if (typeof value === "number" && value > 0) out[key] = value;
+  }
+  return Object.keys(out).length > 0 ? out : undefined;
+}
+
+function mergeMissionRewards(
+  a: TTSMissionRewards | undefined,
+  b: TTSMissionRewards | undefined,
+): TTSMissionRewards | undefined {
+  if (!a) return b;
+  if (!b) return a;
+  return {
+    drawCards: mergeNumericRecords(a.drawCards, b.drawCards),
+    points: mergeNumericRecords(a.points, b.points),
+    attributes: mergeNumericRecords(a.attributes, b.attributes),
+    outlaw: a.outlaw ?? b.outlaw,
+    steal: mergeMissionStealRewards(a.steal, b.steal),
+  };
+}
+
+function mergeMissionStealRewards(
+  a: TTSMissionRewards["steal"],
+  b: TTSMissionRewards["steal"],
+): TTSMissionRewards["steal"] {
+  if (!a) return b;
+  if (!b) return a;
+  return {
+    drawCards: mergeNumericRecords(a.drawCards, b.drawCards),
+    points: mergeNumericRecords(a.points, b.points),
+    outlaw: a.outlaw ?? b.outlaw,
+  };
+}
+
+function mergeNumericRecords<T extends string>(
+  a: Partial<Record<T, number>> | undefined,
+  b: Partial<Record<T, number>> | undefined,
+): Partial<Record<T, number>> | undefined {
+  if (!a) return b;
+  if (!b) return a;
+  const out: Partial<Record<T, number>> = { ...a };
+  for (const [key, value] of Object.entries(b) as [T, number][]) {
+    out[key] ??= value;
+  }
+  return out;
+}
+
+const MISSION_NICKNAME_CORRECTIONS = [
+  {
+    source: "dd_all_exp",
+    raw: "Desert Avenger",
+    faceURL: MISSION_SHEET_URLS.deck1,
+    row: 0,
+    col: 9,
+    corrected: "Desert Marauder",
+  },
+] as const;
+
+function correctMissionNickname(raw: string, mission: TTSMissionCard): string {
+  const correction = MISSION_NICKNAME_CORRECTIONS.find(
+    (entry) =>
+      entry.source === mission.source &&
+      entry.raw === raw &&
+      entry.faceURL === mission.faceURL &&
+      entry.row === mission.row &&
+      entry.col === mission.col,
+  );
+  return correction?.corrected ?? raw;
+}
+
+function missionCompleteAtTargets(description: string): string[] {
+  const targets: string[] = [];
+  const re = /(?:^|\b)Complete at\s+([^\n.]+)/gi;
+  for (const match of description.matchAll(re)) {
+    const target = match[1]
+      .replace(/\s+/g, " ")
+      .replace(/[;:,.]+$/g, "")
+      .trim();
+    if (target) targets.push(target);
+  }
+  return [...new Set(targets)].sort((a, b) => a.localeCompare(b));
+}
+
 export function isSameCell(a: TTSCardImage, b: TTSCardImage): boolean {
   return a.faceURL === b.faceURL && a.row === b.row && a.col === b.col;
 }
 
 export function mergeTags(
+  a: string[] | undefined,
+  b: string[] | undefined,
+): string[] | undefined {
+  return mergeStringValues(a, b);
+}
+
+function mergeStringValues(
   a: string[] | undefined,
   b: string[] | undefined,
 ): string[] | undefined {

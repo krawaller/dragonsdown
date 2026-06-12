@@ -6,6 +6,7 @@ import {
   extractCivilisationTokens,
   extractCivLocations,
   extractMapTileMonsters,
+  extractMissions,
   extractNativeSummons,
   extractSiteMonsters,
   extractWildernessTokens,
@@ -287,6 +288,203 @@ describe("extractCards", () => {
     const save = { ObjectStates: [card("A", 100, "1", SAMPLE_DECK)] };
     const out = extractCards(save, "my-source");
     expect(out["A"][0].source).toBe("my-source");
+  });
+});
+
+describe("extractMissions", () => {
+  it("extracts mission cards with descriptions and completion targets", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Adrift Sailor", 60727, "607", SAMPLE_DECK),
+          Description: "Complete at Mariners",
+          Tags: ["Mission", "Mariners"],
+        },
+      ],
+    };
+
+    expect(extractMissions(save, "dd_all_exp")).toEqual({
+      "Adrift Sailor": [
+        {
+          source: "dd_all_exp",
+          faceURL: SAMPLE_DECK.FaceURL,
+          backURL: SAMPLE_DECK.BackURL,
+          numWidth: 10,
+          numHeight: 7,
+          row: 2,
+          col: 7,
+          uniqueBack: false,
+          tags: ["Mariners", "Mission"],
+          description: "Complete at Mariners",
+          completeAt: ["Mariners"],
+        },
+      ],
+    });
+  });
+
+  it("keeps mission descriptions after the completion sentence", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Sea Explorer", 60767, "607", SAMPLE_DECK),
+          Description: "Complete at Mariners.\nRemove for co-op modes.",
+          Tags: ["Mission"],
+        },
+      ],
+    };
+
+    const mission = extractMissions(save, "dd_all_exp")["Sea Explorer"][0];
+    expect(mission.description).toBe(
+      "Complete at Mariners.\nRemove for co-op modes.",
+    );
+    expect(mission.completeAt).toEqual(["Mariners"]);
+  });
+
+  it("skips non-mission cards", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Trade Goods", 60803, "608", SAMPLE_DECK),
+          Description: "Complete at Foreigner",
+          Tags: ["Merchant"],
+        },
+      ],
+    };
+
+    expect(extractMissions(save, "dd_all_exp")).toEqual({});
+  });
+
+  it("extracts mission kinds and scripted rewards", () => {
+    const missionDeck1 = {
+      ...SAMPLE_DECK,
+      FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    };
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Decapitator", 60708, "607", missionDeck1),
+          Description: "Complete at Consul",
+          Tags: ["Mission", "Natives", "Consul"],
+          LuaScript: [
+            "dcount = 1",
+            "tcount = 0",
+            "icount = 0",
+            "scount = 0",
+            "famount = 0",
+            "gamount = 5",
+            "outlaw = 1",
+            "charisma = 0",
+            "wisdom = 0",
+            "intellect = 1",
+          ].join("\n"),
+        },
+      ],
+    };
+
+    expect(extractMissions(save, "dd_all_exp")["Decapitator"][0]).toMatchObject(
+      {
+        kind: "atrocity",
+        rewards: {
+          drawCards: { deep: 1 },
+          points: { gold: 5 },
+          attributes: { intellect: 1 },
+          outlaw: 1,
+        },
+      },
+    );
+  });
+
+  it("keeps steal rewards separate from completion rewards", () => {
+    const missionDeck2 = {
+      ...SAMPLE_DECK,
+      FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    };
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Trade Goods", 60803, "608", missionDeck2),
+          Description: "Complete at Foreigner",
+          Tags: ["Foreigner", "Merchant", "Mission", "Steal"],
+          LuaScript: [
+            "dcount = 0",
+            "tcount = 0",
+            "icount = 0",
+            "scount = 0",
+            "famount = 0",
+            "gamount = 0",
+            "outlaw = 0",
+            "charisma = 0",
+            "wisdom = 0",
+            "intellect = 0",
+            "xdcount = 0",
+            "xtcount = 0",
+            "xicount = 1",
+            "xscount = 0",
+            "xfamount = 0",
+            "xgamount = 9",
+            "xoutlaw = 1",
+          ].join("\n"),
+        },
+      ],
+    };
+
+    expect(extractMissions(save, "dd_all_exp")["Trade Goods"][0]).toMatchObject(
+      {
+        kind: "expedition",
+        rewards: {
+          steal: {
+            drawCards: { item: 1 },
+            points: { gold: 9 },
+            outlaw: 1,
+          },
+        },
+      },
+    );
+  });
+
+  it("corrects the mislabeled Desert Marauder mission card", () => {
+    const missionDeck1 = {
+      ...SAMPLE_DECK,
+      FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    };
+    const missionDeck2 = {
+      ...SAMPLE_DECK,
+      FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    };
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Desert Avenger", 60709, "607", missionDeck1),
+          Description: "Complete at Deserts",
+          Tags: ["Mission"],
+        },
+        {
+          ...card("Desert Avenger", 60814, "608", missionDeck2),
+          Description: "Complete at Nomads",
+          Tags: ["Mission", "Natives", "Nomads"],
+        },
+      ],
+    };
+
+    const missions = extractMissions(save, "dd_all_exp");
+    expect(Object.keys(missions).sort()).toEqual([
+      "Desert Avenger",
+      "Desert Marauder",
+    ]);
+    expect(missions["Desert Marauder"][0]).toMatchObject({
+      row: 0,
+      col: 9,
+      kind: "atrocity",
+      description: "Complete at Deserts",
+      completeAt: ["Deserts"],
+    });
+    expect(missions["Desert Avenger"][0]).toMatchObject({
+      row: 1,
+      col: 4,
+      kind: "quest",
+      description: "Complete at Nomads",
+      completeAt: ["Nomads"],
+    });
   });
 });
 

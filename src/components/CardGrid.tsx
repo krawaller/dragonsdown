@@ -2,7 +2,8 @@
 
 import { useEffect, useState, type CSSProperties } from "react";
 import type { TTSCardImage } from "@/lib/tts";
-import type { CardEntry } from "@/lib/tts/lookup";
+import type { CardEntry, MissionTargetKind } from "@/lib/tts/lookup";
+import type { MissionKind } from "@/lib/tts";
 
 type Zoom = { card: TTSCardImage; name: string };
 
@@ -28,17 +29,22 @@ export function CardGrid({
   return (
     <>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-        {entries.map(({ name, cards }) => (
-          <section key={name} className="flex flex-col gap-2">
-            <h2 className="text-sm font-medium">{name}</h2>
+        {entries.map((entry) => (
+          <section
+            key={entry.name}
+            id={entry.slug}
+            className="flex flex-col gap-2 scroll-mt-6"
+          >
+            <h2 className="text-sm font-medium">{entry.name}</h2>
+            <CardEntryDetails entry={entry} />
             <div className="flex flex-wrap gap-3">
-              {cards.map((card, i) => (
+              {entry.cards.map((card, i) => (
                 <button
                   key={`${card.faceURL}-${card.row}-${card.col}-${i}`}
                   type="button"
-                  onClick={() => setZoom({ card, name })}
+                  onClick={() => setZoom({ card, name: entry.name })}
                   className="cursor-pointer rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:ring-2 hover:ring-zinc-400 transition"
-                  aria-label={`Zoom ${name}`}
+                  aria-label={`Zoom ${entry.name}`}
                 >
                   <SpriteCell card={card} className="w-28" />
                 </button>
@@ -56,6 +62,101 @@ export function CardGrid({
       )}
     </>
   );
+}
+
+function CardEntryDetails({ entry }: { entry: CardEntry | undefined }) {
+  if (!entry) return null;
+  const descriptions = entry.descriptions ?? [];
+  const kinds = entry.kinds ?? [];
+  const rewardSummaries = entry.rewardSummaries ?? [];
+  const targets = entry.targets ?? [];
+  if (
+    descriptions.length === 0 &&
+    kinds.length === 0 &&
+    rewardSummaries.length === 0 &&
+    targets.length === 0
+  ) {
+    return null;
+  }
+  return (
+    <div className="space-y-2 text-xs text-zinc-500 dark:text-zinc-400">
+      {kinds.length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {kinds.map((kind) => (
+            <span
+              key={kind}
+              className={`${missionKindClassName(kind)} rounded border px-2 py-1 font-medium`}
+            >
+              {missionKindLabel(kind)}
+            </span>
+          ))}
+        </div>
+      )}
+      {descriptions.map((description) => (
+        <p key={description}>{description}</p>
+      ))}
+      {rewardSummaries.length > 0 && (
+        <div className="space-y-1">
+          {rewardSummaries.map((summary) => (
+            <p key={summary}>{summary}</p>
+          ))}
+        </div>
+      )}
+      {targets.length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {targets.map((target) => (
+            <a
+              key={`${target.kind}-${target.name}`}
+              href={target.href}
+              className="rounded border border-zinc-200 dark:border-zinc-800 px-2 py-1 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+            >
+              {target.name}
+              <span className="ml-1 text-zinc-400 dark:text-zinc-500">
+                {missionTargetKindLabel(target.kind)}
+              </span>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function missionKindLabel(kind: MissionKind): string {
+  switch (kind) {
+    case "atrocity":
+      return "Atrocity";
+    case "quest":
+      return "Quest";
+    case "expedition":
+      return "Expedition";
+  }
+}
+
+function missionKindClassName(kind: MissionKind): string {
+  switch (kind) {
+    case "atrocity":
+      return "border-red-200 bg-red-50 text-red-700 dark:border-red-900 dark:bg-red-950/40 dark:text-red-300";
+    case "quest":
+      return "border-zinc-200 bg-zinc-50 text-zinc-700 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200";
+    case "expedition":
+      return "border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-900 dark:bg-amber-950/40 dark:text-amber-300";
+  }
+}
+
+function missionTargetKindLabel(kind: MissionTargetKind): string {
+  switch (kind) {
+    case "native":
+      return "native";
+    case "site":
+      return "site";
+    case "merchant":
+      return "merchant";
+    case "civLocation":
+      return "civ";
+    case "wildernessToken":
+      return "token";
+  }
 }
 
 function otherTagsFor(card: TTSCardImage, excludeTag?: string): string[] {
@@ -111,7 +212,11 @@ function CardLightbox({
         >
           <SpriteCell card={card} className="w-[20rem] sm:w-[24rem]" />
           {card.uniqueBack ? (
-            <SpriteCell card={card} useBack className="w-[20rem] sm:w-[24rem]" />
+            <SpriteCell
+              card={card}
+              useBack
+              className="w-[20rem] sm:w-[24rem]"
+            />
           ) : (
             // Shared back: just an <img>, no cropping needed.
             // eslint-disable-next-line @next/next/no-img-element

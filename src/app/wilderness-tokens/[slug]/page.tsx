@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MissionLinks } from "@/components/MissionLinks";
 import {
   getCivLocationBySlug,
   getAllWildernessTokenNames,
   getBoardsForMerchant,
   getBoardsForSite,
+  getMissionsForTarget,
   getNativeGroupsForWildernessToken,
   getWildernessTokenBySlug,
   type BoardEntry,
@@ -29,6 +31,7 @@ export default async function WildernessTokenPage({
     ...getBoardsForMerchant(entry.name),
   ]);
   const nativeGroups = getNativeGroupsForWildernessToken(entry.name);
+  const missions = getMissionsForTarget(entry.name);
 
   const total = entry.tokens.reduce(
     (sum, token) => sum + tokenTotalCount(token),
@@ -118,6 +121,8 @@ export default async function WildernessTokenPage({
           </div>
         </section>
       )}
+
+      <MissionLinks missions={missions} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {entry.tokens.map((token) => (

@@ -1,0 +1,2327 @@
+{
+  "Adrift Sailor": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mariners",
+        "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Mariners",
+      "completeAt": [
+        "Mariners"
+      ]
+    }
+  ],
+  "Alcohol": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Rogues",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "outlaw": 2
+        }
+      },
+      "description": "Complete at Rogues",
+      "completeAt": [
+        "Rogues"
+      ]
+    }
+  ],
+  "Alpiner": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Keep",
+      "completeAt": [
+        "Keep"
+      ]
+    }
+  ],
+  "Artifacts": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Artificer",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "treasure": 1
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Artificer",
+      "completeAt": [
+        "Artificer"
+      ]
+    }
+  ],
+  "Banned Charts": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Astrologer",
+        "Merchant",
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Astrologer",
+      "completeAt": [
+        "Astrologer"
+      ]
+    }
+  ],
+  "Bashkirian Tools": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Bashkirs",
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "item": 2
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Bashkirs",
+      "completeAt": [
+        "Bashkirs"
+      ]
+    }
+  ],
+  "Bat Hawker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Mine",
+      "completeAt": [
+        "Mine"
+      ]
+    }
+  ],
+  "Beast Traps": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal",
+        "Wardens"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Wardens",
+      "completeAt": [
+        "Wardens"
+      ]
+    }
+  ],
+  "Betrayer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Smuggler",
+      "completeAt": [
+        "Smuggler"
+      ]
+    }
+  ],
+  "Black Follower": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Crypt",
+      "completeAt": [
+        "Crypt"
+      ]
+    }
+  ],
+  "Blood Offerer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Shrine",
+      "completeAt": [
+        "Shrine"
+      ]
+    }
+  ],
+  "Body Parts": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Crone",
+        "Merchant",
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Crone",
+      "completeAt": [
+        "Crone"
+      ]
+    }
+  ],
+  "Centaur Scourge": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Village",
+      "completeAt": [
+        "Village"
+      ]
+    }
+  ],
+  "Clothing": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "expedition"
+    }
+  ],
+  "Crafting Gear": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Armorer",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "item": 1
+          },
+          "points": {
+            "gold": 5
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Armorer",
+      "completeAt": [
+        "Armorer"
+      ]
+    }
+  ],
+  "Cruel Kidnapper": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Outpost",
+      "completeAt": [
+        "Outpost"
+      ]
+    }
+  ],
+  "Cursed Threads": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Silk Dealer"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Silk Dealer",
+      "completeAt": [
+        "Silk Dealer"
+      ]
+    }
+  ],
+  "Dark Worshipper": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Altar",
+      "completeAt": [
+        "Altar"
+      ]
+    }
+  ],
+  "Decapitator": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Consul",
+        "Mission",
+        "Natives"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "attributes": {
+          "intellect": 1
+        },
+        "outlaw": 1
+      },
+      "description": "Complete at Consul",
+      "completeAt": [
+        "Consul"
+      ]
+    }
+  ],
+  "Desert Avenger": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Nomads"
+      ],
+      "ancestry": [
+        "Oasis"
+      ],
+      "kind": "quest",
+      "rewards": {
+        "attributes": {
+          "wisdom": 1
+        }
+      },
+      "description": "Complete at Nomads",
+      "completeAt": [
+        "Nomads"
+      ]
+    }
+  ],
+  "Desert Marauder": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Deserts",
+      "completeAt": [
+        "Deserts"
+      ]
+    }
+  ],
+  "Desert Water": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Aurorans",
+      "completeAt": [
+        "Aurorans"
+      ]
+    }
+  ],
+  "Detrium": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Mystic",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "deep": 1
+          },
+          "outlaw": 2
+        }
+      },
+      "description": "Complete at Mystic",
+      "completeAt": [
+        "Mystic"
+      ]
+    }
+  ],
+  "Down Payment": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Sellswords",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "points": {
+            "gold": 10
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Sellswords",
+      "completeAt": [
+        "Sellswords"
+      ]
+    }
+  ],
+  "Dragon Slayer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Keep",
+      "completeAt": [
+        "Keep"
+      ]
+    }
+  ],
+  "Dwarven Foe": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Caves",
+      "completeAt": [
+        "Caves"
+      ]
+    }
+  ],
+  "Eldritch Goods": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Fortune Teller",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "treasure": 1
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Fortune Teller",
+      "completeAt": [
+        "Fortune Teller"
+      ]
+    }
+  ],
+  "Errant Convict": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Wardens"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Wardens",
+      "completeAt": [
+        "Wardens"
+      ]
+    }
+  ],
+  "Evil Minion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Monolith",
+      "completeAt": [
+        "Monolith"
+      ]
+    }
+  ],
+  "Feud Stopper": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Elves",
+        "Mission",
+        "Natives"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "quest",
+      "rewards": {
+        "attributes": {
+          "wisdom": 1
+        }
+      },
+      "description": "Complete at Elves",
+      "completeAt": [
+        "Elves"
+      ]
+    }
+  ],
+  "Fire Blighter": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Woods",
+      "completeAt": [
+        "Woods"
+      ]
+    }
+  ],
+  "Food & Ale": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "expedition"
+    }
+  ],
+  "Forester": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Sanctuary",
+      "completeAt": [
+        "Sanctuary"
+      ]
+    }
+  ],
+  "Foul Letters": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Consul",
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "points": {
+            "fame": 8
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Consul",
+      "completeAt": [
+        "Consul"
+      ]
+    }
+  ],
+  "Giant Hunter": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Keep",
+      "completeAt": [
+        "Keep"
+      ]
+    }
+  ],
+  "Goblin Blight": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Mine",
+      "completeAt": [
+        "Mine"
+      ]
+    }
+  ],
+  "Griffon Tamer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Knights",
+        "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Knights",
+      "completeAt": [
+        "Knights"
+      ]
+    }
+  ],
+  "Human Sacrificer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Priests"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Priests",
+      "completeAt": [
+        "Priests"
+      ]
+    }
+  ],
+  "Illegal Goods": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Smuggler"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Smuggler",
+      "completeAt": [
+        "Smuggler"
+      ]
+    }
+  ],
+  "Jail Breaker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Mountains",
+      "completeAt": [
+        "Mountains"
+      ]
+    }
+  ],
+  "Kings Edicts": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Soldiers",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "points": {
+            "fame": 8
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Soldiers",
+      "completeAt": [
+        "Soldiers"
+      ]
+    }
+  ],
+  "Lizard Ruin": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Outpost",
+      "completeAt": [
+        "Outpost"
+      ]
+    }
+  ],
+  "Lost Banner": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Knights",
+        "Mission"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Knights",
+      "completeAt": [
+        "Knights"
+      ]
+    }
+  ],
+  "Medicine": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal",
+        "Villagers"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at the Villagers",
+      "completeAt": [
+        "the Villagers"
+      ]
+    }
+  ],
+  "Message": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "expedition"
+    }
+  ],
+  "Misplaced Ore": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Dwarves",
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Dwarves",
+      "completeAt": [
+        "Dwarves"
+      ]
+    }
+  ],
+  "Missing Figure": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Villagers"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Villagers",
+      "completeAt": [
+        "Villagers"
+      ]
+    }
+  ],
+  "New Maps": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal",
+        "Watch"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Watch",
+      "completeAt": [
+        "Watch"
+      ]
+    }
+  ],
+  "New Patrol Route": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Watch"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "quest",
+      "rewards": {
+        "attributes": {
+          "wisdom": 1
+        }
+      },
+      "description": "Complete at Watch",
+      "completeAt": [
+        "Watch"
+      ]
+    }
+  ],
+  "Oculus Reaper": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Port",
+      "completeAt": [
+        "Port"
+      ]
+    }
+  ],
+  "Offer Letter": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Sellswords",
+        "Soldiers"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "attributes": {
+          "charisma": 1
+        }
+      },
+      "description": "Complete at Soldiers",
+      "completeAt": [
+        "Soldiers"
+      ]
+    }
+  ],
+  "Old Books": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Scholar"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "drawCards": {
+          "spell": 5
+        }
+      },
+      "description": "Complete at Scholar",
+      "completeAt": [
+        "Scholar"
+      ]
+    }
+  ],
+  "Package": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission",
+        "Steal"
+      ],
+      "ancestry": [
+        "Mountains Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "item": 1
+          },
+          "outlaw": 1
+        }
+      }
+    }
+  ],
+  "Pool Profaner": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Oasis"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Deserts",
+      "completeAt": [
+        "Deserts"
+      ]
+    }
+  ],
+  "Port Sacker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "steal": {
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Silver Current",
+      "completeAt": [
+        "Silver Current"
+      ]
+    }
+  ],
+  "Proven Rogue": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Rogues"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "attributes": {
+          "intellect": 1
+        },
+        "outlaw": 1
+      },
+      "description": "Complete at Rogues",
+      "completeAt": [
+        "Rogues"
+      ]
+    }
+  ],
+  "Provisions": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Peddler",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "item": 1
+          },
+          "points": {
+            "fame": 4
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Peddler",
+      "completeAt": [
+        "Peddler"
+      ]
+    }
+  ],
+  "Rare Herbs": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Herbalist",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "points": {
+            "gold": 8
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at the Herbalist",
+      "completeAt": [
+        "the Herbalist"
+      ]
+    }
+  ],
+  "Raw Material": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Smith"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "drawCards": {
+          "item": 1
+        }
+      },
+      "description": "Complete at Smith",
+      "completeAt": [
+        "Smith"
+      ]
+    }
+  ],
+  "Ruthless Raider": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Bashkirs",
+        "Mission",
+        "Natives"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "attributes": {
+          "intellect": 1
+        },
+        "outlaw": 1
+      },
+      "description": "Complete at Bashkirs",
+      "completeAt": [
+        "Bashkirs"
+      ]
+    }
+  ],
+  "Sale Goods": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Steal",
+        "Vendor"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "item": 1
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Vendor",
+      "completeAt": [
+        "Vendor"
+      ]
+    }
+  ],
+  "Sand Butcher": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Nomads"
+      ],
+      "ancestry": [
+        "Oasis"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "attributes": {
+          "intellect": 1
+        },
+        "outlaw": 1
+      },
+      "description": "Complete at Aurorans",
+      "completeAt": [
+        "Aurorans"
+      ]
+    }
+  ],
+  "Sand Trekker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Medina",
+      "completeAt": [
+        "Medina"
+      ]
+    }
+  ],
+  "Sea Explorer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mariners",
+        "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Mariners.\nRemove for co-op modes.",
+      "completeAt": [
+        "Mariners"
+      ]
+    }
+  ],
+  "Skink Slasher": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Dwarves",
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Dwarves",
+      "completeAt": [
+        "Dwarves"
+      ]
+    }
+  ],
+  "Snake Grinder": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Outpost",
+      "completeAt": [
+        "Outpost"
+      ]
+    }
+  ],
+  "Spelunker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Caves  Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Mine",
+      "completeAt": [
+        "Mine"
+      ]
+    }
+  ],
+  "Spider Smiter": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Sanctuary",
+      "completeAt": [
+        "Sanctuary"
+      ]
+    }
+  ],
+  "Spirit Seeker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Nomads"
+      ],
+      "ancestry": [
+        "Oasis"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Nomads",
+      "completeAt": [
+        "Nomads"
+      ]
+    }
+  ],
+  "Sting Breaker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Medina",
+      "completeAt": [
+        "Medina"
+      ]
+    }
+  ],
+  "Supplies": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "CivTile",
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "expedition"
+    }
+  ],
+  "Surveyor": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Village",
+      "completeAt": [
+        "Village"
+      ]
+    }
+  ],
+  "Swamper": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Outpost",
+      "completeAt": [
+        "Outpost"
+      ]
+    }
+  ],
+  "Swarm Bane": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Medina",
+      "completeAt": [
+        "Medina"
+      ]
+    }
+  ],
+  "Temple Defiler": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Woods",
+      "completeAt": [
+        "Woods"
+      ]
+    }
+  ],
+  "Tent Burner": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Swamps",
+      "completeAt": [
+        "Swamps"
+      ]
+    }
+  ],
+  "Tide Tamer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Port",
+      "completeAt": [
+        "Port"
+      ]
+    }
+  ],
+  "Trade Goods": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Foreigner",
+        "Merchant",
+        "Mission",
+        "Steal"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "points": {
+            "gold": 9
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Foreigner",
+      "completeAt": [
+        "Foreigner"
+      ]
+    }
+  ],
+  "Treant Seeds": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Priests"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "expedition"
+    }
+  ],
+  "Tree Herder": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Woods Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Sanctuary",
+      "completeAt": [
+        "Sanctuary"
+      ]
+    }
+  ],
+  "Unknown Things": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Elves",
+        "Merchant",
+        "Mission",
+        "Natives",
+        "Steal"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "steal": {
+          "drawCards": {
+            "treasure": 1
+          },
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Elves",
+      "completeAt": [
+        "Elves"
+      ]
+    }
+  ],
+  "Unwelcome Guest": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Plains",
+      "completeAt": [
+        "Plains"
+      ]
+    }
+  ],
+  "Vile Assassin": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Swamps Chips"
+      ],
+      "kind": "atrocity",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Swamps",
+      "completeAt": [
+        "Swamps"
+      ]
+    }
+  ],
+  "Watercourser": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "kind": "expedition",
+      "description": "Complete at Port",
+      "completeAt": [
+        "Port"
+      ]
+    }
+  ],
+  "Whispers": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Mission",
+        "Natives",
+        "Sellswords"
+      ],
+      "ancestry": [
+        "NATIVES Groups"
+      ],
+      "kind": "expedition",
+      "rewards": {
+        "attributes": {
+          "charisma": 1
+        }
+      },
+      "description": "Complete at Sellswords",
+      "completeAt": [
+        "Sellswords"
+      ]
+    }
+  ],
+  "Wolf Butcher": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Plains Chips"
+      ],
+      "kind": "quest",
+      "description": "Complete at Village",
+      "completeAt": [
+        "Village"
+      ]
+    }
+  ]
+}

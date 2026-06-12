@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MissionLinks } from "@/components/MissionLinks";
 import {
   getAllSites,
   getBoardsForSite,
+  getMissionsForTarget,
   getMonsterGroupsForSite,
   getSiteBySlug,
 } from "@/lib/tts/lookup";
@@ -22,6 +24,7 @@ export default async function SitePage({
 
   const boards = getBoardsForSite(entry.name);
   const monsterGroups = getMonsterGroupsForSite(entry.name);
+  const missions = getMissionsForTarget(entry.name);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -69,6 +72,12 @@ export default async function SitePage({
           </div>
         </section>
       )}
+
+      <MissionLinks
+        missions={missions}
+        className="mt-10"
+        headingClassName="text-xl font-semibold mb-4"
+      />
 
       {boards.length > 0 && (
         <section className="mt-10">

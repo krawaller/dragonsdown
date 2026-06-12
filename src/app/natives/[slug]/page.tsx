@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
-import { getAllNativeGroups, getNativeGroupBySlug } from "@/lib/tts/lookup";
+import {
+  getAllNativeGroups,
+  getMissionsForTarget,
+  getNativeGroupBySlug,
+} from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
   return getAllNativeGroups().map((entry) => ({ slug: entry.slug }));
@@ -15,6 +20,7 @@ export default async function NativePage({
   const { slug } = await params;
   const group = getNativeGroupBySlug(slug);
   if (!group) notFound();
+  const missions = getMissionsForTarget(group.prettyName);
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -52,6 +58,12 @@ export default async function NativePage({
           </div>
         </section>
       )}
+
+      <MissionLinks
+        missions={missions}
+        className="mb-10"
+        headingClassName="text-xl font-semibold mb-3"
+      />
 
       <MonsterGroupChipList group={group} />
     </main>

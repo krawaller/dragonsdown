@@ -16,10 +16,14 @@ import {
   type ChipIndex,
   type CivLocationIndex,
   type MapTileMonsterIndex,
+  type MissionIndex,
+  type MissionKind,
   type NativeSummonIndex,
   type SiteIndex,
   type TTSCardImage,
   type TTSChip,
+  type TTSMissionCard,
+  type TTSMissionRewards,
   type TTSCivLocation,
   type TTSCivilisationToken,
   type TTSSiteMonsterGroup,
@@ -69,6 +73,7 @@ const NATIVE_SUMMONS_FILE = path.join(
   "tts",
   "native-summons.json",
 );
+const MISSIONS_FILE = path.join(process.cwd(), "data", "tts", "missions.json");
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
@@ -82,6 +87,7 @@ let cachedBoardIndex: TTSBoard[] | null = null;
 let cachedSiteMonsterIndex: Record<string, TTSSiteMonsterGroup[]> | null = null;
 let cachedMapTileMonsterIndex: MapTileMonsterIndex | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
+let cachedMissionIndex: MissionIndex | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -153,6 +159,12 @@ function getNativeSummonIndex(): NativeSummonIndex {
   cachedNativeSummonIndex =
     readJsonOrEmpty<NativeSummonIndex>(NATIVE_SUMMONS_FILE);
   return cachedNativeSummonIndex;
+}
+
+function getMissionIndex(): MissionIndex {
+  if (cachedMissionIndex !== null) return cachedMissionIndex;
+  cachedMissionIndex = readJsonOrEmpty<MissionIndex>(MISSIONS_FILE);
+  return cachedMissionIndex;
 }
 
 function readJsonOrEmpty<T>(file: string): T {
@@ -239,6 +251,19 @@ export type NativeGroupLink = {
   name: string;
   slug: string;
   natives: string[];
+};
+
+export type MissionTargetKind =
+  | "native"
+  | "site"
+  | "merchant"
+  | "civLocation"
+  | "wildernessToken";
+
+export type MissionTargetLink = {
+  name: string;
+  href: string;
+  kind: MissionTargetKind;
 };
 
 /** Return all chip entries, sorted alphabetically by prettified name. */
@@ -358,8 +383,47 @@ function getNativeGroupsForSummonSource(sourceName: string): NativeGroupLink[] {
 /** A card name with the card variants that carry a specific tag. */
 export type CardEntry = {
   name: string;
+  slug?: string;
   cards: TTSCardImage[];
+  descriptions?: string[];
+  kinds?: MissionKind[];
+  rewardSummaries?: string[];
+  targets?: MissionTargetLink[];
 };
+
+export type MissionEntry = Omit<CardEntry, "cards"> & {
+  slug: string;
+  cards: TTSMissionCard[];
+  descriptions: string[];
+  kinds: MissionKind[];
+  rewardSummaries: string[];
+  targets: MissionTargetLink[];
+};
+
+export function getAllMissions(): MissionEntry[] {
+  return Object.entries(getMissionIndex())
+    .map(([name, cards]) => ({
+      name,
+      slug: slugify(name),
+      cards,
+      descriptions: uniqueStrings(
+        cards.flatMap((card) => (card.description ? [card.description] : [])),
+      ),
+      kinds: missionKindsFor(cards),
+      rewardSummaries: missionRewardSummariesFor(cards),
+      targets: missionTargetsFor(cards),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getMissionsForTarget(targetName: string): MissionEntry[] {
+  const targetKey = normalizeTitle(targetName);
+  return getAllMissions().filter((entry) =>
+    entry.cards.some((card) =>
+      card.completeAt?.some((target) => normalizeTitle(target) === targetKey),
+    ),
+  );
+}
 
 /** A site entry for the /sites listing. */
 export type SiteEntry = {
@@ -863,6 +927,121 @@ function nativeSummonHref(name: string): string {
   if (location) return `/civ-locations/${location.slug}`;
   const wildernessToken = getWildernessTokenBySlug(slug);
   return wildernessToken ? `/wilderness-tokens/${wildernessToken.slug}` : "";
+}
+
+function missionTargetsFor(cards: TTSMissionCard[]): MissionTargetLink[] {
+  const targets = uniqueStrings(cards.flatMap((card) => card.completeAt ?? []));
+  return targets.flatMap((name) => {
+    const target = missionTargetFor(name);
+    return target ? [target] : [];
+  });
+}
+
+function missionKindsFor(cards: TTSMissionCard[]): MissionKind[] {
+  const order: MissionKind[] = ["atrocity", "quest", "expedition"];
+  const kinds = new Set(
+    cards.flatMap((card) => (card.kind ? [card.kind] : [])),
+  );
+  return order.filter((kind) => kinds.has(kind));
+}
+
+function missionRewardSummariesFor(cards: TTSMissionCard[]): string[] {
+  return uniqueStrings(
+    cards.flatMap((card) => missionRewardSummaries(card.rewards)),
+  );
+}
+
+function missionRewardSummaries(
+  rewards: TTSMissionRewards | undefined,
+): string[] {
+  if (!rewards) return [];
+  const summaries: string[] = [];
+  const complete = missionRewardParts(rewards);
+  if (complete.length > 0) summaries.push(`Complete: ${complete.join(", ")}`);
+  const steal = missionRewardParts(rewards.steal);
+  if (steal.length > 0) summaries.push(`Steal: ${steal.join(", ")}`);
+  return summaries;
+}
+
+function missionRewardParts(
+  rewards: TTSMissionRewards | TTSMissionRewards["steal"] | undefined,
+): string[] {
+  if (!rewards) return [];
+  return [
+    ...("attributes" in rewards
+      ? missionNumericParts(rewards.attributes, {
+          charisma: "Charisma",
+          wisdom: "Wisdom",
+          intellect: "Intellect",
+        })
+      : []),
+    ...missionNumericParts(rewards.drawCards, {
+      deep: "Deep card",
+      treasure: "Treasure card",
+      item: "Item card",
+      spell: "Spell card",
+    }),
+    ...missionNumericParts(rewards.points, {
+      fame: "Fame",
+      gold: "Gold",
+    }),
+    ...(rewards.outlaw ? [missionCountLabel(rewards.outlaw, "Outlaw")] : []),
+  ];
+}
+
+function missionNumericParts<T extends string>(
+  values: Partial<Record<T, number>> | undefined,
+  labels: Record<T, string>,
+): string[] {
+  if (!values) return [];
+  return (Object.entries(labels) as [T, string][]).flatMap(([key, label]) => {
+    const value = values[key];
+    return value ? [missionCountLabel(value, label)] : [];
+  });
+}
+
+function missionCountLabel(count: number, label: string): string {
+  if (count === 1) return `+1 ${label}`;
+  return `+${count} ${label}${label.endsWith("s") ? "" : "s"}`;
+}
+
+function missionTargetFor(name: string): MissionTargetLink | null {
+  const slug = slugify(name);
+  const native = getNativeGroupBySlug(slug);
+  if (native) {
+    return { name, href: `/natives/${native.slug}`, kind: "native" };
+  }
+  const site = getSiteBySlug(slug);
+  if (site) return { name, href: `/sites/${site.slug}`, kind: "site" };
+  const merchant = getCivilisationTokenBySlug(slug);
+  if (merchant) {
+    return {
+      name,
+      href: `/civilisation-tokens/${merchant.slug}`,
+      kind: "merchant",
+    };
+  }
+  const civLocation = getCivLocationBySlug(slug);
+  if (civLocation) {
+    return {
+      name,
+      href: `/civ-locations/${civLocation.slug}`,
+      kind: "civLocation",
+    };
+  }
+  const wildernessToken = getWildernessTokenBySlug(slug);
+  if (wildernessToken) {
+    return {
+      name,
+      href: `/wilderness-tokens/${wildernessToken.slug}`,
+      kind: "wildernessToken",
+    };
+  }
+  return null;
+}
+
+function uniqueStrings(values: string[]): string[] {
+  return [...new Set(values)].sort((a, b) => a.localeCompare(b));
 }
 
 /**

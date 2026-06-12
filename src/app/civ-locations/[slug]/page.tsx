@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MissionLinks } from "@/components/MissionLinks";
 import type { MapTile } from "@/components/MapTileViewer";
 import {
   getAllCivLocations,
   getCivLocationBySlug,
+  getMissionsForTarget,
   getNativeGroupsForCivLocation,
   getWildernessTokenBySlug,
 } from "@/lib/tts/lookup";
@@ -28,6 +30,7 @@ export default async function CivLocationPage({
   );
   const wildernessToken = getWildernessTokenBySlug(entry.slug);
   const nativeGroups = getNativeGroupsForCivLocation(name);
+  const missions = getMissionsForTarget(name);
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       <div className="flex flex-wrap gap-3 text-sm text-zinc-600 dark:text-zinc-400">
@@ -116,6 +119,7 @@ export default async function CivLocationPage({
           </div>
         </section>
       )}
+      <MissionLinks missions={missions} className="mt-8" />
     </main>
   );
 }

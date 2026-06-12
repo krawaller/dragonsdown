@@ -15,6 +15,7 @@ import {
   extractCivLocations,
   extractMapTileMonsters,
   extractMapTiles,
+  extractMissions,
   extractNativeSummons,
   extractSiteMonsters,
   extractSites,
@@ -27,6 +28,7 @@ import {
   type ChipIndex,
   type CivLocationIndex,
   type MapTileMonsterIndex,
+  type MissionIndex,
   type NativeSummonIndex,
   type TTSCivilisationToken,
   type TTSMapTile,
@@ -60,6 +62,7 @@ async function main(): Promise<void> {
   const civilisationTokens: TTSCivilisationToken[] = [];
   const wildernessTokens: WildernessTokenIndex = {};
   const mapTileMonsters: MapTileMonsterIndex = {};
+  const missions: MissionIndex = {};
   const nativeSummons: NativeSummonIndex = {};
   let mapTiles: TTSMapTile[] = [];
 
@@ -77,10 +80,11 @@ async function main(): Promise<void> {
     const civilisationIndex = extractCivilisationTokens(save, stem);
     const wildernessIndex = extractWildernessTokens(save, stem);
     const mapTileMonsterIndex = extractMapTileMonsters(save, stem);
+    const missionIndex = extractMissions(save, stem);
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(nativeSummonIndex)} native summon groups`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeSummonIndex)} native summon groups`,
     );
 
     boards.push(...boardIndex);
@@ -160,6 +164,27 @@ async function main(): Promise<void> {
     for (const [name, items] of Object.entries(mapTileMonsterIndex)) {
       (mapTileMonsters[name] ??= []).push(...items);
     }
+    for (const [name, items] of Object.entries(missionIndex)) {
+      const bucket = (missions[name] ??= []);
+      for (const item of items) {
+        const existing = bucket.find((card) => isSameCell(card, item));
+        if (existing) {
+          existing.tags = mergeTags(existing.tags, item.tags);
+          if (!existing.description && item.description) {
+            existing.description = item.description;
+          }
+          existing.completeAt = mergeStringArrays(
+            existing.completeAt,
+            item.completeAt,
+          );
+          if (!existing.kind && item.kind) existing.kind = item.kind;
+          if (!existing.rewards && item.rewards)
+            existing.rewards = item.rewards;
+        } else {
+          bucket.push(item);
+        }
+      }
+    }
     for (const [name, items] of Object.entries(nativeSummonIndex)) {
       (nativeSummons[name] ??= []).push(...items);
     }
@@ -209,6 +234,7 @@ async function main(): Promise<void> {
     path.join(OUT_DIR, "map-tile-monsters.json"),
     mapTileMonsters,
   );
+  await writeSorted(path.join(OUT_DIR, "missions.json"), missions);
   await writeSorted(path.join(OUT_DIR, "native-summons.json"), nativeSummons);
   console.log(`→ boards.json: ${boards.length} boards total`);
   console.log(
@@ -235,6 +261,9 @@ async function main(): Promise<void> {
   console.log(`→ map-tiles.json: ${mapTiles.length} map tiles total`);
   console.log(
     `→ map-tile-monsters.json: ${Object.keys(mapTileMonsters).length} map tiles, ${countEntries(mapTileMonsters)} groups total`,
+  );
+  console.log(
+    `→ missions.json: ${Object.keys(missions).length} names, ${countEntries(missions)} cards total`,
   );
   console.log(
     `→ native-summons.json: ${Object.keys(nativeSummons).length} sources, ${countEntries(nativeSummons)} groups total`,

@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MissionLinks } from "@/components/MissionLinks";
 import {
   getAllCivilisationTokenNames,
   getBoardsForMerchant,
   getCivilisationTokenBySlug,
+  getMissionsForTarget,
   type CivilisationTokenListEntry,
 } from "@/lib/tts/lookup";
 
@@ -25,6 +27,7 @@ export default async function CivilisationTokenPage({
     0,
   );
   const boards = getBoardsForMerchant(entry.name);
+  const missions = getMissionsForTarget(entry.name);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -67,6 +70,8 @@ export default async function CivilisationTokenPage({
           </div>
         </section>
       )}
+
+      <MissionLinks missions={missions} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {entry.tokens.map((token) => (
