@@ -101,12 +101,9 @@
   "Lost Battalion": [
     {
       "source": "dd_all_exp",
-      "group": "Bandits",
+      "group": "Lost Battalion",
       "monsters": [
-        "Assassin",
-        "Cutthroat",
-        "Executioner",
-        "Leader"
+        "Lost Battalion"
       ]
     }
   ],

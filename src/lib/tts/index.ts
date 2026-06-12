@@ -757,6 +757,12 @@ export function extractSiteMonsters(
     const guardian = guardianFunctionBody(text(obj.LuaScript));
     if (!guardian) continue;
 
+    const override = siteMonsterOverride(siteName, source);
+    if (override) {
+      (index[siteName] ??= []).push(override);
+      continue;
+    }
+
     const groups = new Map<string, string[]>();
     for (const match of guardian.matchAll(
       /\b([A-Za-z_][A-Za-z0-9_]*)\s*=\s*getObjectFromGUID\("([0-9a-f]{6})"\)/g,
@@ -857,6 +863,14 @@ function siteMonsterSourceName(obj: Record<string, unknown>): string {
   const imageURL = text(obj.CustomImage.ImageURL);
   if (imageURL === SITE_FACE_URL) return text(obj.Nickname);
   return WILDERNESS_TOKEN_FRONT_METADATA[imageURL]?.name ?? "";
+}
+
+function siteMonsterOverride(
+  siteName: string,
+  source: string,
+): TTSSiteMonsterGroup | null {
+  if (siteName !== "Lost Battalion") return null;
+  return { source, group: "Lost Battalion", monsters: ["Lost Battalion"] };
 }
 
 function guardianFunctionBody(luaScript: string): string {

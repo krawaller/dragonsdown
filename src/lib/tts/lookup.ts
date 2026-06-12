@@ -15,11 +15,13 @@ import {
   type CardIndex,
   type ChipIndex,
   type CivLocationIndex,
+  type MapTileMonsterIndex,
   type SiteIndex,
   type TTSCardImage,
   type TTSChip,
   type TTSCivLocation,
   type TTSCivilisationToken,
+  type TTSSiteMonsterGroup,
   type TTSSite,
   type TTSWildernessToken,
   type WildernessTokenIndex,
@@ -48,6 +50,18 @@ const CIVILISATION_TOKENS_FILE = path.join(
   "civilisation-tokens.json",
 );
 const BOARDS_FILE = path.join(process.cwd(), "data", "tts", "boards.json");
+const SITE_MONSTERS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "site-monsters.json",
+);
+const MAP_TILE_MONSTERS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "map-tile-monsters.json",
+);
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
@@ -58,6 +72,8 @@ let cachedCivLocIndex: CivLocationIndex | null = null;
 let cachedWildernessTokenIndex: WildernessTokenIndex | null = null;
 let cachedCivilisationTokenIndex: TTSCivilisationToken[] | null = null;
 let cachedBoardIndex: TTSBoard[] | null = null;
+let cachedSiteMonsterIndex: Record<string, TTSSiteMonsterGroup[]> | null = null;
+let cachedMapTileMonsterIndex: MapTileMonsterIndex | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -109,6 +125,21 @@ function getBoardIndex(): TTSBoard[] {
   return cachedBoardIndex;
 }
 
+function getSiteMonsterIndex(): Record<string, TTSSiteMonsterGroup[]> {
+  if (cachedSiteMonsterIndex !== null) return cachedSiteMonsterIndex;
+  cachedSiteMonsterIndex =
+    readJsonOrEmpty<Record<string, TTSSiteMonsterGroup[]>>(SITE_MONSTERS_FILE);
+  return cachedSiteMonsterIndex;
+}
+
+function getMapTileMonsterIndex(): MapTileMonsterIndex {
+  if (cachedMapTileMonsterIndex !== null) return cachedMapTileMonsterIndex;
+  cachedMapTileMonsterIndex = readJsonOrEmpty<MapTileMonsterIndex>(
+    MAP_TILE_MONSTERS_FILE,
+  );
+  return cachedMapTileMonsterIndex;
+}
+
 function readJsonOrEmpty<T>(file: string): T {
   try {
     return JSON.parse(readFileSync(file, "utf-8")) as T;
@@ -146,6 +177,25 @@ export type ChipEntry = {
   chips: TTSChip[];
 };
 
+export type MonsterGroupMapTileSummon = {
+  tileName: string;
+  terrain: string;
+  role: "wandering" | "local";
+  href: string;
+};
+
+export type MonsterGroupSiteSummon = {
+  name: string;
+  href: string;
+  monsters: string[];
+};
+
+export type MonsterGroupEntry = ChipEntry & {
+  slug: string;
+  mapTiles: MonsterGroupMapTileSummon[];
+  sites: MonsterGroupSiteSummon[];
+};
+
 /** Return all chip entries, sorted alphabetically by prettified name. */
 export function getAllChips(): ChipEntry[] {
   const idx = getChipIndex();
@@ -156,6 +206,24 @@ export function getAllChips(): ChipEntry[] {
       chips,
     }))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+export function getAllMonsterGroups(): MonsterGroupEntry[] {
+  return getAllChips()
+    .filter((entry) => !isNativeChipGroup(entry))
+    .map((entry) => ({
+      ...entry,
+      slug: slugify(entry.prettyName),
+      mapTiles: getMapTileSummonsForMonsterGroup(entry.prettyName),
+      sites: getSiteSummonsForMonsterGroup(entry.prettyName),
+    }))
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+export function getMonsterGroupBySlug(
+  slug: string,
+): MonsterGroupEntry | undefined {
+  return getAllMonsterGroups().find((entry) => entry.slug === slug);
 }
 
 /** A card name with the card variants that carry a specific tag. */
@@ -448,12 +516,98 @@ function boardTitle(board: TTSBoard): string {
   return `${board.terrain} Board`;
 }
 
-function slugify(value: string): string {
+export function slugify(value: string): string {
   return value
     .normalize("NFKD")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+const NATIVE_CHIP_GROUPS = new Set(
+  [
+    "aurorans",
+    "bashkirs",
+    "consul",
+    "dwarves",
+    "elves",
+    "knights",
+    "mariners",
+    "nomads",
+    "priests",
+    "rogues",
+    "sellswords",
+    "soldiers",
+    "villagers",
+    "wardens",
+    "watch",
+  ].map(normalizeTitle),
+);
+
+function isNativeChipGroup(entry: ChipEntry): boolean {
+  return NATIVE_CHIP_GROUPS.has(normalizeTitle(entry.name));
+}
+
+function getMapTileSummonsForMonsterGroup(
+  groupName: string,
+): MonsterGroupMapTileSummon[] {
+  const summons: MonsterGroupMapTileSummon[] = [];
+  for (const [tileName, entries] of Object.entries(getMapTileMonsterIndex())) {
+    for (const entry of entries) {
+      for (const role of ["wandering", "local"] as const) {
+        if (!entry[role].includes(groupName)) continue;
+        summons.push({
+          tileName,
+          terrain: entry.terrain,
+          role,
+          href: mapTileHref(entry.terrain, tileName),
+        });
+      }
+    }
+  }
+  return summons.sort(
+    (a, b) =>
+      a.terrain.localeCompare(b.terrain) ||
+      a.tileName.localeCompare(b.tileName) ||
+      a.role.localeCompare(b.role),
+  );
+}
+
+function getSiteSummonsForMonsterGroup(
+  groupName: string,
+): MonsterGroupSiteSummon[] {
+  const summons: MonsterGroupSiteSummon[] = [];
+  for (const [name, entries] of Object.entries(getSiteMonsterIndex())) {
+    for (const entry of entries) {
+      if (entry.group !== groupName) continue;
+      const href = siteMonsterHref(name);
+      if (!href) continue;
+      summons.push({
+        name,
+        href,
+        monsters: entry.monsters,
+      });
+    }
+  }
+  return summons.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function mapTileHref(terrain: string, tileName: string): string {
+  const params = new URLSearchParams({
+    terrain,
+    tile: tileName,
+    side: "front",
+  });
+  return `/map-tiles?${params.toString()}`;
+}
+
+function siteMonsterHref(name: string): string {
+  const slug = slugify(name);
+  const site = getSiteBySlug(slug);
+  if (site) return `/sites/${site.slug}`;
+  const wildernessToken = getWildernessTokenBySlug(slug);
+  if (wildernessToken) return `/wilderness-tokens/${wildernessToken.slug}`;
+  return "";
 }
 
 /**

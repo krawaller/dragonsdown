@@ -976,6 +976,34 @@ describe("extractSiteMonsters", () => {
       ],
     });
   });
+
+  it("corrects Lost Battalion's stale bandit guardian GUIDs", () => {
+    const lostBattalionURL = Object.entries(
+      WILDERNESS_TOKEN_FRONT_METADATA,
+    ).find(([, metadata]) => metadata.name === "Lost Battalion")?.[0];
+    const save = {
+      ObjectStates: [
+        chip("cd6d5f", "Bandits"),
+        chip("718d57", "LostBattalion"),
+        {
+          Name: "Custom_Tile",
+          CustomImage: { ImageURL: lostBattalionURL },
+          LuaScript:
+            'function guardian()\nAssassin = getObjectFromGUID("cd6d5f")\nend',
+        },
+      ],
+    };
+
+    expect(extractSiteMonsters(save, "eastern")).toEqual({
+      "Lost Battalion": [
+        {
+          source: "eastern",
+          group: "Lost Battalion",
+          monsters: ["Lost Battalion"],
+        },
+      ],
+    });
+  });
 });
 
 describe("extractMapTileMonsters", () => {
