@@ -145,6 +145,8 @@ function missionTargetKindLabel(kind: MissionTargetKind): string {
       return "civ";
     case "wildernessToken":
       return "token";
+    case "mapTile":
+      return "map tile";
   }
 }
 

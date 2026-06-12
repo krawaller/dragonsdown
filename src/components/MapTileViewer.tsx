@@ -31,14 +31,24 @@ export type MapTileMonsterGroup = {
   role: "wandering" | "local";
 };
 
+export type MapTileMission = {
+  tileName: string;
+  terrain: string;
+  name: string;
+  slug: string;
+  descriptions: string[];
+};
+
 export function MapTileViewer({
   tiles,
   civLocations,
   monsterGroups,
+  missions,
 }: {
   tiles: MapTile[];
   civLocations: MapTileCivLocation[];
   monsterGroups: MapTileMonsterGroup[];
+  missions: MapTileMission[];
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -73,6 +83,13 @@ export function MapTileViewer({
         (group) =>
           group.terrain === selectedTile.terrain &&
           group.tileName === selectedTile.name,
+      )
+    : [];
+  const selectedMissions = selectedTile
+    ? missions.filter(
+        (mission) =>
+          mission.terrain === selectedTile.terrain &&
+          mission.tileName === selectedTile.name,
       )
     : [];
 
@@ -259,6 +276,27 @@ export function MapTileViewer({
                   <span className="block text-xs text-zinc-500 dark:text-zinc-400">
                     {group.role}
                   </span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+        {selectedMissions.length > 0 && (
+          <section className="mt-6">
+            <h3 className="text-lg font-semibold mb-3">Missions</h3>
+            <div className="flex flex-wrap gap-2">
+              {selectedMissions.map((mission) => (
+                <Link
+                  key={mission.slug}
+                  href={`/missions/${mission.slug}`}
+                  className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+                >
+                  <span className="font-medium">{mission.name}</span>
+                  {mission.descriptions.length > 0 && (
+                    <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                      {mission.descriptions[0]}
+                    </span>
+                  )}
                 </Link>
               ))}
             </div>

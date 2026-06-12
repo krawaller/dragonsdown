@@ -5,9 +5,11 @@ import {
   type MapTile,
   type MapTileCivLocation,
   type MapTileMonsterGroup,
+  type MapTileMission,
 } from "@/components/MapTileViewer";
 import {
   getAllCivLocations,
+  getMissionsForMapTile,
   getMonsterGroupsForMapTile,
 } from "@/lib/tts/lookup";
 import tiles from "../../../data/tts/map-tiles.json";
@@ -28,6 +30,15 @@ export default function MapTilesPage() {
       terrain: tile.terrain,
     })),
   );
+  const missions: MapTileMission[] = mapTiles.flatMap((tile) =>
+    getMissionsForMapTile(tile.terrain, tile.name).map((mission) => ({
+      tileName: tile.name,
+      terrain: tile.terrain,
+      name: mission.name,
+      slug: mission.slug,
+      descriptions: mission.descriptions,
+    })),
+  );
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -43,6 +54,7 @@ export default function MapTilesPage() {
           tiles={mapTiles}
           civLocations={civLocations}
           monsterGroups={monsterGroups}
+          missions={missions}
         />
       </Suspense>
     </main>

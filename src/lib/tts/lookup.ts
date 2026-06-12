@@ -25,6 +25,7 @@ import {
   type TTSChip,
   type TTSMissionCard,
   type TTSMissionRewards,
+  type TTSMapTile,
   type TTSCivLocation,
   type TTSCivilisationToken,
   type TTSSiteMonsterGroup,
@@ -68,6 +69,12 @@ const MAP_TILE_MONSTERS_FILE = path.join(
   "tts",
   "map-tile-monsters.json",
 );
+const MAP_TILES_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "map-tiles.json",
+);
 const NATIVE_SUMMONS_FILE = path.join(
   process.cwd(),
   "data",
@@ -87,6 +94,7 @@ let cachedCivilisationTokenIndex: TTSCivilisationToken[] | null = null;
 let cachedBoardIndex: TTSBoard[] | null = null;
 let cachedSiteMonsterIndex: Record<string, TTSSiteMonsterGroup[]> | null = null;
 let cachedMapTileMonsterIndex: MapTileMonsterIndex | null = null;
+let cachedMapTiles: TTSMapTile[] | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
 let cachedMissionIndex: MissionIndex | null = null;
 let cachedAliases: AliasMap | null = null;
@@ -153,6 +161,13 @@ function getMapTileMonsterIndex(): MapTileMonsterIndex {
     MAP_TILE_MONSTERS_FILE,
   );
   return cachedMapTileMonsterIndex;
+}
+
+function getMapTiles(): TTSMapTile[] {
+  if (cachedMapTiles !== null) return cachedMapTiles;
+  const data = readJsonOrEmpty<unknown>(MAP_TILES_FILE);
+  cachedMapTiles = Array.isArray(data) ? (data as TTSMapTile[]) : [];
+  return cachedMapTiles;
 }
 
 function getNativeSummonIndex(): NativeSummonIndex {
@@ -259,7 +274,8 @@ export type MissionTargetKind =
   | "site"
   | "merchant"
   | "civLocation"
-  | "wildernessToken";
+  | "wildernessToken"
+  | "mapTile";
 
 export type MissionTargetLink = {
   name: string;
@@ -429,6 +445,18 @@ export function getMissionsForTarget(targetName: string): MissionEntry[] {
   return getAllMissions().filter((entry) =>
     entry.cards.some((card) =>
       card.completeAt?.some((target) => normalizeTitle(target) === targetKey),
+    ),
+  );
+}
+
+export function getMissionsForMapTile(
+  terrain: string,
+  tileName: string,
+): MissionEntry[] {
+  const targetHref = mapTileHref(terrain, tileName);
+  return getAllMissions().filter((entry) =>
+    entry.targets.some(
+      (target) => target.kind === "mapTile" && target.href === targetHref,
     ),
   );
 }
@@ -1064,6 +1092,16 @@ function missionTargetFor(name: string): MissionTargetLink | null {
       name,
       href: `/wilderness-tokens/${wildernessToken.slug}`,
       kind: "wildernessToken",
+    };
+  }
+  const mapTile = getMapTiles().find(
+    (tile) => normalizeTitle(tile.name) === normalizeTitle(name),
+  );
+  if (mapTile) {
+    return {
+      name,
+      href: mapTileHref(mapTile.terrain, mapTile.name),
+      kind: "mapTile",
     };
   }
   return null;
