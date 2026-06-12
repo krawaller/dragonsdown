@@ -83,6 +83,22 @@ export type TTSSiteMonsterGroup = {
 /** Output written to data/tts/site-monsters.json. Keyed by site/token name. */
 export type SiteMonsterIndex = Record<string, TTSSiteMonsterGroup[]>;
 
+export type TTSNativeChip = {
+  name: string;
+  imageURL?: string;
+  imageSecondaryURL?: string;
+};
+
+export type TTSNativeSummonGroup = {
+  source: string;
+  group: string;
+  natives: string[];
+  nativeChips: TTSNativeChip[];
+};
+
+/** Output written to data/tts/native-summons.json. Keyed by setup source. */
+export type NativeSummonIndex = Record<string, TTSNativeSummonGroup[]>;
+
 export const CIVILISATION_TOKEN_FACE_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/";
 
@@ -869,6 +885,35 @@ export function extractMapTileMonsters(
   );
 }
 
+export function extractNativeSummons(
+  root: unknown,
+  source: string,
+): NativeSummonIndex {
+  const objects: Record<string, unknown>[] = [];
+  collectObjects(root, objects);
+  const chipsByGuid = chipInfoByGuid(objects);
+  const index: NativeSummonIndex = {};
+
+  const rootLua = isRecord(root) ? text(root.LuaScript) : "";
+  const nativeGroups = nativeGroupsFromRootLua(rootLua, chipsByGuid, source);
+  if (nativeGroups.length > 0) index["Native Setup"] = nativeGroups;
+
+  for (const obj of objects) {
+    const locationName = text(obj.Nickname);
+    if (!locationName) continue;
+    const groups = nativeGroupsFromSetupLua(
+      text(obj.LuaScript),
+      chipsByGuid,
+      source,
+    );
+    if (groups.length > 0) (index[locationName] ??= []).push(...groups);
+  }
+
+  return Object.fromEntries(
+    Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
+  );
+}
+
 function monsterGroupsFromLuaFunction(
   luaScript: string,
   functionName: string,
@@ -879,6 +924,161 @@ function monsterGroupsFromLuaFunction(
     groups.add(prettifyChipName(match[1]));
   }
   return [...groups];
+}
+
+type ChipInfo = {
+  group: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+};
+
+function chipInfoByGuid(
+  objects: Record<string, unknown>[],
+): Map<string, ChipInfo> {
+  const chipsByGuid = new Map<string, ChipInfo>();
+  for (const obj of objects) {
+    const guid = text(obj.GUID);
+    if (!guid) continue;
+    const luaScript = text(obj.LuaScript);
+    const gmNotes = text(obj.GMNotes);
+    if (!gmNotes || !luaScript.startsWith("chipName =")) continue;
+    const customImage = isRecord(obj.CustomImage) ? obj.CustomImage : {};
+    chipsByGuid.set(guid, {
+      group: prettifyChipName(gmNotes),
+      imageURL: text(customImage.ImageURL),
+      imageSecondaryURL: text(customImage.ImageSecondaryURL),
+    });
+  }
+  return chipsByGuid;
+}
+
+function nativeGroupsFromRootLua(
+  luaScript: string,
+  chipsByGuid: Map<string, ChipInfo>,
+  source: string,
+): TTSNativeSummonGroup[] {
+  const table = luaTableBody(luaScript, "nativeGroups");
+  if (!table) return [];
+  const groups: TTSNativeSummonGroup[] = [];
+  for (const groupMatch of table.matchAll(
+    /\b([a-z]+)\s*=\s*\{([\s\S]*?)\n\s*\},/g,
+  )) {
+    const group = prettifyChipName(groupMatch[1]);
+    const natives: string[] = [];
+    const nativeChips: TTSNativeChip[] = [];
+    for (const chipMatch of groupMatch[2].matchAll(
+      /"([0-9a-f]{6})"\s*,?\s*--\s*([^\n\r]+)/g,
+    )) {
+      const guid = chipMatch[1];
+      const chip = chipsByGuid.get(guid);
+      const name = nativeNameForLabel(chipMatch[2], group);
+      natives.push(name);
+      nativeChips.push(nativeChipFor(name, chip));
+    }
+    if (natives.length > 0)
+      groups.push({ source, group, natives, nativeChips });
+  }
+  return groups.sort((a, b) => a.group.localeCompare(b.group));
+}
+
+function nativeGroupsFromSetupLua(
+  luaScript: string,
+  chipsByGuid: Map<string, ChipInfo>,
+  source: string,
+): TTSNativeSummonGroup[] {
+  const groups = new Map<
+    string,
+    { seen: Set<string>; nativeChips: TTSNativeChip[] }
+  >();
+  for (const functionMatch of luaScript.matchAll(
+    /function\s+setup[A-Z][A-Za-z]+\(clearing,\s*rotation\)([\s\S]*?)(?=\nfunction\s|$)/g,
+  )) {
+    for (const match of functionMatch[1].matchAll(
+      /\b([A-Za-z_][A-Za-z0-9_]*)\s*=\s*getObjectFromGUID\("([0-9a-f]{6})"\)/g,
+    )) {
+      const variable = match[1];
+      const guid = match[2];
+      const chip = chipsByGuid.get(guid);
+      if (!chip) continue;
+      const bucket = groups.get(chip.group) ?? {
+        seen: new Set<string>(),
+        nativeChips: [],
+      };
+      if (bucket.seen.has(guid)) continue;
+      const name = nativeNameForLabel(variable, chip.group);
+      bucket.seen.add(guid);
+      bucket.nativeChips.push(nativeChipFor(name, chip));
+      groups.set(chip.group, bucket);
+    }
+  }
+  return [...groups.entries()]
+    .map(([group, { nativeChips }]) => {
+      const sortedChips = sortNativeChips(nativeChips);
+      return {
+        source,
+        group,
+        natives: sortedChips.map((chip) => chip.name),
+        nativeChips: sortedChips,
+      };
+    })
+    .sort((a, b) => a.group.localeCompare(b.group));
+}
+
+function sortNativeChips(chips: TTSNativeChip[]): TTSNativeChip[] {
+  return chips
+    .map((chip, index) => ({ chip, index }))
+    .sort(
+      (a, b) =>
+        nativeSortValue(a.chip.name) - nativeSortValue(b.chip.name) ||
+        a.index - b.index,
+    )
+    .map(({ chip }) => chip);
+}
+
+function nativeSortValue(name: string): number {
+  if (/\bleader\b/i.test(name)) return 0;
+  const match = name.match(/\b(\d+)$/);
+  if (match) return Number(match[1]);
+  return 1000;
+}
+
+function nativeChipFor(
+  name: string,
+  chip: ChipInfo | undefined,
+): TTSNativeChip {
+  if (!chip) return { name };
+  return {
+    name,
+    imageURL: chip.imageURL,
+    imageSecondaryURL: chip.imageSecondaryURL,
+  };
+}
+
+function nativeNameForLabel(label: string, group: string): string {
+  const trimmed = label.trim();
+  if (/^\d+$/.test(trimmed) || /^leader$/i.test(trimmed)) {
+    return `${group} ${prettifyNativeLabel(trimmed)}`;
+  }
+  return prettifyNativeLabel(trimmed);
+}
+
+function prettifyNativeLabel(label: string): string {
+  return prettifyChipName(label.replace(/([A-Za-z])(\d+)/g, "$1 $2"));
+}
+
+function luaTableBody(luaScript: string, tableName: string): string {
+  const start = luaScript.indexOf(`${tableName} = {`);
+  if (start < 0) return "";
+  let depth = 0;
+  for (let i = start; i < luaScript.length; i++) {
+    const ch = luaScript[i];
+    if (ch === "{") depth += 1;
+    if (ch === "}") {
+      depth -= 1;
+      if (depth === 0) return luaScript.slice(start, i + 1);
+    }
+  }
+  return "";
 }
 
 function collectObjects(obj: unknown, out: Record<string, unknown>[]): void {

@@ -16,6 +16,7 @@ import {
   type ChipIndex,
   type CivLocationIndex,
   type MapTileMonsterIndex,
+  type NativeSummonIndex,
   type SiteIndex,
   type TTSCardImage,
   type TTSChip,
@@ -62,6 +63,12 @@ const MAP_TILE_MONSTERS_FILE = path.join(
   "tts",
   "map-tile-monsters.json",
 );
+const NATIVE_SUMMONS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "native-summons.json",
+);
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
@@ -74,6 +81,7 @@ let cachedCivilisationTokenIndex: TTSCivilisationToken[] | null = null;
 let cachedBoardIndex: TTSBoard[] | null = null;
 let cachedSiteMonsterIndex: Record<string, TTSSiteMonsterGroup[]> | null = null;
 let cachedMapTileMonsterIndex: MapTileMonsterIndex | null = null;
+let cachedNativeSummonIndex: NativeSummonIndex | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -140,6 +148,13 @@ function getMapTileMonsterIndex(): MapTileMonsterIndex {
   return cachedMapTileMonsterIndex;
 }
 
+function getNativeSummonIndex(): NativeSummonIndex {
+  if (cachedNativeSummonIndex !== null) return cachedNativeSummonIndex;
+  cachedNativeSummonIndex =
+    readJsonOrEmpty<NativeSummonIndex>(NATIVE_SUMMONS_FILE);
+  return cachedNativeSummonIndex;
+}
+
 function readJsonOrEmpty<T>(file: string): T {
   try {
     return JSON.parse(readFileSync(file, "utf-8")) as T;
@@ -194,11 +209,18 @@ export type MonsterGroupSiteSummon = {
   monsters: string[];
 };
 
+export type NativeGroupSummon = {
+  name: string;
+  href: string;
+  natives: string[];
+};
+
 export type MonsterGroupEntry = Omit<ChipEntry, "chips"> & {
   chips: MonsterGroupChip[];
   slug: string;
   mapTiles: MonsterGroupMapTileSummon[];
   sites: MonsterGroupSiteSummon[];
+  nativeSummons: NativeGroupSummon[];
 };
 
 export type MonsterGroupMapTileLink = {
@@ -211,6 +233,12 @@ export type MonsterGroupSiteLink = {
   name: string;
   slug: string;
   monsters: string[];
+};
+
+export type NativeGroupLink = {
+  name: string;
+  slug: string;
+  natives: string[];
 };
 
 /** Return all chip entries, sorted alphabetically by prettified name. */
@@ -234,6 +262,7 @@ export function getAllMonsterGroups(): MonsterGroupEntry[] {
       slug: slugify(entry.prettyName),
       mapTiles: getMapTileSummonsForMonsterGroup(entry.prettyName),
       sites: getSiteSummonsForMonsterGroup(entry.prettyName),
+      nativeSummons: [],
     }))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
@@ -243,10 +272,11 @@ export function getAllNativeGroups(): MonsterGroupEntry[] {
     .filter(isNativeChipGroup)
     .map((entry) => ({
       ...entry,
-      chips: entry.chips,
+      chips: withNativeNames(entry.prettyName, entry.chips),
       slug: slugify(entry.prettyName),
       mapTiles: [],
       sites: [],
+      nativeSummons: getNativeSummonsForGroup(entry.prettyName),
     }))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
@@ -294,6 +324,22 @@ export function getMonsterGroupsForSite(
           name: entry.prettyName,
           slug: entry.slug,
           monsters: summon.monsters,
+        })),
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getNativeGroupsForCivLocation(
+  locationName: string,
+): NativeGroupLink[] {
+  return getAllNativeGroups()
+    .flatMap((entry) =>
+      entry.nativeSummons
+        .filter((summon) => summon.name === locationName)
+        .map((summon) => ({
+          name: entry.prettyName,
+          slug: entry.slug,
+          natives: summon.natives,
         })),
     )
     .sort((a, b) => a.name.localeCompare(b.name));
@@ -634,6 +680,19 @@ function withMonsterNames(
     .sort(compareMonsterGroupChips);
 }
 
+function withNativeNames(
+  groupName: string,
+  chips: TTSChip[],
+): MonsterGroupChip[] {
+  const namesByImage = nativeNamesByImageForGroup(groupName);
+  return chips
+    .map((chip) => ({
+      ...chip,
+      monsterName: namesByImage.get(chip.imageURL),
+    }))
+    .sort(compareNativeGroupChips);
+}
+
 function compareMonsterGroupChips(
   a: MonsterGroupChip,
   b: MonsterGroupChip,
@@ -644,12 +703,49 @@ function compareMonsterGroupChips(
   );
 }
 
+function compareNativeGroupChips(
+  a: MonsterGroupChip,
+  b: MonsterGroupChip,
+): number {
+  return (
+    nativeChipSortValue(a.monsterName) - nativeChipSortValue(b.monsterName) ||
+    compareMonsterGroupChips(a, b)
+  );
+}
+
+function nativeChipSortValue(name: string | undefined): number {
+  if (!name) return 1000;
+  if (/\bleader\b/i.test(name)) return 0;
+  const match = name.match(/\b(\d+)$/);
+  if (match) return Number(match[1]);
+  return 1000;
+}
+
 function monsterNamesByImageForGroup(groupName: string): Map<string, string> {
   const names = new Map<string, string>();
   for (const entries of Object.values(getSiteMonsterIndex())) {
     for (const entry of entries) {
       if (entry.group !== groupName) continue;
       for (const chip of entry.monsterChips ?? []) {
+        if (!chip.imageURL || names.has(chip.imageURL)) continue;
+        names.set(chip.imageURL, chip.name);
+      }
+    }
+  }
+  return names;
+}
+
+function nativeNamesByImageForGroup(groupName: string): Map<string, string> {
+  const names = new Map<string, string>();
+  const index = getNativeSummonIndex();
+  const orderedEntries = [
+    ...Object.entries(index).filter(([name]) => name !== "Native Setup"),
+    ...Object.entries(index).filter(([name]) => name === "Native Setup"),
+  ];
+  for (const [, entries] of orderedEntries) {
+    for (const entry of entries) {
+      if (entry.group !== groupName) continue;
+      for (const chip of entry.nativeChips ?? []) {
         if (!chip.imageURL || names.has(chip.imageURL)) continue;
         names.set(chip.imageURL, chip.name);
       }
@@ -716,6 +812,23 @@ function getSiteSummonsForMonsterGroup(
   return summons.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+function getNativeSummonsForGroup(groupName: string): NativeGroupSummon[] {
+  const summons: NativeGroupSummon[] = [];
+  for (const [name, entries] of Object.entries(getNativeSummonIndex())) {
+    const href = nativeSummonHref(name);
+    if (!href) continue;
+    for (const entry of entries) {
+      if (entry.group !== groupName) continue;
+      summons.push({
+        name,
+        href,
+        natives: entry.natives,
+      });
+    }
+  }
+  return summons.sort((a, b) => a.name.localeCompare(b.name));
+}
+
 function mapTileHref(terrain: string, tileName: string): string {
   const params = new URLSearchParams({
     terrain,
@@ -732,6 +845,11 @@ function siteMonsterHref(name: string): string {
   const wildernessToken = getWildernessTokenBySlug(slug);
   if (wildernessToken) return `/wilderness-tokens/${wildernessToken.slug}`;
   return "";
+}
+
+function nativeSummonHref(name: string): string {
+  const location = getCivLocationBySlug(slugify(name));
+  return location ? `/civ-locations/${location.slug}` : "";
 }
 
 /**

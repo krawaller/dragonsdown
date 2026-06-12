@@ -6,6 +6,7 @@ import {
   extractCivilisationTokens,
   extractCivLocations,
   extractMapTileMonsters,
+  extractNativeSummons,
   extractSiteMonsters,
   extractWildernessTokens,
   extractSites,
@@ -1043,6 +1044,146 @@ describe("extractSiteMonsters", () => {
               name: "Lost Battalion",
               imageURL: "718d57.png",
               imageSecondaryURL: "718d57-back.png",
+            },
+          ],
+        },
+      ],
+    });
+  });
+});
+
+describe("extractNativeSummons", () => {
+  const chip = (guid: string, gmNotes: string) => ({
+    GUID: guid,
+    Name: "Custom_Tile",
+    GMNotes: gmNotes,
+    CustomImage: {
+      ImageURL: `${guid}.png`,
+      ImageSecondaryURL: `${guid}-back.png`,
+    },
+    LuaScript: "chipName = self.getGMNotes()",
+  });
+
+  it("extracts exact native chip names from the root nativeGroups table", () => {
+    const save = {
+      LuaScript: `function onLoad()
+nativeGroups = {
+  knights = {
+    "880810", --KnightLeader
+    "5bdc4e", --Knight2
+  },
+  bashkirs = {
+    "168365", --Leader
+    "571a63", --2
+  },
+}
+end`,
+      ObjectStates: [
+        chip("880810", "knights"),
+        chip("5bdc4e", "knights"),
+        chip("168365", "bashkirs"),
+        chip("571a63", "bashkirs"),
+      ],
+    };
+
+    expect(extractNativeSummons(save, "eastern")).toEqual({
+      "Native Setup": [
+        {
+          source: "eastern",
+          group: "Bashkirs",
+          natives: ["Bashkirs Leader", "Bashkirs 2"],
+          nativeChips: [
+            {
+              name: "Bashkirs Leader",
+              imageURL: "168365.png",
+              imageSecondaryURL: "168365-back.png",
+            },
+            {
+              name: "Bashkirs 2",
+              imageURL: "571a63.png",
+              imageSecondaryURL: "571a63-back.png",
+            },
+          ],
+        },
+        {
+          source: "eastern",
+          group: "Knights",
+          natives: ["Knight Leader", "Knight 2"],
+          nativeChips: [
+            {
+              name: "Knight Leader",
+              imageURL: "880810.png",
+              imageSecondaryURL: "880810-back.png",
+            },
+            {
+              name: "Knight 2",
+              imageURL: "5bdc4e.png",
+              imageSecondaryURL: "5bdc4e-back.png",
+            },
+          ],
+        },
+      ],
+    });
+  });
+
+  it("extracts native summons from civ-location setup functions", () => {
+    const save = {
+      ObjectStates: [
+        chip("c3bbc1", "consul"),
+        chip("272a3e", "consul"),
+        chip("600fe8", "wardens"),
+        chip("fb9509", "wardens"),
+        {
+          Name: "Custom_Tile",
+          Nickname: "Outpost",
+          LuaScript: `function setupOutpost(clearing, rotation)
+Outpost = getObjectFromGUID("372ac8")
+end
+function setupWardens(clearing, rotation)
+NativesDie = getObjectFromGUID("caeb2c")
+Consul = getObjectFromGUID("c3bbc1")
+Bodyguard = getObjectFromGUID("272a3e")
+WardenLeader = getObjectFromGUID("600fe8")
+Warden2 = getObjectFromGUID("fb9509")
+WardenLeader = getObjectFromGUID("600fe8")
+end`,
+        },
+      ],
+    };
+
+    expect(extractNativeSummons(save, "eastern")).toEqual({
+      Outpost: [
+        {
+          source: "eastern",
+          group: "Consul",
+          natives: ["Consul", "Bodyguard"],
+          nativeChips: [
+            {
+              name: "Consul",
+              imageURL: "c3bbc1.png",
+              imageSecondaryURL: "c3bbc1-back.png",
+            },
+            {
+              name: "Bodyguard",
+              imageURL: "272a3e.png",
+              imageSecondaryURL: "272a3e-back.png",
+            },
+          ],
+        },
+        {
+          source: "eastern",
+          group: "Wardens",
+          natives: ["Warden Leader", "Warden 2"],
+          nativeChips: [
+            {
+              name: "Warden Leader",
+              imageURL: "600fe8.png",
+              imageSecondaryURL: "600fe8-back.png",
+            },
+            {
+              name: "Warden 2",
+              imageURL: "fb9509.png",
+              imageSecondaryURL: "fb9509-back.png",
             },
           ],
         },

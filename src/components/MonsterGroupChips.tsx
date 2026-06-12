@@ -54,13 +54,24 @@ export function MonsterGroupStack({
         {" · "}
         {totalCopies} total
       </p>
-      {(group.mapTiles.length > 0 || group.sites.length > 0) && (
+      {(group.mapTiles.length > 0 ||
+        group.sites.length > 0 ||
+        group.nativeSummons.length > 0) && (
         <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-          {group.mapTiles.length} map tile{" "}
-          {group.mapTiles.length === 1 ? "link" : "links"}
-          {" · "}
-          {group.sites.length} site{" "}
-          {group.sites.length === 1 ? "link" : "links"}
+          {group.nativeSummons.length > 0 ? (
+            <>
+              {group.nativeSummons.length} civ location{" "}
+              {group.nativeSummons.length === 1 ? "link" : "links"}
+            </>
+          ) : (
+            <>
+              {group.mapTiles.length} map tile{" "}
+              {group.mapTiles.length === 1 ? "link" : "links"}
+              {" · "}
+              {group.sites.length} site{" "}
+              {group.sites.length === 1 ? "link" : "links"}
+            </>
+          )}
         </p>
       )}
     </Link>

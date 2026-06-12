@@ -33,6 +33,26 @@ export default async function NativePage({
         {group.chips.length === 1 ? "image" : "images"}
       </p>
 
+      {group.nativeSummons.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold mb-3">Civ Locations</h2>
+          <div className="flex flex-wrap gap-2">
+            {group.nativeSummons.map((summon) => (
+              <Link
+                key={summon.name}
+                href={summon.href}
+                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+              >
+                <span className="font-medium">{summon.name}</span>
+                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                  {summon.natives.join(", ")}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       <MonsterGroupChipList group={group} />
     </main>
   );
