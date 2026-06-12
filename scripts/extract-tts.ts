@@ -14,6 +14,7 @@ import {
   extractCivilisationTokens,
   extractCivLocations,
   extractMapTiles,
+  extractSiteMonsters,
   extractSites,
   extractWildernessTokens,
   isSameCell,
@@ -26,6 +27,7 @@ import {
   type TTSCivilisationToken,
   type TTSMapTile,
   type SiteIndex,
+  type SiteMonsterIndex,
   type WildernessTokenIndex,
 } from "../src/lib/tts";
 
@@ -49,6 +51,7 @@ async function main(): Promise<void> {
   const boards: BoardIndex = [];
   const chips: ChipIndex = {};
   const sites: SiteIndex = {};
+  const siteMonsters: SiteMonsterIndex = {};
   const civLocations: CivLocationIndex = {};
   const civilisationTokens: TTSCivilisationToken[] = [];
   const wildernessTokens: WildernessTokenIndex = {};
@@ -63,12 +66,13 @@ async function main(): Promise<void> {
     const boardIndex = extractBoards(save, stem);
     const chipIndex = extractChips(save, stem);
     const siteIndex = extractSites(save, stem);
+    const siteMonsterIndex = extractSiteMonsters(save, stem);
     const civIndex = extractCivLocations(save, stem);
     const civilisationIndex = extractCivilisationTokens(save, stem);
     const wildernessIndex = extractWildernessTokens(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
     );
 
     boards.push(...boardIndex);
@@ -89,6 +93,9 @@ async function main(): Promise<void> {
     // collisions just append (so we can spot duplicate entries if any).
     for (const [name, items] of Object.entries(siteIndex)) {
       (sites[name] ??= []).push(...items);
+    }
+    for (const [name, items] of Object.entries(siteMonsterIndex)) {
+      (siteMonsters[name] ??= []).push(...items);
     }
     // Civ locations: same shape — append, no dedup.
     for (const [name, items] of Object.entries(civIndex)) {
@@ -173,6 +180,7 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
+  await writeSorted(path.join(OUT_DIR, "site-monsters.json"), siteMonsters);
   await writeSorted(path.join(OUT_DIR, "civlocations.json"), civLocations);
   await writeJson(
     path.join(OUT_DIR, "civilisation-tokens.json"),
@@ -192,6 +200,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ sites.json: ${Object.keys(sites).length} names, ${countEntries(sites)} sites total`,
+  );
+  console.log(
+    `→ site-monsters.json: ${Object.keys(siteMonsters).length} names, ${countEntries(siteMonsters)} groups total`,
   );
   console.log(
     `→ civlocations.json: ${Object.keys(civLocations).length} names, ${countEntries(civLocations)} entries total`,

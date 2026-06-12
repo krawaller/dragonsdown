@@ -46,6 +46,8 @@ export type CardIndex = Record<string, TTSCardImage[]>;
  */
 export type TTSChip = {
   source: string;
+  /** Raw monster/group name stored in the chip's TTS `GMNotes`. */
+  group: string;
   imageURL: string;
   imageSecondaryURL: string;
   /**
@@ -64,6 +66,15 @@ export function chipTotalCount(chip: TTSChip): number {
 
 /** Output written to data/tts/chips.json. Keyed by normalized `GMNotes`. */
 export type ChipIndex = Record<string, TTSChip[]>;
+
+export type TTSSiteMonsterGroup = {
+  source: string;
+  group: string;
+  monsters: string[];
+};
+
+/** Output written to data/tts/site-monsters.json. Keyed by site/token name. */
+export type SiteMonsterIndex = Record<string, TTSSiteMonsterGroup[]>;
 
 export const CIVILISATION_TOKEN_FACE_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/";
@@ -514,6 +525,7 @@ export function extractChips(root: unknown, source: string): ChipIndex {
     } else {
       bucket.push({
         source,
+        group: gm,
         imageURL,
         imageSecondaryURL,
         locations: [{ ancestry, count: 1 }],
@@ -708,6 +720,114 @@ export function extractBoards(root: unknown, source: string): BoardIndex {
 
   walkBoards(root, []);
   return boards.sort((a, b) => a.terrain.localeCompare(b.terrain));
+}
+
+export function extractSiteMonsters(
+  root: unknown,
+  source: string,
+): SiteMonsterIndex {
+  const chipsByGuid = new Map<string, string>();
+  const index: SiteMonsterIndex = {};
+  const objects: Record<string, unknown>[] = [];
+
+  collectObjects(root, objects);
+  for (const obj of objects) {
+    const guid = text(obj.GUID);
+    if (!guid) continue;
+    const luaScript = text(obj.LuaScript);
+    const gmNotes = text(obj.GMNotes);
+    if (gmNotes && luaScript.startsWith("chipName =")) {
+      chipsByGuid.set(guid, prettifyChipName(gmNotes));
+    }
+  }
+
+  for (const obj of objects) {
+    const siteName = siteMonsterSourceName(obj);
+    if (!siteName) continue;
+    const guardian = guardianFunctionBody(text(obj.LuaScript));
+    if (!guardian) continue;
+
+    const groups = new Map<string, string[]>();
+    for (const match of guardian.matchAll(
+      /\b([A-Za-z_][A-Za-z0-9_]*)\s*=\s*getObjectFromGUID\("([0-9a-f]{6})"\)/g,
+    )) {
+      const variable = match[1];
+      if (variable === "Black1") continue;
+      const guid = match[2];
+      const chipName = chipsByGuid.get(guid);
+      const monsterName = monsterNameForGuardianVariable(variable, chipName);
+      const group = groupNameForGuardianVariable(variable, chipName);
+      const bucket = groups.get(group) ?? [];
+      bucket.push(monsterName);
+      groups.set(group, bucket);
+    }
+
+    const entries = [...groups.entries()]
+      .map(([group, monsters]) => ({ source, group, monsters }))
+      .sort((a, b) => a.group.localeCompare(b.group));
+    if (entries.length > 0) (index[siteName] ??= []).push(...entries);
+  }
+
+  return Object.fromEntries(
+    Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
+  );
+}
+
+function collectObjects(obj: unknown, out: Record<string, unknown>[]): void {
+  if (!isRecord(obj)) return;
+  out.push(obj);
+  const states = obj.ObjectStates;
+  if (Array.isArray(states))
+    for (const state of states) collectObjects(state, out);
+  const contained = (obj as TTSContainer).ContainedObjects;
+  if (Array.isArray(contained))
+    for (const child of contained) collectObjects(child, out);
+  const objectStates = obj.States;
+  if (isRecord(objectStates)) {
+    for (const state of Object.values(objectStates)) collectObjects(state, out);
+  }
+}
+
+function siteMonsterSourceName(obj: Record<string, unknown>): string {
+  if (!isRecord(obj.CustomImage)) return "";
+  const imageURL = text(obj.CustomImage.ImageURL);
+  if (imageURL === SITE_FACE_URL) return text(obj.Nickname);
+  return WILDERNESS_TOKEN_FRONT_METADATA[imageURL]?.name ?? "";
+}
+
+function guardianFunctionBody(luaScript: string): string {
+  const start = luaScript.indexOf("function guardian");
+  if (start < 0) return "";
+  const end = luaScript.indexOf("\nfunction ", start + 1);
+  return luaScript.slice(start, end < 0 ? luaScript.length : end);
+}
+
+function monsterNameForGuardianVariable(
+  variable: string,
+  chipName: string | undefined,
+): string {
+  if (isGenericGuardianVariable(variable))
+    return chipName ?? prettifyChipName(variable);
+  return prettifyGuardianVariable(variable);
+}
+
+function groupNameForGuardianVariable(
+  variable: string,
+  chipName: string | undefined,
+): string {
+  if (chipName && !isGenericGuardianVariable(variable)) return chipName;
+  if (!chipName && !isGenericGuardianVariable(variable)) {
+    return prettifyGuardianVariable(variable).split(" ")[0];
+  }
+  return monsterNameForGuardianVariable(variable, chipName);
+}
+
+function isGenericGuardianVariable(variable: string): boolean {
+  return /^Guardian\d*$/i.test(variable);
+}
+
+function prettifyGuardianVariable(variable: string): string {
+  return prettifyChipName(variable.replace(/\d+$/g, ""));
 }
 
 function isBoardCandidate(obj: Record<string, unknown>): boolean {

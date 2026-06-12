@@ -1,0 +1,219 @@
+{
+  "Abyss": [
+    {
+      "source": "dd_all_exp",
+      "group": "Leviathon",
+      "monsters": [
+        "Leviathon"
+      ]
+    }
+  ],
+  "Altar": [
+    {
+      "source": "dd_all_exp",
+      "group": "Demon",
+      "monsters": [
+        "Demon"
+      ]
+    }
+  ],
+  "Battlefield": [
+    {
+      "source": "dd_all_exp",
+      "group": "Cursed",
+      "monsters": [
+        "Cursed Skeleton",
+        "Cursed Skeleton",
+        "Cursed Skeleton",
+        "Cursed Zombie",
+        "Cursed Zombie",
+        "Cursed Zombie",
+        "Cursed Ghast"
+      ]
+    }
+  ],
+  "Catacombs": [
+    {
+      "source": "dd_all_exp",
+      "group": "Death Knight",
+      "monsters": [
+        "Death Knight"
+      ]
+    }
+  ],
+  "Chamber": [
+    {
+      "source": "dd_all_exp",
+      "group": "Titan",
+      "monsters": [
+        "Titan"
+      ]
+    }
+  ],
+  "Crypt": [
+    {
+      "source": "dd_all_exp",
+      "group": "Lich",
+      "monsters": [
+        "Lich"
+      ]
+    }
+  ],
+  "Grotto": [
+    {
+      "source": "dd_all_exp",
+      "group": "Hydra",
+      "monsters": [
+        "Hydra"
+      ]
+    }
+  ],
+  "Grove": [
+    {
+      "source": "dd_all_exp",
+      "group": "Arboreal Keeper",
+      "monsters": [
+        "Arboreal Keeper"
+      ]
+    }
+  ],
+  "Hideout": [
+    {
+      "source": "dd_all_exp",
+      "group": "Bandits",
+      "monsters": [
+        "Assassin",
+        "Cutthroat",
+        "Executioner",
+        "Leader"
+      ]
+    }
+  ],
+  "Hoard": [
+    {
+      "source": "dd_all_exp",
+      "group": "Great Drake",
+      "monsters": [
+        "Great Drake"
+      ]
+    }
+  ],
+  "Lost Battalion": [
+    {
+      "source": "dd_all_exp",
+      "group": "Bandits",
+      "monsters": [
+        "Assassin",
+        "Cutthroat",
+        "Executioner",
+        "Leader"
+      ]
+    }
+  ],
+  "Mausoleum": [
+    {
+      "source": "dd_all_exp",
+      "group": "Death Hound",
+      "monsters": [
+        "Death Hound",
+        "Death Hound"
+      ]
+    }
+  ],
+  "Monolith": [
+    {
+      "source": "dd_all_exp",
+      "group": "Omnicrux",
+      "monsters": [
+        "Omnicrux"
+      ]
+    }
+  ],
+  "Secret Cache": [
+    {
+      "source": "dd_all_exp",
+      "group": "Bandits",
+      "monsters": [
+        "Assassin",
+        "Cutthroat",
+        "Executioner",
+        "Leader"
+      ]
+    }
+  ],
+  "Shrine": [
+    {
+      "source": "dd_all_exp",
+      "group": "Wraith",
+      "monsters": [
+        "Wraith"
+      ]
+    }
+  ],
+  "Tarn": [
+    {
+      "source": "dd_all_exp",
+      "group": "Siren",
+      "monsters": [
+        "Siren"
+      ]
+    }
+  ],
+  "Terrace": [
+    {
+      "source": "dd_all_exp",
+      "group": "Manticore",
+      "monsters": [
+        "Manticore"
+      ]
+    }
+  ],
+  "Tomb": [
+    {
+      "source": "dd_all_exp",
+      "group": "Mummy",
+      "monsters": [
+        "Mummy"
+      ]
+    }
+  ],
+  "Trove": [
+    {
+      "source": "dd_all_exp",
+      "group": "Great Wyrm",
+      "monsters": [
+        "Great Wyrm"
+      ]
+    }
+  ],
+  "Wreck": [
+    {
+      "source": "dd_all_exp",
+      "group": "Hag",
+      "monsters": [
+        "Hag"
+      ]
+    }
+  ],
+  "Wrecked Wagons": [
+    {
+      "source": "dd_all_exp",
+      "group": "Bandits",
+      "monsters": [
+        "Assassin",
+        "Cutthroat",
+        "Executioner",
+        "Leader"
+      ]
+    }
+  ],
+  "Ziggurat": [
+    {
+      "source": "dd_all_exp",
+      "group": "Ifrit",
+      "monsters": [
+        "Ifrit"
+      ]
+    }
+  ]
+}

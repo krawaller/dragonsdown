@@ -5,6 +5,7 @@ import {
   extractChips,
   extractCivilisationTokens,
   extractCivLocations,
+  extractSiteMonsters,
   extractWildernessTokens,
   extractSites,
   normalizeTitle,
@@ -301,6 +302,7 @@ describe("extractChips", () => {
     expect(out["Trolls"]).toEqual([
       {
         source: "eastern",
+        group: "Trolls",
         imageURL: "front.png",
         imageSecondaryURL: "back.png",
         locations: [{ ancestry: [], count: 1 }],
@@ -387,6 +389,9 @@ describe("extractChips", () => {
       ObjectStates: [chip("King’s Edict", "f", "b")],
     };
     expect(Object.keys(extractChips(save, "eastern"))).toEqual(["Kings Edict"]);
+    expect(extractChips(save, "eastern")["Kings Edict"][0].group).toBe(
+      "King’s Edict",
+    );
   });
 
   it("skips chips without an ImageURL", () => {
@@ -877,6 +882,98 @@ describe("extractBoards", () => {
     };
 
     expect(extractBoards(save, "eastern")).toHaveLength(1);
+  });
+});
+
+describe("extractSiteMonsters", () => {
+  const chip = (guid: string, gmNotes: string) => ({
+    GUID: guid,
+    Name: "Custom_Tile",
+    GMNotes: gmNotes,
+    CustomImage: {
+      ImageURL: `${guid}.png`,
+      ImageSecondaryURL: `${guid}-back.png`,
+    },
+    LuaScript: "chipName = self.getGMNotes()",
+  });
+
+  it("uses the monster name as the group for a single generic guardian", () => {
+    const save = {
+      ObjectStates: [
+        chip("e2155d", "DeathKnight"),
+        {
+          Name: "Custom_Tile",
+          Nickname: "Catacombs",
+          CustomImage: { ImageURL: SITE_FACE_URL },
+          LuaScript:
+            'function guardian()\nGuardian = getObjectFromGUID("e2155d")\nend',
+        },
+      ],
+    };
+
+    expect(extractSiteMonsters(save, "eastern")).toEqual({
+      Catacombs: [
+        {
+          source: "eastern",
+          group: "Death Knight",
+          monsters: ["Death Knight"],
+        },
+      ],
+    });
+  });
+
+  it("groups named guardian variables by their chip group", () => {
+    const save = {
+      ObjectStates: [
+        chip("cd6d5f", "Bandits"),
+        chip("083f38", "Bandits"),
+        {
+          Name: "Custom_Tile",
+          Nickname: "Hideout",
+          CustomImage: { ImageURL: SITE_FACE_URL },
+          LuaScript:
+            'function guardian()\nAssassin = getObjectFromGUID("cd6d5f")\nCutthroat = getObjectFromGUID("083f38")\nend',
+        },
+      ],
+    };
+
+    expect(extractSiteMonsters(save, "eastern")).toEqual({
+      Hideout: [
+        {
+          source: "eastern",
+          group: "Bandits",
+          monsters: ["Assassin", "Cutthroat"],
+        },
+      ],
+    });
+  });
+
+  it("extracts wilderness-token guardians and keeps missing GUID labels", () => {
+    const battlefieldURL = Object.entries(WILDERNESS_TOKEN_FRONT_METADATA).find(
+      ([, metadata]) => metadata.name === "Battlefield",
+    )?.[0];
+    const save = {
+      ObjectStates: [
+        chip("1bae71", "Cursed"),
+        chip("a6470b", "Cursed"),
+        {
+          Name: "Custom_Tile",
+          CustomImage: { ImageURL: battlefieldURL },
+          LuaScript:
+            'function guardian()\nCursedZombie1 = getObjectFromGUID("1bae71")\nCursedZombie2 = getObjectFromGUID("50b6c7")\nCursedGhast = getObjectFromGUID("a6470b")\nend',
+        },
+      ],
+    };
+
+    expect(extractSiteMonsters(save, "eastern")).toEqual({
+      Battlefield: [
+        {
+          source: "eastern",
+          group: "Cursed",
+          monsters: ["Cursed Zombie", "Cursed Zombie", "Cursed Ghast"],
+        },
+      ],
+    });
   });
 });
 
