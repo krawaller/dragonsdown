@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BoardImageToggle } from "@/components/BoardImageToggle";
 import {
   getAllBoards,
   getBoardBySlug,
@@ -45,30 +46,11 @@ export default async function BoardPage({
         {board.terrain}
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <section>
-          <h2 className="text-sm font-medium mb-2">Front</h2>
-          <div className="rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={board.imageURL}
-              alt={`${title} front`}
-              className="block w-full aspect-square object-contain"
-            />
-          </div>
-        </section>
-        <section>
-          <h2 className="text-sm font-medium mb-2">Back</h2>
-          <div className="rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={board.imageSecondaryURL}
-              alt={`${title} back`}
-              className="block w-full aspect-square object-contain"
-            />
-          </div>
-        </section>
-      </div>
+      <BoardImageToggle
+        title={title}
+        imageURL={board.imageURL}
+        imageSecondaryURL={board.imageSecondaryURL}
+      />
 
       {(sites.length > 0 || merchants.length > 0) && (
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
