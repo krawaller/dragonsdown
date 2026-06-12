@@ -2,7 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { MissionKindBadge } from "@/components/MissionKindBadge";
-import type { TTSMissionCard, TTSMissionRewards } from "@/lib/tts";
+import type {
+  MissionTerrainPack,
+  TTSMissionCard,
+  TTSMissionRewards,
+} from "@/lib/tts";
 import type { MissionTargetKind } from "@/lib/tts/lookup";
 import { getAllMissions, getMissionBySlug } from "@/lib/tts/lookup";
 
@@ -40,6 +44,12 @@ export default async function MissionPage({
                 <MissionKindBadge key={kind} kind={kind} />
               ))}
             </div>
+          )}
+          {mission.terrainPacks.length > 0 && (
+            <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
+              Terrain pack:{" "}
+              {mission.terrainPacks.map(terrainPackLabel).join(", ")}
+            </p>
           )}
         </div>
         <p className="text-sm text-zinc-500 dark:text-zinc-400">
@@ -253,6 +263,12 @@ function SourceCardDetails({ card }: { card: TTSMissionCard }) {
           <dd>
             row {card.row}, col {card.col}
           </dd>
+          {card.terrainPack && (
+            <>
+              <dt className="text-zinc-500 dark:text-zinc-400">Terrain</dt>
+              <dd>{terrainPackLabel(card.terrainPack)}</dd>
+            </>
+          )}
           {tags.length > 0 && (
             <>
               <dt className="text-zinc-500 dark:text-zinc-400">Tags</dt>
@@ -267,6 +283,29 @@ function SourceCardDetails({ card }: { card: TTSMissionCard }) {
 
 function sheetName(url: string): string {
   return url.split("/").at(-1) ?? url;
+}
+
+function terrainPackLabel(pack: MissionTerrainPack): string {
+  switch (pack) {
+    case "neutral":
+      return "Neutral";
+    case "plains":
+      return "Plains";
+    case "woods":
+      return "Woods";
+    case "mountains":
+      return "Mountains";
+    case "caves":
+      return "Caves";
+    case "swamps":
+      return "Swamps";
+    case "riverlands":
+      return "Riverlands";
+    case "deserts":
+      return "Deserts";
+    case "oasis":
+      return "Oasis";
+  }
 }
 
 function missionTargetKindLabel(kind: MissionTargetKind): string {

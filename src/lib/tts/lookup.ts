@@ -18,6 +18,7 @@ import {
   type MapTileMonsterIndex,
   type MissionIndex,
   type MissionKind,
+  type MissionTerrainPack,
   type NativeSummonIndex,
   type SiteIndex,
   type TTSCardImage,
@@ -387,6 +388,7 @@ export type CardEntry = {
   cards: TTSCardImage[];
   descriptions?: string[];
   kinds?: MissionKind[];
+  terrainPacks?: MissionTerrainPack[];
   rewardSummaries?: string[];
   targets?: MissionTargetLink[];
 };
@@ -396,6 +398,7 @@ export type MissionEntry = Omit<CardEntry, "cards"> & {
   cards: TTSMissionCard[];
   descriptions: string[];
   kinds: MissionKind[];
+  terrainPacks: MissionTerrainPack[];
   rewardSummaries: string[];
   targets: MissionTargetLink[];
 };
@@ -410,6 +413,7 @@ export function getAllMissions(): MissionEntry[] {
         cards.flatMap((card) => (card.description ? [card.description] : [])),
       ),
       kinds: missionKindsFor(cards),
+      terrainPacks: missionTerrainPacksFor(cards),
       rewardSummaries: missionRewardSummariesFor(cards),
       targets: missionTargetsFor(cards),
     }))
@@ -947,6 +951,24 @@ function missionKindsFor(cards: TTSMissionCard[]): MissionKind[] {
     cards.flatMap((card) => (card.kind ? [card.kind] : [])),
   );
   return order.filter((kind) => kinds.has(kind));
+}
+
+function missionTerrainPacksFor(cards: TTSMissionCard[]): MissionTerrainPack[] {
+  const order: MissionTerrainPack[] = [
+    "neutral",
+    "plains",
+    "woods",
+    "mountains",
+    "caves",
+    "swamps",
+    "riverlands",
+    "deserts",
+    "oasis",
+  ];
+  const terrainPacks = new Set(
+    cards.flatMap((card) => (card.terrainPack ? [card.terrainPack] : [])),
+  );
+  return order.filter((terrainPack) => terrainPacks.has(terrainPack));
 }
 
 function missionRewardSummariesFor(cards: TTSMissionCard[]): string[] {

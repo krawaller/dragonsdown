@@ -17,6 +17,7 @@
         "Riverlands Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "riverlands",
       "description": "Complete at Mariners",
       "completeAt": [
         "Mariners"
@@ -44,6 +45,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "outlaw": 2
@@ -72,6 +74,7 @@
         "Mountains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "mountains",
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -98,6 +101,7 @@
         "Swamps Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "swamps",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -131,6 +135,7 @@
         "Caves  Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "caves",
       "rewards": {
         "outlaw": 1
       },
@@ -161,6 +166,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -192,6 +198,7 @@
         "Caves  Chips"
       ],
       "kind": "quest",
+      "terrainPack": "caves",
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -219,6 +226,7 @@
         "Swamps Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "swamps",
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -247,6 +255,7 @@
         "Plains Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "plains",
       "rewards": {
         "outlaw": 1
       },
@@ -273,6 +282,7 @@
         "Mountains Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "mountains",
       "rewards": {
         "outlaw": 1
       },
@@ -299,6 +309,7 @@
         "Woods Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "woods",
       "rewards": {
         "outlaw": 1
       },
@@ -327,6 +338,7 @@
         "Woods Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "woods",
       "rewards": {
         "outlaw": 1
       },
@@ -353,6 +365,7 @@
         "Plains Chips"
       ],
       "kind": "quest",
+      "terrainPack": "plains",
       "description": "Complete at Village",
       "completeAt": [
         "Village"
@@ -376,7 +389,8 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "kind": "expedition"
+      "kind": "expedition",
+      "terrainPack": "plains"
     }
   ],
   "Crafting Gear": [
@@ -399,6 +413,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -433,6 +448,7 @@
         "Swamps Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "swamps",
       "rewards": {
         "outlaw": 1
       },
@@ -461,6 +477,7 @@
         "Deserts Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "deserts",
       "rewards": {
         "outlaw": 1
       },
@@ -487,6 +504,7 @@
         "Caves  Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "caves",
       "rewards": {
         "outlaw": 1
       },
@@ -515,6 +533,7 @@
         "NATIVES Groups"
       ],
       "kind": "atrocity",
+      "terrainPack": "neutral",
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -546,6 +565,7 @@
         "Oasis"
       ],
       "kind": "quest",
+      "terrainPack": "oasis",
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -574,6 +594,7 @@
         "Deserts Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "deserts",
       "rewards": {
         "outlaw": 1
       },
@@ -600,6 +621,7 @@
         "Deserts Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "deserts",
       "description": "Complete at Aurorans",
       "completeAt": [
         "Aurorans"
@@ -626,6 +648,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -661,6 +684,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "points": {
@@ -692,6 +716,7 @@
         "Mountains Chips"
       ],
       "kind": "quest",
+      "terrainPack": "mountains",
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -715,6 +740,7 @@
         "Caves  Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "caves",
       "rewards": {
         "outlaw": 1
       },
@@ -744,6 +770,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -776,6 +803,7 @@
         "Swamps Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "swamps",
       "description": "Complete at Wardens",
       "completeAt": [
         "Wardens"
@@ -799,6 +827,7 @@
         "Plains Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "plains",
       "rewards": {
         "outlaw": 1
       },
@@ -827,6 +856,7 @@
         "NATIVES Groups"
       ],
       "kind": "quest",
+      "terrainPack": "neutral",
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -855,6 +885,7 @@
         "Woods Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "woods",
       "rewards": {
         "outlaw": 1
       },
@@ -881,7 +912,8 @@
       "ancestry": [
         "Caves  Chips"
       ],
-      "kind": "expedition"
+      "kind": "expedition",
+      "terrainPack": "caves"
     }
   ],
   "Forester": [
@@ -901,6 +933,7 @@
         "Woods Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "woods",
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -928,6 +961,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "points": {
@@ -959,6 +993,7 @@
         "Mountains Chips"
       ],
       "kind": "quest",
+      "terrainPack": "mountains",
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -982,6 +1017,7 @@
         "Caves  Chips"
       ],
       "kind": "quest",
+      "terrainPack": "caves",
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -1006,6 +1042,7 @@
         "Mountains Chips"
       ],
       "kind": "quest",
+      "terrainPack": "mountains",
       "description": "Complete at Knights",
       "completeAt": [
         "Knights"
@@ -1030,6 +1067,7 @@
         "Woods Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "woods",
       "rewards": {
         "outlaw": 1
       },
@@ -1058,6 +1096,7 @@
         "Plains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "plains",
       "rewards": {
         "outlaw": 1
       },
@@ -1084,6 +1123,7 @@
         "Mountains Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "mountains",
       "rewards": {
         "outlaw": 1
       },
@@ -1114,6 +1154,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "points": {
@@ -1145,6 +1186,7 @@
         "Swamps Chips"
       ],
       "kind": "quest",
+      "terrainPack": "swamps",
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -1169,6 +1211,7 @@
         "Mountains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "mountains",
       "description": "Complete at Knights",
       "completeAt": [
         "Knights"
@@ -1196,6 +1239,7 @@
         "Plains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "plains",
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1224,7 +1268,8 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "kind": "expedition"
+      "kind": "expedition",
+      "terrainPack": "swamps"
     }
   ],
   "Misplaced Ore": [
@@ -1245,6 +1290,7 @@
         "Caves  Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "caves",
       "description": "Complete at Dwarves",
       "completeAt": [
         "Dwarves"
@@ -1269,6 +1315,7 @@
         "Plains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "plains",
       "description": "Complete at Villagers",
       "completeAt": [
         "Villagers"
@@ -1296,6 +1343,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1326,6 +1374,7 @@
         "NATIVES Groups"
       ],
       "kind": "quest",
+      "terrainPack": "neutral",
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -1354,6 +1403,7 @@
         "Riverlands Chips"
       ],
       "kind": "quest",
+      "terrainPack": "riverlands",
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -1380,6 +1430,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "attributes": {
           "charisma": 1
@@ -1410,6 +1461,7 @@
         "Mountains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "mountains",
       "rewards": {
         "drawCards": {
           "spell": 5
@@ -1440,6 +1492,7 @@
         "Mountains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "mountains",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1467,6 +1520,7 @@
         "Oasis"
       ],
       "kind": "atrocity",
+      "terrainPack": "oasis",
       "rewards": {
         "outlaw": 1
       },
@@ -1493,6 +1547,7 @@
         "Riverlands Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "riverlands",
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1523,6 +1578,7 @@
         "NATIVES Groups"
       ],
       "kind": "atrocity",
+      "terrainPack": "neutral",
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -1555,6 +1611,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1592,6 +1649,7 @@
         "Deserts Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "deserts",
       "rewards": {
         "steal": {
           "points": {
@@ -1625,6 +1683,7 @@
         "Woods Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "woods",
       "rewards": {
         "drawCards": {
           "item": 1
@@ -1655,6 +1714,7 @@
         "NATIVES Groups"
       ],
       "kind": "atrocity",
+      "terrainPack": "neutral",
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -1687,6 +1747,7 @@
         "Plains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "plains",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1720,6 +1781,7 @@
         "Oasis"
       ],
       "kind": "atrocity",
+      "terrainPack": "oasis",
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -1749,6 +1811,7 @@
         "Deserts Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "deserts",
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -1773,6 +1836,7 @@
         "Riverlands Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "riverlands",
       "description": "Complete at Mariners.\nRemove for co-op modes.",
       "completeAt": [
         "Mariners"
@@ -1797,6 +1861,7 @@
         "Caves  Chips"
       ],
       "kind": "quest",
+      "terrainPack": "caves",
       "description": "Complete at Dwarves",
       "completeAt": [
         "Dwarves"
@@ -1820,6 +1885,7 @@
         "Swamps Chips"
       ],
       "kind": "quest",
+      "terrainPack": "swamps",
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -1843,6 +1909,7 @@
         "Caves  Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "caves",
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -1866,6 +1933,7 @@
         "Woods Chips"
       ],
       "kind": "quest",
+      "terrainPack": "woods",
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -1891,6 +1959,7 @@
         "Oasis"
       ],
       "kind": "expedition",
+      "terrainPack": "oasis",
       "description": "Complete at Nomads",
       "completeAt": [
         "Nomads"
@@ -1914,6 +1983,7 @@
         "Deserts Chips"
       ],
       "kind": "quest",
+      "terrainPack": "deserts",
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -1937,7 +2007,8 @@
       "ancestry": [
         "Woods Chips"
       ],
-      "kind": "expedition"
+      "kind": "expedition",
+      "terrainPack": "woods"
     }
   ],
   "Surveyor": [
@@ -1957,6 +2028,7 @@
         "Plains Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "plains",
       "description": "Complete at Village",
       "completeAt": [
         "Village"
@@ -1980,6 +2052,7 @@
         "Swamps Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "swamps",
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -2003,6 +2076,7 @@
         "Deserts Chips"
       ],
       "kind": "quest",
+      "terrainPack": "deserts",
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -2026,6 +2100,7 @@
         "Woods Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "woods",
       "rewards": {
         "outlaw": 1
       },
@@ -2052,6 +2127,7 @@
         "Swamps Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "swamps",
       "rewards": {
         "outlaw": 1
       },
@@ -2078,6 +2154,7 @@
         "Riverlands Chips"
       ],
       "kind": "quest",
+      "terrainPack": "riverlands",
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -2104,6 +2181,7 @@
         "Riverlands Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "riverlands",
       "rewards": {
         "steal": {
           "points": {
@@ -2135,7 +2213,8 @@
       "ancestry": [
         "Woods Chips"
       ],
-      "kind": "expedition"
+      "kind": "expedition",
+      "terrainPack": "woods"
     }
   ],
   "Tree Herder": [
@@ -2155,6 +2234,7 @@
         "Woods Chips"
       ],
       "kind": "quest",
+      "terrainPack": "woods",
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -2182,6 +2262,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "steal": {
           "drawCards": {
@@ -2213,6 +2294,7 @@
         "Plains Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "plains",
       "rewards": {
         "outlaw": 1
       },
@@ -2239,6 +2321,7 @@
         "Swamps Chips"
       ],
       "kind": "atrocity",
+      "terrainPack": "swamps",
       "rewards": {
         "outlaw": 1
       },
@@ -2265,6 +2348,7 @@
         "Riverlands Chips"
       ],
       "kind": "expedition",
+      "terrainPack": "riverlands",
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -2290,6 +2374,7 @@
         "NATIVES Groups"
       ],
       "kind": "expedition",
+      "terrainPack": "neutral",
       "rewards": {
         "attributes": {
           "charisma": 1
@@ -2318,6 +2403,7 @@
         "Plains Chips"
       ],
       "kind": "quest",
+      "terrainPack": "plains",
       "description": "Complete at Village",
       "completeAt": [
         "Village"

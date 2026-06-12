@@ -42,6 +42,8 @@ export type CardIndex = Record<string, TTSCardImage[]>;
 export type TTSMissionCard = TTSCardImage & {
   /** Mission banner type printed on the card: red, white, or brown. */
   kind?: MissionKind;
+  /** Terrain pack or neutral mission bucket derived from TTS container ancestry. */
+  terrainPack?: MissionTerrainPack;
   /** Raw TTS card description, e.g. `Complete at Mariners`. */
   description?: string;
   /** Parsed names from `Complete at ...` description text. */
@@ -51,6 +53,17 @@ export type TTSMissionCard = TTSCardImage & {
 };
 
 export type MissionKind = "atrocity" | "quest" | "expedition";
+
+export type MissionTerrainPack =
+  | "neutral"
+  | "plains"
+  | "woods"
+  | "mountains"
+  | "caves"
+  | "swamps"
+  | "riverlands"
+  | "deserts"
+  | "oasis";
 
 export type MissionKindMap = Record<string, MissionKind>;
 
@@ -577,6 +590,8 @@ export function extractMissions(
     const mission: TTSMissionCard = { ...image };
     const kind = options.missionKinds?.[missionCellKey(mission)];
     if (kind) mission.kind = kind;
+    const terrainPack = missionTerrainPackFromAncestry(mission.ancestry);
+    if (terrainPack) mission.terrainPack = terrainPack;
     const rewards = missionRewardsFromLua(card.LuaScript ?? "");
     if (rewards) mission.rewards = rewards;
     const description = (card.Description ?? "").trim();
@@ -600,6 +615,9 @@ export function extractMissions(
         mission.completeAt,
       );
       if (!existing.kind && mission.kind) existing.kind = mission.kind;
+      if (!existing.terrainPack && mission.terrainPack) {
+        existing.terrainPack = mission.terrainPack;
+      }
       existing.rewards = mergeMissionRewards(existing.rewards, mission.rewards);
       if (!existing.ancestry?.length && mission.ancestry?.length) {
         existing.ancestry = mission.ancestry;
@@ -615,6 +633,28 @@ export function missionCellKey(
   card: Pick<TTSCardImage, "faceURL" | "row" | "col">,
 ): string {
   return `${card.faceURL}#${card.row}:${card.col}`;
+}
+
+const MISSION_TERRAIN_PACKS: Record<string, MissionTerrainPack> = {
+  "natives groups": "neutral",
+  "plains chips": "plains",
+  "woods chips": "woods",
+  "mountains chips": "mountains",
+  "caves chips": "caves",
+  "swamps chips": "swamps",
+  "riverlands chips": "riverlands",
+  "deserts chips": "deserts",
+  oasis: "oasis",
+};
+
+function missionTerrainPackFromAncestry(
+  ancestry: string[] | undefined,
+): MissionTerrainPack | undefined {
+  const bucket = ancestry?.[0];
+  if (!bucket) return undefined;
+  return MISSION_TERRAIN_PACKS[
+    bucket.replace(/\s+/g, " ").trim().toLowerCase()
+  ];
 }
 
 function missionRewardsFromLua(

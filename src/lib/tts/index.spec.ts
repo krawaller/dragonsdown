@@ -355,6 +355,53 @@ describe("extractMissions", () => {
     expect(extractMissions(save, "dd_all_exp")).toEqual({});
   });
 
+  it("derives mission terrain pack from the containing bag", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Caves  Chips",
+          ContainedObjects: [
+            {
+              ...card("Banned Charts", 60720, "607", SAMPLE_DECK),
+              Description: "Complete at Astrologer",
+              Tags: ["Mission"],
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(
+      extractMissions(save, "dd_all_exp")["Banned Charts"][0],
+    ).toMatchObject({
+      ancestry: ["Caves  Chips"],
+      terrainPack: "caves",
+    });
+  });
+
+  it("treats missions in the natives bucket as neutral", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "NATIVES Groups",
+          ContainedObjects: [
+            {
+              ...card("Decapitator", 60708, "607", SAMPLE_DECK),
+              Description: "Complete at Consul",
+              Tags: ["Mission"],
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(
+      extractMissions(save, "dd_all_exp")["Decapitator"][0].terrainPack,
+    ).toBe("neutral");
+  });
+
   it("extracts mission kinds and scripted rewards", () => {
     const missionDeck1 = {
       ...SAMPLE_DECK,
