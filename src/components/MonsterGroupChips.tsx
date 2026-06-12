@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { chipTotalCount, type TTSChip } from "@/lib/tts";
-import type { MonsterGroupEntry } from "@/lib/tts/lookup";
+import type { MonsterGroupChip, MonsterGroupEntry } from "@/lib/tts/lookup";
 
 type Zoom = { chip: TTSChip; name: string };
 
@@ -78,6 +78,7 @@ export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {group.chips.map((chip, index) => {
           const total = chipTotalCount(chip);
+          const displayName = monsterChipName(group, chip, index);
           return (
             <section
               key={`${chip.imageURL}-${chip.imageSecondaryURL}-${index}`}
@@ -86,21 +87,24 @@ export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
               <div className="flex gap-4">
                 <button
                   type="button"
-                  onClick={() => setZoom({ chip, name: group.prettyName })}
+                  onClick={() => setZoom({ chip, name: displayName })}
                   className="shrink-0 block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
-                  aria-label={`Zoom ${group.prettyName} chip ${index + 1}`}
+                  aria-label={`Zoom ${displayName}`}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={chip.imageURL}
-                    alt={`${group.prettyName} chip ${index + 1}`}
+                    alt={displayName}
                     className="w-28 h-28 object-cover block bg-zinc-100 dark:bg-zinc-900"
                   />
                 </button>
                 <div className="min-w-0">
-                  <h2 className="text-base font-semibold">
-                    {group.prettyName} {group.chips.length > 1 ? index + 1 : ""}
-                  </h2>
+                  <h2 className="text-base font-semibold">{displayName}</h2>
+                  {displayName !== group.prettyName && (
+                    <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
+                      {group.prettyName}
+                    </p>
+                  )}
                   <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
                     {total} physical {total === 1 ? "chip" : "chips"}
                   </p>
@@ -126,6 +130,17 @@ export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
       {zoom && <ChipLightbox zoom={zoom} onClose={() => setZoom(null)} />}
     </>
   );
+}
+
+function monsterChipName(
+  group: MonsterGroupEntry,
+  chip: MonsterGroupChip,
+  index: number,
+): string {
+  if (chip.monsterName) return chip.monsterName;
+  return group.chips.length > 1
+    ? `${group.prettyName} ${index + 1}`
+    : group.prettyName;
 }
 
 function ChipLightbox({ zoom, onClose }: { zoom: Zoom; onClose: () => void }) {

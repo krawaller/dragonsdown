@@ -177,6 +177,10 @@ export type ChipEntry = {
   chips: TTSChip[];
 };
 
+export type MonsterGroupChip = TTSChip & {
+  monsterName?: string;
+};
+
 export type MonsterGroupMapTileSummon = {
   tileName: string;
   terrain: string;
@@ -190,7 +194,8 @@ export type MonsterGroupSiteSummon = {
   monsters: string[];
 };
 
-export type MonsterGroupEntry = ChipEntry & {
+export type MonsterGroupEntry = Omit<ChipEntry, "chips"> & {
+  chips: MonsterGroupChip[];
   slug: string;
   mapTiles: MonsterGroupMapTileSummon[];
   sites: MonsterGroupSiteSummon[];
@@ -225,6 +230,7 @@ export function getAllMonsterGroups(): MonsterGroupEntry[] {
     .filter((entry) => !isNativeChipGroup(entry))
     .map((entry) => ({
       ...entry,
+      chips: withMonsterNames(entry.prettyName, entry.chips),
       slug: slugify(entry.prettyName),
       mapTiles: getMapTileSummonsForMonsterGroup(entry.prettyName),
       sites: getSiteSummonsForMonsterGroup(entry.prettyName),
@@ -594,6 +600,43 @@ const NATIVE_CHIP_GROUPS = new Set(
 
 function isNativeChipGroup(entry: ChipEntry): boolean {
   return NATIVE_CHIP_GROUPS.has(normalizeTitle(entry.name));
+}
+
+function withMonsterNames(
+  groupName: string,
+  chips: TTSChip[],
+): MonsterGroupChip[] {
+  const namesByImage = monsterNamesByImageForGroup(groupName);
+  return chips
+    .map((chip) => ({
+      ...chip,
+      monsterName: namesByImage.get(chip.imageURL),
+    }))
+    .sort(compareMonsterGroupChips);
+}
+
+function compareMonsterGroupChips(
+  a: MonsterGroupChip,
+  b: MonsterGroupChip,
+): number {
+  return (
+    (a.monsterName ?? "").localeCompare(b.monsterName ?? "") ||
+    a.imageURL.localeCompare(b.imageURL)
+  );
+}
+
+function monsterNamesByImageForGroup(groupName: string): Map<string, string> {
+  const names = new Map<string, string>();
+  for (const entries of Object.values(getSiteMonsterIndex())) {
+    for (const entry of entries) {
+      if (entry.group !== groupName) continue;
+      for (const chip of entry.monsterChips ?? []) {
+        if (!chip.imageURL || names.has(chip.imageURL)) continue;
+        names.set(chip.imageURL, chip.name);
+      }
+    }
+  }
+  return names;
 }
 
 function compareMonsterGroupMapTileLinks(

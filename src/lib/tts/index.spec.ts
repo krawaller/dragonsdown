@@ -35,6 +35,10 @@ describe("prettifyChipName", () => {
     expect(prettifyChipName("consul")).toBe("Consul");
     expect(prettifyChipName("watch")).toBe("Watch");
   });
+
+  it("normalizes known TTS chip group typos", () => {
+    expect(prettifyChipName("Cylops")).toBe("Cyclops");
+  });
 });
 
 function card(nickname: string, cardID: number, deckId: string, deck: object) {
@@ -918,6 +922,13 @@ describe("extractSiteMonsters", () => {
           source: "eastern",
           group: "Death Knight",
           monsters: ["Death Knight"],
+          monsterChips: [
+            {
+              name: "Death Knight",
+              imageURL: "e2155d.png",
+              imageSecondaryURL: "e2155d-back.png",
+            },
+          ],
         },
       ],
     });
@@ -944,6 +955,18 @@ describe("extractSiteMonsters", () => {
           source: "eastern",
           group: "Bandits",
           monsters: ["Assassin", "Cutthroat"],
+          monsterChips: [
+            {
+              name: "Assassin",
+              imageURL: "cd6d5f.png",
+              imageSecondaryURL: "cd6d5f-back.png",
+            },
+            {
+              name: "Cutthroat",
+              imageURL: "083f38.png",
+              imageSecondaryURL: "083f38-back.png",
+            },
+          ],
         },
       ],
     });
@@ -972,6 +995,21 @@ describe("extractSiteMonsters", () => {
           source: "eastern",
           group: "Cursed",
           monsters: ["Cursed Zombie", "Cursed Zombie", "Cursed Ghast"],
+          monsterChips: [
+            {
+              name: "Cursed Zombie",
+              imageURL: "1bae71.png",
+              imageSecondaryURL: "1bae71-back.png",
+            },
+            {
+              name: "Cursed Zombie",
+            },
+            {
+              name: "Cursed Ghast",
+              imageURL: "a6470b.png",
+              imageSecondaryURL: "a6470b-back.png",
+            },
+          ],
         },
       ],
     });
@@ -1000,6 +1038,13 @@ describe("extractSiteMonsters", () => {
           source: "eastern",
           group: "Lost Battalion",
           monsters: ["Lost Battalion"],
+          monsterChips: [
+            {
+              name: "Lost Battalion",
+              imageURL: "718d57.png",
+              imageSecondaryURL: "718d57-back.png",
+            },
+          ],
         },
       ],
     });

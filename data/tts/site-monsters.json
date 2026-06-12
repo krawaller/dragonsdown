@@ -5,6 +5,13 @@
       "group": "Leviathon",
       "monsters": [
         "Leviathon"
+      ],
+      "monsterChips": [
+        {
+          "name": "Leviathon",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15738523781931443933/D3D0B9607C7991EE6DD9557B1F9B0143B802E985/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15345235984982507411/EDE32D955D68F6AD549319D9594069A493B02780/"
+        }
       ]
     }
   ],
@@ -14,6 +21,13 @@
       "group": "Demon",
       "monsters": [
         "Demon"
+      ],
+      "monsterChips": [
+        {
+          "name": "Demon",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986322777/C1DE2CDEE6C31BF6D7A5C894FBB2825DBE2F7879/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762062062/A4D229744CDBFFC041F0F968CA860961C9C0DB26/"
+        }
       ]
     }
   ],
@@ -29,6 +43,41 @@
         "Cursed Zombie",
         "Cursed Zombie",
         "Cursed Ghast"
+      ],
+      "monsterChips": [
+        {
+          "name": "Cursed Skeleton",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12479465285217578466/F3B1BD11362473D209B49350041AD465E3A7D6EC/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9633442917725798176/A9DA26BC9BBCC9A127BE0D6A3EE7EF830DCB75AA/"
+        },
+        {
+          "name": "Cursed Skeleton",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10432947125161273906/A8005DD76F205BC69E37FEB5E484658E95CA8FA5/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12242984657337324151/523DC4A32A5F7048DEC228CBF402039ED3D3A54C/"
+        },
+        {
+          "name": "Cursed Skeleton",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15126722518890347496/ED369401AD5E084FBBE58F5662B860E42AC2F926/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15424754077639618794/DE1CBE86BC6D53BAAFCB4B9E188CFD2E2DCC1488/"
+        },
+        {
+          "name": "Cursed Zombie",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12248046875806536979/882B0C374E73DA09DF7D23896F21E147DBEB5977/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16463414034816254151/CA94EC7BAF911694F531EB407AC5FB2D6854E1ED/"
+        },
+        {
+          "name": "Cursed Zombie"
+        },
+        {
+          "name": "Cursed Zombie",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15747088952838711978/06BA78831935030E11508433A920DDAE5C3BC8DF/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9654082685197593781/B14A6E9F375985633F2990D6F4E591FAF606D60C/"
+        },
+        {
+          "name": "Cursed Ghast",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12666820702517353739/C44600174D124164D37A380F96A14B338DDCC0AA/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13264569661305997331/ED8F6AC56926E30E75F0B78B804E191D04F7952E/"
+        }
       ]
     }
   ],
@@ -38,6 +87,13 @@
       "group": "Death Knight",
       "monsters": [
         "Death Knight"
+      ],
+      "monsterChips": [
+        {
+          "name": "Death Knight",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986330260/60B2F4F43094D2CDA748B939E31D47F9DC2FD06E/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131646196/5759821CF6361BA04A5CAE17A99FB218FCF7894E/"
+        }
       ]
     }
   ],
@@ -47,6 +103,13 @@
       "group": "Titan",
       "monsters": [
         "Titan"
+      ],
+      "monsterChips": [
+        {
+          "name": "Titan",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986318271/69B73C2C2EDC5C8B78B08DF43B5CE48CA06652F9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762015691/100FFE38693F878181F72FE1895F0BBD5D138516/"
+        }
       ]
     }
   ],
@@ -56,6 +119,13 @@
       "group": "Lich",
       "monsters": [
         "Lich"
+      ],
+      "monsterChips": [
+        {
+          "name": "Lich",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986321348/9DB30C803CB05FDA9C53640DCCB7593B3CBCFD41/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762018417/B34E2D6619C4A73E9A89CC888C02691D44D7FE2B/"
+        }
       ]
     }
   ],
@@ -65,6 +135,13 @@
       "group": "Hydra",
       "monsters": [
         "Hydra"
+      ],
+      "monsterChips": [
+        {
+          "name": "Hydra",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952423209/A2E34E4824F2CA69E19744ED02A60ACF65EEB201/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053719822/064CDB06E90274169B34EBB23F1B6C4CA0AFD285/"
+        }
       ]
     }
   ],
@@ -74,6 +151,13 @@
       "group": "Arboreal Keeper",
       "monsters": [
         "Arboreal Keeper"
+      ],
+      "monsterChips": [
+        {
+          "name": "Arboreal Keeper",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12942703767914494147/AB9AE30A0661D47AD048B1F11E2583B44BFAFC87/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16763446692740060286/48F921CF3121B59BF59C979F2FC344E7EB485FFC/"
+        }
       ]
     }
   ],
@@ -86,6 +170,28 @@
         "Cutthroat",
         "Executioner",
         "Leader"
+      ],
+      "monsterChips": [
+        {
+          "name": "Assassin",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986343529/728FEF48C2C53DFA0D7BABFF548267E0505E5C70/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131637121/244733E3C5E65308086B8762EA5129B496E10F93/"
+        },
+        {
+          "name": "Cutthroat",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986344525/A3D9E57428943FCCDB0F0CDE9CCC2A09BE0FEBE9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131638856/D0C1499218138C2782EB092F0573DE2CBF477322/"
+        },
+        {
+          "name": "Executioner",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986342297/FD0A964E7661B4F458426E38EC807C034F3E5E60/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131640495/8ECCDE1891DD3BFDC7404BEA6BCF1F67F58C3380/"
+        },
+        {
+          "name": "Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986340733/0F93177294365781A5458C24803BD47F39B2E664/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131642364/89764375FC67BF67C70BBBDB56D62EF0BADAE081/"
+        }
       ]
     }
   ],
@@ -95,6 +201,13 @@
       "group": "Great Drake",
       "monsters": [
         "Great Drake"
+      ],
+      "monsterChips": [
+        {
+          "name": "Great Drake",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986319542/C9C592B39BE7410F2AEE44A9CB62D61A93441FFF/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131649190/7A988121EFD3D96822BA716D55DAFCE75239CA36/"
+        }
       ]
     }
   ],
@@ -104,6 +217,28 @@
       "group": "Lost Battalion",
       "monsters": [
         "Lost Battalion"
+      ],
+      "monsterChips": [
+        {
+          "name": "Lost Battalion",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952420703/8EA6AE37DED57F274501F1A9E842AB6C8F30C7E2/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053733933/EFD7C0E8EFCAE024069C89B44A439F8E675AE9F9/"
+        },
+        {
+          "name": "Lost Battalion",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952419948/8B8D5F091E367B144B25EF9BB27F1193C8DDAAD9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053732487/08E61F7F213DC91A943A8F475E9D6B054F054765/"
+        },
+        {
+          "name": "Lost Battalion",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952418646/5E94DA196E19E0CECAAD4B77DA29A80184A617C7/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053731164/495C2C58A3CAB2C947A5CA08F2AAF163D5491CDB/"
+        },
+        {
+          "name": "Lost Battalion",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952415890/E9FC3D3C190829C9A891ED513007F8FF8DC6131A/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053727310/0460AECF6109E276197F93301ADE7B11097648E7/"
+        }
       ]
     }
   ],
@@ -114,6 +249,18 @@
       "monsters": [
         "Death Hound",
         "Death Hound"
+      ],
+      "monsterChips": [
+        {
+          "name": "Death Hound",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16714131508828381191/B45F5A4D347A0038BA3AA6D6ED8F14FB1B1676FB/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10343891748676556696/8887D6FC86A4D7B7C1E8FDAE81A72CF978D0B200/"
+        },
+        {
+          "name": "Death Hound",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15950956020902826458/88F6E8ED89FDFA7088C3E1A4AD4B19EFC9D0A12A/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13855624410426592139/A3039CCEAE23290EA237E5929907B539997C0185/"
+        }
       ]
     }
   ],
@@ -123,6 +270,13 @@
       "group": "Omnicrux",
       "monsters": [
         "Omnicrux"
+      ],
+      "monsterChips": [
+        {
+          "name": "Omnicrux",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952266587/7051352450546B8DFCA7689407FEF978FAB27AC9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952267105/3561AE11BEABAB62E3CF83A7492754FCE68C21E0/"
+        }
       ]
     }
   ],
@@ -135,6 +289,28 @@
         "Cutthroat",
         "Executioner",
         "Leader"
+      ],
+      "monsterChips": [
+        {
+          "name": "Assassin",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986343529/728FEF48C2C53DFA0D7BABFF548267E0505E5C70/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131637121/244733E3C5E65308086B8762EA5129B496E10F93/"
+        },
+        {
+          "name": "Cutthroat",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986344525/A3D9E57428943FCCDB0F0CDE9CCC2A09BE0FEBE9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131638856/D0C1499218138C2782EB092F0573DE2CBF477322/"
+        },
+        {
+          "name": "Executioner",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986342297/FD0A964E7661B4F458426E38EC807C034F3E5E60/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131640495/8ECCDE1891DD3BFDC7404BEA6BCF1F67F58C3380/"
+        },
+        {
+          "name": "Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986340733/0F93177294365781A5458C24803BD47F39B2E664/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131642364/89764375FC67BF67C70BBBDB56D62EF0BADAE081/"
+        }
       ]
     }
   ],
@@ -144,6 +320,13 @@
       "group": "Wraith",
       "monsters": [
         "Wraith"
+      ],
+      "monsterChips": [
+        {
+          "name": "Wraith",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986334862/B98D783D90BDB4C4740E6EB6B9404D1A84C080E5/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2175862346721512097/8A8A2675E2AFE05EDC8CC8FCA2FFD51FE17DCD54/"
+        }
       ]
     }
   ],
@@ -153,6 +336,13 @@
       "group": "Siren",
       "monsters": [
         "Siren"
+      ],
+      "monsterChips": [
+        {
+          "name": "Siren",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11309353207436598206/2A461EFEB1D7DC146D9877DB19A2D7A81B6BAB04/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9740354744870008714/517529254FA9F13CE30FF6FCEA3EC80291D106AB/"
+        }
       ]
     }
   ],
@@ -162,6 +352,13 @@
       "group": "Manticore",
       "monsters": [
         "Manticore"
+      ],
+      "monsterChips": [
+        {
+          "name": "Manticore",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11426498328880956234/C055C8C14E54F4D6A304C351D3AC7D82B890312B/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17568247505485982883/9DA461A1C7546DD18BB09C93B4469CC99195A1E7/"
+        }
       ]
     }
   ],
@@ -171,6 +368,13 @@
       "group": "Mummy",
       "monsters": [
         "Mummy"
+      ],
+      "monsterChips": [
+        {
+          "name": "Mummy",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14140756844214267205/59855DCD441551C04D85EC98FBB696B694CFA3F5/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17439490147579168919/F13D952D979F92A22D8855982A41EC4E9E264DED/"
+        }
       ]
     }
   ],
@@ -180,6 +384,13 @@
       "group": "Great Wyrm",
       "monsters": [
         "Great Wyrm"
+      ],
+      "monsterChips": [
+        {
+          "name": "Great Wyrm",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986326126/ABDCFB7355F2181A3FF5322F1513418996E1E8AE/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762057235/F9907AED3F6A536C929D857450415CE57D999345/"
+        }
       ]
     }
   ],
@@ -189,6 +400,13 @@
       "group": "Hag",
       "monsters": [
         "Hag"
+      ],
+      "monsterChips": [
+        {
+          "name": "Hag",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16671475153710260215/A885E88A3A38DD6BE6A126B4E23E6F4E518E4B24/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14169490951856203457/E04D6A41A619F5FE03175736353C651B25CD454F/"
+        }
       ]
     }
   ],
@@ -201,6 +419,28 @@
         "Cutthroat",
         "Executioner",
         "Leader"
+      ],
+      "monsterChips": [
+        {
+          "name": "Assassin",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986343529/728FEF48C2C53DFA0D7BABFF548267E0505E5C70/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131637121/244733E3C5E65308086B8762EA5129B496E10F93/"
+        },
+        {
+          "name": "Cutthroat",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986344525/A3D9E57428943FCCDB0F0CDE9CCC2A09BE0FEBE9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131638856/D0C1499218138C2782EB092F0573DE2CBF477322/"
+        },
+        {
+          "name": "Executioner",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986342297/FD0A964E7661B4F458426E38EC807C034F3E5E60/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131640495/8ECCDE1891DD3BFDC7404BEA6BCF1F67F58C3380/"
+        },
+        {
+          "name": "Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986340733/0F93177294365781A5458C24803BD47F39B2E664/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131642364/89764375FC67BF67C70BBBDB56D62EF0BADAE081/"
+        }
       ]
     }
   ],
@@ -210,6 +450,13 @@
       "group": "Ifrit",
       "monsters": [
         "Ifrit"
+      ],
+      "monsterChips": [
+        {
+          "name": "Ifrit",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11638639314925117915/829F2A0165718E161E878301DB31E326AEFCFDD9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13475297502325450398/8340838E187093AA879D844EB5BA41EB0A22F31D/"
+        }
       ]
     }
   ]

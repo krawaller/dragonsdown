@@ -67,10 +67,17 @@ export function chipTotalCount(chip: TTSChip): number {
 /** Output written to data/tts/chips.json. Keyed by normalized `GMNotes`. */
 export type ChipIndex = Record<string, TTSChip[]>;
 
+export type TTSSiteMonsterChip = {
+  name: string;
+  imageURL?: string;
+  imageSecondaryURL?: string;
+};
+
 export type TTSSiteMonsterGroup = {
   source: string;
   group: string;
   monsters: string[];
+  monsterChips: TTSSiteMonsterChip[];
 };
 
 /** Output written to data/tts/site-monsters.json. Keyed by site/token name. */
@@ -366,6 +373,8 @@ export type MapTileMonsterIndex = Record<string, TTSMapTileMonsterGroup[]>;
  * boundaries and then capitalize each word.
  */
 export function prettifyChipName(s: string): string {
+  const alias = CHIP_NAME_ALIASES[s];
+  if (alias) return alias;
   return s
     .replace(/([a-z])([A-Z])/g, "$1 $2")
     .replace(
@@ -373,6 +382,10 @@ export function prettifyChipName(s: string): string {
       (_, sep: string, c: string) => sep + c.toUpperCase(),
     );
 }
+
+const CHIP_NAME_ALIASES: Record<string, string> = {
+  Cylops: "Cyclops",
+};
 
 /**
  * Manually-curated aliases for cases that normalization can't handle:
@@ -736,7 +749,13 @@ export function extractSiteMonsters(
   root: unknown,
   source: string,
 ): SiteMonsterIndex {
-  const chipsByGuid = new Map<string, string>();
+  type SiteMonsterChipInfo = {
+    group: string;
+    imageURL: string;
+    imageSecondaryURL: string;
+  };
+  const chipsByGuid = new Map<string, SiteMonsterChipInfo>();
+  const chipsByGroup = new Map<string, SiteMonsterChipInfo[]>();
   const index: SiteMonsterIndex = {};
   const objects: Record<string, unknown>[] = [];
 
@@ -747,7 +766,16 @@ export function extractSiteMonsters(
     const luaScript = text(obj.LuaScript);
     const gmNotes = text(obj.GMNotes);
     if (gmNotes && luaScript.startsWith("chipName =")) {
-      chipsByGuid.set(guid, prettifyChipName(gmNotes));
+      const customImage = isRecord(obj.CustomImage) ? obj.CustomImage : {};
+      const chipInfo = {
+        group: prettifyChipName(gmNotes),
+        imageURL: text(customImage.ImageURL),
+        imageSecondaryURL: text(customImage.ImageSecondaryURL),
+      };
+      chipsByGuid.set(guid, chipInfo);
+      const bucket = chipsByGroup.get(chipInfo.group) ?? [];
+      bucket.push(chipInfo);
+      chipsByGroup.set(chipInfo.group, bucket);
     }
   }
 
@@ -757,29 +785,39 @@ export function extractSiteMonsters(
     const guardian = guardianFunctionBody(text(obj.LuaScript));
     if (!guardian) continue;
 
-    const override = siteMonsterOverride(siteName, source);
+    const override = siteMonsterOverride(siteName, source, chipsByGroup);
     if (override) {
       (index[siteName] ??= []).push(override);
       continue;
     }
 
-    const groups = new Map<string, string[]>();
+    const groups = new Map<
+      string,
+      { monsters: string[]; monsterChips: TTSSiteMonsterChip[] }
+    >();
     for (const match of guardian.matchAll(
       /\b([A-Za-z_][A-Za-z0-9_]*)\s*=\s*getObjectFromGUID\("([0-9a-f]{6})"\)/g,
     )) {
       const variable = match[1];
       if (variable === "Black1") continue;
       const guid = match[2];
-      const chipName = chipsByGuid.get(guid);
+      const chip = chipsByGuid.get(guid);
+      const chipName = chip?.group;
       const monsterName = monsterNameForGuardianVariable(variable, chipName);
       const group = groupNameForGuardianVariable(variable, chipName);
-      const bucket = groups.get(group) ?? [];
-      bucket.push(monsterName);
+      const bucket = groups.get(group) ?? { monsters: [], monsterChips: [] };
+      bucket.monsters.push(monsterName);
+      bucket.monsterChips.push(siteMonsterChipFor(monsterName, chip));
       groups.set(group, bucket);
     }
 
     const entries = [...groups.entries()]
-      .map(([group, monsters]) => ({ source, group, monsters }))
+      .map(([group, { monsters, monsterChips }]) => ({
+        source,
+        group,
+        monsters,
+        monsterChips,
+      }))
       .sort((a, b) => a.group.localeCompare(b.group));
     if (entries.length > 0) (index[siteName] ??= []).push(...entries);
   }
@@ -868,9 +906,35 @@ function siteMonsterSourceName(obj: Record<string, unknown>): string {
 function siteMonsterOverride(
   siteName: string,
   source: string,
+  chipsByGroup: Map<
+    string,
+    { group: string; imageURL: string; imageSecondaryURL: string }[]
+  >,
 ): TTSSiteMonsterGroup | null {
   if (siteName !== "Lost Battalion") return null;
-  return { source, group: "Lost Battalion", monsters: ["Lost Battalion"] };
+  const group = "Lost Battalion";
+  const chips = chipsByGroup.get(group) ?? [];
+  return {
+    source,
+    group,
+    monsters: [group],
+    monsterChips:
+      chips.length > 0
+        ? chips.map((chip) => siteMonsterChipFor(group, chip))
+        : [{ name: group }],
+  };
+}
+
+function siteMonsterChipFor(
+  name: string,
+  chip: { imageURL: string; imageSecondaryURL: string } | undefined,
+): TTSSiteMonsterChip {
+  if (!chip) return { name };
+  return {
+    name,
+    imageURL: chip.imageURL,
+    imageSecondaryURL: chip.imageSecondaryURL,
+  };
 }
 
 function guardianFunctionBody(luaScript: string): string {
