@@ -11,6 +11,7 @@ import {
   extractSiteMonsters,
   extractWildernessTokens,
   extractSites,
+  missionCellKey,
   normalizeTitle,
   prettifyChipName,
   resolveCards,
@@ -380,17 +381,44 @@ describe("extractMissions", () => {
         },
       ],
     };
+    const missionKinds = {
+      [missionCellKey({
+        faceURL: missionDeck1.FaceURL,
+        row: 0,
+        col: 8,
+      })]: "atrocity" as const,
+    };
 
-    expect(extractMissions(save, "dd_all_exp")["Decapitator"][0]).toMatchObject(
-      {
-        kind: "atrocity",
-        rewards: {
-          drawCards: { deep: 1 },
-          points: { gold: 5 },
-          attributes: { intellect: 1 },
-          outlaw: 1,
-        },
+    expect(
+      extractMissions(save, "dd_all_exp", { missionKinds })["Decapitator"][0],
+    ).toMatchObject({
+      kind: "atrocity",
+      rewards: {
+        drawCards: { deep: 1 },
+        points: { gold: 5 },
+        attributes: { intellect: 1 },
+        outlaw: 1,
       },
+    });
+  });
+
+  it("omits mission kind when no generated kind map is provided", () => {
+    const missionDeck1 = {
+      ...SAMPLE_DECK,
+      FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    };
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Decapitator", 60708, "607", missionDeck1),
+          Description: "Complete at Consul",
+          Tags: ["Mission"],
+        },
+      ],
+    };
+
+    expect(extractMissions(save, "dd_all_exp")["Decapitator"][0].kind).toBe(
+      undefined,
     );
   });
 
@@ -427,22 +455,29 @@ describe("extractMissions", () => {
         },
       ],
     };
+    const missionKinds = {
+      [missionCellKey({
+        faceURL: missionDeck2.FaceURL,
+        row: 0,
+        col: 3,
+      })]: "expedition" as const,
+    };
 
-    expect(extractMissions(save, "dd_all_exp")["Trade Goods"][0]).toMatchObject(
-      {
-        kind: "expedition",
-        rewards: {
-          steal: {
-            drawCards: { item: 1 },
-            points: { gold: 9 },
-            outlaw: 1,
-          },
+    expect(
+      extractMissions(save, "dd_all_exp", { missionKinds })["Trade Goods"][0],
+    ).toMatchObject({
+      kind: "expedition",
+      rewards: {
+        steal: {
+          drawCards: { item: 1 },
+          points: { gold: 9 },
+          outlaw: 1,
         },
       },
-    );
+    });
   });
 
-  it("corrects the mislabeled Desert Marauder mission card", () => {
+  it("corrects the mislabeled Desert Marauder mission card from manual mappings", () => {
     const missionDeck1 = {
       ...SAMPLE_DECK,
       FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
@@ -465,8 +500,33 @@ describe("extractMissions", () => {
         },
       ],
     };
+    const missionKinds = {
+      [missionCellKey({
+        faceURL: missionDeck1.FaceURL,
+        row: 0,
+        col: 9,
+      })]: "atrocity" as const,
+      [missionCellKey({
+        faceURL: missionDeck2.FaceURL,
+        row: 1,
+        col: 4,
+      })]: "quest" as const,
+    };
+    const missionNicknameCorrections = [
+      {
+        source: "dd_all_exp",
+        raw: "Desert Avenger",
+        faceURL: missionDeck1.FaceURL,
+        row: 0,
+        col: 9,
+        corrected: "Desert Marauder",
+      },
+    ];
 
-    const missions = extractMissions(save, "dd_all_exp");
+    const missions = extractMissions(save, "dd_all_exp", {
+      missionKinds,
+      missionNicknameCorrections,
+    });
     expect(Object.keys(missions).sort()).toEqual([
       "Desert Avenger",
       "Desert Marauder",

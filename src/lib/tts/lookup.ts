@@ -985,7 +985,9 @@ function missionRewardParts(
       fame: "Fame",
       gold: "Gold",
     }),
-    ...(rewards.outlaw ? [missionCountLabel(rewards.outlaw, "Outlaw")] : []),
+    ...(rewards.outlaw
+      ? [missionCountLabel(rewards.outlaw, "Outlaw token")]
+      : []),
   ];
 }
 
@@ -1002,6 +1004,7 @@ function missionNumericParts<T extends string>(
 
 function missionCountLabel(count: number, label: string): string {
   if (count === 1) return `+1 ${label}`;
+  if (label === "Fame" || label === "Gold") return `+${count} ${label}`;
   return `+${count} ${label}${label.endsWith("s") ? "" : "s"}`;
 }
 

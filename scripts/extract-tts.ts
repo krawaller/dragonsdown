@@ -29,6 +29,7 @@ import {
   type CivLocationIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
+  type MissionNicknameCorrection,
   type NativeSummonIndex,
   type TTSCivilisationToken,
   type TTSMapTile,
@@ -36,9 +37,18 @@ import {
   type SiteMonsterIndex,
   type WildernessTokenIndex,
 } from "../src/lib/tts";
+import {
+  generateMissionKindMap,
+  MISSION_KIND_MAP_FILE,
+} from "./extract-mission-kinds";
 
 const SOURCES_DIR = path.join(process.cwd(), "sources");
 const OUT_DIR = path.join(process.cwd(), "data", "tts");
+const MANUAL_DIR = path.join(process.cwd(), "data", "manual");
+const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
+  MANUAL_DIR,
+  "mission-nickname-corrections.json",
+);
 
 /**
  * The Eastern Reaches TTS save is a strict superset of the
@@ -52,6 +62,13 @@ const SOURCE_FILES = ["dd_all_exp.json"];
 async function main(): Promise<void> {
   await fs.mkdir(OUT_DIR, { recursive: true });
   const files = SOURCE_FILES;
+  const missionKinds = await generateMissionKindMap({
+    sourceFiles: files,
+    outFile: MISSION_KIND_MAP_FILE,
+  });
+  const missionNicknameCorrections = await readJsonFile<
+    MissionNicknameCorrection[]
+  >(MISSION_NICKNAME_CORRECTIONS_FILE);
 
   const cards: CardIndex = {};
   const boards: BoardIndex = [];
@@ -80,7 +97,10 @@ async function main(): Promise<void> {
     const civilisationIndex = extractCivilisationTokens(save, stem);
     const wildernessIndex = extractWildernessTokens(save, stem);
     const mapTileMonsterIndex = extractMapTileMonsters(save, stem);
-    const missionIndex = extractMissions(save, stem);
+    const missionIndex = extractMissions(save, stem, {
+      missionKinds,
+      missionNicknameCorrections,
+    });
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
@@ -268,6 +288,11 @@ async function main(): Promise<void> {
   console.log(
     `→ native-summons.json: ${Object.keys(nativeSummons).length} sources, ${countEntries(nativeSummons)} groups total`,
   );
+}
+
+async function readJsonFile<T>(file: string): Promise<T> {
+  const raw = await fs.readFile(file, "utf-8");
+  return JSON.parse(raw) as T;
 }
 
 function countEntries<T>(index: Record<string, T[]>): number {

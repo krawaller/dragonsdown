@@ -52,6 +52,17 @@ export type TTSMissionCard = TTSCardImage & {
 
 export type MissionKind = "atrocity" | "quest" | "expedition";
 
+export type MissionKindMap = Record<string, MissionKind>;
+
+export type MissionNicknameCorrection = {
+  source: string;
+  raw: string;
+  faceURL: string;
+  row: number;
+  col: number;
+  corrected: string;
+};
+
 export type TTSMissionRewards = {
   drawCards?: Partial<Record<"deep" | "treasure" | "item" | "spell", number>>;
   points?: Partial<Record<"fame" | "gold", number>>;
@@ -66,6 +77,11 @@ export type TTSMissionRewards = {
 
 /** Output written to data/tts/missions.json. Keyed by normalized `Nickname`. */
 export type MissionIndex = Record<string, TTSMissionCard[]>;
+
+export type ExtractMissionsOptions = {
+  missionKinds?: MissionKindMap;
+  missionNicknameCorrections?: readonly MissionNicknameCorrection[];
+};
 
 /**
  * A "chip" is a TTS Custom_Tile whose `LuaScript` begins with `chipName =` —
@@ -544,7 +560,11 @@ export function extractCards(root: unknown, source: string): CardIndex {
   return index;
 }
 
-export function extractMissions(root: unknown, source: string): MissionIndex {
+export function extractMissions(
+  root: unknown,
+  source: string,
+  options: ExtractMissionsOptions = {},
+): MissionIndex {
   const index: MissionIndex = {};
   const cards: CardWithAncestry[] = [];
   walk(root, [], cards);
@@ -555,7 +575,7 @@ export function extractMissions(root: unknown, source: string): MissionIndex {
     const image = imageFor(card, source, ancestry);
     if (!image) continue;
     const mission: TTSMissionCard = { ...image };
-    const kind = missionKindFor(mission);
+    const kind = options.missionKinds?.[missionCellKey(mission)];
     if (kind) mission.kind = kind;
     const rewards = missionRewardsFromLua(card.LuaScript ?? "");
     if (rewards) mission.rewards = rewards;
@@ -565,7 +585,9 @@ export function extractMissions(root: unknown, source: string): MissionIndex {
       const completeAt = missionCompleteAtTargets(description);
       if (completeAt.length > 0) mission.completeAt = completeAt;
     }
-    const key = normalizeTitle(correctMissionNickname(raw, mission));
+    const key = normalizeTitle(
+      correctMissionNickname(raw, mission, options.missionNicknameCorrections),
+    );
     const bucket = (index[key] ??= []);
     const existing = bucket.find((c) => isSameCell(c, mission));
     if (existing) {
@@ -589,86 +611,10 @@ export function extractMissions(root: unknown, source: string): MissionIndex {
   return index;
 }
 
-const MISSION_SHEET_URLS = {
-  deck1: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
-  deck2: "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
-} as const;
-
-const MISSION_KIND_CELLS = {
-  atrocity: [
-    [MISSION_SHEET_URLS.deck1, 0, 2],
-    [MISSION_SHEET_URLS.deck1, 0, 3],
-    [MISSION_SHEET_URLS.deck1, 0, 4],
-    [MISSION_SHEET_URLS.deck1, 0, 5],
-    [MISSION_SHEET_URLS.deck1, 0, 6],
-    [MISSION_SHEET_URLS.deck1, 0, 7],
-    [MISSION_SHEET_URLS.deck1, 0, 8],
-    [MISSION_SHEET_URLS.deck1, 0, 9],
-    [MISSION_SHEET_URLS.deck1, 1, 0],
-    [MISSION_SHEET_URLS.deck1, 1, 1],
-    [MISSION_SHEET_URLS.deck1, 1, 2],
-    [MISSION_SHEET_URLS.deck1, 1, 3],
-    [MISSION_SHEET_URLS.deck1, 1, 4],
-    [MISSION_SHEET_URLS.deck1, 1, 5],
-    [MISSION_SHEET_URLS.deck1, 1, 6],
-    [MISSION_SHEET_URLS.deck1, 1, 7],
-    [MISSION_SHEET_URLS.deck1, 1, 8],
-    [MISSION_SHEET_URLS.deck1, 1, 9],
-    [MISSION_SHEET_URLS.deck1, 2, 1],
-    [MISSION_SHEET_URLS.deck1, 2, 2],
-    [MISSION_SHEET_URLS.deck1, 2, 5],
-    [MISSION_SHEET_URLS.deck1, 2, 6],
-  ],
-  quest: [
-    [MISSION_SHEET_URLS.deck2, 1, 0],
-    [MISSION_SHEET_URLS.deck2, 1, 2],
-    [MISSION_SHEET_URLS.deck2, 1, 4],
-    [MISSION_SHEET_URLS.deck2, 1, 5],
-    [MISSION_SHEET_URLS.deck2, 1, 6],
-    [MISSION_SHEET_URLS.deck2, 1, 8],
-    [MISSION_SHEET_URLS.deck2, 1, 9],
-    [MISSION_SHEET_URLS.deck2, 2, 0],
-    [MISSION_SHEET_URLS.deck2, 2, 2],
-    [MISSION_SHEET_URLS.deck2, 2, 3],
-    [MISSION_SHEET_URLS.deck2, 2, 4],
-    [MISSION_SHEET_URLS.deck2, 2, 6],
-    [MISSION_SHEET_URLS.deck2, 2, 7],
-    [MISSION_SHEET_URLS.deck2, 2, 8],
-    [MISSION_SHEET_URLS.deck2, 2, 9],
-    [MISSION_SHEET_URLS.deck2, 3, 0],
-    [MISSION_SHEET_URLS.deck2, 3, 1],
-    [MISSION_SHEET_URLS.deck2, 3, 2],
-    [MISSION_SHEET_URLS.deck2, 3, 3],
-  ],
-} as const satisfies Record<
-  string,
-  readonly (readonly [string, number, number])[]
->;
-
-function missionKindFor(mission: TTSMissionCard): MissionKind | undefined {
-  if (hasMissionKindCell(MISSION_KIND_CELLS.atrocity, mission)) {
-    return "atrocity";
-  }
-  if (hasMissionKindCell(MISSION_KIND_CELLS.quest, mission)) {
-    return "quest";
-  }
-  if (
-    mission.faceURL === MISSION_SHEET_URLS.deck1 ||
-    mission.faceURL === MISSION_SHEET_URLS.deck2
-  ) {
-    return "expedition";
-  }
-  return undefined;
-}
-
-function hasMissionKindCell(
-  cells: readonly (readonly [string, number, number])[],
-  mission: TTSMissionCard,
-): boolean {
-  return cells.some(
-    ([faceURL, row, col]) =>
-      mission.faceURL === faceURL && mission.row === row && mission.col === col,
-  );
+export function missionCellKey(
+  card: Pick<TTSCardImage, "faceURL" | "row" | "col">,
+): string {
+  return `${card.faceURL}#${card.row}:${card.col}`;
 }
 
 function missionRewardsFromLua(
@@ -786,19 +732,12 @@ function mergeNumericRecords<T extends string>(
   return out;
 }
 
-const MISSION_NICKNAME_CORRECTIONS = [
-  {
-    source: "dd_all_exp",
-    raw: "Desert Avenger",
-    faceURL: MISSION_SHEET_URLS.deck1,
-    row: 0,
-    col: 9,
-    corrected: "Desert Marauder",
-  },
-] as const;
-
-function correctMissionNickname(raw: string, mission: TTSMissionCard): string {
-  const correction = MISSION_NICKNAME_CORRECTIONS.find(
+function correctMissionNickname(
+  raw: string,
+  mission: TTSMissionCard,
+  corrections: readonly MissionNicknameCorrection[] = [],
+): string {
+  const correction = corrections.find(
     (entry) =>
       entry.source === mission.source &&
       entry.raw === raw &&
