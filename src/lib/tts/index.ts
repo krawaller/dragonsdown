@@ -48,11 +48,22 @@ export type TTSMissionCard = TTSCardImage & {
   description?: string;
   /** Parsed names from `Complete at ...` description text. */
   completeAt?: string[];
+  /** Printed mission payout and mission-dice attribute from the card face. */
+  stats?: TTSMissionStats;
   /** Scripted mission effects encoded in the card Lua. */
   rewards?: TTSMissionRewards;
 };
 
 export type MissionKind = "atrocity" | "quest" | "expedition";
+
+export type MissionAttribute = "charisma" | "wisdom" | "cunning";
+
+export type TTSMissionStats = {
+  gold: number;
+  fame: number;
+  legend: number;
+  attribute: MissionAttribute;
+};
 
 export type MissionTerrainPack =
   | "neutral"
@@ -76,6 +87,15 @@ export type MissionNicknameCorrection = {
   corrected: string;
 };
 
+export type MissionStatsMapping = {
+  source: string;
+  raw: string;
+  faceURL: string;
+  row: number;
+  col: number;
+  stats: TTSMissionStats;
+};
+
 export type TTSMissionRewards = {
   drawCards?: Partial<Record<"deep" | "treasure" | "item" | "spell", number>>;
   points?: Partial<Record<"fame" | "gold", number>>;
@@ -94,6 +114,7 @@ export type MissionIndex = Record<string, TTSMissionCard[]>;
 export type ExtractMissionsOptions = {
   missionKinds?: MissionKindMap;
   missionNicknameCorrections?: readonly MissionNicknameCorrection[];
+  missionStats?: readonly MissionStatsMapping[];
 };
 
 /**
@@ -592,6 +613,8 @@ export function extractMissions(
     if (kind) mission.kind = kind;
     const terrainPack = missionTerrainPackFromAncestry(mission.ancestry);
     if (terrainPack) mission.terrainPack = terrainPack;
+    const stats = missionStatsFor(raw, mission, options.missionStats);
+    if (stats) mission.stats = stats;
     const rewards = missionRewardsFromLua(card.LuaScript ?? "");
     if (rewards) mission.rewards = rewards;
     const description = (card.Description ?? "").trim();
@@ -618,6 +641,7 @@ export function extractMissions(
       if (!existing.terrainPack && mission.terrainPack) {
         existing.terrainPack = mission.terrainPack;
       }
+      existing.stats ??= mission.stats;
       existing.rewards = mergeMissionRewards(existing.rewards, mission.rewards);
       if (!existing.ancestry?.length && mission.ancestry?.length) {
         existing.ancestry = mission.ancestry;
@@ -786,6 +810,21 @@ function correctMissionNickname(
       entry.col === mission.col,
   );
   return correction?.corrected ?? raw;
+}
+
+function missionStatsFor(
+  raw: string,
+  mission: TTSMissionCard,
+  mappings: readonly MissionStatsMapping[] = [],
+): TTSMissionStats | undefined {
+  return mappings.find(
+    (mapping) =>
+      mapping.source === mission.source &&
+      mapping.raw === raw &&
+      mapping.faceURL === mission.faceURL &&
+      mapping.row === mission.row &&
+      mapping.col === mission.col,
+  )?.stats;
 }
 
 function missionCompleteAtTargets(description: string): string[] {

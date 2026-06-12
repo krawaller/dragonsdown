@@ -449,6 +449,41 @@ describe("extractMissions", () => {
     });
   });
 
+  it("extracts printed mission stats from manual card-cell mappings", () => {
+    const missionDeck1 = {
+      ...SAMPLE_DECK,
+      FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    };
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Alcohol", 60728, "607", missionDeck1),
+          Description: "Complete at Rogues",
+          Tags: ["Mission"],
+        },
+      ],
+    };
+    const missionStats = [
+      {
+        source: "dd_all_exp",
+        raw: "Alcohol",
+        faceURL: missionDeck1.FaceURL,
+        row: 2,
+        col: 8,
+        stats: {
+          gold: 15,
+          fame: 0,
+          legend: 0,
+          attribute: "cunning" as const,
+        },
+      },
+    ];
+
+    expect(
+      extractMissions(save, "dd_all_exp", { missionStats })["Alcohol"][0].stats,
+    ).toEqual({ gold: 15, fame: 0, legend: 0, attribute: "cunning" });
+  });
+
   it("omits mission kind when no generated kind map is provided", () => {
     const missionDeck1 = {
       ...SAMPLE_DECK,

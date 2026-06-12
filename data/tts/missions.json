@@ -46,6 +46,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "cunning"
+      },
       "rewards": {
         "steal": {
           "outlaw": 2
@@ -199,6 +205,12 @@
       ],
       "kind": "quest",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"

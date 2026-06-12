@@ -3,9 +3,11 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { MissionKindBadge } from "@/components/MissionKindBadge";
 import type {
+  MissionAttribute,
   MissionTerrainPack,
   TTSMissionCard,
   TTSMissionRewards,
+  TTSMissionStats,
 } from "@/lib/tts";
 import type { MissionTargetKind } from "@/lib/tts/lookup";
 import { getAllMissions, getMissionBySlug } from "@/lib/tts/lookup";
@@ -90,6 +92,8 @@ export default async function MissionPage({
             </section>
           )}
 
+          <MissionStats cards={mission.cards} />
+
           <MissionRewards cards={mission.cards} />
 
           <section>
@@ -118,6 +122,60 @@ export default async function MissionPage({
         </aside>
       </div>
     </main>
+  );
+}
+
+function MissionStats({ cards }: { cards: TTSMissionCard[] }) {
+  const entries = uniqueStatEntries(cards);
+  if (entries.length === 0) return null;
+  return (
+    <section>
+      <h2 className="text-xl font-semibold mb-3">Mission Value</h2>
+      <div className="space-y-4">
+        {entries.map(({ stats, label }) => (
+          <div
+            key={label}
+            className="rounded border border-zinc-200 dark:border-zinc-800 p-4"
+          >
+            {entries.length > 1 && (
+              <h3 className="text-sm font-medium mb-3">{label}</h3>
+            )}
+            <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-2 text-sm">
+              <StatRow label="Gold" value={stats.gold} />
+              <StatRow label="Fame" value={stats.fame} />
+              <StatRow label="Legend" value={stats.legend} />
+              <StatRow
+                label="Dice"
+                value={missionAttributeLabel(stats.attribute)}
+              />
+            </dl>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function uniqueStatEntries(cards: TTSMissionCard[]): {
+  label: string;
+  stats: TTSMissionStats;
+}[] {
+  const seen = new Set<string>();
+  return cards.flatMap((card, index) => {
+    if (!card.stats) return [];
+    const key = JSON.stringify(card.stats);
+    if (seen.has(key)) return [];
+    seen.add(key);
+    return [{ label: `Card ${index + 1}`, stats: card.stats }];
+  });
+}
+
+function StatRow({ label, value }: { label: string; value: number | string }) {
+  return (
+    <div className="contents">
+      <dt className="text-zinc-500 dark:text-zinc-400">{label}</dt>
+      <dd className="text-zinc-700 dark:text-zinc-300">{value}</dd>
+    </div>
   );
 }
 
@@ -235,6 +293,17 @@ function countLabel(count: number, label: string): string {
   if (count === 1) return `+1 ${label}`;
   if (label === "Fame" || label === "Gold") return `+${count} ${label}`;
   return `+${count} ${label}${label.endsWith("s") ? "" : "s"}`;
+}
+
+function missionAttributeLabel(attribute: MissionAttribute): string {
+  switch (attribute) {
+    case "charisma":
+      return "Charisma";
+    case "wisdom":
+      return "Wisdom";
+    case "cunning":
+      return "Cunning";
+  }
 }
 
 function SourceCardDetails({ card }: { card: TTSMissionCard }) {

@@ -30,6 +30,7 @@ import {
   type MapTileMonsterIndex,
   type MissionIndex,
   type MissionNicknameCorrection,
+  type MissionStatsMapping,
   type NativeSummonIndex,
   type TTSCivilisationToken,
   type TTSMapTile,
@@ -49,6 +50,7 @@ const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
   MANUAL_DIR,
   "mission-nickname-corrections.json",
 );
+const MISSION_STATS_FILE = path.join(MANUAL_DIR, "mission-stats.json");
 
 /**
  * The Eastern Reaches TTS save is a strict superset of the
@@ -69,6 +71,8 @@ async function main(): Promise<void> {
   const missionNicknameCorrections = await readJsonFile<
     MissionNicknameCorrection[]
   >(MISSION_NICKNAME_CORRECTIONS_FILE);
+  const missionStats =
+    await readJsonFile<MissionStatsMapping[]>(MISSION_STATS_FILE);
 
   const cards: CardIndex = {};
   const boards: BoardIndex = [];
@@ -100,6 +104,7 @@ async function main(): Promise<void> {
     const missionIndex = extractMissions(save, stem, {
       missionKinds,
       missionNicknameCorrections,
+      missionStats,
     });
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);

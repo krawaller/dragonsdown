@@ -1,0 +1,28 @@
+[
+  {
+    "source": "dd_all_exp",
+    "raw": "Alcohol",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 2,
+    "col": 8,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Bat Hawker",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 1,
+    "col": 0,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  }
+]
