@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllSites, getBoardsForSite, getSiteBySlug } from "@/lib/tts/lookup";
+import {
+  getAllSites,
+  getBoardsForSite,
+  getMonsterGroupsForSite,
+  getSiteBySlug,
+} from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
   return getAllSites().map((entry) => ({ slug: entry.slug }));
@@ -16,6 +21,7 @@ export default async function SitePage({
   if (!entry) notFound();
 
   const boards = getBoardsForSite(entry.name);
+  const monsterGroups = getMonsterGroupsForSite(entry.name);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -43,6 +49,26 @@ export default async function SitePage({
           className="block w-full aspect-square object-contain"
         />
       </div>
+
+      {monsterGroups.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-xl font-semibold mb-4">Monster Groups</h2>
+          <div className="flex flex-wrap gap-2">
+            {monsterGroups.map((group) => (
+              <Link
+                key={group.slug}
+                href={`/monster-groups/${group.slug}`}
+                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+              >
+                <span className="font-medium">{group.name}</span>
+                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                  {group.monsters.join(", ")}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {boards.length > 0 && (
         <section className="mt-10">

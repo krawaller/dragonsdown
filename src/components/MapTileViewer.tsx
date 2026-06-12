@@ -23,12 +23,22 @@ export type MapTileCivLocation = {
   imageUrl: string;
 };
 
+export type MapTileMonsterGroup = {
+  tileName: string;
+  terrain: string;
+  name: string;
+  slug: string;
+  role: "wandering" | "local";
+};
+
 export function MapTileViewer({
   tiles,
   civLocations,
+  monsterGroups,
 }: {
   tiles: MapTile[];
   civLocations: MapTileCivLocation[];
+  monsterGroups: MapTileMonsterGroup[];
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -58,6 +68,13 @@ export function MapTileViewer({
     selectedTile?.clearings.length === 4
       ? civLocations.find((location) => location.name === selectedTile.name)
       : undefined;
+  const selectedMonsterGroups = selectedTile
+    ? monsterGroups.filter(
+        (group) =>
+          group.terrain === selectedTile.terrain &&
+          group.tileName === selectedTile.name,
+      )
+    : [];
 
   useEffect(() => {
     if (!selectedTile) return;
@@ -227,6 +244,25 @@ export function MapTileViewer({
               </span>
             </span>
           </Link>
+        )}
+        {selectedMonsterGroups.length > 0 && (
+          <section className="mt-6">
+            <h3 className="text-lg font-semibold mb-3">Monster Groups</h3>
+            <div className="flex flex-wrap gap-2">
+              {selectedMonsterGroups.map((group) => (
+                <Link
+                  key={`${group.role}-${group.slug}`}
+                  href={`/monster-groups/${group.slug}`}
+                  className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+                >
+                  <span className="font-medium">{group.name}</span>
+                  <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                    {group.role}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
         )}
       </section>
     </div>

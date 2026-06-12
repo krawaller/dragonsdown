@@ -196,6 +196,18 @@ export type MonsterGroupEntry = ChipEntry & {
   sites: MonsterGroupSiteSummon[];
 };
 
+export type MonsterGroupMapTileLink = {
+  name: string;
+  slug: string;
+  role: "wandering" | "local";
+};
+
+export type MonsterGroupSiteLink = {
+  name: string;
+  slug: string;
+  monsters: string[];
+};
+
 /** Return all chip entries, sorted alphabetically by prettified name. */
 export function getAllChips(): ChipEntry[] {
   const idx = getChipIndex();
@@ -224,6 +236,42 @@ export function getMonsterGroupBySlug(
   slug: string,
 ): MonsterGroupEntry | undefined {
   return getAllMonsterGroups().find((entry) => entry.slug === slug);
+}
+
+export function getMonsterGroupsForMapTile(
+  terrain: string,
+  tileName: string,
+): MonsterGroupMapTileLink[] {
+  return getAllMonsterGroups()
+    .flatMap((entry) =>
+      entry.mapTiles
+        .filter(
+          (summon) =>
+            summon.terrain === terrain && summon.tileName === tileName,
+        )
+        .map((summon) => ({
+          name: entry.prettyName,
+          slug: entry.slug,
+          role: summon.role,
+        })),
+    )
+    .sort(compareMonsterGroupMapTileLinks);
+}
+
+export function getMonsterGroupsForSite(
+  siteName: string,
+): MonsterGroupSiteLink[] {
+  return getAllMonsterGroups()
+    .flatMap((entry) =>
+      entry.sites
+        .filter((summon) => summon.name === siteName)
+        .map((summon) => ({
+          name: entry.prettyName,
+          slug: entry.slug,
+          monsters: summon.monsters,
+        })),
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 /** A card name with the card variants that carry a specific tag. */
@@ -546,6 +594,20 @@ const NATIVE_CHIP_GROUPS = new Set(
 
 function isNativeChipGroup(entry: ChipEntry): boolean {
   return NATIVE_CHIP_GROUPS.has(normalizeTitle(entry.name));
+}
+
+function compareMonsterGroupMapTileLinks(
+  a: MonsterGroupMapTileLink,
+  b: MonsterGroupMapTileLink,
+): number {
+  return (
+    roleSortValue(a.role) - roleSortValue(b.role) ||
+    a.name.localeCompare(b.name)
+  );
+}
+
+function roleSortValue(role: "wandering" | "local"): number {
+  return role === "wandering" ? 0 : 1;
 }
 
 function getMapTileSummonsForMonsterGroup(
