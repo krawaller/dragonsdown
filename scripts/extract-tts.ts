@@ -10,6 +10,7 @@ import path from "node:path";
 import {
   extractCards,
   extractChips,
+  extractCivilisationTokens,
   extractCivLocations,
   extractMapTiles,
   extractSites,
@@ -20,6 +21,7 @@ import {
   type CardIndex,
   type ChipIndex,
   type CivLocationIndex,
+  type TTSCivilisationToken,
   type TTSMapTile,
   type SiteIndex,
   type WildernessTokenIndex,
@@ -45,6 +47,7 @@ async function main(): Promise<void> {
   const chips: ChipIndex = {};
   const sites: SiteIndex = {};
   const civLocations: CivLocationIndex = {};
+  const civilisationTokens: TTSCivilisationToken[] = [];
   const wildernessTokens: WildernessTokenIndex = {};
   let mapTiles: TTSMapTile[] = [];
 
@@ -57,10 +60,11 @@ async function main(): Promise<void> {
     const chipIndex = extractChips(save, stem);
     const siteIndex = extractSites(save, stem);
     const civIndex = extractCivLocations(save, stem);
+    const civilisationIndex = extractCivilisationTokens(save, stem);
     const wildernessIndex = extractWildernessTokens(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
+      `${file}: ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles`,
     );
 
     // Merge into combined indexes, de-duping by cell (cards) / image URL (chips).
@@ -83,6 +87,25 @@ async function main(): Promise<void> {
     // Civ locations: same shape — append, no dedup.
     for (const [name, items] of Object.entries(civIndex)) {
       (civLocations[name] ??= []).push(...items);
+    }
+    for (const item of civilisationIndex) {
+      const existing = civilisationTokens.find((token) =>
+        isSameCivilisationToken(token, item),
+      );
+      if (existing) {
+        for (const loc of item.locations) {
+          const match = existing.locations.find((l) =>
+            sameAncestry(l.ancestry, loc.ancestry),
+          );
+          if (match) match.count += loc.count;
+          else existing.locations.push({ ...loc });
+        }
+      } else {
+        civilisationTokens.push({
+          ...item,
+          locations: item.locations.map((l) => ({ ...l })),
+        });
+      }
     }
     for (const [terrain, items] of Object.entries(wildernessIndex)) {
       const bucket = (wildernessTokens[terrain] ??= []);
@@ -144,6 +167,10 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
   await writeSorted(path.join(OUT_DIR, "civlocations.json"), civLocations);
+  await writeJson(
+    path.join(OUT_DIR, "civilisation-tokens.json"),
+    civilisationTokens,
+  );
   await writeSorted(
     path.join(OUT_DIR, "wilderness-tokens.json"),
     wildernessTokens,
@@ -160,6 +187,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ civlocations.json: ${Object.keys(civLocations).length} names, ${countEntries(civLocations)} entries total`,
+  );
+  console.log(
+    `→ civilisation-tokens.json: ${civilisationTokens.length} token images total`,
   );
   console.log(
     `→ wilderness-tokens.json: ${Object.keys(wildernessTokens).length} terrains, ${countEntries(wildernessTokens)} token images total`,
@@ -192,6 +222,20 @@ function mergeStringArrays(
   if (!a?.length && !b?.length) return undefined;
   return [...new Set([...(a ?? []), ...(b ?? [])])].sort((x, y) =>
     x.localeCompare(y),
+  );
+}
+
+function isSameCivilisationToken(
+  a: TTSCivilisationToken,
+  b: TTSCivilisationToken,
+): boolean {
+  return (
+    a.imageURL === b.imageURL &&
+    a.imageSecondaryURL === b.imageSecondaryURL &&
+    a.gmNotes === b.gmNotes &&
+    a.name === b.name &&
+    a.attribute === b.attribute &&
+    a.terrain === b.terrain
   );
 }
 

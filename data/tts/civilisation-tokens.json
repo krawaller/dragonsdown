@@ -1,0 +1,325 @@
+[
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13527098951030916755/710994A3BEFB2086DBEB78B02C7F9DF963214FE9/",
+    "locations": [
+      {
+        "ancestry": [
+          "NATIVES Merchants"
+        ],
+        "count": 2
+      }
+    ],
+    "gmNotes": "empty"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11275136830264917281/F7913EE12EA79DF4C5435AB7E6EE2AFAFB6A2A59/",
+    "locations": [
+      {
+        "ancestry": [
+          "NATIVES Merchants"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Armorer",
+    "attribute": "Charisma"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10475034234335795476/151CFAF58E9EEE06C43D235E082B570521D80C1B/",
+    "locations": [
+      {
+        "ancestry": [
+          "NATIVES Merchants"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Fortune Teller",
+    "attribute": "Cunning"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16746439192517095147/736673699AC7836FDF8138E1C4C69F67B32B92F2/",
+    "locations": [
+      {
+        "ancestry": [
+          "NATIVES Merchants"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Mystic",
+    "attribute": "Smallest Attribute"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/18175577277683189090/2057866C7AE9B6C8B89582AC2D3B08E8C3A3DEB0/",
+    "locations": [
+      {
+        "ancestry": [
+          "NATIVES Merchants"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Peddler",
+    "attribute": "Wisdom"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11535949106577666395/71847A10B70A5ECAEB0B2CB4DB6C793700E70A80/",
+    "locations": [
+      {
+        "ancestry": [
+          "Cruel CAVES"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "empty",
+    "terrain": "Cruel Caves"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17734233729070814217/522EC6B135469D85CDEC18041EF07AF0FE9095E7/",
+    "locations": [
+      {
+        "ancestry": [
+          "Cruel CAVES"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Astrologer",
+    "attribute": "Wisdom",
+    "terrain": "Cruel Caves"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14769208322940594720/13CB96DAC7E9256B7825A784FA591D4229336FCD/",
+    "locations": [
+      {
+        "ancestry": [
+          "Oasis"
+        ],
+        "count": 2
+      }
+    ],
+    "gmNotes": "empty",
+    "terrain": "Dreadful Deserts"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10252689922200412332/0A0305DE3E5B243082CC65A507B328E703E09A1B/",
+    "locations": [
+      {
+        "ancestry": [
+          "Dreadful DESERTS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Herbalist",
+    "attribute": "Wisdom",
+    "terrain": "Dreadful Deserts"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11455103574639543200/9383020B3929839174E3D2A7DB4CA440E45B24E7/",
+    "locations": [
+      {
+        "ancestry": [
+          "Dreadful DESERTS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Silk Dealer",
+    "attribute": "Cunning",
+    "terrain": "Dreadful Deserts"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15731405726771244064/3349553B9365D79ECA1E7F56F146F6202A48978A/",
+    "locations": [
+      {
+        "ancestry": [
+          "Malevolent MOUNTAINS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "empty",
+    "terrain": "Malevolent Mountains"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16245732925434297813/1F3D3F0D6D33E33656BA46E807261FD4F92FE3E3/",
+    "locations": [
+      {
+        "ancestry": [
+          "Malevolent MOUNTAINS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Scholar",
+    "attribute": "Cunning",
+    "terrain": "Malevolent Mountains"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16584803389152398657/BF30FEE95CA249A18C23E5D775638BC3F7BC2013/",
+    "locations": [
+      {
+        "ancestry": [
+          "Perilous PLAINS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Smuggler",
+    "attribute": "Smallest Attribute",
+    "terrain": "Perilous Plains"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9875589692516344938/0F2C3FE7B90DA2263124F0ED9037B4EB28338BFC/",
+    "locations": [
+      {
+        "ancestry": [
+          "Perilous PLAINS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Vendor",
+    "attribute": "Charisma",
+    "terrain": "Perilous Plains"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16423112900198304158/611EBCD3648CE7C01A3CA0FF223B6F32EF69F722/",
+    "locations": [
+      {
+        "ancestry": [
+          "Ruthless RIVERLANDS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "empty",
+    "terrain": "Ruthless Riverlands"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16489226313908964824/24E3864B6CA0A54E495D0E81A58D0AFD4F9797BB/",
+    "locations": [
+      {
+        "ancestry": [
+          "Ruthless RIVERLANDS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Foreigner",
+    "attribute": "Charisma",
+    "terrain": "Ruthless Riverlands"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10337598321154885756/752852C6D3F3CC6E898A8A1F882D4B22445B3C80/",
+    "locations": [
+      {
+        "ancestry": [
+          "Sinister SWAMPS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "empty",
+    "terrain": "Sinister Swamps"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11334377510735026020/B449DA48DE925FDE1CB3D9BDF102B386B2DA467A/",
+    "locations": [
+      {
+        "ancestry": [
+          "Sinister SWAMPS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Artificer",
+    "attribute": "Wisdom",
+    "terrain": "Sinister Swamps"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9477685189397563686/69C10E268366554D994F0E5B2B87191C382F5C11/",
+    "locations": [
+      {
+        "ancestry": [
+          "Wicked WOODS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Crone",
+    "attribute": "Cunning",
+    "terrain": "Wicked Woods"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11716957150360320332/BFDB7E28B5CB495B6ABCB632EBF5BD8CCE12EDFC/",
+    "locations": [
+      {
+        "ancestry": [
+          "Wicked WOODS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Smith",
+    "attribute": "Charisma",
+    "terrain": "Wicked Woods"
+  }
+]

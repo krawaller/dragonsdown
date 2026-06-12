@@ -18,6 +18,7 @@ import {
   type TTSCardImage,
   type TTSChip,
   type TTSCivLocation,
+  type TTSCivilisationToken,
   type TTSSite,
   type TTSWildernessToken,
   type WildernessTokenIndex,
@@ -39,12 +40,21 @@ const WILDERNESS_TOKENS_FILE = path.join(
   "tts",
   "wilderness-tokens.json",
 );
+const CIVILISATION_TOKENS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "civilisation-tokens.json",
+);
+
+export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
 let cachedCardIndex: CardIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
 let cachedWildernessTokenIndex: WildernessTokenIndex | null = null;
+let cachedCivilisationTokenIndex: TTSCivilisationToken[] | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -77,6 +87,16 @@ function getWildernessTokenIndex(): WildernessTokenIndex {
     WILDERNESS_TOKENS_FILE,
   );
   return cachedWildernessTokenIndex;
+}
+
+function getCivilisationTokenIndex(): TTSCivilisationToken[] {
+  if (cachedCivilisationTokenIndex !== null)
+    return cachedCivilisationTokenIndex;
+  const data = readJsonOrEmpty<unknown>(CIVILISATION_TOKENS_FILE);
+  cachedCivilisationTokenIndex = Array.isArray(data)
+    ? (data as TTSCivilisationToken[])
+    : [];
+  return cachedCivilisationTokenIndex;
 }
 
 function readJsonOrEmpty<T>(file: string): T {
@@ -233,6 +253,78 @@ export function getWildernessTokenBySlug(
   return getAllWildernessTokenNames().find((entry) => entry.slug === slug);
 }
 
+export type CivilisationTokenTerrainEntry = {
+  terrain: string;
+  tokens: CivilisationTokenListEntry[];
+};
+
+export type CivilisationTokenListEntry = TTSCivilisationToken & {
+  displayName: string;
+  slug: string;
+  terrainGroup: string;
+};
+
+export type CivilisationTokenNameEntry = {
+  name: string;
+  slug: string;
+  tokens: CivilisationTokenListEntry[];
+};
+
+export function getAllCivilisationTokenTerrains(): CivilisationTokenTerrainEntry[] {
+  const byTerrain = new Map<string, CivilisationTokenListEntry[]>();
+  for (const token of getCivilisationTokenIndex()) {
+    const terrain = token.terrain ?? CIVILISATION_TOKEN_NEUTRAL_TERRAIN;
+    const displayName = civilisationTokenDisplayName(token);
+    const entry: CivilisationTokenListEntry = {
+      ...token,
+      displayName,
+      slug: slugify(displayName),
+      terrainGroup: terrain,
+    };
+    const tokens = byTerrain.get(terrain);
+    if (tokens) tokens.push(entry);
+    else byTerrain.set(terrain, [entry]);
+  }
+
+  return [...byTerrain.entries()]
+    .map(([terrain, tokens]) => ({
+      terrain,
+      tokens: tokens.sort(compareCivilisationTokens),
+    }))
+    .sort(compareCivilisationTokenTerrains);
+}
+
+export function getAllCivilisationTokenNames(): CivilisationTokenNameEntry[] {
+  const bySlug = new Map<string, CivilisationTokenNameEntry>();
+  for (const { tokens } of getAllCivilisationTokenTerrains()) {
+    for (const token of tokens) {
+      const entry = bySlug.get(token.slug);
+      if (entry) {
+        entry.tokens.push(token);
+      } else {
+        bySlug.set(token.slug, {
+          name: token.displayName,
+          slug: token.slug,
+          tokens: [token],
+        });
+      }
+    }
+  }
+
+  return [...bySlug.values()]
+    .map((entry) => ({
+      ...entry,
+      tokens: entry.tokens.sort(compareCivilisationTokens),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getCivilisationTokenBySlug(
+  slug: string,
+): CivilisationTokenNameEntry | undefined {
+  return getAllCivilisationTokenNames().find((entry) => entry.slug === slug);
+}
+
 function hasWildernessTokenName(
   token: TTSWildernessToken,
 ): token is TTSWildernessToken & { name: string } {
@@ -249,6 +341,35 @@ function compareWildernessTokens(
     (a.clearing ?? 0) - (b.clearing ?? 0) ||
     String(a.draw ?? "").localeCompare(String(b.draw ?? "")) ||
     a.imageURL.localeCompare(b.imageURL)
+  );
+}
+
+function civilisationTokenDisplayName(token: TTSCivilisationToken): string {
+  const name = token.name?.trim();
+  if (name) return name;
+  if (token.gmNotes === "empty") return "Empty";
+  return "Unnamed";
+}
+
+function compareCivilisationTokenTerrains(
+  a: CivilisationTokenTerrainEntry,
+  b: CivilisationTokenTerrainEntry,
+): number {
+  if (a.terrain === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) return -1;
+  if (b.terrain === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) return 1;
+  return a.terrain.localeCompare(b.terrain);
+}
+
+function compareCivilisationTokens(
+  a: CivilisationTokenListEntry,
+  b: CivilisationTokenListEntry,
+): number {
+  return (
+    a.displayName.localeCompare(b.displayName) ||
+    a.terrainGroup.localeCompare(b.terrainGroup) ||
+    String(a.attribute ?? "").localeCompare(String(b.attribute ?? "")) ||
+    String(a.gmNotes ?? "").localeCompare(String(b.gmNotes ?? "")) ||
+    a.imageSecondaryURL.localeCompare(b.imageSecondaryURL)
   );
 }
 

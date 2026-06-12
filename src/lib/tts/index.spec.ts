@@ -2,12 +2,14 @@ import { describe, it, expect } from "vitest";
 import {
   extractCards,
   extractChips,
+  extractCivilisationTokens,
   extractCivLocations,
   extractWildernessTokens,
   extractSites,
   normalizeTitle,
   prettifyChipName,
   resolveCards,
+  CIVILISATION_TOKEN_FACE_URL,
   SITE_FACE_URL,
   WILDERNESS_TOKEN_BACK_URLS,
   WILDERNESS_TOKEN_FRONT_METADATA,
@@ -522,6 +524,134 @@ describe("extractCivLocations", () => {
   it("skips tiles with empty Nickname", () => {
     const save = { ObjectStates: [tile("", "x.png")] };
     expect(extractCivLocations(save, "eastern")).toEqual({});
+  });
+});
+
+describe("extractCivilisationTokens", () => {
+  const civilisationToken = ({
+    nickname = "",
+    description = "",
+    gmNotes = "empty",
+    back = "back.png",
+  }: {
+    nickname?: string;
+    description?: string;
+    gmNotes?: string;
+    back?: string;
+  } = {}) => ({
+    Name: "Custom_Tile",
+    Nickname: nickname,
+    Description: description,
+    GMNotes: gmNotes,
+    CustomImage: {
+      ImageURL: CIVILISATION_TOKEN_FACE_URL,
+      ImageSecondaryURL: back,
+    },
+  });
+
+  it("extracts merchant name, gmNotes, attribute, and terrain", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Cruel CAVES",
+          ContainedObjects: [
+            civilisationToken({
+              nickname: "Astrologer (Wisdom)",
+              description: "Astrologer",
+              gmNotes: "merchants",
+            }),
+          ],
+        },
+      ],
+    };
+    expect(extractCivilisationTokens(save, "eastern")).toEqual([
+      {
+        source: "eastern",
+        imageURL: CIVILISATION_TOKEN_FACE_URL,
+        imageSecondaryURL: "back.png",
+        gmNotes: "merchants",
+        name: "Astrologer",
+        attribute: "Wisdom",
+        terrain: "Cruel Caves",
+        locations: [{ ancestry: ["Cruel CAVES"], count: 1 }],
+      },
+    ]);
+  });
+
+  it("keeps empty non-merchant tokens without name or attribute", () => {
+    const save = { ObjectStates: [civilisationToken()] };
+    expect(extractCivilisationTokens(save, "eastern")[0]).toEqual({
+      source: "eastern",
+      imageURL: CIVILISATION_TOKEN_FACE_URL,
+      imageSecondaryURL: "back.png",
+      gmNotes: "empty",
+      locations: [{ ancestry: [], count: 1 }],
+    });
+  });
+
+  it("leaves terrain unset when no terrain pack ancestor is present", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "NATIVES Merchants",
+          ContainedObjects: [
+            civilisationToken({
+              nickname: "Peddler (Wisdom)",
+              description: "Peddler",
+              gmNotes: "merchants",
+            }),
+          ],
+        },
+      ],
+    };
+    expect("terrain" in extractCivilisationTokens(save, "eastern")[0]).toBe(
+      false,
+    );
+  });
+
+  it("dedups physical copies and records per-ancestry counts", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Oasis",
+          ContainedObjects: [civilisationToken(), civilisationToken()],
+        },
+      ],
+    };
+    expect(extractCivilisationTokens(save, "eastern")[0].locations).toEqual([
+      { ancestry: ["Oasis"], count: 2 },
+    ]);
+  });
+
+  it("treats Oasis empty tokens as Dreadful Deserts tokens", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Oasis",
+          ContainedObjects: [civilisationToken()],
+        },
+      ],
+    };
+    expect(extractCivilisationTokens(save, "eastern")[0]).toMatchObject({
+      terrain: "Dreadful Deserts",
+      locations: [{ ancestry: ["Oasis"], count: 1 }],
+    });
+  });
+
+  it("skips custom tiles without the civilization token face", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Custom_Tile",
+          CustomImage: { ImageURL: "other.png", ImageSecondaryURL: "back.png" },
+        },
+      ],
+    };
+    expect(extractCivilisationTokens(save, "eastern")).toEqual([]);
   });
 });
 

@@ -65,6 +65,20 @@ export function chipTotalCount(chip: TTSChip): number {
 /** Output written to data/tts/chips.json. Keyed by normalized `GMNotes`. */
 export type ChipIndex = Record<string, TTSChip[]>;
 
+export const CIVILISATION_TOKEN_FACE_URL =
+  "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/";
+
+export type TTSCivilisationToken = {
+  source: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+  locations: { ancestry: string[]; count: number }[];
+  gmNotes?: string;
+  name?: string;
+  attribute?: string;
+  terrain?: string;
+};
+
 /**
  * A "site" is a Custom_Tile whose front (`ImageURL`) is the generic site card
  * back. Each site has a unique Nickname (`Grotto`, `Tarn`, ...) and a unique
@@ -615,6 +629,113 @@ export function extractCivLocations(
   return index;
 }
 
+export function extractCivilisationTokens(
+  root: unknown,
+  source: string,
+): TTSCivilisationToken[] {
+  const tokens: TTSCivilisationToken[] = [];
+  const walkTokens = (obj: unknown, ancestry: string[]) => {
+    if (!isRecord(obj)) return;
+
+    if (obj.Name === "Custom_Tile" && isRecord(obj.CustomImage)) {
+      const imageURL = text(obj.CustomImage.ImageURL);
+      const imageSecondaryURL = text(obj.CustomImage.ImageSecondaryURL);
+      if (imageURL === CIVILISATION_TOKEN_FACE_URL && imageSecondaryURL) {
+        const candidate = civilisationTokenFor(
+          obj,
+          source,
+          imageURL,
+          imageSecondaryURL,
+          ancestry,
+        );
+        const existing = tokens.find((token) =>
+          isSameCivilisationToken(token, candidate),
+        );
+        if (existing) {
+          addToLocations(existing.locations, ancestry);
+        } else {
+          tokens.push(candidate);
+        }
+      }
+    }
+
+    const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+    const childAncestry = nick ? [...ancestry, nick] : ancestry;
+    const states = obj.ObjectStates;
+    if (Array.isArray(states))
+      for (const s of states) walkTokens(s, childAncestry);
+    const contained = (obj as TTSContainer).ContainedObjects;
+    if (Array.isArray(contained))
+      for (const s of contained) walkTokens(s, childAncestry);
+  };
+
+  walkTokens(root, []);
+  return tokens.sort(compareCivilisationTokens);
+}
+
+function civilisationTokenFor(
+  obj: Record<string, unknown>,
+  source: string,
+  imageURL: string,
+  imageSecondaryURL: string,
+  ancestry: string[],
+): TTSCivilisationToken {
+  const token: TTSCivilisationToken = {
+    source,
+    imageURL,
+    imageSecondaryURL,
+    locations: [{ ancestry, count: 1 }],
+  };
+  const gmNotes = text(obj.GMNotes);
+  const name = text(obj.Description);
+  const attribute = attributeFromCivilisationTokenNickname(text(obj.Nickname));
+  const terrain = terrainPackForAncestry(ancestry);
+  if (gmNotes) token.gmNotes = gmNotes;
+  if (name) token.name = name;
+  if (attribute) token.attribute = attribute;
+  if (terrain) token.terrain = terrain;
+  return token;
+}
+
+function attributeFromCivilisationTokenNickname(nickname: string): string {
+  return nickname.match(/\(([^)]+)\)\s*$/)?.[1]?.trim() ?? "";
+}
+
+function terrainPackForAncestry(ancestry: string[]): string {
+  for (const nickname of ancestry) {
+    const terrain = terrainPackForNickname(nickname);
+    if (terrain) return terrain;
+  }
+  return "";
+}
+
+function isSameCivilisationToken(
+  a: TTSCivilisationToken,
+  b: TTSCivilisationToken,
+): boolean {
+  return (
+    a.imageURL === b.imageURL &&
+    a.imageSecondaryURL === b.imageSecondaryURL &&
+    a.gmNotes === b.gmNotes &&
+    a.name === b.name &&
+    a.attribute === b.attribute &&
+    a.terrain === b.terrain
+  );
+}
+
+function compareCivilisationTokens(
+  a: TTSCivilisationToken,
+  b: TTSCivilisationToken,
+): number {
+  return (
+    (a.terrain ?? "").localeCompare(b.terrain ?? "") ||
+    (a.gmNotes ?? "").localeCompare(b.gmNotes ?? "") ||
+    (a.name ?? "").localeCompare(b.name ?? "") ||
+    (a.attribute ?? "").localeCompare(b.attribute ?? "") ||
+    a.imageSecondaryURL.localeCompare(b.imageSecondaryURL)
+  );
+}
+
 export function extractMapTiles(root: unknown): TTSMapTile[] {
   const clearingOffsets = extractClearingOffsets(root);
   const tiles: TTSMapTile[] = [];
@@ -838,10 +959,15 @@ function extractClearingOffsets(
 }
 
 function terrainForMapTile(parentNickname: string): string {
-  switch (parentNickname) {
+  return terrainPackForNickname(parentNickname) ?? parentNickname;
+}
+
+function terrainPackForNickname(nickname: string): string | undefined {
+  switch (nickname) {
     case "Cruel CAVES":
       return "Cruel Caves";
     case "Dreadful DESERTS":
+    case "Oasis":
       return "Dreadful Deserts";
     case "Malevolent MOUNTAINS":
       return "Malevolent Mountains";
@@ -856,7 +982,7 @@ function terrainForMapTile(parentNickname: string): string {
     case "Wicked WOODS":
       return "Wicked Woods";
     default:
-      return parentNickname;
+      return undefined;
   }
 }
 
