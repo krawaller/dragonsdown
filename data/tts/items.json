@@ -1,0 +1,992 @@
+{
+  "Battle Axe": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 4,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 2
+        },
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 2
+        },
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Breastplate": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 5,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 3
+        },
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 3
+        },
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Buckler": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 3
+        },
+        {
+          "ancestry": [],
+          "count": 3
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 3
+        },
+        {
+          "name": "Dragons Down",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "Chainmail": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 4,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [],
+          "count": 3
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 1
+        },
+        {
+          "name": "Dragons Down",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "Crossbow": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Dragons Down",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Dagger": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 2
+        },
+        {
+          "ancestry": [],
+          "count": 4
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 2
+        },
+        {
+          "name": "Dragons Down",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "Great Axe": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "copies": 2,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Great Sword": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 2,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 1
+        },
+        {
+          "name": "Dragons Down",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Hand Axe": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 3,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 1
+        },
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Heavy Horse": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Horse"
+      ],
+      "ancestry": [
+        "Horses"
+      ],
+      "copies": 4,
+      "locations": [
+        {
+          "ancestry": [
+            "Horses"
+          ],
+          "count": 4
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Dragons Down",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "Iron Helm": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 3
+        },
+        {
+          "ancestry": [],
+          "count": 3
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 3
+        },
+        {
+          "name": "Dragons Down",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "Leather Helm": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 3
+        },
+        {
+          "ancestry": [],
+          "count": 3
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 3
+        },
+        {
+          "name": "Dragons Down",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "Leathers": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 3
+        },
+        {
+          "ancestry": [],
+          "count": 3
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 3
+        },
+        {
+          "name": "Dragons Down",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "Light Horse": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Horse"
+      ],
+      "ancestry": [
+        "Horses"
+      ],
+      "copies": 4,
+      "locations": [
+        {
+          "ancestry": [
+            "Horses"
+          ],
+          "count": 4
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Dragons Down",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "Long Bow": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "copies": 2,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Long Sword": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 5,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 3
+        },
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 3
+        },
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Mace": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 4,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 2
+        },
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 2
+        },
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Morning Star": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "copies": 2,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Plate Armor": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 2,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 1
+        },
+        {
+          "name": "Dragons Down",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shield": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 2
+        },
+        {
+          "ancestry": [],
+          "count": 4
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 2
+        },
+        {
+          "name": "Dragons Down",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "Short Bow": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 4,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 2
+        },
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 2
+        },
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Short Sword": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 3
+        },
+        {
+          "ancestry": [],
+          "count": 3
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 3
+        },
+        {
+          "name": "Dragons Down",
+          "count": 3
+        }
+      ]
+    }
+  ],
+  "Sling": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 3,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 2
+        },
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 2
+        },
+        {
+          "name": "Dragons Down",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Spear": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 3,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [],
+          "count": 2
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 1
+        },
+        {
+          "name": "Dragons Down",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "Staff": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Item"
+      ],
+      "ancestry": [
+        "DESOLATION Items"
+      ],
+      "copies": 6,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Items"
+          ],
+          "count": 2
+        },
+        {
+          "ancestry": [],
+          "count": 4
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Desolation",
+          "count": 2
+        },
+        {
+          "name": "Dragons Down",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "War Horse": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/items/AllItems.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Horse"
+      ],
+      "ancestry": [
+        "Horses"
+      ],
+      "copies": 4,
+      "locations": [
+        {
+          "ancestry": [
+            "Horses"
+          ],
+          "count": 4
+        }
+      ],
+      "boxes": [
+        {
+          "name": "Dragons Down",
+          "count": 4
+        }
+      ]
+    }
+  ]
+}

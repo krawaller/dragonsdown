@@ -39,6 +39,21 @@ export type TTSCardImage = {
 /** Output written to data/tts/cards.json. Keyed by normalized `Nickname`. */
 export type CardIndex = Record<string, TTSCardImage[]>;
 
+export const ITEM_CARD_BACK_URL =
+  "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/";
+
+export type TTSItemCard = TTSCardImage & {
+  /** Total number of physical copies found for this exact card image cell. */
+  copies: number;
+  /** Per-container physical-copy breakdown. */
+  locations: { ancestry: string[]; count: number }[];
+  /** Product/box rollup derived from the TTS container ancestry. */
+  boxes: { name: string; count: number }[];
+};
+
+/** Output written to data/tts/items.json. Keyed by normalized `Nickname`. */
+export type ItemIndex = Record<string, TTSItemCard[]>;
+
 export type TTSMissionCard = TTSCardImage & {
   /** Mission banner type printed on the card: red, white, or brown. */
   kind?: MissionKind;
@@ -653,6 +668,36 @@ export function extractCards(root: unknown, source: string): CardIndex {
   return index;
 }
 
+export function extractItems(root: unknown, source: string): ItemIndex {
+  const index: ItemIndex = {};
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image || image.backURL !== ITEM_CARD_BACK_URL) continue;
+    const box = itemBoxFromAncestry(ancestry);
+    const key = normalizeTitle(raw);
+    const bucket = (index[key] ??= []);
+    const existing = bucket.find((c) => isSameCell(c, image));
+    if (existing) {
+      existing.copies += 1;
+      existing.tags = mergeTags(existing.tags, image.tags);
+      addToLocations(existing.locations, ancestry);
+      addToBoxes(existing.boxes, box);
+    } else {
+      bucket.push({
+        ...image,
+        copies: 1,
+        locations: [{ ancestry, count: 1 }],
+        boxes: [{ name: box, count: 1 }],
+      });
+    }
+  }
+  return index;
+}
+
 export function extractMissions(
   root: unknown,
   source: string,
@@ -824,6 +869,25 @@ const CLASS_BOX_NAMES: Record<string, string> = {
   natives: "Natives and Legends",
   eastern: "Eastern Reaches",
 };
+
+function itemBoxFromAncestry(ancestry: string[]): string {
+  const itemBag = ancestry[0]?.trim().toLowerCase() ?? "";
+  if (itemBag.includes("desolation")) return "Desolation";
+  return "Dragons Down";
+}
+
+export function addToBoxes(
+  boxes: { name: string; count: number }[],
+  name: string,
+  count = 1,
+): void {
+  const match = boxes.find((box) => box.name === name);
+  if (match) {
+    match.count += count;
+  } else {
+    boxes.push({ name, count });
+  }
+}
 
 function titleCaseWords(value: string): string {
   return value.replace(/\b\w/g, (letter) => letter.toUpperCase());

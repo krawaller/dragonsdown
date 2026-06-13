@@ -8,12 +8,14 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import {
+  addToBoxes,
   extractBoards,
   extractCards,
   extractChips,
   extractClasses,
   extractCivilisationTokens,
   extractCivLocations,
+  extractItems,
   extractMapTileMonsters,
   extractMapTiles,
   extractMissions,
@@ -31,6 +33,7 @@ import {
   type ClassAdvantageReference,
   type ClassIndex,
   type CivLocationIndex,
+  type ItemIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
   type MissionNicknameCorrection,
@@ -88,6 +91,7 @@ async function main(): Promise<void> {
   const classes: ClassIndex = {};
   const boards: BoardIndex = [];
   const chips: ChipIndex = {};
+  const items: ItemIndex = {};
   const sites: SiteIndex = {};
   const siteMonsters: SiteMonsterIndex = {};
   const civLocations: CivLocationIndex = {};
@@ -108,6 +112,7 @@ async function main(): Promise<void> {
     const classIndex = extractClasses(save, stem, classAdvantages);
     const boardIndex = extractBoards(save, stem);
     const chipIndex = extractChips(save, stem);
+    const itemIndex = extractItems(save, stem);
     const siteIndex = extractSites(save, stem);
     const siteMonsterIndex = extractSiteMonsters(save, stem);
     const civIndex = extractCivLocations(save, stem);
@@ -123,7 +128,7 @@ async function main(): Promise<void> {
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
     );
 
     boards.push(...boardIndex);
@@ -267,12 +272,39 @@ async function main(): Promise<void> {
         }
       }
     }
+    for (const [name, itemCards] of Object.entries(itemIndex)) {
+      const bucket = (items[name] ??= []);
+      for (const item of itemCards) {
+        const existing = bucket.find((card) => isSameCell(card, item));
+        if (existing) {
+          existing.copies += item.copies;
+          existing.tags = mergeTags(existing.tags, item.tags);
+          for (const loc of item.locations) {
+            const match = existing.locations.find((l) =>
+              sameAncestry(l.ancestry, loc.ancestry),
+            );
+            if (match) match.count += loc.count;
+            else existing.locations.push({ ...loc });
+          }
+          for (const box of item.boxes) {
+            addToBoxes(existing.boxes, box.name, box.count);
+          }
+        } else {
+          bucket.push({
+            ...item,
+            locations: item.locations.map((l) => ({ ...l })),
+            boxes: item.boxes.map((box) => ({ ...box })),
+          });
+        }
+      }
+    }
   }
 
   await writeJson(path.join(OUT_DIR, "boards.json"), boards);
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
   await writeSorted(path.join(OUT_DIR, "classes.json"), classes);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
+  await writeSorted(path.join(OUT_DIR, "items.json"), items);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
   await writeSorted(path.join(OUT_DIR, "site-monsters.json"), siteMonsters);
   await writeSorted(path.join(OUT_DIR, "civlocations.json"), civLocations);
@@ -301,6 +333,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ chips.json: ${Object.keys(chips).length} names, ${countEntries(chips)} chips total`,
+  );
+  console.log(
+    `→ items.json: ${Object.keys(items).length} names, ${countEntries(items)} item cards total`,
   );
   console.log(
     `→ sites.json: ${Object.keys(sites).length} names, ${countEntries(sites)} sites total`,

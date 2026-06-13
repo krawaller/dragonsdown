@@ -6,6 +6,7 @@ import {
   extractClasses,
   extractCivilisationTokens,
   extractCivLocations,
+  extractItems,
   extractMapTileMonsters,
   extractMissions,
   extractNatives,
@@ -19,6 +20,7 @@ import {
   resolveCards,
   CIVILISATION_REFERENCE_CARD_FACE_URL,
   CIVILISATION_TOKEN_FACE_URL,
+  ITEM_CARD_BACK_URL,
   SITE_FACE_URL,
   WILDERNESS_TOKEN_BACK_URLS,
   WILDERNESS_TOKEN_FRONT_METADATA,
@@ -2203,6 +2205,58 @@ describe("extractWildernessTokens", () => {
       ObjectStates: [wildernessToken("front.png", "other-back.png")],
     };
     expect(extractWildernessTokens(save, "eastern")).toEqual({});
+  });
+});
+
+describe("extractItems", () => {
+  const ITEM_DECK = { ...SAMPLE_DECK, BackURL: ITEM_CARD_BACK_URL };
+
+  it("extracts item cards by shared item back URL", () => {
+    const save = {
+      ObjectStates: [card("Buckler", 100, "1", ITEM_DECK)],
+    };
+    const out = extractItems(save, "dd_all_exp");
+    expect(out["Buckler"][0]).toMatchObject({
+      source: "dd_all_exp",
+      backURL: ITEM_CARD_BACK_URL,
+      copies: 1,
+      boxes: [{ name: "Dragons Down", count: 1 }],
+      locations: [{ ancestry: [], count: 1 }],
+    });
+  });
+
+  it("skips cards with other backs", () => {
+    const save = {
+      ObjectStates: [card("Not An Item", 100, "1", SAMPLE_DECK)],
+    };
+    expect(extractItems(save, "dd_all_exp")).toEqual({});
+  });
+
+  it("counts duplicate physical copies by ancestry and box", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "DESOLATION Items",
+          ContainedObjects: [
+            card("Buckler", 100, "1", ITEM_DECK),
+            card("Buckler", 100, "1", ITEM_DECK),
+          ],
+        },
+        card("Buckler", 100, "1", ITEM_DECK),
+      ],
+    };
+    const out = extractItems(save, "dd_all_exp");
+    expect(out["Buckler"]).toHaveLength(1);
+    expect(out["Buckler"][0].copies).toBe(3);
+    expect(out["Buckler"][0].locations).toEqual([
+      { ancestry: ["DESOLATION Items"], count: 2 },
+      { ancestry: [], count: 1 },
+    ]);
+    expect(out["Buckler"][0].boxes).toEqual([
+      { name: "Desolation", count: 2 },
+      { name: "Dragons Down", count: 1 },
+    ]);
   });
 });
 

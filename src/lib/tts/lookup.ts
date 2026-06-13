@@ -6,6 +6,7 @@
  */
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { slugify } from "@/lib/slug";
 import {
   normalizeTitle,
   prettifyChipName,
@@ -16,6 +17,7 @@ import {
   type ChipIndex,
   type ClassIndex,
   type CivLocationIndex,
+  type ItemIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
   type MissionKind,
@@ -26,6 +28,7 @@ import {
   type TTSCardImage,
   type TTSChip,
   type TTSClass,
+  type TTSItemCard,
   type TTSMissionCard,
   type TTSMissionRewards,
   type TTSMapTile,
@@ -41,6 +44,7 @@ import aliasesData from "./aliases.json";
 const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
 const CLASSES_FILE = path.join(process.cwd(), "data", "tts", "classes.json");
 const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
+const ITEMS_FILE = path.join(process.cwd(), "data", "tts", "items.json");
 const SITES_FILE = path.join(process.cwd(), "data", "tts", "sites.json");
 const CIVLOCS_FILE = path.join(
   process.cwd(),
@@ -93,6 +97,7 @@ export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 let cachedCardIndex: CardIndex | null = null;
 let cachedClassIndex: ClassIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
+let cachedItemIndex: ItemIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
 let cachedWildernessTokenIndex: WildernessTokenIndex | null = null;
@@ -122,6 +127,12 @@ function getChipIndex(): ChipIndex {
   if (cachedChipIndex !== null) return cachedChipIndex;
   cachedChipIndex = readJsonOrEmpty<ChipIndex>(CHIPS_FILE);
   return cachedChipIndex;
+}
+
+function getItemIndex(): ItemIndex {
+  if (cachedItemIndex !== null) return cachedItemIndex;
+  cachedItemIndex = readJsonOrEmpty<ItemIndex>(ITEMS_FILE);
+  return cachedItemIndex;
 }
 
 function getSiteIndex(): SiteIndex {
@@ -309,6 +320,21 @@ export type ClassEntry = {
   classes: TTSClass[];
 };
 
+export type ItemStartingClass = {
+  name: string;
+  slug: string;
+  sides: { side: "front" | "back"; slot: string }[];
+};
+
+export type ItemEntry = {
+  name: string;
+  slug: string;
+  cards: TTSItemCard[];
+  copies: number;
+  boxes: { name: string; count: number }[];
+  startingClasses: ItemStartingClass[];
+};
+
 export function getAllClasses(): ClassEntry[] {
   return Object.entries(getClassIndex())
     .map(([name, classes]) => ({
@@ -321,6 +347,49 @@ export function getAllClasses(): ClassEntry[] {
 
 export function getClassBySlug(slug: string): ClassEntry | undefined {
   return getAllClasses().find((entry) => entry.slug === slug);
+}
+
+export function getAllItems(): ItemEntry[] {
+  return Object.entries(getItemIndex())
+    .map(([name, cards]) => ({
+      name,
+      slug: slugify(name),
+      cards,
+      copies: itemPhysicalCopies(cards),
+      boxes: itemBoxes(cards),
+      startingClasses: getClassesForStartingItem(name),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getItemBySlug(slug: string): ItemEntry | undefined {
+  return getAllItems().find((entry) => entry.slug === slug);
+}
+
+export function getClassesForStartingItem(
+  itemName: string,
+): ItemStartingClass[] {
+  const itemKey = normalizeTitle(itemName);
+  return getAllClasses()
+    .flatMap((entry) => {
+      const sides = entry.classes.flatMap((ttsClass) =>
+        (["front", "back"] as const).flatMap((side) =>
+          (ttsClass.setup?.[side]?.items ?? [])
+            .filter((item) => normalizeTitle(item.name) === itemKey)
+            .map((item) => ({ side, slot: item.slot })),
+        ),
+      );
+      return sides.length > 0
+        ? [
+            {
+              name: entry.name,
+              slug: entry.slug,
+              sides: dedupeStartingClassSides(sides),
+            },
+          ]
+        : [];
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 /** Return all chip entries, sorted alphabetically by prettified name. */
@@ -786,12 +855,34 @@ function boardTitle(board: TTSBoard): string {
   return `${board.terrain} Board`;
 }
 
-export function slugify(value: string): string {
-  return value
-    .normalize("NFKD")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+export { slugify };
+
+function itemPhysicalCopies(cards: TTSItemCard[]): number {
+  return cards.reduce((total, card) => total + card.copies, 0);
+}
+
+function itemBoxes(cards: TTSItemCard[]): { name: string; count: number }[] {
+  const boxes = new Map<string, number>();
+  for (const card of cards) {
+    for (const box of card.boxes) {
+      boxes.set(box.name, (boxes.get(box.name) ?? 0) + box.count);
+    }
+  }
+  return [...boxes.entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function dedupeStartingClassSides(
+  sides: { side: "front" | "back"; slot: string }[],
+): { side: "front" | "back"; slot: string }[] {
+  const seen = new Set<string>();
+  return sides.filter((entry) => {
+    const key = `${entry.side}:${entry.slot}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 const NATIVE_CHIP_GROUPS = new Set(

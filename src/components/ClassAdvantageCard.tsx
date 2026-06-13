@@ -1,7 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { SpriteCell } from "@/components/CardSprite";
+import { slugify } from "@/lib/slug";
 import type { TTSCardImage, TTSClassSetup, TTSClassSetupSide } from "@/lib/tts";
 
 export function ClassAdvantageCard({
@@ -63,7 +65,14 @@ function ClassSetupLoadout({ loadout }: { loadout: TTSClassSetupSide }) {
             </h4>
             <ul className="space-y-1 text-sm">
               {loadout.items.map((item, index) => (
-                <li key={`${item.name}-${item.slot}-${index}`}>{item.name}</li>
+                <li key={`${item.name}-${item.slot}-${index}`}>
+                  <Link
+                    href={`/items/${slugify(item.name)}`}
+                    className="hover:underline"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
