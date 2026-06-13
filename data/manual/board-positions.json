@@ -1,0 +1,67 @@
+[
+  {
+    "topStrip": "high",
+    "rows": [
+      ["Altar", "Catacombs"],
+      ["Trove", "Astrologer"]
+    ]
+  },
+  {
+    "rows": [["Herbalist", "Silk Dealer"]]
+  },
+  {
+    "topStrip": "high",
+    "rows": [
+      ["Mausoleum", "Terrace"],
+      ["Tomb", "Ziggurat"]
+    ]
+  },
+  {
+    "topStrip": "high",
+    "rows": [
+      ["Chamber", "Crypt"],
+      ["Hoard", "Scholar"]
+    ]
+  },
+  {
+    "topStrip": "low",
+    "rows": [
+      ["Armorer", "Fortune Teller"],
+      ["Peddler", "Mystic"]
+    ]
+  },
+  {
+    "rows": [["Battlefield"]]
+  },
+  {
+    "topStrip": "high",
+    "rows": [
+      ["Monolith", "Wrecked Wagons"],
+      ["Smuggler", "Vendor"]
+    ]
+  },
+  {
+    "topStrip": "high",
+    "rows": [
+      ["Abyss", "Wreck"],
+      ["Tarn", "Foreigner"]
+    ]
+  },
+  {
+    "topStrip": "high",
+    "rows": [
+      ["Grotto", "Hideout"],
+      ["Lost Battalion", "Artificer"]
+    ]
+  },
+  {
+    "rows": [["Grove"]]
+  },
+  {
+    "topStrip": "high",
+    "rows": [
+      ["Shrine", "Secret Cache"],
+      ["Crone", "Smith"]
+    ]
+  }
+]
