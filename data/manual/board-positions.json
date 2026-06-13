@@ -24,7 +24,7 @@
     ]
   },
   {
-    "topStrip": "low",
+    "topStrip": "high",
     "rows": [
       ["Armorer", "Fortune Teller"],
       ["Peddler", "Mystic"]
