@@ -29,6 +29,68 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Short Bow",
+              "slot": "slot6"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 20
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Long Bow",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 26
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Archer",
@@ -69,6 +131,72 @@
         "ancestry": [
           "Class DESOLATION"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot5"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 19
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Long Sword",
+              "slot": "slot5"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 23
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -111,6 +239,72 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Great Axe",
+              "slot": "slot6"
+            },
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            }
+          ],
+          "gold": 17
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Battle Axe",
+              "slot": "slot5"
+            },
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Shield",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            }
+          ],
+          "gold": 8
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Barbarian",
@@ -151,6 +345,90 @@
         "ancestry": [
           "Class DESOLATION"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            }
+          ],
+          "gold": 6
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            }
+          ],
+          "gold": 9
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -193,6 +471,78 @@
           "Class DESOLATION"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Spear",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Short Bow",
+              "slot": "slot6"
+            },
+            {
+              "name": "Spear",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Battlemage",
@@ -233,6 +583,76 @@
         "ancestry": [
           "Class NATIVES"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Spear",
+              "slot": "slot4"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot17"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 0
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            },
+            {
+              "name": "Buckler",
+              "slot": "slot5"
+            },
+            {
+              "name": "Sling",
+              "slot": "slot17"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 0
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -275,6 +695,68 @@
           "Class NATIVES"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Great Axe",
+              "slot": "slot6"
+            },
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            }
+          ],
+          "gold": 0
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Morning Star",
+              "slot": "slot4"
+            },
+            {
+              "name": "Buckler",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            }
+          ],
+          "gold": 0
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Berserker",
@@ -315,6 +797,72 @@
         "ancestry": [
           "Class DESOLATION"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Chainmail",
+              "slot": "slot3"
+            },
+            {
+              "name": "Mace",
+              "slot": "slot5"
+            },
+            {
+              "name": "Shield",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 4
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Chainmail",
+              "slot": "slot3"
+            },
+            {
+              "name": "Battle Axe",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 12
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -357,6 +905,76 @@
           "Class NATIVES"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 16
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Battle Axe",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 12
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Brigand",
@@ -397,6 +1015,50 @@
         "ancestry": [
           "Class NATIVES"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 31
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 24
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -439,6 +1101,83 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Chainmail",
+              "slot": "slot3"
+            },
+            {
+              "name": "Mace",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "green",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "green",
+              "count": 1
+            }
+          ],
+          "gold": 8
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Cleric",
@@ -480,6 +1219,75 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Conjuror",
@@ -520,6 +1328,88 @@
         "ancestry": [
           "Class EASTERN"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 1
+            }
+          ],
+          "gold": 16
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 1
+            }
+          ],
+          "gold": 11
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -580,6 +1470,72 @@
           "Class EASTERN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Mace",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 12
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Long Sword",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 7
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Dervish",
@@ -621,6 +1577,65 @@
           "Class EASTERN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 2
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 2
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Disciple",
@@ -661,6 +1676,75 @@
         "ancestry": [
           "Class DRAGONS DOWN"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "green",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "green",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -712,6 +1796,80 @@
           "Class EASTERN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 14
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 16
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Duelist",
@@ -752,6 +1910,75 @@
         "ancestry": [
           "Class DRAGONS DOWN"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -794,6 +2021,86 @@
           "Class DESOLATION"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Battle Axe",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 1
+            }
+          ],
+          "gold": 19
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Great Sword",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 1
+            }
+          ],
+          "gold": 0
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Executioner",
@@ -834,6 +2141,76 @@
         "ancestry": [
           "Class NATIVES"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Spear",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 11
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 6
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -876,6 +2253,75 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Illusionist",
@@ -916,6 +2362,72 @@
         "ancestry": [
           "Class DRAGONS DOWN"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Chainmail",
+              "slot": "slot3"
+            },
+            {
+              "name": "Long Sword",
+              "slot": "slot5"
+            },
+            {
+              "name": "Shield",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            }
+          ],
+          "gold": 1
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Chainmail",
+              "slot": "slot3"
+            },
+            {
+              "name": "Morning Star",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            }
+          ],
+          "gold": 11
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -958,6 +2470,95 @@
           "Class DESOLATION"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Magician",
@@ -998,6 +2599,76 @@
         "ancestry": [
           "Class EASTERN"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            },
+            {
+              "name": "Buckler",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Battle Axe",
+              "slot": "slot4"
+            },
+            {
+              "name": "Shield",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 7
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1040,6 +2711,55 @@
           "Class EASTERN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 7
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 0
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Monk",
@@ -1080,6 +2800,88 @@
         "ancestry": [
           "Class NATIVES"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 2
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Buckler",
+              "slot": "slot5"
+            },
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 2
+            }
+          ],
+          "gold": 9
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1122,6 +2924,64 @@
           "Class NATIVES"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            }
+          ],
+          "gold": 0
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            }
+          ],
+          "gold": 0
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Outcast",
@@ -1162,6 +3022,80 @@
         "ancestry": [
           "Class DESOLATION"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Plate Armor",
+              "slot": "slot3"
+            },
+            {
+              "name": "Great Sword",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Shield",
+              "slot": "slot4"
+            },
+            {
+              "name": "Long Sword",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 3
+            },
+            {
+              "type": "Spell",
+              "color": "white",
+              "count": 1
+            }
+          ]
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1213,6 +3147,84 @@
           "Class EASTERN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot4"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 14
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Hand Axe",
+              "slot": "slot4"
+            },
+            {
+              "name": "Hand Axe",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            }
+          ],
+          "gold": 8
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Pit FIghter",
@@ -1253,6 +3265,90 @@
         "ancestry": [
           "Class DESOLATION"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Short Bow",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "green",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Sling",
+              "slot": "slot6"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Buckler",
+              "slot": "slot5"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "green",
+              "count": 1
+            }
+          ],
+          "gold": 6
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1295,6 +3391,76 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 5
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Buckler",
+              "slot": "slot6"
+            },
+            {
+              "name": "Hand Axe",
+              "slot": "slot4"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 5
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ],
+          "gold": 20
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Rogue",
@@ -1335,6 +3501,86 @@
         "ancestry": [
           "Class DESOLATION"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Buckler",
+              "slot": "slot5"
+            },
+            {
+              "name": "Long Sword",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            }
+          ],
+          "gold": 3
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Buckler",
+              "slot": "slot5"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot4"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            }
+          ],
+          "gold": 8
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1377,6 +3623,75 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Sorcerer",
@@ -1417,6 +3732,60 @@
         "ancestry": [
           "Class DESOLATION"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 2
+            }
+          ],
+          "gold": 3
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 2
+            }
+          ],
+          "gold": 3
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1459,6 +3828,86 @@
           "Class DESOLATION"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Sling",
+              "slot": "slot6"
+            },
+            {
+              "name": "Buckler",
+              "slot": "slot4"
+            },
+            {
+              "name": "Hand Axe",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 1
+            }
+          ],
+          "gold": 13
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Leathers",
+              "slot": "slot2"
+            },
+            {
+              "name": "Mace",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Trickster",
@@ -1499,6 +3948,72 @@
         "ancestry": [
           "Class EASTERN"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Long Sword",
+              "slot": "slot4"
+            },
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot17"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 14
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Great Sword",
+              "slot": "slot6"
+            },
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 15
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1541,6 +4056,75 @@
           "Class DRAGONS DOWN"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Warlock",
@@ -1581,6 +4165,83 @@
         "ancestry": [
           "Class DRAGONS DOWN"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Shield",
+              "slot": "slot4"
+            },
+            {
+              "name": "Breastplate",
+              "slot": "slot2"
+            },
+            {
+              "name": "Short Sword",
+              "slot": "slot5"
+            },
+            {
+              "name": "Iron Helm",
+              "slot": "slot1"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ]
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Buckler",
+              "slot": "slot4"
+            },
+            {
+              "name": "Leather Helm",
+              "slot": "slot1"
+            },
+            {
+              "name": "Dagger",
+              "slot": "slot5"
+            },
+            {
+              "name": "Spear",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 4
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 2
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 2
+            }
+          ],
+          "gold": 12
+        }
       },
       "classToken": {
         "source": "dd_all_exp",
@@ -1623,6 +4284,70 @@
           "Class DESOLATION"
         ]
       },
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "black",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "green",
+              "count": 1
+            }
+          ],
+          "gold": 10
+        }
+      },
       "classToken": {
         "source": "dd_all_exp",
         "name": "Witch",
@@ -1663,6 +4388,80 @@
         "ancestry": [
           "Class NATIVES"
         ]
+      },
+      "setup": {
+        "front": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "yellow",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "blue",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        },
+        "back": {
+          "items": [
+            {
+              "name": "Staff",
+              "slot": "slot6"
+            }
+          ],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 3
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            },
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "purple",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "grey",
+              "count": 1
+            }
+          ],
+          "gold": 15
+        }
       },
       "classToken": {
         "source": "dd_all_exp",

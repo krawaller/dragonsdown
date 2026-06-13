@@ -42,6 +42,7 @@ export default async function ClassPage({
             <ClassAdvantageCard
               name={ttsClass.advantageTitle}
               card={ttsClass.advantageCard}
+              setup={ttsClass.setup}
             />
           )}
 

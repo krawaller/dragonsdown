@@ -460,6 +460,76 @@ describe("extractClasses", () => {
     expect(classes.Warrior[0].classToken?.name).toBe("Warrior Counter(Big)");
     expect(classes["Pit Fighter"][0].targetingTokens).toHaveLength(2);
   });
+
+  it("extracts scripted front and back class setup loadouts", () => {
+    const assassinLua = `function onLoad()
+    createSetupButtons()
+end
+
+function back_setup(object, player_color)
+    Wait.time(function() take_card(ItemDeck, "Long Sword", "slot5", player_color, rr) end, 2)
+    Wait.time(function() take_card(ItemDeck, "Dagger", "slot4", player_color, rr) end, 3)
+    Wait.time(function() take_cube("Speed", "brown", 4, player_color, rr) end, 3)
+    Wait.time(function() take_cube("Attack", "red", 2, player_color, rr) end, 4)
+    Wait.time(function() take_cube("Life", "health", 2, player_color, rr) end, 5)
+    Wait.time(function() set_gold(23, player_color) end, 3)
+end
+
+function front_setup(object, player_color)
+    Wait.time(function() take_card(ItemDeck, "Leathers", "slot2", player_color, rr) end, 4)
+    Wait.time(function() take_card(ItemDeck, "Short Sword", "slot5", player_color, rr) end, 3)
+    Wait.time(function() take_card(ItemDeck, "Dagger", "slot4", player_color, rr) end, 3)
+    Wait.time(function() take_cube("Speed", "brown", 4, player_color, rr) end, 3)
+    Wait.time(function() take_cube("Attack", "red", 2, player_color, rr) end, 4)
+    Wait.time(function() take_cube("Life", "health", 2, player_color, rr) end, 5)
+    Wait.time(function() set_gold(19, player_color) end, 3)
+end`;
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Class DESOLATION",
+          ContainedObjects: [
+            {
+              ...card("Assassin (Backstab)", 812, "8", SAMPLE_DECK),
+              LuaScript: assassinLua,
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(
+      extractClasses(save, "dd_all_exp", [{ title: "Assassin (Backstab)" }])
+        .Assassin[0].setup,
+    ).toEqual({
+      front: {
+        items: [
+          { name: "Leathers", slot: "slot2" },
+          { name: "Short Sword", slot: "slot5" },
+          { name: "Dagger", slot: "slot4" },
+        ],
+        cubes: [
+          { type: "Speed", color: "brown", count: 4 },
+          { type: "Attack", color: "red", count: 2 },
+          { type: "Life", color: "health", count: 2 },
+        ],
+        gold: 19,
+      },
+      back: {
+        items: [
+          { name: "Long Sword", slot: "slot5" },
+          { name: "Dagger", slot: "slot4" },
+        ],
+        cubes: [
+          { type: "Speed", color: "brown", count: 4 },
+          { type: "Attack", color: "red", count: 2 },
+          { type: "Life", color: "health", count: 2 },
+        ],
+        gold: 23,
+      },
+    });
+  });
 });
 
 describe("extractMissions", () => {

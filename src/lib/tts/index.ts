@@ -130,6 +130,28 @@ export type TTSClassTile = {
   gmNotes?: string;
 };
 
+export type TTSClassSetupItem = {
+  name: string;
+  slot: string;
+};
+
+export type TTSClassSetupCube = {
+  type: string;
+  color: string;
+  count: number;
+};
+
+export type TTSClassSetupSide = {
+  items: TTSClassSetupItem[];
+  cubes: TTSClassSetupCube[];
+  gold?: number;
+};
+
+export type TTSClassSetup = {
+  front?: TTSClassSetupSide;
+  back?: TTSClassSetupSide;
+};
+
 export type TTSClass = {
   source: string;
   name: string;
@@ -137,6 +159,7 @@ export type TTSClass = {
   advantageCard?: TTSCardImage;
   classToken?: TTSClassTile;
   targetingTokens: TTSClassTile[];
+  setup?: TTSClassSetup;
 };
 
 /** Output written to data/tts/classes.json. Keyed by class name. */
@@ -723,7 +746,11 @@ export function extractClasses(
     );
     if (!className) continue;
     const image = imageFor(card, source, ancestry);
-    if (image) index[className][0].advantageCard = image;
+    if (image) {
+      index[className][0].advantageCard = image;
+      const setup = classSetupFromLua(card.LuaScript ?? "");
+      if (setup) index[className][0].setup = setup;
+    }
   }
 
   const tiles: TileWithAncestry[] = [];
@@ -811,6 +838,63 @@ function classTileImage(
 
 function compareClassTiles(a: TTSClassTile, b: TTSClassTile): number {
   return a.name.localeCompare(b.name) || a.imageURL.localeCompare(b.imageURL);
+}
+
+function classSetupFromLua(luaScript: string): TTSClassSetup | undefined {
+  const front = classSetupSideFromLua(luaScript, "front_setup");
+  const back = classSetupSideFromLua(luaScript, "back_setup");
+  if (!front && !back) return undefined;
+  return { ...(front ? { front } : {}), ...(back ? { back } : {}) };
+}
+
+function classSetupSideFromLua(
+  luaScript: string,
+  functionName: "front_setup" | "back_setup",
+): TTSClassSetupSide | undefined {
+  const body = classSetupFunctionBody(luaScript, functionName);
+  if (!body) return undefined;
+
+  const items: TTSClassSetupItem[] = [];
+  const itemPattern = /take_card\([^,]+,\s*"([^"]+)"\s*,\s*"([^"]+)"/g;
+  let itemMatch: RegExpExecArray | null;
+  while ((itemMatch = itemPattern.exec(body))) {
+    items.push({ name: itemMatch[1], slot: itemMatch[2] });
+  }
+
+  const cubes: TTSClassSetupCube[] = [];
+  const cubePattern = /take_cube\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*(\d+)/g;
+  let cubeMatch: RegExpExecArray | null;
+  while ((cubeMatch = cubePattern.exec(body))) {
+    cubes.push({
+      type: cubeMatch[1],
+      color: cubeMatch[2],
+      count: Number(cubeMatch[3]),
+    });
+  }
+
+  const side: TTSClassSetupSide = { items, cubes };
+  const gold = body.match(/set_gold\(\s*(\d+)/);
+  if (gold) side.gold = Number(gold[1]);
+
+  if (items.length === 0 && cubes.length === 0 && side.gold === undefined) {
+    return undefined;
+  }
+  return side;
+}
+
+function classSetupFunctionBody(
+  luaScript: string,
+  functionName: string,
+): string {
+  const escaped = functionName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = luaScript
+    .replace(/\r/g, "")
+    .match(
+      new RegExp(
+        `function\\s+${escaped}\\s*\\([^)]*\\)([\\s\\S]*?)(?=\\nfunction\\s|$)`,
+      ),
+    );
+  return match?.[1] ?? "";
 }
 
 export function missionCellKey(
