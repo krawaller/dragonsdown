@@ -19,6 +19,7 @@ import {
   type MissionIndex,
   type MissionKind,
   type MissionTerrainPack,
+  type NativeIndex,
   type NativeSummonIndex,
   type SiteIndex,
   type TTSCardImage,
@@ -81,6 +82,7 @@ const NATIVE_SUMMONS_FILE = path.join(
   "tts",
   "native-summons.json",
 );
+const NATIVES_FILE = path.join(process.cwd(), "data", "tts", "natives.json");
 const MISSIONS_FILE = path.join(process.cwd(), "data", "tts", "missions.json");
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
@@ -95,6 +97,7 @@ let cachedBoardIndex: TTSBoard[] | null = null;
 let cachedSiteMonsterIndex: Record<string, TTSSiteMonsterGroup[]> | null = null;
 let cachedMapTileMonsterIndex: MapTileMonsterIndex | null = null;
 let cachedMapTiles: TTSMapTile[] | null = null;
+let cachedNativeIndex: NativeIndex | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
 let cachedMissionIndex: MissionIndex | null = null;
 let cachedAliases: AliasMap | null = null;
@@ -177,6 +180,12 @@ function getNativeSummonIndex(): NativeSummonIndex {
   return cachedNativeSummonIndex;
 }
 
+function getNativeIndex(): NativeIndex {
+  if (cachedNativeIndex !== null) return cachedNativeIndex;
+  cachedNativeIndex = readJsonOrEmpty<NativeIndex>(NATIVES_FILE);
+  return cachedNativeIndex;
+}
+
 function getMissionIndex(): MissionIndex {
   if (cachedMissionIndex !== null) return cachedMissionIndex;
   cachedMissionIndex = readJsonOrEmpty<MissionIndex>(MISSIONS_FILE);
@@ -249,6 +258,7 @@ export type MonsterGroupEntry = Omit<ChipEntry, "chips"> & {
   mapTiles: MonsterGroupMapTileSummon[];
   sites: MonsterGroupSiteSummon[];
   nativeSummons: NativeGroupSummon[];
+  civilisationCard?: TTSCardImage;
 };
 
 export type MonsterGroupMapTileLink = {
@@ -319,6 +329,7 @@ export function getAllNativeGroups(): MonsterGroupEntry[] {
       mapTiles: [],
       sites: [],
       nativeSummons: getNativeSummonsForGroup(entry.prettyName),
+      civilisationCard: getNativeCivilisationCard(entry.prettyName),
     }))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
@@ -937,6 +948,12 @@ function getNativeSummonsForGroup(groupName: string): NativeGroupSummon[] {
     }
   }
   return summons.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function getNativeCivilisationCard(
+  groupName: string,
+): TTSCardImage | undefined {
+  return getNativeIndex()[normalizeTitle(groupName)]?.[0]?.civilisationCard;
 }
 
 function mapTileHref(terrain: string, tileName: string): string {

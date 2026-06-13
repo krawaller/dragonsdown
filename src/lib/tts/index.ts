@@ -177,6 +177,16 @@ export type TTSNativeSummonGroup = {
 /** Output written to data/tts/native-summons.json. Keyed by setup source. */
 export type NativeSummonIndex = Record<string, TTSNativeSummonGroup[]>;
 
+export type TTSNativeGroup = TTSNativeSummonGroup & {
+  civilisationCard?: TTSCardImage;
+};
+
+/** Output written to data/tts/natives.json. Keyed by native group name. */
+export type NativeIndex = Record<string, TTSNativeGroup[]>;
+
+export const CIVILISATION_REFERENCE_CARD_FACE_URL =
+  "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png";
+
 export const CIVILISATION_TOKEN_FACE_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/";
 
@@ -1257,6 +1267,94 @@ export function extractNativeSummons(
 
   return Object.fromEntries(
     Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
+  );
+}
+
+export function extractNatives(root: unknown, source: string): NativeIndex {
+  const objects: Record<string, unknown>[] = [];
+  collectObjects(root, objects);
+  const chipsByGuid = chipInfoByGuid(objects);
+  const rootLua = isRecord(root) ? text(root.LuaScript) : "";
+  const nativeGroups = nativeGroupsFromRootLua(rootLua, chipsByGuid, source);
+  const civilisationCards = nativeCivilisationCards(root, source);
+  const index: NativeIndex = {};
+
+  for (const group of nativeGroups) {
+    const card = civilisationCards.get(normalizeTitle(group.group));
+    index[group.group] = [
+      {
+        ...group,
+        natives: [...group.natives],
+        nativeChips: group.nativeChips.map((chip) => ({ ...chip })),
+        ...(card ? { civilisationCard: card } : {}),
+      },
+    ];
+  }
+
+  return Object.fromEntries(
+    Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
+  );
+}
+
+function nativeCivilisationCards(
+  root: unknown,
+  source: string,
+): Map<string, TTSCardImage> {
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  const index = new Map<string, TTSCardImage>();
+  for (const { card, ancestry } of cards) {
+    const image = imageFor(card, source, ancestry);
+    if (!image || image.faceURL !== CIVILISATION_REFERENCE_CARD_FACE_URL) {
+      continue;
+    }
+    const name = nativeCivilisationCardName(card, image);
+    if (!name || !NATIVE_CIVILISATION_CARD_NAMES.has(normalizeTitle(name))) {
+      continue;
+    }
+    const key = normalizeTitle(name);
+    if (!index.has(key)) index.set(key, image);
+  }
+  return index;
+}
+
+const NATIVE_CIVILISATION_CARD_NAMES = new Set(
+  [
+    "Aurorans",
+    "Bashkirs",
+    "Consul",
+    "Dwarves",
+    "Elves",
+    "Knights",
+    "Mariners",
+    "Nomads",
+    "Priests",
+    "Rogues",
+    "Sellswords",
+    "Soldiers",
+    "Villagers",
+    "Wardens",
+    "Watch",
+  ].map(normalizeTitle),
+);
+
+const NATIVE_CIVILISATION_CARD_NAMES_BY_CELL: Record<string, string> = {
+  "0:1": "Aurorans",
+  "1:1": "Priests",
+  "1:6": "Villagers",
+  "1:7": "Wardens",
+  "1:8": "Watch",
+};
+
+function nativeCivilisationCardName(
+  card: TTSCardObject,
+  image: TTSCardImage,
+): string {
+  const raw = text(card.Nickname).replace(/^The\s+/i, "");
+  return (
+    raw ||
+    NATIVE_CIVILISATION_CARD_NAMES_BY_CELL[`${image.row}:${image.col}`] ||
+    ""
   );
 }
 

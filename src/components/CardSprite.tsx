@@ -17,12 +17,16 @@ export function SpriteCell({
   className?: string;
 }) {
   const url = useBack ? card.backURL : card.faceURL;
+  const numWidth = useBack && !card.uniqueBack ? 1 : card.numWidth;
+  const numHeight = useBack && !card.uniqueBack ? 1 : card.numHeight;
+  const row = useBack && !card.uniqueBack ? 0 : card.row;
+  const col = useBack && !card.uniqueBack ? 0 : card.col;
   const style: CSSProperties = {
     aspectRatio: "5 / 7",
     backgroundImage: `url(${url})`,
-    backgroundSize: `${card.numWidth * 100}% ${card.numHeight * 100}%`,
-    backgroundPosition: `${(card.col / Math.max(card.numWidth - 1, 1)) * 100}% ${
-      (card.row / Math.max(card.numHeight - 1, 1)) * 100
+    backgroundSize: `${numWidth * 100}% ${numHeight * 100}%`,
+    backgroundPosition: `${(col / Math.max(numWidth - 1, 1)) * 100}% ${
+      (row / Math.max(numHeight - 1, 1)) * 100
     }%`,
     backgroundRepeat: "no-repeat",
   };

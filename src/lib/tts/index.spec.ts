@@ -7,6 +7,7 @@ import {
   extractCivLocations,
   extractMapTileMonsters,
   extractMissions,
+  extractNatives,
   extractNativeSummons,
   extractSiteMonsters,
   extractWildernessTokens,
@@ -15,6 +16,7 @@ import {
   normalizeTitle,
   prettifyChipName,
   resolveCards,
+  CIVILISATION_REFERENCE_CARD_FACE_URL,
   CIVILISATION_TOKEN_FACE_URL,
   SITE_FACE_URL,
   WILDERNESS_TOKEN_BACK_URLS,
@@ -1648,6 +1650,97 @@ end`,
         },
       ],
     });
+  });
+});
+
+describe("extractNatives", () => {
+  const chip = (guid: string, gmNotes: string) => ({
+    GUID: guid,
+    Name: "Custom_Tile",
+    GMNotes: gmNotes,
+    CustomImage: {
+      ImageURL: `${guid}.png`,
+      ImageSecondaryURL: `${guid}-back.png`,
+    },
+    LuaScript: "chipName = self.getGMNotes()",
+  });
+
+  const civCard = (nickname: string, cardID: number) => ({
+    Name: "Card",
+    Nickname: nickname,
+    CardID: cardID,
+    CustomDeck: {
+      "610": {
+        FaceURL: CIVILISATION_REFERENCE_CARD_FACE_URL,
+        BackURL: "backs.png",
+        NumWidth: 10,
+        NumHeight: 2,
+        UniqueBack: false,
+      },
+    },
+  });
+
+  it("combines native setup chips with their civilisation card", () => {
+    const save = {
+      LuaScript: `nativeGroups = {
+  bashkirs = {
+    "168365", --Leader
+    "571a63", --2
+  },
+}`,
+      ObjectStates: [
+        chip("168365", "bashkirs"),
+        chip("571a63", "bashkirs"),
+        civCard("Bashkirs", 61002),
+      ],
+    };
+
+    expect(extractNatives(save, "eastern")).toEqual({
+      Bashkirs: [
+        {
+          source: "eastern",
+          group: "Bashkirs",
+          natives: ["Bashkirs Leader", "Bashkirs 2"],
+          nativeChips: [
+            {
+              name: "Bashkirs Leader",
+              imageURL: "168365.png",
+              imageSecondaryURL: "168365-back.png",
+            },
+            {
+              name: "Bashkirs 2",
+              imageURL: "571a63.png",
+              imageSecondaryURL: "571a63-back.png",
+            },
+          ],
+          civilisationCard: {
+            source: "eastern",
+            faceURL: CIVILISATION_REFERENCE_CARD_FACE_URL,
+            backURL: "backs.png",
+            numWidth: 10,
+            numHeight: 2,
+            row: 0,
+            col: 2,
+            uniqueBack: false,
+          },
+        },
+      ],
+    });
+  });
+
+  it("infers blank TTS native card names from printed sheet cells", () => {
+    const save = {
+      LuaScript: `nativeGroups = {
+  wardens = {
+    "600fe8", --WardenLeader
+  },
+}`,
+      ObjectStates: [chip("600fe8", "wardens"), civCard("", 61017)],
+    };
+
+    expect(
+      extractNatives(save, "eastern").Wardens[0].civilisationCard,
+    ).toMatchObject({ row: 1, col: 7 });
   });
 });
 

@@ -1,0 +1,755 @@
+{
+  "Aurorans": [
+    {
+      "source": "dd_all_exp",
+      "group": "Aurorans",
+      "natives": [
+        "Aurorans Leader",
+        "Aurorans 2",
+        "Aurorans 3",
+        "Aurorans 4"
+      ],
+      "nativeChips": [
+        {
+          "name": "Aurorans Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16572469079734493619/7F974CC87091D19199EE8E33FD095C2F6246ECDE/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16378771767721342059/F1549724B5991A6681EFB0D3C204B3FF729CC2FD/"
+        },
+        {
+          "name": "Aurorans 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13641080114364159652/99806F56E4200EA8B8FDF382CB843C997F5D47D1/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17715811173941858197/E67728C262FA65685D3406CE444119A659477220/"
+        },
+        {
+          "name": "Aurorans 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12088926178196991054/382524AEE93531F6C9DED13081A5F1C574D4C6C6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15390529101690067372/1F572C97959E71C72BED3E34EC2FD1B846526BB3/"
+        },
+        {
+          "name": "Aurorans 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14626846797950717660/4EC38100DBE6740DE3D827F841B2E5314CA81798/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11500791103754301704/9C4C9CE5C9923C7389205B4367776F24D0F74946/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 0,
+        "col": 1,
+        "uniqueBack": true,
+        "ancestry": [
+          "Deserts Chips"
+        ]
+      }
+    }
+  ],
+  "Bashkirs": [
+    {
+      "source": "dd_all_exp",
+      "group": "Bashkirs",
+      "natives": [
+        "Bashkirs Leader",
+        "Bashkirs 2",
+        "Bashkirs 3",
+        "Bashkirs 4",
+        "Bashkirs 5",
+        "Bashkirs 6"
+      ],
+      "nativeChips": [
+        {
+          "name": "Bashkirs Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725673493/63E89D7ED4FE43C4AA48FEC12CFA0A554FC245D2/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012591927/FB05FF08454FAC0B6987BA4033C209B27CAD4BF5/"
+        },
+        {
+          "name": "Bashkirs 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725674465/8F701E29F561D940FE158E4E39264746AA318B58/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012590824/5BC2DB692E2C58B884E2869F6B96D8B27BB804A1/"
+        },
+        {
+          "name": "Bashkirs 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725675578/F825C0B405575DA4177ED149586AB55963D389C4/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012589629/10CFCC691FA09DCFED5781D641F44B91394D3852/"
+        },
+        {
+          "name": "Bashkirs 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725676617/A67EE5B4BED84B84D50DC5CAA7F670AF6A4649E8/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012588326/110C0AE5C6C8F56BACC97A479581188ABD45301C/"
+        },
+        {
+          "name": "Bashkirs 5",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725678157/468A0A334DD41A90E52AC108BB001075D420D313/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012582416/B70A846F42BFC53A73DEAC66D516D8D451D83280/"
+        },
+        {
+          "name": "Bashkirs 6",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725690286/3DCF51860DF669D6382DB8658C41F2FDFD9EAEED/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012580554/51FD57F6D289A02BE64F7B4C6690832EB5AB5931/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 0,
+        "col": 2,
+        "uniqueBack": true,
+        "ancestry": [
+          "NATIVES Groups"
+        ]
+      }
+    }
+  ],
+  "Consul": [
+    {
+      "source": "dd_all_exp",
+      "group": "Consul",
+      "natives": [
+        "Consul",
+        "Bodyguard"
+      ],
+      "nativeChips": [
+        {
+          "name": "Consul",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951429540/CE39B41AA8BEFEDE5310616E4972F863627E43F9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453765680/3F2FE0709EBDDA57A78654B222A069392BAD419E/"
+        },
+        {
+          "name": "Bodyguard",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951428748/1470869C156F3BC314FFA3CF03BAA01FC7F1B62C/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453764426/CE3C9E09B5338238C6AF8EB7777035BAFA6D2433/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 0,
+        "col": 3,
+        "uniqueBack": true,
+        "ancestry": [
+          "Consul"
+        ]
+      }
+    }
+  ],
+  "Dwarves": [
+    {
+      "source": "dd_all_exp",
+      "group": "Dwarves",
+      "natives": [
+        "Dwarf Leader",
+        "Dwarf 2",
+        "Dwarf 3"
+      ],
+      "nativeChips": [
+        {
+          "name": "Dwarf Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951406623/30AB7CAAF45DA99E3D08CF7EFF796122B793A525/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951406972/87928E2A63C4EECA56942A948125AA0D225F939E/"
+        },
+        {
+          "name": "Dwarf 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951412540/56A5DA528A02DE5F7367CC9D220DB65BB2C0C1B6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951412916/7B897D06A7DEB2C253C93FB862E8901594F7E5F1/"
+        },
+        {
+          "name": "Dwarf 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951411085/03D76D332782FB01B560957657CAE3C9F450F621/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951411725/00763E42D46AE08AB0C4239F547199CB55629F7B/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 0,
+        "col": 4,
+        "uniqueBack": true,
+        "ancestry": [
+          "Caves  Chips"
+        ]
+      }
+    }
+  ],
+  "Elves": [
+    {
+      "source": "dd_all_exp",
+      "group": "Elves",
+      "natives": [
+        "Elf Leader",
+        "Elf 2",
+        "Elf 3",
+        "Elf 4"
+      ],
+      "nativeChips": [
+        {
+          "name": "Elf Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012600288/D02D45E4FA1BA7FA43E40609439B09ED9B32F7E4/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012600733/EEED13F972EFBD8734F71805871E726A6C82D81E/"
+        },
+        {
+          "name": "Elf 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810043220355/5750B432E1A882129B39ADCE858657652759D83A/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810043220589/18A3F8276B8BFB711AA41D3CE4EE960865E10252/"
+        },
+        {
+          "name": "Elf 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012597338/A6BE52BC2F0EFC5467C2FBB727F9CA218C78F794/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012597727/79B8B281C817DC96F54BFF2657FDAA12372D4C8E/"
+        },
+        {
+          "name": "Elf 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012598832/8B2D517B0375B071F4BFB0BCA5C1042FF607D84D/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012599193/6B075299588204519BC59F565AF27952E8D1A9D5/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 0,
+        "col": 5,
+        "uniqueBack": true,
+        "ancestry": [
+          "NATIVES Groups"
+        ]
+      }
+    }
+  ],
+  "Knights": [
+    {
+      "source": "dd_all_exp",
+      "group": "Knights",
+      "natives": [
+        "Knight Leader",
+        "Knight 2",
+        "Knight 3"
+      ],
+      "nativeChips": [
+        {
+          "name": "Knight Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951416302/41DCD057DC2E6502D406E7095F2073C669B2FFFC/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131802873/242942441548B92F40610119135D56482D7B006A/"
+        },
+        {
+          "name": "Knight 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951417953/9B98FD8F78ACCE9893C8A68A13C57A5A745CCB12/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131804014/5C1266BED25D2633780B3B5EAB1D88999BB315F2/"
+        },
+        {
+          "name": "Knight 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951419018/04165A290AFE5FB6C1558E355A6D6B3B5A53A03A/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951419352/8FECF9D5296F33EB194E7ACF7A20B1A3A112626E/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 0,
+        "col": 8,
+        "uniqueBack": true,
+        "ancestry": [
+          "Mountains Chips"
+        ]
+      }
+    }
+  ],
+  "Mariners": [
+    {
+      "source": "dd_all_exp",
+      "group": "Mariners",
+      "natives": [
+        "Mariners Leader",
+        "Mariners 2",
+        "Mariners 3",
+        "Mariners 4"
+      ],
+      "nativeChips": [
+        {
+          "name": "Mariners Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16610782663697067579/90E45C8FBAA687D1EFB31E815EAEE3EBBC6D9391/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16252521360614033732/385E524A4D6496957C205A6B3403CF8B7D12BFC6/"
+        },
+        {
+          "name": "Mariners 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9871876268881231400/97914B75CA64728D57A4066E743E939F99853818/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11698904483945935515/E8F81C9F4A2A6F340AD088BD826C1B731927A83B/"
+        },
+        {
+          "name": "Mariners 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11609108222288891706/DB55672765D5FA72F3460588968E67615DDEEA00/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12473327886700110485/F254CC88871B96B394424AE8943C4166DCE606DC/"
+        },
+        {
+          "name": "Mariners 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11142898611934360885/15DC343C6DC671334DC886068CE12E2401AFD9A9/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16579491103949521439/4541172A60622AB0530C692B44E0387154791871/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 0,
+        "col": 9,
+        "uniqueBack": true,
+        "ancestry": [
+          "Riverlands Chips"
+        ]
+      }
+    }
+  ],
+  "Nomads": [
+    {
+      "source": "dd_all_exp",
+      "group": "Nomads",
+      "natives": [
+        "Nomads Leader",
+        "Nomads 2",
+        "Nomads 3",
+        "Nomads 4",
+        "Nomads 5",
+        "Nomads 6"
+      ],
+      "nativeChips": [
+        {
+          "name": "Nomads Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15741981104585305055/D4E14B7951D10AF7617964F6134C44D3A3758895/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17475796836636167852/543BDA5437E7EF3E5BA80A318B872307EFF14D2B/"
+        },
+        {
+          "name": "Nomads 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9795899677972156205/DAEE5402A22D1B202DB8AC1332BA697CF03ED860/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15676966195131142184/004EBB2D7E77187C4AE3DAF8DEC4D8D45B56B584/"
+        },
+        {
+          "name": "Nomads 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10626712172549177033/9AE71A3A849FF831615D80F8F3B5A9BDE4DDDE06/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17066834884099110571/28D20FCD07D939A319DC0ACF5982F28C14B6E8DF/"
+        },
+        {
+          "name": "Nomads 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13171044435687065995/BE8142E46698E9F97E01FCD3C507825E6191ACC3/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10836921346867602577/224326AF5DBC084EADADAAB9303E6807444AC41F/"
+        },
+        {
+          "name": "Nomads 5",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17878016086939151760/DB902626BBC45C6DEC0AABE2CF78B38889C0A7E0/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17956837787649068655/F180B055AED31772C4CE2759DEB25A705CA9C689/"
+        },
+        {
+          "name": "Nomads 6",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14035682570329651806/6DBCCAE09C66F64AE03F426C372A9FEFB4D24B9D/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17760935975547674481/70CF7FEDE418578BC34A16A72BB25F6BF8E2BD45/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 0,
+        "uniqueBack": true,
+        "ancestry": [
+          "Oasis"
+        ]
+      }
+    }
+  ],
+  "Priests": [
+    {
+      "source": "dd_all_exp",
+      "group": "Priests",
+      "natives": [
+        "Priest Leader",
+        "Acolyte 1",
+        "Acolyte 2"
+      ],
+      "nativeChips": [
+        {
+          "name": "Priest Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951421443/B0ADB0E7E8D019F5C15AAC7741123EB9477534AC/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131797793/0ADE002CF2EBBB96B3D4C61F4DA8FA24C72D714C/"
+        },
+        {
+          "name": "Acolyte 1",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951422455/5339ABFDD187F4F6E4E7DA27E6C4C871A923CB68/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763148249/E1770EDE3BC7586A5AEEC7C952E01E79F1855979/"
+        },
+        {
+          "name": "Acolyte 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951423175/81D26220748C1FE07D03FC5F532BF457C77A71F3/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763153776/06B3C3CE10DA037FF191F3468177C8DA486C3A15/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 1,
+        "uniqueBack": true,
+        "ancestry": [
+          "Woods Chips"
+        ]
+      }
+    }
+  ],
+  "Rogues": [
+    {
+      "source": "dd_all_exp",
+      "group": "Rogues",
+      "natives": [
+        "Rogues Leader",
+        "Rogues 2",
+        "Rogues 3",
+        "Rogues 4",
+        "Rogues 5",
+        "Rogues 6",
+        "Rogues 7",
+        "Rogues 8"
+      ],
+      "nativeChips": [
+        {
+          "name": "Rogues Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126881343/EA30A9732240F73AF08DDAD04BA6F1C7EA59B455/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012618637/6BD50E690C911E58577460A0C7DB734FAABDB83D/"
+        },
+        {
+          "name": "Rogues 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126889863/67CF164266AF942763EB9B258E68C62ED29DC616/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012616738/9931D5B99BD5D248968017C3FB975EC24FD59F21/"
+        },
+        {
+          "name": "Rogues 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126889392/29EC26D3AF3E4E06EA7BA7405779ECB3660D8B39/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012615131/EA6EF64BF53ACC993A70AF943B004E757AB47667/"
+        },
+        {
+          "name": "Rogues 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126887647/BAAA3676EEB437134B7E60A71B21862FE57557F2/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012613632/E8A7D5A8C77B0B9E015936A859E1403A1BF16396/"
+        },
+        {
+          "name": "Rogues 5",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126887110/C3ADA95A05341698D0766AC6D5E5EE28D67428D8/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012609593/9B3F7BD4E0CF5EA34D74F34E29E08945EDD35E6C/"
+        },
+        {
+          "name": "Rogues 6",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126885279/D2B5164A741CA943B03A3810FEB5A322456220C1/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012607774/4DB68A3CD5476ED4B796E591B5AF3DE2BF768802/"
+        },
+        {
+          "name": "Rogues 7",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126884748/3BBCC6AFD1E66E81656E505176168CDB68270DED/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012606485/799911970307EE946DDF5657E5E29A376F74E9E7/"
+        },
+        {
+          "name": "Rogues 8",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986576126882650/F62A6F42C83D3C45E4C1591F9D99056A25782010/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012604382/4ADD68A3A2D543F223365F0752F34F5998197DD7/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 2,
+        "uniqueBack": true,
+        "ancestry": [
+          "NATIVES Groups"
+        ]
+      }
+    }
+  ],
+  "Sellswords": [
+    {
+      "source": "dd_all_exp",
+      "group": "Sellswords",
+      "natives": [
+        "Sellswords Leader",
+        "Sellswords 2",
+        "Sellswords 3",
+        "Sellswords 4",
+        "Sellswords 5",
+        "Sellswords 6",
+        "Sellswords 7"
+      ],
+      "nativeChips": [
+        {
+          "name": "Sellswords Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012637397/AE764E883D1EC3FC6C6F060E55EC09622143174D/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012637799/EAC6613F67F035E897B043CB93874628DF8C37D3/"
+        },
+        {
+          "name": "Sellswords 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012635990/05181DDCD0CC1111D8036FF82FE8562542B1B360/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012636293/9695B3A9B5ACB0FED71BBA82BB45558228E25180/"
+        },
+        {
+          "name": "Sellswords 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012634902/0D3C95DBE2818AF852EC1E618690663200878629/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012633244/3B429D097B68D2D5636ADE8CBCCBA40044C37D10/"
+        },
+        {
+          "name": "Sellswords 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012629846/4C8BB27F0F47AAEB50B61EB7C352355F3DD41E24/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012631092/34C81F13B0D60669E8BCAA750B1E7024C97D4A93/"
+        },
+        {
+          "name": "Sellswords 5",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012628024/F1A6A2CAFD0FA4565AE759A36837DD82FC28B4B2/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012628509/BBD8CBF14C6957EBA01C502A8D83C286A49D0F76/"
+        },
+        {
+          "name": "Sellswords 6",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012626565/6FEFAAFEBA8E44963542C2B92FF276A890723AA5/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012626902/942891821118986003C91609B2146EEB8726A3BF/"
+        },
+        {
+          "name": "Sellswords 7",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012625002/B1A28EAB447EC842FFB39778BB052A85C88D1A9A/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012625353/1DF0BC9D154170EB9DE422AB3C3558BE01B15218/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 3,
+        "uniqueBack": true,
+        "ancestry": [
+          "NATIVES Groups"
+        ]
+      }
+    }
+  ],
+  "Soldiers": [
+    {
+      "source": "dd_all_exp",
+      "group": "Soldiers",
+      "natives": [
+        "Soldiers Leader",
+        "Soldiers 2",
+        "Soldiers 3",
+        "Soldiers 4"
+      ],
+      "nativeChips": [
+        {
+          "name": "Soldiers Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012643946/3FA9E588C85E47FFB30E65F81985433A1BCE02A1/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012644484/D99D743EABB2E24A2313ADCBAA99D22D3302111E/"
+        },
+        {
+          "name": "Soldiers 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012642542/030B636AF3954F34F5469203B62DD66FBAE86BDB/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012642868/4E9F21BE414061859ECDA42983F18CEDC9B1DD84/"
+        },
+        {
+          "name": "Soldiers 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810043222316/6AFA4731A31415EE2843AC7AAA600B96A9E27579/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012641418/92E618A0DCA01FC875C3AE03FFE42E0B4AAB8D60/"
+        },
+        {
+          "name": "Soldiers 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012639420/B7321948F9AEF6293AD88952D0316AD978C72C29/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012639794/3B171A635E570EFD56BB2DCBA8F045C37240C257/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 4,
+        "uniqueBack": true,
+        "ancestry": [
+          "NATIVES Groups"
+        ]
+      }
+    }
+  ],
+  "Villagers": [
+    {
+      "source": "dd_all_exp",
+      "group": "Villagers",
+      "natives": [
+        "Villager Leader",
+        "Villager 2",
+        "Villager 3",
+        "Villager 4",
+        "Villager 5",
+        "Villager 6",
+        "Villager 7",
+        "Villager 8"
+      ],
+      "nativeChips": [
+        {
+          "name": "Villager Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951437447/44A83C0E297D10F8C5FA89B578B149A794A325F6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053799013/EDA0298CBACF8C7632526E70405C5C608724A77C/"
+        },
+        {
+          "name": "Villager 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951453816/B8EDD498A76A2EA7A9A4207FA6D8B7F4EC98F7EA/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951454244/8BFBC5D71CB8560394088B0CF6F82AC7E167B0FE/"
+        },
+        {
+          "name": "Villager 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951445417/A4489BEE530075CB4CE2FE0890BBAF7F3A227B4D/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663198104/A2524A1B3D442B44D9369FD55644F521ADD15A52/"
+        },
+        {
+          "name": "Villager 4",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951452032/DFB24268277EB61E547E3D178A0A2FDE2B77CC79/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663199851/C1F88F1904DC2EB211A48BCC9137901309C8A61B/"
+        },
+        {
+          "name": "Villager 5",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951449817/0C2B1350EB15D5A2C2A92F9A0EEE0684D769730B/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663201997/EA74FE5CE2688E69A0053537103DEC3D99D19225/"
+        },
+        {
+          "name": "Villager 6",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951448374/1B7E6EFBBAD3092CD1621D73C4354254E6CDB4A3/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663204194/8E28F238DADBC475179E891CFA109D27224B1A83/"
+        },
+        {
+          "name": "Villager 7",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951443028/E7F0BC6BD7D32F3EE587006DADAC0699D52BEA63/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767632295/128B4CEC89A19968B40B686C9BF1DFDE2D3A853D/"
+        },
+        {
+          "name": "Villager 8",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951446596/3427907CFD41C441856B71E1CD42FFCF16C53D79/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453762416/33C24141F971DF0EDA4973374CD5A050A4603A7C/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 6,
+        "uniqueBack": true,
+        "ancestry": [
+          "Plains Chips"
+        ]
+      }
+    }
+  ],
+  "Wardens": [
+    {
+      "source": "dd_all_exp",
+      "group": "Wardens",
+      "natives": [
+        "Warden Leader",
+        "Warden 2",
+        "Warden 3"
+      ],
+      "nativeChips": [
+        {
+          "name": "Warden Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951432623/5A2E16EAFA25C7E9B3A7C3B0751F7DB59662DF29/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453770259/8F0D52F5B8C2767CA5F0CCD10A84792FD8592B2F/"
+        },
+        {
+          "name": "Warden 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951431018/A578BEF13A18CD34BC0FB4AD4F655E2AC8712A6F/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453767091/B746A18A1C6D266ECE23792AB4AF32C5E8AD1359/"
+        },
+        {
+          "name": "Warden 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951431875/6727F53D3F7BBB9469ED2654B277392D6BC6435F/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2267067515264318189/5BE1D52894E2D6B10744A1997C90B0324A1BCB34/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 7,
+        "uniqueBack": true,
+        "ancestry": [
+          "Swamps Chips"
+        ]
+      }
+    }
+  ],
+  "Watch": [
+    {
+      "source": "dd_all_exp",
+      "group": "Watch",
+      "natives": [
+        "Watch Leader",
+        "Watch 2",
+        "Watch 3"
+      ],
+      "nativeChips": [
+        {
+          "name": "Watch Leader",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012575007/2B5EFA6E9D333C0989A640EC59A6924936F145BA/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012575436/D44945FDA1822790275283E21F6509962C444A97/"
+        },
+        {
+          "name": "Watch 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012573498/D1BA5A030FB2EBD5F70010C5A30CCB39A043408D/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012574049/BF2B4B7318027357935B2E305E43D3A48E35C7BA/"
+        },
+        {
+          "name": "Watch 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012572194/6E121FFBC462DFA1EF80E1F75D84745D8C848BA3/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012572502/22203AFD420DD4FCDDA0B449CBB3B27ABAE07AC7/"
+        }
+      ],
+      "civilisationCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 2,
+        "row": 1,
+        "col": 8,
+        "uniqueBack": true,
+        "ancestry": [
+          "NATIVES Groups"
+        ]
+      }
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
+import { NativeCivilisationCard } from "@/components/NativeCivilisationCard";
 import {
   getAllNativeGroups,
   getMissionsForTarget,
@@ -38,6 +39,13 @@ export default async function NativePage({
         {group.chips.length} chip{" "}
         {group.chips.length === 1 ? "image" : "images"}
       </p>
+
+      {group.civilisationCard && (
+        <NativeCivilisationCard
+          card={group.civilisationCard}
+          name={group.prettyName}
+        />
+      )}
 
       {group.nativeSummons.length > 0 && (
         <section className="mb-10">
