@@ -42,6 +42,9 @@ export type CardIndex = Record<string, TTSCardImage[]>;
 export const ITEM_CARD_BACK_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/";
 
+export const DEEP_TREASURE_CARD_BACK_URL =
+  "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/";
+
 export type TTSItemCard = TTSCardImage & {
   /** Total number of physical copies found for this exact card image cell. */
   copies: number;
@@ -53,6 +56,57 @@ export type TTSItemCard = TTSCardImage & {
 
 /** Output written to data/tts/items.json. Keyed by normalized `Nickname`. */
 export type ItemIndex = Record<string, TTSItemCard[]>;
+
+export type TTSLegendarySiteToken = {
+  source: string;
+  guid?: string;
+  name?: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+  ancestry?: string[];
+  connection: "lua-token-comment" | "matching-name";
+};
+
+export type TTSLegendaryMonsterChip = {
+  source: string;
+  name: string;
+  guid?: string;
+  imageURL?: string;
+  imageSecondaryURL?: string;
+  ancestry?: string[];
+  connection: "lua-monster-comment";
+};
+
+export type TTSLegendaryTreasureCard = {
+  name: string;
+  card?: TTSCardImage;
+};
+
+export type TTSLegendaryLocationTreasureSetup = {
+  deepTreasureCards?: number;
+  usesContainingSiteDeepTreasures?: boolean;
+  namedTreasures?: TTSLegendaryTreasureCard[];
+};
+
+export type TTSLegendaryLocationReward = {
+  namedTreasures?: TTSLegendaryTreasureCard[];
+  other?: string[];
+};
+
+export type TTSLegendaryLocation = {
+  source: string;
+  name: string;
+  kind: "site" | "test";
+  card: TTSCardImage;
+  description?: string;
+  treasureSetup?: TTSLegendaryLocationTreasureSetup;
+  rewards?: TTSLegendaryLocationReward;
+  monsterChips?: TTSLegendaryMonsterChip[];
+  siteToken?: TTSLegendarySiteToken;
+};
+
+/** Output written to data/tts/legendary-locations.json. Keyed by normalized `Nickname`. */
+export type LegendaryLocationIndex = Record<string, TTSLegendaryLocation[]>;
 
 export type TTSMissionCard = TTSCardImage & {
   /** Mission banner type printed on the card: red, white, or brown. */
@@ -698,6 +752,72 @@ export function extractItems(root: unknown, source: string): ItemIndex {
   return index;
 }
 
+export function extractLegendaryLocations(
+  root: unknown,
+  source: string,
+): LegendaryLocationIndex {
+  const index: LegendaryLocationIndex = {};
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  const tokenByGuid = collectLegendarySiteTokensByGuid(root, source);
+  const tileByGuid = collectLegendaryTilesByGuid(root, source);
+  const namedTokens = collectNamedLegendarySiteTokens(root, source);
+  const treasureCards = collectLegendaryTreasureCards(cards, source);
+
+  for (const { card, ancestry } of cards) {
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw || !LEGENDARY_LOCATION_DETAILS[normalizeTitle(raw)]) continue;
+    if (!isLegendaryContainer(ancestry[0])) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image || image.backURL !== DEEP_TREASURE_CARD_BACK_URL) continue;
+
+    const details = LEGENDARY_LOCATION_DETAILS[normalizeTitle(raw)];
+    const location: TTSLegendaryLocation = {
+      source,
+      name: raw,
+      kind: details.kind,
+      card: image,
+    };
+    const description = (card.Description ?? "").trim();
+    if (description) location.description = description;
+    const treasureSetup = legendaryTreasureSetup(details, treasureCards);
+    if (treasureSetup) location.treasureSetup = treasureSetup;
+    const rewards = legendaryRewards(details, treasureCards);
+    if (rewards) location.rewards = rewards;
+    const monsterChips = legendaryMonsterChipsFromLua(
+      card.LuaScript ?? "",
+      tileByGuid,
+      source,
+    );
+    if (monsterChips.length > 0) location.monsterChips = monsterChips;
+
+    const tokenGuid = legendaryTokenGuidFromLua(card.LuaScript ?? "");
+    const token = tokenGuid
+      ? tokenByGuid.get(tokenGuid)
+      : namedTokens.get(normalizeTitle(raw));
+    if (token) location.siteToken = token;
+
+    const key = normalizeTitle(raw);
+    const bucket = (index[key] ??= []);
+    const existing = bucket.find((entry) => isSameCell(entry.card, image));
+    if (existing) {
+      if (!existing.description && location.description) {
+        existing.description = location.description;
+      }
+      existing.card.tags = mergeTags(existing.card.tags, image.tags);
+      existing.monsterChips = mergeLegendaryMonsterChips(
+        existing.monsterChips,
+        location.monsterChips,
+      );
+      existing.siteToken ??= location.siteToken;
+    } else {
+      bucket.push(location);
+    }
+  }
+
+  return index;
+}
+
 export function extractMissions(
   root: unknown,
   source: string,
@@ -870,10 +990,290 @@ const CLASS_BOX_NAMES: Record<string, string> = {
   eastern: "Eastern Reaches",
 };
 
+type LegendaryLocationDetails = {
+  kind: "site" | "test";
+  setup?: {
+    deepTreasureCards?: number;
+    usesContainingSiteDeepTreasures?: boolean;
+    namedTreasures?: string[];
+  };
+  rewards?: {
+    namedTreasures?: string[];
+    other?: string[];
+  };
+};
+
+const LEGENDARY_LOCATION_DETAILS: Record<string, LegendaryLocationDetails> = {
+  [normalizeTitle("Adventurer's Corpse")]: {
+    kind: "test",
+    setup: {
+      usesContainingSiteDeepTreasures: true,
+      namedTreasures: ["Holdfast Leathers", "Skull Splitter"],
+    },
+    rewards: { other: ["One random curse"] },
+  },
+  [normalizeTitle("Arcanis Engima")]: {
+    kind: "test",
+    rewards: { namedTreasures: ["Mageshift Medallion"] },
+  },
+  [normalizeTitle("Cavernous Pit")]: {
+    kind: "test",
+    setup: { deepTreasureCards: 2 },
+  },
+  [normalizeTitle("Collapsed Passage")]: {
+    kind: "test",
+    setup: { deepTreasureCards: 2 },
+  },
+  [normalizeTitle("Grave of the Champion")]: {
+    kind: "site",
+    setup: {
+      deepTreasureCards: 1,
+      namedTreasures: ["Champion's Plate", "Champion's Blade"],
+    },
+  },
+  [normalizeTitle("Infernal Glyphs")]: {
+    kind: "test",
+    rewards: { other: ["Learn a spell"] },
+  },
+  [normalizeTitle("Lamp of the Djinni")]: {
+    kind: "site",
+    rewards: { namedTreasures: ["The Lamp"] },
+  },
+  [normalizeTitle("Lost Captains Locker")]: {
+    kind: "site",
+    setup: { deepTreasureCards: 4 },
+  },
+  [normalizeTitle("Riddle of the Imp")]: {
+    kind: "test",
+    rewards: { other: ["Chosen magic cube", "Imp chip"] },
+  },
+  [normalizeTitle("Spellcaster's Simulacrum")]: {
+    kind: "site",
+    setup: {
+      deepTreasureCards: 1,
+      namedTreasures: ["Eternium Grimoire", "Arcane Sword"],
+    },
+  },
+  [normalizeTitle("Statue of the Templar")]: {
+    kind: "test",
+    rewards: { other: ["Statue chip"] },
+  },
+  [normalizeTitle("Treacherous Ledge")]: {
+    kind: "test",
+    setup: { deepTreasureCards: 2 },
+  },
+};
+
+const LEGENDARY_TREASURE_NAMES = new Set(
+  [
+    "Arcane Sword",
+    "Champion's Blade",
+    "Champion's Plate",
+    "Eternium Grimoire",
+    "Holdfast Leathers",
+    "Mageshift Medallion",
+    "Skull Splitter",
+    "The Lamp",
+  ].map(normalizeTitle),
+);
+
 function itemBoxFromAncestry(ancestry: string[]): string {
   const itemBag = ancestry[0]?.trim().toLowerCase() ?? "";
   if (itemBag.includes("desolation")) return "Desolation";
   return "Dragons Down";
+}
+
+function isLegendaryContainer(name: string | undefined): boolean {
+  return name === "LEGENDS Cards" || name === "Legends EASTERN";
+}
+
+function isLegendaryTokenContainer(name: string | undefined): boolean {
+  return name === "LEGENDS Tokens" || name === "Legends EASTERN";
+}
+
+function collectLegendaryTreasureCards(
+  cards: CardWithAncestry[],
+  source: string,
+): Map<string, TTSLegendaryTreasureCard> {
+  const treasures = new Map<string, TTSLegendaryTreasureCard>();
+  for (const { card, ancestry } of cards) {
+    const raw = (card.Nickname ?? "").trim();
+    const key = normalizeTitle(raw);
+    if (!raw || !LEGENDARY_TREASURE_NAMES.has(key)) continue;
+    if (!isLegendaryContainer(ancestry[0])) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image || image.backURL !== DEEP_TREASURE_CARD_BACK_URL) continue;
+    treasures.set(key, { name: raw, card: image });
+  }
+  return treasures;
+}
+
+function legendaryTreasureSetup(
+  details: LegendaryLocationDetails,
+  treasureCards: Map<string, TTSLegendaryTreasureCard>,
+): TTSLegendaryLocationTreasureSetup | undefined {
+  if (!details.setup) return undefined;
+  const setup: TTSLegendaryLocationTreasureSetup = {};
+  if (details.setup.deepTreasureCards !== undefined) {
+    setup.deepTreasureCards = details.setup.deepTreasureCards;
+  }
+  if (details.setup.usesContainingSiteDeepTreasures) {
+    setup.usesContainingSiteDeepTreasures = true;
+  }
+  if (details.setup.namedTreasures?.length) {
+    setup.namedTreasures = details.setup.namedTreasures.map((name) =>
+      legendaryTreasureCard(name, treasureCards),
+    );
+  }
+  return setup;
+}
+
+function legendaryRewards(
+  details: LegendaryLocationDetails,
+  treasureCards: Map<string, TTSLegendaryTreasureCard>,
+): TTSLegendaryLocationReward | undefined {
+  if (!details.rewards) return undefined;
+  const rewards: TTSLegendaryLocationReward = {};
+  if (details.rewards.namedTreasures?.length) {
+    rewards.namedTreasures = details.rewards.namedTreasures.map((name) =>
+      legendaryTreasureCard(name, treasureCards),
+    );
+  }
+  if (details.rewards.other?.length) {
+    rewards.other = [...details.rewards.other].sort((a, b) =>
+      a.localeCompare(b),
+    );
+  }
+  return rewards;
+}
+
+function legendaryTreasureCard(
+  name: string,
+  treasureCards: Map<string, TTSLegendaryTreasureCard>,
+): TTSLegendaryTreasureCard {
+  return treasureCards.get(normalizeTitle(name)) ?? { name };
+}
+
+function legendaryTokenGuidFromLua(luaScript: string): string {
+  return luaScript.match(/--\s*Token\s+([0-9a-f]{6})/i)?.[1] ?? "";
+}
+
+function legendaryMonsterChipsFromLua(
+  luaScript: string,
+  tileByGuid: Map<string, TileWithAncestry>,
+  source: string,
+): TTSLegendaryMonsterChip[] {
+  const chips: TTSLegendaryMonsterChip[] = [];
+  for (const match of luaScript.matchAll(
+    /--\s*([A-Za-z][A-Za-z0-9 ]*)\s+([0-9a-f]{6})/gi,
+  )) {
+    const name = match[1].trim();
+    if (name.toLowerCase() === "token") continue;
+    const guid = match[2];
+    const tile = tileByGuid.get(guid);
+    const chip: TTSLegendaryMonsterChip = {
+      source,
+      name,
+      guid,
+      connection: "lua-monster-comment",
+    };
+    if (tile) {
+      chip.imageURL = text(tile.tile.CustomImage.ImageURL);
+      chip.imageSecondaryURL = text(tile.tile.CustomImage.ImageSecondaryURL);
+      if (tile.ancestry.length > 0) chip.ancestry = tile.ancestry;
+    }
+    chips.push(chip);
+  }
+  return chips.sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function mergeLegendaryMonsterChips(
+  a: TTSLegendaryMonsterChip[] | undefined,
+  b: TTSLegendaryMonsterChip[] | undefined,
+): TTSLegendaryMonsterChip[] | undefined {
+  if (!a?.length && !b?.length) return undefined;
+  const chips = [...(a ?? [])];
+  for (const chip of b ?? []) {
+    if (
+      chips.some(
+        (entry) => entry.guid === chip.guid && entry.name === chip.name,
+      )
+    ) {
+      continue;
+    }
+    chips.push(chip);
+  }
+  return chips.sort((left, right) => left.name.localeCompare(right.name));
+}
+
+function collectLegendaryTilesByGuid(
+  root: unknown,
+  source: string,
+): Map<string, TileWithAncestry> {
+  void source;
+  const tilesByGuid = new Map<string, TileWithAncestry>();
+  const tiles: TileWithAncestry[] = [];
+  walkTiles(root, [], tiles);
+  for (const tile of tiles) {
+    if (!isLegendaryTokenContainer(tile.ancestry[0])) continue;
+    const guid = text((tile.tile as unknown as Record<string, unknown>).GUID);
+    if (guid) tilesByGuid.set(guid, tile);
+  }
+  return tilesByGuid;
+}
+
+function collectLegendarySiteTokensByGuid(
+  root: unknown,
+  source: string,
+): Map<string, TTSLegendarySiteToken> {
+  const tokens = new Map<string, TTSLegendarySiteToken>();
+  const tiles: TileWithAncestry[] = [];
+  walkTiles(root, [], tiles);
+  for (const { tile, ancestry } of tiles) {
+    if (!isLegendaryTokenContainer(ancestry[0])) continue;
+    const guid = text((tile as unknown as Record<string, unknown>).GUID);
+    const imageURL = text(tile.CustomImage.ImageURL);
+    if (!guid || !imageURL) continue;
+    const token: TTSLegendarySiteToken = {
+      source,
+      guid,
+      imageURL,
+      imageSecondaryURL: text(tile.CustomImage.ImageSecondaryURL),
+      connection: "lua-token-comment",
+    };
+    const name = text(tile.Nickname);
+    if (name) token.name = name;
+    if (ancestry.length > 0) token.ancestry = ancestry;
+    tokens.set(guid, token);
+  }
+  return tokens;
+}
+
+function collectNamedLegendarySiteTokens(
+  root: unknown,
+  source: string,
+): Map<string, TTSLegendarySiteToken> {
+  const tokens = new Map<string, TTSLegendarySiteToken>();
+  const tiles: TileWithAncestry[] = [];
+  walkTiles(root, [], tiles);
+  for (const { tile, ancestry } of tiles) {
+    if (!isLegendaryTokenContainer(ancestry[0])) continue;
+    const name = text(tile.Nickname);
+    const imageURL = text(tile.CustomImage.ImageURL);
+    if (!name || !imageURL) continue;
+    const token: TTSLegendarySiteToken = {
+      source,
+      name,
+      imageURL,
+      imageSecondaryURL: text(tile.CustomImage.ImageSecondaryURL),
+      connection: "matching-name",
+    };
+    const guid = text((tile as unknown as Record<string, unknown>).GUID);
+    if (guid) token.guid = guid;
+    if (ancestry.length > 0) token.ancestry = ancestry;
+    tokens.set(normalizeTitle(name), token);
+  }
+  return tokens;
 }
 
 export function addToBoxes(

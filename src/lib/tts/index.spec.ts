@@ -7,6 +7,7 @@ import {
   extractCivilisationTokens,
   extractCivLocations,
   extractItems,
+  extractLegendaryLocations,
   extractMapTileMonsters,
   extractMissions,
   extractNatives,
@@ -20,6 +21,7 @@ import {
   resolveCards,
   CIVILISATION_REFERENCE_CARD_FACE_URL,
   CIVILISATION_TOKEN_FACE_URL,
+  DEEP_TREASURE_CARD_BACK_URL,
   ITEM_CARD_BACK_URL,
   SITE_FACE_URL,
   WILDERNESS_TOKEN_BACK_URLS,
@@ -2256,6 +2258,114 @@ describe("extractItems", () => {
     expect(out["Buckler"][0].boxes).toEqual([
       { name: "Desolation", count: 2 },
       { name: "Dragons Down", count: 1 },
+    ]);
+  });
+});
+
+describe("extractLegendaryLocations", () => {
+  const LEGENDARY_DECK = {
+    ...SAMPLE_DECK,
+    FaceURL: "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+    BackURL: DEEP_TREASURE_CARD_BACK_URL,
+  };
+
+  it("links Natives & Legends site tokens and monster chips from Lua comments", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "LEGENDS Cards",
+          ContainedObjects: [
+            {
+              ...card("Riddle of the Imp", 100, "1", LEGENDARY_DECK),
+              LuaScript: "--Token abc123\n--Imp def456",
+              Description: "A hero that has found the Riddle of the Imp.",
+            },
+          ],
+        },
+        {
+          Name: "Bag",
+          Nickname: "LEGENDS Tokens",
+          ContainedObjects: [
+            {
+              Name: "Custom_Tile",
+              GUID: "abc123",
+              CustomImage: {
+                ImageURL: "site-front.png",
+                ImageSecondaryURL: "site-back.png",
+              },
+            },
+            {
+              Name: "Custom_Tile",
+              GUID: "def456",
+              CustomImage: {
+                ImageURL: "imp-front.png",
+                ImageSecondaryURL: "imp-back.png",
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    const out = extractLegendaryLocations(save, "dd_all_exp");
+    expect(out["Riddle of the Imp"]).toHaveLength(1);
+    expect(out["Riddle of the Imp"][0]).toMatchObject({
+      name: "Riddle of the Imp",
+      kind: "test",
+      siteToken: {
+        guid: "abc123",
+        imageURL: "site-front.png",
+        imageSecondaryURL: "site-back.png",
+        connection: "lua-token-comment",
+      },
+      monsterChips: [
+        {
+          name: "Imp",
+          guid: "def456",
+          imageURL: "imp-front.png",
+          imageSecondaryURL: "imp-back.png",
+          connection: "lua-monster-comment",
+        },
+      ],
+    });
+  });
+
+  it("links Eastern named tokens and named Legendary Treasure rewards", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Legends EASTERN",
+          ContainedObjects: [
+            card("Lamp of the Djinni", 100, "1", LEGENDARY_DECK),
+            card("The Lamp", 101, "1", LEGENDARY_DECK),
+            {
+              Name: "Custom_Tile",
+              GUID: "eee111",
+              Nickname: "Lamp of the Djinni",
+              CustomImage: {
+                ImageURL: "lamp-token.png",
+                ImageSecondaryURL: "",
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    const out = extractLegendaryLocations(save, "dd_all_exp");
+    expect(out["Lamp of the Djinni"][0].siteToken).toMatchObject({
+      guid: "eee111",
+      name: "Lamp of the Djinni",
+      imageURL: "lamp-token.png",
+      connection: "matching-name",
+    });
+    expect(out["Lamp of the Djinni"][0].rewards?.namedTreasures).toEqual([
+      {
+        name: "The Lamp",
+        card: expect.objectContaining({ row: 0, col: 1 }),
+      },
     ]);
   });
 });

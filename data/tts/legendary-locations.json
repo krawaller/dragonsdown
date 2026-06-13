@@ -1,0 +1,584 @@
+{
+  "Adventurers Corpse": [
+    {
+      "source": "dd_all_exp",
+      "name": "Adventurer's Corpse",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 6,
+        "col": 7,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "A hero that has found the Adventurer’s Corpse may approach the corpse as one of their actions during their turn. Upon approaching the corpse, complete the following steps. - Shuffle the Holdfast Leathers and the Skull Splitter legendary treasure cards together with any deep treasure cards that are in the site containing the Adventurer's Corpse. Place the shuffled deep treasure cards on top of any treasure cards in the treasure site. The site is looted per normal rules. - The hero receives one random curse. - Remove the Adventurer’s Corpse legendary location card and token from the game.",
+      "treasureSetup": {
+        "usesContainingSiteDeepTreasures": true,
+        "namedTreasures": [
+          {
+            "name": "Holdfast Leathers",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 6,
+              "col": 4,
+              "uniqueBack": false,
+              "ancestry": [
+                "LEGENDS Cards"
+              ]
+            }
+          },
+          {
+            "name": "Skull Splitter",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 6,
+              "col": 6,
+              "uniqueBack": false,
+              "ancestry": [
+                "LEGENDS Cards"
+              ]
+            }
+          }
+        ]
+      },
+      "rewards": {
+        "other": [
+          "One random curse"
+        ]
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "4f6915",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045994949/6B26FF0F203E638129C020034D0BBC881772CB69/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045994949/6B26FF0F203E638129C020034D0BBC881772CB69/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Arcanis Engima": [
+    {
+      "source": "dd_all_exp",
+      "name": "Arcanis Engima",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 6,
+        "col": 8,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "A hero that has found the arcanis enigma may attempt to solve the puzzle as one of their actions during their turn. Roll the 2 haggle dice. - If either die shows a closed door, the hero receives one random curse and the attempt fails. - If the hero rolls higher than their cunning, the attempt fails, but the hero suffers no consequences. - If the hero rolls less than or equal to their cunning, the attempt succeeds. -- If the map tile is not enchanted with both blue and purple cubes, flip the map tile and enchant it with both blue and purple magic cubes. -- If the map tile is already enchanted with both blue and purple cubes when a success is rolled, the hero receives the Mageshift Medalion. Remove the Arcanis Engima legendary location card and token from the game.",
+      "rewards": {
+        "namedTreasures": [
+          {
+            "name": "Mageshift Medallion",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 6,
+              "col": 5,
+              "uniqueBack": false,
+              "ancestry": [
+                "LEGENDS Cards"
+              ]
+            }
+          }
+        ]
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "9bf7f0",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045999483/EE38957B67C320CF959421610D6D2959D060F18C/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045999483/EE38957B67C320CF959421610D6D2959D060F18C/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Cavernous Pit": [
+    {
+      "source": "dd_all_exp",
+      "name": "Cavernous Pit",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 6,
+        "col": 9,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "When the Cavernous Pit is first revealed, draw two cards from the deep treasure pile and place them on top of the Cavernous Pit legendary location card.A hero that has found the Cavernous Pit may attempt to climb into the pit as one of their actions during their turn. The player places cubes to fill attack speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.- If either die shows a closed door, the hero receives one wound.- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.- If the hero rolls less than or equal to their dexterity, the attempt succeeds.-- Draw one deep treasure card from the Cavernous Pit card.-- If the final deep treasure card is drawn from the Cavernous Pit, remove the Cavernous Pit legendary location card and token from the game.",
+      "treasureSetup": {
+        "deepTreasureCards": 2
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "15938d",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045998160/0DA13077CD789233020ECA6154E491565E5A43D1/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045998160/0DA13077CD789233020ECA6154E491565E5A43D1/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Collapsed Passage": [
+    {
+      "source": "dd_all_exp",
+      "name": "Collapsed Passage",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 0,
+        "col": 0,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "When the Collapsed Passage is first revealed, draw two cards from the deep treasure pile and place them on top of the Collapsed Passage legendary location card. A hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 haggle dice and compare the result to the number of might cubes in the hero’s healthy box. - If either die shows a closed door, the hero receives one wound. - If the hero rolls higher than their might cubes, the attempt fails, but the hero suffers no consequences. - If the hero rolls less than or equal to their might cubes, the attempt succeeds. -- Draw one deep treasure card from the Collapsed Passage card. -- If the final deep treasure card is drawn from the Collapsed Passage, remove the legendary location card and token from the game.",
+      "treasureSetup": {
+        "deepTreasureCards": 2
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "8c028b",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045996233/5E99628D9EF97511EDB292647686C3FFF9B7F671/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045996233/5E99628D9EF97511EDB292647686C3FFF9B7F671/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Grave of the Champion": [
+    {
+      "source": "dd_all_exp",
+      "name": "Grave of the Champion",
+      "kind": "site",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 0,
+        "col": 1,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "When the Grave of the Champion is first revealed, draw one card from the deep treasure pile and shuffle it together with the Champion's Plate and Champion's Blade legendary treasure cards. Place these cards on top of the Grave of the Champion legendary location card.Once found, heroes may use a loot action to loot the Grave of the Champion as they would any other treasure site. When looting the Grave of the Champion, a loot roll of 5 on either loot die causes the hero to receive a random curse",
+      "treasureSetup": {
+        "deepTreasureCards": 1,
+        "namedTreasures": [
+          {
+            "name": "Champion's Plate",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 6,
+              "col": 2,
+              "uniqueBack": false,
+              "ancestry": [
+                "LEGENDS Cards"
+              ]
+            }
+          },
+          {
+            "name": "Champion's Blade",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 6,
+              "col": 1,
+              "uniqueBack": false,
+              "ancestry": [
+                "LEGENDS Cards"
+              ]
+            }
+          }
+        ]
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "563ecd",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045999038/78723E2E4C1DF958BEC9D90190255CF38385F923/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045999038/78723E2E4C1DF958BEC9D90190255CF38385F923/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Infernal Glyphs": [
+    {
+      "source": "dd_all_exp",
+      "name": "Infernal Glyphs",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 0,
+        "col": 2,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "A hero that has found the Infernal Glyphs may attempt to read the glyphs as one of their actions during their turn. Roll the 2 learn spells dice and compare the results to the Infernal Glyphs card. Apply any benefits that would normally apply when learning spells (lineage and class advantages, treasures, spells, etc.). - If both dice show curse symbols, roll both of the numbered summoning dice and summon a number of wandering monsters equal to the gray die and a number of local monsters equal to the black die to the hero’s clearing. Monsters already in the map tile do not move. Arriving monsters will attempt to block the hero immediately.- If one die shows a curse symbol, but the other does not, the hero receives one random curse.- If the hero rolls two spell book symbols, the attempt succeeds.-- If the map tile is not enchanted with both a black and gray cube, flip the map tile and enchant it with a black and a gray cube.-- If the map tile is already enchanted with both a black and gray cube when a success is rolled, draw 3 cards from the top of the spell deck and look at them. The player may select any one spell from those drawn and learn it, earning the reward for learning a spell. The hero must be able to learn the selected spell. Shuffle all spells not learned back into the spells deck.- A hero taking subsequent read the glyphs actions on the same turn after a failed attempt does not need to reroll dice that show spell book symbols.The Infernal Glyphs are a site, and thus permanent. There is no limit to the number of times a hero may attempt to read the glyphs.",
+      "rewards": {
+        "other": [
+          "Learn a spell"
+        ]
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "d60223",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045999996/1FA6653EF88DCB7C2069112CD919373796CC5CC3/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045999996/1FA6653EF88DCB7C2069112CD919373796CC5CC3/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Lamp of the Djinni": [
+    {
+      "source": "dd_all_exp",
+      "name": "Lamp of the Djinni",
+      "kind": "site",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 3,
+        "col": 3,
+        "uniqueBack": false,
+        "ancestry": [
+          "Legends EASTERN"
+        ]
+      },
+      "rewards": {
+        "namedTreasures": [
+          {
+            "name": "The Lamp",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 3,
+              "col": 2,
+              "uniqueBack": false,
+              "ancestry": [
+                "Legends EASTERN"
+              ]
+            }
+          }
+        ]
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "c99ddb",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12560593055306345096/80306B66EE5D68985514DC739B3FE85FE61728FA/",
+        "imageSecondaryURL": "",
+        "connection": "lua-token-comment",
+        "name": "Lamp of the Djinni",
+        "ancestry": [
+          "Legends EASTERN"
+        ]
+      }
+    }
+  ],
+  "Lost Captains Locker": [
+    {
+      "source": "dd_all_exp",
+      "name": "Lost Captains Locker",
+      "kind": "site",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 3,
+        "col": 1,
+        "uniqueBack": false,
+        "ancestry": [
+          "Legends EASTERN"
+        ]
+      },
+      "treasureSetup": {
+        "deepTreasureCards": 4
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "65f7ec",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15438827961630964787/BD9C9CAE5DED477B700E04FAEC26F3E302C1C9D4/",
+        "imageSecondaryURL": "",
+        "connection": "lua-token-comment",
+        "name": "Lost Captains Locker",
+        "ancestry": [
+          "Legends EASTERN"
+        ]
+      }
+    }
+  ],
+  "Riddle of the Imp": [
+    {
+      "source": "dd_all_exp",
+      "name": "Riddle of the Imp",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 0,
+        "col": 3,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "A hero that has found the Riddle of the Imp may attempt to solve the riddle as one of their actions during their turn. Roll the 2 haggle dice.- If both dice show a closed door, the imp monster chip is placed in the clearing and the imp blocks the hero, even if the hero was hidden. -- During the combat phase, the imp will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.-- If this hero is killed, the imp is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.-- A hero that kills the imp receives the fame value as normal. If killed, the imp chip is taken as a reward and the Riddle of the Imp legendary location card and token is removed from the game.-- If combat ends in the round, the imp chip is returned to the chip tray.- If the hero rolls higher than their wisdom, the hero receives one random curse.- If the hero rolls less than or equal to their wisdom, the attempt succeeds.-- If the map tile is not enchanted with both yellow and another cube, flip the map tile and enchant it with a yellow cube and a magic cube of the players choice (other than yellow).-- If the map tile is already enchanted with both yellow and another cube when a success is rolled, the hero takes the imp chip as a reward and earns the indicated fame value. In addition, the hero may choose any magic cube they wish and places it in their healthy box. Remove the Riddle of the Imp legendary location card and token from the game.",
+      "rewards": {
+        "other": [
+          "Chosen magic cube",
+          "Imp chip"
+        ]
+      },
+      "monsterChips": [
+        {
+          "source": "dd_all_exp",
+          "name": "Imp",
+          "guid": "0565cc",
+          "connection": "lua-monster-comment",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045991098/4C3F5C885D0E5617EDA865B357C0F07B624E818A/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045991359/D750D4239941AB6BA1CF20DBA1535F78B4D1ECA6/",
+          "ancestry": [
+            "LEGENDS Tokens"
+          ]
+        }
+      ],
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "2ae1f1",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045993715/AC244DB848CEDD5DB498B21E70B7507955E3F160/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045993715/AC244DB848CEDD5DB498B21E70B7507955E3F160/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Spellcasters Simulacrum": [
+    {
+      "source": "dd_all_exp",
+      "name": "Spellcaster's Simulacrum",
+      "kind": "site",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 0,
+        "col": 4,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "When the Spellcaster’s Simulacrum is first revealed, draw one card from the deep treasure pile and shuffle it together with the Eternium Grimoire and Arcane Sword legendary treasure cards. Place these cards on top of the Spellcaster’s Simulacrum legendary location card.Once found, heroes may use a loot action to loot the Spellcaster’s Simulacrum as they would any other treasure site. If a hero rolls a 5 on either loot die, they receive a random curse.",
+      "treasureSetup": {
+        "deepTreasureCards": 1,
+        "namedTreasures": [
+          {
+            "name": "Eternium Grimoire",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 6,
+              "col": 3,
+              "uniqueBack": false,
+              "ancestry": [
+                "LEGENDS Cards"
+              ]
+            }
+          },
+          {
+            "name": "Arcane Sword",
+            "card": {
+              "source": "dd_all_exp",
+              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+              "numWidth": 10,
+              "numHeight": 7,
+              "row": 6,
+              "col": 0,
+              "uniqueBack": false,
+              "ancestry": [
+                "LEGENDS Cards"
+              ]
+            }
+          }
+        ]
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "4b7e97",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045994584/F3A0D4E4E353945DD27286DCA15A5E671C7FC555/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045994584/F3A0D4E4E353945DD27286DCA15A5E671C7FC555/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Statue of the Templar": [
+    {
+      "source": "dd_all_exp",
+      "name": "Statue of the Templar",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 0,
+        "col": 5,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "A hero that has found the Statue of the Templar may attempt to awaken the statue as one of their actions during their turn. Roll the 2 haggle dice.- If both dice show a closed door, the statue monster chip is placed in the clearing and the statue blocks the hero, even if the hero was hidden.-- During the combat phase, the statue will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.-- If this hero is killed, the statue is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.-- A hero that kills the statue receives the fame value as normal. If killed, the statue chip is taken as a reward and the Statue of the Templar legendary location card and token is removed from the game.-- If combat ends in the round, the statue chip is returned to the chip tray.- If one die shows a closed door, the hero receives one random curse.- If the hero rolls higher than their charisma, the attempt fails.- If the hero rolls less than or equal to their charisma, the attempt succeeds.-- If the map tile is not enchanted with both white and green cubes, flip the map tile and enchant it with both white and green cubes.-- If the map tile is already enchanted with both white and green cubes when a success is rolled, the hero takes the statue chip as a hired native at no cost. The statue has an infinite hire term. All other hired natives rules apply (page 3). Remove the Statue of the Templar legendary location card and token from the game.",
+      "rewards": {
+        "other": [
+          "Statue chip"
+        ]
+      },
+      "monsterChips": [
+        {
+          "source": "dd_all_exp",
+          "name": "Statue",
+          "guid": "d68878",
+          "connection": "lua-monster-comment",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045989550/7617809BC800CE09BD255D5BB076B709DDFF0A02/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045989828/C0186B324A3468227BED3E8C97F1FF3F4105746B/",
+          "ancestry": [
+            "LEGENDS Tokens"
+          ]
+        }
+      ],
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "5271b4",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045992446/11A03CA6C19362AD77E9C0744C8617AF2145B0F6/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045992446/11A03CA6C19362AD77E9C0744C8617AF2145B0F6/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ],
+  "Treacherous Ledge": [
+    {
+      "source": "dd_all_exp",
+      "name": "Treacherous Ledge",
+      "kind": "test",
+      "card": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+        "numWidth": 10,
+        "numHeight": 7,
+        "row": 0,
+        "col": 6,
+        "uniqueBack": false,
+        "ancestry": [
+          "LEGENDS Cards"
+        ]
+      },
+      "description": "When the Treacherous Ledge is first revealed, draw two cards from the deep treasure pile and place them on top of the Treacherous Ledge legendary location card. A hero that has found the Treacherous Ledge may attempt to cross the ledge as one of their actions during their turn. The player places cubes to fill maneuver speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.- If either die shows a closed door, the hero receives one wound.- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.- If the hero rolls less than or equal to their dexterity, the attempt succeeds.-- Draw one deep treasure card from the Treacherous Ledge card.-- If the final deep treasure card is drawn from the Treacherous Ledge, remove the legendary location card and token from the game.",
+      "treasureSetup": {
+        "deepTreasureCards": 2
+      },
+      "siteToken": {
+        "source": "dd_all_exp",
+        "guid": "fc4226",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045996805/C9C11B5ECFDA3EB76538F03FD8C68BDE7E86EF61/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045996805/C9C11B5ECFDA3EB76538F03FD8C68BDE7E86EF61/",
+        "connection": "lua-token-comment",
+        "ancestry": [
+          "LEGENDS Tokens"
+        ]
+      }
+    }
+  ]
+}

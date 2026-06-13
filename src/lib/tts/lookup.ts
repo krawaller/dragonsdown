@@ -18,6 +18,7 @@ import {
   type ClassIndex,
   type CivLocationIndex,
   type ItemIndex,
+  type LegendaryLocationIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
   type MissionKind,
@@ -29,6 +30,8 @@ import {
   type TTSChip,
   type TTSClass,
   type TTSItemCard,
+  type TTSLegendaryLocation,
+  type TTSLegendaryMonsterChip,
   type TTSMissionCard,
   type TTSMissionRewards,
   type TTSMapTile,
@@ -45,6 +48,12 @@ const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
 const CLASSES_FILE = path.join(process.cwd(), "data", "tts", "classes.json");
 const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
 const ITEMS_FILE = path.join(process.cwd(), "data", "tts", "items.json");
+const LEGENDARY_LOCATIONS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "tts",
+  "legendary-locations.json",
+);
 const SITES_FILE = path.join(process.cwd(), "data", "tts", "sites.json");
 const CIVLOCS_FILE = path.join(
   process.cwd(),
@@ -98,6 +107,7 @@ let cachedCardIndex: CardIndex | null = null;
 let cachedClassIndex: ClassIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedItemIndex: ItemIndex | null = null;
+let cachedLegendaryLocationIndex: LegendaryLocationIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
 let cachedWildernessTokenIndex: WildernessTokenIndex | null = null;
@@ -133,6 +143,15 @@ function getItemIndex(): ItemIndex {
   if (cachedItemIndex !== null) return cachedItemIndex;
   cachedItemIndex = readJsonOrEmpty<ItemIndex>(ITEMS_FILE);
   return cachedItemIndex;
+}
+
+function getLegendaryLocationIndex(): LegendaryLocationIndex {
+  if (cachedLegendaryLocationIndex !== null)
+    return cachedLegendaryLocationIndex;
+  cachedLegendaryLocationIndex = readJsonOrEmpty<LegendaryLocationIndex>(
+    LEGENDARY_LOCATIONS_FILE,
+  );
+  return cachedLegendaryLocationIndex;
 }
 
 function getSiteIndex(): SiteIndex {
@@ -335,6 +354,18 @@ export type ItemEntry = {
   startingClasses: ItemStartingClass[];
 };
 
+export type LegendaryMonsterLink = TTSLegendaryMonsterChip & {
+  href?: string;
+};
+
+export type LegendaryLocationEntry = {
+  name: string;
+  slug: string;
+  locations: TTSLegendaryLocation[];
+  kind: "site" | "test";
+  monsterChips: LegendaryMonsterLink[];
+};
+
 export function getAllClasses(): ClassEntry[] {
   return Object.entries(getClassIndex())
     .map(([name, classes]) => ({
@@ -364,6 +395,24 @@ export function getAllItems(): ItemEntry[] {
 
 export function getItemBySlug(slug: string): ItemEntry | undefined {
   return getAllItems().find((entry) => entry.slug === slug);
+}
+
+export function getAllLegendaryLocations(): LegendaryLocationEntry[] {
+  return Object.entries(getLegendaryLocationIndex())
+    .map(([name, locations]) => ({
+      name,
+      slug: slugify(name),
+      locations,
+      kind: locations[0]?.kind ?? "test",
+      monsterChips: legendaryMonsterLinks(locations),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getLegendaryLocationBySlug(
+  slug: string,
+): LegendaryLocationEntry | undefined {
+  return getAllLegendaryLocations().find((entry) => entry.slug === slug);
 }
 
 export function getClassesForStartingItem(
@@ -871,6 +920,24 @@ function itemBoxes(cards: TTSItemCard[]): { name: string; count: number }[] {
   return [...boxes.entries()]
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function legendaryMonsterLinks(
+  locations: TTSLegendaryLocation[],
+): LegendaryMonsterLink[] {
+  const links = new Map<string, LegendaryMonsterLink>();
+  for (const chip of locations.flatMap(
+    (location) => location.monsterChips ?? [],
+  )) {
+    const key = `${chip.name}:${chip.guid ?? chip.imageURL ?? ""}`;
+    if (links.has(key)) continue;
+    const monsterGroup = getMonsterGroupBySlug(slugify(chip.name));
+    links.set(key, {
+      ...chip,
+      href: monsterGroup ? `/monster-groups/${monsterGroup.slug}` : undefined,
+    });
+  }
+  return [...links.values()].sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function dedupeStartingClassSides(
