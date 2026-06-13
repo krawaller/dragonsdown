@@ -1080,6 +1080,7 @@ const LEGENDARY_TREASURE_NAMES = new Set(
 function itemBoxFromAncestry(ancestry: string[]): string {
   const itemBag = ancestry[0]?.trim().toLowerCase() ?? "";
   if (itemBag.includes("desolation")) return "Desolation";
+  if (itemBag === "horses") return "Eastern Reaches";
   return "Dragons Down";
 }
 

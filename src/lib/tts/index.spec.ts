@@ -2260,6 +2260,24 @@ describe("extractItems", () => {
       { name: "Dragons Down", count: 1 },
     ]);
   });
+
+  it("attributes horse item cards to Eastern Reaches", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Horses",
+          ContainedObjects: [card("War Horse", 100, "1", ITEM_DECK)],
+        },
+      ],
+    };
+    const out = extractItems(save, "dd_all_exp");
+    expect(out["War Horse"][0]).toMatchObject({
+      copies: 1,
+      locations: [{ ancestry: ["Horses"], count: 1 }],
+      boxes: [{ name: "Eastern Reaches", count: 1 }],
+    });
+  });
 });
 
 describe("extractLegendaryLocations", () => {
