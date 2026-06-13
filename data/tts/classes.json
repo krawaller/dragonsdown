@@ -16,6 +16,7 @@
           "gmNotes": "Archer"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -119,6 +120,7 @@
           "gmNotes": "Assassin"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -226,6 +228,7 @@
           "gmNotes": "Barbarian"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -333,6 +336,7 @@
           "gmNotes": "Bard"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -458,6 +462,7 @@
           "gmNotes": "Battlemage"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -571,6 +576,7 @@
           "gmNotes": "Beastmaster"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -682,6 +688,7 @@
           "gmNotes": "Berserker"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -785,6 +792,7 @@
           "gmNotes": "Black Knight"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -892,6 +900,7 @@
           "gmNotes": "Brigand"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1003,6 +1012,7 @@
           "gmNotes": "Burgess"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1088,6 +1098,7 @@
           "gmNotes": "Cleric"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1206,6 +1217,7 @@
           "gmNotes": "Conjuror"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1316,6 +1328,7 @@
           "gmNotes": "Decayed"
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1457,6 +1470,7 @@
           ]
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1564,6 +1578,7 @@
           "gmNotes": "Disciple"
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1664,6 +1679,7 @@
           "gmNotes": "Druid"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1783,6 +1799,7 @@
           ]
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -1898,6 +1915,7 @@
           "gmNotes": "Enchanter"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2008,6 +2026,7 @@
           "gmNotes": "Executioner"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2129,6 +2148,7 @@
           "gmNotes": "Explorer"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2240,6 +2260,7 @@
           "gmNotes": "Illusionist"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2350,6 +2371,7 @@
           "gmNotes": "Knight"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2457,6 +2479,7 @@
           "gmNotes": "Magician"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2587,6 +2610,7 @@
           "gmNotes": "Marauder"
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2698,6 +2722,7 @@
           "gmNotes": "Monk"
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2788,6 +2813,7 @@
           "gmNotes": "Necromancer"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -2911,6 +2937,7 @@
           "gmNotes": "Outcast"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3010,6 +3037,7 @@
           "gmNotes": "Paladin"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3134,6 +3162,7 @@
           ]
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3253,6 +3282,7 @@
           "gmNotes": "Ranger"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3378,6 +3408,7 @@
           "gmNotes": "Rogue"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3489,6 +3520,7 @@
           "gmNotes": "Runesword"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3610,6 +3642,7 @@
           "gmNotes": "Sorcerer"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3720,6 +3753,7 @@
           "gmNotes": "Soulless"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3815,6 +3849,7 @@
           "gmNotes": "Trickster"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -3936,6 +3971,7 @@
           "gmNotes": "Vanguard"
         }
       ],
+      "box": "Eastern Reaches",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -4043,6 +4079,7 @@
           "gmNotes": "Warlock"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -4153,6 +4190,7 @@
           "gmNotes": "Warrior"
         }
       ],
+      "box": "Dragons Down",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -4271,6 +4309,7 @@
           "gmNotes": "Witch"
         }
       ],
+      "box": "Desolation",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
@@ -4376,6 +4415,7 @@
           "gmNotes": "Wizard"
         }
       ],
+      "box": "Natives and Legends",
       "advantageCard": {
         "source": "dd_all_exp",
         "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",

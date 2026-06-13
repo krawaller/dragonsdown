@@ -155,6 +155,7 @@ export type TTSClassSetup = {
 export type TTSClass = {
   source: string;
   name: string;
+  box?: string;
   advantageTitle: string;
   advantageCard?: TTSCardImage;
   classToken?: TTSClassTile;
@@ -747,6 +748,7 @@ export function extractClasses(
     if (!className) continue;
     const image = imageFor(card, source, ancestry);
     if (image) {
+      index[className][0].box ??= classBoxFromAncestry(ancestry);
       index[className][0].advantageCard = image;
       const setup = classSetupFromLua(card.LuaScript ?? "");
       if (setup) index[className][0].setup = setup;
@@ -763,6 +765,7 @@ export function extractClasses(
       classComponentKey(classTileClassName(tile)),
     );
     if (!className) continue;
+    index[className][0].box ??= classBoxFromAncestry(ancestry);
     if (isClassTargetingToken(tile)) {
       index[className][0].targetingTokens.push(image);
     } else {
@@ -803,6 +806,27 @@ const CLASS_COMPONENT_ALIASES: Record<string, string> = {
 
 function isClassAncestry(ancestry: string[]): boolean {
   return ancestry.some((entry) => /^Class\s+/i.test(entry));
+}
+
+function classBoxFromAncestry(ancestry: string[]): string | undefined {
+  const classBag = ancestry.find((entry) => /^Class\s+/i.test(entry));
+  if (!classBag) return undefined;
+  const raw = classBag
+    .replace(/^Class\s+/i, "")
+    .trim()
+    .toLowerCase();
+  return CLASS_BOX_NAMES[raw] ?? titleCaseWords(raw);
+}
+
+const CLASS_BOX_NAMES: Record<string, string> = {
+  "dragons down": "Dragons Down",
+  desolation: "Desolation",
+  natives: "Natives and Legends",
+  eastern: "Eastern Reaches",
+};
+
+function titleCaseWords(value: string): string {
+  return value.replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
 function classTileClassName(tile: TileObject): string {

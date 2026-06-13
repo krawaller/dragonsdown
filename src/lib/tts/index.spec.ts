@@ -344,6 +344,7 @@ describe("extractClasses", () => {
         {
           source: "dd_all_exp",
           name: "Archer",
+          box: "Dragons Down",
           advantageTitle: "Archer (Steady)",
           advantageCard: {
             source: "dd_all_exp",
@@ -459,6 +460,9 @@ describe("extractClasses", () => {
     expect(classes["Pit Fighter"][0].classToken?.name).toBe("Pit FIghter");
     expect(classes.Warrior[0].classToken?.name).toBe("Warrior Counter(Big)");
     expect(classes["Pit Fighter"][0].targetingTokens).toHaveLength(2);
+    expect(classes["Battle Mage"][0].box).toBe("Desolation");
+    expect(classes.Conjurer[0].box).toBe("Dragons Down");
+    expect(classes["Pit Fighter"][0].box).toBe("Eastern Reaches");
   });
 
   it("extracts scripted front and back class setup loadouts", () => {
