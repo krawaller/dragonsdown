@@ -50,6 +50,14 @@ export default function Home() {
       <ul className="space-y-3">
         <li>
           <Link
+            href="/classes"
+            className="block rounded-lg border border-zinc-200 dark:border-zinc-800 px-5 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+          >
+            <span className="text-lg font-medium">Classes</span>
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/chips"
             className="block rounded-lg border border-zinc-200 dark:border-zinc-800 px-5 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
           >

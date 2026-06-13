@@ -14,6 +14,7 @@ import {
   type TTSBoard,
   type CardIndex,
   type ChipIndex,
+  type ClassIndex,
   type CivLocationIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
@@ -24,6 +25,7 @@ import {
   type SiteIndex,
   type TTSCardImage,
   type TTSChip,
+  type TTSClass,
   type TTSMissionCard,
   type TTSMissionRewards,
   type TTSMapTile,
@@ -37,6 +39,7 @@ import {
 import aliasesData from "./aliases.json";
 
 const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
+const CLASSES_FILE = path.join(process.cwd(), "data", "tts", "classes.json");
 const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
 const SITES_FILE = path.join(process.cwd(), "data", "tts", "sites.json");
 const CIVLOCS_FILE = path.join(
@@ -88,6 +91,7 @@ const MISSIONS_FILE = path.join(process.cwd(), "data", "tts", "missions.json");
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
 let cachedCardIndex: CardIndex | null = null;
+let cachedClassIndex: ClassIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
@@ -106,6 +110,12 @@ function getCardIndex(): CardIndex {
   if (cachedCardIndex !== null) return cachedCardIndex;
   cachedCardIndex = readJsonOrEmpty<CardIndex>(CARDS_FILE);
   return cachedCardIndex;
+}
+
+function getClassIndex(): ClassIndex {
+  if (cachedClassIndex !== null) return cachedClassIndex;
+  cachedClassIndex = readJsonOrEmpty<ClassIndex>(CLASSES_FILE);
+  return cachedClassIndex;
 }
 
 function getChipIndex(): ChipIndex {
@@ -292,6 +302,26 @@ export type MissionTargetLink = {
   href: string;
   kind: MissionTargetKind;
 };
+
+export type ClassEntry = {
+  name: string;
+  slug: string;
+  classes: TTSClass[];
+};
+
+export function getAllClasses(): ClassEntry[] {
+  return Object.entries(getClassIndex())
+    .map(([name, classes]) => ({
+      name,
+      slug: slugify(name),
+      classes,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getClassBySlug(slug: string): ClassEntry | undefined {
+  return getAllClasses().find((entry) => entry.slug === slug);
+}
 
 /** Return all chip entries, sorted alphabetically by prettified name. */
 export function getAllChips(): ChipEntry[] {

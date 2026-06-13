@@ -117,6 +117,31 @@ export type ExtractMissionsOptions = {
   missionStats?: readonly MissionStatsMapping[];
 };
 
+export type ClassAdvantageReference = {
+  title: string;
+};
+
+export type TTSClassTile = {
+  source: string;
+  name: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+  ancestry: string[];
+  gmNotes?: string;
+};
+
+export type TTSClass = {
+  source: string;
+  name: string;
+  advantageTitle: string;
+  advantageCard?: TTSCardImage;
+  classToken?: TTSClassTile;
+  targetingTokens: TTSClassTile[];
+};
+
+/** Output written to data/tts/classes.json. Keyed by class name. */
+export type ClassIndex = Record<string, TTSClass[]>;
+
 /**
  * A "chip" is a TTS Custom_Tile whose `LuaScript` begins with `chipName =` —
  * a convention the mod uses to mark game chips (monster counters etc). Unlike
@@ -663,6 +688,131 @@ export function extractMissions(
   return index;
 }
 
+export function extractClasses(
+  root: unknown,
+  source: string,
+  classAdvantages: readonly ClassAdvantageReference[],
+): ClassIndex {
+  const definitions = classAdvantages.map((entry) => ({
+    name: classNameFromAdvantageTitle(entry.title),
+    title: entry.title,
+  }));
+  const namesByKey = new Map(
+    definitions.map((entry) => [classComponentKey(entry.name), entry.name]),
+  );
+  const index: ClassIndex = {};
+  for (const definition of definitions) {
+    index[definition.name] = [
+      {
+        source,
+        name: definition.name,
+        advantageTitle: definition.title,
+        targetingTokens: [],
+      },
+    ];
+  }
+
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    if (!isClassAncestry(ancestry)) continue;
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const className = namesByKey.get(
+      classComponentKey(classNameFromAdvantageTitle(raw)),
+    );
+    if (!className) continue;
+    const image = imageFor(card, source, ancestry);
+    if (image) index[className][0].advantageCard = image;
+  }
+
+  const tiles: TileWithAncestry[] = [];
+  walkTiles(root, [], tiles);
+  for (const { tile, ancestry } of tiles) {
+    if (!isClassAncestry(ancestry)) continue;
+    const image = classTileImage(tile, source, ancestry);
+    if (!image) continue;
+    const className = namesByKey.get(
+      classComponentKey(classTileClassName(tile)),
+    );
+    if (!className) continue;
+    if (isClassTargetingToken(tile)) {
+      index[className][0].targetingTokens.push(image);
+    } else {
+      index[className][0].classToken ??= image;
+    }
+  }
+
+  for (const entries of Object.values(index)) {
+    entries[0].targetingTokens.sort(compareClassTiles);
+  }
+
+  return index;
+}
+
+function classNameFromAdvantageTitle(title: string): string {
+  return title.replace(/\s*\([^)]*\)\s*$/, "").trim();
+}
+
+function classComponentKey(name: string): string {
+  const key = name
+    .replace(/\btoken\b(?:\s+\d+)?$/i, "")
+    .replace(/\bcounter\s*\([^)]*\)$/i, "")
+    .replace(/\([^)]*\)/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+  return CLASS_COMPONENT_ALIASES[key] ?? key;
+}
+
+const CLASS_COMPONENT_ALIASES: Record<string, string> = {
+  battlemage: "battle mage",
+  conjuror: "conjurer",
+  "pit fighter": "pit fighter",
+  "pit fighter token": "pit fighter",
+  "pit fighter token 2": "pit fighter",
+  "warrior counter": "warrior",
+};
+
+function isClassAncestry(ancestry: string[]): boolean {
+  return ancestry.some((entry) => /^Class\s+/i.test(entry));
+}
+
+function classTileClassName(tile: TileObject): string {
+  const nickname = (tile.Nickname ?? "").trim();
+  const gmNotes = (tile.GMNotes ?? "").trim();
+  return gmNotes || nickname;
+}
+
+function isClassTargetingToken(tile: TileObject): boolean {
+  return /\btoken\b/i.test((tile.Nickname ?? "").trim());
+}
+
+function classTileImage(
+  tile: TileObject,
+  source: string,
+  ancestry: string[],
+): TTSClassTile | null {
+  const imageURL = tile.CustomImage.ImageURL?.trim() ?? "";
+  const imageSecondaryURL = tile.CustomImage.ImageSecondaryURL?.trim() ?? "";
+  if (!imageURL) return null;
+  const name = (tile.Nickname ?? "").trim();
+  const out: TTSClassTile = {
+    source,
+    name,
+    imageURL,
+    imageSecondaryURL,
+    ancestry,
+  };
+  const gmNotes = (tile.GMNotes ?? "").trim();
+  if (gmNotes) out.gmNotes = gmNotes;
+  return out;
+}
+
+function compareClassTiles(a: TTSClassTile, b: TTSClassTile): number {
+  return a.name.localeCompare(b.name) || a.imageURL.localeCompare(b.imageURL);
+}
+
 export function missionCellKey(
   card: Pick<TTSCardImage, "faceURL" | "row" | "col">,
 ): string {
@@ -877,6 +1027,15 @@ type ChipObject = {
 };
 
 type ChipWithAncestry = { chip: ChipObject; ancestry: string[] };
+
+type TileObject = {
+  Name: "Custom_Tile";
+  Nickname?: string;
+  GMNotes?: string;
+  CustomImage: { ImageURL?: string; ImageSecondaryURL?: string };
+};
+
+type TileWithAncestry = { tile: TileObject; ancestry: string[] };
 
 /**
  * Walk a TTS save object recursively and return every Chip. The mod tags
@@ -2105,6 +2264,25 @@ function walk(obj: unknown, ancestry: string[], out: CardWithAncestry[]): void {
   const contained = (obj as TTSContainer).ContainedObjects;
   if (Array.isArray(contained))
     for (const s of contained) walk(s, childAncestry, out);
+}
+
+function walkTiles(
+  obj: unknown,
+  ancestry: string[],
+  out: TileWithAncestry[],
+): void {
+  if (!isRecord(obj)) return;
+  if (obj.Name === "Custom_Tile" && isRecord(obj.CustomImage)) {
+    out.push({ tile: obj as unknown as TileObject, ancestry });
+  }
+  const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+  const childAncestry = nick ? [...ancestry, nick] : ancestry;
+  const states = obj.ObjectStates;
+  if (Array.isArray(states))
+    for (const s of states) walkTiles(s, childAncestry, out);
+  const contained = (obj as TTSContainer).ContainedObjects;
+  if (Array.isArray(contained))
+    for (const s of contained) walkTiles(s, childAncestry, out);
 }
 
 function imageFor(

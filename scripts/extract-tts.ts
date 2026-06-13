@@ -11,6 +11,7 @@ import {
   extractBoards,
   extractCards,
   extractChips,
+  extractClasses,
   extractCivilisationTokens,
   extractCivLocations,
   extractMapTileMonsters,
@@ -27,6 +28,8 @@ import {
   type BoardIndex,
   type CardIndex,
   type ChipIndex,
+  type ClassAdvantageReference,
+  type ClassIndex,
   type CivLocationIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
@@ -47,7 +50,9 @@ import {
 
 const SOURCES_DIR = path.join(process.cwd(), "sources");
 const OUT_DIR = path.join(process.cwd(), "data", "tts");
+const DERIVED_DIR = path.join(process.cwd(), "data", "derived");
 const MANUAL_DIR = path.join(process.cwd(), "data", "manual");
+const CLASS_ADVANTAGES_FILE = path.join(DERIVED_DIR, "class-advantages.json");
 const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
   MANUAL_DIR,
   "mission-nickname-corrections.json",
@@ -75,8 +80,12 @@ async function main(): Promise<void> {
   >(MISSION_NICKNAME_CORRECTIONS_FILE);
   const missionStats =
     await readJsonFile<MissionStatsMapping[]>(MISSION_STATS_FILE);
+  const classAdvantages = await readJsonFile<ClassAdvantageReference[]>(
+    CLASS_ADVANTAGES_FILE,
+  );
 
   const cards: CardIndex = {};
+  const classes: ClassIndex = {};
   const boards: BoardIndex = [];
   const chips: ChipIndex = {};
   const sites: SiteIndex = {};
@@ -96,6 +105,7 @@ async function main(): Promise<void> {
     const save = JSON.parse(raw) as unknown;
 
     const cardIndex = extractCards(save, stem);
+    const classIndex = extractClasses(save, stem, classAdvantages);
     const boardIndex = extractBoards(save, stem);
     const chipIndex = extractChips(save, stem);
     const siteIndex = extractSites(save, stem);
@@ -113,7 +123,7 @@ async function main(): Promise<void> {
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(chipIndex)} chips / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
     );
 
     boards.push(...boardIndex);
@@ -128,6 +138,14 @@ async function main(): Promise<void> {
         } else {
           bucket.push(item);
         }
+      }
+    }
+    for (const [name, items] of Object.entries(classIndex)) {
+      const bucket = (classes[name] ??= []);
+      for (const item of items) {
+        const existing = bucket.find((entry) => entry.source === item.source);
+        if (existing) continue;
+        bucket.push(item);
       }
     }
     // Sites: no dedup needed (each site appears once per save). Cross-source
@@ -253,6 +271,7 @@ async function main(): Promise<void> {
 
   await writeJson(path.join(OUT_DIR, "boards.json"), boards);
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
+  await writeSorted(path.join(OUT_DIR, "classes.json"), classes);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "sites.json"), sites);
   await writeSorted(path.join(OUT_DIR, "site-monsters.json"), siteMonsters);
@@ -276,6 +295,9 @@ async function main(): Promise<void> {
   console.log(`→ boards.json: ${boards.length} boards total`);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
+  );
+  console.log(
+    `→ classes.json: ${Object.keys(classes).length} names, ${countEntries(classes)} classes total`,
   );
   console.log(
     `→ chips.json: ${Object.keys(chips).length} names, ${countEntries(chips)} chips total`,

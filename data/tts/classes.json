@@ -1,0 +1,1678 @@
+{
+  "Archer": [
+    {
+      "source": "dd_all_exp",
+      "name": "Archer",
+      "advantageTitle": "Archer (Steady)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Archer token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025276/DE6AE0B8544D10B5EB9AAB63CF04E77B8B201960/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025237/23C5BCDEE7D9748BB0F3AFCFF8D2F7E521772C99/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Archer"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 0,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Archer",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406896163/93EA419D365CF6FAC38462B33119702648458984/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406897130/E7D33F0EFC4325CEA5BF7DD15C7B071B515AFF5F/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Assassin": [
+    {
+      "source": "dd_all_exp",
+      "name": "Assassin",
+      "advantageTitle": "Assassin (Backstab)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Assassin token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021028396/A2CE047E3F39639EE802FAB0A5C86307E2BDA077/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021028341/2E90138FD4271645B441297B789FC3131CE3E4BA/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Assassin"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 2,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Assassin",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2484367894807642312/FCEF248E18603BB8720AB0FEDBBF7C801C99B291/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2484367894807642843/D92DF92D0278055F55A118FCD2F28CD6EC7CBF67/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Barbarian": [
+    {
+      "source": "dd_all_exp",
+      "name": "Barbarian",
+      "advantageTitle": "Barbarian (Mountain Lore)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Barbarian token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025439/BD40DD36323F9D18CC5BFE3F28EE453C72ABC956/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025343/A5BD3E2F30A003528B119CF8FE5904F718B21AE4/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Barbarian"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 1,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Barbarian",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763331738/D0BACA7ED5AE4B1FC4F1D4FB0698D33C020B85C4/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763332246/72FEBD84BA0D1A126B52CFAF4C09AD3004ACE371/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Bard": [
+    {
+      "source": "dd_all_exp",
+      "name": "Bard",
+      "advantageTitle": "Bard (Musical)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Bard token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021028582/83CC57E4E2DDBAE2617A11052DD2708F80AD9C65/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021028482/75FDA465B70C2AA4316FE62E46F014C4BF3C5515/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Bard"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 3,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Bard",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376226673407/637DD29944E2B3882B5910C7D03F944A1BD5B43F/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376226673817/0146D07A9DE579DF8880BBCB580E15679D674BAF/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Battle Mage": [
+    {
+      "source": "dd_all_exp",
+      "name": "Battle Mage",
+      "advantageTitle": "Battle Mage (Power)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Battlemage token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021028806/9A468A1C9A4F72E2EEB693E5A6B05FDF948387D5/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021028706/07AC9DBBD502EF404D73853A24BDC96CCA7FD705/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Battlemage"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 4,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Battlemage",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453514273/F3E6F1CBFF11A0E76AC57172CE32058A1AD00029/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453514645/B7496080CAEA85B8F807CB91B6DF1DFAE8343CB9/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Beastmaster": [
+    {
+      "source": "dd_all_exp",
+      "name": "Beastmaster",
+      "advantageTitle": "Beastmaster (Faunamancy)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Beastmaster token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021017721/725AA55EA3065526528F3FA295A891398E68D413/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021017657/8001790909F3205FF9FF14E19A21D620D0260566/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Beastmaster"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 4,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Beastmaster",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2513653416203921573/F3347147CC14F64150FBD72032DB53583E4B84E0/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2513653416203921948/9C311A00C4C27E25500AF69134BA492D4609A7E9/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ],
+  "Berserker": [
+    {
+      "source": "dd_all_exp",
+      "name": "Berserker",
+      "advantageTitle": "Berserker (Berserk)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Berserker token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021017943/CA6A04D9E25145912EA41B95161FA3C2408BF8E1/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021017848/C3252242AB12509D48DBB8030FCCE0607959A8DB/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Berserker"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 5,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Berserker",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013529192/536076017D63893F3622F2AB2E74EC1203848F26/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013529532/2FDABFA63A864155D63C570000BF66781C74E43F/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ],
+  "Black Knight": [
+    {
+      "source": "dd_all_exp",
+      "name": "Black Knight",
+      "advantageTitle": "Black Knight (Feared)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Black Knight token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021029100/104946A4331FB9D6BE7A8419C1288E3339FFC6DB/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021029005/7CCEB5F80C9F5CA8ECA623E50ACFCDFF9D0625F7/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Black Knight"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 5,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Black Knight",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261433993138218749/0E1F273378F870B81E25E9DB7F72061B3ACC87B6/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261433993138219150/8CEB163007D43A1976160A248B4FE67A9C348F25/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Brigand": [
+    {
+      "source": "dd_all_exp",
+      "name": "Brigand",
+      "advantageTitle": "Brigand (Brotherhood)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Brigand token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018120/E4522B735BDAEE745DA8C3B80687E99963CD77BE/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021017992/960D9AC65435AD55E174B7E6E6AD272399D1992F/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Brigand"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 6,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Brigand",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810046028029/4E9AE4621B04DDCFA994A6D2157F8DCC7C217720/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810046028197/C4FF72FB8FAF8F3B9DE659D5A248BCC65019D152/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ],
+  "Burgess": [
+    {
+      "source": "dd_all_exp",
+      "name": "Burgess",
+      "advantageTitle": "Burgess (Shrewd)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Burgess token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018446/85B5E209415D9AD4112A60E6A0B9282CCA32EA05/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018307/76023ABD39EA5AFE50FB5308FD6B5D61331C39B6/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Burgess"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 7,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Burgess",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725638640/85D2F2FE106059B4814E89FB7A4408E2D0474410/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2462986199725639000/9E1A0C654C10D9975ACD2D9A287BA2166E604269/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ],
+  "Cleric": [
+    {
+      "source": "dd_all_exp",
+      "name": "Cleric",
+      "advantageTitle": "Cleric (Divine Protection)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Cleric token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025555/46BD67C0A1A9A7614A82D485A3C1D0D495277C09/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025503/058AB0C6649942C76682572A9277C81D56FD7D63/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Cleric"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 2,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Cleric",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763353449/5AE5A0C9AB1767235B83368FF9954DCA989031C9/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763353863/831927604AD579FA9F5459A91E77B6499157F074/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Conjurer": [
+    {
+      "source": "dd_all_exp",
+      "name": "Conjurer",
+      "advantageTitle": "Conjurer (Mastery)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Conjuror token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025639/1CEFF2F0727632DC8F553926EEFF19DFBB4BE970/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025585/F3FD68B5DF1D294936969826E167FFA7E38F6FCB/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Conjuror"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 3,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Conjuror",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406899001/FB7192FE77A6B7F8EBC9F5F1D3C532B3F3309FC8/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406899557/06ED006B0D26BD804785A5230AB2B54DEDF378A2/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Decayed": [
+    {
+      "source": "dd_all_exp",
+      "name": "Decayed",
+      "advantageTitle": "Decayed (Duality Vale)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Decayed token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11321113908817961007/C05FDE0D509F754D23AF266ED2F7879ECFE2C03B/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10489863752259080649/C315C0C4FA894730CB79574DF6DA26D1CBCE1896/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Decayed"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 6,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Decayed",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13116904434118303386/706431963CE7DE91CBC3846EE292B234899ABB82/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12535787553954136602/FC4BB62960756865A52CF198F01C7F04E1293868/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Dervish": [
+    {
+      "source": "dd_all_exp",
+      "name": "Dervish",
+      "advantageTitle": "Dervish (Whirling Strike)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Dervish token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12291581570674811073/7F104EA503591AC75D5CB1168EB53E947875D2C6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17153064178949366430/17B84048F6E4A151DE7392E6DD036FF230F5E4EC/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Dervish"
+        },
+        {
+          "source": "dd_all_exp",
+          "name": "Dervish token 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12291581570674811073/7F104EA503591AC75D5CB1168EB53E947875D2C6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14844572775315319459/B66ECC9955CFFA078B20E84DD1DB2FE913D83ED2/",
+          "ancestry": [
+            "Class EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "name": "Dervish token 3",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12291581570674811073/7F104EA503591AC75D5CB1168EB53E947875D2C6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12605687571210438021/6ED7BD961E68A34620C00B86986F623DEB97EFBC/",
+          "ancestry": [
+            "Class EASTERN"
+          ]
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 8,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Dervish",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14220412597654472927/D6EB17206E96339721318D6CC06727D9024A198A/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15258965379246367729/F3D201F149DFDCDF314733E717A4A45C6B35A82B/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Disciple": [
+    {
+      "source": "dd_all_exp",
+      "name": "Disciple",
+      "advantageTitle": "Disciple (Chosen)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Disciple token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11610691336088357698/963997FC5012F237E29AF66920949AC71CC5A065/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10557690581068690348/69983FE4DDDA78575676EF4D717ED11A95D75DB7/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Disciple"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 2,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Disciple",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14246862579301569203/1102C8253E16707C1AC3D983B509994D5F082F85/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10451651105755630303/A99672AB1B4529F2A8EDC0E998FA6DB463B9813C/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Druid": [
+    {
+      "source": "dd_all_exp",
+      "name": "Druid",
+      "advantageTitle": "Druid (Natural Emanation)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Druid token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025775/CD8FAA42E7688BE7282C00E43F56F162685294ED/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025699/56C64DB3150C5B7C2F0898ACD28458BCAD808526/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Druid"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 4,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Druid",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763354792/C2195C9F133F1B50309816B13F9DC9D296AA2BDF/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763355583/BAA5E71AF0D506C680C01265BFB93C1A5D5AF8DF/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Duelist": [
+    {
+      "source": "dd_all_exp",
+      "name": "Duelist",
+      "advantageTitle": "Duelist (Parry)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Duelist token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/18113538709583614444/C8017652B16A7BB07C86CB440C45792825A1D0C2/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12801565922466762069/3ABBF8F6ABD51A34A66CF636F6CB7A9626B9A777/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Duelist"
+        },
+        {
+          "source": "dd_all_exp",
+          "name": "Duelist token 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/18113538709583614444/C8017652B16A7BB07C86CB440C45792825A1D0C2/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15765992201891316200/E2422591EB53A6FB1AF768C5442C638619DF22F2/",
+          "ancestry": [
+            "Class EASTERN"
+          ]
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 7,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Duelist",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10504366696760559021/51F2F525664785C1EB077DEAC073DDB6F002563D/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13171626423520329917/24764AB5DECC092EED631AA34737F984087AA85B/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Enchanter": [
+    {
+      "source": "dd_all_exp",
+      "name": "Enchanter",
+      "advantageTitle": "Enchanter (Aura)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Enchanter token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025917/C811794289AA65B112D8A32BD98BEBD13736BECE/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021025858/A42D4048C0C32980BE13EE9076C5C257C4ED6C0B/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Enchanter"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 5,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Enchanter",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406904690/1B5F62CB6A2692C457519BB9A0F238B1E76E9235/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406905304/2E51A182B1142D18ACE3D47DE2F22F677455B645/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Executioner": [
+    {
+      "source": "dd_all_exp",
+      "name": "Executioner",
+      "advantageTitle": "Executioner (Intimidation)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Executioner token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021029451/382A22CDED36BCC2B6FE2507376C4E8F0ED79E93/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021029248/880A61D2FFCC74E9419DB63AC420F9890AEC841B/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Executioner"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 6,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Executioner",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453515499/73C73C55D38917B56F802C8EEBA0F88409023C2A/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453515835/11438E11975B405431EAC8B30742261F2C2C255E/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Explorer": [
+    {
+      "source": "dd_all_exp",
+      "name": "Explorer",
+      "advantageTitle": "Explorer (Perceptive)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Explorer token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018685/EC6A220DF84E12BFE02A586AEA85791C47A15A1D/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018582/352761582501543DBCAEEE35534DB4915F946B3C/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Explorer"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 8,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Explorer",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013531731/BC1FF7F768F493AF207952B1629F340A89E8F4E7/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013532075/93BDA4790CE9FD07344B4C40E8727211C32520A0/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ],
+  "Illusionist": [
+    {
+      "source": "dd_all_exp",
+      "name": "Illusionist",
+      "advantageTitle": "Illusionist (Focus)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Illusionist token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026090/5CADBC6A98FFC1CD54309A0D0632505E4A590688/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026011/823AB6CA741B2B6FB94EDA34D136CAC569E11733/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Illusionist"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 6,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Illusionist",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406901484/8AEAAF02936C1EAADD6A0AE2C992379AA63AB331/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466871406901952/5746C257CD84C8F52B7184BA222AAE885E08C3EC/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Knight": [
+    {
+      "source": "dd_all_exp",
+      "name": "Knight",
+      "advantageTitle": "Knight (Health)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Knight token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026255/7C3E0A345D574EA6B9ED7CDABD7DF6BC4A1236F1/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026193/98420E0F9B31AF724F8EA0A5755D66CCC6239132/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Knight"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 7,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Knight",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763356732/C09E2DF6EFA88548CF1B036318768C49D6BBD060/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763357128/DB7F39D5CDDB31B3D061A704A99109C11E1DD5D1/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Magician": [
+    {
+      "source": "dd_all_exp",
+      "name": "Magician",
+      "advantageTitle": "Magician (Knowledge)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Magician token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021029857/3E67E354B144111EFE7888AE6135099F1FFA0F2E/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021029774/DD4C6C774D824D54B4A0011F6F2477A6F8C9C31B/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Magician"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 7,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Magician",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453517028/F77D8665FE1951D4582821F3740EC466B832E630/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453517544/0968EEE209BE91EDA8B45B6F82447563EBA629F7/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Marauder": [
+    {
+      "source": "dd_all_exp",
+      "name": "Marauder",
+      "advantageTitle": "Marauder (Fury)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Marauder token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13444630883356008877/8118E4FE42794A90A0A65E0DF9B9DBD8EC4E2FCD/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12962897902846254003/7DE3F8BF59D33801B31104A175A3D0636914F54B/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Marauder"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 3,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Marauder",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15941847211069167455/0A4A58D75C74223F61B64B138BAEDC85B944715C/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/18232765822858069173/8F1D75BB5E9BB83C887BADF5CAF12953557252DF/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Monk": [
+    {
+      "source": "dd_all_exp",
+      "name": "Monk",
+      "advantageTitle": "Monk (Iron Fist)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Monk token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14716185720874326715/54342BF948359F39AB8ED66EE2A2314E5A3A2BD2/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9967177317958508968/285625D754C22F22F600F828B49DB72D3E074005/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Monk"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 9,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Monk",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17839582615581967880/6F04F23E73DB79260B03BD061508E11427023AF0/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13826833699192190953/DB1DE53DFDED16648539C5ECD4217CA44ECADD47/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Necromancer": [
+    {
+      "source": "dd_all_exp",
+      "name": "Necromancer",
+      "advantageTitle": "Necromancer (Gravecalling)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Necromancer token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018887/A8459340B2C900665EC3F4FFCAD0D2459B336E12/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018782/7EA0B73CB5CB16D7FD8289F0DFC8A7AE57514C32/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Necromancer"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 9,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Necromancer",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2513653416203928106/BFAF4A832B23E0C9731B81A689E69294899A4A69/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2513653416203928578/D5DB7CBA2EAD01E8685E62FB90F0CC99306B3895/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ],
+  "Outcast": [
+    {
+      "source": "dd_all_exp",
+      "name": "Outcast",
+      "advantageTitle": "Outcast (Overlooked)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Outcast token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021019063/412DEF1340C7376E663C3B7D42A7939B3DAD2B42/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021018940/0CCA61059190C6A617FC995DF151D56103E65C9E/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Outcast"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 0,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Outcast",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013530611/4E3822ABF4BD404DB49B65F805D38BBA90B381FB/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013530863/63561519B94FD9A686DFEC584B2305BCEEAC5433/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ],
+  "Paladin": [
+    {
+      "source": "dd_all_exp",
+      "name": "Paladin",
+      "advantageTitle": "Paladin (Honor)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Paladin token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030124/177FA5FD7C08745E1CB6E00293D534BCF065BD50/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021029935/4E3203ABF9D5DC7856EEABABA81CC1A741AE031D/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Paladin"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 8,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Paladin",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453518319/0D8E79E62E27D4D01C44BE77E661B32AE63379FF/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453518816/79DE9369B2F2399145F37771C3F8AB8E48E094B4/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Pit Fighter": [
+    {
+      "source": "dd_all_exp",
+      "name": "Pit Fighter",
+      "advantageTitle": "Pit Fighter (Weaponmaster)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Pit Fighter token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16587564230692810805/226CC2F9BAF73601E227E889D5FAB2B833819EE6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9769088003704217856/57411B168C3FBDEFD4090EB7F0ED7043A24C273B/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Pit Fighter"
+        },
+        {
+          "source": "dd_all_exp",
+          "name": "Pit Fighter token 2",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16587564230692810805/226CC2F9BAF73601E227E889D5FAB2B833819EE6/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12373061937264672639/CD9684B3933E238B9E9059DC452EAD2E463292B9/",
+          "ancestry": [
+            "Class EASTERN"
+          ]
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 4,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Pit FIghter",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17435771937046445276/0DF931B3186119161F54320F83A870526D766DE2/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13155527478325854971/D31727D6B431121B7C465BD7C467A137359C14FB/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Ranger": [
+    {
+      "source": "dd_all_exp",
+      "name": "Ranger",
+      "advantageTitle": "Ranger (Woods Lore)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Ranger token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030371/CC22C8E103223F3E25CE1BA47818A4D930645604/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030224/C8554FCE3AD874F7432C9535C688E5B3752A85D2/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Ranger"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 9,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Ranger",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453519945/25D0CC2436B2A795B4EC268CBDFE8501D4330BD3/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453520441/D4C82BA9A2A032012E0E254F29CA6A83B917883F/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Rogue": [
+    {
+      "source": "dd_all_exp",
+      "name": "Rogue",
+      "advantageTitle": "Rogue (Elusive)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Rogue token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026364/E3C6C773AB0ED112335615CE17F679AB96F07BED/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026288/D88745969E3682AC22D9F272DCF3C491B3417DDB/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Rogue"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 8,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Rogue",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763365068/A16FCD6A792B7BFB2636271CF2D0DC58EEB3A739/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763365594/21FC4EFA8EEC73E744437096ADD6E7EB6B3B2749/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Runesword": [
+    {
+      "source": "dd_all_exp",
+      "name": "Runesword",
+      "advantageTitle": "Runesword (Control)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Runesword token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030630/BCA998D5E59803C488B827B0B1D331FFD6BD6E35/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030472/AEE1AE10EC4A341A0F163F2EC9F7C16FBC57AE97/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Runesword"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 0,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Runesword",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453521296/FCFB65DD5C220A2224573516728AE509BD577AD5/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453521725/56CBF8C8DE1606E5F81EF69C98812DA4AD439BC1/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Sorcerer": [
+    {
+      "source": "dd_all_exp",
+      "name": "Sorcerer",
+      "advantageTitle": "Sorcerer (Specialized)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Sorcerer token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026502/ECE0CA78CF496357752B767333351A9816030CE1/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026420/C35F9137A18FF45F59043F0A8CE3791A23CDEFF7/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Sorcerer"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 0,
+        "col": 9,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Sorcerer",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763366940/58BD07156E76ABE63A4938199A4071E8C2513B44/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763367426/5D9D2952D9726C56407343E975FFE7A671949681/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Soulless": [
+    {
+      "source": "dd_all_exp",
+      "name": "Soulless",
+      "advantageTitle": "Soulless (Incorporeal)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Soulless token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030781/B1BDB1A9D7264FBC3A569C7F3CEF23E17F633DF7/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030693/3F15077E89E75B8B29DD3ED4FEF206B747E55E18/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Soulless"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 1,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Soulless",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453522632/A3BD3F25D2AB1DA47F037425A8581F6F8E71D869/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453523057/8682B04610CD896D952F418E85BAB2AEE9BEC862/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Trickster": [
+    {
+      "source": "dd_all_exp",
+      "name": "Trickster",
+      "advantageTitle": "Trickster (Illusionary Speed)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Trickster token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030908/E5BFCC7C2CF86F3BDAF49D5788E6953758F20AB8/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030854/EA095A586E4A9C071A39E01DCE1607851F3961AE/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Trickster"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 2,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Trickster",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511006726943/510B64431F1489DF6930DDA4246CDD876F6FF0DA/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511006727406/5D1C3844121A021A85119397A63B46FDF1DA82E6/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Vanguard": [
+    {
+      "source": "dd_all_exp",
+      "name": "Vanguard",
+      "advantageTitle": "Vanguard (Primal Strike)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Vanguard token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14220853005554131462/DC1EFB476CE5ED1FBA0925080766A4FFA97250C0/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12094051128422834382/E9CC92A36E8BC8BDCD976AAE4A3B96E162DA5092/",
+          "ancestry": [
+            "Class EASTERN"
+          ],
+          "gmNotes": "Vanguard"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 5,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Vanguard",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11302893516224738274/6CCDD5DBC3DBAB2739EC48C0ED28BE1A1A850D73/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12221612452407946859/4B51A7829FD3EB010B6B13F98A2D5371620DF14E/",
+        "ancestry": [
+          "Class EASTERN"
+        ]
+      }
+    }
+  ],
+  "Warlock": [
+    {
+      "source": "dd_all_exp",
+      "name": "Warlock",
+      "advantageTitle": "Warlock (Blood Lust)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Warlock token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026815/216F01E4C04CBBA636730126AF6EB5CC0906769F/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026708/156169BD525FC5486E6B8432B062003433800518/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Warlock"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 0,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Warlock",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763372461/0E635B7D2019C43642C745F4B166B7D24D804D47/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763372872/835375525D5421B7A274B0AF1435E181AA39CBC1/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Warrior": [
+    {
+      "source": "dd_all_exp",
+      "name": "Warrior",
+      "advantageTitle": "Warrior (Adept)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Warrior token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026908/1088538614A43F1310C4A60545BFC11D06916C9D/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021026871/329D1E69D25437CE2B70EBE40922347D162F976C/",
+          "ancestry": [
+            "Class DRAGONS DOWN"
+          ],
+          "gmNotes": "Warrior"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 1,
+        "col": 1,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Warrior Counter(Big)",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763374008/6F3138D28DA27EB9330D02D05BF296788949F4CC/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601763374468/B566D093835D742BBAF18D6892CE272546006860/",
+        "ancestry": [
+          "Class DRAGONS DOWN"
+        ]
+      }
+    }
+  ],
+  "Witch": [
+    {
+      "source": "dd_all_exp",
+      "name": "Witch",
+      "advantageTitle": "Witch (Familiar)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Witch token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021031060/63CEABA4FB5172B147358E791E4FEF291072867E/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021030978/A7FDD1EB8FE0E1E831787DB9683B4705DA0970D5/",
+          "ancestry": [
+            "Class DESOLATION"
+          ],
+          "gmNotes": "Witch"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 2,
+        "col": 3,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Witch",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053897615/B1CF1C79087F3159675F333CA63F4F9FEB24BE3C/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053897982/67FF2208B0F23911DECA5D0A724714E2B17B7734/",
+        "ancestry": [
+          "Class DESOLATION"
+        ]
+      }
+    }
+  ],
+  "Wizard": [
+    {
+      "source": "dd_all_exp",
+      "name": "Wizard",
+      "advantageTitle": "Wizard (Studious)",
+      "targetingTokens": [
+        {
+          "source": "dd_all_exp",
+          "name": "Wizard token",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021019236/C38DDC328385F37DC119DCB1283F3367AB715042/",
+          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51330444021019142/B7089369EEA71B987F4F00F0816755036321A2EB/",
+          "ancestry": [
+            "Class NATIVES"
+          ],
+          "gmNotes": "Wizard"
+        }
+      ],
+      "advantageCard": {
+        "source": "dd_all_exp",
+        "faceURL": "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+        "backURL": "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+        "numWidth": 10,
+        "numHeight": 5,
+        "row": 3,
+        "col": 1,
+        "uniqueBack": true,
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      },
+      "classToken": {
+        "source": "dd_all_exp",
+        "name": "Wizard",
+        "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013534767/BBC362E26F2AA5A9BE49972AEE23B990FC10C85F/",
+        "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511013535109/0C38ADE85F5EE7B35B1DC698222B1951FA5CE90C/",
+        "ancestry": [
+          "Class NATIVES"
+        ]
+      }
+    }
+  ]
+}

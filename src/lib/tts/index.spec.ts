@@ -3,6 +3,7 @@ import {
   extractBoards,
   extractCards,
   extractChips,
+  extractClasses,
   extractCivilisationTokens,
   extractCivLocations,
   extractMapTileMonsters,
@@ -52,6 +53,20 @@ function card(nickname: string, cardID: number, deckId: string, deck: object) {
     Nickname: nickname,
     CardID: cardID,
     CustomDeck: { [deckId]: deck },
+  };
+}
+
+function tile(
+  nickname: string,
+  imageURL: string,
+  imageSecondaryURL: string,
+  gmNotes = "",
+) {
+  return {
+    Name: "Custom_Tile",
+    Nickname: nickname,
+    GMNotes: gmNotes,
+    CustomImage: { ImageURL: imageURL, ImageSecondaryURL: imageSecondaryURL },
   };
 }
 
@@ -291,6 +306,159 @@ describe("extractCards", () => {
     const save = { ObjectStates: [card("A", 100, "1", SAMPLE_DECK)] };
     const out = extractCards(save, "my-source");
     expect(out["A"][0].source).toBe("my-source");
+  });
+});
+
+describe("extractClasses", () => {
+  it("links class advantage cards with class and targeting tokens", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Class DRAGONS DOWN",
+          ContainedObjects: [
+            card("Archer (Steady)", 800, "8", {
+              ...SAMPLE_DECK,
+              FaceURL:
+                "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+              BackURL:
+                "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+              NumHeight: 5,
+            }),
+            tile("Archer", "archer-token.png", "archer-token-back.png"),
+            tile(
+              "Archer token",
+              "archer-target.png",
+              "archer-target-back.png",
+              "Archer",
+            ),
+          ],
+        },
+      ],
+    };
+
+    expect(
+      extractClasses(save, "dd_all_exp", [{ title: "Archer (Steady)" }]),
+    ).toEqual({
+      Archer: [
+        {
+          source: "dd_all_exp",
+          name: "Archer",
+          advantageTitle: "Archer (Steady)",
+          advantageCard: {
+            source: "dd_all_exp",
+            faceURL:
+              "https://dragonsdowndata.com/data/classes/AllClassCardsFront.png",
+            backURL:
+              "https://dragonsdowndata.com/data/classes/AllClassCardsBack.png",
+            numWidth: 10,
+            numHeight: 5,
+            row: 0,
+            col: 0,
+            uniqueBack: false,
+            ancestry: ["Class DRAGONS DOWN"],
+          },
+          classToken: {
+            source: "dd_all_exp",
+            name: "Archer",
+            imageURL: "archer-token.png",
+            imageSecondaryURL: "archer-token-back.png",
+            ancestry: ["Class DRAGONS DOWN"],
+          },
+          targetingTokens: [
+            {
+              source: "dd_all_exp",
+              name: "Archer token",
+              imageURL: "archer-target.png",
+              imageSecondaryURL: "archer-target-back.png",
+              ancestry: ["Class DRAGONS DOWN"],
+              gmNotes: "Archer",
+            },
+          ],
+        },
+      ],
+    });
+  });
+
+  it("normalizes TTS class component spelling variants", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Class DRAGONS DOWN",
+          ContainedObjects: [
+            card("Conjurer (Mastery)", 803, "8", SAMPLE_DECK),
+            tile("Conjuror", "conjuror.png", "conjuror-back.png"),
+            tile(
+              "Conjuror token",
+              "conjuror-target.png",
+              "conjuror-target-back.png",
+              "Conjuror",
+            ),
+          ],
+        },
+        {
+          Name: "Bag",
+          Nickname: "Class DESOLATION",
+          ContainedObjects: [
+            card("Battle Mage (Power)", 814, "8", SAMPLE_DECK),
+            tile("Battlemage", "battlemage.png", "battlemage-back.png"),
+            tile(
+              "Battlemage token",
+              "battlemage-target.png",
+              "battlemage-target-back.png",
+              "Battlemage",
+            ),
+          ],
+        },
+        {
+          Name: "Bag",
+          Nickname: "Class EASTERN",
+          ContainedObjects: [
+            card("Pit Fighter (Weaponmaster)", 834, "8", SAMPLE_DECK),
+            tile("Pit FIghter", "pit-fighter.png", "pit-fighter-back.png"),
+            tile(
+              "Pit Fighter token",
+              "pit-fighter-target.png",
+              "pit-fighter-target-back.png",
+              "Pit Fighter",
+            ),
+            tile(
+              "Pit Fighter token 2",
+              "pit-fighter-target.png",
+              "pit-fighter-target-2-back.png",
+            ),
+          ],
+        },
+        {
+          Name: "Bag",
+          Nickname: "Class DRAGONS DOWN",
+          ContainedObjects: [
+            card("Warrior (Adept)", 811, "8", SAMPLE_DECK),
+            tile("Warrior Counter(Big)", "warrior.png", "warrior-back.png"),
+            tile(
+              "Warrior token",
+              "warrior-target.png",
+              "warrior-target-back.png",
+              "Warrior",
+            ),
+          ],
+        },
+      ],
+    };
+
+    const classes = extractClasses(save, "dd_all_exp", [
+      { title: "Battle Mage (Power)" },
+      { title: "Conjurer (Mastery)" },
+      { title: "Pit Fighter (Weaponmaster)" },
+      { title: "Warrior (Adept)" },
+    ]);
+
+    expect(classes["Battle Mage"][0].classToken?.name).toBe("Battlemage");
+    expect(classes.Conjurer[0].classToken?.name).toBe("Conjuror");
+    expect(classes["Pit Fighter"][0].classToken?.name).toBe("Pit FIghter");
+    expect(classes.Warrior[0].classToken?.name).toBe("Warrior Counter(Big)");
+    expect(classes["Pit Fighter"][0].targetingTokens).toHaveLength(2);
   });
 });
 
