@@ -6,6 +6,11 @@
       "source": "desolation",
       "level": 1,
       "title": "INTRODUCTION",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "top"
+      },
       "content": "![](/images/pdf/37f74aa0bbf43addc356a799f1c65d453770f235.jpeg)\n\n![](/images/pdf/c750c6aab950f1d64d99231623940089b25ad2c5.jpeg)\n\n*“We discovered new lands, new Heroes, new treasures, new sites...* *...and new ways to die”.*\n\nDragons Down: Desolation expands your Dragons Down experience by adding many new treasures, two new Terrain Packs, 2 new Lineages to use with new and existing Classes, and 12 new Classes to use with new or existing Lineages.\n\nEach Terrain Pack consists of all new Map Tiles, new and additional Monsters, new Treasure Sites, new tokens, new missions, etc.\n\nMost new components will have a Swamp or Plains symbol on them or are marked with a small       in one corner of the card. counters, round cardboard tokens, and Hero Boards do not have this mark."
     },
     {
@@ -13,6 +18,11 @@
       "source": "desolation",
       "level": 1,
       "title": "RE FERENCE",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
       "content": ""
     },
     {
@@ -20,6 +30,11 @@
       "source": "desolation",
       "level": 2,
       "title": "Lineage Advantages.",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "![](/images/pdf/282dd05f57e30725bb324e51bf6d60c8bb2f6f6d.jpeg)"
     },
     {
@@ -27,6 +42,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Half-Elves (Two Worlds)",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
       "icon": "/images/pdf/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png",
       "content": "Half-Elves straddle the worlds of elves and humans. At the beginning of the game, Half-Elves choose either the elven advantage or the human advantage to use for the entirety of this game session.",
       "tags": [
@@ -38,6 +58,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Half-Orc (Mountaineer)",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
       "icon": "/images/pdf/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png",
       "content": "Half-Orcs are very comfortable in mountains and do not pay the additional action cost to enter a Mountain Clearing.",
       "tags": [
@@ -49,6 +74,11 @@
       "source": "desolation",
       "level": 2,
       "title": "Class Advantages",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
       "content": ""
     },
     {
@@ -56,6 +86,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Assassin (Backstab)",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
       "icon": "/images/pdf/3307f8231477bb30b009b5e271d39219fade2c05.png",
       "content": "The Assassin is skilled at stalking their target. Assassins may ambush with a melee weapon, after which the Assassin becomes unhidden.",
       "tags": [
@@ -67,6 +102,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Bard (Musical)",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
       "icon": "/images/pdf/d024baacb93541ff86c7fd553523de763fa0bc1c.png",
       "content": "Bards are entertainers and minstrels in addition to being heroic. If the Bard is in a Civilization Location at the end of Combat, they roll one Mission Die and receive the reward rolled.",
       "tags": [
@@ -78,6 +118,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Battle Mage (Power)",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "bottom"
+      },
       "icon": "/images/pdf/1228425c2c90b4f3861887004a47862f43452c96.png",
       "content": "The Battle Mage has honed the combination of magic and martial skills into one discipline. The Battle Mage may play one purple Magic Cube as if it is a red Might Cube each Combat Round.",
       "tags": [
@@ -89,6 +134,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Black Knight (Feared)",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "bottom"
+      },
       "icon": "/images/pdf/2a79edf336f66db3dddfa6a36c4bba1855d6a98d.png",
       "content": "The Black Knight is a greatly-feared veteran of many wars, causing negotiations to go a little bit easier than for others. The Black Knight may reroll one Haggle Die once per Trade Action.",
       "tags": [
@@ -100,6 +150,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Executioner (Intimidation)",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "bottom"
+      },
       "icon": "/images/pdf/10f58884e706ac5949aaea08475320671a0b26a7.png",
       "content": "The Executioner is an intimidating opponent that causes others to think twice before acting. In the first round of Combat, the attack speed of all Natives targeting the Executioner is -1.",
       "tags": [
@@ -111,6 +166,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Magician (Knowledge)",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "top"
+      },
       "icon": "/images/pdf/67e7b20d13c4a7c7864cc0afdcb84505f8809f71.png",
       "content": "Magicians know a little bit about many types of magic colors. Magicians may use any color of Magic Cube on the 2nd box of a Spell Card.",
       "tags": [
@@ -122,6 +182,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Paladin (Honor)",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "top"
+      },
       "icon": "/images/pdf/c9fe1c3dc66ed1ac1e6458f1761f98d9afbf27c2.png",
       "content": "Paladins are very honorable in all of their dealings. When a Paladin earns one or more LPs on a title, they earn +1 LP.",
       "tags": [
@@ -133,6 +198,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Ranger (Woods Lore)",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "top"
+      },
       "icon": "/images/pdf/733a6b9a863bfefd79dbffecb6d30d9fb881c969.png",
       "content": "Rangers know the woods after spending years in the wilderness. When in Woods Clearings, Rangers may reroll one Search Die during each Search Action.",
       "tags": [
@@ -144,6 +214,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Runesword (Control)",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "top"
+      },
       "icon": "/images/pdf/17aaaee9be5d2df3b38b37a4af043f4e02cba560.png",
       "content": "Runeswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue Magic Cube on any color of magic box on Treasure Cards.",
       "tags": [
@@ -155,6 +230,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Soulless (Incorporeal)",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "middle"
+      },
       "icon": "/images/pdf/a483a7f20e98594440dacbf50a9667670a124f80.png",
       "content": "The Soulless have a limited physical body, more akin to a spirit than a living creature. Soulless may use all Hidden Paths when in their normal form (*not Shape Shifted, etc.*).",
       "tags": [
@@ -166,6 +246,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Trickster (Illusionary Speed)",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "middle"
+      },
       "icon": "/images/pdf/eccf7e4dac6be82d6dba2d3f68e51bbb149a85b3.png",
       "content": "The Trickster is often underestimated because they are masters of role-playing and act like a buffoon. This gives the Trickster an advantage in combat. When attacking, the Trickster may change one Hit Die result from an equal symbol to a hit symbol.",
       "tags": [
@@ -177,6 +262,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Witch (Familiar)",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "middle"
+      },
       "icon": "/images/pdf/7f84b6c0635fc10bbdfa731aa25e995d6abe8af8.png",
       "content": "The Witch is a purveyor of arcane magic and has a Familiar which does the Witch’s bidding. The Familiar is psychically linked to the Witch and shares what it learns with the Witch. When playing the Witch, also take the 2 Familiar Tokens. Use one as the Familiar Hero counter and the other for Turn Order.  The Familiar has the following rules:\n\n![](/images/pdf/db25aee0295d59b4cbd5183977b801832248698a.jpeg)\n\n- When the Familiar’s Targeting Token is selected, the Witch takes actions for the Familiar only, using the Familiar’s Hero counter.\n\n- The Familiar follows the same rules as any other Hero. The Familiar may only move, explore, and search. The Familiar does not fly.\n\n- When a Familiar moves onto a Map Tile, place a Wilderness Token/Civilization Tokens in the tile **face-down**. The Witch may not look at the token(s).\n\n- When searching, the Familiar may only search for a single wilderness or Civilization Token in the same Map Tile as the Familiar or a Hidden Path in the same clearing as the Familiar. Upon a successful search for any one token, the Witch may look at the face-down token, but does not reveal it.\n\n- The Familiar may not search for Treasure Sites or receive rewards from Wilderness Tokens (*Forgotten City, items, treasures, etc.*).\n\n- The Witch may not look at face-down tokens except immediately after a successful search. It is good practice to record what the Familiar sees in the Adventure Journal.\n\n- The Familiar does not summon Monsters and may not target, be targeted, block, or be blocked. It does not participate in Combat. Spells may not be cast on, nor affect the Familiar.\n\n- If a Hero moves onto a Map Tile containing face-down token(s) placed by the Familiar, reveal the tokens in the tile instead of selecting new token(s) for the Map Tile.",
       "tags": [
@@ -188,6 +278,11 @@
       "source": "desolation",
       "level": 2,
       "title": "Treasure Site and Merchant Reference",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "top"
+      },
       "content": ""
     },
     {
@@ -195,6 +290,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Hideout",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "top"
+      },
       "content": "**Hidden Trap:** Side 2 of the Terrain Pack Setup Card includes a hidden trap on the Hideout. The Hero that first finds the Secret Cache must wound one random Action Cube unless they possess the Skeleton Key Treasure Card."
     },
     {
@@ -202,6 +302,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Lost Battalion",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "**Disembodied:** Side 2 of the Terrain Pack Setup Card has disembodied treasures for the Lost Battalion. The Lost Battalion site may not be looted until all Lost Battalion Monsters are killed."
     },
     {
@@ -209,6 +314,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Monolith",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "**Magic Seal:** Side 2 of the Terrain Pack Setup Card includes a magic seal on the Monolith. The Monolith may not be looted until it is opened. The Monolith may be opened at any time by wounding any Magic Cube or by possessing the Skeleton Key Treasure Card. Once opened, any Hero may loot the Monolith."
     },
     {
@@ -216,6 +326,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Wrecked Wagons",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "When the Wrecked Wagons are searched for and found by a Hero, they do not need to be looted. The Hero that first finds the Wrecked Wagons receives the Legend Point and Fame reward, and takes the treasures and Gold as if they had performed successful Loot Actions.\n\n**Hidden Trap:** Side 2 of the Terrain Pack Setup Card includes a hidden trap on the Wrecked Wagons. The Hero that first finds the Wrecked Wagons must wound one random Action Cube unless they possess the Skeleton Key Treasure Card."
     },
     {
@@ -223,6 +338,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Smuggler",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "bottom"
+      },
       "content": "The Smuggler respects no attributes and uses whatever is the lowest attribute score of the haggling Hero."
     },
     {
@@ -230,6 +350,11 @@
       "source": "desolation",
       "level": 2,
       "title": "Monster Reference",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "bottom"
+      },
       "content": ""
     },
     {
@@ -237,6 +362,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Bandits",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "bottom"
+      },
       "content": "Dragons Down: Desolation introduces additional Treasure Sites to which the Bandits may be summoned. The Bandits may appear at the Hideout, Secret Cache, and/or Wrecked Wagons. The red arrow near the Bandits indicates that the Bandit Chips might be located on another Terrain Setup Card. The Bandits always summon as a group as if they were a single Guardian.\n\nThe Bandits may summon from the setup cards or the map. If on the map, the\n\nBandits will not leave a Treasure Site Clearing that contains a Hero. If the Bandits are summoned to multiple clearings simultaneously, they all summon to the clearing containing the Hero earliest in the Turn Order."
     },
     {
@@ -244,6 +374,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Lizardfolk Shaman",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "top"
+      },
       "content": "The Lizardfolk Shaman is a unique Monster. The front side of the Shaman casts the Elemental spell. Once summoned, the Elemental behaves like a regular Monster. The Elemental immediately disappears if the Shaman is killed (*earning no points for* *killing the Elemental should this occur*). The Shaman may only have one Elemental at a time. If a Shaman-summoned Elemental is alive when the Shaman’s Elemental spell attack is processed, simply ignore the Shaman’s attack that round."
     },
     {
@@ -251,6 +386,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Omnicrux",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "top"
+      },
       "content": "The Omnicrux only attacks with spells. The front side is a Fireball spell which the Omnicrux will use to target up to 4 Heroes in the clearing (*determine randomly* *if more than 4 Heroes are present*). If only one Hero is present, the Omnicrux will target only the one Hero. This is a spell attack, which is different than a dragon breathing fire.\n\nThe back side is a Disorient spell. Should the Disorient spell hit a Hero, immediately flip over the Omnicrux (*it does not attack again this round*). The Omnicrux may flip over normally during the Monster Tactics step of Combat. There is no limit to the number of times a Hero may be disoriented by the Omnicrux, but the effects are not cumulative."
     },
     {
@@ -258,6 +398,11 @@
       "source": "desolation",
       "level": 2,
       "title": "Treasure Manifest",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "middle"
+      },
       "content": ""
     },
     {
@@ -265,6 +410,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Armageddon Hammer",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "Epic Treasure. Melee weapon. Optional might box on this card is automatically filled and does not count against the cube limit.",
       "tags": [
         "deepTreasure"
@@ -275,6 +425,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Brogans of the Birds",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "Epic Treasure. May fly during Combat and once during the Action Phase each turn.",
       "tags": [
         "deepTreasure"
@@ -285,6 +440,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Clodpoll Club",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "Melee weapon. Must have less than 8 total active attribute icons in order to equip. If the Hero has 8 or more active attribute icons at any time, the card is immediately unequipped to the backpack.",
       "tags": [
         "treasure"
@@ -295,6 +455,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Codex of Cognition",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "bottom"
+      },
       "content": "Epic Treasure. May reroll one die during each Learn Action.",
       "tags": [
         "deepTreasure"
@@ -305,6 +470,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Cursed Axe",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "bottom"
+      },
       "content": "Melee weapon. Extra sharp. May not roll the Hit Dice. This weapon must be faster than its target’s maneuver speed to hit.",
       "tags": [
         "treasure"
@@ -315,6 +485,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Dancing Sword",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "bottom"
+      },
       "content": "Epic Treasure. The attack speed of the Dancing Sword is always +1.",
       "tags": [
         "deepTreasure"
@@ -325,6 +500,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Explorer’s Boots",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "bottom"
+      },
       "content": "May use all Hidden Paths without finding them. Hidden Paths do not become known by the Hero, but they may be used.",
       "tags": [
         "treasure"
@@ -335,6 +515,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Foci of the Spellcaster",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "top"
+      },
       "content": "Epic Treasure. May place one Magic Cube in a might box. This cube must come from the Hero’s healthy box and counts against the Combat Round limit.",
       "tags": [
         "deepTreasure"
@@ -345,6 +530,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Grommel’s Talisman",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "top"
+      },
       "content": "May reroll one Search Die once per Search Action while in a Swamp Clearing.",
       "tags": [
         "treasure"
@@ -355,6 +545,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Hand of the Lich",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "top"
+      },
       "content": "Epic Treasure. The Hero must wound one Action Cube each turn at the end of their Action Phase. The attack speed of all spells cast by this Hero is +1.",
       "tags": [
         "deepTreasure"
@@ -365,6 +560,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Igneous Flame",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "top"
+      },
       "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Fireball spell is cast. No Magic Cubes are needed to cast this spell.",
       "tags": [
         "treasure"
@@ -375,6 +575,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Helm of True Sight",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "Epic Treasure. May reroll any number of dice once during each Search Action.",
       "tags": [
         "deepTreasure"
@@ -385,6 +590,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Jeweled Thief’s Skull",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "Epic Treasure. Valuable.",
       "tags": [
         "deepTreasure"
@@ -395,6 +605,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Mace of Absolution",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "Melee weapon. Must have 3 or more active Wisdom attribute icons in order to equip. If the Hero has less then 3 active Wisdom attribute icons at any time, the card is immediately unequipped to the backpack. The optional might box on this card is automatically filled and does not count against the cube limit.",
       "tags": [
         "treasure"
@@ -405,6 +620,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Orb of Far Sight",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "middle"
+      },
       "content": "Epic Treasure. May perform a Search Action in any clearing in the current Map Tile or an adjacent Map Tile. Upon a successful search of an adjacent tile which has no Wilderness or Civilization Tokens in it, place a matching token(s) in the tile. The Hero may then look at the token and decide to place it face-down or face-up (*receiving LP and Fame rewards for revealing tokens, but not physical rewards*).\n\nIf playing using the Exploration rules, the Hero may explore as if in a Mountain Clearing regardless of the actual clearing type.",
       "tags": [
         "deepTreasure"
@@ -415,6 +635,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Peace Pendant",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "bottom"
+      },
       "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Peace spell is cast. No Magic Cubes are needed to cast this spell.",
       "tags": [
         "treasure"
@@ -425,6 +650,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Pebble of Irritation",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "bottom"
+      },
       "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Discord spell is cast. No Magic Cubes are needed to cast this spell.",
       "tags": [
         "treasure"
@@ -435,6 +665,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Portable Hole",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "bottom"
+      },
       "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Teleport spell is cast. No Magic Cubes are needed to cast this spell.",
       "tags": [
         "treasure"
@@ -445,6 +680,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Sabre of the Fencer",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "top"
+      },
       "content": "Melee weapon. May place one Speed Cube on this card to count as a Might Cube. Has the attack length of a Great Sword.",
       "tags": [
         "treasure"
@@ -455,6 +695,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Sending Stones",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "top"
+      },
       "content": "One-time use. May perform one Trade Action as if they were in any clearing already on the map. The Hero is not actually in the selected clearing and so cannot be blocked by Monsters in that clearing.",
       "tags": [
         "treasure"
@@ -465,6 +710,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Sin Sword",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "top"
+      },
       "content": "Melee weapon. Must have 3 or more active Cunning attribute icons in order to equip. If the Hero has less then 3 active Cunning attribute icons at any time, the card is immediately unequipped to the backpack. The optional might box on this card is automatically filled and does not count against the cube limit.",
       "tags": [
         "treasure"
@@ -475,6 +725,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Staff of Souls",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "Whenever the staff hits an unarmored, non-undead target, the Hero wielding the staff heals one wound.",
       "tags": [
         "treasure"
@@ -485,6 +740,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Staff of the Magi",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "Epic Treasure. The Hero may choose to ignore one wound symbol on a Spell Card.",
       "tags": [
         "deepTreasure"
@@ -495,6 +755,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Sword of Torment",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "Epic Treasure. Extra sharp. The Hero must wound one unhealable Heart while this treasure is equipped. The Hero regains the Heart if the treasure is unequipped.",
       "tags": [
         "deepTreasure"
@@ -505,6 +770,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Temporary Mist Stone",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, a temporary version of the Vapor Form spell is cast. The spell expires at the end of the Action Phase of the next turn. No Magic Cubes are needed to cast this spell.",
       "tags": [
         "treasure"
@@ -515,6 +785,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Tinkerer’s Timepiece",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "One-time use. The Hero may take 2 extra actions of their choice on their turn.",
       "tags": [
         "treasure"
@@ -525,6 +800,11 @@
       "source": "desolation",
       "level": 4,
       "title": "Vain Blade",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "middle"
+      },
       "content": "Melee weapon. Must have 3 or more active Charisma attribute icons in order to equip. If the Hero has less then 3 active Charisma attribute icons at any time, the card is immediately unequipped to the backpack.\n\n![](/images/pdf/b758df98aac30ce9c18c5215714475d28856cadb.jpeg)\n\nbe reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
       "tags": [
         "treasure"

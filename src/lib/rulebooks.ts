@@ -3,6 +3,13 @@ import path from "node:path";
 
 export type SectionLevel = 1 | 2 | 3 | 4 | 5;
 
+export type SectionLocation = {
+  /** 1-based page number in the source PDF. */
+  page: number;
+  column: "left" | "right";
+  section: "top" | "middle" | "bottom";
+};
+
 export type Section = {
   /** Hierarchical id like "2.1.0.3"; digit count equals `level`. */
   id: string;
@@ -10,6 +17,8 @@ export type Section = {
   source: string;
   level: SectionLevel;
   title: string;
+  /** Approximate heading position in the source PDF. */
+  location?: SectionLocation;
   /** Optional section icon extracted from left-floating PDF art. */
   icon?: string;
   /** Markdown: **bold**, *italic*, `- ` bullets, `![](/images/<hash>.<ext>)` */

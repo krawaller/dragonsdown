@@ -4,6 +4,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Ample Opportunity",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "top"
+    },
     "content": "For each of the following Terrain Packs **not** in play (*Cruel Caves, Malevolent* *Mountains, Dreadful Deserts*), randomly remove one item or treasure Wilderness Token from each Terrain Pack without looking at the removed token. This ensures an exciting game with ample Treasure Sites to find and loot."
   },
   {
@@ -11,6 +16,11 @@
     "source": "core",
     "level": 2,
     "title": "Closing the Distance",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "top"
+    },
     "content": "During the first round of combat, attack length, not attack speed, determines the order of attacks. Attack speed breaks attack length ties. Attacks still hit based on the attack speed compared to the maneuver speed and/or the results of rolling the Hit Dice. On other Combat Rounds, order of attack is determined using attack speed."
   },
   {
@@ -18,6 +28,11 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Difficult Natives",
+    "location": {
+      "page": 6,
+      "column": "left",
+      "section": "middle"
+    },
     "content": "The Buy Drinks step of insults occurs before the Hero rolls the Haggle Dice to determine if Natives are insulted. Do not roll the dice for any Native Groups for which drinks were bought. Heroes may not Buy Drinks once the dice are rolled."
   },
   {
@@ -25,6 +40,11 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Earned Rewards",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "bottom"
+    },
     "content": "When a discovery, item, or treasure Wilderness Token is drawn, the Hero does not automatically receive the reward. Place it face-up in a random clearing in the Map Tile. The first Hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the Wilderness Token\n\nface-up in a part of the Map Tile not containing a clearing."
   },
   {
@@ -32,6 +52,11 @@
     "source": "core",
     "level": 2,
     "title": "Enchanted Paths",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "bottom"
+    },
     "content": "If a Map Tile is enchanted with a Magic Cube that matches the color of a Hidden Path in the Map Tile, the Hidden Path may be used freely as if it was a normal path. A Hero using the Hidden Path does not automatically discover it. Hidden Paths in enchanted Map Tiles may still be searched for by Heroes."
   },
   {
@@ -39,6 +64,11 @@
     "source": "core",
     "level": 2,
     "title": "Enchanted Realm",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "bottom"
+    },
     "content": "Whenever the Wandering Monster Die shows a return arrow, in addition to other effects, flip over all tiles that match the symbol rolled on the Local Monster Die and place a Magic Cube matching the color of a random Hidden Path in the tile as if the tile had been enchanted by a Hero normally. Remove any Magic Cube if there is already one present."
   },
   {
@@ -46,6 +76,11 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Enchantment Depletion",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "top"
+    },
     "content": "When casting a spell in an enchanted Map Tile, the spell caster may use the enchantment cube for any spell box on the Spell Card. If the enchanted cube is used on a spell box with a wound symbol, the enchantment cube is discarded after the spell is cast, disenchanting the Map Tile immediately. The Map Tile does not flip over. This rule is a middle ground between the core rules and the Enchantment Limit optional rule from **Dragons Down**."
   },
   {
@@ -53,6 +88,11 @@
     "source": "core",
     "level": 2,
     "title": "Enchantment Limit",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "middle"
+    },
     "content": "When casting a spell in an enchanted Map Tile, the spell caster ignores the rightmost solid-color spell box that matches the color of the enchantment rather than any spell box of their choice. This makes casting more powerful spells more difficult."
   },
   {
@@ -60,6 +100,11 @@
     "source": "core",
     "level": 2,
     "title": "Endless Monsters",
+    "location": {
+      "page": 26,
+      "column": "left",
+      "section": "top"
+    },
     "content": "For players looking for an additional challenge, return Monsters that are killed to the monster tray rather than placing them by your Hero Board. On future summoning results, the Monsters may return to the game. Be sure to note the accomplishment in the Adventure Journal for future reference (*mission completion, posterity, etc.*).\n\nNatives and unique Monsters are not returned to the monster tray (*see the Monster* *Reference on page 26 for a complete list of unique Monsters*)."
   },
   {
@@ -67,6 +112,11 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Expanded Enchantment",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "top"
+    },
     "content": "Magic cubes in enchanted Map Tiles can be used on Treasure Cards that require a Magic Cube (*e.g. Band of Sagacity*). Each Hero may use each enchanted cube in one magic box each Combat Round. Thus, a Hero could use one enchanted cube on a treasure or use it to cast a spell, but not both. Two different Heroes can each use the same enchanted cube independently. Enchanted cubes used in this manner do not count against the cube limit for the Combat Round."
   },
   {
@@ -74,6 +124,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Full Shelves",
+    "location": {
+      "page": 7,
+      "column": "left",
+      "section": "top"
+    },
     "content": "No Civilization Location, except for the last one filled, may be without a Merchant. If both the first and second Civilization Token drawn for a Civilization Location are empty tokens, return one token and redraw until a non-empty token is drawn. This ensures that at least one Merchant is available at each Civilization Location."
   },
   {
@@ -81,6 +136,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Horses",
+    "location": {
+      "page": 7,
+      "column": "left",
+      "section": "middle"
+    },
     "content": "Horses are optional Item Cards that act as companions to Heroes. They provide benefits to Heroes, but introduce some additional rules complexity. We recommend playing without horses until players are familiar with Dragons Down. To include horses in your play session, shuffle the 10 horse cards into the Item Deck at game start. They are purchased, sold, traded, and looted like any other Item Card.\n\n![](/images/pdf/369397a7d01ea1fd0dfce507a90b50c75e7783cc.jpeg)"
   },
   {
@@ -88,6 +148,11 @@
     "source": "core",
     "level": 2,
     "title": "Luring",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "top"
+    },
     "content": "During the Challenge Step in player order, prior to Monsters challenging Heroes, unhidden Heroes may lure a single Monster in the clearing. Lured Monsters challenge the Hero that lures them. Once a Monster is lured, it may not be lured by another Hero. Monsters that are not lured will still challenge Heroes randomly."
   },
   {
@@ -95,6 +160,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Magic Sites",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "middle"
+    },
     "content": "When a Hero finds a Treasure Site, deal one Spell Card face-down onto the Treasure Site from the Spell Card Deck. A Hero who has discovered the Treasure Site may look at this Spell Card at any time while in the clearing. If the Hero has a matching Magic Cube, they may attempt to learn the spell as if the site were a Spell Scroll by using a Learn Action while in the same clearing. Ignore this card during Loot Actions."
   },
   {
@@ -102,6 +172,11 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Mission Cycling",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "middle"
+    },
     "content": "Do not create a discard pile for missions. Whenever a Hero **discards** missions, they are shuffled back into the Mission Deck. When a Hero completes a mission, it is removed from the game. This rule prevents players from trying to cycle through the Mission Deck looking for a specific mission that they know exists."
   },
   {
@@ -109,6 +184,11 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Native Possessions",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "middle"
+    },
     "content": "When a Native Group is first summoned to the map, including during initial placement, deal one face-down Mission, Item, and Treasure Card next to the Native Civilization Card. Heroes may use a Trade Action while in the same clearing as an **Unhired** Native leader to look at the cards the Native leader possesses and take the mission or buy the item or treasure (*as if the Native leader was a Merchant, including* *all haggle rules*). Heroes may not perform any other trade steps with Native leaders.\n\nIf a mission is to be completed with the Native Group possessing it, discard the Mission Card and draw a new Mission Card for the Native Group.\n\nIf the Native leader is killed discard these cards. *Exception: If no enemy Natives* *remain at the end of Combat in which the Native leader was killed, the Hero that* *struck the death blow receives the Item and Treasure Card.*"
   },
   {
@@ -116,6 +196,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Native Rewards",
+    "location": {
+      "page": 7,
+      "column": "left",
+      "section": "top"
+    },
     "content": "If there are no enemies in the clearing at the end of Combat, draw one Item Card for each Native you or your Hired Natives killed this turn. *Exception: for each Native* *leader killed, draw a Treasure Card instead.* If using the Native Possessions optional rule from Dragons Down: Natives & Legends, take these cards from the Native Group first, if possible. Natives that are removed from the game do not provide any reward (*e.g. Fiery Chasm*)."
   },
   {
@@ -123,6 +208,11 @@
     "source": "core",
     "level": 2,
     "title": "Player vs. Player",
+    "location": {
+      "page": 26,
+      "column": "left",
+      "section": "top"
+    },
     "content": "Heroes may block, challenge, and attack other unhidden Heroes."
   },
   {
@@ -130,6 +220,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Random Map Building Technique",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "top"
+    },
     "content": "This section introduces an optional and simple technique for building random maps, which is ideal for the following situations:\n\n- Solo play.\n- Multiplayer games with new players.\n- Setup prior to the arrival of other players.\n\nTo create a random map, perform the following steps until the map is built.\n\n1.\t Shuffle all of the Map Tiles together and place them in a single stack. Place the top Map Tile in the center of the table with the name facing you, random-side up. *Exception: If playing with the Ruthless Riverlands, build* *the entire river first as explained on page 4 of these rules and consider the* *Port tile to be the last Map Tile placed.*\n\n2.\t Move clockwise from the last tile placed to the next empty tile location that is adjacent to two Map Tiles (*ignore this when placing your second Map* *Tile*). Skip tile locations with no connected paths, continuing clock-wise.\n\n3.\t Take the top Map Tile into your hand.\n\n4.\t Place the Map Tile with the name facing you, random-side up, in the selected empty location. If all edges match adjacent Map Tiles: paths to paths and non-paths to non-paths, place it. If it not does fit, rotate the Map Tile clockwise until it fits.\n\n5.\t If it does not fit in any rotation, move clockwise around the edge of the existing map to the next empty tile location that touches two Map Tiles and repeat step 2.\n\n6.\t If the Map Tile will not fit anywhere (*per the rules of step 4 and 5*), place it on the bottom of the tile stack and return to step 2.\n\n7.\t Repeat steps 2-6 until the map is built."
   },
   {
@@ -137,6 +232,11 @@
     "source": "core",
     "level": 2,
     "title": "Red Meat",
+    "location": {
+      "page": 26,
+      "column": "left",
+      "section": "top"
+    },
     "content": "For players who wish to make armor even more valuable in the game, whenever a Hero takes a non-fatal hit that does not strike armor, they must wound a Heart."
   },
   {
@@ -144,6 +244,11 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Roaming Monsters",
+    "location": {
+      "page": 6,
+      "column": "left",
+      "section": "bottom"
+    },
     "content": "During Monster Activation, roll the d6 along with the Summoning Dice. When Wandering Monsters are first summoned to a Map Tile (*gray dice*), one group of Monsters summon to the clearing indicated by the **die roll**. If the rolled clearing does not exist in the Map Tile, then Wandering Monster summoning happens normally in this Map Tile (*Monsters summon to each clearing containing one or* *more Heroes*). Once in a Map Tile, Wandering Monsters move as per normal rules.\n\nIf a Hero makes noise, all Monsters summoned on the second summoning roll are summoned directly to the Hero’s clearing."
   },
   {
@@ -151,6 +256,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Roaming Natives",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "bottom"
+    },
     "content": "During Monster Activation, roll the d6 along with the Summoning Dice. If Unhired Natives are already on a Map Tile containing a Hero when their matching symbol is rolled, the Natives move to the Civilization Location on that Map Tile, even if the Hero is not in the Civilization Location.\n\nWhen Natives are first summoned to a Map Tile, they summon to the clearing indicated by the die roll, not the Civilization Location. If the rolled clearing does not exist, the Natives summon to the Civilization Location."
   },
   {
@@ -158,6 +268,11 @@
     "source": "core",
     "level": 2,
     "title": "Shared Fame",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "middle"
+    },
     "content": "The Fame for killing Monsters is shared by all Heroes that wound the Monster. Keep track of who placed which pink wound cubes on a Monster. When the Monster is killed, Heroes receive the amount of Fame in proportion to the number of cubes they placed up to the maximum health of the Monster (*including the death blow*). Round down the amount of Fame received by each player. Excess Fame remaining is given to the Hero that dealt the death blow."
   },
   {
@@ -165,6 +280,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Terrain Effects",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "middle"
+    },
     "content": "Terrain effects give additional importance to the individual clearing type. The terrain effect is ignored if the clearing contains a Civilization Location.\n\n- **Woods Clearing:** Heroes attempting to hide in a Woods Clearing receive the benefits of sneaking, even if they did not do so this turn.\n\n- **Plains Clearing:** Heroes attempting to hide in a Plains Clearing do not receive the benefits of sneaking, even if they did so this turn.\n\n- **Swamps Clearing:** Heroes may not perform the rest action while in a Swamp Clearing due to the diseased and fetid nature of swamps.\n\n- **Caves, Mountains, Deserts, and River Clearing:** No additional effect."
   },
   {
@@ -172,6 +292,11 @@
     "source": "core",
     "level": 2,
     "title": "Tough Monsters",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "top"
+    },
     "content": "Monsters do not take wounds. If a single hit does not kill a Monster, it does not harm the Monster. This optional rule makes for a much more difficult game."
   },
   {
@@ -179,6 +304,11 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Watchful Guardians",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "top"
+    },
     "content": "A Hero who successfully loots a Treasure Site while its Guardian is present in the clearing must immediately perform a Hide reaction, using all applicable bonuses from Sneak, treasures, Lineage, and other effects. If the Hide reaction fails, the Hero is blocked and becomes unhidden."
   },
   {
@@ -186,6 +316,11 @@
     "source": "core",
     "level": 2,
     "title": "Wits Only",
+    "location": {
+      "page": 25,
+      "column": "right",
+      "section": "middle"
+    },
     "content": "All Heroes begin the game with 0 Gold. Note that this impacts some Hero Classes more than others as all Classes have different starting Gold to account for the value of starting equipment and spells."
   }
 ]

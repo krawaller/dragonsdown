@@ -1,7 +1,7 @@
 """Extract Dragons Down rulebooks into JSON with markdown content + extracted images.
 
 Output:
-    data/<name>.json — { version, content: [ { id, source, level, title, icon?, content (markdown) } ] }
+    data/<name>.json — { version, content: [ { id, source, level, title, location, icon?, content (markdown) } ] }
   public/images/pdf/<sha1>.<ext> — extracted, deduplicated, referenced as /images/pdf/<sha1>.<ext>
 
 Heading conventions (verified across all 4 PDFs):
@@ -55,6 +55,7 @@ _WRAP_FIX = re.compile(r"([A-Za-z0-9][-/])(\*{0,3})[ \t]+(\*{0,3})([A-Za-z])")
 class Section:
     level: int
     title: str
+    location: dict[str, int | str] | None = None
     icon: str | None = None
     content_parts: list[str] = field(default_factory=list)
 
@@ -62,6 +63,8 @@ class Section:
         content = "\n\n".join(p for p in self.content_parts if p).strip()
         content = _WRAP_FIX.sub(r"\1\2\3\4", content)
         rendered = {"level": self.level, "title": self.title}
+        if self.location:
+            rendered["location"] = self.location
         if self.icon:
             rendered["icon"] = self.icon
         rendered["content"] = content
@@ -397,7 +400,7 @@ def find_section_icons(
 # Block processing -------------------------------------------------------------
 
 def process_text_block(block: dict) -> list[tuple]:
-    """Yield items: ('heading', level, title, key) | ('para', md) | ('bullets', md)."""
+    """Yield items: ('heading', level, title, key, bbox) | ('para', md) | ('bullets', md)."""
     items: list[tuple] = []
     para_buf: list[str] = []
     bullets_buf: list[str] = []
@@ -430,7 +433,7 @@ def process_text_block(block: dict) -> list[tuple]:
             flush_bullets()
             title = clean_title(full_text)
             bbox = line_bbox(line) or block["bbox"]
-            items.append(("heading", level, title, heading_key(level, title, bbox)))
+            items.append(("heading", level, title, heading_key(level, title, bbox), bbox))
             continue
         first_visible = next((s for s in spans if s["text"].strip()), None)
         is_bullet = first_visible is not None and first_visible["text"].strip() == "•"
@@ -512,6 +515,28 @@ def find_column_boundary(blocks: list[dict], page_w: float) -> float:
     return page_w / 2
 
 
+def location_for_heading(
+    page_number: int,
+    bbox: tuple[float, float, float, float],
+    column_boundary: float,
+    page_h: float,
+) -> dict[str, int | str]:
+    x0, y0, x1, y1 = bbox
+    cx = (x0 + x1) / 2
+    cy = (y0 + y1) / 2
+    if cy < page_h / 3:
+        page_section = "top"
+    elif cy < (page_h * 2) / 3:
+        page_section = "middle"
+    else:
+        page_section = "bottom"
+    return {
+        "page": page_number,
+        "column": "left" if cx < column_boundary else "right",
+        "section": page_section,
+    }
+
+
 def extract(pdf_path: Path) -> list[dict]:
     doc = fitz.open(pdf_path)
     stats = collect_image_stats(doc)
@@ -530,7 +555,7 @@ def extract(pdf_path: Path) -> list[dict]:
             push(img)
         pending_images.clear()
 
-    for page in doc:
+    for page_idx, page in enumerate(doc):
         raw_blocks = page.get_text("dict")["blocks"]
         icons_by_heading, icon_block_ids = find_section_icons(
             raw_blocks, stats, total_pages
@@ -560,12 +585,18 @@ def extract(pdf_path: Path) -> list[dict]:
                     else:
                         push(item[1])
                 elif kind == "heading":
-                    _, level, title, key = item
+                    _, level, title, key, bbox = item
                     if not title:
                         continue
                     current = Section(
                         level=level,
                         title=title,
+                        location=location_for_heading(
+                            page_idx + 1,
+                            bbox,
+                            boundary,
+                            page.rect.height,
+                        ),
                         icon=icons_by_heading.get(key),
                     )
                     sections.append(current)
@@ -642,6 +673,8 @@ def process_one(pdf: Path, out: Path | None = None) -> None:
             "level": s["level"],
             "title": s["title"],
         }
+        if location := s.get("location"):
+            section["location"] = location
         if icon := s.get("icon"):
             section["icon"] = icon
         section["content"] = s["content"]

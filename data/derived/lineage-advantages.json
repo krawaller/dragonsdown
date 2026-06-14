@@ -4,6 +4,11 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Auroran (Desert Born)",
+    "location": {
+      "page": 9,
+      "column": "left",
+      "section": "top"
+    },
     "icon": "/images/pdf/7fa30bd52494c61660425707a3dd63b2dd04ac3f.jpeg",
     "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.",
     "tags": [
@@ -15,6 +20,11 @@
     "source": "core",
     "level": 4,
     "title": "Dwarf (Caver)",
+    "location": {
+      "page": 26,
+      "column": "right",
+      "section": "top"
+    },
     "icon": "/images/pdf/266e31b2777d2856070a952c049680684ec32366.png",
     "content": "Dwarves are very comfortable in caves. Dwarves do not lose an action for spending any part of their turn in a Cave Clearing.",
     "tags": [
@@ -26,6 +36,11 @@
     "source": "core",
     "level": 4,
     "title": "Elf (Magical)",
+    "location": {
+      "page": 26,
+      "column": "right",
+      "section": "top"
+    },
     "icon": "/images/pdf/e58dd7043dffd7517153100785ac79473fcb646b.png",
     "content": "Elves are raised around magic and begin the game with an extra spell from the Hero Starting Spell deck. The selected spell must match the color of a Magic Cube they select for their Hero.",
     "tags": [
@@ -37,6 +52,11 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Gnome (Inventive)",
+    "location": {
+      "page": 7,
+      "column": "left",
+      "section": "top"
+    },
     "icon": "/images/pdf/551e951225a84c38502f036f3436fb5ed3c35674.png",
     "content": "Gnomes are very Inventive and crafty, often creating their own items. After all players have selected their starting items, the Gnome draws 3 cards from the Item Deck and keeps one of them. Shuffle the unselected Item Cards back into the Item Deck.",
     "tags": [
@@ -48,6 +68,11 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Elves (Two Worlds)",
+    "location": {
+      "page": 2,
+      "column": "left",
+      "section": "middle"
+    },
     "icon": "/images/pdf/c3d7dda5770a63f29ba0467eb08cbb327e94f2c8.png",
     "content": "Half-Elves straddle the worlds of elves and humans. At the beginning of the game, Half-Elves choose either the elven advantage or the human advantage to use for the entirety of this game session.",
     "tags": [
@@ -59,6 +84,11 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Orc (Mountaineer)",
+    "location": {
+      "page": 2,
+      "column": "left",
+      "section": "middle"
+    },
     "icon": "/images/pdf/8ba1056fa476d12bd5f8488c42c197ec2a1f1168.png",
     "content": "Half-Orcs are very comfortable in mountains and do not pay the additional action cost to enter a Mountain Clearing.",
     "tags": [
@@ -70,6 +100,11 @@
     "source": "core",
     "level": 4,
     "title": "Halfling (Stealthy)",
+    "location": {
+      "page": 26,
+      "column": "right",
+      "section": "top"
+    },
     "icon": "/images/pdf/2c04a0439b2c0030a9e00962d25b6f72d0eb0f4f.png",
     "content": "Halflings are easily overlooked due to their short stature and quiet nature. Halflings may reroll one Monster Die per hide attempt, except during the Cleanup step of combat.",
     "tags": [
@@ -81,6 +116,11 @@
     "source": "core",
     "level": 4,
     "title": "Human (Adapted)",
+    "location": {
+      "page": 26,
+      "column": "right",
+      "section": "middle"
+    },
     "icon": "/images/pdf/2231f1ae25446c024d6920eb27e6a6bd9c62eebf.png",
     "content": "Humans are very comfortable in civilization and receive one additional free action during any turn they are in a Civilization Location.",
     "tags": [
