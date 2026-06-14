@@ -1,10 +1,11 @@
-import { copyFile, readdir, stat } from "node:fs/promises";
+import { readFile, readdir, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { deserialize } from "bson";
 
 const APP_ID = "286160";
 const WORKSHOP_ID = "3062060625";
 const TARGET = path.join("sources", "dd_all_exp.json");
-const LOCAL_STEAMCMD_ROOT = path.join(
+const LOCAL_STEAMCMD_ROOT = path.resolve(
   ".cache",
   "steamcmd",
   "steamapps",
@@ -13,6 +14,11 @@ const LOCAL_STEAMCMD_ROOT = path.join(
   APP_ID,
   WORKSHOP_ID,
 );
+
+type SourceCandidate = {
+  filePath: string;
+  modified: number;
+};
 
 async function pathExists(filePath: string): Promise<boolean> {
   try {
@@ -23,19 +29,51 @@ async function pathExists(filePath: string): Promise<boolean> {
   }
 }
 
-async function collectJsonFiles(dir: string): Promise<string[]> {
+function isWorkshopSourceFile(fileName: string): boolean {
+  const lower = fileName.toLowerCase();
+  return lower.endsWith(".json") || lower.endsWith(".bin");
+}
+
+async function collectSourceFiles(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true });
   const files = await Promise.all(
     entries.map(async (entry) => {
       const entryPath = path.join(dir, entry.name);
-      if (entry.isDirectory()) return collectJsonFiles(entryPath);
-      if (entry.isFile() && entry.name.toLowerCase().endsWith(".json"))
-        return [entryPath];
+      if (entry.isDirectory()) return collectSourceFiles(entryPath);
+      if (entry.isFile() && isWorkshopSourceFile(entry.name)) return [entryPath];
       return [];
     }),
   );
 
   return files.flat();
+}
+
+async function newestSource(candidates: string[]): Promise<SourceCandidate> {
+  const [source] = await Promise.all(
+    candidates.map(async (filePath) => ({
+      filePath,
+      modified: (await stat(filePath)).mtimeMs,
+    })),
+  ).then((files) =>
+    files.sort((left, right) => right.modified - left.modified),
+  );
+
+  return source;
+}
+
+async function readWorkshopSource(filePath: string): Promise<unknown> {
+  const buffer = await readFile(filePath);
+  if (filePath.toLowerCase().endsWith(".json")) {
+    return JSON.parse(buffer.toString("utf8"));
+  }
+
+  return deserialize(buffer);
+}
+
+function assertTtsSave(value: unknown, source: string): asserts value is object {
+  if (!value || typeof value !== "object" || !Array.isArray((value as { ObjectStates?: unknown }).ObjectStates)) {
+    throw new Error(`Decoded ${source}, but it does not look like a TTS save file.`);
+  }
 }
 
 async function workshopRoots(): Promise<string[]> {
@@ -85,25 +123,20 @@ async function main() {
   }
 
   const candidates = (
-    await Promise.all(existingRoots.map(collectJsonFiles))
+    await Promise.all(existingRoots.map(collectSourceFiles))
   ).flat();
   if (candidates.length === 0) {
     throw new Error(
-      `No JSON files found in downloaded workshop folder(s):\n${existingRoots.join("\n")}`,
+      `No JSON or BIN files found in downloaded workshop folder(s):\n${existingRoots.join("\n")}`,
     );
   }
 
-  const [source] = await Promise.all(
-    candidates.map(async (filePath) => ({
-      filePath,
-      modified: (await stat(filePath)).mtimeMs,
-    })),
-  ).then((files) =>
-    files.sort((left, right) => right.modified - left.modified),
-  );
+  const source = await newestSource(candidates);
+  const save = await readWorkshopSource(source.filePath);
+  assertTtsSave(save, source.filePath);
 
-  await copyFile(source.filePath, TARGET);
-  console.log(`Copied ${source.filePath} -> ${TARGET}`);
+  await writeFile(TARGET, `${JSON.stringify(save, null, 2)}\n`);
+  console.log(`Decoded ${source.filePath} -> ${TARGET}`);
 }
 
 main().catch((error) => {
