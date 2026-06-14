@@ -1,5 +1,5 @@
 {
-  "SaveName": "Dragons Down + All Expansions Official Mod",
+  "SaveName": "Dragons Down - Wildlands",
   "EpochTime": 1781038835,
   "Date": "6/9/2026 3:00:35 PM",
   "VersionNumber": "v14.2.1",
@@ -9949,8 +9949,8 @@
             60741
           ],
           "CustomDeck": {
-            "608": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+            "607": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -9958,8 +9958,8 @@
               "UniqueBack": false,
               "Type": 0
             },
-            "607": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+            "608": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -25333,8 +25333,8 @@
             60722
           ],
           "CustomDeck": {
-            "608": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+            "607": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -25342,8 +25342,8 @@
               "UniqueBack": false,
               "Type": 0
             },
-            "607": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+            "608": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -27380,8 +27380,8 @@
             60751
           ],
           "CustomDeck": {
-            "608": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+            "607": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -27389,8 +27389,8 @@
               "UniqueBack": false,
               "Type": 0
             },
-            "607": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+            "608": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -30841,8 +30841,8 @@
             60762
           ],
           "CustomDeck": {
-            "608": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+            "607": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -30850,8 +30850,8 @@
               "UniqueBack": false,
               "Type": 0
             },
-            "607": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+            "608": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -33305,8 +33305,8 @@
             60753
           ],
           "CustomDeck": {
-            "608": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+            "607": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -33314,8 +33314,8 @@
               "UniqueBack": false,
               "Type": 0
             },
-            "607": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+            "608": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -34477,8 +34477,8 @@
             66902
           ],
           "CustomDeck": {
-            "669": {
-              "FaceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+            "668": {
+              "FaceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -34486,8 +34486,8 @@
               "UniqueBack": false,
               "Type": 0
             },
-            "668": {
-              "FaceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+            "669": {
+              "FaceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -46198,8 +46198,8 @@
             60767
           ],
           "CustomDeck": {
-            "608": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+            "607": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -46207,8 +46207,8 @@
               "UniqueBack": false,
               "Type": 0
             },
-            "607": {
-              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+            "608": {
+              "FaceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
               "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
               "NumWidth": 10,
               "NumHeight": 7,
@@ -161088,178 +161088,7 @@
         83602
       ],
       "CustomDeck": {
-        "850": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "833": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "860": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "832": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "844": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "862": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "857": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
         "829": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "864": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "842": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "849": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "847": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "834": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "848": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "843": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "837": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "835": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "855": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "841": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "839": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161277,7 +161106,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "853": {
+        "831": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161286,7 +161115,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "858": {
+        "832": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161295,7 +161124,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "845": {
+        "833": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161304,7 +161133,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "854": {
+        "834": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161313,7 +161142,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "852": {
+        "835": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161322,7 +161151,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "861": {
+        "836": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161331,25 +161160,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "856": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "846": {
-          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "NumWidth": 10,
-          "NumHeight": 7,
-          "BackIsHidden": true,
-          "UniqueBack": false,
-          "Type": 0
-        },
-        "863": {
+        "837": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161367,7 +161178,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "859": {
+        "839": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161385,6 +161196,96 @@
           "UniqueBack": false,
           "Type": 0
         },
+        "841": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "842": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "843": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "844": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "845": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "846": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "847": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "848": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "849": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "850": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
         "851": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
@@ -161394,7 +161295,7 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "831": {
+        "852": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
@@ -161403,7 +161304,106 @@
           "UniqueBack": false,
           "Type": 0
         },
-        "836": {
+        "853": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "854": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "855": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "856": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "857": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "858": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "859": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "860": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "861": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "862": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "863": {
+          "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "NumWidth": 10,
+          "NumHeight": 7,
+          "BackIsHidden": true,
+          "UniqueBack": false,
+          "Type": 0
+        },
+        "864": {
           "FaceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "BackURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "NumWidth": 10,
