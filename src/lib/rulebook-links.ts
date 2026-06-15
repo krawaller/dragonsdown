@@ -1,4 +1,5 @@
 import { normalizeTitle } from "@/lib/tts";
+import { getMagicTypeById } from "@/lib/magic";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import {
   RULEBOOKS,
@@ -21,6 +22,7 @@ export type RulebookLink = {
   sectionId: string;
   sectionTitle: string;
   content: string;
+  icon?: string;
   location?: SectionLocation;
   href: string;
 };
@@ -130,6 +132,19 @@ export async function resolveSpellRulebookLinks(
   });
 }
 
+export async function resolveMagicRulebookLinks(
+  magic: string,
+  doc: RulebookLinkQuery["doc"] = ANY_DOC,
+): Promise<RulebookLink[]> {
+  const type = getMagicTypeById(magic);
+  if (!type) return [];
+
+  return resolveRulebookLinks({
+    doc,
+    headings: ["Spell Manifest", type.heading],
+  });
+}
+
 export async function resolveOptionalRulebookLinks(
   ruleTitles: string[],
 ): Promise<RulebookLink[]> {
@@ -176,6 +191,7 @@ function resolveSections(
     sectionId: section.id,
     sectionTitle: section.title,
     content: section.content,
+    icon: section.icon,
     location: section.location,
     href: `/${book.slug}#${anchorIdFor(section)}`,
   }));
@@ -191,6 +207,7 @@ function rulebookLinkForSection(
     sectionId: section.id,
     sectionTitle: section.title,
     content: section.content,
+    icon: section.icon,
     location: section.location,
     href: `/${book.slug}#${anchorIdFor(section)}`,
   };

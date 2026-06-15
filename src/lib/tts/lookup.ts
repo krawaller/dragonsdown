@@ -462,6 +462,12 @@ export function getSpellBySlug(slug: string): SpellEntry | undefined {
   return getAllSpells().find((entry) => entry.slug === slug);
 }
 
+export function getSpellsByMagic(magic: string): SpellEntry[] {
+  return getAllSpells().filter((entry) =>
+    entry.spells.some((spell) => spell.magic.includes(magic)),
+  );
+}
+
 export function getAllItems(): ItemEntry[] {
   return Object.entries(getItemIndex())
     .map(([name, cards]) => ({

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
+import { getMagicTypeById, magicLabel } from "@/lib/magic";
 import { resolveSpellRulebookLinks } from "@/lib/rulebook-links";
 import type { TTSSpellCard, TTSSpellDeck } from "@/lib/tts";
 import { getAllSpells, getSpellBySlug } from "@/lib/tts/lookup";
@@ -23,6 +24,8 @@ export default async function SpellPage({
   const rulebookLinks = await resolveSpellRulebookLinks(entry.name);
   const heroCard = spell.startingSpellCards[0];
   const spellCard = spell.spellCards[0] ?? spell.cards[0];
+  const primaryMagic = spell.magic[0];
+  const magicType = primaryMagic ? getMagicTypeById(primaryMagic) : undefined;
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -31,9 +34,17 @@ export default async function SpellPage({
           ← All docs
         </Link>
         <span aria-hidden="true">/</span>
-        <Link href="/spells" className="hover:underline">
-          Spells
+        <Link href="/magic" className="hover:underline">
+          Magic
         </Link>
+        {magicType && (
+          <>
+            <span aria-hidden="true">/</span>
+            <Link href={`/magic/${magicType.slug}`} className="hover:underline">
+              {magicType.label}
+            </Link>
+          </>
+        )}
       </div>
 
       <h1 className="text-4xl font-bold mt-4 mb-2">{entry.name}</h1>
@@ -185,7 +196,7 @@ function CardBackImage({ card, alt }: { card: TTSSpellCard; alt: string }) {
 
 function magicSummary(magic: string[]): string {
   if (magic.length === 0) return "Unclassified";
-  return magic.map(capitalize).join(", ");
+  return magic.map(magicLabel).join(", ");
 }
 
 function deckSummary(decks: TTSSpellDeck[]): string {
@@ -209,8 +220,4 @@ function spellCopies(cards: TTSSpellCard[]): number {
 function copyCountLabel(label: string, copies: number): string {
   const prefix = label ? `${label} ` : "";
   return `${prefix}${copies} cop${copies === 1 ? "y" : "ies"}`;
-}
-
-function capitalize(value: string): string {
-  return value.charAt(0).toUpperCase() + value.slice(1);
 }
