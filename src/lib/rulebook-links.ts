@@ -1,4 +1,5 @@
 import { normalizeTitle } from "@/lib/tts";
+import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import {
   RULEBOOKS,
   loadSections,
@@ -24,6 +25,8 @@ export type RulebookLink = {
   href: string;
 };
 
+type MonsterReferenceAliasMap = Record<string, string | string[]>;
+
 export async function resolveRulebookLinks(
   query: RulebookLinkQuery,
 ): Promise<RulebookLink[]> {
@@ -44,7 +47,9 @@ export async function resolveMonsterRulebookLinks(
   groupName: string,
   individualNames: string[] = [],
 ): Promise<RulebookLink[]> {
-  const candidates = uniqueNonEmpty([groupName, ...individualNames]);
+  const candidates = uniqueNonEmpty(
+    expandMonsterReferenceAliases([groupName, ...individualNames]),
+  );
   if (candidates.length === 0) return [];
 
   const normalizedCandidates = candidates.map(normalizeRulebookMatchTitle);
@@ -155,6 +160,38 @@ function uniqueNonEmpty(values: string[]): string[] {
   return Array.from(
     new Set(values.map((value) => value.trim()).filter(Boolean)),
   );
+}
+
+function expandMonsterReferenceAliases(titles: string[]): string[] {
+  const aliasMap = normalizedMonsterReferenceAliasMap();
+  return titles.flatMap((title) => [
+    title,
+    ...monsterReferenceAliasesFor(title, aliasMap),
+  ]);
+}
+
+function normalizedMonsterReferenceAliasMap(): MonsterReferenceAliasMap {
+  const aliases: MonsterReferenceAliasMap = {};
+  const raw = monsterReferenceAliases as MonsterReferenceAliasMap;
+
+  for (const [from, to] of Object.entries(raw)) {
+    aliases[normalizeRulebookMatchTitle(from)] = Array.isArray(to)
+      ? to.map(normalizeRulebookMatchTitle)
+      : normalizeRulebookMatchTitle(to);
+  }
+
+  return aliases;
+}
+
+function monsterReferenceAliasesFor(
+  title: string,
+  aliasMap: MonsterReferenceAliasMap,
+): string[] {
+  return titleForms(normalizeRulebookMatchTitle(title)).flatMap((form) => {
+    const aliases = aliasMap[form];
+    if (!aliases) return [];
+    return Array.isArray(aliases) ? aliases : [aliases];
+  });
 }
 
 function normalizeRulebookMatchTitle(title: string): string {
