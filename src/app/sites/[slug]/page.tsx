@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoardPositionLinks } from "@/components/BoardPositionLinks";
 import { MissionLinks } from "@/components/MissionLinks";
+import { RulebookLinks } from "@/components/RulebookLinks";
+import { ANY_DOC, resolveRulebookLinks } from "@/lib/rulebook-links";
 import {
   getAllSites,
   getBoardsForSite,
@@ -26,6 +28,13 @@ export default async function SitePage({
   const boards = getBoardsForSite(entry.name);
   const monsterGroups = getMonsterGroupsForSite(entry.name);
   const missions = getMissionsForTarget(entry.name);
+  const rulebookLinks = await resolveRulebookLinks({
+    doc: ANY_DOC,
+    headings: [
+      "Treasure Site Reference|Treasure Site and Merchant Reference",
+      entry.name,
+    ],
+  });
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -85,6 +94,12 @@ export default async function SitePage({
         itemName={entry.name}
         className="mt-10"
         headingClassName="text-xl font-semibold"
+      />
+
+      <RulebookLinks
+        links={rulebookLinks}
+        heading="Rulebook"
+        className="mt-10"
       />
     </main>
   );

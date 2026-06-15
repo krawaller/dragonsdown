@@ -4,10 +4,13 @@ import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { resolveMonsterRulebookLinks } from "@/lib/rulebook-links";
+import type { RulebookLink } from "@/lib/rulebook-links";
+import { chipTotalCount } from "@/lib/tts";
 import {
   getAllMonsterGroups,
   getMissionsFeaturing,
   getMonsterGroupBySlug,
+  type MonsterGroupEntry,
 } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
@@ -27,6 +30,7 @@ export default async function MonsterGroupPage({
     group.prettyName,
     group.chips.flatMap((chip) => (chip.monsterName ? [chip.monsterName] : [])),
   );
+  const displayGroup = withRulebookMonsterNames(group, rulebookLinks);
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -102,7 +106,33 @@ export default async function MonsterGroupPage({
         className="mb-10"
       />
 
-      <MonsterGroupChipList group={group} />
+      <MonsterGroupChipList group={displayGroup} />
     </main>
   );
+}
+
+function withRulebookMonsterNames(
+  group: MonsterGroupEntry,
+  rulebookLinks: RulebookLink[],
+): MonsterGroupEntry {
+  if (group.chips.every((chip) => chip.monsterName)) return group;
+
+  const uniqueNames = rulebookLinks
+    .filter((link) => /\bunique Monster\b/i.test(link.content))
+    .map((link) => link.sectionTitle)
+    .filter((title) => title !== group.prettyName);
+  if (uniqueNames.length === 0) return group;
+
+  const remainingUniqueNames = [...uniqueNames];
+  return {
+    ...group,
+    chips: group.chips.map((chip) => {
+      if (chip.monsterName) return chip;
+      const total = chipTotalCount(chip);
+      if (total === 1 && remainingUniqueNames.length > 0) {
+        return { ...chip, monsterName: remainingUniqueNames.shift() };
+      }
+      return { ...chip, monsterName: group.prettyName };
+    }),
+  };
 }
