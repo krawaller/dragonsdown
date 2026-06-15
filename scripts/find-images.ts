@@ -1,7 +1,10 @@
-import { ObjectState, DragonsDownWorkshop } from "../sources/workshop";
+import {
+  ObjectState,
+  DragonsDownWorkshop,
+} from "../data/downloaded-tts/workshop";
 import fs from "fs-extra";
 import path from "path";
-import eastern from "../sources/dd_all_exp.json";
+import eastern from "../data/downloaded-tts/dd_all_exp.json";
 
 const nameObjectState = (obj: ObjectState): string => {
   return [

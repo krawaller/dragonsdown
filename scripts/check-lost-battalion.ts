@@ -2,7 +2,12 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { WILDERNESS_TOKEN_FRONT_METADATA } from "../src/lib/tts";
 
-const SOURCE_FILE = path.join(process.cwd(), "sources", "dd_all_exp.json");
+const SOURCE_FILE = path.join(
+  process.cwd(),
+  "data",
+  "downloaded-tts",
+  "dd_all_exp.json",
+);
 const LOST_BATTALION_KEY = "lostbattalion";
 
 type TtsObject = Record<string, unknown>;

@@ -8,7 +8,7 @@ import {
   type MissionKindMap,
 } from "../src/lib/tts";
 
-const SOURCES_DIR = path.join(process.cwd(), "sources");
+const SOURCES_DIR = path.join(process.cwd(), "data", "downloaded-tts");
 const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
 const SOURCE_FILES = ["dd_all_exp.json"];
 

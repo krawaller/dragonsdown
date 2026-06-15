@@ -2,7 +2,12 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { extractMapTiles } from "../src/lib/tts";
 
-const SOURCE_FILE = path.join(process.cwd(), "sources", "dd_all_exp.json");
+const SOURCE_FILE = path.join(
+  process.cwd(),
+  "data",
+  "downloaded-tts",
+  "dd_all_exp.json",
+);
 const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
 const OUT_FILE = path.join(OUT_DIR, "map-tiles.json");
 

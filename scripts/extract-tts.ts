@@ -1,5 +1,5 @@
 /**
- * Build the TTS card index and chip index from sources/*.json into
+ * Build the TTS card index and chip index from data/downloaded-tts/*.json into
  * data/extracted-from-tts/cards.json and data/extracted-from-tts/chips.json.
  *
  * Each source file is a TTS save export. The source identifier (used in the
@@ -60,7 +60,7 @@ import {
   MISSION_KIND_MAP_FILE,
 } from "./extract-mission-kinds";
 
-const SOURCES_DIR = path.join(process.cwd(), "sources");
+const SOURCES_DIR = path.join(process.cwd(), "data", "downloaded-tts");
 const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
 const DERIVED_DIR = path.join(process.cwd(), "data", "derived");
 const MANUAL_DIR = path.join(process.cwd(), "data", "manual");
