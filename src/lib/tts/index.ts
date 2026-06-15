@@ -36,7 +36,7 @@ export type TTSCardImage = {
   ancestry?: string[];
 };
 
-/** Output written to data/tts/cards.json. Keyed by normalized `Nickname`. */
+/** Output written to data/extracted-from-tts/cards.json. Keyed by normalized `Nickname`. */
 export type CardIndex = Record<string, TTSCardImage[]>;
 
 export const ITEM_CARD_BACK_URL =
@@ -60,7 +60,7 @@ export type TTSItemCard = TTSCardImage & {
   boxes: { name: string; count: number }[];
 };
 
-/** Output written to data/tts/items.json. Keyed by normalized `Nickname`. */
+/** Output written to data/extracted-from-tts/items.json. Keyed by normalized `Nickname`. */
 export type ItemIndex = Record<string, TTSItemCard[]>;
 
 export type TTSLegendarySiteToken = {
@@ -111,7 +111,7 @@ export type TTSLegendaryLocation = {
   siteToken?: TTSLegendarySiteToken;
 };
 
-/** Output written to data/tts/legendary-locations.json. Keyed by normalized `Nickname`. */
+/** Output written to data/extracted-from-tts/legendary-locations.json. Keyed by normalized `Nickname`. */
 export type LegendaryLocationIndex = Record<string, TTSLegendaryLocation[]>;
 
 export type TTSMissionCard = TTSCardImage & {
@@ -183,7 +183,7 @@ export type TTSMissionRewards = {
   };
 };
 
-/** Output written to data/tts/missions.json. Keyed by normalized `Nickname`. */
+/** Output written to data/extracted-from-tts/missions.json. Keyed by normalized `Nickname`. */
 export type MissionIndex = Record<string, TTSMissionCard[]>;
 
 export type ExtractMissionsOptions = {
@@ -216,7 +216,7 @@ export type TTSSpellCard = TTSCardImage & {
 
 export type TTSSpellDeck = "spells" | "heroStartingSpells";
 
-/** Output written to data/tts/spells.json. Keyed by spell name. */
+/** Output written to data/extracted-from-tts/spells.json. Keyed by spell name. */
 export type SpellIndex = Record<string, TTSSpell[]>;
 
 export type ClassAdvantageReference = {
@@ -279,10 +279,10 @@ export type TTSClass = {
   setup?: TTSClassSetup;
 };
 
-/** Output written to data/tts/classes.json. Keyed by class name. */
+/** Output written to data/extracted-from-tts/classes.json. Keyed by class name. */
 export type ClassIndex = Record<string, TTSClass[]>;
 
-/** Output written to data/tts/lineages.json. Keyed by lineage name. */
+/** Output written to data/extracted-from-tts/lineages.json. Keyed by lineage name. */
 export type LineageIndex = Record<string, TTSLineage[]>;
 
 /**
@@ -310,7 +310,7 @@ export function chipTotalCount(chip: TTSChip): number {
   return chip.locations.reduce((n, l) => n + l.count, 0);
 }
 
-/** Output written to data/tts/chips.json. Keyed by normalized `GMNotes`. */
+/** Output written to data/extracted-from-tts/chips.json. Keyed by normalized `GMNotes`. */
 export type ChipIndex = Record<string, TTSChip[]>;
 
 export type TTSSiteMonsterChip = {
@@ -326,7 +326,7 @@ export type TTSSiteMonsterGroup = {
   monsterChips: TTSSiteMonsterChip[];
 };
 
-/** Output written to data/tts/site-monsters.json. Keyed by site/token name. */
+/** Output written to data/extracted-from-tts/site-monsters.json. Keyed by site/token name. */
 export type SiteMonsterIndex = Record<string, TTSSiteMonsterGroup[]>;
 
 export type TTSNativeChip = {
@@ -342,14 +342,14 @@ export type TTSNativeSummonGroup = {
   nativeChips: TTSNativeChip[];
 };
 
-/** Output written to data/tts/native-summons.json. Keyed by setup source. */
+/** Output written to data/extracted-from-tts/native-summons.json. Keyed by setup source. */
 export type NativeSummonIndex = Record<string, TTSNativeSummonGroup[]>;
 
 export type TTSNativeGroup = TTSNativeSummonGroup & {
   civilisationCard?: TTSCardImage;
 };
 
-/** Output written to data/tts/natives.json. Keyed by native group name. */
+/** Output written to data/extracted-from-tts/natives.json. Keyed by native group name. */
 export type NativeIndex = Record<string, TTSNativeGroup[]>;
 
 export const CIVILISATION_REFERENCE_CARD_FACE_URL =
@@ -392,7 +392,7 @@ export type TTSSite = {
   gmNotes?: string;
 };
 
-/** Output written to data/tts/sites.json. Keyed by normalized `Nickname`. */
+/** Output written to data/extracted-from-tts/sites.json. Keyed by normalized `Nickname`. */
 export type SiteIndex = Record<string, TTSSite[]>;
 
 /**
@@ -415,7 +415,7 @@ export type TTSCivLocation = {
   ancestry: string[];
 };
 
-/** Output written to data/tts/civlocations.json. Keyed by normalized `Nickname`. */
+/** Output written to data/extracted-from-tts/civlocations.json. Keyed by normalized `Nickname`. */
 export type CivLocationIndex = Record<string, TTSCivLocation[]>;
 
 export const WILDERNESS_TOKEN_BACK_URLS: Record<string, string> = {
@@ -614,10 +614,10 @@ export type TTSWildernessToken = {
   locations: { ancestry: string[]; count: number }[];
 };
 
-/** Output written to data/tts/wilderness-tokens.json. Keyed by terrain name. */
+/** Output written to data/extracted-from-tts/wilderness-tokens.json. Keyed by terrain name. */
 export type WildernessTokenIndex = Record<string, TTSWildernessToken[]>;
 
-/** Output written to data/tts/boards.json. */
+/** Output written to data/extracted-from-tts/boards.json. */
 export type BoardIndex = TTSBoard[];
 
 export type TTSMapTile = {
@@ -635,7 +635,7 @@ export type TTSMapTileMonsterGroup = {
   local: string[];
 };
 
-/** Output written to data/tts/map-tile-monsters.json. Keyed by map tile name. */
+/** Output written to data/extracted-from-tts/map-tile-monsters.json. Keyed by map tile name. */
 export type MapTileMonsterIndex = Record<string, TTSMapTileMonsterGroup[]>;
 
 /**

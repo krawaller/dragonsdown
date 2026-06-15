@@ -12,7 +12,7 @@ import {
   getMissionsForMapTile,
   getMonsterGroupsForMapTile,
 } from "@/lib/tts/lookup";
-import tiles from "../../../data/tts/map-tiles.json";
+import tiles from "../../../data/extracted-from-tts/map-tiles.json";
 
 export default function MapTilesPage() {
   const mapTiles = tiles as MapTile[];

@@ -1,6 +1,6 @@
 /**
  * Build the TTS card index and chip index from sources/*.json into
- * data/tts/cards.json and data/tts/chips.json.
+ * data/extracted-from-tts/cards.json and data/extracted-from-tts/chips.json.
  *
  * Each source file is a TTS save export. The source identifier (used in the
  * output) is the file's stem (e.g. "eastern", "core_desolation_natives").
@@ -61,7 +61,7 @@ import {
 } from "./extract-mission-kinds";
 
 const SOURCES_DIR = path.join(process.cwd(), "sources");
-const OUT_DIR = path.join(process.cwd(), "data", "tts");
+const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
 const DERIVED_DIR = path.join(process.cwd(), "data", "derived");
 const MANUAL_DIR = path.join(process.cwd(), "data", "manual");
 const CLASS_ADVANTAGES_FILE = path.join(DERIVED_DIR, "class-advantages.json");

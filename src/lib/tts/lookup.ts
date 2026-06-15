@@ -48,64 +48,41 @@ import {
 } from ".";
 import aliasesData from "./aliases.json";
 
-const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
-const CLASSES_FILE = path.join(process.cwd(), "data", "tts", "classes.json");
-const LINEAGES_FILE = path.join(process.cwd(), "data", "tts", "lineages.json");
-const SPELLS_FILE = path.join(process.cwd(), "data", "tts", "spells.json");
-const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
-const ITEMS_FILE = path.join(process.cwd(), "data", "tts", "items.json");
-const LEGENDARY_LOCATIONS_FILE = path.join(
+const EXTRACTED_TTS_DIR = path.join(
   process.cwd(),
   "data",
-  "tts",
+  "extracted-from-tts",
+);
+const CARDS_FILE = path.join(EXTRACTED_TTS_DIR, "cards.json");
+const CLASSES_FILE = path.join(EXTRACTED_TTS_DIR, "classes.json");
+const LINEAGES_FILE = path.join(EXTRACTED_TTS_DIR, "lineages.json");
+const SPELLS_FILE = path.join(EXTRACTED_TTS_DIR, "spells.json");
+const CHIPS_FILE = path.join(EXTRACTED_TTS_DIR, "chips.json");
+const ITEMS_FILE = path.join(EXTRACTED_TTS_DIR, "items.json");
+const LEGENDARY_LOCATIONS_FILE = path.join(
+  EXTRACTED_TTS_DIR,
   "legendary-locations.json",
 );
-const SITES_FILE = path.join(process.cwd(), "data", "tts", "sites.json");
-const CIVLOCS_FILE = path.join(
-  process.cwd(),
-  "data",
-  "tts",
-  "civlocations.json",
-);
+const SITES_FILE = path.join(EXTRACTED_TTS_DIR, "sites.json");
+const CIVLOCS_FILE = path.join(EXTRACTED_TTS_DIR, "civlocations.json");
 const WILDERNESS_TOKENS_FILE = path.join(
-  process.cwd(),
-  "data",
-  "tts",
+  EXTRACTED_TTS_DIR,
   "wilderness-tokens.json",
 );
 const CIVILISATION_TOKENS_FILE = path.join(
-  process.cwd(),
-  "data",
-  "tts",
+  EXTRACTED_TTS_DIR,
   "civilisation-tokens.json",
 );
-const BOARDS_FILE = path.join(process.cwd(), "data", "tts", "boards.json");
-const SITE_MONSTERS_FILE = path.join(
-  process.cwd(),
-  "data",
-  "tts",
-  "site-monsters.json",
-);
+const BOARDS_FILE = path.join(EXTRACTED_TTS_DIR, "boards.json");
+const SITE_MONSTERS_FILE = path.join(EXTRACTED_TTS_DIR, "site-monsters.json");
 const MAP_TILE_MONSTERS_FILE = path.join(
-  process.cwd(),
-  "data",
-  "tts",
+  EXTRACTED_TTS_DIR,
   "map-tile-monsters.json",
 );
-const MAP_TILES_FILE = path.join(
-  process.cwd(),
-  "data",
-  "tts",
-  "map-tiles.json",
-);
-const NATIVE_SUMMONS_FILE = path.join(
-  process.cwd(),
-  "data",
-  "tts",
-  "native-summons.json",
-);
-const NATIVES_FILE = path.join(process.cwd(), "data", "tts", "natives.json");
-const MISSIONS_FILE = path.join(process.cwd(), "data", "tts", "missions.json");
+const MAP_TILES_FILE = path.join(EXTRACTED_TTS_DIR, "map-tiles.json");
+const NATIVE_SUMMONS_FILE = path.join(EXTRACTED_TTS_DIR, "native-summons.json");
+const NATIVES_FILE = path.join(EXTRACTED_TTS_DIR, "natives.json");
+const MISSIONS_FILE = path.join(EXTRACTED_TTS_DIR, "missions.json");
 const MISSION_FEATURE_FILE = path.join(
   process.cwd(),
   "data",

@@ -9,7 +9,7 @@ import {
   getNativeGroupsForCivLocation,
   getWildernessTokenBySlug,
 } from "@/lib/tts/lookup";
-import mapTiles from "../../../../data/tts/map-tiles.json";
+import mapTiles from "../../../../data/extracted-from-tts/map-tiles.json";
 
 export function generateStaticParams() {
   return getAllCivLocations().map((entry) => ({ slug: entry.slug }));

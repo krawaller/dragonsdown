@@ -9,7 +9,7 @@ import {
 } from "../src/lib/tts";
 
 const SOURCES_DIR = path.join(process.cwd(), "sources");
-const OUT_DIR = path.join(process.cwd(), "data", "tts");
+const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
 const SOURCE_FILES = ["dd_all_exp.json"];
 
 export const MISSION_KIND_MAP_FILE = path.join(
