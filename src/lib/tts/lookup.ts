@@ -19,6 +19,7 @@ import {
   type CivLocationIndex,
   type ItemIndex,
   type LegendaryLocationIndex,
+  type LineageIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
   type MissionKind,
@@ -32,6 +33,7 @@ import {
   type TTSItemCard,
   type TTSLegendaryLocation,
   type TTSLegendaryMonsterChip,
+  type TTSLineage,
   type TTSMissionCard,
   type TTSMissionRewards,
   type TTSMapTile,
@@ -46,6 +48,7 @@ import aliasesData from "./aliases.json";
 
 const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
 const CLASSES_FILE = path.join(process.cwd(), "data", "tts", "classes.json");
+const LINEAGES_FILE = path.join(process.cwd(), "data", "tts", "lineages.json");
 const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
 const ITEMS_FILE = path.join(process.cwd(), "data", "tts", "items.json");
 const LEGENDARY_LOCATIONS_FILE = path.join(
@@ -111,6 +114,7 @@ export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
 let cachedCardIndex: CardIndex | null = null;
 let cachedClassIndex: ClassIndex | null = null;
+let cachedLineageIndex: LineageIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedItemIndex: ItemIndex | null = null;
 let cachedLegendaryLocationIndex: LegendaryLocationIndex | null = null;
@@ -138,6 +142,12 @@ function getClassIndex(): ClassIndex {
   if (cachedClassIndex !== null) return cachedClassIndex;
   cachedClassIndex = readJsonOrEmpty<ClassIndex>(CLASSES_FILE);
   return cachedClassIndex;
+}
+
+function getLineageIndex(): LineageIndex {
+  if (cachedLineageIndex !== null) return cachedLineageIndex;
+  cachedLineageIndex = readJsonOrEmpty<LineageIndex>(LINEAGES_FILE);
+  return cachedLineageIndex;
 }
 
 function getChipIndex(): ChipIndex {
@@ -361,6 +371,12 @@ export type ClassEntry = {
   classes: TTSClass[];
 };
 
+export type LineageEntry = {
+  name: string;
+  slug: string;
+  lineages: TTSLineage[];
+};
+
 export type ItemStartingClass = {
   name: string;
   slug: string;
@@ -400,6 +416,20 @@ export function getAllClasses(): ClassEntry[] {
 
 export function getClassBySlug(slug: string): ClassEntry | undefined {
   return getAllClasses().find((entry) => entry.slug === slug);
+}
+
+export function getAllLineages(): LineageEntry[] {
+  return Object.entries(getLineageIndex())
+    .map(([name, lineages]) => ({
+      name,
+      slug: slugify(name),
+      lineages,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getLineageBySlug(slug: string): LineageEntry | undefined {
+  return getAllLineages().find((entry) => entry.slug === slug);
 }
 
 export function getAllItems(): ItemEntry[] {

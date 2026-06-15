@@ -83,6 +83,15 @@ export async function resolveClassAdvantageRulebookLinks(
   });
 }
 
+export async function resolveLineageAdvantageRulebookLinks(
+  advantageTitle: string,
+): Promise<RulebookLink[]> {
+  return resolveRulebookLinks({
+    doc: ANY_DOC,
+    headings: ["Lineage Advantages", advantageTitle],
+  });
+}
+
 export async function resolveOptionalRulebookLinks(
   ruleTitles: string[],
 ): Promise<RulebookLink[]> {
