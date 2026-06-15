@@ -641,61 +641,48 @@ describe("extractSpells", () => {
       ObjectStates: [card("Affliction", 800, "8", SAMPLE_SPELL_DECK)],
     };
 
-    expect(
-      extractSpells(save, "dd_all_exp", [
-        {
-          source: "core",
-          title: "Black Spells",
-          tags: ["blackMagic"],
-        },
-        {
-          source: "core",
-          title: "Affliction",
-          tags: ["spell", "blackMagic"],
-        },
-      ]),
-    ).toEqual({
-      Affliction: [
-        {
-          source: "dd_all_exp",
-          name: "Affliction",
-          rulebookSource: "core",
-          magic: ["black"],
-          decks: ["spells"],
-          cards: [
-            {
-              source: "dd_all_exp",
-              faceURL: "https://example.com/face.png",
-              backURL: SPELL_CARD_BACK_URL,
-              numWidth: 10,
-              numHeight: 7,
-              row: 0,
-              col: 0,
-              uniqueBack: false,
-            },
-          ],
-          spellCards: [
-            {
-              source: "dd_all_exp",
-              faceURL: "https://example.com/face.png",
-              backURL: SPELL_CARD_BACK_URL,
-              numWidth: 10,
-              numHeight: 7,
-              row: 0,
-              col: 0,
-              uniqueBack: false,
-            },
-          ],
-          startingSpellCards: [],
-        },
-      ],
+    const spells = extractSpells(save, "dd_all_exp", [
+      {
+        source: "core",
+        title: "Black Spells",
+        tags: ["blackMagic"],
+      },
+      {
+        source: "core",
+        title: "Affliction",
+        tags: ["spell", "blackMagic"],
+      },
+    ]);
+
+    expect(spells.Affliction[0]).toMatchObject({
+      source: "dd_all_exp",
+      name: "Affliction",
+      rulebookSource: "core",
+      magic: ["black"],
+      decks: ["spells"],
     });
+    expect(spells.Affliction[0].spellCards).toEqual([
+      expect.objectContaining({
+        source: "dd_all_exp",
+        faceURL: "https://example.com/face.png",
+        backURL: SPELL_CARD_BACK_URL,
+        numWidth: 10,
+        numHeight: 7,
+        row: 0,
+        col: 0,
+        uniqueBack: false,
+        copies: 1,
+        locations: [{ ancestry: [], count: 1 }],
+      }),
+    ]);
+    expect(spells.Affliction[0].startingSpellCards).toEqual([]);
   });
 
   it("separates spell cards from hero starting spell cards by back", () => {
     const save = {
       ObjectStates: [
         card("Calm", 801, "8", SAMPLE_SPELL_DECK),
+        card("Calm", 801, "8", SAMPLE_STARTING_SPELL_DECK),
         card("Calm", 801, "8", SAMPLE_STARTING_SPELL_DECK),
       ],
     };
@@ -710,6 +697,8 @@ describe("extractSpells", () => {
     expect(spells.Calm[0].cards).toHaveLength(2);
     expect(spells.Calm[0].spellCards).toHaveLength(1);
     expect(spells.Calm[0].startingSpellCards).toHaveLength(1);
+    expect(spells.Calm[0].spellCards[0].copies).toBe(1);
+    expect(spells.Calm[0].startingSpellCards[0].copies).toBe(2);
     expect(spells.Calm[0].decks).toEqual(["spells", "heroStartingSpells"]);
   });
 

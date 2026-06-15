@@ -121,6 +121,15 @@ export async function resolveLineageAdvantageRulebookLinks(
   });
 }
 
+export async function resolveSpellRulebookLinks(
+  spellTitle: string,
+): Promise<RulebookLink[]> {
+  return resolveRulebookLinks({
+    doc: ANY_DOC,
+    headings: ["Spell Manifest", spellTitle],
+  });
+}
+
 export async function resolveOptionalRulebookLinks(
   ruleTitles: string[],
 ): Promise<RulebookLink[]> {

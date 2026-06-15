@@ -204,9 +204,14 @@ export type TTSSpell = {
   rulebookSource?: string;
   magic: string[];
   decks: TTSSpellDeck[];
-  cards: TTSCardImage[];
-  spellCards: TTSCardImage[];
-  startingSpellCards: TTSCardImage[];
+  cards: TTSSpellCard[];
+  spellCards: TTSSpellCard[];
+  startingSpellCards: TTSSpellCard[];
+};
+
+export type TTSSpellCard = TTSCardImage & {
+  copies: number;
+  locations: { ancestry: string[]; count: number }[];
 };
 
 export type TTSSpellDeck = "spells" | "heroStartingSpells";
@@ -670,18 +675,18 @@ export type AliasMap = Record<string, string | string[]>;
  * directly (after normalization), then falls back to the alias map. When an
  * alias value is an array, results from every listed target are concatenated.
  */
-export function resolveCards(
+export function resolveCards<T extends TTSCardImage>(
   title: string,
-  index: CardIndex,
+  index: Record<string, T[]>,
   aliases: AliasMap,
-): TTSCardImage[] {
+): T[] {
   const key = normalizeTitle(title);
   const direct = index[key];
   if (direct?.length) return direct;
   const aliased = aliases[key];
   if (aliased === undefined) return [];
   const targets = Array.isArray(aliased) ? aliased : [aliased];
-  const results: TTSCardImage[] = [];
+  const results: T[] = [];
   for (const target of targets) {
     const hits = index[normalizeTitle(target)];
     if (hits) results.push(...hits);
@@ -833,8 +838,11 @@ export function extractSpells(
   return index;
 }
 
-function extractSpellCardIndex(root: unknown, source: string): CardIndex {
-  const index: CardIndex = {};
+function extractSpellCardIndex(
+  root: unknown,
+  source: string,
+): Record<string, TTSSpellCard[]> {
+  const index: Record<string, TTSSpellCard[]> = {};
   const cards: CardWithAncestry[] = [];
   walk(root, [], cards);
   for (const { card, ancestry } of cards) {
@@ -845,12 +853,18 @@ function extractSpellCardIndex(root: unknown, source: string): CardIndex {
     const bucket = (index[normalizeTitle(raw)] ??= []);
     const existing = bucket.find((entry) => isSameSpellCard(entry, image));
     if (existing) {
+      existing.copies += 1;
       existing.tags = mergeTags(existing.tags, image.tags);
+      addToLocations(existing.locations, ancestry);
       if (!existing.ancestry?.length && image.ancestry?.length) {
         existing.ancestry = image.ancestry;
       }
     } else {
-      bucket.push(image);
+      bucket.push({
+        ...image,
+        copies: 1,
+        locations: [{ ancestry, count: 1 }],
+      });
     }
   }
   return index;
@@ -868,8 +882,8 @@ function isSameSpellCard(a: TTSCardImage, b: TTSCardImage): boolean {
 }
 
 function spellDecksFor(
-  spellCards: TTSCardImage[],
-  startingSpellCards: TTSCardImage[],
+  spellCards: TTSSpellCard[],
+  startingSpellCards: TTSSpellCard[],
 ): TTSSpellDeck[] {
   return [
     ...(spellCards.length > 0 ? (["spells"] as const) : []),

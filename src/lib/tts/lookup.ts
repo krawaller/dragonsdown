@@ -27,6 +27,7 @@ import {
   type NativeIndex,
   type NativeSummonIndex,
   type SiteIndex,
+  type SpellIndex,
   type TTSCardImage,
   type TTSChip,
   type TTSClass,
@@ -39,6 +40,7 @@ import {
   type TTSMapTile,
   type TTSCivLocation,
   type TTSCivilisationToken,
+  type TTSSpell,
   type TTSSiteMonsterGroup,
   type TTSSite,
   type TTSWildernessToken,
@@ -49,6 +51,7 @@ import aliasesData from "./aliases.json";
 const CARDS_FILE = path.join(process.cwd(), "data", "tts", "cards.json");
 const CLASSES_FILE = path.join(process.cwd(), "data", "tts", "classes.json");
 const LINEAGES_FILE = path.join(process.cwd(), "data", "tts", "lineages.json");
+const SPELLS_FILE = path.join(process.cwd(), "data", "tts", "spells.json");
 const CHIPS_FILE = path.join(process.cwd(), "data", "tts", "chips.json");
 const ITEMS_FILE = path.join(process.cwd(), "data", "tts", "items.json");
 const LEGENDARY_LOCATIONS_FILE = path.join(
@@ -115,6 +118,7 @@ export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 let cachedCardIndex: CardIndex | null = null;
 let cachedClassIndex: ClassIndex | null = null;
 let cachedLineageIndex: LineageIndex | null = null;
+let cachedSpellIndex: SpellIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedItemIndex: ItemIndex | null = null;
 let cachedLegendaryLocationIndex: LegendaryLocationIndex | null = null;
@@ -148,6 +152,12 @@ function getLineageIndex(): LineageIndex {
   if (cachedLineageIndex !== null) return cachedLineageIndex;
   cachedLineageIndex = readJsonOrEmpty<LineageIndex>(LINEAGES_FILE);
   return cachedLineageIndex;
+}
+
+function getSpellIndex(): SpellIndex {
+  if (cachedSpellIndex !== null) return cachedSpellIndex;
+  cachedSpellIndex = readJsonOrEmpty<SpellIndex>(SPELLS_FILE);
+  return cachedSpellIndex;
 }
 
 function getChipIndex(): ChipIndex {
@@ -377,6 +387,12 @@ export type LineageEntry = {
   lineages: TTSLineage[];
 };
 
+export type SpellEntry = {
+  name: string;
+  slug: string;
+  spells: TTSSpell[];
+};
+
 export type ItemStartingClass = {
   name: string;
   slug: string;
@@ -430,6 +446,20 @@ export function getAllLineages(): LineageEntry[] {
 
 export function getLineageBySlug(slug: string): LineageEntry | undefined {
   return getAllLineages().find((entry) => entry.slug === slug);
+}
+
+export function getAllSpells(): SpellEntry[] {
+  return Object.entries(getSpellIndex())
+    .map(([name, spells]) => ({
+      name,
+      slug: slugify(name),
+      spells,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getSpellBySlug(slug: string): SpellEntry | undefined {
+  return getAllSpells().find((entry) => entry.slug === slug);
 }
 
 export function getAllItems(): ItemEntry[] {
