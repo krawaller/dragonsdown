@@ -40,6 +40,35 @@ export async function resolveRulebookLinks(
   return links.flat().sort(compareRulebookLinks);
 }
 
+export async function resolveMonsterRulebookLinks(
+  groupName: string,
+  individualNames: string[] = [],
+): Promise<RulebookLink[]> {
+  const candidates = uniqueNonEmpty([groupName, ...individualNames]);
+  if (candidates.length === 0) return [];
+
+  const normalizedCandidates = candidates.map(normalizeRulebookMatchTitle);
+  const books = rulebooksForQuery(ANY_DOC);
+  const links = await Promise.all(
+    books.map(async (book) => {
+      const sections = await loadSections(book);
+      const monsterParents = sections.filter((section) =>
+        titlesMatch(section.title, "Monster Reference|Monster Manifest"),
+      );
+
+      return monsterParents.flatMap((parent) =>
+        childSections(sections, parent)
+          .filter((section) =>
+            monsterTitleMatches(section.title, normalizedCandidates),
+          )
+          .map((section) => rulebookLinkForSection(book, section)),
+      );
+    }),
+  );
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
 function rulebooksForQuery(doc: RulebookLinkQuery["doc"]): Rulebook[] {
   if (doc === ANY_DOC) return RULEBOOKS;
   return RULEBOOKS.filter((book) => book.slug === doc);
@@ -73,13 +102,82 @@ function resolveSections(
   }));
 }
 
+function rulebookLinkForSection(
+  book: Rulebook,
+  section: Section,
+): RulebookLink {
+  return {
+    docSlug: book.slug,
+    docTitle: book.title,
+    sectionId: section.id,
+    sectionTitle: section.title,
+    content: section.content,
+    location: section.location,
+    href: `/${book.slug}#${anchorIdFor(section)}`,
+  };
+}
+
 function childSections(sections: Section[], parent: Section): Section[] {
   const prefix = `${parent.id}.`;
   return sections.filter((section) => section.id.startsWith(prefix));
 }
 
 function titlesMatch(left: string, right: string): boolean {
-  return normalizeTitle(left) === normalizeTitle(right);
+  const normalizedLeft = normalizeTitle(left);
+  return titleAlternatives(right).some(
+    (title) => normalizedLeft === normalizeTitle(title),
+  );
+}
+
+function titleAlternatives(title: string): string[] {
+  return title.split("|").map((part) => part.trim());
+}
+
+function uniqueNonEmpty(values: string[]): string[] {
+  return Array.from(
+    new Set(values.map((value) => value.trim()).filter(Boolean)),
+  );
+}
+
+function normalizeRulebookMatchTitle(title: string): string {
+  return normalizeTitle(title).toLowerCase();
+}
+
+function monsterTitleMatches(
+  sectionTitle: string,
+  normalizedCandidates: string[],
+): boolean {
+  const normalizedSectionTitle = normalizeRulebookMatchTitle(sectionTitle);
+
+  return normalizedCandidates.some((candidate) =>
+    monsterTitleCandidateMatches(normalizedSectionTitle, candidate),
+  );
+}
+
+function monsterTitleCandidateMatches(
+  normalizedSectionTitle: string,
+  normalizedCandidate: string,
+): boolean {
+  return titleForms(normalizedCandidate).some(
+    (candidate) =>
+      normalizedSectionTitle === candidate ||
+      normalizedSectionTitle.startsWith(`${candidate} `),
+  );
+}
+
+function titleForms(title: string): string[] {
+  if (title.endsWith("s")) return [title, title.slice(0, -1)];
+  return [title, `${title}s`];
+}
+
+function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {
+  const seen = new Set<string>();
+  return links.filter((link) => {
+    const key = `${link.docSlug}:${link.sectionId}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 function anchorIdFor(section: Section): string {

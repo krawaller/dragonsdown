@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
+import { RulebookLinks } from "@/components/RulebookLinks";
+import { resolveMonsterRulebookLinks } from "@/lib/rulebook-links";
 import {
   getAllMonsterGroups,
   getMissionsFeaturing,
@@ -21,6 +23,10 @@ export default async function MonsterGroupPage({
   const group = getMonsterGroupBySlug(slug);
   if (!group) notFound();
   const featuredMissions = getMissionsFeaturing(group.prettyName);
+  const rulebookLinks = await resolveMonsterRulebookLinks(
+    group.prettyName,
+    group.chips.flatMap((chip) => (chip.monsterName ? [chip.monsterName] : [])),
+  );
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -88,6 +94,12 @@ export default async function MonsterGroupPage({
         heading="Featured In Missions"
         className="mb-10"
         headingClassName="text-xl font-semibold mb-3"
+      />
+
+      <RulebookLinks
+        links={rulebookLinks}
+        heading="Rulebook"
+        className="mb-10"
       />
 
       <MonsterGroupChipList group={group} />
