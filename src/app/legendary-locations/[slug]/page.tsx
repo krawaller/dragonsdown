@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
+import { RulebookLinks } from "@/components/RulebookLinks";
+import { ANY_DOC, resolveRulebookLinks } from "@/lib/rulebook-links";
 import type {
   TTSLegendaryLocation,
   TTSLegendarySiteToken,
@@ -25,6 +27,10 @@ export default async function LegendaryLocationPage({
   const entry = getLegendaryLocationBySlug(slug);
   if (!entry) notFound();
   const location = entry.locations[0];
+  const rulebookLinks = await resolveRulebookLinks({
+    doc: ANY_DOC,
+    headings: ["Legendary Location Manifest", entry.name],
+  });
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -105,6 +111,8 @@ export default async function LegendaryLocationPage({
             <h2 className="text-xl font-semibold mb-3">Source</h2>
             <SourceDetails location={location} />
           </section>
+
+          <RulebookLinks links={rulebookLinks} heading="Rulebook" />
         </div>
 
         <aside className="lg:sticky lg:top-8 self-start space-y-6">
