@@ -21,6 +21,7 @@
     "inspect-fonts": ".venv/bin/python scripts/inspect_fonts.py",
     "find-images": "tsx scripts/find-images.ts",
     "download-images": "tsx scripts/download-images.ts",
+    "download-tts-pdfs": "tsx scripts/download-tts-pdfs.ts",
     "download-activemagic-images": "tsx scripts/download-activemagic-images.ts",
     "test": "vitest run",
     "test:watch": "vitest"
