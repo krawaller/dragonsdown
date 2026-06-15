@@ -74,6 +74,35 @@ export async function resolveMonsterRulebookLinks(
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
+export async function resolveNativeRulebookLinks(
+  groupName: string,
+  individualNames: string[] = [],
+): Promise<RulebookLink[]> {
+  const candidates = uniqueNonEmpty([groupName, ...individualNames]);
+  if (candidates.length === 0) return [];
+
+  const normalizedCandidates = candidates.map(normalizeRulebookMatchTitle);
+  const books = rulebooksForQuery(ANY_DOC);
+  const links = await Promise.all(
+    books.map(async (book) => {
+      const sections = await loadSections(book);
+      const nativeParents = sections.filter((section) =>
+        titlesMatch(section.title, "Native Reference"),
+      );
+
+      return nativeParents.flatMap((parent) =>
+        childSections(sections, parent)
+          .filter((section) =>
+            nativeTitleMatches(section.title, normalizedCandidates),
+          )
+          .map((section) => rulebookLinkForSection(book, section)),
+      );
+    }),
+  );
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
 export async function resolveClassAdvantageRulebookLinks(
   advantageTitle: string,
 ): Promise<RulebookLink[]> {
@@ -236,6 +265,34 @@ function monsterTitleCandidateMatches(
       normalizedSectionTitle === candidate ||
       normalizedSectionTitle.startsWith(`${candidate} `),
   );
+}
+
+function nativeTitleMatches(
+  sectionTitle: string,
+  normalizedCandidates: string[],
+): boolean {
+  const normalizedSectionTitle = normalizeRulebookMatchTitle(sectionTitle);
+
+  return normalizedCandidates.some((candidate) =>
+    nativeTitleCandidateMatches(normalizedSectionTitle, candidate),
+  );
+}
+
+function nativeTitleCandidateMatches(
+  normalizedSectionTitle: string,
+  normalizedCandidate: string,
+): boolean {
+  return nativeTitleForms(normalizedCandidate).some(
+    (candidate) => normalizedSectionTitle === candidate,
+  );
+}
+
+function nativeTitleForms(title: string): string[] {
+  const forms = titleForms(title).flatMap((form) => {
+    const singularNumbered = form.replace(/s\s+(\d+)$/, " $1");
+    return [form, form.replace(/\s+(\d+)$/, "$1"), singularNumbered];
+  });
+  return Array.from(new Set(forms));
 }
 
 function titleForms(title: string): string[] {

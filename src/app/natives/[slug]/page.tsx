@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
 import { NativeCivilisationCard } from "@/components/NativeCivilisationCard";
+import { RulebookLinks } from "@/components/RulebookLinks";
+import { resolveNativeRulebookLinks } from "@/lib/rulebook-links";
 import {
   getAllNativeGroups,
   getMissionsFeaturing,
@@ -24,6 +26,10 @@ export default async function NativePage({
   if (!group) notFound();
   const missions = getMissionsForTarget(group.prettyName);
   const featuredMissions = getMissionsFeaturing(group.prettyName);
+  const rulebookLinks = await resolveNativeRulebookLinks(
+    group.prettyName,
+    group.chips.flatMap((chip) => (chip.monsterName ? [chip.monsterName] : [])),
+  );
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -81,6 +87,12 @@ export default async function NativePage({
         heading="Featured In Missions"
         className="mb-10"
         headingClassName="text-xl font-semibold mb-3"
+      />
+
+      <RulebookLinks
+        links={rulebookLinks}
+        heading="Rulebook"
+        className="mb-10"
       />
 
       <MonsterGroupChipList group={group} />
