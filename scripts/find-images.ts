@@ -1,7 +1,4 @@
-import {
-  ObjectState,
-  DragonsDownWorkshop,
-} from "../data/downloaded-tts/workshop";
+import type { ObjectState, DragonsDownWorkshop } from "../src/lib/tts/workshop";
 import fs from "fs-extra";
 import path from "path";
 import eastern from "../data/downloaded-tts/dd_all_exp.json";

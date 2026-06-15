@@ -3,7 +3,7 @@
  * data/extracted-from-tts/cards.json and data/extracted-from-tts/chips.json.
  *
  * Each source file is a TTS save export. The source identifier (used in the
- * output) is the file's stem (e.g. "eastern", "core_desolation_natives").
+ * output) is the file's stem (e.g. "dd_all_exp").
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
@@ -83,13 +83,7 @@ const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
 );
 const MISSION_STATS_FILE = path.join(MANUAL_DIR, "mission-stats.json");
 
-/**
- * The Eastern Reaches TTS save is a strict superset of the
- * core_desolation_natives save (verified: every card and chip in the latter
- * appears in the former with identical URLs and copy counts), so we only
- * need to read this one file. Add to this list if a future save adds
- * content not present in `dd_all_exp.json`.
- */
+/** Add to this list if a future save adds content not present in `dd_all_exp.json`. */
 const SOURCE_FILES = ["dd_all_exp.json"];
 
 async function main(): Promise<void> {
