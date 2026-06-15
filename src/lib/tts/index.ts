@@ -45,6 +45,12 @@ export const ITEM_CARD_BACK_URL =
 export const DEEP_TREASURE_CARD_BACK_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/";
 
+export const SPELL_CARD_BACK_URL =
+  "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/";
+
+export const HERO_STARTING_SPELL_CARD_BACK_URL =
+  "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/";
+
 export type TTSItemCard = TTSCardImage & {
   /** Total number of physical copies found for this exact card image cell. */
   copies: number;
@@ -185,6 +191,28 @@ export type ExtractMissionsOptions = {
   missionNicknameCorrections?: readonly MissionNicknameCorrection[];
   missionStats?: readonly MissionStatsMapping[];
 };
+
+export type SpellManifestReference = {
+  source?: string;
+  title: string;
+  tags?: string[];
+};
+
+export type TTSSpell = {
+  source: string;
+  name: string;
+  rulebookSource?: string;
+  magic: string[];
+  decks: TTSSpellDeck[];
+  cards: TTSCardImage[];
+  spellCards: TTSCardImage[];
+  startingSpellCards: TTSCardImage[];
+};
+
+export type TTSSpellDeck = "spells" | "heroStartingSpells";
+
+/** Output written to data/tts/spells.json. Keyed by spell name. */
+export type SpellIndex = Record<string, TTSSpell[]>;
 
 export type ClassAdvantageReference = {
   title: string;
@@ -767,6 +795,102 @@ export function extractItems(root: unknown, source: string): ItemIndex {
     }
   }
   return index;
+}
+
+export function extractSpells(
+  root: unknown,
+  source: string,
+  spellManifest: readonly SpellManifestReference[],
+  aliases: AliasMap = {},
+): SpellIndex {
+  const cardIndex = extractSpellCardIndex(root, source);
+  const normalizedAliases = normalizeAliasMap(aliases);
+  const index: SpellIndex = {};
+
+  for (const entry of spellManifest) {
+    if (!entry.tags?.includes("spell")) continue;
+    const cards = resolveCards(entry.title, cardIndex, normalizedAliases);
+    const spellCards = cards.filter(
+      (card) => card.backURL === SPELL_CARD_BACK_URL,
+    );
+    const startingSpellCards = cards.filter(
+      (card) => card.backURL === HERO_STARTING_SPELL_CARD_BACK_URL,
+    );
+    index[entry.title] = [
+      {
+        source,
+        name: entry.title,
+        ...(entry.source ? { rulebookSource: entry.source } : {}),
+        magic: magicTags(entry.tags),
+        decks: spellDecksFor(spellCards, startingSpellCards),
+        cards,
+        spellCards,
+        startingSpellCards,
+      },
+    ];
+  }
+
+  return index;
+}
+
+function extractSpellCardIndex(root: unknown, source: string): CardIndex {
+  const index: CardIndex = {};
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image || !isSpellBack(image.backURL)) continue;
+    const bucket = (index[normalizeTitle(raw)] ??= []);
+    const existing = bucket.find((entry) => isSameSpellCard(entry, image));
+    if (existing) {
+      existing.tags = mergeTags(existing.tags, image.tags);
+      if (!existing.ancestry?.length && image.ancestry?.length) {
+        existing.ancestry = image.ancestry;
+      }
+    } else {
+      bucket.push(image);
+    }
+  }
+  return index;
+}
+
+function isSpellBack(backURL: string): boolean {
+  return (
+    backURL === SPELL_CARD_BACK_URL ||
+    backURL === HERO_STARTING_SPELL_CARD_BACK_URL
+  );
+}
+
+function isSameSpellCard(a: TTSCardImage, b: TTSCardImage): boolean {
+  return isSameCell(a, b) && a.backURL === b.backURL;
+}
+
+function spellDecksFor(
+  spellCards: TTSCardImage[],
+  startingSpellCards: TTSCardImage[],
+): TTSSpellDeck[] {
+  return [
+    ...(spellCards.length > 0 ? (["spells"] as const) : []),
+    ...(startingSpellCards.length > 0 ? (["heroStartingSpells"] as const) : []),
+  ];
+}
+
+function normalizeAliasMap(aliases: AliasMap): AliasMap {
+  const normalized: AliasMap = {};
+  for (const [from, to] of Object.entries(aliases)) {
+    normalized[normalizeTitle(from)] = Array.isArray(to)
+      ? to.map(normalizeTitle)
+      : normalizeTitle(to);
+  }
+  return normalized;
+}
+
+function magicTags(tags: readonly string[] | undefined): string[] {
+  return (tags ?? [])
+    .filter((tag) => tag.endsWith("Magic"))
+    .map((tag) => tag.replace(/Magic$/, ""));
 }
 
 export function extractLegendaryLocations(

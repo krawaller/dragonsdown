@@ -14,6 +14,7 @@ import {
   extractNatives,
   extractNativeSummons,
   extractSiteMonsters,
+  extractSpells,
   extractWildernessTokens,
   extractSites,
   missionCellKey,
@@ -23,8 +24,10 @@ import {
   CIVILISATION_REFERENCE_CARD_FACE_URL,
   CIVILISATION_TOKEN_FACE_URL,
   DEEP_TREASURE_CARD_BACK_URL,
+  HERO_STARTING_SPELL_CARD_BACK_URL,
   ITEM_CARD_BACK_URL,
   SITE_FACE_URL,
+  SPELL_CARD_BACK_URL,
   WILDERNESS_TOKEN_BACK_URLS,
   WILDERNESS_TOKEN_FRONT_METADATA,
 } from ".";
@@ -81,6 +84,16 @@ const SAMPLE_DECK = {
   NumWidth: 10,
   NumHeight: 7,
   UniqueBack: false,
+};
+
+const SAMPLE_SPELL_DECK = {
+  ...SAMPLE_DECK,
+  BackURL: SPELL_CARD_BACK_URL,
+};
+
+const SAMPLE_STARTING_SPELL_DECK = {
+  ...SAMPLE_DECK,
+  BackURL: HERO_STARTING_SPELL_CARD_BACK_URL,
 };
 
 describe("extractCards", () => {
@@ -619,6 +632,106 @@ describe("extractLineages", () => {
     ]);
 
     expect(lineages.Gnome[0].box).toBe("Natives and Legends");
+  });
+});
+
+describe("extractSpells", () => {
+  it("extracts spell cards from manifest spell entries", () => {
+    const save = {
+      ObjectStates: [card("Affliction", 800, "8", SAMPLE_SPELL_DECK)],
+    };
+
+    expect(
+      extractSpells(save, "dd_all_exp", [
+        {
+          source: "core",
+          title: "Black Spells",
+          tags: ["blackMagic"],
+        },
+        {
+          source: "core",
+          title: "Affliction",
+          tags: ["spell", "blackMagic"],
+        },
+      ]),
+    ).toEqual({
+      Affliction: [
+        {
+          source: "dd_all_exp",
+          name: "Affliction",
+          rulebookSource: "core",
+          magic: ["black"],
+          decks: ["spells"],
+          cards: [
+            {
+              source: "dd_all_exp",
+              faceURL: "https://example.com/face.png",
+              backURL: SPELL_CARD_BACK_URL,
+              numWidth: 10,
+              numHeight: 7,
+              row: 0,
+              col: 0,
+              uniqueBack: false,
+            },
+          ],
+          spellCards: [
+            {
+              source: "dd_all_exp",
+              faceURL: "https://example.com/face.png",
+              backURL: SPELL_CARD_BACK_URL,
+              numWidth: 10,
+              numHeight: 7,
+              row: 0,
+              col: 0,
+              uniqueBack: false,
+            },
+          ],
+          startingSpellCards: [],
+        },
+      ],
+    });
+  });
+
+  it("separates spell cards from hero starting spell cards by back", () => {
+    const save = {
+      ObjectStates: [
+        card("Calm", 801, "8", SAMPLE_SPELL_DECK),
+        card("Calm", 801, "8", SAMPLE_STARTING_SPELL_DECK),
+      ],
+    };
+
+    const spells = extractSpells(save, "dd_all_exp", [
+      {
+        title: "Calm",
+        tags: ["spell", "greenMagic"],
+      },
+    ]);
+
+    expect(spells.Calm[0].cards).toHaveLength(2);
+    expect(spells.Calm[0].spellCards).toHaveLength(1);
+    expect(spells.Calm[0].startingSpellCards).toHaveLength(1);
+    expect(spells.Calm[0].decks).toEqual(["spells", "heroStartingSpells"]);
+  });
+
+  it("uses aliases when manifest titles differ from TTS card names", () => {
+    const save = {
+      ObjectStates: [card("Ripplestrike", 801, "8", SAMPLE_SPELL_DECK)],
+    };
+
+    const spells = extractSpells(
+      save,
+      "dd_all_exp",
+      [
+        {
+          title: "Ripple Strike",
+          tags: ["spell", "greenMagic"],
+        },
+      ],
+      { "Ripple Strike": "Ripplestrike" },
+    );
+
+    expect(spells["Ripple Strike"][0].cards).toHaveLength(1);
+    expect(spells["Ripple Strike"][0].magic).toEqual(["green"]);
   });
 });
 

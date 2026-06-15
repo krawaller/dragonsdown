@@ -25,6 +25,7 @@ import {
   extractNativeSummons,
   extractSiteMonsters,
   extractSites,
+  extractSpells,
   extractWildernessTokens,
   isSameCell,
   mergeTags,
@@ -45,6 +46,9 @@ import {
   type MissionStatsMapping,
   type NativeIndex,
   type NativeSummonIndex,
+  type AliasMap,
+  type SpellIndex,
+  type SpellManifestReference,
   type TTSCivilisationToken,
   type TTSMapTile,
   type SiteIndex,
@@ -64,6 +68,14 @@ const CLASS_ADVANTAGES_FILE = path.join(DERIVED_DIR, "class-advantages.json");
 const LINEAGE_ADVANTAGES_FILE = path.join(
   DERIVED_DIR,
   "lineage-advantages.json",
+);
+const SPELL_MANIFEST_FILE = path.join(DERIVED_DIR, "spell-manifest.json");
+const ALIASES_FILE = path.join(
+  process.cwd(),
+  "src",
+  "lib",
+  "tts",
+  "aliases.json",
 );
 const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
   MANUAL_DIR,
@@ -98,10 +110,14 @@ async function main(): Promise<void> {
   const lineageAdvantages = await readJsonFile<LineageAdvantageReference[]>(
     LINEAGE_ADVANTAGES_FILE,
   );
+  const spellManifest =
+    await readJsonFile<SpellManifestReference[]>(SPELL_MANIFEST_FILE);
+  const aliases = await readJsonFile<AliasMap>(ALIASES_FILE);
 
   const cards: CardIndex = {};
   const classes: ClassIndex = {};
   const lineages: LineageIndex = {};
+  const spells: SpellIndex = {};
   const boards: BoardIndex = [];
   const chips: ChipIndex = {};
   const items: ItemIndex = {};
@@ -125,6 +141,7 @@ async function main(): Promise<void> {
     const cardIndex = extractCards(save, stem);
     const classIndex = extractClasses(save, stem, classAdvantages);
     const lineageIndex = extractLineages(save, stem, lineageAdvantages);
+    const spellIndex = extractSpells(save, stem, spellManifest, aliases);
     const boardIndex = extractBoards(save, stem);
     const chipIndex = extractChips(save, stem);
     const itemIndex = extractItems(save, stem);
@@ -144,7 +161,7 @@ async function main(): Promise<void> {
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(spellIndex)} spells / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
     );
 
     boards.push(...boardIndex);
@@ -171,6 +188,14 @@ async function main(): Promise<void> {
     }
     for (const [name, items] of Object.entries(lineageIndex)) {
       const bucket = (lineages[name] ??= []);
+      for (const item of items) {
+        const existing = bucket.find((entry) => entry.source === item.source);
+        if (existing) continue;
+        bucket.push(item);
+      }
+    }
+    for (const [name, items] of Object.entries(spellIndex)) {
+      const bucket = (spells[name] ??= []);
       for (const item of items) {
         const existing = bucket.find((entry) => entry.source === item.source);
         if (existing) continue;
@@ -349,6 +374,7 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
   await writeSorted(path.join(OUT_DIR, "classes.json"), classes);
   await writeSorted(path.join(OUT_DIR, "lineages.json"), lineages);
+  await writeSorted(path.join(OUT_DIR, "spells.json"), spells);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "items.json"), items);
   await writeSorted(
@@ -383,6 +409,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ lineages.json: ${Object.keys(lineages).length} names, ${countEntries(lineages)} lineages total`,
+  );
+  console.log(
+    `→ spells.json: ${Object.keys(spells).length} names, ${countEntries(spells)} spells total`,
   );
   console.log(
     `→ chips.json: ${Object.keys(chips).length} names, ${countEntries(chips)} chips total`,

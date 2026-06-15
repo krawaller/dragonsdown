@@ -1,0 +1,4688 @@
+{
+  "Affliction": [
+    {
+      "source": "dd_all_exp",
+      "name": "Affliction",
+      "rulebookSource": "core",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Air Sword": [
+    {
+      "source": "dd_all_exp",
+      "name": "Air Sword",
+      "rulebookSource": "core",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 8,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Anti-Magic": [
+    {
+      "source": "dd_all_exp",
+      "name": "Anti-Magic",
+      "rulebookSource": "core",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 3,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Break Spells": [
+    {
+      "source": "dd_all_exp",
+      "name": "Break Spells",
+      "rulebookSource": "core",
+      "magic": [
+        "universal"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Break Spell"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Break Spell"
+          ]
+        }
+      ]
+    }
+  ],
+  "Calm": [
+    {
+      "source": "dd_all_exp",
+      "name": "Calm",
+      "rulebookSource": "core",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 8,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Caustic Blast": [
+    {
+      "source": "dd_all_exp",
+      "name": "Caustic Blast",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Charismagic": [
+    {
+      "source": "dd_all_exp",
+      "name": "Charismagic",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Charm": [
+    {
+      "source": "dd_all_exp",
+      "name": "Charm",
+      "rulebookSource": "core",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 2,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Confuse": [
+    {
+      "source": "dd_all_exp",
+      "name": "Confuse",
+      "rulebookSource": "core",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 1,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Counterplay": [
+    {
+      "source": "dd_all_exp",
+      "name": "Counterplay",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Curse": [
+    {
+      "source": "dd_all_exp",
+      "name": "Curse",
+      "rulebookSource": "core",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 1,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Dark Matter": [
+    {
+      "source": "dd_all_exp",
+      "name": "Dark Matter",
+      "rulebookSource": "core",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 2,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Dark Presence": [
+    {
+      "source": "dd_all_exp",
+      "name": "Dark Presence",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Discord": [
+    {
+      "source": "dd_all_exp",
+      "name": "Discord",
+      "rulebookSource": "core",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 4,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Disorient": [
+    {
+      "source": "dd_all_exp",
+      "name": "Disorient",
+      "rulebookSource": "core",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 3,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Divination": [
+    {
+      "source": "dd_all_exp",
+      "name": "Divination",
+      "rulebookSource": "core",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 0,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Doppelganger": [
+    {
+      "source": "dd_all_exp",
+      "name": "Doppelganger",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Earthquake": [
+    {
+      "source": "dd_all_exp",
+      "name": "Earthquake",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Elemental": [
+    {
+      "source": "dd_all_exp",
+      "name": "Elemental",
+      "rulebookSource": "core",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 9,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Enfeeble": [
+    {
+      "source": "dd_all_exp",
+      "name": "Enfeeble",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Envenom": [
+    {
+      "source": "dd_all_exp",
+      "name": "Envenom",
+      "rulebookSource": "core",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 1,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Fiery Chasm": [
+    {
+      "source": "dd_all_exp",
+      "name": "Fiery Chasm",
+      "rulebookSource": "core",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 4,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Fireball": [
+    {
+      "source": "dd_all_exp",
+      "name": "Fireball",
+      "rulebookSource": "core",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 3,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Floating Disk": [
+    {
+      "source": "dd_all_exp",
+      "name": "Floating Disk",
+      "rulebookSource": "core",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 5,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Fly": [
+    {
+      "source": "dd_all_exp",
+      "name": "Fly",
+      "rulebookSource": "core",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 2,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Foresight": [
+    {
+      "source": "dd_all_exp",
+      "name": "Foresight",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Gale Blast": [
+    {
+      "source": "dd_all_exp",
+      "name": "Gale Blast",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Good Wind": [
+    {
+      "source": "dd_all_exp",
+      "name": "Good Wind",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Great Parley": [
+    {
+      "source": "dd_all_exp",
+      "name": "Great Parley",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Heal": [
+    {
+      "source": "dd_all_exp",
+      "name": "Heal",
+      "rulebookSource": "core",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 6,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Hesitation": [
+    {
+      "source": "dd_all_exp",
+      "name": "Hesitation",
+      "rulebookSource": "core",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 0,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Illusion": [
+    {
+      "source": "dd_all_exp",
+      "name": "Illusion",
+      "rulebookSource": "core",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 2,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 2,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Iron Skin": [
+    {
+      "source": "dd_all_exp",
+      "name": "Iron Skin",
+      "rulebookSource": "core",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 0,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 0,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Life Armor": [
+    {
+      "source": "dd_all_exp",
+      "name": "Life Armor",
+      "rulebookSource": "core",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 7,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Lightning": [
+    {
+      "source": "dd_all_exp",
+      "name": "Lightning",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Magic Snare": [
+    {
+      "source": "dd_all_exp",
+      "name": "Magic Snare",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Major Heal": [
+    {
+      "source": "dd_all_exp",
+      "name": "Major Heal",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Malediction": [
+    {
+      "source": "dd_all_exp",
+      "name": "Malediction",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Mana Shield": [
+    {
+      "source": "dd_all_exp",
+      "name": "Mana Shield",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Mesmerize": [
+    {
+      "source": "dd_all_exp",
+      "name": "Mesmerize",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Minor Mend": [
+    {
+      "source": "dd_all_exp",
+      "name": "Minor Mend",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Move Earth": [
+    {
+      "source": "dd_all_exp",
+      "name": "Move Earth",
+      "rulebookSource": "core",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 7,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Move Gate": [
+    {
+      "source": "dd_all_exp",
+      "name": "Move Gate",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Nature’s Help": [
+    {
+      "source": "dd_all_exp",
+      "name": "Nature’s Help",
+      "rulebookSource": "core",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 5,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Open Gate": [
+    {
+      "source": "dd_all_exp",
+      "name": "Open Gate",
+      "rulebookSource": "core",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 6,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Orc Call": [
+    {
+      "source": "dd_all_exp",
+      "name": "Orc Call",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Othersight": [
+    {
+      "source": "dd_all_exp",
+      "name": "Othersight",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 6,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Panoply": [
+    {
+      "source": "dd_all_exp",
+      "name": "Panoply",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Peace": [
+    {
+      "source": "dd_all_exp",
+      "name": "Peace",
+      "rulebookSource": "core",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 9,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Possess": [
+    {
+      "source": "dd_all_exp",
+      "name": "Possess",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Prismatism": [
+    {
+      "source": "dd_all_exp",
+      "name": "Prismatism",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "yellow"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells2.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells2.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells2.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells2.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Pyroclasm": [
+    {
+      "source": "dd_all_exp",
+      "name": "Pyroclasm",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 0,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Renewal": [
+    {
+      "source": "dd_all_exp",
+      "name": "Renewal",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Rot": [
+    {
+      "source": "dd_all_exp",
+      "name": "Rot",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 9,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Rule Undead": [
+    {
+      "source": "dd_all_exp",
+      "name": "Rule Undead",
+      "rulebookSource": "core",
+      "magic": [
+        "black"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 3,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 3,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Safe Haven": [
+    {
+      "source": "dd_all_exp",
+      "name": "Safe Haven",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 6,
+          "col": 4,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Scout": [
+    {
+      "source": "dd_all_exp",
+      "name": "Scout",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 1,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Shadowhand": [
+    {
+      "source": "dd_all_exp",
+      "name": "Shadowhand",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 8,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Shape Shift": [
+    {
+      "source": "dd_all_exp",
+      "name": "Shape Shift",
+      "rulebookSource": "core",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 4,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Shift Focus": [
+    {
+      "source": "dd_all_exp",
+      "name": "Shift Focus",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 7,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Soul Save": [
+    {
+      "source": "dd_all_exp",
+      "name": "Soul Save",
+      "rulebookSource": "core",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 5,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 5,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Strength": [
+    {
+      "source": "dd_all_exp",
+      "name": "Strength",
+      "rulebookSource": "core",
+      "magic": [
+        "purple"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 1,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 1,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Sunder": [
+    {
+      "source": "dd_all_exp",
+      "name": "Sunder",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 5,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Teleport": [
+    {
+      "source": "dd_all_exp",
+      "name": "Teleport",
+      "rulebookSource": "core",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 9,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 9,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Tentacles": [
+    {
+      "source": "dd_all_exp",
+      "name": "Tentacles",
+      "rulebookSource": "core",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 7,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 0,
+          "col": 7,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Town Portal": [
+    {
+      "source": "dd_all_exp",
+      "name": "Town Portal",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 2,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Trail Blaze": [
+    {
+      "source": "dd_all_exp",
+      "name": "Trail Blaze",
+      "rulebookSource": "core",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 6,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 6,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Turn Undead": [
+    {
+      "source": "dd_all_exp",
+      "name": "Turn Undead",
+      "rulebookSource": "core",
+      "magic": [
+        "white"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 8,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 2,
+          "col": 8,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Vapor Form": [
+    {
+      "source": "dd_all_exp",
+      "name": "Vapor Form",
+      "rulebookSource": "core",
+      "magic": [
+        "gray"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 4,
+          "uniqueBack": false
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 1,
+          "col": 4,
+          "uniqueBack": false
+        }
+      ]
+    }
+  ],
+  "Water Weird": [
+    {
+      "source": "dd_all_exp",
+      "name": "Water Weird",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "blue"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 4,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ],
+  "Wildshape": [
+    {
+      "source": "dd_all_exp",
+      "name": "Wildshape",
+      "rulebookSource": "eastern-reaches",
+      "magic": [
+        "green"
+      ],
+      "decks": [
+        "spells",
+        "heroStartingSpells"
+      ],
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "spellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ],
+      "startingSpellCards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 5,
+          "col": 3,
+          "uniqueBack": false,
+          "ancestry": [
+            "Starting Spell EASTERN"
+          ]
+        }
+      ]
+    }
+  ]
+}
