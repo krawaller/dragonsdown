@@ -1,6 +1,6 @@
 """Dump distinct (size, font, color) combinations and a sample text for each.
 
-Usage: python scripts/inspect_fonts.py pdf/dragons_down_desolation_1.2.pdf
+Usage: python scripts/inspect_fonts.py data/downloaded-pdf/Dragons_Down_Desolation_single_pages.pdf
 """
 from __future__ import annotations
 

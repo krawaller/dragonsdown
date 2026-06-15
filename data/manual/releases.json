@@ -1,0 +1,18 @@
+{
+  "core": {
+    "file": "Dragons_Down_single_pages.pdf",
+    "version": "1.3"
+  },
+  "desolation": {
+    "file": "Dragons_Down_Desolation_single_pages.pdf",
+    "version": "1.3"
+  },
+  "natives_and_legends": {
+    "file": "Dragons_Down_Natives_and_Legends_single_pages.pdf",
+    "version": "1.3"
+  },
+  "eastern_reaches": {
+    "file": "Dragons_Down_Eastern_Reaches_single_pages.pdf",
+    "version": "1.3"
+  }
+}

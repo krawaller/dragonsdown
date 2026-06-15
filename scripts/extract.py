@@ -31,7 +31,8 @@ from pathlib import Path
 import fitz
 
 ROOT = Path(__file__).resolve().parent.parent
-PDF_DIR = ROOT / "pdf"
+PDF_DIR = ROOT / "data" / "downloaded-pdf"
+RELEASES_FILE = ROOT / "data" / "manual" / "releases.json"
 OUT_DIR = ROOT / "data" / "parsed-pdf"
 IMG_DIR = ROOT / "public" / "images" / "pdf"
 IMG_URL_PREFIX = "/images/pdf"
@@ -69,6 +70,12 @@ class Section:
             rendered["icon"] = self.icon
         rendered["content"] = content
         return rendered
+
+
+@dataclass
+class ReleaseEntry:
+    file: str
+    version: str | None = None
 
 
 def classify_heading(font: str, size: float, color: int) -> int | None:
@@ -659,9 +666,16 @@ def slug_for_url(name: str) -> str:
     return name.replace("_", "-")
 
 
-def process_one(pdf: Path, out: Path | None = None) -> None:
+def process_one(
+    pdf: Path,
+    out: Path | None = None,
+    name_override: str | None = None,
+    version_override: str | None = None,
+) -> None:
     sections = extract(pdf)
-    name, version = parse_stem(pdf.stem)
+    parsed_name, version = parse_stem(pdf.stem)
+    name = name_override or parsed_name
+    version = version_override if version_override is not None else version
     slug = slug_for_url(name)
     # Stamp `source` on every section and put identifier fields first for
     # readable JSON output.
@@ -687,10 +701,42 @@ def process_one(pdf: Path, out: Path | None = None) -> None:
     print(f"{pdf.name}: {len(sections)} sections (v{version or '?'}) → {out_path}")
 
 
+def read_releases() -> dict[str, ReleaseEntry]:
+    if not RELEASES_FILE.exists():
+        raise FileNotFoundError(f"Missing releases file: {RELEASES_FILE}")
+    data = json.loads(RELEASES_FILE.read_text())
+    if not isinstance(data, dict):
+        raise TypeError(f"Releases file must be an object: {RELEASES_FILE}")
+    releases: dict[str, ReleaseEntry] = {}
+    for name, entry in data.items():
+        if not isinstance(name, str):
+            raise TypeError(f"Release keys must be strings: {RELEASES_FILE}")
+        if isinstance(entry, str):
+            releases[name] = ReleaseEntry(file=entry)
+            continue
+        if not isinstance(entry, dict):
+            raise TypeError(f"Release entries must be strings or objects: {RELEASES_FILE}")
+        filename = entry.get("file")
+        version = entry.get("version")
+        if not isinstance(filename, str):
+            raise TypeError(f"Release entry is missing string file: {name}")
+        if version is not None and not isinstance(version, str):
+            raise TypeError(f"Release entry has non-string version: {name}")
+        releases[name] = ReleaseEntry(file=filename, version=version)
+    return releases
+
+
+def process_all() -> None:
+    for name, entry in sorted(read_releases().items()):
+        pdf = PDF_DIR / entry.file
+        if not pdf.exists():
+            raise FileNotFoundError(f"Mapped PDF does not exist: {pdf}")
+        process_one(pdf, name_override=name, version_override=entry.version)
+
+
 def main(argv: list[str]) -> None:
     if not argv or argv[0] == "--all":
-        for pdf in sorted(PDF_DIR.glob("*.pdf")):
-            process_one(pdf)
+        process_all()
         return
     pdf = Path(argv[0])
     out = Path(argv[1]) if len(argv) > 1 else None

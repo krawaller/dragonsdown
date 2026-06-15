@@ -2,13 +2,15 @@
 
 A Next.js web app that presents the Dragons Down rulebooks, built from JSON extracted from the official PDFs.
 
-- `pdf/` — source PDFs
-- `data/` — extracted JSON (flat array of `{ level, title, content }`)
+- `data/downloaded-pdf/` — source PDFs downloaded from the TTS save
+- `data/manual/releases.json` — maps rulebook output names to downloaded PDF filenames and release metadata
+- `data/parsed-pdf/` and `data/transformed-pdf/` — extracted and transformed rulebook JSON
 - `public/images/` — extracted, deduplicated images (served as `/images/<sha1>.<ext>`)
 - `scripts/` — Python extractor (PyMuPDF)
 - `src/` — Next.js App Router source
 
 Each JSON entry:
+
 - `level` — 1–4, reflects the heading hierarchy in the source PDF
 - `title` — plain text
 - `content` — **Markdown**: `**bold**`, `*italic*`, bullet lists (`- `), and image references like `![](/images/<sha1>.<ext>)`
@@ -33,23 +35,24 @@ python3 -m venv .venv
 .venv/bin/pip install pymupdf
 ```
 
-Extract all PDFs in `pdf/` → `data/`, then apply the transform rules:
+Download PDFs from the TTS save, extract the mapped PDFs into `data/parsed-pdf/`, then apply the transform rules:
 
 ```sh
-npm run extract     # extract PDFs to data/, then run transform automatically
-npm run transform   # re-apply transform.ts to data/ without re-extracting
+npm run download-tts-pdfs
+npm run extract     # extract mapped PDFs, transform, derive, then extract TTS data
+npm run transform   # re-apply transform.ts without re-extracting PDFs
 ```
 
 Extract a single PDF (call the Python script directly; you'll then want to run `npm run transform` to re-apply rules):
 
 ```sh
-.venv/bin/python scripts/extract.py pdf/desolation_1.2.pdf
+.venv/bin/python scripts/extract.py data/downloaded-pdf/Dragons_Down_Desolation_single_pages.pdf
 ```
 
 Inspect font/size/color distribution of a PDF (used to derive heading rules):
 
 ```sh
-npm run inspect-fonts pdf/core_1.2.pdf
+npm run inspect-fonts data/downloaded-pdf/Dragons_Down_single_pages.pdf
 ```
 
 ## Transforms
@@ -66,12 +69,12 @@ Currently supported ops: `ignoreImages` (drops `![](/images/<hash>.<ext>)` refs 
 
 Derived from the source styling:
 
-| Level | Font            | Size | Color           | Example                       |
-|-------|-----------------|------|-----------------|-------------------------------|
-| 1     | BreatheFireIII  | 18   | red `#d2232a`   | `INTRODUCTION`                |
-| 2     | BreatheFireIII  | 18   | brown `#4b281c` | `Lineage Advantages`          |
-| 3     | MinionPro-Bold  | 16   | brown           | `Map`, `Hero Class Adjustments` |
-| 4     | MinionPro-Bold  | 14   | black           | `Half-Elves`, `Assassin`      |
+| Level | Font           | Size | Color           | Example                         |
+| ----- | -------------- | ---- | --------------- | ------------------------------- |
+| 1     | BreatheFireIII | 18   | red `#d2232a`   | `INTRODUCTION`                  |
+| 2     | BreatheFireIII | 18   | brown `#4b281c` | `Lineage Advantages`            |
+| 3     | MinionPro-Bold | 16   | brown           | `Map`, `Hero Class Adjustments` |
+| 4     | MinionPro-Bold | 14   | black           | `Half-Elves`, `Assassin`        |
 
 Levels can be sparse per document (e.g. Desolation has no L3 headings).
 
