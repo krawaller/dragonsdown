@@ -1,7 +1,7 @@
 """Extract Dragons Down rulebooks into JSON with markdown content + extracted images.
 
 Output:
-    data/<name>.json — { version, content: [ { id, source, level, title, location, icon?, content (markdown) } ] }
+    data/parsed-pdf/<name>.json — { version, content: [ { id, source, level, title, location, icon?, content (markdown) } ] }
   public/images/pdf/<sha1>.<ext> — extracted, deduplicated, referenced as /images/pdf/<sha1>.<ext>
 
 Heading conventions (verified across all 4 PDFs):
@@ -32,7 +32,7 @@ import fitz
 
 ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = ROOT / "pdf"
-OUT_DIR = ROOT / "data"
+OUT_DIR = ROOT / "data" / "parsed-pdf"
 IMG_DIR = ROOT / "public" / "images" / "pdf"
 IMG_URL_PREFIX = "/images/pdf"
 

@@ -41,7 +41,7 @@ export type RulebookFile = {
   content: Section[];
 };
 
-const DATA_DIR = path.join(process.cwd(), "data");
+const DATA_DIR = path.join(process.cwd(), "data", "transformed-pdf");
 
 /**
  * Display-title overrides per slug. Slugs not listed here fall back to a
@@ -61,9 +61,9 @@ function titleCase(slug: string): string {
 }
 
 /**
- * Build the rulebook registry by reading every `*.json` in `data/` and pulling
- * the `source` slug from each. The Python extractor is the single source of
- * truth for slugs; this file only adds display titles on top.
+ * Build the rulebook registry by reading every transformed PDF JSON file and
+ * pulling the `source` slug from each. The Python extractor is the single source
+ * of truth for slugs; this file only adds display titles on top.
  */
 function discoverRulebooks(): Rulebook[] {
   const files = readdirSync(DATA_DIR).filter((f) => f.endsWith(".json"));

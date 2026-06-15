@@ -1,34 +1,38 @@
 /**
- * Apply transform.ts rules to the extracted JSON in data/, in place.
+ * Apply transform.ts rules to parsed PDF JSON, writing transformed JSON.
  *
- * Run after `npm run extract`. Idempotent: re-running on already-transformed
- * data should produce the same result (so long as individual rules are
- * idempotent, which they should be by design).
+ * Run after `scripts/extract.py`. The input files in `data/parsed-pdf` are left
+ * untouched; transformed files are written to `data/transformed-pdf`.
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import { TRANSFORMS } from "../src/lib/transform/rules";
 import { applyTransforms } from "../src/lib/transform";
-import {
-  RULEBOOKS,
-  type RulebookFile,
-  type Section,
-} from "../src/lib/rulebooks";
+import { type RulebookFile, type Section } from "../src/lib/rulebooks";
 
-const DATA_DIR = path.join(process.cwd(), "data");
+const PARSED_DIR = path.join(process.cwd(), "data", "parsed-pdf");
+const TRANSFORMED_DIR = path.join(process.cwd(), "data", "transformed-pdf");
 
 async function main(): Promise<void> {
-  for (const book of RULEBOOKS) {
-    const file = path.join(DATA_DIR, book.fileName);
-    const parsed = JSON.parse(
-      await fs.readFile(file, "utf-8"),
-    ) as RulebookFile;
+  await fs.mkdir(TRANSFORMED_DIR, { recursive: true });
+  const fileNames = (await fs.readdir(PARSED_DIR))
+    .filter((fileName) => fileName.endsWith(".json"))
+    .sort();
+
+  for (const fileName of fileNames) {
+    const file = path.join(PARSED_DIR, fileName);
+    const parsed = JSON.parse(await fs.readFile(file, "utf-8")) as RulebookFile;
     const before = parsed.content;
-    const after = applyTransforms(before, TRANSFORMS, book.slug);
+    const slug = before[0]?.source;
+    if (!slug) throw new Error(`Missing section source in ${fileName}`);
+    const after = applyTransforms(before, TRANSFORMS, slug);
     const payload: RulebookFile = { version: parsed.version, content: after };
-    await fs.writeFile(file, JSON.stringify(payload, null, 2));
+    await fs.writeFile(
+      path.join(TRANSFORMED_DIR, fileName),
+      JSON.stringify(payload, null, 2),
+    );
     const changed = countChangedSections(before, after);
-    console.log(`${book.fileName}: ${after.length} sections (${changed} touched)`);
+    console.log(`${fileName}: ${after.length} sections (${changed} touched)`);
   }
 }
 
