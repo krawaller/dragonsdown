@@ -69,6 +69,24 @@ export async function resolveMonsterRulebookLinks(
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
+export async function resolveOptionalRulebookLinks(
+  ruleTitles: string[],
+): Promise<RulebookLink[]> {
+  const titles = uniqueNonEmpty(ruleTitles);
+  if (titles.length === 0) return [];
+
+  const links = await Promise.all(
+    titles.map((title) =>
+      resolveRulebookLinks({
+        doc: ANY_DOC,
+        headings: ["OPTIONAL RULES", title],
+      }),
+    ),
+  );
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
 function rulebooksForQuery(doc: RulebookLinkQuery["doc"]): Rulebook[] {
   if (doc === ANY_DOC) return RULEBOOKS;
   return RULEBOOKS.filter((book) => book.slug === doc);

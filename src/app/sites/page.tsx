@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { OptionalRuleLinks } from "@/components/OptionalRuleLinks";
+import { SiteGrid } from "@/components/SiteGrid";
 import { SITE_FACE_URL } from "@/lib/tts";
 import { getAllSites } from "@/lib/tts/lookup";
-import { SiteGrid } from "@/components/SiteGrid";
 
-export default function SitesPage() {
+export default async function SitesPage() {
   const entries = getAllSites();
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -23,6 +24,10 @@ export default function SitesPage() {
       <p className="text-sm text-zinc-500 mb-8">
         {entries.length} treasure sites from the TTS mod
       </p>
+      <OptionalRuleLinks
+        rules={["Magic Sites", "Watchful Guardians"]}
+        className="mb-8"
+      />
       <SiteGrid entries={entries} />
     </main>
   );
