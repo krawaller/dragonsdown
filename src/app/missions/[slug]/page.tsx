@@ -92,6 +92,26 @@ export default async function MissionPage({
             </section>
           )}
 
+          {mission.features.length > 0 && (
+            <section>
+              <h2 className="text-xl font-semibold mb-3">Featured</h2>
+              <div className="flex flex-wrap gap-2">
+                {mission.features.map((feature) => (
+                  <Link
+                    key={`${feature.kind}-${feature.name}`}
+                    href={feature.href}
+                    className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+                  >
+                    <span className="font-medium">{feature.name}</span>
+                    <span className="ml-2 text-xs text-zinc-500 dark:text-zinc-400">
+                      {missionFeatureKindLabel(feature.kind)}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
           <MissionStats cards={mission.cards} />
 
           <MissionRewards cards={mission.cards} />
@@ -375,6 +395,11 @@ function terrainPackLabel(pack: MissionTerrainPack): string {
     case "oasis":
       return "Oasis";
   }
+}
+
+function missionFeatureKindLabel(kind: string): string {
+  if (kind === "native") return "Native";
+  return "Monster";
 }
 
 function missionTargetKindLabel(kind: MissionTargetKind): string {

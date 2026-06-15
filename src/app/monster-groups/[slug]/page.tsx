@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
-import { getAllMonsterGroups, getMonsterGroupBySlug } from "@/lib/tts/lookup";
+import {
+  getAllMonsterGroups,
+  getMissionsFeaturing,
+  getMonsterGroupBySlug,
+} from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
   return getAllMonsterGroups().map((entry) => ({ slug: entry.slug }));
@@ -15,6 +20,7 @@ export default async function MonsterGroupPage({
   const { slug } = await params;
   const group = getMonsterGroupBySlug(slug);
   if (!group) notFound();
+  const featuredMissions = getMissionsFeaturing(group.prettyName);
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -76,6 +82,13 @@ export default async function MonsterGroupPage({
           )}
         </section>
       )}
+
+      <MissionLinks
+        missions={featuredMissions}
+        heading="Featured In Missions"
+        className="mb-10"
+        headingClassName="text-xl font-semibold mb-3"
+      />
 
       <MonsterGroupChipList group={group} />
     </main>

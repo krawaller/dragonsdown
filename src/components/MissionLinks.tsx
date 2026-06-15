@@ -3,17 +3,19 @@ import type { MissionEntry } from "@/lib/tts/lookup";
 
 export function MissionLinks({
   missions,
+  heading = "Missions",
   className = "mb-8",
   headingClassName = "text-sm font-medium mb-2",
 }: {
   missions: MissionEntry[];
+  heading?: string;
   className?: string;
   headingClassName?: string;
 }) {
   if (missions.length === 0) return null;
   return (
     <section className={className}>
-      <h2 className={headingClassName}>Missions</h2>
+      <h2 className={headingClassName}>{heading}</h2>
       <div className="flex flex-wrap gap-2">
         {missions.map((mission) => (
           <Link

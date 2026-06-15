@@ -5,6 +5,7 @@ import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
 import { NativeCivilisationCard } from "@/components/NativeCivilisationCard";
 import {
   getAllNativeGroups,
+  getMissionsFeaturing,
   getMissionsForTarget,
   getNativeGroupBySlug,
 } from "@/lib/tts/lookup";
@@ -22,6 +23,7 @@ export default async function NativePage({
   const group = getNativeGroupBySlug(slug);
   if (!group) notFound();
   const missions = getMissionsForTarget(group.prettyName);
+  const featuredMissions = getMissionsFeaturing(group.prettyName);
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -69,6 +71,14 @@ export default async function NativePage({
 
       <MissionLinks
         missions={missions}
+        heading="Complete At Missions"
+        className="mb-10"
+        headingClassName="text-xl font-semibold mb-3"
+      />
+
+      <MissionLinks
+        missions={featuredMissions}
+        heading="Featured In Missions"
         className="mb-10"
         headingClassName="text-xl font-semibold mb-3"
       />

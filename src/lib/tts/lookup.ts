@@ -100,6 +100,12 @@ const NATIVE_SUMMONS_FILE = path.join(
 );
 const NATIVES_FILE = path.join(process.cwd(), "data", "tts", "natives.json");
 const MISSIONS_FILE = path.join(process.cwd(), "data", "tts", "missions.json");
+const MISSION_FEATURE_FILE = path.join(
+  process.cwd(),
+  "data",
+  "manual",
+  "mission-feature.json",
+);
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
@@ -119,6 +125,7 @@ let cachedMapTiles: TTSMapTile[] | null = null;
 let cachedNativeIndex: NativeIndex | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
 let cachedMissionIndex: MissionIndex | null = null;
+let cachedMissionFeatureIndex: Record<string, string | string[]> | null = null;
 let cachedAliases: AliasMap | null = null;
 
 function getCardIndex(): CardIndex {
@@ -232,6 +239,13 @@ function getMissionIndex(): MissionIndex {
   return cachedMissionIndex;
 }
 
+function getMissionFeatureIndex(): Record<string, string | string[]> {
+  if (cachedMissionFeatureIndex !== null) return cachedMissionFeatureIndex;
+  cachedMissionFeatureIndex =
+    readJsonOrEmpty<Record<string, string | string[]>>(MISSION_FEATURE_FILE);
+  return cachedMissionFeatureIndex;
+}
+
 function readJsonOrEmpty<T>(file: string): T {
   try {
     return JSON.parse(readFileSync(file, "utf-8")) as T;
@@ -331,6 +345,14 @@ export type MissionTargetLink = {
   name: string;
   href: string;
   kind: MissionTargetKind;
+};
+
+export type MissionFeatureKind = "native" | "monsterGroup";
+
+export type MissionFeatureLink = {
+  name: string;
+  href: string;
+  kind: MissionFeatureKind;
 };
 
 export type ClassEntry = {
@@ -566,6 +588,7 @@ export type CardEntry = {
   terrainPacks?: MissionTerrainPack[];
   rewardSummaries?: string[];
   targets?: MissionTargetLink[];
+  features?: MissionFeatureLink[];
 };
 
 export type MissionEntry = Omit<CardEntry, "cards"> & {
@@ -576,6 +599,7 @@ export type MissionEntry = Omit<CardEntry, "cards"> & {
   terrainPacks: MissionTerrainPack[];
   rewardSummaries: string[];
   targets: MissionTargetLink[];
+  features: MissionFeatureLink[];
 };
 
 export function getAllMissions(): MissionEntry[] {
@@ -591,6 +615,7 @@ export function getAllMissions(): MissionEntry[] {
       terrainPacks: missionTerrainPacksFor(cards),
       rewardSummaries: missionRewardSummariesFor(cards),
       targets: missionTargetsFor(cards),
+      features: missionFeaturesFor(name),
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
@@ -605,6 +630,12 @@ export function getMissionsForTarget(targetName: string): MissionEntry[] {
     entry.cards.some((card) =>
       card.completeAt?.some((target) => normalizeTitle(target) === targetKey),
     ),
+  );
+}
+
+export function getMissionsFeaturing(featureName: string): MissionEntry[] {
+  return getAllMissions().filter((entry) =>
+    entry.features.some((feature) => feature.name === featureName),
   );
 }
 
@@ -1178,6 +1209,19 @@ function missionTargetsFor(cards: TTSMissionCard[]): MissionTargetLink[] {
   });
 }
 
+function missionFeaturesFor(missionName: string): MissionFeatureLink[] {
+  const featureNames = Object.entries(getMissionFeatureIndex()).flatMap(
+    ([manualMissionName, feature]) => {
+      if (manualMissionName !== missionName) return [];
+      return Array.isArray(feature) ? feature : [feature];
+    },
+  );
+  return uniqueStrings(featureNames).flatMap((name) => {
+    const target = missionFeatureFor(name);
+    return target ? [target] : [];
+  });
+}
+
 function missionKindsFor(cards: TTSMissionCard[]): MissionKind[] {
   const order: MissionKind[] = ["atrocity", "quest", "expedition"];
   const kinds = new Set(
@@ -1310,6 +1354,40 @@ function missionTargetFor(name: string): MissionTargetLink | null {
     };
   }
   return null;
+}
+
+function missionFeatureFor(name: string): MissionFeatureLink | null {
+  const native = getNativeGroupByFeatureName(name);
+  if (native) {
+    return {
+      name: native.prettyName,
+      href: `/natives/${native.slug}`,
+      kind: "native",
+    };
+  }
+
+  const monsterGroup = getMonsterGroupByFeatureName(name);
+  if (monsterGroup) {
+    return {
+      name: monsterGroup.prettyName,
+      href: `/monster-groups/${monsterGroup.slug}`,
+      kind: "monsterGroup",
+    };
+  }
+
+  return null;
+}
+
+function getNativeGroupByFeatureName(
+  name: string,
+): MonsterGroupEntry | undefined {
+  return getAllNativeGroups().find((entry) => entry.prettyName === name);
+}
+
+function getMonsterGroupByFeatureName(
+  name: string,
+): MonsterGroupEntry | undefined {
+  return getAllMonsterGroups().find((entry) => entry.prettyName === name);
 }
 
 function uniqueStrings(values: string[]): string[] {
