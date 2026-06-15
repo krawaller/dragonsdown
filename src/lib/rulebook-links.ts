@@ -74,6 +74,15 @@ export async function resolveMonsterRulebookLinks(
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
+export async function resolveClassAdvantageRulebookLinks(
+  advantageTitle: string,
+): Promise<RulebookLink[]> {
+  return resolveRulebookLinks({
+    doc: ANY_DOC,
+    headings: ["Class Advantages", advantageTitle],
+  });
+}
+
 export async function resolveOptionalRulebookLinks(
   ruleTitles: string[],
 ): Promise<RulebookLink[]> {
