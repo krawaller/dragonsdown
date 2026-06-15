@@ -190,6 +190,11 @@ export type ClassAdvantageReference = {
   title: string;
 };
 
+export type LineageAdvantageReference = {
+  source?: string;
+  title: string;
+};
+
 export type TTSClassTile = {
   source: string;
   name: string;
@@ -221,6 +226,15 @@ export type TTSClassSetup = {
   back?: TTSClassSetupSide;
 };
 
+export type TTSLineage = {
+  source: string;
+  name: string;
+  box?: string;
+  advantageTitle: string;
+  cards: TTSCardImage[];
+  setup?: TTSClassSetup;
+};
+
 export type TTSClass = {
   source: string;
   name: string;
@@ -234,6 +248,9 @@ export type TTSClass = {
 
 /** Output written to data/tts/classes.json. Keyed by class name. */
 export type ClassIndex = Record<string, TTSClass[]>;
+
+/** Output written to data/tts/lineages.json. Keyed by lineage name. */
+export type LineageIndex = Record<string, TTSLineage[]>;
 
 /**
  * A "chip" is a TTS Custom_Tile whose `LuaScript` begins with `chipName =` —
@@ -945,8 +962,103 @@ export function extractClasses(
   return index;
 }
 
+export function extractLineages(
+  root: unknown,
+  source: string,
+  lineageAdvantages: readonly LineageAdvantageReference[],
+): LineageIndex {
+  const definitions = lineageAdvantages.map((entry) => ({
+    name: lineageNameFromAdvantageTitle(entry.title),
+    box: lineageBoxFromSource(entry.source),
+    title: entry.title,
+  }));
+  const namesByKey = new Map(
+    definitions.map((entry) => [lineageAdvantageKey(entry.title), entry.name]),
+  );
+  const index: LineageIndex = {};
+  for (const definition of definitions) {
+    index[definition.name] = [
+      {
+        source,
+        name: definition.name,
+        ...(definition.box ? { box: definition.box } : {}),
+        advantageTitle: definition.title,
+        cards: [],
+      },
+    ];
+  }
+
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const lineageName = namesByKey.get(lineageAdvantageKey(raw));
+    if (!lineageName) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image) continue;
+    const entry = index[lineageName][0];
+    entry.box ??= lineageBoxFromAncestry(ancestry);
+    if (!entry.cards.some((existing) => isSameCell(existing, image))) {
+      entry.cards.push(image);
+    }
+    const setup = classSetupFromLua(card.LuaScript ?? "");
+    if (setup) entry.setup ??= setup;
+  }
+
+  for (const entries of Object.values(index)) {
+    entries[0].cards.sort(compareCardCells);
+  }
+
+  return index;
+}
+
 function classNameFromAdvantageTitle(title: string): string {
   return title.replace(/\s*\([^)]*\)\s*$/, "").trim();
+}
+
+function lineageNameFromAdvantageTitle(title: string): string {
+  const name = classNameFromAdvantageTitle(title);
+  return LINEAGE_NAME_ALIASES[name] ?? name;
+}
+
+const LINEAGE_NAME_ALIASES: Record<string, string> = {
+  "Half-Elves": "Half-Elf",
+};
+
+function lineageAdvantageKey(title: string): string {
+  return normalizeTitle(title.replace(/-/g, " "));
+}
+
+function lineageBoxFromSource(source: string | undefined): string | undefined {
+  if (!source) return undefined;
+  return LINEAGE_SOURCE_BOX_NAMES[source] ?? titleCaseWords(source);
+}
+
+const LINEAGE_SOURCE_BOX_NAMES: Record<string, string> = {
+  core: "Dragons Down",
+  desolation: "Desolation",
+  "natives-and-legends": "Natives and Legends",
+  "eastern-reaches": "Eastern Reaches",
+};
+
+function lineageBoxFromAncestry(ancestry: string[]): string | undefined {
+  const lineageBag = ancestry.find((entry) => /^Lineage\s+/i.test(entry));
+  if (!lineageBag) return "Dragons Down";
+  const raw = lineageBag
+    .replace(/^Lineage\s+/i, "")
+    .trim()
+    .toLowerCase();
+  return CLASS_BOX_NAMES[raw] ?? titleCaseWords(raw);
+}
+
+function compareCardCells(a: TTSCardImage, b: TTSCardImage): number {
+  return (
+    a.faceURL.localeCompare(b.faceURL) ||
+    a.row - b.row ||
+    a.col - b.col ||
+    a.backURL.localeCompare(b.backURL)
+  );
 }
 
 function classComponentKey(name: string): string {
@@ -1351,7 +1463,8 @@ function classSetupSideFromLua(
   }
 
   const cubes: TTSClassSetupCube[] = [];
-  const cubePattern = /take_cube\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*(\d+)/g;
+  const cubePattern =
+    /take_cube(?:_race)?\(\s*"([^"]+)"\s*,\s*"([^"]+)"\s*,\s*(\d+)/g;
   let cubeMatch: RegExpExecArray | null;
   while ((cubeMatch = cubePattern.exec(body))) {
     cubes.push({

@@ -4,6 +4,7 @@ import {
   extractCards,
   extractChips,
   extractClasses,
+  extractLineages,
   extractCivilisationTokens,
   extractCivLocations,
   extractItems,
@@ -537,6 +538,87 @@ end`;
         gold: 23,
       },
     });
+  });
+});
+
+describe("extractLineages", () => {
+  it("extracts expected lineage cards by advantage title", () => {
+    const save = {
+      ObjectStates: [
+        card("Dwarf (Caver)", 701, "7", SAMPLE_DECK),
+        card("Dwarf (Caver)", 1302, "13", SAMPLE_DECK),
+      ],
+    };
+
+    expect(
+      extractLineages(save, "dd_all_exp", [
+        { source: "core", title: "Dwarf (Caver)" },
+      ]),
+    ).toEqual({
+      Dwarf: [
+        {
+          source: "dd_all_exp",
+          name: "Dwarf",
+          box: "Dragons Down",
+          advantageTitle: "Dwarf (Caver)",
+          cards: [
+            {
+              source: "dd_all_exp",
+              faceURL: "https://example.com/face.png",
+              backURL: "https://example.com/back.png",
+              numWidth: 10,
+              numHeight: 7,
+              row: 0,
+              col: 1,
+              uniqueBack: false,
+            },
+            {
+              source: "dd_all_exp",
+              faceURL: "https://example.com/face.png",
+              backURL: "https://example.com/back.png",
+              numWidth: 10,
+              numHeight: 7,
+              row: 0,
+              col: 2,
+              uniqueBack: false,
+            },
+          ],
+        },
+      ],
+    });
+  });
+
+  it("normalizes TTS lineage title variants", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Lineage DESOLATION",
+          ContainedObjects: [
+            card("Half-Elves (Two-Worlds)", 116, "1", SAMPLE_DECK),
+          ],
+        },
+      ],
+    };
+
+    const lineages = extractLineages(save, "dd_all_exp", [
+      { source: "desolation", title: "Half-Elves (Two Worlds)" },
+    ]);
+
+    expect(lineages["Half-Elf"][0].box).toBe("Desolation");
+    expect(lineages["Half-Elf"][0].cards).toHaveLength(1);
+  });
+
+  it("uses the lineage advantage source for box names", () => {
+    const save = {
+      ObjectStates: [card("Gnome (Inventive)", 122, "1", SAMPLE_DECK)],
+    };
+
+    const lineages = extractLineages(save, "dd_all_exp", [
+      { source: "natives-and-legends", title: "Gnome (Inventive)" },
+    ]);
+
+    expect(lineages.Gnome[0].box).toBe("Natives and Legends");
   });
 });
 

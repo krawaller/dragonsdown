@@ -1,0 +1,586 @@
+{
+  "Auroran": [
+    {
+      "source": "dd_all_exp",
+      "name": "Auroran",
+      "box": "Eastern Reaches",
+      "advantageTitle": "Auroran (Desert Born)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 6,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 7,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 8,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage EASTERN"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 9,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage EASTERN"
+          ]
+        }
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Dwarf": [
+    {
+      "source": "dd_all_exp",
+      "name": "Dwarf",
+      "box": "Dragons Down",
+      "advantageTitle": "Dwarf (Caver)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 0,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 1,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 2,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 3,
+          "uniqueBack": true
+        }
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Elf": [
+    {
+      "source": "dd_all_exp",
+      "name": "Elf",
+      "box": "Dragons Down",
+      "advantageTitle": "Elf (Magical)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 4,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 5,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 6,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 7,
+          "uniqueBack": true
+        }
+      ]
+    }
+  ],
+  "Gnome": [
+    {
+      "source": "dd_all_exp",
+      "name": "Gnome",
+      "box": "Natives and Legends",
+      "advantageTitle": "Gnome (Inventive)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 2,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage NATIVES"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 3,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage NATIVES"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 4,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage NATIVES"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 5,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage NATIVES"
+          ]
+        }
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Half-Elf": [
+    {
+      "source": "dd_all_exp",
+      "name": "Half-Elf",
+      "box": "Desolation",
+      "advantageTitle": "Half-Elves (Two Worlds)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 6,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage DESOLATION"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 7,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage DESOLATION"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 8,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage DESOLATION"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 9,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage DESOLATION"
+          ]
+        }
+      ]
+    }
+  ],
+  "Half-Orc": [
+    {
+      "source": "dd_all_exp",
+      "name": "Half-Orc",
+      "box": "Desolation",
+      "advantageTitle": "Half-Orc (Mountaineer)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 0,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage DESOLATION"
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 2,
+          "col": 1,
+          "uniqueBack": true,
+          "ancestry": [
+            "Lineage DESOLATION"
+          ]
+        }
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Attack",
+              "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Life",
+              "color": "health",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Halfling": [
+    {
+      "source": "dd_all_exp",
+      "name": "Halfling",
+      "box": "Dragons Down",
+      "advantageTitle": "Halfling (Stealthy)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 8,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 0,
+          "col": 9,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 0,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 1,
+          "uniqueBack": true
+        }
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "Human": [
+    {
+      "source": "dd_all_exp",
+      "name": "Human",
+      "box": "Dragons Down",
+      "advantageTitle": "Human (Adapted)",
+      "cards": [
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 2,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 3,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 4,
+          "uniqueBack": true
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/classes/LineagesMale.png",
+          "backURL": "https://dragonsdowndata.com/data/classes/LineagesFemale.png",
+          "numWidth": 10,
+          "numHeight": 4,
+          "row": 1,
+          "col": 5,
+          "uniqueBack": true
+        }
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Speed",
+              "color": "brown",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

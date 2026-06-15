@@ -17,6 +17,7 @@ import {
   extractCivLocations,
   extractItems,
   extractLegendaryLocations,
+  extractLineages,
   extractMapTileMonsters,
   extractMapTiles,
   extractMissions,
@@ -36,6 +37,8 @@ import {
   type CivLocationIndex,
   type ItemIndex,
   type LegendaryLocationIndex,
+  type LineageAdvantageReference,
+  type LineageIndex,
   type MapTileMonsterIndex,
   type MissionIndex,
   type MissionNicknameCorrection,
@@ -58,6 +61,10 @@ const OUT_DIR = path.join(process.cwd(), "data", "tts");
 const DERIVED_DIR = path.join(process.cwd(), "data", "derived");
 const MANUAL_DIR = path.join(process.cwd(), "data", "manual");
 const CLASS_ADVANTAGES_FILE = path.join(DERIVED_DIR, "class-advantages.json");
+const LINEAGE_ADVANTAGES_FILE = path.join(
+  DERIVED_DIR,
+  "lineage-advantages.json",
+);
 const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
   MANUAL_DIR,
   "mission-nickname-corrections.json",
@@ -88,9 +95,13 @@ async function main(): Promise<void> {
   const classAdvantages = await readJsonFile<ClassAdvantageReference[]>(
     CLASS_ADVANTAGES_FILE,
   );
+  const lineageAdvantages = await readJsonFile<LineageAdvantageReference[]>(
+    LINEAGE_ADVANTAGES_FILE,
+  );
 
   const cards: CardIndex = {};
   const classes: ClassIndex = {};
+  const lineages: LineageIndex = {};
   const boards: BoardIndex = [];
   const chips: ChipIndex = {};
   const items: ItemIndex = {};
@@ -113,6 +124,7 @@ async function main(): Promise<void> {
 
     const cardIndex = extractCards(save, stem);
     const classIndex = extractClasses(save, stem, classAdvantages);
+    const lineageIndex = extractLineages(save, stem, lineageAdvantages);
     const boardIndex = extractBoards(save, stem);
     const chipIndex = extractChips(save, stem);
     const itemIndex = extractItems(save, stem);
@@ -132,7 +144,7 @@ async function main(): Promise<void> {
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
     );
 
     boards.push(...boardIndex);
@@ -151,6 +163,14 @@ async function main(): Promise<void> {
     }
     for (const [name, items] of Object.entries(classIndex)) {
       const bucket = (classes[name] ??= []);
+      for (const item of items) {
+        const existing = bucket.find((entry) => entry.source === item.source);
+        if (existing) continue;
+        bucket.push(item);
+      }
+    }
+    for (const [name, items] of Object.entries(lineageIndex)) {
+      const bucket = (lineages[name] ??= []);
       for (const item of items) {
         const existing = bucket.find((entry) => entry.source === item.source);
         if (existing) continue;
@@ -328,6 +348,7 @@ async function main(): Promise<void> {
   await writeJson(path.join(OUT_DIR, "boards.json"), boards);
   await writeSorted(path.join(OUT_DIR, "cards.json"), cards);
   await writeSorted(path.join(OUT_DIR, "classes.json"), classes);
+  await writeSorted(path.join(OUT_DIR, "lineages.json"), lineages);
   await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
   await writeSorted(path.join(OUT_DIR, "items.json"), items);
   await writeSorted(
@@ -359,6 +380,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ classes.json: ${Object.keys(classes).length} names, ${countEntries(classes)} classes total`,
+  );
+  console.log(
+    `→ lineages.json: ${Object.keys(lineages).length} names, ${countEntries(lineages)} lineages total`,
   );
   console.log(
     `→ chips.json: ${Object.keys(chips).length} names, ${countEntries(chips)} chips total`,
