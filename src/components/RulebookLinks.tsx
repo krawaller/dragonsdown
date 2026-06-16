@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import type { RulebookLink } from "@/lib/rulebook-links";
 
@@ -25,12 +26,23 @@ export function RulebookLinks({
             <div className="p-3">
               <Link
                 href={link.href}
-                className="block min-w-0 text-sm hover:underline"
+                className="flex min-w-0 items-center gap-3 text-sm hover:underline"
               >
-                <span className="font-medium">{link.sectionTitle}</span>
-                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                  {link.docTitle}
-                  {link.location ? ` · ${locationLabel(link.location)}` : ""}
+                {link.icon && (
+                  <Image
+                    src={link.icon}
+                    alt=""
+                    width={40}
+                    height={40}
+                    className="h-10 w-10 shrink-0 object-contain"
+                  />
+                )}
+                <span className="min-w-0">
+                  <span className="block font-medium">{link.sectionTitle}</span>
+                  <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                    {link.docTitle}
+                    {link.location ? ` · ${locationLabel(link.location)}` : ""}
+                  </span>
                 </span>
               </Link>
             </div>

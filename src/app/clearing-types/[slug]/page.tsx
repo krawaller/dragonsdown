@@ -1,9 +1,18 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { RulebookLinks } from "@/components/RulebookLinks";
 import {
+  type ClearingTypeId,
   getAllClearingTypes,
   getClearingTypeBySlug,
 } from "@/lib/clearing-types";
+import {
+  resolveClassAdvantageRulebookLinks,
+  resolveLineageAdvantageRulebookLinks,
+  type RulebookLink,
+} from "@/lib/rulebook-links";
+import { getClassBySlug, getLineageBySlug } from "@/lib/tts/lookup";
+import clearingTypeRules from "../../../../data/manual/clearing-type-rules.json";
 
 export function generateStaticParams() {
   return getAllClearingTypes().map((entry) => ({ slug: entry.slug }));
@@ -17,6 +26,7 @@ export default async function ClearingTypePage({
   const { slug } = await params;
   const clearingType = getClearingTypeBySlug(slug);
   if (!clearingType) notFound();
+  const rulebookLinks = await resolveClearingTypeRulebookLinks(clearingType.id);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -37,6 +47,12 @@ export default async function ClearingTypePage({
         {clearingType.clearingCount} clearing
         {clearingType.clearingCount === 1 ? "" : "s"}
       </p>
+
+      <RulebookLinks
+        links={rulebookLinks}
+        heading="Rulebook"
+        className="mb-10"
+      />
 
       <section>
         <h2 className="text-xl font-semibold mb-3">Map Tiles</h2>
@@ -59,3 +75,72 @@ export default async function ClearingTypePage({
     </main>
   );
 }
+
+type ClearingTypeRuleReferences = Partial<
+  Record<
+    ClearingTypeId,
+    {
+      classes?: string[];
+      lineages?: string[];
+    }
+  >
+>;
+
+async function resolveClearingTypeRulebookLinks(
+  clearingType: ClearingTypeId,
+): Promise<RulebookLink[]> {
+  const references = (clearingTypeRules as ClearingTypeRuleReferences)[
+    clearingType
+  ];
+  if (!references) return [];
+
+  const links = await Promise.all([
+    ...uniqueSlugs(references.lineages).map((slug) =>
+      resolveLineageRulebookLinks(slug),
+    ),
+    ...uniqueSlugs(references.classes).map((slug) =>
+      resolveClassRulebookLinks(slug),
+    ),
+  ]);
+
+  return uniqueRulebookLinks(links.flat());
+}
+
+async function resolveClassRulebookLinks(
+  slug: string,
+): Promise<RulebookLink[]> {
+  const entry = getClassBySlug(CLASS_RULE_ALIASES[slug] ?? slug);
+  const ttsClass = entry?.classes[0];
+  if (!entry || !ttsClass) {
+    throw new Error(`Unknown clearing type class rule reference: ${slug}`);
+  }
+  return resolveClassAdvantageRulebookLinks(ttsClass.advantageTitle);
+}
+
+async function resolveLineageRulebookLinks(
+  slug: string,
+): Promise<RulebookLink[]> {
+  const entry = getLineageBySlug(slug);
+  const lineage = entry?.lineages[0];
+  if (!entry || !lineage) {
+    throw new Error(`Unknown clearing type lineage rule reference: ${slug}`);
+  }
+  return resolveLineageAdvantageRulebookLinks(lineage.advantageTitle);
+}
+
+function uniqueSlugs(slugs: string[] = []): string[] {
+  return Array.from(new Set(slugs));
+}
+
+function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {
+  return Array.from(
+    new Map(
+      links.map((link) => [`${link.docSlug}:${link.sectionId}`, link] as const),
+    ).values(),
+  );
+}
+
+const CLASS_RULE_ALIASES: Record<string, string> = {
+  fighter: "warrior",
+  thief: "rogue",
+};

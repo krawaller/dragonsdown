@@ -1,0 +1,16 @@
+{
+  "caves": {
+    "lineages": ["dwarf"]
+  },
+  "mountains": {
+    "lineages": ["half-orc"],
+    "classes": ["barbarian"]
+  },
+  "woods": {
+    "classes": ["ranger"]
+  },
+  "desert": {
+    "lineages": ["auroran"],
+    "classes": ["thief"]
+  }
+}
