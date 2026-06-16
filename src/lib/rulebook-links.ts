@@ -1,5 +1,5 @@
-import { normalizeTitle } from "@/lib/tts";
-import { getMagicTypeById } from "@/lib/magic";
+import { getMagicTypeById } from "./magic";
+import { normalizeTitle } from "./tts";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import {
   RULEBOOKS,
@@ -119,7 +119,10 @@ export async function resolveLineageAdvantageRulebookLinks(
 ): Promise<RulebookLink[]> {
   return resolveRulebookLinks({
     doc: ANY_DOC,
-    headings: ["Lineage Advantages", advantageTitle],
+    headings: [
+      "Lineage Advantages",
+      lineageAdvantageTitleAlternatives(advantageTitle).join("|"),
+    ],
   });
 }
 
@@ -219,14 +222,31 @@ function childSections(sections: Section[], parent: Section): Section[] {
 }
 
 function titlesMatch(left: string, right: string): boolean {
-  const normalizedLeft = normalizeTitle(left);
+  const normalizedLeft = normalizeRulebookHeadingTitle(left);
   return titleAlternatives(right).some(
-    (title) => normalizedLeft === normalizeTitle(title),
+    (title) => normalizedLeft === normalizeRulebookHeadingTitle(title),
   );
+}
+
+function normalizeRulebookHeadingTitle(title: string): string {
+  return normalizeTitle(title)
+    .replace(/[.:]+$/g, "")
+    .trim();
 }
 
 function titleAlternatives(title: string): string[] {
   return title.split("|").map((part) => part.trim());
+}
+
+function lineageAdvantageTitleAlternatives(title: string): string[] {
+  const match = title.match(/^(.*?)(\s+\(.*\))?$/);
+  if (!match) return [title];
+
+  const base = match[1]?.trim();
+  if (!base) return [title];
+
+  const suffix = match[2] ?? "";
+  return Array.from(new Set(titleForms(base)), (form) => `${form}${suffix}`);
 }
 
 function uniqueNonEmpty(values: string[]): string[] {
@@ -322,6 +342,8 @@ function nativeTitleForms(title: string): string[] {
 }
 
 function titleForms(title: string): string[] {
+  if (title.endsWith("ves")) return [title, `${title.slice(0, -3)}f`];
+  if (title.endsWith("f")) return [title, `${title.slice(0, -1)}ves`];
   if (title.endsWith("s")) return [title, title.slice(0, -1)];
   return [title, `${title}s`];
 }
