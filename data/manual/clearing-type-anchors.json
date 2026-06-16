@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Cursed Canyon",
+    "front": ["desert", "desert", "plain", "plain", "cave", "cave"],
+    "back": ["plain", "plain", "desert", "desert", "cave", "cave"]
+  },
+  {
+    "name": "Deep Woods",
+    "front": ["woods", "woods", "woods", "woods", "woods", "mountains"],
+    "back": ["woods", "woods", "woods", "woods", "woods", "mountains"]
+  },
+  {
+    "name": "Moorland",
+    "front": ["woods", "plains", "swamp", "swamp", "swamp", "swamp"],
+    "back": ["woods", "plains", "swamp", "swamp", "swamp", "swamp"]
+  },
+  {
+    "name": "Ravaging Run",
+    "front": ["plains", "plains", "woods", "river", "river", "river"],
+    "back": ["plains", "plains", "woods", "river", "river", "river"]
+  }
+]

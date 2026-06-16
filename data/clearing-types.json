@@ -1,0 +1,2158 @@
+[
+  {
+    "name": "Ancient Hole",
+    "terrain": "Cruel Caves",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 1.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -0.2,
+        "y": 2.3,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.6,
+        "y": 1.4,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 2,
+        "y": -0.5,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -0.5,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Black Caves",
+    "terrain": "Cruel Caves",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 1.2,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": -0.2,
+        "y": 2.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -0.1,
+        "y": 0.5,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": 1,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 0.9,
+        "y": -1.3,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dark Passes",
+    "terrain": "Cruel Caves",
+    "clearings": [
+      {
+        "x": 1.5,
+        "y": -1.4,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": -1.1,
+        "y": -1.6,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 0.6,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.2,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 1.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -0.4,
+        "y": 2.2,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Forlorn Tunnel",
+    "terrain": "Cruel Caves",
+    "clearings": [
+      {
+        "x": 1.5,
+        "y": -1.4,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.1,
+        "y": -1.6,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 0.6,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": -0.4,
+        "y": 2.2,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": 1.3,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.3,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mine",
+    "terrain": "Cruel Caves",
+    "clearings": [
+      {
+        "x": -1.15,
+        "y": 1.15,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -2,
+        "y": -1.1,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": -1.3,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.4,
+        "y": 0.9,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Secret Dens",
+    "terrain": "Cruel Caves",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": 1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -0.2,
+        "y": 0.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": 1.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -0.2,
+        "y": 2.2,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -1.3,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": -1.1,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cursed Canyon",
+    "terrain": "Dreadful Deserts",
+    "clearings": [
+      {
+        "x": 1.4,
+        "y": -1.8,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0.5,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.9,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -0.3,
+        "y": -0.8,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -2.5,
+        "y": -1.4,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": -2.4,
+        "y": 1.3,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dry Winds",
+    "terrain": "Dreadful Deserts",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -0.1,
+        "y": 1.4,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -2.4,
+        "y": -1.3,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": -2.3,
+        "y": 1,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -0.5,
+        "y": -0.6,
+        "type": [
+          "desert",
+          "desert"
+        ]
+      },
+      {
+        "x": 1.4,
+        "y": -1.5,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Medina",
+    "terrain": "Dreadful Deserts",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": -1,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 2.4,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": -2,
+        "y": -1.2,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Moving Mounds",
+    "terrain": "Dreadful Deserts",
+    "clearings": [
+      {
+        "x": -0.2,
+        "y": 0.1,
+        "type": [
+          "desert",
+          "desert"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": 1.3,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -0.3,
+        "y": 2.5,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": -2.4,
+        "y": 1.3,
+        "type": [
+          "desert",
+          "desert"
+        ]
+      },
+      {
+        "x": -2.3,
+        "y": -1.4,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": 1.4,
+        "y": -1.5,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rippled Expanse",
+    "terrain": "Dreadful Deserts",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": -1.2,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": 1,
+        "y": 1.8,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -1.1,
+        "y": 2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -2.1,
+        "y": 0.4,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.4,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": 0.3,
+        "y": 0,
+        "type": [
+          "desert",
+          "desert"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shifting Sands",
+    "terrain": "Dreadful Deserts",
+    "clearings": [
+      {
+        "x": 1.6,
+        "y": -0.8,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": 1.2,
+        "type": [
+          "desert",
+          "desert"
+        ]
+      },
+      {
+        "x": -0.3,
+        "y": 0.1,
+        "type": [
+          "desert",
+          "plains"
+        ]
+      },
+      {
+        "x": -2.5,
+        "y": 1.3,
+        "type": [
+          "desert",
+          "desert"
+        ]
+      },
+      {
+        "x": -2.4,
+        "y": -1.4,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      },
+      {
+        "x": -0.3,
+        "y": 2.5,
+        "type": [
+          "plains",
+          "desert"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Barriers",
+    "terrain": "Malevolent Mountains",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": -1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.8,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -0.2,
+        "y": -1.7,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": 1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": -0.7,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -1.7,
+        "y": 1.1,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "High Pass",
+    "terrain": "Malevolent Mountains",
+    "clearings": [
+      {
+        "x": -2.2,
+        "y": 1.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 1.95,
+        "y": 1.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0.2,
+        "y": 2.5,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.7,
+        "y": -1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Keep",
+    "terrain": "Malevolent Mountains",
+    "clearings": [
+      {
+        "x": -1.95,
+        "y": 1.15,
+        "type": [
+          "swamps",
+          "woods"
+        ]
+      },
+      {
+        "x": -0.5,
+        "y": -1.9,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0.5,
+        "y": 1.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -1.2,
+        "type": [
+          "swamps",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lonely Mountains",
+    "terrain": "Malevolent Mountains",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": 1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 1.9,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.7,
+        "y": -1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -1.6,
+        "y": -0.8,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Narrow Ridges",
+    "terrain": "Malevolent Mountains",
+    "clearings": [
+      {
+        "x": -1.6,
+        "y": 1.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0.2,
+        "y": 0.4,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -2,
+        "y": -1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0.2,
+        "y": -1.7,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 2.1,
+        "y": 0.1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tri-Peaks",
+    "terrain": "Malevolent Mountains",
+    "clearings": [
+      {
+        "x": -1.95,
+        "y": -1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.4,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 1.95,
+        "y": 1.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.7,
+        "y": -1.1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -1.8,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Flatlands",
+    "terrain": "Perilous Plains",
+    "clearings": [
+      {
+        "x": -1.3,
+        "y": 1.7,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.6,
+        "y": 1.5,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -2.05,
+        "y": -1.1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -1.6,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 2.05,
+        "y": -0.85,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grassy Plains",
+    "terrain": "Perilous Plains",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": -0.9,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.3,
+        "y": 1.8,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": -0.8,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -1.7,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.1,
+        "y": 1.9,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Meadows",
+    "terrain": "Perilous Plains",
+    "clearings": [
+      {
+        "x": 0,
+        "y": -1.7,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.1,
+        "y": -0.5,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.3,
+        "y": 1.7,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 2.1,
+        "y": 0,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.1,
+        "y": 1.9,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Twisted Steppe",
+    "terrain": "Perilous Plains",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 1.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -0.2,
+        "y": 2.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0.3,
+        "y": 0.4,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 2,
+        "y": -0.5,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -1.7,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Unbroken Lands",
+    "terrain": "Perilous Plains",
+    "clearings": [
+      {
+        "x": -1.8,
+        "y": -0.9,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 1.8,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -1.6,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.7,
+        "y": 1.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -0.7,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.7,
+        "y": 1.1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Village",
+    "terrain": "Perilous Plains",
+    "clearings": [
+      {
+        "x": -1.6,
+        "y": -0.9,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.6,
+        "y": -1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.1,
+        "y": 1.6,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -0.9,
+        "y": 1.6,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Brackish Span",
+    "terrain": "Ruthless Riverlands",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": -0.6,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 0.6,
+        "y": 1.7,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 0.1,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": -1.2,
+        "y": 1.8,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": -1.2,
+        "y": -1.7,
+        "type": [
+          "river",
+          "river"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Headwater",
+    "terrain": "Ruthless Riverlands",
+    "clearings": [
+      {
+        "x": -2.3,
+        "y": -0.9,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -1.8,
+        "y": 1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0.3,
+        "y": -0.5,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0.2,
+        "y": 2.4,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0.6,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -1.6,
+        "type": [
+          "river",
+          "river"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Port",
+    "terrain": "Ruthless Riverlands",
+    "clearings": [
+      {
+        "x": 2.2,
+        "y": -0.5,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.6,
+        "y": 1.8,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1,
+        "y": -0.6,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 0.8,
+        "y": 1.5,
+        "type": [
+          "river",
+          "river"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ravaging Run",
+    "terrain": "Ruthless Riverlands",
+    "clearings": [
+      {
+        "x": 1.6,
+        "y": -1.1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2.4,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -2,
+        "y": -0.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.6,
+        "y": 1.6,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 0.3,
+        "y": 0.4,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": -1.2,
+        "y": -1.6,
+        "type": [
+          "river",
+          "river"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Silver Current",
+    "terrain": "Ruthless Riverlands",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -0.1,
+        "y": 1.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.3,
+        "y": -1.4,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.2,
+        "y": 0.9,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": -0.3,
+        "y": -0.6,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 1.4,
+        "y": -1.7,
+        "type": [
+          "river",
+          "river"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Soleford",
+    "terrain": "Ruthless Riverlands",
+    "clearings": [
+      {
+        "x": 2,
+        "y": 0.1,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 0.6,
+        "y": 1.7,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 0.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.2,
+        "y": 1.9,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": 1.3,
+        "y": -1.5,
+        "type": [
+          "river",
+          "river"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Decayed Swamp",
+    "terrain": "Sinister Swamps",
+    "clearings": [
+      {
+        "x": 0,
+        "y": 2.3,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 0.7,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.2,
+        "y": -1.6,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.1,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 1.95,
+        "y": 0.6,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Foul Swamp",
+    "terrain": "Sinister Swamps",
+    "clearings": [
+      {
+        "x": 1.2,
+        "y": -1.6,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.3,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 0.6,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0.6,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2.3,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Moorland",
+    "terrain": "Sinister Swamps",
+    "clearings": [
+      {
+        "x": 1.3,
+        "y": -1.6,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.3,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 0.6,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0.6,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2.35,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Outpost",
+    "terrain": "Sinister Swamps",
+    "clearings": [
+      {
+        "x": -1.5,
+        "y": -0.9,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 1.6,
+        "y": -1.1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.1,
+        "y": 1.6,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": -0.9,
+        "y": 1.6,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Putrid Waters",
+    "terrain": "Sinister Swamps",
+    "clearings": [
+      {
+        "x": 0.7,
+        "y": 2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.15,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0.5,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 1.6,
+        "y": -1.5,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Quiet Bog",
+    "terrain": "Sinister Swamps",
+    "clearings": [
+      {
+        "x": 1.2,
+        "y": -1.6,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.2,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 1.1,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0.5,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 0.6,
+        "y": 2,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Deep Woods",
+    "terrain": "Wicked Woods",
+    "clearings": [
+      {
+        "x": -1.7,
+        "y": -1.4,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 0.9,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.1,
+        "y": -1.7,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.1,
+        "y": 0.8,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -0.4,
+        "y": 2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Elder Woods",
+    "terrain": "Wicked Woods",
+    "clearings": [
+      {
+        "x": -0.4,
+        "y": 2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": 1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": -0.9,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.6,
+        "y": -1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mirky Woods",
+    "terrain": "Wicked Woods",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.9,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 0.1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": -1.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2.3,
+        "type": [
+          "swamps",
+          "swamps"
+        ]
+      },
+      {
+        "x": 1.5,
+        "y": -1.5,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Oakwood",
+    "terrain": "Wicked Woods",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": -0.9,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0.5,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 2.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.7,
+        "y": -1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -1.9,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sanctuary",
+    "terrain": "Wicked Woods",
+    "clearings": [
+      {
+        "x": -2,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -0.45,
+        "y": -1.9,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.55,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Timberlands",
+    "terrain": "Wicked Woods",
+    "clearings": [
+      {
+        "x": -1.9,
+        "y": -0.9,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -0.4,
+        "y": 2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.5,
+        "y": 1.6,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.6,
+        "y": -1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  }
+]

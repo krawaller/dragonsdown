@@ -17,6 +17,7 @@
     "extract-mission-kinds": "tsx scripts/extract-mission-kinds.ts",
     "extract-tts": "tsx scripts/extract-tts.ts",
     "extract-map-tiles": "tsx scripts/extract-map-tiles.ts",
+    "extract-clearing-types": "python3 scripts/extract-clearing-types.py",
     "missing-cards": "tsx scripts/missing-cards.ts",
     "inspect-fonts": ".venv/bin/python scripts/inspect_fonts.py",
     "find-images": "tsx scripts/find-images.ts",
