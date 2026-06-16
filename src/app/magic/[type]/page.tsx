@@ -1,9 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
 import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { MAGIC_TYPES, getMagicTypeBySlug } from "@/lib/magic";
-import { resolveMagicRulebookLinks } from "@/lib/rulebook-links";
+import {
+  resolveMagicRulebookLinks,
+  type RulebookLink,
+} from "@/lib/rulebook-links";
 import type { TTSClassSetupCube, TTSSpell, TTSSpellCard } from "@/lib/tts";
 import {
   getClassesForMagicCube,
@@ -25,8 +29,20 @@ export default async function MagicTypePage({
   if (!type) notFound();
   const entries = getSpellsByMagic(type.id);
   const classEntries = getClassesForMagicCube(type.id);
-  const rulebookLinks = await resolveMagicRulebookLinks(type.id, "core");
+  const rulebookLinksByMagic = new Map(
+    await Promise.all(
+      MAGIC_TYPES.map(
+        async (magicType) =>
+          [
+            magicType.id,
+            await resolveMagicRulebookLinks(magicType.id, "core"),
+          ] as const,
+      ),
+    ),
+  );
+  const rulebookLinks = rulebookLinksByMagic.get(type.id) ?? [];
   const icon = rulebookLinks.find((link) => Boolean(link.icon))?.icon;
+  const magicIcons = magicIconMap(rulebookLinksByMagic);
   const colorLabel = type.label.replace(/ Magic$/, "");
 
   return (
@@ -61,6 +77,7 @@ export default async function MagicTypePage({
         <MagicCubeClasses
           colorLabel={colorLabel}
           entries={classEntries}
+          magicIcons={magicIcons}
           className="mb-10 max-w-3xl"
         />
       )}
@@ -111,10 +128,12 @@ export default async function MagicTypePage({
 function MagicCubeClasses({
   colorLabel,
   entries,
+  magicIcons,
   className = "",
 }: {
   colorLabel: string;
   entries: MagicCubeStartingClass[];
+  magicIcons: Map<string, string>;
   className?: string;
 }) {
   return (
@@ -136,10 +155,17 @@ function MagicCubeClasses({
             </Link>
             <ul className="space-y-1 text-sm text-zinc-500 dark:text-zinc-400">
               {entry.sides.map((side) => (
-                <li key={side.side}>
+                <li key={side.side} className="flex items-center gap-2">
                   <span className="capitalize">{side.side}</span>
-                  {": "}
-                  {side.cubes.map(classSetupCubeLabel).join(", ")}
+                  <span className="flex flex-wrap gap-1.5">
+                    {side.cubes.map((cube, index) => (
+                      <MagicCube
+                        key={`${side.side}-${index}-${classSetupCubeLabel(cube)}`}
+                        cube={cube}
+                        magicIcons={magicIcons}
+                      />
+                    ))}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -150,15 +176,137 @@ function MagicCubeClasses({
   );
 }
 
+function MagicCube({
+  cube,
+  magicIcons,
+}: {
+  cube: TTSClassSetupCube;
+  magicIcons: Map<string, string>;
+}) {
+  const colors = classSetupCubeColors(cube);
+  const label = classSetupCubeLabel(cube);
+  return (
+    <span
+      className="inline-flex h-7 items-center gap-0.5 rounded border border-zinc-200 bg-white px-1.5 align-middle dark:border-zinc-800 dark:bg-zinc-950"
+      title={label}
+      role="img"
+      aria-label={label}
+    >
+      {Array.from({ length: cube.count }, (_, index) => (
+        <MagicCubeFace key={index} colors={colors} magicIcons={magicIcons} />
+      ))}
+    </span>
+  );
+}
+
+function MagicCubeFace({
+  colors,
+  magicIcons,
+}: {
+  colors: string[];
+  magicIcons: Map<string, string>;
+}) {
+  if (colors.length <= 1) {
+    const color = colors[0] ?? "unknown";
+    return (
+      <MagicCubeShell>
+        <MagicCubeImage color={color} icon={magicIcons.get(color)} />
+      </MagicCubeShell>
+    );
+  }
+
+  const [first, second] = colors;
+  return (
+    <MagicCubeShell>
+      <MagicCubeImage color={first} icon={magicIcons.get(first)} clip="left" />
+      <MagicCubeImage
+        color={second}
+        icon={magicIcons.get(second)}
+        clip="right"
+      />
+    </MagicCubeShell>
+  );
+}
+
+function MagicCubeShell({ children }: { children: ReactNode }) {
+  return (
+    <span className="relative inline-block h-5 w-5 overflow-hidden bg-zinc-100 dark:bg-zinc-900">
+      {children}
+    </span>
+  );
+}
+
+function MagicCubeImage({
+  color,
+  icon,
+  className = "absolute left-1/2 top-1/2 h-[1.2375rem] w-[1.2375rem] max-w-none -translate-x-1/2 -translate-y-1/2 rounded-none border-0",
+  clip,
+}: {
+  color: string;
+  icon?: string;
+  className?: string;
+  clip?: "left" | "right";
+}) {
+  const clipPath =
+    clip === "left"
+      ? "inset(0 50% 0 0)"
+      : clip === "right"
+        ? "inset(0 0 0 50%)"
+        : undefined;
+  if (!icon) {
+    return (
+      <span
+        className={`${className} inline-block bg-zinc-100 dark:bg-zinc-900`}
+        style={clipPath ? { clipPath } : undefined}
+        aria-hidden="true"
+      />
+    );
+  }
+
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={icon}
+      alt=""
+      className={`${className} inline-block bg-zinc-100 object-contain dark:bg-zinc-900`}
+      style={clipPath ? { clipPath } : undefined}
+      data-color={color}
+    />
+  );
+}
+
+function classSetupCubeColors(cube: TTSClassSetupCube): string[] {
+  if (cube.colors?.length) return cube.colors.map(normalizeMagicCubeColor);
+  return [normalizeMagicCubeColor(cube.color)];
+}
+
 function classSetupCubeLabel(cube: TTSClassSetupCube): string {
   const color = cube.colors?.length
-    ? cube.colors.join(" or ")
+    ? cube.colors.map(classSetupCubeColorLabel).join(" or ")
     : classSetupCubeColorLabel(cube.color);
   return `${cube.count} ${color} ${cube.type}`;
 }
 
 function classSetupCubeColorLabel(color: string | undefined): string {
   return color === "any" ? "any color" : (color ?? "unknown");
+}
+
+function normalizeMagicCubeColor(color: string | undefined): string {
+  if (color === "any") return "universal";
+  return color === "grey" ? "gray" : (color ?? "unknown");
+}
+
+function magicIconMap(
+  linksByMagic: Map<string, RulebookLink[]>,
+): Map<string, string> {
+  const icons = new Map<string, string>();
+  for (const type of MAGIC_TYPES) {
+    const icon = linksByMagic
+      .get(type.id)
+      ?.find((link) => Boolean(link.icon))?.icon;
+    if (icon) icons.set(type.id, icon);
+  }
+  return icons;
 }
 
 function copySummary(spell: TTSSpell): string {
