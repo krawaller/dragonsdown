@@ -294,6 +294,8 @@ export type TTSChip = {
   source: string;
   /** Raw monster/group name stored in the chip's TTS `GMNotes`. */
   group: string;
+  /** Narrative chip name, when TTS metadata only provided the group name. */
+  name?: string;
   imageURL: string;
   imageSecondaryURL: string;
   /**
@@ -312,6 +314,43 @@ export function chipTotalCount(chip: TTSChip): number {
 
 /** Output written to data/extracted-from-tts/chips.json. Keyed by normalized `GMNotes`. */
 export type ChipIndex = Record<string, TTSChip[]>;
+
+export type ManualMonsterChipName = {
+  name: string;
+  imageURL: string;
+  imageSecondaryURL?: string;
+};
+
+export type ManualMonsterChipNameIndex = Record<
+  string,
+  ManualMonsterChipName[]
+>;
+
+export function applyManualMonsterChipNames(
+  index: ChipIndex,
+  manualIndex: ManualMonsterChipNameIndex,
+): ChipIndex {
+  const out: ChipIndex = {};
+  for (const [groupKey, chips] of Object.entries(index)) {
+    const manualNames = new Map(
+      (manualIndex[prettifyChipName(groupKey)] ?? []).map((entry) => [
+        chipImageKey(entry.imageURL, entry.imageSecondaryURL ?? ""),
+        entry.name,
+      ]),
+    );
+    out[groupKey] = chips.map((chip) => {
+      const name = manualNames.get(
+        chipImageKey(chip.imageURL, chip.imageSecondaryURL),
+      );
+      return name ? { ...chip, name } : { ...chip };
+    });
+  }
+  return out;
+}
+
+function chipImageKey(imageURL: string, imageSecondaryURL: string): string {
+  return `${imageURL}\n${imageSecondaryURL}`;
+}
 
 export type TTSSiteMonsterChip = {
   name: string;

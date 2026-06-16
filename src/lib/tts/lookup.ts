@@ -89,6 +89,12 @@ const MISSION_FEATURE_FILE = path.join(
   "manual",
   "mission-feature.json",
 );
+const MONSTER_CHIP_NAMES_FILE = path.join(
+  process.cwd(),
+  "data",
+  "manual",
+  "monster-chip-names.json",
+);
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
@@ -111,7 +117,16 @@ let cachedNativeIndex: NativeIndex | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
 let cachedMissionIndex: MissionIndex | null = null;
 let cachedMissionFeatureIndex: Record<string, string | string[]> | null = null;
+let cachedManualMonsterChipNameIndex: ManualMonsterChipNameIndex | null = null;
 let cachedAliases: AliasMap | null = null;
+
+type ManualMonsterChipName = {
+  name: string;
+  imageURL: string;
+  imageSecondaryURL?: string;
+};
+
+type ManualMonsterChipNameIndex = Record<string, ManualMonsterChipName[]>;
 
 function getCardIndex(): CardIndex {
   if (cachedCardIndex !== null) return cachedCardIndex;
@@ -243,6 +258,14 @@ function getMissionFeatureIndex(): Record<string, string | string[]> {
   return cachedMissionFeatureIndex;
 }
 
+function getManualMonsterChipNameIndex(): ManualMonsterChipNameIndex {
+  if (cachedManualMonsterChipNameIndex !== null)
+    return cachedManualMonsterChipNameIndex;
+  cachedManualMonsterChipNameIndex =
+    readJsonOrEmpty<ManualMonsterChipNameIndex>(MONSTER_CHIP_NAMES_FILE);
+  return cachedManualMonsterChipNameIndex;
+}
+
 function readJsonOrEmpty<T>(file: string): T {
   try {
     return JSON.parse(readFileSync(file, "utf-8")) as T;
@@ -282,6 +305,7 @@ export type ChipEntry = {
 
 export type MonsterGroupChip = TTSChip & {
   monsterName?: string;
+  monsterSortOrder?: number;
 };
 
 export type MonsterGroupMapTileSummon = {
@@ -1054,12 +1078,20 @@ function withMonsterNames(
   groupName: string,
   chips: TTSChip[],
 ): MonsterGroupChip[] {
+  const manualNamesByImage = manualMonsterNamesByImageForGroup(groupName);
   const namesByImage = monsterNamesByImageForGroup(groupName);
   return chips
-    .map((chip) => ({
-      ...chip,
-      monsterName: namesByImage.get(chip.imageURL),
-    }))
+    .map((chip) => {
+      const manualName = manualNamesByImage.get(
+        chipImageKey(chip.imageURL, chip.imageSecondaryURL),
+      );
+      return {
+        ...chip,
+        monsterName:
+          manualName?.name ?? chip.name ?? namesByImage.get(chip.imageURL),
+        monsterSortOrder: manualName?.sortOrder,
+      };
+    })
     .sort(compareMonsterGroupChips);
 }
 
@@ -1081,9 +1113,14 @@ function compareMonsterGroupChips(
   b: MonsterGroupChip,
 ): number {
   return (
+    manualMonsterSortValue(a) - manualMonsterSortValue(b) ||
     (a.monsterName ?? "").localeCompare(b.monsterName ?? "") ||
     a.imageURL.localeCompare(b.imageURL)
   );
+}
+
+function manualMonsterSortValue(chip: MonsterGroupChip): number {
+  return chip.monsterSortOrder ?? Number.MAX_SAFE_INTEGER;
 }
 
 function compareNativeGroupChips(
@@ -1116,6 +1153,24 @@ function monsterNamesByImageForGroup(groupName: string): Map<string, string> {
     }
   }
   return names;
+}
+
+function manualMonsterNamesByImageForGroup(
+  groupName: string,
+): Map<string, { name: string; sortOrder: number }> {
+  const names = new Map<string, { name: string; sortOrder: number }>();
+  const entries = getManualMonsterChipNameIndex()[groupName] ?? [];
+  entries.forEach((entry, index) => {
+    names.set(chipImageKey(entry.imageURL, entry.imageSecondaryURL ?? ""), {
+      name: entry.name,
+      sortOrder: index,
+    });
+  });
+  return names;
+}
+
+function chipImageKey(imageURL: string, imageSecondaryURL: string): string {
+  return `${imageURL}\n${imageSecondaryURL}`;
 }
 
 function nativeNamesByImageForGroup(groupName: string): Map<string, string> {

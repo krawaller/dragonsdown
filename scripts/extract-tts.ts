@@ -9,6 +9,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import {
   addToBoxes,
+  applyManualMonsterChipNames,
   extractBoards,
   extractCards,
   extractChips,
@@ -41,6 +42,7 @@ import {
   type LineageAdvantageReference,
   type LineageIndex,
   type MapTileMonsterIndex,
+  type ManualMonsterChipNameIndex,
   type MissionIndex,
   type MissionNicknameCorrection,
   type MissionStatsMapping,
@@ -82,6 +84,10 @@ const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
   "mission-nickname-corrections.json",
 );
 const MISSION_STATS_FILE = path.join(MANUAL_DIR, "mission-stats.json");
+const MONSTER_CHIP_NAMES_FILE = path.join(
+  MANUAL_DIR,
+  "monster-chip-names.json",
+);
 
 /** Add to this list if a future save adds content not present in `dd_all_exp.json`. */
 const SOURCE_FILES = ["dd_all_exp.json"];
@@ -98,6 +104,9 @@ async function main(): Promise<void> {
   >(MISSION_NICKNAME_CORRECTIONS_FILE);
   const missionStats =
     await readJsonFile<MissionStatsMapping[]>(MISSION_STATS_FILE);
+  const manualMonsterChipNames = await readJsonFile<ManualMonsterChipNameIndex>(
+    MONSTER_CHIP_NAMES_FILE,
+  );
   const classAdvantages = await readJsonFile<ClassAdvantageReference[]>(
     CLASS_ADVANTAGES_FILE,
   );
@@ -369,7 +378,10 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "classes.json"), classes);
   await writeSorted(path.join(OUT_DIR, "lineages.json"), lineages);
   await writeSorted(path.join(OUT_DIR, "spells.json"), spells);
-  await writeSorted(path.join(OUT_DIR, "chips.json"), chips);
+  await writeSorted(
+    path.join(OUT_DIR, "chips.json"),
+    applyManualMonsterChipNames(chips, manualMonsterChipNames),
+  );
   await writeSorted(path.join(OUT_DIR, "items.json"), items);
   await writeSorted(
     path.join(OUT_DIR, "legendary-locations.json"),

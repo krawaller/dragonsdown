@@ -1,0 +1,80 @@
+{
+  "Goblins": [
+    {
+      "name": "King",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953788058/576D7F0E1FA1A7DCCA458D709BD5ED5FC11C31DA/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131659281/EF404BF2A0A631B09DBCF9C69F3F473887B898A6/"
+    },
+    {
+      "name": "Peltast",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953787080/F985688A1B5C6C176A4DD363A4E3A9F7EE8445AB/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798521454/BEF1422D3CB2DCE3B28E17F083AF5D84A747A50B/"
+    },
+    {
+      "name": "Battler",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953791441/8DC12F9E1227D4243415FD9DF26D65B174E9EA89/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131661176/56DC6154C000E5390683314E07296B68AEACA2DE/"
+    }
+  ],
+  "Merfolk": [
+    {
+      "name": "Warrior",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15106064978386320859/78192335BCC5A2059E8F91216CC00A794796D092/"
+    },
+    {
+      "name": "Mage 1",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12751125273453748152/C36BCDEA20414EADFDFD416658EB6E19CB026A07/"
+    },
+    {
+      "name": "Mage 2",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13057197507121166927/B2EF500BBF5FE62B3ED15CA20C3E4C85E1CC0837/"
+    },
+    {
+      "name": "Mage 3",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9225658430800702647/38693AAC365818CA8E4DE5772D0CC924ED6AF5A9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17945833962132182002/9CA42FF9D96152C619B954266C710483C7906D60/"
+    },
+    {
+      "name": "Queen",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11690454804909599748/480978F7A9619D6291442BE117656763F8419902/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9583676347847606844/FC86C60E1684E2227899DE6EF2EF2EB028CC7781/"
+    }
+  ],
+  "Kobolds": [
+    {
+      "name": "Kobold Rex",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953775875/B11E9AFA4F63F3B47F2D0F0E97D1E2B203D96604/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798537574/94E14BAF34FC2B2AB12DA5EC7639BF2F778FEB1D/"
+    },
+    {
+      "name": "Kobold",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953776644/26369A5657DC1FEFD848D3DF2DB6B4B1BA8F1D34/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798535562/9D4F6AC9D736F264236F96083773F25C6F2227C6/"
+    }
+  ],
+  "Pirates": [
+    {
+      "name": "Corsair",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10585245099384554849/05CFC8277BB75BB8FE3609D563E18456B87AC9AF/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13730077077099269598/8C4D1E1244BB15017730787D5CBD568E092BBFC7/"
+    },
+    {
+      "name": "Crewman",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12501296330059821983/7171918BDD4FFA6B1BCF22FAC65C40142026F161/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14645777771124407839/2965BE1EAA61182EDD6CD613D9B7AC4AEE5E6920/"
+    },
+    {
+      "name": "Captain",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13403101809927545496/B8B1229978CE6B54CEB3EA5A1EBDF3FBE3303B36/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16021899067304039134/4384562515FEFD6FF8F31EDF7D9C52BDC8F51350/"
+    },
+    {
+      "name": "First Mate",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17491937182034965384/198FCA45D98207ABA0294D12BB4D3B9639EB0B04/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/18437235051697202240/B2CF21012ED3E304A576DEE4AD2556A5C7AB4D4A/"
+    }
+  ]
+}

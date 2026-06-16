@@ -772,7 +772,8 @@
           ],
           "count": 4
         }
-      ]
+      ],
+      "name": "King"
     },
     {
       "source": "dd_all_exp",
@@ -787,7 +788,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Peltast"
     },
     {
       "source": "dd_all_exp",
@@ -802,7 +804,8 @@
           ],
           "count": 5
         }
-      ]
+      ],
+      "name": "Battler"
     }
   ],
   "GreatDrake": [
@@ -993,7 +996,8 @@
           ],
           "count": 9
         }
-      ]
+      ],
+      "name": "Kobold"
     },
     {
       "source": "dd_all_exp",
@@ -1008,7 +1012,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Kobold Rex"
     }
   ],
   "Lamias": [
@@ -1238,7 +1243,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Warrior"
     },
     {
       "source": "dd_all_exp",
@@ -1253,7 +1259,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Mage 1"
     },
     {
       "source": "dd_all_exp",
@@ -1268,7 +1275,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Mage 2"
     },
     {
       "source": "dd_all_exp",
@@ -1283,7 +1291,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Mage 3"
     },
     {
       "source": "dd_all_exp",
@@ -1298,7 +1307,8 @@
           ],
           "count": 6
         }
-      ]
+      ],
+      "name": "Queen"
     }
   ],
   "Mummy": [
@@ -1539,7 +1549,8 @@
           ],
           "count": 5
         }
-      ]
+      ],
+      "name": "Crewman"
     },
     {
       "source": "dd_all_exp",
@@ -1554,7 +1565,8 @@
           ],
           "count": 3
         }
-      ]
+      ],
+      "name": "Corsair"
     },
     {
       "source": "dd_all_exp",
@@ -1569,7 +1581,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Captain"
     },
     {
       "source": "dd_all_exp",
@@ -1584,7 +1597,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "First Mate"
     }
   ],
   "priests": [

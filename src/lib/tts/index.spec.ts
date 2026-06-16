@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
 import {
+  applyManualMonsterChipNames,
   extractBoards,
   extractCards,
   extractChips,
@@ -1184,6 +1185,27 @@ describe("extractChips", () => {
       ],
     };
     expect(extractChips(save, "eastern")).toEqual({});
+  });
+
+  it("applies manual narrative names by group and image pair", () => {
+    const save = {
+      ObjectStates: [
+        chip("Goblins", "king-face.png", "king-back.png"),
+        chip("Goblins", "other-face.png", "other-back.png"),
+      ],
+    };
+    const out = applyManualMonsterChipNames(extractChips(save, "eastern"), {
+      Goblins: [
+        {
+          name: "King",
+          imageURL: "king-face.png",
+          imageSecondaryURL: "king-back.png",
+        },
+      ],
+    });
+
+    expect(out.Goblins[0].name).toBe("King");
+    expect(out.Goblins[1].name).toBeUndefined();
   });
 });
 
