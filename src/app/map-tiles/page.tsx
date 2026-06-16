@@ -12,10 +12,11 @@ import {
   getMissionsForMapTile,
   getMonsterGroupsForMapTile,
 } from "@/lib/tts/lookup";
+import { getClearingTypeTiles } from "@/lib/clearing-types";
 import tiles from "../../../data/extracted-from-tts/map-tiles.json";
 
 export default function MapTilesPage() {
-  const mapTiles = tiles as MapTile[];
+  const mapTiles = withClearingTypes(tiles as MapTile[]);
   const civLocations: MapTileCivLocation[] = getAllCivLocations().map(
     ({ name, slug, location }) => ({
       name,
@@ -59,4 +60,25 @@ export default function MapTilesPage() {
       </Suspense>
     </main>
   );
+}
+
+function withClearingTypes(mapTiles: MapTile[]): MapTile[] {
+  const clearingTypesByTile = new Map(
+    getClearingTypeTiles().map((tile) => [tileKey(tile), tile]),
+  );
+  return mapTiles.map((tile) => {
+    const clearingTypeTile = clearingTypesByTile.get(tileKey(tile));
+    if (!clearingTypeTile) return tile;
+    return {
+      ...tile,
+      clearings: tile.clearings.map((clearing, index) => ({
+        ...clearing,
+        type: clearingTypeTile.clearings[index]?.type,
+      })),
+    };
+  });
+}
+
+function tileKey(tile: { terrain: string; name: string }): string {
+  return `${tile.terrain}\u0000${tile.name}`;
 }

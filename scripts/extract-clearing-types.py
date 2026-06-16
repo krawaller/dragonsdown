@@ -107,7 +107,7 @@ def build_prototypes(
     tiles_by_name: dict[str, MapTile],
     anchors: list[ClearingTypeAnchor],
     image_files: list[Path],
-) -> dict[ClearingType, tuple[float, float, float]]:
+) -> dict[ClearingType, list[tuple[float, float, float]]]:
     samples: dict[ClearingType, list[tuple[float, float, float]]] = {}
     for anchor in anchors:
         tile = tiles_by_name.get(anchor["name"])
@@ -124,10 +124,7 @@ def build_prototypes(
     if missing:
         raise ValueError(f"manual anchors do not cover clearing types: {sorted(missing)}")
 
-    return {
-        clearing_type: median_feature(values)
-        for clearing_type, values in samples.items()
-    }
+    return samples
 
 
 def check_anchor_counts(tile: MapTile, anchor: ClearingTypeAnchor) -> None:
@@ -143,7 +140,7 @@ def check_anchor_counts(tile: MapTile, anchor: ClearingTypeAnchor) -> None:
 
 def classify_tiles(
     map_tiles: list[MapTile],
-    prototypes: dict[ClearingType, tuple[float, float, float]],
+    prototypes: dict[ClearingType, list[tuple[float, float, float]]],
     image_files: list[Path],
 ) -> list[dict[str, Any]]:
     output = []
@@ -244,14 +241,21 @@ def median_feature(values: list[tuple[float, float, float]]) -> tuple[float, flo
 
 def classify_feature(
     feature: tuple[float, float, float],
-    prototypes: dict[ClearingType, tuple[float, float, float]],
+    prototypes: dict[ClearingType, list[tuple[float, float, float]]],
 ) -> ClearingType:
     _hue, saturation, value = feature
     if saturation < 0.18 and value > 0.65:
         return "river"
     if saturation < 0.18:
         return "caves"
-    return min(prototypes, key=lambda clearing_type: feature_distance(feature, prototypes[clearing_type]))
+    return min(prototypes, key=lambda clearing_type: feature_distance_to_type(feature, prototypes[clearing_type]))
+
+
+def feature_distance_to_type(
+    feature: tuple[float, float, float],
+    samples: list[tuple[float, float, float]],
+) -> float:
+    return min(feature_distance(feature, sample) for sample in samples)
 
 
 def feature_distance(

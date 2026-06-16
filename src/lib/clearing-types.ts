@@ -1,0 +1,138 @@
+import { slugify } from "@/lib/slug";
+import clearingTypeTiles from "../../data/clearing-types.json";
+
+export const CLEARING_TYPES = [
+  { id: "plains", label: "Plains" },
+  { id: "caves", label: "Caves" },
+  { id: "mountains", label: "Mountains" },
+  { id: "woods", label: "Woods" },
+  { id: "swamps", label: "Swamps" },
+  { id: "river", label: "River" },
+  { id: "desert", label: "Desert" },
+] as const;
+
+export type ClearingTypeId = (typeof CLEARING_TYPES)[number]["id"];
+export type MapTileSide = "front" | "back";
+
+export type ClearingTypeClearing = {
+  x: number;
+  y: number;
+  type: [ClearingTypeId, ClearingTypeId];
+};
+
+export type ClearingTypeTile = {
+  name: string;
+  terrain: string;
+  clearings: ClearingTypeClearing[];
+};
+
+export type ClearingTypeOccurrence = {
+  tileName: string;
+  terrain: string;
+  side: MapTileSide;
+  count: number;
+  href: string;
+};
+
+export type ClearingTypeEntry = {
+  id: ClearingTypeId;
+  slug: string;
+  label: string;
+  occurrences: ClearingTypeOccurrence[];
+  tileCount: number;
+  clearingCount: number;
+};
+
+const CLEARING_TYPE_LABELS = new Map(
+  CLEARING_TYPES.map((type) => [type.id, type.label]),
+);
+
+export function getAllClearingTypes(): ClearingTypeEntry[] {
+  return CLEARING_TYPES.map((type) => clearingTypeEntry(type.id));
+}
+
+export function getClearingTypeBySlug(
+  slug: string,
+): ClearingTypeEntry | undefined {
+  return getAllClearingTypes().find((type) => type.slug === slug);
+}
+
+export function getClearingTypeLabel(type: ClearingTypeId): string {
+  return CLEARING_TYPE_LABELS.get(type) ?? type;
+}
+
+export function getClearingTypeTiles(): ClearingTypeTile[] {
+  return clearingTypeTiles as ClearingTypeTile[];
+}
+
+export function mapTileHref({
+  terrain,
+  tileName,
+  side,
+}: {
+  terrain: string;
+  tileName: string;
+  side: MapTileSide;
+}): string {
+  const params = new URLSearchParams();
+  params.set("terrain", terrain);
+  params.set("tile", tileName);
+  params.set("side", side);
+  return `/map-tiles?${params.toString()}`;
+}
+
+function clearingTypeEntry(type: ClearingTypeId): ClearingTypeEntry {
+  const occurrences = getClearingTypeTiles()
+    .flatMap((tile) => {
+      const frontCount = tile.clearings.filter(
+        (clearing) => clearing.type[0] === type,
+      ).length;
+      const backCount = tile.clearings.filter(
+        (clearing) => clearing.type[1] === type,
+      ).length;
+      return [
+        occurrenceFor(tile, type, "front", frontCount),
+        occurrenceFor(tile, type, "back", backCount),
+      ].filter((occurrence) => occurrence.count > 0);
+    })
+    .sort(compareOccurrences);
+
+  return {
+    id: type,
+    slug: slugify(type),
+    label: getClearingTypeLabel(type),
+    occurrences,
+    tileCount: new Set(occurrences.map((occurrence) => occurrence.tileName))
+      .size,
+    clearingCount: occurrences.reduce(
+      (sum, occurrence) => sum + occurrence.count,
+      0,
+    ),
+  };
+}
+
+function occurrenceFor(
+  tile: ClearingTypeTile,
+  type: ClearingTypeId,
+  side: MapTileSide,
+  count: number,
+): ClearingTypeOccurrence {
+  return {
+    tileName: tile.name,
+    terrain: tile.terrain,
+    side,
+    count,
+    href: mapTileHref({ terrain: tile.terrain, tileName: tile.name, side }),
+  };
+}
+
+function compareOccurrences(
+  left: ClearingTypeOccurrence,
+  right: ClearingTypeOccurrence,
+): number {
+  return (
+    left.terrain.localeCompare(right.terrain) ||
+    left.tileName.localeCompare(right.tileName) ||
+    left.side.localeCompare(right.side)
+  );
+}

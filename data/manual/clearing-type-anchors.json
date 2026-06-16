@@ -18,5 +18,10 @@
     "name": "Ravaging Run",
     "front": ["plains", "plains", "woods", "river", "river", "river"],
     "back": ["plains", "plains", "woods", "river", "river", "river"]
+  },
+  {
+    "name": "Keep",
+    "front": ["woods", "mountains", "mountains", "plains"],
+    "back": ["woods", "mountains", "mountains", "plains"]
   }
 ]

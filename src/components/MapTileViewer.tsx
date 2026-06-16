@@ -3,6 +3,7 @@
 import { useEffect, useMemo } from "react";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import type { ClearingTypeId } from "@/lib/clearing-types";
 
 const TILE_COORDINATE_EXTENT = 3;
 const TILE_DISPLAY_ROTATION_DEGREES = -30;
@@ -14,7 +15,13 @@ export type MapTile = {
   terrain: string;
   imageUrl: string;
   imageSecondaryUrl: string;
-  clearings: { x: number; y: number }[];
+  clearings: MapTileClearing[];
+};
+
+export type MapTileClearing = {
+  x: number;
+  y: number;
+  type?: [ClearingTypeId, ClearingTypeId];
 };
 
 export type MapTileCivLocation = {
@@ -228,15 +235,39 @@ export function MapTileViewer({
                 alt={`${selectedTile.name} ${showBack ? "back" : "front"}`}
                 className="absolute inset-0 block h-full w-full -rotate-[30deg] object-contain"
               />
-              <div className="pointer-events-none absolute inset-0">
-                {selectedTile.clearings.map((clearing, index) => (
-                  <span
-                    key={`${clearing.x}-${clearing.y}-${index}`}
-                    aria-hidden="true"
-                    className="absolute size-[15%] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/90 bg-sky-400/30 ring-1 ring-sky-700/70"
-                    style={clearingStyle(clearing)}
-                  />
-                ))}
+              <div className="absolute inset-0">
+                {selectedTile.clearings.map((clearing, index) => {
+                  const clearingType = clearing.type?.[showBack ? 1 : 0];
+                  const markerClass = clearingType
+                    ? CLEARING_TYPE_MARKER_CLASSES[clearingType]
+                    : "bg-sky-400/30 ring-sky-700/70";
+                  const className = `absolute size-[15%] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/90 ring-1 transition ${markerClass}`;
+                  if (!clearingType) {
+                    return (
+                      <span
+                        key={`${clearing.x}-${clearing.y}-${index}`}
+                        aria-hidden="true"
+                        className={className}
+                        style={clearingStyle(clearing)}
+                      />
+                    );
+                  }
+
+                  const clearingTypeLabel = CLEARING_TYPE_LABELS[clearingType];
+                  return (
+                    <Link
+                      key={`${clearing.x}-${clearing.y}-${index}`}
+                      href={`/clearing-types/${clearingType}`}
+                      aria-label={`${selectedTile.name} ${showBack ? "back" : "front"} ${clearingTypeLabel} clearing`}
+                      className={`${className} group z-10 hover:z-20 hover:scale-105 hover:ring-2 hover:ring-zinc-950/70 focus:outline-none focus:ring-2 focus:ring-zinc-950/80 dark:hover:ring-white/80 dark:focus:ring-white/90`}
+                      style={clearingStyle(clearing)}
+                    >
+                      <span className="pointer-events-none absolute bottom-full left-1/2 z-30 mb-2 -translate-x-1/2 whitespace-nowrap rounded bg-zinc-950 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg ring-1 ring-white/20 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100 dark:bg-white dark:text-zinc-950">
+                        {clearingTypeLabel}
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -324,6 +355,26 @@ function paramsFor({
   params.set("side", side);
   return params;
 }
+
+const CLEARING_TYPE_MARKER_CLASSES: Record<ClearingTypeId, string> = {
+  plains: "bg-white/45 ring-zinc-700/70",
+  caves: "bg-black/35 ring-black/80",
+  mountains: "bg-red-500/35 ring-red-900/70",
+  woods: "bg-green-500/35 ring-green-900/70",
+  swamps: "bg-yellow-300/45 ring-yellow-800/70",
+  river: "bg-blue-500/35 ring-blue-900/70",
+  desert: "bg-orange-500/35 ring-orange-900/70",
+};
+
+const CLEARING_TYPE_LABELS: Record<ClearingTypeId, string> = {
+  plains: "Plains",
+  caves: "Caves",
+  mountains: "Mountains",
+  woods: "Woods",
+  swamps: "Swamps",
+  river: "River",
+  desert: "Desert",
+};
 
 function clearingStyle(clearing: { x: number; y: number }) {
   const rotated = rotateClearing(
