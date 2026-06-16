@@ -4,7 +4,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { SpriteCell } from "@/components/CardSprite";
 import { slugify } from "@/lib/slug";
-import type { TTSCardImage, TTSClassSetup, TTSClassSetupSide } from "@/lib/tts";
+import type {
+  TTSCardImage,
+  TTSClassSetup,
+  TTSClassSetupCube,
+  TTSClassSetupSide,
+} from "@/lib/tts";
 
 export function ClassAdvantageCard({
   card,
@@ -84,8 +89,10 @@ function ClassSetupLoadout({ loadout }: { loadout: TTSClassSetupSide }) {
             </h4>
             <ul className="space-y-1 text-sm">
               {loadout.cubes.map((cube, index) => (
-                <li key={`${cube.type}-${cube.color}-${index}`}>
-                  {cube.count} {cube.color} {cube.type}
+                <li
+                  key={`${cube.type}-${cube.color ?? cube.colors?.join("-")}-${index}`}
+                >
+                  {classSetupCubeLabel(cube)}
                 </li>
               ))}
             </ul>
@@ -102,4 +109,11 @@ function ClassSetupLoadout({ loadout }: { loadout: TTSClassSetupSide }) {
       </div>
     </div>
   );
+}
+
+function classSetupCubeLabel(cube: TTSClassSetupCube): string {
+  const color = cube.colors?.length
+    ? cube.colors.join(" or ")
+    : (cube.color ?? "unknown");
+  return `${cube.count} ${color} ${cube.type}`;
 }

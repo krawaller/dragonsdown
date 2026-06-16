@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { resolveLineageAdvantageRulebookLinks } from "@/lib/rulebook-links";
-import type { TTSClassSetupSide } from "@/lib/tts";
+import type { TTSClassSetupCube, TTSClassSetupSide } from "@/lib/tts";
 import { getAllLineages, getLineageBySlug } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
@@ -138,8 +138,10 @@ function LineageSetupSide({
             </h4>
             <ul className="space-y-1 text-sm">
               {side.cubes.map((cube, index) => (
-                <li key={`${cube.type}-${cube.color}-${index}`}>
-                  {cube.count} {cube.color} {cube.type}
+                <li
+                  key={`${cube.type}-${cube.color ?? cube.colors?.join("-")}-${index}`}
+                >
+                  {classSetupCubeLabel(cube)}
                 </li>
               ))}
             </ul>
@@ -156,4 +158,11 @@ function LineageSetupSide({
       </div>
     </div>
   );
+}
+
+function classSetupCubeLabel(cube: TTSClassSetupCube): string {
+  const color = cube.colors?.length
+    ? cube.colors.join(" or ")
+    : (cube.color ?? "unknown");
+  return `${cube.count} ${color} ${cube.type}`;
 }

@@ -553,6 +553,106 @@ end`;
       },
     });
   });
+
+  it("extracts either/or and any-colour class setup magic cubes", () => {
+    const wizardLua = `function front_setup(object, player_color)
+        Wait.time(function() take_card(ItemDeck, "Staff", "slot6", player_color, rr) end, 2)
+        Wait.time(function() take_cube("Speed", "brown", 3, player_color, rr) end, 3)
+        Wait.time(function() take_cube("Life", "health", 1, player_color, rr) end, 4)
+        Wait.time(function() take_cube("Attack", "red", 1, player_color, rr) end, 4)
+        Wait.time(function() take_cube("Spell", "yellow", 1, player_color, rr) end, 5)
+        Wait.time(function() take_cube("Spell", "blue", 1, player_color, rr) end, 6)
+        Wait.time(function() set_gold(15, player_color) end, 3)
+        Wait.time(function() broadcastToColor("You Must Choose One Yellow or One Blue Cube and destroy the other one!", player_color, {237, 0, 0}) end, 4)
+        Wait.time(function() broadcastToColor("Choose 1 Colored Magic Cube", player_color, {0, 54, 247}) end, 2)
+end
+
+function back_setup(object, player_color)
+        Wait.time(function() take_card(ItemDeck, "Staff", "slot6", player_color, rr) end, 2)
+        Wait.time(function() take_cube("Speed", "brown", 3, player_color, rr) end, 3)
+        Wait.time(function() take_cube("Life", "health", 1, player_color, rr) end, 4)
+        Wait.time(function() take_cube("Attack", "red", 1, player_color, rr) end, 4)
+        Wait.time(function() take_cube("Spell", "purple", 1, player_color, rr) end, 5)
+        Wait.time(function() take_cube("Spell", "grey", 1, player_color, rr) end, 6)
+        Wait.time(function() set_gold(15, player_color) end, 3)
+        Wait.time(function() broadcastToColor("You Must Choose One Purple or One Grey Cube and destroy the other one!", player_color, {237, 0, 0}) end, 4)
+        Wait.time(function() broadcastToColor("Choose 1 Colored Magic Cube", player_color, {0, 54, 247}) end, 2)
+end`;
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Class NATIVES",
+          ContainedObjects: [
+            {
+              ...card("Wizard (Studious)", 831, "8", SAMPLE_DECK),
+              LuaScript: wizardLua,
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(
+      extractClasses(save, "dd_all_exp", [{ title: "Wizard (Studious)" }])
+        .Wizard[0].setup,
+    ).toMatchObject({
+      front: {
+        cubes: [
+          { type: "Speed", color: "brown", count: 3 },
+          { type: "Life", color: "health", count: 1 },
+          { type: "Attack", color: "red", count: 1 },
+          { type: "Spell", colors: ["yellow", "blue"], count: 1 },
+          { type: "Spell", color: "any", count: 1 },
+        ],
+      },
+      back: {
+        cubes: [
+          { type: "Speed", color: "brown", count: 3 },
+          { type: "Life", color: "health", count: 1 },
+          { type: "Attack", color: "red", count: 1 },
+          { type: "Spell", colors: ["purple", "grey"], count: 1 },
+          { type: "Spell", color: "any", count: 1 },
+        ],
+      },
+    });
+  });
+
+  it("keeps fixed magic cubes when an either/or choice consumes extras", () => {
+    const conjurerLua = `function front_setup(object, player_color)
+        Wait.time(function() take_cube("Speed", "brown", 3, player_color, rr) end, 2)
+        Wait.time(function() take_cube("Attack", "red", 1, player_color, rr) end, 3)
+        Wait.time(function() take_cube("Life", "health", 1, player_color, rr) end, 4)
+        Wait.time(function() take_cube("Spell", "blue", 2, player_color, rr) end, 5)
+        Wait.time(function() take_cube("Spell", "grey", 1, player_color, rr) end, 6)
+        Wait.time(function() broadcastToColor("You Must Choose One Blue or One Grey Cube and destroy the other one!", player_color, {237, 0, 0}) end, 5)
+end`;
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Class DRAGONS DOWN",
+          ContainedObjects: [
+            {
+              ...card("Conjurer (Mastery)", 803, "8", SAMPLE_DECK),
+              LuaScript: conjurerLua,
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(
+      extractClasses(save, "dd_all_exp", [{ title: "Conjurer (Mastery)" }])
+        .Conjurer[0].setup?.front?.cubes,
+    ).toEqual([
+      { type: "Speed", color: "brown", count: 3 },
+      { type: "Attack", color: "red", count: 1 },
+      { type: "Life", color: "health", count: 1 },
+      { type: "Spell", color: "blue", count: 1 },
+      { type: "Spell", colors: ["blue", "grey"], count: 1 },
+    ]);
+  });
 });
 
 describe("extractLineages", () => {

@@ -222,7 +222,29 @@
           "col": 7,
           "uniqueBack": true
         }
-      ]
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
+            }
+          ]
+        }
+      }
     }
   ],
   "Gnome": [
@@ -368,7 +390,29 @@
             "Lineage DESOLATION"
           ]
         }
-      ]
+      ],
+      "setup": {
+        "front": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
+            }
+          ]
+        },
+        "back": {
+          "items": [],
+          "cubes": [
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
+            }
+          ]
+        }
+      }
     }
   ],
   "Half-Orc": [

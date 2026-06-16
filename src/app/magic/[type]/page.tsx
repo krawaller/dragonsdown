@@ -4,8 +4,12 @@ import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { MAGIC_TYPES, getMagicTypeBySlug } from "@/lib/magic";
 import { resolveMagicRulebookLinks } from "@/lib/rulebook-links";
-import type { TTSSpell, TTSSpellCard } from "@/lib/tts";
-import { getSpellsByMagic } from "@/lib/tts/lookup";
+import type { TTSClassSetupCube, TTSSpell, TTSSpellCard } from "@/lib/tts";
+import {
+  getClassesForMagicCube,
+  getSpellsByMagic,
+  type MagicCubeStartingClass,
+} from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
   return MAGIC_TYPES.map((type) => ({ type: type.slug }));
@@ -20,8 +24,10 @@ export default async function MagicTypePage({
   const type = getMagicTypeBySlug(slug);
   if (!type) notFound();
   const entries = getSpellsByMagic(type.id);
+  const classEntries = getClassesForMagicCube(type.id);
   const rulebookLinks = await resolveMagicRulebookLinks(type.id, "core");
   const icon = rulebookLinks.find((link) => Boolean(link.icon))?.icon;
+  const colorLabel = type.label.replace(/ Magic$/, "");
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -50,6 +56,14 @@ export default async function MagicTypePage({
         heading="Rulebook"
         className="mb-10 max-w-3xl"
       />
+
+      {type.id !== "universal" && (
+        <MagicCubeClasses
+          colorLabel={colorLabel}
+          entries={classEntries}
+          className="mb-10 max-w-3xl"
+        />
+      )}
 
       <section>
         <h2 className="text-xl font-semibold mb-4">Spells</h2>
@@ -92,6 +106,59 @@ export default async function MagicTypePage({
       </section>
     </main>
   );
+}
+
+function MagicCubeClasses({
+  colorLabel,
+  entries,
+  className = "",
+}: {
+  colorLabel: string;
+  entries: MagicCubeStartingClass[];
+  className?: string;
+}) {
+  return (
+    <section className={className}>
+      <h2 className="text-xl font-semibold mb-4">
+        Classes With {colorLabel} Cubes
+      </h2>
+      <div className="rounded border border-zinc-200 dark:border-zinc-800 divide-y divide-zinc-200 dark:divide-zinc-800">
+        {entries.map((entry) => (
+          <div
+            key={entry.slug}
+            className="grid gap-2 p-3 sm:grid-cols-[10rem_1fr]"
+          >
+            <Link
+              href={`/classes/${entry.slug}`}
+              className="font-medium hover:underline"
+            >
+              {entry.name}
+            </Link>
+            <ul className="space-y-1 text-sm text-zinc-500 dark:text-zinc-400">
+              {entry.sides.map((side) => (
+                <li key={side.side}>
+                  <span className="capitalize">{side.side}</span>
+                  {": "}
+                  {side.cubes.map(classSetupCubeLabel).join(", ")}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function classSetupCubeLabel(cube: TTSClassSetupCube): string {
+  const color = cube.colors?.length
+    ? cube.colors.join(" or ")
+    : classSetupCubeColorLabel(cube.color);
+  return `${cube.count} ${color} ${cube.type}`;
+}
+
+function classSetupCubeColorLabel(color: string | undefined): string {
+  return color === "any" ? "any color" : (color ?? "unknown");
 }
 
 function copySummary(spell: TTSSpell): string {

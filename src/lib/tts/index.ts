@@ -244,7 +244,8 @@ export type TTSClassSetupItem = {
 
 export type TTSClassSetupCube = {
   type: string;
-  color: string;
+  color?: string;
+  colors?: string[];
   count: number;
 };
 
@@ -1651,6 +1652,8 @@ function classSetupSideFromLua(
     });
   }
 
+  applyClassSetupCubeChoices(body, cubes);
+
   const side: TTSClassSetupSide = { items, cubes };
   const gold = body.match(/set_gold\(\s*(\d+)/);
   if (gold) side.gold = Number(gold[1]);
@@ -1659,6 +1662,60 @@ function classSetupSideFromLua(
     return undefined;
   }
   return side;
+}
+
+function applyClassSetupCubeChoices(
+  body: string,
+  cubes: TTSClassSetupCube[],
+): void {
+  const eitherPattern =
+    /Choose\s+One\s+([A-Za-z]+)\s+or\s+One\s+([A-Za-z]+)\s+Cube/gi;
+  let eitherMatch: RegExpExecArray | null;
+  while ((eitherMatch = eitherPattern.exec(body))) {
+    const colors = [eitherMatch[1], eitherMatch[2]].map((color) =>
+      color.toLowerCase(),
+    );
+    const type = classSetupCubeChoiceType(cubes, colors) ?? "Spell";
+    for (const color of colors) removeClassSetupCube(cubes, type, color, 1);
+    cubes.push({ type, colors, count: 1 });
+  }
+
+  const anyMagicPattern = /Choose\s+(\d+)\s+Colou?red\s+Magic\s+Cubes?/gi;
+  let anyMagicMatch: RegExpExecArray | null;
+  while ((anyMagicMatch = anyMagicPattern.exec(body))) {
+    cubes.push({
+      type: "Spell",
+      color: "any",
+      count: Number(anyMagicMatch[1]),
+    });
+  }
+}
+
+function classSetupCubeChoiceType(
+  cubes: TTSClassSetupCube[],
+  colors: string[],
+): string | undefined {
+  const candidates = cubes.filter(
+    (cube) => cube.color !== undefined && colors.includes(cube.color),
+  );
+  return (
+    candidates.find((cube) => cube.type === "Spell")?.type ??
+    candidates[0]?.type
+  );
+}
+
+function removeClassSetupCube(
+  cubes: TTSClassSetupCube[],
+  type: string,
+  color: string,
+  count: number,
+): void {
+  const match = cubes.find(
+    (cube) => cube.type === type && cube.color === color,
+  );
+  if (!match) return;
+  match.count -= count;
+  if (match.count <= 0) cubes.splice(cubes.indexOf(match), 1);
 }
 
 function classSetupFunctionBody(

@@ -31,6 +31,7 @@ import {
   type TTSCardImage,
   type TTSChip,
   type TTSClass,
+  type TTSClassSetupCube,
   type TTSItemCard,
   type TTSLegendaryLocation,
   type TTSLegendaryMonsterChip,
@@ -400,6 +401,15 @@ export type ItemStartingClass = {
   sides: { side: "front" | "back"; slot: string }[];
 };
 
+export type MagicCubeStartingClass = {
+  name: string;
+  slug: string;
+  sides: {
+    side: "front" | "back";
+    cubes: TTSClassSetupCube[];
+  }[];
+};
+
 export type ItemEntry = {
   name: string;
   slug: string;
@@ -467,6 +477,34 @@ export function getSpellsByMagic(magic: string): SpellEntry[] {
   return getAllSpells().filter((entry) =>
     entry.spells.some((spell) => spell.magic.includes(magic)),
   );
+}
+
+export function getClassesForMagicCube(
+  magic: string,
+): MagicCubeStartingClass[] {
+  const color = normalizeMagicCubeColor(magic);
+  if (color === "universal") return [];
+  return getAllClasses()
+    .flatMap((entry) => {
+      const sides = entry.classes.flatMap((ttsClass) =>
+        (["front", "back"] as const).flatMap((side) => {
+          const cubes = (ttsClass.setup?.[side]?.cubes ?? []).filter((cube) =>
+            classSetupCubeMatchesMagic(cube, color),
+          );
+          return cubes.length > 0 ? [{ side, cubes }] : [];
+        }),
+      );
+      return sides.length > 0
+        ? [
+            {
+              name: entry.name,
+              slug: entry.slug,
+              sides: dedupeMagicCubeClassSides(sides),
+            },
+          ]
+        : [];
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export function getAllItems(): ItemEntry[] {
@@ -1048,6 +1086,52 @@ function dedupeStartingClassSides(
     seen.add(key);
     return true;
   });
+}
+
+function dedupeMagicCubeClassSides(
+  sides: MagicCubeStartingClass["sides"],
+): MagicCubeStartingClass["sides"] {
+  const bySide = new Map<"front" | "back", TTSClassSetupCube[]>();
+  for (const side of sides) {
+    const cubes = bySide.get(side.side) ?? [];
+    for (const cube of side.cubes) {
+      if (!cubes.some((existing) => isSameClassSetupCube(existing, cube))) {
+        cubes.push(cube);
+      }
+    }
+    bySide.set(side.side, cubes);
+  }
+  return (["front", "back"] as const).flatMap((side) => {
+    const cubes = bySide.get(side) ?? [];
+    return cubes.length > 0 ? [{ side, cubes }] : [];
+  });
+}
+
+function isSameClassSetupCube(
+  a: TTSClassSetupCube,
+  b: TTSClassSetupCube,
+): boolean {
+  return (
+    a.type === b.type &&
+    a.color === b.color &&
+    a.count === b.count &&
+    (a.colors ?? []).join("|") === (b.colors ?? []).join("|")
+  );
+}
+
+function classSetupCubeMatchesMagic(
+  cube: TTSClassSetupCube,
+  color: string,
+): boolean {
+  if (cube.type !== "Spell") return false;
+  if (normalizeMagicCubeColor(cube.color) === "any") return true;
+  return (cube.colors ?? [cube.color]).some(
+    (candidate) => normalizeMagicCubeColor(candidate) === color,
+  );
+}
+
+function normalizeMagicCubeColor(color: string | undefined): string {
+  return color === "grey" ? "gray" : (color ?? "");
 }
 
 const NATIVE_CHIP_GROUPS = new Set(

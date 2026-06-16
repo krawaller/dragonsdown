@@ -1065,6 +1065,11 @@
               "type": "Attack",
               "color": "red",
               "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
             }
           ],
           "gold": 24
@@ -1143,11 +1148,14 @@
             {
               "type": "Spell",
               "color": "white",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "green",
+              "colors": [
+                "white",
+                "green"
+              ],
               "count": 1
             }
           ]
@@ -1178,11 +1186,14 @@
             {
               "type": "Spell",
               "color": "white",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "green",
+              "colors": [
+                "white",
+                "green"
+              ],
               "count": 1
             }
           ],
@@ -1258,11 +1269,14 @@
             {
               "type": "Spell",
               "color": "blue",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "grey",
+              "colors": [
+                "blue",
+                "grey"
+              ],
               "count": 1
             }
           ],
@@ -1289,11 +1303,14 @@
             {
               "type": "Spell",
               "color": "blue",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "grey",
+              "colors": [
+                "blue",
+                "grey"
+              ],
               "count": 1
             }
           ],
@@ -1511,6 +1528,14 @@
               "type": "Attack",
               "color": "red",
               "count": 2
+            },
+            {
+              "type": "Spell",
+              "colors": [
+                "blue",
+                "grey"
+              ],
+              "count": 1
             }
           ],
           "gold": 12
@@ -1545,6 +1570,14 @@
               "type": "Attack",
               "color": "red",
               "count": 2
+            },
+            {
+              "type": "Spell",
+              "colors": [
+                "green",
+                "yellow"
+              ],
+              "count": 1
             }
           ],
           "gold": 7
@@ -1720,11 +1753,14 @@
             {
               "type": "Spell",
               "color": "green",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "yellow",
+              "colors": [
+                "green",
+                "yellow"
+              ],
               "count": 1
             }
           ],
@@ -1751,11 +1787,14 @@
             {
               "type": "Spell",
               "color": "green",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "yellow",
+              "colors": [
+                "green",
+                "yellow"
+              ],
               "count": 1
             }
           ],
@@ -1956,11 +1995,14 @@
             {
               "type": "Spell",
               "color": "yellow",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "white",
+              "colors": [
+                "yellow",
+                "white"
+              ],
               "count": 1
             }
           ],
@@ -1987,11 +2029,14 @@
             {
               "type": "Spell",
               "color": "yellow",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "white",
+              "colors": [
+                "yellow",
+                "white"
+              ],
               "count": 1
             }
           ],
@@ -2227,6 +2272,11 @@
               "type": "Attack",
               "color": "red",
               "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
             }
           ],
           "gold": 6
@@ -2301,11 +2351,14 @@
             {
               "type": "Spell",
               "color": "grey",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "black",
+              "colors": [
+                "grey",
+                "black"
+              ],
               "count": 1
             }
           ],
@@ -2332,11 +2385,14 @@
             {
               "type": "Spell",
               "color": "grey",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "black",
+              "colors": [
+                "grey",
+                "black"
+              ],
               "count": 1
             }
           ],
@@ -2519,22 +2575,18 @@
             },
             {
               "type": "Spell",
-              "color": "grey",
+              "colors": [
+                "grey",
+                "yellow"
+              ],
               "count": 1
             },
             {
               "type": "Spell",
-              "color": "yellow",
-              "count": 1
-            },
-            {
-              "type": "Spell",
-              "color": "purple",
-              "count": 1
-            },
-            {
-              "type": "Spell",
-              "color": "blue",
+              "colors": [
+                "purple",
+                "blue"
+              ],
               "count": 1
             }
           ],
@@ -2560,22 +2612,18 @@
             },
             {
               "type": "Spell",
-              "color": "grey",
+              "colors": [
+                "grey",
+                "yellow"
+              ],
               "count": 1
             },
             {
               "type": "Spell",
-              "color": "yellow",
-              "count": 1
-            },
-            {
-              "type": "Spell",
-              "color": "purple",
-              "count": 1
-            },
-            {
-              "type": "Spell",
-              "color": "blue",
+              "colors": [
+                "purple",
+                "blue"
+              ],
               "count": 1
             }
           ],
@@ -2780,6 +2828,11 @@
               "type": "Life",
               "color": "health",
               "count": 2
+            },
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
             }
           ],
           "gold": 0
@@ -2853,13 +2906,16 @@
             },
             {
               "type": "Spell",
-              "color": "blue",
+              "color": "black",
               "count": 1
             },
             {
               "type": "Spell",
-              "color": "black",
-              "count": 2
+              "colors": [
+                "black",
+                "blue"
+              ],
+              "count": 1
             }
           ],
           "gold": 15
@@ -2897,13 +2953,16 @@
             },
             {
               "type": "Spell",
-              "color": "blue",
+              "color": "black",
               "count": 1
             },
             {
               "type": "Spell",
-              "color": "black",
-              "count": 2
+              "colors": [
+                "black",
+                "blue"
+              ],
+              "count": 1
             }
           ],
           "gold": 9
@@ -2978,6 +3037,11 @@
               "type": "Attack",
               "color": "red",
               "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "any",
+              "count": 1
             }
           ],
           "gold": 0
@@ -3003,6 +3067,11 @@
             {
               "type": "Attack",
               "color": "red",
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "color": "any",
               "count": 1
             }
           ],
@@ -3683,11 +3752,14 @@
             {
               "type": "Spell",
               "color": "purple",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "blue",
+              "colors": [
+                "purple",
+                "blue"
+              ],
               "count": 1
             }
           ],
@@ -3714,11 +3786,14 @@
             {
               "type": "Spell",
               "color": "purple",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "blue",
+              "colors": [
+                "purple",
+                "blue"
+              ],
               "count": 1
             }
           ],
@@ -3784,12 +3859,20 @@
             {
               "type": "Spell",
               "color": "black",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
               "color": "grey",
-              "count": 2
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "colors": [
+                "black",
+                "grey"
+              ],
+              "count": 1
             }
           ],
           "gold": 3
@@ -3810,12 +3893,20 @@
             {
               "type": "Spell",
               "color": "purple",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
               "color": "grey",
-              "count": 2
+              "count": 1
+            },
+            {
+              "type": "Spell",
+              "colors": [
+                "grey",
+                "purple"
+              ],
+              "count": 1
             }
           ],
           "gold": 3
@@ -4120,11 +4211,14 @@
             {
               "type": "Spell",
               "color": "black",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "purple",
+              "colors": [
+                "black",
+                "purple"
+              ],
               "count": 1
             }
           ],
@@ -4151,11 +4245,14 @@
             {
               "type": "Spell",
               "color": "black",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "purple",
+              "colors": [
+                "black",
+                "purple"
+              ],
               "count": 1
             }
           ],
@@ -4340,16 +4437,22 @@
             {
               "type": "Spell",
               "color": "black",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "grey",
-              "count": 2
+              "colors": [
+                "black",
+                "grey"
+              ],
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "yellow",
+              "colors": [
+                "grey",
+                "yellow"
+              ],
               "count": 1
             }
           ],
@@ -4371,16 +4474,22 @@
             {
               "type": "Spell",
               "color": "purple",
-              "count": 2
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "grey",
-              "count": 2
+              "colors": [
+                "purple",
+                "grey"
+              ],
+              "count": 1
             },
             {
               "type": "Spell",
-              "color": "green",
+              "colors": [
+                "green",
+                "grey"
+              ],
               "count": 1
             }
           ],
@@ -4455,12 +4564,15 @@
             },
             {
               "type": "Spell",
-              "color": "yellow",
+              "colors": [
+                "yellow",
+                "blue"
+              ],
               "count": 1
             },
             {
               "type": "Spell",
-              "color": "blue",
+              "color": "any",
               "count": 1
             }
           ],
@@ -4491,12 +4603,15 @@
             },
             {
               "type": "Spell",
-              "color": "purple",
+              "colors": [
+                "purple",
+                "grey"
+              ],
               "count": 1
             },
             {
               "type": "Spell",
-              "color": "grey",
+              "color": "any",
               "count": 1
             }
           ],
