@@ -1,0 +1,410 @@
+{
+  "Ancient Hole": {
+    "front": {
+      "paths": [[1, 6, "blue"]]
+    },
+    "back": {
+      "paths": [
+        [1, 6, "blue"],
+        [5, 6, "blue"],
+        [3, 4, "blue"]
+      ]
+    }
+  },
+  "Black Caves": {
+    "front": {
+      "paths": [[3, 4, "blue"]]
+    },
+    "back": {
+      "paths": [
+        [3, 4, "blue"],
+        [5, 6, "blue"],
+        [1, 6, "blue"]
+      ]
+    }
+  },
+  "Dark Passes": {
+    "front": {
+      "paths": [
+        [1, 4, "blue"],
+        [3, 6, "blue"]
+      ]
+    },
+    "back": {
+      "paths": [
+        [1, 4, "blue"],
+        [2, 3, "blue"],
+        [3, 6, "blue"]
+      ]
+    }
+  },
+  "Forlorn Tunnel": {
+    "front": {
+      "paths": [
+        [
+          [1, 5, "blue"],
+          [2, 3, "blue"]
+        ]
+      ]
+    },
+    "back": {
+      "paths": [
+        [1, 5, "blue"],
+        [2, 3, "blue"],
+        [2, 6, "blue"],
+        [4, 5, "blue"]
+      ]
+    }
+  },
+  "Mine": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": []
+    }
+  },
+  "Secret Dens": {
+    "front": {
+      "paths": [[5, 6, "blue"]]
+    },
+    "back": {
+      "paths": [[2, 3, "blue"]]
+    }
+  },
+  "Cursed Canyon": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [
+        [1, 4, "blue"],
+        [3, 4, "blue"],
+        [2, 3, "blue"]
+      ]
+    }
+  },
+  "Dry Winds": {
+    "front": {
+      "paths": [[4, 5, "green"]]
+    },
+    "back": {
+      "paths": [
+        [1, 2, "green"],
+        [3, 6, "green"]
+      ]
+    }
+  },
+  "Medina": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": []
+    }
+  },
+  "Moving Mounds": {
+    "front": {
+      "paths": [
+        [1, 3, "yellow"],
+        [1, 4, "yellow"]
+      ]
+    },
+    "back": {
+      "paths": [
+        [5, 6, "yellow"],
+        [2, 6, "yellow"]
+      ]
+    }
+  },
+  "Rippled Expanse": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [
+        [
+          [1, 6, "purple"],
+          [2, 3, "purple"],
+          [4, 5, "purple"]
+        ]
+      ]
+    }
+  },
+  "Shifting Sands": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [
+        [1, 5, "black"],
+        [2, 3, "black"],
+        [3, 4, "black"]
+      ]
+    }
+  },
+  "Barriers": {
+    "front": {
+      "paths": [[1, 3, "purple"]]
+    },
+    "back": {
+      "paths": [
+        [1, 3, "purple"],
+        [1, 6, "purple"]
+      ]
+    }
+  },
+  "High Pass": {
+    "front": {
+      "paths": [[1, 5, "purple"]]
+    },
+    "back": {
+      "paths": [
+        [1, 5, "purple"],
+        [3, 4, "purple"]
+      ]
+    }
+  },
+  "Keep": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": []
+    }
+  },
+  "Lonely Mountains": {
+    "front": {
+      "paths": [[2, 3, "purple"]]
+    },
+    "back": {
+      "paths": [
+        [2, 3, "purple"],
+        [3, 4, "purple"]
+      ]
+    }
+  },
+  "Narrow Ridges": {
+    "front": {
+      "paths": [[5, 6, "purple"]]
+    },
+    "back": {
+      "paths": [
+        [3, 4, "purple"],
+        [5, 6, "purple"]
+      ]
+    }
+  },
+  "Tri-Peaks": {
+    "front": {
+      "paths": [
+        [1, 5, "purple"],
+        [4, 5, "purple"]
+      ]
+    },
+    "back": {
+      "paths": [
+        [2, 6, "purple"],
+        [4, 5, "purple"]
+      ]
+    }
+  },
+  "Flatlands": {
+    "front": {
+      "paths": [[1, 2, "white"]]
+    },
+    "back": {
+      "paths": [[5, 6, "white"]]
+    }
+  },
+  "Grassy Plains": {
+    "front": {
+      "paths": [[4, 5, "white"]]
+    },
+    "back": {
+      "paths": [[3, 4, "white"]]
+    }
+  },
+  "The Meadows": {
+    "front": {
+      "paths": [[1, 5, "white"]]
+    },
+    "back": {
+      "paths": [[2, 3, "white"]]
+    }
+  },
+  "Twisted Steppe": {
+    "front": {
+      "paths": [[1, 6, "white"]]
+    },
+    "back": {
+      "paths": [[4, 6, "white"]]
+    }
+  },
+  "Unbroken Lands": {
+    "front": {
+      "paths": [[1, 3, "white"]]
+    },
+    "back": {
+      "paths": [[2, 4, "white"]]
+    }
+  },
+  "Village": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": []
+    }
+  },
+  "Brackish Span": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [[1, 2, "yellow"]]
+    }
+  },
+  "Headwater": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [[2, 3, "purple"]]
+    }
+  },
+  "Port": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": []
+    }
+  },
+  "Ravaging Run": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [[1, 2, "white"]]
+    }
+  },
+  "Silver Current": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [
+        [1, 2, "green"],
+        [1, 3, "green"]
+      ]
+    }
+  },
+  "Soleford": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": [
+        [1, 3, "blue"],
+        [2, 4, "blue"]
+      ]
+    }
+  },
+  "Decayed Swamp": {
+    "front": {
+      "paths": [[5, 6, "yellow"]]
+    },
+    "back": {
+      "paths": [[4, 5, "yellow"]]
+    }
+  },
+  "Foul Swamp": {
+    "front": {
+      "paths": [[5, 6, "yellow"]]
+    },
+    "back": {
+      "paths": [[1, 3, "yellow"]]
+    }
+  },
+  "Moorland": {
+    "front": {
+      "paths": [[2, 4, "yellow"]]
+    },
+    "back": {
+      "paths": [[4, 6, "yellow"]]
+    }
+  },
+  "Outpost": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": []
+    }
+  },
+  "Putrid Waters": {
+    "front": {
+      "paths": [[2, 5, "yellow"]]
+    },
+    "back": {
+      "paths": [[4, 6, "yellow"]]
+    }
+  },
+  "Quiet Bog": {
+    "front": {
+      "paths": [[2, 4, "yellow"]]
+    },
+    "back": {
+      "paths": [[5, 6, "yellow"]]
+    }
+  },
+  "Deep Woods": {
+    "front": {
+      "paths": [[1, 3, "green"]]
+    },
+    "back": {
+      "paths": [[1, 6, "green"]]
+    }
+  },
+  "Elder Woods": {
+    "front": {
+      "paths": [[4, 6, "green"]]
+    },
+    "back": {
+      "paths": [[3, 4, "green"]]
+    }
+  },
+  "Mirky Woods": {
+    "front": {
+      "paths": [[2, 6, "green"]]
+    },
+    "back": {
+      "paths": [[1, 6, "green"]]
+    }
+  },
+  "Oakwood": {
+    "front": {
+      "paths": [[1, 6, "green"]]
+    },
+    "back": {
+      "paths": [[1, 3, "green"]]
+    }
+  },
+  "Sanctuary": {
+    "front": {
+      "paths": []
+    },
+    "back": {
+      "paths": []
+    }
+  },
+  "Timberlands": {
+    "front": {
+      "paths": [[3, 6, "green"]]
+    },
+    "back": {
+      "paths": [[1, 4, "green"]]
+    }
+  }
+}
