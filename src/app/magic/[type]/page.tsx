@@ -14,6 +14,7 @@ import {
   getSpellsByMagic,
   type MagicCubeStartingClass,
 } from "@/lib/tts/lookup";
+import mapTiles from "../../../../data/extracted-from-tts/map-tiles.json";
 
 export function generateStaticParams() {
   return MAGIC_TYPES.map((type) => ({ type: type.slug }));
@@ -44,6 +45,20 @@ export default async function MagicTypePage({
   const icon = rulebookLinks.find((link) => Boolean(link.icon))?.icon;
   const magicIcons = magicIconMap(rulebookLinksByMagic);
   const colorLabel = type.label.replace(/ Magic$/, "");
+
+  const mapTileConnectionsModule = await import(
+    "../../../../data/manual/map-tile-connections.json"
+  );
+  const mapTileConnections = mapTileConnectionsModule.default as Record<
+    string,
+    { front: { paths: unknown[] }; back: { paths: unknown[] } }
+  >;
+
+  const tilesWithColorPaths = getTilesWithColorPaths(
+    type.id,
+    mapTiles as Array<{ name: string }>,
+    mapTileConnections,
+  );
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -80,6 +95,25 @@ export default async function MagicTypePage({
           magicIcons={magicIcons}
           className="mb-10 max-w-3xl"
         />
+      )}
+
+      {tilesWithColorPaths.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold mb-4">
+            Map Tiles with {colorLabel} Secret Paths
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {tilesWithColorPaths.map((tile) => (
+              <Link
+                key={tile.name}
+                href={`/all-map-tiles#${tile.name}`}
+                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+              >
+                {tile.name}
+              </Link>
+            ))}
+          </div>
+        </section>
       )}
 
       <section>
@@ -342,4 +376,34 @@ function MagicIcon({ icon, label }: { icon?: string; label: string }) {
       className="block h-14 w-14 rounded border border-zinc-200 bg-zinc-100 object-contain p-1 dark:border-zinc-800 dark:bg-zinc-900"
     />
   );
+}
+
+function getTilesWithColorPaths(
+  colorId: string,
+  mapTiles: Array<{ name: string }>,
+  connections: Record<string, { front: { paths: unknown[] }; back: { paths: unknown[] } }>,
+): Array<{ name: string }> {
+  const tilesWithColor = new Set<string>();
+
+  for (const [tileName, tileConnections] of Object.entries(connections)) {
+    const hasColorPath =
+      hasColorInPaths(tileConnections.front?.paths, colorId) ||
+      hasColorInPaths(tileConnections.back?.paths, colorId);
+
+    if (hasColorPath) {
+      tilesWithColor.add(tileName);
+    }
+  }
+
+  return mapTiles.filter((tile) => tilesWithColor.has(tile.name));
+}
+
+function hasColorInPaths(paths: unknown[] | undefined, colorId: string): boolean {
+  if (!Array.isArray(paths)) return false;
+  return paths.some((path) => {
+    if (Array.isArray(path) && path.length >= 3) {
+      return path[2] === colorId;
+    }
+    return false;
+  });
 }
