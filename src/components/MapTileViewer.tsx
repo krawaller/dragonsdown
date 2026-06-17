@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo } from "react";
 import Link from "next/link";
+import { MagicCube, type MagicIcons } from "@/components/MagicCube";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { ClearingTypeId } from "@/lib/clearing-types";
 
@@ -52,6 +53,7 @@ export function MapTileViewer({
   monsterGroups,
   missions,
   mapTileConnections,
+  magicIcons,
 }: {
   tiles: MapTile[];
   civLocations: MapTileCivLocation[];
@@ -61,6 +63,7 @@ export function MapTileViewer({
     string,
     { front: { paths: unknown[] }; back: { paths: unknown[] } }
   >;
+  magicIcons?: MagicIcons;
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -237,6 +240,7 @@ export function MapTileViewer({
             tileName={selectedTile.name}
             side={showBack ? "back" : "front"}
             connections={mapTileConnections}
+            magicIcons={magicIcons}
           />
         )}
 
@@ -419,6 +423,7 @@ function SecretPathMagicColors({
   tileName,
   side,
   connections,
+  magicIcons,
 }: {
   tileName: string;
   side: "front" | "back";
@@ -426,16 +431,24 @@ function SecretPathMagicColors({
     string,
     { front: { paths: unknown[] }; back: { paths: unknown[] } }
   >;
+  magicIcons?: MagicIcons;
 }) {
   const tileConnections = connections[tileName];
   if (!tileConnections) return null;
 
-  const sidePaths = side === "front" ? tileConnections.front?.paths : tileConnections.back?.paths;
+  const sidePaths =
+    side === "front"
+      ? tileConnections.front?.paths
+      : tileConnections.back?.paths;
   if (!Array.isArray(sidePaths) || sidePaths.length === 0) return null;
 
   const magicColors = new Set<string>();
   for (const path of sidePaths) {
-    if (Array.isArray(path) && path.length >= 3 && typeof path[2] === "string") {
+    if (
+      Array.isArray(path) &&
+      path.length >= 3 &&
+      typeof path[2] === "string"
+    ) {
       magicColors.add(path[2]);
     }
   }
@@ -463,9 +476,15 @@ function SecretPathMagicColors({
           <Link
             key={color}
             href={`/magic/${color}`}
-            className="inline-flex items-center gap-2 rounded bg-zinc-200 dark:bg-zinc-800 px-2 py-1 text-xs font-medium hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors"
+            className="inline-flex items-center gap-2 rounded border border-zinc-200 bg-white px-2 py-1 text-xs font-medium hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900 transition-colors"
           >
-            {colorLabels[color] || color}
+            {magicIcons ? (
+              <MagicCube
+                cube={{ count: 1, color, type: "cube" }}
+                magicIcons={magicIcons}
+              />
+            ) : null}
+            <span>{colorLabels[color] || color}</span>
           </Link>
         ))}
       </div>

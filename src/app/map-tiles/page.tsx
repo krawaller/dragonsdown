@@ -13,6 +13,8 @@ import {
   getMonsterGroupsForMapTile,
 } from "@/lib/tts/lookup";
 import { getClearingTypeTiles } from "@/lib/clearing-types";
+import { MAGIC_TYPES } from "@/lib/magic";
+import { resolveMagicRulebookLinks } from "@/lib/rulebook-links";
 import tiles from "../../../data/extracted-from-tts/map-tiles.json";
 import { promises as fs } from "fs";
 import { join } from "path";
@@ -43,13 +45,26 @@ export default async function MapTilesPage() {
     })),
   );
 
-  const connectionsPath = join(process.cwd(), "data/manual/map-tile-connections.json");
+  const connectionsPath = join(
+    process.cwd(),
+    "data/manual/map-tile-connections.json",
+  );
   const connectionsData = JSON.parse(
     await fs.readFile(connectionsPath, "utf-8"),
   ) as Record<
     string,
     { front: { paths: unknown[] }; back: { paths: unknown[] } }
   >;
+  const magicIcons = Object.fromEntries(
+    await Promise.all(
+      MAGIC_TYPES.map(async (type) => {
+        const icon = (await resolveMagicRulebookLinks(type.id, "core")).find(
+          (link) => Boolean(link.icon),
+        )?.icon;
+        return [type.id, icon ?? ""] as const;
+      }),
+    ),
+  );
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -67,6 +82,7 @@ export default async function MapTilesPage() {
           monsterGroups={monsterGroups}
           missions={missions}
           mapTileConnections={connectionsData}
+          magicIcons={magicIcons}
         />
       </Suspense>
     </main>
