@@ -51,11 +51,16 @@ export function MapTileViewer({
   civLocations,
   monsterGroups,
   missions,
+  mapTileConnections,
 }: {
   tiles: MapTile[];
   civLocations: MapTileCivLocation[];
   monsterGroups: MapTileMonsterGroup[];
   missions: MapTileMission[];
+  mapTileConnections?: Record<
+    string,
+    { front: { paths: unknown[] }; back: { paths: unknown[] } }
+  >;
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -226,6 +231,15 @@ export function MapTileViewer({
             </p>
           </div>
         </div>
+
+        {mapTileConnections && selectedTile && (
+          <SecretPathMagicColors
+            tileName={selectedTile.name}
+            side={showBack ? "back" : "front"}
+            connections={mapTileConnections}
+          />
+        )}
+
         <div className="overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900">
           <div className="mx-auto flex aspect-square max-h-[72vh] w-full items-center justify-center p-[4%]">
             <div className="relative h-full w-full">
@@ -399,4 +413,62 @@ function rotateClearing(clearing: { x: number; y: number }, degrees: number) {
     x: clearing.x * cos - clearing.y * sin,
     y: clearing.x * sin + clearing.y * cos,
   };
+}
+
+function SecretPathMagicColors({
+  tileName,
+  side,
+  connections,
+}: {
+  tileName: string;
+  side: "front" | "back";
+  connections: Record<
+    string,
+    { front: { paths: unknown[] }; back: { paths: unknown[] } }
+  >;
+}) {
+  const tileConnections = connections[tileName];
+  if (!tileConnections) return null;
+
+  const sidePaths = side === "front" ? tileConnections.front?.paths : tileConnections.back?.paths;
+  if (!Array.isArray(sidePaths) || sidePaths.length === 0) return null;
+
+  const magicColors = new Set<string>();
+  for (const path of sidePaths) {
+    if (Array.isArray(path) && path.length >= 3 && typeof path[2] === "string") {
+      magicColors.add(path[2]);
+    }
+  }
+
+  if (magicColors.size === 0) return null;
+
+  const colorLabels: Record<string, string> = {
+    black: "Black",
+    blue: "Blue",
+    gray: "Gray",
+    green: "Green",
+    purple: "Purple",
+    white: "White",
+    yellow: "Yellow",
+    universal: "Universal",
+  };
+
+  const sortedColors = Array.from(magicColors).sort();
+
+  return (
+    <div className="mb-4 rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 p-4">
+      <p className="text-sm font-medium mb-2">Secret Path Magic:</p>
+      <div className="flex flex-wrap gap-2">
+        {sortedColors.map((color) => (
+          <Link
+            key={color}
+            href={`/magic/${color}`}
+            className="inline-flex items-center gap-2 rounded bg-zinc-200 dark:bg-zinc-800 px-2 py-1 text-xs font-medium hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors"
+          >
+            {colorLabels[color] || color}
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
 }

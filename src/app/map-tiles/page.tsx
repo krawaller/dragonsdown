@@ -14,8 +14,10 @@ import {
 } from "@/lib/tts/lookup";
 import { getClearingTypeTiles } from "@/lib/clearing-types";
 import tiles from "../../../data/extracted-from-tts/map-tiles.json";
+import { promises as fs } from "fs";
+import { join } from "path";
 
-export default function MapTilesPage() {
+export default async function MapTilesPage() {
   const mapTiles = withClearingTypes(tiles as MapTile[]);
   const civLocations: MapTileCivLocation[] = getAllCivLocations().map(
     ({ name, slug, location }) => ({
@@ -41,6 +43,14 @@ export default function MapTilesPage() {
     })),
   );
 
+  const connectionsPath = join(process.cwd(), "data/manual/map-tile-connections.json");
+  const connectionsData = JSON.parse(
+    await fs.readFile(connectionsPath, "utf-8"),
+  ) as Record<
+    string,
+    { front: { paths: unknown[] }; back: { paths: unknown[] } }
+  >;
+
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
       <Link
@@ -56,6 +66,7 @@ export default function MapTilesPage() {
           civLocations={civLocations}
           monsterGroups={monsterGroups}
           missions={missions}
+          mapTileConnections={connectionsData}
         />
       </Suspense>
     </main>
