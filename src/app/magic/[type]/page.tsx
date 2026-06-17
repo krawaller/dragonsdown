@@ -56,7 +56,7 @@ export default async function MagicTypePage({
 
   const tilesWithColorPaths = getTilesWithColorPaths(
     type.id,
-    mapTiles as Array<{ name: string }>,
+    mapTiles as Array<{ name: string; terrain: string }>,
     mapTileConnections,
   );
 
@@ -103,15 +103,23 @@ export default async function MagicTypePage({
             Map Tiles with {colorLabel} Secret Paths
           </h2>
           <div className="flex flex-wrap gap-2">
-            {tilesWithColorPaths.map((tile) => (
-              <Link
-                key={tile.name}
-                href={`/all-map-tiles#${tile.name}`}
-                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-              >
-                {tile.name}
-              </Link>
-            ))}
+            {tilesWithColorPaths.map((tile) => {
+              const params = new URLSearchParams({
+                terrain: tile.terrain,
+                tile: tile.name,
+                side: tile.side ?? "front",
+              });
+              return (
+                <Link
+                  key={`${tile.name}-${tile.side}`}
+                  href={`/map-tiles?${params.toString()}`}
+                  className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+                >
+                  {tile.name}
+                  {tile.frontHasColor && tile.backHasColor ? null : tile.backHasColor ? " (back)" : " (front)"}
+                </Link>
+              );
+            })}
           </div>
         </section>
       )}
@@ -380,22 +388,43 @@ function MagicIcon({ icon, label }: { icon?: string; label: string }) {
 
 function getTilesWithColorPaths(
   colorId: string,
-  mapTiles: Array<{ name: string }>,
+  mapTiles: Array<{ name: string; terrain: string }>,
   connections: Record<string, { front: { paths: unknown[] }; back: { paths: unknown[] } }>,
-): Array<{ name: string }> {
-  const tilesWithColor = new Set<string>();
+): Array<{ name: string; terrain: string; side?: string; frontHasColor: boolean; backHasColor: boolean }> {
+  const tilesWithColor: Array<{
+    name: string;
+    terrain: string;
+    side?: string;
+    frontHasColor: boolean;
+    backHasColor: boolean;
+  }> = [];
+  const processedTiles = new Set<string>();
 
-  for (const [tileName, tileConnections] of Object.entries(connections)) {
-    const hasColorPath =
-      hasColorInPaths(tileConnections.front?.paths, colorId) ||
-      hasColorInPaths(tileConnections.back?.paths, colorId);
+  for (const tile of mapTiles) {
+    if (processedTiles.has(tile.name)) continue;
+    processedTiles.add(tile.name);
 
-    if (hasColorPath) {
-      tilesWithColor.add(tileName);
+    const tileConnections = connections[tile.name];
+    if (!tileConnections) continue;
+
+    const frontHasColor = hasColorInPaths(tileConnections.front?.paths, colorId);
+    const backHasColor = hasColorInPaths(tileConnections.back?.paths, colorId);
+
+    if (frontHasColor || backHasColor) {
+      // If only one side has the color, link to that side
+      const side = frontHasColor && !backHasColor ? "front" : backHasColor && !frontHasColor ? "back" : "front";
+      
+      tilesWithColor.push({
+        name: tile.name,
+        terrain: tile.terrain,
+        side,
+        frontHasColor,
+        backHasColor,
+      });
     }
   }
 
-  return mapTiles.filter((tile) => tilesWithColor.has(tile.name));
+  return tilesWithColor;
 }
 
 function hasColorInPaths(paths: unknown[] | undefined, colorId: string): boolean {
