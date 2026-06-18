@@ -2739,6 +2739,47 @@ describe("resolveCards", () => {
     expect(out).toHaveLength(1);
   });
 
+  it("matches rulebook title variants to TTS card names", () => {
+    const disenchanter = { ...sampleCard, source: "disenchanter" };
+    const alchemist = { ...sampleCard, source: "alchemist" };
+    const index = {
+      Disenchanter: [disenchanter],
+      "Alchemists mixture": [alchemist],
+    };
+
+    expect(
+      resolveCards("DisEnchanter", index, {
+        DisEnchanter: "Disenchanter",
+      }),
+    ).toEqual([disenchanter]);
+    expect(
+      resolveCards("Alchemist’s Mixture", index, {
+        [normalizeTitle("Alchemist’s Mixture")]: "Alchemists mixture",
+      }),
+    ).toEqual([alchemist]);
+  });
+
+  it("matches the Shekels rulebook title to all Shekel cards", () => {
+    const captivation = { ...sampleCard, source: "captivation" };
+    const subjugation = { ...sampleCard, source: "subjugation" };
+    const other = { ...sampleCard, source: "other" };
+
+    const out = resolveCards(
+      "Shekels",
+      {
+        "Shekel of Subjucation": [subjugation],
+        "Shekel of Captivation": [captivation],
+        "Symbol of Recruitment": [other],
+      },
+      {},
+    );
+
+    expect(out.map((card) => card.source)).toEqual([
+      "captivation",
+      "subjugation",
+    ]);
+  });
+
   it("alias array concatenates results from every target", () => {
     // One PDF section ("Spell Book and Spell Scroll") covering two TTS cards.
     const a = { ...sampleCard, source: "from-A" };

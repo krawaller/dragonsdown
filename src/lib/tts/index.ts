@@ -729,7 +729,7 @@ export function resolveCards<T extends TTSCardImage>(
   const direct = index[key];
   if (direct?.length) return direct;
   const aliased = aliases[key];
-  if (aliased === undefined) return [];
+  if (aliased === undefined) return cardCategoryMatches(key, index);
   const targets = Array.isArray(aliased) ? aliased : [aliased];
   const results: T[] = [];
   for (const target of targets) {
@@ -737,6 +737,17 @@ export function resolveCards<T extends TTSCardImage>(
     if (hits) results.push(...hits);
   }
   return results;
+}
+
+function cardCategoryMatches<T extends TTSCardImage>(
+  key: string,
+  index: Record<string, T[]>,
+): T[] {
+  if (key !== "Shekels") return [];
+  return Object.entries(index)
+    .filter(([title]) => title.startsWith("Shekel of "))
+    .sort(([left], [right]) => left.localeCompare(right))
+    .flatMap(([, cards]) => cards);
 }
 
 /**
