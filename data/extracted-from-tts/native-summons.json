@@ -609,38 +609,6 @@
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012604382/4ADD68A3A2D543F223365F0752F34F5998197DD7/"
         }
       ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Soldiers",
-      "natives": [
-        "Soldiers Leader",
-        "Soldiers 2",
-        "Soldiers 3",
-        "Soldiers 4"
-      ],
-      "nativeChips": [
-        {
-          "name": "Soldiers Leader",
-          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012643946/3FA9E588C85E47FFB30E65F81985433A1BCE02A1/",
-          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012644484/D99D743EABB2E24A2313ADCBAA99D22D3302111E/"
-        },
-        {
-          "name": "Soldiers 2",
-          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012642542/030B636AF3954F34F5469203B62DD66FBAE86BDB/",
-          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012642868/4E9F21BE414061859ECDA42983F18CEDC9B1DD84/"
-        },
-        {
-          "name": "Soldiers 3",
-          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810043222316/6AFA4731A31415EE2843AC7AAA600B96A9E27579/",
-          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012641418/92E618A0DCA01FC875C3AE03FFE42E0B4AAB8D60/"
-        },
-        {
-          "name": "Soldiers 4",
-          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012639420/B7321948F9AEF6293AD88952D0316AD978C72C29/",
-          "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012639794/3B171A635E570EFD56BB2DCBA8F045C37240C257/"
-        }
-      ]
     }
   ],
   "Mine": [

@@ -3225,19 +3225,35 @@ function imageFor(
   source: string,
   ancestry: string[],
 ): TTSCardImage | null {
-  const deckId = Object.keys(card.CustomDeck)[0];
-  if (!deckId) return null;
-  const deck = card.CustomDeck[deckId];
-  const index = card.CardID - Number.parseInt(deckId, 10) * 100;
+  const deckEntries = Object.entries(card.CustomDeck);
+  if (deckEntries.length === 0) return null;
+
+  const cardDeckId = Math.floor(card.CardID / 100).toString();
+  const indexedDeck = card.CustomDeck[cardDeckId];
+  const deck =
+    indexedDeck ?? (deckEntries.length === 1 ? deckEntries[0][1] : null);
+  if (!deck) return null;
+
+  // TTS stores the sprite-sheet cell in the last two digits. The deck prefix
+  // can drift from the save-local CustomDeck key when workshop decks are rebuilt.
+  const index = card.CardID % 100;
   if (!Number.isFinite(index) || index < 0) return null;
+
+  const row = Math.floor(index / deck.NumWidth);
+  const col = index % deck.NumWidth;
+
+  if (row >= deck.NumHeight || col >= deck.NumWidth) {
+    return null;
+  }
+
   const out: TTSCardImage = {
     source,
     faceURL: deck.FaceURL,
     backURL: deck.BackURL,
     numWidth: deck.NumWidth,
     numHeight: deck.NumHeight,
-    row: Math.floor(index / deck.NumWidth),
-    col: index % deck.NumWidth,
+    row,
+    col,
     uniqueBack: Boolean(deck.UniqueBack),
   };
   if (Array.isArray(card.Tags) && card.Tags.length > 0) {
