@@ -2,7 +2,7 @@
   "Cruel Caves": [
     {
       "source": "dd_all_exp",
-      "terrain": "Cruel Caves",
+      "terrainPack": "Cruel Caves",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953931806/B13DFDA0F48081D8704C74FC36455F1F3C2128A2/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
       "locations": [
@@ -22,7 +22,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Cruel Caves",
+      "terrainPack": "Cruel Caves",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953930761/8987958A6C56605B278E20F0F63330E848A84CF7/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
       "locations": [
@@ -39,7 +39,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Cruel Caves",
+      "terrainPack": "Cruel Caves",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
       "locations": [
@@ -54,7 +54,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Cruel Caves",
+      "terrainPack": "Cruel Caves",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012543663/6D5ED9F87F6AEC0C8337E9AF4638372EBA43F7B5/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
       "locations": [
@@ -70,7 +70,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Cruel Caves",
+      "terrainPack": "Cruel Caves",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
       "locations": [
@@ -86,7 +86,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Cruel Caves",
+      "terrainPack": "Cruel Caves",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953929149/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
       "locations": [
@@ -110,7 +110,7 @@
   "Dreadful Deserts": [
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14510350798267980535/CCE4246CCC7D306CFFCC17C1665541C33145BF19/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -130,7 +130,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16226642573503589325/F1816E8BA056667DAD67CE97AAAC45BF8FACFBFE/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -147,7 +147,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -162,7 +162,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9507195990435619424/69E580B794BFFF631D2CC1D0FB4EA64AA52D98C9/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -182,7 +182,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11350614834800396847/2258D418AC0CAD7C823E7B1397A0133A81EB3C7F/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -198,7 +198,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -214,7 +214,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9594046903796325970/1C922450DBE9BB16229432E8D316FEA095D24BFC/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -234,7 +234,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953899651/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -249,7 +249,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Dreadful Deserts",
+      "terrainPack": "Dreadful Deserts",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16068744120689205546/39909D19B4EA98B752961D7F8793F29B7BBF9213/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
       "locations": [
@@ -271,7 +271,7 @@
   "Malevolent Mountains": [
     {
       "source": "dd_all_exp",
-      "terrain": "Malevolent Mountains",
+      "terrainPack": "Malevolent Mountains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953952846/111606C60546C7120C6DF6AE3C2D90192A2FA487/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
       "locations": [
@@ -291,7 +291,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Malevolent Mountains",
+      "terrainPack": "Malevolent Mountains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953950180/5A867E0E1700B5C931AD563C57A9917A43FA14E4/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
       "locations": [
@@ -308,7 +308,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Malevolent Mountains",
+      "terrainPack": "Malevolent Mountains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953944129/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
       "locations": [
@@ -323,7 +323,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Malevolent Mountains",
+      "terrainPack": "Malevolent Mountains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012539007/FDA70B289C0C55BF28CCB46DC03774C4336ACFB8/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
       "locations": [
@@ -339,7 +339,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Malevolent Mountains",
+      "terrainPack": "Malevolent Mountains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
       "locations": [
@@ -355,7 +355,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Malevolent Mountains",
+      "terrainPack": "Malevolent Mountains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953929149/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
       "locations": [
@@ -379,7 +379,7 @@
   "Perilous Plains": [
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10311233951381901798/B711DEEAB2FF2908367B1CB18B3FE7E37DD50265/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -396,7 +396,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953904510/E20DAE1CE5C0E52F5F0F1B4C96A87B0345ECECEC/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -413,7 +413,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045297576/72C99BA10F336999632077D3425591AA40825828/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -429,7 +429,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -450,7 +450,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953908897/BC773FB63D1582EE29D0BFA26E4278B82BA29752/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -466,7 +466,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -482,7 +482,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953899651/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -497,7 +497,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Perilous Plains",
+      "terrainPack": "Perilous Plains",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953905396/BF9F863CE55BD7D3DD01CAE876EA050395403085/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453712948/88CEDE2FC86DE2F96C2C6DB56EBF647FDCB45CBC/",
       "locations": [
@@ -516,7 +516,7 @@
   "Ruthless Riverlands": [
     {
       "source": "dd_all_exp",
-      "terrain": "Ruthless Riverlands",
+      "terrainPack": "Ruthless Riverlands",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9330123526560797570/8C243FD0E0E805F1484AD3A2BB40D8AAD2CDA593/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
       "locations": [
@@ -533,7 +533,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Ruthless Riverlands",
+      "terrainPack": "Ruthless Riverlands",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17179738774063635109/30D521BBEDDAB9EEE999EF45EAEE915167F46BB4/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
       "locations": [
@@ -550,7 +550,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Ruthless Riverlands",
+      "terrainPack": "Ruthless Riverlands",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
       "locations": [
@@ -571,7 +571,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Ruthless Riverlands",
+      "terrainPack": "Ruthless Riverlands",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14623211079001957653/B77D201D746C306063ADB07B6B07D276CC12B13C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
       "locations": [
@@ -587,7 +587,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Ruthless Riverlands",
+      "terrainPack": "Ruthless Riverlands",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
       "locations": [
@@ -603,7 +603,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Ruthless Riverlands",
+      "terrainPack": "Ruthless Riverlands",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953899651/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
       "locations": [
@@ -625,7 +625,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Ruthless Riverlands",
+      "terrainPack": "Ruthless Riverlands",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13758592113855128350/394CC0FECC062A027769EB995F775698FFCAC23D/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
       "locations": [
@@ -644,7 +644,7 @@
   "Sinister Swamps": [
     {
       "source": "dd_all_exp",
-      "terrain": "Sinister Swamps",
+      "terrainPack": "Sinister Swamps",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012554060/FCF832CF54F4B867B14627AC9AA8007B141E572A/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
       "locations": [
@@ -660,7 +660,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Sinister Swamps",
+      "terrainPack": "Sinister Swamps",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953915477/4EE861753077D5749A6B767A1777B2A691489D4A/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
       "locations": [
@@ -677,7 +677,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Sinister Swamps",
+      "terrainPack": "Sinister Swamps",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
       "locations": [
@@ -698,7 +698,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Sinister Swamps",
+      "terrainPack": "Sinister Swamps",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953916248/A2F46CF655E00E63A0F33FA8CC977B042922EAD2/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
       "locations": [
@@ -715,7 +715,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Sinister Swamps",
+      "terrainPack": "Sinister Swamps",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
       "locations": [
@@ -731,7 +731,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Sinister Swamps",
+      "terrainPack": "Sinister Swamps",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953899651/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
       "locations": [
@@ -755,7 +755,7 @@
   "Wicked Woods": [
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012552946/0A32A559659DF2E14A5FBF3F510EC6598E79A1D4/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [
@@ -771,7 +771,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953923113/F1816E8BA056667DAD67CE97AAAC45BF8FACFBFE/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [
@@ -788,7 +788,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17615672600507115914/CB46632C6CF7D7D3AECCFD0F55E13661D4DC603B/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [
@@ -805,7 +805,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [
@@ -826,7 +826,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953921405/AAA1B4B5447C32E44B70C4AD68525B43379079B7/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [
@@ -842,7 +842,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953922171/BE2E08C27C4648D3D69EA52A08AE28F505E1D01D/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [
@@ -859,7 +859,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [
@@ -875,7 +875,7 @@
     },
     {
       "source": "dd_all_exp",
-      "terrain": "Wicked Woods",
+      "terrainPack": "Wicked Woods",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953899651/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
       "locations": [

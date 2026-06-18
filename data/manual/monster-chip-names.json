@@ -18,29 +18,29 @@
   ],
   "Merfolk": [
     {
-      "name": "Warrior",
+      "name": "Mage 1",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15106064978386320859/78192335BCC5A2059E8F91216CC00A794796D092/"
     },
     {
-      "name": "Mage 1",
+      "name": "Mage 2",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12751125273453748152/C36BCDEA20414EADFDFD416658EB6E19CB026A07/"
     },
     {
-      "name": "Mage 2",
+      "name": "Mage 3",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15593741659380371156/DC3590DC607DE38201E7A2BD00DFD38EDCB11096/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13057197507121166927/B2EF500BBF5FE62B3ED15CA20C3E4C85E1CC0837/"
     },
     {
-      "name": "Mage 3",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9225658430800702647/38693AAC365818CA8E4DE5772D0CC924ED6AF5A9/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17945833962132182002/9CA42FF9D96152C619B954266C710483C7906D60/"
+      "name": "Warrior",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11690454804909599748/480978F7A9619D6291442BE117656763F8419902/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9583676347847606844/FC86C60E1684E2227899DE6EF2EF2EB028CC7781/"
     },
     {
       "name": "Queen",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11690454804909599748/480978F7A9619D6291442BE117656763F8419902/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9583676347847606844/FC86C60E1684E2227899DE6EF2EF2EB028CC7781/"
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9225658430800702647/38693AAC365818CA8E4DE5772D0CC924ED6AF5A9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17945833962132182002/9CA42FF9D96152C619B954266C710483C7906D60/"
     }
   ],
   "Kobolds": [

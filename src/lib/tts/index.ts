@@ -407,11 +407,13 @@ export type TTSCivilisationToken = {
   name?: string;
   attribute?: string;
   terrain?: string;
+  terrainPack?: string;
 };
 
 export type TTSBoard = {
   source: string;
   terrain: string;
+  terrainPack?: string;
   imageURL: string;
   imageSecondaryURL: string;
   merchants: string[];
@@ -428,6 +430,7 @@ export type TTSSite = {
   imageURL: string;
   imageSecondaryURL: string;
   ancestry: string[];
+  terrainPack?: string;
   /** GMNotes string from the TTS tile, often a small numeric tag. */
   gmNotes?: string;
 };
@@ -453,6 +456,7 @@ export type TTSCivLocation = {
   source: string;
   imageURL: string;
   ancestry: string[];
+  terrainPack?: string;
 };
 
 /** Output written to data/extracted-from-tts/civlocations.json. Keyed by normalized `Nickname`. */
@@ -645,6 +649,7 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
 export type TTSWildernessToken = {
   source: string;
   terrain: string;
+  terrainPack?: string;
   name?: string;
   clearing?: number;
   draw?: 1 | "X";
@@ -2049,12 +2054,14 @@ export function extractSites(root: unknown, source: string): SiteIndex {
     const nick = (site.Nickname ?? "").trim();
     if (!nick) continue;
     const key = normalizeTitle(nick);
+    const terrainPack = terrainPackForAncestry(ancestry);
     const entry: TTSSite = {
       source,
       imageURL: site.CustomImage.ImageURL ?? "",
       imageSecondaryURL: site.CustomImage.ImageSecondaryURL ?? "",
       ancestry,
     };
+    if (terrainPack) entry.terrainPack = terrainPack;
     const gm = (site.GMNotes ?? "").trim();
     if (gm) entry.gmNotes = gm;
     (index[key] ??= []).push(entry);
@@ -2105,10 +2112,12 @@ export function extractCivLocations(
     const nick = (obj.Nickname ?? "").trim();
     if (!isCivLocationNickname(nick)) continue;
     const key = normalizeTitle(nick);
+    const terrainPack = terrainPackForAncestry(ancestry);
     (index[key] ??= []).push({
       source,
       imageURL: obj.CustomImage.ImageURL ?? "",
       ancestry,
+      ...(terrainPack ? { terrainPack } : {}),
     });
   }
   return index;
@@ -2180,7 +2189,11 @@ export function extractBoards(root: unknown, source: string): BoardIndex {
   };
 
   walkBoards(root, []);
-  return boards.sort((a, b) => a.terrain.localeCompare(b.terrain));
+  return boards.sort((a, b) =>
+    (a.terrainPack ?? a.terrain ?? "").localeCompare(
+      b.terrainPack ?? b.terrain ?? "",
+    ),
+  );
 }
 
 export function extractSiteMonsters(
@@ -2758,17 +2771,17 @@ function boardFor(
     : (SETUP_CARD_PRINTED_SITES_BY_IMAGE_URL[imageURL] ?? []);
   if (merchants.length === 0 && sites.length === 0) return null;
 
-  const terrain = terrainPackForAncestry(ancestry) || "Neutral";
+  const terrainPack = terrainPackForAncestry(ancestry);
   const imageSecondaryURL =
     text(image.ImageSecondaryURL) || stateTwoImageURL(obj) || "";
   return {
     source,
-    terrain,
+    ...(terrainPack ? { terrainPack } : {}),
     imageURL,
     imageSecondaryURL,
     merchants,
     sites,
-  };
+  } as TTSBoard;
 }
 
 function singleSiteBoardName(gmNotes: string): string {
@@ -2822,7 +2835,6 @@ function civilisationTokenFor(
   const token: TTSCivilisationToken = {
     source,
     imageURL,
-    imageSecondaryURL,
     locations: [{ ancestry, count: 1 }],
   };
   const gmNotes = text(obj.GMNotes);
@@ -2832,7 +2844,7 @@ function civilisationTokenFor(
   if (gmNotes) token.gmNotes = gmNotes;
   if (name) token.name = name;
   if (attribute) token.attribute = attribute;
-  if (terrain) token.terrain = terrain;
+  if (terrain) token.terrainPack = terrain;
   return token;
 }
 
@@ -2867,7 +2879,9 @@ function compareCivilisationTokens(
   b: TTSCivilisationToken,
 ): number {
   return (
-    (a.terrain ?? "").localeCompare(b.terrain ?? "") ||
+    (a.terrainPack ?? a.terrain ?? "").localeCompare(
+      b.terrainPack ?? b.terrain ?? "",
+    ) ||
     (a.gmNotes ?? "").localeCompare(b.gmNotes ?? "") ||
     (a.name ?? "").localeCompare(b.name ?? "") ||
     (a.attribute ?? "").localeCompare(b.attribute ?? "") ||
@@ -2925,11 +2939,11 @@ export function extractWildernessTokens(
         } else {
           const entry: TTSWildernessToken = {
             source,
-            terrain,
+            terrainPack: terrain,
             imageURL,
             imageSecondaryURL,
             locations: [{ ancestry, count: 1 }],
-          };
+          } as TTSWildernessToken;
           applyWildernessTokenMetadata(entry, metadata);
           addNickname(entry, nickname);
           bucket.push(entry);

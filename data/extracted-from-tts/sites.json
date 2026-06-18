@@ -7,6 +7,7 @@
       "ancestry": [
         "Cruel CAVES"
       ],
+      "terrainPack": "Cruel Caves",
       "gmNotes": "3"
     }
   ],
@@ -18,6 +19,7 @@
       "ancestry": [
         "Cruel CAVES"
       ],
+      "terrainPack": "Cruel Caves",
       "gmNotes": "4"
     }
   ],
@@ -29,6 +31,7 @@
       "ancestry": [
         "Malevolent MOUNTAINS"
       ],
+      "terrainPack": "Malevolent Mountains",
       "gmNotes": "1"
     }
   ],
@@ -40,6 +43,7 @@
       "ancestry": [
         "Malevolent MOUNTAINS"
       ],
+      "terrainPack": "Malevolent Mountains",
       "gmNotes": "5"
     }
   ],
@@ -51,6 +55,7 @@
       "ancestry": [
         "Sinister SWAMPS"
       ],
+      "terrainPack": "Sinister Swamps",
       "gmNotes": "6"
     }
   ],
@@ -62,6 +67,7 @@
       "ancestry": [
         "Sinister SWAMPS"
       ],
+      "terrainPack": "Sinister Swamps",
       "gmNotes": "3"
     }
   ],
@@ -73,6 +79,7 @@
       "ancestry": [
         "Malevolent MOUNTAINS"
       ],
+      "terrainPack": "Malevolent Mountains",
       "gmNotes": "6"
     }
   ],
@@ -84,6 +91,7 @@
       "ancestry": [
         "Perilous PLAINS"
       ],
+      "terrainPack": "Perilous Plains",
       "gmNotes": "2"
     }
   ],
@@ -95,6 +103,7 @@
       "ancestry": [
         "Wicked WOODS"
       ],
+      "terrainPack": "Wicked Woods",
       "gmNotes": "4"
     }
   ],
@@ -106,6 +115,7 @@
       "ancestry": [
         "Ruthless RIVERLANDS"
       ],
+      "terrainPack": "Ruthless Riverlands",
       "gmNotes": "6"
     }
   ],
@@ -117,6 +127,7 @@
       "ancestry": [
         "Dreadful DESERTS"
       ],
+      "terrainPack": "Dreadful Deserts",
       "gmNotes": "3"
     }
   ],
@@ -128,6 +139,7 @@
       "ancestry": [
         "Cruel CAVES"
       ],
+      "terrainPack": "Cruel Caves",
       "gmNotes": "2"
     }
   ]

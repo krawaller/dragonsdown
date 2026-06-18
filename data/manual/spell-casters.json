@@ -1,6 +1,45 @@
 {
+  "Affliction": {
+    "front": ["Banshee"]
+  },
+  "Dark Matter": {
+    "back": ["Banshee"]
+  },
+  "Caustic Blast": {
+    "back": ["Merfolk Mage 1"]
+  },
+  "Dark Presence": {
+    "back": ["Death Hound"]
+  },
+  "Elemental": {
+    "front": ["Lizardfolk Shaman"]
+  },
+  "Fiery Chasm": {
+    "back": ["Demon"]
+  },
   "Fireball": {
     "front": ["Great Drake"],
     "back": ["Adult Dragons", "Great Wyrm"]
+  },
+  "Gale Blast": {
+    "back": ["Merfolk Mage 2"]
+  },
+  "Mana Shield": {
+    "front": ["Lamia"]
+  },
+  "Pyroclasm": {
+    "front": ["Ifrit"]
+  },
+  "Rot": {
+    "front": ["Mummy"]
+  },
+  "Tentacles": {
+    "back": ["Arboreal Keeper"]
+  },
+  "Vapor Form": {
+    "back": ["Lich"]
+  },
+  "Water Weird": {
+    "back": ["Hag", "Merfolk Mage 3"]
   }
 }

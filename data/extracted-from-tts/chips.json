@@ -1244,7 +1244,7 @@
           "count": 1
         }
       ],
-      "name": "Warrior"
+      "name": "Mage 1"
     },
     {
       "source": "dd_all_exp",
@@ -1260,7 +1260,7 @@
           "count": 1
         }
       ],
-      "name": "Mage 1"
+      "name": "Mage 2"
     },
     {
       "source": "dd_all_exp",
@@ -1276,7 +1276,7 @@
           "count": 1
         }
       ],
-      "name": "Mage 2"
+      "name": "Mage 3"
     },
     {
       "source": "dd_all_exp",
@@ -1292,7 +1292,7 @@
           "count": 1
         }
       ],
-      "name": "Mage 3"
+      "name": "Queen"
     },
     {
       "source": "dd_all_exp",
@@ -1308,7 +1308,7 @@
           "count": 6
         }
       ],
-      "name": "Queen"
+      "name": "Warrior"
     }
   ],
   "Mummy": [

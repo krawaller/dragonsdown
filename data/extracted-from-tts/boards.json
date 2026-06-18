@@ -1,7 +1,19 @@
 [
   {
     "source": "dd_all_exp",
-    "terrain": "Cruel Caves",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045301969/DD24E6D2E7D4844F175EAC3E0E6F33C499847901/",
+    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045302361/C3B69D0A188C6F66CEFEF55FE5D7CC0D8013454D/",
+    "merchants": [
+      "Armorer",
+      "Fortune Teller",
+      "Mystic",
+      "Peddler"
+    ],
+    "sites": []
+  },
+  {
+    "source": "dd_all_exp",
+    "terrainPack": "Cruel Caves",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479518849040/26D7E5834ED773BD8179A21C5D4B5EC2886A9F89/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479518847519/0143B88DD8A0CDC2EC0F63D5451BEDACD8DBA724/",
     "merchants": [
@@ -15,7 +27,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Dreadful Deserts",
+    "terrainPack": "Dreadful Deserts",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12020682501701138489/9DA45CB8703845A82A64E7637C84E9B7270A04AE/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12413115678567092111/3BD1B815D7FEFD23F5CC905E655DBDE107E34452/",
     "merchants": [
@@ -26,7 +38,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Dreadful Deserts",
+    "terrainPack": "Dreadful Deserts",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15429035261550998634/62807FE48E734542B1C7C08EEA7F4EB454EA110E/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13381715783898316776/1953FBCF14B15BA92EC594B658A76C4F0B1C8109/",
     "merchants": [],
@@ -39,7 +51,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Malevolent Mountains",
+    "terrainPack": "Malevolent Mountains",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519039329/41E3FD0F7E9C8A95B83A525FC80B0919F23D3563/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519040398/D742302175825846292B19C1B82ED0036C6DB611/",
     "merchants": [
@@ -53,20 +65,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Neutral",
-    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045301969/DD24E6D2E7D4844F175EAC3E0E6F33C499847901/",
-    "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045302361/C3B69D0A188C6F66CEFEF55FE5D7CC0D8013454D/",
-    "merchants": [
-      "Armorer",
-      "Fortune Teller",
-      "Mystic",
-      "Peddler"
-    ],
-    "sites": []
-  },
-  {
-    "source": "dd_all_exp",
-    "terrain": "Perilous Plains",
+    "terrainPack": "Perilous Plains",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16820043534445951322/082495983517AE00BE5EA0C0EE098B927482466D/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13385798795784544656/B8F40B60666DFB3022A9B686344B0BE5E1A07BE4/",
     "merchants": [],
@@ -76,7 +75,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Perilous Plains",
+    "terrainPack": "Perilous Plains",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519118348/443D7796425167A331EC30CB6EB39F7881BA543F/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519118820/23D7C5EAED7620C69582AF6184F13353CA82A9E2/",
     "merchants": [
@@ -90,7 +89,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Ruthless Riverlands",
+    "terrainPack": "Ruthless Riverlands",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16948278958954043783/FC338D6BDE29FE6BD3D2EB5E3CFD64D0E82F59F5/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10224208062067457957/57349F3D24051B7AF1F85DD154EA88E84AE13EC8/",
     "merchants": [
@@ -104,7 +103,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Sinister Swamps",
+    "terrainPack": "Sinister Swamps",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519120254/77809A8879191279ADBE84BC48A9E12C272548A7/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519120733/0E276B794368757BE04CC8975561B180A5BAFCAC/",
     "merchants": [
@@ -118,7 +117,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Wicked Woods",
+    "terrainPack": "Wicked Woods",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13729944545833513361/23769D896721D2D79C1FB9D1358185CBEA3DF047/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14848632290504020698/D48E7A85AE31A6F3B1DDDB11DDC19D5BC6BF1E99/",
     "merchants": [],
@@ -128,7 +127,7 @@
   },
   {
     "source": "dd_all_exp",
-    "terrain": "Wicked Woods",
+    "terrainPack": "Wicked Woods",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519043888/1148228148CCCE332A638EBED6176E9AE6129254/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519045064/998FE80DA08E1020A560E7FFEEF26BE2574C2866/",
     "merchants": [

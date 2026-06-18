@@ -188,9 +188,13 @@ function getCivLocationIndex(): CivLocationIndex {
 
 function getWildernessTokenIndex(): WildernessTokenIndex {
   if (cachedWildernessTokenIndex !== null) return cachedWildernessTokenIndex;
-  cachedWildernessTokenIndex = readJsonOrEmpty<WildernessTokenIndex>(
-    WILDERNESS_TOKENS_FILE,
-  );
+  const data = readJsonOrEmpty<WildernessTokenIndex>(WILDERNESS_TOKENS_FILE);
+  for (const [terrain, tokens] of Object.entries(data)) {
+    for (const token of tokens) {
+      if (!token.terrain) token.terrain = terrain;
+    }
+  }
+  cachedWildernessTokenIndex = data;
   return cachedWildernessTokenIndex;
 }
 
@@ -199,7 +203,13 @@ function getCivilisationTokenIndex(): TTSCivilisationToken[] {
     return cachedCivilisationTokenIndex;
   const data = readJsonOrEmpty<unknown>(CIVILISATION_TOKENS_FILE);
   cachedCivilisationTokenIndex = Array.isArray(data)
-    ? (data as TTSCivilisationToken[])
+    ? (data as TTSCivilisationToken[]).map((token) => ({
+        ...token,
+        terrain:
+          token.terrain ??
+          token.terrainPack ??
+          CIVILISATION_TOKEN_NEUTRAL_TERRAIN,
+      }))
     : [];
   return cachedCivilisationTokenIndex;
 }
@@ -207,7 +217,12 @@ function getCivilisationTokenIndex(): TTSCivilisationToken[] {
 function getBoardIndex(): TTSBoard[] {
   if (cachedBoardIndex !== null) return cachedBoardIndex;
   const data = readJsonOrEmpty<unknown>(BOARDS_FILE);
-  cachedBoardIndex = Array.isArray(data) ? (data as TTSBoard[]) : [];
+  cachedBoardIndex = Array.isArray(data)
+    ? (data as TTSBoard[]).map((board) => ({
+        ...board,
+        terrain: board.terrain ?? board.terrainPack ?? "Neutral",
+      }))
+    : [];
   return cachedBoardIndex;
 }
 
