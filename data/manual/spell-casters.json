@@ -11,6 +11,12 @@
   "Dark Presence": {
     "back": ["Death Hound"]
   },
+  "Disorient": {
+    "back": ["Omnicrux"]
+  },
+  "Doppelganger": {
+    "front": ["Siren"]
+  },
   "Elemental": {
     "front": ["Lizardfolk Shaman"]
   },
@@ -18,11 +24,14 @@
     "back": ["Demon"]
   },
   "Fireball": {
-    "front": ["Great Drake"],
-    "back": ["Adult Dragons", "Great Wyrm"]
+    "front": ["Great Drake", "Omnicrux"],
+    "back": ["Adult Dragons", "Great Wyrm", "Sand Wyrm"]
   },
   "Gale Blast": {
     "back": ["Merfolk Mage 2"]
+  },
+  "Lightning": {
+    "front": ["Storm Drake"]
   },
   "Mana Shield": {
     "front": ["Lamia"]
@@ -32,6 +41,9 @@
   },
   "Rot": {
     "front": ["Mummy"]
+  },
+  "Teleport": {
+    "front": ["Titan"]
   },
   "Tentacles": {
     "back": ["Arboreal Keeper"]

@@ -10,7 +10,9 @@ import {
   getAllMonsterGroups,
   getMissionsFeaturing,
   getMonsterGroupBySlug,
+  getSpellsForMonster,
   type MonsterGroupEntry,
+  type MonsterSpellEntry,
 } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
@@ -26,6 +28,10 @@ export default async function MonsterGroupPage({
   const group = getMonsterGroupBySlug(slug);
   if (!group) notFound();
   const featuredMissions = getMissionsFeaturing(group.prettyName);
+  const chipNames = group.chips.flatMap((chip) =>
+    chip.monsterName ? [chip.monsterName] : [],
+  );
+  const spells = getSpellsForMonster([group.prettyName, ...chipNames]);
   const rulebookLinks = await resolveMonsterRulebookLinks(
     group.prettyName,
     group.chips.flatMap((chip) => (chip.monsterName ? [chip.monsterName] : [])),
@@ -90,6 +96,35 @@ export default async function MonsterGroupPage({
               </div>
             </div>
           )}
+        </section>
+      )}
+
+      {spells.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold mb-3">Spells</h2>
+          <div className="flex flex-wrap gap-2">
+            {spells.map((spell) => (
+              <Link
+                key={spell.spellName}
+                href={`/spells/${spell.spellSlug}`}
+                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+              >
+                <span className="font-medium">{spell.spellName}</span>
+                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                  {spell.sides.join(" & ")}
+                  {spell.casterNames.some((n) => n !== group.prettyName) && (
+                    <>
+                      {" "}
+                      ·{" "}
+                      {spell.casterNames
+                        .filter((n) => n !== group.prettyName)
+                        .join(", ")}
+                    </>
+                  )}
+                </span>
+              </Link>
+            ))}
+          </div>
         </section>
       )}
 

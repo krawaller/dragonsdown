@@ -96,6 +96,12 @@ const MONSTER_CHIP_NAMES_FILE = path.join(
   "manual",
   "monster-chip-names.json",
 );
+const SPELL_CASTERS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "manual",
+  "spell-casters.json",
+);
 
 export const CIVILISATION_TOKEN_NEUTRAL_TERRAIN = "Neutral";
 
@@ -118,6 +124,10 @@ let cachedNativeIndex: NativeIndex | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
 let cachedMissionIndex: MissionIndex | null = null;
 let cachedMissionFeatureIndex: Record<string, string | string[]> | null = null;
+let cachedSpellCasters: Record<
+  string,
+  { front?: string[]; back?: string[] }
+> | null = null;
 let cachedManualMonsterChipNameIndex: ManualMonsterChipNameIndex | null = null;
 let cachedAliases: AliasMap | null = null;
 
@@ -280,6 +290,121 @@ function getManualMonsterChipNameIndex(): ManualMonsterChipNameIndex {
   cachedManualMonsterChipNameIndex =
     readJsonOrEmpty<ManualMonsterChipNameIndex>(MONSTER_CHIP_NAMES_FILE);
   return cachedManualMonsterChipNameIndex;
+}
+
+function getSpellCastersIndex(): Record<
+  string,
+  { front?: string[]; back?: string[] }
+> {
+  if (cachedSpellCasters !== null) return cachedSpellCasters;
+  cachedSpellCasters =
+    readJsonOrEmpty<Record<string, { front?: string[]; back?: string[] }>>(
+      SPELL_CASTERS_FILE,
+    );
+  return cachedSpellCasters;
+}
+
+/** Sides on which a monster casts a given spell. */
+export type SpellCasterEntry = {
+  monsterName: string;
+  sides: ("front" | "back")[];
+  monsterSlug: string;
+};
+
+/** Spells cast by a given monster, keyed by side. */
+export type MonsterSpellEntry = {
+  spellName: string;
+  sides: ("front" | "back")[];
+  spellSlug: string;
+  /** Individual monster names within the group that cast this spell. */
+  casterNames: string[];
+};
+
+/** Return all monsters that cast a given spell, across either card side. */
+export function getSpellCastersForSpell(spellName: string): SpellCasterEntry[] {
+  const idx = getSpellCastersIndex();
+  const entry = idx[spellName];
+  if (!entry) return [];
+  const bySide = new Map<string, ("front" | "back")[]>();
+  for (const side of ["front", "back"] as const) {
+    for (const name of entry[side] ?? []) {
+      const sides = bySide.get(name) ?? [];
+      sides.push(side);
+      bySide.set(name, sides);
+    }
+  }
+  return [...bySide.entries()]
+    .map(([monsterName, sides]) => ({
+      monsterName,
+      sides,
+      monsterSlug: monsterGroupSlugForCaster(monsterName),
+    }))
+    .sort((a, b) => a.monsterName.localeCompare(b.monsterName));
+}
+
+/** Return all spells cast by any of the given monster names (group name + individual chip names). */
+export function getSpellsForMonster(
+  monsterNames: string | string[],
+): MonsterSpellEntry[] {
+  const names = Array.isArray(monsterNames) ? monsterNames : [monsterNames];
+  const idx = getSpellCastersIndex();
+  const results: MonsterSpellEntry[] = [];
+  for (const [spellName, entry] of Object.entries(idx)) {
+    const sidesSet = new Set<"front" | "back">();
+    const casterNames: string[] = [];
+    for (const side of ["front", "back"] as const) {
+      for (const casterName of entry[side] ?? []) {
+        if (
+          names.some((name) => spellCasterMatchesMonsterName(casterName, name))
+        ) {
+          sidesSet.add(side);
+          if (!casterNames.includes(casterName)) casterNames.push(casterName);
+        }
+      }
+    }
+    if (sidesSet.size > 0) {
+      results.push({
+        spellName,
+        sides: ["front", "back"].filter((s) =>
+          sidesSet.has(s as "front" | "back"),
+        ) as ("front" | "back")[],
+        spellSlug: slugify(spellName),
+        casterNames,
+      });
+    }
+  }
+  return results.sort((a, b) => a.spellName.localeCompare(b.spellName));
+}
+
+function monsterGroupSlugForCaster(monsterName: string): string {
+  const normalizedCaster = normalizeTitle(monsterName);
+  const group = getAllMonsterGroups().find((entry) => {
+    if (normalizeTitle(entry.prettyName) === normalizedCaster) return true;
+    if (
+      entry.chips.some(
+        (chip) =>
+          chip.monsterName &&
+          normalizeTitle(chip.monsterName) === normalizedCaster,
+      )
+    ) {
+      return true;
+    }
+    const normalizedGroup = normalizeTitle(entry.prettyName);
+    return normalizedCaster.startsWith(`${normalizedGroup} `);
+  });
+  return group ? group.slug : slugify(monsterName);
+}
+
+function spellCasterMatchesMonsterName(
+  casterName: string,
+  monsterName: string,
+): boolean {
+  const normalizedCaster = normalizeTitle(casterName);
+  const normalizedMonster = normalizeTitle(monsterName);
+  return (
+    normalizedCaster === normalizedMonster ||
+    normalizedCaster.startsWith(`${normalizedMonster} `)
+  );
 }
 
 function readJsonOrEmpty<T>(file: string): T {

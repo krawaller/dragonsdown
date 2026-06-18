@@ -2835,6 +2835,7 @@ function civilisationTokenFor(
   const token: TTSCivilisationToken = {
     source,
     imageURL,
+    imageSecondaryURL,
     locations: [{ ancestry, count: 1 }],
   };
   const gmNotes = text(obj.GMNotes);
