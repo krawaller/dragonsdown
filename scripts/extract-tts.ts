@@ -30,6 +30,8 @@ import {
   extractTreasures,
   extractWildernessTokens,
   isSameCell,
+  mergeTreasureCubePlacements,
+  mergeTreasureEnchantments,
   mergeTags,
   sameAncestry,
   type BoardIndex,
@@ -363,6 +365,17 @@ async function main(): Promise<void> {
         if (existing) {
           existing.copies += treasure.copies;
           existing.tags = mergeTags(existing.tags, treasure.tags);
+          if (!existing.terrainPack && treasure.terrainPack) {
+            existing.terrainPack = treasure.terrainPack;
+          }
+          existing.enchantments = mergeTreasureEnchantments(
+            existing.enchantments,
+            treasure.enchantments,
+          );
+          existing.cubePlacements = mergeTreasureCubePlacements(
+            existing.cubePlacements,
+            treasure.cubePlacements,
+          );
           for (const loc of treasure.locations) {
             const match = existing.locations.find((l) =>
               sameAncestry(l.ancestry, loc.ancestry),

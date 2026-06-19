@@ -2652,6 +2652,70 @@ describe("extractTreasures", () => {
     });
   });
 
+  it("extracts enchantments from treasure card Lua", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Enchanted Treasure", 100, "1", TREASURE_DECK),
+          LuaScript:
+            'function replace_treasure()\n draw_cube("green", 1, -2)\nend',
+        },
+      ],
+    };
+
+    expect(outFirstTreasure(save, "Enchanted Treasure")).toMatchObject({
+      enchantments: [{ color: "green", count: 1, offset: -2 }],
+    });
+  });
+
+  it("extracts multiple enchantments from treasure Lua", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "LEGENDS Cards",
+          ContainedObjects: [
+            {
+              ...card("Infernal Glyphs", 100, "1", DEEP_TREASURE_DECK),
+              LuaScript: 'draw_cube("black", 1, 0)\n draw_cube("grey", 1, 0.5)',
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(outFirstTreasure(save, "Infernal Glyphs")).toMatchObject({
+      deck: "deep-treasure",
+      enchantments: [
+        { color: "black", count: 1, offset: 0 },
+        { color: "grey", count: 1, offset: 0.5 },
+      ],
+    });
+  });
+
+  it("extracts cube placement anchors from attached snap points", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Arcane Sword", 160, "1", DEEP_TREASURE_DECK),
+          AttachedSnapPoints: [
+            { Position: { x: 0.433399439, y: 0.209305763, z: 0.9863894 } },
+            { Position: { x: -0.4534923, y: 0.209305346, z: 0.977348268 } },
+            { Position: { x: -0.000186612539, y: 0.209305555, z: 0.9869081 } },
+          ],
+        },
+      ],
+    };
+
+    expect(outFirstTreasure(save, "Arcane Sword")).toMatchObject({
+      cubePlacements: [
+        { x: -0.4534923, y: 0.209305346, z: 0.977348268 },
+        { x: -0.000186612539, y: 0.209305555, z: 0.9869081 },
+        { x: 0.433399439, y: 0.209305763, z: 0.9863894 },
+      ],
+    });
+  });
+
   it("leaves terrainPack unset for shared treasure decks", () => {
     const save = {
       ObjectStates: [card("Potion of Energy", 100, "1", TREASURE_DECK)],
@@ -2669,6 +2733,10 @@ describe("extractTreasures", () => {
 
     expect(extractTreasures(save, "dd_all_exp")).toEqual({});
   });
+
+  function outFirstTreasure(save: unknown, name: string) {
+    return extractTreasures(save, "dd_all_exp")[name][0];
+  }
 });
 
 describe("extractLegendaryLocations", () => {

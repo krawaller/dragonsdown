@@ -68,9 +68,23 @@ export type ItemIndex = Record<string, TTSItemCard[]>;
 
 export type TTSTreasureDeck = "treasure" | "deep-treasure" | "legendary";
 
+export type TTSTreasureEnchantment = {
+  color: string;
+  count: number;
+  offset: number;
+};
+
+export type TTSTreasureCubePlacement = {
+  x: number;
+  y: number;
+  z: number;
+};
+
 export type TTSTreasureCard = TTSCardImage & {
   deck: TTSTreasureDeck;
   terrainPack?: string;
+  enchantments?: TTSTreasureEnchantment[];
+  cubePlacements?: TTSTreasureCubePlacement[];
   copies: number;
   locations: { ancestry: string[]; count: number }[];
 };
@@ -792,6 +806,13 @@ type TTSCardObject = {
   CardID: number;
   Tags?: string[];
   LuaScript?: string;
+  AttachedSnapPoints?: {
+    Position?: {
+      x?: number;
+      y?: number;
+      z?: number;
+    };
+  }[];
   CustomDeck: Record<
     string,
     {
@@ -885,6 +906,8 @@ export function extractTreasures(root: unknown, source: string): TreasureIndex {
     const deck = treasureDeckFor(raw, image, ancestry);
     if (!deck) continue;
     const terrainPack = terrainPackForAncestry(ancestry);
+    const enchantments = treasureEnchantments(card.LuaScript);
+    const cubePlacements = treasureCubePlacements(card.AttachedSnapPoints);
     const key = normalizeTitle(raw);
     const bucket = (index[key] ??= []);
     const existing = bucket.find(
@@ -896,6 +919,14 @@ export function extractTreasures(root: unknown, source: string): TreasureIndex {
       if (!existing.terrainPack && terrainPack) {
         existing.terrainPack = terrainPack;
       }
+      existing.enchantments = mergeTreasureEnchantments(
+        existing.enchantments,
+        enchantments,
+      );
+      existing.cubePlacements = mergeTreasureCubePlacements(
+        existing.cubePlacements,
+        cubePlacements,
+      );
       addToLocations(existing.locations, ancestry);
     } else {
       const entry: TTSTreasureCard = {
@@ -905,10 +936,89 @@ export function extractTreasures(root: unknown, source: string): TreasureIndex {
         locations: [{ ancestry, count: 1 }],
       };
       if (terrainPack) entry.terrainPack = terrainPack;
+      if (enchantments.length) entry.enchantments = enchantments;
+      if (cubePlacements.length) entry.cubePlacements = cubePlacements;
       bucket.push(entry);
     }
   }
   return index;
+}
+
+function treasureEnchantments(
+  lua: string | undefined,
+): TTSTreasureEnchantment[] {
+  if (!lua) return [];
+  const enchantments: TTSTreasureEnchantment[] = [];
+  const regex =
+    /draw_cube\(\s*["']([^"']+)["']\s*,\s*(\d+)\s*,\s*(-?\d+(?:\.\d+)?)\s*\)/gi;
+  for (const match of lua.matchAll(regex)) {
+    enchantments.push({
+      color: match[1].trim(),
+      count: Number(match[2]),
+      offset: Number(match[3]),
+    });
+  }
+  return enchantments;
+}
+
+function treasureCubePlacements(
+  snapPoints: TTSCardObject["AttachedSnapPoints"],
+): TTSTreasureCubePlacement[] {
+  return (snapPoints ?? [])
+    .flatMap((snapPoint) => {
+      const position = snapPoint.Position;
+      if (
+        typeof position?.x !== "number" ||
+        typeof position.y !== "number" ||
+        typeof position.z !== "number"
+      ) {
+        return [];
+      }
+      return [{ x: position.x, y: position.y, z: position.z }];
+    })
+    .sort((a, b) => a.x - b.x || a.z - b.z || a.y - b.y);
+}
+
+export function mergeTreasureEnchantments(
+  existing: TTSTreasureEnchantment[] | undefined,
+  incoming: TTSTreasureEnchantment[] | undefined,
+): TTSTreasureEnchantment[] | undefined {
+  if (!incoming?.length) return existing;
+  const enchantments = existing ? existing.map((entry) => ({ ...entry })) : [];
+  for (const entry of incoming) {
+    if (
+      !enchantments.some(
+        (candidate) =>
+          candidate.color === entry.color &&
+          candidate.count === entry.count &&
+          candidate.offset === entry.offset,
+      )
+    ) {
+      enchantments.push({ ...entry });
+    }
+  }
+  return enchantments;
+}
+
+export function mergeTreasureCubePlacements(
+  existing: TTSTreasureCubePlacement[] | undefined,
+  incoming: TTSTreasureCubePlacement[] | undefined,
+): TTSTreasureCubePlacement[] | undefined {
+  if (!incoming?.length) return existing;
+  const placements = existing ? existing.map((entry) => ({ ...entry })) : [];
+  for (const entry of incoming) {
+    if (
+      !placements.some(
+        (candidate) =>
+          candidate.x === entry.x &&
+          candidate.y === entry.y &&
+          candidate.z === entry.z,
+      )
+    ) {
+      placements.push({ ...entry });
+    }
+  }
+  return placements.sort((a, b) => a.x - b.x || a.z - b.z || a.y - b.y);
 }
 
 function treasureDeckFor(
