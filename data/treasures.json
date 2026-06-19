@@ -1,0 +1,5850 @@
+{
+  "Adamantium Blade": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Adventurers Corpse": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Adventurers Toolkit": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Alchemical Lure": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Alchemists mixture": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Amaranth of Action": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Amber Spire": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ancient Map": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Aquarias Enchiridion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Arcane Bond": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Arcane Sword": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Arcanis Engima": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Artificers Concoction": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ascendant Ornament": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Band of Sagacity": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Banner of Legitimacy": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Banner of the Brigands": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Bards Bouzouki": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Baton of the Lost Prince": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Battle Staff": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Bauble of Intelligence": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Bejeweled Breastplate": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Bejeweled Helm": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Bejeweled Shield": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Belt of Expansion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Belt of the Beast": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Blade of the Scorpion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Book of Eternal Sand": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Bow of the Hunt": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Bracelets of Finesse": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Braces of Vigor": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Broche of Deflection": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Brogans of the Birds": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Canopic Jar": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Cape of Alteration": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Casting Lens": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Cavernous Pit": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Champions Blade": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Champions Plate": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Charismatic Gemstone": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Cipherstone": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Clashing Ring": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Clodpoll Club": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Codex of Cognition": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Coin of Passage": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Riverlands Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Ruthless Riverlands"
+    }
+  ],
+  "Collapsed Passage": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Coronet of the Lost Prince": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Cursed Axe": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Cursed Treasure": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Dagger of Bite": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Dancing Sword": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Dastanas of the Scorpion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Decimation": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Diggers Ruin": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Disenchanter": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Duffel of Displacement": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Dust of Destiny": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Earthen Cincture": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Elemental Spherule": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Elven Amulet": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Elven Helm": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Elven Shield": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Elven Slippers": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Elven Vest": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Enchanted Treasure": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Epic treasure. Melee weapon.": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Eternium Grimoire": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Explorers Boots": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Fade Essence": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Figurine of the Stalk": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Fish Fluke Statuette": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Riverlands Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Ruthless Riverlands"
+    }
+  ],
+  "Foci of the Spellcaster": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Gage of the Thief": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Galdric of Enchantment": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Garb of the Gate": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Gauntlets of Brawn": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ghutra of the Scorpion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Deserts Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Dreadful Deserts"
+    }
+  ],
+  "Gloves of Aggression": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Golden Icon": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Golden Shroud": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Grave of the Champion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Grommels Talisman": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Guard Charm": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Hamblens Pendant": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Hand of the Lich": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Harmonic Hand Axe": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Hawkeye": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Healers Flask": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Helm of True Sight": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Hex of Servitude": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Holdfast Leathers": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Horn of the Dark Angel": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Icon of the Dragon": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Igneous Flame": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Incanters Jewel": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Infernal Glyphs": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Jeweled Thiefs Skull": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Khatam of the Quick": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Deserts Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Dreadful Deserts"
+    }
+  ],
+  "Kings Pardon": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Kolah of the Horus eye": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Lamp of the Djinni": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "Legends EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Legends EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Lost Captains Locker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "Legends EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Legends EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mace of Absolution": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mace of Smiting": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mageshift Medallion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Magewrights Quill": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Magic Carpet": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Magical Bowl of Mixing": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mantle of the Djinn": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mirror of Idolatry": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mithral Chainmail": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mithral Plate Armor": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Mithral Shield": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Moon Crystal": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Deserts Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Dreadful Deserts"
+    }
+  ],
+  "Moon Mirror": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Morsel of Might": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Obsidian Dagger": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Orb of Far Sight": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Panacea of Persuasion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Peace Pendant": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Pearl of Riversight": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Riverlands Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Ruthless Riverlands"
+    }
+  ],
+  "Pebble of Irritation": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Portable Hole": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Potion of Energy": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Potion of Flight": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Potion of Healing": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Potion of Maneuver": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Potion of Might": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Potion of Relief": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Quick Ring": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Riddle of the Imp": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ring of Malevolence": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ring of Strength": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ring of the Magi": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ring of Truth": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Ripplestrike": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Riverlands Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Ruthless Riverlands"
+    }
+  ],
+  "Riverwalkers": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Riverlands Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Ruthless Riverlands"
+    }
+  ],
+  "Robe of the Chanter": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Robust Ring": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Roc Egg": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sabre of the Fencer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sandglass of Eternity": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Deserts Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Dreadful Deserts"
+    }
+  ],
+  "Sandstrider Boots": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Deserts Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Dreadful Deserts"
+    }
+  ],
+  "Satchel of a Giant": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Satchel of Suppression": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Scepter of the Sorcerer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Seafang": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Seal of the False King": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Seed of Speed": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sending Stones": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Serpent Helm": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shadow Cloak": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shamans Kaftan": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shekel of Captivation": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shekel of Future Sight": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shekel of Gloom": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shekel of Shaking": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shekel of Subjucation": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shekel of the Sun": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shekel of the Wind": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shield of Defiance": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shield of Mercy": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shield of the Lost Prince": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Shoes of the Thief": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sin Sword": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Skeleton Key": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Skull Splitter": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sparkler of Wisdom": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Spear of Piercing": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Spell Book": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Spell Libram": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Spell Scroll": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Spellcasters Simulacrum": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Staff of Souls": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Staff of Thaumaturgy": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Staff of the Magi": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Staff of the Sharp Sands": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Deserts Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Dreadful Deserts"
+    }
+  ],
+  "Statue of the Templar": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Storms Eye": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "ancestry": [
+        "Riverlands Chips"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Riverlands Chips"
+          ],
+          "count": 1
+        }
+      ],
+      "terrainPack": "Ruthless Riverlands"
+    }
+  ],
+  "Summoning Marcation": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sunblade": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sword of the Lost Prince": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Sword of Torment": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Alertness": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Commerce": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Greed": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Knowledge": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Magic": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Motion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Recruitment": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Rest": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of Stealth": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Symbol of VIsion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tacticians Grasp": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tail of the Scorpion": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Talaria of the Gladiator": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Taper of Illumination": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Temporary Mist Stone": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "The Lamp": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "Legends EASTERN"
+      ],
+      "deck": "legendary",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Legends EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "The Sting": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Thiefs Lucky Coin": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Time Stone": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tinkerers Timepiece": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of Conjuring": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 7,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of Fay": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 8,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of Nature": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 9,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of Power": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of Righteousness": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of the Black Arts": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of Tricks": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tome of Wizardry": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Treacherous Ledge": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "ancestry": [
+        "LEGENDS Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "LEGENDS Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tricksters Stone": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Tricky Ring": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 2,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Trinket of Transmutation": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Vain Blade": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "DESOLATION Cards"
+      ],
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "DESOLATION Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Vorpal Cutlass": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 3,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Wand of the Magician": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 4,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "War Weavers Needle": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures3.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "ancestry": [
+        "Cards EASTERN"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Cards EASTERN"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Warblade": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 5,
+      "uniqueBack": false,
+      "deck": "deep-treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Whispering Compass": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 0,
+      "uniqueBack": false,
+      "ancestry": [
+        "NATIVES Cards"
+      ],
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "NATIVES Cards"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Writ of Redemption": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/treasures/AllTreasures2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "deck": "treasure",
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [],
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

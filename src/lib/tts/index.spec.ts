@@ -16,6 +16,7 @@ import {
   extractNativeSummons,
   extractSiteMonsters,
   extractSpells,
+  extractTreasures,
   extractWildernessTokens,
   extractSites,
   missionCellKey,
@@ -28,6 +29,7 @@ import {
   HERO_STARTING_SPELL_CARD_BACK_URL,
   ITEM_CARD_BACK_URL,
   SITE_FACE_URL,
+  TREASURE_CARD_BACK_URL,
   SPELL_CARD_BACK_URL,
   WILDERNESS_TOKEN_BACK_URLS,
   WILDERNESS_TOKEN_FRONT_METADATA,
@@ -2583,6 +2585,89 @@ describe("extractItems", () => {
       locations: [{ ancestry: ["Horses"], count: 1 }],
       boxes: [{ name: "Eastern Reaches", count: 1 }],
     });
+  });
+});
+
+describe("extractTreasures", () => {
+  const TREASURE_DECK = { ...SAMPLE_DECK, BackURL: TREASURE_CARD_BACK_URL };
+  const DEEP_TREASURE_DECK = {
+    ...SAMPLE_DECK,
+    BackURL: DEEP_TREASURE_CARD_BACK_URL,
+  };
+
+  it("extracts treasure cards with their source deck", () => {
+    const save = {
+      ObjectStates: [
+        card("Potion of Energy", 100, "1", TREASURE_DECK),
+        card("Staff of Souls", 100, "1", DEEP_TREASURE_DECK),
+        {
+          Name: "Bag",
+          Nickname: "LEGENDS Cards",
+          ContainedObjects: [card("The Lamp", 100, "1", DEEP_TREASURE_DECK)],
+        },
+      ],
+    };
+
+    const out = extractTreasures(save, "dd_all_exp");
+
+    expect(out["Potion of Energy"][0]).toMatchObject({
+      deck: "treasure",
+      copies: 1,
+      locations: [{ ancestry: [], count: 1 }],
+    });
+    expect(out["Staff of Souls"][0]).toMatchObject({
+      deck: "deep-treasure",
+      copies: 1,
+      locations: [{ ancestry: [], count: 1 }],
+    });
+    expect(out["The Lamp"][0]).toMatchObject({
+      deck: "legendary",
+      copies: 1,
+      locations: [{ ancestry: ["LEGENDS Cards"], count: 1 }],
+    });
+  });
+
+  it("counts duplicate physical copies per treasure deck", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Deserts Chips",
+          ContainedObjects: [
+            card("Potion of Energy", 100, "1", TREASURE_DECK),
+            card("Potion of Energy", 100, "1", TREASURE_DECK),
+          ],
+        },
+      ],
+    };
+
+    const out = extractTreasures(save, "dd_all_exp");
+
+    expect(out["Potion of Energy"]).toHaveLength(1);
+    expect(out["Potion of Energy"][0]).toMatchObject({
+      deck: "treasure",
+      terrainPack: "Dreadful Deserts",
+      copies: 2,
+      locations: [{ ancestry: ["Deserts Chips"], count: 2 }],
+    });
+  });
+
+  it("leaves terrainPack unset for shared treasure decks", () => {
+    const save = {
+      ObjectStates: [card("Potion of Energy", 100, "1", TREASURE_DECK)],
+    };
+
+    expect(
+      extractTreasures(save, "dd_all_exp")["Potion of Energy"][0],
+    ).not.toHaveProperty("terrainPack");
+  });
+
+  it("skips non-treasure card backs", () => {
+    const save = {
+      ObjectStates: [card("Not A Treasure", 100, "1", SAMPLE_DECK)],
+    };
+
+    expect(extractTreasures(save, "dd_all_exp")).toEqual({});
   });
 });
 

@@ -42,6 +42,9 @@ export type CardIndex = Record<string, TTSCardImage[]>;
 export const ITEM_CARD_BACK_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2002465601769297962/3DBE963BB5D70759F403013C25FB056102A6C998/";
 
+export const TREASURE_CARD_BACK_URL =
+  "https://steamusercontent-a.akamaihd.net/ugc/2002465601769373218/B7FE3344E27B4CEF359EAA2BCFCEAF794D4D0C82/";
+
 export const DEEP_TREASURE_CARD_BACK_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/";
 
@@ -62,6 +65,18 @@ export type TTSItemCard = TTSCardImage & {
 
 /** Output written to data/extracted-from-tts/items.json. Keyed by normalized `Nickname`. */
 export type ItemIndex = Record<string, TTSItemCard[]>;
+
+export type TTSTreasureDeck = "treasure" | "deep-treasure" | "legendary";
+
+export type TTSTreasureCard = TTSCardImage & {
+  deck: TTSTreasureDeck;
+  terrainPack?: string;
+  copies: number;
+  locations: { ancestry: string[]; count: number }[];
+};
+
+/** Output written to data/treasures.json. Keyed by normalized `Nickname`. */
+export type TreasureIndex = Record<string, TTSTreasureCard[]>;
 
 export type TTSLegendarySiteToken = {
   source: string;
@@ -856,6 +871,60 @@ export function extractItems(root: unknown, source: string): ItemIndex {
     }
   }
   return index;
+}
+
+export function extractTreasures(root: unknown, source: string): TreasureIndex {
+  const index: TreasureIndex = {};
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image) continue;
+    const deck = treasureDeckFor(raw, image, ancestry);
+    if (!deck) continue;
+    const terrainPack = terrainPackForAncestry(ancestry);
+    const key = normalizeTitle(raw);
+    const bucket = (index[key] ??= []);
+    const existing = bucket.find(
+      (entry) => entry.deck === deck && isSameCell(entry, image),
+    );
+    if (existing) {
+      existing.copies += 1;
+      existing.tags = mergeTags(existing.tags, image.tags);
+      if (!existing.terrainPack && terrainPack) {
+        existing.terrainPack = terrainPack;
+      }
+      addToLocations(existing.locations, ancestry);
+    } else {
+      const entry: TTSTreasureCard = {
+        ...image,
+        deck,
+        copies: 1,
+        locations: [{ ancestry, count: 1 }],
+      };
+      if (terrainPack) entry.terrainPack = terrainPack;
+      bucket.push(entry);
+    }
+  }
+  return index;
+}
+
+function treasureDeckFor(
+  name: string,
+  image: TTSCardImage,
+  ancestry: string[],
+): TTSTreasureDeck | undefined {
+  if (image.backURL === TREASURE_CARD_BACK_URL) return "treasure";
+  if (image.backURL !== DEEP_TREASURE_CARD_BACK_URL) return undefined;
+  if (
+    isLegendaryContainer(ancestry[0]) &&
+    LEGENDARY_TREASURE_NAMES.has(normalizeTitle(name))
+  ) {
+    return "legendary";
+  }
+  return "deep-treasure";
 }
 
 export function extractSpells(
@@ -3129,21 +3198,28 @@ function terrainForMapTile(parentNickname: string): string {
 
 function terrainPackForNickname(nickname: string): string | undefined {
   switch (nickname) {
+    case "Caves  Chips":
     case "Cruel CAVES":
       return "Cruel Caves";
+    case "Deserts Chips":
     case "Dreadful DESERTS":
     case "Oasis":
       return "Dreadful Deserts";
+    case "Mountains Chips":
     case "Malevolent MOUNTAINS":
       return "Malevolent Mountains";
+    case "Plains Chips":
     case "Perilous PLAINS":
       return "Perilous Plains";
+    case "Riverlands Chips":
     case "Riverlands Tiles":
     case "Ruthless RIVERLANDS":
     case "Headwaters Tile":
       return "Ruthless Riverlands";
+    case "Swamps Chips":
     case "Sinister SWAMPS":
       return "Sinister Swamps";
+    case "Woods Chips":
     case "Wicked WOODS":
       return "Wicked Woods";
     default:

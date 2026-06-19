@@ -27,6 +27,7 @@ import {
   extractSiteMonsters,
   extractSites,
   extractSpells,
+  extractTreasures,
   extractWildernessTokens,
   isSameCell,
   mergeTags,
@@ -51,6 +52,8 @@ import {
   type AliasMap,
   type SpellIndex,
   type SpellManifestReference,
+  type TreasureIndex,
+  type TTSTreasureCard,
   type TTSCivilisationToken,
   type TTSMapTile,
   type SiteIndex,
@@ -64,6 +67,7 @@ import {
 
 const SOURCES_DIR = path.join(process.cwd(), "data", "downloaded-tts");
 const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
+const TREASURES_FILE = path.join(process.cwd(), "data", "treasures.json");
 const DERIVED_DIR = path.join(process.cwd(), "data", "derived");
 const MANUAL_DIR = path.join(process.cwd(), "data", "manual");
 const CLASS_ADVANTAGES_FILE = path.join(DERIVED_DIR, "class-advantages.json");
@@ -124,6 +128,7 @@ async function main(): Promise<void> {
   const boards: BoardIndex = [];
   const chips: ChipIndex = {};
   const items: ItemIndex = {};
+  const treasures: TreasureIndex = {};
   const legendaryLocations: LegendaryLocationIndex = {};
   const sites: SiteIndex = {};
   const siteMonsters: SiteMonsterIndex = {};
@@ -148,6 +153,7 @@ async function main(): Promise<void> {
     const boardIndex = extractBoards(save, stem);
     const chipIndex = extractChips(save, stem);
     const itemIndex = extractItems(save, stem);
+    const treasureIndex = extractTreasures(save, stem);
     const legendaryLocationIndex = extractLegendaryLocations(save, stem);
     const siteIndex = extractSites(save, stem);
     const siteMonsterIndex = extractSiteMonsters(save, stem);
@@ -164,7 +170,7 @@ async function main(): Promise<void> {
     const nativeSummonIndex = extractNativeSummons(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(spellIndex)} spells / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(spellIndex)} spells / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(treasureIndex)} treasures / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups`,
     );
 
     boards.push(...boardIndex);
@@ -350,6 +356,28 @@ async function main(): Promise<void> {
         }
       }
     }
+    for (const [name, treasureCards] of Object.entries(treasureIndex)) {
+      const bucket = (treasures[name] ??= []);
+      for (const treasure of treasureCards) {
+        const existing = bucket.find((card) => isSameTreasure(card, treasure));
+        if (existing) {
+          existing.copies += treasure.copies;
+          existing.tags = mergeTags(existing.tags, treasure.tags);
+          for (const loc of treasure.locations) {
+            const match = existing.locations.find((l) =>
+              sameAncestry(l.ancestry, loc.ancestry),
+            );
+            if (match) match.count += loc.count;
+            else existing.locations.push({ ...loc });
+          }
+        } else {
+          bucket.push({
+            ...treasure,
+            locations: treasure.locations.map((l) => ({ ...l })),
+          });
+        }
+      }
+    }
     for (const [name, locations] of Object.entries(legendaryLocationIndex)) {
       const bucket = (legendaryLocations[name] ??= []);
       for (const location of locations) {
@@ -383,6 +411,7 @@ async function main(): Promise<void> {
     applyManualMonsterChipNames(chips, manualMonsterChipNames),
   );
   await writeSorted(path.join(OUT_DIR, "items.json"), items);
+  await writeSorted(TREASURES_FILE, treasures);
   await writeSorted(
     path.join(OUT_DIR, "legendary-locations.json"),
     legendaryLocations,
@@ -426,6 +455,9 @@ async function main(): Promise<void> {
     `→ items.json: ${Object.keys(items).length} names, ${countEntries(items)} item cards total`,
   );
   console.log(
+    `→ treasures.json: ${Object.keys(treasures).length} names, ${countEntries(treasures)} treasure cards total`,
+  );
+  console.log(
     `→ legendary-locations.json: ${Object.keys(legendaryLocations).length} names, ${countEntries(legendaryLocations)} locations total`,
   );
   console.log(
@@ -465,6 +497,10 @@ async function readJsonFile<T>(file: string): Promise<T> {
 
 function countEntries<T>(index: Record<string, T[]>): number {
   return Object.values(index).reduce((n, arr) => n + arr.length, 0);
+}
+
+function isSameTreasure(a: TTSTreasureCard, b: TTSTreasureCard): boolean {
+  return a.deck === b.deck && isSameCell(a, b);
 }
 
 async function writeSorted(
