@@ -80,11 +80,26 @@ export type TTSTreasureCubePlacement = {
   z: number;
 };
 
+export type TTSTreasureCardLink =
+  | {
+      type: "spell-card";
+      relationship: "draws";
+      count: number;
+      source: "lua" | "description";
+    }
+  | {
+      type: "spell";
+      relationship: "casts";
+      name: string;
+      source: "description";
+    };
+
 export type TTSTreasureCard = TTSCardImage & {
   deck: TTSTreasureDeck;
   terrainPack?: string;
   enchantments?: TTSTreasureEnchantment[];
   cubePlacements?: TTSTreasureCubePlacement[];
+  cardLinks?: TTSTreasureCardLink[];
   copies: number;
   locations: { ancestry: string[]; count: number }[];
 };
@@ -908,6 +923,7 @@ export function extractTreasures(root: unknown, source: string): TreasureIndex {
     const terrainPack = terrainPackForAncestry(ancestry);
     const enchantments = treasureEnchantments(card.LuaScript);
     const cubePlacements = treasureCubePlacements(card.AttachedSnapPoints);
+    const cardLinks = treasureCardLinks(card.LuaScript, card.Description);
     const key = normalizeTitle(raw);
     const bucket = (index[key] ??= []);
     const existing = bucket.find(
@@ -927,6 +943,10 @@ export function extractTreasures(root: unknown, source: string): TreasureIndex {
         existing.cubePlacements,
         cubePlacements,
       );
+      existing.cardLinks = mergeTreasureCardLinks(
+        existing.cardLinks,
+        cardLinks,
+      );
       addToLocations(existing.locations, ancestry);
     } else {
       const entry: TTSTreasureCard = {
@@ -938,6 +958,7 @@ export function extractTreasures(root: unknown, source: string): TreasureIndex {
       if (terrainPack) entry.terrainPack = terrainPack;
       if (enchantments.length) entry.enchantments = enchantments;
       if (cubePlacements.length) entry.cubePlacements = cubePlacements;
+      if (cardLinks.length) entry.cardLinks = cardLinks;
       bucket.push(entry);
     }
   }
@@ -1019,6 +1040,98 @@ export function mergeTreasureCubePlacements(
     }
   }
   return placements.sort((a, b) => a.x - b.x || a.z - b.z || a.y - b.y);
+}
+
+function treasureCardLinks(
+  lua: string | undefined,
+  description: string | undefined,
+): TTSTreasureCardLink[] {
+  return (
+    mergeTreasureCardLinks(
+      treasureLuaCardLinks(lua),
+      treasureDescriptionCardLinks(description),
+    ) ?? []
+  );
+}
+
+function treasureLuaCardLinks(lua: string | undefined): TTSTreasureCardLink[] {
+  if (!lua || !/Zones\["sZone"\]/.test(lua)) return [];
+  const count = /for\s+i\s*=\s*1\s*,\s*(\d+)\s*do/i.exec(lua)?.[1];
+  if (!count) return [];
+  return [
+    {
+      type: "spell-card",
+      relationship: "draws",
+      count: Number(count),
+      source: "lua",
+    },
+  ];
+}
+
+function treasureDescriptionCardLinks(
+  description: string | undefined,
+): TTSTreasureCardLink[] {
+  if (!description) return [];
+  const text = description.replace(/\s+/g, " ").trim();
+  const links: TTSTreasureCardLink[] = [];
+  const spellPhrases = [
+    /\bthe spell,?\s+([^,.]+?)\s*,?\s+is cast\b/gi,
+    /\btemporary version of the spell,?\s+([^,.]+?)\s*,?\s+is cast\b/gi,
+    /\bused to cast the spell,?\s+([^,.]+?)\s*(?:,|\bby\b)/gi,
+    /\bthe\s+([^,.]+?)\s+spell is cast\b/gi,
+  ];
+  for (const regex of spellPhrases) {
+    for (const match of text.matchAll(regex)) {
+      const name = normalizeTreasureLinkedSpellName(match[1]);
+      if (name) {
+        links.push({
+          type: "spell",
+          relationship: "casts",
+          name,
+          source: "description",
+        });
+      }
+    }
+  }
+  return mergeTreasureCardLinks(undefined, links) ?? [];
+}
+
+function normalizeTreasureLinkedSpellName(name: string): string {
+  const normalized = name
+    .trim()
+    .replace(/^Call\s+/i, "")
+    .replace(/\s+/g, " ")
+    .replace(/\b\w/g, (match) => match.toUpperCase());
+  if (/^(Any|Chosen|Listed|Selected|The Selected)$/.test(normalized)) return "";
+  return normalized;
+}
+
+export function mergeTreasureCardLinks(
+  existing: TTSTreasureCardLink[] | undefined,
+  incoming: TTSTreasureCardLink[] | undefined,
+): TTSTreasureCardLink[] | undefined {
+  if (!incoming?.length) return existing;
+  const links = existing ? existing.map((entry) => ({ ...entry })) : [];
+  for (const entry of incoming) {
+    if (!links.some((candidate) => isSameTreasureCardLink(candidate, entry))) {
+      links.push({ ...entry });
+    }
+  }
+  return links;
+}
+
+function isSameTreasureCardLink(
+  a: TTSTreasureCardLink,
+  b: TTSTreasureCardLink,
+): boolean {
+  if (a.type !== b.type || a.relationship !== b.relationship) return false;
+  if (a.type === "spell-card" && b.type === "spell-card") {
+    return a.count === b.count && a.source === b.source;
+  }
+  if (a.type === "spell" && b.type === "spell") {
+    return a.name === b.name && a.source === b.source;
+  }
+  return false;
 }
 
 function treasureDeckFor(

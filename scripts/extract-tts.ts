@@ -30,6 +30,7 @@ import {
   extractTreasures,
   extractWildernessTokens,
   isSameCell,
+  mergeTreasureCardLinks,
   mergeTreasureCubePlacements,
   mergeTreasureEnchantments,
   mergeTags,
@@ -375,6 +376,10 @@ async function main(): Promise<void> {
           existing.cubePlacements = mergeTreasureCubePlacements(
             existing.cubePlacements,
             treasure.cubePlacements,
+          );
+          existing.cardLinks = mergeTreasureCardLinks(
+            existing.cardLinks,
+            treasure.cardLinks,
           );
           for (const loc of treasure.locations) {
             const match = existing.locations.find((l) =>

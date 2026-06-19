@@ -2716,6 +2716,100 @@ describe("extractTreasures", () => {
     });
   });
 
+  it("extracts spell-card draw links from treasure Lua", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Spell Book", 100, "1", TREASURE_DECK),
+          LuaScript: `function fill_book()
+    Zones = Global.getTable("deckZones")
+    local zone = getObjectFromGUID(Zones["sZone"])
+    if spellsDeck then
+        for i = 1, 3 do
+            spellsDeck.takeObject({position = self.getPosition()})
+        end
+    end
+end`,
+        },
+        {
+          ...card("Spell Scroll", 101, "1", TREASURE_DECK),
+          LuaScript: `function fill_scroll()
+    Zones = Global.getTable("deckZones")
+    local zone = getObjectFromGUID(Zones["sZone"])
+    if spellsDeck then
+        for i = 1, 1 do
+            spellsDeck.takeObject({position = self.getPosition()})
+        end
+    end
+end`,
+        },
+      ],
+    };
+
+    expect(outFirstTreasure(save, "Spell Book")).toMatchObject({
+      cardLinks: [
+        { type: "spell-card", relationship: "draws", count: 3, source: "lua" },
+      ],
+    });
+    expect(outFirstTreasure(save, "Spell Scroll")).toMatchObject({
+      cardLinks: [
+        { type: "spell-card", relationship: "draws", count: 1, source: "lua" },
+      ],
+    });
+  });
+
+  it("extracts fixed spell cast links from treasure descriptions", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("Elemental Spherule", 100, "1", TREASURE_DECK),
+          Description:
+            "When this attack is resolved, the spell, Call Elemental is cast.",
+        },
+        {
+          ...card("Horn of the Dark Angel", 101, "1", TREASURE_DECK),
+          Description:
+            "When this attack is resolved the Fiery Chasm spell is cast.",
+        },
+      ],
+    };
+
+    expect(outFirstTreasure(save, "Elemental Spherule")).toMatchObject({
+      cardLinks: [
+        {
+          type: "spell",
+          relationship: "casts",
+          name: "Elemental",
+          source: "description",
+        },
+      ],
+    });
+    expect(outFirstTreasure(save, "Horn of the Dark Angel")).toMatchObject({
+      cardLinks: [
+        {
+          type: "spell",
+          relationship: "casts",
+          name: "Fiery Chasm",
+          source: "description",
+        },
+      ],
+    });
+  });
+
+  it("does not extract generic selected-spell text as a fixed spell link", () => {
+    const save = {
+      ObjectStates: [
+        {
+          ...card("The Lamp", 100, "1", DEEP_TREASURE_DECK),
+          Description:
+            "When this attack is resolved, the selected spell is cast.",
+        },
+      ],
+    };
+
+    expect(outFirstTreasure(save, "The Lamp")).not.toHaveProperty("cardLinks");
+  });
+
   it("leaves terrainPack unset for shared treasure decks", () => {
     const save = {
       ObjectStates: [card("Potion of Energy", 100, "1", TREASURE_DECK)],

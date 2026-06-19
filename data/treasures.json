@@ -78,6 +78,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
+        }
       ]
     }
   ],
@@ -185,6 +193,14 @@
           "y": 0.209305763,
           "z": 1.0072403
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
+        }
       ]
     }
   ],
@@ -234,6 +250,14 @@
             "Cards EASTERN"
           ],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 6,
+          "source": "lua"
         }
       ]
     }
@@ -763,6 +787,14 @@
             "Cards EASTERN"
           ],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 6,
+          "source": "lua"
         }
       ]
     }
@@ -1760,6 +1792,14 @@
           "x": 0.6208292,
           "y": 0.209305763,
           "z": 1.00474548
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Elemental",
+          "source": "description"
         }
       ]
     }
@@ -2776,6 +2816,14 @@
           "y": 0.209305853,
           "z": 1.00021362
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Fiery Chasm",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -2833,6 +2881,14 @@
           "y": 0.209305853,
           "z": 0.9935762
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Fireball",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -2889,6 +2945,14 @@
           "color": "grey",
           "count": 1,
           "offset": 0.5
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
         }
       ]
     }
@@ -3430,6 +3494,14 @@
           "y": 0.209305778,
           "z": 1.013916
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Rule Undead",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -3517,6 +3589,14 @@
           "y": 0.209305838,
           "z": 0.9949799
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Peace",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -3580,6 +3660,14 @@
           "y": 0.209305659,
           "z": 0.9886933
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Discord",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -3616,6 +3704,14 @@
           "x": 0.6083976,
           "y": 0.20930548,
           "z": 0.989593565
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Teleport",
+          "source": "description"
         }
       ]
     }
@@ -4462,6 +4558,14 @@
           "y": 0.209305957,
           "z": 1.0271225
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Charismagic",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -4504,6 +4608,14 @@
           "y": 0.209305659,
           "z": 0.9935227
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Foresight",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -4540,6 +4652,14 @@
           "x": 0.6166817,
           "y": 0.209305823,
           "z": 1.00061047
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Dark Presence",
+          "source": "description"
         }
       ]
     }
@@ -4578,6 +4698,14 @@
           "y": 0.209305853,
           "z": 1.02191162
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Earthquake",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -4602,6 +4730,14 @@
             "Cards EASTERN"
           ],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Orc Call",
+          "source": "description"
         }
       ]
     }
@@ -4640,6 +4776,14 @@
           "y": 0.209305927,
           "z": 1.00904083
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Safe Haven",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -4676,6 +4820,14 @@
           "x": 0.5517723,
           "y": 0.2093059,
           "z": 1.005455
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Gale Blast",
+          "source": "description"
         }
       ]
     }
@@ -4940,6 +5092,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -4963,6 +5123,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -4980,6 +5148,14 @@
         {
           "ancestry": [],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
         }
       ]
     },
@@ -4999,6 +5175,14 @@
           "ancestry": [],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5016,6 +5200,14 @@
         {
           "ancestry": [],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
         }
       ]
     },
@@ -5035,6 +5227,14 @@
           "ancestry": [],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5052,6 +5252,14 @@
         {
           "ancestry": [],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 3,
+          "source": "lua"
         }
       ]
     }
@@ -5078,6 +5286,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 2,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5100,6 +5316,14 @@
             "Cards EASTERN"
           ],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 2,
+          "source": "lua"
         }
       ]
     },
@@ -5124,6 +5348,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 2,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5146,6 +5378,14 @@
             "Cards EASTERN"
           ],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 2,
+          "source": "lua"
         }
       ]
     },
@@ -5170,6 +5410,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 2,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5193,6 +5441,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 2,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5215,6 +5471,14 @@
             "Cards EASTERN"
           ],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 2,
+          "source": "lua"
         }
       ]
     }
@@ -5241,6 +5505,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5264,6 +5536,14 @@
           ],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5281,6 +5561,14 @@
         {
           "ancestry": [],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
         }
       ]
     },
@@ -5300,6 +5588,14 @@
           "ancestry": [],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5317,6 +5613,14 @@
         {
           "ancestry": [],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
         }
       ]
     },
@@ -5336,6 +5640,14 @@
           "ancestry": [],
           "count": 1
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
+        }
       ]
     },
     {
@@ -5353,6 +5665,14 @@
         {
           "ancestry": [],
           "count": 1
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 1,
+          "source": "lua"
         }
       ]
     }
@@ -6086,6 +6406,14 @@
           "y": 0.209305644,
           "z": 1.01764679
         }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell",
+          "relationship": "casts",
+          "name": "Vapor Form",
+          "source": "description"
+        }
       ]
     }
   ],
@@ -6122,6 +6450,14 @@
           "x": 0.5726755,
           "y": 0.2093055,
           "z": 0.921401858
+        }
+      ],
+      "cardLinks": [
+        {
+          "type": "spell-card",
+          "relationship": "draws",
+          "count": 7,
+          "source": "lua"
         }
       ]
     }
