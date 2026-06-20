@@ -162,6 +162,14 @@ export default function Home() {
         </li>
         <li>
           <Link
+            href="/terrain-packs"
+            className="block rounded-lg border border-zinc-200 dark:border-zinc-800 px-5 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+          >
+            <span className="text-lg font-medium">Terrain Packs</span>
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/clearing-types"
             className="block rounded-lg border border-zinc-200 dark:border-zinc-800 px-5 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
           >

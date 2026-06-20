@@ -6,6 +6,11 @@
  */
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import {
+  getClearingTypeLabel,
+  getClearingTypeTiles,
+  type ClearingTypeId,
+} from "@/lib/clearing-types";
 import { slugify } from "@/lib/slug";
 import {
   normalizeTitle,
@@ -1254,6 +1259,45 @@ export type CivilisationTokenNameEntry = {
   tokens: CivilisationTokenListEntry[];
 };
 
+export type MapTileEntry = TTSMapTile & {
+  slug: string;
+  terrainPack: string;
+  href: string;
+};
+
+export type TerrainPackNativeEntry = MonsterGroupEntry;
+export type TerrainPackMonsterEntry = MonsterGroupEntry;
+
+export type TerrainPackClearingTypeEntry = {
+  id: ClearingTypeId;
+  slug: string;
+  label: string;
+  count: number;
+  percentage: number;
+};
+
+export type TerrainPackSiteEntry = {
+  name: string;
+  slug: string;
+  href: string;
+  imageURL?: string;
+  subtitle?: string;
+};
+
+export type TerrainPackEntry = {
+  name: string;
+  slug: string;
+  boards: BoardEntry[];
+  civilisationTokens: CivilisationTokenNameEntry[];
+  wildernessTokens: WildernessTokenNameEntry[];
+  civLocations: CivLocationEntry[];
+  sites: TerrainPackSiteEntry[];
+  uniqueNatives: TerrainPackNativeEntry[];
+  uniqueMonsters: TerrainPackMonsterEntry[];
+  clearingTypes: TerrainPackClearingTypeEntry[];
+  mapTiles: MapTileEntry[];
+};
+
 export function getAllCivilisationTokenTerrains(): CivilisationTokenTerrainEntry[] {
   const byTerrain = new Map<string, CivilisationTokenListEntry[]>();
   for (const token of getCivilisationTokenIndex()) {
@@ -1309,6 +1353,97 @@ export function getCivilisationTokenBySlug(
   return getAllCivilisationTokenNames().find((entry) => entry.slug === slug);
 }
 
+export function getAllMapTiles(): MapTileEntry[] {
+  return getMapTiles()
+    .map((tile) => ({
+      ...tile,
+      slug: slugify(tile.name),
+      terrainPack: mapTileTerrainPack(tile),
+      href: `/map-tiles?${mapTileParams(tile).toString()}`,
+    }))
+    .sort(
+      (a, b) =>
+        a.terrainPack.localeCompare(b.terrainPack) ||
+        a.name.localeCompare(b.name),
+    );
+}
+
+export function getAllTerrainPacks(): TerrainPackEntry[] {
+  const packNames = new Set<string>();
+  const boards = getAllBoards();
+  const civilisationTokens = getAllCivilisationTokenNames();
+  const wildernessTokens = getAllWildernessTokenNames();
+  const civLocations = getAllCivLocations();
+  const sites = getAllSites();
+  const mapTiles = getAllMapTiles();
+  const nativeGroups = getAllNativeGroups();
+  const monsterGroups = getAllMonsterGroups();
+
+  for (const board of boards) packNames.add(boardTerrainPack(board));
+  for (const token of civilisationTokens) {
+    for (const tokenImage of token.tokens) {
+      packNames.add(civilisationTokenTerrainPack(tokenImage));
+    }
+  }
+  for (const token of wildernessTokens) {
+    for (const tokenImage of token.tokens) {
+      packNames.add(tokenImage.terrain);
+    }
+  }
+  for (const site of sites) {
+    if (site.site.terrainPack) packNames.add(site.site.terrainPack);
+  }
+  for (const tile of mapTiles) packNames.add(tile.terrainPack);
+
+  return [...packNames].sort(compareTerrainPackNames).map((name) => {
+    const packCivLocations = civLocationsForTerrainPack(
+      name,
+      boards,
+      civLocations,
+      mapTiles,
+    );
+    const packMapTiles = mapTiles.filter((tile) => tile.terrainPack === name);
+    const packSites = sitesForTerrainPack(
+      name,
+      boards,
+      sites,
+      wildernessTokens,
+    );
+    return {
+      name,
+      slug: slugify(name),
+      boards: boards.filter((board) => boardTerrainPack(board) === name),
+      civilisationTokens: civilisationTokens.filter((entry) =>
+        entry.tokens.some(
+          (token) => civilisationTokenTerrainPack(token) === name,
+        ),
+      ),
+      wildernessTokens: wildernessTokens.filter((entry) =>
+        entry.tokens.some((token) => token.terrain === name),
+      ),
+      civLocations: packCivLocations,
+      uniqueNatives: uniqueNativesForTerrainPack(
+        packCivLocations,
+        nativeGroups,
+      ),
+      sites: packSites,
+      uniqueMonsters: uniqueMonstersForTerrainPack(
+        packSites,
+        packMapTiles,
+        monsterGroups,
+      ),
+      clearingTypes: clearingTypesForTerrainPack(packMapTiles),
+      mapTiles: packMapTiles,
+    };
+  });
+}
+
+export function getTerrainPackBySlug(
+  slug: string,
+): TerrainPackEntry | undefined {
+  return getAllTerrainPacks().find((entry) => entry.slug === slug);
+}
+
 export type BoardEntry = {
   slug: string;
   title: string;
@@ -1344,6 +1479,206 @@ export function getBoardsForMerchant(merchantName: string): BoardEntry[] {
   return getAllBoards().filter((entry) =>
     entry.board.merchants.includes(merchantName),
   );
+}
+
+function boardTerrainPack(entry: BoardEntry): string {
+  return entry.board.terrainPack ?? entry.board.terrain;
+}
+
+function civilisationTokenTerrainPack(
+  token: CivilisationTokenListEntry,
+): string {
+  return token.terrainPack ?? token.terrainGroup;
+}
+
+function mapTileTerrainPack(tile: TTSMapTile): string {
+  return "terrainPack" in tile && typeof tile.terrainPack === "string"
+    ? tile.terrainPack
+    : tile.terrain;
+}
+
+function mapTileParams(tile: TTSMapTile): URLSearchParams {
+  const params = new URLSearchParams();
+  params.set("terrain", tile.terrain);
+  params.set("tile", tile.name);
+  params.set("side", "front");
+  return params;
+}
+
+function clearingTypesForTerrainPack(
+  mapTiles: MapTileEntry[],
+): TerrainPackClearingTypeEntry[] {
+  const mapTileKeys = new Set(mapTiles.map(mapTileKey));
+  const counts = new Map<ClearingTypeId, number>();
+  let total = 0;
+
+  for (const tile of getClearingTypeTiles()) {
+    if (!mapTileKeys.has(mapTileKey(tile))) continue;
+    for (const clearing of tile.clearings) {
+      for (const type of clearing.type) {
+        counts.set(type, (counts.get(type) ?? 0) + 1);
+        total += 1;
+      }
+    }
+  }
+
+  if (total === 0) return [];
+
+  return [...counts.entries()]
+    .map(([id, count]) => ({
+      id,
+      slug: slugify(id),
+      label: getClearingTypeLabel(id),
+      count,
+      percentage: (count / total) * 100,
+    }))
+    .sort(
+      (a, b) => b.percentage - a.percentage || a.label.localeCompare(b.label),
+    );
+}
+
+function sitesForTerrainPack(
+  terrainPack: string,
+  boards: BoardEntry[],
+  sites: SiteEntry[],
+  wildernessTokens: WildernessTokenNameEntry[],
+): TerrainPackSiteEntry[] {
+  const siteEntriesByName = new Map(
+    sites.map((entry) => [normalizeTitle(entry.name), entry]),
+  );
+  const wildernessTokensByName = new Map(
+    wildernessTokens.map((entry) => [normalizeTitle(entry.name), entry]),
+  );
+  const siteNames = new Set<string>();
+
+  for (const site of sites) {
+    if (site.site.terrainPack === terrainPack) siteNames.add(site.name);
+  }
+  for (const board of boards) {
+    if (boardTerrainPack(board) !== terrainPack) continue;
+    for (const site of board.board.sites) siteNames.add(site);
+  }
+
+  return [...siteNames]
+    .map((name) =>
+      terrainPackSiteEntry(name, siteEntriesByName, wildernessTokensByName),
+    )
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function terrainPackSiteEntry(
+  name: string,
+  sitesByName: Map<string, SiteEntry>,
+  wildernessTokensByName: Map<string, WildernessTokenNameEntry>,
+): TerrainPackSiteEntry {
+  const site = sitesByName.get(normalizeTitle(name));
+  if (site) {
+    return {
+      name: site.name,
+      slug: site.slug,
+      href: `/sites/${site.slug}`,
+      imageURL: site.site.imageSecondaryURL,
+      subtitle: site.site.terrainPack,
+    };
+  }
+
+  const wildernessToken = wildernessTokensByName.get(normalizeTitle(name));
+  if (wildernessToken) {
+    const token = wildernessToken.tokens[0];
+    return {
+      name: wildernessToken.name,
+      slug: wildernessToken.slug,
+      href: `/wilderness-tokens/${wildernessToken.slug}`,
+      imageURL: token?.imageURL,
+      subtitle: token?.terrain,
+    };
+  }
+
+  const slug = slugify(name);
+  return { name, slug, href: `/sites/${slug}` };
+}
+
+function compareTerrainPackNames(a: string, b: string): number {
+  if (a === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) return -1;
+  if (b === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) return 1;
+  return a.localeCompare(b);
+}
+
+function civLocationsForTerrainPack(
+  terrainPack: string,
+  boards: BoardEntry[],
+  civLocations: CivLocationEntry[],
+  mapTiles: MapTileEntry[],
+): CivLocationEntry[] {
+  const names = new Set([
+    ...boards
+      .filter((board) => boardTerrainPack(board) === terrainPack)
+      .flatMap((board) => [...board.board.sites, ...board.board.merchants])
+      .map(normalizeTitle),
+    ...mapTiles
+      .filter(
+        (tile) =>
+          tile.terrainPack === terrainPack && tile.clearings.length === 4,
+      )
+      .map((tile) => normalizeTitle(tile.name)),
+  ]);
+  return civLocations.filter((entry) => names.has(normalizeTitle(entry.name)));
+}
+
+function uniqueNativesForTerrainPack(
+  civLocations: CivLocationEntry[],
+  nativeGroups: MonsterGroupEntry[],
+): TerrainPackNativeEntry[] {
+  const civLocationKeys = new Set(
+    civLocations.map((entry) => normalizeTitle(entry.name)),
+  );
+  if (civLocationKeys.size === 0) return [];
+
+  return nativeGroups
+    .flatMap((group) => {
+      if (group.nativeSummons.length === 0) return [];
+      const summonsOnlyFromThisPack = group.nativeSummons.every(
+        (summon) =>
+          summon.href.startsWith("/civ-locations/") &&
+          civLocationKeys.has(normalizeTitle(summon.name)),
+      );
+      return summonsOnlyFromThisPack ? [group] : [];
+    })
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+function uniqueMonstersForTerrainPack(
+  sites: TerrainPackSiteEntry[],
+  mapTiles: MapTileEntry[],
+  monsterGroups: MonsterGroupEntry[],
+): TerrainPackMonsterEntry[] {
+  const siteKeys = new Set(sites.map((entry) => normalizeTitle(entry.name)));
+  const mapTileKeys = new Set(mapTiles.map(mapTileKey));
+  if (siteKeys.size === 0 && mapTileKeys.size === 0) return [];
+
+  return monsterGroups
+    .flatMap((group) => {
+      const summonsCount = group.mapTiles.length + group.sites.length;
+      if (summonsCount === 0) return [];
+      const mapTilesOnlyFromThisPack = group.mapTiles.every((summon) =>
+        mapTileKeys.has(mapTileSummonKey(summon)),
+      );
+      const sitesOnlyFromThisPack = group.sites.every(
+        (summon) =>
+          summon.href.startsWith("/sites/") &&
+          siteKeys.has(normalizeTitle(summon.name)),
+      );
+      return mapTilesOnlyFromThisPack && sitesOnlyFromThisPack ? [group] : [];
+    })
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+function mapTileKey(tile: { terrain: string; name: string }): string {
+  return `${normalizeTitle(tile.terrain)}\u0000${normalizeTitle(tile.name)}`;
+}
+
+function mapTileSummonKey(summon: MonsterGroupMapTileSummon): string {
+  return `${normalizeTitle(summon.terrain)}\u0000${normalizeTitle(summon.tileName)}`;
 }
 
 function hasWildernessTokenName(

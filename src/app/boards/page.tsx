@@ -29,7 +29,7 @@ export default function BoardsPage() {
               <img
                 src={board.imageURL}
                 alt={title}
-                className="block w-full aspect-square object-cover"
+                className="block h-auto w-full object-contain"
               />
             </Link>
             <div>
