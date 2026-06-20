@@ -56,6 +56,7 @@ export function MonsterGroupStack({
       </p>
       {(group.mapTiles.length > 0 ||
         group.sites.length > 0 ||
+        group.legendaryLocations.length > 0 ||
         group.nativeSummons.length > 0) && (
         <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
           {group.nativeSummons.length > 0 ? (
@@ -70,6 +71,13 @@ export function MonsterGroupStack({
               {" · "}
               {group.sites.length} site{" "}
               {group.sites.length === 1 ? "link" : "links"}
+              {group.legendaryLocations.length > 0 && (
+                <>
+                  {" · "}
+                  {group.legendaryLocations.length} legendary location{" "}
+                  {group.legendaryLocations.length === 1 ? "link" : "links"}
+                </>
+              )}
             </>
           )}
         </p>

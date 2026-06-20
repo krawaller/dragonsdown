@@ -55,7 +55,9 @@ export default async function MonsterGroupPage({
         {group.chips.length === 1 ? "image" : "images"}
       </p>
 
-      {(group.mapTiles.length > 0 || group.sites.length > 0) && (
+      {(group.mapTiles.length > 0 ||
+        group.sites.length > 0 ||
+        group.legendaryLocations.length > 0) && (
         <section className="mb-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
           {group.mapTiles.length > 0 && (
             <div>
@@ -84,6 +86,28 @@ export default async function MonsterGroupPage({
                 {group.sites.map((summon) => (
                   <Link
                     key={summon.name}
+                    href={summon.href}
+                    className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+                  >
+                    <span className="font-medium">{summon.name}</span>
+                    <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+                      {summon.monsters.join(", ")}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {group.legendaryLocations.length > 0 && (
+            <div>
+              <h2 className="text-xl font-semibold mb-3">
+                Legendary Locations
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {group.legendaryLocations.map((summon) => (
+                  <Link
+                    key={summon.href}
                     href={summon.href}
                     className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
                   >

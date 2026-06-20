@@ -9,6 +9,9 @@
   "Caustic Blast": {
     "back": ["Merfolk Mage 1"]
   },
+  "Curse": {
+    "front": ["Imp"]
+  },
   "Dark Presence": {
     "back": ["Death Hound"]
   },

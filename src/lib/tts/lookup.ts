@@ -560,6 +560,12 @@ export type MonsterGroupSiteSummon = {
   monsters: string[];
 };
 
+export type MonsterGroupLegendaryLocationSummon = {
+  name: string;
+  href: string;
+  monsters: string[];
+};
+
 export type NativeGroupSummon = {
   name: string;
   href: string;
@@ -571,6 +577,7 @@ export type MonsterGroupEntry = Omit<ChipEntry, "chips"> & {
   slug: string;
   mapTiles: MonsterGroupMapTileSummon[];
   sites: MonsterGroupSiteSummon[];
+  legendaryLocations: MonsterGroupLegendaryLocationSummon[];
   nativeSummons: NativeGroupSummon[];
   civilisationCard?: TTSCardImage;
 };
@@ -961,6 +968,15 @@ export function getAllChips(): ChipEntry[] {
 }
 
 export function getAllMonsterGroups(): MonsterGroupEntry[] {
+  const groups = getRegularMonsterGroups();
+  const existingSlugs = new Set(groups.map((entry) => entry.slug));
+  const legendaryOnlyGroups = legendaryOnlyMonsterGroups(existingSlugs);
+  return [...groups, ...legendaryOnlyGroups].sort((a, b) =>
+    a.prettyName.localeCompare(b.prettyName),
+  );
+}
+
+function getRegularMonsterGroups(): MonsterGroupEntry[] {
   return getAllChips()
     .filter((entry) => !isNativeChipGroup(entry))
     .map((entry) => ({
@@ -969,6 +985,9 @@ export function getAllMonsterGroups(): MonsterGroupEntry[] {
       slug: slugify(entry.prettyName),
       mapTiles: getMapTileSummonsForMonsterGroup(entry.prettyName),
       sites: getSiteSummonsForMonsterGroup(entry.prettyName),
+      legendaryLocations: getLegendaryLocationSummonsForMonsterGroup(
+        entry.prettyName,
+      ),
       nativeSummons: [],
     }))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
@@ -983,6 +1002,7 @@ export function getAllNativeGroups(): MonsterGroupEntry[] {
       slug: slugify(entry.prettyName),
       mapTiles: [],
       sites: [],
+      legendaryLocations: [],
       nativeSummons: getNativeSummonsForGroup(entry.prettyName),
       civilisationCard: getNativeCivilisationCard(entry.prettyName),
     }))
@@ -1952,13 +1972,121 @@ function legendaryMonsterLinks(
   )) {
     const key = `${chip.name}:${chip.guid ?? chip.imageURL ?? ""}`;
     if (links.has(key)) continue;
-    const monsterGroup = getMonsterGroupBySlug(slugify(chip.name));
+    const slug = slugify(chip.name);
+    const monsterGroup = getRegularMonsterGroups().find(
+      (entry) => entry.slug === slug,
+    );
     links.set(key, {
       ...chip,
-      href: monsterGroup ? `/monster-groups/${monsterGroup.slug}` : undefined,
+      href:
+        monsterGroup || chip.imageURL ? `/monster-groups/${slug}` : undefined,
     });
   }
   return [...links.values()].sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function legendaryOnlyMonsterGroups(
+  existingSlugs: ReadonlySet<string>,
+): MonsterGroupEntry[] {
+  const bySlug = new Map<string, MonsterGroupEntry>();
+  for (const [locationName, locations] of Object.entries(
+    getLegendaryLocationIndex(),
+  )) {
+    for (const chip of locations.flatMap(
+      (location) => location.monsterChips ?? [],
+    )) {
+      if (!chip.imageURL) continue;
+      const slug = slugify(chip.name);
+      if (existingSlugs.has(slug)) continue;
+      const existing = bySlug.get(slug);
+      const monsterChip = legendaryMonsterGroupChip(chip);
+      const legendaryLocation = {
+        name: locationName,
+        href: `/legendary-locations/${slugify(locationName)}`,
+        monsters: [chip.name],
+      };
+      if (existing) {
+        if (!existing.chips.some((entry) => isSameLegendaryChip(entry, chip))) {
+          existing.chips.push(monsterChip);
+        }
+        if (
+          !existing.legendaryLocations.some(
+            (entry) => entry.href === legendaryLocation.href,
+          )
+        ) {
+          existing.legendaryLocations.push(legendaryLocation);
+        }
+      } else {
+        bySlug.set(slug, {
+          name: chip.name,
+          prettyName: chip.name,
+          slug,
+          chips: [monsterChip],
+          mapTiles: [],
+          sites: [],
+          legendaryLocations: [legendaryLocation],
+          nativeSummons: [],
+        });
+      }
+    }
+  }
+
+  return [...bySlug.values()].map((entry) => ({
+    ...entry,
+    chips: entry.chips.sort(compareMonsterGroupChips),
+    legendaryLocations: entry.legendaryLocations.sort((left, right) =>
+      left.name.localeCompare(right.name),
+    ),
+  }));
+}
+
+function legendaryMonsterGroupChip(
+  chip: TTSLegendaryMonsterChip,
+): MonsterGroupChip {
+  return {
+    source: chip.source,
+    group: chip.name,
+    name: chip.name,
+    imageURL: chip.imageURL ?? "",
+    imageSecondaryURL: chip.imageSecondaryURL ?? chip.imageURL ?? "",
+    locations: [{ ancestry: chip.ancestry ?? [], count: 1 }],
+    monsterName: chip.name,
+  };
+}
+
+function isSameLegendaryChip(
+  entry: MonsterGroupChip,
+  chip: TTSLegendaryMonsterChip,
+): boolean {
+  return (
+    entry.imageURL === chip.imageURL &&
+    entry.imageSecondaryURL === (chip.imageSecondaryURL ?? chip.imageURL ?? "")
+  );
+}
+
+function getLegendaryLocationSummonsForMonsterGroup(
+  groupName: string,
+): MonsterGroupLegendaryLocationSummon[] {
+  const groupKey = normalizeTitle(groupName);
+  return Object.entries(getLegendaryLocationIndex())
+    .flatMap(([locationName, locations]) => {
+      const monsters = uniqueStrings(
+        locations
+          .flatMap((location) => location.monsterChips ?? [])
+          .filter((chip) => normalizeTitle(chip.name) === groupKey)
+          .map((chip) => chip.name),
+      );
+      return monsters.length > 0
+        ? [
+            {
+              name: locationName,
+              href: `/legendary-locations/${slugify(locationName)}`,
+              monsters,
+            },
+          ]
+        : [];
+    })
+    .sort((left, right) => left.name.localeCompare(right.name));
 }
 
 function dedupeStartingClassSides(
