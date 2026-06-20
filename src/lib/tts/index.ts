@@ -552,7 +552,7 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
     },
   "https://steamusercontent-a.akamaihd.net/ugc/2459607511012543663/6D5ED9F87F6AEC0C8337E9AF4638372EBA43F7B5/":
     {
-      name: "Mission",
+      name: "Discovery",
       draw: 1,
     },
   "https://steamusercontent-a.akamaihd.net/ugc/11350614834800396847/2258D418AC0CAD7C823E7B1397A0133A81EB3C7F/":
@@ -572,7 +572,7 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
     },
   "https://steamusercontent-a.akamaihd.net/ugc/2459607511012539007/FDA70B289C0C55BF28CCB46DC03774C4336ACFB8/":
     {
-      name: "Mission",
+      name: "Discovery",
       draw: 1,
     },
   "https://steamusercontent-a.akamaihd.net/ugc/10311233951381901798/B711DEEAB2FF2908367B1CB18B3FE7E37DD50265/":
@@ -592,7 +592,7 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
     },
   "https://steamusercontent-a.akamaihd.net/ugc/2458481068953908897/BC773FB63D1582EE29D0BFA26E4278B82BA29752/":
     {
-      name: "Mission",
+      name: "Discovery",
     },
   "https://steamusercontent-a.akamaihd.net/ugc/51329810045297576/72C99BA10F336999632077D3425591AA40825828/":
     {
@@ -606,7 +606,7 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
     },
   "https://steamusercontent-a.akamaihd.net/ugc/14623211079001957653/B77D201D746C306063ADB07B6B07D276CC12B13C/":
     {
-      name: "Mission",
+      name: "Discovery",
       draw: 1,
     },
   "https://steamusercontent-a.akamaihd.net/ugc/17179738774063635109/30D521BBEDDAB9EEE999EF45EAEE915167F46BB4/":
@@ -641,7 +641,7 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
     },
   "https://steamusercontent-a.akamaihd.net/ugc/2458481068953921405/AAA1B4B5447C32E44B70C4AD68525B43379079B7/":
     {
-      name: "Mission",
+      name: "Discovery",
     },
   "https://steamusercontent-a.akamaihd.net/ugc/2458481068953922171/BE2E08C27C4648D3D69EA52A08AE28F505E1D01D/":
     {
