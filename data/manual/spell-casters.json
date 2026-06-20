@@ -1,6 +1,7 @@
 {
   "Affliction": {
-    "front": ["Banshee"]
+    "front": ["Banshee"],
+    "back": ["Rogue 4"]
   },
   "Dark Matter": {
     "back": ["Banshee"]
@@ -30,11 +31,20 @@
   "Gale Blast": {
     "back": ["Merfolk Mage 2"]
   },
+  "Hesitation": {
+    "front": ["Elf 2"]
+  },
+  "Illusion": {
+    "front": ["Rogue 4"]
+  },
   "Lightning": {
     "front": ["Storm Drake"]
   },
   "Mana Shield": {
     "front": ["Lamia"]
+  },
+  "Peace": {
+    "front": ["Priest Leader"]
   },
   "Pyroclasm": {
     "front": ["Ifrit"]

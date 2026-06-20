@@ -320,6 +320,8 @@ export type SpellCasterEntry = {
   monsterName: string;
   sides: ("front" | "back")[];
   monsterSlug: string;
+  casterKind: "monster" | "native";
+  href: string;
 };
 
 /** Spells cast by a given monster, keyed by side. */
@@ -352,11 +354,16 @@ export function getSpellCastersForSpell(spellName: string): SpellCasterEntry[] {
     }
   }
   return [...bySide.entries()]
-    .map(([monsterName, sides]) => ({
-      monsterName,
-      sides,
-      monsterSlug: monsterGroupSlugForCaster(monsterName),
-    }))
+    .map(([monsterName, sides]) => {
+      const casterLink = groupLinkForCaster(monsterName);
+      return {
+        monsterName,
+        sides,
+        monsterSlug: casterLink.slug,
+        casterKind: casterLink.kind,
+        href: casterLink.href,
+      };
+    })
     .sort((a, b) => a.monsterName.localeCompare(b.monsterName));
 }
 
@@ -422,35 +429,75 @@ export function getEquipmentCastersForSpell(
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-function monsterGroupSlugForCaster(monsterName: string): string {
-  const normalizedCaster = normalizeTitle(monsterName);
-  const group = getAllMonsterGroups().find((entry) => {
-    if (normalizeTitle(entry.prettyName) === normalizedCaster) return true;
+function groupLinkForCaster(monsterName: string): {
+  kind: "monster" | "native";
+  slug: string;
+  href: string;
+} {
+  const native = groupForCaster(getAllNativeGroups(), monsterName);
+  if (native) {
+    return {
+      kind: "native",
+      slug: native.slug,
+      href: `/natives/${native.slug}`,
+    };
+  }
+  const monster = groupForCaster(getAllMonsterGroups(), monsterName);
+  const slug = monster ? monster.slug : slugify(monsterName);
+  return {
+    kind: "monster",
+    slug,
+    href: `/monster-groups/${slug}`,
+  };
+}
+
+function groupForCaster(
+  groups: MonsterGroupEntry[],
+  monsterName: string,
+): MonsterGroupEntry | undefined {
+  return groups.find((entry) => {
+    if (spellCasterMatchesMonsterName(monsterName, entry.prettyName)) {
+      return true;
+    }
     if (
       entry.chips.some(
         (chip) =>
           chip.monsterName &&
-          normalizeTitle(chip.monsterName) === normalizedCaster,
+          spellCasterMatchesMonsterName(monsterName, chip.monsterName),
       )
     ) {
       return true;
     }
-    const normalizedGroup = normalizeTitle(entry.prettyName);
-    return normalizedCaster.startsWith(`${normalizedGroup} `);
+    return false;
   });
-  return group ? group.slug : slugify(monsterName);
 }
 
 function spellCasterMatchesMonsterName(
   casterName: string,
   monsterName: string,
 ): boolean {
-  const normalizedCaster = normalizeTitle(casterName);
-  const normalizedMonster = normalizeTitle(monsterName);
-  return (
-    normalizedCaster === normalizedMonster ||
-    normalizedCaster.startsWith(`${normalizedMonster} `)
+  return normalizedNameVariants(casterName).some((normalizedCaster) =>
+    normalizedNameVariants(monsterName).some(
+      (normalizedMonster) =>
+        normalizedCaster === normalizedMonster ||
+        normalizedCaster.startsWith(`${normalizedMonster} `),
+    ),
   );
+}
+
+function normalizedNameVariants(name: string): string[] {
+  const normalized = normalizeTitle(name);
+  const firstSpace = normalized.indexOf(" ");
+  const firstWord =
+    firstSpace === -1 ? normalized : normalized.slice(0, firstSpace);
+  const rest = firstSpace === -1 ? "" : normalized.slice(firstSpace);
+  const variants = new Set([normalized]);
+  if (firstWord.endsWith("ves")) {
+    variants.add(`${firstWord.slice(0, -3)}f${rest}`);
+  } else if (firstWord.endsWith("s") && firstWord.length > 1) {
+    variants.add(`${firstWord.slice(0, -1)}${rest}`);
+  }
+  return [...variants];
 }
 
 function readJsonOrEmpty<T>(file: string): T {

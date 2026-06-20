@@ -157,11 +157,12 @@ export default async function SpellPage({
 function MonsterCasterLink({ caster }: { caster: SpellCasterEntry }) {
   return (
     <Link
-      href={`/monster-groups/${caster.monsterSlug}`}
+      href={caster.href}
       className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
     >
       <span className="font-medium">{caster.monsterName}</span>
       <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+        {caster.casterKind === "native" ? "native" : "monster"} ·{" "}
         {caster.sides.join(" & ")}
       </span>
     </Link>

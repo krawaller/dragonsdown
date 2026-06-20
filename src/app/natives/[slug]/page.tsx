@@ -10,6 +10,8 @@ import {
   getMissionsFeaturing,
   getMissionsForTarget,
   getNativeGroupBySlug,
+  getSpellsForMonster,
+  type MonsterSpellEntry,
 } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
@@ -26,9 +28,13 @@ export default async function NativePage({
   if (!group) notFound();
   const missions = getMissionsForTarget(group.prettyName);
   const featuredMissions = getMissionsFeaturing(group.prettyName);
+  const chipNames = group.chips.flatMap((chip) =>
+    chip.monsterName ? [chip.monsterName] : [],
+  );
+  const spells = getSpellsForMonster([group.prettyName, ...chipNames]);
   const rulebookLinks = await resolveNativeRulebookLinks(
     group.prettyName,
-    group.chips.flatMap((chip) => (chip.monsterName ? [chip.monsterName] : [])),
+    chipNames,
   );
 
   return (
@@ -89,6 +95,10 @@ export default async function NativePage({
         headingClassName="text-xl font-semibold mb-3"
       />
 
+      {spells.length > 0 && (
+        <NativeSpellLinks groupName={group.prettyName} spells={spells} />
+      )}
+
       <RulebookLinks
         links={rulebookLinks}
         heading="Rulebook"
@@ -97,5 +107,42 @@ export default async function NativePage({
 
       <MonsterGroupChipList group={group} />
     </main>
+  );
+}
+
+function NativeSpellLinks({
+  groupName,
+  spells,
+}: {
+  groupName: string;
+  spells: MonsterSpellEntry[];
+}) {
+  return (
+    <section className="mb-10">
+      <h2 className="text-xl font-semibold mb-3">Spells</h2>
+      <div className="flex flex-wrap gap-2">
+        {spells.map((spell) => (
+          <Link
+            key={spell.spellName}
+            href={`/spells/${spell.spellSlug}`}
+            className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+          >
+            <span className="font-medium">{spell.spellName}</span>
+            <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+              {spell.sides.join(" & ")}
+              {spell.casterNames.some((name) => name !== groupName) && (
+                <>
+                  {" "}
+                  ·{" "}
+                  {spell.casterNames
+                    .filter((name) => name !== groupName)
+                    .join(", ")}
+                </>
+              )}
+            </span>
+          </Link>
+        ))}
+      </div>
+    </section>
   );
 }
