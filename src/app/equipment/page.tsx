@@ -2,12 +2,16 @@ import Link from "next/link";
 import { SpriteCell } from "@/components/CardSprite";
 import {
   getEquipmentDeckGroups,
+  getAllLegendaryLocations,
   type EquipmentDeckEntry,
   type EquipmentDeckGroup,
 } from "@/lib/tts/lookup";
 
 export default function EquipmentPage() {
   const groups = getEquipmentDeckGroups();
+  const legendaryLocationSlugs = new Set(
+    getAllLegendaryLocations().map((entry) => entry.slug),
+  );
   const totalEntries = groups.reduce(
     (sum, group) => sum + group.entries.length,
     0,
@@ -30,14 +34,24 @@ export default function EquipmentPage() {
 
       <div className="space-y-6">
         {groups.map((group) => (
-          <EquipmentDeckDetails key={group.deck} group={group} />
+          <EquipmentDeckDetails
+            key={group.deck}
+            group={group}
+            legendaryLocationSlugs={legendaryLocationSlugs}
+          />
         ))}
       </div>
     </main>
   );
 }
 
-function EquipmentDeckDetails({ group }: { group: EquipmentDeckGroup }) {
+function EquipmentDeckDetails({
+  group,
+  legendaryLocationSlugs,
+}: {
+  group: EquipmentDeckGroup;
+  legendaryLocationSlugs: ReadonlySet<string>;
+}) {
   return (
     <details
       open
@@ -56,7 +70,11 @@ function EquipmentDeckDetails({ group }: { group: EquipmentDeckGroup }) {
       <div className="border-t border-zinc-200 dark:border-zinc-800 p-4 sm:p-5">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-5">
           {group.entries.map((entry) => (
-            <EquipmentTile key={`${entry.deck}-${entry.slug}`} entry={entry} />
+            <EquipmentTile
+              key={`${entry.deck}-${entry.slug}`}
+              entry={entry}
+              legendaryLocationSlugs={legendaryLocationSlugs}
+            />
           ))}
         </div>
       </div>
@@ -64,12 +82,19 @@ function EquipmentDeckDetails({ group }: { group: EquipmentDeckGroup }) {
   );
 }
 
-function EquipmentTile({ entry }: { entry: EquipmentDeckEntry }) {
+function EquipmentTile({
+  entry,
+  legendaryLocationSlugs,
+}: {
+  entry: EquipmentDeckEntry;
+  legendaryLocationSlugs: ReadonlySet<string>;
+}) {
   const card = entry.cards[0];
+  const href = equipmentEntryHref(entry, legendaryLocationSlugs);
   return (
     <section className="flex min-w-0 flex-col gap-2">
       <Link
-        href={`/equipment/${entry.slug}`}
+        href={href}
         className="rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition"
         aria-label={`View ${entry.name}`}
       >
@@ -77,7 +102,7 @@ function EquipmentTile({ entry }: { entry: EquipmentDeckEntry }) {
       </Link>
       <div className="min-w-0">
         <h3 className="text-sm font-semibold leading-5">
-          <Link href={`/equipment/${entry.slug}`} className="hover:underline">
+          <Link href={href} className="hover:underline">
             {entry.name}
           </Link>
         </h3>
@@ -88,4 +113,17 @@ function EquipmentTile({ entry }: { entry: EquipmentDeckEntry }) {
       </div>
     </section>
   );
+}
+
+function equipmentEntryHref(
+  entry: EquipmentDeckEntry,
+  legendaryLocationSlugs: ReadonlySet<string>,
+): string {
+  if (
+    entry.deck === "deep-treasure" &&
+    legendaryLocationSlugs.has(entry.slug)
+  ) {
+    return `/legendary-locations/${entry.slug}`;
+  }
+  return `/equipment/${entry.slug}`;
 }

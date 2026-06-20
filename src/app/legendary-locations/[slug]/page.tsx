@@ -45,23 +45,34 @@ export default async function LegendaryLocationPage({
         </Link>
       </div>
 
-      <div className="mt-4 mb-8 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+      <div className="mt-4 mb-10 grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start">
         <div>
           <h1 className="text-4xl font-bold mb-3">{entry.name}</h1>
           <p className="text-sm text-zinc-500 dark:text-zinc-400">
             {entry.kind === "site" ? "Permanent site" : "Temporary test"}
             {location.siteToken ? " · site token linked" : ""}
           </p>
+          {entry.monsterChips.length > 0 && (
+            <p className="mt-3 text-sm text-zinc-500 dark:text-zinc-400">
+              {entry.monsterChips.length} monster chip link
+              {entry.monsterChips.length === 1 ? "" : "s"}
+            </p>
+          )}
         </div>
-        {entry.monsterChips.length > 0 && (
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            {entry.monsterChips.length} monster chip link
-            {entry.monsterChips.length === 1 ? "" : "s"}
-          </p>
-        )}
+        <div className="space-y-6">
+          <h2 className="text-sm font-semibold uppercase text-zinc-500 dark:text-zinc-400 mb-2">
+            Location Card
+          </h2>
+          <SpriteCell
+            card={location.card}
+            className="w-full max-w-72 border border-zinc-200 dark:border-zinc-800 overflow-hidden lg:max-w-none"
+          />
+          {location.siteToken && <SiteToken token={location.siteToken} />}
+          <RulebookLinks links={rulebookLinks} heading="Rulebook" />
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_22rem] gap-10">
+      <div>
         <div className="space-y-10">
           {(location.treasureSetup || location.rewards) && (
             <section>
@@ -99,35 +110,11 @@ export default async function LegendaryLocationPage({
             </section>
           )}
 
-          {location.description && (
-            <section>
-              <h2 className="text-xl font-semibold mb-3">Card Text</h2>
-              <p className="max-w-3xl whitespace-pre-wrap text-sm leading-6 text-zinc-700 dark:text-zinc-300">
-                {location.description}
-              </p>
-            </section>
-          )}
-
           <section>
             <h2 className="text-xl font-semibold mb-3">Source</h2>
             <SourceDetails location={location} />
           </section>
-
-          <RulebookLinks links={rulebookLinks} heading="Rulebook" />
         </div>
-
-        <aside className="lg:sticky lg:top-8 self-start space-y-6">
-          <div>
-            <h2 className="text-sm font-semibold uppercase text-zinc-500 dark:text-zinc-400 mb-2">
-              Location Card
-            </h2>
-            <SpriteCell
-              card={location.card}
-              className="w-full border border-zinc-200 dark:border-zinc-800 overflow-hidden"
-            />
-          </div>
-          {location.siteToken && <SiteToken token={location.siteToken} />}
-        </aside>
       </div>
     </main>
   );
