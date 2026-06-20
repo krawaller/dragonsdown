@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
+import { RulebookLinks } from "@/components/RulebookLinks";
+import { resolveEquipmentRulebookLinks } from "@/lib/rulebook-links";
 import type { TTSItemCard, TTSTreasureCard } from "@/lib/tts";
 import { slugify } from "@/lib/slug";
 import {
   getAllEquipment,
   getEquipmentBySlug,
+  getLegendaryLocationsForEquipment,
   type EquipmentDeck,
   type EquipmentEntry,
 } from "@/lib/tts/lookup";
@@ -23,6 +26,12 @@ export default async function EquipmentDetailPage({
   const entry = getEquipmentBySlug(slug);
   if (!entry) notFound();
   const sourceCards = equipmentSourceCards(entry);
+  const legendaryLocations = getLegendaryLocationsForEquipment(entry.name);
+  const rulebookLinks = await resolveEquipmentRulebookLinks({
+    name: entry.name,
+    hasTreasure: entry.treasures.length > 0,
+    hasItem: entry.item !== undefined,
+  });
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -56,12 +65,33 @@ export default async function EquipmentDetailPage({
         </p>
       </div>
 
+      {legendaryLocations.length > 0 && (
+        <section className="mb-8 rounded border border-zinc-200 dark:border-zinc-800 p-4">
+          <h2 className="text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-2">
+            Legendary Location{legendaryLocations.length === 1 ? "" : "s"}
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {legendaryLocations.map((location) => (
+              <Link
+                key={location.slug}
+                href={`/legendary-locations/${location.slug}`}
+                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+              >
+                {location.name}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
       <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_22rem] gap-10">
         <div className="space-y-10">
           {entry.item && <ItemDetails entry={entry.item} />}
           {entry.treasures.length > 0 && (
             <TreasureDetails cards={entry.treasures} />
           )}
+
+          <RulebookLinks links={rulebookLinks} heading="Rulebook" />
 
           <section>
             <h2 className="text-xl font-semibold mb-3">Source Cards</h2>

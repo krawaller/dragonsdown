@@ -135,6 +135,58 @@ export async function resolveSpellRulebookLinks(
   });
 }
 
+export async function resolveEquipmentRulebookLinks({
+  name,
+  hasTreasure,
+  hasItem,
+}: {
+  name: string;
+  hasTreasure: boolean;
+  hasItem: boolean;
+}): Promise<RulebookLink[]> {
+  const links = await Promise.all([
+    hasTreasure ? resolveTreasureRulebookLinks(name) : Promise.resolve([]),
+    hasItem && isHorseEquipment(name)
+      ? resolveRulebookLinks({
+          doc: ANY_DOC,
+          headings: ["Horse Cards"],
+        })
+      : Promise.resolve([]),
+  ]);
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
+async function resolveTreasureRulebookLinks(
+  treasureTitle: string,
+): Promise<RulebookLink[]> {
+  const normalizedTitle = normalizeRulebookMatchTitle(treasureTitle);
+  const books = rulebooksForQuery(ANY_DOC);
+  const links = await Promise.all(
+    books.map(async (book) => {
+      const sections = await loadSections(book);
+      const treasureParents = sections.filter((section) =>
+        titlesMatch(section.title, "Treasure Manifest"),
+      );
+
+      return treasureParents.flatMap((parent) =>
+        childSections(sections, parent)
+          .filter(
+            (section) =>
+              normalizeRulebookMatchTitle(section.title) === normalizedTitle,
+          )
+          .map((section) => rulebookLinkForSection(book, section)),
+      );
+    }),
+  );
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
+function isHorseEquipment(name: string): boolean {
+  return /\bhorse\b/i.test(name);
+}
+
 export async function resolveMagicRulebookLinks(
   magic: string,
   doc: RulebookLinkQuery["doc"] = ANY_DOC,

@@ -698,10 +698,6 @@ export function getAllItems(): ItemEntry[] {
     .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-export function getItemBySlug(slug: string): ItemEntry | undefined {
-  return getAllItems().find((entry) => entry.slug === slug);
-}
-
 export function getAllEquipment(): EquipmentEntry[] {
   const bySlug = new Map<string, EquipmentEntry>();
   for (const item of getAllItems()) {
@@ -812,6 +808,31 @@ export function getLegendaryLocationBySlug(
   slug: string,
 ): LegendaryLocationEntry | undefined {
   return getAllLegendaryLocations().find((entry) => entry.slug === slug);
+}
+
+export function getLegendaryLocationsForEquipment(
+  equipmentName: string,
+): LegendaryLocationEntry[] {
+  const equipmentKey = normalizeTitle(equipmentName);
+  return getAllLegendaryLocations().filter((entry) => {
+    if (normalizeTitle(entry.name) === equipmentKey) return true;
+    return entry.locations.some((location) =>
+      legendaryLocationReferencesEquipment(location, equipmentKey),
+    );
+  });
+}
+
+function legendaryLocationReferencesEquipment(
+  location: TTSLegendaryLocation,
+  equipmentKey: string,
+): boolean {
+  const namedTreasures = [
+    ...(location.treasureSetup?.namedTreasures ?? []),
+    ...(location.rewards?.namedTreasures ?? []),
+  ];
+  return namedTreasures.some(
+    (treasure) => normalizeTitle(treasure.name) === equipmentKey,
+  );
 }
 
 export function getClassesForStartingItem(

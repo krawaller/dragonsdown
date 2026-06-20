@@ -72,7 +72,7 @@ function ClassSetupLoadout({ loadout }: { loadout: TTSClassSetupSide }) {
               {loadout.items.map((item, index) => (
                 <li key={`${item.name}-${item.slot}-${index}`}>
                   <Link
-                    href={`/items/${slugify(item.name)}`}
+                    href={`/equipment/${slugify(item.name)}`}
                     className="hover:underline"
                   >
                     {item.name}
