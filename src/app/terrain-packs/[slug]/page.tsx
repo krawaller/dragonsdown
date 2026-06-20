@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
+import { MissionCardLinks } from "@/components/MissionCardLinks";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import {
   getAllTerrainPacks,
@@ -44,9 +45,17 @@ export default async function TerrainPackPage({
         </Link>
       </div>
 
-      <h1 className="text-4xl font-bold mt-4 mb-2">
-        {terrainPackDisplayName(pack)}
-      </h1>
+      <div className="mt-4 mb-2 flex items-center gap-4">
+        {pack.iconUrl && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={pack.iconUrl}
+            alt=""
+            className="h-16 w-16 shrink-0 rounded border border-zinc-200 bg-zinc-100 object-cover dark:border-zinc-800 dark:bg-zinc-900"
+          />
+        )}
+        <h1 className="text-4xl font-bold">{terrainPackDisplayName(pack)}</h1>
+      </div>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
         {terrainPackSummary(pack)}
       </p>
@@ -99,6 +108,10 @@ export default async function TerrainPackPage({
               <TerrainTreasureTile key={entry.slug} entry={entry} />
             ))}
           </LinkedGrid>
+        </TerrainBox>
+
+        <TerrainBox title="Missions" count={pack.uniqueMissions.length}>
+          <MissionCardLinks missions={pack.uniqueMissions} />
         </TerrainBox>
 
         <TerrainBox title="Civ Locations" count={pack.civLocations.length}>
@@ -437,6 +450,7 @@ function terrainPackSummary(pack: TerrainPackEntry): string {
     countLabel(pack.civilisationTokens.length, "civ token"),
     countLabel(pack.wildernessTokens.length, "wilderness token"),
     countLabel(pack.terrainTreasures.length, "terrain treasure"),
+    countLabel(pack.uniqueMissions.length, "unique mission"),
     countLabel(pack.civLocations.length, "civ location"),
     countLabel(
       pack.uniqueNatives.length + pack.uniqueMonsters.length,

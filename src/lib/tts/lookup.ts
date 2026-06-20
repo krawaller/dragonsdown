@@ -1292,15 +1292,19 @@ export type TerrainPackTreasureEntry = {
   copies: number;
 };
 
+export type TerrainPackMissionEntry = MissionEntry;
+
 export type TerrainPackEntry = {
   name: string;
   slug: string;
+  iconUrl?: string;
   boards: BoardEntry[];
   civilisationTokens: CivilisationTokenNameEntry[];
   wildernessTokens: WildernessTokenNameEntry[];
   civLocations: CivLocationEntry[];
   sites: TerrainPackSiteEntry[];
   terrainTreasures: TerrainPackTreasureEntry[];
+  uniqueMissions: TerrainPackMissionEntry[];
   uniqueNatives: TerrainPackNativeEntry[];
   uniqueMonsters: TerrainPackMonsterEntry[];
   clearingTypes: TerrainPackClearingTypeEntry[];
@@ -1384,6 +1388,7 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
   const wildernessTokens = getAllWildernessTokenNames();
   const civLocations = getAllCivLocations();
   const sites = getAllSites();
+  const missions = getAllMissions();
   const mapTiles = getAllMapTiles();
   const equipment = getAllEquipment();
   const nativeGroups = getAllNativeGroups();
@@ -1446,6 +1451,7 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
     return {
       name,
       slug: slugify(name),
+      iconUrl: terrainPackIconUrl(name, wildernessTokens),
       boards: boards.filter((board) => boardTerrainPack(board) === name),
       civilisationTokens: civilisationTokens.filter((entry) =>
         entry.tokens.some(
@@ -1457,6 +1463,7 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
       ),
       civLocations: packCivLocations,
       terrainTreasures: terrainSpecificTreasuresForTerrainPack(name, equipment),
+      uniqueMissions: uniqueMissionsForTerrainPack(name, missions),
       uniqueNatives: packUniqueNatives,
       sites: packSites,
       uniqueMonsters: packUniqueMonsters,
@@ -1650,6 +1657,54 @@ function terrainSpecificTreasuresForTerrainPack(
         : [];
     })
     .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function terrainPackIconUrl(
+  terrainPack: string,
+  wildernessTokens: WildernessTokenNameEntry[],
+): string | undefined {
+  return wildernessTokens
+    .flatMap((entry) => entry.tokens)
+    .find((token) => token.terrain === terrainPack)?.imageSecondaryURL;
+}
+
+function uniqueMissionsForTerrainPack(
+  terrainPack: string,
+  missions: MissionEntry[],
+): TerrainPackMissionEntry[] {
+  const terrainPackIds = missionTerrainPacksForTerrainPack(terrainPack);
+  if (terrainPackIds.size === 0) return [];
+
+  return missions.filter(
+    (mission) =>
+      mission.terrainPacks.length > 0 &&
+      mission.terrainPacks.every((pack) => terrainPackIds.has(pack)),
+  );
+}
+
+function missionTerrainPacksForTerrainPack(
+  terrainPack: string,
+): ReadonlySet<MissionTerrainPack> {
+  switch (terrainPack) {
+    case CIVILISATION_TOKEN_NEUTRAL_TERRAIN:
+      return new Set(["neutral"]);
+    case "Cruel Caves":
+      return new Set(["caves"]);
+    case "Dreadful Deserts":
+      return new Set(["deserts", "oasis"]);
+    case "Malevolent Mountains":
+      return new Set(["mountains"]);
+    case "Perilous Plains":
+      return new Set(["plains"]);
+    case "Ruthless Riverlands":
+      return new Set(["riverlands"]);
+    case "Sinister Swamps":
+      return new Set(["swamps"]);
+    case "Wicked Woods":
+      return new Set(["woods"]);
+    default:
+      return new Set();
+  }
 }
 
 function compareTerrainPackNames(a: string, b: string): number {
