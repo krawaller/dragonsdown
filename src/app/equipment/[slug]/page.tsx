@@ -13,6 +13,8 @@ import {
   type EquipmentEntry,
 } from "@/lib/tts/lookup";
 
+type TreasureCardLink = NonNullable<TTSTreasureCard["cardLinks"]>[number];
+
 export function generateStaticParams() {
   return getAllEquipment().map((entry) => ({ slug: entry.slug }));
 }
@@ -191,12 +193,9 @@ function TreasureDetails({ cards }: { cards: TTSTreasureCard[] }) {
                   ),
                 )}
               />
-              <TreasureListRow
-                label="Card Links"
-                values={uniqueStrings(
-                  deckCards.flatMap((card) =>
-                    (card.cardLinks ?? []).map(cardLinkLabel),
-                  ),
+              <TreasureLinksRow
+                links={uniqueCardLinks(
+                  deckCards.flatMap((card) => card.cardLinks ?? []),
                 )}
               />
               <TreasureListRow
@@ -242,6 +241,32 @@ function TreasureListRow({
     <div className="contents">
       <dt className="text-zinc-500 dark:text-zinc-400">{label}</dt>
       <dd>{values.join(", ")}</dd>
+    </div>
+  );
+}
+
+function TreasureLinksRow({ links }: { links: TreasureCardLink[] }) {
+  if (links.length === 0) return null;
+  return (
+    <div className="contents">
+      <dt className="text-zinc-500 dark:text-zinc-400">Card Links</dt>
+      <dd className="space-y-1">
+        {links.map((link) =>
+          link.type === "spell" ? (
+            <Link
+              key={cardLinkKey(link)}
+              href={`/spells/${slugify(link.name)}`}
+              className="block hover:underline"
+            >
+              {cardLinkLabel(link)}
+            </Link>
+          ) : (
+            <span key={cardLinkKey(link)} className="block">
+              {cardLinkLabel(link)}
+            </span>
+          ),
+        )}
+      </dd>
     </div>
   );
 }
@@ -381,13 +406,29 @@ function sheetName(url: string): string {
   }
 }
 
-function cardLinkLabel(
-  link: NonNullable<TTSTreasureCard["cardLinks"]>[number],
-): string {
+function cardLinkLabel(link: TreasureCardLink): string {
   if (link.type === "spell-card") {
     return `Draws ${link.count} spell card${link.count === 1 ? "" : "s"}`;
   }
   return `Casts ${link.name}`;
+}
+
+function cardLinkKey(link: TreasureCardLink): string {
+  return link.type === "spell-card"
+    ? `${link.type}-${link.count}`
+    : `${link.type}-${link.relationship}-${link.name}`;
+}
+
+function uniqueCardLinks(links: TreasureCardLink[]): TreasureCardLink[] {
+  const seen = new Set<string>();
+  return links
+    .filter((link) => {
+      const key = cardLinkKey(link);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .sort((a, b) => cardLinkLabel(a).localeCompare(cardLinkLabel(b)));
 }
 
 function uniqueStrings(values: string[]): string[] {

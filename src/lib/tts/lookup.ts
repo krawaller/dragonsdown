@@ -331,6 +331,13 @@ export type MonsterSpellEntry = {
   casterNames: string[];
 };
 
+export type EquipmentSpellCasterEntry = {
+  name: string;
+  slug: string;
+  decks: EquipmentDeck[];
+  cards: TTSTreasureCard[];
+};
+
 /** Return all monsters that cast a given spell, across either card side. */
 export function getSpellCastersForSpell(spellName: string): SpellCasterEntry[] {
   const idx = getSpellCastersIndex();
@@ -385,6 +392,34 @@ export function getSpellsForMonster(
     }
   }
   return results.sort((a, b) => a.spellName.localeCompare(b.spellName));
+}
+
+export function getEquipmentCastersForSpell(
+  spellName: string,
+): EquipmentSpellCasterEntry[] {
+  const spellKey = normalizeTitle(spellName);
+  return getAllEquipment()
+    .flatMap((entry) => {
+      const cards = entry.treasures.filter((card) =>
+        (card.cardLinks ?? []).some(
+          (link) =>
+            link.type === "spell" &&
+            link.relationship === "casts" &&
+            normalizeTitle(link.name) === spellKey,
+        ),
+      );
+      return cards.length > 0
+        ? [
+            {
+              name: entry.name,
+              slug: entry.slug,
+              decks: uniqueEquipmentDecks(cards.map((card) => card.deck)),
+              cards,
+            },
+          ]
+        : [];
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function monsterGroupSlugForCaster(monsterName: string): string {

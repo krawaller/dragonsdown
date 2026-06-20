@@ -7,8 +7,10 @@ import { resolveSpellRulebookLinks } from "@/lib/rulebook-links";
 import type { TTSSpellCard, TTSSpellDeck } from "@/lib/tts";
 import {
   getAllSpells,
+  getEquipmentCastersForSpell,
   getSpellBySlug,
   getSpellCastersForSpell,
+  type EquipmentSpellCasterEntry,
   type SpellCasterEntry,
 } from "@/lib/tts/lookup";
 
@@ -28,6 +30,7 @@ export default async function SpellPage({
   if (!spell) notFound();
   const rulebookLinks = await resolveSpellRulebookLinks(entry.name);
   const casters = getSpellCastersForSpell(entry.name);
+  const equipmentCasters = getEquipmentCastersForSpell(entry.name);
   const heroCard = spell.startingSpellCards[0];
   const spellCard = spell.spellCards[0] ?? spell.cards[0];
   const primaryMagic = spell.magic[0];
@@ -115,21 +118,15 @@ export default async function SpellPage({
 
           <RulebookLinks links={rulebookLinks} heading="Rulebook" />
 
-          {casters.length > 0 && (
+          {(casters.length > 0 || equipmentCasters.length > 0) && (
             <section>
               <h2 className="text-xl font-semibold mb-3">Cast By</h2>
               <div className="flex flex-wrap gap-2">
                 {casters.map((caster) => (
-                  <Link
-                    key={caster.monsterName}
-                    href={`/monster-groups/${caster.monsterSlug}`}
-                    className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-                  >
-                    <span className="font-medium">{caster.monsterName}</span>
-                    <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                      {caster.sides.join(" & ")}
-                    </span>
-                  </Link>
+                  <MonsterCasterLink key={caster.monsterName} caster={caster} />
+                ))}
+                {equipmentCasters.map((caster) => (
+                  <EquipmentCasterLink key={caster.slug} caster={caster} />
                 ))}
               </div>
             </section>
@@ -154,6 +151,38 @@ export default async function SpellPage({
         </aside>
       </div>
     </main>
+  );
+}
+
+function MonsterCasterLink({ caster }: { caster: SpellCasterEntry }) {
+  return (
+    <Link
+      href={`/monster-groups/${caster.monsterSlug}`}
+      className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+    >
+      <span className="font-medium">{caster.monsterName}</span>
+      <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+        {caster.sides.join(" & ")}
+      </span>
+    </Link>
+  );
+}
+
+function EquipmentCasterLink({
+  caster,
+}: {
+  caster: EquipmentSpellCasterEntry;
+}) {
+  return (
+    <Link
+      href={`/equipment/${caster.slug}`}
+      className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+    >
+      <span className="font-medium">{caster.name}</span>
+      <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+        {caster.decks.map(equipmentDeckLabel).join(" & ")}
+      </span>
+    </Link>
   );
 }
 
@@ -236,6 +265,21 @@ function deckLabel(deck: TTSSpellDeck): string {
       return "Spells";
     case "heroStartingSpells":
       return "Hero Starting Spells";
+  }
+}
+
+function equipmentDeckLabel(
+  deck: EquipmentSpellCasterEntry["decks"][number],
+): string {
+  switch (deck) {
+    case "item":
+      return "Item";
+    case "treasure":
+      return "Treasure";
+    case "deep-treasure":
+      return "Deep Treasure";
+    case "legendary":
+      return "Legendary Treasure";
   }
 }
 
