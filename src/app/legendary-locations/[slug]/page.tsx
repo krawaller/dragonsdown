@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { ANY_DOC, resolveRulebookLinks } from "@/lib/rulebook-links";
+import { slugify } from "@/lib/slug";
 import type {
   TTSLegendaryLocation,
   TTSLegendarySiteToken,
@@ -172,7 +173,11 @@ function TreasureBlock({
       {treasures.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {treasures.map((treasure) => (
-            <div key={treasure.name} className="space-y-2">
+            <Link
+              key={treasure.name}
+              href={`/equipment/${slugify(treasure.name)}`}
+              className="space-y-2 rounded border border-transparent p-2 -m-2 hover:border-zinc-200 hover:bg-zinc-50 dark:hover:border-zinc-800 dark:hover:bg-zinc-900 transition-colors"
+            >
               {treasure.card && (
                 <SpriteCell
                   card={treasure.card}
@@ -180,7 +185,7 @@ function TreasureBlock({
                 />
               )}
               <p className="text-sm font-medium">{treasure.name}</p>
-            </div>
+            </Link>
           ))}
         </div>
       )}
