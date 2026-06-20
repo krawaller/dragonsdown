@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BoardImageToggle } from "@/components/BoardImageToggle";
+import {
+  BoardImageToggle,
+  type BoardAreaLink,
+} from "@/components/BoardImageToggle";
+import { getBoardPositionForItem } from "@/lib/board-positions";
 import {
   getAllBoards,
   getBoardBySlug,
@@ -29,6 +33,14 @@ export default async function BoardPage({
   const merchants = board.merchants
     .map(resolveMerchantTarget)
     .filter((merchant): merchant is LinkTarget => merchant !== null);
+  const boardAreas = [...sites, ...merchants]
+    .map((target) => {
+      const position = getBoardPositionForItem(board, target.name);
+      return position
+        ? { name: target.name, href: target.href, position }
+        : null;
+    })
+    .filter((target): target is BoardAreaLink => target !== null);
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -50,6 +62,7 @@ export default async function BoardPage({
         title={title}
         imageURL={board.imageURL}
         imageSecondaryURL={board.imageSecondaryURL}
+        areas={boardAreas}
       />
 
       {(sites.length > 0 || merchants.length > 0) && (
