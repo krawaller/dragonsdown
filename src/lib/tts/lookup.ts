@@ -39,11 +39,14 @@ import {
   type TTSMissionCard,
   type TTSMissionRewards,
   type TTSMapTile,
+  type TTSTreasureCard,
+  type TTSTreasureDeck,
   type TTSCivLocation,
   type TTSCivilisationToken,
   type TTSSpell,
   type TTSSiteMonsterGroup,
   type TTSSite,
+  type TreasureIndex,
   type TTSWildernessToken,
   type WildernessTokenIndex,
 } from ".";
@@ -60,6 +63,7 @@ const LINEAGES_FILE = path.join(EXTRACTED_TTS_DIR, "lineages.json");
 const SPELLS_FILE = path.join(EXTRACTED_TTS_DIR, "spells.json");
 const CHIPS_FILE = path.join(EXTRACTED_TTS_DIR, "chips.json");
 const ITEMS_FILE = path.join(EXTRACTED_TTS_DIR, "items.json");
+const TREASURES_FILE = path.join(process.cwd(), "data", "treasures.json");
 const LEGENDARY_LOCATIONS_FILE = path.join(
   EXTRACTED_TTS_DIR,
   "legendary-locations.json",
@@ -111,6 +115,7 @@ let cachedLineageIndex: LineageIndex | null = null;
 let cachedSpellIndex: SpellIndex | null = null;
 let cachedChipIndex: ChipIndex | null = null;
 let cachedItemIndex: ItemIndex | null = null;
+let cachedTreasureIndex: TreasureIndex | null = null;
 let cachedLegendaryLocationIndex: LegendaryLocationIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
@@ -173,6 +178,12 @@ function getItemIndex(): ItemIndex {
   if (cachedItemIndex !== null) return cachedItemIndex;
   cachedItemIndex = readJsonOrEmpty<ItemIndex>(ITEMS_FILE);
   return cachedItemIndex;
+}
+
+function getTreasureIndex(): TreasureIndex {
+  if (cachedTreasureIndex !== null) return cachedTreasureIndex;
+  cachedTreasureIndex = readJsonOrEmpty<TreasureIndex>(TREASURES_FILE);
+  return cachedTreasureIndex;
 }
 
 function getLegendaryLocationIndex(): LegendaryLocationIndex {
@@ -559,6 +570,33 @@ export type ItemEntry = {
   startingClasses: ItemStartingClass[];
 };
 
+export type EquipmentDeck = "item" | TTSTreasureDeck;
+
+export type EquipmentDeckGroup = {
+  deck: EquipmentDeck;
+  title: string;
+  entries: EquipmentDeckEntry[];
+  cards: number;
+  copies: number;
+};
+
+export type EquipmentDeckEntry = {
+  name: string;
+  slug: string;
+  deck: EquipmentDeck;
+  cards: (TTSItemCard | TTSTreasureCard)[];
+  copies: number;
+};
+
+export type EquipmentEntry = {
+  name: string;
+  slug: string;
+  item?: ItemEntry;
+  treasures: TTSTreasureCard[];
+  decks: EquipmentDeck[];
+  copies: number;
+};
+
 export type LegendaryMonsterLink = TTSLegendaryMonsterChip & {
   href?: string;
 };
@@ -662,6 +700,100 @@ export function getAllItems(): ItemEntry[] {
 
 export function getItemBySlug(slug: string): ItemEntry | undefined {
   return getAllItems().find((entry) => entry.slug === slug);
+}
+
+export function getAllEquipment(): EquipmentEntry[] {
+  const bySlug = new Map<string, EquipmentEntry>();
+  for (const item of getAllItems()) {
+    bySlug.set(item.slug, {
+      name: item.name,
+      slug: item.slug,
+      item,
+      treasures: [],
+      decks: ["item"],
+      copies: item.copies,
+    });
+  }
+  for (const [name, cards] of Object.entries(getTreasureIndex())) {
+    const slug = slugify(name);
+    const existing = bySlug.get(slug);
+    const treasureCopies = treasurePhysicalCopies(cards);
+    const decks = uniqueEquipmentDecks(cards.map((card) => card.deck));
+    if (existing) {
+      existing.treasures.push(...cards);
+      existing.decks = uniqueEquipmentDecks([...existing.decks, ...decks]);
+      existing.copies += treasureCopies;
+    } else {
+      bySlug.set(slug, {
+        name,
+        slug,
+        treasures: cards,
+        decks,
+        copies: treasureCopies,
+      });
+    }
+  }
+  return [...bySlug.values()].sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getEquipmentBySlug(slug: string): EquipmentEntry | undefined {
+  return getAllEquipment().find((entry) => entry.slug === slug);
+}
+
+export function getEquipmentDeckGroups(): EquipmentDeckGroup[] {
+  const groups = new Map<EquipmentDeck, EquipmentDeckEntry[]>();
+  for (const item of getAllItems()) {
+    const entries = groups.get("item") ?? [];
+    entries.push({
+      name: item.name,
+      slug: item.slug,
+      deck: "item",
+      cards: item.cards,
+      copies: item.copies,
+    });
+    groups.set("item", entries);
+  }
+  for (const [name, cards] of Object.entries(getTreasureIndex())) {
+    for (const deck of uniqueEquipmentDecks(cards.map((card) => card.deck))) {
+      const deckCards = cards.filter((card) => card.deck === deck);
+      const entries = groups.get(deck) ?? [];
+      entries.push({
+        name,
+        slug: slugify(name),
+        deck,
+        cards: deckCards,
+        copies: treasurePhysicalCopies(deckCards),
+      });
+      groups.set(deck, entries);
+    }
+  }
+  return (["item", "treasure", "deep-treasure", "legendary"] as const)
+    .map((deck) => {
+      const entries = (groups.get(deck) ?? []).sort((a, b) =>
+        a.name.localeCompare(b.name),
+      );
+      return {
+        deck,
+        title: equipmentDeckTitle(deck),
+        entries,
+        cards: entries.reduce((sum, entry) => sum + entry.cards.length, 0),
+        copies: entries.reduce((sum, entry) => sum + entry.copies, 0),
+      };
+    })
+    .filter((group) => group.entries.length > 0);
+}
+
+function equipmentDeckTitle(deck: EquipmentDeck): string {
+  switch (deck) {
+    case "item":
+      return "Item Deck";
+    case "treasure":
+      return "Treasure Deck";
+    case "deep-treasure":
+      return "Deep Treasure Deck";
+    case "legendary":
+      return "Legendary Treasures";
+  }
 }
 
 export function getAllLegendaryLocations(): LegendaryLocationEntry[] {
@@ -1184,6 +1316,21 @@ export { slugify };
 
 function itemPhysicalCopies(cards: TTSItemCard[]): number {
   return cards.reduce((total, card) => total + card.copies, 0);
+}
+
+function treasurePhysicalCopies(cards: TTSTreasureCard[]): number {
+  return cards.reduce((total, card) => total + card.copies, 0);
+}
+
+function uniqueEquipmentDecks(decks: EquipmentDeck[]): EquipmentDeck[] {
+  const order: EquipmentDeck[] = [
+    "item",
+    "treasure",
+    "deep-treasure",
+    "legendary",
+  ];
+  const found = new Set(decks);
+  return order.filter((deck) => found.has(deck));
 }
 
 function itemBoxes(cards: TTSItemCard[]): { name: string; count: number }[] {
