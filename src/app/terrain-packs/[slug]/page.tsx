@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { SpriteCell } from "@/components/CardSprite";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import {
   getAllTerrainPacks,
   getTerrainPackBySlug,
+  type EquipmentDeck,
   type BoardEntry,
   type TerrainPackClearingTypeEntry,
   type CivLocationEntry,
@@ -13,6 +15,7 @@ import {
   type TerrainPackNativeEntry,
   type TerrainPackEntry,
   type TerrainPackSiteEntry,
+  type TerrainPackTreasureEntry,
   type WildernessTokenNameEntry,
 } from "@/lib/tts/lookup";
 
@@ -41,7 +44,9 @@ export default async function TerrainPackPage({
         </Link>
       </div>
 
-      <h1 className="text-4xl font-bold mt-4 mb-2">{pack.name}</h1>
+      <h1 className="text-4xl font-bold mt-4 mb-2">
+        {terrainPackDisplayName(pack)}
+      </h1>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
         {terrainPackSummary(pack)}
       </p>
@@ -85,6 +90,17 @@ export default async function TerrainPackPage({
           </LinkedGrid>
         </TerrainBox>
 
+        <TerrainBox
+          title="Terrain-specific Treasures"
+          count={pack.terrainTreasures.length}
+        >
+          <LinkedGrid>
+            {pack.terrainTreasures.map((entry) => (
+              <TerrainTreasureTile key={entry.slug} entry={entry} />
+            ))}
+          </LinkedGrid>
+        </TerrainBox>
+
         <TerrainBox title="Civ Locations" count={pack.civLocations.length}>
           <LinkedGrid>
             {pack.civLocations.map((entry) => (
@@ -100,7 +116,7 @@ export default async function TerrainPackPage({
         </TerrainBox>
 
         <TerrainBox
-          title="Unique Natives and Monsters"
+          title={nativeMonsterBoxTitle(pack)}
           count={pack.uniqueNatives.length + pack.uniqueMonsters.length}
         >
           <NativeGrid>
@@ -144,6 +160,10 @@ export default async function TerrainPackPage({
   );
 }
 
+function terrainPackDisplayName(pack: TerrainPackEntry): string {
+  return pack.slug === "neutral" ? "Always in use" : pack.name;
+}
+
 function TerrainBox({
   title,
   count,
@@ -153,20 +173,25 @@ function TerrainBox({
   count: number;
   children: React.ReactNode;
 }) {
+  if (count === 0) return null;
+
   return (
-    <section className="rounded border border-zinc-200 dark:border-zinc-800 p-4 sm:p-5">
-      <div className="mb-4 flex flex-wrap items-baseline justify-between gap-3">
-        <h2 className="text-xl font-semibold">{title}</h2>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
-          {count} item{count === 1 ? "" : "s"}
-        </p>
+    <details
+      open
+      className="rounded border border-zinc-200 dark:border-zinc-800"
+    >
+      <summary className="cursor-pointer list-none px-4 py-3 sm:px-5 sm:py-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <h2 className="text-xl font-semibold">{title}</h2>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            {count} item{count === 1 ? "" : "s"}
+          </p>
+        </div>
+      </summary>
+      <div className="border-t border-zinc-200 dark:border-zinc-800 p-4 sm:p-5">
+        {children}
       </div>
-      {count > 0 ? (
-        children
-      ) : (
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">None found.</p>
-      )}
-    </section>
+    </details>
   );
 }
 
@@ -273,6 +298,34 @@ function WildernessTokenTile({
       subtitle={wildernessTokenSubtitle(token)}
       imageClassName="object-cover"
     />
+  );
+}
+
+function TerrainTreasureTile({ entry }: { entry: TerrainPackTreasureEntry }) {
+  const card = entry.cards[0];
+  const href = `/equipment/${entry.slug}`;
+  return (
+    <section className="flex min-w-0 flex-col gap-2">
+      <Link
+        href={href}
+        className="rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition"
+        aria-label={`View ${entry.name}`}
+      >
+        {card ? <SpriteCell card={card} className="w-full" /> : null}
+      </Link>
+      <div className="min-w-0">
+        <h3 className="text-sm font-semibold leading-5">
+          <Link href={href} className="hover:underline">
+            {entry.name}
+          </Link>
+        </h3>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400">
+          {entry.decks.map(equipmentDeckLabel).join(" & ")} · {entry.copies} cop
+          {entry.copies === 1 ? "y" : "ies"}
+          {entry.cards.length > 1 ? ` · ${entry.cards.length} variants` : ""}
+        </p>
+      </div>
+    </section>
   );
 }
 
@@ -383,10 +436,11 @@ function terrainPackSummary(pack: TerrainPackEntry): string {
     countLabel(pack.boards.length, "board"),
     countLabel(pack.civilisationTokens.length, "civ token"),
     countLabel(pack.wildernessTokens.length, "wilderness token"),
+    countLabel(pack.terrainTreasures.length, "terrain treasure"),
     countLabel(pack.civLocations.length, "civ location"),
     countLabel(
       pack.uniqueNatives.length + pack.uniqueMonsters.length,
-      "unique native/monster",
+      pack.slug === "neutral" ? "native/monster" : "unique native/monster",
     ),
     countLabel(pack.clearingTypes.length, "clearing type"),
     countLabel(pack.sites.length, "site"),
@@ -404,6 +458,25 @@ function wildernessTokenSubtitle(
 
 function countLabel(count: number, label: string): string {
   return `${count} ${label}${count === 1 ? "" : "s"}`;
+}
+
+function nativeMonsterBoxTitle(pack: TerrainPackEntry): string {
+  return pack.slug === "neutral"
+    ? "Natives and Monsters"
+    : "Unique Natives and Monsters";
+}
+
+function equipmentDeckLabel(deck: EquipmentDeck): string {
+  switch (deck) {
+    case "item":
+      return "Item";
+    case "treasure":
+      return "Treasure";
+    case "deep-treasure":
+      return "Deep Treasure";
+    case "legendary":
+      return "Legendary";
+  }
 }
 
 function formatPercentage(value: number): string {

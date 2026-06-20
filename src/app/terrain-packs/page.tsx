@@ -15,7 +15,8 @@ export default function TerrainPacksPage() {
       <h1 className="text-4xl font-bold mt-4 mb-2">Terrain Packs</h1>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
         {packs.length} terrain packs across boards, civilisation tokens,
-        wilderness tokens, civilisation locations, sites, and map tiles
+        wilderness tokens, terrain-specific treasures, civilisation locations,
+        sites, and map tiles
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -25,7 +26,9 @@ export default function TerrainPacksPage() {
             href={`/terrain-packs/${pack.slug}`}
             className="rounded border border-zinc-200 dark:border-zinc-800 p-5 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
           >
-            <h2 className="text-lg font-semibold mb-3">{pack.name}</h2>
+            <h2 className="text-lg font-semibold mb-3">
+              {terrainPackDisplayName(pack)}
+            </h2>
             <p className="text-sm text-zinc-500 dark:text-zinc-400">
               {terrainPackSummary(pack)}
             </p>
@@ -36,15 +39,20 @@ export default function TerrainPacksPage() {
   );
 }
 
+function terrainPackDisplayName(pack: TerrainPackEntry): string {
+  return pack.slug === "neutral" ? "Always in use" : pack.name;
+}
+
 function terrainPackSummary(pack: TerrainPackEntry): string {
   return [
     countLabel(pack.boards.length, "board"),
     countLabel(pack.civilisationTokens.length, "civ token"),
     countLabel(pack.wildernessTokens.length, "wilderness token"),
+    countLabel(pack.terrainTreasures.length, "terrain treasure"),
     countLabel(pack.civLocations.length, "civ location"),
     countLabel(
       pack.uniqueNatives.length + pack.uniqueMonsters.length,
-      "unique native/monster",
+      pack.slug === "neutral" ? "native/monster" : "unique native/monster",
     ),
     countLabel(pack.clearingTypes.length, "clearing type"),
     countLabel(pack.sites.length, "site"),

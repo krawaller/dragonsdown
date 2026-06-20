@@ -1284,6 +1284,14 @@ export type TerrainPackSiteEntry = {
   subtitle?: string;
 };
 
+export type TerrainPackTreasureEntry = {
+  name: string;
+  slug: string;
+  decks: EquipmentDeck[];
+  cards: TTSTreasureCard[];
+  copies: number;
+};
+
 export type TerrainPackEntry = {
   name: string;
   slug: string;
@@ -1292,6 +1300,7 @@ export type TerrainPackEntry = {
   wildernessTokens: WildernessTokenNameEntry[];
   civLocations: CivLocationEntry[];
   sites: TerrainPackSiteEntry[];
+  terrainTreasures: TerrainPackTreasureEntry[];
   uniqueNatives: TerrainPackNativeEntry[];
   uniqueMonsters: TerrainPackMonsterEntry[];
   clearingTypes: TerrainPackClearingTypeEntry[];
@@ -1376,6 +1385,7 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
   const civLocations = getAllCivLocations();
   const sites = getAllSites();
   const mapTiles = getAllMapTiles();
+  const equipment = getAllEquipment();
   const nativeGroups = getAllNativeGroups();
   const monsterGroups = getAllMonsterGroups();
 
@@ -1395,7 +1405,9 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
   }
   for (const tile of mapTiles) packNames.add(tile.terrainPack);
 
-  return [...packNames].sort(compareTerrainPackNames).map((name) => {
+  const sortedPackNames = [...packNames].sort(compareTerrainPackNames);
+
+  return sortedPackNames.map((name) => {
     const packCivLocations = civLocationsForTerrainPack(
       name,
       boards,
@@ -1409,6 +1421,28 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
       sites,
       wildernessTokens,
     );
+    const packUniqueNatives =
+      name === CIVILISATION_TOKEN_NEUTRAL_TERRAIN
+        ? nonUniqueNativesForOtherTerrainPacks(
+            sortedPackNames,
+            boards,
+            civLocations,
+            mapTiles,
+            nativeGroups,
+          )
+        : uniqueNativesForTerrainPack(packCivLocations, nativeGroups);
+    const packUniqueMonsters =
+      name === CIVILISATION_TOKEN_NEUTRAL_TERRAIN
+        ? nonUniqueMonstersForOtherTerrainPacks(
+            sortedPackNames,
+            boards,
+            sites,
+            wildernessTokens,
+            mapTiles,
+            monsterGroups,
+          )
+        : uniqueMonstersForTerrainPack(packSites, packMapTiles, monsterGroups);
+
     return {
       name,
       slug: slugify(name),
@@ -1422,16 +1456,10 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
         entry.tokens.some((token) => token.terrain === name),
       ),
       civLocations: packCivLocations,
-      uniqueNatives: uniqueNativesForTerrainPack(
-        packCivLocations,
-        nativeGroups,
-      ),
+      terrainTreasures: terrainSpecificTreasuresForTerrainPack(name, equipment),
+      uniqueNatives: packUniqueNatives,
       sites: packSites,
-      uniqueMonsters: uniqueMonstersForTerrainPack(
-        packSites,
-        packMapTiles,
-        monsterGroups,
-      ),
+      uniqueMonsters: packUniqueMonsters,
       clearingTypes: clearingTypesForTerrainPack(packMapTiles),
       mapTiles: packMapTiles,
     };
@@ -1598,6 +1626,32 @@ function terrainPackSiteEntry(
   return { name, slug, href: `/sites/${slug}` };
 }
 
+function terrainSpecificTreasuresForTerrainPack(
+  terrainPack: string,
+  equipment: EquipmentEntry[],
+): TerrainPackTreasureEntry[] {
+  if (terrainPack === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) return [];
+
+  return equipment
+    .flatMap((entry) => {
+      const cards = entry.treasures.filter(
+        (card) => card.terrainPack === terrainPack,
+      );
+      return cards.length > 0
+        ? [
+            {
+              name: entry.name,
+              slug: entry.slug,
+              decks: uniqueEquipmentDecks(cards.map((card) => card.deck)),
+              cards,
+              copies: treasurePhysicalCopies(cards),
+            },
+          ]
+        : [];
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
 function compareTerrainPackNames(a: string, b: string): number {
   if (a === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) return -1;
   if (b === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) return 1;
@@ -1647,6 +1701,29 @@ function uniqueNativesForTerrainPack(
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
 
+function nonUniqueNativesForOtherTerrainPacks(
+  terrainPacks: string[],
+  boards: BoardEntry[],
+  civLocations: CivLocationEntry[],
+  mapTiles: MapTileEntry[],
+  nativeGroups: MonsterGroupEntry[],
+): TerrainPackNativeEntry[] {
+  const uniqueNativeSlugs = new Set<string>();
+  for (const terrainPack of terrainPacks) {
+    if (terrainPack === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) continue;
+    for (const group of uniqueNativesForTerrainPack(
+      civLocationsForTerrainPack(terrainPack, boards, civLocations, mapTiles),
+      nativeGroups,
+    )) {
+      uniqueNativeSlugs.add(group.slug);
+    }
+  }
+
+  return nativeGroups
+    .filter((group) => !uniqueNativeSlugs.has(group.slug))
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
 function uniqueMonstersForTerrainPack(
   sites: TerrainPackSiteEntry[],
   mapTiles: MapTileEntry[],
@@ -1670,6 +1747,34 @@ function uniqueMonstersForTerrainPack(
       );
       return mapTilesOnlyFromThisPack && sitesOnlyFromThisPack ? [group] : [];
     })
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+function nonUniqueMonstersForOtherTerrainPacks(
+  terrainPacks: string[],
+  boards: BoardEntry[],
+  sites: SiteEntry[],
+  wildernessTokens: WildernessTokenNameEntry[],
+  mapTiles: MapTileEntry[],
+  monsterGroups: MonsterGroupEntry[],
+): TerrainPackMonsterEntry[] {
+  const uniqueMonsterSlugs = new Set<string>();
+  for (const terrainPack of terrainPacks) {
+    if (terrainPack === CIVILISATION_TOKEN_NEUTRAL_TERRAIN) continue;
+    const packMapTiles = mapTiles.filter(
+      (tile) => tile.terrainPack === terrainPack,
+    );
+    for (const group of uniqueMonstersForTerrainPack(
+      sitesForTerrainPack(terrainPack, boards, sites, wildernessTokens),
+      packMapTiles,
+      monsterGroups,
+    )) {
+      uniqueMonsterSlugs.add(group.slug);
+    }
+  }
+
+  return monsterGroups
+    .filter((group) => !uniqueMonsterSlugs.has(group.slug))
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 }
 
