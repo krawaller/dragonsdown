@@ -86,15 +86,21 @@ export function SectionView({
 function MarkdownImage({ alt, src }: { alt?: string; src?: string | Blob }) {
   if (typeof src !== "string") return null;
   const isInline = alt === "inline";
+  const isFloatLeft = alt === "float-left";
+  const isFloatRight = alt === "float-right";
   // eslint-disable-next-line @next/next/no-img-element
   return (
     <img
       src={src}
-      alt={isInline ? "" : (alt ?? "")}
+      alt={isInline || isFloatLeft || isFloatRight ? "" : (alt ?? "")}
       className={
         isInline
           ? "not-prose inline-block h-[1.35em] w-auto align-[-0.2em]"
-          : undefined
+          : isFloatLeft
+            ? "not-prose float-left mr-4 mb-2 mt-1 max-w-[35%]"
+            : isFloatRight
+              ? "not-prose float-right ml-4 mb-2 mt-1 max-w-[35%]"
+              : undefined
       }
     />
   );

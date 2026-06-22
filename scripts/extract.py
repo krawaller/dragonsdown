@@ -96,6 +96,18 @@ class InlineImage:
     block_id: int
 
 
+@dataclass(frozen=True)
+class TextLine:
+    line: dict
+    bbox: tuple[float, float, float, float]
+
+
+@dataclass(frozen=True)
+class FloatedImage:
+    markdown: str
+    block_id: int
+
+
 def classify_heading(font: str, size: float, color: int) -> int | None:
     size_r = round(size)
     if font == "BreatheFireIII" and size_r == 18:
@@ -176,6 +188,7 @@ def render_spans_md(
     spans: list[dict],
     skip_leading_bullet: bool = False,
     inline_images: list[InlineImage] | None = None,
+    leading_images: list[FloatedImage] | None = None,
 ) -> str:
     """Merge adjacent same-style spans, wrap each run in markdown emphasis.
 
@@ -259,7 +272,8 @@ def render_spans_md(
         image_idx += 1
     if buf:
         parts.append(wrap_style(buf, buf_style or ""))
-    rendered = "".join(parts)
+    leading = [image.markdown for image in leading_images or []]
+    rendered = " ".join([*leading, "".join(parts)]) if leading else "".join(parts)
     return re.sub(r" {2,}", " ", rendered) if images else rendered
 
 
@@ -350,13 +364,8 @@ def vertical_overlap(
     return max(0.0, min(a[3], b[3]) - max(a[1], b[1]))
 
 
-def find_inline_images(
-    blocks: list[dict],
-    stats: dict,
-    total_pages: int,
-    excluded_block_ids: set[int],
-) -> tuple[dict[int, list[InlineImage]], set[int]]:
-    text_lines: list[tuple[dict, tuple[float, float, float, float]]] = []
+def text_lines_for_image_detection(blocks: list[dict]) -> list[TextLine]:
+    lines: list[TextLine] = []
     for block in blocks:
         if block.get("type") != 0:
             continue
@@ -374,7 +383,27 @@ def find_inline_images(
                 continue
             bbox = line_bbox(line)
             if bbox is not None:
-                text_lines.append((line, bbox))
+                lines.append(TextLine(line=line, bbox=bbox))
+    return lines
+
+
+def same_column(
+    a: tuple[float, float, float, float],
+    b: tuple[float, float, float, float],
+    column_boundary: float,
+) -> bool:
+    acx = (a[0] + a[2]) / 2
+    bcx = (b[0] + b[2]) / 2
+    return (acx < column_boundary) == (bcx < column_boundary)
+
+
+def find_inline_images(
+    blocks: list[dict],
+    stats: dict,
+    total_pages: int,
+    excluded_block_ids: set[int],
+) -> tuple[dict[int, list[InlineImage]], set[int]]:
+    text_lines = text_lines_for_image_detection(blocks)
 
     inline_by_line: dict[int, list[InlineImage]] = {}
     inline_block_ids: set[int] = set()
@@ -391,7 +420,9 @@ def find_inline_images(
             continue
         ibox = (ix0, iy0, ix1, iy1)
         best: tuple[float, dict] | None = None
-        for line, lbox in text_lines:
+        for text_line in text_lines:
+            line = text_line.line
+            lbox = text_line.bbox
             lx0, ly0, lx1, ly1 = lbox
             overlap = vertical_overlap(ibox, lbox)
             if overlap / min(height, ly1 - ly0) < 0.45:
@@ -411,6 +442,71 @@ def find_inline_images(
         )
         inline_block_ids.add(id(block))
     return inline_by_line, inline_block_ids
+
+
+def find_floated_images(
+    blocks: list[dict],
+    stats: dict,
+    total_pages: int,
+    excluded_block_ids: set[int],
+    column_boundary: float,
+) -> tuple[dict[int, list[FloatedImage]], set[int]]:
+    """Detect body figures that text wraps around.
+
+    `excluded_block_ids` must include section-icon blocks. Headline-adjacent
+    left-floated images are handled by `find_section_icons` and should remain
+    `section.icon`, never markdown body images.
+    """
+    text_lines = text_lines_for_image_detection(blocks)
+    floated_by_line: dict[int, list[FloatedImage]] = {}
+    floated_block_ids: set[int] = set()
+    for block in blocks:
+        if block.get("type") != 1 or id(block) in excluded_block_ids:
+            continue
+        url = image_url_for_block(block, stats, total_pages)
+        if not url:
+            continue
+        ix0, iy0, ix1, iy1 = block["bbox"]
+        width = ix1 - ix0
+        height = iy1 - iy0
+        if not (28 <= width <= 180 and 28 <= height <= 220):
+            continue
+        ibox = (ix0, iy0, ix1, iy1)
+        left_lines: list[TextLine] = []
+        right_lines: list[TextLine] = []
+        for text_line in text_lines:
+            lbox = text_line.bbox
+            lx0, ly0, lx1, ly1 = lbox
+            if not same_column(ibox, lbox, column_boundary):
+                continue
+            overlap = vertical_overlap(ibox, lbox)
+            if overlap / min(height, ly1 - ly0) < 0.25:
+                continue
+            left_gap = lx0 - ix1
+            right_gap = ix0 - lx1
+            if 0 <= left_gap <= 28:
+                left_lines.append(text_line)
+            elif 0 <= right_gap <= 28:
+                right_lines.append(text_line)
+
+        direction: str | None = None
+        wrapped_lines: list[TextLine] = []
+        if len(left_lines) >= 2 and len(left_lines) >= len(right_lines):
+            direction = "left"
+            wrapped_lines = left_lines
+        elif len(right_lines) >= 2:
+            direction = "right"
+            wrapped_lines = right_lines
+        if direction is None:
+            continue
+
+        wrapped_lines.sort(key=lambda entry: (entry.bbox[1], entry.bbox[0]))
+        first_line = wrapped_lines[0].line
+        floated_by_line.setdefault(id(first_line), []).append(
+            FloatedImage(f"![float-{direction}]({url})", id(block))
+        )
+        floated_block_ids.add(id(block))
+    return floated_by_line, floated_block_ids
 
 
 def heading_key(level: int, title: str, bbox: tuple[float, float, float, float]) -> tuple:
@@ -557,6 +653,7 @@ def find_section_icons(
 def process_text_block(
     block: dict,
     inline_by_line: dict[int, list[InlineImage]] | None = None,
+    floated_by_line: dict[int, list[FloatedImage]] | None = None,
 ) -> list[tuple]:
     """Yield items: ('heading', level, title, key, bbox) | ('para', md) | ('bullets', md)."""
     items: list[tuple] = []
@@ -601,12 +698,14 @@ def process_text_block(
                 spans,
                 skip_leading_bullet=True,
                 inline_images=(inline_by_line or {}).get(id(line)),
+                leading_images=(floated_by_line or {}).get(id(line)),
             ).strip()
             bullets_buf.append(md)
             continue
         md = render_spans_md(
             spans,
             inline_images=(inline_by_line or {}).get(id(line)),
+            leading_images=(floated_by_line or {}).get(id(line)),
         ).strip()
         if bullets_buf:
             # Wrapped continuation of the previous bullet item
@@ -722,13 +821,22 @@ def extract(pdf_path: Path) -> list[dict]:
 
     for page_idx, page in enumerate(doc):
         raw_blocks = page.get_text("dict")["blocks"]
+        # Preserve the existing section-icon system first. Those image blocks
+        # are intentionally excluded from generic inline/float markdown passes.
         icons_by_heading, icon_block_ids = find_section_icons(
             raw_blocks, stats, total_pages
         )
+        boundary = find_column_boundary(raw_blocks, page.rect.width)
         inline_by_line, inline_block_ids = find_inline_images(
             raw_blocks, stats, total_pages, icon_block_ids
         )
-        boundary = find_column_boundary(raw_blocks, page.rect.width)
+        floated_by_line, floated_block_ids = find_floated_images(
+            raw_blocks,
+            stats,
+            total_pages,
+            icon_block_ids | inline_block_ids,
+            boundary,
+        )
         blocks = sorted(
             raw_blocks,
             key=lambda b: block_sort_key(b, boundary),
@@ -736,9 +844,13 @@ def extract(pdf_path: Path) -> list[dict]:
         for block in blocks:
             btype = block.get("type")
             if btype == 0:
-                items = process_text_block(block, inline_by_line)
+                items = process_text_block(block, inline_by_line, floated_by_line)
             elif btype == 1:
-                if id(block) in icon_block_ids or id(block) in inline_block_ids:
+                if (
+                    id(block) in icon_block_ids
+                    or id(block) in inline_block_ids
+                    or id(block) in floated_block_ids
+                ):
                     continue
                 items = process_image_block(block, stats, total_pages)
             else:
