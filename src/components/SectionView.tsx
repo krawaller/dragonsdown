@@ -73,7 +73,7 @@ export function SectionView({
       </Heading>
       {cards.length > 0 && <CardImages cards={cards} />}
       {section.content && (
-        <div className="prose prose-zinc dark:prose-invert max-w-none">
+        <div className="rulebook-content prose prose-zinc dark:prose-invert max-w-none">
           <ReactMarkdown components={{ img: MarkdownImage }}>
             {section.content}
           </ReactMarkdown>
