@@ -50,6 +50,15 @@ BG_PAGE_FRACTION = 0.5
 # space and another word. Uses [ \t]+ (not \s+) so it never spans paragraph
 # breaks. Tolerates markdown emphasis asterisks on either side of the gap.
 _WRAP_FIX = re.compile(r"([A-Za-z0-9][-/])(\*{0,3})[ \t]+(\*{0,3})([A-Za-z])")
+_INLINE_IMAGE_REF = r"!\[inline\]\([^)]*\)"
+
+
+def normalize_inline_image_spacing(content: str) -> str:
+    if "![inline](" not in content:
+        return content
+    content = re.sub(rf"\s*\n\s*\n\s*({_INLINE_IMAGE_REF})\s*", r" \1 ", content)
+    content = re.sub(rf"({_INLINE_IMAGE_REF})\s*\n\s*\n\s*", r"\1 ", content)
+    return re.sub(r" {2,}", " ", content).strip()
 
 
 @dataclass
@@ -62,6 +71,7 @@ class Section:
 
     def render(self) -> dict:
         content = "\n\n".join(p for p in self.content_parts if p).strip()
+        content = normalize_inline_image_spacing(content)
         content = _WRAP_FIX.sub(r"\1\2\3\4", content)
         rendered = {"level": self.level, "title": self.title}
         if self.location:
@@ -76,6 +86,14 @@ class Section:
 class ReleaseEntry:
     file: str
     version: str | None = None
+
+
+@dataclass(frozen=True)
+class InlineImage:
+    x0: float
+    x1: float
+    markdown: str
+    block_id: int
 
 
 def classify_heading(font: str, size: float, color: int) -> int | None:
@@ -154,7 +172,11 @@ def wrap_style(text: str, style: str) -> str:
     return leading + body + trailing
 
 
-def render_spans_md(spans: list[dict], skip_leading_bullet: bool = False) -> str:
+def render_spans_md(
+    spans: list[dict],
+    skip_leading_bullet: bool = False,
+    inline_images: list[InlineImage] | None = None,
+) -> str:
     """Merge adjacent same-style spans, wrap each run in markdown emphasis.
 
     If skip_leading_bullet is true, drop the first span if it is just '•'.
@@ -163,6 +185,32 @@ def render_spans_md(spans: list[dict], skip_leading_bullet: bool = False) -> str
     buf = ""
     buf_style: str | None = None
     dropped_bullet = not skip_leading_bullet
+    images = sorted(inline_images or [], key=lambda img: (img.x0 + img.x1) / 2)
+    image_idx = 0
+
+    def append_text(text: str, style: str) -> None:
+        nonlocal buf, buf_style
+        if not text:
+            return
+        if style == buf_style:
+            buf += text
+        else:
+            if buf:
+                parts.append(wrap_style(buf, buf_style or ""))
+            buf = text
+            buf_style = style
+
+    def append_image(markdown: str) -> None:
+        nonlocal buf, buf_style
+        if buf:
+            parts.append(wrap_style(buf, buf_style or ""))
+            buf = ""
+            buf_style = None
+        if parts and not parts[-1].endswith((" ", "\n")):
+            parts.append(" ")
+        parts.append(markdown)
+        parts.append(" ")
+
     for span in spans:
         text = span["text"]
         if not text:
@@ -173,16 +221,46 @@ def render_spans_md(spans: list[dict], skip_leading_bullet: bool = False) -> str
                 continue
             dropped_bullet = True
         style = span_style(span)
-        if style == buf_style:
-            buf += text
-        else:
-            if buf:
-                parts.append(wrap_style(buf, buf_style or ""))
-            buf = text
-            buf_style = style
+        sx0, _, sx1, _ = span["bbox"]
+        while image_idx < len(images) and images[image_idx].x1 <= sx0:
+            append_image(images[image_idx].markdown)
+            image_idx += 1
+
+        in_span: list[tuple[int, InlineImage]] = []
+        while image_idx < len(images):
+            image = images[image_idx]
+            center_x = (image.x0 + image.x1) / 2
+            if center_x > sx1:
+                break
+            if sx1 > sx0 and text:
+                split_idx = round(((center_x - sx0) / (sx1 - sx0)) * len(text))
+            else:
+                split_idx = len(text)
+            split_idx = max(0, min(len(text), split_idx))
+            visible_end = len(text.rstrip())
+            if visible_end < len(text) and split_idx >= visible_end:
+                split_idx = visible_end
+            in_span.append((split_idx, image))
+            image_idx += 1
+
+        if not in_span:
+            append_text(text, style)
+            continue
+
+        start = 0
+        for split_idx, image in sorted(in_span, key=lambda entry: entry[0]):
+            append_text(text[start:split_idx], style)
+            append_image(image.markdown)
+            start = split_idx
+        append_text(text[start:], style)
+
+    while image_idx < len(images):
+        append_image(images[image_idx].markdown)
+        image_idx += 1
     if buf:
         parts.append(wrap_style(buf, buf_style or ""))
-    return "".join(parts)
+    rendered = "".join(parts)
+    return re.sub(r" {2,}", " ", rendered) if images else rendered
 
 
 def clean_title(text: str) -> str:
@@ -263,6 +341,76 @@ def line_bbox(line: dict) -> tuple[float, float, float, float] | None:
         max(s["bbox"][2] for s in spans),
         max(s["bbox"][3] for s in spans),
     )
+
+
+def vertical_overlap(
+    a: tuple[float, float, float, float],
+    b: tuple[float, float, float, float],
+) -> float:
+    return max(0.0, min(a[3], b[3]) - max(a[1], b[1]))
+
+
+def find_inline_images(
+    blocks: list[dict],
+    stats: dict,
+    total_pages: int,
+    excluded_block_ids: set[int],
+) -> tuple[dict[int, list[InlineImage]], set[int]]:
+    text_lines: list[tuple[dict, tuple[float, float, float, float]]] = []
+    for block in blocks:
+        if block.get("type") != 0:
+            continue
+        for line in block.get("lines", []):
+            spans = line.get("spans", [])
+            if not spans:
+                continue
+            full_text = "".join(s["text"] for s in spans).strip()
+            if not full_text:
+                continue
+            dom = max(spans, key=lambda s: len(s["text"]))
+            if is_skippable_line(full_text, dom["font"], dom["size"]):
+                continue
+            if classify_heading(dom["font"], dom["size"], dom["color"]) is not None:
+                continue
+            bbox = line_bbox(line)
+            if bbox is not None:
+                text_lines.append((line, bbox))
+
+    inline_by_line: dict[int, list[InlineImage]] = {}
+    inline_block_ids: set[int] = set()
+    for block in blocks:
+        if block.get("type") != 1 or id(block) in excluded_block_ids:
+            continue
+        url = image_url_for_block(block, stats, total_pages)
+        if not url:
+            continue
+        ix0, iy0, ix1, iy1 = block["bbox"]
+        width = ix1 - ix0
+        height = iy1 - iy0
+        if not (6 <= width <= 28 and 6 <= height <= 28):
+            continue
+        ibox = (ix0, iy0, ix1, iy1)
+        best: tuple[float, dict] | None = None
+        for line, lbox in text_lines:
+            lx0, ly0, lx1, ly1 = lbox
+            overlap = vertical_overlap(ibox, lbox)
+            if overlap / min(height, ly1 - ly0) < 0.45:
+                continue
+            within_or_gap = ix0 <= lx1 + 4 and ix1 >= lx0 - 4
+            near_text_flow = ix0 <= lx1 + 12 or ix0 <= lx1 <= ix1 + 4
+            if not (within_or_gap and near_text_flow):
+                continue
+            score = overlap - abs(((iy0 + iy1) / 2) - ((ly0 + ly1) / 2))
+            if best is None or score > best[0]:
+                best = (score, line)
+        if best is None:
+            continue
+        _, line = best
+        inline_by_line.setdefault(id(line), []).append(
+            InlineImage(ix0, ix1, f"![inline]({url})", id(block))
+        )
+        inline_block_ids.add(id(block))
+    return inline_by_line, inline_block_ids
 
 
 def heading_key(level: int, title: str, bbox: tuple[float, float, float, float]) -> tuple:
@@ -406,7 +554,10 @@ def find_section_icons(
 
 # Block processing -------------------------------------------------------------
 
-def process_text_block(block: dict) -> list[tuple]:
+def process_text_block(
+    block: dict,
+    inline_by_line: dict[int, list[InlineImage]] | None = None,
+) -> list[tuple]:
     """Yield items: ('heading', level, title, key, bbox) | ('para', md) | ('bullets', md)."""
     items: list[tuple] = []
     para_buf: list[str] = []
@@ -446,10 +597,17 @@ def process_text_block(block: dict) -> list[tuple]:
         is_bullet = first_visible is not None and first_visible["text"].strip() == "•"
         if is_bullet:
             flush_para()
-            md = render_spans_md(spans, skip_leading_bullet=True).strip()
+            md = render_spans_md(
+                spans,
+                skip_leading_bullet=True,
+                inline_images=(inline_by_line or {}).get(id(line)),
+            ).strip()
             bullets_buf.append(md)
             continue
-        md = render_spans_md(spans).strip()
+        md = render_spans_md(
+            spans,
+            inline_images=(inline_by_line or {}).get(id(line)),
+        ).strip()
         if bullets_buf:
             # Wrapped continuation of the previous bullet item
             bullets_buf[-1] = (bullets_buf[-1] + " " + md).strip()
@@ -567,6 +725,9 @@ def extract(pdf_path: Path) -> list[dict]:
         icons_by_heading, icon_block_ids = find_section_icons(
             raw_blocks, stats, total_pages
         )
+        inline_by_line, inline_block_ids = find_inline_images(
+            raw_blocks, stats, total_pages, icon_block_ids
+        )
         boundary = find_column_boundary(raw_blocks, page.rect.width)
         blocks = sorted(
             raw_blocks,
@@ -575,9 +736,9 @@ def extract(pdf_path: Path) -> list[dict]:
         for block in blocks:
             btype = block.get("type")
             if btype == 0:
-                items = process_text_block(block)
+                items = process_text_block(block, inline_by_line)
             elif btype == 1:
-                if id(block) in icon_block_ids:
+                if id(block) in icon_block_ids or id(block) in inline_block_ids:
                     continue
                 items = process_image_block(block, stats, total_pages)
             else:

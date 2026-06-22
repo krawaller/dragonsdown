@@ -74,9 +74,28 @@ export function SectionView({
       {cards.length > 0 && <CardImages cards={cards} />}
       {section.content && (
         <div className="prose prose-zinc dark:prose-invert max-w-none">
-          <ReactMarkdown>{section.content}</ReactMarkdown>
+          <ReactMarkdown components={{ img: MarkdownImage }}>
+            {section.content}
+          </ReactMarkdown>
         </div>
       )}
     </section>
+  );
+}
+
+function MarkdownImage({ alt, src }: { alt?: string; src?: string | Blob }) {
+  if (typeof src !== "string") return null;
+  const isInline = alt === "inline";
+  // eslint-disable-next-line @next/next/no-img-element
+  return (
+    <img
+      src={src}
+      alt={isInline ? "" : (alt ?? "")}
+      className={
+        isInline
+          ? "not-prose inline-block h-[1.35em] w-auto align-[-0.2em]"
+          : undefined
+      }
+    />
   );
 }
