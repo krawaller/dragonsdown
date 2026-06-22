@@ -45,19 +45,27 @@ export function SectionView({
   const Heading = HEADING_TAG[section.level];
   const anchorId = anchorIdFor(section);
   const cards = findCards(section.title);
+  const icons = section.icons ?? (section.icon ? [section.icon] : []);
   return (
     <section className="mb-2 flow-root">
-      {section.icon && (
-        <Image
-          src={section.icon}
-          alt=""
-          width={48}
-          height={48}
-          className="float-left mr-3 mt-6 h-12 w-12 object-contain"
-        />
-      )}
       <Heading className={HEADING_CLASS[section.level]} id={anchorId}>
-        <span>{section.title}</span>
+        <span className="flex min-w-0 items-center gap-3">
+          {icons.length > 0 && (
+            <span className="flex shrink-0 gap-1">
+              {icons.map((icon) => (
+                <Image
+                  key={icon}
+                  src={icon}
+                  alt=""
+                  width={48}
+                  height={48}
+                  className="h-12 w-12 object-contain"
+                />
+              ))}
+            </span>
+          )}
+          <span>{section.title}</span>
+        </span>
         {showSource ? (
           <Link
             href={`/${section.source}#${anchorId}`}

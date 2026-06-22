@@ -51,6 +51,9 @@ BG_PAGE_FRACTION = 0.5
 # breaks. Tolerates markdown emphasis asterisks on either side of the gap.
 _WRAP_FIX = re.compile(r"([A-Za-z0-9][-/])(\*{0,3})[ \t]+(\*{0,3})([A-Za-z])")
 _INLINE_IMAGE_REF = r"!\[inline\]\([^)]*\)"
+_LEADING_LEFT_FLOAT_RE = re.compile(
+    r"^!\[(float-left|float-left-companion)\]\(([^)]*)\)(?:\s+|$)"
+)
 
 
 def normalize_inline_image_spacing(content: str) -> str:
@@ -67,6 +70,7 @@ class Section:
     title: str
     location: dict[str, int | str] | None = None
     icon: str | None = None
+    icons: list[str] = field(default_factory=list)
     content_parts: list[str] = field(default_factory=list)
 
     def render(self) -> dict:
@@ -76,10 +80,31 @@ class Section:
         rendered = {"level": self.level, "title": self.title}
         if self.location:
             rendered["location"] = self.location
-        if self.icon:
-            rendered["icon"] = self.icon
+        icons = [*([] if self.icon is None else [self.icon]), *self.icons]
+        if len(icons) == 1:
+            rendered["icon"] = icons[0]
+        elif icons:
+            rendered["icons"] = icons
         rendered["content"] = content
         return rendered
+
+    def promote_leading_float_icons(self, md: str) -> str:
+        if self.content_parts or not md.startswith("![float-left"):
+            return md
+
+        remaining = md
+        promoted: list[str] = []
+        while match := _LEADING_LEFT_FLOAT_RE.match(remaining):
+            marker, url = match.groups()
+            if marker == "float-left-companion" and not promoted:
+                break
+            promoted.append(url)
+            remaining = remaining[match.end() :].lstrip()
+
+        if promoted:
+            self.icons.extend(promoted)
+            return remaining
+        return md
 
 
 @dataclass
@@ -932,7 +957,11 @@ def extract(pdf_path: Path) -> list[dict]:
                     sections.append(current)
                     # Attach any pending images to the new section
                     flush_pending_to_current()
-                else:  # 'para' or 'bullets'
+                elif kind == "para":
+                    flush_pending_to_current()
+                    if current is not None:
+                        push(current.promote_leading_float_icons(item[1]))
+                else:  # 'bullets'
                     flush_pending_to_current()
                     push(item[1])
         # End of page: trailing images usually belong to the section that was
@@ -1014,6 +1043,8 @@ def process_one(
             section["location"] = location
         if icon := s.get("icon"):
             section["icon"] = icon
+        if icons := s.get("icons"):
+            section["icons"] = icons
         section["content"] = s["content"]
         stamped_sections.append(section)
     sections = stamped_sections

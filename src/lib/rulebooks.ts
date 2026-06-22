@@ -21,6 +21,8 @@ export type Section = {
   location?: SectionLocation;
   /** Optional section icon extracted from left-floating PDF art. */
   icon?: string;
+  /** Optional section icons for headings with multiple left-floating images. */
+  icons?: string[];
   /** Markdown: **bold**, *italic*, `- ` bullets, `![](/images/<hash>.<ext>)` */
   content: string;
   /** Free-form labels added by transform rules (e.g. "classAdvantage"). */

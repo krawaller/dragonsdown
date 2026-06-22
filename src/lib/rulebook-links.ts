@@ -23,6 +23,7 @@ export type RulebookLink = {
   sectionTitle: string;
   content: string;
   icon?: string;
+  icons?: string[];
   location?: SectionLocation;
   href: string;
 };
@@ -247,6 +248,7 @@ function resolveSections(
     sectionTitle: section.title,
     content: section.content,
     icon: section.icon,
+    icons: section.icons,
     location: section.location,
     href: `/${book.slug}#${anchorIdFor(section)}`,
   }));
@@ -263,6 +265,7 @@ function rulebookLinkForSection(
     sectionTitle: section.title,
     content: section.content,
     icon: section.icon,
+    icons: section.icons,
     location: section.location,
     href: `/${book.slug}#${anchorIdFor(section)}`,
   };
