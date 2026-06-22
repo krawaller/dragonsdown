@@ -97,9 +97,9 @@ function MarkdownImage({ alt, src }: { alt?: string; src?: string | Blob }) {
         isInline
           ? "not-prose inline-block h-[1.35em] w-auto align-[-0.2em]"
           : isFloatLeft
-            ? "not-prose float-left mr-4 mb-2 mt-1 max-w-[35%]"
+            ? "not-prose clear-both float-left mr-4 mb-2 mt-1 h-16 w-16 object-contain"
             : isFloatRight
-              ? "not-prose float-right ml-4 mb-2 mt-1 max-w-[35%]"
+              ? "not-prose clear-both float-right ml-4 mb-2 mt-1 h-16 w-16 object-contain"
               : undefined
       }
     />
