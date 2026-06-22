@@ -83,12 +83,14 @@ export function SectionView({
   );
 }
 
+/* eslint-disable @next/next/no-img-element */
 function MarkdownImage({ alt, src }: { alt?: string; src?: string | Blob }) {
   if (typeof src !== "string") return null;
   const isInline = alt === "inline";
-  const isFloatLeft = alt === "float-left";
-  const isFloatRight = alt === "float-right";
-  // eslint-disable-next-line @next/next/no-img-element
+  const isFloatLeft = alt === "float-left" || alt === "float-left-companion";
+  const isFloatRight = alt === "float-right" || alt === "float-right-companion";
+  const shouldClear = alt === "float-left" || alt === "float-right";
+  const clearClass = shouldClear ? "clear-both " : "";
   return (
     <img
       src={src}
@@ -97,11 +99,12 @@ function MarkdownImage({ alt, src }: { alt?: string; src?: string | Blob }) {
         isInline
           ? "not-prose inline-block h-[1.35em] w-auto align-[-0.2em]"
           : isFloatLeft
-            ? "not-prose clear-both float-left mr-4 mb-2 mt-1 h-16 w-16 object-contain"
+            ? `not-prose ${clearClass}float-left mr-4 mb-2 mt-1 h-16 w-16 object-contain`
             : isFloatRight
-              ? "not-prose clear-both float-right ml-4 mb-2 mt-1 h-16 w-16 object-contain"
+              ? `not-prose ${clearClass}float-right ml-4 mb-2 mt-1 h-16 w-16 object-contain`
               : undefined
       }
     />
   );
 }
+/* eslint-enable @next/next/no-img-element */

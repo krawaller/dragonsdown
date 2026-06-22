@@ -104,6 +104,8 @@ class TextLine:
 
 @dataclass(frozen=True)
 class FloatedImage:
+    x0: float
+    x1: float
     markdown: str
     block_id: int
 
@@ -467,20 +469,47 @@ def find_floated_images(
     `section.icon`, never markdown body images.
     """
     text_lines = text_lines_for_image_detection(blocks)
-    floated_by_line: dict[int, list[FloatedImage]] = {}
-    floated_block_ids: set[int] = set()
-    for block in blocks:
-        if block.get("type") != 1 or id(block) in excluded_block_ids:
+    image_blocks: list[tuple[dict, str, tuple[float, float, float, float]]] = []
+    for image_block in blocks:
+        if image_block.get("type") != 1 or id(image_block) in excluded_block_ids:
             continue
-        url = image_url_for_block(block, stats, total_pages)
+        url = image_url_for_block(image_block, stats, total_pages)
         if not url:
             continue
-        ix0, iy0, ix1, iy1 = block["bbox"]
+        ix0, iy0, ix1, iy1 = image_block["bbox"]
         width = ix1 - ix0
         height = iy1 - iy0
-        if not (28 <= width <= 180 and 28 <= height <= 220):
+        if 28 <= width <= 180 and 28 <= height <= 220:
+            image_blocks.append((image_block, url, (ix0, iy0, ix1, iy1)))
+
+    def companion_images(
+        anchor_block: dict,
+        anchor_box: tuple[float, float, float, float],
+        direction: str,
+    ) -> list[tuple[dict, str, tuple[float, float, float, float]]]:
+        companions: list[tuple[dict, str, tuple[float, float, float, float]]] = []
+        ax0, ay0, ax1, ay1 = anchor_box
+        for candidate_block, candidate_url, candidate_box in image_blocks:
+            if candidate_block is anchor_block or id(candidate_block) in floated_block_ids:
+                continue
+            cx0, cy0, cx1, cy1 = candidate_box
+            if not same_column(anchor_box, candidate_box, column_boundary):
+                continue
+            if abs(cy0 - ay0) > 8 or abs(cy1 - ay1) > 8:
+                continue
+            if direction == "left" and 0 <= ax0 - cx1 <= 12:
+                companions.append((candidate_block, candidate_url, candidate_box))
+            elif direction == "right" and 0 <= cx0 - ax1 <= 12:
+                companions.append((candidate_block, candidate_url, candidate_box))
+        return companions
+
+    floated_by_line: dict[int, list[FloatedImage]] = {}
+    floated_block_ids: set[int] = set()
+    for block, url, ibox in image_blocks:
+        if id(block) in floated_block_ids:
             continue
-        ibox = (ix0, iy0, ix1, iy1)
+        ix0, iy0, ix1, iy1 = ibox
+        height = iy1 - iy0
         left_lines: list[TextLine] = []
         right_lines: list[TextLine] = []
         for text_line in text_lines:
@@ -518,10 +547,15 @@ def find_floated_images(
 
         wrapped_lines.sort(key=lambda entry: (entry.bbox[1], entry.bbox[0]))
         first_line = wrapped_lines[0].line
-        floated_by_line.setdefault(id(first_line), []).append(
-            FloatedImage(f"![float-{direction}]({url})", id(block))
-        )
-        floated_block_ids.add(id(block))
+        run = companion_images(block, ibox, direction) + [(block, url, ibox)]
+        run.sort(key=lambda entry: entry[2][0], reverse=direction == "right")
+        for index, (run_block, run_url, run_box) in enumerate(run):
+            marker = f"float-{direction}" if index == 0 else f"float-{direction}-companion"
+            rx0, _, rx1, _ = run_box
+            floated_by_line.setdefault(id(first_line), []).append(
+                FloatedImage(rx0, rx1, f"![{marker}]({run_url})", id(run_block))
+            )
+            floated_block_ids.add(id(run_block))
     return floated_by_line, floated_block_ids
 
 
