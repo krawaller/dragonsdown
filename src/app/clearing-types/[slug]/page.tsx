@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import {
@@ -39,7 +40,16 @@ export default async function ClearingTypePage({
           Clearing Types
         </Link>
       </div>
-      <h1 className="text-4xl font-bold mt-4 mb-2">{clearingType.label}</h1>
+      <div className="mt-4 mb-2 flex items-center gap-4">
+        <Image
+          src={clearingType.icon}
+          alt=""
+          width={64}
+          height={64}
+          className="h-16 w-16 shrink-0 object-contain"
+        />
+        <h1 className="text-4xl font-bold">{clearingType.label}</h1>
+      </div>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
         {clearingType.tileCount} map{" "}
         {clearingType.tileCount === 1 ? "tile" : "tiles"}

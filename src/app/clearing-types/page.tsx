@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAllClearingTypes } from "@/lib/clearing-types";
 
 export default function ClearingTypesPage() {
@@ -21,15 +22,24 @@ export default function ClearingTypesPage() {
           <Link
             key={type.id}
             href={`/clearing-types/${type.slug}`}
-            className="block rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+            className="flex items-center gap-4 rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
           >
-            <h2 className="text-lg font-semibold">{type.label}</h2>
-            <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-              {type.tileCount} map {type.tileCount === 1 ? "tile" : "tiles"}
-              {" · "}
-              {type.clearingCount} clearing
-              {type.clearingCount === 1 ? "" : "s"}
-            </p>
+            <Image
+              src={type.icon}
+              alt=""
+              width={48}
+              height={48}
+              className="h-12 w-12 shrink-0 object-contain"
+            />
+            <div>
+              <h2 className="text-lg font-semibold">{type.label}</h2>
+              <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+                {type.tileCount} map {type.tileCount === 1 ? "tile" : "tiles"}
+                {" · "}
+                {type.clearingCount} clearing
+                {type.clearingCount === 1 ? "" : "s"}
+              </p>
+            </div>
           </Link>
         ))}
       </div>

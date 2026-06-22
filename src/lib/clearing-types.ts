@@ -38,6 +38,7 @@ export type ClearingTypeEntry = {
   id: ClearingTypeId;
   slug: string;
   label: string;
+  icon: string;
   occurrences: ClearingTypeOccurrence[];
   tileCount: number;
   clearingCount: number;
@@ -59,6 +60,10 @@ export function getClearingTypeBySlug(
 
 export function getClearingTypeLabel(type: ClearingTypeId): string {
   return CLEARING_TYPE_LABELS.get(type) ?? type;
+}
+
+export function getClearingTypeIcon(type: ClearingTypeId): string {
+  return CLEARING_TYPE_ICONS[type];
 }
 
 export function getClearingTypeTiles(): ClearingTypeTile[] {
@@ -101,6 +106,7 @@ function clearingTypeEntry(type: ClearingTypeId): ClearingTypeEntry {
     id: type,
     slug: slugify(type),
     label: getClearingTypeLabel(type),
+    icon: getClearingTypeIcon(type),
     occurrences,
     tileCount: new Set(occurrences.map((occurrence) => occurrence.tileName))
       .size,
@@ -110,6 +116,16 @@ function clearingTypeEntry(type: ClearingTypeId): ClearingTypeEntry {
     ),
   };
 }
+
+const CLEARING_TYPE_ICONS: Record<ClearingTypeId, string> = {
+  plains: "/images/terrain/plains.png",
+  caves: "/images/terrain/cave.png",
+  mountains: "/images/terrain/mountain.png",
+  woods: "/images/terrain/woods.png",
+  swamps: "/images/terrain/swamp.png",
+  river: "/images/terrain/river.png",
+  desert: "/images/terrain/desert.png",
+};
 
 function occurrenceFor(
   tile: ClearingTypeTile,
