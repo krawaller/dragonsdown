@@ -397,6 +397,15 @@ def same_column(
     return (acx < column_boundary) == (bcx < column_boundary)
 
 
+def line_starts_with_bold_label(line: dict) -> bool:
+    spans = [s for s in line.get("spans", []) if s.get("text", "")]
+    first = next((s for s in spans if s.get("text", "").strip()), None)
+    if first is None or "Bold" not in first["font"]:
+        return False
+    text = "".join(s.get("text", "") for s in spans).strip()
+    return bool(re.match(r"^[A-Z][A-Za-z /-]{1,40}:\s", text))
+
+
 def find_inline_images(
     blocks: list[dict],
     stats: dict,
@@ -491,10 +500,17 @@ def find_floated_images(
 
         direction: str | None = None
         wrapped_lines: list[TextLine] = []
-        if len(left_lines) >= 2 and len(left_lines) >= len(right_lines):
+        left_labeled_single = (
+            len(left_lines) == 1 and line_starts_with_bold_label(left_lines[0].line)
+        )
+        right_labeled_single = (
+            len(right_lines) == 1
+            and line_starts_with_bold_label(right_lines[0].line)
+        )
+        if (len(left_lines) >= 2 or left_labeled_single) and len(left_lines) >= len(right_lines):
             direction = "left"
             wrapped_lines = left_lines
-        elif len(right_lines) >= 2:
+        elif len(right_lines) >= 2 or right_labeled_single:
             direction = "right"
             wrapped_lines = right_lines
         if direction is None:
