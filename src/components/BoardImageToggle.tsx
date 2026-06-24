@@ -94,6 +94,17 @@ function boxForPosition(position: BoardPosition): {
   const columnWidth = 1 / position.columns;
   const isSingleItemBoard = position.rows === 1 && position.columns === 1;
   const horizontalInset = columnWidth * 0.02;
+  if (isSingleItemBoard) {
+    const verticalInset = rowHeight * 0.02;
+
+    return {
+      left: horizontalInset,
+      top: topStrip + verticalInset,
+      width: columnWidth - horizontalInset * 2,
+      height: rowHeight - verticalInset * 2,
+    };
+  }
+
   const singleItemVerticalInset = isSingleItemBoard ? rowHeight * 0.02 : 0;
   const topOutset = position.rows === 1 ? 0 : rowHeight * 0.03;
   const topInset =
