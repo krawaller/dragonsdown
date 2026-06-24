@@ -53,6 +53,16 @@
       ]
     }
   ],
+  "Oasis": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10825831599717566367/2A8DAEF05A192BF763FBB53CC2D73B3094DE58CB/",
+      "ancestry": [
+        "Oasis"
+      ],
+      "terrainPack": "Dreadful Deserts"
+    }
+  ],
   "Outpost": [
     {
       "source": "dd_all_exp",

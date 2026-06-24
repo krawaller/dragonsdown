@@ -1401,26 +1401,63 @@ describe("extractCivLocations", () => {
     ]);
   });
 
-  it("extracts known one-sided civ locations with empty ImageSecondaryURL", () => {
+  it("extracts one-sided civ-location-sized tiles with empty ImageSecondaryURL", () => {
     const oneSided = (nick: string, imageURL: string) => ({
       Name: "Custom_Tile",
       Nickname: nick,
+      Transform: { scaleX: 0.7543109, scaleZ: 0.7543109 },
       CustomImage: { ImageURL: imageURL, ImageSecondaryURL: "" },
     });
     const save = {
       ObjectStates: [
-        oneSided("Oasis", "oasis.png"),
-        oneSided("Port", "port.png"),
-        oneSided("Medina", "medina.png"),
+        {
+          Name: "Bag",
+          Nickname: "Oasis",
+          ContainedObjects: [oneSided("Oasis", "oasis.png")],
+        },
+        {
+          Name: "Bag",
+          Nickname: "Harbor",
+          ContainedObjects: [oneSided("Harbor", "harbor.png")],
+        },
       ],
     };
 
     const out = extractCivLocations(save, "eastern");
 
-    expect(Object.keys(out).sort()).toEqual(["Medina", "Oasis", "Port"]);
+    expect(Object.keys(out).sort()).toEqual(["Harbor", "Oasis"]);
     expect(out["Oasis"]).toEqual([
-      { source: "eastern", imageURL: "oasis.png", ancestry: ["Oasis"] },
+      {
+        source: "eastern",
+        imageURL: "oasis.png",
+        ancestry: ["Oasis"],
+        terrainPack: "Dreadful Deserts",
+      },
     ]);
+  });
+
+  it("ignores one-sided wilderness-token-sized tiles", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Oasis",
+          ContainedObjects: [
+            {
+              Name: "Custom_Tile",
+              Nickname: "Oasis",
+              Transform: { scaleX: 0.447143137, scaleZ: 0.447143137 },
+              CustomImage: {
+                ImageURL: "oasis-token.png",
+                ImageSecondaryURL: "",
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(extractCivLocations(save, "eastern")).toEqual({});
   });
 
   it("ignores tiles whose face and back differ", () => {
@@ -1428,10 +1465,11 @@ describe("extractCivLocations", () => {
     expect(extractCivLocations(save, "eastern")).toEqual({});
   });
 
-  it("excludes currency / point tokens (starts with a digit)", () => {
+  it("excludes currency / point tokens (starts with a number)", () => {
     const save = {
       ObjectStates: [
         tile("5 Gold", "g.png"),
+        tile("-5 Fame", "minus.png"),
         tile("1 Legend Point", "p.png"),
         tile("50 Fame", "f.png"),
         tile("Inn", "inn.png"),

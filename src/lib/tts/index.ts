@@ -8,6 +8,9 @@
  *  - Multiple cards in different sheets can share a Nickname; we emit a list
  */
 
+const CIV_LOCATION_TILE_SCALE = 0.7543109;
+const CIV_LOCATION_TILE_SCALE_TOLERANCE = 0.001;
+
 export type TTSCardImage = {
   /** Identifier of the source TTS file the card came from. */
   source: string;
@@ -2374,9 +2377,10 @@ export function extractSites(root: unknown, source: string): SiteIndex {
 
 /**
  * Walk a TTS save and return every civ-location tile: a Custom_Tile whose
- * `ImageURL === ImageSecondaryURL` (the same art on both sides). We also
- * require a non-token-shaped Nickname so currency/point/attribute tokens —
- * which share the same double-sided convention — are excluded.
+ * `ImageURL === ImageSecondaryURL` (the same art on both sides). Some one-sided
+ * civ locations leave `ImageSecondaryURL` empty; those are location-sized tiles,
+ * larger than wilderness tokens. We also require a non-token-shaped Nickname so
+ * currency/point/attribute tokens are excluded.
  */
 export function extractCivLocations(
   root: unknown,
@@ -2386,6 +2390,7 @@ export function extractCivLocations(
   type LocObj = {
     Nickname?: string;
     CustomImage: { ImageURL?: string; ImageSecondaryURL?: string };
+    Transform?: { scaleX?: number; scaleZ?: number };
   };
   const tiles: { obj: LocObj; ancestry: string[] }[] = [];
   const walkLocs = (obj: unknown, ancestry: string[]) => {
@@ -2396,8 +2401,8 @@ export function extractCivLocations(
     if (
       ci?.ImageURL &&
       (ci.ImageURL === ci.ImageSecondaryURL ||
-        (ci.ImageSecondaryURL === "" &&
-          (obj.Nickname === "Port" || obj.Nickname === "Medina")))
+        ((ci.ImageSecondaryURL ?? "") === "" &&
+          isCivLocationTileScale(obj.Transform)))
     ) {
       tiles.push({ obj: obj as unknown as LocObj, ancestry });
     }
@@ -3316,10 +3321,27 @@ function addNickname(token: TTSWildernessToken, nickname: string): void {
 
 function isCivLocationNickname(nick: string): boolean {
   if (!nick) return false;
-  // Reject token-shaped names: "5 Gold", "1 Legend Point", "Cunning Token", ...
-  if (/^\d/.test(nick)) return false;
+  // Reject token-shaped names: "5 Gold", "-5 Fame", "Cunning Token", ...
+  if (/^[+-]?\d/.test(nick)) return false;
   if (/\bToken\b/i.test(nick)) return false;
   return true;
+}
+
+function isCivLocationTileScale(transform: unknown): boolean {
+  if (!isRecord(transform)) return false;
+  const scaleX =
+    typeof transform.scaleX === "number" ? transform.scaleX : undefined;
+  const scaleZ =
+    typeof transform.scaleZ === "number" ? transform.scaleZ : undefined;
+  return isNearCivLocationScale(scaleX) && isNearCivLocationScale(scaleZ);
+}
+
+function isNearCivLocationScale(value: number | undefined): boolean {
+  return (
+    typeof value === "number" &&
+    Math.abs(value - CIV_LOCATION_TILE_SCALE) <=
+      CIV_LOCATION_TILE_SCALE_TOLERANCE
+  );
 }
 
 type MapTileAncestor = {
