@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   getBoardPositionForItem,
   type BoardPosition,
@@ -85,6 +85,8 @@ function BoardPositionImage({
   position: BoardPosition | null;
   side: "front" | "back";
 }) {
+  const imageAspectRatio = useImageAspectRatio(imageURL);
+
   if (!position) {
     return (
       // eslint-disable-next-line @next/next/no-img-element
@@ -97,6 +99,7 @@ function BoardPositionImage({
   }
 
   const crop = cropForPosition(position);
+  const cropAspectRatio = (imageAspectRatio ?? 1) * (crop.width / crop.height);
   const backgroundSizeX = 100 / crop.width;
   const backgroundSizeY = 100 / crop.height;
   const backgroundPositionX =
@@ -108,14 +111,42 @@ function BoardPositionImage({
     <span
       role="img"
       aria-label={`${itemName} position on ${title} ${side}`}
-      className="block w-full aspect-square bg-no-repeat"
+      className="block w-full bg-no-repeat"
       style={{
+        aspectRatio: cropAspectRatio,
         backgroundImage: `url(${JSON.stringify(imageURL)})`,
         backgroundPosition: `${backgroundPositionX}% ${backgroundPositionY}%`,
         backgroundSize: `${backgroundSizeX}% ${backgroundSizeY}%`,
       }}
     />
   );
+}
+
+function useImageAspectRatio(imageURL: string): number | null {
+  const [measurement, setMeasurement] = useState<{
+    imageURL: string;
+    aspectRatio: number;
+  } | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    const image = new window.Image();
+    image.onload = () => {
+      if (cancelled || image.naturalHeight === 0) return;
+      setMeasurement({
+        imageURL,
+        aspectRatio: image.naturalWidth / image.naturalHeight,
+      });
+    };
+    image.src = imageURL;
+
+    return () => {
+      cancelled = true;
+    };
+  }, [imageURL]);
+
+  return measurement?.imageURL === imageURL ? measurement.aspectRatio : null;
 }
 
 function cropForPosition(position: BoardPosition): {
