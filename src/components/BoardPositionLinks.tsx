@@ -158,12 +158,28 @@ function cropForPosition(position: BoardPosition): {
   const topStrip = topStripHeight(position.topStrip);
   const rowHeight = (1 - topStrip) / position.rows;
   const columnWidth = 1 / position.columns;
+  const isSingleItemBoard = position.rows === 1 && position.columns === 1;
+  const horizontalInset = columnWidth * 0.02;
+  const singleItemVerticalInset = isSingleItemBoard ? rowHeight * 0.02 : 0;
+  const topOutset = position.rows === 1 ? 0 : rowHeight * 0.03;
+  const topInset =
+    position.rows === 1 && !isSingleItemBoard ? rowHeight * 0.02 : 0;
+  const originalTop = topStrip + position.row * rowHeight;
+  const topWithOutset = Math.max(0, originalTop - topOutset);
+  const appliedTopOutset = originalTop - topWithOutset;
+  const top = topWithOutset + topInset + singleItemVerticalInset;
+  const areaHeight =
+    rowHeight * (isSingleItemBoard ? 0.98 : 0.95) +
+    appliedTopOutset -
+    topInset -
+    singleItemVerticalInset;
+  const areaHorizontalInset = horizontalInset;
 
   return {
-    left: position.column * columnWidth,
-    top: topStrip + position.row * rowHeight,
-    width: columnWidth,
-    height: rowHeight,
+    left: position.column * columnWidth + areaHorizontalInset,
+    top,
+    width: columnWidth - areaHorizontalInset * 2,
+    height: areaHeight,
   };
 }
 
