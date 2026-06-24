@@ -1,9 +1,17 @@
 import Link from "next/link";
 import type { SiteEntry } from "@/lib/tts/lookup";
 
-export function SiteGrid({ entries }: { entries: SiteEntry[] }) {
+export function SiteGrid({
+  entries,
+  className,
+}: {
+  entries: SiteEntry[];
+  className?: string;
+}) {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+    <div
+      className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 ${className ?? ""}`}
+    >
       {entries.map(({ name, slug, site }) => (
         <section
           key={`${name}-${site.imageSecondaryURL}`}

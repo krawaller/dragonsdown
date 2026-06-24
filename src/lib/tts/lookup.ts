@@ -122,6 +122,7 @@ let cachedChipIndex: ChipIndex | null = null;
 let cachedItemIndex: ItemIndex | null = null;
 let cachedTreasureIndex: TreasureIndex | null = null;
 let cachedLegendaryLocationIndex: LegendaryLocationIndex | null = null;
+let cachedExtractedSiteIndex: SiteIndex | null = null;
 let cachedSiteIndex: SiteIndex | null = null;
 let cachedCivLocIndex: CivLocationIndex | null = null;
 let cachedWildernessTokenIndex: WildernessTokenIndex | null = null;
@@ -202,8 +203,48 @@ function getLegendaryLocationIndex(): LegendaryLocationIndex {
 
 function getSiteIndex(): SiteIndex {
   if (cachedSiteIndex !== null) return cachedSiteIndex;
-  cachedSiteIndex = readJsonOrEmpty<SiteIndex>(SITES_FILE);
+  cachedSiteIndex = withPrintedSetupCardSites(getExtractedSiteIndex());
   return cachedSiteIndex;
+}
+
+function getExtractedSiteIndex(): SiteIndex {
+  if (cachedExtractedSiteIndex !== null) return cachedExtractedSiteIndex;
+  cachedExtractedSiteIndex = readJsonOrEmpty<SiteIndex>(SITES_FILE);
+  return cachedExtractedSiteIndex;
+}
+
+function withPrintedSetupCardSites(siteIndex: SiteIndex): SiteIndex {
+  const next: SiteIndex = Object.fromEntries(
+    Object.entries(siteIndex).map(([name, sites]) => [name, [...sites]]),
+  );
+  const wildernessTokens = Object.values(getWildernessTokenIndex()).flat();
+
+  for (const board of getBoardIndex()) {
+    for (const siteName of board.sites) {
+      if (next[siteName]?.length) continue;
+
+      const siteSlug = slugify(siteName);
+      const token = wildernessTokens.find(
+        (wildernessToken) =>
+          wildernessToken.name !== undefined &&
+          slugify(wildernessToken.name) === siteSlug,
+      );
+      if (!token) continue;
+
+      next[siteName] = [
+        {
+          source: token.source,
+          imageURL: token.imageURL,
+          imageSecondaryURL: token.imageURL,
+          ancestry: token.locations.flatMap((location) => location.ancestry),
+          terrainPack: token.terrainPack ?? board.terrainPack ?? board.terrain,
+          gmNotes: token.clearing?.toString(),
+        },
+      ];
+    }
+  }
+
+  return next;
 }
 
 function getCivLocationIndex(): CivLocationIndex {
@@ -1161,14 +1202,23 @@ export type SiteEntry = {
   name: string;
   slug: string;
   site: TTSSite;
+  kind: "proper" | "wilderness-token";
 };
 
 /** Return all sites, sorted alphabetically by name. */
 export function getAllSites(): SiteEntry[] {
   const idx = getSiteIndex();
+  const properSiteNames = new Set(Object.keys(getExtractedSiteIndex()));
   return Object.entries(idx)
     .flatMap(([name, sites]) =>
-      sites.map((site) => ({ name, slug: slugify(name), site })),
+      sites.map((site) => ({
+        name,
+        slug: slugify(name),
+        site,
+        kind: properSiteNames.has(name)
+          ? ("proper" as const)
+          : ("wilderness-token" as const),
+      })),
     )
     .sort((a, b) => a.name.localeCompare(b.name));
 }

@@ -1401,6 +1401,28 @@ describe("extractCivLocations", () => {
     ]);
   });
 
+  it("extracts known one-sided civ locations with empty ImageSecondaryURL", () => {
+    const oneSided = (nick: string, imageURL: string) => ({
+      Name: "Custom_Tile",
+      Nickname: nick,
+      CustomImage: { ImageURL: imageURL, ImageSecondaryURL: "" },
+    });
+    const save = {
+      ObjectStates: [
+        oneSided("Oasis", "oasis.png"),
+        oneSided("Port", "port.png"),
+        oneSided("Medina", "medina.png"),
+      ],
+    };
+
+    const out = extractCivLocations(save, "eastern");
+
+    expect(Object.keys(out).sort()).toEqual(["Medina", "Oasis", "Port"]);
+    expect(out["Oasis"]).toEqual([
+      { source: "eastern", imageURL: "oasis.png", ancestry: ["Oasis"] },
+    ]);
+  });
+
   it("ignores tiles whose face and back differ", () => {
     const save = { ObjectStates: [asymmetric("Mismatch")] };
     expect(extractCivLocations(save, "eastern")).toEqual({});

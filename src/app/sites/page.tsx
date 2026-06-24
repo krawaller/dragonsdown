@@ -6,6 +6,11 @@ import { getAllSites } from "@/lib/tts/lookup";
 
 export default async function SitesPage() {
   const entries = getAllSites();
+  const properSiteEntries = entries.filter((entry) => entry.kind === "proper");
+  const wildernessTokenSiteEntries = entries.filter(
+    (entry) => entry.kind === "wilderness-token",
+  );
+
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
       <Link
@@ -28,7 +33,27 @@ export default async function SitesPage() {
         rules={["Magic Sites", "Watchful Guardians"]}
         className="mb-8"
       />
-      <SiteGrid entries={entries} />
+      <div className="space-y-6">
+        <details
+          open
+          className="rounded border border-zinc-200 dark:border-zinc-800 p-4"
+        >
+          <summary className="cursor-pointer text-lg font-semibold">
+            Proper Site Tokens ({properSiteEntries.length})
+          </summary>
+          <SiteGrid entries={properSiteEntries} className="mt-6" />
+        </details>
+
+        <details
+          open
+          className="rounded border border-zinc-200 dark:border-zinc-800 p-4"
+        >
+          <summary className="cursor-pointer text-lg font-semibold">
+            Wilderness Token Sites ({wildernessTokenSiteEntries.length})
+          </summary>
+          <SiteGrid entries={wildernessTokenSiteEntries} className="mt-6" />
+        </details>
+      </div>
     </main>
   );
 }
