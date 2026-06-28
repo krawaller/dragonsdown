@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
+import { ClassCardLink } from "@/components/ClassLink";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { resolveEquipmentRulebookLinks } from "@/lib/rulebook-links";
 import type { TTSItemCard, TTSTreasureCard } from "@/lib/tts";
 import { slugify } from "@/lib/slug";
 import {
   getAllEquipment,
+  getClassBySlug,
   getEquipmentBySlug,
   getLegendaryLocationsForEquipment,
   type EquipmentDeck,
@@ -131,38 +133,54 @@ function ItemDetails({
   entry: NonNullable<EquipmentEntry["item"]>;
 }) {
   return (
+    <>
+      <section>
+        <h2 className="text-xl font-semibold mb-3">Item Deck</h2>
+        <div className="rounded border border-zinc-200 dark:border-zinc-800 p-4">
+          <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-2 text-sm">
+            <dt className="text-zinc-500 dark:text-zinc-400">Copies</dt>
+            <dd>{entry.copies}</dd>
+            {entry.boxes.map((box) => (
+              <div key={box.name} className="contents">
+                <dt className="text-zinc-500 dark:text-zinc-400">{box.name}</dt>
+                <dd>{box.count}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+      <StartingGearDetails startingClasses={entry.startingClasses} />
+    </>
+  );
+}
+
+function StartingGearDetails({
+  startingClasses,
+}: {
+  startingClasses: NonNullable<EquipmentEntry["item"]>["startingClasses"];
+}) {
+  if (startingClasses.length === 0) return null;
+
+  const classEntries = startingClasses.map(
+    (startingClass) =>
+      getClassBySlug(startingClass.slug) ?? {
+        name: startingClass.name,
+        slug: startingClass.slug,
+        classes: [],
+      },
+  );
+
+  return (
     <section>
-      <h2 className="text-xl font-semibold mb-3">Item Deck</h2>
-      <div className="rounded border border-zinc-200 dark:border-zinc-800 p-4 space-y-5">
-        <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 gap-y-2 text-sm">
-          <dt className="text-zinc-500 dark:text-zinc-400">Copies</dt>
-          <dd>{entry.copies}</dd>
-          {entry.boxes.map((box) => (
-            <div key={box.name} className="contents">
-              <dt className="text-zinc-500 dark:text-zinc-400">{box.name}</dt>
-              <dd>{box.count}</dd>
-            </div>
-          ))}
-        </dl>
-        {entry.startingClasses.length > 0 && (
-          <div>
-            <h3 className="text-sm font-medium mb-2">Starting Gear</h3>
-            <div className="flex flex-wrap gap-2">
-              {entry.startingClasses.map((startingClass) => (
-                <Link
-                  key={startingClass.slug}
-                  href={`/classes/${startingClass.slug}`}
-                  className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-                >
-                  <span className="font-medium">{startingClass.name}</span>
-                  <span className="ml-2 text-xs text-zinc-500 dark:text-zinc-400">
-                    {startingSideSummary(startingClass.sides)}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+      <h2 className="text-xl font-semibold mb-3">Starting Gear</h2>
+      <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+        {classEntries.map((classEntry) => (
+          <ClassCardLink
+            key={classEntry.slug}
+            entry={classEntry}
+            headingLevel="h3"
+          />
+        ))}
       </div>
     </section>
   );
@@ -375,17 +393,6 @@ function equipmentDeckLabel(deck: EquipmentDeck): string {
     case "legendary":
       return "Legendary Treasure";
   }
-}
-
-function startingSideSummary(
-  sides: { side: "front" | "back"; slot: string }[],
-): string {
-  return sides
-    .map(
-      (entry) =>
-        `${entry.side}: ${entry.slot.replace(/^(slot)(\d+)$/i, "$1 $2")}`,
-    )
-    .join(", ");
 }
 
 function locationSummary(card: TTSItemCard | TTSTreasureCard): string {
