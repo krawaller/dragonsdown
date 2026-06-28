@@ -1,6 +1,8 @@
 import { getMagicTypeById } from "./magic";
 import { normalizeTitle } from "./tts";
+import { getAllClasses } from "./tts/lookup";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
+import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
 import {
   RULEBOOKS,
   loadSections,
@@ -29,6 +31,10 @@ export type RulebookLink = {
 };
 
 type MonsterReferenceAliasMap = Record<string, string | string[]>;
+type RelatedClassAbilityMap = {
+  monsterGroups?: Record<string, string[]>;
+  sites?: Record<string, string[]>;
+};
 
 export async function resolveRulebookLinks(
   query: RulebookLinkQuery,
@@ -46,6 +52,29 @@ export async function resolveRulebookLinks(
   return links.flat().sort(compareRulebookLinks);
 }
 
+export async function resolveSiteRulebookLinks(
+  siteName: string,
+): Promise<RulebookLink[]> {
+  const [siteLinks, classAbilityLinks] = await Promise.all([
+    resolveRulebookLinks({
+      doc: ANY_DOC,
+      headings: [
+        "Treasure Site Reference|Treasure Site and Merchant Reference",
+        siteName,
+      ],
+    }),
+    Promise.all(
+      relatedClassAbilityTitlesForSite(siteName).map(
+        resolveClassAdvantageRulebookLinks,
+      ),
+    ),
+  ]);
+
+  return uniqueRulebookLinks([...siteLinks, ...classAbilityLinks.flat()]).sort(
+    compareRulebookLinks,
+  );
+}
+
 export async function resolveMonsterRulebookLinks(
   groupName: string,
   individualNames: string[] = [],
@@ -53,28 +82,41 @@ export async function resolveMonsterRulebookLinks(
   const candidates = uniqueNonEmpty(
     expandMonsterReferenceAliases([groupName, ...individualNames]),
   );
-  if (candidates.length === 0) return [];
+  const relatedClassAbilityTitles =
+    relatedClassAbilityTitlesForMonsterGroup(groupName);
+  if (candidates.length === 0 && relatedClassAbilityTitles.length === 0)
+    return [];
 
   const normalizedCandidates = candidates.map(normalizeRulebookMatchTitle);
   const books = rulebooksForQuery(ANY_DOC);
-  const links = await Promise.all(
-    books.map(async (book) => {
-      const sections = await loadSections(book);
-      const monsterParents = sections.filter((section) =>
-        titlesMatch(section.title, "Monster Reference|Monster Manifest"),
-      );
+  const [monsterLinks, classAbilityLinks] = await Promise.all([
+    candidates.length > 0
+      ? Promise.all(
+          books.map(async (book) => {
+            const sections = await loadSections(book);
+            const monsterParents = sections.filter((section) =>
+              titlesMatch(section.title, "Monster Reference|Monster Manifest"),
+            );
 
-      return monsterParents.flatMap((parent) =>
-        childSections(sections, parent)
-          .filter((section) =>
-            monsterTitleMatches(section.title, normalizedCandidates),
-          )
-          .map((section) => rulebookLinkForSection(book, section)),
-      );
-    }),
-  );
+            return monsterParents.flatMap((parent) =>
+              childSections(sections, parent)
+                .filter((section) =>
+                  monsterTitleMatches(section.title, normalizedCandidates),
+                )
+                .map((section) => rulebookLinkForSection(book, section)),
+            );
+          }),
+        )
+      : Promise.resolve([]),
+    Promise.all(
+      relatedClassAbilityTitles.map(resolveClassAdvantageRulebookLinks),
+    ),
+  ]);
 
-  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+  return uniqueRulebookLinks([
+    ...monsterLinks.flat(),
+    ...classAbilityLinks.flat(),
+  ]).sort(compareRulebookLinks);
 }
 
 export async function resolveNativeRulebookLinks(
@@ -401,6 +443,48 @@ function titleForms(title: string): string[] {
   if (title.endsWith("f")) return [title, `${title.slice(0, -1)}ves`];
   if (title.endsWith("s")) return [title, title.slice(0, -1)];
   return [title, `${title}s`];
+}
+
+function relatedClassAbilityTitlesForMonsterGroup(groupName: string): string[] {
+  const map =
+    (relatedClassAbilities as RelatedClassAbilityMap).monsterGroups ?? {};
+  const normalizedGroupName = normalizeTitle(groupName);
+  for (const [mappedGroupName, abilities] of Object.entries(map)) {
+    if (normalizeTitle(mappedGroupName) === normalizedGroupName) {
+      return uniqueNonEmpty(
+        abilities.flatMap(classAdvantageTitlesForClassName),
+      );
+    }
+  }
+  return [];
+}
+
+function relatedClassAbilityTitlesForSite(siteName: string): string[] {
+  const map = (relatedClassAbilities as RelatedClassAbilityMap).sites ?? {};
+  const normalizedSiteName = normalizeTitle(siteName);
+  for (const [mappedSiteName, relatedNames] of Object.entries(map)) {
+    if (normalizeTitle(mappedSiteName) === normalizedSiteName) {
+      return uniqueNonEmpty(
+        relatedNames.flatMap((relatedName) => [
+          ...relatedClassAbilityTitlesForMonsterGroup(relatedName),
+          ...classAdvantageTitlesForClassName(relatedName),
+        ]),
+      );
+    }
+  }
+  return [];
+}
+
+function classAdvantageTitlesForClassName(name: string): string[] {
+  const normalizedName = normalizeTitle(name);
+  const classEntry = getAllClasses().find(
+    (entry) => normalizeTitle(entry.name) === normalizedName,
+  );
+  if (!classEntry) return [name];
+
+  return uniqueNonEmpty(
+    classEntry.classes.map((entry) => entry.advantageTitle ?? classEntry.name),
+  );
 }
 
 function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {

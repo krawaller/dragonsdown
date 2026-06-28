@@ -1,0 +1,10 @@
+{
+  "monsterGroups": {
+    "Bandits": ["Brigand"]
+  },
+  "sites": {
+    "Hideout": ["Bandits"],
+    "Secret Stash": ["Bandits"],
+    "Wrecked Wagons": ["Bandits"]
+  }
+}

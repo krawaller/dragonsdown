@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { chipTotalCount, type TTSChip } from "@/lib/tts";
+import { chipTotalCount } from "@/lib/tts";
 import type { MonsterGroupChip, MonsterGroupEntry } from "@/lib/tts/lookup";
 
-type Zoom = { chip: TTSChip; name: string };
+type Zoom = { imageURL: string; name: string; face: string };
 
 export function MonsterGroupStack({
   group,
@@ -104,25 +104,37 @@ export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
         {group.chips.map((chip, index) => {
           const total = chipTotalCount(chip);
           const displayName = monsterChipName(group, chip, index);
+          const faces = chipFaces(chip);
           return (
             <section
               key={`${chip.imageURL}-${chip.imageSecondaryURL}-${index}`}
               className="rounded border border-zinc-200 dark:border-zinc-800 p-4"
             >
-              <div className="flex gap-4">
-                <button
-                  type="button"
-                  onClick={() => setZoom({ chip, name: displayName })}
-                  className="shrink-0 block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
-                  aria-label={`Zoom ${displayName}`}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={chip.imageURL}
-                    alt={displayName}
-                    className="w-28 h-28 object-cover block bg-zinc-100 dark:bg-zinc-900"
-                  />
-                </button>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <div className="flex shrink-0 gap-3">
+                  {faces.map((face) => (
+                    <button
+                      key={`${face.label}-${face.imageURL}`}
+                      type="button"
+                      onClick={() =>
+                        setZoom({
+                          imageURL: face.imageURL,
+                          name: displayName,
+                          face: face.label,
+                        })
+                      }
+                      className="block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
+                      aria-label={`Zoom ${displayName} ${face.label}`}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={face.imageURL}
+                        alt={`${displayName} ${face.label}`}
+                        className="size-24 object-cover block bg-zinc-100 dark:bg-zinc-900"
+                      />
+                    </button>
+                  ))}
+                </div>
                 <div className="min-w-0">
                   <h2 className="text-base font-semibold">{displayName}</h2>
                   {displayName !== group.prettyName && (
@@ -157,6 +169,16 @@ export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
   );
 }
 
+function chipFaces(
+  chip: MonsterGroupChip,
+): { label: string; imageURL: string }[] {
+  const faces = [{ label: "front", imageURL: chip.imageURL }];
+  if (chip.imageSecondaryURL) {
+    faces.push({ label: "back", imageURL: chip.imageSecondaryURL });
+  }
+  return faces;
+}
+
 function monsterChipName(
   group: MonsterGroupEntry,
   chip: MonsterGroupChip,
@@ -169,36 +191,29 @@ function monsterChipName(
 }
 
 function ChipLightbox({ zoom, onClose }: { zoom: Zoom; onClose: () => void }) {
-  const { chip, name } = zoom;
-  const hasBack = Boolean(chip.imageSecondaryURL);
+  const { imageURL, name, face } = zoom;
   return (
     <div
       onClick={onClose}
       role="dialog"
       aria-modal="true"
-      aria-label={`${name} chip`}
+      aria-label={`${name} ${face}`}
       className="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-6"
     >
-      <div className="relative w-full max-w-3xl flex flex-col items-center gap-4">
-        <h2 className="text-2xl font-semibold text-white">{name}</h2>
+      <div className="relative flex h-full max-h-full w-full max-w-3xl flex-col items-center gap-4">
+        <h2 className="max-w-[calc(100%-3rem)] text-center text-2xl font-semibold text-white">
+          {name} <span className="font-normal text-zinc-300">{face}</span>
+        </h2>
         <div
           onClick={(event) => event.stopPropagation()}
-          className={`grid gap-6 w-full ${hasBack ? "grid-cols-2" : "grid-cols-1 justify-items-center"}`}
+          className="flex min-h-0 flex-1 items-center justify-center"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={chip.imageURL}
-            alt={`${name} face`}
-            className="w-full aspect-square object-cover rounded-full bg-zinc-100"
+            src={imageURL}
+            alt={`${name} ${face}`}
+            className="max-h-full max-w-full aspect-square object-cover rounded-full bg-zinc-100"
           />
-          {hasBack && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={chip.imageSecondaryURL}
-              alt={`${name} back`}
-              className="w-full aspect-square object-cover rounded-full bg-zinc-100"
-            />
-          )}
         </div>
         <button
           type="button"
