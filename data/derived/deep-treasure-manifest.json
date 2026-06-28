@@ -4,6 +4,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Amber Spire",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 10,
       "column": "right",
@@ -19,6 +20,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Aquaria’s Enchiridion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 10,
       "column": "right",
@@ -34,6 +36,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Armageddon Hammer",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 3,
       "column": "right",
@@ -49,6 +52,7 @@
     "source": "core",
     "level": 4,
     "title": "Ascendant Ornament",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -64,6 +68,7 @@
     "source": "core",
     "level": 4,
     "title": "Band of Sagacity",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -79,6 +84,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Bard’s Bouzouki",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -94,6 +100,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Baton of the Lost Prince",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -109,6 +116,7 @@
     "source": "core",
     "level": 4,
     "title": "Belt of the Beast",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -124,6 +132,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Blade of the Scorpion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -139,6 +148,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Book of Eternal Sand",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -154,6 +164,7 @@
     "source": "core",
     "level": 4,
     "title": "Bow of the Hunt",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -169,6 +180,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Brogans of the Birds",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 3,
       "column": "right",
@@ -184,6 +196,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Canopic Jar",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -199,6 +212,7 @@
     "source": "core",
     "level": 4,
     "title": "Cape of Alteration",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -214,6 +228,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Codex of Cognition",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 3,
       "column": "right",
@@ -229,6 +244,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Coronet of the Lost Prince",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -244,6 +260,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Dancing Sword",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 3,
       "column": "right",
@@ -259,6 +276,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Dastanas of the Scorpion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -274,6 +292,7 @@
     "source": "core",
     "level": 4,
     "title": "Decimation",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -289,6 +308,7 @@
     "source": "core",
     "level": 4,
     "title": "Earthen Cincture",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -304,6 +324,7 @@
     "source": "core",
     "level": 4,
     "title": "Elven Slippers",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -319,6 +340,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Figurine of the Stalk",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -334,6 +356,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Fish Fluke Statuette",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -349,6 +372,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Foci of the Spellcaster",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -364,6 +388,7 @@
     "source": "core",
     "level": 4,
     "title": "Garb of the Gate",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -379,6 +404,7 @@
     "source": "core",
     "level": 4,
     "title": "Golden Icon",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -394,6 +420,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Hand of the Lich",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -409,6 +436,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Helm of True Sight",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -424,6 +452,7 @@
     "source": "core",
     "level": 4,
     "title": "Icon of the Dragon",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -439,6 +468,7 @@
     "source": "core",
     "level": 4,
     "title": "Incanter’s Jewel",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -454,6 +484,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Jeweled Thief’s Skull",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -469,6 +500,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Kolah of the Horus’ Eye",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -484,6 +516,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Magewright’s Quill",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "right",
@@ -499,6 +532,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Magic Carpet",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "right",
@@ -514,6 +548,7 @@
     "source": "core",
     "level": 4,
     "title": "Magical Bowl of Mixing",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -529,6 +564,7 @@
     "source": "core",
     "level": 4,
     "title": "Mirror of Idolatry",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -544,6 +580,7 @@
     "source": "core",
     "level": 4,
     "title": "Mithral Chainmail",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -559,6 +596,7 @@
     "source": "core",
     "level": 4,
     "title": "Mithral Plate Armor",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -574,6 +612,7 @@
     "source": "core",
     "level": 4,
     "title": "Mithral Shield",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -589,6 +628,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Moon Mirror",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "right",
@@ -604,6 +644,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Orb of Far Sight",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -619,6 +660,7 @@
     "source": "core",
     "level": 4,
     "title": "Ring of Malevolence",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -634,6 +676,7 @@
     "source": "core",
     "level": 4,
     "title": "Ring of Truth",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -649,6 +692,7 @@
     "source": "core",
     "level": 4,
     "title": "Robe of the Chanter",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -664,6 +708,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Roc Egg",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -679,6 +724,7 @@
     "source": "core",
     "level": 4,
     "title": "Scepter of the Sorcerer",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -694,6 +740,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Serpent Helm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -709,6 +756,7 @@
     "source": "core",
     "level": 4,
     "title": "Shadow Cloak",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -724,6 +772,7 @@
     "source": "core",
     "level": 4,
     "title": "Shaman’s Kaftan",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -739,6 +788,7 @@
     "source": "core",
     "level": 4,
     "title": "Shield of Defiance",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -754,6 +804,7 @@
     "source": "core",
     "level": 4,
     "title": "Shield of Mercy",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -769,6 +820,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Shield of the Lost Prince",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -784,6 +836,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Staff of Thaumaturgy",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -799,6 +852,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Staff of the Magi",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -814,6 +868,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Storm’s Eye",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -829,6 +884,7 @@
     "source": "core",
     "level": 4,
     "title": "Summoning Marcation",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -844,6 +900,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Sword of the Lost Prince",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -859,6 +916,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Sword of Torment",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -874,6 +932,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Tactician’s Grasp",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -889,6 +948,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Tail of the Scorpion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "left",
@@ -904,6 +964,7 @@
     "source": "core",
     "level": 4,
     "title": "Taper of Illumination",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -919,6 +980,7 @@
     "source": "core",
     "level": 4,
     "title": "Trickster’s Stone",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -934,6 +996,7 @@
     "source": "core",
     "level": 4,
     "title": "Tricky Ring",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -949,6 +1012,7 @@
     "source": "core",
     "level": 4,
     "title": "Wand of the Magician",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",

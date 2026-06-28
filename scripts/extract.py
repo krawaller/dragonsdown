@@ -68,6 +68,7 @@ def normalize_inline_image_spacing(content: str) -> str:
 class Section:
     level: int
     title: str
+    heading_style: str | None = None
     location: dict[str, int | str] | None = None
     icon: str | None = None
     icons: list[str] = field(default_factory=list)
@@ -78,6 +79,8 @@ class Section:
         content = normalize_inline_image_spacing(content)
         content = _WRAP_FIX.sub(r"\1\2\3\4", content)
         rendered = {"level": self.level, "title": self.title}
+        if self.heading_style:
+            rendered["headingStyle"] = self.heading_style
         if self.location:
             rendered["location"] = self.location
         icons = [*([] if self.icon is None else [self.icon]), *self.icons]
@@ -166,6 +169,36 @@ def classify_heading(font: str, size: float, color: int) -> int | None:
     # so this level only accepts brown.
     if size_r == 12 and color in BROWNS_MID and bold:
         return 5
+    return None
+
+
+def heading_strength(level: int) -> int:
+    return level * 10
+
+
+def heading_style_for_level(level: int) -> str:
+    return f"pdf-l{level}"
+
+
+def classify_standalone_body_heading_strength(
+    text: str, spans: list[dict]
+) -> int | None:
+    visible_spans = [span for span in spans if span["text"].strip()]
+    if not visible_spans or text == "•":
+        return None
+    if len(text) > 80 or text.endswith((".", ")")):
+        return None
+    if not all(span["font"] == "MinionPro-Bold" for span in visible_spans):
+        return None
+    if not all(round(span["size"]) in {11, 12} for span in visible_spans):
+        return None
+    if not all(span["color"] in BLACKISH for span in visible_spans):
+        return None
+    sizes = {round(span["size"]) for span in visible_spans}
+    if sizes == {12}:
+        return 60
+    if sizes == {11}:
+        return 70
     return None
 
 
@@ -758,12 +791,25 @@ def process_text_block(
         if is_skippable_line(full_text, dom["font"], dom["size"]):
             continue
         level = classify_heading(dom["font"], dom["size"], dom["color"])
+        strength = heading_strength(level) if level is not None else None
+        if level is None:
+            strength = classify_standalone_body_heading_strength(full_text, spans)
         if level is not None:
             flush_para()
             flush_bullets()
             title = clean_title(full_text)
             bbox = line_bbox(line) or block["bbox"]
-            items.append(("heading", level, title, heading_key(level, title, bbox), bbox))
+            items.append(
+                ("heading", level, title, strength, heading_style_for_level(level), bbox)
+            )
+            continue
+        if strength is not None:
+            flush_para()
+            flush_bullets()
+            title = clean_title(full_text)
+            bbox = line_bbox(line) or block["bbox"]
+            style = "pdf-body-bold-12" if strength == 60 else "pdf-body-bold-11"
+            items.append(("heading", None, title, strength, style, bbox))
             continue
         first_visible = next((s for s in spans if s["text"].strip()), None)
         is_bullet = first_visible is not None and first_visible["text"].strip() == "•"
@@ -882,6 +928,21 @@ def extract(pdf_path: Path) -> list[dict]:
     total_pages = len(doc)
     sections: list[Section] = []
     current: Section | None = None
+    heading_strengths: list[int | None] = [None] * _MAX_LEVEL
+
+    def resolve_heading_level(level: int | None, strength: int) -> int:
+        if level is not None:
+            return level
+        parent_level = 0
+        for idx, previous_strength in enumerate(heading_strengths):
+            if previous_strength is not None and previous_strength < strength:
+                parent_level = idx + 1
+        return min(parent_level + 1, _MAX_LEVEL)
+
+    def remember_heading(level: int, strength: int) -> None:
+        heading_strengths[level - 1] = strength
+        for idx in range(level, _MAX_LEVEL):
+            heading_strengths[idx] = None
 
     def push(md: str) -> None:
         if current is not None and md:
@@ -940,12 +1001,15 @@ def extract(pdf_path: Path) -> list[dict]:
                     else:
                         push(item[1])
                 elif kind == "heading":
-                    _, level, title, key, bbox = item
+                    _, raw_level, title, strength, heading_style, bbox = item
                     if not title:
                         continue
+                    level = resolve_heading_level(raw_level, strength)
+                    key = heading_key(level, title, bbox)
                     current = Section(
                         level=level,
                         title=title,
+                        heading_style=heading_style,
                         location=location_for_heading(
                             page_idx + 1,
                             bbox,
@@ -955,6 +1019,7 @@ def extract(pdf_path: Path) -> list[dict]:
                         icon=icons_by_heading.get(key),
                     )
                     sections.append(current)
+                    remember_heading(level, strength)
                     # Attach any pending images to the new section
                     flush_pending_to_current()
                 elif kind == "para":
@@ -979,7 +1044,7 @@ def extract(pdf_path: Path) -> list[dict]:
     return rendered
 
 
-_MAX_LEVEL = 5
+_MAX_LEVEL = 8
 
 
 def assign_ids(sections: list[dict]) -> None:
@@ -1039,6 +1104,8 @@ def process_one(
             "level": s["level"],
             "title": s["title"],
         }
+        if heading_style := s.get("headingStyle"):
+            section["headingStyle"] = heading_style
         if location := s.get("location"):
             section["location"] = location
         if icon := s.get("icon"):

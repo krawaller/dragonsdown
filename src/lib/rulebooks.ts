@@ -1,7 +1,16 @@
 import { readdirSync, readFileSync, promises as fs } from "node:fs";
 import path from "node:path";
 
-export type SectionLevel = 1 | 2 | 3 | 4 | 5;
+export type SectionLevel = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+
+export type HeadingStyle =
+  | "pdf-l1"
+  | "pdf-l2"
+  | "pdf-l3"
+  | "pdf-l4"
+  | "pdf-l5"
+  | "pdf-body-bold-12"
+  | "pdf-body-bold-11";
 
 export type SectionLocation = {
   /** 1-based page number in the source PDF. */
@@ -17,6 +26,8 @@ export type Section = {
   source: string;
   level: SectionLevel;
   title: string;
+  /** Visual heading style from the source PDF; independent from hierarchy. */
+  headingStyle?: HeadingStyle;
   /** Approximate heading position in the source PDF. */
   location?: SectionLocation;
   /** Optional section icon extracted from left-floating PDF art. */

@@ -4,6 +4,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Ample Opportunity",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -16,6 +17,7 @@
     "source": "core",
     "level": 2,
     "title": "Closing the Distance",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",
@@ -28,6 +30,7 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Difficult Natives",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "left",
@@ -40,6 +43,7 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Earned Rewards",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -52,6 +56,7 @@
     "source": "core",
     "level": 2,
     "title": "Enchanted Paths",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",
@@ -64,6 +69,7 @@
     "source": "core",
     "level": 2,
     "title": "Enchanted Realm",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",
@@ -76,6 +82,7 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Enchantment Depletion",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -88,6 +95,7 @@
     "source": "core",
     "level": 2,
     "title": "Enchantment Limit",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",
@@ -100,6 +108,7 @@
     "source": "core",
     "level": 2,
     "title": "Endless Monsters",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 26,
       "column": "left",
@@ -112,6 +121,7 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Expanded Enchantment",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -124,6 +134,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Full Shelves",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 7,
       "column": "left",
@@ -136,18 +147,20 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Horses",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 7,
       "column": "left",
       "section": "middle"
     },
-    "content": "Horses are optional Item Cards that act as companions to Heroes. They provide benefits to Heroes, but introduce some additional rules complexity. We recommend playing without horses until players are familiar with Dragons Down. To include horses in your play session, shuffle the 10 horse cards into the Item Deck at game start. They are purchased, sold, traded, and looted like any other Item Card.\n\n![](/images/pdf/369397a7d01ea1fd0dfce507a90b50c75e7783cc.jpeg)"
+    "content": "Horses are optional Item Cards that act as companions to Heroes. They provide benefits to Heroes, but introduce some additional rules complexity. We recommend playing without horses until players are familiar with Dragons Down. To include horses in your play session, shuffle the 10 horse cards into the Item Deck at game start. They are purchased, sold, traded, and looted like any other Item Card."
   },
   {
     "id": "8.1",
     "source": "core",
     "level": 2,
     "title": "Luring",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",
@@ -160,6 +173,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Magic Sites",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -172,6 +186,7 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Mission Cycling",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -184,6 +199,7 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Native Possessions",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -196,6 +212,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Native Rewards",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 7,
       "column": "left",
@@ -208,6 +225,7 @@
     "source": "core",
     "level": 2,
     "title": "Player vs. Player",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 26,
       "column": "left",
@@ -220,6 +238,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Random Map Building Technique",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 8,
       "column": "right",
@@ -232,6 +251,7 @@
     "source": "core",
     "level": 2,
     "title": "Red Meat",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 26,
       "column": "left",
@@ -244,6 +264,7 @@
     "source": "natives-and-legends",
     "level": 2,
     "title": "Roaming Monsters",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "left",
@@ -256,6 +277,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Roaming Natives",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -268,6 +290,7 @@
     "source": "core",
     "level": 2,
     "title": "Shared Fame",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",
@@ -280,6 +303,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Terrain Effects",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -292,6 +316,7 @@
     "source": "core",
     "level": 2,
     "title": "Tough Monsters",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",
@@ -304,6 +329,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Watchful Guardians",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 6,
       "column": "right",
@@ -316,6 +342,7 @@
     "source": "core",
     "level": 2,
     "title": "Wits Only",
+    "headingStyle": "pdf-l2",
     "location": {
       "page": 25,
       "column": "right",

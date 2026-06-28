@@ -6,6 +6,7 @@
       "source": "eastern-reaches",
       "level": 1,
       "title": "DRAGONS DOWN: EASTERN REACHES",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 2,
         "column": "left",
@@ -18,6 +19,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "One-Time Rules & Component Adjustments",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 2,
         "column": "left",
@@ -30,6 +32,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Plus One Summoning",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -42,6 +45,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Gnomes Lineage",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -54,6 +58,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Warlock Class",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -66,6 +71,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Druid Class",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -78,6 +84,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Illusionist Class",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -90,6 +97,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Special Locations Wilderness Tokens",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -102,6 +110,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Move Earth Spell",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -114,6 +123,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Heavy Skies",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -126,6 +136,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Tome of Righteousness Treasure",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -138,6 +149,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "New Title Cards",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -150,6 +162,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "New Wilderness and Civilization Tokens",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -162,6 +175,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Game Components",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 2,
         "column": "right",
@@ -174,6 +188,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Dreadful Deserts",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 2,
         "column": "right",
@@ -186,6 +201,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Ruthless Riverlands",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 2,
         "column": "right",
@@ -198,6 +214,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Additional Game Components",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 2,
         "column": "right",
@@ -210,6 +227,7 @@
       "source": "eastern-reaches",
       "level": 1,
       "title": "NEW COOPERATIVE GAME MODES",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 3,
         "column": "left",
@@ -222,6 +240,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Player count",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -234,6 +253,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Setup",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -246,6 +266,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Universal Rules for All Cooperative Games",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -258,6 +279,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Basic Cooperative",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "left",
@@ -270,6 +292,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Victory conditions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -282,6 +305,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Rules adjustments",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -294,6 +318,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Adventure Party Cooperative",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "right",
@@ -306,6 +331,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Game start",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -318,6 +344,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Victory conditions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -330,6 +357,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Rules adjustments",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -342,6 +370,7 @@
       "source": "eastern-reaches",
       "level": 1,
       "title": "DRAGONS DOWN: EASTERN REACHES",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 4,
         "column": "right",
@@ -354,6 +383,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Game Setup",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 4,
         "column": "right",
@@ -366,6 +396,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "New Spells",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 4,
         "column": "right",
@@ -378,6 +409,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Player Setup",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 4,
         "column": "right",
@@ -390,6 +422,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "New Map Tokens",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 4,
         "column": "right",
@@ -402,6 +435,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Civilization Tokens",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -414,6 +448,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Wilderness Tokens",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -426,6 +461,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Dreadful Deserts",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 5,
         "column": "left",
@@ -438,6 +474,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Map Setup for All Game Modes",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 5,
         "column": "left",
@@ -450,6 +487,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Desert Treasures",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 5,
         "column": "left",
@@ -462,6 +500,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Desert Clearings",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 5,
         "column": "left",
@@ -474,6 +513,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Ruthless Riverlands",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 5,
         "column": "left",
@@ -486,6 +526,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Map Setup for All Game Modes",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 5,
         "column": "left",
@@ -498,6 +539,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Riverlands Treasures",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 5,
         "column": "right",
@@ -510,6 +552,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "River Clearings",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 5,
         "column": "right",
@@ -522,18 +565,33 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Ferries",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 5,
         "column": "right",
         "section": "middle"
       },
-      "content": "![float-right](/images/pdf/12834a26f5372fb42cd58502c246248573bc1607.jpeg) Local ferries operate along the river between Docks and will transport Heroes for a small fee.\n\nTo use a ferry, a Hero must be in a Dock Clearing or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it. *For example, all clearings in the* *sample image are adjacent to each other.*\n\n- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n- Movement is resolved one clearing at a time. If Ferry Movement enters a new Map Tile that does not yet contain wilderness or Civilization Tokens, reveal and place those tokens before deciding whether to continue Ferry Movement.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend that additional action to enter it, per normal movement rules.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster, but may not pass through such a clearing during a single ferry action.\n\n- If Ferry Movement enters a clearing with Monsters, the Hero is blocked as normal (*the Hero may attempt to hide*). The benefits of a Sneak Action do not apply to this hide attempt; treasure bonuses and the halfling Lineage Advantages still apply.\n- Natives do not affect Ferry Movement unless they are enemies of the Hero, in which case they block movement as a normal Monster.\n- Ferry Movement costs 1 Gold per clearing entered during the Move Action. Pay the total cost at the end of the action. *Exception: The Witch’s Familiar* *pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry by discarding Treasure or Item Cards with value equal to or greater than the ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** A Hero is in a River Clearing that cannot pay ferry costs, may, as an action, take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties randomly*).\n\n**Ferry Movement Example:**\n\n![](/images/pdf/ee756e7988a7ae15f073f888a357e6dd925c068d.jpeg)\n\nThe Pit Fighter is on the Soleford Map Tile in clearing 2. Clearing 2 allows Ferry Movement as it contains a Dock.\n\nThe Hero uses a single movement action to ferry to clearing 4, then clearing 6 on the Silver Current Map Tile (*immediately revealing* *a Wilderness Token, if required*) and then to clearing 1 on the same Map Tile (*red arrows*). This move of 3 clearings is all done in one action and costs the Hero 3 Gold, which must be paid immediately.\n\nThe Hero could not have moved further on the river with this one action because clearing 1 is a Dock Clearing. Using a second action, the Hero could move to clearing 3 for a cost of 2 more Gold (*yellow arrows*).\n\nUsing a third action, the Hero could move to clearing 2 on the Ravaging Run Map Tile for a cost of 2 more Gold (*purple arrows*)."
+      "content": "![float-right](/images/pdf/12834a26f5372fb42cd58502c246248573bc1607.jpeg) Local ferries operate along the river between Docks and will transport Heroes for a small fee.\n\nTo use a ferry, a Hero must be in a Dock Clearing or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it. *For example, all clearings in the* *sample image are adjacent to each other.*\n\n- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n- Movement is resolved one clearing at a time. If Ferry Movement enters a new Map Tile that does not yet contain wilderness or Civilization Tokens, reveal and place those tokens before deciding whether to continue Ferry Movement.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend that additional action to enter it, per normal movement rules.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster, but may not pass through such a clearing during a single ferry action.\n\n- If Ferry Movement enters a clearing with Monsters, the Hero is blocked as normal (*the Hero may attempt to hide*). The benefits of a Sneak Action do not apply to this hide attempt; treasure bonuses and the halfling Lineage Advantages still apply.\n- Natives do not affect Ferry Movement unless they are enemies of the Hero, in which case they block movement as a normal Monster.\n- Ferry Movement costs 1 Gold per clearing entered during the Move Action. Pay the total cost at the end of the action. *Exception: The Witch’s Familiar* *pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry by discarding Treasure or Item Cards with value equal to or greater than the ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** A Hero is in a River Clearing that cannot pay ferry costs, may, as an action, take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties randomly*)."
+    },
+    {
+      "id": "3.6.4.1",
+      "source": "eastern-reaches",
+      "level": 4,
+      "title": "Ferry Movement Example:",
+      "headingStyle": "pdf-body-bold-12",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![](/images/pdf/ee756e7988a7ae15f073f888a357e6dd925c068d.jpeg)\n\nThe Pit Fighter is on the Soleford Map Tile in clearing 2. Clearing 2 allows Ferry Movement as it contains a Dock.\n\nThe Hero uses a single movement action to ferry to clearing 4, then clearing 6 on the Silver Current Map Tile (*immediately revealing* *a Wilderness Token, if required*) and then to clearing 1 on the same Map Tile (*red arrows*). This move of 3 clearings is all done in one action and costs the Hero 3 Gold, which must be paid immediately.\n\nThe Hero could not have moved further on the river with this one action because clearing 1 is a Dock Clearing. Using a second action, the Hero could move to clearing 3 for a cost of 2 more Gold (*yellow arrows*).\n\nUsing a third action, the Hero could move to clearing 2 on the Ravaging Run Map Tile for a cost of 2 more Gold (*purple arrows*)."
     },
     {
       "id": "3.6.5",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Swimming",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 6,
         "column": "left",
@@ -546,6 +604,7 @@
       "source": "eastern-reaches",
       "level": 1,
       "title": "OPTIONAL RULES",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 6,
         "column": "right",
@@ -558,6 +617,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Ample Opportunity",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 6,
         "column": "right",
@@ -570,6 +630,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Watchful Guardians",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 6,
         "column": "right",
@@ -582,6 +643,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Terrain Effects",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 6,
         "column": "right",
@@ -594,6 +656,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Magic Sites",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 6,
         "column": "right",
@@ -606,6 +669,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Roaming Natives",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 6,
         "column": "right",
@@ -618,6 +682,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Native Rewards",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 7,
         "column": "left",
@@ -630,6 +695,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Full Shelves",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 7,
         "column": "left",
@@ -642,6 +708,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Horses",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 7,
         "column": "left",
@@ -654,6 +721,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Horse Cards",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 7,
         "column": "left",
@@ -666,6 +734,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Basic Horse Rules",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 7,
         "column": "left",
@@ -678,6 +747,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Horses in Combat",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 7,
         "column": "right",
@@ -690,6 +760,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Horse Types",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 8,
         "column": "left",
@@ -702,6 +773,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Random Map Building Technique",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 8,
         "column": "right",
@@ -714,6 +786,7 @@
       "source": "eastern-reaches",
       "level": 1,
       "title": "APPENDIX",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 9,
         "column": "left",
@@ -726,6 +799,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Lineage Advantages",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 9,
         "column": "left",
@@ -738,6 +812,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Auroran (Desert Born)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "left",
@@ -751,6 +826,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Class Advantages",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 9,
         "column": "left",
@@ -763,6 +839,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Decayed (Duality Vale)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "left",
@@ -776,6 +853,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Dervish (Whirling Strike)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "left",
@@ -789,6 +867,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Disciple (Chosen)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "left",
@@ -802,6 +881,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Duelist (Parry)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "right",
@@ -815,6 +895,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Marauder (Fury)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "right",
@@ -828,6 +909,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Monk (Iron Fist)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "right",
@@ -841,6 +923,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Pit Fighter (Weaponmaster)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "right",
@@ -854,6 +937,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Vanguard (Primal Strike)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 9,
         "column": "right",
@@ -867,6 +951,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Monster Manifest",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 10,
         "column": "left",
@@ -879,6 +964,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Arboreal Keeper",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "left",
@@ -891,6 +977,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Death Hounds",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "left",
@@ -903,6 +990,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Siren",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "left",
@@ -915,6 +1003,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Legendary Location Manifest",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 10,
         "column": "left",
@@ -927,6 +1016,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Lamp of the Djinni",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "left",
@@ -939,6 +1029,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Lost Captain’s Locker",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "right",
@@ -951,6 +1042,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Treasure Manifest",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 10,
         "column": "right",
@@ -963,6 +1055,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Adventurer’s Toolkit",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "right",
@@ -975,6 +1068,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Amaranth of Action",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "right",
@@ -987,6 +1081,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Amber Spire",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "right",
@@ -999,6 +1094,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Ancient Map",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "right",
@@ -1011,6 +1107,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Aquaria’s Enchiridion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 10,
         "column": "right",
@@ -1023,6 +1120,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Blade of the Scorpion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1035,6 +1133,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Book of Eternal Sand",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1047,6 +1146,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Canopic Jar",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1059,6 +1159,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Coin of Passage",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1071,6 +1172,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Dastanas of the Scorpion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1083,6 +1185,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Duffel of Displacement",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1095,6 +1198,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Fish Fluke Statuette",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1107,6 +1211,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Ghutra of the Scorpion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1119,6 +1224,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Golden Shroud",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1131,6 +1237,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Healer’s Flask",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1143,6 +1250,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Khatam of the Quick",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1155,6 +1263,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Kolah of the Horus’ Eye",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -1167,6 +1276,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "The Lamp",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "right",
@@ -1179,6 +1289,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Magewright’s Quill",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "right",
@@ -1191,6 +1302,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Magic Carpet",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "right",
@@ -1203,6 +1315,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Mantle of the Djinn",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "right",
@@ -1215,6 +1328,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Moon Crystal",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "right",
@@ -1227,6 +1341,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Moon Mirror",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "right",
@@ -1239,6 +1354,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Morsel of Might",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "right",
@@ -1251,6 +1367,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Obsidian Dagger",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1263,6 +1380,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Pearl of Riversight",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1275,6 +1393,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Ripple Strike",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1287,6 +1406,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Riverwalkers",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1299,6 +1419,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Roc Egg",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1311,6 +1432,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Sandglass of Eternity",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1323,6 +1445,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Sandstrider Boots",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1335,6 +1458,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Satchel of Suppression",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1347,6 +1471,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Seafang",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1359,6 +1484,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Seal of the False King",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1371,6 +1497,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Seed of Speed",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -1383,6 +1510,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Serpent Helm",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1395,6 +1523,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Shekels",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1407,6 +1536,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Spell Librams",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1419,6 +1549,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Staff of the Sharp Sands",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1431,6 +1562,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Staff of Thaumaturgy",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1443,6 +1575,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "The Sting",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1455,6 +1588,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Storm’s Eye",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1467,6 +1601,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Sunblade",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1479,6 +1614,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Symbol of Recruitment",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1491,6 +1627,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Tactician’s Grasp",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "right",
@@ -1503,6 +1640,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Tail of the Scorpion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "left",
@@ -1515,6 +1653,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Trinket of Transmutation",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "left",
@@ -1527,6 +1666,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "War Weaver’s Needle",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "left",
@@ -1539,6 +1679,7 @@
       "source": "eastern-reaches",
       "level": 2,
       "title": "Spell Manifest",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 13,
         "column": "left",
@@ -1551,6 +1692,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Black Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 13,
         "column": "left",
@@ -1564,6 +1706,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Othersight",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "left",
@@ -1576,6 +1719,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Caustic Blast",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "left",
@@ -1588,6 +1732,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Dark Presence",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "left",
@@ -1600,6 +1745,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Rot",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "right",
@@ -1612,6 +1758,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Possess",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "right",
@@ -1624,6 +1771,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Blue Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 13,
         "column": "right",
@@ -1637,6 +1785,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Move Gate",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "right",
@@ -1649,6 +1798,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Town Portal",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "right",
@@ -1661,6 +1811,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Water Weird",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "right",
@@ -1673,6 +1824,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Doppelganger",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 13,
         "column": "right",
@@ -1685,6 +1837,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Foresight",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "left",
@@ -1697,6 +1850,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Gray Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 14,
         "column": "left",
@@ -1710,6 +1864,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Enfeeble",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "left",
@@ -1722,6 +1877,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Shift Focus",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "left",
@@ -1734,6 +1890,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Shadowhand",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "left",
@@ -1746,6 +1903,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Orc Call",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "left",
@@ -1758,6 +1916,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Malediction",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "left",
@@ -1770,6 +1929,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Green Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 14,
         "column": "left",
@@ -1783,6 +1943,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Scout",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "left",
@@ -1795,6 +1956,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Good Wind",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1807,6 +1969,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Wildshape",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1819,6 +1982,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Earthquake",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1831,6 +1995,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Sunder",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1843,6 +2008,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Purple Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 14,
         "column": "right",
@@ -1856,6 +2022,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Mana Shield",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1868,6 +2035,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Magic Snare",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1880,6 +2048,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Gale Blast",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1892,6 +2061,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Lightning",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -1904,6 +2074,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Pyroclasm",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -1916,6 +2087,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "White Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 15,
         "column": "left",
@@ -1929,6 +2101,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Minor Mend",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -1941,6 +2114,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Panoply",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -1953,6 +2127,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Major Heal",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -1965,6 +2140,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Safe Haven",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -1977,6 +2153,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Renewal",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -1989,6 +2166,7 @@
       "source": "eastern-reaches",
       "level": 3,
       "title": "Yellow Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 15,
         "column": "left",
@@ -2002,6 +2180,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Great Parley",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -2014,6 +2193,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Mesmerize",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "left",
@@ -2026,6 +2206,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Counterplay",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "right",
@@ -2038,6 +2219,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Charismagic",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "right",
@@ -2050,6 +2232,7 @@
       "source": "eastern-reaches",
       "level": 4,
       "title": "Prismatism",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "right",
@@ -2062,18 +2245,33 @@
       "source": "eastern-reaches",
       "level": 1,
       "title": "CREDITS AND ACKNOWLEDGMENTS",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 15,
         "column": "right",
         "section": "middle"
       },
-      "content": "*Game Design, Development, and Production:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Artwork and Graphic Design:* **Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\nAdventure Journals for Eastern Reaches can be downloaded and printed at https://www.activemagicgames.com."
+      "content": "*Game Design, Development, and Production:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Artwork and Graphic Design:* **Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*"
     },
     {
       "id": "6.1",
       "source": "eastern-reaches",
       "level": 2,
+      "title": "This is a hobby gaming product and not a toy. It is not intended for use by",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 15,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "**anyone under 14 years of age.**\n\nAdventure Journals for Eastern Reaches can be downloaded and printed at https://www.activemagicgames.com."
+    },
+    {
+      "id": "6.2",
+      "source": "eastern-reaches",
+      "level": 2,
       "title": "Ferries",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 16,
         "column": "left",
@@ -2083,10 +2281,11 @@
       "content": "Local ferries operate along the river between Docks and will transport Heroes for a small fee. To use a ferry, a Hero must be in a Dock Clearing or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it.\n\n- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n- Movement is resolved one clearing at a time. If Ferry Movement enters a new Map Tile that does not yet contain wilderness or Civilization Tokens, reveal and place those tokens before deciding whether to continue Ferry Movement.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend that additional action to enter it, per normal movement rules.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster, but may not pass through such a clearing during a single ferry action.\n- If Ferry Movement enters a clearing with Monsters, the Hero is blocked as normal (*the Hero may attempt to hide*). The benefits of a Sneak Action do not apply to this hide attempt; treasure bonuses and the halfling Lineage Advantages still apply.\n- Natives do not affect Ferry Movement unless they are enemies of the Hero, in which case they block movement as a normal Monster.\n- Ferry Movment costs 1 Gold per clearing entered during the Ferry action. Pay the total cost at the end of the action. *Exception: The Witch’s Familiar* *pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry using Treasure or Item Cards with value equal to or greater than the Ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** If a Hero is in a River Clearing and cannot pay ferry costs, the Hero may spend an action to take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties* *randomly*)."
     },
     {
-      "id": "6.2",
+      "id": "6.3",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Swimming",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 16,
         "column": "left",
@@ -2096,10 +2295,11 @@
       "content": "Some Monsters have Swimming Ability, and some game effects grant Swimming Ability to Heroes. Swimming is already built into the maneuver speed for Monsters with Swimming Ability. Swimming has no impact during Combat unless specified by a spell or other game effect.\n\nWhen a Hero has Swimming Ability, the Hero may use a Move Action to move between adjacent Dock and River Clearings. This is not ferrying and costs no Gold.\n\nEach move into a River Clearing while swimming costs one action. Movement into a Dock Clearing incurs the normal cost for the clearing type.\n\nThe Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
     },
     {
-      "id": "6.3",
+      "id": "6.4",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Desert Clearings",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 16,
         "column": "right",
@@ -2108,16 +2308,69 @@
       "content": "It costs one action to move into a Desert Clearing If a Hero ends their Action Phase in a Desert Clearing that does not also contain a Civilization Location, the Hero must immediately wound one cube"
     },
     {
-      "id": "6.4",
+      "id": "6.5",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Native Summoning",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 16,
         "column": "right",
         "section": "top"
       },
-      "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![](/images/pdf/00ba35bbc83653cd46e2af063af037c2abf8b4fc.jpeg)\n\n![](/images/pdf/806d611b09634b812c149c963d0c49d1d9dcd839.jpeg)\n\n![](/images/pdf/9dfac8d239b1396dc7897e61b0c14f7091178091.jpeg)\n\n**Civilization** **Location** **Terrain** **Pack**\n\n![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nBashkirs Sellswords\n\nEncampment\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/pdf/356d646ab6238f1c692f3733b40b5f187fa295aa.png)\n\nWatch Soldiers\n\nKeep\n\n**Aurorans**\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nRogues Nomads\n\nMedina\n\nConsul **Dwarves**\n\n![](/images/pdf/fa57afa329fc35aec26c59a8d54e9ccc82467099.png)\n\nWatch Soldiers\n\nMine\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nNomads\n\nOasis\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nOutpost\n\nWatch **Mariners** Sellswords\n\n![](/images/pdf/15677672a3ceeb7b43973da1593b8bf89a5c47e4.jpeg)\n\nPort\n\nBashkirs Consul **Priests**\n\n![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nElves\n\nSanctuary\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nVillage\n\nNatives that begin in the Native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing Monsters. Natives that are in a clearing with Monsters are placed in the Native tray.\n\n![](/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg)"
+      "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![](/images/pdf/00ba35bbc83653cd46e2af063af037c2abf8b4fc.jpeg)\n\n![](/images/pdf/806d611b09634b812c149c963d0c49d1d9dcd839.jpeg)\n\n![](/images/pdf/9dfac8d239b1396dc7897e61b0c14f7091178091.jpeg)"
+    },
+    {
+      "id": "6.5.1",
+      "source": "eastern-reaches",
+      "level": 3,
+      "title": "Civilization",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 16,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "6.5.2",
+      "source": "eastern-reaches",
+      "level": 3,
+      "title": "Location",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 16,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "6.5.3",
+      "source": "eastern-reaches",
+      "level": 3,
+      "title": "Terrain",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 16,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "6.5.4",
+      "source": "eastern-reaches",
+      "level": 3,
+      "title": "Pack",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 16,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nBashkirs Sellswords\n\nEncampment\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/pdf/356d646ab6238f1c692f3733b40b5f187fa295aa.png)\n\nWatch Soldiers\n\nKeep\n\n**Aurorans**\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nRogues Nomads\n\nMedina\n\nConsul **Dwarves**\n\n![](/images/pdf/fa57afa329fc35aec26c59a8d54e9ccc82467099.png)\n\nWatch Soldiers\n\nMine\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nNomads\n\nOasis\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nOutpost\n\nWatch **Mariners** Sellswords\n\n![](/images/pdf/15677672a3ceeb7b43973da1593b8bf89a5c47e4.jpeg)\n\nPort\n\nBashkirs Consul **Priests**\n\n![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nElves\n\nSanctuary\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nVillage\n\nNatives that begin in the Native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing Monsters. Natives that are in a clearing with Monsters are placed in the Native tray.\n\n![](/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg)"
     }
   ]
 }

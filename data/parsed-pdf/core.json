@@ -6,6 +6,7 @@
       "source": "core",
       "level": 1,
       "title": "CONTENTS",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 2,
         "column": "left",
@@ -18,6 +19,7 @@
       "source": "core",
       "level": 1,
       "title": "INTRODUCTION",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 3,
         "column": "left",
@@ -30,6 +32,7 @@
       "source": "core",
       "level": 1,
       "title": "SANDBOXES AND SCENARIOS",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 3,
         "column": "left",
@@ -42,6 +45,7 @@
       "source": "core",
       "level": 2,
       "title": "Open Realm Sandbox",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "left",
@@ -54,6 +58,7 @@
       "source": "core",
       "level": 3,
       "title": "Map",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -66,6 +71,7 @@
       "source": "core",
       "level": 3,
       "title": "Game Start",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -78,6 +84,7 @@
       "source": "core",
       "level": 3,
       "title": "Game Length",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -90,6 +97,7 @@
       "source": "core",
       "level": 3,
       "title": "Victory Conditions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "left",
@@ -102,6 +110,7 @@
       "source": "core",
       "level": 2,
       "title": "Explore the Realm Sandbox",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "right",
@@ -114,6 +123,7 @@
       "source": "core",
       "level": 3,
       "title": "Map",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -126,6 +136,7 @@
       "source": "core",
       "level": 3,
       "title": "Game Start",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -138,6 +149,7 @@
       "source": "core",
       "level": 3,
       "title": "Game Length",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -150,6 +162,7 @@
       "source": "core",
       "level": 3,
       "title": "Victory Conditions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -162,6 +175,7 @@
       "source": "core",
       "level": 3,
       "title": "Additional Rules",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -174,6 +188,7 @@
       "source": "core",
       "level": 2,
       "title": "Legendary Sandbox",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "right",
@@ -186,6 +201,7 @@
       "source": "core",
       "level": 3,
       "title": "Map",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -198,6 +214,7 @@
       "source": "core",
       "level": 3,
       "title": "Game Start",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -210,6 +227,7 @@
       "source": "core",
       "level": 3,
       "title": "Game Length",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -222,6 +240,7 @@
       "source": "core",
       "level": 4,
       "title": "Multi-player",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -234,6 +253,7 @@
       "source": "core",
       "level": 4,
       "title": "Solo",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -246,6 +266,7 @@
       "source": "core",
       "level": 3,
       "title": "Victory Conditions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 3,
         "column": "right",
@@ -258,6 +279,7 @@
       "source": "core",
       "level": 4,
       "title": "Multi-player",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -270,6 +292,7 @@
       "source": "core",
       "level": 4,
       "title": "Solo",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -282,6 +305,7 @@
       "source": "core",
       "level": 1,
       "title": "SETUP",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 4,
         "column": "left",
@@ -294,6 +318,7 @@
       "source": "core",
       "level": 2,
       "title": "Game Setup",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 4,
         "column": "left",
@@ -306,6 +331,7 @@
       "source": "core",
       "level": 2,
       "title": "Hero Selection",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 5,
         "column": "right",
@@ -318,6 +344,7 @@
       "source": "core",
       "level": 4,
       "title": "You are now ready to play Dragons Down.",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 5,
         "column": "right",
@@ -330,6 +357,7 @@
       "source": "core",
       "level": 1,
       "title": "COMPONENTS",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 6,
         "column": "left",
@@ -342,18 +370,33 @@
       "source": "core",
       "level": 3,
       "title": "Dice",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 6,
         "column": "left",
         "section": "top"
       },
-      "content": "Dragons Down uses custom dice to determine the outcome of some events.\n\n**Golden Rule:**\n\nIn Dragons Down players roll two dice and take the least favorable result of the die facings unless otherwise noted.\n\nDice results are explained in the relevant sections of these rules and are listed here for completeness."
+      "content": "Dragons Down uses custom dice to determine the outcome of some events."
     },
     {
       "id": "5.0.1.1",
       "source": "core",
       "level": 4,
+      "title": "Golden Rule:",
+      "headingStyle": "pdf-body-bold-12",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "In Dragons Down players roll two dice and take the least favorable result of the die facings unless otherwise noted.\n\nDice results are explained in the relevant sections of these rules and are listed here for completeness."
+    },
+    {
+      "id": "5.0.1.2",
+      "source": "core",
+      "level": 4,
       "title": "Summoning Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "left",
@@ -363,10 +406,11 @@
       "content": "Four  dice are rolled during the Monster Activation step of the Battle Phase. The dice come in two colors: gray (*Wandering Monster* *Dice*) and black (*Local Monster Dice*).  Each color has two dice; one with summoning symbols and one with numbers that show the number of summoned Monsters that will appear.\n\nThe Wandering Monster Dice summon Monsters that are unique to a Terrain Pack (*e.g. Juvenile Dragons in the Malevolent Mountains*). Wandering Monsters are shown on the bottom left of the Map Tiles from that Terrain Pack.\n\nThe Local Monster Dice summon the Local Monsters and Treasure Site Guardians. The faces of the Local Monster Die show either a Treasure Site Symbol or the various symbols shown on the bottom right of the Map Tiles.\n\nMonster summoning is explained later in these rules."
     },
     {
-      "id": "5.0.1.2",
+      "id": "5.0.1.3",
       "source": "core",
       "level": 4,
       "title": "Search Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "left",
@@ -376,10 +420,11 @@
       "content": "Two dice are rolled when a Hero attempts to find a Treasure Site or Hidden Path. Each die has 3 spyglass facings (*success*) and three blank facings (*failure*)."
     },
     {
-      "id": "5.0.1.3",
+      "id": "5.0.1.4",
       "source": "core",
       "level": 4,
       "title": "Hit Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "left",
@@ -389,10 +434,11 @@
       "content": "Two dice are rolled during combat resolution when an attack speed is less than or equal to a maneuver speed (*and thus, not an automatic* *hit*). Each die has 3 hit facings (*success*), 1 hit if equal facing (*possible* *success*), and 2 blank facings (*failure*)."
     },
     {
-      "id": "5.0.1.4",
+      "id": "5.0.1.5",
       "source": "core",
       "level": 4,
       "title": "Ranged Attack Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "left",
@@ -402,10 +448,11 @@
       "content": "Two dice are rolled after a ranged attack hits (*bow, crossbow, thrown* *dagger, spear, etc., spells such as Fireball, thrown explosive potion,* *etc.*). The facings of each ranged die either increase or decrease the amount of damage delivered during a successful ranged attack."
     },
     {
-      "id": "5.0.1.5",
+      "id": "5.0.1.6",
       "source": "core",
       "level": 4,
       "title": "Monster Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "left",
@@ -415,10 +462,11 @@
       "content": "Two dice are rolled whenever a Hero attempts to hide, when Monsters are in combat and may change tactics, and when a Hero with Outlaw Tokens dies or retires from the game. Each die has 2 Monster symbols and 4 blank facings."
     },
     {
-      "id": "5.0.1.6",
+      "id": "5.0.1.7",
       "source": "core",
       "level": 4,
       "title": "Loot Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "right",
@@ -428,10 +476,11 @@
       "content": "Two dice are rolled whenever a Hero attempts to loot a found Treasure Site. Each facing shows a number 1 through 5 and one facing shows a grabby hand, which has a value of 0 and is the best result a player can roll. A Hero that rolls two grabby hands may select any of the top 3 Treasures from the Treasure Pile being looted."
     },
     {
-      "id": "5.0.1.7",
+      "id": "5.0.1.8",
       "source": "core",
       "level": 4,
       "title": "Haggle Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "right",
@@ -441,10 +490,11 @@
       "content": "Two dice are rolled when a Hero attempts to lower the price to buy merchandise from a Merchant. The base price of merchandise is 3x the printed price. Each Haggle Die has a number 0 through 4 (*various levels of success*) and a door closed symbol (*failure*)."
     },
     {
-      "id": "5.0.1.8",
+      "id": "5.0.1.9",
       "source": "core",
       "level": 4,
       "title": "Mission Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "right",
@@ -454,10 +504,11 @@
       "content": "A Hero rolls a number of dice equal to the number of their matching attribute symbols as bonus rewards for completing missions. Each Mission Die facing shows a Gold or Fame reward that is earned by the Hero in addition to the printed rewards on the Mission Card."
     },
     {
-      "id": "5.0.1.9",
+      "id": "5.0.1.10",
       "source": "core",
       "level": 4,
       "title": "Learn Dice",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "right",
@@ -471,6 +522,7 @@
       "source": "core",
       "level": 3,
       "title": "Legend Points, Fame, and Gold",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 6,
         "column": "right",
@@ -483,6 +535,7 @@
       "source": "core",
       "level": 4,
       "title": "Legend Points",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "right",
@@ -496,6 +549,7 @@
       "source": "core",
       "level": 4,
       "title": "Fame",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "right",
@@ -509,6 +563,7 @@
       "source": "core",
       "level": 4,
       "title": "Gold",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 6,
         "column": "right",
@@ -522,6 +577,7 @@
       "source": "core",
       "level": 3,
       "title": "Terrain Packs",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 7,
         "column": "left",
@@ -534,6 +590,7 @@
       "source": "core",
       "level": 3,
       "title": "Terrain Setup Cards",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 7,
         "column": "left",
@@ -546,6 +603,7 @@
       "source": "core",
       "level": 3,
       "title": "Map Tiles",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 7,
         "column": "left",
@@ -558,6 +616,7 @@
       "source": "core",
       "level": 3,
       "title": "Monster Chips",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 7,
         "column": "left",
@@ -570,6 +629,7 @@
       "source": "core",
       "level": 3,
       "title": "Civilization Locations",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 8,
         "column": "left",
@@ -582,6 +642,7 @@
       "source": "core",
       "level": 3,
       "title": "Civilization Tokens",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 8,
         "column": "left",
@@ -594,6 +655,7 @@
       "source": "core",
       "level": 3,
       "title": "Civilization Cards and Titles (far right)",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 8,
         "column": "left",
@@ -606,6 +668,7 @@
       "source": "core",
       "level": 3,
       "title": "Mission Cards",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 8,
         "column": "left",
@@ -618,6 +681,7 @@
       "source": "core",
       "level": 3,
       "title": "Wilderness Tokens",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 8,
         "column": "left",
@@ -630,6 +694,7 @@
       "source": "core",
       "level": 3,
       "title": "Treasure Site Tokens",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 8,
         "column": "left",
@@ -642,6 +707,7 @@
       "source": "core",
       "level": 3,
       "title": "Hero Cards",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 9,
         "column": "left",
@@ -654,6 +720,7 @@
       "source": "core",
       "level": 3,
       "title": "Item and Treasure Cards",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 9,
         "column": "left",
@@ -666,6 +733,7 @@
       "source": "core",
       "level": 3,
       "title": "Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 10,
         "column": "left",
@@ -678,6 +746,7 @@
       "source": "core",
       "level": 3,
       "title": "Hero Board",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 10,
         "column": "left",
@@ -690,6 +759,7 @@
       "source": "core",
       "level": 3,
       "title": "Hero Chips and Targeting Tokens",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 11,
         "column": "left",
@@ -702,6 +772,7 @@
       "source": "core",
       "level": 3,
       "title": "Outlaw Tokens",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 11,
         "column": "left",
@@ -714,6 +785,7 @@
       "source": "core",
       "level": 3,
       "title": "Action Cubes",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 11,
         "column": "left",
@@ -726,6 +798,7 @@
       "source": "core",
       "level": 4,
       "title": "Status Cubes",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -738,6 +811,7 @@
       "source": "core",
       "level": 3,
       "title": "Reference Cards",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 11,
         "column": "left",
@@ -750,6 +824,7 @@
       "source": "core",
       "level": 4,
       "title": "Scoring",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -762,6 +837,7 @@
       "source": "core",
       "level": 4,
       "title": "Curses",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 11,
         "column": "left",
@@ -774,6 +850,7 @@
       "source": "core",
       "level": 1,
       "title": "GAME PLAY",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 12,
         "column": "left",
@@ -786,18 +863,33 @@
       "source": "core",
       "level": 4,
       "title": "Action Phase",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
         "section": "top"
       },
-      "content": "**1.\t Turn Start:** All Heroes clear their statuses and become unblocked.\n\n**2.\t Actions:**\n\na.\t Determine the active Hero.\n\nb.\t Active Hero performs all of their actions.\n\nc.\t Repeat until all Heroes have taken a turn."
+      "content": "**1.\t Turn Start:** All Heroes clear their statuses and become unblocked."
+    },
+    {
+      "id": "6.0.0.1.1",
+      "source": "core",
+      "level": 5,
+      "title": "2. Actions:",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 12,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "a.\t Determine the active Hero.\n\nb.\t Active Hero performs all of their actions.\n\nc.\t Repeat until all Heroes have taken a turn."
     },
     {
       "id": "6.0.0.2",
       "source": "core",
       "level": 4,
       "title": "Battle Phase",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -810,6 +902,7 @@
       "source": "core",
       "level": 2,
       "title": "Action Phase",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 12,
         "column": "left",
@@ -822,6 +915,7 @@
       "source": "core",
       "level": 3,
       "title": "Turn Start",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 12,
         "column": "left",
@@ -834,18 +928,47 @@
       "source": "core",
       "level": 3,
       "title": "Actions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 12,
         "column": "left",
         "section": "middle"
       },
-      "content": "![float-right](/images/pdf/5055eb78163b1f1545fb8ece37175120ba277712.png) Mix all Heroes’ Targeting Tokens together and randomly draw one to determine the Active Player. The Active Player performs all of their actions for the turn. Then draw a new token to determine the next player to perform their actions until all players have taken a turn.\n\nPlayers may perform up to 4 actions during their turn. Actions can be taken in any order and the same action may be taken any number of times.\n\n**Caves**\n\nIf a Hero begins their turn in a Cave Clearing, or enters a Cave Clearing during their turn, the Hero loses one total action that turn. A Hero may not use a 4th action to enter a Cave Clearing.\n\n**Monster Block**\n\n![float-left](/images/pdf/64be4bb5845d7079708cd7fa13f537385bc53fd4.png) Monsters block the active, unhidden Hero if they are in the same clearing at the end of any action. The Hero may attempt to hide to avoid being blocked (*see Reactions on page 13*). Blocked Heroes are unhidden and lose all remaining actions and reactions until the end of the turn. Flip the Hero Chip over to its blocked side to denote that the Hero is blocked."
+      "content": "![float-right](/images/pdf/5055eb78163b1f1545fb8ece37175120ba277712.png) Mix all Heroes’ Targeting Tokens together and randomly draw one to determine the Active Player. The Active Player performs all of their actions for the turn. Then draw a new token to determine the next player to perform their actions until all players have taken a turn.\n\nPlayers may perform up to 4 actions during their turn. Actions can be taken in any order and the same action may be taken any number of times."
     },
     {
       "id": "6.1.2.1",
       "source": "core",
       "level": 4,
+      "title": "Caves",
+      "headingStyle": "pdf-body-bold-12",
+      "location": {
+        "page": 12,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "If a Hero begins their turn in a Cave Clearing, or enters a Cave Clearing during their turn, the Hero loses one total action that turn. A Hero may not use a 4th action to enter a Cave Clearing."
+    },
+    {
+      "id": "6.1.2.2",
+      "source": "core",
+      "level": 4,
+      "title": "Monster Block",
+      "headingStyle": "pdf-body-bold-12",
+      "location": {
+        "page": 12,
+        "column": "left",
+        "section": "bottom"
+      },
+      "icon": "/images/pdf/64be4bb5845d7079708cd7fa13f537385bc53fd4.png",
+      "content": "Monsters block the active, unhidden Hero if they are in the same clearing at the end of any action. The Hero may attempt to hide to avoid being blocked (*see Reactions on page 13*). Blocked Heroes are unhidden and lose all remaining actions and reactions until the end of the turn. Flip the Hero Chip over to its blocked side to denote that the Hero is blocked."
+    },
+    {
+      "id": "6.1.2.3",
+      "source": "core",
+      "level": 4,
       "title": "The actions:",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 12,
         "column": "left",
@@ -854,10 +977,11 @@
       "content": ""
     },
     {
-      "id": "6.1.2.1.1",
+      "id": "6.1.2.3.1",
       "source": "core",
       "level": 5,
       "title": "Alert",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 12,
         "column": "left",
@@ -867,10 +991,11 @@
       "content": "The Alert Action allows a Hero to unequip and equip any/all of their possessions (*see Equipping on page 21 for full details*).  Additionally, during combat this turn the Hero may place +1 Speed Cube during each round of combat. Place a pink Status Cube in the Alert box on the Hero’s Hero Board to indicate that the Hero alerted this turn."
     },
     {
-      "id": "6.1.2.1.2",
+      "id": "6.1.2.3.2",
       "source": "core",
       "level": 5,
       "title": "Sneak - or- Make Noise",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 12,
         "column": "right",
@@ -883,23 +1008,64 @@
       "content": "The Sneak Action improves the odds of a Hero successfully hiding. Place a pink Status Cube in the Sneak box on the Hero Board when a Hero takes a Sneak Action. Heroes that Sneak may ignore one failure die result during all Hide reactions this turn (*see Reactions on page 13*).\n\nA Hero may instead choose to Make Noise. They immediately become unhidden and are blocked if Monsters are present. A Hero may not Sneak and Make Noise in the same turn. Place a pink Status Cube in the Make Noise box on the Hero Board. After Monster Activation, but before Combat, roll the Summoning Dice again for each Hero that made noise this turn. Apply the results only to the clearing containing the Hero rolling the dice using normal summoning rules, ignoring Heroes in all other clearings in the tile."
     },
     {
-      "id": "6.1.2.1.3",
+      "id": "6.1.2.3.3",
       "source": "core",
       "level": 5,
       "title": "Move",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 12,
         "column": "right",
         "section": "middle"
       },
       "icon": "/images/pdf/a7dae4950bd47c58c1b730eabc31f0fa0bfe9d19.png",
-      "content": "The Move Action allows a Hero to move to an adjacent clearing connected to the current clearing by a Path, a Gate, or a discovered Hidden Path. When a hidden Hero moves to a new clearing, they lose any hidden status. The move costs one action except as follows:\n\n**Mountains or Swamps:** A Move Action made into a Mountain or Swamp Clearing requires +1 action cost.\n\n**Gates:** Once two or more Gates are revealed, a Hero may travel between any two Gates as if they were connected by a path. The type of clearing being entered determines the movement cost to use the Gate.\n\n**Evading:** Heroes that evaded during combat on the prior turn must spend their first action moving to an adjacent clearing. Heroes that evaded out of a Cave Clearing still lose one action that turn even if evading in the direction of a non-Cave Clearing (*Evade is explained on page 15*).\n\n**Place Tokens:**\n\nIf a Hero enters a Map Tile that does not contain a Treasure Site, Civilization, or Wilderness Token, place tokens in the tile. *Exception: If a Hero enters a new tile due* *to a spell effect during combat, reveal tokens once all combat is completed for the turn.*\n\n**Civilization Tiles:**\n\nDraw **two** random Civilization Tokens from the Civilization Token pile and reveal them in the Civilization Location clearing on the Map Tile.\n\nFill any newly revealed Merchants with the number of treasures, items, and missions indicated on the Terrain Setup Card for the Merchant. Take these cards from the piles shuffled during game setup. The order of these cards does not matter.\n\n**Wilderness tiles:**\n\nDraw **one** random Wilderness Token from the matching Terrain Setup Card and reveal it anywhere in the tile. Follow the instructions below for the token drawn.\n\n- ![float-right](/images/pdf/3bef5de2161a97966b13e0b0be97b27afa037800.jpeg) **Site:** Draw a random Site Token from the Site Token pile. Place the Treasure Site in the clearing on the Map Tile indicated by number on the Site Token.\n\n- ![float-right](/images/pdf/90adbefc7f3f672d9ff407228de7a8824374aa94.jpeg) **Numbered Token:** Place the token in the clearing indicated by the number on the Wilderness Token.\n\n- ![float-right](/images/pdf/a6ee8959434410163c88bb5999f667c2fa32547c.jpeg) **Item:** Draw an item from the top of the Item Deck. The Hero may equip the card immediately (*see Equipping on page 21*).\n\n- ![float-right](/images/pdf/a16d831bb023d7be7622c3fad8a64d18d9805df1.jpeg) **Treasure:** Draw a treasure from the top of the Treasure Deck (*not* *the Deep Treasure Deck*). The Hero may equip the card immediately (*see Equipping on page 21*).\n\n- ![float-right](/images/pdf/0ea9532355c7a37dc29d39f6a0f7abdaafdd0d60.jpeg) **Discovery:** The Hero rolls two Mission Dice and receives the rewards indicated by the dice roll.\n\n- ![float-right](/images/pdf/4c18d8620f58e33ba89a2dcb3e076b91d48179df.jpeg) **Forgotten City/Dwarven Ruins:** Reveal one additional token from each Terrain Setup Card, repeating the above steps for each new token. The revealing Hero receives 1 LP and 5 Fame."
+      "content": "The Move Action allows a Hero to move to an adjacent clearing connected to the current clearing by a Path, a Gate, or a discovered Hidden Path. When a hidden Hero moves to a new clearing, they lose any hidden status. The move costs one action except as follows:\n\n**Mountains or Swamps:** A Move Action made into a Mountain or Swamp Clearing requires +1 action cost.\n\n**Gates:** Once two or more Gates are revealed, a Hero may travel between any two Gates as if they were connected by a path. The type of clearing being entered determines the movement cost to use the Gate.\n\n**Evading:** Heroes that evaded during combat on the prior turn must spend their first action moving to an adjacent clearing. Heroes that evaded out of a Cave Clearing still lose one action that turn even if evading in the direction of a non-Cave Clearing (*Evade is explained on page 15*)."
     },
     {
-      "id": "6.1.2.1.4",
+      "id": "6.1.2.3.3.1",
+      "source": "core",
+      "level": 6,
+      "title": "Place Tokens:",
+      "headingStyle": "pdf-body-bold-12",
+      "location": {
+        "page": 12,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "If a Hero enters a Map Tile that does not contain a Treasure Site, Civilization, or Wilderness Token, place tokens in the tile. *Exception: If a Hero enters a new tile due* *to a spell effect during combat, reveal tokens once all combat is completed for the turn.*"
+    },
+    {
+      "id": "6.1.2.3.3.1.1",
+      "source": "core",
+      "level": 7,
+      "title": "Civilization Tiles:",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 12,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "Draw **two** random Civilization Tokens from the Civilization Token pile and reveal them in the Civilization Location clearing on the Map Tile.\n\nFill any newly revealed Merchants with the number of treasures, items, and missions indicated on the Terrain Setup Card for the Merchant. Take these cards from the piles shuffled during game setup. The order of these cards does not matter."
+    },
+    {
+      "id": "6.1.2.3.3.1.2",
+      "source": "core",
+      "level": 7,
+      "title": "Wilderness tiles:",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 12,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "Draw **one** random Wilderness Token from the matching Terrain Setup Card and reveal it anywhere in the tile. Follow the instructions below for the token drawn.\n\n- ![float-right](/images/pdf/3bef5de2161a97966b13e0b0be97b27afa037800.jpeg) **Site:** Draw a random Site Token from the Site Token pile. Place the Treasure Site in the clearing on the Map Tile indicated by number on the Site Token.\n\n- ![float-right](/images/pdf/90adbefc7f3f672d9ff407228de7a8824374aa94.jpeg) **Numbered Token:** Place the token in the clearing indicated by the number on the Wilderness Token.\n\n- ![float-right](/images/pdf/a6ee8959434410163c88bb5999f667c2fa32547c.jpeg) **Item:** Draw an item from the top of the Item Deck. The Hero may equip the card immediately (*see Equipping on page 21*).\n\n- ![float-right](/images/pdf/a16d831bb023d7be7622c3fad8a64d18d9805df1.jpeg) **Treasure:** Draw a treasure from the top of the Treasure Deck (*not* *the Deep Treasure Deck*). The Hero may equip the card immediately (*see Equipping on page 21*).\n\n- ![float-right](/images/pdf/0ea9532355c7a37dc29d39f6a0f7abdaafdd0d60.jpeg) **Discovery:** The Hero rolls two Mission Dice and receives the rewards indicated by the dice roll.\n\n- ![float-right](/images/pdf/4c18d8620f58e33ba89a2dcb3e076b91d48179df.jpeg) **Forgotten City/Dwarven Ruins:** Reveal one additional token from each Terrain Setup Card, repeating the above steps for each new token. The revealing Hero receives 1 LP and 5 Fame."
+    },
+    {
+      "id": "6.1.2.3.4",
       "source": "core",
       "level": 5,
       "title": "Search",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 13,
         "column": "left",
@@ -909,10 +1075,11 @@
       "content": "When a Hero searches, they select one of two options:\n\n1.\t They may search for a Hidden Path connected to the clearing.\n\n2.\t They may search for a Treasure Site in the clearing.\n\n![float-right](/images/pdf/e734664145aef6e85bc057eaec9574b2d4d4d718.jpeg) The player rolls the two Search Dice. If the result shows two spyglasses, the Hero has found the Treasure Site or Hidden Path. Any other result is a failure.\n\n**Rerolls:** If the Hero chooses to search for the same target using consecutive Search Actions on the same turn, they only reroll Search Dice showing a blank result.\n\nWhen a Hidden Path is discovered, that Hero may use the Hidden Path during a Move Action as if it was a regular path for the rest of the game.\n\nWhen a Treasure Site is discovered for the **first time**, two things occur:\n\n1.\t The Hero gains 1 LPs and 5 Fame for being the first to discover the site.\n\n2.\t Draw a number of Treasure and Deep Treasure Cards from the appropriate decks as listed for the Treasure Site on the Terrain Setup Card. Form a Treasure Pile by placing the Deep Treasure Cards on top of the Treasure Cards. Place them on the Treasure Site location on the Terrain Setup Card."
     },
     {
-      "id": "6.1.2.1.5",
+      "id": "6.1.2.3.5",
       "source": "core",
       "level": 5,
       "title": "Loot",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 13,
         "column": "left",
@@ -922,10 +1089,11 @@
       "content": "Once a player has found a Treasure Site, they may loot it using a Loot Action. A Hero may not loot a Treasure Site that they have not discovered, even if it has been discovered by other Heroes.\n\n![float-right](/images/pdf/410f8be59b36c36195763ce9f6f713a2d5375888.jpeg) Roll the two loot dice. If the player rolls only grabby hand icons, they may look at the top three treasures and keep one of them, returning the other two to the Treasure Pile in the original order.\n\nOtherwise, use the highest numeric die result for the loot roll result.\n\nTake the card from the Treasure Pile that is in the position of the loot roll result, counting from the top, or take no card if there are fewer cards in the Treasure Pile than the loot roll result.\n\nWhen a Hero loots a Treasure Card they look at it secretly and decide whether they want to equip the card or whether they want to place it face-down in their backpack\n\n(*see Equipping on page 21*). *Exception: Treasure Cards with a red Backpack Special* *symbol must always be face-up regardless of their position.*\n\nA player may reveal cards in their backpack at any time. When an Epic Treasure Card (*with a red banner*) is possessed and revealed for the **first time**, the revealing player earns 1 LP and 5 Fame. Rewards for Epic Treasures only occur once per game per Epic Treasure."
     },
     {
-      "id": "6.1.2.1.6",
+      "id": "6.1.2.3.6",
       "source": "core",
       "level": 5,
       "title": "Learn",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 13,
         "column": "right",
@@ -935,10 +1103,11 @@
       "content": "The Learn Action allows a Hero to attempt to learn a spell attached to a Spell Book or Spell Scroll they possess. A Hero must possess a Magic Cube that matches the spell type of the spell (*healthy or wounded*).\n\nRoll the two Learn Dice.\n\n- ![float-right](/images/pdf/9e163e5ca6e959683bf46c9d46a30080cf25289a.jpeg) If both sides show a spell book, the Hero learns the spell and removes it from the Spell Book or Spell Scroll and places it in the known spells position on their Hero Board. They earn the 1 LP and 5 Fame for learning the spell. If the last spell is removed from a Treasure Card, remove the Treasure Card from the game.\n\n- ![float-right](/images/pdf/067f56e065c71751da09245969e9fa300cce5f85.jpeg) If the dice show one or more Curse Symbols, the Hero fails and receives one curse. Roll on the Curse Table immediately and apply the effects until the curse is removed. The Curse Table is shown on the back side of the Reference Cards.\n\n- In any other situation, the Learn Action has no effect.\n\n**Rerolls:** If the Hero chooses to learn the same spell using consecutive Learn Actions on the same turn, they only reroll Learn Dice showing a blank or curse result."
     },
     {
-      "id": "6.1.2.1.7",
+      "id": "6.1.2.3.7",
       "source": "core",
       "level": 5,
       "title": "Rest",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 13,
         "column": "right",
@@ -948,10 +1117,11 @@
       "content": "A Hero may become wounded for a variety of reasons. In order to move cubes from the wounded box to the healthy box, the Hero must rest. A Hero may take a quick rest, a short rest, or a long rest, moving one, two, and three cubes from the wounded box to the healthy box for a cost of two, three, and four actions respectively."
     },
     {
-      "id": "6.1.2.1.8",
+      "id": "6.1.2.3.8",
       "source": "core",
       "level": 5,
       "title": "Trade",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 13,
         "column": "right",
@@ -961,10 +1131,11 @@
       "content": "A Hero may perform a Trade Action to swap with another Hero, do commerce, complete missions, claim titles, or remove curses and spells. A single Trade Action may only do one of the following things:\n\n**1.\t Swap:** Swap any number of Item Cards, Treasure Cards, Gold, Treasure Site locations, or Hidden Paths in the current clearing with one other unhidden, unblocked Hero in the clearing.  Spell and Mission Cards may not be swapped.\n\n**2.\t Commerce:** Buy cards, sell cards, and/or take missions from a Merchant in the same clearing. Each step below may be performed in any order once in a single Trade Action.\n\n- **Look:** Look at all cards on the Terrain Setup Card for one Merchant that is in the clearing.\n\n- **Sell:** The Hero may sell any number of items or treasures from their Hero Board for the listed price. Spells may not be sold unless attached to a Spell\n\nBook or Scroll (*see page 29 for the sale price of a Spell Book or Spell Scroll*). Place these sold items with the Merchant. They are immediately available for sale to any Hero.\n\n- **Buy:** Buy one treasure or item for 3x the price shown on the card (*see page* *29 for the purchase price of a Spell Book or Spell Scroll*).\n\n- If the Hero cannot, or does not want to, pay the full price, they may haggle over the price (*see Haggling on page 21*).\n\n- When purchasing an item or treasure, the Hero may equip it immediately (*see Equipping on page 21*).\n\n- When an Epic Treasure Card (*red banner*) is purchased, the Hero may reveal the Treasure Card to earn 1 LP and 5 Fame, if the treasure was not already revealed this game.\n\n- **Take Missions:** Take 0, 1, or 2 Mission Cards from the Merchant and place it face-down in the Hero’s backpack. A Hero may keep a maximum of two uncompleted Mission Cards in their possession at the end of their turn; discard any excess. Missions are refilled at the end of the player’s turn (*after all actions*) so all Merchants have their maximum number of listed missions available. If the Mission Deck is empty, reshuffle the discard pile and recreate. If none, the Merchants do not restock missions.\n\n- **Repair:** A Merchant will repair any number of damaged armor cards if the Hero pays the price shown on the damaged armor card. Discard the Gold to the pool and remove any pink Status Cube on the armor.\n\n**3.\t Complete a Mission:** All missions require that players perform a Trade Action at a certain location to claim the mission reward. Remove completed missions from the game. (*see page 23 for more information on Missions*).\n\n**4.\t Claim a Title:** If a Hero meets the prerequisites on the matching Civilization Card, and a member of that Native Group is present, they may claim one title. Place one pink Status Cube on a title, pay the price listed, and receive the rewards shown on the card. Small boxes may only be claimed once. Large boxes may be claimed an unlimited number of times (*one per Trade Action*).\n\n**5.\t Remove Curses and Spells:** A Hero in a Civilization Location may remove any number of curses and permanent spells from a willing Hero in the clearing for a cost of 5 Gold per curse or permanent spell dispelled."
     },
     {
-      "id": "6.1.2.1.9",
+      "id": "6.1.2.3.9",
       "source": "core",
       "level": 5,
       "title": "Enchant",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 14,
         "column": "left",
@@ -974,10 +1145,11 @@
       "content": "If a Hero with a colored Magic Cube may choose to take 3 consecutive Enchant Actions in a single turn to enchant a Map Tile. Enchanting Map Tiles aids in future spell casting.\n\n- The Map Tile in which the Hero is located is flipped over to the opposite side. The name of the tile should be placed so that it matches the previous orientation. All counters and tokens are placed in the same clearings in which they existed prior to the flip.\n\n- The player removes any Magic Cubes that are on the Map Tile and returns them to the pool. The player places one Magic Cube from the pool matching a Magic Cube they possess (*even if wounded*) and places it on the Map Tile.\n\nAny inactive permanent spells in a Map Tile enchanted with a matching color are activated immediately. This effect happens at any time during the game.\n\nA Hero casting a spell in an enchanted Map Tile may ignore one matching spell box on the Spell Card, including a multicolor spell box (see Spells, p. 22)."
     },
     {
-      "id": "6.1.2.1.10",
+      "id": "6.1.2.3.10",
       "source": "core",
       "level": 5,
       "title": "Explore",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 14,
         "column": "right",
@@ -987,10 +1159,11 @@
       "content": "*[Only used with the Exploration rules]* A Hero in a clearing with a path leading off the map may explore that adjacent empty location. To Explore, select a path leading off the map, draw the bottom Map Tile, and place it connected to that path in any orientation, with either side face-up. All edges must match adjacent Map Tiles: paths to paths and non-paths to non-paths. The Map Tile must be placed if possible; otherwise, the action is forfeited and the Map Tile is returned to the top of the stack. After placement, the Hero may move into a connected clearing **on the new Map Tile**, paying any additional cost to enter a Mountain or Swamp Clearing.\n\n**Mountain Exploration:** If a player is in a Mountain Clearing, they may explore any adjacent empty Map Tile location. The Map Tile is placed using the explore rules above. The Map Tile must connect to at least one path on **any** tile."
     },
     {
-      "id": "6.1.2.1.11",
+      "id": "6.1.2.3.11",
       "source": "core",
       "level": 5,
       "title": "Pass",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 14,
         "column": "right",
@@ -999,10 +1172,11 @@
       "content": "The Hero’s Action Phase ends."
     },
     {
-      "id": "6.1.2.2",
+      "id": "6.1.2.4",
       "source": "core",
       "level": 4,
       "title": "Reactions",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 14,
         "column": "right",
@@ -1011,10 +1185,11 @@
       "content": "Reactions are special actions that can only be taken when certain circumstances are met, and they can be taken out of turn or even out of the Action Phase. Every reaction defines one or more trigger conditions, and every time a trigger condition is met the player may carry out the reaction once."
     },
     {
-      "id": "6.1.2.2.1",
+      "id": "6.1.2.4.1",
       "source": "core",
       "level": 5,
       "title": "Hide",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 14,
         "column": "right",
@@ -1028,6 +1203,7 @@
       "source": "core",
       "level": 3,
       "title": "Player Turn End",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 14,
         "column": "right",
@@ -1040,6 +1216,7 @@
       "source": "core",
       "level": 2,
       "title": "Battle Phase",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 15,
         "column": "left",
@@ -1052,6 +1229,7 @@
       "source": "core",
       "level": 3,
       "title": "Monster Activation",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 15,
         "column": "left",
@@ -1064,6 +1242,7 @@
       "source": "core",
       "level": 3,
       "title": "Summoning: Monster Activation Example",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 15,
         "column": "right",
@@ -1076,6 +1255,7 @@
       "source": "core",
       "level": 4,
       "title": "Monster Activation",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 15,
         "column": "right",
@@ -1088,6 +1268,7 @@
       "source": "core",
       "level": 5,
       "title": "Enchanter’s and Sorcerer’s Map Tile",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 15,
         "column": "right",
@@ -1100,6 +1281,7 @@
       "source": "core",
       "level": 5,
       "title": "Barbarian’s Map Tile",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 15,
         "column": "right",
@@ -1112,6 +1294,7 @@
       "source": "core",
       "level": 5,
       "title": "Cleric’s Map Tile",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 15,
         "column": "right",
@@ -1124,6 +1307,7 @@
       "source": "core",
       "level": 5,
       "title": "Druid’s Map Tile",
+      "headingStyle": "pdf-l5",
       "location": {
         "page": 16,
         "column": "left",
@@ -1136,6 +1320,7 @@
       "source": "core",
       "level": 3,
       "title": "Combat",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 16,
         "column": "left",
@@ -1148,6 +1333,7 @@
       "source": "core",
       "level": 4,
       "title": "Ambush",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 16,
         "column": "left",
@@ -1160,18 +1346,72 @@
       "source": "core",
       "level": 4,
       "title": "Combat Steps",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 16,
         "column": "left",
         "section": "middle"
       },
-      "content": "The combat steps in each clearing are as follows. Should it matter, all steps are done in player Turn Order. Each circuit through these steps is called a Combat Round: **1.\t Challenge:** In player order, hidden Heroes may choose to become unhidden. Then, each Monster challenges a random unhidden Hero in the clearing. *Remember: A Monster controlled by a Hero is considered a Hero.*\n\n- Multiple Monsters may challenge a single Hero, even if other Heroes are not challenged by a Monster.\n\n- A Hero that is Shape Shifted into a Monster is still considered a Hero.\n\n- Monsters under the control of a Hero (*e.g. Elementals*) are considered Heroes for all purposes during combat.\n\n- Monsters do not challenge Natives and vice versa. They ignore one another. **2.\t Activation:** A Hero with inactive permanent spells may activate any matching spells of their choice by moving a Magic Cube of the spell’s color from their healthy box to their wounded box. A Hero may wound any number of Magic Cubes to activate different matching spells. See Spells on page 22.\n- If a Hero is on a Map Tile enchanted with a Magic Cube matching the color of a permanent spell, the matching spell activates automatically and does not require wounding a Magic Cube.\n\n- A Hero may not wound a cube to activate an inactive permanent spell that is affecting another Hero. **3.\t Evade:** In player order, Heroes may evade combat if they can place more brown Speed Cubes in their maneuver speed boxes than the highest single maneuver speed of all Monsters that are challenging them.\n\n- If the player cannot place enough brown Speed Cubes in the maneuver speed boxes, the Hero may not evade combat.\n\n- Heroes that evade take no further part in combat and are placed on a path leading out of the clearing of the player’s choice (*not a Gate*). If there is no valid path out of the clearing, they may not evade. Next turn, they must move as their first action. Return the cubes to their healthy box.\n\n- Evaded Monsters do not challenge other Heroes this Combat Round. **4.\t Target:** Heroes, and then Monsters, choose a target for this Combat Round.\n- Monsters always target the Hero they are challenging.\n\n- In player order, each Hero in the clearing selects a Monster to target. Place the Hero’s Targeting Token on the Monster they are attacking. Multiple Heroes may attack the same Monster. Some spells may target multiple foes.\n\n- When targeting with a controlled Monster, the Hero selects which side of the Monster chip to place face-up.\n\n- If a Monster was evaded by the Hero they challenged, the Monster attacks no one, but may still be targeted by an attack from another Hero.\n\n- Some spells allow targeting of Heroes (*for beneficial purposes*). **5.\t Hero Tactics:** In secret, each Hero places their Action Cubes on the boxes for their might, spells, attack speed, and/or maneuver speed.\n- A Hero may place up to 5 Action Cubes on their boxes. The Action Cube limit is +1 Speed Cube if the Hero performed an Alert Action during the Action Phase this turn.\n\n- Red Might Cubes may only be placed on red might boxes. This represents the strength that the Hero is putting into the attack.\n\n- Brown Speed Cubes may only be placed on attack speed and/or maneuver speed boxes (*both brown*). This represents the speed of the Hero’s attack and maneuver. An attack or maneuver speed of 0 or less is still an attack and/or maneuver.\n\n- Magic Cubes may only be placed on boxes that match the color of the cube being placed. Note that some boxes accept any color of Magic Cube.\n\n- Each Combat Round, a Hero may only use one card that casts a spell or causes an attack to occur. A Hero may place additional cubes on other Treasure Cards, if they wish. A Hero may always place cubes on their Lineage and Class Cards.\n\n- A Hero may not place cubes on possessions in their backpack.\n\n- If a Hero is placing cubes on a card, they must fill all dark red or dark brown (*mandatory*) boxes on the card. They do not have to place cubes in the light red or light brown (*optional*) boxes on a card.\n\n- If the Hero is casting a spell, all boxes on the Spell Card must be filled with 1 cube of the matching color. Multi-color boxes may contain any color of Magic Cube. *Exception: If the Map Tile is enchanted, any one box matching* *the enchanting color does not need to be filled*.\n\n- Once all players have placed their Action Cubes, reveal all placements.\n\n**6.\t Monster Tactics:** For each **uncontrolled** Monster in the clearing, roll one Monster Die. If it shows a Monster symbol, flip the Monster Chip over. These are the new characteristics of the Monster for this round of combat.\n\nAt the end of Monster tactics, if a Monster’s tactics are an attack with multiple targets (*e.g. Fireball*), the Monster will add random additional Heroes as targets, in addition to the Hero they originally targeted. **7.\t Resolve:** Process all attacks in attack speed order and fully resolve one attack before proceeding to the next. **A.\t Attack Order:** Starting with the fastest unresolved attack speed, regardless if it is a spell or a weapon, process the attack.\n\n- Ties for attack speed are broken by the attack length shown on each Weapon or Spell Card (*the number on top of a sword icon*).\n\n- The attack length of Monsters is shown as a red number near the attack speed on the counter. No number indicates an attack length of 0.\n\n- Tied attack speeds and attack lengths strike simultaneously. If spell resolution order matters, break ties randomly.\n\n**B.\t Attack Resolution:** For each attack in order, perform the following steps.\n\n- If the attacker’s attack speed is faster than the target’s maneuver speed, the attack hits. Otherwise, roll the two Hit Dice.\n\n![](/images/pdf/5ea310ce38685a2f70c774fca67fd5f892ea8baf.png)\n\n- If either die is blank: The attack misses.\n\n- If both dice are hit symbols: The attack hits.\n\n![](/images/pdf/cb442c7b50f04d0747de8db542eccc2af9371a20.jpeg)\n\n- If the dice are any combination of hits and equal signs: The attack hits if the attacker’s attack speed is equal to the maneuver speed of the target. Otherwise, it misses.\n\n![](/images/pdf/ce0485b25783048d07f54d9e3938e6f10602f54d.jpeg)\n\n**C.\t Damage:** If the attack misses, ignore this step; proceed to step D.\n\n**Golden Rule of Damage:**\n\nAny time a target is hit by an attack with an actual damage one or more, it will either be killed or take one wound. Attacks with an actual damage of less than one have no effect and are ignored.\n\n- If the attack is a spell, apply the effects of the spell as printed on the card. Spells are explained on page 22 of these rules.\n\n- If a weapon, count the number of cubes on the Weapon Card or the number printed on the red cube on the Monster Chip. Add to this damage the number of sword icons covered by cubes on the Weapon Card or printed on the Monster Chip. This is the base damage.\n\n- A Monster or Native is armored if there is a shield icon on the counter. A Hero must choose whether an attack on them hits their head or torso. A Hero is armored if they have an armor card in the position being hit. If the Hero has a shield in a weapon position, they may choose if they want to use the shield as armor for any attack. A Hero must choose which armor to use, if any, before Ranged Attack Dice rolls.\n\n- If the attack has one or more sword icons on it and the target is armored, reduce the base damage by one.\n\n- If the attack is a ranged attack (*arrow symbol on the Monster, Weapon*\n\n*Card, or Spell Card*), the attacking Hero rolls the two Ranged Attack Dice and adjust the base damage by the worst result shown.\n\n- This is the damage done to the target. If the damage damage is less than one, proceed to step D**.**\n\n- **The target is a Monster:**\n- If the damage is greater than or equal to Monster’s health, the Monster is killed.\n\n- **Monster health:** Health is the printed health value on top of a Heart/shield/undead symbol on the counter, minus any wounds on the counter (*see Wounds on page 17*).\n\n- If the damage is less than the Monster’s health, the Monster receives one wound (*see Wounds on page 17*).\n\n- **The target is a Hero using armor:**\n- The Hero receives one wound (*see Wounds on page 17*).\n\n- If the damage is higher than the number in the shield icon of the armor card, the armor is destroyed. Removed from the game.\n\n- If the damage is equal to the number in the shield icon of the armor card, the armor is damaged. If the armor already has a pink cube on it, it is destroyed. Otherwise, place a pink Status Cube on the armor card.\n\n- If the damage is less than the number on the shield icon of the armor card, the armor is not damaged or destroyed.\n\n- **The target is a Hero not using armor:**\n- If the damage is greater than or equal to the Hero’s health, the Hero is killed.\n\n- **Hero health:** A Hero’s health is equal to the number of Hearts in the Hero’s healthy box. Hearts in the wounded box and non-Heart Action Cubes have no impact on health.\n\n- If the damage is less than the health of the Hero, the Hero receives one wound.\n\n**D.\t Repeat step 7:** Resolve the next attack in attack speed order until all attacks have been resolved for the Combat Round. **8.\t Cleanup:** A quick end-of-round clean-up step occurs.\n\n- **Adjust Equipment:** A Hero that did not cast a spell or use an Item or Treasure Card this Combat Round may unequip one card and then equip one card. This card may be the same card (*see Equipping on page 21*).\n\n- **Rearm:** A Hero that threw a melee/ranged weapon may equip one card from their backpack to the vacated weapon position on their Hero Board.\n\n- **Ambush:** If a hidden Hero cast a spell or used an Item Card or Treasure Card this Combat Round, they must roll to stay hidden. Heroes that fail to hide are unhidden for all purposes for the remainder of Combat.\n\nNote: Heroes that performed a Sneak Action this turn may not ignore any Monster symbol results on this hide attempt. The Halfling’s Lineage advantage may not be used to reroll a Monster Die.\n\n- **Spell Wound:** If a Hero cast a spell with a cube in a spell box containing a wound symbol, that cube is moved to the wounded box for that Hero.\n\n- All remaining Action Cubes are placed in the Hero’s healthy box.\n\n- If two consecutive rounds of combat occur without any Hero or Monster taking a wound or dying, combat ends in the clearing for the turn. Otherwise, proceed to step 1 of combat and repeat these steps."
+      "content": "The combat steps in each clearing are as follows. Should it matter, all steps are done in player Turn Order. Each circuit through these steps is called a Combat Round: **1.\t Challenge:** In player order, hidden Heroes may choose to become unhidden. Then, each Monster challenges a random unhidden Hero in the clearing. *Remember: A Monster controlled by a Hero is considered a Hero.*\n\n- Multiple Monsters may challenge a single Hero, even if other Heroes are not challenged by a Monster.\n\n- A Hero that is Shape Shifted into a Monster is still considered a Hero.\n\n- Monsters under the control of a Hero (*e.g. Elementals*) are considered Heroes for all purposes during combat.\n\n- Monsters do not challenge Natives and vice versa. They ignore one another. **2.\t Activation:** A Hero with inactive permanent spells may activate any matching spells of their choice by moving a Magic Cube of the spell’s color from their healthy box to their wounded box. A Hero may wound any number of Magic Cubes to activate different matching spells. See Spells on page 22.\n- If a Hero is on a Map Tile enchanted with a Magic Cube matching the color of a permanent spell, the matching spell activates automatically and does not require wounding a Magic Cube.\n\n- A Hero may not wound a cube to activate an inactive permanent spell that is affecting another Hero. **3.\t Evade:** In player order, Heroes may evade combat if they can place more brown Speed Cubes in their maneuver speed boxes than the highest single maneuver speed of all Monsters that are challenging them.\n\n- If the player cannot place enough brown Speed Cubes in the maneuver speed boxes, the Hero may not evade combat.\n\n- Heroes that evade take no further part in combat and are placed on a path leading out of the clearing of the player’s choice (*not a Gate*). If there is no valid path out of the clearing, they may not evade. Next turn, they must move as their first action. Return the cubes to their healthy box.\n\n- Evaded Monsters do not challenge other Heroes this Combat Round. **4.\t Target:** Heroes, and then Monsters, choose a target for this Combat Round.\n- Monsters always target the Hero they are challenging.\n\n- In player order, each Hero in the clearing selects a Monster to target. Place the Hero’s Targeting Token on the Monster they are attacking. Multiple Heroes may attack the same Monster. Some spells may target multiple foes.\n\n- When targeting with a controlled Monster, the Hero selects which side of the Monster chip to place face-up.\n\n- If a Monster was evaded by the Hero they challenged, the Monster attacks no one, but may still be targeted by an attack from another Hero.\n\n- Some spells allow targeting of Heroes (*for beneficial purposes*). **5.\t Hero Tactics:** In secret, each Hero places their Action Cubes on the boxes for their might, spells, attack speed, and/or maneuver speed.\n- A Hero may place up to 5 Action Cubes on their boxes. The Action Cube limit is +1 Speed Cube if the Hero performed an Alert Action during the Action Phase this turn.\n\n- Red Might Cubes may only be placed on red might boxes. This represents the strength that the Hero is putting into the attack.\n\n- Brown Speed Cubes may only be placed on attack speed and/or maneuver speed boxes (*both brown*). This represents the speed of the Hero’s attack and maneuver. An attack or maneuver speed of 0 or less is still an attack and/or maneuver.\n\n- Magic Cubes may only be placed on boxes that match the color of the cube being placed. Note that some boxes accept any color of Magic Cube.\n\n- Each Combat Round, a Hero may only use one card that casts a spell or causes an attack to occur. A Hero may place additional cubes on other Treasure Cards, if they wish. A Hero may always place cubes on their Lineage and Class Cards.\n\n- A Hero may not place cubes on possessions in their backpack.\n\n- If a Hero is placing cubes on a card, they must fill all dark red or dark brown (*mandatory*) boxes on the card. They do not have to place cubes in the light red or light brown (*optional*) boxes on a card.\n\n- If the Hero is casting a spell, all boxes on the Spell Card must be filled with 1 cube of the matching color. Multi-color boxes may contain any color of Magic Cube. *Exception: If the Map Tile is enchanted, any one box matching* *the enchanting color does not need to be filled*.\n\n- Once all players have placed their Action Cubes, reveal all placements.\n\n**6.\t Monster Tactics:** For each **uncontrolled** Monster in the clearing, roll one Monster Die. If it shows a Monster symbol, flip the Monster Chip over. These are the new characteristics of the Monster for this round of combat.\n\nAt the end of Monster tactics, if a Monster’s tactics are an attack with multiple targets (*e.g. Fireball*), the Monster will add random additional Heroes as targets, in addition to the Hero they originally targeted. **7.\t Resolve:** Process all attacks in attack speed order and fully resolve one attack before proceeding to the next. **A.\t Attack Order:** Starting with the fastest unresolved attack speed, regardless if it is a spell or a weapon, process the attack.\n\n- Ties for attack speed are broken by the attack length shown on each Weapon or Spell Card (*the number on top of a sword icon*).\n\n- The attack length of Monsters is shown as a red number near the attack speed on the counter. No number indicates an attack length of 0.\n\n- Tied attack speeds and attack lengths strike simultaneously. If spell resolution order matters, break ties randomly.\n\n**B.\t Attack Resolution:** For each attack in order, perform the following steps.\n\n- If the attacker’s attack speed is faster than the target’s maneuver speed, the attack hits. Otherwise, roll the two Hit Dice.\n\n![](/images/pdf/5ea310ce38685a2f70c774fca67fd5f892ea8baf.png)\n\n- If either die is blank: The attack misses.\n\n- If both dice are hit symbols: The attack hits.\n\n![](/images/pdf/cb442c7b50f04d0747de8db542eccc2af9371a20.jpeg)\n\n- If the dice are any combination of hits and equal signs: The attack hits if the attacker’s attack speed is equal to the maneuver speed of the target. Otherwise, it misses.\n\n![](/images/pdf/ce0485b25783048d07f54d9e3938e6f10602f54d.jpeg)\n\n**C.\t Damage:** If the attack misses, ignore this step; proceed to step D."
+    },
+    {
+      "id": "6.2.3.2.1",
+      "source": "core",
+      "level": 5,
+      "title": "Golden Rule of Damage:",
+      "headingStyle": "pdf-body-bold-12",
+      "location": {
+        "page": 17,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Any time a target is hit by an attack with an actual damage one or more, it will either be killed or take one wound. Attacks with an actual damage of less than one have no effect and are ignored.\n\n- If the attack is a spell, apply the effects of the spell as printed on the card. Spells are explained on page 22 of these rules.\n\n- If a weapon, count the number of cubes on the Weapon Card or the number printed on the red cube on the Monster Chip. Add to this damage the number of sword icons covered by cubes on the Weapon Card or printed on the Monster Chip. This is the base damage.\n\n- A Monster or Native is armored if there is a shield icon on the counter. A Hero must choose whether an attack on them hits their head or torso. A Hero is armored if they have an armor card in the position being hit. If the Hero has a shield in a weapon position, they may choose if they want to use the shield as armor for any attack. A Hero must choose which armor to use, if any, before Ranged Attack Dice rolls.\n\n- If the attack has one or more sword icons on it and the target is armored, reduce the base damage by one.\n\n- If the attack is a ranged attack (*arrow symbol on the Monster, Weapon*\n\n*Card, or Spell Card*), the attacking Hero rolls the two Ranged Attack Dice and adjust the base damage by the worst result shown.\n\n- This is the damage done to the target. If the damage damage is less than one, proceed to step D**.**"
+    },
+    {
+      "id": "6.2.3.2.1.1",
+      "source": "core",
+      "level": 6,
+      "title": "The target is a Monster:",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 17,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "- If the damage is greater than or equal to Monster’s health, the Monster is killed.\n\n- **Monster health:** Health is the printed health value on top of a Heart/shield/undead symbol on the counter, minus any wounds on the counter (*see Wounds on page 17*).\n\n- If the damage is less than the Monster’s health, the Monster receives one wound (*see Wounds on page 17*)."
+    },
+    {
+      "id": "6.2.3.2.1.2",
+      "source": "core",
+      "level": 6,
+      "title": "The target is a Hero using armor:",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 17,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "- The Hero receives one wound (*see Wounds on page 17*).\n\n- If the damage is higher than the number in the shield icon of the armor card, the armor is destroyed. Removed from the game.\n\n- If the damage is equal to the number in the shield icon of the armor card, the armor is damaged. If the armor already has a pink cube on it, it is destroyed. Otherwise, place a pink Status Cube on the armor card.\n\n- If the damage is less than the number on the shield icon of the armor card, the armor is not damaged or destroyed."
+    },
+    {
+      "id": "6.2.3.2.1.3",
+      "source": "core",
+      "level": 6,
+      "title": "The target is a Hero not using armor:",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 17,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "- If the damage is greater than or equal to the Hero’s health, the Hero is killed.\n\n- **Hero health:** A Hero’s health is equal to the number of Hearts in the Hero’s healthy box. Hearts in the wounded box and non-Heart Action Cubes have no impact on health.\n\n- If the damage is less than the health of the Hero, the Hero receives one wound.\n\n**D.\t Repeat step 7:** Resolve the next attack in attack speed order until all attacks have been resolved for the Combat Round. **8.\t Cleanup:** A quick end-of-round clean-up step occurs.\n\n- **Adjust Equipment:** A Hero that did not cast a spell or use an Item or Treasure Card this Combat Round may unequip one card and then equip one card. This card may be the same card (*see Equipping on page 21*).\n\n- **Rearm:** A Hero that threw a melee/ranged weapon may equip one card from their backpack to the vacated weapon position on their Hero Board.\n\n- **Ambush:** If a hidden Hero cast a spell or used an Item Card or Treasure Card this Combat Round, they must roll to stay hidden. Heroes that fail to hide are unhidden for all purposes for the remainder of Combat.\n\nNote: Heroes that performed a Sneak Action this turn may not ignore any Monster symbol results on this hide attempt. The Halfling’s Lineage advantage may not be used to reroll a Monster Die.\n\n- **Spell Wound:** If a Hero cast a spell with a cube in a spell box containing a wound symbol, that cube is moved to the wounded box for that Hero.\n\n- All remaining Action Cubes are placed in the Hero’s healthy box.\n\n- If two consecutive rounds of combat occur without any Hero or Monster taking a wound or dying, combat ends in the clearing for the turn. Otherwise, proceed to step 1 of combat and repeat these steps."
     },
     {
       "id": "6.2.3.3",
       "source": "core",
       "level": 4,
       "title": "Wounds",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 18,
         "column": "left",
@@ -1185,6 +1425,7 @@
       "source": "core",
       "level": 4,
       "title": "Monster Death",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 18,
         "column": "left",
@@ -1197,6 +1438,7 @@
       "source": "core",
       "level": 4,
       "title": "Hero Death",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 18,
         "column": "left",
@@ -1209,6 +1451,7 @@
       "source": "core",
       "level": 3,
       "title": "End of Combat",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 18,
         "column": "right",
@@ -1221,6 +1464,7 @@
       "source": "core",
       "level": 2,
       "title": "Retirement",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 18,
         "column": "right",
@@ -1233,6 +1477,7 @@
       "source": "core",
       "level": 2,
       "title": "Starting a New Hero",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 18,
         "column": "right",
@@ -1245,6 +1490,7 @@
       "source": "core",
       "level": 2,
       "title": "End of the Game",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 18,
         "column": "right",
@@ -1257,6 +1503,7 @@
       "source": "core",
       "level": 3,
       "title": "Combat Example",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 19,
         "column": "left",
@@ -1269,6 +1516,7 @@
       "source": "core",
       "level": 4,
       "title": "Combat Round 1",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 19,
         "column": "left",
@@ -1281,6 +1529,7 @@
       "source": "core",
       "level": 3,
       "title": "Combat Example",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 19,
         "column": "right",
@@ -1293,6 +1542,7 @@
       "source": "core",
       "level": 3,
       "title": "Combat Example",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 20,
         "column": "left",
@@ -1305,6 +1555,7 @@
       "source": "core",
       "level": 4,
       "title": "Combat Round 2",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 20,
         "column": "left",
@@ -1317,6 +1568,7 @@
       "source": "core",
       "level": 1,
       "title": "OTHER RULES",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 20,
         "column": "right",
@@ -1329,6 +1581,7 @@
       "source": "core",
       "level": 2,
       "title": "Statuses",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 20,
         "column": "right",
@@ -1341,6 +1594,7 @@
       "source": "core",
       "level": 3,
       "title": "Hidden Status",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 20,
         "column": "right",
@@ -1353,6 +1607,7 @@
       "source": "core",
       "level": 4,
       "title": "Action Phase",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 20,
         "column": "right",
@@ -1365,6 +1620,7 @@
       "source": "core",
       "level": 4,
       "title": "Battle Phase",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 20,
         "column": "right",
@@ -1377,6 +1633,7 @@
       "source": "core",
       "level": 2,
       "title": "Treasures and Items",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 20,
         "column": "right",
@@ -1389,6 +1646,7 @@
       "source": "core",
       "level": 3,
       "title": "Items",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 20,
         "column": "right",
@@ -1401,6 +1659,7 @@
       "source": "core",
       "level": 3,
       "title": "Deep Treasures vs. Treasures",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 20,
         "column": "right",
@@ -1413,6 +1672,7 @@
       "source": "core",
       "level": 3,
       "title": "Epic Treasures",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 21,
         "column": "left",
@@ -1426,6 +1686,7 @@
       "source": "core",
       "level": 3,
       "title": "Treasure and Item Banners",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 21,
         "column": "left",
@@ -1438,6 +1699,7 @@
       "source": "core",
       "level": 2,
       "title": "Equipping",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 22,
         "column": "left",
@@ -1450,6 +1712,7 @@
       "source": "core",
       "level": 2,
       "title": "Haggling",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 22,
         "column": "right",
@@ -1462,6 +1725,7 @@
       "source": "core",
       "level": 2,
       "title": "Natives",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 23,
         "column": "left",
@@ -1474,6 +1738,7 @@
       "source": "core",
       "level": 2,
       "title": "Undead",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 23,
         "column": "left",
@@ -1487,19 +1752,34 @@
       "source": "core",
       "level": 2,
       "title": "Spells",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 23,
         "column": "left",
         "section": "middle"
       },
       "icon": "/images/pdf/0f9fe76b19b070ad07e496255c6730a448276dc6.jpeg",
-      "content": "One way Heroes access magic is via spells. One deck of Spell Cards is labeled “Hero Starting Spell”, and is only used when a player creates a Hero and selects their starting spells. Do not shuffle this deck. Once Heroes have selected their starting spells, this deck is set aside and not used in this game session. The setup of the deck labeled “Spell”, is described in the setup procedures of these rules. Heroes may cast spells using the cards of either deck. Heroes may learn the same spell from each deck.\n\nName\n\nBase Price\n\nSpell Effects\n\nSpell Values (various effects)\n\nSpell Type\n\nRequirements\n\nSpells are only cast during combat. Spells may be cast each Battle Phase **even if no** **Monsters are present in a clearing**. If the Hero was hidden when the spell was cast, they must attempt a Hide reaction to remain hidden (*See Ambush on page 16*). This hide attempt is not be modified by the Sneak Action or the Halfling ability.\n\nTo cast a spell, take Magic Cubes from the healthy area of your Hero Board, and cover all boxes on the Spell Card with matching colors (*multicolor boxes may be* *covered by any color Magic Cube*). If you cannot cover all the boxes, you cannot cast the spell. *Exception: if the Hero is in an enchanted tile, they may ignore any one spell* *box that matches the color of the tile’s enchantment cube.*\n\nEach spell box type is differentiated by a unique color and symbol.\n\nYou may only cast one spell per Combat Round. Spells that have a duration longer than instantaneous may not be cast again until the spell is broken or expires.\n\nThe tapestry on each Spell Card shows the spells characteristics as follows:\n\n![float-left](/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg) **Price:** The base price of the spell. Spell Cards cannot be bought or sold unless attached to a Spell Book or Spell Scroll. When a Hero buys or sells a Spell Book or Spell Scroll, all spells remain attached to the Treasure Card. The base price of a Spell Book or Spell Scroll is the sum of the spells attached to the Treasure Card (*see page 29 for more information on Spell* *Books and Spell Scrolls*).\n\n![float-left](/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png) **Targeted:** This spell must be targeted at the caster or a single target in the clearing with the caster. If there is a number in the target symbol, the caster may target up to that many targets. The spell only takes effect if the spell hits using normal attack rules. A Hero may voluntarily accept a hit from a targeted spell when cast.\n\n![float-left](/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png) **Self or other:** This spell may be cast on self, another Hero, or a Monster in the same clearing as the caster. The spell does not need to hit to take effect.\n\n![float-left](/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg) **Self:** This spell targets the caster and takes effect when cast.\n\n![float-left](/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png) **Melee:** The casting of this spell acts like a melee weapon. If it hits, treat it like a melee weapon attack per the explanation on the card.\n\n![float-left](/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png) **Ranged:** The casting of this spell acts like a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack.\n\n![float-left](/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png) **Instantaneous:** The spell occurs instantly and then expires.\n\n![float-left](/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png) **Combat:** The spell lasts for the duration of combat or until the caster or target is killed or evades. Then the spell expires.\n\n![float-left](/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png) **Turn:** The spell effects expire at the beginning of the Combat Phase of the following turn. These spells are most commonly used to enhance a Hero’s actions during the next turn.\n\n![float-left](/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png) **Permanent:** The spell is permanent and never expires. Permanent spells can be in two states: active and inactive. Place active permanent spells face-up next to the Hero Board for the targeted Hero or Monster as a reminder that the spell is in effect.\n\n**Active:** When a permanent spell is active, the effects of the spell as described on the card apply. Permanent spells become active in one of four ways:\n\n- When initially cast\n\n- During the activation step of combat.\n\n- Being in a Map Tile enchanted with the matching magic color.\n\n- Being in a clearing with a source of colored magic (*e.g. from a treasure*).\n\n**Inactive:** Active permanent spells become inactive at the start of the following turn’s Combat Phase. When a permanent spell is inactive, its effects do not apply. The spell is inert. Flip the card face-down, but leave it next to the targeted Hero or Monster. If the spell is broken, the Spell Card is returned to the caster to be cast again.\n\nPermanent spells may not be voluntarily broken nor revoked by the caster. Permanent spells are broken in one of three ways:\n\n- The target of the spell dies.\n\n- A Break Spells spell is cast on the target.\n\n- A Hero in a Civilization Location may remove any number of permanent spells from a willing Hero in the clearing for a cost of 5 Gold per permanent spell dispelled.\n\n**Permanent Spell Example:**\n\nAn Illusionist casts Vapor Form on herself during the game. Later, the Illusionist moves into a clearing in a Map Tile that is enchanted with gray magic. The Illusionist instantly becomes vapor. The Illusionist will continue to be vapor until the end of the Action Phase in which they are not in the presence of gray magic at any point during their turn.\n\n![float-left](/images/pdf/f61e10fec22c7e9408c137bc9814161e84d115eb.jpeg) **Undead:** Some spells are marked with an undead symbol. Undead are immune to these spells in all ways."
+      "content": "One way Heroes access magic is via spells. One deck of Spell Cards is labeled “Hero Starting Spell”, and is only used when a player creates a Hero and selects their starting spells. Do not shuffle this deck. Once Heroes have selected their starting spells, this deck is set aside and not used in this game session. The setup of the deck labeled “Spell”, is described in the setup procedures of these rules. Heroes may cast spells using the cards of either deck. Heroes may learn the same spell from each deck.\n\nName\n\nBase Price\n\nSpell Effects\n\nSpell Values (various effects)\n\nSpell Type\n\nRequirements\n\nSpells are only cast during combat. Spells may be cast each Battle Phase **even if no** **Monsters are present in a clearing**. If the Hero was hidden when the spell was cast, they must attempt a Hide reaction to remain hidden (*See Ambush on page 16*). This hide attempt is not be modified by the Sneak Action or the Halfling ability.\n\nTo cast a spell, take Magic Cubes from the healthy area of your Hero Board, and cover all boxes on the Spell Card with matching colors (*multicolor boxes may be* *covered by any color Magic Cube*). If you cannot cover all the boxes, you cannot cast the spell. *Exception: if the Hero is in an enchanted tile, they may ignore any one spell* *box that matches the color of the tile’s enchantment cube.*\n\nEach spell box type is differentiated by a unique color and symbol.\n\nYou may only cast one spell per Combat Round. Spells that have a duration longer than instantaneous may not be cast again until the spell is broken or expires.\n\nThe tapestry on each Spell Card shows the spells characteristics as follows:\n\n![float-left](/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg) **Price:** The base price of the spell. Spell Cards cannot be bought or sold unless attached to a Spell Book or Spell Scroll. When a Hero buys or sells a Spell Book or Spell Scroll, all spells remain attached to the Treasure Card. The base price of a Spell Book or Spell Scroll is the sum of the spells attached to the Treasure Card (*see page 29 for more information on Spell* *Books and Spell Scrolls*).\n\n![float-left](/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png) **Targeted:** This spell must be targeted at the caster or a single target in the clearing with the caster. If there is a number in the target symbol, the caster may target up to that many targets. The spell only takes effect if the spell hits using normal attack rules. A Hero may voluntarily accept a hit from a targeted spell when cast.\n\n![float-left](/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png) **Self or other:** This spell may be cast on self, another Hero, or a Monster in the same clearing as the caster. The spell does not need to hit to take effect.\n\n![float-left](/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg) **Self:** This spell targets the caster and takes effect when cast.\n\n![float-left](/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png) **Melee:** The casting of this spell acts like a melee weapon. If it hits, treat it like a melee weapon attack per the explanation on the card.\n\n![float-left](/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png) **Ranged:** The casting of this spell acts like a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack.\n\n![float-left](/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png) **Instantaneous:** The spell occurs instantly and then expires.\n\n![float-left](/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png) **Combat:** The spell lasts for the duration of combat or until the caster or target is killed or evades. Then the spell expires.\n\n![float-left](/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png) **Turn:** The spell effects expire at the beginning of the Combat Phase of the following turn. These spells are most commonly used to enhance a Hero’s actions during the next turn.\n\n![float-left](/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png) **Permanent:** The spell is permanent and never expires. Permanent spells can be in two states: active and inactive. Place active permanent spells face-up next to the Hero Board for the targeted Hero or Monster as a reminder that the spell is in effect.\n\n**Active:** When a permanent spell is active, the effects of the spell as described on the card apply. Permanent spells become active in one of four ways:\n\n- When initially cast\n\n- During the activation step of combat.\n\n- Being in a Map Tile enchanted with the matching magic color.\n\n- Being in a clearing with a source of colored magic (*e.g. from a treasure*).\n\n**Inactive:** Active permanent spells become inactive at the start of the following turn’s Combat Phase. When a permanent spell is inactive, its effects do not apply. The spell is inert. Flip the card face-down, but leave it next to the targeted Hero or Monster. If the spell is broken, the Spell Card is returned to the caster to be cast again.\n\nPermanent spells may not be voluntarily broken nor revoked by the caster. Permanent spells are broken in one of three ways:\n\n- The target of the spell dies.\n\n- A Break Spells spell is cast on the target.\n\n- A Hero in a Civilization Location may remove any number of permanent spells from a willing Hero in the clearing for a cost of 5 Gold per permanent spell dispelled."
+    },
+    {
+      "id": "7.7.1",
+      "source": "core",
+      "level": 3,
+      "title": "Permanent Spell Example:",
+      "headingStyle": "pdf-body-bold-12",
+      "location": {
+        "page": 24,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "An Illusionist casts Vapor Form on herself during the game. Later, the Illusionist moves into a clearing in a Map Tile that is enchanted with gray magic. The Illusionist instantly becomes vapor. The Illusionist will continue to be vapor until the end of the Action Phase in which they are not in the presence of gray magic at any point during their turn.\n\n![float-left](/images/pdf/f61e10fec22c7e9408c137bc9814161e84d115eb.jpeg) **Undead:** Some spells are marked with an undead symbol. Undead are immune to these spells in all ways."
     },
     {
       "id": "7.8",
       "source": "core",
       "level": 2,
       "title": "Missions",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 24,
         "column": "left",
@@ -1512,6 +1792,7 @@
       "source": "core",
       "level": 3,
       "title": "Mission Types",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 24,
         "column": "left",
@@ -1524,6 +1805,7 @@
       "source": "core",
       "level": 3,
       "title": "Completing a Mission",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 24,
         "column": "left",
@@ -1536,6 +1818,7 @@
       "source": "core",
       "level": 3,
       "title": "Completing a Mission Example",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 24,
         "column": "right",
@@ -1548,6 +1831,7 @@
       "source": "core",
       "level": 2,
       "title": "Flying",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 24,
         "column": "right",
@@ -1560,6 +1844,7 @@
       "source": "core",
       "level": 2,
       "title": "Curses",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "left",
@@ -1572,6 +1857,7 @@
       "source": "core",
       "level": 2,
       "title": "Outlaw Tokens",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "left",
@@ -1585,6 +1871,7 @@
       "source": "core",
       "level": 1,
       "title": "OPTIONAL RULES",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 25,
         "column": "right",
@@ -1597,6 +1884,7 @@
       "source": "core",
       "level": 2,
       "title": "Luring",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1609,6 +1897,7 @@
       "source": "core",
       "level": 2,
       "title": "Tough Monsters",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1621,6 +1910,7 @@
       "source": "core",
       "level": 2,
       "title": "Closing the Distance",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1633,6 +1923,7 @@
       "source": "core",
       "level": 2,
       "title": "Enchantment Limit",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1645,6 +1936,7 @@
       "source": "core",
       "level": 2,
       "title": "Wits Only",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1657,6 +1949,7 @@
       "source": "core",
       "level": 2,
       "title": "Shared Fame",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1669,6 +1962,7 @@
       "source": "core",
       "level": 2,
       "title": "Enchanted Paths",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1681,6 +1975,7 @@
       "source": "core",
       "level": 2,
       "title": "Enchanted Realm",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 25,
         "column": "right",
@@ -1693,6 +1988,7 @@
       "source": "core",
       "level": 2,
       "title": "Endless Monsters",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 26,
         "column": "left",
@@ -1705,6 +2001,7 @@
       "source": "core",
       "level": 2,
       "title": "Red Meat",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 26,
         "column": "left",
@@ -1717,6 +2014,7 @@
       "source": "core",
       "level": 2,
       "title": "Player vs. Player",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 26,
         "column": "left",
@@ -1729,6 +2027,7 @@
       "source": "core",
       "level": 4,
       "title": "Hero Block Reaction",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "left",
@@ -1742,6 +2041,7 @@
       "source": "core",
       "level": 4,
       "title": "Challenging",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "left",
@@ -1754,6 +2054,7 @@
       "source": "core",
       "level": 4,
       "title": "Aiming",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "left",
@@ -1766,6 +2067,7 @@
       "source": "core",
       "level": 4,
       "title": "Death Benefit",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "left",
@@ -1778,6 +2080,7 @@
       "source": "core",
       "level": 1,
       "title": "APPENDIX",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 26,
         "column": "right",
@@ -1790,6 +2093,7 @@
       "source": "core",
       "level": 2,
       "title": "Lineage Advantages",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 26,
         "column": "right",
@@ -1802,6 +2106,7 @@
       "source": "core",
       "level": 4,
       "title": "Dwarf (Caver)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1815,6 +2120,7 @@
       "source": "core",
       "level": 4,
       "title": "Elf (Magical)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1828,6 +2134,7 @@
       "source": "core",
       "level": 4,
       "title": "Halfling (Stealthy)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1841,6 +2148,7 @@
       "source": "core",
       "level": 4,
       "title": "Human (Adapted)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1854,6 +2162,7 @@
       "source": "core",
       "level": 2,
       "title": "Class Advantages",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 26,
         "column": "right",
@@ -1866,6 +2175,7 @@
       "source": "core",
       "level": 4,
       "title": "Archer (Steady)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1879,6 +2189,7 @@
       "source": "core",
       "level": 4,
       "title": "Barbarian (Mountain Lore)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1892,6 +2203,7 @@
       "source": "core",
       "level": 4,
       "title": "Cleric (Divine Protection)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1905,6 +2217,7 @@
       "source": "core",
       "level": 4,
       "title": "Conjurer (Mastery)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1918,6 +2231,7 @@
       "source": "core",
       "level": 4,
       "title": "Druid (Natural Emanation)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1931,6 +2245,7 @@
       "source": "core",
       "level": 4,
       "title": "Enchanter (Aura)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 26,
         "column": "right",
@@ -1944,6 +2259,7 @@
       "source": "core",
       "level": 4,
       "title": "Illusionist (Focus)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -1957,6 +2273,7 @@
       "source": "core",
       "level": 4,
       "title": "Knight (Health)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -1970,6 +2287,7 @@
       "source": "core",
       "level": 4,
       "title": "Rogue (Elusive)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -1983,6 +2301,7 @@
       "source": "core",
       "level": 4,
       "title": "Sorcerer (Specialized)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -1996,6 +2315,7 @@
       "source": "core",
       "level": 4,
       "title": "Warlock (Blood Lust)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -2009,6 +2329,7 @@
       "source": "core",
       "level": 4,
       "title": "Warrior (Adept)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -2022,6 +2343,7 @@
       "source": "core",
       "level": 2,
       "title": "Treasure Site Reference",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 27,
         "column": "left",
@@ -2034,6 +2356,7 @@
       "source": "core",
       "level": 4,
       "title": "Catacombs",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -2046,6 +2369,7 @@
       "source": "core",
       "level": 4,
       "title": "Chamber",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -2058,6 +2382,7 @@
       "source": "core",
       "level": 4,
       "title": "Secret Cache",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "left",
@@ -2070,6 +2395,7 @@
       "source": "core",
       "level": 4,
       "title": "Shrine",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "right",
@@ -2082,6 +2408,7 @@
       "source": "core",
       "level": 2,
       "title": "Monster Reference",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 27,
         "column": "right",
@@ -2094,6 +2421,7 @@
       "source": "core",
       "level": 4,
       "title": "Unique Monsters",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "right",
@@ -2106,6 +2434,7 @@
       "source": "core",
       "level": 4,
       "title": "Demon",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "right",
@@ -2118,6 +2447,7 @@
       "source": "core",
       "level": 4,
       "title": "Dragons",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "right",
@@ -2130,6 +2460,7 @@
       "source": "core",
       "level": 4,
       "title": "Lich",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "right",
@@ -2142,6 +2473,7 @@
       "source": "core",
       "level": 4,
       "title": "Titan",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "right",
@@ -2154,6 +2486,7 @@
       "source": "core",
       "level": 4,
       "title": "Wraith",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 27,
         "column": "right",
@@ -2166,6 +2499,7 @@
       "source": "core",
       "level": 2,
       "title": "Treasure Manifest",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 28,
         "column": "left",
@@ -2178,6 +2512,7 @@
       "source": "core",
       "level": 4,
       "title": "Adamantium Blade",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2190,6 +2525,7 @@
       "source": "core",
       "level": 4,
       "title": "Alchemist’s Mixture",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2202,6 +2538,7 @@
       "source": "core",
       "level": 4,
       "title": "Artificer’s Concoction",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2214,6 +2551,7 @@
       "source": "core",
       "level": 4,
       "title": "Ascendant Ornament",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2226,6 +2564,7 @@
       "source": "core",
       "level": 4,
       "title": "Band of Sagacity",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2238,6 +2577,7 @@
       "source": "core",
       "level": 4,
       "title": "Battle Staff",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2250,6 +2590,7 @@
       "source": "core",
       "level": 4,
       "title": "Bauble of Intelligence",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2262,6 +2603,7 @@
       "source": "core",
       "level": 4,
       "title": "Bejeweled Breastplate",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2274,6 +2616,7 @@
       "source": "core",
       "level": 4,
       "title": "Bejeweled Helm",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2286,6 +2629,7 @@
       "source": "core",
       "level": 4,
       "title": "Bejeweled Shield",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2298,6 +2642,7 @@
       "source": "core",
       "level": 4,
       "title": "Belt of Expansion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2310,6 +2655,7 @@
       "source": "core",
       "level": 4,
       "title": "Belt of the Beast",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2322,6 +2668,7 @@
       "source": "core",
       "level": 4,
       "title": "Bow of the Hunt",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2334,6 +2681,7 @@
       "source": "core",
       "level": 4,
       "title": "Bracelets of Finesse",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2346,6 +2694,7 @@
       "source": "core",
       "level": 4,
       "title": "Bracers of Vigor",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "left",
@@ -2358,6 +2707,7 @@
       "source": "core",
       "level": 4,
       "title": "Broche of Deflection",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2370,6 +2720,7 @@
       "source": "core",
       "level": 4,
       "title": "Cape of Alteration",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2382,6 +2733,7 @@
       "source": "core",
       "level": 4,
       "title": "Charismatic Gemstone",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2394,6 +2746,7 @@
       "source": "core",
       "level": 4,
       "title": "Clashing Ring",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2406,6 +2759,7 @@
       "source": "core",
       "level": 4,
       "title": "Cursed Treasure",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2418,6 +2772,7 @@
       "source": "core",
       "level": 4,
       "title": "Dagger of Bite",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2430,6 +2785,7 @@
       "source": "core",
       "level": 4,
       "title": "Decimation",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2442,6 +2798,7 @@
       "source": "core",
       "level": 4,
       "title": "Digger’s Ruin",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2454,6 +2811,7 @@
       "source": "core",
       "level": 4,
       "title": "DisEnchanter",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2466,6 +2824,7 @@
       "source": "core",
       "level": 4,
       "title": "Dust of Destiny",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2478,6 +2837,7 @@
       "source": "core",
       "level": 4,
       "title": "Earthen Cincture",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2490,6 +2850,7 @@
       "source": "core",
       "level": 4,
       "title": "Elemental Spherule",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 28,
         "column": "right",
@@ -2502,6 +2863,7 @@
       "source": "core",
       "level": 4,
       "title": "Elven Amulet",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2514,6 +2876,7 @@
       "source": "core",
       "level": 4,
       "title": "Elven Slippers",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2526,6 +2889,7 @@
       "source": "core",
       "level": 4,
       "title": "Enchanted Treasure",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2538,6 +2902,7 @@
       "source": "core",
       "level": 4,
       "title": "Gage of the Thief",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2550,6 +2915,7 @@
       "source": "core",
       "level": 4,
       "title": "Garb of the Gate",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2562,6 +2928,7 @@
       "source": "core",
       "level": 4,
       "title": "Gauntlets of Brawn",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2574,6 +2941,7 @@
       "source": "core",
       "level": 4,
       "title": "Gloves of Aggression",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2586,6 +2954,7 @@
       "source": "core",
       "level": 4,
       "title": "Golden Icon",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2598,6 +2967,7 @@
       "source": "core",
       "level": 4,
       "title": "Guard Charm",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2610,6 +2980,7 @@
       "source": "core",
       "level": 4,
       "title": "Hamblen’s Pendant",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2622,6 +2993,7 @@
       "source": "core",
       "level": 4,
       "title": "Hawkeye",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2634,6 +3006,7 @@
       "source": "core",
       "level": 4,
       "title": "Horn of the Dark Angel",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2646,6 +3019,7 @@
       "source": "core",
       "level": 4,
       "title": "Icon of the Dragon",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "left",
@@ -2658,6 +3032,7 @@
       "source": "core",
       "level": 4,
       "title": "Incanter’s Jewel",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2670,6 +3045,7 @@
       "source": "core",
       "level": 4,
       "title": "King’s Pardon",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2682,6 +3058,7 @@
       "source": "core",
       "level": 4,
       "title": "Mace of Smiting",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2694,6 +3071,7 @@
       "source": "core",
       "level": 4,
       "title": "Magical Bowl of Mixing",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2706,6 +3084,7 @@
       "source": "core",
       "level": 4,
       "title": "Mirror of Idolatry",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2718,6 +3097,7 @@
       "source": "core",
       "level": 4,
       "title": "Mithral Chainmail",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2730,6 +3110,7 @@
       "source": "core",
       "level": 4,
       "title": "Mithral Plate Armor",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2742,6 +3123,7 @@
       "source": "core",
       "level": 4,
       "title": "Mithral Shield",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2754,6 +3136,7 @@
       "source": "core",
       "level": 4,
       "title": "Potion of Energy",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2766,6 +3149,7 @@
       "source": "core",
       "level": 4,
       "title": "Potion of Flight",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2778,6 +3162,7 @@
       "source": "core",
       "level": 4,
       "title": "Potion of Healing",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2790,6 +3175,7 @@
       "source": "core",
       "level": 4,
       "title": "Potion of Maneuver",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2802,6 +3188,7 @@
       "source": "core",
       "level": 4,
       "title": "Potion of Might",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2814,6 +3201,7 @@
       "source": "core",
       "level": 4,
       "title": "Potion of Relief",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 29,
         "column": "right",
@@ -2826,6 +3214,7 @@
       "source": "core",
       "level": 4,
       "title": "Quick Ring",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2838,6 +3227,7 @@
       "source": "core",
       "level": 4,
       "title": "Ring of Malevolence",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2850,6 +3240,7 @@
       "source": "core",
       "level": 4,
       "title": "Ring of Strength",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2862,6 +3253,7 @@
       "source": "core",
       "level": 4,
       "title": "Ring of the Magi",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2874,6 +3266,7 @@
       "source": "core",
       "level": 4,
       "title": "Ring of Truth",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2886,6 +3279,7 @@
       "source": "core",
       "level": 4,
       "title": "Robe of the Chanter",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2898,6 +3292,7 @@
       "source": "core",
       "level": 4,
       "title": "Robust Ring",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2910,6 +3305,7 @@
       "source": "core",
       "level": 4,
       "title": "Satchel of a Giant",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2922,6 +3318,7 @@
       "source": "core",
       "level": 4,
       "title": "Scepter of the Sorcerer",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2934,6 +3331,7 @@
       "source": "core",
       "level": 4,
       "title": "Shadow Cloak",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2946,6 +3344,7 @@
       "source": "core",
       "level": 4,
       "title": "Shaman’s Kaftan",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2958,6 +3357,7 @@
       "source": "core",
       "level": 4,
       "title": "Shield of Defiance",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2970,6 +3370,7 @@
       "source": "core",
       "level": 4,
       "title": "Shield of Mercy",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2982,6 +3383,7 @@
       "source": "core",
       "level": 4,
       "title": "Shoes of the Thief",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -2994,6 +3396,7 @@
       "source": "core",
       "level": 4,
       "title": "Skeleton Key",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "left",
@@ -3006,6 +3409,7 @@
       "source": "core",
       "level": 4,
       "title": "Sparkler of Wisdom",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3018,6 +3422,7 @@
       "source": "core",
       "level": 4,
       "title": "Spear of Piercing",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3030,6 +3435,7 @@
       "source": "core",
       "level": 4,
       "title": "Spell Book and Spell Scroll",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3042,6 +3448,7 @@
       "source": "core",
       "level": 4,
       "title": "Summoning Marcation",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3054,6 +3461,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Alertness",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3066,6 +3474,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Commerce",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3078,6 +3487,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Greed",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3090,6 +3500,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Knowledge",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3102,6 +3513,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Magic",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3114,6 +3526,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Motion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3126,6 +3539,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Rest",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 30,
         "column": "right",
@@ -3138,6 +3552,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Stealth",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3150,6 +3565,7 @@
       "source": "core",
       "level": 4,
       "title": "Symbol of Vision",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3162,6 +3578,7 @@
       "source": "core",
       "level": 4,
       "title": "Talaria of the Gladiator",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3174,6 +3591,7 @@
       "source": "core",
       "level": 4,
       "title": "Taper of Illumination",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3186,6 +3604,7 @@
       "source": "core",
       "level": 4,
       "title": "Thief’s Lucky Coin",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3198,6 +3617,7 @@
       "source": "core",
       "level": 4,
       "title": "Time Stone",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3210,6 +3630,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of Conjuring",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3222,6 +3643,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of Fay",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3234,6 +3656,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of Nature",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3246,6 +3669,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of Power",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3258,6 +3682,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of Righteousness",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3270,6 +3695,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of the Black Arts",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3282,6 +3708,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of Tricks",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3294,6 +3721,7 @@
       "source": "core",
       "level": 4,
       "title": "Tome of Wizardry",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3306,6 +3734,7 @@
       "source": "core",
       "level": 4,
       "title": "Trickster’s Stone",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3318,6 +3747,7 @@
       "source": "core",
       "level": 4,
       "title": "Tricky Ring",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3330,6 +3760,7 @@
       "source": "core",
       "level": 4,
       "title": "Vorpal Cutlass",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3342,6 +3773,7 @@
       "source": "core",
       "level": 4,
       "title": "Wand of the Magician",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "left",
@@ -3354,6 +3786,7 @@
       "source": "core",
       "level": 4,
       "title": "Warblade",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "right",
@@ -3366,6 +3799,7 @@
       "source": "core",
       "level": 4,
       "title": "Writ of Redemption",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "right",
@@ -3378,6 +3812,7 @@
       "source": "core",
       "level": 2,
       "title": "Spell Manifest",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 31,
         "column": "right",
@@ -3390,6 +3825,7 @@
       "source": "core",
       "level": 3,
       "title": "Universal Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 31,
         "column": "right",
@@ -3403,6 +3839,7 @@
       "source": "core",
       "level": 4,
       "title": "Break Spells",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "right",
@@ -3415,6 +3852,7 @@
       "source": "core",
       "level": 3,
       "title": "Black Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 31,
         "column": "right",
@@ -3428,6 +3866,7 @@
       "source": "core",
       "level": 4,
       "title": "Affliction",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "right",
@@ -3440,6 +3879,7 @@
       "source": "core",
       "level": 4,
       "title": "Curse",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "right",
@@ -3452,6 +3892,7 @@
       "source": "core",
       "level": 4,
       "title": "Dark Matter",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "right",
@@ -3464,6 +3905,7 @@
       "source": "core",
       "level": 4,
       "title": "Rule Undead",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 31,
         "column": "right",
@@ -3476,6 +3918,7 @@
       "source": "core",
       "level": 4,
       "title": "Fiery Chasm",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "left",
@@ -3488,6 +3931,7 @@
       "source": "core",
       "level": 3,
       "title": "Blue Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 32,
         "column": "left",
@@ -3501,6 +3945,7 @@
       "source": "core",
       "level": 4,
       "title": "Floating Disk",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "left",
@@ -3513,6 +3958,7 @@
       "source": "core",
       "level": 4,
       "title": "Open Gate",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "left",
@@ -3525,6 +3971,7 @@
       "source": "core",
       "level": 4,
       "title": "Tentacles",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "left",
@@ -3537,6 +3984,7 @@
       "source": "core",
       "level": 4,
       "title": "Air Sword",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "left",
@@ -3549,6 +3997,7 @@
       "source": "core",
       "level": 4,
       "title": "Teleport",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "left",
@@ -3561,6 +4010,7 @@
       "source": "core",
       "level": 3,
       "title": "Gray Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 32,
         "column": "left",
@@ -3574,6 +4024,7 @@
       "source": "core",
       "level": 4,
       "title": "Divination",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "left",
@@ -3586,6 +4037,7 @@
       "source": "core",
       "level": 4,
       "title": "Envenom",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3598,6 +4050,7 @@
       "source": "core",
       "level": 4,
       "title": "Illusion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3610,6 +4063,7 @@
       "source": "core",
       "level": 4,
       "title": "Anti-Magic",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3622,6 +4076,7 @@
       "source": "core",
       "level": 4,
       "title": "Vapor Form",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3634,6 +4089,7 @@
       "source": "core",
       "level": 3,
       "title": "Green Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 32,
         "column": "right",
@@ -3647,6 +4103,7 @@
       "source": "core",
       "level": 4,
       "title": "Nature’s Help",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3659,6 +4116,7 @@
       "source": "core",
       "level": 4,
       "title": "Trail Blaze",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3671,6 +4129,7 @@
       "source": "core",
       "level": 4,
       "title": "Move Earth",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3683,6 +4142,7 @@
       "source": "core",
       "level": 4,
       "title": "Calm",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3695,6 +4155,7 @@
       "source": "core",
       "level": 4,
       "title": "Elemental",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 32,
         "column": "right",
@@ -3707,6 +4168,7 @@
       "source": "core",
       "level": 3,
       "title": "Purple Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 33,
         "column": "left",
@@ -3720,6 +4182,7 @@
       "source": "core",
       "level": 4,
       "title": "Iron Skin",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "left",
@@ -3732,6 +4195,7 @@
       "source": "core",
       "level": 4,
       "title": "Strength",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "left",
@@ -3744,6 +4208,7 @@
       "source": "core",
       "level": 4,
       "title": "Fly",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "left",
@@ -3756,6 +4221,7 @@
       "source": "core",
       "level": 4,
       "title": "Fireball",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "left",
@@ -3768,6 +4234,7 @@
       "source": "core",
       "level": 4,
       "title": "Shape Shift",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "left",
@@ -3780,6 +4247,7 @@
       "source": "core",
       "level": 3,
       "title": "White Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 33,
         "column": "left",
@@ -3793,6 +4261,7 @@
       "source": "core",
       "level": 4,
       "title": "Soul Save",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "left",
@@ -3805,6 +4274,7 @@
       "source": "core",
       "level": 4,
       "title": "Heal",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3817,6 +4287,7 @@
       "source": "core",
       "level": 4,
       "title": "Life Armor",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3829,6 +4300,7 @@
       "source": "core",
       "level": 4,
       "title": "Turn Undead",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3841,6 +4313,7 @@
       "source": "core",
       "level": 4,
       "title": "Peace",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3853,6 +4326,7 @@
       "source": "core",
       "level": 3,
       "title": "Yellow Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 33,
         "column": "right",
@@ -3866,6 +4340,7 @@
       "source": "core",
       "level": 4,
       "title": "Hesitation",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3878,6 +4353,7 @@
       "source": "core",
       "level": 4,
       "title": "Confuse",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3890,6 +4366,7 @@
       "source": "core",
       "level": 4,
       "title": "Charm",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3902,6 +4379,7 @@
       "source": "core",
       "level": 4,
       "title": "Disorient",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3914,6 +4392,7 @@
       "source": "core",
       "level": 4,
       "title": "Discord",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 33,
         "column": "right",
@@ -3926,6 +4405,7 @@
       "source": "core",
       "level": 2,
       "title": "Icon Reference",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 34,
         "column": "left",
@@ -3938,6 +4418,7 @@
       "source": "core",
       "level": 3,
       "title": "Treasure and Item Banners",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 34,
         "column": "left",
@@ -3950,6 +4431,7 @@
       "source": "core",
       "level": 3,
       "title": "Spells",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 35,
         "column": "left",
@@ -3963,18 +4445,46 @@
       "source": "core",
       "level": 1,
       "title": "CREDITS AND ACKNOWLEDGMENTS",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 35,
         "column": "right",
         "section": "top"
       },
-      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers**\n\n*Producer:* **Sean Brown**\n\n*Artwork:* **Marco Morte & Scott DeMers**\n\n*Graphic Design:* **Michael Smyjewski & Scott DeMers**\n\n*Rules:* **Scott DeMers**\n\n*Rules Editing:* **Ed Bryan, Scott DeMers,  and the entire Dragons Down Discord** **community (I am very grateful for this group).**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. In some cases, edits were made** **to some icons.**\n\n*of this product may be reproduced without specific written permission. The Dragons* *Down and Active Magic Games logos are a trademark of Active Magic Games. The* *Mr. B Games logo is a trademark of Mr. B Games.*\n\n*Actual components may vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
+      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers**\n\n*Producer:* **Sean Brown**\n\n*Artwork:* **Marco Morte & Scott DeMers**\n\n*Graphic Design:* **Michael Smyjewski & Scott DeMers**\n\n*Rules:* **Scott DeMers**\n\n*Rules Editing:* **Ed Bryan, Scott DeMers,  and the entire Dragons Down Discord** **community (I am very grateful for this group).**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work**"
     },
     {
-      "id": "10.0.1",
+      "id": "10.1",
+      "source": "core",
+      "level": 2,
+      "title": "done by Lorc, Delapouite & other contributors. In some cases, edits were made",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 35,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "**to some icons.**\n\n*of this product may be reproduced without specific written permission. The Dragons* *Down and Active Magic Games logos are a trademark of Active Magic Games. The* *Mr. B Games logo is a trademark of Mr. B Games.*\n\n*Actual components may vary from those shown. Made in China.*"
+    },
+    {
+      "id": "10.2",
+      "source": "core",
+      "level": 2,
+      "title": "This is a hobby gaming product and not a toy. It is not intended for use by",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 35,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "**anyone under 14 years of age.**"
+    },
+    {
+      "id": "10.2.1",
       "source": "core",
       "level": 3,
       "title": "Final Thoughts",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 35,
         "column": "right",
@@ -3987,6 +4497,7 @@
       "source": "core",
       "level": 1,
       "title": "TURN SEQUENCE",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 36,
         "column": "left",
@@ -3999,6 +4510,7 @@
       "source": "core",
       "level": 2,
       "title": "Action Phase",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 36,
         "column": "left",
@@ -4011,6 +4523,7 @@
       "source": "core",
       "level": 3,
       "title": "Turn Start",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "left",
@@ -4023,6 +4536,7 @@
       "source": "core",
       "level": 3,
       "title": "Actions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "left",
@@ -4035,6 +4549,7 @@
       "source": "core",
       "level": 2,
       "title": "Battle Phase",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 36,
         "column": "left",
@@ -4047,6 +4562,7 @@
       "source": "core",
       "level": 3,
       "title": "Monster Activation",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "left",
@@ -4059,6 +4575,7 @@
       "source": "core",
       "level": 3,
       "title": "Combat",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "left",
@@ -4071,6 +4588,7 @@
       "source": "core",
       "level": 1,
       "title": "MONSTER ACTIVATION",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 36,
         "column": "left",
@@ -4083,6 +4601,7 @@
       "source": "core",
       "level": 3,
       "title": "Wandering Monster Die (gray)",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "left",
@@ -4095,6 +4614,7 @@
       "source": "core",
       "level": 3,
       "title": "Local Monster Die (black)",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "left",
@@ -4107,6 +4627,7 @@
       "source": "core",
       "level": 1,
       "title": "COMBAT SEQUENCE",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 36,
         "column": "left",
@@ -4119,6 +4640,7 @@
       "source": "core",
       "level": 4,
       "title": "1. Challenge",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4131,6 +4653,7 @@
       "source": "core",
       "level": 4,
       "title": "2. Activation",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4143,6 +4666,7 @@
       "source": "core",
       "level": 4,
       "title": "3. Evade",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4155,6 +4679,7 @@
       "source": "core",
       "level": 4,
       "title": "4. Target",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4167,6 +4692,7 @@
       "source": "core",
       "level": 4,
       "title": "5. Hero Tactics",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4179,6 +4705,7 @@
       "source": "core",
       "level": 4,
       "title": "6. Monster Tactics",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4191,6 +4718,7 @@
       "source": "core",
       "level": 4,
       "title": "7. Resolution",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4203,6 +4731,7 @@
       "source": "core",
       "level": 4,
       "title": "8. Cleanup",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 36,
         "column": "left",
@@ -4215,6 +4744,7 @@
       "source": "core",
       "level": 1,
       "title": "LEGEND POINTS AND FAME",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 36,
         "column": "right",
@@ -4227,6 +4757,7 @@
       "source": "core",
       "level": 3,
       "title": "Possess and Reveal an Epic Treasure",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4239,6 +4770,7 @@
       "source": "core",
       "level": 3,
       "title": "First to Find a Treasure Site",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4251,6 +4783,7 @@
       "source": "core",
       "level": 3,
       "title": "Reveal the Forgotten City /Dwarven Ruins",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4263,6 +4796,7 @@
       "source": "core",
       "level": 3,
       "title": "Learn a Castable Spell",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4275,6 +4809,7 @@
       "source": "core",
       "level": 3,
       "title": "Kill a Monster or Native",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4287,6 +4822,7 @@
       "source": "core",
       "level": 3,
       "title": "Missions",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4299,6 +4835,7 @@
       "source": "core",
       "level": 3,
       "title": "Titles",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4311,6 +4848,7 @@
       "source": "core",
       "level": 3,
       "title": "Kill a Hero (Optional Player vs. Player Rule)",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4323,6 +4861,7 @@
       "source": "core",
       "level": 3,
       "title": "Retirement/Death",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",
@@ -4335,6 +4874,7 @@
       "source": "core",
       "level": 3,
       "title": "Living Legend",
+      "headingStyle": "pdf-l3",
       "location": {
         "page": 36,
         "column": "right",

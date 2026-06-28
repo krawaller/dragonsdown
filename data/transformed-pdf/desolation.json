@@ -6,6 +6,7 @@
       "source": "desolation",
       "level": 1,
       "title": "INTRODUCTION",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 2,
         "column": "left",
@@ -18,6 +19,7 @@
       "source": "desolation",
       "level": 1,
       "title": "RE FERENCE",
+      "headingStyle": "pdf-l1",
       "location": {
         "page": 2,
         "column": "left",
@@ -30,6 +32,7 @@
       "source": "desolation",
       "level": 2,
       "title": "Lineage Advantages.",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 2,
         "column": "left",
@@ -42,6 +45,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Half-Elves (Two Worlds)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -58,6 +62,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Half-Orc (Mountaineer)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -74,6 +79,7 @@
       "source": "desolation",
       "level": 2,
       "title": "Class Advantages",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 2,
         "column": "left",
@@ -86,6 +92,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Assassin (Backstab)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -102,6 +109,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Bard (Musical)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -118,6 +126,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Battle Mage (Power)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -134,6 +143,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Black Knight (Feared)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -150,6 +160,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Executioner (Intimidation)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "left",
@@ -166,6 +177,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Magician (Knowledge)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -182,6 +194,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Paladin (Honor)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -198,6 +211,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Ranger (Woods Lore)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -214,6 +228,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Runesword (Control)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -230,6 +245,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Soulless (Incorporeal)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -246,6 +262,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Trickster (Illusionary Speed)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -262,6 +279,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Witch (Familiar)",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 2,
         "column": "right",
@@ -278,6 +296,7 @@
       "source": "desolation",
       "level": 2,
       "title": "Treasure Site and Merchant Reference",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "left",
@@ -290,6 +309,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Hideout",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "left",
@@ -302,6 +322,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Lost Battalion",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "left",
@@ -314,6 +335,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Monolith",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "left",
@@ -326,6 +348,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Wrecked Wagons",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "left",
@@ -338,6 +361,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Smuggler",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "left",
@@ -350,6 +374,7 @@
       "source": "desolation",
       "level": 2,
       "title": "Monster Reference",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "left",
@@ -362,6 +387,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Bandits",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "left",
@@ -374,6 +400,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Lizardfolk Shaman",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -386,6 +413,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Omnicrux",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -398,6 +426,7 @@
       "source": "desolation",
       "level": 2,
       "title": "Treasure Manifest",
+      "headingStyle": "pdf-l2",
       "location": {
         "page": 3,
         "column": "right",
@@ -410,6 +439,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Armageddon Hammer",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -425,6 +455,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Brogans of the Birds",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -440,6 +471,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Clodpoll Club",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -455,6 +487,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Codex of Cognition",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -470,6 +503,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Cursed Axe",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -485,6 +519,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Dancing Sword",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -500,6 +535,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Explorer’s Boots",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 3,
         "column": "right",
@@ -515,6 +551,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Foci of the Spellcaster",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -530,6 +567,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Grommel’s Talisman",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -545,6 +583,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Hand of the Lich",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -560,6 +599,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Igneous Flame",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -575,6 +615,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Helm of True Sight",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -590,6 +631,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Jeweled Thief’s Skull",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -605,6 +647,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Mace of Absolution",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -620,6 +663,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Orb of Far Sight",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -635,6 +679,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Peace Pendant",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -650,6 +695,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Pebble of Irritation",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -665,6 +711,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Portable Hole",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "left",
@@ -680,6 +727,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Sabre of the Fencer",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -695,6 +743,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Sending Stones",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -710,6 +759,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Sin Sword",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -725,6 +775,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Staff of Souls",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -740,6 +791,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Staff of the Magi",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -755,6 +807,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Sword of Torment",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -770,6 +823,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Temporary Mist Stone",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -785,6 +839,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Tinkerer’s Timepiece",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",
@@ -800,6 +855,7 @@
       "source": "desolation",
       "level": 4,
       "title": "Vain Blade",
+      "headingStyle": "pdf-l4",
       "location": {
         "page": 4,
         "column": "right",

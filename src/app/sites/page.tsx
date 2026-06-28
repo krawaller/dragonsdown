@@ -39,7 +39,7 @@ export default async function SitesPage() {
           className="rounded border border-zinc-200 dark:border-zinc-800 p-4"
         >
           <summary className="cursor-pointer text-lg font-semibold">
-            Proper Site Tokens ({properSiteEntries.length})
+            Site Token Sites ({properSiteEntries.length})
           </summary>
           <SiteGrid entries={properSiteEntries} className="mt-6" />
         </details>

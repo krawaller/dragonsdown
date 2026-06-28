@@ -4,6 +4,7 @@
     "source": "core",
     "level": 1,
     "title": "Universal Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 31,
       "column": "right",
@@ -17,6 +18,7 @@
     "source": "core",
     "level": 2,
     "title": "Break Spells",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "right",
@@ -33,6 +35,7 @@
     "source": "core",
     "level": 1,
     "title": "Black Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 31,
       "column": "right",
@@ -46,6 +49,7 @@
     "source": "core",
     "level": 2,
     "title": "Affliction",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "right",
@@ -62,6 +66,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Caustic Blast",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "left",
@@ -78,6 +83,7 @@
     "source": "core",
     "level": 2,
     "title": "Curse",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "right",
@@ -94,6 +100,7 @@
     "source": "core",
     "level": 2,
     "title": "Dark Matter",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "right",
@@ -110,6 +117,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Dark Presence",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "left",
@@ -126,6 +134,7 @@
     "source": "core",
     "level": 2,
     "title": "Fiery Chasm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "left",
@@ -142,6 +151,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Othersight",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "left",
@@ -158,6 +168,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Possess",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "right",
@@ -174,6 +185,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Rot",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "right",
@@ -190,6 +202,7 @@
     "source": "core",
     "level": 2,
     "title": "Rule Undead",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "right",
@@ -206,6 +219,7 @@
     "source": "core",
     "level": 1,
     "title": "Blue Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 32,
       "column": "left",
@@ -219,6 +233,7 @@
     "source": "core",
     "level": 2,
     "title": "Air Sword",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "left",
@@ -235,6 +250,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Doppelganger",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "right",
@@ -251,6 +267,7 @@
     "source": "core",
     "level": 2,
     "title": "Floating Disk",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "left",
@@ -267,6 +284,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Foresight",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "left",
@@ -283,6 +301,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Move Gate",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "right",
@@ -299,6 +318,7 @@
     "source": "core",
     "level": 2,
     "title": "Open Gate",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "left",
@@ -315,6 +335,7 @@
     "source": "core",
     "level": 2,
     "title": "Teleport",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "left",
@@ -331,6 +352,7 @@
     "source": "core",
     "level": 2,
     "title": "Tentacles",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "left",
@@ -347,6 +369,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Town Portal",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "right",
@@ -363,6 +386,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Water Weird",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "right",
@@ -379,6 +403,7 @@
     "source": "core",
     "level": 1,
     "title": "Gray Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 32,
       "column": "left",
@@ -392,6 +417,7 @@
     "source": "core",
     "level": 2,
     "title": "Anti-Magic",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -408,6 +434,7 @@
     "source": "core",
     "level": 2,
     "title": "Divination",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "left",
@@ -424,6 +451,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Enfeeble",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "left",
@@ -440,6 +468,7 @@
     "source": "core",
     "level": 2,
     "title": "Envenom",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -456,6 +485,7 @@
     "source": "core",
     "level": 2,
     "title": "Illusion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -472,6 +502,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Malediction",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "left",
@@ -488,6 +519,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Orc Call",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "left",
@@ -504,6 +536,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Shadowhand",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "left",
@@ -520,6 +553,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Shift Focus",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "left",
@@ -536,6 +570,7 @@
     "source": "core",
     "level": 2,
     "title": "Vapor Form",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -552,6 +587,7 @@
     "source": "core",
     "level": 1,
     "title": "Green Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 32,
       "column": "right",
@@ -565,6 +601,7 @@
     "source": "core",
     "level": 2,
     "title": "Calm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -581,6 +618,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Earthquake",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "right",
@@ -597,6 +635,7 @@
     "source": "core",
     "level": 2,
     "title": "Elemental",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -613,6 +652,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Good Wind",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "right",
@@ -629,6 +669,7 @@
     "source": "core",
     "level": 2,
     "title": "Move Earth",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -645,6 +686,7 @@
     "source": "core",
     "level": 2,
     "title": "Nature’s Help",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -661,6 +703,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Scout",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "left",
@@ -677,6 +720,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Sunder",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "right",
@@ -693,6 +737,7 @@
     "source": "core",
     "level": 2,
     "title": "Trail Blaze",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 32,
       "column": "right",
@@ -709,6 +754,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Wildshape",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "right",
@@ -725,6 +771,7 @@
     "source": "core",
     "level": 1,
     "title": "Purple Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 33,
       "column": "left",
@@ -738,6 +785,7 @@
     "source": "core",
     "level": 2,
     "title": "Fireball",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "left",
@@ -754,6 +802,7 @@
     "source": "core",
     "level": 2,
     "title": "Fly",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "left",
@@ -770,6 +819,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Gale Blast",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "right",
@@ -786,6 +836,7 @@
     "source": "core",
     "level": 2,
     "title": "Iron Skin",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "left",
@@ -802,6 +853,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Lightning",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -818,6 +870,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Magic Snare",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "right",
@@ -834,6 +887,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Mana Shield",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 14,
       "column": "right",
@@ -850,6 +904,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Pyroclasm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -866,6 +921,7 @@
     "source": "core",
     "level": 2,
     "title": "Shape Shift",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "left",
@@ -882,6 +938,7 @@
     "source": "core",
     "level": 2,
     "title": "Strength",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "left",
@@ -898,6 +955,7 @@
     "source": "core",
     "level": 1,
     "title": "White Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 33,
       "column": "left",
@@ -911,6 +969,7 @@
     "source": "core",
     "level": 2,
     "title": "Heal",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -927,6 +986,7 @@
     "source": "core",
     "level": 2,
     "title": "Life Armor",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -943,6 +1003,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Major Heal",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -959,6 +1020,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Minor Mend",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -975,6 +1037,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Panoply",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -991,6 +1054,7 @@
     "source": "core",
     "level": 2,
     "title": "Peace",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -1007,6 +1071,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Renewal",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -1023,6 +1088,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Safe Haven",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -1039,6 +1105,7 @@
     "source": "core",
     "level": 2,
     "title": "Soul Save",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "left",
@@ -1055,6 +1122,7 @@
     "source": "core",
     "level": 2,
     "title": "Turn Undead",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -1071,6 +1139,7 @@
     "source": "core",
     "level": 1,
     "title": "Yellow Spells",
+    "headingStyle": "pdf-l3",
     "location": {
       "page": 33,
       "column": "right",
@@ -1084,6 +1153,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Charismagic",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "right",
@@ -1100,6 +1170,7 @@
     "source": "core",
     "level": 2,
     "title": "Charm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -1116,6 +1187,7 @@
     "source": "core",
     "level": 2,
     "title": "Confuse",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -1132,6 +1204,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Counterplay",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "right",
@@ -1148,6 +1221,7 @@
     "source": "core",
     "level": 2,
     "title": "Discord",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -1164,6 +1238,7 @@
     "source": "core",
     "level": 2,
     "title": "Disorient",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -1180,6 +1255,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Great Parley",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -1196,6 +1272,7 @@
     "source": "core",
     "level": 2,
     "title": "Hesitation",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 33,
       "column": "right",
@@ -1212,6 +1289,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Mesmerize",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "left",
@@ -1228,6 +1306,7 @@
     "source": "eastern-reaches",
     "level": 2,
     "title": "Prismatism",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 15,
       "column": "right",

@@ -4,6 +4,7 @@
     "source": "core",
     "level": 4,
     "title": "Archer (Steady)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -20,6 +21,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Assassin (Backstab)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "left",
@@ -36,6 +38,7 @@
     "source": "core",
     "level": 4,
     "title": "Barbarian (Mountain Lore)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -52,6 +55,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Bard (Musical)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "left",
@@ -68,6 +72,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Battle Mage (Power)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "left",
@@ -84,6 +89,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Beastmaster (Faunamancy)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "left",
@@ -100,6 +106,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Berserker (Berserk)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "left",
@@ -116,6 +123,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Black Knight (Feared)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "left",
@@ -132,6 +140,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Brigand (Brotherhood)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "left",
@@ -148,6 +157,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Burgess (Shrewd)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "right",
@@ -164,6 +174,7 @@
     "source": "core",
     "level": 4,
     "title": "Cleric (Divine Protection)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -180,6 +191,7 @@
     "source": "core",
     "level": 4,
     "title": "Conjurer (Mastery)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -196,6 +208,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Decayed (Duality Vale)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -212,13 +225,14 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Dervish (Whirling Strike)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
       "section": "middle"
     },
     "icon": "/images/pdf/267dd74df7b74a11bf9a30f66dded7cec6afed0c.jpeg",
-    "content": "Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\n![](/images/pdf/f9237ab8ebfa068b7fd83a1738bf8b14134e638b.jpeg)\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
+    "content": "![float-right](/images/pdf/f9237ab8ebfa068b7fd83a1738bf8b14134e638b.jpeg) Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
     "tags": [
       "classAdvantage"
     ]
@@ -228,6 +242,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Disciple (Chosen)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -244,6 +259,7 @@
     "source": "core",
     "level": 4,
     "title": "Druid (Natural Emanation)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -260,13 +276,14 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Duelist (Parry)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "right",
       "section": "top"
     },
     "icon": "/images/pdf/81631eccf76ab3f24a13ad337984cb28e8bb071d.jpeg",
-    "content": "![](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg)\n\nDuelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
+    "content": "![float-right](/images/pdf/1d78391ee2d4710691d3c68e4343b7457fd26901.jpeg) Duelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
     "tags": [
       "classAdvantage"
     ]
@@ -276,6 +293,7 @@
     "source": "core",
     "level": 4,
     "title": "Enchanter (Aura)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -292,6 +310,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Executioner (Intimidation)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "left",
@@ -308,6 +327,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Explorer (Perceptive)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "right",
@@ -324,6 +344,7 @@
     "source": "core",
     "level": 4,
     "title": "Illusionist (Focus)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 27,
       "column": "left",
@@ -340,6 +361,7 @@
     "source": "core",
     "level": 4,
     "title": "Knight (Health)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 27,
       "column": "left",
@@ -356,6 +378,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Magician (Knowledge)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "right",
@@ -372,6 +395,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Marauder (Fury)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "right",
@@ -388,6 +412,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Monk (Iron Fist)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "right",
@@ -404,6 +429,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Necromancer (Gravecalling)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "right",
@@ -420,6 +446,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Outcast (Overlooked)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "right",
@@ -436,6 +463,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Paladin (Honor)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "right",
@@ -452,13 +480,14 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Pit Fighter (Weaponmaster)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "right",
       "section": "bottom"
     },
     "icon": "/images/pdf/1b7e35d1891256e7063bd3836f498c7442b36679.jpeg",
-    "content": "Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.\n\n![](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg)",
+    "content": "![float-right](/images/pdf/c419a0b2b09f0c8c6acfc15767bcf8b4707358c3.jpeg) Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.",
     "tags": [
       "classAdvantage"
     ]
@@ -468,6 +497,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Ranger (Woods Lore)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "right",
@@ -484,6 +514,7 @@
     "source": "core",
     "level": 4,
     "title": "Rogue (Elusive)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 27,
       "column": "left",
@@ -500,6 +531,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Runesword (Control)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "right",
@@ -516,6 +548,7 @@
     "source": "core",
     "level": 4,
     "title": "Sorcerer (Specialized)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 27,
       "column": "left",
@@ -532,6 +565,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Soulless (Incorporeal)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "right",
@@ -548,6 +582,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Trickster (Illusionary Speed)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "right",
@@ -564,6 +599,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Vanguard (Primal Strike)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "right",
@@ -580,6 +616,7 @@
     "source": "core",
     "level": 4,
     "title": "Warlock (Blood Lust)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 27,
       "column": "left",
@@ -596,6 +633,7 @@
     "source": "core",
     "level": 4,
     "title": "Warrior (Adept)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 27,
       "column": "left",
@@ -612,13 +650,14 @@
     "source": "desolation",
     "level": 4,
     "title": "Witch (Familiar)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "right",
       "section": "middle"
     },
     "icon": "/images/pdf/7f84b6c0635fc10bbdfa731aa25e995d6abe8af8.png",
-    "content": "The Witch is a purveyor of arcane magic and has a Familiar which does the Witch’s bidding. The Familiar is psychically linked to the Witch and shares what it learns with the Witch. When playing the Witch, also take the 2 Familiar Tokens. Use one as the Familiar Hero counter and the other for Turn Order.  The Familiar has the following rules:\n\n![](/images/pdf/db25aee0295d59b4cbd5183977b801832248698a.jpeg)\n\n- When the Familiar’s Targeting Token is selected, the Witch takes actions for the Familiar only, using the Familiar’s Hero counter.\n\n- The Familiar follows the same rules as any other Hero. The Familiar may only move, explore, and search. The Familiar does not fly.\n\n- When a Familiar moves onto a Map Tile, place a Wilderness Token/Civilization Tokens in the tile **face-down**. The Witch may not look at the token(s).\n\n- When searching, the Familiar may only search for a single wilderness or Civilization Token in the same Map Tile as the Familiar or a Hidden Path in the same clearing as the Familiar. Upon a successful search for any one token, the Witch may look at the face-down token, but does not reveal it.\n\n- The Familiar may not search for Treasure Sites or receive rewards from Wilderness Tokens (*Forgotten City, items, treasures, etc.*).\n\n- The Witch may not look at face-down tokens except immediately after a successful search. It is good practice to record what the Familiar sees in the Adventure Journal.\n\n- The Familiar does not summon Monsters and may not target, be targeted, block, or be blocked. It does not participate in Combat. Spells may not be cast on, nor affect the Familiar.\n\n- If a Hero moves onto a Map Tile containing face-down token(s) placed by the Familiar, reveal the tokens in the tile instead of selecting new token(s) for the Map Tile.",
+    "content": "![float-right](/images/pdf/db25aee0295d59b4cbd5183977b801832248698a.jpeg) The Witch is a purveyor of arcane magic and has a Familiar which does the Witch’s bidding. The Familiar is psychically linked to the Witch and shares what it learns with the Witch. When playing the Witch, also take the 2 Familiar Tokens. Use one as the Familiar Hero counter and the other for Turn Order.  The Familiar has the following rules:\n\n- When the Familiar’s Targeting Token is selected, the Witch takes actions for the Familiar only, using the Familiar’s Hero counter.\n\n- The Familiar follows the same rules as any other Hero. The Familiar may only move, explore, and search. The Familiar does not fly.\n\n- When a Familiar moves onto a Map Tile, place a Wilderness Token/Civilization Tokens in the tile **face-down**. The Witch may not look at the token(s).\n\n- When searching, the Familiar may only search for a single wilderness or Civilization Token in the same Map Tile as the Familiar or a Hidden Path in the same clearing as the Familiar. Upon a successful search for any one token, the Witch may look at the face-down token, but does not reveal it.\n\n- The Familiar may not search for Treasure Sites or receive rewards from Wilderness Tokens (*Forgotten City, items, treasures, etc.*).\n\n- The Witch may not look at face-down tokens except immediately after a successful search. It is good practice to record what the Familiar sees in the Adventure Journal.\n\n- The Familiar does not summon Monsters and may not target, be targeted, block, or be blocked. It does not participate in Combat. Spells may not be cast on, nor affect the Familiar.\n\n- If a Hero moves onto a Map Tile containing face-down token(s) placed by the Familiar, reveal the tokens in the tile instead of selecting new token(s) for the Map Tile.",
     "tags": [
       "classAdvantage"
     ]
@@ -628,6 +667,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Wizard (Studious)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "right",

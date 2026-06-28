@@ -4,6 +4,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Auroran (Desert Born)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -20,6 +21,7 @@
     "source": "core",
     "level": 4,
     "title": "Dwarf (Caver)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -36,6 +38,7 @@
     "source": "core",
     "level": 4,
     "title": "Elf (Magical)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -52,6 +55,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Gnome (Inventive)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 7,
       "column": "left",
@@ -68,6 +72,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Elves (Two Worlds)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "left",
@@ -84,6 +89,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Half-Orc (Mountaineer)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 2,
       "column": "left",
@@ -100,6 +106,7 @@
     "source": "core",
     "level": 4,
     "title": "Halfling (Stealthy)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",
@@ -116,6 +123,7 @@
     "source": "core",
     "level": 4,
     "title": "Human (Adapted)",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 26,
       "column": "right",

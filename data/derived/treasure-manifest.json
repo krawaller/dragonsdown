@@ -4,6 +4,7 @@
     "source": "core",
     "level": 4,
     "title": "Adamantium Blade",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -19,6 +20,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Adventurer’s Toolkit",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 10,
       "column": "right",
@@ -34,6 +36,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Alchemical Lure",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "left",
@@ -49,6 +52,7 @@
     "source": "core",
     "level": 4,
     "title": "Alchemist’s Mixture",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -64,6 +68,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Amaranth of Action",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 10,
       "column": "right",
@@ -79,6 +84,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Ancient Map",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 10,
       "column": "right",
@@ -94,6 +100,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Arcane Bond",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "left",
@@ -109,6 +116,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Arcane Sword",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "left",
@@ -124,6 +132,7 @@
     "source": "core",
     "level": 4,
     "title": "Artificer’s Concoction",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -139,6 +148,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Banner of Legitimacy",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "left",
@@ -154,6 +164,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Banner of the Brigands",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "left",
@@ -169,6 +180,7 @@
     "source": "core",
     "level": 4,
     "title": "Battle Staff",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -184,6 +196,7 @@
     "source": "core",
     "level": 4,
     "title": "Bauble of Intelligence",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -199,6 +212,7 @@
     "source": "core",
     "level": 4,
     "title": "Bejeweled Breastplate",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -214,6 +228,7 @@
     "source": "core",
     "level": 4,
     "title": "Bejeweled Helm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -229,6 +244,7 @@
     "source": "core",
     "level": 4,
     "title": "Bejeweled Shield",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -244,6 +260,7 @@
     "source": "core",
     "level": 4,
     "title": "Belt of Expansion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -259,6 +276,7 @@
     "source": "core",
     "level": 4,
     "title": "Bracelets of Finesse",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -274,6 +292,7 @@
     "source": "core",
     "level": 4,
     "title": "Bracers of Vigor",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "left",
@@ -289,6 +308,7 @@
     "source": "core",
     "level": 4,
     "title": "Broche of Deflection",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -304,6 +324,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Casting Lens",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -319,6 +340,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Champion’s Blade",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -334,6 +356,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Champion’s Plate",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -349,6 +372,7 @@
     "source": "core",
     "level": 4,
     "title": "Charismatic Gemstone",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -364,6 +388,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Cipherstone",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -379,6 +404,7 @@
     "source": "core",
     "level": 4,
     "title": "Clashing Ring",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -394,6 +420,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Clodpoll Club",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 3,
       "column": "right",
@@ -409,6 +436,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Coin of Passage",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -424,6 +452,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Cursed Axe",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 3,
       "column": "right",
@@ -439,6 +468,7 @@
     "source": "core",
     "level": 4,
     "title": "Cursed Treasure",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -454,6 +484,7 @@
     "source": "core",
     "level": 4,
     "title": "Dagger of Bite",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -469,6 +500,7 @@
     "source": "core",
     "level": 4,
     "title": "Digger’s Ruin",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -484,6 +516,7 @@
     "source": "core",
     "level": 4,
     "title": "DisEnchanter",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -499,6 +532,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Duffel of Displacement",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -514,6 +548,7 @@
     "source": "core",
     "level": 4,
     "title": "Dust of Destiny",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -529,6 +564,7 @@
     "source": "core",
     "level": 4,
     "title": "Elemental Spherule",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
@@ -544,6 +580,7 @@
     "source": "core",
     "level": 4,
     "title": "Elven Amulet",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -559,6 +596,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Elven Helm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -574,6 +612,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Elven Shield",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -589,6 +628,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Elven Vest",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -604,6 +644,7 @@
     "source": "core",
     "level": 4,
     "title": "Enchanted Treasure",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -619,6 +660,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Eternium Grimoire",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -634,6 +676,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Explorer’s Boots",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 3,
       "column": "right",
@@ -649,6 +692,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Fade Essence",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
       "column": "right",
@@ -664,6 +708,7 @@
     "source": "core",
     "level": 4,
     "title": "Gage of the Thief",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -679,6 +724,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Galdric of Enchantment",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -694,6 +740,7 @@
     "source": "core",
     "level": 4,
     "title": "Gauntlets of Brawn",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -709,6 +756,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Ghutra of the Scorpion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -724,6 +772,7 @@
     "source": "core",
     "level": 4,
     "title": "Gloves of Aggression",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -739,6 +788,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Golden Shroud",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -754,6 +804,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Grommel’s Talisman",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -769,6 +820,7 @@
     "source": "core",
     "level": 4,
     "title": "Guard Charm",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -784,6 +836,7 @@
     "source": "core",
     "level": 4,
     "title": "Hamblen’s Pendant",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -799,6 +852,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Harmonic Hand Axe",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -814,6 +868,7 @@
     "source": "core",
     "level": 4,
     "title": "Hawkeye",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -829,6 +884,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Healer’s Flask",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -844,6 +900,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Hex of Servitude",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -859,6 +916,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Holdfast Leathers",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -874,6 +932,7 @@
     "source": "core",
     "level": 4,
     "title": "Horn of the Dark Angel",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "left",
@@ -889,6 +948,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Igneous Flame",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -904,6 +964,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Khatam of the Quick",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "left",
@@ -919,6 +980,7 @@
     "source": "core",
     "level": 4,
     "title": "King’s Pardon",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -934,6 +996,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Mace of Absolution",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -949,6 +1012,7 @@
     "source": "core",
     "level": 4,
     "title": "Mace of Smiting",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -964,6 +1028,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Mageshift Medallion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -979,6 +1044,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Mantle of the Djinn",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "right",
@@ -994,6 +1060,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Moon Crystal",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "right",
@@ -1009,6 +1076,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Morsel of Might",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "right",
@@ -1024,6 +1092,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Obsidian Dagger",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1039,6 +1108,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Panacea of Persuasion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -1054,6 +1124,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Peace Pendant",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -1069,6 +1140,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Pearl of Riversight",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1084,6 +1156,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Pebble of Irritation",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -1099,6 +1172,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Portable Hole",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "left",
@@ -1114,6 +1188,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Energy",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -1129,6 +1204,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Flight",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -1144,6 +1220,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Healing",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -1159,6 +1236,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Maneuver",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -1174,6 +1252,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Might",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -1189,6 +1268,7 @@
     "source": "core",
     "level": 4,
     "title": "Potion of Relief",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 29,
       "column": "right",
@@ -1204,6 +1284,7 @@
     "source": "core",
     "level": 4,
     "title": "Quick Ring",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -1219,6 +1300,7 @@
     "source": "core",
     "level": 4,
     "title": "Ring of Strength",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -1234,6 +1316,7 @@
     "source": "core",
     "level": 4,
     "title": "Ring of the Magi",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -1249,6 +1332,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Ripple Strike",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1264,6 +1348,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Riverwalkers",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1279,6 +1364,7 @@
     "source": "core",
     "level": 4,
     "title": "Robust Ring",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -1294,6 +1380,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Sabre of the Fencer",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -1309,6 +1396,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Sandglass of Eternity",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1324,6 +1412,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Sandstrider Boots",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1339,6 +1428,7 @@
     "source": "core",
     "level": 4,
     "title": "Satchel of a Giant",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -1354,6 +1444,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Satchel of Suppression",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1369,6 +1460,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Seafang",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1384,6 +1476,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Seal of the False King",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1399,6 +1492,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Seed of Speed",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "left",
@@ -1414,6 +1508,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Sending Stones",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -1429,6 +1524,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Shekels",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -1444,6 +1540,7 @@
     "source": "core",
     "level": 4,
     "title": "Shoes of the Thief",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -1459,6 +1556,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Sin Sword",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -1474,6 +1572,7 @@
     "source": "core",
     "level": 4,
     "title": "Skeleton Key",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "left",
@@ -1489,6 +1588,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Skull Splitter",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -1504,6 +1604,7 @@
     "source": "core",
     "level": 4,
     "title": "Sparkler of Wisdom",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1519,6 +1620,7 @@
     "source": "core",
     "level": 4,
     "title": "Spear of Piercing",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1534,6 +1636,7 @@
     "source": "core",
     "level": 4,
     "title": "Spell Book and Spell Scroll",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1549,6 +1652,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Spell Librams",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -1564,6 +1668,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Staff of Souls",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -1579,6 +1684,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Staff of the Sharp Sands",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -1594,6 +1700,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Sunblade",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -1609,6 +1716,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Alertness",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1624,6 +1732,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Commerce",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1639,6 +1748,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Greed",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1654,6 +1764,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Knowledge",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1669,6 +1780,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Magic",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1684,6 +1796,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Motion",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1699,6 +1812,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Symbol of Recruitment",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -1714,6 +1828,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Rest",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 30,
       "column": "right",
@@ -1729,6 +1844,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Stealth",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1744,6 +1860,7 @@
     "source": "core",
     "level": 4,
     "title": "Symbol of Vision",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1759,6 +1876,7 @@
     "source": "core",
     "level": 4,
     "title": "Talaria of the Gladiator",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1774,6 +1892,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Temporary Mist Stone",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -1789,6 +1908,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "The Lamp",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
       "column": "right",
@@ -1804,6 +1924,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "The Sting",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
       "column": "right",
@@ -1819,6 +1940,7 @@
     "source": "core",
     "level": 4,
     "title": "Thief’s Lucky Coin",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1834,6 +1956,7 @@
     "source": "core",
     "level": 4,
     "title": "Time Stone",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1849,6 +1972,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Tinkerer’s Timepiece",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -1864,6 +1988,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Conjuring",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1879,6 +2004,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Fay",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1894,6 +2020,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Nature",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1909,6 +2036,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Power",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1924,6 +2052,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Righteousness",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1939,6 +2068,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of the Black Arts",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1954,6 +2084,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Tricks",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1969,6 +2100,7 @@
     "source": "core",
     "level": 4,
     "title": "Tome of Wizardry",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -1984,6 +2116,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "Trinket of Transmutation",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "left",
@@ -1999,6 +2132,7 @@
     "source": "desolation",
     "level": 4,
     "title": "Vain Blade",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 4,
       "column": "right",
@@ -2014,6 +2148,7 @@
     "source": "core",
     "level": 4,
     "title": "Vorpal Cutlass",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "left",
@@ -2029,6 +2164,7 @@
     "source": "eastern-reaches",
     "level": 4,
     "title": "War Weaver’s Needle",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 13,
       "column": "left",
@@ -2044,6 +2180,7 @@
     "source": "core",
     "level": 4,
     "title": "Warblade",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "right",
@@ -2059,6 +2196,7 @@
     "source": "natives-and-legends",
     "level": 4,
     "title": "Whispering Compass",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 9,
       "column": "left",
@@ -2074,6 +2212,7 @@
     "source": "core",
     "level": 4,
     "title": "Writ of Redemption",
+    "headingStyle": "pdf-l4",
     "location": {
       "page": 31,
       "column": "right",
