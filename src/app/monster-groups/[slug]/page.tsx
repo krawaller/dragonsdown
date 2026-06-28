@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
 import { RulebookLinks } from "@/components/RulebookLinks";
+import { SiteLink } from "@/components/SiteLink";
 import { resolveMonsterRulebookLinks } from "@/lib/rulebook-links";
 import type { RulebookLink } from "@/lib/rulebook-links";
 import { chipTotalCount } from "@/lib/tts";
@@ -82,18 +83,14 @@ export default async function MonsterGroupPage({
           {group.sites.length > 0 && (
             <div>
               <h2 className="text-xl font-semibold mb-3">Sites</h2>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
                 {group.sites.map((summon) => (
-                  <Link
+                  <SiteLink
                     key={summon.name}
+                    name={summon.name}
                     href={summon.href}
-                    className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-                  >
-                    <span className="font-medium">{summon.name}</span>
-                    <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                      {summon.monsters.join(", ")}
-                    </span>
-                  </Link>
+                    subtitle={summon.monsters.join(", ")}
+                  />
                 ))}
               </div>
             </div>

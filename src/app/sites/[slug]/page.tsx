@@ -2,12 +2,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoardPositionLinks } from "@/components/BoardPositionLinks";
 import { MissionLinks } from "@/components/MissionLinks";
+import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { ANY_DOC, resolveRulebookLinks } from "@/lib/rulebook-links";
 import {
   getAllSites,
   getBoardsForSite,
   getMissionsForTarget,
+  getMonsterGroupBySlug,
   getMonsterGroupsForSite,
   getSiteBySlug,
 } from "@/lib/tts/lookup";
@@ -26,7 +28,10 @@ export default async function SitePage({
   if (!entry) notFound();
 
   const boards = getBoardsForSite(entry.name);
-  const monsterGroups = getMonsterGroupsForSite(entry.name);
+  const monsterGroups = getMonsterGroupsForSite(entry.name).flatMap((group) => {
+    const fullGroup = getMonsterGroupBySlug(group.slug);
+    return fullGroup ? [fullGroup] : [];
+  });
   const missions = getMissionsForTarget(entry.name);
   const rulebookLinks = await resolveRulebookLinks({
     doc: ANY_DOC,
@@ -65,19 +70,10 @@ export default async function SitePage({
 
       {monsterGroups.length > 0 && (
         <section className="mt-10">
-          <h2 className="text-xl font-semibold mb-4">Monster Groups</h2>
-          <div className="flex flex-wrap gap-2">
+          <h2 className="text-xl font-semibold mb-4">Guardian</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {monsterGroups.map((group) => (
-              <Link
-                key={group.slug}
-                href={`/monster-groups/${group.slug}`}
-                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-              >
-                <span className="font-medium">{group.name}</span>
-                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                  {group.monsters.join(", ")}
-                </span>
-              </Link>
+              <MonsterGroupStack key={group.slug} group={group} />
             ))}
           </div>
         </section>
