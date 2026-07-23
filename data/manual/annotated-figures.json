@@ -128,6 +128,15 @@
   },
   {
     "doc": "core",
+    "page": 21,
+    "target": { "titleRegex": "^Epic Treasures$" },
+    "bbox": [33, 96, 219, 294],
+    "suppressBbox": [33, 91, 219, 294],
+    "alt": "Annotated epic treasure card reference",
+    "expectedTexts": ["Item Values (permanent effect)"]
+  },
+  {
+    "doc": "core",
     "page": 10,
     "target": { "titleRegex": "^Spells$" },
     "bbox": [402, 88, 599, 292],
