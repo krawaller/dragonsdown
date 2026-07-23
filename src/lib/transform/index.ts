@@ -4,6 +4,7 @@ import { docMatchesTarget, selectMatchingIds, type Target } from "../doc-query";
 /** Discriminated union of all rule operations. Extend as new ops appear. */
 export type Rule =
   | IgnoreImagesRule
+  | DedupeImagesRule
   | AddTagRule
   | ReplaceTitleRule
   | ExtractFooterRule
@@ -14,6 +15,13 @@ export type Rule =
 
 export type IgnoreImagesRule = {
   op: "ignoreImages";
+  target: Target;
+  /** SHA1 hashes without extension, matching `/images/<hash>.<ext>` refs. */
+  imageIds: string[];
+};
+
+export type DedupeImagesRule = {
+  op: "dedupeImages";
   target: Target;
   /** SHA1 hashes without extension, matching `/images/<hash>.<ext>` refs. */
   imageIds: string[];
@@ -121,6 +129,15 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
           ? { ...s, content: stripImages(s.content, rule.imageIds) }
           : s,
       );
+    }
+    case "dedupeImages": {
+      const ids = selectMatchingIds(rule.target, sections);
+      if (ids.size === 0) return sections;
+      return sections.map((s) => {
+        if (!ids.has(s.id)) return s;
+        const content = dedupeImages(s.content, rule.imageIds);
+        return content === s.content ? s : { ...s, content };
+      });
     }
     case "addTag": {
       const ids = selectMatchingIds(rule.target, sections);
@@ -308,6 +325,19 @@ function stripImages(content: string, imageIds: readonly string[]): string {
     ids.has(hash) ? "" : match,
   );
   // Collapse the blank-line runs that removed images leave behind.
+  return removed.replace(/\n{3,}/g, "\n\n").trim();
+}
+
+function dedupeImages(content: string, imageIds: readonly string[]): string {
+  if (!imageIds.length) return content;
+  const ids = new Set(imageIds);
+  const seen = new Set<string>();
+  const removed = content.replace(IMAGE_REF_RE, (match, hash: string) => {
+    if (!ids.has(hash)) return match;
+    if (seen.has(hash)) return "";
+    seen.add(hash);
+    return match;
+  });
   return removed.replace(/\n{3,}/g, "\n\n").trim();
 }
 

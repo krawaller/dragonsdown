@@ -76,6 +76,29 @@ describe("ignoreImages — content effect", () => {
   });
 });
 
+describe("dedupeImages", () => {
+  it("keeps the first matched image ref and strips later duplicates", () => {
+    const duplicate = "![](/images/pdf/abc.jpeg)";
+    const sections = [s("1", `${duplicate}\n\nBody\n\n${duplicate}`)];
+    const rules: Rule[] = [
+      { op: "dedupeImages", target: "ALL", imageIds: ["abc"] },
+    ];
+    expect(applyTransforms(sections, rules, "core")[0].content).toBe(
+      `${duplicate}\n\nBody`,
+    );
+  });
+
+  it("preserves non-target duplicate image refs", () => {
+    const sections = [s("1", `${IMG("abc")}\n\n${IMG("abc")}`)];
+    const rules: Rule[] = [
+      { op: "dedupeImages", target: "ALL", imageIds: ["def"] },
+    ];
+    expect(applyTransforms(sections, rules, "core")[0].content).toBe(
+      sections[0].content,
+    );
+  });
+});
+
 describe("Pipeline", () => {
   it("respects target scoping when applying rules", () => {
     // Sanity check that applyTransforms wires through doc-query's matching.

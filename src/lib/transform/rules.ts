@@ -37,6 +37,11 @@ export const TRANSFORMS: Rule[] = [
     ],
   },
   {
+    op: "dedupeImages",
+    target: { doc: "core", titleRegex: "^Game Setup$" },
+    imageIds: ["e961cf4da33509818ad29a561b5a655cd791499f"],
+  },
+  {
     op: "addTag",
     tag: "lineageAdvantage",
     target: {
