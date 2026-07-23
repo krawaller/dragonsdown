@@ -1108,11 +1108,15 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Gold does not directly contribute to victory in Dragons Down. Heroes may spend Gold and/or satisfy requirements on Civilization Cards at Civilization Locations to claim titles to earn LPs and Fame. These cards are double-sided to increase replayability.",
+      "content": "Gold does not directly contribute to victory in Dragons Down. Heroes may spend Gold and/or satisfy requirements on Civilization Cards at Civilization Locations to claim titles to earn LPs and Fame. These cards are double-sided to increase replayability.\n\n![Annotated civilization card reference](/images/annotations/c2acf899d647828f37bd694d043efae52c94cd13.png)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Gold does not directly contribute to victory in Dragons Down. Heroes may spend Gold and/or satisfy requirements on Civilization Cards at Civilization Locations to claim titles to earn LPs and Fame. These cards are double-sided to increase replayability."
+        },
+        {
+          "kind": "markdown",
+          "markdown": "![Annotated civilization card reference](/images/annotations/c2acf899d647828f37bd694d043efae52c94cd13.png)"
         }
       ]
     },
@@ -1169,23 +1173,11 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nSummoning/Respect Symbol (for the Natives & Legends expansion) ![float-left](/images/pdf/2514d848d1eb22a09adb872a37f4d25a2a59492c.jpeg) Native Group\n\nLocation\n\nRequirement\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nLimit (if applicable)\n\nTitle and Reward\n\nDescription\n\nTerrain Pack\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
+      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nDescription\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Summoning/Respect Symbol (for the Natives & Legends expansion) ![float-left](/images/pdf/2514d848d1eb22a09adb872a37f4d25a2a59492c.jpeg) Native Group"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Location"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Requirement"
         },
         {
           "kind": "image",
@@ -1198,19 +1190,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "Limit (if applicable)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Title and Reward"
-        },
-        {
-          "kind": "markdown",
           "markdown": "Description"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Terrain Pack"
         },
         {
           "kind": "markdown",

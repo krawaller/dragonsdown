@@ -55,5 +55,18 @@
     "bbox": [442, 236, 570, 333],
     "alt": "Annotated civilization token reference",
     "expectedTexts": ["Civilization Token Back", "Terrain Pack"]
+  },
+  {
+    "doc": "core",
+    "page": 8,
+    "target": {
+      "titleRegex": "^Civilization Cards and Titles \\(far right\\)$"
+    },
+    "bbox": [630, 254, 824, 471],
+    "alt": "Annotated civilization card reference",
+    "expectedTexts": [
+      "Summoning/Respect Symbol (for the Natives & Legends expansion)",
+      "Requirement"
+    ]
   }
 ]
