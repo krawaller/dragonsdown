@@ -49,7 +49,7 @@
       "column": "right",
       "section": "bottom"
     },
-    "content": "When a discovery, item, or treasure Wilderness Token is drawn, the Hero does not automatically receive the reward. Place it face-up in a random clearing in the Map Tile. The first Hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the Wilderness Token\n\nface-up in a part of the Map Tile not containing a clearing."
+    "content": "When a discovery, item, or treasure Wilderness Token is drawn, the Hero does not automatically receive the reward. Place it face-up in a random clearing in the Map Tile. The first Hero to enter the clearing receives the reward shown on the token. Signify that the reward has already been claimed by placing the Wilderness Token face-up in a part of the Map Tile not containing a clearing."
   },
   {
     "id": "8.7",

@@ -75,7 +75,7 @@ class Section:
     content_parts: list[str] = field(default_factory=list)
 
     def render(self) -> dict:
-        content = "\n\n".join(p for p in self.content_parts if p).strip()
+        content = render_content_parts(self.content_parts)
         content = normalize_inline_image_spacing(content)
         content = _WRAP_FIX.sub(r"\1\2\3\4", content)
         rendered = {"level": self.level, "title": self.title}
@@ -108,6 +108,44 @@ class Section:
             self.icons.extend(promoted)
             return remaining
         return md
+
+
+def render_content_parts(parts: list[str]) -> str:
+    rendered: list[str] = []
+    for part in (p.strip() for p in parts if p.strip()):
+        if rendered and should_flow_across_part_boundary(rendered[-1], part):
+            rendered[-1] = f"{rendered[-1]} {part}"
+        else:
+            rendered.append(part)
+    return "\n\n".join(rendered).strip()
+
+
+def should_flow_across_part_boundary(previous: str, current: str) -> bool:
+    previous = previous.rstrip()
+    current = current.lstrip()
+    if not previous or not current:
+        return False
+    if starts_structural_markdown(current):
+        return False
+    if not starts_lowercase_continuation(current):
+        return False
+    if re.search(r"[.!?:;][)'\]’”\"*]*$", previous):
+        return False
+    return True
+
+
+def starts_structural_markdown(markdown: str) -> bool:
+    return bool(
+        re.match(
+            r"^(?:[-*+]\s+|\d+[.)]\s+|!\[[^\]]*\]\([^)]*\)|\*\*[^*\n]+:\*\*)",
+            markdown,
+        )
+    )
+
+
+def starts_lowercase_continuation(markdown: str) -> bool:
+    text = re.sub(r"^[*_`\s]+", "", markdown)
+    return bool(text and text[0].islower())
 
 
 @dataclass

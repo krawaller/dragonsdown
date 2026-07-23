@@ -454,7 +454,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "The Eastern Reaches expansion adds 23 Wilderness Tokens (*one for each existing* *Terrain Pack and 9 tokens for each new Terrain Pack*). Mix each of these new tokens into the existing Wilderness Tokens for any Terrain Packs in play. Some tokens are marked with a + sign on the front face of the token. When moving or exploring a Hero may reveal one of the new tokens. Each new token is explained below:\n\n- ![float-right](/images/pdf/68edfc435ae28f54feacd00f28507d88a326ee03.jpeg) **Discovery**: Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n- ![float-right](/images/pdf/1f5d2fdbc622e3b24a7b4c326d74751d6c1b37b0.jpeg) **Oasis**: Draw one additional Wilderness Token from the Dreadful Desert Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the larger Oasis location counter in the\n\nindicated clearing. *Exception: If the die roll indicates a clearing with a* *Treasure Site or Civilization Location, reroll the die, unless there are no* *available clearings. Draw two Civilization Tokens and place them in the Map* *Tile near the Oasis. For all purposes, the Oasis is a Civilization Location.*\n\n- ![float-right](/images/pdf/4d6151c56e74b8108e2bd030cdf6223491cc1808.jpeg) **Buried Temple:** Draw one additional Wilderness Token from each Terrain Setup Card in play and place them in the Map Tile. The revealing Hero receives 1 LP and 5 Fame. *Note the rule* *adjustment for Special Location Wilderness Tokens on page 1 of these rules.*"
+      "content": "The Eastern Reaches expansion adds 23 Wilderness Tokens (*one for each existing* *Terrain Pack and 9 tokens for each new Terrain Pack*). Mix each of these new tokens into the existing Wilderness Tokens for any Terrain Packs in play. Some tokens are marked with a + sign on the front face of the token. When moving or exploring a Hero may reveal one of the new tokens. Each new token is explained below:\n\n- ![float-right](/images/pdf/68edfc435ae28f54feacd00f28507d88a326ee03.jpeg) **Discovery**: Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n- ![float-right](/images/pdf/1f5d2fdbc622e3b24a7b4c326d74751d6c1b37b0.jpeg) **Oasis**: Draw one additional Wilderness Token from the Dreadful Desert Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the larger Oasis location counter in the indicated clearing. *Exception: If the die roll indicates a clearing with a* *Treasure Site or Civilization Location, reroll the die, unless there are no* *available clearings. Draw two Civilization Tokens and place them in the Map* *Tile near the Oasis. For all purposes, the Oasis is a Civilization Location.*\n\n- ![float-right](/images/pdf/4d6151c56e74b8108e2bd030cdf6223491cc1808.jpeg) **Buried Temple:** Draw one additional Wilderness Token from each Terrain Setup Card in play and place them in the Map Tile. The revealing Hero receives 1 LP and 5 Fame. *Note the rule* *adjustment for Special Location Wilderness Tokens on page 1 of these rules.*"
     },
     {
       "id": "3.5",
@@ -766,7 +766,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "- **War Horse**: A Hero that has a War Horse equipped may perform a bonus Alert Action during their Action Phase. A War Horse provides two miscellaneous positions in which a Hero may place face-up Treasure Cards. During Combat, the War Horse has a base maneuver speed of 0 + up to two Speed Cubes played on the maneuver boxes on the horse card. War Horses are armored.\n\n- **Heavy Horse**: A Hero that has a Heavy Horse equipped may perform a bonus Move Action during their Action Phase. A Heavy Horse provides one miscellaneous position in which a Hero may place a face-up Treasure Card. During Combat, the Heavy Horse has a base maneuver speed of 1 +\n\nup to two Speed Cubes played on the maneuver boxes on the horse card.\n\n- **Light Horse**: A Hero that has a Light Horse equipped may perform 2 bonus move actions during their Action Phase. During Combat, the Light Horse has  a base maneuver speed of 2 + up to two Speed Cubes played on the maneuver boxes on the horse card."
+      "content": "- **War Horse**: A Hero that has a War Horse equipped may perform a bonus Alert Action during their Action Phase. A War Horse provides two miscellaneous positions in which a Hero may place face-up Treasure Cards. During Combat, the War Horse has a base maneuver speed of 0 + up to two Speed Cubes played on the maneuver boxes on the horse card. War Horses are armored.\n\n- **Heavy Horse**: A Hero that has a Heavy Horse equipped may perform a bonus Move Action during their Action Phase. A Heavy Horse provides one miscellaneous position in which a Hero may place a face-up Treasure Card. During Combat, the Heavy Horse has a base maneuver speed of 1 + up to two Speed Cubes played on the maneuver boxes on the horse card.\n\n- **Light Horse**: A Hero that has a Light Horse equipped may perform 2 bonus move actions during their Action Phase. During Combat, the Light Horse has  a base maneuver speed of 2 + up to two Speed Cubes played on the maneuver boxes on the horse card."
     },
     {
       "id": "4.9",
@@ -1792,7 +1792,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "Epic Treasure. After tactics are revealed, but before attacks are processed (*Step 7* *of Combat*), the Hero may move one Speed Cube from attack speed to maneuver\n\nspeed or vice versa (*as long as there is an open speed box*). During the clean up phase of Combat, any moved cube is placed in the wounded box.",
+      "content": "Epic Treasure. After tactics are revealed, but before attacks are processed (*Step 7* *of Combat*), the Hero may move one Speed Cube from attack speed to maneuver speed or vice versa (*as long as there is an open speed box*). During the clean up phase of Combat, any moved cube is placed in the wounded box.",
       "tags": [
         "deepTreasure"
       ]
@@ -2180,7 +2180,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Self or other. Turn. Wound one green cube. Once next turn the Hero may reject\n\na drawn Wilderness Token and mix it back into the pool of matching Wilderness Tokens and draw a new one, which must be put into play.",
+      "content": "Self or other. Turn. Wound one green cube. Once next turn the Hero may reject a drawn Wilderness Token and mix it back into the pool of matching Wilderness Tokens and draw a new one, which must be put into play.",
       "tags": [
         "spell",
         "greenMagic"

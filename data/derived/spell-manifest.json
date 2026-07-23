@@ -208,7 +208,7 @@
       "column": "right",
       "section": "bottom"
     },
-    "content": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all\n\nrewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster.",
+    "content": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster.",
     "tags": [
       "spell",
       "blackMagic"
@@ -641,7 +641,7 @@
       "column": "right",
       "section": "bottom"
     },
-    "content": "Combat. Wound one green cube. Randomly select one of the Elemental Monster Chips and place it in the clearing. Next Combat Round, the Elemental participates\n\nin combat controlled by the caster. A caster earns no Fame for killing their own Elemental, but earns Fame for kills made by the Elemental. The spell expires if the Elemental is killed, the spell caster is killed, or the spell caster leaves the clearing.",
+    "content": "Combat. Wound one green cube. Randomly select one of the Elemental Monster Chips and place it in the clearing. Next Combat Round, the Elemental participates in combat controlled by the caster. A caster earns no Fame for killing their own Elemental, but earns Fame for kills made by the Elemental. The spell expires if the Elemental is killed, the spell caster is killed, or the spell caster leaves the clearing.",
     "tags": [
       "spell",
       "greenMagic"
@@ -709,7 +709,7 @@
       "column": "left",
       "section": "bottom"
     },
-    "content": "Self or other. Turn. Wound one green cube. Once next turn the Hero may reject\n\na drawn Wilderness Token and mix it back into the pool of matching Wilderness Tokens and draw a new one, which must be put into play.",
+    "content": "Self or other. Turn. Wound one green cube. Once next turn the Hero may reject a drawn Wilderness Token and mix it back into the pool of matching Wilderness Tokens and draw a new one, which must be put into play.",
     "tags": [
       "spell",
       "greenMagic"

@@ -938,7 +938,7 @@
       "column": "right",
       "section": "bottom"
     },
-    "content": "Epic Treasure. After tactics are revealed, but before attacks are processed (*Step 7* *of Combat*), the Hero may move one Speed Cube from attack speed to maneuver\n\nspeed or vice versa (*as long as there is an open speed box*). During the clean up phase of Combat, any moved cube is placed in the wounded box.",
+    "content": "Epic Treasure. After tactics are revealed, but before attacks are processed (*Step 7* *of Combat*), the Hero may move one Speed Cube from attack speed to maneuver speed or vice versa (*as long as there is an open speed box*). During the clean up phase of Combat, any moved cube is placed in the wounded box.",
     "tags": [
       "deepTreasure"
     ]
