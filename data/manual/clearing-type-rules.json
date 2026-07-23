@@ -16,6 +16,11 @@
         "doc": "core",
         "headings": ["Actions", "The actions", "Move"],
         "anchor": "Mountains or Swamps"
+      },
+      {
+        "doc": "core",
+        "headings": ["Actions", "The actions", "Explore"],
+        "anchor": "Mountain Exploration"
       }
     ]
   },

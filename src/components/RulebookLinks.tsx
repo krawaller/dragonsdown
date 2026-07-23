@@ -76,7 +76,9 @@ function RulebookLinkCard({ link }: { link: RulebookLink }) {
           <button
             type="button"
             aria-expanded={expanded}
-            aria-label={expanded ? "Collapse rulebook content" : "Expand rulebook content"}
+            aria-label={
+              expanded ? "Collapse rulebook content" : "Expand rulebook content"
+            }
             className="flex basis-8 shrink-0 cursor-pointer items-start justify-center px-0 py-2 text-zinc-600 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-100"
             onClick={() => setExpanded((current) => !current)}
           >
