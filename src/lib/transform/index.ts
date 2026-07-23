@@ -6,6 +6,7 @@ export type Rule =
   | IgnoreImagesRule
   | DedupeImagesRule
   | AddTagRule
+  | ReplaceContentRule
   | ReplaceTitleRule
   | ExtractFooterRule
   | MoveImageRule
@@ -32,6 +33,13 @@ export type AddTagRule = {
   target: Target;
   /** A single tag or several to apply at once. Duplicates are skipped. */
   tag: string | string[];
+};
+
+export type ReplaceContentRule = {
+  op: "replaceContent";
+  target: Target;
+  from: string;
+  to: string;
 };
 
 export type ReplaceTitleRule = {
@@ -149,6 +157,14 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
         const missing = toAdd.filter((t) => !existing.includes(t));
         if (missing.length === 0) return s;
         return { ...s, tags: [...existing, ...missing] };
+      });
+    }
+    case "replaceContent": {
+      const ids = selectMatchingIds(rule.target, sections);
+      if (ids.size === 0) return sections;
+      return sections.map((s) => {
+        if (!ids.has(s.id) || !s.content.includes(rule.from)) return s;
+        return { ...s, content: s.content.replace(rule.from, rule.to) };
       });
     }
     case "replaceTitle": {

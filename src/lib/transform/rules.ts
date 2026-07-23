@@ -90,6 +90,12 @@ export const TRANSFORMS: Rule[] = [
     title: "Civilization Cards and Titles",
   },
   {
+    op: "replaceContent",
+    target: { doc: "core", titleRegex: "^Golden Rule of Damage:$" },
+    from: "(*arrow symbol on the Monster, Weapon*\n\n*Card, or Spell Card*)",
+    to: "(*arrow symbol on the Monster, Weapon Card, or Spell Card*)",
+  },
+  {
     op: "replaceSectionRange",
     target: { doc: "core" },
     from: { titleRegex: "^TURN SEQUENCE$", level: 1 },

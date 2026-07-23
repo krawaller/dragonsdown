@@ -179,6 +179,28 @@ Body`);
   });
 });
 
+describe("replaceContent", () => {
+  it("replaces exact content fragments in matched sections", () => {
+    const sections = [
+      s("1", "before split after", { title: "Target" }),
+      s("2", "before split after", { title: "Other" }),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "replaceContent",
+        target: { titleRegex: "^Target$" },
+        from: "split",
+        to: "joined",
+      },
+    ];
+
+    const out = applyTransforms(sections, rules, "core");
+
+    expect(out[0].content).toBe("before joined after");
+    expect(out[1].content).toBe("before split after");
+  });
+});
+
 describe("replaceTitle", () => {
   it("renames matched sections without changing content", () => {
     const sections = [
