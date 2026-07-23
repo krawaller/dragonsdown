@@ -67,6 +67,26 @@ describe("resolveRulebookLinks", () => {
     ]);
   });
 
+  it("can link to numbered bullet anchors inside a resolved section", async () => {
+    const links = await resolveRulebookLinks({
+      doc: "natives-and-legends",
+      headings: ["DRAGONS DOWN: LEGENDS", "Game Components"],
+      anchor: "7 Legendary Treasures",
+    });
+
+    expect(links).toEqual([
+      expect.objectContaining({
+        docSlug: "natives-and-legends",
+        sectionTitle: "Game Components",
+        anchor: "7 Legendary Treasures",
+        content: expect.stringContaining(
+          "- 7 Legendary Treasures with a Purple banner",
+        ),
+        href: "/natives-and-legends#natives-and-legends-3.1--7-legendary-treasures",
+      }),
+    ]);
+  });
+
   it("promotes leading floated content images to preview icons", async () => {
     const links = await resolveRulebookLinks({
       doc: "eastern-reaches",

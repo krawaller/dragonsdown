@@ -533,17 +533,27 @@ function spellCasterMatchesMonsterName(
 
 function normalizedNameVariants(name: string): string[] {
   const normalized = normalizeTitle(name);
-  const firstSpace = normalized.indexOf(" ");
-  const firstWord =
-    firstSpace === -1 ? normalized : normalized.slice(0, firstSpace);
-  const rest = firstSpace === -1 ? "" : normalized.slice(firstSpace);
   const variants = new Set([normalized]);
-  if (firstWord.endsWith("ves")) {
-    variants.add(`${firstWord.slice(0, -3)}f${rest}`);
-  } else if (firstWord.endsWith("s") && firstWord.length > 1) {
-    variants.add(`${firstWord.slice(0, -1)}${rest}`);
+
+  const words = normalized.split(" ");
+  for (const [index, word] of words.entries()) {
+    for (const variant of singularNameWordVariants(word)) {
+      variants.add(
+        words
+          .map((candidate, candidateIndex) =>
+            candidateIndex === index ? variant : candidate,
+          )
+          .join(" "),
+      );
+    }
   }
   return [...variants];
+}
+
+function singularNameWordVariants(word: string): string[] {
+  if (word.endsWith("ves")) return [`${word.slice(0, -3)}f`];
+  if (word.endsWith("s") && word.length > 1) return [word.slice(0, -1)];
+  return [];
 }
 
 function readJsonOrEmpty<T>(file: string): T {

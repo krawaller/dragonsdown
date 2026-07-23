@@ -123,14 +123,14 @@ export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
                           face: face.label,
                         })
                       }
-                      className="block rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
+                      className="block size-24 shrink-0 rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:ring-2 hover:ring-zinc-400 transition cursor-pointer"
                       aria-label={`Zoom ${displayName} ${face.label}`}
                     >
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={face.imageURL}
                         alt={`${displayName} ${face.label}`}
-                        className="size-24 object-cover block bg-zinc-100 dark:bg-zinc-900"
+                        className="block h-full w-full object-cover bg-zinc-100 dark:bg-zinc-900"
                       />
                     </button>
                   ))}

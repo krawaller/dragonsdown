@@ -5,7 +5,10 @@ import type {
   SectionContentNode,
   SectionImageDisplay,
 } from "@/lib/rulebooks";
-import { sectionContentAnchorIdFor } from "@/lib/rulebook-anchors";
+import {
+  markdownBlockAnchorFor,
+  sectionContentAnchorIdFor,
+} from "@/lib/rulebook-anchors";
 
 export function RulebookContent({
   nodes,
@@ -52,6 +55,7 @@ export function RulebookContent({
         key={index}
         components={{
           img: MarkdownImage,
+          li: (props) => MarkdownListItem({ ...props, section }),
           strong: (props) => MarkdownStrong({ ...props, section }),
         }}
       >
@@ -63,6 +67,29 @@ export function RulebookContent({
 
 function MarkdownMediaAsideParagraph({ children }: { children?: ReactNode }) {
   return <p className="mt-0">{children}</p>;
+}
+
+function MarkdownListItem({
+  children,
+  section,
+}: {
+  children?: ReactNode;
+  section?: Section;
+}) {
+  const text = textFromNode(children);
+  const anchor = markdownBlockAnchorFor(`- ${text}`);
+  return (
+    <li
+      id={
+        section && anchor
+          ? sectionContentAnchorIdFor(section, anchor)
+          : undefined
+      }
+      className={section && anchor ? "scroll-mt-6" : undefined}
+    >
+      {children}
+    </li>
+  );
 }
 
 function MarkdownStrong({

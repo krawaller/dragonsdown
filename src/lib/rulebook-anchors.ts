@@ -30,20 +30,42 @@ export function markdownSliceForAnchor(
   const blocks = markdown.trim().split(/\n{2,}/);
   const start = blocks.findIndex(
     (block) =>
-      anchorSlugFor(pseudoHeadingAnchorFor(block) ?? "") ===
+      anchorSlugFor(markdownBlockAnchorFor(block) ?? "") ===
       anchorSlugFor(anchor),
   );
   if (start === -1) return undefined;
 
   const nextAnchor = blocks.findIndex(
-    (block, index) => index > start && Boolean(pseudoHeadingAnchorFor(block)),
+    (block, index) => index > start && Boolean(markdownBlockAnchorFor(block)),
   );
   const end = nextAnchor === -1 ? blocks.length : nextAnchor;
   return blocks.slice(start, end).join("\n\n");
+}
+
+export function markdownBlockAnchorFor(
+  markdownBlock: string,
+): string | undefined {
+  return (
+    pseudoHeadingAnchorFor(markdownBlock) ?? listItemAnchorFor(markdownBlock)
+  );
 }
 
 function pseudoHeadingAnchorFor(markdownBlock: string): string | undefined {
   return markdownBlock
     .match(/^(?:[-*+]\s+)?(?:!\[[^\]]*\]\([^)]*\)\s+)*\*\*([^*\n]+):\*\*/)?.[1]
     ?.trim();
+}
+
+function listItemAnchorFor(markdownBlock: string): string | undefined {
+  const listItem = markdownBlock.match(/^[-*+]\s+([\s\S]*)$/)?.[1];
+  if (!listItem) return undefined;
+
+  const text = listItem
+    .replace(/^!\[[^\]]*\]\([^)]*\)\s+/, "")
+    .replace(/[*_`]/g, "")
+    .trim();
+  const numberedPhrase = text.match(
+    /^\d+\s+\p{Lu}[\p{L}'’]*(?:\s+\p{Lu}[\p{L}'’]*){0,3}/u,
+  )?.[0];
+  return numberedPhrase?.trim();
 }

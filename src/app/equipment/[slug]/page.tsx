@@ -35,6 +35,7 @@ export default async function EquipmentDetailPage({
     name: entry.name,
     hasTreasure: entry.treasures.length > 0,
     hasItem: entry.item !== undefined,
+    hasLegendaryTreasure: entry.decks.includes("legendary"),
   });
 
   return (

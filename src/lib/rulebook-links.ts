@@ -199,13 +199,22 @@ export async function resolveEquipmentRulebookLinks({
   name,
   hasTreasure,
   hasItem,
+  hasLegendaryTreasure,
 }: {
   name: string;
   hasTreasure: boolean;
   hasItem: boolean;
+  hasLegendaryTreasure: boolean;
 }): Promise<RulebookLink[]> {
   const links = await Promise.all([
     hasTreasure ? resolveTreasureRulebookLinks(name) : Promise.resolve([]),
+    hasLegendaryTreasure
+      ? resolveRulebookLinks({
+          doc: "natives-and-legends",
+          headings: ["DRAGONS DOWN: LEGENDS", "Game Components"],
+          anchor: "7 Legendary Treasures",
+        })
+      : Promise.resolve([]),
     hasItem && isHorseEquipment(name)
       ? resolveRulebookLinks({
           doc: ANY_DOC,
