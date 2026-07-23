@@ -4190,7 +4190,7 @@
         "section": "bottom"
       },
       "icon": "/images/pdf/f238439055e740c7b97a5d14005d629c1e0b3108.jpeg",
-      "content": "Some Monsters have Swimming Ability, and some game effects grant Swimming Ability to Heroes. Swimming is already built into the maneuver speed for Monsters with Swimming Ability. Swimming has no impact during Combat unless specified by a spell or other game effect.\n\nWhen a Hero has Swimming Ability, the Hero may use a Move Action to move between adjacent Dock and River Clearings. This is not ferrying and costs no Gold.\n\nEach move into a River Clearing while swimming costs one action. Movement into a Dock Clearing incurs the normal cost for the clearing type.\n\n(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
+      "content": "Some Monsters have Swimming Ability, and some game effects grant Swimming Ability to Heroes. Swimming is already built into the maneuver speed for Monsters with Swimming Ability. Swimming has no impact during Combat unless specified by a spell or other game effect.\n\nWhen a Hero has Swimming Ability, the Hero may use a Move Action to move between adjacent Dock and River Clearings. This is not ferrying and costs no Gold.\n\nEach move into a River Clearing while swimming costs one action. Movement into a Dock Clearing incurs the normal cost for the clearing type.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -4203,10 +4203,6 @@
         {
           "kind": "markdown",
           "markdown": "Each move into a River Clearing while swimming costs one action. Movement into a Dock Clearing incurs the normal cost for the clearing type."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
         }
       ]
     },
@@ -4489,6 +4485,24 @@
           "kind": "image",
           "src": "/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg",
           "display": "block"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "source": "eastern-reaches",
+      "level": 1,
+      "title": "Credits",
+      "location": {
+        "page": 16,
+        "column": "full",
+        "section": "bottom"
+      },
+      "content": "(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
+      "contentNodes": [
+        {
+          "kind": "markdown",
+          "markdown": "(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
         }
       ]
     }

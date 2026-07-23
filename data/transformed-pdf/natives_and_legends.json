@@ -2676,7 +2676,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "The haggle number the Hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the Hero’s Lineage and Class Cards that match the Native’s respect icon.\n\n- **Title:** +1 if the Hero has placed one or more cubes on the Native Group’s Civilization Card.\n\n- **Outlaw:** If the Hero possesses one or more Outlaw Tokens, +1 if haggling with a Native that respects only Cunning and -1 if haggling with a Native that respects only Wisdom. The number of Outlaw Tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or Treasures.\n\n- **Elf Kin:** An Elf Hero attempting to hire from the elves Native Group receives a +1 bonus. An Elf Hero attempting to hire from the Dwarves Native Group receives a -1 penalty.\n\n- **Dwarf Kin:** A Dwarf Hero attempting to hire from the Dwarves Native Group receives a +1 bonus. A Dwarf Hero attempting to hire from the elves Native Group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling Hero rolls two Haggle Dice:\n\n- ![float-right](/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png) If either die shows a closed door, the haggle attempt fails and the Native Group closes communication with the Hero for the rest of the turn. No more hire attempts may be made with that Native Group by that Hero until the following turn.\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the Hire action is terminated. The Hero may attempt to hire and haggle with the Native Group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the Native during this Hire action is reduced by a factor of one (*from 4x to 3x to 2x to 1x*). The Hero may continue haggling as part of the same Hire action, if they wish. The price to hire a Native is never less than 1x.\n\n(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.\n\nInsults *(abbreviated: see full rules)*\n\nAfter Monster Summoning, all Heroes in a clearing with one or more Unhired Natives must roll two Haggle Dice:\n\n- No closed doors: The clearing is peaceful. Nothing happens.\n\n- Two closed doors: The Hero must Buy Drinks for all Native Groups in the clearing (*see Buy Drinks on page 2*).\n\n- One closed door: Compare the number rolled on the other die to the matching respected icons of the Hero for **each** Native Group in the clearing, modified by titles, Outlaw Tokens, spells, Treasures, and Elf/Dwarf kin rules. If the number rolled is higher than the modified number of icons, the Hero must Buy Drinks for that Native Group.",
+      "content": "The haggle number the Hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the Hero’s Lineage and Class Cards that match the Native’s respect icon.\n\n- **Title:** +1 if the Hero has placed one or more cubes on the Native Group’s Civilization Card.\n\n- **Outlaw:** If the Hero possesses one or more Outlaw Tokens, +1 if haggling with a Native that respects only Cunning and -1 if haggling with a Native that respects only Wisdom. The number of Outlaw Tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or Treasures.\n\n- **Elf Kin:** An Elf Hero attempting to hire from the elves Native Group receives a +1 bonus. An Elf Hero attempting to hire from the Dwarves Native Group receives a -1 penalty.\n\n- **Dwarf Kin:** A Dwarf Hero attempting to hire from the Dwarves Native Group receives a +1 bonus. A Dwarf Hero attempting to hire from the elves Native Group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling Hero rolls two Haggle Dice:\n\n- ![float-right](/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png) If either die shows a closed door, the haggle attempt fails and the Native Group closes communication with the Hero for the rest of the turn. No more hire attempts may be made with that Native Group by that Hero until the following turn.\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the Hire action is terminated. The Hero may attempt to hire and haggle with the Native Group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the Native during this Hire action is reduced by a factor of one (*from 4x to 3x to 2x to 1x*). The Hero may continue haggling as part of the same Hire action, if they wish. The price to hire a Native is never less than 1x.\n\nInsults *(abbreviated: see full rules)*\n\nAfter Monster Summoning, all Heroes in a clearing with one or more Unhired Natives must roll two Haggle Dice:\n\n- No closed doors: The clearing is peaceful. Nothing happens.\n\n- Two closed doors: The Hero must Buy Drinks for all Native Groups in the clearing (*see Buy Drinks on page 2*).\n\n- One closed door: Compare the number rolled on the other die to the matching respected icons of the Hero for **each** Native Group in the clearing, modified by titles, Outlaw Tokens, spells, Treasures, and Elf/Dwarf kin rules. If the number rolled is higher than the modified number of icons, the Hero must Buy Drinks for that Native Group.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -2730,10 +2730,6 @@
         {
           "kind": "markdown",
           "markdown": "- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the Native during this Hire action is reduced by a factor of one (*from 4x to 3x to 2x to 1x*). The Hero may continue haggling as part of the same Hire action, if they wish. The price to hire a Native is never less than 1x."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
         },
         {
           "kind": "markdown",
@@ -2974,6 +2970,24 @@
           "kind": "image",
           "src": "/images/pdf/b5e5ae0b50d72de843bf2bba3b4f6b8ad3b21bb2.jpeg",
           "display": "block"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "source": "natives-and-legends",
+      "level": 1,
+      "title": "Credits",
+      "location": {
+        "page": 12,
+        "column": "full",
+        "section": "bottom"
+      },
+      "content": "(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
+      "contentNodes": [
+        {
+          "kind": "markdown",
+          "markdown": "(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
         }
       ]
     }

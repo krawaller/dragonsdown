@@ -947,6 +947,39 @@ def block_sort_key(block: dict, column_boundary: float) -> tuple:
     return (col, y0, x0)
 
 
+def is_full_width_page_footer(block: dict, page_rect: fitz.Rect) -> bool:
+    if block.get("type") != 0:
+        return False
+    x0, y0, x1, _ = block["bbox"]
+    width = x1 - x0
+    page_width = page_rect.width
+    if width < page_width * 0.7 or y0 < page_rect.height * 0.82:
+        return False
+    return x0 <= page_width * 0.16 and x1 >= page_width * 0.84
+
+
+def page_block_sort_key(block: dict, column_boundary: float, page_rect: fitz.Rect) -> tuple:
+    if is_full_width_page_footer(block, page_rect):
+        _, y0, x1, _ = block["bbox"]
+        return (2, y0, x1)
+    col, y0, x0 = block_sort_key(block, column_boundary)
+    return (col, y0, x0)
+
+
+def footer_location_for_block(
+    page_number: int, block: dict, page_h: float
+) -> dict[str, int | str]:
+    _, y0, _, y1 = block["bbox"]
+    cy = (y0 + y1) / 2
+    if cy < page_h / 3:
+        page_section = "top"
+    elif cy < (page_h * 2) / 3:
+        page_section = "middle"
+    else:
+        page_section = "bottom"
+    return {"page": page_number, "column": "full", "section": page_section}
+
+
 def find_column_boundary(blocks: list[dict], page_w: float) -> float:
     """Locate the gutter between the two text columns on a page.
 
@@ -1062,10 +1095,11 @@ def extract(pdf_path: Path) -> list[dict]:
         )
         blocks = sorted(
             raw_blocks,
-            key=lambda b: block_sort_key(b, boundary),
+            key=lambda b: page_block_sort_key(b, boundary, page.rect),
         )
         for block in blocks:
             btype = block.get("type")
+            is_footer = is_full_width_page_footer(block, page.rect)
             if btype == 0:
                 items = process_text_block(block, inline_by_line, floated_by_line)
             elif btype == 1:
@@ -1077,6 +1111,25 @@ def extract(pdf_path: Path) -> list[dict]:
                     continue
                 items = process_image_block(block, stats, total_pages)
             else:
+                continue
+            if is_footer:
+                footer = Section(
+                    level=1,
+                    title="Credits",
+                    location=footer_location_for_block(
+                        page_idx + 1, block, page.rect.height
+                    ),
+                )
+                sections.append(footer)
+                previous = current
+                current = footer
+                for item in items:
+                    kind = item[0]
+                    if kind == "para":
+                        push(item[1])
+                    elif kind == "bullets":
+                        push(item[1])
+                current = previous
                 continue
             for item in items:
                 kind = item[0]

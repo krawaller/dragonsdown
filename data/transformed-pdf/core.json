@@ -9750,13 +9750,8 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
-      "contentNodes": [
-        {
-          "kind": "markdown",
-          "markdown": "(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
-        }
-      ]
+      "content": "",
+      "contentNodes": []
     },
     {
       "id": "14",
@@ -9980,6 +9975,24 @@
           "kind": "image",
           "src": "/images/pdf/35ab9bb0502a8c33ad59809d6efccee490110087.jpeg",
           "display": "block"
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "source": "core",
+      "level": 1,
+      "title": "Credits",
+      "location": {
+        "page": 36,
+        "column": "full",
+        "section": "bottom"
+      },
+      "content": "(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
+      "contentNodes": [
+        {
+          "kind": "markdown",
+          "markdown": "(C) Copyright 2024 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
         }
       ]
     }
