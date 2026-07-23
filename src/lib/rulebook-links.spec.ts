@@ -40,4 +40,30 @@ describe("resolveRulebookLinks", () => {
       }),
     ]);
   });
+
+  it("can link to pseudo-heading anchors inside bullet list items", async () => {
+    const links = await resolveRulebookLinks({
+      doc: "core",
+      headings: [
+        "Actions",
+        "The actions",
+        "Move",
+        "Place Tokens",
+        "Wilderness tiles",
+      ],
+      anchor: "Forgotten City/Dwarven Ruins",
+    });
+
+    expect(links).toEqual([
+      expect.objectContaining({
+        docSlug: "core",
+        sectionTitle: "Wilderness tiles:",
+        anchor: "Forgotten City/Dwarven Ruins",
+        content: expect.stringContaining(
+          "**Forgotten City/Dwarven Ruins:** Reveal one additional token",
+        ),
+        href: "/core#core-6.1.2.3.3.1.2--forgotten-city-dwarven-ruins",
+      }),
+    ]);
+  });
 });

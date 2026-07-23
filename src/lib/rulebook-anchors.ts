@@ -43,5 +43,7 @@ export function markdownSliceForAnchor(
 }
 
 function pseudoHeadingAnchorFor(markdownBlock: string): string | undefined {
-  return markdownBlock.match(/^\*\*([^*\n]+):\*\*/)?.[1]?.trim();
+  return markdownBlock
+    .match(/^(?:[-*+]\s+)?(?:!\[[^\]]*\]\([^)]*\)\s+)*\*\*([^*\n]+):\*\*/)?.[1]
+    ?.trim();
 }
