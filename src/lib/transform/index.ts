@@ -12,6 +12,7 @@ export type Rule =
   | MoveImageRule
   | MoveImagesRule
   | FloatImagesRule
+  | FloatImagesAtAnchorsRule
   | ReplaceSectionRangeRule;
 
 export type IgnoreImagesRule = {
@@ -52,6 +53,14 @@ export type FloatImagesRule = {
   op: "floatImages";
   target: Target;
   direction: "left" | "right";
+};
+
+export type FloatImagesAtAnchorsRule = {
+  op: "floatImagesAtAnchors";
+  target: Target;
+  direction: "left" | "right";
+  /** SHA1 image hash -> text anchor within the paragraph or bullet to decorate. */
+  anchors: Record<string, string>;
 };
 
 export type ReplaceSectionRangeRule = {
@@ -185,6 +194,19 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
         return content === s.content ? s : { ...s, content };
       });
     }
+    case "floatImagesAtAnchors": {
+      const ids = selectMatchingIds(rule.target, sections);
+      if (ids.size === 0) return sections;
+      return sections.map((s) => {
+        if (!ids.has(s.id)) return s;
+        const content = floatImagesAtAnchors(
+          s.content,
+          rule.anchors,
+          rule.direction,
+        );
+        return content === s.content ? s : { ...s, content };
+      });
+    }
     case "replaceSectionRange":
       return replaceSectionRange(sections, rule);
     case "extractFooter":
@@ -291,6 +313,62 @@ function floatImages(content: string, direction: "left" | "right"): string {
     /!\[\]\((\/images\/(?:[a-z]+\/)?[a-f0-9]+\.[a-z]+)\)/g,
     `![${display}]($1)`,
   );
+}
+
+function floatImagesAtAnchors(
+  content: string,
+  anchors: Record<string, string>,
+  direction: "left" | "right",
+): string {
+  let result = content;
+  const display = `float-${direction}`;
+  const imagesByAnchor = new Map<string, string[]>();
+  for (const [imageId, anchor] of Object.entries(anchors)) {
+    if (!anchor) continue;
+    const refRe = new RegExp(
+      `!\\[[^\\]]*\\]\\((\/images\/(?:[a-z]+\/)?${imageId}\\.[a-z]+)\\)`,
+    );
+    const match = result.match(refRe);
+    if (!match) continue;
+    const imageRef = `![${display}](${match[1]})`;
+    const stripped = stripImageRef(result, refRe);
+    if (!stripped.includes(anchor)) continue;
+    result = stripped;
+    const images = imagesByAnchor.get(anchor) ?? [];
+    images.push(imageRef);
+    imagesByAnchor.set(anchor, images);
+  }
+  for (const [anchor, imageRefs] of imagesByAnchor) {
+    const anchorIndex = result.indexOf(anchor);
+    if (anchorIndex < 0) continue;
+    result = insertImagesAtAnchor(result, anchorIndex, imageRefs);
+  }
+  return result.replace(/\n{3,}/g, "\n\n");
+}
+
+function stripImageRef(content: string, refRe: RegExp): string {
+  const surroundRe = new RegExp(`(\\s*)${refRe.source}(\\s*)`);
+  return content
+    .replace(surroundRe, (_match, before: string, after: string) => {
+      if (!before && !after) return "";
+      return (before + after).includes("\n") ? "\n\n" : " ";
+    })
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+function insertImagesAtAnchor(
+  content: string,
+  anchorIndex: number,
+  imageRefs: string[],
+): string {
+  const images = imageRefs.join(" ");
+  const lineStart = content.lastIndexOf("\n", anchorIndex - 1) + 1;
+  const beforeAnchorOnLine = content.slice(lineStart, anchorIndex);
+  if (/^[-*+]\s+$/.test(beforeAnchorOnLine)) {
+    return `${content.slice(0, anchorIndex)}${images} ${content.slice(anchorIndex)}`;
+  }
+  return `${content.slice(0, anchorIndex)}${images}\n\n${content.slice(anchorIndex)}`;
 }
 
 function replaceSectionRange(

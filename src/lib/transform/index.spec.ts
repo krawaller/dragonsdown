@@ -179,6 +179,87 @@ Body`);
   });
 });
 
+describe("floatImagesAtAnchors", () => {
+  it("moves matched images into anchored bullet items as floated images", () => {
+    const sections = [
+      s(
+        "1",
+        `- First bullet
+
+${IMG("aaa")}
+
+- Second bullet
+
+${IMG("bbb")}
+
+- Third bullet`,
+        { title: "Combat Steps" },
+      ),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "floatImagesAtAnchors",
+        target: { titleRegex: "^Combat Steps$" },
+        direction: "right",
+        anchors: {
+          aaa: "Second bullet",
+          bbb: "Third bullet",
+        },
+      },
+    ];
+
+    const out = applyTransforms(sections, rules, "core")[0].content;
+
+    expect(out).toBe(`- First bullet
+
+- ![float-right](/images/aaa.png) Second bullet
+
+- ![float-right](/images/bbb.png) Third bullet`);
+  });
+
+  it("leaves content unchanged when an anchor is missing", () => {
+    const sections = [s("1", `${IMG("aaa")}\n\nBody`, { title: "Target" })];
+    const rules: Rule[] = [
+      {
+        op: "floatImagesAtAnchors",
+        target: "ALL",
+        direction: "right",
+        anchors: { aaa: "Missing" },
+      },
+    ];
+
+    expect(applyTransforms(sections, rules, "core")).toEqual(sections);
+  });
+
+  it("places multiple images at the same anchor", () => {
+    const sections = [
+      s(
+        "1",
+        `${IMG("aaa")}
+
+${IMG("bbb")}
+
+- Shared bullet`,
+      ),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "floatImagesAtAnchors",
+        target: "ALL",
+        direction: "right",
+        anchors: {
+          aaa: "Shared bullet",
+          bbb: "Shared bullet",
+        },
+      },
+    ];
+
+    expect(applyTransforms(sections, rules, "core")[0].content).toBe(
+      `- ![float-right](/images/aaa.png) ![float-right](/images/bbb.png) Shared bullet`,
+    );
+  });
+});
+
 describe("replaceContent", () => {
   it("replaces exact content fragments in matched sections", () => {
     const sections = [

@@ -96,6 +96,19 @@ export const TRANSFORMS: Rule[] = [
     to: "(*arrow symbol on the Monster, Weapon Card, or Spell Card*)",
   },
   {
+    op: "floatImagesAtAnchors",
+    target: { doc: "core", titleRegex: "^Combat Steps$" },
+    direction: "right",
+    anchors: {
+      "5ea310ce38685a2f70c774fca67fd5f892ea8baf":
+        "If the attacker’s attack speed is faster than the target’s maneuver speed,",
+      cb442c7b50f04d0747de8db542eccc2af9371a20:
+        "If the attacker’s attack speed is faster than the target’s maneuver speed,",
+      ce0485b25783048d07f54d9e3938e6f10602f54d:
+        "If the attacker’s attack speed is faster than the target’s maneuver speed,",
+    },
+  },
+  {
     op: "replaceSectionRange",
     target: { doc: "core" },
     from: { titleRegex: "^TURN SEQUENCE$", level: 1 },
