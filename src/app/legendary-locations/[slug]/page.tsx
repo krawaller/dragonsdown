@@ -4,10 +4,11 @@ import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { ANY_DOC, resolveRulebookLinks } from "@/lib/rulebook-links";
 import { slugify } from "@/lib/slug";
-import type {
-  TTSLegendaryLocation,
-  TTSLegendarySiteToken,
-  TTSLegendaryTreasureCard,
+import {
+  normalizeTitle,
+  type TTSLegendaryLocation,
+  type TTSLegendarySiteToken,
+  type TTSLegendaryTreasureCard,
 } from "@/lib/tts";
 import {
   getAllLegendaryLocations,
@@ -162,7 +163,7 @@ function TreasureBlock({
           {treasures.map((treasure) => (
             <Link
               key={treasure.name}
-              href={`/equipment/${slugify(treasure.name)}`}
+              href={equipmentHrefForLegendaryTreasure(treasure.name)}
               className="space-y-2 rounded border border-transparent p-2 -m-2 hover:border-zinc-200 hover:bg-zinc-50 dark:hover:border-zinc-800 dark:hover:bg-zinc-900 transition-colors"
             >
               {treasure.card && (
@@ -178,6 +179,10 @@ function TreasureBlock({
       )}
     </div>
   );
+}
+
+function equipmentHrefForLegendaryTreasure(name: string): string {
+  return `/equipment/${slugify(normalizeTitle(name))}`;
 }
 
 function MonsterChip({ chip }: { chip: LegendaryMonsterLink }) {

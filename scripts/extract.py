@@ -47,6 +47,8 @@ BLACKISH = {0x000000, 0x231F20}
 
 BG_COVERAGE_THRESHOLD = 0.7
 BG_PAGE_FRACTION = 0.5
+FLOAT_IMAGE_GAP_MIN = -4
+FLOAT_IMAGE_GAP_MAX = 28
 
 
 # Matches PDF line-wrap artifacts: a word ending in `-` or `/` followed by a
@@ -711,9 +713,9 @@ def find_floated_images(
                 continue
             left_gap = lx0 - ix1
             right_gap = ix0 - lx1
-            if 0 <= left_gap <= 28:
+            if FLOAT_IMAGE_GAP_MIN <= left_gap <= FLOAT_IMAGE_GAP_MAX:
                 left_lines.append(text_line)
-            elif 0 <= right_gap <= 28:
+            elif FLOAT_IMAGE_GAP_MIN <= right_gap <= FLOAT_IMAGE_GAP_MAX:
                 right_lines.append(text_line)
 
         direction: str | None = None

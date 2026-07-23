@@ -364,7 +364,7 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "A Legendary Location will always have one of the two symbols below printed on the Legendary Location Card.\n\n![](/images/pdf/b2a4a671330bc5ce847f0574a71896fcd976106e.jpeg)\n\n- **Sites:** Sites are permanent once revealed. A Hero may search for and loot a site like any other Treasure Site.\n\n![](/images/pdf/d14f5b12b57fc037433ec59e9882aa77106d1a17.jpeg)\n\n- **Tests:** Tests are temporary obstacles a Hero may attempt to solve to gain rewards. Tests are removed from the game once completed."
+      "content": "A Legendary Location will always have one of the two symbols below printed on the Legendary Location Card.\n\n- ![float-right](/images/pdf/b2a4a671330bc5ce847f0574a71896fcd976106e.jpeg) **Sites:** Sites are permanent once revealed. A Hero may search for and loot a site like any other Treasure Site.\n\n- ![float-right](/images/pdf/d14f5b12b57fc037433ec59e9882aa77106d1a17.jpeg) **Tests:** Tests are temporary obstacles a Hero may attempt to solve to gain rewards. Tests are removed from the game once completed."
     },
     {
       "id": "3.2.0.2",
