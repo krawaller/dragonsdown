@@ -12,6 +12,7 @@ export function terrainPackSummary(pack: TerrainPackEntry): string {
       pack.uniqueNatives.length + pack.uniqueMonsters.length,
       pack.slug === "neutral" ? "native/monster" : "unique native/monster",
     ),
+    countLabel(pack.natives.length + pack.monsters.length, "native/monster"),
     countLabel(pack.clearingTypes.length, "clearing type"),
     countLabel(pack.sites.length, "site"),
     countLabel(pack.mapTiles.length, "map tile"),

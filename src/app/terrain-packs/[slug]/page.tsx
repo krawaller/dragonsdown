@@ -142,6 +142,20 @@ export default async function TerrainPackPage({
           </NativeGrid>
         </TerrainBox>
 
+        <TerrainBox
+          title="Other Natives and Monsters"
+          count={pack.natives.length + pack.monsters.length}
+        >
+          <NativeGrid>
+            {pack.natives.map((entry) => (
+              <UniqueNativeTile key={entry.slug} entry={entry} />
+            ))}
+            {pack.monsters.map((entry) => (
+              <UniqueMonsterTile key={entry.slug} entry={entry} />
+            ))}
+          </NativeGrid>
+        </TerrainBox>
+
         <TerrainBox title="Clearing Types" count={pack.clearingTypes.length}>
           <ClearingTypeGrid>
             {pack.clearingTypes.map((entry) => (

@@ -1377,6 +1377,8 @@ export type TerrainPackEntry = {
   uniqueMissions: TerrainPackMissionEntry[];
   uniqueNatives: TerrainPackNativeEntry[];
   uniqueMonsters: TerrainPackMonsterEntry[];
+  natives: TerrainPackNativeEntry[];
+  monsters: TerrainPackMonsterEntry[];
   clearingTypes: TerrainPackClearingTypeEntry[];
   mapTiles: MapTileEntry[];
 };
@@ -1506,6 +1508,10 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
             nativeGroups,
           )
         : uniqueNativesForTerrainPack(packCivLocations, nativeGroups);
+    const packNatives =
+      name === CIVILISATION_TOKEN_NEUTRAL_TERRAIN
+        ? []
+        : nonUniqueNativesForTerrainPack(packCivLocations, nativeGroups);
     const packUniqueMonsters =
       name === CIVILISATION_TOKEN_NEUTRAL_TERRAIN
         ? nonUniqueMonstersForOtherTerrainPacks(
@@ -1517,6 +1523,14 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
             monsterGroups,
           )
         : uniqueMonstersForTerrainPack(packSites, packMapTiles, monsterGroups);
+    const packMonsters =
+      name === CIVILISATION_TOKEN_NEUTRAL_TERRAIN
+        ? []
+        : nonUniqueMonstersForTerrainPack(
+            packSites,
+            packMapTiles,
+            monsterGroups,
+          );
 
     return {
       name,
@@ -1537,6 +1551,8 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
       uniqueNatives: packUniqueNatives,
       sites: packSites,
       uniqueMonsters: packUniqueMonsters,
+      natives: packNatives,
+      monsters: packMonsters,
       clearingTypes: clearingTypesForTerrainPack(packMapTiles),
       mapTiles: packMapTiles,
     };
@@ -1816,14 +1832,54 @@ function uniqueNativesForTerrainPack(
   return nativeGroups
     .flatMap((group) => {
       if (group.nativeSummons.length === 0) return [];
-      const summonsOnlyFromThisPack = group.nativeSummons.every(
-        (summon) =>
-          summon.href.startsWith("/civ-locations/") &&
-          civLocationKeys.has(normalizeTitle(summon.name)),
-      );
-      return summonsOnlyFromThisPack ? [group] : [];
+      return nativeGroupOnlySummonsFromTerrainPack(group, civLocationKeys)
+        ? [group]
+        : [];
     })
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+function nonUniqueNativesForTerrainPack(
+  civLocations: CivLocationEntry[],
+  nativeGroups: MonsterGroupEntry[],
+): TerrainPackNativeEntry[] {
+  const civLocationKeys = new Set(
+    civLocations.map((entry) => normalizeTitle(entry.name)),
+  );
+  if (civLocationKeys.size === 0) return [];
+
+  return nativeGroups
+    .flatMap((group) => {
+      if (!nativeGroupHasSummonInTerrainPack(group, civLocationKeys)) {
+        return [];
+      }
+      return nativeGroupOnlySummonsFromTerrainPack(group, civLocationKeys)
+        ? []
+        : [group];
+    })
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+function nativeGroupHasSummonInTerrainPack(
+  group: MonsterGroupEntry,
+  civLocationKeys: ReadonlySet<string>,
+): boolean {
+  return group.nativeSummons.some(
+    (summon) =>
+      summon.href.startsWith("/civ-locations/") &&
+      civLocationKeys.has(normalizeTitle(summon.name)),
+  );
+}
+
+function nativeGroupOnlySummonsFromTerrainPack(
+  group: MonsterGroupEntry,
+  civLocationKeys: ReadonlySet<string>,
+): boolean {
+  return group.nativeSummons.every(
+    (summon) =>
+      summon.href.startsWith("/civ-locations/") &&
+      civLocationKeys.has(normalizeTitle(summon.name)),
+  );
 }
 
 function nonUniqueNativesForOtherTerrainPacks(
@@ -1860,19 +1916,79 @@ function uniqueMonstersForTerrainPack(
 
   return monsterGroups
     .flatMap((group) => {
-      const summonsCount = group.mapTiles.length + group.sites.length;
-      if (summonsCount === 0) return [];
-      const mapTilesOnlyFromThisPack = group.mapTiles.every((summon) =>
-        mapTileKeys.has(mapTileSummonKey(summon)),
-      );
-      const sitesOnlyFromThisPack = group.sites.every(
-        (summon) =>
-          summon.href.startsWith("/sites/") &&
-          siteKeys.has(normalizeTitle(summon.name)),
-      );
-      return mapTilesOnlyFromThisPack && sitesOnlyFromThisPack ? [group] : [];
+      if (monsterGroupSummonsCount(group) === 0) return [];
+      return monsterGroupOnlySummonsFromTerrainPack(
+        group,
+        siteKeys,
+        mapTileKeys,
+      )
+        ? [group]
+        : [];
     })
     .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+function nonUniqueMonstersForTerrainPack(
+  sites: TerrainPackSiteEntry[],
+  mapTiles: MapTileEntry[],
+  monsterGroups: MonsterGroupEntry[],
+): TerrainPackMonsterEntry[] {
+  const siteKeys = new Set(sites.map((entry) => normalizeTitle(entry.name)));
+  const mapTileKeys = new Set(mapTiles.map(mapTileKey));
+  if (siteKeys.size === 0 && mapTileKeys.size === 0) return [];
+
+  return monsterGroups
+    .flatMap((group) => {
+      if (!monsterGroupHasSummonInTerrainPack(group, siteKeys, mapTileKeys)) {
+        return [];
+      }
+      return monsterGroupOnlySummonsFromTerrainPack(
+        group,
+        siteKeys,
+        mapTileKeys,
+      )
+        ? []
+        : [group];
+    })
+    .sort((a, b) => a.prettyName.localeCompare(b.prettyName));
+}
+
+function monsterGroupSummonsCount(group: MonsterGroupEntry): number {
+  return group.mapTiles.length + group.sites.length;
+}
+
+function monsterGroupHasSummonInTerrainPack(
+  group: MonsterGroupEntry,
+  siteKeys: ReadonlySet<string>,
+  mapTileKeys: ReadonlySet<string>,
+): boolean {
+  return (
+    group.mapTiles.some((summon) =>
+      mapTileKeys.has(mapTileSummonKey(summon)),
+    ) ||
+    group.sites.some(
+      (summon) =>
+        summon.href.startsWith("/sites/") &&
+        siteKeys.has(normalizeTitle(summon.name)),
+    )
+  );
+}
+
+function monsterGroupOnlySummonsFromTerrainPack(
+  group: MonsterGroupEntry,
+  siteKeys: ReadonlySet<string>,
+  mapTileKeys: ReadonlySet<string>,
+): boolean {
+  return (
+    group.mapTiles.every((summon) =>
+      mapTileKeys.has(mapTileSummonKey(summon)),
+    ) &&
+    group.sites.every(
+      (summon) =>
+        summon.href.startsWith("/sites/") &&
+        siteKeys.has(normalizeTitle(summon.name)),
+    )
+  );
 }
 
 function nonUniqueMonstersForOtherTerrainPacks(
