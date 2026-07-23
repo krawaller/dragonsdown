@@ -33,6 +33,7 @@ import fitz
 ROOT = Path(__file__).resolve().parent.parent
 PDF_DIR = ROOT / "data" / "downloaded-pdf"
 RELEASES_FILE = ROOT / "data" / "manual" / "releases.json"
+ANNOTATED_FIGURES_FILE = ROOT / "data" / "manual" / "annotated-figures.json"
 OUT_DIR = ROOT / "data" / "parsed-pdf"
 IMG_DIR = ROOT / "public" / "images" / "pdf"
 IMG_URL_PREFIX = "/images/pdf"
@@ -152,6 +153,16 @@ def starts_lowercase_continuation(markdown: str) -> bool:
 class ReleaseEntry:
     file: str
     version: str | None = None
+
+
+@dataclass(frozen=True)
+class AnnotatedFigure:
+    doc: str
+    page: int
+    title_regex: str
+    bbox: tuple[float, float, float, float]
+    alt: str
+    placement: str = "append"
 
 
 @dataclass(frozen=True)
@@ -468,6 +479,21 @@ def save_image(h: str, stat: dict) -> str:
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(stat["bytes"])
     return f"{IMG_URL_PREFIX}/{h}.{ext}"
+
+
+def save_page_crop(page: fitz.Page, bbox: tuple[float, float, float, float]) -> str:
+    pix = page.get_pixmap(
+        matrix=fitz.Matrix(2, 2),
+        clip=fitz.Rect(*bbox),
+        alpha=False,
+    )
+    img_bytes = pix.tobytes("png")
+    h = hashlib.sha1(img_bytes).hexdigest()
+    out = IMG_DIR / f"{h}.png"
+    if not out.exists():
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(img_bytes)
+    return f"{IMG_URL_PREFIX}/{h}.png"
 
 
 def image_url_for_block(block: dict, stats: dict, total_pages: int) -> str | None:
@@ -1004,6 +1030,95 @@ def footer_location_for_block(
     return {"page": page_number, "column": "full", "section": page_section}
 
 
+def block_is_inside_figure(block: dict, figure: AnnotatedFigure) -> bool:
+    bx0, by0, bx1, by1 = block["bbox"]
+    if bx1 <= bx0 or by1 <= by0:
+        return False
+    fx0, fy0, fx1, fy1 = figure.bbox
+    return bx0 >= fx0 and by0 >= fy0 and bx1 <= fx1 and by1 <= fy1
+
+
+def block_is_inside_any_figure(block: dict, figures: list[AnnotatedFigure]) -> bool:
+    return any(block_is_inside_figure(block, figure) for figure in figures)
+
+
+def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
+    if not ANNOTATED_FIGURES_FILE.exists():
+        return []
+    data = json.loads(ANNOTATED_FIGURES_FILE.read_text())
+    if not isinstance(data, list):
+        raise TypeError(
+            f"Annotated figures file must be an array: {ANNOTATED_FIGURES_FILE}"
+        )
+
+    figures: list[AnnotatedFigure] = []
+    for index, entry in enumerate(data):
+        if not isinstance(entry, dict):
+            raise TypeError(f"Annotated figure entry #{index + 1} must be an object")
+        doc = entry.get("doc")
+        if doc != doc_slug:
+            continue
+        target = entry.get("target")
+        bbox = entry.get("bbox")
+        page = entry.get("page")
+        alt = entry.get("alt", "Annotated figure")
+        placement = entry.get("placement", "append")
+        if not isinstance(doc, str):
+            raise TypeError(f"Annotated figure entry #{index + 1} is missing doc")
+        if not isinstance(page, int):
+            raise TypeError(f"Annotated figure entry #{index + 1} is missing integer page")
+        if not isinstance(target, dict) or not isinstance(target.get("titleRegex"), str):
+            raise TypeError(
+                f"Annotated figure entry #{index + 1} target must include titleRegex"
+            )
+        if (
+            not isinstance(bbox, list)
+            or len(bbox) != 4
+            or not all(isinstance(value, int | float) for value in bbox)
+        ):
+            raise TypeError(
+                f"Annotated figure entry #{index + 1} bbox must be four numbers"
+            )
+        if not isinstance(alt, str):
+            raise TypeError(f"Annotated figure entry #{index + 1} alt must be a string")
+        if placement != "append":
+            raise ValueError(
+                f"Annotated figure entry #{index + 1} has unsupported placement: {placement}"
+            )
+        figures.append(
+            AnnotatedFigure(
+                doc=doc,
+                page=page,
+                title_regex=target["titleRegex"],
+                bbox=tuple(float(value) for value in bbox),
+                alt=alt,
+                placement=placement,
+            )
+        )
+    return figures
+
+
+def append_annotated_figures(
+    sections: list[Section],
+    figures: list[AnnotatedFigure],
+    figure_markdown: dict[AnnotatedFigure, str],
+) -> None:
+    for figure in figures:
+        markdown = figure_markdown.get(figure)
+        if markdown is None:
+            continue
+        title_re = re.compile(figure.title_regex)
+        target = next((section for section in sections if title_re.search(section.title)), None)
+        if target is None:
+            print(
+                f"Warning: annotated figure target not found: "
+                f"{figure.doc} {figure.title_regex}",
+                file=sys.stderr,
+            )
+            continue
+        target.content_parts.append(markdown)
+
+
 def find_column_boundary(blocks: list[dict], page_w: float) -> float:
     """Locate the gutter between the two text columns on a page.
 
@@ -1066,10 +1181,15 @@ def location_for_heading(
     }
 
 
-def extract(pdf_path: Path) -> list[dict]:
+def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
     doc = fitz.open(pdf_path)
     stats = collect_image_stats(doc)
     total_pages = len(doc)
+    annotated_figures = read_annotated_figures_for_doc(doc_slug)
+    figures_by_page: dict[int, list[AnnotatedFigure]] = {}
+    for figure in annotated_figures:
+        figures_by_page.setdefault(figure.page, []).append(figure)
+    figure_markdown: dict[AnnotatedFigure, str] = {}
     sections: list[Section] = []
     current: Section | None = None
     heading_strengths: list[int | None] = [None] * _MAX_LEVEL
@@ -1101,6 +1221,15 @@ def extract(pdf_path: Path) -> list[dict]:
 
     for page_idx, page in enumerate(doc):
         raw_blocks = page.get_text("dict")["blocks"]
+        page_figures = figures_by_page.get(page_idx + 1, [])
+        for figure in page_figures:
+            url = save_page_crop(page, figure.bbox)
+            figure_markdown[figure] = f"![{figure.alt}]({url})"
+        raw_blocks = [
+            block
+            for block in raw_blocks
+            if not block_is_inside_any_figure(block, page_figures)
+        ]
         # Preserve the existing section-icon system first. Those image blocks
         # are intentionally excluded from generic inline/float markdown passes.
         icons_by_heading, icon_block_ids = find_section_icons(
@@ -1216,6 +1345,8 @@ def extract(pdf_path: Path) -> list[dict]:
     # End of doc: flush remaining
     flush_pending_to_current()
 
+    append_annotated_figures(sections, annotated_figures, figure_markdown)
+
     rendered = [s.render() for s in sections if s.title]
     assign_ids(rendered)
     return rendered
@@ -1266,11 +1397,11 @@ def process_one(
     name_override: str | None = None,
     version_override: str | None = None,
 ) -> None:
-    sections = extract(pdf)
     parsed_name, version = parse_stem(pdf.stem)
     name = name_override or parsed_name
     version = version_override if version_override is not None else version
     slug = slug_for_url(name)
+    sections = extract(pdf, slug)
     # Stamp `source` on every section and put identifier fields first for
     # readable JSON output.
     stamped_sections = []

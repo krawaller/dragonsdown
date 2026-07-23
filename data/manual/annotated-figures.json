@@ -1,0 +1,9 @@
+[
+  {
+    "doc": "core",
+    "page": 7,
+    "target": { "titleRegex": "^Terrain Setup Cards$" },
+    "bbox": [316, 76, 795, 578],
+    "alt": "Annotated terrain setup card reference"
+  }
+]

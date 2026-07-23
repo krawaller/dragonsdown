@@ -596,7 +596,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Only use Terrain Setup Cards for Terrain Packs in play. Terrain Setup Cards show Tokens, Natives, Treasures Sites, Guardians, and Merchants associated with the Terrain Pack. Some Terrain Setup Cards have a red arrow pointing to the Guardian location, which indicates that the Guardian can be summoned to locations from more than one Terrain Setup Card (*used in the Dragons Down: Desolation expansion*)."
+      "content": "Only use Terrain Setup Cards for Terrain Packs in play. Terrain Setup Cards show Tokens, Natives, Treasures Sites, Guardians, and Merchants associated with the Terrain Pack. Some Terrain Setup Cards have a red arrow pointing to the Guardian location, which indicates that the Guardian can be summoned to locations from more than one Terrain Setup Card (*used in the Dragons Down: Desolation expansion*).\n\n![Annotated terrain setup card reference](/images/pdf/a13a85a3ee07f9780ae5e632a855d78a1483b100.png)"
     },
     {
       "id": "5.0.5",
@@ -622,7 +622,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\nTile Name Wandering Monster and Summoning Symbol\n\nTerrain Pack Civilization Location and Local Natives\n\n![](/images/pdf/107802e9c60a3811fa3de9f90f84d72428001929.jpeg)\n\nTreasure Site and Guardian\n\nLoot in the Treasure Site\n\nMerchant and Respect Symbol\n\nMerchandise available at this Merchant\n\nMonster Name\n\nTile Side Clearing\n\n![](/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg)\n\nAttack Length\n\nFame Value\n\nDamage\n\nHealth (unarmored)\n\nAttack Speed Maneuver Speed\n\nSpecial Attack\n\nUndead Monster Flying Ability\n\nPath\n\nAttack Length\n\nLocal Monster and Summoning Symbol\n\nHealth (armored)\n\nMap Token"
+      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\nTile Name Wandering Monster and Summoning Symbol\n\nMonster Name\n\nTile Side Clearing\n\n![](/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg)\n\nAttack Length\n\nFame Value\n\nDamage\n\nHealth (unarmored)\n\nAttack Speed Maneuver Speed\n\nSpecial Attack\n\nUndead Monster Flying Ability\n\nPath\n\nAttack Length\n\nLocal Monster and Summoning Symbol\n\nHealth (armored)\n\nMap Token"
     },
     {
       "id": "5.0.7",
