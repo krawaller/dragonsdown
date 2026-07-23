@@ -1293,7 +1293,7 @@
       "column": "left",
       "section": "middle"
     },
-    "content": "Self. Permanent. Wound one Purple cube. When this spell is cast the caster selects any non-undead, non-unique Monster Chip (*no Guardians or leaders, e.g., Kobold* *Rex*) from the monster tray and replaces their Hero with it. The caster may choose either side of the Monster Chip to be face-up during Hero tactics each Combat Round and ignores the Monster tactics step. The Hero fights as a Monster using the face-up Monster characteristics, ignoring their own cubes and possessions. All Monster wounds are healed at the end of combat.\n\nWhile Shape Shift is active, the Hero may perform Sneak, Make Noise, Move, Search,  and Loot Actions. Action Cubes are unavailable. All possessions are inactive (*as if in the backpack*). Possessions gained while Shape Shifted are  placed in the backpack.\n\nWhen inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray*.*",
+    "content": "Self. Permanent. Wound one Purple cube. When this spell is cast the caster selects any non-undead, non-unique Monster Chip (*no Guardians or leaders, e.g., Kobold* *Rex*) from the monster tray and replaces their Hero with it. The caster may choose either side of the Monster Chip to be face-up during Hero tactics each Combat Round and ignores the Monster tactics step. The Hero fights as a Monster using the face-up Monster characteristics, ignoring their own cubes and possessions. All Monster wounds are healed at the end of combat.\n\nWhile Shape Shift is active, the Hero may perform Sneak, Make Noise, Move, Search,  and Loot Actions. Action Cubes are unavailable. All possessions are inactive (*as if in the backpack*). Possessions gained while Shape Shifted are  placed in the backpack.\n\nWhen inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray.",
     "tags": [
       "spell",
       "purpleMagic"
@@ -1309,7 +1309,7 @@
       },
       {
         "kind": "markdown",
-        "markdown": "When inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray*.*"
+        "markdown": "When inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray."
       }
     ]
   },
