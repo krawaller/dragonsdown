@@ -47,5 +47,13 @@
       "Summoning/Respect Symbol (for the Natives & Legends expansion)",
       "Maneuver Speed"
     ]
+  },
+  {
+    "doc": "core",
+    "page": 8,
+    "target": { "titleRegex": "^Civilization Tokens$" },
+    "bbox": [442, 236, 570, 333],
+    "alt": "Annotated civilization token reference",
+    "expectedTexts": ["Civilization Token Back", "Terrain Pack"]
   }
 ]

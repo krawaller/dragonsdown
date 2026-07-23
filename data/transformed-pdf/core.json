@@ -1085,11 +1085,15 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Civilization Tokens are placed in Civilization Map Tiles when they are explored by a Hero. They represent the various Merchants of the realm and offer the Heroes a place to buy and repair Equipment, sell the Treasures that they loot from Treasure Sites, accept missions, remove curses, and remove permanent spells. Some Civilization Tokens are empty, meaning that no Merchant is available.",
+      "content": "Civilization Tokens are placed in Civilization Map Tiles when they are explored by a Hero. They represent the various Merchants of the realm and offer the Heroes a place to buy and repair Equipment, sell the Treasures that they loot from Treasure Sites, accept missions, remove curses, and remove permanent spells. Some Civilization Tokens are empty, meaning that no Merchant is available.\n\n![Annotated civilization token reference](/images/annotations/089a402960be5d46d4ece264b1157f52aaaee8b2.png)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Civilization Tokens are placed in Civilization Map Tiles when they are explored by a Hero. They represent the various Merchants of the realm and offer the Heroes a place to buy and repair Equipment, sell the Treasures that they loot from Treasure Sites, accept missions, remove curses, and remove permanent spells. Some Civilization Tokens are empty, meaning that no Merchant is available."
+        },
+        {
+          "kind": "markdown",
+          "markdown": "![Annotated civilization token reference](/images/annotations/089a402960be5d46d4ece264b1157f52aaaee8b2.png)"
         }
       ]
     },
@@ -1165,24 +1169,11 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nCivilization Token Back\n\nMerchant\n\n![](/images/pdf/cb53f4a28779c4fca5e6b87ef4e633ec30f541b9.jpeg)\n\nSummoning/Respect Symbol (for the Natives & Legends expansion) ![float-left](/images/pdf/2514d848d1eb22a09adb872a37f4d25a2a59492c.jpeg) Native Group\n\nLocation\n\nTerrain Pack\n\nRequirement\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nLimit (if applicable)\n\nTitle and Reward\n\nDescription\n\nTerrain Pack\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
+      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nSummoning/Respect Symbol (for the Natives & Legends expansion) ![float-left](/images/pdf/2514d848d1eb22a09adb872a37f4d25a2a59492c.jpeg) Native Group\n\nLocation\n\nRequirement\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nLimit (if applicable)\n\nTitle and Reward\n\nDescription\n\nTerrain Pack\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Civilization Token Back"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Merchant"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/cb53f4a28779c4fca5e6b87ef4e633ec30f541b9.jpeg",
-          "display": "block"
         },
         {
           "kind": "markdown",
@@ -1191,10 +1182,6 @@
         {
           "kind": "markdown",
           "markdown": "Location"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Terrain Pack"
         },
         {
           "kind": "markdown",
