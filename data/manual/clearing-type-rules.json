@@ -1,6 +1,12 @@
 {
   "caves": {
-    "lineages": ["dwarf"]
+    "lineages": ["dwarf"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["Actions", "Caves"]
+      }
+    ]
   },
   "mountains": {
     "lineages": ["half-orc"],

@@ -10,7 +10,9 @@ import {
 import {
   resolveClassAdvantageRulebookLinks,
   resolveLineageAdvantageRulebookLinks,
+  resolveRulebookLinks,
   type RulebookLink,
+  type RulebookLinkQuery,
 } from "@/lib/rulebook-links";
 import { getClassBySlug, getLineageBySlug } from "@/lib/tts/lookup";
 import clearingTypeRules from "../../../../data/manual/clearing-type-rules.json";
@@ -92,6 +94,7 @@ type ClearingTypeRuleReferences = Partial<
     {
       classes?: string[];
       lineages?: string[];
+      rulebookLinks?: RulebookLinkQuery[];
     }
   >
 >;
@@ -105,6 +108,9 @@ async function resolveClearingTypeRulebookLinks(
   if (!references) return [];
 
   const links = await Promise.all([
+    ...uniqueRulebookQueries(references.rulebookLinks).map((query) =>
+      resolveRulebookLinks(query),
+    ),
     ...uniqueSlugs(references.lineages).map((slug) =>
       resolveLineageRulebookLinks(slug),
     ),
@@ -140,6 +146,18 @@ async function resolveLineageRulebookLinks(
 
 function uniqueSlugs(slugs: string[] = []): string[] {
   return Array.from(new Set(slugs));
+}
+
+function uniqueRulebookQueries(
+  queries: RulebookLinkQuery[] = [],
+): RulebookLinkQuery[] {
+  return Array.from(
+    new Map(
+      queries.map(
+        (query) => [`${query.doc}:${query.headings.join("|")}`, query] as const,
+      ),
+    ).values(),
+  );
 }
 
 function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {
