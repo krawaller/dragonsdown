@@ -700,7 +700,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Wilderness Tokens have a variety of front faces and are placed in Wilderness Map Tiles when a wilderness Map Tile is revealed. The backs of Wilderness Tokens show their corresponding Terrain Pack, which also determines what type of tile they are placed in (*e.g. Mountain Wilderness Tokens are placed in Malevolent Mountains Map Tiles*).\n\nOn the front of Wilderness Tokens are either Treasure Site locations, Gates to teleport around the realm, Special Locations, or instant rewards."
+      "content": "Wilderness Tokens have a variety of front faces and are placed in Wilderness Map Tiles when a wilderness Map Tile is revealed. The backs of Wilderness Tokens show their corresponding Terrain Pack, which also determines what type of tile they are placed in (*e.g. Mountain Wilderness Tokens are placed in Malevolent Mountains Map Tiles*).\n\nOn the front of Wilderness Tokens are either Treasure Site locations, Gates to teleport around the realm, Special Locations, or instant rewards.\n\n![Annotated wilderness token reference](/images/annotations/0c6a54a540e0bb17c962b18fb5c3f80faad33805.png)"
     },
     {
       "id": "5.0.13",
@@ -713,7 +713,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack"
+      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack"
     },
     {
       "id": "5.0.14",

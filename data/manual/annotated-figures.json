@@ -79,5 +79,13 @@
       "Description",
       "Gold, Legend Point, Fame, and Bonus Rewards"
     ]
+  },
+  {
+    "doc": "core",
+    "page": 8,
+    "target": { "titleRegex": "^Wilderness Tokens$" },
+    "bbox": [448, 517, 801, 672],
+    "alt": "Annotated wilderness token reference",
+    "expectedTexts": ["Wilderness Tokens Front"]
   }
 ]
