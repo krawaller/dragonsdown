@@ -1528,11 +1528,39 @@ def process_all() -> None:
         process_one(pdf, name_override=name, version_override=entry.version)
 
 
+def process_release(name: str) -> bool:
+    releases = read_releases()
+    release_name = name if name in releases else None
+    if release_name is None:
+        release_name = next(
+            (candidate for candidate in releases if slug_for_url(candidate) == name),
+            None,
+        )
+    if release_name is None:
+        return False
+    entry = releases[release_name]
+    pdf = PDF_DIR / entry.file
+    if not pdf.exists():
+        raise FileNotFoundError(f"Mapped PDF does not exist: {pdf}")
+    process_one(pdf, name_override=release_name, version_override=entry.version)
+    return True
+
+
 def main(argv: list[str]) -> None:
     if not argv or argv[0] == "--all":
         process_all()
         return
+    if process_release(argv[0]):
+        return
     pdf = Path(argv[0])
+    if not pdf.exists():
+        names = sorted(read_releases())
+        slugs = sorted(slug_for_url(name) for name in names)
+        known = ", ".join(names + slugs)
+        raise FileNotFoundError(
+            f"No release named {argv[0]!r} and PDF path does not exist: {pdf}. "
+            f"Known releases: {known}"
+        )
     out = Path(argv[1]) if len(argv) > 1 else None
     process_one(pdf, out)
 

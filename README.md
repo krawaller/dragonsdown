@@ -43,7 +43,14 @@ npm run extract     # extract mapped PDFs, transform, derive, then extract TTS d
 npm run transform   # re-apply transform.ts without re-extracting PDFs
 ```
 
-Extract a single PDF (call the Python script directly; you'll then want to run `npm run transform` to re-apply rules):
+Extract a single mapped document by release key, then re-apply transform rules:
+
+```sh
+npm run extract:doc -- core
+npm run transform
+```
+
+You can also extract a single PDF by path:
 
 ```sh
 .venv/bin/python scripts/extract.py data/downloaded-pdf/Dragons_Down_Desolation_single_pages.pdf

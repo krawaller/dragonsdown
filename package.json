@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "extract": ".venv/bin/python scripts/extract.py --all && npm run transform && npm run derive && npm run extract-tts",
+    "extract:doc": ".venv/bin/python scripts/extract.py",
     "steam:download": "steamcmd +force_install_dir \"$PWD/.cache/steamcmd\" +login anonymous +workshop_download_item 286160 3062060625 +quit",
     "steam:copy-json": "tsx scripts/copy-tts-workshop-source.ts",
     "steam:refresh-json": "npm run steam:download && npm run steam:copy-json",
