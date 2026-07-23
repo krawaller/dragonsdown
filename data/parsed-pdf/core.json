@@ -596,7 +596,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Only use Terrain Setup Cards for Terrain Packs in play. Terrain Setup Cards show Tokens, Natives, Treasures Sites, Guardians, and Merchants associated with the Terrain Pack. Some Terrain Setup Cards have a red arrow pointing to the Guardian location, which indicates that the Guardian can be summoned to locations from more than one Terrain Setup Card (*used in the Dragons Down: Desolation expansion*).\n\n![Annotated terrain setup card reference](/images/pdf/a13a85a3ee07f9780ae5e632a855d78a1483b100.png)"
+      "content": "Only use Terrain Setup Cards for Terrain Packs in play. Terrain Setup Cards show Tokens, Natives, Treasures Sites, Guardians, and Merchants associated with the Terrain Pack. Some Terrain Setup Cards have a red arrow pointing to the Guardian location, which indicates that the Guardian can be summoned to locations from more than one Terrain Setup Card (*used in the Dragons Down: Desolation expansion*).\n\n![Annotated terrain setup card reference](/images/annotations/a13a85a3ee07f9780ae5e632a855d78a1483b100.png)"
     },
     {
       "id": "5.0.5",
@@ -609,7 +609,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Each Terrain Pack has one Civilization Tile and five Wilderness Tiles, which are used to create a unique map for each game. Wilderness Map Tiles have six circular clearings while Civilization Tiles have four clearings. Heroes, Monsters, Treasure Sites, etc., exist in clearings. Clearing types included in the game are Plains (*white*), Caves (*black*), Mountains (*red*), Woods (*green*), and Swamps (*yellow*). Connecting these clearings are paths and Hidden Paths.\n\nThe components of each Terrain Pack have a common theme. However, the clearings on Map Tiles are not all the same, and will feature other terrain types. *For example, the Map Tile* *shown is from the Cruel Caves Terrain Pack, but clearing 1 is a* *Woods Clearing and clearing 3 is a Plains Clearing.*\n\nThe color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters.\n\n![Annotated map tile reference](/images/pdf/d802d1b9026cfb5a915effd071977b9c632eac26.png)"
+      "content": "Each Terrain Pack has one Civilization Tile and five Wilderness Tiles, which are used to create a unique map for each game. Wilderness Map Tiles have six circular clearings while Civilization Tiles have four clearings. Heroes, Monsters, Treasure Sites, etc., exist in clearings. Clearing types included in the game are Plains (*white*), Caves (*black*), Mountains (*red*), Woods (*green*), and Swamps (*yellow*). Connecting these clearings are paths and Hidden Paths.\n\nThe components of each Terrain Pack have a common theme. However, the clearings on Map Tiles are not all the same, and will feature other terrain types. *For example, the Map Tile* *shown is from the Cruel Caves Terrain Pack, but clearing 1 is a* *Woods Clearing and clearing 3 is a Plains Clearing.*\n\nThe color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters.\n\n![Annotated map tile reference](/images/annotations/d802d1b9026cfb5a915effd071977b9c632eac26.png)"
     },
     {
       "id": "5.0.6",
@@ -622,7 +622,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\n![Annotated monster chip reference](/images/pdf/3eb8cb8a577c27710d098dced3a2ea0fef245c76.png)"
+      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\n![Annotated monster chip reference](/images/annotations/3eb8cb8a577c27710d098dced3a2ea0fef245c76.png)"
     },
     {
       "id": "5.0.7",
@@ -635,7 +635,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*).\n\n![Annotated civilization location reference](/images/pdf/6ecc562e0c63a969ac45eef5e9a32bf3fa5cfe30.png)"
+      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*).\n\n![Annotated civilization location reference](/images/annotations/6ecc562e0c63a969ac45eef5e9a32bf3fa5cfe30.png)"
     },
     {
       "id": "5.0.8",

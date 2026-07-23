@@ -37,6 +37,8 @@ ANNOTATED_FIGURES_FILE = ROOT / "data" / "manual" / "annotated-figures.json"
 OUT_DIR = ROOT / "data" / "parsed-pdf"
 IMG_DIR = ROOT / "public" / "images" / "pdf"
 IMG_URL_PREFIX = "/images/pdf"
+ANNOTATION_IMG_DIR = ROOT / "public" / "images" / "annotations"
+ANNOTATION_IMG_URL_PREFIX = "/images/annotations"
 
 RED = 0xD2232A
 BROWN_DARK = 0x4B281C
@@ -508,11 +510,11 @@ def save_page_crop(page: fitz.Page, bbox: tuple[float, float, float, float]) -> 
     )
     img_bytes = pix.tobytes("png")
     h = hashlib.sha1(img_bytes).hexdigest()
-    out = IMG_DIR / f"{h}.png"
+    out = ANNOTATION_IMG_DIR / f"{h}.png"
     if not out.exists():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_bytes(img_bytes)
-    return f"{IMG_URL_PREFIX}/{h}.png"
+    return f"{ANNOTATION_IMG_URL_PREFIX}/{h}.png"
 
 
 def image_url_for_block(block: dict, stats: dict, total_pages: int) -> str | None:
