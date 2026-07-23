@@ -119,6 +119,15 @@
   },
   {
     "doc": "core",
+    "page": 20,
+    "target": { "titleRegex": "^Items$" },
+    "bbox": [439, 522, 632, 724],
+    "suppressBbox": [439, 513, 632, 724],
+    "alt": "Annotated item card reference",
+    "expectedTexts": ["Item Values (armor and weight)"]
+  },
+  {
+    "doc": "core",
     "page": 10,
     "target": { "titleRegex": "^Spells$" },
     "bbox": [402, 88, 599, 292],

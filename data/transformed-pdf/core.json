@@ -3419,40 +3419,15 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "![](/images/pdf/be414593c964a2fba6dc118655d20f244eb044da.jpeg)\n\nName\n\nHeroes begin the game with equipment specific to the Hero’s Class as listed on the Class Card. Item card backs that say “Item” and have a wooden banner on the front of the card. The layout for Item Cards are identical to Treasure Cards.\n\nBase Price\n\nItem Values (armor and weight)\n\nPosition\n\nCard Type\n\nGame Effect",
+      "content": "Heroes begin the game with equipment specific to the Hero’s Class as listed on the Class Card. Item card backs that say “Item” and have a wooden banner on the front of the card. The layout for Item Cards are identical to Treasure Cards.\n\n![Annotated item card reference](/images/annotations/b83835e00be4e691288856e2668a3b351e98a666.png)",
       "contentNodes": [
-        {
-          "kind": "image",
-          "src": "/images/pdf/be414593c964a2fba6dc118655d20f244eb044da.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Name"
-        },
         {
           "kind": "markdown",
           "markdown": "Heroes begin the game with equipment specific to the Hero’s Class as listed on the Class Card. Item card backs that say “Item” and have a wooden banner on the front of the card. The layout for Item Cards are identical to Treasure Cards."
         },
         {
           "kind": "markdown",
-          "markdown": "Base Price"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Item Values (armor and weight)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Position"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Card Type"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Game Effect"
+          "markdown": "![Annotated item card reference](/images/annotations/b83835e00be4e691288856e2668a3b351e98a666.png)"
         }
       ]
     },
