@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { terrainPackSummary } from "@/lib/terrain-packs";
 import { getAllTerrainPacks, type TerrainPackEntry } from "@/lib/tts/lookup";
 
 export default function TerrainPacksPage() {
@@ -51,26 +52,4 @@ export default function TerrainPacksPage() {
 
 function terrainPackDisplayName(pack: TerrainPackEntry): string {
   return pack.slug === "neutral" ? "Always in use" : pack.name;
-}
-
-function terrainPackSummary(pack: TerrainPackEntry): string {
-  return [
-    countLabel(pack.boards.length, "board"),
-    countLabel(pack.civilisationTokens.length, "civ token"),
-    countLabel(pack.wildernessTokens.length, "wilderness token"),
-    countLabel(pack.terrainTreasures.length, "terrain treasure"),
-    countLabel(pack.uniqueMissions.length, "unique mission"),
-    countLabel(pack.civLocations.length, "civ location"),
-    countLabel(
-      pack.uniqueNatives.length + pack.uniqueMonsters.length,
-      pack.slug === "neutral" ? "native/monster" : "unique native/monster",
-    ),
-    countLabel(pack.clearingTypes.length, "clearing type"),
-    countLabel(pack.sites.length, "site"),
-    countLabel(pack.mapTiles.length, "map tile"),
-  ].join(" · ");
-}
-
-function countLabel(count: number, label: string): string {
-  return `${count} ${label}${count === 1 ? "" : "s"}`;
 }

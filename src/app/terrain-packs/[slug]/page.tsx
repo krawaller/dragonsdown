@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
+import { terrainPackSummary } from "@/lib/terrain-packs";
 import {
   getAllTerrainPacks,
   getTerrainPackBySlug,
@@ -443,34 +444,12 @@ function ImageTile({
   );
 }
 
-function terrainPackSummary(pack: TerrainPackEntry): string {
-  return [
-    countLabel(pack.boards.length, "board"),
-    countLabel(pack.civilisationTokens.length, "civ token"),
-    countLabel(pack.wildernessTokens.length, "wilderness token"),
-    countLabel(pack.terrainTreasures.length, "terrain treasure"),
-    countLabel(pack.uniqueMissions.length, "unique mission"),
-    countLabel(pack.civLocations.length, "civ location"),
-    countLabel(
-      pack.uniqueNatives.length + pack.uniqueMonsters.length,
-      pack.slug === "neutral" ? "native/monster" : "unique native/monster",
-    ),
-    countLabel(pack.clearingTypes.length, "clearing type"),
-    countLabel(pack.sites.length, "site"),
-    countLabel(pack.mapTiles.length, "map tile"),
-  ].join(" · ");
-}
-
 function wildernessTokenSubtitle(
   token: WildernessTokenNameEntry["tokens"][number],
 ): string {
   return [token.clearing ? `clearing ${token.clearing}` : undefined, token.draw]
     .filter(Boolean)
     .join(" · ");
-}
-
-function countLabel(count: number, label: string): string {
-  return `${count} ${label}${count === 1 ? "" : "s"}`;
 }
 
 function nativeMonsterBoxTitle(pack: TerrainPackEntry): string {
