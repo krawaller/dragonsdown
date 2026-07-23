@@ -68,5 +68,16 @@
       "Summoning/Respect Symbol (for the Natives & Legends expansion)",
       "Requirement"
     ]
+  },
+  {
+    "doc": "core",
+    "page": 8,
+    "target": { "titleRegex": "^Mission Cards$" },
+    "bbox": [450, 338, 610, 511],
+    "alt": "Annotated mission card reference",
+    "expectedTexts": [
+      "Description",
+      "Gold, Legend Point, Fame, and Bonus Rewards"
+    ]
   }
 ]

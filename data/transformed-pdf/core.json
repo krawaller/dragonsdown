@@ -1131,11 +1131,15 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Heroes may accept missions from Merchants at Civilization Locations. Missions are organized into Atrocities (*red banner*), Quests (*white banner*), and Expeditions (*brown* *banner*). Missions are a good way to earn Legend Points, Fame, and Gold... as well as infamy or redemption.",
+      "content": "Heroes may accept missions from Merchants at Civilization Locations. Missions are organized into Atrocities (*red banner*), Quests (*white banner*), and Expeditions (*brown* *banner*). Missions are a good way to earn Legend Points, Fame, and Gold... as well as infamy or redemption.\n\n![Annotated mission card reference](/images/annotations/2ca86e0d58acd5bc3f1c5f60de332a84247a1b40.png)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Heroes may accept missions from Merchants at Civilization Locations. Missions are organized into Atrocities (*red banner*), Quests (*white banner*), and Expeditions (*brown* *banner*). Missions are a good way to earn Legend Points, Fame, and Gold... as well as infamy or redemption."
+        },
+        {
+          "kind": "markdown",
+          "markdown": "![Annotated mission card reference](/images/annotations/2ca86e0d58acd5bc3f1c5f60de332a84247a1b40.png)"
         }
       ]
     },
@@ -1173,32 +1177,11 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nDescription\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
+      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Mission Name"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Description"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Terrain Pack"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Gold, Legend Point, Fame, and Bonus Rewards"
         },
         {
           "kind": "markdown",
