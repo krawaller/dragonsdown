@@ -13,7 +13,6 @@ import {
   getMonsterGroupBySlug,
   getSpellsForMonster,
   type MonsterGroupEntry,
-  type MonsterSpellEntry,
 } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {

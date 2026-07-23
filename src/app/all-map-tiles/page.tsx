@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { TTSMapTile } from "@/lib/tts";
 import mapTiles from "../../../data/extracted-from-tts/map-tiles.json";
 
 export default function AllMapTilesPage() {

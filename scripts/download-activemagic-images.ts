@@ -25,7 +25,7 @@ async function fetchHtml(url: string): Promise<string> {
     const request = client.get(url, (response) => {
       if (response.statusCode !== 200) {
         reject(
-          new Error(`HTTP ${response.statusCode}: ${response.statusMessage}`)
+          new Error(`HTTP ${response.statusCode}: ${response.statusMessage}`),
         );
         return;
       }
@@ -56,7 +56,6 @@ async function fetchHtml(url: string): Promise<string> {
  */
 function extractImageUrls(html: string, baseUrl: string): ImageInfo[] {
   const imageInfos: ImageInfo[] = [];
-  const baseUrlObj = new URL(baseUrl);
 
   // Regular expressions to find image references
   const patterns = [
@@ -85,7 +84,7 @@ function extractImageUrls(html: string, baseUrl: string): ImageInfo[] {
           if (!imageInfos.some((info) => info.url === fullUrl)) {
             imageInfos.push({ url: fullUrl, filename });
           }
-        } catch (err) {
+        } catch {
           console.log(`⚠️  Skipping invalid URL: ${imageUrl}`);
         }
       }
@@ -128,7 +127,7 @@ function extractFilename(url: string): string {
     }
 
     return filename;
-  } catch (err) {
+  } catch {
     return "unknown_image.jpg";
   }
 }
@@ -138,7 +137,7 @@ function extractFilename(url: string): string {
  */
 async function downloadImage(
   imageInfo: ImageInfo,
-  outputDir: string
+  outputDir: string,
 ): Promise<DownloadResult> {
   return new Promise((resolve) => {
     try {
@@ -168,7 +167,7 @@ async function downloadImage(
                   filename,
                   success: false,
                   error: "Redirect failed",
-                })
+                }),
               );
             return;
           }
@@ -229,14 +228,14 @@ async function downloadImage(
 async function downloadWithConcurrency(
   imageInfos: ImageInfo[],
   concurrency: number,
-  outputDir: string
+  outputDir: string,
 ): Promise<DownloadResult[]> {
   const results: DownloadResult[] = [];
 
   for (let i = 0; i < imageInfos.length; i += concurrency) {
     const batch = imageInfos.slice(i, i + concurrency);
     const batchResults = await Promise.all(
-      batch.map((imageInfo) => downloadImage(imageInfo, outputDir))
+      batch.map((imageInfo) => downloadImage(imageInfo, outputDir)),
     );
     results.push(...batchResults);
 
@@ -246,8 +245,8 @@ async function downloadWithConcurrency(
       `📊 Progress: ${completed}/${
         imageInfos.length
       } images processed (${Math.round(
-        (completed / imageInfos.length) * 100
-      )}%)`
+        (completed / imageInfos.length) * 100,
+      )}%)`,
     );
 
     // Small delay between batches
@@ -293,7 +292,7 @@ async function main() {
       __dirname,
       "..",
       "generated",
-      "activemagic-images"
+      "activemagic-images",
     );
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });

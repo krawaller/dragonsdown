@@ -9,7 +9,6 @@ import {
   type EquipmentDeck,
   type BoardEntry,
   type TerrainPackClearingTypeEntry,
-  type CivLocationEntry,
   type CivilisationTokenNameEntry,
   type MapTileEntry,
   type TerrainPackMonsterEntry,
