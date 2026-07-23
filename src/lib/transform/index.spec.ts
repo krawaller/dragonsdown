@@ -156,6 +156,27 @@ Body`);
   });
 });
 
+describe("replaceTitle", () => {
+  it("renames matched sections without changing content", () => {
+    const sections = [
+      s("1", "body", { title: "Natives (far right)", level: 3 }),
+      s("2", "other", { title: "Other", level: 3 }),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "replaceTitle",
+        target: { titleRegex: "^Natives \\(far right\\)$" },
+        title: "Natives",
+      },
+    ];
+
+    const out = applyTransforms(sections, rules, "core");
+
+    expect(out[0]).toMatchObject({ title: "Natives", content: "body" });
+    expect(out[1]).toMatchObject({ title: "Other", content: "other" });
+  });
+});
+
 describe("replaceSectionRange", () => {
   it("replaces an inclusive matched range with one tagged placeholder", () => {
     const sections = [

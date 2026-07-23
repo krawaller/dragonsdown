@@ -72,6 +72,19 @@ export const TRANSFORMS: Rule[] = [
   },
   ...spellColorRules(),
   {
+    op: "replaceTitle",
+    target: { doc: "core", titleRegex: "^Natives \\(far right\\)$" },
+    title: "Natives",
+  },
+  {
+    op: "replaceTitle",
+    target: {
+      doc: "core",
+      titleRegex: "^Civilization Cards and Titles \\(far right\\)$",
+    },
+    title: "Civilization Cards and Titles",
+  },
+  {
     op: "replaceSectionRange",
     target: { doc: "core" },
     from: { titleRegex: "^TURN SEQUENCE$", level: 1 },

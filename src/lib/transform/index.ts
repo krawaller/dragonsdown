@@ -5,6 +5,7 @@ import { docMatchesTarget, selectMatchingIds, type Target } from "../doc-query";
 export type Rule =
   | IgnoreImagesRule
   | AddTagRule
+  | ReplaceTitleRule
   | ExtractFooterRule
   | MoveImageRule
   | MoveImagesRule
@@ -23,6 +24,12 @@ export type AddTagRule = {
   target: Target;
   /** A single tag or several to apply at once. Duplicates are skipped. */
   tag: string | string[];
+};
+
+export type ReplaceTitleRule = {
+  op: "replaceTitle";
+  target: Target;
+  title: string;
 };
 
 export type FloatImagesRule = {
@@ -126,6 +133,15 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
         if (missing.length === 0) return s;
         return { ...s, tags: [...existing, ...missing] };
       });
+    }
+    case "replaceTitle": {
+      const ids = selectMatchingIds(rule.target, sections);
+      if (ids.size === 0) return sections;
+      return sections.map((s) =>
+        ids.has(s.id) && s.title !== rule.title
+          ? { ...s, title: rule.title }
+          : s,
+      );
     }
     case "floatImages": {
       const ids = selectMatchingIds(rule.target, sections);
