@@ -1,9 +1,5 @@
 import type { Section } from "../rulebooks";
-import {
-  docMatchesTarget,
-  selectMatchingIds,
-  type Target,
-} from "../doc-query";
+import { docMatchesTarget, selectMatchingIds, type Target } from "../doc-query";
 
 /** Discriminated union of all rule operations. Extend as new ops appear. */
 export type Rule =
@@ -166,15 +162,15 @@ function moveOneImage(
   // Strip every occurrence, collapsing the whitespace around the image so
   // inline removals don't leave double spaces and paragraph removals don't
   // leave triple newlines.
-  const surroundRe = new RegExp(
-    `(\\s*)${refRe.source}(\\s*)`,
-    "g",
-  );
+  const surroundRe = new RegExp(`(\\s*)${refRe.source}(\\s*)`, "g");
   const strip = (content: string): string => {
-    const out = content.replace(surroundRe, (_m, before: string, after: string) => {
-      if (!before && !after) return "";
-      return (before + after).includes("\n") ? "\n\n" : " ";
-    });
+    const out = content.replace(
+      surroundRe,
+      (_m, before: string, after: string) => {
+        if (!before && !after) return "";
+        return (before + after).includes("\n") ? "\n\n" : " ";
+      },
+    );
     return out.trim();
   };
   const stripped = sections.map((s) => {
@@ -222,9 +218,9 @@ function stripImages(content: string, imageIds: readonly string[]): string {
 }
 
 /**
- * Find the byte offset within `content` where a trailing run of 2+
- * whitespace-separated image refs begins. Returns null if no such run exists,
- * or if non-footer body content follows the run.
+ * Find the byte offset within `content` where a trailing footer image run begins.
+ * Two or more consecutive trailing images count as a publisher footer; a single
+ * trailing image counts only when followed by footer/legal text.
  */
 function findTrailingImageRunStart(content: string): number | null {
   const re = /!\[\]\(\/images\/(?:[a-z]+\/)?[a-f0-9]+\.[a-z]+\)/g;
@@ -233,7 +229,7 @@ function findTrailingImageRunStart(content: string): number | null {
   while ((m = re.exec(content)) !== null) {
     matches.push({ start: m.index, end: m.index + m[0].length });
   }
-  if (matches.length < 2) return null;
+  if (matches.length === 0) return null;
 
   // Whatever follows the last image must be either empty or look like a
   // copyright/publisher notice — not arbitrary body text. This prevents the
@@ -245,15 +241,19 @@ function findTrailingImageRunStart(content: string): number | null {
   // Walk backward from the last image, gathering adjacent images.
   let runStart = matches.length - 1;
   while (runStart > 0) {
-    const gap = content.slice(matches[runStart - 1].end, matches[runStart].start);
+    const gap = content.slice(
+      matches[runStart - 1].end,
+      matches[runStart].start,
+    );
     if (!/^\s*$/.test(gap)) break;
     runStart--;
   }
-  if (matches.length - runStart < 2) return null;
+  if (matches.length - runStart < 2 && !trailing) return null;
   return matches[runStart].start;
 }
 
-const FOOTER_KEYWORDS = /\b(copyright|trademark|reserved|reproduced|games|magic|rights)\b/i;
+const FOOTER_KEYWORDS =
+  /\b(copyright|trademark|reserved|reproduced|games|magic|rights)\b/i;
 
 function extractFooter(
   sections: Section[],

@@ -247,10 +247,6 @@ def is_skippable_line(text: str, font: str, size: float) -> bool:
         return True  # page numbers
     if round(size) == 18 and font != "BreatheFireIII":
         return True  # TOC entries (contain \x08 leaders)
-    if text.startswith("(C) Copyright"):
-        return True
-    if "Copyright" in text and "Active Magic Games" in text:
-        return True
     return False
 
 

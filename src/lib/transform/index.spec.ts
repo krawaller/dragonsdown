@@ -53,9 +53,7 @@ describe("ignoreImages — content effect", () => {
   it("empty imageIds is a no-op", () => {
     const original = `Hello ${IMG("abc")}`;
     const sections = [s("1", original)];
-    const rules: Rule[] = [
-      { op: "ignoreImages", target: "ALL", imageIds: [] },
-    ];
+    const rules: Rule[] = [{ op: "ignoreImages", target: "ALL", imageIds: [] }];
     expect(applyTransforms(sections, rules, "core")[0].content).toBe(original);
   });
 
@@ -101,7 +99,6 @@ describe("Pipeline", () => {
     expect(out[1].content).toBe("");
   });
 
-
   it("applies rules in order; later rules see earlier output", () => {
     const sections = [s("1", `${IMG("a")} ${IMG("b")}`)];
     const rules: Rule[] = [
@@ -135,11 +132,10 @@ describe("extractFooter", () => {
   it("splits a trailing image pair (no copyright text) into a new L1 section", () => {
     const sections = [
       s("1", "Intro body", { level: 1, title: "Intro" }),
-      s(
-        "2",
-        `Last entry body.\n\n${IMG("aa")}\n\n${IMG("bb")}`,
-        { level: 1, title: "Last" },
-      ),
+      s("2", `Last entry body.\n\n${IMG("aa")}\n\n${IMG("bb")}`, {
+        level: 1,
+        title: "Last",
+      }),
     ];
     const rules: Rule[] = [
       { op: "extractFooter", target: "ALL", title: "Credits" },
@@ -175,7 +171,27 @@ describe("extractFooter", () => {
     expect(out[1].content).toContain(IMG("aa"));
   });
 
-  it("is a no-op when the last section has fewer than 2 trailing images", () => {
+  it("splits a single trailing image when followed by copyright text", () => {
+    const sections = [
+      s(
+        "1",
+        `Body.\n\n${IMG("aa")}\n\n(C) Copyright 2025 Active Magic Games, all rights reserved.`,
+        { level: 1, title: "Last" },
+      ),
+    ];
+    const rules: Rule[] = [
+      { op: "extractFooter", target: "ALL", title: "Credits" },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+    expect(out).toHaveLength(2);
+    expect(out[0].content).toBe("Body.");
+    expect(out[1]).toMatchObject({ id: "2", level: 1, title: "Credits" });
+    expect(out[1].content).toBe(
+      `${IMG("aa")}\n\n(C) Copyright 2025 Active Magic Games, all rights reserved.`,
+    );
+  });
+
+  it("is a no-op for a single trailing image without footer text", () => {
     const sections = [
       s("1", `Body.\n\n${IMG("aa")}`, { level: 1, title: "Last" }),
     ];
@@ -187,11 +203,10 @@ describe("extractFooter", () => {
 
   it("is a no-op when consecutive images aren't at the end", () => {
     const sections = [
-      s(
-        "1",
-        `${IMG("aa")}\n\n${IMG("bb")}\n\nBody text follows the images.`,
-        { level: 1, title: "Last" },
-      ),
+      s("1", `${IMG("aa")}\n\n${IMG("bb")}\n\nBody text follows the images.`, {
+        level: 1,
+        title: "Last",
+      }),
     ];
     const rules: Rule[] = [
       { op: "extractFooter", target: "ALL", title: "Credits" },
@@ -204,11 +219,10 @@ describe("extractFooter", () => {
       s("1", "", { level: 1, title: "One" }),
       s("2", "", { level: 1, title: "Two" }),
       s("2.1", "", { level: 2, title: "Sub" }),
-      s(
-        "3",
-        `Body.\n\n${IMG("aa")}\n\n${IMG("bb")}`,
-        { level: 1, title: "Three" },
-      ),
+      s("3", `Body.\n\n${IMG("aa")}\n\n${IMG("bb")}`, {
+        level: 1,
+        title: "Three",
+      }),
     ];
     const rules: Rule[] = [
       { op: "extractFooter", target: "ALL", title: "Credits" },
@@ -219,11 +233,10 @@ describe("extractFooter", () => {
 
   it("respects doc-level target gating", () => {
     const sections = [
-      s(
-        "1",
-        `Body.\n\n${IMG("aa")}\n\n${IMG("bb")}`,
-        { level: 1, title: "Last" },
-      ),
+      s("1", `Body.\n\n${IMG("aa")}\n\n${IMG("bb")}`, {
+        level: 1,
+        title: "Last",
+      }),
     ];
     const rules: Rule[] = [
       {
@@ -239,11 +252,10 @@ describe("extractFooter", () => {
   it("is idempotent — running again leaves the existing Credits section alone", () => {
     const sections = [
       s("1", "Body.", { level: 1, title: "Real" }),
-      s(
-        "2",
-        `${IMG("aa")}\n\n${IMG("bb")}\n\nCopyright Active Magic Games.`,
-        { level: 1, title: "Credits" },
-      ),
+      s("2", `${IMG("aa")}\n\n${IMG("bb")}\n\nCopyright Active Magic Games.`, {
+        level: 1,
+        title: "Credits",
+      }),
     ];
     const rules: Rule[] = [
       { op: "extractFooter", target: "ALL", title: "Credits" },
@@ -302,9 +314,7 @@ describe("moveImage", () => {
     ];
     const out = applyTransforms(sections, rules, "core");
     expect(out[0].content).toBe("Here is an image.");
-    expect(out[1].content).toBe(
-      `Body.\n\n${IMG("abc")}\n\n**Anchor:** here.`,
-    );
+    expect(out[1].content).toBe(`Body.\n\n${IMG("abc")}\n\n**Anchor:** here.`);
   });
 
   it("is a no-op when the image hash isn't found in any section", () => {
@@ -369,11 +379,10 @@ describe("moveImage", () => {
 
   it("matches /images/<subdir>/<hash>.<ext> too (pdf/...)", () => {
     const sections = [
-      s(
-        "1",
-        `before\n\n![](/images/pdf/abc.png)\n\nMARKER end`,
-        { level: 1, title: "X" },
-      ),
+      s("1", `before\n\n![](/images/pdf/abc.png)\n\nMARKER end`, {
+        level: 1,
+        title: "X",
+      }),
     ];
     const rules: Rule[] = [
       { op: "moveImage", target: "ALL", imageId: "abc", after: "MARKER" },
@@ -444,9 +453,7 @@ describe("addTag", () => {
 
   it("appends to existing tags", () => {
     const start = [{ ...sections()[1], tags: ["existing"] }];
-    const rules: Rule[] = [
-      { op: "addTag", tag: "new", target: "ALL" },
-    ];
+    const rules: Rule[] = [{ op: "addTag", tag: "new", target: "ALL" }];
     expect(applyTransforms(start, rules, "core")[0].tags).toEqual([
       "existing",
       "new",

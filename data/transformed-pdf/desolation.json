@@ -1240,7 +1240,7 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "Melee weapon. Must have 3 or more active Charisma attribute icons in order to equip. If the Hero has less then 3 active Charisma attribute icons at any time, the card is immediately unequipped to the backpack.\n\n![](/images/pdf/b758df98aac30ce9c18c5215714475d28856cadb.jpeg) be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
+      "content": "Melee weapon. Must have 3 or more active Charisma attribute icons in order to equip. If the Hero has less then 3 active Charisma attribute icons at any time, the card is immediately unequipped to the backpack.",
       "tags": [
         "treasure"
       ],
@@ -1248,7 +1248,16 @@
         {
           "kind": "markdown",
           "markdown": "Melee weapon. Must have 3 or more active Charisma attribute icons in order to equip. If the Hero has less then 3 active Charisma attribute icons at any time, the card is immediately unequipped to the backpack."
-        },
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "source": "desolation",
+      "level": 1,
+      "title": "Credits",
+      "content": "![](/images/pdf/b758df98aac30ce9c18c5215714475d28856cadb.jpeg)\n\n(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
+      "contentNodes": [
         {
           "kind": "image",
           "src": "/images/pdf/b758df98aac30ce9c18c5215714475d28856cadb.jpeg",
@@ -1256,7 +1265,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
+          "markdown": "(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
         }
       ]
     }
