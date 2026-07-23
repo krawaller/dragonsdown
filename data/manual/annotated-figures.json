@@ -35,5 +35,17 @@
     "bbox": [437, 75, 531, 190],
     "alt": "Annotated civilization location reference",
     "expectedTexts": ["Location Name", "Terrain Pack"]
+  },
+  {
+    "doc": "core",
+    "page": 8,
+    "target": { "titleRegex": "^Natives \\(far right\\)$" },
+    "bbox": [545, 132, 789, 244],
+    "alt": "Annotated native reference",
+    "expectedTexts": [
+      "Attack Length",
+      "Summoning/Respect Symbol (for the Natives & Legends expansion)",
+      "Maneuver Speed"
+    ]
   }
 ]
