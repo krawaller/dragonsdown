@@ -1632,12 +1632,14 @@
       "content": "![float-right](/images/pdf/5055eb78163b1f1545fb8ece37175120ba277712.png) Mix all Heroes’ Targeting Tokens together and randomly draw one to determine the Active Player. The Active Player performs all of their actions for the turn. Then draw a new token to determine the next player to perform their actions until all players have taken a turn.\n\nPlayers may perform up to 4 actions during their turn. Actions can be taken in any order and the same action may be taken any number of times.",
       "contentNodes": [
         {
-          "kind": "image",
-          "src": "/images/pdf/5055eb78163b1f1545fb8ece37175120ba277712.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5055eb78163b1f1545fb8ece37175120ba277712.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Mix all Heroes’ Targeting Tokens together and randomly draw one to determine the Active Player. The Active Player performs all of their actions for the turn. Then draw a new token to determine the next player to perform their actions until all players have taken a turn."
         },
         {
@@ -1838,57 +1840,69 @@
           "markdown": "Draw **one** random Wilderness Token from the matching Terrain Setup Card and reveal it anywhere in the tile. Follow the instructions below for the token drawn."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/3bef5de2161a97966b13e0b0be97b27afa037800.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/3bef5de2161a97966b13e0b0be97b27afa037800.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Site:** Draw a random Site Token from the Site Token pile. Place the Treasure Site in the clearing on the Map Tile indicated by number on the Site Token."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/90adbefc7f3f672d9ff407228de7a8824374aa94.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/90adbefc7f3f672d9ff407228de7a8824374aa94.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Numbered Token:** Place the token in the clearing indicated by the number on the Wilderness Token."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/a6ee8959434410163c88bb5999f667c2fa32547c.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/a6ee8959434410163c88bb5999f667c2fa32547c.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Item:** Draw an item from the top of the Item Deck. The Hero may equip the card immediately (*see Equipping on page 21*)."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/a16d831bb023d7be7622c3fad8a64d18d9805df1.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/a16d831bb023d7be7622c3fad8a64d18d9805df1.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Treasure:** Draw a treasure from the top of the Treasure Deck (*not* *the Deep Treasure Deck*). The Hero may equip the card immediately (*see Equipping on page 21*)."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/0ea9532355c7a37dc29d39f6a0f7abdaafdd0d60.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/0ea9532355c7a37dc29d39f6a0f7abdaafdd0d60.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Discovery:** The Hero rolls two Mission Dice and receives the rewards indicated by the dice roll."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/4c18d8620f58e33ba89a2dcb3e076b91d48179df.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/4c18d8620f58e33ba89a2dcb3e076b91d48179df.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Forgotten City/Dwarven Ruins:** Reveal one additional token from each Terrain Setup Card, repeating the above steps for each new token. The revealing Hero receives 1 LP and 5 Fame."
         }
       ]
@@ -1920,12 +1934,14 @@
           "markdown": "2.\t They may search for a Treasure Site in the clearing."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/e734664145aef6e85bc057eaec9574b2d4d4d718.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/e734664145aef6e85bc057eaec9574b2d4d4d718.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "The player rolls the two Search Dice. If the result shows two spyglasses, the Hero has found the Treasure Site or Hidden Path. Any other result is a failure."
         },
         {
@@ -1969,12 +1985,14 @@
           "markdown": "Once a player has found a Treasure Site, they may loot it using a Loot Action. A Hero may not loot a Treasure Site that they have not discovered, even if it has been discovered by other Heroes."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/410f8be59b36c36195763ce9f6f713a2d5375888.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/410f8be59b36c36195763ce9f6f713a2d5375888.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Roll the two loot dice. If the player rolls only grabby hand icons, they may look at the top three treasures and keep one of them, returning the other two to the Treasure Pile in the original order."
         },
         {
@@ -2022,21 +2040,25 @@
           "markdown": "Roll the two Learn Dice."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/9e163e5ca6e959683bf46c9d46a30080cf25289a.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/9e163e5ca6e959683bf46c9d46a30080cf25289a.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- If both sides show a spell book, the Hero learns the spell and removes it from the Spell Book or Spell Scroll and places it in the known spells position on their Hero Board. They earn the 1 LP and 5 Fame for learning the spell. If the last spell is removed from a Treasure Card, remove the Treasure Card from the game."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/067f56e065c71751da09245969e9fa300cce5f85.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/067f56e065c71751da09245969e9fa300cce5f85.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- If the dice show one or more Curse Symbols, the Hero fails and receives one curse. Roll on the Curse Table immediately and apply the effects until the curse is removed. The Curse Table is shown on the back side of the Reference Cards."
         },
         {
@@ -2262,12 +2284,14 @@
           "markdown": "**Triggers:** An unblocked Hero may make a Hide reaction and gain the Hide status when any of the following occurs: • A Monster blocks a Hero during the Action Phase. • At the end of Monster Activation. • In the Cleanup step if the Hero ambushed this Combat Round. The Hide reaction is free (does *not cost an action*)."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/0a68611be4bf2613de5584aa4405eed95a4e74ee.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/0a68611be4bf2613de5584aa4405eed95a4e74ee.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "If a Monster symbol is rolled on either of the dice, the Hide fails and the block is successful. If there are no Monster symbols in the roll result, the Hero gains the hidden status and the block has no effect. Place a pink cube on the hidden box on the Hero Board. If the Hero took the Sneak Action this turn they may ignore one Monster symbol when determining success or failure."
         },
         {
@@ -2331,12 +2355,14 @@
           "markdown": "**Return Arrow:** If the arrow symbol is rolled do the following:"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Monsters Return:** Return all Monsters in Map Tiles containing no Heroes to the monster tray."
         },
         {
@@ -2369,12 +2395,14 @@
           "markdown": "Note: If the Monster listed on the Map Tile has a         dual dice icon beside the Monster symbol, then the number of Monsters summoned to the tile is the sum of both numbered Summoning Dice."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/ee893c2cb876ca12744347bf07c1c8161efd74f5.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/ee893c2cb876ca12744347bf07c1c8161efd74f5.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "**Treasure Site Symbol:** If the Treasure Site Symbol is rolled on one of the dice and a Map Tile contains one or more Heroes and one or more Treasure Sites then Guardians are summoned. Move all Guardians from wherever they are located to the clearing containing the matching **Treasure Site** for that Guardian, even if that causes the Guardian to leave a clearing containing a Hero, another Map Tile, or the monster tray."
         },
         {
@@ -2590,7 +2618,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "The combat steps in each clearing are as follows. Should it matter, all steps are done in player Turn Order. Each circuit through these steps is called a Combat Round: **1.\t Challenge:** In player order, hidden Heroes may choose to become unhidden. Then, each Monster challenges a random unhidden Hero in the clearing. *Remember: A Monster controlled by a Hero is considered a Hero.*\n\n- Multiple Monsters may challenge a single Hero, even if other Heroes are not challenged by a Monster.\n\n- A Hero that is Shape Shifted into a Monster is still considered a Hero.\n\n- Monsters under the control of a Hero (*e.g. Elementals*) are considered Heroes for all purposes during combat.\n\n- Monsters do not challenge Natives and vice versa. They ignore one another. **2.\t Activation:** A Hero with inactive permanent spells may activate any matching spells of their choice by moving a Magic Cube of the spell’s color from their healthy box to their wounded box. A Hero may wound any number of Magic Cubes to activate different matching spells. See Spells on page 22.\n- If a Hero is on a Map Tile enchanted with a Magic Cube matching the color of a permanent spell, the matching spell activates automatically and does not require wounding a Magic Cube.\n\n- A Hero may not wound a cube to activate an inactive permanent spell that is affecting another Hero. **3.\t Evade:** In player order, Heroes may evade combat if they can place more brown Speed Cubes in their maneuver speed boxes than the highest single maneuver speed of all Monsters that are challenging them.\n\n- If the player cannot place enough brown Speed Cubes in the maneuver speed boxes, the Hero may not evade combat.\n\n- Heroes that evade take no further part in combat and are placed on a path leading out of the clearing of the player’s choice (*not a Gate*). If there is no valid path out of the clearing, they may not evade. Next turn, they must move as their first action. Return the cubes to their healthy box.\n\n- Evaded Monsters do not challenge other Heroes this Combat Round. **4.\t Target:** Heroes, and then Monsters, choose a target for this Combat Round.\n- Monsters always target the Hero they are challenging.\n\n- In player order, each Hero in the clearing selects a Monster to target. Place the Hero’s Targeting Token on the Monster they are attacking. Multiple Heroes may attack the same Monster. Some spells may target multiple foes.\n\n- When targeting with a controlled Monster, the Hero selects which side of the Monster chip to place face-up.\n\n- If a Monster was evaded by the Hero they challenged, the Monster attacks no one, but may still be targeted by an attack from another Hero.\n\n- Some spells allow targeting of Heroes (*for beneficial purposes*). **5.\t Hero Tactics:** In secret, each Hero places their Action Cubes on the boxes for their might, spells, attack speed, and/or maneuver speed.\n- A Hero may place up to 5 Action Cubes on their boxes. The Action Cube limit is +1 Speed Cube if the Hero performed an Alert Action during the Action Phase this turn.\n\n- Red Might Cubes may only be placed on red might boxes. This represents the strength that the Hero is putting into the attack.\n\n- Brown Speed Cubes may only be placed on attack speed and/or maneuver speed boxes (*both brown*). This represents the speed of the Hero’s attack and maneuver. An attack or maneuver speed of 0 or less is still an attack and/or maneuver.\n\n- Magic Cubes may only be placed on boxes that match the color of the cube being placed. Note that some boxes accept any color of Magic Cube.\n\n- Each Combat Round, a Hero may only use one card that casts a spell or causes an attack to occur. A Hero may place additional cubes on other Treasure Cards, if they wish. A Hero may always place cubes on their Lineage and Class Cards.\n\n- A Hero may not place cubes on possessions in their backpack.\n\n- If a Hero is placing cubes on a card, they must fill all dark red or dark brown (*mandatory*) boxes on the card. They do not have to place cubes in the light red or light brown (*optional*) boxes on a card.\n\n- If the Hero is casting a spell, all boxes on the Spell Card must be filled with 1 cube of the matching color. Multi-color boxes may contain any color of Magic Cube. *Exception: If the Map Tile is enchanted, any one box matching* *the enchanting color does not need to be filled*.\n\n- Once all players have placed their Action Cubes, reveal all placements.\n\n**6.\t Monster Tactics:** For each **uncontrolled** Monster in the clearing, roll one Monster Die. If it shows a Monster symbol, flip the Monster Chip over. These are the new characteristics of the Monster for this round of combat.\n\nAt the end of Monster tactics, if a Monster’s tactics are an attack with multiple targets (*e.g. Fireball*), the Monster will add random additional Heroes as targets, in addition to the Hero they originally targeted. **7.\t Resolve:** Process all attacks in attack speed order and fully resolve one attack before proceeding to the next. **A.\t Attack Order:** Starting with the fastest unresolved attack speed, regardless if it is a spell or a weapon, process the attack.\n\n- Ties for attack speed are broken by the attack length shown on each Weapon or Spell Card (*the number on top of a sword icon*).\n\n- The attack length of Monsters is shown as a red number near the attack speed on the counter. No number indicates an attack length of 0.\n\n- Tied attack speeds and attack lengths strike simultaneously. If spell resolution order matters, break ties randomly.\n\n**B.\t Attack Resolution:** For each attack in order, perform the following steps.\n\n- ![float-right](/images/pdf/5ea310ce38685a2f70c774fca67fd5f892ea8baf.png) ![float-right](/images/pdf/cb442c7b50f04d0747de8db542eccc2af9371a20.jpeg) ![float-right](/images/pdf/ce0485b25783048d07f54d9e3938e6f10602f54d.jpeg) If the attacker’s attack speed is faster than the target’s maneuver speed, the attack hits. Otherwise, roll the two Hit Dice.\n\n- If either die is blank: The attack misses.\n\n- If both dice are hit symbols: The attack hits.\n\n- If the dice are any combination of hits and equal signs: The attack hits if the attacker’s attack speed is equal to the maneuver speed of the target. Otherwise, it misses.\n\n**C.\t Damage:** If the attack misses, ignore this step; proceed to step D.",
+      "content": "The combat steps in each clearing are as follows. Should it matter, all steps are done in player Turn Order. Each circuit through these steps is called a Combat Round: **1.\t Challenge:** In player order, hidden Heroes may choose to become unhidden. Then, each Monster challenges a random unhidden Hero in the clearing. *Remember: A Monster controlled by a Hero is considered a Hero.*\n\n- Multiple Monsters may challenge a single Hero, even if other Heroes are not challenged by a Monster.\n\n- A Hero that is Shape Shifted into a Monster is still considered a Hero.\n\n- Monsters under the control of a Hero (*e.g. Elementals*) are considered Heroes for all purposes during combat.\n\n- Monsters do not challenge Natives and vice versa. They ignore one another. **2.\t Activation:** A Hero with inactive permanent spells may activate any matching spells of their choice by moving a Magic Cube of the spell’s color from their healthy box to their wounded box. A Hero may wound any number of Magic Cubes to activate different matching spells. See Spells on page 22.\n- If a Hero is on a Map Tile enchanted with a Magic Cube matching the color of a permanent spell, the matching spell activates automatically and does not require wounding a Magic Cube.\n\n- A Hero may not wound a cube to activate an inactive permanent spell that is affecting another Hero. **3.\t Evade:** In player order, Heroes may evade combat if they can place more brown Speed Cubes in their maneuver speed boxes than the highest single maneuver speed of all Monsters that are challenging them.\n\n- If the player cannot place enough brown Speed Cubes in the maneuver speed boxes, the Hero may not evade combat.\n\n- Heroes that evade take no further part in combat and are placed on a path leading out of the clearing of the player’s choice (*not a Gate*). If there is no valid path out of the clearing, they may not evade. Next turn, they must move as their first action. Return the cubes to their healthy box.\n\n- Evaded Monsters do not challenge other Heroes this Combat Round. **4.\t Target:** Heroes, and then Monsters, choose a target for this Combat Round.\n- Monsters always target the Hero they are challenging.\n\n- In player order, each Hero in the clearing selects a Monster to target. Place the Hero’s Targeting Token on the Monster they are attacking. Multiple Heroes may attack the same Monster. Some spells may target multiple foes.\n\n- When targeting with a controlled Monster, the Hero selects which side of the Monster chip to place face-up.\n\n- If a Monster was evaded by the Hero they challenged, the Monster attacks no one, but may still be targeted by an attack from another Hero.\n\n- Some spells allow targeting of Heroes (*for beneficial purposes*). **5.\t Hero Tactics:** In secret, each Hero places their Action Cubes on the boxes for their might, spells, attack speed, and/or maneuver speed.\n- A Hero may place up to 5 Action Cubes on their boxes. The Action Cube limit is +1 Speed Cube if the Hero performed an Alert Action during the Action Phase this turn.\n\n- Red Might Cubes may only be placed on red might boxes. This represents the strength that the Hero is putting into the attack.\n\n- Brown Speed Cubes may only be placed on attack speed and/or maneuver speed boxes (*both brown*). This represents the speed of the Hero’s attack and maneuver. An attack or maneuver speed of 0 or less is still an attack and/or maneuver.\n\n- Magic Cubes may only be placed on boxes that match the color of the cube being placed. Note that some boxes accept any color of Magic Cube.\n\n- Each Combat Round, a Hero may only use one card that casts a spell or causes an attack to occur. A Hero may place additional cubes on other Treasure Cards, if they wish. A Hero may always place cubes on their Lineage and Class Cards.\n\n- A Hero may not place cubes on possessions in their backpack.\n\n- If a Hero is placing cubes on a card, they must fill all dark red or dark brown (*mandatory*) boxes on the card. They do not have to place cubes in the light red or light brown (*optional*) boxes on a card.\n\n- If the Hero is casting a spell, all boxes on the Spell Card must be filled with 1 cube of the matching color. Multi-color boxes may contain any color of Magic Cube. *Exception: If the Map Tile is enchanted, any one box matching* *the enchanting color does not need to be filled*.\n\n- Once all players have placed their Action Cubes, reveal all placements.\n\n**6.\t Monster Tactics:** For each **uncontrolled** Monster in the clearing, roll one Monster Die. If it shows a Monster symbol, flip the Monster Chip over. These are the new characteristics of the Monster for this round of combat.\n\nAt the end of Monster tactics, if a Monster’s tactics are an attack with multiple targets (*e.g. Fireball*), the Monster will add random additional Heroes as targets, in addition to the Hero they originally targeted. **7.\t Resolve:** Process all attacks in attack speed order and fully resolve one attack before proceeding to the next. **A.\t Attack Order:** Starting with the fastest unresolved attack speed, regardless if it is a spell or a weapon, process the attack.\n\n- Ties for attack speed are broken by the attack length shown on each Weapon or Spell Card (*the number on top of a sword icon*).\n\n- The attack length of Monsters is shown as a red number near the attack speed on the counter. No number indicates an attack length of 0.\n\n- Tied attack speeds and attack lengths strike simultaneously. If spell resolution order matters, break ties randomly.\n\n**B.\t Attack Resolution:** For each attack in order, perform the following steps.\n\n- If the attacker’s attack speed is faster than the target’s maneuver speed, the attack hits. Otherwise, roll the two Hit Dice.\n\n- ![float-right](/images/pdf/5ea310ce38685a2f70c774fca67fd5f892ea8baf.png) If either die is blank: The attack misses.\n\n- ![float-right](/images/pdf/cb442c7b50f04d0747de8db542eccc2af9371a20.jpeg) If both dice are hit symbols: The attack hits.\n\n- ![float-right](/images/pdf/ce0485b25783048d07f54d9e3938e6f10602f54d.jpeg) If the dice are any combination of hits and equal signs: The attack hits if the attacker’s attack speed is equal to the maneuver speed of the target. Otherwise, it misses.\n\n**C.\t Damage:** If the attack misses, ignore this step; proceed to step D.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -2701,34 +2729,40 @@
           "markdown": "**B.\t Attack Resolution:** For each attack in order, perform the following steps."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5ea310ce38685a2f70c774fca67fd5f892ea8baf.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/cb442c7b50f04d0747de8db542eccc2af9371a20.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/ce0485b25783048d07f54d9e3938e6f10602f54d.jpeg",
-          "display": "float-right"
-        },
-        {
           "kind": "markdown",
           "markdown": "- If the attacker’s attack speed is faster than the target’s maneuver speed, the attack hits. Otherwise, roll the two Hit Dice."
         },
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5ea310ce38685a2f70c774fca67fd5f892ea8baf.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- If either die is blank: The attack misses."
         },
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/cb442c7b50f04d0747de8db542eccc2af9371a20.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- If both dice are hit symbols: The attack hits."
         },
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/ce0485b25783048d07f54d9e3938e6f10602f54d.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- If the dice are any combination of hits and equal signs: The attack hits if the attacker’s attack speed is equal to the maneuver speed of the target. Otherwise, it misses."
         },
         {
@@ -3495,75 +3529,91 @@
           "markdown": "The banners on treasures and items show information as follows:"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Base Price:** This is the price that a Merchant will pay to purchase this card from a Hero. This is also the base price used to calculate how much a Merchant will charge to sell this card to a Hero (*the price is* *always base price x3*)"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/4eaf14775737eeaafd6db29a4980d31a84758e11.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/4eaf14775737eeaafd6db29a4980d31a84758e11.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**One-time Use:** This card is removed from the game after use. One-time use cards may be used at any time during a player’s turn or in combat, even when first possessed without equipping. Cards with a combat effect may only be used in combat."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/911e3bc45a7641e0ce21075efc3edcf4ea7b56de.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/911e3bc45a7641e0ce21075efc3edcf4ea7b56de.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Armor:** This card is armor with an armor value as printed in the shield symbol. Armor is explained in the combat section on page 16 of these rules."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/13755d1d48e3c1c4b68dd7271ab3c91464659c3c.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/13755d1d48e3c1c4b68dd7271ab3c91464659c3c.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Weight**: This card requires that a Hero has a number of healthy Might Cubes equal to the number shown. If not, the card is immediately unequipped to the Hero’s backpack (*see Equipping on page 21*)."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/88bc51c71289dfc33594fdaf3fb21e4bed1992a2.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/88bc51c71289dfc33594fdaf3fb21e4bed1992a2.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Attack Length**: If two attacks have the same attack speed, weapons and spells with higher numbers are resolved before lower numbers. Some weapons have two numbers. See Melee or Ranged below."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/2169147b1ec515d033cd3822bf41f1e5dcaa1cfa.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/2169147b1ec515d033cd3822bf41f1e5dcaa1cfa.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Melee**: This card is a melee weapon."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/2962811623918904e9e970b4fedffa94c67a875c.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/2962811623918904e9e970b4fedffa94c67a875c.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Ranged**: This card is a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack as described in the combat section of these rules."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/6eef497be977d3b22866df547905aa1a19dd6243.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/6eef497be977d3b22866df547905aa1a19dd6243.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Melee or Ranged**: This weapon may be used as a melee or a ranged weapon. If used as a melee weapon, use the top attack length. If used as a ranged weapon, it is thrown; use the bottom attack length."
         },
         {
@@ -3571,147 +3621,179 @@
           "markdown": "Weapons may only be thrown with one hand. When thrown, they are placed to the side of the Hero Board. Thrown weapons are removed from the game permanently if all Monsters in the clearing are not killed during combat this turn."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/90415d9ca9cd9a06524ea9093fc9c3b924425d16.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/90415d9ca9cd9a06524ea9093fc9c3b924425d16.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Permanent**: The effects of this magic item last for the entire game."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1ccd0fcfa1107235434c8c23404668f3a0a918bb.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1ccd0fcfa1107235434c8c23404668f3a0a918bb.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Combat**: The effects of this treasure last for the duration of the combat. Once combat is over, the effects are terminated."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/c8ea73abcf65710a86b82cd5e173d745debdbeb2.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/c8ea73abcf65710a86b82cd5e173d745debdbeb2.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Neck**: This card is placed on the Hero’s neck when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/56c41aeb413506d6ffa9e0f060a552949317c4ae.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/56c41aeb413506d6ffa9e0f060a552949317c4ae.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Waist**: This card is placed on the Hero’s waist when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/dbb150bd5fb34fbf8f65a3d81c0b28e29248b75a.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/dbb150bd5fb34fbf8f65a3d81c0b28e29248b75a.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Feet**: This card is placed on the Hero’s feet when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5885eb4a46058337e8e746a077a2a5191fb8b205.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5885eb4a46058337e8e746a077a2a5191fb8b205.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Head**: This card is placed on the Hero’s head when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/f9272587d5db5c5206a9a8362bbd13852a3000ee.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/f9272587d5db5c5206a9a8362bbd13852a3000ee.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Chest**: This card is placed on the Hero’s chest when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/3b39a83391dc787f94b33841851fbdf9e276d424.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/3b39a83391dc787f94b33841851fbdf9e276d424.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Head and Chest**: This card is placed on the Hero’s head and chest when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1cf6db6cfe389ccd192465df93b47f10e6cf61bd.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1cf6db6cfe389ccd192465df93b47f10e6cf61bd.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position One-handed Weapon**: This card is placed on one of the Hero’s weapon positions (*does not matter which one*) when active and face-down in the backpack when inactive. A Hero may not have two weapons, nor two shields, active at the same time."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/41413331b277d3e944d6afe99671402574f1a201.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/41413331b277d3e944d6afe99671402574f1a201.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Two-handed Weapon**: This card is placed on both of the Hero’s weapon positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards. Spears may be wielded with one or two-hands. The optional might box is only available if using two hands."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/0c3a9639f87bd1a153dae11b85d4113845624a52.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/0c3a9639f87bd1a153dae11b85d4113845624a52.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Single Hand**: This card is placed on one of the Hero’s hand positions (*does not matter which one*) when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1c6603d8ffe1638b1c354aa18c12176b11196d49.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1c6603d8ffe1638b1c354aa18c12176b11196d49.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Two Hands**: This card is placed on both of the Hero’s hand positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions.  Neither position is available for other cards."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/09b71b6fc118d9cc55a5a7cbdc806a0add122c40.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/09b71b6fc118d9cc55a5a7cbdc806a0add122c40.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Miscellaneous**: This card is placed on one of the Hero’s miscellaneous positions (*does not matter which one*) when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/6742f700cfbacc25b737889ef31475490cbf324f.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/6742f700cfbacc25b737889ef31475490cbf324f.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Backpack**: Cards may always be placed in the backpack. Cards placed in the backpack are face-down, inactive, hidden from other players, and need not be revealed."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/24dcd216f9b85f8076a20a406cdaff47a0bae0ca.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/24dcd216f9b85f8076a20a406cdaff47a0bae0ca.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Backpack Special**: This card must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession of the card."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Instantaneous**: The effects of this treasure occur immediately. The treasure is then removed from the game."
         }
       ]
@@ -3821,12 +3903,14 @@
           "markdown": "The haggling Hero rolls two Haggle Dice:"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- If either die shows a closed door, the haggle attempt fails and the Merchant closes their doors to the Hero for the rest of the turn. No more trade attempts may be made with that Merchant by that Hero until the following turn."
         },
         {
@@ -3936,93 +4020,113 @@
           "markdown": "The tapestry on each Spell Card shows the spells characteristics as follows:"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Price:** The base price of the spell. Spell Cards cannot be bought or sold unless attached to a Spell Book or Spell Scroll. When a Hero buys or sells a Spell Book or Spell Scroll, all spells remain attached to the Treasure Card. The base price of a Spell Book or Spell Scroll is the sum of the spells attached to the Treasure Card (*see page 29 for more information on Spell* *Books and Spell Scrolls*)."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Targeted:** This spell must be targeted at the caster or a single target in the clearing with the caster. If there is a number in the target symbol, the caster may target up to that many targets. The spell only takes effect if the spell hits using normal attack rules. A Hero may voluntarily accept a hit from a targeted spell when cast."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Self or other:** This spell may be cast on self, another Hero, or a Monster in the same clearing as the caster. The spell does not need to hit to take effect."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Self:** This spell targets the caster and takes effect when cast."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Melee:** The casting of this spell acts like a melee weapon. If it hits, treat it like a melee weapon attack per the explanation on the card."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Ranged:** The casting of this spell acts like a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Instantaneous:** The spell occurs instantly and then expires."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Combat:** The spell lasts for the duration of combat or until the caster or target is killed or evades. Then the spell expires."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Turn:** The spell effects expire at the beginning of the Combat Phase of the following turn. These spells are most commonly used to enhance a Hero’s actions during the next turn."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Permanent:** The spell is permanent and never expires. Permanent spells can be in two states: active and inactive. Place active permanent spells face-up next to the Hero Board for the targeted Hero or Monster as a reminder that the spell is in effect."
         },
         {
@@ -4085,12 +4189,14 @@
           "markdown": "An Illusionist casts Vapor Form on herself during the game. Later, the Illusionist moves into a clearing in a Map Tile that is enchanted with gray magic. The Illusionist instantly becomes vapor. The Illusionist will continue to be vapor until the end of the Action Phase in which they are not in the presence of gray magic at any point during their turn."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/f61e10fec22c7e9408c137bc9814161e84d115eb.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/f61e10fec22c7e9408c137bc9814161e84d115eb.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Undead:** Some spells are marked with an undead symbol. Undead are immune to these spells in all ways."
         }
       ]
@@ -4155,12 +4261,14 @@
           "markdown": "To complete a mission, a Hero performs the listed tasks and then spends a Trade Action as directed on the Mission Card. Requirements can be completed by a Hero before the Quest is accepted. In this case, the mission represents recognition of past achievements. The Hero receives the Gold, Legend Points, and Fame shown on the bottom of the Mission Card."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/ee6f1cab2cfc30b9e199f62d2263ed0d9bf8c050.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/ee6f1cab2cfc30b9e199f62d2263ed0d9bf8c050.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "In addition to the mission rewards, the Hero may receive additional variable rewards based on the bonus attribute of the mission. For each ![float-right](/images/pdf/0d18500710f4f3aac83ce6df99f9a6d1db47ae85.jpeg) attribute symbol on the Hero’s Lineage and Class Card that matches the bonus symbol in the lower right corner of the Mission Card, the Hero rolls one Mission Die. The Mission Dice show either Fame or Gold as additional rewards. The Hero immediately receives the sum of all die roll results in addition to the listed rewards on the Mission Card."
         },
         {
@@ -4215,12 +4323,14 @@
       "content": "![float-right](/images/pdf/3934bf67c1608b5c0919aec2bdcd3aa10e2c3007.png) Some Monsters have Flying Ability and some game effects grant Flying Ability to Heroes. Flying is already built into the maneuver speed for Monsters with Flying Ability. Flying has no specific impact during combat unless mentioned in a spell or other game effect. *For example, The spell, Fiery Chasm, kills* *all non-flying Monsters and Heroes that it hits*.\n\nWhen a Hero has the Fly Ability, the Hero may choose to fly during an explore or Move Action. *Exception: A Hero Shape Shifted into a flying Monster must fly.*\n\n- Flying Heroes may move to an adjacent clearing via a path or, if not currently in a Cave Clearing, to any non-Cave Clearing in the current tile for one Move Action.\n\n- Flying Heroes may move to a randomly determined, non-Cave Clearing in an adjacent Map Tile for 2 Move Actions.\n\n- Flying Heroes may not take a Hide reaction upon entering a clearing that already contains Monsters.",
       "contentNodes": [
         {
-          "kind": "image",
-          "src": "/images/pdf/3934bf67c1608b5c0919aec2bdcd3aa10e2c3007.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/3934bf67c1608b5c0919aec2bdcd3aa10e2c3007.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Some Monsters have Flying Ability and some game effects grant Flying Ability to Heroes. Flying is already built into the maneuver speed for Monsters with Flying Ability. Flying has no specific impact during combat unless mentioned in a spell or other game effect. *For example, The spell, Fiery Chasm, kills* *all non-flying Monsters and Heroes that it hits*."
         },
         {
@@ -8556,219 +8666,267 @@
           "markdown": "The banners on treasures and items show information as follows:"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Base Price:** This is the price that a Merchant will pay to purchase this card from a Hero. This is also the base price used to calculate how much a Merchant will charge to sell this card to a Hero (the price is always base price x3)"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/4eaf14775737eeaafd6db29a4980d31a84758e11.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/4eaf14775737eeaafd6db29a4980d31a84758e11.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**One-time Use:** This card is removed from the game after use. One-time use cards may be used at any time during a player’s turn or in combat, even when first possessed without equipping. Cards with a combat effect may only be used in combat."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/911e3bc45a7641e0ce21075efc3edcf4ea7b56de.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/911e3bc45a7641e0ce21075efc3edcf4ea7b56de.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Armor:** This card is armor with an armor value as printed in the shield symbol. Armor is explained in the combat section of these rules."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/13755d1d48e3c1c4b68dd7271ab3c91464659c3c.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/13755d1d48e3c1c4b68dd7271ab3c91464659c3c.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Weight**: This card requires that a Hero has a number of healthy Might Cubes equal to the number shown. If not at any time, the card is immediately unequipped to the Hero’s backpack (see Equipping in Other Rules)."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/88bc51c71289dfc33594fdaf3fb21e4bed1992a2.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/88bc51c71289dfc33594fdaf3fb21e4bed1992a2.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Attack Length**: If two attacks have the same attack speed, weapons and spells with higher numbers are resolved before lower numbers. Some weapons have two numbers. See Melee or Ranged below."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/2169147b1ec515d033cd3822bf41f1e5dcaa1cfa.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/2169147b1ec515d033cd3822bf41f1e5dcaa1cfa.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Melee**: This card is a melee weapon."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/2962811623918904e9e970b4fedffa94c67a875c.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/2962811623918904e9e970b4fedffa94c67a875c.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Ranged**: This card is a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack as described in the combat section of these rules."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/6eef497be977d3b22866df547905aa1a19dd6243.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/6eef497be977d3b22866df547905aa1a19dd6243.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Melee or Ranged**: This weapon may be used as a melee or a ranged weapon. If used as a melee weapon, use the top attack length. If used as a ranged weapon, it is thrown; use the bottom attack length. Weapons may only be thrown with one hand. When thrown, they  are placed to the side of the Hero Board. Thrown weapons are removed from the game permanently if all Monsters are not killed during combat this turn."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/90415d9ca9cd9a06524ea9093fc9c3b924425d16.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/90415d9ca9cd9a06524ea9093fc9c3b924425d16.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Permanent**: The effects of this magic item last for the entire game."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1ccd0fcfa1107235434c8c23404668f3a0a918bb.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1ccd0fcfa1107235434c8c23404668f3a0a918bb.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Combat**: The effects of this treasure last for the duration of the combat. Once combat is over, the effects are terminated."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/c8ea73abcf65710a86b82cd5e173d745debdbeb2.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/c8ea73abcf65710a86b82cd5e173d745debdbeb2.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Neck**: This card is placed on the Hero’s neck when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/56c41aeb413506d6ffa9e0f060a552949317c4ae.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/56c41aeb413506d6ffa9e0f060a552949317c4ae.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Waist**: This card is placed on the Hero’s waist when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/dbb150bd5fb34fbf8f65a3d81c0b28e29248b75a.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/dbb150bd5fb34fbf8f65a3d81c0b28e29248b75a.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Feet**: This card is placed on the Hero’s feet when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5885eb4a46058337e8e746a077a2a5191fb8b205.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5885eb4a46058337e8e746a077a2a5191fb8b205.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Head**: This card is placed on the Hero’s head when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/f9272587d5db5c5206a9a8362bbd13852a3000ee.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/f9272587d5db5c5206a9a8362bbd13852a3000ee.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Chest**: This card is placed on the Hero’s chest when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/3b39a83391dc787f94b33841851fbdf9e276d424.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/3b39a83391dc787f94b33841851fbdf9e276d424.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Head and Chest**: This card is placed on the Hero’s head and chest when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1cf6db6cfe389ccd192465df93b47f10e6cf61bd.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1cf6db6cfe389ccd192465df93b47f10e6cf61bd.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position One-handed Weapon**: This card is placed on one of the Hero’s weapon positions (does not matter which one) when active and face-down in the backpack when inactive. A Hero may not have two weapons, nor two shields, active at the same time."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/41413331b277d3e944d6afe99671402574f1a201.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/41413331b277d3e944d6afe99671402574f1a201.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Two-handed Weapon**: This card is placed on both of the Hero’s weapon positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards. Spears may be wielded with one or two-hands. The optional might box is only available if using two hands."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/0c3a9639f87bd1a153dae11b85d4113845624a52.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/0c3a9639f87bd1a153dae11b85d4113845624a52.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Single Hand**: This card is placed on one of the Hero’s hand positions (does not matter which one) when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1c6603d8ffe1638b1c354aa18c12176b11196d49.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1c6603d8ffe1638b1c354aa18c12176b11196d49.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Two Hands**: This card is placed on both of the Hero’s hand positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions.  Neither position is available for other cards."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/09b71b6fc118d9cc55a5a7cbdc806a0add122c40.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/09b71b6fc118d9cc55a5a7cbdc806a0add122c40.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Miscellaneous**: This card is placed on one of the Hero’s miscellaneous positions (does not matter which one) when active and face-down in the backpack when inactive."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/6742f700cfbacc25b737889ef31475490cbf324f.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/6742f700cfbacc25b737889ef31475490cbf324f.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Backpack**: Cards may always be placed in the backpack. Cards placed in the backpack are face-down, inactive, hidden from other players, and need not be revealed."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/24dcd216f9b85f8076a20a406cdaff47a0bae0ca.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/24dcd216f9b85f8076a20a406cdaff47a0bae0ca.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Position Backpack Special**: This card must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession of the card."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Instantaneous**: The effects of this treasure occur immediately. The treasure is then removed from the game."
         }
       ]
@@ -8792,84 +8950,102 @@
           "markdown": "**Price:** The base price of the Spell Card. Spell Cards cannot be bought or sold unless attached to a Spell Book or Spell Scroll. When a Hero buys or sells a Spell Book or Spell Scroll, all spells remain attached to the Treasure Card. The base price of a Spell Book or Spell Scroll is the sum of all spells attached to the Treasure Card."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Targeted:** This spell must be targeted at the caster or a single target in the clearing with the caster. If there is a number in the target symbol, the caster may target up to that many targets. The spell only takes effect if the spell hits using normal attack rules. A Hero may voluntarily accept a hit from a targeted spell when cast."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Self or other:** This spell may be cast on self, another Hero, or a Monster in the same clearing as the caster. The spell does not need to hit to take effect."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Self:** This spell targets the caster and takes effect when cast."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Melee:** The casting of this spell acts like a melee weapon. If it hits, treat it like a melee weapon attack per the explanation on the card."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Ranged:** The casting of this spell acts like a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack as normal."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Instantaneous:** The spell occurs instantly and then expires."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Combat:** The spell lasts for the duration of combat or until the caster or target is killed or evades. Then the spell expires."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Turn:** The spell effects expire at the beginning of the Combat Phase of the following turn. These spells are most commonly used to enhance a Hero’s actions during the next turn."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png",
-          "display": "float-left"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png",
+              "display": "float-left"
+            }
+          ],
           "markdown": "**Permanent:** The spell is permanent and never expires. Permanent spells can be in two states: active and inactive. When initially cast or activated, the spell remains active until the start of the following turn’s Combat Phase, then becomes inactive."
         }
       ]

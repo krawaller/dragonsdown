@@ -346,9 +346,7 @@ function linkPreviewFor(
   const content = anchor
     ? (markdownSliceForAnchor(section.content, anchor) ?? section.content)
     : section.content;
-  const contentNodes = anchor
-    ? contentNodesForMarkdown(content)
-    : (section.contentNodes ?? contentNodesForMarkdown(content));
+  const contentNodes = contentNodesForMarkdown(content);
   return promoteLeadingPreviewImages(contentNodes);
 }
 
@@ -357,6 +355,14 @@ function promoteLeadingPreviewImages(
 ): RulebookLinkPreview {
   const icons: string[] = [];
   const remaining = [...contentNodes];
+
+  const first = remaining[0];
+  if (first?.kind === "mediaAside") {
+    remaining.shift();
+    const mediaAside = first;
+    icons.push(...mediaAside.images.map((image) => image.src));
+    remaining.unshift({ kind: "markdown", markdown: mediaAside.markdown });
+  }
 
   while (isPreviewIconImage(remaining[0])) {
     const image = remaining[0];

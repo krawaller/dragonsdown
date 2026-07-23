@@ -405,12 +405,14 @@
       ],
       "contentNodes": [
         {
-          "kind": "image",
-          "src": "/images/pdf/db25aee0295d59b4cbd5183977b801832248698a.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/db25aee0295d59b4cbd5183977b801832248698a.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "The Witch is a purveyor of arcane magic and has a Familiar which does the Witch’s bidding. The Familiar is psychically linked to the Witch and shares what it learns with the Witch. When playing the Witch, also take the 2 Familiar Tokens. Use one as the Familiar Hero counter and the other for Turn Order.  The Familiar has the following rules:"
         },
         {

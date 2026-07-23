@@ -249,21 +249,25 @@
           "markdown": "The **Natives expansion** adds 5 Wilderness Tokens (*1 for each Terrain Pack*). As described in the setup rules, mix each of these tokens into the Wilderness Tokens from the Terrain Packs in play. Each of these tokens is marked with a + sign on the front face of the token and is described below."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/2b1bfb60e560868ac8af0455366c0df34c845e26.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/2b1bfb60e560868ac8af0455366c0df34c845e26.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Discovery:** Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/1852ccaf11323564a190262fbda0ecd86d58c35c.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/1852ccaf11323564a190262fbda0ecd86d58c35c.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- **Campfire/Encampment/Inn:** Draw an additional Wilderness Token from the same Terrain Pack and place it in the Map Tile ![float-right](/images/pdf/66d268a51351a75c20ed79ababefe7b1b4e7a420.jpeg) per normal rules. Then, roll a die and place the matching larger Civilization Location counter in the indicated clearing. *Exception:* *If the die roll indicates a clearing with a Treasure Site or Civilization* ![float-right](/images/pdf/aa05dbe80f5eb4bcd3831886acf333312e46dbe5.jpeg) *Location, reroll the die, unless there are no available clearings.* Draw two Civilization Tokens and place them in the Map Tile near the new Civilization Location. For all game purposes, these are Civilization Locations (*like the Keep, Mine, Outpost, Sanctuary,* *and Village*)."
         }
       ]
@@ -341,21 +345,25 @@
       "content": "![float-right](/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg) The **Natives expansion includes** a white Native Summoning Die. As part of Monster Activation, roll this die along with the other Summoning Dice.\n\n![float-right](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png) When a Monsters Return result is rolled on the wandering Monster Die, return all Unhired Natives in Map Tiles containing no Heroes to the Native tray. *Exception: The Natives that begin on the map do not return to* *the monster tray via a Monsters Return result (e.g. Knights, Dwarves, etc.).*\n\nAfter processing the gray and black Summoning Dice, Consult the Native Summoning Die. The various symbols on the Native Summoning Die match the symbols printed on the Civilization Cards. Four things need to be true for a Native Group to be summoned to a Civilization Location.\n\n1.\t The Native Summoning Die result needs to match the symbol on the Native Group’s Civilization Card or the die shows the infinity symbol.\n\n2.\t A Hero needs to be in a **Map** **Tile** containing a Civilization Location listed on the Native Group’s Civilization Card.\n\n3.\t There are no Heroes in the **clearing** where the Natives are currently located.\n\n4.\t There are no Monsters in the clearing to which the Natives are being summoned.\n\nIf all of the above are true, then move all unhired members of the matching Native Group from their current locations to the **Civilization Location** in the Map Tile (*not necessarily the same clearing of the Hero in the tile*). Multiple Native Groups can be summoned to the same Civilization Location in a single turn.\n\nIf a Native Group is summoned to multiple Civilization Locations simultaneously, summon the Native Group to the Map Tile containing the player closest to the start player in Turn Order. If there are multiple Civilization Locations that summon a Native Group in a single Map Tile, randomly determine which Civilization Location summons the Natives.\n\n**Natives Flee:** At the end of Monster and Native Summoning, any Unhired Natives that are in the same clearing with one or more Monsters are returned to the Native tray, including the Natives that begin the game on the map (*e.g. Knights, Dwarves, etc.*).",
       "contentNodes": [
         {
-          "kind": "image",
-          "src": "/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "The **Natives expansion includes** a white Native Summoning Die. As part of Monster Activation, roll this die along with the other Summoning Dice."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "When a Monsters Return result is rolled on the wandering Monster Die, return all Unhired Natives in Map Tiles containing no Heroes to the Native tray. *Exception: The Natives that begin on the map do not return to* *the monster tray via a Monsters Return result (e.g. Knights, Dwarves, etc.).*"
         },
         {
@@ -541,12 +549,14 @@
           "markdown": "The haggling Hero rolls two Haggle Dice:"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- If either die shows a closed door, the haggle attempt fails and the Native Group closes communication with the Hero for the rest of the turn. No more hire attempts may be made with that Native Group by that Hero until the following turn."
         },
         {
@@ -888,12 +898,14 @@
           "markdown": "Add the new components prior to normal game setup. The components should be incorporated as follows:"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/5fe12df6d791f759d3c63f80a4cdecf5bcb37947.jpeg",
-          "display": "float-right"
-        },
-        {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/5fe12df6d791f759d3c63f80a4cdecf5bcb37947.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "- 10 Legendary Locations. These cards have a purple treasure chest on the card face and the same card back as Deep Treasure Cards. Mix these cards in with the other Deep Treasure Cards prior to play."
         },
         {

@@ -24,6 +24,28 @@ export function RulebookContent({
         />
       );
     }
+    if (node.kind === "mediaAside") {
+      return (
+        <div key={index} className="clear-both flow-root">
+          {node.images.map((image, imageIndex) => (
+            <RulebookImage
+              key={`${image.src}-${imageIndex}`}
+              src={image.src}
+              display={image.display}
+            />
+          ))}
+          <ReactMarkdown
+            components={{
+              img: MarkdownImage,
+              p: MarkdownMediaAsideParagraph,
+              strong: (props) => MarkdownStrong({ ...props, section }),
+            }}
+          >
+            {node.markdown}
+          </ReactMarkdown>
+        </div>
+      );
+    }
 
     return (
       <ReactMarkdown
@@ -37,6 +59,10 @@ export function RulebookContent({
       </ReactMarkdown>
     );
   });
+}
+
+function MarkdownMediaAsideParagraph({ children }: { children?: ReactNode }) {
+  return <p className="mt-0">{children}</p>;
 }
 
 function MarkdownStrong({

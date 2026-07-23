@@ -37,9 +37,16 @@ export type SectionImageContentNode = {
   display: SectionImageDisplay;
 };
 
+export type SectionMediaAsideContentNode = {
+  kind: "mediaAside";
+  images: SectionImageContentNode[];
+  markdown: string;
+};
+
 export type SectionContentNode =
   | SectionMarkdownContentNode
-  | SectionImageContentNode;
+  | SectionImageContentNode
+  | SectionMediaAsideContentNode;
 
 export type Section = {
   /** Hierarchical id like "2.1.0.3"; digit count equals `level`. */
@@ -156,11 +163,11 @@ export function sectionWithContentNodes(section: Section): Section {
 }
 
 function ensureContentNodes(section: Section): Section {
-  return section.contentNodes ? section : sectionWithContentNodes(section);
+  return sectionWithContentNodes(section);
 }
 
 function contentNodesForMarkdownBlock(block: string): SectionContentNode[] {
-  const nodes: SectionContentNode[] = [];
+  const images: SectionImageContentNode[] = [];
   let remaining = block.trimStart();
 
   while (true) {
@@ -171,10 +178,15 @@ function contentNodesForMarkdownBlock(block: string): SectionContentNode[] {
 
     const bullet = match[1] ?? "";
     const display = imageDisplayForAlt(match[2]);
-    nodes.push({ kind: "image", src: match[3], display });
+    images.push({ kind: "image", src: match[3], display });
     remaining = `${bullet}${remaining.slice(match[0].length).trimStart()}`;
   }
 
+  if (remaining && images.some((image) => image.display !== "block")) {
+    return [{ kind: "mediaAside", images, markdown: remaining }];
+  }
+
+  const nodes: SectionContentNode[] = [...images];
   if (remaining) nodes.push({ kind: "markdown", markdown: remaining });
   return nodes;
 }
@@ -193,6 +205,11 @@ function imageDisplayForAlt(alt: string): SectionImageDisplay {
 
 function markdownForContentNode(node: SectionContentNode): string {
   if (node.kind === "markdown") return node.markdown;
+  if (node.kind === "mediaAside") {
+    return [...node.images.map(markdownForContentNode), node.markdown].join(
+      " ",
+    );
+  }
   return `![${imageAltForDisplay(node.display)}](${node.src})`;
 }
 

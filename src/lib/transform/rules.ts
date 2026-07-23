@@ -101,11 +101,11 @@ export const TRANSFORMS: Rule[] = [
     direction: "right",
     anchors: {
       "5ea310ce38685a2f70c774fca67fd5f892ea8baf":
-        "If the attacker’s attack speed is faster than the target’s maneuver speed,",
+        "If either die is blank: The attack misses.",
       cb442c7b50f04d0747de8db542eccc2af9371a20:
-        "If the attacker’s attack speed is faster than the target’s maneuver speed,",
+        "If both dice are hit symbols: The attack hits.",
       ce0485b25783048d07f54d9e3938e6f10602f54d:
-        "If the attacker’s attack speed is faster than the target’s maneuver speed,",
+        "If the dice are any combination of hits and equal signs:",
     },
   },
   {
