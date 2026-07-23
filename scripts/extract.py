@@ -167,6 +167,7 @@ class AnnotatedFigure:
     alt: str
     expected_texts: tuple[str, ...]
     placement: str = "append"
+    before_text: str | None = None
 
 
 @dataclass(frozen=True)
@@ -1129,7 +1130,9 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
         page = entry.get("page")
         alt = entry.get("alt", "Annotated figure")
         expected_texts = entry.get("expectedTexts", [])
-        placement = entry.get("placement", "append")
+        placement_entry = entry.get("placement", "append")
+        placement = "append"
+        before_text = None
         if not isinstance(doc, str):
             raise TypeError(f"Annotated figure entry #{index + 1} is missing doc")
         if not isinstance(page, int):
@@ -1162,9 +1165,22 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
             raise TypeError(
                 f"Annotated figure entry #{index + 1} expectedTexts must be strings"
             )
-        if placement != "append":
+        if isinstance(placement_entry, str):
+            placement = placement_entry
+        elif isinstance(placement_entry, dict):
+            before_text = placement_entry.get("beforeText")
+            placement = "beforeText" if before_text is not None else "append"
+        else:
+            raise TypeError(
+                f"Annotated figure entry #{index + 1} placement must be a string or object"
+            )
+        if placement != "append" and placement != "beforeText":
             raise ValueError(
                 f"Annotated figure entry #{index + 1} has unsupported placement: {placement}"
+            )
+        if before_text is not None and not isinstance(before_text, str):
+            raise TypeError(
+                f"Annotated figure entry #{index + 1} placement.beforeText must be a string"
             )
         figures.append(
             AnnotatedFigure(
@@ -1176,6 +1192,7 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
                 alt=alt,
                 expected_texts=tuple(expected_texts),
                 placement=placement,
+                before_text=before_text,
             )
         )
     return figures
@@ -1191,7 +1208,15 @@ def append_annotated_figures(
         if markdown is None:
             continue
         title_re = re.compile(figure.title_regex)
-        target = next((section for section in sections if title_re.search(section.title)), None)
+        title_matches = [section for section in sections if title_re.search(section.title)]
+        target = next(
+            (
+                section
+                for section in title_matches
+                if section.location and section.location.get("page") == figure.page
+            ),
+            title_matches[0] if title_matches else None,
+        )
         if target is None:
             print(
                 f"Warning: annotated figure target not found: "
@@ -1199,6 +1224,23 @@ def append_annotated_figures(
                 file=sys.stderr,
             )
             continue
+        if figure.placement == "beforeText" and figure.before_text:
+            insert_at = next(
+                (
+                    index
+                    for index, part in enumerate(target.content_parts)
+                    if part.lstrip().startswith(figure.before_text)
+                ),
+                None,
+            )
+            if insert_at is not None:
+                target.content_parts.insert(insert_at, markdown)
+                continue
+            print(
+                f"Warning: annotated figure beforeText anchor not found: "
+                f"{figure.doc} {figure.title_regex} {figure.before_text}",
+                file=sys.stderr,
+            )
         target.content_parts.append(markdown)
 
 

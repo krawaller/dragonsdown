@@ -137,6 +137,16 @@
   },
   {
     "doc": "core",
+    "page": 23,
+    "target": { "titleRegex": "^Spells$" },
+    "bbox": [36, 412, 231, 614],
+    "suppressBbox": [36, 411, 231, 614],
+    "alt": "Annotated spell card reference",
+    "expectedTexts": ["Spell Values (various effects)"],
+    "placement": { "beforeText": "Spells are only cast during combat" }
+  },
+  {
+    "doc": "core",
     "page": 10,
     "target": { "titleRegex": "^Spells$" },
     "bbox": [402, 88, 599, 292],
