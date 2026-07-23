@@ -335,8 +335,10 @@ export type LineageIndex = Record<string, TTSLineage[]>;
 
 /**
  * A "chip" is a TTS Custom_Tile whose `LuaScript` begins with `chipName =` —
- * a convention the mod uses to mark game chips (monster counters etc). Unlike
- * cards, chips don't use a sprite sheet; they have full face/back images.
+ * a convention the mod uses to mark game chips (monster counters etc). Some
+ * native chips omit that marker but still identify their native group in
+ * `GMNotes`. Unlike cards, chips don't use a sprite sheet; they have full
+ * face/back images.
  */
 export type TTSChip = {
   source: string;
@@ -2783,9 +2785,8 @@ function chipInfoByGuid(
   for (const obj of objects) {
     const guid = text(obj.GUID);
     if (!guid) continue;
-    const luaScript = text(obj.LuaScript);
     const gmNotes = text(obj.GMNotes);
-    if (!gmNotes || !luaScript.startsWith("chipName =")) continue;
+    if (!isChipTile(obj) || !gmNotes) continue;
     const customImage = isRecord(obj.CustomImage) ? obj.CustomImage : {};
     chipsByGuid.set(guid, {
       group: prettifyChipName(gmNotes),
@@ -2808,6 +2809,7 @@ function nativeGroupsFromRootLua(
     /\b([a-z]+)\s*=\s*\{([\s\S]*?)\n\s*\},/g,
   )) {
     const group = prettifyChipName(groupMatch[1]);
+    if (!NATIVE_CIVILISATION_CARD_NAMES.has(normalizeTitle(group))) continue;
     const natives: string[] = [];
     const nativeChips: TTSNativeChip[] = [];
     for (const chipMatch of groupMatch[2].matchAll(
@@ -2819,8 +2821,14 @@ function nativeGroupsFromRootLua(
       natives.push(name);
       nativeChips.push(nativeChipFor(name, chip));
     }
+    const sortedChips = sortNativeChipsForGroup(nativeChips, group);
     if (natives.length > 0)
-      groups.push({ source, group, natives, nativeChips });
+      groups.push({
+        source,
+        group,
+        natives: sortedChips.map((chip) => chip.name),
+        nativeChips: sortedChips,
+      });
   }
   return groups.sort((a, b) => a.group.localeCompare(b.group));
 }
@@ -2911,6 +2919,26 @@ function sortNativeChips(chips: TTSNativeChip[]): TTSNativeChip[] {
         a.index - b.index,
     )
     .map(({ chip }) => chip);
+}
+
+function sortNativeChipsForGroup(
+  chips: TTSNativeChip[],
+  group: string,
+): TTSNativeChip[] {
+  return chips
+    .map((chip, index) => ({ chip, index }))
+    .sort(
+      (a, b) =>
+        nativeGroupMemberSortValue(a.chip.name, group) -
+          nativeGroupMemberSortValue(b.chip.name, group) ||
+        nativeSortValue(a.chip.name) - nativeSortValue(b.chip.name) ||
+        a.index - b.index,
+    )
+    .map(({ chip }) => chip);
+}
+
+function nativeGroupMemberSortValue(name: string, group: string): number {
+  return normalizeTitle(name) === normalizeTitle(group) ? 0 : 1;
 }
 
 function nativeSortValue(name: string): number {
@@ -3489,12 +3517,7 @@ function walkChips(
   out: ChipWithAncestry[],
 ): void {
   if (!isRecord(obj)) return;
-  const ls = obj.LuaScript;
-  if (
-    typeof ls === "string" &&
-    ls.startsWith("chipName =") &&
-    isRecord(obj.CustomImage)
-  ) {
+  if (isChipTile(obj)) {
     out.push({ chip: obj as unknown as ChipObject, ancestry });
   }
   const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
@@ -3505,6 +3528,15 @@ function walkChips(
   const contained = (obj as TTSContainer).ContainedObjects;
   if (Array.isArray(contained))
     for (const s of contained) walkChips(s, childAncestry, out);
+}
+
+function isChipTile(obj: Record<string, unknown>): boolean {
+  if (obj.Name !== "Custom_Tile" || !isRecord(obj.CustomImage)) return false;
+  const luaScript = text(obj.LuaScript);
+  if (luaScript.startsWith("chipName =")) return true;
+  return NATIVE_CIVILISATION_CARD_NAMES.has(
+    normalizeTitle(prettifyChipName(text(obj.GMNotes))),
+  );
 }
 
 /**

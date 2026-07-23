@@ -1205,6 +1205,50 @@ describe("extractChips", () => {
     expect(extractChips(save, "eastern")).toEqual({});
   });
 
+  it("extracts known native chips when the chipName marker is missing", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Custom_Tile",
+          GMNotes: "wardens",
+          LuaScript: "function onLoad() end",
+          CustomImage: {
+            ImageURL: "warden-front.png",
+            ImageSecondaryURL: "warden-back.png",
+          },
+        },
+      ],
+    };
+
+    expect(extractChips(save, "eastern").wardens).toEqual([
+      {
+        source: "eastern",
+        group: "wardens",
+        imageURL: "warden-front.png",
+        imageSecondaryURL: "warden-back.png",
+        locations: [{ ancestry: [], count: 1 }],
+      },
+    ]);
+  });
+
+  it("does not treat arbitrary GMNotes custom tiles as chips", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Custom_Tile",
+          GMNotes: "Map",
+          LuaScript: "function onLoad() end",
+          CustomImage: {
+            ImageURL: "map-front.png",
+            ImageSecondaryURL: "map-back.png",
+          },
+        },
+      ],
+    };
+
+    expect(extractChips(save, "eastern")).toEqual({});
+  });
+
   it("dedups physical copies into one entry with per-ancestry counts", () => {
     const save = {
       ObjectStates: [
@@ -1344,6 +1388,7 @@ describe("extractSites", () => {
         imageURL: SITE_FACE_URL,
         imageSecondaryURL: "art-grotto.png",
         ancestry: ["Sinister SWAMPS"],
+        terrainPack: "Sinister Swamps",
         gmNotes: "6",
       },
     ]);
@@ -1541,7 +1586,7 @@ describe("extractCivilisationTokens", () => {
         gmNotes: "merchants",
         name: "Astrologer",
         attribute: "Wisdom",
-        terrain: "Cruel Caves",
+        terrainPack: "Cruel Caves",
         locations: [{ ancestry: ["Cruel CAVES"], count: 1 }],
       },
     ]);
@@ -1605,7 +1650,7 @@ describe("extractCivilisationTokens", () => {
       ],
     };
     expect(extractCivilisationTokens(save, "eastern")[0]).toMatchObject({
-      terrain: "Dreadful Deserts",
+      terrainPack: "Dreadful Deserts",
       locations: [{ ancestry: ["Oasis"], count: 1 }],
     });
   });
@@ -1692,7 +1737,7 @@ describe("extractBoards", () => {
     expect(extractBoards(save, "eastern")).toEqual([
       {
         source: "eastern",
-        terrain: "Wicked Woods",
+        terrainPack: "Wicked Woods",
         imageURL: WICKED_WOODS_BOARD_URL,
         imageSecondaryURL: "board-hard.png",
         merchants: ["Crone", "Smith"],
@@ -1749,7 +1794,7 @@ describe("extractBoards", () => {
     expect(extractBoards(save, "eastern")).toEqual([
       {
         source: "eastern",
-        terrain: "Dreadful Deserts",
+        terrainPack: "Dreadful Deserts",
         imageURL: DREADFUL_DESERTS_SITES_BOARD_URL,
         imageSecondaryURL: "board-hard.png",
         merchants: [],
@@ -1774,7 +1819,7 @@ describe("extractBoards", () => {
     expect(extractBoards(save, "eastern")).toEqual([
       {
         source: "eastern",
-        terrain: "Perilous Plains",
+        terrainPack: "Perilous Plains",
         imageURL: "single-site-front.png",
         imageSecondaryURL: "single-site-back.png",
         merchants: [],
@@ -1795,7 +1840,7 @@ describe("extractBoards", () => {
     };
 
     expect(extractBoards(save, "eastern")[0]).toMatchObject({
-      terrain: "Wicked Woods",
+      terrainPack: "Wicked Woods",
       sites: ["Grove"],
     });
   });
@@ -1820,10 +1865,11 @@ describe("extractBoards", () => {
       ],
     };
 
-    expect(extractBoards(save, "eastern")[0]).toMatchObject({
-      terrain: "Neutral",
+    const out = extractBoards(save, "eastern")[0];
+    expect(out).toMatchObject({
       imageSecondaryURL: "board-random.png",
     });
+    expect("terrainPack" in out).toBe(false);
   });
 
   it("skips side1 tiles with neither merchants nor printed sites", () => {
@@ -2356,6 +2402,51 @@ describe("extractNatives", () => {
       extractNatives(save, "eastern").Wardens[0].civilisationCard,
     ).toMatchObject({ row: 1, col: 7 });
   });
+
+  it("ignores synthetic composite nativeGroups entries", () => {
+    const save = {
+      LuaScript: `nativeGroups = {
+  consul = {
+    "272a3e", --Consul
+  },
+  wardens = {
+    "600fe8", --WardenLeader
+  },
+  cwardens = {
+    "272a3e", --Consul
+    "600fe8", --Leader
+  },
+}`,
+      ObjectStates: [
+        chip("272a3e", "consul"),
+        {
+          Name: "Custom_Tile",
+          GUID: "600fe8",
+          GMNotes: "wardens",
+          LuaScript: "function onLoad() end",
+          CustomImage: {
+            ImageURL: "600fe8.png",
+            ImageSecondaryURL: "600fe8-back.png",
+          },
+        },
+      ],
+    };
+
+    expect(Object.keys(extractNatives(save, "eastern"))).toEqual([
+      "Consul",
+      "Wardens",
+    ]);
+    expect(extractNatives(save, "eastern").Consul[0].natives).toEqual([
+      "Consul",
+    ]);
+    expect(extractNatives(save, "eastern").Wardens[0].nativeChips).toEqual([
+      {
+        name: "Warden Leader",
+        imageURL: "600fe8.png",
+        imageSecondaryURL: "600fe8-back.png",
+      },
+    ]);
+  });
 });
 
 describe("extractMapTileMonsters", () => {
@@ -2452,7 +2543,7 @@ describe("extractWildernessTokens", () => {
       "Cruel Caves": [
         {
           source: "eastern",
-          terrain: "Cruel Caves",
+          terrainPack: "Cruel Caves",
           imageURL: "front.png",
           imageSecondaryURL: cavesBack,
           locations: [{ ancestry: [], count: 1 }],
