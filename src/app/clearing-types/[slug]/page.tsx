@@ -154,7 +154,11 @@ function uniqueRulebookQueries(
   return Array.from(
     new Map(
       queries.map(
-        (query) => [`${query.doc}:${query.headings.join("|")}`, query] as const,
+        (query) =>
+          [
+            `${query.doc}:${query.headings.join("|")}:${query.anchor ?? ""}`,
+            query,
+          ] as const,
       ),
     ).values(),
   );
@@ -163,7 +167,13 @@ function uniqueRulebookQueries(
 function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {
   return Array.from(
     new Map(
-      links.map((link) => [`${link.docSlug}:${link.sectionId}`, link] as const),
+      links.map(
+        (link) =>
+          [
+            `${link.docSlug}:${link.sectionId}:${link.anchor ?? ""}`,
+            link,
+          ] as const,
+      ),
     ).values(),
   );
 }

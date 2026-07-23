@@ -10,7 +10,23 @@
   },
   "mountains": {
     "lineages": ["half-orc"],
-    "classes": ["barbarian"]
+    "classes": ["barbarian"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["Actions", "The actions", "Move"],
+        "anchor": "Mountains or Swamps"
+      }
+    ]
+  },
+  "swamps": {
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["Actions", "The actions", "Move"],
+        "anchor": "Mountains or Swamps"
+      }
+    ]
   },
   "woods": {
     "classes": ["ranger"]

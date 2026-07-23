@@ -1,4 +1,8 @@
 import { getMagicTypeById } from "./magic";
+import {
+  sectionAnchorIdFor,
+  sectionContentAnchorIdFor,
+} from "./rulebook-anchors";
 import { normalizeTitle } from "./tts";
 import { getAllClasses } from "./tts/lookup";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
@@ -16,6 +20,7 @@ export const ANY_DOC = "ANY_DOC";
 export type RulebookLinkQuery = {
   doc: typeof ANY_DOC | string;
   headings: string[];
+  anchor?: string;
 };
 
 export type RulebookLink = {
@@ -24,6 +29,7 @@ export type RulebookLink = {
   sectionId: string;
   sectionTitle: string;
   content: string;
+  anchor?: string;
   icon?: string;
   icons?: string[];
   location?: SectionLocation;
@@ -45,7 +51,7 @@ export async function resolveRulebookLinks(
   const links = await Promise.all(
     books.map(async (book) => {
       const sections = await loadSections(book);
-      return resolveSections(book, sections, query.headings);
+      return resolveSections(book, sections, query.headings, query.anchor);
     }),
   );
 
@@ -270,6 +276,7 @@ function resolveSections(
   book: Rulebook,
   sections: Section[],
   headings: string[],
+  anchor?: string,
 ): RulebookLink[] {
   let candidates = sections.filter((section) =>
     titlesMatch(section.title, headings[0]),
@@ -289,10 +296,11 @@ function resolveSections(
     sectionId: section.id,
     sectionTitle: section.title,
     content: section.content,
+    anchor,
     icon: section.icon,
     icons: section.icons,
     location: section.location,
-    href: `/${book.slug}#${anchorIdFor(section)}`,
+    href: `/${book.slug}#${linkAnchorIdFor(section, anchor)}`,
   }));
 }
 
@@ -309,8 +317,14 @@ function rulebookLinkForSection(
     icon: section.icon,
     icons: section.icons,
     location: section.location,
-    href: `/${book.slug}#${anchorIdFor(section)}`,
+    href: `/${book.slug}#${sectionAnchorIdFor(section)}`,
   };
+}
+
+function linkAnchorIdFor(section: Section, anchor?: string): string {
+  return anchor
+    ? sectionContentAnchorIdFor(section, anchor)
+    : sectionAnchorIdFor(section);
 }
 
 function childSections(sections: Section[], parent: Section): Section[] {
@@ -490,21 +504,18 @@ function classAdvantageTitlesForClassName(name: string): string[] {
 function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {
   const seen = new Set<string>();
   return links.filter((link) => {
-    const key = `${link.docSlug}:${link.sectionId}`;
+    const key = `${link.docSlug}:${link.sectionId}:${link.anchor ?? ""}`;
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
   });
 }
 
-function anchorIdFor(section: Section): string {
-  return `${section.source}-${section.id}`;
-}
-
 function compareRulebookLinks(a: RulebookLink, b: RulebookLink): number {
   return (
     a.docTitle.localeCompare(b.docTitle) ||
     a.sectionTitle.localeCompare(b.sectionTitle) ||
+    (a.anchor ?? "").localeCompare(b.anchor ?? "") ||
     a.sectionId.localeCompare(b.sectionId)
   );
 }

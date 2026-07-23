@@ -22,7 +22,7 @@ export function RulebookLinks({
           const icons = link.icons ?? (link.icon ? [link.icon] : []);
           return (
             <div
-              key={`${link.docSlug}-${link.sectionId}`}
+              key={`${link.docSlug}-${link.sectionId}-${link.anchor ?? ""}`}
               className="rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden"
             >
               <div className="p-3">
@@ -46,7 +46,9 @@ export function RulebookLinks({
                   )}
                   <span className="min-w-0">
                     <span className="block font-medium">
-                      {link.sectionTitle}
+                      {link.anchor
+                        ? `${link.sectionTitle}: ${link.anchor}`
+                        : link.sectionTitle}
                     </span>
                     <span className="block text-xs text-zinc-500 dark:text-zinc-400">
                       {link.docTitle}

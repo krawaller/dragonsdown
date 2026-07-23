@@ -1,7 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
+import type { ReactNode } from "react";
 import type { HeadingStyle, Section, SectionLevel } from "@/lib/rulebooks";
+import {
+  sectionAnchorIdFor,
+  sectionContentAnchorIdFor,
+} from "@/lib/rulebook-anchors";
 import { shortNameForSource } from "@/lib/docs";
 import { findCards } from "@/lib/tts/lookup";
 import { CardImages } from "./CardImages";
@@ -54,10 +59,6 @@ function headingStyleFor(section: Section): HeadingStyle {
  * so the same anchor works on both the source rulebook page and any derived
  * doc that includes this section (e.g. `core-8.1`).
  */
-function anchorIdFor(section: Section): string {
-  return `${section.source}-${section.id}`;
-}
-
 export function SectionView({
   section,
   showSource = false,
@@ -71,7 +72,7 @@ export function SectionView({
 }) {
   const Heading = HEADING_TAG[section.level];
   const headingStyle = headingStyleFor(section);
-  const anchorId = anchorIdFor(section);
+  const anchorId = sectionAnchorIdFor(section);
   const cards = findCards(section.title);
   const icons = section.icons ?? (section.icon ? [section.icon] : []);
   return (
@@ -110,13 +111,43 @@ export function SectionView({
       {cards.length > 0 && <CardImages cards={cards} />}
       {section.content && (
         <div className="rulebook-content prose prose-zinc dark:prose-invert max-w-none">
-          <ReactMarkdown components={{ img: MarkdownImage }}>
+          <ReactMarkdown
+            components={{
+              img: MarkdownImage,
+              strong: (props) => MarkdownStrong({ ...props, section }),
+            }}
+          >
             {section.content}
           </ReactMarkdown>
         </div>
       )}
     </section>
   );
+}
+
+function MarkdownStrong({
+  children,
+  section,
+}: {
+  children?: ReactNode;
+  section: Section;
+}) {
+  const text = textFromNode(children);
+  const anchor = text.match(/^(.*):$/)?.[1]?.trim();
+  return (
+    <strong
+      id={anchor ? sectionContentAnchorIdFor(section, anchor) : undefined}
+      className={anchor ? "scroll-mt-6" : undefined}
+    >
+      {children}
+    </strong>
+  );
+}
+
+function textFromNode(node: ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(textFromNode).join("");
+  return "";
 }
 
 /* eslint-disable @next/next/no-img-element */
