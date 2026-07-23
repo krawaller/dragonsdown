@@ -163,6 +163,7 @@ class AnnotatedFigure:
     page: int
     title_regex: str
     bbox: tuple[float, float, float, float]
+    suppress_bbox: tuple[float, float, float, float]
     alt: str
     expected_texts: tuple[str, ...]
     placement: str = "append"
@@ -1051,6 +1052,14 @@ def block_is_inside_figure(block: dict, figure: AnnotatedFigure) -> bool:
     bx0, by0, bx1, by1 = block["bbox"]
     if bx1 <= bx0 or by1 <= by0:
         return False
+    fx0, fy0, fx1, fy1 = figure.suppress_bbox
+    return bx0 >= fx0 and by0 >= fy0 and bx1 <= fx1 and by1 <= fy1
+
+
+def text_block_is_inside_crop(block: dict, figure: AnnotatedFigure) -> bool:
+    bx0, by0, bx1, by1 = block["bbox"]
+    if bx1 <= bx0 or by1 <= by0:
+        return False
     fx0, fy0, fx1, fy1 = figure.bbox
     return bx0 >= fx0 and by0 >= fy0 and bx1 <= fx1 and by1 <= fy1
 
@@ -1082,7 +1091,7 @@ def validate_annotated_figure_texts(
         " ".join(
             block_text(block)
             for block in blocks
-            if block.get("type") == 0 and block_is_inside_figure(block, figure)
+            if block.get("type") == 0 and text_block_is_inside_crop(block, figure)
         )
     )
     missing = [
@@ -1116,6 +1125,7 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
             continue
         target = entry.get("target")
         bbox = entry.get("bbox")
+        suppress_bbox = entry.get("suppressBbox", bbox)
         page = entry.get("page")
         alt = entry.get("alt", "Annotated figure")
         expected_texts = entry.get("expectedTexts", [])
@@ -1136,6 +1146,14 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
             raise TypeError(
                 f"Annotated figure entry #{index + 1} bbox must be four numbers"
             )
+        if (
+            not isinstance(suppress_bbox, list)
+            or len(suppress_bbox) != 4
+            or not all(isinstance(value, int | float) for value in suppress_bbox)
+        ):
+            raise TypeError(
+                f"Annotated figure entry #{index + 1} suppressBbox must be four numbers"
+            )
         if not isinstance(alt, str):
             raise TypeError(f"Annotated figure entry #{index + 1} alt must be a string")
         if not isinstance(expected_texts, list) or not all(
@@ -1154,6 +1172,7 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
                 page=page,
                 title_regex=target["titleRegex"],
                 bbox=tuple(float(value) for value in bbox),
+                suppress_bbox=tuple(float(value) for value in suppress_bbox),
                 alt=alt,
                 expected_texts=tuple(expected_texts),
                 placement=placement,

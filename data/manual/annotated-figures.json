@@ -85,6 +85,7 @@
     "page": 8,
     "target": { "titleRegex": "^Wilderness Tokens$" },
     "bbox": [448, 517, 801, 672],
+    "suppressBbox": [448, 517, 801, 690],
     "alt": "Annotated wilderness token reference",
     "expectedTexts": ["Wilderness Tokens Front"]
   }
