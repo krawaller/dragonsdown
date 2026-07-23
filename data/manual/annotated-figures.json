@@ -152,5 +152,13 @@
     "bbox": [467, 306, 726, 519],
     "alt": "Annotated action cube reference",
     "expectedTexts": ["Heart (Action Cube for all purposes)"]
+  },
+  {
+    "doc": "core",
+    "page": 11,
+    "target": { "titleRegex": "^Reference Cards$" },
+    "bbox": [429, 566, 785, 813],
+    "alt": "Annotated reference card reference",
+    "expectedTexts": ["Reference Card Front (Scoring)"]
   }
 ]
