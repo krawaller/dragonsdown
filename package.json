@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "refresh:data": "npm run steam:refresh-json && npm run download-tts-pdfs && npm run extract && npm run find-images && npm run download-images && npm run download-activemagic-images && npm run extract-clearing-types",
     "extract": ".venv/bin/python scripts/extract.py --all && npm run transform && npm run derive && npm run extract-tts",
     "extract:doc": ".venv/bin/python scripts/extract.py",
     "steam:download": "steamcmd +force_install_dir \"$PWD/.cache/steamcmd\" +login anonymous +workshop_download_item 286160 3062060625 +quit",
