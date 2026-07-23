@@ -12,5 +12,12 @@
     "target": { "titleRegex": "^Map Tiles$" },
     "bbox": [325, 590, 505, 817],
     "alt": "Annotated map tile reference"
+  },
+  {
+    "doc": "core",
+    "page": 7,
+    "target": { "titleRegex": "^Monster Chips$" },
+    "bbox": [518, 579, 795, 808],
+    "alt": "Annotated monster chip reference"
   }
 ]

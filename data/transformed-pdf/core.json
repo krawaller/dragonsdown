@@ -1016,7 +1016,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\nMonster Name\n\n![](/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg)\n\nAttack Length\n\nFame Value\n\nDamage\n\nHealth (unarmored)\n\nAttack Speed Maneuver Speed\n\nSpecial Attack\n\nUndead Monster Flying Ability\n\nAttack Length\n\nHealth (armored)",
+      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\n![Annotated monster chip reference](/images/pdf/3eb8cb8a577c27710d098dced3a2ea0fef245c76.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1024,48 +1024,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "Monster Name"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Attack Length"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Fame Value"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Damage"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Health (unarmored)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Attack Speed Maneuver Speed"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Special Attack"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Undead Monster Flying Ability"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Attack Length"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Health (armored)"
+          "markdown": "![Annotated monster chip reference](/images/pdf/3eb8cb8a577c27710d098dced3a2ea0fef245c76.png)"
         }
       ]
     },
