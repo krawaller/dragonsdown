@@ -2596,7 +2596,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\n![](/images/pdf/d9fe41860d9237cc328edbb473add53c1483bcd7.png)\n\nHiring Natives *(abbreviated: see full rules)*\n\nAlways hire the highest numbered Unhired Native in the Native Group.\n\nIf there are no numbered, Unhired Natives in the selected Native Group, the Hero may attempt to hire the Native leader.\n\nThe Consul and Bodyguard may never be hired.\n\nThe price to hire a Native is 4x the Fame value on the Native counter.\n\nThe Hero may haggle over the price to hire the Native.\n\nThe hire term is 15 turns starting on the turn of hire.",
+      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -2629,39 +2629,6 @@
         {
           "kind": "markdown",
           "markdown": "**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/d9fe41860d9237cc328edbb473add53c1483bcd7.png",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Hiring Natives *(abbreviated: see full rules)*"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Always hire the highest numbered Unhired Native in the Native Group."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "If there are no numbered, Unhired Natives in the selected Native Group, the Hero may attempt to hire the Native leader."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "The Consul and Bodyguard may never be hired."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "The price to hire a Native is 4x the Fame value on the Native counter."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "The Hero may haggle over the price to hire the Native."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "The hire term is 15 turns starting on the turn of hire."
         }
       ]
     },

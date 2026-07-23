@@ -1231,10 +1231,24 @@
         "column": "right",
         "section": "top"
       },
-      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\n![](/images/pdf/d9fe41860d9237cc328edbb473add53c1483bcd7.png)\n\nHiring Natives *(abbreviated: see full rules)*\n\nAlways hire the highest numbered Unhired Native in the Native Group.\n\nIf there are no numbered, Unhired Natives in the selected Native Group, the Hero may attempt to hire the Native leader.\n\nThe Consul and Bodyguard may never be hired.\n\nThe price to hire a Native is 4x the Fame value on the Native counter.\n\nThe Hero may haggle over the price to hire the Native.\n\nThe hire term is 15 turns starting on the turn of hire."
+      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
     },
     {
       "id": "6.1",
+      "source": "natives-and-legends",
+      "level": 2,
+      "title": "Hiring Natives (abbreviated: see full rules)",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 12,
+        "column": "left",
+        "section": "top"
+      },
+      "icon": "/images/pdf/d9fe41860d9237cc328edbb473add53c1483bcd7.png",
+      "content": "Always hire the highest numbered Unhired Native in the Native Group.\n\nIf there are no numbered, Unhired Natives in the selected Native Group, the Hero may attempt to hire the Native leader.\n\nThe Consul and Bodyguard may never be hired.\n\nThe price to hire a Native is 4x the Fame value on the Native counter.\n\nThe Hero may haggle over the price to hire the Native.\n\nThe hire term is 15 turns starting on the turn of hire."
+    },
+    {
+      "id": "6.2",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Haggling",
@@ -1244,10 +1258,23 @@
         "column": "left",
         "section": "top"
       },
-      "content": "The haggle number the Hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the Hero’s Lineage and Class Cards that match the Native’s respect icon.\n\n- **Title:** +1 if the Hero has placed one or more cubes on the Native Group’s Civilization Card.\n\n- **Outlaw:** If the Hero possesses one or more Outlaw Tokens, +1 if haggling with a Native that respects only Cunning and -1 if haggling with a Native that respects only Wisdom. The number of Outlaw Tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or Treasures.\n\n- **Elf Kin:** An Elf Hero attempting to hire from the elves Native Group receives a +1 bonus. An Elf Hero attempting to hire from the Dwarves Native Group receives a -1 penalty.\n\n- **Dwarf Kin:** A Dwarf Hero attempting to hire from the Dwarves Native Group receives a +1 bonus. A Dwarf Hero attempting to hire from the elves Native Group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling Hero rolls two Haggle Dice:\n\n- ![float-right](/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png) If either die shows a closed door, the haggle attempt fails and the Native Group closes communication with the Hero for the rest of the turn. No more hire attempts may be made with that Native Group by that Hero until the following turn.\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the Hire action is terminated. The Hero may attempt to hire and haggle with the Native Group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the Native during this Hire action is reduced by a factor of one (*from 4x to 3x to 2x to 1x*). The Hero may continue haggling as part of the same Hire action, if they wish. The price to hire a Native is never less than 1x.\n\nInsults *(abbreviated: see full rules)*\n\nAfter Monster Summoning, all Heroes in a clearing with one or more Unhired Natives must roll two Haggle Dice:\n\n- No closed doors: The clearing is peaceful. Nothing happens.\n\n- Two closed doors: The Hero must Buy Drinks for all Native Groups in the clearing (*see Buy Drinks on page 2*).\n\n- One closed door: Compare the number rolled on the other die to the matching respected icons of the Hero for **each** Native Group in the clearing, modified by titles, Outlaw Tokens, spells, Treasures, and Elf/Dwarf kin rules. If the number rolled is higher than the modified number of icons, the Hero must Buy Drinks for that Native Group."
+      "content": "The haggle number the Hero needs to roll to successfully haggle is as follows:\n\n- **Icons:** The sum of the number of attribute icons on the Hero’s Lineage and Class Cards that match the Native’s respect icon.\n\n- **Title:** +1 if the Hero has placed one or more cubes on the Native Group’s Civilization Card.\n\n- **Outlaw:** If the Hero possesses one or more Outlaw Tokens, +1 if haggling with a Native that respects only Cunning and -1 if haggling with a Native that respects only Wisdom. The number of Outlaw Tokens does not matter.\n\n- **Spells and Treasures:** Apply any + or - effects of spells and/or Treasures.\n\n- **Elf Kin:** An Elf Hero attempting to hire from the elves Native Group receives a +1 bonus. An Elf Hero attempting to hire from the Dwarves Native Group receives a -1 penalty.\n\n- **Dwarf Kin:** A Dwarf Hero attempting to hire from the Dwarves Native Group receives a +1 bonus. A Dwarf Hero attempting to hire from the elves Native Group receives a -1 penalty.\n\n- The minimum haggle number is 0. There is no maximum haggle number.\n\nThe haggling Hero rolls two Haggle Dice:\n\n- ![float-right](/images/pdf/5706c7c267feafa2a1db178083d5c7df0088d060.png) If either die shows a closed door, the haggle attempt fails and the Native Group closes communication with the Hero for the rest of the turn. No more hire attempts may be made with that Native Group by that Hero until the following turn.\n\n- If the highest number rolled is higher than the haggle number, the haggle attempt fails and the Hire action is terminated. The Hero may attempt to hire and haggle with the Native Group using subsequent actions.\n\n- If the highest number rolled is less than or equal to the haggle number, the haggle attempt is a success. The price to hire the Native during this Hire action is reduced by a factor of one (*from 4x to 3x to 2x to 1x*). The Hero may continue haggling as part of the same Hire action, if they wish. The price to hire a Native is never less than 1x."
     },
     {
-      "id": "6.2",
+      "id": "6.3",
+      "source": "natives-and-legends",
+      "level": 2,
+      "title": "Insults (abbreviated: see full rules)",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 12,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "After Monster Summoning, all Heroes in a clearing with one or more Unhired Natives must roll two Haggle Dice:\n\n- No closed doors: The clearing is peaceful. Nothing happens.\n\n- Two closed doors: The Hero must Buy Drinks for all Native Groups in the clearing (*see Buy Drinks on page 2*).\n\n- One closed door: Compare the number rolled on the other die to the matching respected icons of the Hero for **each** Native Group in the clearing, modified by titles, Outlaw Tokens, spells, Treasures, and Elf/Dwarf kin rules. If the number rolled is higher than the modified number of icons, the Hero must Buy Drinks for that Native Group."
+    },
+    {
+      "id": "6.4",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Native Summoning",
@@ -1260,7 +1287,7 @@
       "content": "Below are the locations to which Native Groups may be summoned.\n\n![](/images/pdf/00ba35bbc83653cd46e2af063af037c2abf8b4fc.jpeg)\n\n![](/images/pdf/806d611b09634b812c149c963d0c49d1d9dcd839.jpeg)\n\n![](/images/pdf/9dfac8d239b1396dc7897e61b0c14f7091178091.jpeg)"
     },
     {
-      "id": "6.2.1",
+      "id": "6.4.1",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Civilization",
@@ -1273,7 +1300,7 @@
       "content": ""
     },
     {
-      "id": "6.2.2",
+      "id": "6.4.2",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Location",
@@ -1286,7 +1313,7 @@
       "content": ""
     },
     {
-      "id": "6.2.3",
+      "id": "6.4.3",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Terrain",
@@ -1299,7 +1326,7 @@
       "content": ""
     },
     {
-      "id": "6.2.4",
+      "id": "6.4.4",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Pack",

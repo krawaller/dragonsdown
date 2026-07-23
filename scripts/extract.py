@@ -259,6 +259,24 @@ def visible_spans(line: dict) -> list[dict]:
     return [span for span in line.get("spans", []) if span.get("text", "").strip()]
 
 
+def heading_level_for_line(line: dict) -> int | None:
+    spans = visible_spans(line)
+    if not spans:
+        return None
+    first_level = classify_heading(
+        spans[0]["font"], spans[0]["size"], spans[0]["color"]
+    )
+    if first_level is not None and first_level <= 3:
+        return first_level
+    if first_level is not None and all(
+        classify_heading(span["font"], span["size"], span["color"]) is not None
+        for span in spans
+    ):
+        return first_level
+    dom = max(spans, key=lambda s: len(s["text"]))
+    return classify_heading(dom["font"], dom["size"], dom["color"])
+
+
 def line_text(line: dict) -> str:
     return "".join(span["text"] for span in line.get("spans", [])).strip()
 
@@ -547,7 +565,7 @@ def text_lines_for_image_detection(blocks: list[dict]) -> list[TextLine]:
             dom = max(spans, key=lambda s: len(s["text"]))
             if is_skippable_line(full_text, dom["font"], dom["size"]):
                 continue
-            if classify_heading(dom["font"], dom["size"], dom["color"]) is not None:
+            if heading_level_for_line(line) is not None:
                 continue
             bbox = line_bbox(line)
             if bbox is not None:
@@ -767,9 +785,7 @@ def find_section_icons(
             next_box = line_bbox(next_line)
             if next_box is None:
                 continue
-            next_spans = next_line.get("spans", [])
-            next_dom = max(next_spans, key=lambda s: len(s["text"]))
-            if classify_heading(next_dom["font"], next_dom["size"], next_dom["color"]) is not None:
+            if heading_level_for_line(next_line) is not None:
                 break
             lines.append(next_box)
         if lines:
@@ -788,9 +804,7 @@ def find_section_icons(
                 next_box = line_bbox(line)
                 if next_box is None:
                     continue
-                next_spans = line.get("spans", [])
-                next_dom = max(next_spans, key=lambda s: len(s["text"]))
-                if classify_heading(next_dom["font"], next_dom["size"], next_dom["color"]) is not None:
+                if heading_level_for_line(line) is not None:
                     return lines
                 lines.append(next_box)
             if lines:
@@ -809,7 +823,7 @@ def find_section_icons(
             full_text = "".join(s["text"] for s in spans).strip()
             if not full_text or is_skippable_line(full_text, dom["font"], dom["size"]):
                 continue
-            level = classify_heading(dom["font"], dom["size"], dom["color"])
+            level = heading_level_for_line(line)
             if level is None:
                 continue
             title = clean_title(full_text)
@@ -899,7 +913,7 @@ def process_text_block(
             continue
         if is_skippable_line(full_text, dom["font"], dom["size"]):
             continue
-        level = classify_heading(dom["font"], dom["size"], dom["color"])
+        level = heading_level_for_line(line)
         strength = heading_strength(level) if level is not None else None
         if level is None:
             strength = classify_standalone_body_heading_strength(full_text, spans)

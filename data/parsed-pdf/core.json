@@ -635,10 +635,23 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*). **Natives (*****far right*****)**\n\nAll Civilization Locations have a local population of Natives, as shown on the Terrain Setup Cards. Natives are placed on their starting Civilization Locations once the corresponding Civilization Location is placed on the map."
+      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*)."
     },
     {
       "id": "5.0.8",
+      "source": "core",
+      "level": 3,
+      "title": "Natives (far right)",
+      "headingStyle": "pdf-l3",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "All Civilization Locations have a local population of Natives, as shown on the Terrain Setup Cards. Natives are placed on their starting Civilization Locations once the corresponding Civilization Location is placed on the map."
+    },
+    {
+      "id": "5.0.9",
       "source": "core",
       "level": 3,
       "title": "Civilization Tokens",
@@ -651,7 +664,7 @@
       "content": "Civilization Tokens are placed in Civilization Map Tiles when they are explored by a Hero. They represent the various Merchants of the realm and offer the Heroes a place to buy and repair Equipment, sell the Treasures that they loot from Treasure Sites, accept missions, remove curses, and remove permanent spells. Some Civilization Tokens are empty, meaning that no Merchant is available."
     },
     {
-      "id": "5.0.9",
+      "id": "5.0.10",
       "source": "core",
       "level": 3,
       "title": "Civilization Cards and Titles (far right)",
@@ -664,7 +677,7 @@
       "content": "Gold does not directly contribute to victory in Dragons Down. Heroes may spend Gold and/or satisfy requirements on Civilization Cards at Civilization Locations to claim titles to earn LPs and Fame. These cards are double-sided to increase replayability."
     },
     {
-      "id": "5.0.10",
+      "id": "5.0.11",
       "source": "core",
       "level": 3,
       "title": "Mission Cards",
@@ -677,7 +690,7 @@
       "content": "Heroes may accept missions from Merchants at Civilization Locations. Missions are organized into Atrocities (*red banner*), Quests (*white banner*), and Expeditions (*brown* *banner*). Missions are a good way to earn Legend Points, Fame, and Gold... as well as infamy or redemption."
     },
     {
-      "id": "5.0.11",
+      "id": "5.0.12",
       "source": "core",
       "level": 3,
       "title": "Wilderness Tokens",
@@ -690,7 +703,7 @@
       "content": "Wilderness Tokens have a variety of front faces and are placed in Wilderness Map Tiles when a wilderness Map Tile is revealed. The backs of Wilderness Tokens show their corresponding Terrain Pack, which also determines what type of tile they are placed in (*e.g. Mountain Wilderness Tokens are placed in Malevolent Mountains Map Tiles*).\n\nOn the front of Wilderness Tokens are either Treasure Site locations, Gates to teleport around the realm, Special Locations, or instant rewards."
     },
     {
-      "id": "5.0.12",
+      "id": "5.0.13",
       "source": "core",
       "level": 3,
       "title": "Treasure Site Tokens",
@@ -703,7 +716,7 @@
       "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nLocation Name\n\n![](/images/pdf/10d1cd8d857ed73385338d4b8e05035c5bd93521.jpeg)\n\nSummoning/Respect Symbol (for the Natives & Legends expansion)\n\n![float-left](/images/pdf/ec8118a41b2073de20c0abfce5c4ef41226c5af4.jpeg) Native Name Attack Length\n\nFame Value\n\nTerrain Pack\n\nHealth\n\nDamage Attack Speed Maneuver Speed\n\nCivilization Token Back\n\nMerchant\n\n![](/images/pdf/cb53f4a28779c4fca5e6b87ef4e633ec30f541b9.jpeg)\n\nSummoning/Respect Symbol (for the Natives & Legends expansion) ![float-left](/images/pdf/2514d848d1eb22a09adb872a37f4d25a2a59492c.jpeg) Native Group\n\nLocation\n\nTerrain Pack\n\nRequirement\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nLimit (if applicable)\n\nTitle and Reward\n\nDescription\n\nTerrain Pack\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack"
     },
     {
-      "id": "5.0.13",
+      "id": "5.0.14",
       "source": "core",
       "level": 3,
       "title": "Hero Cards",
@@ -716,7 +729,7 @@
       "content": "Players will play the role of a Hero created by the combination of a Lineage Card and a Class Card. The Hero has the combined characteristics of both cards:\n\n- Two Special Advantages (*one on each card*).\n\n- Attributes: Cunning, Wisdom, and Charisma (*for interactions* *in civilization such as Haggling and completing missions*).\n\n- Health. How hard this Hero can get hit without dying.\n\n- Attack speed. How fast this Hero can potentially attack.\n\n- Maneuver speed. How fast this Hero can dodge attacks.\n\n- Aim boxes (*only used if playing with the optional Player vs.* *Player rules*).\n\n- Starting Action Cubes and equipment for the Hero."
     },
     {
-      "id": "5.0.14",
+      "id": "5.0.15",
       "source": "core",
       "level": 3,
       "title": "Item and Treasure Cards",
@@ -729,7 +742,7 @@
       "content": "Item and Treasure Cards are the principal equipment, and means of survival, for Heroes in Dragons Down.\n\n- Items are indicated by a wooden plank for a banner on the card (*e.g. Plate Armor*).\n\n- Treasures are indicated by a brown cloth banner on the card (*e.g. Warblade and Spell Scroll*).\n\n- Epic Treasures, the most valuable treasures in the game, are indicated by a red cloth banner on the card (*e.g. Magical Bowl* *of Mixing*).\n\nAdditional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules.\n\n![](/images/pdf/65d29e7f0512c044d2f7b2a4abbc10de889629cf.jpeg)\n\nLineage Advantage Lineage Class Class Advantage\n\nAttributes\n\nHealth\n\nAttack Speed Boxes\n\nManeuver Speed Boxes\n\nStarting Equipment and Spells\n\nAction Cubes Aim Boxes (used only with optional PvP rules)\n\n![](/images/pdf/649639605dc281307e31f19a36dbe516b8fe6557.jpeg)\n\n![](/images/pdf/be414593c964a2fba6dc118655d20f244eb044da.jpeg)\n\nName\n\nName\n\nBase Price Item Values (attack length and melee weapon)\n\nBase Price\n\nItem Values (armor and weight)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect\n\n![](/images/pdf/a752010537fe808edc5ad7614faede425911de36.jpeg)\n\n![](/images/pdf/75d03058ebf74cd06d6b8b4bfd646c230a494a64.jpeg)\n\nName\n\nName\n\nBase Price (variable)\n\nBase Price\n\nItem Values (permanent effect)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect"
     },
     {
-      "id": "5.0.15",
+      "id": "5.0.16",
       "source": "core",
       "level": 3,
       "title": "Spells",
@@ -742,7 +755,7 @@
       "content": "Dragons Down is a world full of magic. Heroes can enchant the land, cast spells, learn new spells, and buy spells from Merchants. The layout of Spell Cards is very similar to the layout of Item and Treasure Cards, but adds some additional information like duration, targeting, and Magic Cube requirements.\n\nSpells are explained in detail later in these rules.\n\nHidden Box Alert Box Sneak Box"
     },
     {
-      "id": "5.0.16",
+      "id": "5.0.17",
       "source": "core",
       "level": 3,
       "title": "Hero Board",
@@ -755,7 +768,7 @@
       "content": "The Hero Board is a representation of the Hero, their status, and their equipment. The player places their Lineage and Class Cards together to form their Hero, their Action Cubes and Hearts in the healthy box, inactive cards face-down in the backpack and active cards face-up in the positions that match the card’s position symbols. Spells are placed underneath the Hero Board.\n\nAction Cubes and Hearts in the healthy box are considered healthy (*usable*). During the game, a Hero’s Action Cubes (*including Hearts*) may be moved to the wounded box to show that those Action Cubes are wounded (*unusable*).\n\nThe top of the Hero Board shows the various actions a Hero may take during their Action Phase. The black arrow in the upper left is the symbol for all actions. The symbol for each individual action is shown next to its description.\n\n![](/images/pdf/0f9fe76b19b070ad07e496255c6730a448276dc6.jpeg)\n\nName\n\nBase Price\n\nSpell Effects\n\nSpell Values (various effects)\n\nSpell Type\n\nRequirements\n\nMake Noise Box Actions Reference\n\n![](/images/pdf/9618b62900a6db13eddfd21b82196e98cfc1ee3f.jpeg)\n\nMiscellaneous Position\n\nTwo-Slot Positions\n\nBackpack\n\nMiscellaneous Storage (Status Cubes, etc.)\n\nHealthy Box Wounded Box Lineage Card Slot Class Card Slot"
     },
     {
-      "id": "5.0.17",
+      "id": "5.0.18",
       "source": "core",
       "level": 3,
       "title": "Hero Chips and Targeting Tokens",
@@ -768,7 +781,7 @@
       "content": "Heroes are represented by blue-ringed Hero Chips containing the symbol of their Hero Class. In addition, each Hero has a matching Targeting Token that is used to determine player order and to mark the target that a Hero is attacking with a spell or weapon during combat."
     },
     {
-      "id": "5.0.18",
+      "id": "5.0.19",
       "source": "core",
       "level": 3,
       "title": "Outlaw Tokens",
@@ -781,7 +794,7 @@
       "content": "Heroes receive Outlaw Tokens when they complete Atrocity missions or attack other Heroes and Natives of the realm."
     },
     {
-      "id": "5.0.19",
+      "id": "5.0.20",
       "source": "core",
       "level": 3,
       "title": "Action Cubes",
@@ -794,7 +807,7 @@
       "content": "During combat, players will place Action Cubes on their Lineage Cards, Class Cards, Item Cards, Treasure Cards, and Spell Cards to attack and survive attacks against them. Action Cubes come in 4 different types:\n\n**Might Cubes:** Might Cubes are red and signify how much strength a Hero is using in an attack. Most often, Might Cubes are placed on weapons in order to cause damage to Monsters in the game.\n\n**Speed Cubes:** Speed Cubes are brown and signify how much effort the Hero is putting into the speed of an attack or the speed of their maneuver to dodge an attack made against them.\n\n**Magic Cubes:** Magic Cubes are black, blue, gray, green, purple, white, or yellow. They represent specialized knowledge possessed by the Hero and are placed on Spell Cards and some Treasures in order to power them for use.\n\n**Hearts:** Hearts represent the health of a Hero. If a Hero ever has no Hearts in their healthy box, they immediately die. Hearts are Action Cubes for all purposes."
     },
     {
-      "id": "5.0.19.1",
+      "id": "5.0.20.1",
       "source": "core",
       "level": 4,
       "title": "Status Cubes",
@@ -807,7 +820,7 @@
       "content": "Status Cubes are pink and track wounds on Monsters and the status of Heroes who Sneak, Make Noise, Alert, and/or successfully Hide this turn."
     },
     {
-      "id": "5.0.20",
+      "id": "5.0.21",
       "source": "core",
       "level": 3,
       "title": "Reference Cards",
@@ -820,7 +833,7 @@
       "content": ""
     },
     {
-      "id": "5.0.20.1",
+      "id": "5.0.21.1",
       "source": "core",
       "level": 4,
       "title": "Scoring",
@@ -833,7 +846,7 @@
       "content": "The front side of the Reference Cards show how Heroes earn Legend Points and Fame. Legend Points and Fame are the currency of victory in most games."
     },
     {
-      "id": "5.0.20.2",
+      "id": "5.0.21.2",
       "source": "core",
       "level": 4,
       "title": "Curses",

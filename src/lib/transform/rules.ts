@@ -90,7 +90,10 @@ export const TRANSFORMS: Rule[] = [
   {
     op: "replaceSectionRange",
     target: { doc: "natives-and-legends" },
-    from: { titleRegex: "^Haggling$", level: 2 },
+    from: {
+      titleRegex: "^Hiring Natives \\(abbreviated: see full rules\\)$",
+      level: 2,
+    },
     to: { titleRegex: "^Pack$", level: 3 },
     title: "Final page summary omitted",
     tag: "omittedFinalPageSummary",

@@ -1039,12 +1039,27 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*). **Natives (*****far right*****)**\n\nAll Civilization Locations have a local population of Natives, as shown on the Terrain Setup Cards. Natives are placed on their starting Civilization Locations once the corresponding Civilization Location is placed on the map.",
+      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*).",
       "contentNodes": [
         {
           "kind": "markdown",
-          "markdown": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*). **Natives (*****far right*****)**"
-        },
+          "markdown": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*)."
+        }
+      ]
+    },
+    {
+      "id": "5.0.8",
+      "source": "core",
+      "level": 3,
+      "title": "Natives (far right)",
+      "headingStyle": "pdf-l3",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "All Civilization Locations have a local population of Natives, as shown on the Terrain Setup Cards. Natives are placed on their starting Civilization Locations once the corresponding Civilization Location is placed on the map.",
+      "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "All Civilization Locations have a local population of Natives, as shown on the Terrain Setup Cards. Natives are placed on their starting Civilization Locations once the corresponding Civilization Location is placed on the map."
@@ -1052,7 +1067,7 @@
       ]
     },
     {
-      "id": "5.0.8",
+      "id": "5.0.9",
       "source": "core",
       "level": 3,
       "title": "Civilization Tokens",
@@ -1071,7 +1086,7 @@
       ]
     },
     {
-      "id": "5.0.9",
+      "id": "5.0.10",
       "source": "core",
       "level": 3,
       "title": "Civilization Cards and Titles (far right)",
@@ -1090,7 +1105,7 @@
       ]
     },
     {
-      "id": "5.0.10",
+      "id": "5.0.11",
       "source": "core",
       "level": 3,
       "title": "Mission Cards",
@@ -1109,7 +1124,7 @@
       ]
     },
     {
-      "id": "5.0.11",
+      "id": "5.0.12",
       "source": "core",
       "level": 3,
       "title": "Wilderness Tokens",
@@ -1132,7 +1147,7 @@
       ]
     },
     {
-      "id": "5.0.12",
+      "id": "5.0.13",
       "source": "core",
       "level": 3,
       "title": "Treasure Site Tokens",
@@ -1281,7 +1296,7 @@
       ]
     },
     {
-      "id": "5.0.13",
+      "id": "5.0.14",
       "source": "core",
       "level": 3,
       "title": "Hero Cards",
@@ -1328,7 +1343,7 @@
       ]
     },
     {
-      "id": "5.0.14",
+      "id": "5.0.15",
       "source": "core",
       "level": 3,
       "title": "Item and Treasure Cards",
@@ -1504,7 +1519,7 @@
       ]
     },
     {
-      "id": "5.0.15",
+      "id": "5.0.16",
       "source": "core",
       "level": 3,
       "title": "Spells",
@@ -1531,7 +1546,7 @@
       ]
     },
     {
-      "id": "5.0.16",
+      "id": "5.0.17",
       "source": "core",
       "level": 3,
       "title": "Hero Board",
@@ -1616,7 +1631,7 @@
       ]
     },
     {
-      "id": "5.0.17",
+      "id": "5.0.18",
       "source": "core",
       "level": 3,
       "title": "Hero Chips and Targeting Tokens",
@@ -1635,7 +1650,7 @@
       ]
     },
     {
-      "id": "5.0.18",
+      "id": "5.0.19",
       "source": "core",
       "level": 3,
       "title": "Outlaw Tokens",
@@ -1654,7 +1669,7 @@
       ]
     },
     {
-      "id": "5.0.19",
+      "id": "5.0.20",
       "source": "core",
       "level": 3,
       "title": "Action Cubes",
@@ -1689,7 +1704,7 @@
       ]
     },
     {
-      "id": "5.0.19.1",
+      "id": "5.0.20.1",
       "source": "core",
       "level": 4,
       "title": "Status Cubes",
@@ -1708,7 +1723,7 @@
       ]
     },
     {
-      "id": "5.0.20",
+      "id": "5.0.21",
       "source": "core",
       "level": 3,
       "title": "Reference Cards",
@@ -1722,7 +1737,7 @@
       "contentNodes": []
     },
     {
-      "id": "5.0.20.1",
+      "id": "5.0.21.1",
       "source": "core",
       "level": 4,
       "title": "Scoring",
@@ -1741,7 +1756,7 @@
       ]
     },
     {
-      "id": "5.0.20.2",
+      "id": "5.0.21.2",
       "source": "core",
       "level": 4,
       "title": "Curses",
