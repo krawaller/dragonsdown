@@ -34,6 +34,8 @@ describe("resolveRulebookLinks", () => {
         docSlug: "core",
         sectionTitle: "Move",
         anchor: "Mountains or Swamps",
+        content:
+          "**Mountains or Swamps:** A Move Action made into a Mountain or Swamp Clearing requires +1 action cost.",
         href: "/core#core-6.1.2.3.3--mountains-or-swamps",
       }),
     ]);

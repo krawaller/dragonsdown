@@ -1,5 +1,6 @@
 import { getMagicTypeById } from "./magic";
 import {
+  markdownSliceForAnchor,
   sectionAnchorIdFor,
   sectionContentAnchorIdFor,
 } from "./rulebook-anchors";
@@ -295,7 +296,7 @@ function resolveSections(
     docTitle: book.title,
     sectionId: section.id,
     sectionTitle: section.title,
-    content: section.content,
+    content: linkContentFor(section, anchor),
     anchor,
     icon: section.icon,
     icons: section.icons,
@@ -325,6 +326,11 @@ function linkAnchorIdFor(section: Section, anchor?: string): string {
   return anchor
     ? sectionContentAnchorIdFor(section, anchor)
     : sectionAnchorIdFor(section);
+}
+
+function linkContentFor(section: Section, anchor?: string): string {
+  if (!anchor) return section.content;
+  return markdownSliceForAnchor(section.content, anchor) ?? section.content;
 }
 
 function childSections(sections: Section[], parent: Section): Section[] {

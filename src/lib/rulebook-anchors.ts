@@ -22,3 +22,26 @@ export function anchorSlugFor(anchor: string): string {
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
+
+export function markdownSliceForAnchor(
+  markdown: string,
+  anchor: string,
+): string | undefined {
+  const blocks = markdown.trim().split(/\n{2,}/);
+  const start = blocks.findIndex(
+    (block) =>
+      anchorSlugFor(pseudoHeadingAnchorFor(block) ?? "") ===
+      anchorSlugFor(anchor),
+  );
+  if (start === -1) return undefined;
+
+  const nextAnchor = blocks.findIndex(
+    (block, index) => index > start && Boolean(pseudoHeadingAnchorFor(block)),
+  );
+  const end = nextAnchor === -1 ? blocks.length : nextAnchor;
+  return blocks.slice(start, end).join("\n\n");
+}
+
+function pseudoHeadingAnchorFor(markdownBlock: string): string | undefined {
+  return markdownBlock.match(/^\*\*([^*\n]+):\*\*/)?.[1]?.trim();
+}
