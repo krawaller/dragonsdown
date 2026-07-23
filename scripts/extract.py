@@ -958,6 +958,30 @@ def is_full_width_page_footer(block: dict, page_rect: fitz.Rect) -> bool:
     return x0 <= page_width * 0.16 and x1 >= page_width * 0.84
 
 
+def footer_logo_candidates(
+    blocks: list[dict], footer_block: dict, page_rect: fitz.Rect
+) -> list[dict]:
+    footer_x0, footer_y0, footer_x1, _ = footer_block["bbox"]
+    candidates: list[dict] = []
+    for block in blocks:
+        if block.get("type") != 1:
+            continue
+        x0, y0, x1, y1 = block["bbox"]
+        width = x1 - x0
+        height = y1 - y0
+        gap = footer_y0 - y1
+        horizontally_within_footer = x0 >= footer_x0 and x1 <= footer_x1
+        if (
+            50 <= width <= 160
+            and 50 <= height <= 180
+            and 0 <= gap <= page_rect.height * 0.05
+            and y0 >= page_rect.height * 0.7
+            and horizontally_within_footer
+        ):
+            candidates.append(block)
+    return sorted(candidates, key=lambda block: (block["bbox"][0], block["bbox"][1]))
+
+
 def page_block_sort_key(block: dict, column_boundary: float, page_rect: fitz.Rect) -> tuple:
     if is_full_width_page_footer(block, page_rect):
         _, y0, x1, _ = block["bbox"]
@@ -1093,6 +1117,15 @@ def extract(pdf_path: Path) -> list[dict]:
             icon_block_ids | inline_block_ids,
             boundary,
         )
+        footer_images_by_block: dict[int, list[dict]] = {}
+        footer_image_block_ids: set[int] = set()
+        for block in raw_blocks:
+            if not is_full_width_page_footer(block, page.rect):
+                continue
+            footer_images = footer_logo_candidates(raw_blocks, block, page.rect)
+            if footer_images:
+                footer_images_by_block[id(block)] = footer_images
+                footer_image_block_ids.update(id(image) for image in footer_images)
         blocks = sorted(
             raw_blocks,
             key=lambda b: page_block_sort_key(b, boundary, page.rect),
@@ -1107,6 +1140,7 @@ def extract(pdf_path: Path) -> list[dict]:
                     id(block) in icon_block_ids
                     or id(block) in inline_block_ids
                     or id(block) in floated_block_ids
+                    or id(block) in footer_image_block_ids
                 ):
                     continue
                 items = process_image_block(block, stats, total_pages)
@@ -1123,6 +1157,9 @@ def extract(pdf_path: Path) -> list[dict]:
                 sections.append(footer)
                 previous = current
                 current = footer
+                for footer_image in footer_images_by_block.get(id(block), []):
+                    for item in process_image_block(footer_image, stats, total_pages):
+                        push(item[1])
                 for item in items:
                     kind = item[0]
                     if kind == "para":

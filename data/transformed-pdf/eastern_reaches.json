@@ -4312,7 +4312,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nBashkirs Sellswords\n\nEncampment\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/pdf/356d646ab6238f1c692f3733b40b5f187fa295aa.png)\n\nWatch Soldiers\n\nKeep\n\n**Aurorans**\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nRogues Nomads\n\nMedina\n\nConsul **Dwarves**\n\n![](/images/pdf/fa57afa329fc35aec26c59a8d54e9ccc82467099.png)\n\nWatch Soldiers\n\nMine\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nNomads\n\nOasis\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nOutpost\n\nWatch **Mariners** Sellswords\n\n![](/images/pdf/15677672a3ceeb7b43973da1593b8bf89a5c47e4.jpeg)\n\nPort\n\nBashkirs Consul **Priests**\n\n![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nElves\n\nSanctuary\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nVillage\n\nNatives that begin in the Native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing Monsters. Natives that are in a clearing with Monsters are placed in the Native tray.\n\n![](/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg)",
+      "content": "![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nBashkirs Sellswords\n\nEncampment\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/pdf/356d646ab6238f1c692f3733b40b5f187fa295aa.png)\n\nWatch Soldiers\n\nKeep\n\n**Aurorans**\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nRogues Nomads\n\nMedina\n\nConsul **Dwarves**\n\n![](/images/pdf/fa57afa329fc35aec26c59a8d54e9ccc82467099.png)\n\nWatch Soldiers\n\nMine\n\n![](/images/pdf/52cedfca70a023748e4aa75140a8855e5d4aac1b.jpeg)\n\nNomads\n\nOasis\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nOutpost\n\nWatch **Mariners** Sellswords\n\n![](/images/pdf/15677672a3ceeb7b43973da1593b8bf89a5c47e4.jpeg)\n\nPort\n\nBashkirs Consul **Priests**\n\n![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nElves\n\nSanctuary\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nVillage\n\nNatives that begin in the Native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing Monsters. Natives that are in a clearing with Monsters are placed in the Native tray.",
       "contentNodes": [
         {
           "kind": "image",
@@ -4480,11 +4480,6 @@
         {
           "kind": "markdown",
           "markdown": "Natives will not summon to a clearing containing Monsters. Natives that are in a clearing with Monsters are placed in the Native tray."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -4498,8 +4493,13 @@
         "column": "full",
         "section": "bottom"
       },
-      "content": "(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
+      "content": "![](/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg)\n\n(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games.",
       "contentNodes": [
+        {
+          "kind": "image",
+          "src": "/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg",
+          "display": "block"
+        },
         {
           "kind": "markdown",
           "markdown": "(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
