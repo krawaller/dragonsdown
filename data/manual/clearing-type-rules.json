@@ -19,17 +19,38 @@
       }
     ]
   },
+  "plains": {
+    "rulebookLinks": [
+      {
+        "doc": "eastern-reaches",
+        "headings": ["OPTIONAL RULES", "Terrain Effects"],
+        "anchor": "Plains Clearing"
+      }
+    ]
+  },
   "swamps": {
     "rulebookLinks": [
       {
         "doc": "core",
         "headings": ["Actions", "The actions", "Move"],
         "anchor": "Mountains or Swamps"
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["OPTIONAL RULES", "Terrain Effects"],
+        "anchor": "Swamps Clearing"
       }
     ]
   },
   "woods": {
-    "classes": ["ranger"]
+    "classes": ["ranger"],
+    "rulebookLinks": [
+      {
+        "doc": "eastern-reaches",
+        "headings": ["OPTIONAL RULES", "Terrain Effects"],
+        "anchor": "Woods Clearing"
+      }
+    ]
   },
   "desert": {
     "lineages": ["auroran"],
