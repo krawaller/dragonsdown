@@ -5,5 +5,12 @@
     "target": { "titleRegex": "^Terrain Setup Cards$" },
     "bbox": [316, 76, 795, 578],
     "alt": "Annotated terrain setup card reference"
+  },
+  {
+    "doc": "core",
+    "page": 7,
+    "target": { "titleRegex": "^Map Tiles$" },
+    "bbox": [325, 590, 505, 817],
+    "alt": "Annotated map tile reference"
   }
 ]

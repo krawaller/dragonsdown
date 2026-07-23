@@ -985,7 +985,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Each Terrain Pack has one Civilization Tile and five Wilderness Tiles, which are used to create a unique map for each game. Wilderness Map Tiles have six circular clearings while Civilization Tiles have four clearings. Heroes, Monsters, Treasure Sites, etc., exist in clearings. Clearing types included in the game are Plains (*white*), Caves (*black*), Mountains (*red*), Woods (*green*), and Swamps (*yellow*). Connecting these clearings are paths and Hidden Paths.\n\nThe components of each Terrain Pack have a common theme. However, the clearings on Map Tiles are not all the same, and will feature other terrain types. *For example, the Map Tile* *shown is from the Cruel Caves Terrain Pack, but clearing 1 is a* *Woods Clearing and clearing 3 is a Plains Clearing.*\n\nHidden Path Cave Clearing\n\n![float-right](/images/pdf/74131229d09b518583089fa7933c8256ec6fa4f1.jpeg) The color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters.",
+      "content": "Each Terrain Pack has one Civilization Tile and five Wilderness Tiles, which are used to create a unique map for each game. Wilderness Map Tiles have six circular clearings while Civilization Tiles have four clearings. Heroes, Monsters, Treasure Sites, etc., exist in clearings. Clearing types included in the game are Plains (*white*), Caves (*black*), Mountains (*red*), Woods (*green*), and Swamps (*yellow*). Connecting these clearings are paths and Hidden Paths.\n\nThe components of each Terrain Pack have a common theme. However, the clearings on Map Tiles are not all the same, and will feature other terrain types. *For example, the Map Tile* *shown is from the Cruel Caves Terrain Pack, but clearing 1 is a* *Woods Clearing and clearing 3 is a Plains Clearing.*\n\nThe color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters.\n\n![Annotated map tile reference](/images/pdf/d802d1b9026cfb5a915effd071977b9c632eac26.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -997,16 +997,11 @@
         },
         {
           "kind": "markdown",
-          "markdown": "Hidden Path Cave Clearing"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/74131229d09b518583089fa7933c8256ec6fa4f1.jpeg",
-          "display": "float-right"
+          "markdown": "The color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters."
         },
         {
           "kind": "markdown",
-          "markdown": "The color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters."
+          "markdown": "![Annotated map tile reference](/images/pdf/d802d1b9026cfb5a915effd071977b9c632eac26.png)"
         }
       ]
     },
@@ -1021,7 +1016,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\nTile Name Wandering Monster and Summoning Symbol\n\nMonster Name\n\nTile Side Clearing\n\n![](/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg)\n\nAttack Length\n\nFame Value\n\nDamage\n\nHealth (unarmored)\n\nAttack Speed Maneuver Speed\n\nSpecial Attack\n\nUndead Monster Flying Ability\n\nPath\n\nAttack Length\n\nLocal Monster and Summoning Symbol\n\nHealth (armored)\n\nMap Token",
+      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\nMonster Name\n\n![](/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg)\n\nAttack Length\n\nFame Value\n\nDamage\n\nHealth (unarmored)\n\nAttack Speed Maneuver Speed\n\nSpecial Attack\n\nUndead Monster Flying Ability\n\nAttack Length\n\nHealth (armored)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1029,15 +1024,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "Tile Name Wandering Monster and Summoning Symbol"
-        },
-        {
-          "kind": "markdown",
           "markdown": "Monster Name"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Tile Side Clearing"
         },
         {
           "kind": "image",
@@ -1074,23 +1061,11 @@
         },
         {
           "kind": "markdown",
-          "markdown": "Path"
-        },
-        {
-          "kind": "markdown",
           "markdown": "Attack Length"
         },
         {
           "kind": "markdown",
-          "markdown": "Local Monster and Summoning Symbol"
-        },
-        {
-          "kind": "markdown",
           "markdown": "Health (armored)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Map Token"
         }
       ]
     },
