@@ -144,5 +144,13 @@
     "bbox": [465, 93, 775, 216],
     "alt": "Annotated hero chip and targeting token reference",
     "expectedTexts": ["Outlaw Token"]
+  },
+  {
+    "doc": "core",
+    "page": 11,
+    "target": { "titleRegex": "^Action Cubes$" },
+    "bbox": [467, 306, 726, 519],
+    "alt": "Annotated action cube reference",
+    "expectedTexts": ["Heart (Action Cube for all purposes)"]
   }
 ]

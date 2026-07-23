@@ -1389,7 +1389,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "During combat, players will place Action Cubes on their Lineage Cards, Class Cards, Item Cards, Treasure Cards, and Spell Cards to attack and survive attacks against them. Action Cubes come in 4 different types:\n\n**Might Cubes:** Might Cubes are red and signify how much strength a Hero is using in an attack. Most often, Might Cubes are placed on weapons in order to cause damage to Monsters in the game.\n\n**Speed Cubes:** Speed Cubes are brown and signify how much effort the Hero is putting into the speed of an attack or the speed of their maneuver to dodge an attack made against them.\n\n**Magic Cubes:** Magic Cubes are black, blue, gray, green, purple, white, or yellow. They represent specialized knowledge possessed by the Hero and are placed on Spell Cards and some Treasures in order to power them for use.\n\n**Hearts:** Hearts represent the health of a Hero. If a Hero ever has no Hearts in their healthy box, they immediately die. Hearts are Action Cubes for all purposes.",
+      "content": "During combat, players will place Action Cubes on their Lineage Cards, Class Cards, Item Cards, Treasure Cards, and Spell Cards to attack and survive attacks against them. Action Cubes come in 4 different types:\n\n**Might Cubes:** Might Cubes are red and signify how much strength a Hero is using in an attack. Most often, Might Cubes are placed on weapons in order to cause damage to Monsters in the game.\n\n**Speed Cubes:** Speed Cubes are brown and signify how much effort the Hero is putting into the speed of an attack or the speed of their maneuver to dodge an attack made against them.\n\n**Magic Cubes:** Magic Cubes are black, blue, gray, green, purple, white, or yellow. They represent specialized knowledge possessed by the Hero and are placed on Spell Cards and some Treasures in order to power them for use.\n\n**Hearts:** Hearts represent the health of a Hero. If a Hero ever has no Hearts in their healthy box, they immediately die. Hearts are Action Cubes for all purposes.\n\n![Annotated action cube reference](/images/annotations/824d65460ff07f1a1017395cae422a32832e878d.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1410,6 +1410,10 @@
         {
           "kind": "markdown",
           "markdown": "**Hearts:** Hearts represent the health of a Hero. If a Hero ever has no Hearts in their healthy box, they immediately die. Hearts are Action Cubes for all purposes."
+        },
+        {
+          "kind": "markdown",
+          "markdown": "![Annotated action cube reference](/images/annotations/824d65460ff07f1a1017395cae422a32832e878d.png)"
         }
       ]
     },
@@ -1476,32 +1480,11 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "The back side of the Reference Cards show the possible curses a Hero could receive during the game. When a hero receives a non-instant effect curse, place a Status Cubes in the appropriate box on the curse Reference Card.\n\n![](/images/pdf/e610a67fe572fa22657d313974619594f08d1c71.jpeg)\n\nMight Cube\n\nSpeed Cube Magic Cubes\n\nStatus Cube\n\nHeart (Action Cube for all purposes)\n\nReference Card Front (Scoring) Reference Card Back (Curses)\n\n![](/images/pdf/c79003e1fd83f1d0e4bc6a670ed170e75ce10cc0.jpeg)",
+      "content": "The back side of the Reference Cards show the possible curses a Hero could receive during the game. When a hero receives a non-instant effect curse, place a Status Cubes in the appropriate box on the curse Reference Card.\n\nReference Card Front (Scoring) Reference Card Back (Curses)\n\n![](/images/pdf/c79003e1fd83f1d0e4bc6a670ed170e75ce10cc0.jpeg)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "The back side of the Reference Cards show the possible curses a Hero could receive during the game. When a hero receives a non-instant effect curse, place a Status Cubes in the appropriate box on the curse Reference Card."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/e610a67fe572fa22657d313974619594f08d1c71.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Might Cube"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Speed Cube Magic Cubes"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Status Cube"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Heart (Action Cube for all purposes)"
         },
         {
           "kind": "markdown",
