@@ -1176,7 +1176,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
+      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\n![Annotated treasure site token reference](/images/annotations/6bcfaa5fa5c44e56358064148c216bc54ab91547.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1184,16 +1184,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "Treasure Site Token Front Treasure Site Token Back"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Terrain Pack"
+          "markdown": "![Annotated treasure site token reference](/images/annotations/6bcfaa5fa5c44e56358064148c216bc54ab91547.png)"
         }
       ]
     },

@@ -88,5 +88,13 @@
     "suppressBbox": [448, 517, 801, 690],
     "alt": "Annotated wilderness token reference",
     "expectedTexts": ["Wilderness Tokens Front"]
+  },
+  {
+    "doc": "core",
+    "page": 8,
+    "target": { "titleRegex": "^Treasure Site Tokens$" },
+    "bbox": [470, 672, 650, 807],
+    "alt": "Annotated treasure site token reference",
+    "expectedTexts": ["Treasure Site Token Back", "Terrain Pack"]
   }
 ]
