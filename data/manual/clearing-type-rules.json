@@ -59,7 +59,6 @@
   },
   "desert": {
     "lineages": ["auroran"],
-    "classes": ["thief"],
     "rulebookLinks": [
       {
         "doc": "eastern-reaches",
