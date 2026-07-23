@@ -29,10 +29,10 @@ export default async function LegendaryLocationPage({
   const entry = getLegendaryLocationBySlug(slug);
   if (!entry) notFound();
   const location = entry.locations[0];
-  const rulebookLinks = await resolveRulebookLinks({
-    doc: ANY_DOC,
-    headings: ["Legendary Location Manifest", entry.name],
-  });
+  const rulebookLinks = await resolveLegendaryLocationRulebookLinks(
+    entry.name,
+    entry.kind,
+  );
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -119,6 +119,29 @@ export default async function LegendaryLocationPage({
       </div>
     </main>
   );
+}
+
+async function resolveLegendaryLocationRulebookLinks(
+  name: string,
+  kind: "site" | "test",
+) {
+  const [manifestLinks, typeLinks] = await Promise.all([
+    resolveRulebookLinks({
+      doc: ANY_DOC,
+      headings: ["Legendary Location Manifest", name],
+    }),
+    resolveRulebookLinks({
+      doc: "natives-and-legends",
+      headings: [
+        "DRAGONS DOWN: LEGENDS",
+        "Legendary Locations",
+        "Types of Legendary Locations",
+      ],
+      anchor: kind === "site" ? "Sites:" : "Tests:",
+    }),
+  ]);
+
+  return [...manifestLinks, ...typeLinks];
 }
 
 function TreasureBlock({
