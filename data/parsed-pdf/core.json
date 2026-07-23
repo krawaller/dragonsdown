@@ -4451,36 +4451,10 @@
         "column": "right",
         "section": "top"
       },
-      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers**\n\n*Producer:* **Sean Brown**\n\n*Artwork:* **Marco Morte & Scott DeMers**\n\n*Graphic Design:* **Michael Smyjewski & Scott DeMers**\n\n*Rules:* **Scott DeMers**\n\n*Rules Editing:* **Ed Bryan, Scott DeMers,  and the entire Dragons Down Discord** **community (I am very grateful for this group).**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work**"
+      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers**\n\n*Producer:* **Sean Brown**\n\n*Artwork:* **Marco Morte & Scott DeMers**\n\n*Graphic Design:* **Michael Smyjewski & Scott DeMers**\n\n*Rules:* **Scott DeMers**\n\n*Rules Editing:* **Ed Bryan, Scott DeMers,  and the entire Dragons Down Discord** **community (I am very grateful for this group).**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. In some cases, edits were made** **to some icons.**\n\n*(C) Copyright 2024 Active Magic Games and Mr. B Games, all rights reserved. No part* *of this product may be reproduced without specific written permission. The Dragons* *Down and Active Magic Games logos are a trademark of Active Magic Games. The* *Mr. B Games logo is a trademark of Mr. B Games.*\n\n*Actual components may vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
     },
     {
-      "id": "10.1",
-      "source": "core",
-      "level": 2,
-      "title": "done by Lorc, Delapouite & other contributors. In some cases, edits were made",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 35,
-        "column": "right",
-        "section": "top"
-      },
-      "content": "**to some icons.**\n\n*(C) Copyright 2024 Active Magic Games and Mr. B Games, all rights reserved. No part* *of this product may be reproduced without specific written permission. The Dragons* *Down and Active Magic Games logos are a trademark of Active Magic Games. The* *Mr. B Games logo is a trademark of Mr. B Games.*\n\n*Actual components may vary from those shown. Made in China.*"
-    },
-    {
-      "id": "10.2",
-      "source": "core",
-      "level": 2,
-      "title": "This is a hobby gaming product and not a toy. It is not intended for use by",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 35,
-        "column": "right",
-        "section": "middle"
-      },
-      "content": "**anyone under 14 years of age.**"
-    },
-    {
-      "id": "10.2.1",
+      "id": "10.0.1",
       "source": "core",
       "level": 3,
       "title": "Final Thoughts",

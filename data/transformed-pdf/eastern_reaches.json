@@ -4118,7 +4118,7 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "*Game Design, Development, and Production:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Artwork and Graphic Design:* **Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*",
+      "content": "*Game Design, Development, and Production:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Artwork and Graphic Design:* **Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\nAdventure Journals for Eastern Reaches can be downloaded and printed at https://www.activemagicgames.com.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -4143,25 +4143,10 @@
         {
           "kind": "markdown",
           "markdown": "*(C) Copyright 2026 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*"
-        }
-      ]
-    },
-    {
-      "id": "6.1",
-      "source": "eastern-reaches",
-      "level": 2,
-      "title": "This is a hobby gaming product and not a toy. It is not intended for use by",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 15,
-        "column": "right",
-        "section": "middle"
-      },
-      "content": "**anyone under 14 years of age.**\n\nAdventure Journals for Eastern Reaches can be downloaded and printed at https://www.activemagicgames.com.",
-      "contentNodes": [
+        },
         {
           "kind": "markdown",
-          "markdown": "**anyone under 14 years of age.**"
+          "markdown": "**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
         },
         {
           "kind": "markdown",
@@ -4170,7 +4155,7 @@
       ]
     },
     {
-      "id": "6.2",
+      "id": "6.1",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Ferries",
@@ -4194,7 +4179,7 @@
       ]
     },
     {
-      "id": "6.3",
+      "id": "6.2",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Swimming",
@@ -4226,7 +4211,7 @@
       ]
     },
     {
-      "id": "6.4",
+      "id": "6.3",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Desert Clearings",
@@ -4245,7 +4230,7 @@
       ]
     },
     {
-      "id": "6.5",
+      "id": "6.4",
       "source": "eastern-reaches",
       "level": 2,
       "title": "Native Summoning",
@@ -4279,7 +4264,7 @@
       ]
     },
     {
-      "id": "6.5.1",
+      "id": "6.4.1",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Civilization",
@@ -4293,7 +4278,7 @@
       "contentNodes": []
     },
     {
-      "id": "6.5.2",
+      "id": "6.4.2",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Location",
@@ -4307,7 +4292,7 @@
       "contentNodes": []
     },
     {
-      "id": "6.5.3",
+      "id": "6.4.3",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Terrain",
@@ -4321,7 +4306,7 @@
       "contentNodes": []
     },
     {
-      "id": "6.5.4",
+      "id": "6.4.4",
       "source": "eastern-reaches",
       "level": 3,
       "title": "Pack",

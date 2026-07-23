@@ -2596,7 +2596,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*",
+      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\n![](/images/pdf/d9fe41860d9237cc328edbb473add53c1483bcd7.png)\n\nHiring Natives *(abbreviated: see full rules)*\n\nAlways hire the highest numbered Unhired Native in the Native Group.\n\nIf there are no numbered, Unhired Natives in the selected Native Group, the Hero may attempt to hire the Native leader.\n\nThe Consul and Bodyguard may never be hired.\n\nThe price to hire a Native is 4x the Fame value on the Native counter.\n\nThe Hero may haggle over the price to hire the Native.\n\nThe hire term is 15 turns starting on the turn of hire.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -2625,25 +2625,10 @@
         {
           "kind": "markdown",
           "markdown": "*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*"
-        }
-      ]
-    },
-    {
-      "id": "6.1",
-      "source": "natives-and-legends",
-      "level": 2,
-      "title": "This is a hobby gaming product and not a toy. It is not intended for use by",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 11,
-        "column": "right",
-        "section": "middle"
-      },
-      "content": "**anyone under 14 years of age.**\n\n![](/images/pdf/d9fe41860d9237cc328edbb473add53c1483bcd7.png)\n\nHiring Natives *(abbreviated: see full rules)*\n\nAlways hire the highest numbered Unhired Native in the Native Group.\n\nIf there are no numbered, Unhired Natives in the selected Native Group, the Hero may attempt to hire the Native leader.\n\nThe Consul and Bodyguard may never be hired.\n\nThe price to hire a Native is 4x the Fame value on the Native counter.\n\nThe Hero may haggle over the price to hire the Native.\n\nThe hire term is 15 turns starting on the turn of hire.",
-      "contentNodes": [
+        },
         {
           "kind": "markdown",
-          "markdown": "**anyone under 14 years of age.**"
+          "markdown": "**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
         },
         {
           "kind": "image",
@@ -2681,7 +2666,7 @@
       ]
     },
     {
-      "id": "6.2",
+      "id": "6.1",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Haggling",
@@ -2773,7 +2758,7 @@
       ]
     },
     {
-      "id": "6.3",
+      "id": "6.2",
       "source": "natives-and-legends",
       "level": 2,
       "title": "Native Summoning",
@@ -2807,7 +2792,7 @@
       ]
     },
     {
-      "id": "6.3.1",
+      "id": "6.2.1",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Civilization",
@@ -2821,7 +2806,7 @@
       "contentNodes": []
     },
     {
-      "id": "6.3.2",
+      "id": "6.2.2",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Location",
@@ -2835,7 +2820,7 @@
       "contentNodes": []
     },
     {
-      "id": "6.3.3",
+      "id": "6.2.3",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Terrain",
@@ -2849,7 +2834,7 @@
       "contentNodes": []
     },
     {
-      "id": "6.3.4",
+      "id": "6.2.4",
       "source": "natives-and-legends",
       "level": 3,
       "title": "Pack",

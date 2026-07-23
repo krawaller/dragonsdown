@@ -240,6 +240,54 @@ def classify_standalone_body_heading_strength(
     return None
 
 
+def span_signature(span: dict) -> tuple[str, int, int]:
+    return (span["font"], round(span["size"]), span["color"])
+
+
+def visible_spans(line: dict) -> list[dict]:
+    return [span for span in line.get("spans", []) if span.get("text", "").strip()]
+
+
+def line_text(line: dict) -> str:
+    return "".join(span["text"] for span in line.get("spans", [])).strip()
+
+
+def line_reaches_block_right_edge(line: dict, block_bbox: tuple) -> bool:
+    bbox = line_bbox(line)
+    return bbox is not None and bbox[2] >= block_bbox[2] - 2
+
+
+def is_wrapped_body_heading_candidate(
+    lines: list[dict], line_idx: int, block_bbox: tuple
+) -> bool:
+    line = lines[line_idx]
+    spans = visible_spans(line)
+    if not spans:
+        return False
+
+    if line_idx > 0:
+        previous_spans = visible_spans(lines[line_idx - 1])
+        if (
+            previous_spans
+            and line_reaches_block_right_edge(lines[line_idx - 1], block_bbox)
+            and starts_lowercase_continuation(line_text(line))
+            and span_signature(previous_spans[-1]) == span_signature(spans[0])
+        ):
+            return True
+
+    if line_idx + 1 < len(lines):
+        next_spans = visible_spans(lines[line_idx + 1])
+        if (
+            next_spans
+            and line_reaches_block_right_edge(line, block_bbox)
+            and starts_lowercase_continuation(line_text(lines[line_idx + 1]))
+            and span_signature(spans[-1]) == span_signature(next_spans[0])
+        ):
+            return True
+
+    return False
+
+
 def is_skippable_line(text: str, font: str, size: float) -> bool:
     if round(size, 1) <= 6:
         return True
@@ -814,7 +862,8 @@ def process_text_block(
                 items.append(("bullets", md))
             bullets_buf.clear()
 
-    for line in block["lines"]:
+    lines = block["lines"]
+    for line_idx, line in enumerate(lines):
         spans = line["spans"]
         if not spans:
             continue
@@ -828,6 +877,10 @@ def process_text_block(
         strength = heading_strength(level) if level is not None else None
         if level is None:
             strength = classify_standalone_body_heading_strength(full_text, spans)
+            if strength is not None and is_wrapped_body_heading_candidate(
+                lines, line_idx, block["bbox"]
+            ):
+                strength = None
         if level is not None:
             flush_para()
             flush_bullets()
