@@ -1250,7 +1250,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Item and Treasure Cards are the principal equipment, and means of survival, for Heroes in Dragons Down.\n\n- Items are indicated by a wooden plank for a banner on the card (*e.g. Plate Armor*).\n\n- Treasures are indicated by a brown cloth banner on the card (*e.g. Warblade and Spell Scroll*).\n\n- Epic Treasures, the most valuable treasures in the game, are indicated by a red cloth banner on the card (*e.g. Magical Bowl* *of Mixing*).\n\nAdditional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules.\n\n![](/images/pdf/649639605dc281307e31f19a36dbe516b8fe6557.jpeg)\n\n![](/images/pdf/be414593c964a2fba6dc118655d20f244eb044da.jpeg)\n\nName\n\nName\n\nBase Price Item Values (attack length and melee weapon)\n\nBase Price\n\nItem Values (armor and weight)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect\n\n![](/images/pdf/a752010537fe808edc5ad7614faede425911de36.jpeg)\n\n![](/images/pdf/75d03058ebf74cd06d6b8b4bfd646c230a494a64.jpeg)\n\nName\n\nName\n\nBase Price (variable)\n\nBase Price\n\nItem Values (permanent effect)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect",
+      "content": "Item and Treasure Cards are the principal equipment, and means of survival, for Heroes in Dragons Down.\n\n- Items are indicated by a wooden plank for a banner on the card (*e.g. Plate Armor*).\n\n- Treasures are indicated by a brown cloth banner on the card (*e.g. Warblade and Spell Scroll*).\n\n- Epic Treasures, the most valuable treasures in the game, are indicated by a red cloth banner on the card (*e.g. Magical Bowl* *of Mixing*).\n\nAdditional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules.\n\n![Annotated item and treasure card reference](/images/annotations/f9e605317103ec3628f7052a0f51e30900757bf9.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1273,112 +1273,8 @@
           "markdown": "Additional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules."
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/649639605dc281307e31f19a36dbe516b8fe6557.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/be414593c964a2fba6dc118655d20f244eb044da.jpeg",
-          "display": "block"
-        },
-        {
           "kind": "markdown",
-          "markdown": "Name"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Name"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Base Price Item Values (attack length and melee weapon)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Base Price"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Item Values (armor and weight)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Position"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Position"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Card Type"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Card Type"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Game Effect"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Game Effect"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/a752010537fe808edc5ad7614faede425911de36.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/75d03058ebf74cd06d6b8b4bfd646c230a494a64.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Name"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Name"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Base Price (variable)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Base Price"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Item Values (permanent effect)"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Position"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Position"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Card Type"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Card Type"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Game Effect"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Game Effect"
+          "markdown": "![Annotated item and treasure card reference](/images/annotations/f9e605317103ec3628f7052a0f51e30900757bf9.png)"
         }
       ]
     },

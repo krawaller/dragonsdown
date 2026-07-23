@@ -108,5 +108,13 @@
       "Attributes",
       "Aim Boxes (used only with optional PvP rules)"
     ]
+  },
+  {
+    "doc": "core",
+    "page": 9,
+    "target": { "titleRegex": "^Item and Treasure Cards$" },
+    "bbox": [360, 379, 763, 805],
+    "alt": "Annotated item and treasure card reference",
+    "expectedTexts": ["Item Values (permanent effect)"]
   }
 ]
