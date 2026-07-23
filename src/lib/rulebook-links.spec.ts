@@ -66,4 +66,19 @@ describe("resolveRulebookLinks", () => {
       }),
     ]);
   });
+
+  it("promotes leading floated content images to preview icons", async () => {
+    const links = await resolveRulebookLinks({
+      doc: "eastern-reaches",
+      headings: ["Dreadful Deserts", "Desert Clearings"],
+    });
+
+    expect(links).toEqual([
+      expect.objectContaining({
+        sectionTitle: "Desert Clearings",
+        icon: "/images/pdf/f6844a13fa69d074640779670fc8c922d3b7f162.jpeg",
+        content: expect.not.stringContaining("![float-right]"),
+      }),
+    ]);
+  });
 });

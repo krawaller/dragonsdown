@@ -42,6 +42,13 @@ type RelatedClassAbilityMap = {
   monsterGroups?: Record<string, string[]>;
   sites?: Record<string, string[]>;
 };
+type RulebookLinkPreview = {
+  content: string;
+  icons?: string[];
+};
+
+const LEADING_FLOAT_IMAGE_RE =
+  /^([-*+]\s+)?!\[float-(?:left|right)(?:-companion)?\]\(([^)]*)\)\s*/;
 
 export async function resolveRulebookLinks(
   query: RulebookLinkQuery,
@@ -291,34 +298,34 @@ function resolveSections(
     );
   }
 
-  return candidates.map((section) => ({
-    docSlug: book.slug,
-    docTitle: book.title,
-    sectionId: section.id,
-    sectionTitle: section.title,
-    content: linkContentFor(section, anchor),
-    anchor,
-    icon: section.icon,
-    icons: section.icons,
-    location: section.location,
-    href: `/${book.slug}#${linkAnchorIdFor(section, anchor)}`,
-  }));
+  return candidates.map((section) =>
+    rulebookLinkForSection(book, section, anchor),
+  );
 }
 
 function rulebookLinkForSection(
   book: Rulebook,
   section: Section,
+  anchor?: string,
 ): RulebookLink {
+  const preview = linkPreviewFor(section, anchor);
+  const icons = [
+    ...(section.icon ? [section.icon] : []),
+    ...(section.icons ?? []),
+    ...(preview.icons ?? []),
+  ];
+
   return {
     docSlug: book.slug,
     docTitle: book.title,
     sectionId: section.id,
     sectionTitle: section.title,
-    content: section.content,
-    icon: section.icon,
-    icons: section.icons,
+    content: preview.content,
+    anchor,
+    icon: icons.length === 1 ? icons[0] : undefined,
+    icons: icons.length > 1 ? icons : undefined,
     location: section.location,
-    href: `/${book.slug}#${sectionAnchorIdFor(section)}`,
+    href: `/${book.slug}#${linkAnchorIdFor(section, anchor)}`,
   };
 }
 
@@ -328,9 +335,30 @@ function linkAnchorIdFor(section: Section, anchor?: string): string {
     : sectionAnchorIdFor(section);
 }
 
-function linkContentFor(section: Section, anchor?: string): string {
-  if (!anchor) return section.content;
-  return markdownSliceForAnchor(section.content, anchor) ?? section.content;
+function linkPreviewFor(
+  section: Section,
+  anchor?: string,
+): RulebookLinkPreview {
+  const content = anchor
+    ? (markdownSliceForAnchor(section.content, anchor) ?? section.content)
+    : section.content;
+  return promoteLeadingFloatImages(content);
+}
+
+function promoteLeadingFloatImages(content: string): RulebookLinkPreview {
+  const icons: string[] = [];
+  let remaining = content.trimStart();
+
+  while (true) {
+    const match = remaining.match(LEADING_FLOAT_IMAGE_RE);
+    if (!match) break;
+
+    const bullet = match[1] ?? "";
+    icons.push(match[2]);
+    remaining = `${bullet}${remaining.slice(match[0].length).trimStart()}`;
+  }
+
+  return { content: remaining, icons: icons.length > 0 ? icons : undefined };
 }
 
 function childSections(sections: Section[], parent: Section): Section[] {

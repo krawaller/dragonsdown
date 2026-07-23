@@ -33,6 +33,12 @@
   },
   "desert": {
     "lineages": ["auroran"],
-    "classes": ["thief"]
+    "classes": ["thief"],
+    "rulebookLinks": [
+      {
+        "doc": "eastern-reaches",
+        "headings": ["Dreadful Deserts", "Desert Clearings"]
+      }
+    ]
   }
 }
