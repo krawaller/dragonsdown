@@ -1199,7 +1199,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Players will play the role of a Hero created by the combination of a Lineage Card and a Class Card. The Hero has the combined characteristics of both cards:\n\n- Two Special Advantages (*one on each card*).\n\n- Attributes: Cunning, Wisdom, and Charisma (*for interactions* *in civilization such as Haggling and completing missions*).\n\n- Health. How hard this Hero can get hit without dying.\n\n- Attack speed. How fast this Hero can potentially attack.\n\n- Maneuver speed. How fast this Hero can dodge attacks.\n\n- Aim boxes (*only used if playing with the optional Player vs.* *Player rules*).\n\n- Starting Action Cubes and equipment for the Hero.",
+      "content": "Players will play the role of a Hero created by the combination of a Lineage Card and a Class Card. The Hero has the combined characteristics of both cards:\n\n- Two Special Advantages (*one on each card*).\n\n- Attributes: Cunning, Wisdom, and Charisma (*for interactions* *in civilization such as Haggling and completing missions*).\n\n- Health. How hard this Hero can get hit without dying.\n\n- Attack speed. How fast this Hero can potentially attack.\n\n- Maneuver speed. How fast this Hero can dodge attacks.\n\n- Aim boxes (*only used if playing with the optional Player vs.* *Player rules*).\n\n- Starting Action Cubes and equipment for the Hero.\n\n![Annotated hero card reference](/images/annotations/57234e713efe7e4354cdaff36c4d13f7804a4444.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1232,6 +1232,10 @@
         {
           "kind": "markdown",
           "markdown": "- Starting Action Cubes and equipment for the Hero."
+        },
+        {
+          "kind": "markdown",
+          "markdown": "![Annotated hero card reference](/images/annotations/57234e713efe7e4354cdaff36c4d13f7804a4444.png)"
         }
       ]
     },
@@ -1246,7 +1250,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Item and Treasure Cards are the principal equipment, and means of survival, for Heroes in Dragons Down.\n\n- Items are indicated by a wooden plank for a banner on the card (*e.g. Plate Armor*).\n\n- Treasures are indicated by a brown cloth banner on the card (*e.g. Warblade and Spell Scroll*).\n\n- Epic Treasures, the most valuable treasures in the game, are indicated by a red cloth banner on the card (*e.g. Magical Bowl* *of Mixing*).\n\nAdditional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules.\n\n![](/images/pdf/65d29e7f0512c044d2f7b2a4abbc10de889629cf.jpeg)\n\nLineage Advantage Lineage Class Class Advantage\n\nAttributes\n\nHealth\n\nAttack Speed Boxes\n\nManeuver Speed Boxes\n\nStarting Equipment and Spells\n\nAction Cubes Aim Boxes (used only with optional PvP rules)\n\n![](/images/pdf/649639605dc281307e31f19a36dbe516b8fe6557.jpeg)\n\n![](/images/pdf/be414593c964a2fba6dc118655d20f244eb044da.jpeg)\n\nName\n\nName\n\nBase Price Item Values (attack length and melee weapon)\n\nBase Price\n\nItem Values (armor and weight)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect\n\n![](/images/pdf/a752010537fe808edc5ad7614faede425911de36.jpeg)\n\n![](/images/pdf/75d03058ebf74cd06d6b8b4bfd646c230a494a64.jpeg)\n\nName\n\nName\n\nBase Price (variable)\n\nBase Price\n\nItem Values (permanent effect)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect",
+      "content": "Item and Treasure Cards are the principal equipment, and means of survival, for Heroes in Dragons Down.\n\n- Items are indicated by a wooden plank for a banner on the card (*e.g. Plate Armor*).\n\n- Treasures are indicated by a brown cloth banner on the card (*e.g. Warblade and Spell Scroll*).\n\n- Epic Treasures, the most valuable treasures in the game, are indicated by a red cloth banner on the card (*e.g. Magical Bowl* *of Mixing*).\n\nAdditional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules.\n\n![](/images/pdf/649639605dc281307e31f19a36dbe516b8fe6557.jpeg)\n\n![](/images/pdf/be414593c964a2fba6dc118655d20f244eb044da.jpeg)\n\nName\n\nName\n\nBase Price Item Values (attack length and melee weapon)\n\nBase Price\n\nItem Values (armor and weight)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect\n\n![](/images/pdf/a752010537fe808edc5ad7614faede425911de36.jpeg)\n\n![](/images/pdf/75d03058ebf74cd06d6b8b4bfd646c230a494a64.jpeg)\n\nName\n\nName\n\nBase Price (variable)\n\nBase Price\n\nItem Values (permanent effect)\n\nPosition\n\nPosition\n\nCard Type\n\nCard Type\n\nGame Effect\n\nGame Effect",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1267,39 +1271,6 @@
         {
           "kind": "markdown",
           "markdown": "Additional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/65d29e7f0512c044d2f7b2a4abbc10de889629cf.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Lineage Advantage Lineage Class Class Advantage"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Attributes"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Health"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Attack Speed Boxes"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Maneuver Speed Boxes"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Starting Equipment and Spells"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Action Cubes Aim Boxes (used only with optional PvP rules)"
         },
         {
           "kind": "image",

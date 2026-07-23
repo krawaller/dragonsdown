@@ -96,5 +96,17 @@
     "bbox": [470, 672, 650, 807],
     "alt": "Annotated treasure site token reference",
     "expectedTexts": ["Treasure Site Token Back", "Terrain Pack"]
+  },
+  {
+    "doc": "core",
+    "page": 9,
+    "target": { "titleRegex": "^Hero Cards$" },
+    "bbox": [350, 77, 792, 382],
+    "alt": "Annotated hero card reference",
+    "expectedTexts": [
+      "Lineage Advantage",
+      "Attributes",
+      "Aim Boxes (used only with optional PvP rules)"
+    ]
   }
 ]
