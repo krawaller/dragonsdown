@@ -8,7 +8,8 @@ export type Rule =
   | ExtractFooterRule
   | MoveImageRule
   | MoveImagesRule
-  | FloatImagesRule;
+  | FloatImagesRule
+  | ReplaceSectionRangeRule;
 
 export type IgnoreImagesRule = {
   op: "ignoreImages";
@@ -28,6 +29,16 @@ export type FloatImagesRule = {
   op: "floatImages";
   target: Target;
   direction: "left" | "right";
+};
+
+export type ReplaceSectionRangeRule = {
+  op: "replaceSectionRange";
+  target: Target;
+  from: Target;
+  to: Target;
+  title: string;
+  content?: string;
+  tag?: string | string[];
 };
 
 /**
@@ -125,6 +136,8 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
         return content === s.content ? s : { ...s, content };
       });
     }
+    case "replaceSectionRange":
+      return replaceSectionRange(sections, rule);
     case "extractFooter":
       return extractFooter(sections, rule);
     case "moveImage": {
@@ -229,6 +242,47 @@ function floatImages(content: string, direction: "left" | "right"): string {
     /!\[\]\((\/images\/(?:[a-z]+\/)?[a-f0-9]+\.[a-z]+)\)/g,
     `![${display}]($1)`,
   );
+}
+
+function replaceSectionRange(
+  sections: Section[],
+  rule: ReplaceSectionRangeRule,
+): Section[] {
+  const ids = selectMatchingIds(rule.target, sections);
+  if (ids.size === 0) return sections;
+  const fromIds = selectMatchingIds(rule.from, sections);
+  const toIds = selectMatchingIds(rule.to, sections);
+
+  const start = sections.findIndex(
+    (section) => ids.has(section.id) && fromIds.has(section.id),
+  );
+  if (start < 0) return sections;
+
+  const end = sections.findIndex(
+    (section, index) =>
+      index >= start && ids.has(section.id) && toIds.has(section.id),
+  );
+  if (end < start) return sections;
+
+  const first = sections[start];
+  const tag =
+    rule.tag === undefined
+      ? []
+      : Array.isArray(rule.tag)
+        ? rule.tag
+        : [rule.tag];
+  const replacement: Section = {
+    id: first.id,
+    source: first.source,
+    level: first.level,
+    title: rule.title,
+    headingStyle: first.headingStyle,
+    location: first.location,
+    content: rule.content ?? "",
+    tags: [...(first.tags ?? []), ...tag],
+  };
+
+  return [...sections.slice(0, start), replacement, ...sections.slice(end + 1)];
 }
 
 function stripImages(content: string, imageIds: readonly string[]): string {

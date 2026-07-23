@@ -71,6 +71,16 @@ export function SectionView({
   const anchorId = sectionAnchorIdFor(section);
   const cards = findCards(section.title);
   const icons = section.icons ?? (section.icon ? [section.icon] : []);
+  if (section.tags?.includes("omittedFinalPageSummary")) {
+    return (
+      <section className="my-8" id={anchorId}>
+        <div className="rounded border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950 dark:border-amber-900/60 dark:bg-amber-950/20 dark:text-amber-100">
+          Final page summary omitted.
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="mb-2 flow-root">
       <Heading className={HEADING_CLASS[headingStyle]} id={anchorId}>

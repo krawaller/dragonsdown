@@ -156,6 +156,43 @@ Body`);
   });
 });
 
+describe("replaceSectionRange", () => {
+  it("replaces an inclusive matched range with one tagged placeholder", () => {
+    const sections = [
+      s("1", "Before", { title: "Before" }),
+      s("2", "Summary start", { title: "TURN SEQUENCE" }),
+      s("2.1", "Summary child", { title: "Actions", level: 2 }),
+      s("3", "Summary end", { title: "Living Legend" }),
+      s("4", "Credits", { title: "Credits" }),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "replaceSectionRange",
+        target: { doc: "core" },
+        from: { titleRegex: "^TURN SEQUENCE$", level: 1 },
+        to: { titleRegex: "^Living Legend$", level: 1 },
+        title: "Final page summary omitted",
+        tag: "omittedFinalPageSummary",
+      },
+    ];
+
+    const out = applyTransforms(sections, rules, "core");
+
+    expect(out.map((section) => section.title)).toEqual([
+      "Before",
+      "Final page summary omitted",
+      "Credits",
+    ]);
+    expect(out[1]).toMatchObject({
+      id: "2",
+      source: "test",
+      level: 1,
+      tags: ["omittedFinalPageSummary"],
+      content: "",
+    });
+  });
+});
+
 describe("extractFooter", () => {
   it("splits a trailing image pair (no copyright text) into a new L1 section", () => {
     const sections = [
