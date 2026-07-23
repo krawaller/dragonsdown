@@ -116,5 +116,13 @@
     "bbox": [360, 379, 763, 805],
     "alt": "Annotated item and treasure card reference",
     "expectedTexts": ["Item Values (permanent effect)"]
+  },
+  {
+    "doc": "core",
+    "page": 10,
+    "target": { "titleRegex": "^Spells$" },
+    "bbox": [402, 88, 599, 292],
+    "alt": "Annotated spell card reference",
+    "expectedTexts": ["Requirements"]
   }
 ]
