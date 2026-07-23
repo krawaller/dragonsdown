@@ -162,6 +162,7 @@ class AnnotatedFigure:
     title_regex: str
     bbox: tuple[float, float, float, float]
     alt: str
+    expected_texts: tuple[str, ...]
     placement: str = "append"
 
 
@@ -1056,6 +1057,45 @@ def block_is_inside_any_figure(block: dict, figures: list[AnnotatedFigure]) -> b
     return any(block_is_inside_figure(block, figure) for figure in figures)
 
 
+def block_text(block: dict) -> str:
+    if block.get("type") != 0:
+        return ""
+    return " ".join(
+        "".join(span.get("text", "") for span in line.get("spans", [])).strip()
+        for line in block.get("lines", [])
+        if "".join(span.get("text", "") for span in line.get("spans", [])).strip()
+    )
+
+
+def normalize_expected_text(text: str) -> str:
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def validate_annotated_figure_texts(
+    blocks: list[dict], figure: AnnotatedFigure
+) -> None:
+    if not figure.expected_texts:
+        return
+    swallowed_text = normalize_expected_text(
+        " ".join(
+            block_text(block)
+            for block in blocks
+            if block.get("type") == 0 and block_is_inside_figure(block, figure)
+        )
+    )
+    missing = [
+        text
+        for text in figure.expected_texts
+        if normalize_expected_text(text) not in swallowed_text
+    ]
+    if missing:
+        raise ValueError(
+            "Annotated figure crop did not contain expected text(s): "
+            f"doc={figure.doc} page={figure.page} target={figure.title_regex} "
+            f"missing={missing} bbox={figure.bbox} found={swallowed_text!r}"
+        )
+
+
 def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
     if not ANNOTATED_FIGURES_FILE.exists():
         return []
@@ -1076,6 +1116,7 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
         bbox = entry.get("bbox")
         page = entry.get("page")
         alt = entry.get("alt", "Annotated figure")
+        expected_texts = entry.get("expectedTexts", [])
         placement = entry.get("placement", "append")
         if not isinstance(doc, str):
             raise TypeError(f"Annotated figure entry #{index + 1} is missing doc")
@@ -1095,6 +1136,12 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
             )
         if not isinstance(alt, str):
             raise TypeError(f"Annotated figure entry #{index + 1} alt must be a string")
+        if not isinstance(expected_texts, list) or not all(
+            isinstance(text, str) for text in expected_texts
+        ):
+            raise TypeError(
+                f"Annotated figure entry #{index + 1} expectedTexts must be strings"
+            )
         if placement != "append":
             raise ValueError(
                 f"Annotated figure entry #{index + 1} has unsupported placement: {placement}"
@@ -1106,6 +1153,7 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
                 title_regex=target["titleRegex"],
                 bbox=tuple(float(value) for value in bbox),
                 alt=alt,
+                expected_texts=tuple(expected_texts),
                 placement=placement,
             )
         )
@@ -1237,6 +1285,7 @@ def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
         raw_blocks = page.get_text("dict")["blocks"]
         page_figures = figures_by_page.get(page_idx + 1, [])
         for figure in page_figures:
+            validate_annotated_figure_texts(raw_blocks, figure)
             url = save_page_crop(page, figure.bbox)
             figure_markdown[figure] = f"![{figure.alt}]({url})"
         raw_blocks = [

@@ -4,27 +4,36 @@
     "page": 7,
     "target": { "titleRegex": "^Terrain Setup Cards$" },
     "bbox": [316, 76, 795, 578],
-    "alt": "Annotated terrain setup card reference"
+    "alt": "Annotated terrain setup card reference",
+    "expectedTexts": ["Terrain Pack", "Merchandise available at this Merchant"]
   },
   {
     "doc": "core",
     "page": 7,
     "target": { "titleRegex": "^Map Tiles$" },
     "bbox": [325, 590, 505, 817],
-    "alt": "Annotated map tile reference"
+    "alt": "Annotated map tile reference",
+    "expectedTexts": [
+      "Hidden Path",
+      "Cave Clearing",
+      "Path",
+      "Local Monster and Summoning Symbol"
+    ]
   },
   {
     "doc": "core",
     "page": 7,
     "target": { "titleRegex": "^Monster Chips$" },
     "bbox": [518, 579, 795, 808],
-    "alt": "Annotated monster chip reference"
+    "alt": "Annotated monster chip reference",
+    "expectedTexts": ["Monster Name", "Damage", "Health (armored)"]
   },
   {
     "doc": "core",
     "page": 8,
     "target": { "titleRegex": "^Civilization Locations$" },
     "bbox": [437, 75, 531, 190],
-    "alt": "Annotated civilization location reference"
+    "alt": "Annotated civilization location reference",
+    "expectedTexts": ["Location Name", "Terrain Pack"]
   }
 ]
