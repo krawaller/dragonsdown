@@ -322,8 +322,6 @@ def is_wrapped_body_heading_candidate(
 
 
 def is_skippable_line(text: str, font: str, size: float) -> bool:
-    if round(size, 1) <= 6:
-        return True
     if font == "BreatheFireIII" and round(size) == 16:
         return True  # page numbers
     if round(size) == 18 and font != "BreatheFireIII":
@@ -1297,12 +1295,12 @@ def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
         if current is not None and md:
             current.content_parts.append(md)
 
-    pending_images: list[str] = []  # buffered to allow attachment to next heading
+    pending_content: list[str] = []  # buffered to allow attachment to next heading
 
     def flush_pending_to_current() -> None:
-        for img in pending_images:
-            push(img)
-        pending_images.clear()
+        for md in pending_content:
+            push(md)
+        pending_content.clear()
 
     for page_idx, page in enumerate(doc):
         raw_blocks = page.get_text("dict")["blocks"]
@@ -1389,7 +1387,7 @@ def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
                     # Most images are tied to the currently active section.
                     # Buffer only when we have not seen any heading yet.
                     if current is None:
-                        pending_images.append(item[1])
+                        pending_content.append(item[1])
                     else:
                         push(item[1])
                 elif kind == "heading":
@@ -1415,12 +1413,17 @@ def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
                     # Attach any pending images to the new section
                     flush_pending_to_current()
                 elif kind == "para":
-                    flush_pending_to_current()
                     if current is not None:
+                        flush_pending_to_current()
                         push(current.promote_leading_float_icons(item[1]))
+                    else:
+                        pending_content.append(item[1])
                 else:  # 'bullets'
-                    flush_pending_to_current()
-                    push(item[1])
+                    if current is not None:
+                        flush_pending_to_current()
+                        push(item[1])
+                    else:
+                        pending_content.append(item[1])
         # End of page: trailing images usually belong to the section that was
         # active on this page. Flushing here avoids cross-page mis-assignment
         # where a positioned image gets attached to an unrelated heading on

@@ -12,7 +12,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "![](/images/pdf/37f74aa0bbf43addc356a799f1c65d453770f235.jpeg)\n\n![](/images/pdf/934e542006a9020f1d1f92d90086cc537ce12997.jpeg)\n\n**Dragons Down: Natives & Legends** is organized into two expansions that may be played independently of each other or with both at the same time.\n\n**Natives** expands **Dragons Down** by introducing new natives that move across the land and can be hired by heroes, along with new civilization locations, merchants, treasures, missions, and hero classes to play. New components for the natives expansion are marked with a small ![inline](/images/pdf/615ce06ff72450e4e6ef781ba96375280c2e0583.jpeg) in one corner.\n\n**Legends** adds new Treasure Sites that Heroes must find buried within other sites. In addition, this expansion provides legendary treasures that are the most powerful artifacts in the game and monsters that may be your friends or foes. New components for the Legends expansion are marked with a small ![inline](/images/pdf/8431021571a2f823fde3a27cd6ecd7431dfba5c8.jpeg) in one corner and are explained later in these rules.\n\nCounters, round cardboard tokens, and Hero Chips do not have a mark.",
+      "content": "![](/images/pdf/37f74aa0bbf43addc356a799f1c65d453770f235.jpeg)\n\n![](/images/pdf/934e542006a9020f1d1f92d90086cc537ce12997.jpeg)\n\nVersion 1.3. May 9, 2026\n\n**Dragons Down: Natives & Legends** is organized into two expansions that may be played independently of each other or with both at the same time.\n\n**Natives** expands **Dragons Down** by introducing new natives that move across the land and can be hired by heroes, along with new civilization locations, merchants, treasures, missions, and hero classes to play. New components for the natives expansion are marked with a small ![inline](/images/pdf/615ce06ff72450e4e6ef781ba96375280c2e0583.jpeg) in one corner.\n\n**Legends** adds new Treasure Sites that Heroes must find buried within other sites. In addition, this expansion provides legendary treasures that are the most powerful artifacts in the game and monsters that may be your friends or foes. New components for the Legends expansion are marked with a small ![inline](/images/pdf/8431021571a2f823fde3a27cd6ecd7431dfba5c8.jpeg) in one corner and are explained later in these rules.\n\nCounters, round cardboard tokens, and Hero Chips do not have a mark.",
       "contentNodes": [
         {
           "kind": "image",
@@ -23,6 +23,10 @@
           "kind": "image",
           "src": "/images/pdf/934e542006a9020f1d1f92d90086cc537ce12997.jpeg",
           "display": "block"
+        },
+        {
+          "kind": "markdown",
+          "markdown": "Version 1.3. May 9, 2026"
         },
         {
           "kind": "markdown",
