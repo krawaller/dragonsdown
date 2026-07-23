@@ -81,10 +81,9 @@ const LINEAGE_ADVANTAGES_FILE = path.join(
 const SPELL_MANIFEST_FILE = path.join(DERIVED_DIR, "spell-manifest.json");
 const ALIASES_FILE = path.join(
   process.cwd(),
-  "src",
-  "lib",
-  "tts",
-  "aliases.json",
+  "data",
+  "manual",
+  "tts-aliases.json",
 );
 const MISSION_NICKNAME_CORRECTIONS_FILE = path.join(
   MANUAL_DIR,

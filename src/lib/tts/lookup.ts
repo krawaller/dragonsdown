@@ -55,7 +55,7 @@ import {
   type TTSWildernessToken,
   type WildernessTokenIndex,
 } from ".";
-import aliasesData from "./aliases.json";
+import aliasesData from "../../../data/manual/tts-aliases.json";
 
 const EXTRACTED_TTS_DIR = path.join(
   process.cwd(),

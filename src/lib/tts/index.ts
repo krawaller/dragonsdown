@@ -758,7 +758,7 @@ const CHIP_NAME_ALIASES: Record<string, string> = {
  * multiple cards ("Spell Book and Spell Scroll" → ["Spell Book", "Spell Scroll"]).
  *
  * Keys are PDF spellings, values are TTS spellings (scalar or array). Loaded
- * from `aliases.json`.
+ * from `data/manual/tts-aliases.json`.
  */
 export type AliasMap = Record<string, string | string[]>;
 

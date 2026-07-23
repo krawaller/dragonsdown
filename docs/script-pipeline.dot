@@ -19,7 +19,7 @@ digraph DragonsDownScripts {
   manual_mission_stats [label="data/manual/mission-stats.json", shape=note, fillcolor="#fff7ed"];
   manual_mission_names [label="data/manual/mission-nickname-corrections.json", shape=note, fillcolor="#fff7ed"];
   manual_monster_names [label="data/manual/monster-chip-names.json", shape=note, fillcolor="#fff7ed"];
-  tts_aliases [label="src/lib/tts/aliases.json", shape=note, fillcolor="#fff7ed"];
+  tts_aliases [label="data/manual/tts-aliases.json", shape=note, fillcolor="#fff7ed"];
   transform_rules [label="src/lib/transform/rules.ts", shape=note, fillcolor="#fff7ed"];
   derive_specs [label="src/lib/derive/docs.ts", shape=note, fillcolor="#fff7ed"];
 
