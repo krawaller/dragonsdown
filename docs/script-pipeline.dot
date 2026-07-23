@@ -1,0 +1,134 @@
+digraph DragonsDownScripts {
+  graph [
+    rankdir=LR,
+    bgcolor="white",
+    fontname="Helvetica",
+    label="Dragons Down script pipeline",
+    labelloc=t,
+    fontsize=20
+  ];
+  node [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#f8fafc", color="#64748b"];
+  edge [fontname="Helvetica", fontsize=10, color="#475569"];
+
+  steam_workshop [label="Steam workshop item\n286160 / 3062060625", shape=folder, fillcolor="#eef2ff"];
+  active_magic_pages [label="Active Magic web pages", shape=folder, fillcolor="#eef2ff"];
+
+  manual_releases [label="data/manual/releases.json", shape=note, fillcolor="#fff7ed"];
+  manual_annotations [label="data/manual/annotated-figures.json", shape=note, fillcolor="#fff7ed"];
+  manual_clearing_anchors [label="data/manual/clearing-type-anchors.json", shape=note, fillcolor="#fff7ed"];
+  manual_mission_stats [label="data/manual/mission-stats.json", shape=note, fillcolor="#fff7ed"];
+  manual_mission_names [label="data/manual/mission-nickname-corrections.json", shape=note, fillcolor="#fff7ed"];
+  manual_monster_names [label="data/manual/monster-chip-names.json", shape=note, fillcolor="#fff7ed"];
+  tts_aliases [label="src/lib/tts/aliases.json", shape=note, fillcolor="#fff7ed"];
+  transform_rules [label="src/lib/transform/rules.ts", shape=note, fillcolor="#fff7ed"];
+  derive_specs [label="src/lib/derive/docs.ts", shape=note, fillcolor="#fff7ed"];
+
+  npm_steam_download [label="npm run steam:download\nsteamcmd ..."];
+  npm_steam_copy [label="npm run steam:copy-json\nscripts/copy-tts-workshop-source.ts"];
+  npm_steam_refresh [label="npm run steam:refresh-json"];
+  npm_download_pdfs [label="npm run download-tts-pdfs\nscripts/download-tts-pdfs.ts"];
+  py_extract [label="npm run extract:doc -- <doc>\nscripts/extract.py <doc>"];
+  py_extract_all [label="npm run extract\nscripts/extract.py --all"];
+  transform [label="npm run transform\nscripts/transform.ts"];
+  derive [label="npm run derive\nscripts/derive.ts"];
+  extract_tts [label="npm run extract-tts\nscripts/extract-tts.ts"];
+  extract_mission_kinds [label="npm run extract-mission-kinds\nscripts/extract-mission-kinds.ts"];
+  extract_map_tiles [label="npm run extract-map-tiles\nscripts/extract-map-tiles.ts"];
+  find_images [label="npm run find-images\nscripts/find-images.ts"];
+  download_images [label="npm run download-images\nscripts/download-images.ts"];
+  extract_clearing_types [label="npm run extract-clearing-types\nscripts/extract-clearing-types.py"];
+  download_activemagic [label="npm run download-activemagic-images\nscripts/download-activemagic-images.ts"];
+  missing_cards [label="npm run missing-cards\nscripts/missing-cards.ts"];
+  inspect_fonts [label="npm run inspect-fonts <pdf>\nscripts/inspect_fonts.py"];
+  check_lost_battalion [label="npm run check:lost-battalion\nscripts/check-lost-battalion.ts"];
+
+  steam_cache [label=".cache/steamcmd/...\nSteam workshop files", shape=folder, fillcolor="#ecfeff"];
+  downloaded_tts [label="data/downloaded-tts/dd_all_exp.json", shape=folder, fillcolor="#ecfeff"];
+  downloaded_pdf [label="data/downloaded-pdf/*.pdf", shape=folder, fillcolor="#ecfeff"];
+  parsed_pdf [label="data/parsed-pdf/*.json", shape=folder, fillcolor="#dcfce7"];
+  pdf_images [label="public/images/pdf/<sha>.*", shape=folder, fillcolor="#dcfce7"];
+  annotation_images [label="public/images/annotations/<sha>.png", shape=folder, fillcolor="#dcfce7"];
+  transformed_pdf [label="data/transformed-pdf/*.json", shape=folder, fillcolor="#dcfce7"];
+  derived_docs [label="data/derived/*.json", shape=folder, fillcolor="#dcfce7"];
+  extracted_tts [label="data/extracted-from-tts/*.json", shape=folder, fillcolor="#dcfce7"];
+  treasures [label="data/treasures.json", shape=folder, fillcolor="#dcfce7"];
+  mission_kind_map [label="data/extracted-from-tts/mission-kind-map.json", shape=folder, fillcolor="#dcfce7"];
+  image_urls [label="generated/image-urls.json", shape=folder, fillcolor="#dcfce7"];
+  downloaded_images [label="generated/downloaded-images/*", shape=folder, fillcolor="#dcfce7"];
+  clearing_types [label="data/clearing-types.json", shape=folder, fillcolor="#dcfce7"];
+  active_magic_images [label="generated/activemagic-images/*", shape=folder, fillcolor="#dcfce7"];
+
+  app [label="Next.js app\nsrc/app + src/lib", fillcolor="#fef9c3"];
+  missing_cards_report [label="console report:\nderived leaf titles without TTS cards", shape=note, fillcolor="#fef9c3"];
+  lost_battalion_report [label="console report:\nLost Battalion references", shape=note, fillcolor="#fef9c3"];
+  font_report [label="console report:\nPDF font/size/color stats", shape=note, fillcolor="#fef9c3"];
+
+  npm_steam_refresh -> npm_steam_download;
+  npm_steam_refresh -> npm_steam_copy;
+  steam_workshop -> npm_steam_download -> steam_cache -> npm_steam_copy -> downloaded_tts;
+
+  downloaded_tts -> npm_download_pdfs -> downloaded_pdf;
+
+  manual_releases -> py_extract_all;
+  manual_annotations -> py_extract_all;
+  downloaded_pdf -> py_extract_all;
+  py_extract_all -> parsed_pdf;
+  py_extract_all -> pdf_images;
+  py_extract_all -> annotation_images;
+
+  manual_releases -> py_extract;
+  manual_annotations -> py_extract;
+  downloaded_pdf -> py_extract;
+  py_extract -> parsed_pdf [label="one doc"];
+  py_extract -> pdf_images [label="one doc"];
+  py_extract -> annotation_images [label="one doc"];
+
+  parsed_pdf -> transform;
+  transform_rules -> transform;
+  transform -> transformed_pdf;
+
+  transformed_pdf -> derive;
+  derive_specs -> derive;
+  derive -> derived_docs;
+
+  downloaded_tts -> extract_mission_kinds -> mission_kind_map;
+  downloaded_tts -> extract_tts;
+  manual_mission_stats -> extract_tts;
+  manual_mission_names -> extract_tts;
+  manual_monster_names -> extract_tts;
+  tts_aliases -> extract_tts;
+  derived_docs -> extract_tts [label="class/lineage/spell manifests"];
+  extract_mission_kinds -> extract_tts [label="called internally"];
+  extract_tts -> extracted_tts;
+  extract_tts -> treasures;
+  extract_tts -> mission_kind_map;
+
+  downloaded_tts -> extract_map_tiles -> extracted_tts [label="map-tiles.json only"];
+
+  downloaded_tts -> find_images -> image_urls -> download_images -> downloaded_images;
+  downloaded_tts -> download_activemagic -> active_magic_images;
+  active_magic_pages -> download_activemagic;
+
+  extracted_tts -> extract_clearing_types;
+  downloaded_images -> extract_clearing_types;
+  manual_clearing_anchors -> extract_clearing_types;
+  extract_clearing_types -> clearing_types;
+
+  derived_docs -> missing_cards -> missing_cards_report;
+  extracted_tts -> missing_cards;
+
+  downloaded_tts -> check_lost_battalion -> lost_battalion_report;
+  downloaded_pdf -> inspect_fonts -> font_report;
+
+  transformed_pdf -> app;
+  derived_docs -> app;
+  extracted_tts -> app;
+  treasures -> app;
+  clearing_types -> app;
+  pdf_images -> app;
+  annotation_images -> app;
+
+  py_extract_all -> transform [label="npm run extract order", style=dashed];
+  transform -> derive [label="npm run extract order", style=dashed];
+  derive -> extract_tts [label="npm run extract order", style=dashed];
+}

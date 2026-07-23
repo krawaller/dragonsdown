@@ -43,6 +43,8 @@ npm run extract     # extract mapped PDFs, transform, derive, then extract TTS d
 npm run transform   # re-apply transform.ts without re-extracting PDFs
 ```
 
+See [docs/script-pipeline.dot](docs/script-pipeline.dot) for a Graphviz DOT diagram of the script dependency order, inputs, and outputs.
+
 Extract a single mapped document by release key, then re-apply transform rules:
 
 ```sh
