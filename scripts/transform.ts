@@ -8,7 +8,11 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import { TRANSFORMS } from "../src/lib/transform/rules";
 import { applyTransforms } from "../src/lib/transform";
-import { type RulebookFile, type Section } from "../src/lib/rulebooks";
+import {
+  sectionWithContentNodes,
+  type RulebookFile,
+  type Section,
+} from "../src/lib/rulebooks";
 
 const PARSED_DIR = path.join(process.cwd(), "data", "parsed-pdf");
 const TRANSFORMED_DIR = path.join(process.cwd(), "data", "transformed-pdf");
@@ -25,7 +29,9 @@ async function main(): Promise<void> {
     const before = parsed.content;
     const slug = before[0]?.source;
     if (!slug) throw new Error(`Missing section source in ${fileName}`);
-    const after = applyTransforms(before, TRANSFORMS, slug);
+    const after = applyTransforms(before, TRANSFORMS, slug).map(
+      sectionWithContentNodes,
+    );
     const payload: RulebookFile = { version: parsed.version, content: after };
     await fs.writeFile(
       path.join(TRANSFORMED_DIR, fileName),

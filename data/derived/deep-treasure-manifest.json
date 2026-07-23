@@ -13,6 +13,12 @@
     "content": "Epic Treasure. When first revealed, draw 3 spells to attach to the spire. The base price of the amber spire is 5 + the price of the 3 attached spells. Each spell may be cast one time during Combat by placing a Might Cube and a Speed Cube on the amber spire, then remove the Spell Card from the game. The amber spire is not a Spell Book and spells attached to it may not be learned. No Magic Cubes are needed to cast these spells. Cubes may not be placed on other Weapon or Spell Cards when using this card.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. When first revealed, draw 3 spells to attach to the spire. The base price of the amber spire is 5 + the price of the 3 attached spells. Each spell may be cast one time during Combat by placing a Might Cube and a Speed Cube on the amber spire, then remove the Spell Card from the game. The amber spire is not a Spell Book and spells attached to it may not be learned. No Magic Cubes are needed to cast these spells. Cubes may not be placed on other Weapon or Spell Cards when using this card."
+      }
     ]
   },
   {
@@ -29,6 +35,12 @@
     "content": "Epic Treasure. This is a Spell Book for all game purposes that contains 6 spells.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. This is a Spell Book for all game purposes that contains 6 spells."
+      }
     ]
   },
   {
@@ -45,6 +57,12 @@
     "content": "Epic Treasure. Melee weapon. Optional might box on this card is automatically filled and does not count against the cube limit.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Melee weapon. Optional might box on this card is automatically filled and does not count against the cube limit."
+      }
     ]
   },
   {
@@ -61,6 +79,12 @@
     "content": "Epic Treasure. A purple Magic Cube placed on this treasure counts as a Might Cube on any might box on an active card of this Hero. This card can have cubes placed on it in addition to other cards.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. A purple Magic Cube placed on this treasure counts as a Might Cube on any might box on an active card of this Hero. This card can have cubes placed on it in addition to other cards."
+      }
     ]
   },
   {
@@ -77,6 +101,12 @@
     "content": "Epic Treasure. A yellow Magic Cube placed on this treasure allows the Hero to reroll a Hit Die roll by or against them one time per Combat Round. This card can have cubes placed on it in addition to other cards.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. A yellow Magic Cube placed on this treasure allows the Hero to reroll a Hit Die roll by or against them one time per Combat Round. This card can have cubes placed on it in addition to other cards."
+      }
     ]
   },
   {
@@ -93,6 +123,12 @@
     "content": "Epic Treasure. The Hero has +1 Cunning, Wisdom, and Charisma while equipped. The effects are cumulative with other Treasures.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero has +1 Cunning, Wisdom, and Charisma while equipped. The effects are cumulative with other Treasures."
+      }
     ]
   },
   {
@@ -109,6 +145,12 @@
     "content": "Epic Treasure. The Hero has +1 matching respected icon during a Hire action. The effects are cumulative with other Treasures.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero has +1 matching respected icon during a Hire action. The effects are cumulative with other Treasures."
+      }
     ]
   },
   {
@@ -125,6 +167,12 @@
     "content": "Epic Treasure. Receive one Might Cube while the treasure is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one Might Cube while the treasure is equipped."
+      }
     ]
   },
   {
@@ -141,6 +189,12 @@
     "content": "Epic Treasure. Melee weapon. Two optional might boxes, which may be filled in any order. A Might Cube placed in the final might box is placed in the Hero’s wounded box during the cleanup phase of Combat.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Melee weapon. Two optional might boxes, which may be filled in any order. A Might Cube placed in the final might box is placed in the Hero’s wounded box during the cleanup phase of Combat."
+      }
     ]
   },
   {
@@ -157,6 +211,12 @@
     "content": "Epic Treasure. This is a Spell Book for all game purposes that contains 6 spells.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. This is a Spell Book for all game purposes that contains 6 spells."
+      }
     ]
   },
   {
@@ -173,6 +233,12 @@
     "content": "Epic Treasure. Extra sharp. Ranged weapon.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Extra sharp. Ranged weapon."
+      }
     ]
   },
   {
@@ -189,6 +255,12 @@
     "content": "Epic Treasure. May fly during Combat and once during the Action Phase each turn.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May fly during Combat and once during the Action Phase each turn."
+      }
     ]
   },
   {
@@ -205,6 +277,16 @@
     "content": "Epic Treasure. There are two canopic jars in the game. Individually, they have no game effect (*Heroes still earn the reward for possessing an Epic Treasure*). If a single Hero equips both canopic jars at the same time, immediately discard both jars and select and record any revealed Civilization Location in the Adventure Journal.\n\nOnce per game, if that Hero would die or be removed, they instead place their Hero Chip in the recorded Civilization Location and do not die. They lose no Fame, spells, or possessions, including cards gained after finding the canopic jars, and all cubes become healthy. The Hero is undead for the remainder of the game.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. There are two canopic jars in the game. Individually, they have no game effect (*Heroes still earn the reward for possessing an Epic Treasure*). If a single Hero equips both canopic jars at the same time, immediately discard both jars and select and record any revealed Civilization Location in the Adventure Journal."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Once per game, if that Hero would die or be removed, they instead place their Hero Chip in the recorded Civilization Location and do not die. They lose no Fame, spells, or possessions, including cards gained after finding the canopic jars, and all cubes become healthy. The Hero is undead for the remainder of the game."
+      }
     ]
   },
   {
@@ -221,6 +303,12 @@
     "content": "Epic Treasure. Healthy Might Cubes may only be placed in speed boxes. Healthy Speed Cubes may only be placed in might action boxes. *Remember: Might Cubes* *and boxes are red; Speed Cubes and boxes are brown.*",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Healthy Might Cubes may only be placed in speed boxes. Healthy Speed Cubes may only be placed in might action boxes. *Remember: Might Cubes* *and boxes are red; Speed Cubes and boxes are brown.*"
+      }
     ]
   },
   {
@@ -237,6 +325,12 @@
     "content": "Epic Treasure. May reroll one die during each Learn Action.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May reroll one die during each Learn Action."
+      }
     ]
   },
   {
@@ -253,6 +347,12 @@
     "content": "Epic Treasure. The Hero has +1 matching respected icon during a Hire action. The effects are cumulative with other Treasures.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero has +1 matching respected icon during a Hire action. The effects are cumulative with other Treasures."
+      }
     ]
   },
   {
@@ -269,6 +369,12 @@
     "content": "Epic Treasure. The attack speed of the Dancing Sword is always +1.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The attack speed of the Dancing Sword is always +1."
+      }
     ]
   },
   {
@@ -285,6 +391,12 @@
     "content": "Epic Treasure. The Hero may equip two one-handed weapons simultaneously. They may still only place cubes on one weapon per Combat Round, but may select either weapon each Combat Round.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero may equip two one-handed weapons simultaneously. They may still only place cubes on one weapon per Combat Round, but may select either weapon each Combat Round."
+      }
     ]
   },
   {
@@ -301,6 +413,12 @@
     "content": "Epic Treasure. A black Magic Cube may be placed on Decimation to increase the damage delivered.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. A black Magic Cube may be placed on Decimation to increase the damage delivered."
+      }
     ]
   },
   {
@@ -317,6 +435,12 @@
     "content": "Epic Treasure. Receive one green Magic Cube while the treasure is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one green Magic Cube while the treasure is equipped."
+      }
     ]
   },
   {
@@ -333,6 +457,12 @@
     "content": "Epic Treasure. A green Magic Cube placed on this treasure increases maneuver speed by one. This card can have cubes placed on it in addition to other cards.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. A green Magic Cube placed on this treasure increases maneuver speed by one. This card can have cubes placed on it in addition to other cards."
+      }
     ]
   },
   {
@@ -349,6 +479,16 @@
     "content": "Epic Treasure. Valuable. During the Challenge step of Combat, Monsters always challenge an unhidden Hero that possesses the figurine. spells and other Treasures take precedence over the figurine (*e.g. Alchemical Lure, Discord, etc.*).\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Valuable. During the Challenge step of Combat, Monsters always challenge an unhidden Hero that possesses the figurine. spells and other Treasures take precedence over the figurine (*e.g. Alchemical Lure, Discord, etc.*)."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession."
+      }
     ]
   },
   {
@@ -365,6 +505,12 @@
     "content": "Epic Treasure. Only in play if using the Ruthless Riverlands Terrain Pack. May use ferries at a cost of 0 Gold.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Only in play if using the Ruthless Riverlands Terrain Pack. May use ferries at a cost of 0 Gold."
+      }
     ]
   },
   {
@@ -381,6 +527,12 @@
     "content": "Epic Treasure. May place one Magic Cube in a might box. This cube must come from the Hero’s healthy box and counts against the Combat Round limit.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May place one Magic Cube in a might box. This cube must come from the Hero’s healthy box and counts against the Combat Round limit."
+      }
     ]
   },
   {
@@ -397,6 +549,12 @@
     "content": "Epic Treasure. May move to any revealed Gate clearing paying normal movement costs as if connected by a path.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May move to any revealed Gate clearing paying normal movement costs as if connected by a path."
+      }
     ]
   },
   {
@@ -413,6 +571,12 @@
     "content": "Epic Treasure. Valuable.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Valuable."
+      }
     ]
   },
   {
@@ -429,6 +593,12 @@
     "content": "Epic Treasure. The Hero must wound one Action Cube each turn at the end of their Action Phase. The attack speed of all spells cast by this Hero is +1.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero must wound one Action Cube each turn at the end of their Action Phase. The attack speed of all spells cast by this Hero is +1."
+      }
     ]
   },
   {
@@ -445,6 +615,12 @@
     "content": "Epic Treasure. May reroll any number of dice once during each Search Action.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May reroll any number of dice once during each Search Action."
+      }
     ]
   },
   {
@@ -461,6 +637,16 @@
     "content": "Epic Treasure. Valuable. During Monster Activation, it summons as if a Malevolent Mountain summoning symbol (*Juvenile Dragons*) and a Sound summoning symbol (*Adult Dragon*) are printed on the Map Tile, if not already present. Printed summoning symbols on the Map Tile summon normally. If the Malevolent Mountain and sound summoning symbols are already printed on the Map Tile, dragons are not summoned twice.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Valuable. During Monster Activation, it summons as if a Malevolent Mountain summoning symbol (*Juvenile Dragons*) and a Sound summoning symbol (*Adult Dragon*) are printed on the Map Tile, if not already present. Printed summoning symbols on the Map Tile summon normally. If the Malevolent Mountain and sound summoning symbols are already printed on the Map Tile, dragons are not summoned twice."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession."
+      }
     ]
   },
   {
@@ -477,6 +663,12 @@
     "content": "Epic Treasure. Receive one blue Magic Cube while the treasure is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one blue Magic Cube while the treasure is equipped."
+      }
     ]
   },
   {
@@ -493,6 +685,12 @@
     "content": "Epic Treasure. Valuable.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Valuable."
+      }
     ]
   },
   {
@@ -509,6 +707,12 @@
     "content": "Epic Treasure. Once per turn, may look at the top Treasure Card of a Treasure Site in the same clearing as the Hero.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Once per turn, may look at the top Treasure Card of a Treasure Site in the same clearing as the Hero."
+      }
     ]
   },
   {
@@ -525,6 +729,12 @@
     "content": "Epic Treasure. May use a Learn Action to write a spell that the Hero has learned into a Spell Book. Spell Libram, or Spell Scroll. The Hero receives one cube that matches the banner color of the spell. If a universal spell, the Hero may choose any magic color. The spell is no longer known by the Hero and is placed with the Spell Book, Spell Libram, or Spell Scroll. The Hero does not earn any reward if they later relearn the spell using the Learn Action, but other Heroes may do so normally.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May use a Learn Action to write a spell that the Hero has learned into a Spell Book. Spell Libram, or Spell Scroll. The Hero receives one cube that matches the banner color of the spell. If a universal spell, the Hero may choose any magic color. The spell is no longer known by the Hero and is placed with the Spell Book, Spell Libram, or Spell Scroll. The Hero does not earn any reward if they later relearn the spell using the Learn Action, but other Heroes may do so normally."
+      }
     ]
   },
   {
@@ -541,6 +751,12 @@
     "content": "Epic Treasure. The Hero has Flying Ability. See Flying in the core game rulebook.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero has Flying Ability. See Flying in the core game rulebook."
+      }
     ]
   },
   {
@@ -557,6 +773,12 @@
     "content": "Epic Treasure. A blue Magic Cube placed on this treasure permanently converts a single Magic Cube from one color to another color, in either direction, as shown.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. A blue Magic Cube placed on this treasure permanently converts a single Magic Cube from one color to another color, in either direction, as shown."
+      }
     ]
   },
   {
@@ -573,6 +795,16 @@
     "content": "Epic Treasure. The Hero may not take Sneak or Alert actions while possessing this card. Sneak or Alert actions taken prior to possession are not canceled.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero may not take Sneak or Alert actions while possessing this card. Sneak or Alert actions taken prior to possession are not canceled."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession."
+      }
     ]
   },
   {
@@ -589,6 +821,12 @@
     "content": "Epic Treasure. Armor. Cancels one sword. Lighter than normal chainmail.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. Cancels one sword. Lighter than normal chainmail."
+      }
     ]
   },
   {
@@ -605,6 +843,12 @@
     "content": "Epic Treasure. Armor. Cancels one sword. Lighter than normal plate armor.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. Cancels one sword. Lighter than normal plate armor."
+      }
     ]
   },
   {
@@ -621,6 +865,12 @@
     "content": "Epic Treasure. Armor. Cancels one sword. Lighter than a normal shield.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. Cancels one sword. Lighter than a normal shield."
+      }
     ]
   },
   {
@@ -637,6 +887,12 @@
     "content": "Epic Treasure. May reroll either one of the numbered Summoning Dice once per turn. The effects apply only to the Hero’s clearing with the original die roll applying everywhere else.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May reroll either one of the numbered Summoning Dice once per turn. The effects apply only to the Hero’s clearing with the original die roll applying everywhere else."
+      }
     ]
   },
   {
@@ -653,6 +909,16 @@
     "content": "Epic Treasure. May perform a Search Action in any clearing in the current Map Tile or an adjacent Map Tile. Upon a successful search of an adjacent tile which has no Wilderness or Civilization Tokens in it, place a matching token(s) in the tile. The Hero may then look at the token and decide to place it face-down or face-up (*receiving LP and Fame rewards for revealing tokens, but not physical rewards*).\n\nIf playing using the Exploration rules, the Hero may explore as if in a Mountain Clearing regardless of the actual clearing type.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May perform a Search Action in any clearing in the current Map Tile or an adjacent Map Tile. Upon a successful search of an adjacent tile which has no Wilderness or Civilization Tokens in it, place a matching token(s) in the tile. The Hero may then look at the token and decide to place it face-down or face-up (*receiving LP and Fame rewards for revealing tokens, but not physical rewards*)."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If playing using the Exploration rules, the Hero may explore as if in a Mountain Clearing regardless of the actual clearing type."
+      }
     ]
   },
   {
@@ -669,6 +935,12 @@
     "content": "Epic Treasure. Receive one black Magic Cube while the treasure is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one black Magic Cube while the treasure is equipped."
+      }
     ]
   },
   {
@@ -685,6 +957,12 @@
     "content": "Epic Treasure. Receive one white Magic Cube while the treasure is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one white Magic Cube while the treasure is equipped."
+      }
     ]
   },
   {
@@ -701,6 +979,12 @@
     "content": "Epic Treasure. Receive one yellow Magic Cube while the treasure is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one yellow Magic Cube while the treasure is equipped."
+      }
     ]
   },
   {
@@ -717,6 +1001,12 @@
     "content": "Epic Treasure. No effect other than being valuable.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. No effect other than being valuable."
+      }
     ]
   },
   {
@@ -733,6 +1023,12 @@
     "content": "Epic Treasure. Receive one purple Magic Cube while the item is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one purple Magic Cube while the item is equipped."
+      }
     ]
   },
   {
@@ -749,6 +1045,16 @@
     "content": "Epic Treasure. Armor. A Hero may attempt to hire any Monster with serpent in their name. There is no cost to pay for this hire, but the Hero must haggle 3 times in a row without rolling any door symbols. Any door result cancels the hire attempt and prevents the Hero from attempting to hire that individual Monster this turn. If the helm is destroyed, all hired serpents cancel their attacks and become unhired.\n\nThe serpent helm does not prevent unhired serpents from blocking  and attacking the wearer of the helm if the Hero is unhidden.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. A Hero may attempt to hire any Monster with serpent in their name. There is no cost to pay for this hire, but the Hero must haggle 3 times in a row without rolling any door symbols. Any door result cancels the hire attempt and prevents the Hero from attempting to hire that individual Monster this turn. If the helm is destroyed, all hired serpents cancel their attacks and become unhired."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The serpent helm does not prevent unhired serpents from blocking  and attacking the wearer of the helm if the Hero is unhidden."
+      }
     ]
   },
   {
@@ -765,6 +1071,12 @@
     "content": "Epic Treasure. Reroll any Hide reaction once per turn. Must reroll all dice.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Reroll any Hide reaction once per turn. Must reroll all dice."
+      }
     ]
   },
   {
@@ -781,6 +1093,12 @@
     "content": "Epic Treasure. Any Magic Cube placed on this treasure turns it into armor. If no Magic Cube is on the kaftan, then the kaftan is ignored and cannot be damaged. This card can have cubes placed on it in addition to other cards.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Any Magic Cube placed on this treasure turns it into armor. If no Magic Cube is on the kaftan, then the kaftan is ignored and cannot be damaged. This card can have cubes placed on it in addition to other cards."
+      }
     ]
   },
   {
@@ -797,6 +1115,12 @@
     "content": "Epic Treasure. Armor. Armor value of 3. Weight of 2.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. Armor value of 3. Weight of 2."
+      }
     ]
   },
   {
@@ -813,6 +1137,12 @@
     "content": "Epic Treasure. This treasure may be used as a normal shield. If a white Magic Cube is placed on this treasure during a Combat Round, the Hero takes no wounds from any hits that are blocked by this shield, even if the shield is destroyed. This card can have cubes placed on it in addition to other cards.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. This treasure may be used as a normal shield. If a white Magic Cube is placed on this treasure during a Combat Round, the Hero takes no wounds from any hits that are blocked by this shield, even if the shield is destroyed. This card can have cubes placed on it in addition to other cards."
+      }
     ]
   },
   {
@@ -829,6 +1159,12 @@
     "content": "Epic Treasure. Armor. Armor value of 2. Weight of 2. Cancels 1 extra sword icon.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. Armor value of 2. Weight of 2. Cancels 1 extra sword icon."
+      }
     ]
   },
   {
@@ -845,6 +1181,12 @@
     "content": "Epic Treasure. Melee weapon. When the possessing Hero performs an enchant action, they may choose to enchant the staff of thaumaturgy instead of the Map Tile. Do not flip over the Map Tile. Place the chosen Magic Cube on the staff card instead. If the Magic Cube is later used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the Magic Cube is discarded.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Melee weapon. When the possessing Hero performs an enchant action, they may choose to enchant the staff of thaumaturgy instead of the Map Tile. Do not flip over the Map Tile. Place the chosen Magic Cube on the staff card instead. If the Magic Cube is later used in a box with a wound symbol or the staff of thaumaturgy is unequipped, the Magic Cube is discarded."
+      }
     ]
   },
   {
@@ -861,6 +1203,12 @@
     "content": "Epic Treasure. The Hero may choose to ignore one wound symbol on a Spell Card.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. The Hero may choose to ignore one wound symbol on a Spell Card."
+      }
     ]
   },
   {
@@ -877,6 +1225,16 @@
     "content": "Epic Treasure. No flying, swimming, or Ferry Movement within the Map Tile containing the Storm’s Eye. *Exception: If a Hero begins their Action Phase on a* *River Clearing, they may use normal Ferry Movement to move to the nearest Dock* *Clearing.*\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. No flying, swimming, or Ferry Movement within the Map Tile containing the Storm’s Eye. *Exception: If a Hero begins their Action Phase on a* *River Clearing, they may use normal Ferry Movement to move to the nearest Dock* *Clearing.*"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession."
+      }
     ]
   },
   {
@@ -893,6 +1251,16 @@
     "content": "Epic Treasure. Valuable. During Monster Activation, it summons as if all Local Monster Die summoning icons printed on Map Tiles in adjacent tiles are also located in the Map Tile containing the Summoning Marcation.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Valuable. During Monster Activation, it summons as if all Local Monster Die summoning icons printed on Map Tiles in adjacent tiles are also located in the Map Tile containing the Summoning Marcation."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession."
+      }
     ]
   },
   {
@@ -909,6 +1277,12 @@
     "content": "Epic Treasure. Has a sword icon on two different might boxes. Valuable.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Has a sword icon on two different might boxes. Valuable."
+      }
     ]
   },
   {
@@ -925,6 +1299,12 @@
     "content": "Epic Treasure. Extra sharp. The Hero must wound one unhealable Heart while this treasure is equipped. The Hero regains the Heart if the treasure is unequipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Extra sharp. The Hero must wound one unhealable Heart while this treasure is equipped. The Hero regains the Heart if the treasure is unequipped."
+      }
     ]
   },
   {
@@ -941,6 +1321,12 @@
     "content": "Epic Treasure. After tactics are revealed, but before attacks are processed (*Step 7* *of Combat*), the Hero may move one Speed Cube from attack speed to maneuver speed or vice versa (*as long as there is an open speed box*). During the clean up phase of Combat, any moved cube is placed in the wounded box.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. After tactics are revealed, but before attacks are processed (*Step 7* *of Combat*), the Hero may move one Speed Cube from attack speed to maneuver speed or vice versa (*as long as there is an open speed box*). During the clean up phase of Combat, any moved cube is placed in the wounded box."
+      }
     ]
   },
   {
@@ -957,6 +1343,16 @@
     "content": "Epic Treasure. Only in play if using the Dreadful Deserts Terrain Pack. If the tail of the scorpion is in a Plains Clearing, that clearing is treated as if it was a Desert Clearing for all effects. *For example, non-Auroran Lineages ending their turn in the* *clearing would take a wound.*\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Only in play if using the Dreadful Deserts Terrain Pack. If the tail of the scorpion is in a Plains Clearing, that clearing is treated as if it was a Desert Clearing for all effects. *For example, non-Auroran Lineages ending their turn in the* *clearing would take a wound.*"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession."
+      }
     ]
   },
   {
@@ -973,6 +1369,12 @@
     "content": "Epic Treasure. Do not lose an action when in a Cave Clearing on the Hero’s turn.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Do not lose an action when in a Cave Clearing on the Hero’s turn."
+      }
     ]
   },
   {
@@ -989,6 +1391,12 @@
     "content": "Epic Treasure. Receive one grey Magic Cube while the treasure is equipped.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Receive one grey Magic Cube while the treasure is equipped."
+      }
     ]
   },
   {
@@ -1005,6 +1413,12 @@
     "content": "Epic Treasure. A grey Magic Cube placed on this treasure increases the Hero’s attack speed by one. This card can have cubes placed on it in addition to other cards.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. A grey Magic Cube placed on this treasure increases the Hero’s attack speed by one. This card can have cubes placed on it in addition to other cards."
+      }
     ]
   },
   {
@@ -1021,6 +1435,12 @@
     "content": "Epic Treasure. When casting targeted spells, may reroll one or two Hit Dice on each Hit Dice roll.",
     "tags": [
       "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. When casting targeted spells, may reroll one or two Hit Dice on each Hit Dice roll."
+      }
     ]
   }
 ]

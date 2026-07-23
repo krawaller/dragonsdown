@@ -135,7 +135,7 @@ export async function loadSections(book: Rulebook): Promise<Section[]> {
   const file = path.join(DATA_DIR, book.fileName);
   const raw = await fs.readFile(file, "utf-8");
   const parsed = JSON.parse(raw) as RulebookFile;
-  return parsed.content.map(withContentNodes);
+  return parsed.content.map(ensureContentNodes);
 }
 
 export function contentNodesForMarkdown(
@@ -151,8 +151,12 @@ export function markdownFromContentNodes(nodes: SectionContentNode[]): string {
   return nodes.map(markdownForContentNode).filter(Boolean).join("\n\n");
 }
 
-function withContentNodes(section: Section): Section {
+export function sectionWithContentNodes(section: Section): Section {
   return { ...section, contentNodes: contentNodesForMarkdown(section.content) };
+}
+
+function ensureContentNodes(section: Section): Section {
+  return section.contentNodes ? section : sectionWithContentNodes(section);
 }
 
 function contentNodesForMarkdownBlock(block: string): SectionContentNode[] {

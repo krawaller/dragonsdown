@@ -6,7 +6,11 @@
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { RULEBOOKS, loadSections } from "../src/lib/rulebooks";
+import {
+  RULEBOOKS,
+  loadSections,
+  sectionWithContentNodes,
+} from "../src/lib/rulebooks";
 import { deriveDocument } from "../src/lib/derive";
 import { DERIVED_DOCS } from "../src/lib/derive/docs";
 
@@ -23,7 +27,9 @@ async function main(): Promise<void> {
   );
 
   for (const spec of DERIVED_DOCS) {
-    const sections = deriveDocument(spec, rulebookInputs);
+    const sections = deriveDocument(spec, rulebookInputs).map(
+      sectionWithContentNodes,
+    );
     const outPath = path.join(OUT_DIR, `${spec.slug}.json`);
     await fs.writeFile(outPath, JSON.stringify(sections, null, 2));
     const bySource = countBy(sections, (s) => s.source);

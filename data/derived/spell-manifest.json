@@ -11,7 +11,13 @@
       "section": "top"
     },
     "icon": "/images/pdf/cb33661a999ce2226bc10f45c9dd365f62991849.jpeg",
-    "content": "Universal spells are accessible to all magic users and represent magic that requires no specific discipline of study. All casters of magic have access to spells from the universal arts."
+    "content": "Universal spells are accessible to all magic users and represent magic that requires no specific discipline of study. All casters of magic have access to spells from the universal arts.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Universal spells are accessible to all magic users and represent magic that requires no specific discipline of study. All casters of magic have access to spells from the universal arts."
+      }
+    ]
   },
   {
     "id": "9.6.1.1",
@@ -28,6 +34,12 @@
     "tags": [
       "spell",
       "universalMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Use any color(s) of cubes. Wound one cube. Immediately cancels all curses and spells on the target."
+      }
     ]
   },
   {
@@ -42,7 +54,13 @@
       "section": "middle"
     },
     "icon": "/images/pdf/83d1faf10f08b4963d7faf0bc4e30705098f868c.png",
-    "content": "Black spells are from the realm of death and evil. Black spells tend to bring misfortune, curses, and death  to those targeted by it. Black magic is not subtle."
+    "content": "Black spells are from the realm of death and evil. Black spells tend to bring misfortune, curses, and death  to those targeted by it. Black magic is not subtle.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Black spells are from the realm of death and evil. Black spells tend to bring misfortune, curses, and death  to those targeted by it. Black magic is not subtle."
+      }
+    ]
   },
   {
     "id": "9.6.2.1",
@@ -59,6 +77,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. If the spell hits, the target immediately suffers one wound."
+      }
     ]
   },
   {
@@ -76,6 +100,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one black cube. If the target is a Hero, the targeted Hero destroys one equipped armor card of their choice. If the target is a Monster or Native, they are considered unarmored for the duration of Combat. Monster and Native armor is restored at the end of Combat if the Monster or Native is not killed."
+      }
     ]
   },
   {
@@ -93,6 +123,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one black cube. If the spell hits, the target receives one random curse from the Curse Table. The curse is permanent unless removed via the Break Spells spell or by paying to remove curses at a Civilization Location. Curses are not-cumulative, but a Hero can have multiple curses."
+      }
     ]
   },
   {
@@ -110,6 +146,16 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Permanent. Wound one black cube. If the spell hits a Monster or Native, swap might and attack speed and ignore sword icons. If a Monster is casting a spell, the new attack speed is equal to the number of spell boxes on the matching Spell Card and the Monster attacks with might equal to the old attack speed."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If the spell hits a player, red Might Cubes must be played on brown speed boxes and brown Speed Cubes must be played on red might boxes. Unresolved attacks swap Speed Cubes and Might Cubes immediately as the targeted Hero wishes, and may alter or cancel attacks. *For example, not enough brown Speed Cubes to satisfy the* *mandatory might of a weapon.*"
+      }
     ]
   },
   {
@@ -127,6 +173,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*"
+      }
     ]
   },
   {
@@ -144,6 +196,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound one black cube. Attacks all unhidden, non-flying Heroes and Monsters in the clearing, including the caster. All targets hit by the Fiery Chasm are immediately killed and any possessions are removed from the game."
+      }
     ]
   },
   {
@@ -161,6 +219,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one black cube. If the spell hits a Guardian, the caster may look at all cards in that Guardian’s Treasure Site, even if the site is in another clearing or Map Tile. Be sure to keep the treasures in the same card order when returning them to the Terrain Setup Card. If the spell hits a Hero, the caster may look at all cards and missions of that Hero. If the spell hits a Native, the caster may look at the cards of that Native Group. (*only relevant if using the Native* *Possessions optional rule*). Does not affect the undead."
+      }
     ]
   },
   {
@@ -178,6 +242,20 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Permanent. Wound two black cubes. When the spell is resolved, replace the caster with any non-undead Monster or Native in the same clearing. When the spell is inactive, place the Monster or Native counter on the Spell Card and use the Hero Chip again."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "This spell works identically to Shape Shift, except that it does not need to hit to take effect and the Hero may possess a unique Monster, including Guardians."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If the spell expires (*for example, via a Break Spells spell or other game effects*), both the Hero and the Monster or Native are immediately placed in the clearing. Possessing a Native turns the targeted Native Group into a permanent enemy. Does not affect the undead."
+      }
     ]
   },
   {
@@ -195,6 +273,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Combat. Targeted. Wound one black cube. If the spell hits, the target receives one wound of their choice at the end of each Combat Round until Combat ends, including the two additional rounds of Combat that occur once all wounds and deaths stop in the clearing. Wounds received solely due to rot do not count for the purposes of extending Combat during the cleanup phase. The effects of multiple Rot spells are not cumulative. Does not affect the undead."
+      }
     ]
   },
   {
@@ -212,6 +296,12 @@
     "tags": [
       "spell",
       "blackMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster."
+      }
     ]
   },
   {
@@ -226,7 +316,13 @@
       "section": "top"
     },
     "icon": "/images/pdf/6c40f80651f6f3af13922475a67c4e267ae4d23d.jpeg",
-    "content": "Blue spells are from the realm of conjuring. Blue magic focuses on manifesting and controlling things in the real world. Blue spells tend to break the rules of the physical world for the caster."
+    "content": "Blue spells are from the realm of conjuring. Blue magic focuses on manifesting and controlling things in the real world. Blue spells tend to break the rules of the physical world for the caster.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Blue spells are from the realm of conjuring. Blue magic focuses on manifesting and controlling things in the real world. Blue spells tend to break the rules of the physical world for the caster."
+      }
+    ]
   },
   {
     "id": "9.6.3.4",
@@ -243,6 +339,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Combat. Wound one blue cube. Beginning next Combat Round, in addition to any spells or attacks the caster wishes to do in combat, the caster controls a sword with a might of 2 and 1 sword icon that attacks with a speed of 2 and an attack length of 6. The Air Sword may not be targeted and is immediately removed if the caster is killed or leaves the clearing. The caster receives all rewards for kills made by the Air Sword. If the caster is hidden, they must roll to stay hidden at the end of each Combat Round while the Air Sword is in play."
+      }
     ]
   },
   {
@@ -260,6 +362,16 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self. Permanent. Wound one blue cube. Any Hero, Monster, or Native that targets the caster has an equal chance of instead targeting the doppelganger. After all Hero and Monster Tactics have been revealed, roll the d6 for each Hero, Monster, and Native targeting the caster. On a roll of 1-3, they target the caster. On a roll of 4-6, they target the doppelganger. *Exception: Spells that target “all” in the clearing* (*e.g. Fiery Chasm or Malediction*) *target both the caster and the doppelganger*."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled."
+      }
     ]
   },
   {
@@ -277,6 +389,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. The targeted Hero may have any number of active treasures in their miscellaneous positions."
+      }
     ]
   },
   {
@@ -294,6 +412,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound two blue cubes. Set any one of the Summoning Dice to a side of your choosing. That die will not be rolled next turn and will instead use the selected die face. Should another Hero cast a second foresight spell in the same turn, they may change the already selected die or another die."
+      }
     ]
   },
   {
@@ -311,6 +435,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound one blue cube. Move a Gate in the Hero’s Map Tile to any other clearing of the caster’s choice in the same Map Tile."
+      }
     ]
   },
   {
@@ -328,6 +458,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one blue cube. If the spell hits, the target is placed in a random clearing containing a revealed Gate."
+      }
     ]
   },
   {
@@ -345,6 +481,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one blue cube. If the spell hits, the caster chooses a Map Tile up to two tiles away. Move the target to a random clearing on that tile."
+      }
     ]
   },
   {
@@ -362,6 +504,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Combat. Wound one blue cube. The caster places 4 tentacles on any number of targets, then roll the Hit Dice for each tentacle. Each double hit result lowers the target’s maneuver speed by one. Each single hit result lowers the target’s attack speed by one. Misses have no effect. Tentacles placed on dead targets may be placed elsewhere prior to the Hero tactics step, otherwise they remain in place and the effects continue until the target is dead or the caster dies or leaves the clearing. Roll for the effect of newly placed tentacles immediately. If the caster is hidden, they must roll to stay hidden in any Combat Round that a tentacle is newly placed."
+      }
     ]
   },
   {
@@ -379,6 +527,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one blue cube. May only be cast in a Civilization Location. If the spell hits, the target is placed in a random clearing containing a Civilization Location."
+      }
     ]
   },
   {
@@ -396,6 +550,12 @@
     "tags": [
       "spell",
       "blueMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound one blue cube. This spell takes effect when the spell is cast, Mark up to 3 different targets and then immediately resolve an attack on each with a speed 0 melee attack and a damage of 2. If Combat is occurring in a River Clearing or a clearing containing the Tarn or Abyss, all attacks receive a sword icon as well."
+      }
     ]
   },
   {
@@ -410,7 +570,13 @@
       "section": "bottom"
     },
     "icon": "/images/pdf/e84eb3b73bc97c22dcfe31386beb86c342b621a9.png",
-    "content": "Gray spells are from the realm of trickery. Gray spells often involve altering the view of the world around the caster to confuse others, obfuscate reality, or making things disappear completely."
+    "content": "Gray spells are from the realm of trickery. Gray spells often involve altering the view of the world around the caster to confuse others, obfuscate reality, or making things disappear completely.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Gray spells are from the realm of trickery. Gray spells often involve altering the view of the world around the caster to confuse others, obfuscate reality, or making things disappear completely."
+      }
+    ]
   },
   {
     "id": "9.6.4.4",
@@ -427,6 +593,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one gray cube. The Hero or Monster may not be targeted by any spell with the target symbol on it. Indirect effects of spells without a target symbol may still affect the Hero or Monster.  Anti-Magic does not affect the Fireball of a dragon, but does affect other Monsters that cast Fireball."
+      }
     ]
   },
   {
@@ -444,6 +616,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. The targeted Hero may reroll any number of dice during one Loot Action."
+      }
     ]
   },
   {
@@ -461,6 +639,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. Wound one gray cube. The target’s next hit during this turn causes -1 damage. Enfeeble spells are not cumulative. Does not affect the undead."
+      }
     ]
   },
   {
@@ -478,6 +662,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one gray cube. +1 sword icon to the next hit made by the envenomed Hero or Monster. If the hit target is not killed, it suffers +1 wound. Envenom affects the next hit regardless of whether it is made with a weapon, spell, or treasure. Envenom has no effect on the undead."
+      }
     ]
   },
   {
@@ -495,6 +685,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one gray cube. All attackers targeting the Hero or Monster suffer -1 to their attack speed. The effect is not cumulative with other Illusion spells."
+      }
     ]
   },
   {
@@ -512,6 +708,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted (*infinite number of targets*). Instantaneous. Wound two gray cubes. This spell affects all Monsters, Natives, and Heroes (*including hidden Heroes*) in the clearing except for the caster. The spell causes a single individual melee attack of 1 damage against each target. Does not affect the undead."
+      }
     ]
   },
   {
@@ -529,6 +731,20 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self. Turn. Wound one gray cube. Orcs will not target the caster during Combat and all orcs targeting the caster this Combat Round have their attacks canceled. The orcs will not block the caster during the Action Phase while the spell is active. The spell expires if the caster subsequently targets any orc."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "During the Action Phase, the caster may attempt to hire orcs as if they were normal Natives, including paying 4x Fame in Gold. The caster may haggle using their Cunning attribute. All rules for Hiring Natives applies, including the hire being canceled if the caster targets or attacks an orc. All orcs are considered a single Native Group."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**Orc Kin**: A Half-Orc Hero attempting to hire an orc using orc call receives a +1 Cunning bonus when haggling."
+      }
     ]
   },
   {
@@ -546,6 +762,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound one gray cube. Select an Item or Treasure Card in your possession and set it aside. Then, randomly draw one card from all Treasure and Item Cards belonging to a Merchant in the clearing. Keep the drawn card and place the card set aside with the Merchant. The caster must attempt to hide during the cleanup phase of Combat as per the ambush rules. If the caster fails this Hide reaction, the caster is banned from all future interactions with this Merchant and the caster gains one Outlaw Token."
+      }
     ]
   },
   {
@@ -563,6 +785,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. Wound one gray cube. Select a new target at random from all unhidden Heroes, Monsters, and Natives in the clearing. If the target’s attack has already occurred this round, the spell has no effect. Does not affect the undead."
+      }
     ]
   },
   {
@@ -580,6 +808,12 @@
     "tags": [
       "spell",
       "grayMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Permanent. Wound one gray cube. If the spell hits, the Hero or Monster, and all possessions becomes vapor. All cubes are unavailable. All possessions are unavailable/inactive, but do not move them from their current positions on the Hero Board. The target takes no part in combat.  They may not block or be blocked. They may only perform the explore and Move Actions. They may use all Hidden Paths while in vapor form, even if not found. Used Hidden Paths are not found."
+      }
     ]
   },
   {
@@ -594,7 +828,13 @@
       "section": "middle"
     },
     "icon": "/images/pdf/326891ba2ff12263e7c4efebf962b43e37f49ff9.jpeg",
-    "content": "Green spells are from the realm of nature. Green magic seeks to live harmoniously with the natural world. Green magic calls upon the wild to aid the caster."
+    "content": "Green spells are from the realm of nature. Green magic seeks to live harmoniously with the natural world. Green magic calls upon the wild to aid the caster.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Green spells are from the realm of nature. Green magic seeks to live harmoniously with the natural world. Green magic calls upon the wild to aid the caster."
+      }
+    ]
   },
   {
     "id": "9.6.5.4",
@@ -611,6 +851,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one green cube. If the spell hits, the caster may return the Monster to the appropriate monster tray. The spell has no effect on Heroes, Guardians, or the undead."
+      }
     ]
   },
   {
@@ -628,6 +874,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted (*infinite targets*). Instantaneous. Wound one green cube. Targets all non-flying, unhidden Heroes, Monsters, and Natives in the clearing. The attack is a ranged attack with a base damage of two. If in a cave Clearing, the base damage is three and the spell also targets all flying Heroes, Natives, and Monsters."
+      }
     ]
   },
   {
@@ -645,6 +897,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Combat. Wound one green cube. Randomly select one of the Elemental Monster Chips and place it in the clearing. Next Combat Round, the Elemental participates in combat controlled by the caster. A caster earns no Fame for killing their own Elemental, but earns Fame for kills made by the Elemental. The spell expires if the Elemental is killed, the spell caster is killed, or the spell caster leaves the clearing."
+      }
     ]
   },
   {
@@ -662,6 +920,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one green cube. May reroll any number of dice on the next Ranged Attack Die roll."
+      }
     ]
   },
   {
@@ -679,6 +943,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound one green cube. The caster may permanently rotate their current Map Tile or an adjacent Map Tile, to any orientation and may also  choose to flip the chosen Map Tile over. Any enchantment is unaffected. All edges must match adjacent Map Tiles: paths to paths and non-paths to non-paths."
+      }
     ]
   },
   {
@@ -696,6 +966,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. The targeted Hero may reroll any number of dice during one Search Action."
+      }
     ]
   },
   {
@@ -713,6 +989,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. Wound one green cube. Once next turn the Hero may reject a drawn Wilderness Token and mix it back into the pool of matching Wilderness Tokens and draw a new one, which must be put into play."
+      }
     ]
   },
   {
@@ -730,6 +1012,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound two green cubes. May only be cast while on an edge Map Tile. Move the caster’s tile to any other empty location touching two or more Map Tiles. The affected Map Tile may be rotated as the caster wishes, but must be placed in such a way that all paths on the Map Tile and adjacent Map Tiles connect to existing paths."
+      }
     ]
   },
   {
@@ -747,6 +1035,12 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. Wound one green cube. The Hero may move one clearing for each Move Action, regardless of the clearing type being entered."
+      }
     ]
   },
   {
@@ -764,6 +1058,24 @@
     "tags": [
       "spell",
       "greenMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self. Permanent. Wound one green cube. When this spell is cast (*or active*) the caster selects any non-undead, non-unique Monster counter from the monster tray whose type is printed on the Map Tile in which the caster resides."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "This spell works identical to Shape Shift, except as follows:"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- If the Hero moves to a new Map Tile while the spell is active, they return the selected Monster Chip to the monster tray and must select a Monster as described above (*is printed on the Map Tile being entered*), gaining all characteristics of that Monster immediately."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Note: In a Civilization Map Tile, the caster becomes the Wandering Monster for the Terrain Pack. *For example, in the Mine tile, the caster becomes a Giant Bat.*"
+      }
     ]
   },
   {
@@ -778,7 +1090,13 @@
       "section": "top"
     },
     "icon": "/images/pdf/ec4d84231b6a5eefe56b92198cf03926f14acf40.jpeg",
-    "content": "Purple spells are from the realm of sorcery. Purple magic is about the raw power of magic calling upon sorcery to create energy and control it in the real world. Purple spells create, change, and destroy."
+    "content": "Purple spells are from the realm of sorcery. Purple magic is about the raw power of magic calling upon sorcery to create energy and control it in the real world. Purple spells create, change, and destroy.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Purple spells are from the realm of sorcery. Purple magic is about the raw power of magic calling upon sorcery to create energy and control it in the real world. Purple spells create, change, and destroy."
+      }
+    ]
   },
   {
     "id": "9.6.6.4",
@@ -795,6 +1113,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted (*up to 4 targets*). Ranged Attack. Instantaneous. Wound one Purple cube. Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 1 sword. If only one target is selected, the spell has a base damage of 2 + 2 swords. Note: A dragon’s fire has the effect of a Fireball spell, but is a normal ranged attack, not a spell."
+      }
     ]
   },
   {
@@ -812,6 +1136,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. Wound one Purple cube. The Hero has Flying Ability until the end of the Action Phase next turn (*see Flying on page 23*)."
+      }
     ]
   },
   {
@@ -829,6 +1159,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one purple cube. The caster may move the target to an adjacent clearing along a normal path. The target can be moved to a River Clearing from an adjacent Dock. If in a River Clearing, the target may only be moved to an adjacent River Clearing or Dock. The target receives one wound."
+      }
     ]
   },
   {
@@ -846,6 +1182,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. A hit against this target that does not strike armor follows the rules for armored Monsters (*removes one sword icon*)."
+      }
     ]
   },
   {
@@ -863,6 +1205,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Ranged Attack. Instantaneous. Wound one purple cube. The target is attacked by a ranged attack with a base damage of 1 + 2 swords. If in a mountain or River Clearing, the spell does an additional +1 sword in damage. All ranged damage bonuses and penalties rolled are doubled (*e.g. +1 is +2, -2 is -4, etc.*)."
+      }
     ]
   },
   {
@@ -880,6 +1228,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Instantaneous. Wound one purple cube. The target suffers -1 maneuver speed and loses Flying Ability for the duration of Combat."
+      }
     ]
   },
   {
@@ -897,6 +1251,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one purple cube. The next hit of strength one or more on this target deals no damage or wounds, but destroys the mana shield. The mana shield is hit before any armor of the target."
+      }
     ]
   },
   {
@@ -914,6 +1274,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted (*infinite targets*). Ranged Attack. Instantaneous. Wound two purple cubes.  Each target the spell individually hits is attacked by a separate ranged attack with a base damage of 2 + 2 swords."
+      }
     ]
   },
   {
@@ -931,6 +1297,20 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self. Permanent. Wound one Purple cube. When this spell is cast the caster selects any non-undead, non-unique Monster Chip (*no Guardians or leaders, e.g., Kobold* *Rex*) from the monster tray and replaces their Hero with it. The caster may choose either side of the Monster Chip to be face-up during Hero tactics each Combat Round and ignores the Monster tactics step. The Hero fights as a Monster using the face-up Monster characteristics, ignoring their own cubes and possessions. All Monster wounds are healed at the end of combat."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "While Shape Shift is active, the Hero may perform Sneak, Make Noise, Move, Search,  and Loot Actions. Action Cubes are unavailable. All possessions are inactive (*as if in the backpack*). Possessions gained while Shape Shifted are  placed in the backpack."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "When inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray*.*"
+      }
     ]
   },
   {
@@ -948,6 +1328,12 @@
     "tags": [
       "spell",
       "purpleMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one purple cube. The target’s next hit during this Combat Phase causes +1 base damage, then the spell expires. Strength spells are not cumulative."
+      }
     ]
   },
   {
@@ -962,7 +1348,13 @@
       "section": "bottom"
     },
     "icon": "/images/pdf/f204cb08aa294279f9f7d9d288ad28d6086f35da.png",
-    "content": "White spells are from the realm of life and good. White spells tend to heal, promote life, and bring peace. White magic targets the undead as an abomination."
+    "content": "White spells are from the realm of life and good. White spells tend to heal, promote life, and bring peace. White magic targets the undead as an abomination.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "White spells are from the realm of life and good. White spells tend to heal, promote life, and bring peace. White magic targets the undead as an abomination."
+      }
+    ]
   },
   {
     "id": "9.6.7.2",
@@ -979,6 +1371,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one white cube. If the target is a Hero, move any two cubes currently in the wounded box to the healthy box. If a Monster, remove 2 wounds. May only be cast once per turn."
+      }
     ]
   },
   {
@@ -996,6 +1394,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one white cube. If the target is a Hero, they are protected by weightless armor of strength 2. The armor created by this spell must always be hit first by attacks on this target. It can be damaged and destroyed. It does not prevent wounds. If the target is a Monster, it gains armored status."
+      }
     ]
   },
   {
@@ -1013,6 +1417,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Combat. Wound one white cube. All unhidden Heroes, Monsters, and Natives in the clearing heal two wounds."
+      }
     ]
   },
   {
@@ -1030,6 +1440,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Instantaneous. Repair one damaged armor card."
+      }
     ]
   },
   {
@@ -1047,6 +1463,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Wound one white cube. The next hit that wounds this target deals no wounds. All subsequent attacks for the rest of this Combat Round deal no wounds. The target can still be killed outright by an attack and is affected by non-targeted spells. The target’s armor can still be damaged or destroyed. The target must wound cubes for treasures they possess, spells they cast, and other game effects. The spell expires at the end of any Combat Round during which the above occurs."
+      }
     ]
   },
   {
@@ -1064,6 +1486,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound one white cube. Combat immediately ends in the clearing. Do not finish the Combat Round."
+      }
     ]
   },
   {
@@ -1081,6 +1509,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Permanent. Wound two white cubes. At the end of each Combat Round, including the two rounds at the end of Combat during which nothing happens, roll the two Monster Dice. If neither die shows a Monster symbol, heal one cube."
+      }
     ]
   },
   {
@@ -1098,6 +1532,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Turn. Wound one white cube. During Monster Activation on the next turn, each numbered Summoning Die summons one less Monster to the Hero’s clearing. Guardians and other clearings are not affected."
+      }
     ]
   },
   {
@@ -1115,6 +1555,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Combat. Undead that attack this Hero or Monster must reroll the most favorable single Hit Die result rolled, unless both die results were blank."
+      }
     ]
   },
   {
@@ -1132,6 +1578,12 @@
     "tags": [
       "spell",
       "whiteMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Instantaneous. Wound one white cube. All undead in the clearing are killed."
+      }
     ]
   },
   {
@@ -1146,7 +1598,13 @@
       "section": "middle"
     },
     "icon": "/images/pdf/f541626bf27f147ae91deeb1c205c35c0c35fd2b.jpeg",
-    "content": "Yellow spells are from the realm of enchantment. Yellow spells tend to enchant, befuddle, and mesmerize. Yellow magic is subtle, but powerful for the caster who wields it well."
+    "content": "Yellow spells are from the realm of enchantment. Yellow spells tend to enchant, befuddle, and mesmerize. Yellow magic is subtle, but powerful for the caster who wields it well.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Yellow spells are from the realm of enchantment. Yellow spells tend to enchant, befuddle, and mesmerize. Yellow magic is subtle, but powerful for the caster who wields it well."
+      }
+    ]
   },
   {
     "id": "5.6.7.4",
@@ -1163,6 +1621,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. Wound one yellow cube. Trade and Hire actions by this Hero begin at one lower multiplier. *For example, the price to purchase a treasure from a* *Merchant would begin at 2x the base price.* Does not affect the undead."
+      }
     ]
   },
   {
@@ -1180,6 +1644,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. Wound one yellow cube. All attributes are +2 for all mission reward die rolls and haggle attempts."
+      }
     ]
   },
   {
@@ -1197,6 +1667,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. Wound one yellow cube. If the spell hits, the target may not cast spells. Spells already cast are unaffected. If the target is casting a spell that has not yet been resolved this Combat Round, it is canceled."
+      }
     ]
   },
   {
@@ -1214,6 +1690,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. Wound one yellow cube. The target must roll one additional Hit Die when their attack speed is not faster than their target’s maneuver speed. Does not affect the undead."
+      }
     ]
   },
   {
@@ -1231,6 +1713,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted (*2 targets*). Combat. Wound one yellow cube. The spell must hit two Monsters in the same Combat Round to take effect. If the spell hits two Monsters, cancel their current attacks this Combat Round. On future Combat Rounds, both Monsters will challenge and target each other until one of them is dead or combat ends in the clearing. The caster does not control the Monsters, so they are not targeted by other Monsters. The caster earns Fame for any kills made by these Monsters while the spell is active. The spell expires if, at the end of a Combat Round, one or both Monsters are killed."
+      }
     ]
   },
   {
@@ -1248,6 +1736,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. Wound one yellow cube. Any unresolved attacks this round made by the target are canceled. The target may not attack in future Combat Rounds unless targeted or hit. Once targeted or hit, they may choose a target normally. The attack speed of the next attack performed by the target is at -2 speed. Disorient is not cumulative with other disorient spells."
+      }
     ]
   },
   {
@@ -1265,6 +1759,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self or other. Turn. Wound one yellow cube. Reroll any number of dice one time during one haggle attempt."
+      }
     ]
   },
   {
@@ -1282,6 +1782,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. If the spell hits, the target suffers -1 to their maneuver speed the next time this target is attacked. The spell expires immediately after resolving that attack. Hesitation is not cumulative with other Hesitation spells."
+      }
     ]
   },
   {
@@ -1299,6 +1805,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Targeted. Combat. Wound one yellow cube. The Monster or Native does not change tactics for the duration of Combat. Does not affect Guardians or the undead."
+      }
     ]
   },
   {
@@ -1316,6 +1828,12 @@
     "tags": [
       "spell",
       "yellowMagic"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Self. Permanent. Wound two yellow cubes. The caster may place two Magic Cubes in the Map Tile and heal one wounded cube when enchanting."
+      }
     ]
   }
 ]
