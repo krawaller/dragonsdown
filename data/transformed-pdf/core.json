@@ -1039,11 +1039,15 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*).",
+      "content": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*).\n\n![Annotated civilization location reference](/images/pdf/6ecc562e0c63a969ac45eef5e9a32bf3fa5cfe30.png)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Civilization Locations are larger tokens and represent various places where humanity has repopulated the realm. When a Civilization Map Tile is placed, roll a d6 and place the matching Civilization Location, and Natives listed on the Terrain Pack setup card, in the indicated clearing (*if there is no match, reroll the die*)."
+        },
+        {
+          "kind": "markdown",
+          "markdown": "![Annotated civilization location reference](/images/pdf/6ecc562e0c63a969ac45eef5e9a32bf3fa5cfe30.png)"
         }
       ]
     },
@@ -1157,15 +1161,11 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\nLocation Name\n\n![](/images/pdf/10d1cd8d857ed73385338d4b8e05035c5bd93521.jpeg)\n\nSummoning/Respect Symbol (for the Natives & Legends expansion)\n\n![float-left](/images/pdf/ec8118a41b2073de20c0abfce5c4ef41226c5af4.jpeg) Native Name Attack Length\n\nFame Value\n\nTerrain Pack\n\nHealth\n\nDamage Attack Speed Maneuver Speed\n\nCivilization Token Back\n\nMerchant\n\n![](/images/pdf/cb53f4a28779c4fca5e6b87ef4e633ec30f541b9.jpeg)\n\nSummoning/Respect Symbol (for the Natives & Legends expansion) ![float-left](/images/pdf/2514d848d1eb22a09adb872a37f4d25a2a59492c.jpeg) Native Group\n\nLocation\n\nTerrain Pack\n\nRequirement\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nLimit (if applicable)\n\nTitle and Reward\n\nDescription\n\nTerrain Pack\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
+      "content": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes.\n\n![](/images/pdf/10d1cd8d857ed73385338d4b8e05035c5bd93521.jpeg)\n\nSummoning/Respect Symbol (for the Natives & Legends expansion)\n\nNative Name Attack Length\n\nFame Value\n\nHealth\n\nDamage Attack Speed Maneuver Speed\n\nCivilization Token Back\n\nMerchant\n\n![](/images/pdf/cb53f4a28779c4fca5e6b87ef4e633ec30f541b9.jpeg)\n\nSummoning/Respect Symbol (for the Natives & Legends expansion) ![float-left](/images/pdf/2514d848d1eb22a09adb872a37f4d25a2a59492c.jpeg) Native Group\n\nLocation\n\nTerrain Pack\n\nRequirement\n\n![float-left](/images/pdf/dec92d2478299b07ae949bab687ef79a36bb3e61.jpeg) Mission Name\n\nLimit (if applicable)\n\nTitle and Reward\n\nDescription\n\nTerrain Pack\n\nTerrain Pack\n\nGold, Legend Point, Fame, and Bonus Rewards\n\nWilderness Tokens Front\n\nWilderness Token Back (Terrain Pack) Instant Rewards\n\nTreasure Sites Gates Special Locations\n\n![](/images/pdf/4cdd08e9d71eb0151b22127d8eecf8d983aee5bf.jpeg)\n\nTreasure Site Token Front Treasure Site Token Back\n\n![](/images/pdf/95dfe2aa5260ef96e6fd1678fa655fc2ca9e3de8.jpeg)\n\nTerrain Pack",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Treasure Site Tokens are larger tokens and have the word “Site” on the back. On the front of the token is the name of a Treasure Site and a symbol showing to which Terrain Pack the site belongs. When a Wilderness Token is revealed with “Site” on it, a random Treasure Site Token is drawn and placed in the tile. Wilderness Tokens containing the name of a Treasure Site (*e.g. Secret Cache*) are Treasure Sites for all purposes."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Location Name"
         },
         {
           "kind": "image",
@@ -1177,21 +1177,12 @@
           "markdown": "Summoning/Respect Symbol (for the Natives & Legends expansion)"
         },
         {
-          "kind": "image",
-          "src": "/images/pdf/ec8118a41b2073de20c0abfce5c4ef41226c5af4.jpeg",
-          "display": "float-left"
-        },
-        {
           "kind": "markdown",
           "markdown": "Native Name Attack Length"
         },
         {
           "kind": "markdown",
           "markdown": "Fame Value"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Terrain Pack"
         },
         {
           "kind": "markdown",

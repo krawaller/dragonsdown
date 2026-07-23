@@ -19,5 +19,12 @@
     "target": { "titleRegex": "^Monster Chips$" },
     "bbox": [518, 579, 795, 808],
     "alt": "Annotated monster chip reference"
+  },
+  {
+    "doc": "core",
+    "page": 8,
+    "target": { "titleRegex": "^Civilization Locations$" },
+    "bbox": [437, 75, 531, 190],
+    "alt": "Annotated civilization location reference"
   }
 ]
