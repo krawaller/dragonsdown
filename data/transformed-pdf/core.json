@@ -2744,7 +2744,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Any time a target is hit by an attack with an actual damage one or more, it will either be killed or take one wound. Attacks with an actual damage of less than one have no effect and are ignored.\n\n- If the attack is a spell, apply the effects of the spell as printed on the card. Spells are explained on page 22 of these rules.\n\n- If a weapon, count the number of cubes on the Weapon Card or the number printed on the red cube on the Monster Chip. Add to this damage the number of sword icons covered by cubes on the Weapon Card or printed on the Monster Chip. This is the base damage.\n\n- A Monster or Native is armored if there is a shield icon on the counter. A Hero must choose whether an attack on them hits their head or torso. A Hero is armored if they have an armor card in the position being hit. If the Hero has a shield in a weapon position, they may choose if they want to use the shield as armor for any attack. A Hero must choose which armor to use, if any, before Ranged Attack Dice rolls.\n\n- If the attack has one or more sword icons on it and the target is armored, reduce the base damage by one.\n\n- If the attack is a ranged attack (*arrow symbol on the Monster, Weapon Card, or Spell Card*), the attacking Hero rolls the two Ranged Attack Dice and adjust the base damage by the worst result shown.\n\n- This is the damage done to the target. If the damage damage is less than one, proceed to step D**.**",
+      "content": "Any time a target is hit by an attack with an actual damage one or more, it will either be killed or take one wound. Attacks with an actual damage of less than one have no effect and are ignored.\n\n- If the attack is a spell, apply the effects of the spell as printed on the card. Spells are explained on page 22 of these rules.\n\n- If a weapon, count the number of cubes on the Weapon Card or the number printed on the red cube on the Monster Chip. Add to this damage the number of sword icons covered by cubes on the Weapon Card or printed on the Monster Chip. This is the base damage.\n\n- A Monster or Native is armored if there is a shield icon on the counter. A Hero must choose whether an attack on them hits their head or torso. A Hero is armored if they have an armor card in the position being hit. If the Hero has a shield in a weapon position, they may choose if they want to use the shield as armor for any attack. A Hero must choose which armor to use, if any, before Ranged Attack Dice rolls.\n\n- If the attack has one or more sword icons on it and the target is armored, reduce the base damage by one.\n\n- If the attack is a ranged attack (*arrow symbol on the Monster, Weapon Card, or Spell Card*), the attacking Hero rolls the two Ranged Attack Dice and adjust the base damage by the worst result shown.\n\n- This is the damage done to the target. If the damage damage is less than one, proceed to step D.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -2772,7 +2772,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "- This is the damage done to the target. If the damage damage is less than one, proceed to step D**.**"
+          "markdown": "- This is the damage done to the target. If the damage damage is less than one, proceed to step D."
         }
       ]
     },
@@ -8297,7 +8297,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Self. Permanent. Wound one Purple cube. When this spell is cast the caster selects any non-undead, non-unique Monster Chip (*no Guardians or leaders, e.g., Kobold* *Rex*) from the monster tray and replaces their Hero with it. The caster may choose either side of the Monster Chip to be face-up during Hero tactics each Combat Round and ignores the Monster tactics step. The Hero fights as a Monster using the face-up Monster characteristics, ignoring their own cubes and possessions. All Monster wounds are healed at the end of combat.\n\nWhile Shape Shift is active, the Hero may perform Sneak, Make Noise, Move, Search,  and Loot Actions. Action Cubes are unavailable. All possessions are inactive (*as if in the backpack*). Possessions gained while Shape Shifted are  placed in the backpack.\n\nWhen inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray*.*",
+      "content": "Self. Permanent. Wound one Purple cube. When this spell is cast the caster selects any non-undead, non-unique Monster Chip (*no Guardians or leaders, e.g., Kobold* *Rex*) from the monster tray and replaces their Hero with it. The caster may choose either side of the Monster Chip to be face-up during Hero tactics each Combat Round and ignores the Monster tactics step. The Hero fights as a Monster using the face-up Monster characteristics, ignoring their own cubes and possessions. All Monster wounds are healed at the end of combat.\n\nWhile Shape Shift is active, the Hero may perform Sneak, Make Noise, Move, Search,  and Loot Actions. Action Cubes are unavailable. All possessions are inactive (*as if in the backpack*). Possessions gained while Shape Shifted are  placed in the backpack.\n\nWhen inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray.",
       "tags": [
         "spell",
         "purpleMagic"
@@ -8313,7 +8313,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "When inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray*.*"
+          "markdown": "When inactive, place the Monster Chip near the target’s Hero Board. If the spell is canceled, return the Monster to the appropriate monster tray."
         }
       ]
     },

@@ -350,6 +350,8 @@ def wrap_style(text: str, style: str) -> str:
     leading = text[: len(text) - len(text.lstrip())]
     trailing = text[len(text.rstrip()) :]
     body = text.strip()
+    if not re.search(r"[A-Za-z0-9]", body):
+        return text
     if style == "b":
         body = f"**{body}**"
     elif style == "i":
