@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoardPositionLinks } from "@/components/BoardPositionLinks";
 import { MissionLinks } from "@/components/MissionLinks";
+import { RulebookLinks } from "@/components/RulebookLinks";
+import { resolveWildernessTokenRulebookLinks } from "@/lib/rulebook-links";
 import {
   getCivLocationBySlug,
   getAllWildernessTokenNames,
@@ -33,6 +35,7 @@ export default async function WildernessTokenPage({
   ]);
   const nativeGroups = getNativeGroupsForWildernessToken(entry.name);
   const missions = getMissionsForTarget(entry.name);
+  const rulebookLinks = await resolveWildernessTokenRulebookLinks(entry.slug);
 
   const total = entry.tokens.reduce(
     (sum, token) => sum + tokenTotalCount(token),
@@ -100,6 +103,12 @@ export default async function WildernessTokenPage({
       )}
 
       <MissionLinks missions={missions} />
+
+      <RulebookLinks
+        links={rulebookLinks}
+        heading="Rulebook"
+        className="mb-8"
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {entry.tokens.map((token) => (

@@ -52,7 +52,9 @@ export function markdownBlockAnchorFor(
 
 function pseudoHeadingAnchorFor(markdownBlock: string): string | undefined {
   return markdownBlock
-    .match(/^(?:[-*+]\s+)?(?:!\[[^\]]*\]\([^)]*\)\s+)*\*\*([^*\n]+):\*\*/)?.[1]
+    .match(
+      /^(?:[-*+]\s+)?(?:!\[[^\]]*\]\([^)]*\)\s+)*\*\*([^*\n:]+)(?::\*\*|\*\*:)/,
+    )?.[1]
     ?.trim();
 }
 
@@ -60,10 +62,20 @@ function listItemAnchorFor(markdownBlock: string): string | undefined {
   const listItem = markdownBlock.match(/^[-*+]\s+([\s\S]*)$/)?.[1];
   if (!listItem) return undefined;
 
+  const boldLabel = listItem.match(
+    /^(?:!\[[^\]]*\]\([^)]*\)\s+)*\*\*([^*\n:]+)(?::\*\*|\*\*:)/,
+  )?.[1];
+  if (boldLabel) return boldLabel.trim();
+
   const text = listItem
     .replace(/^!\[[^\]]*\]\([^)]*\)\s+/, "")
     .replace(/[*_`]/g, "")
     .trim();
+  const label = text.match(
+    /^(\p{Lu}[\p{L}'’]*(?:\s+\p{Lu}[\p{L}'’]*){0,3}):\s/u,
+  )?.[1];
+  if (label) return label.trim();
+
   const numberedPhrase = text.match(
     /^\d+\s+\p{Lu}[\p{L}'’]*(?:\s+\p{Lu}[\p{L}'’]*){0,3}/u,
   )?.[0];

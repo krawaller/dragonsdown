@@ -4,10 +4,12 @@ import {
   sectionAnchorIdFor,
   sectionContentAnchorIdFor,
 } from "./rulebook-anchors";
+import { slugify } from "./slug";
 import { normalizeTitle } from "./tts";
 import { getAllClasses } from "./tts/lookup";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
+import wildernessTokenRules from "../../data/manual/wilderness-token-rules.json";
 import {
   RULEBOOKS,
   contentNodesForMarkdown,
@@ -47,6 +49,7 @@ type RelatedClassAbilityMap = {
   monsterGroups?: Record<string, string[]>;
   sites?: Record<string, string[]>;
 };
+type WildernessTokenRulebookLinkMap = Record<string, RulebookLinkQuery[]>;
 type RulebookLinkPreview = {
   content: string;
   contentNodes: SectionContentNode[];
@@ -285,6 +288,29 @@ export async function resolveOptionalRulebookLinks(
   );
 
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
+export async function resolveWildernessTokenRulebookLinks(
+  slug: string,
+): Promise<RulebookLink[]> {
+  const ruleQueries = wildernessTokenRulebookQueriesForSlug(slug);
+  if (!ruleQueries) return [];
+
+  const links = await Promise.all(
+    ruleQueries.map((query) => resolveRulebookLinks(query)),
+  );
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
+function wildernessTokenRulebookQueriesForSlug(
+  slug: string,
+): RulebookLinkQuery[] | undefined {
+  const rules = wildernessTokenRules as WildernessTokenRulebookLinkMap;
+  return (
+    rules[slug] ??
+    Object.entries(rules).find(([key]) => slugify(key) === slug)?.[1]
+  );
 }
 
 function rulebooksForQuery(doc: RulebookLinkQuery["doc"]): Rulebook[] {

@@ -1,0 +1,199 @@
+{
+  "abyss": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "battlefield": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "buried temple": [
+    {
+      "doc": "eastern-reaches",
+      "headings": ["New Map Tokens", "Wilderness Tokens"],
+      "anchor": "Buried Temple:"
+    },
+    {
+      "doc": "eastern-reaches",
+      "headings": [
+        "One-Time Rules & Component Adjustments",
+        "Special Locations Wilderness Tokens"
+      ]
+    }
+  ],
+  "campfire": [
+    {
+      "doc": "natives-and-legends",
+      "headings": ["New Map Tokens", "Wilderness Tokens"],
+      "anchor": "Campfire/Encampment/Inn:"
+    }
+  ],
+  "discovery": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Discovery:"
+    },
+    {
+      "doc": "natives-and-legends",
+      "headings": ["New Map Tokens", "Wilderness Tokens"],
+      "anchor": "Discovery:"
+    },
+    {
+      "doc": "natives-and-legends",
+      "headings": ["OPTIONAL RULES", "Earned Rewards"]
+    }
+  ],
+  "dwarven-ruins": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Forgotten City/Dwarven Ruins:"
+    },
+    {
+      "doc": "eastern-reaches",
+      "headings": [
+        "One-Time Rules & Component Adjustments",
+        "Special Locations Wilderness Tokens"
+      ]
+    }
+  ],
+  "encampment": [
+    {
+      "doc": "natives-and-legends",
+      "headings": ["New Map Tokens", "Wilderness Tokens"],
+      "anchor": "Campfire/Encampment/Inn:"
+    }
+  ],
+  "forgotten-city": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Forgotten City/Dwarven Ruins:"
+    },
+    {
+      "doc": "eastern-reaches",
+      "headings": [
+        "One-Time Rules & Component Adjustments",
+        "Special Locations Wilderness Tokens"
+      ]
+    }
+  ],
+  "gate": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    },
+    {
+      "doc": "core",
+      "headings": ["The actions:", "Move"],
+      "anchor": "Gates:"
+    }
+  ],
+  "grove": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "inn": [
+    {
+      "doc": "natives-and-legends",
+      "headings": ["New Map Tokens", "Wilderness Tokens"],
+      "anchor": "Campfire/Encampment/Inn:"
+    }
+  ],
+  "item": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Item:"
+    },
+    {
+      "doc": "natives-and-legends",
+      "headings": ["OPTIONAL RULES", "Earned Rewards"]
+    }
+  ],
+  "lost-battalion": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "mausoleum": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Treasure:"
+    }
+  ],
+  "oasis": [
+    {
+      "doc": "eastern-reaches",
+      "headings": ["New Map Tokens", "Wilderness Tokens"],
+      "anchor": "Oasis:"
+    }
+  ],
+  "secret-cache": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "site": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Site:"
+    }
+  ],
+  "terrace": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "treasure": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Treasure:"
+    },
+    {
+      "doc": "natives-and-legends",
+      "headings": ["OPTIONAL RULES", "Earned Rewards"]
+    }
+  ],
+  "wreck": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "wrecked-wagons": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ],
+  "ziggurat": [
+    {
+      "doc": "core",
+      "headings": ["Place Tokens:", "Wilderness tiles:"],
+      "anchor": "Numbered Token:"
+    }
+  ]
+}

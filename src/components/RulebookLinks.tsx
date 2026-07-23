@@ -135,5 +135,5 @@ function contentPreview(content: string): string {
 function locationLabel(
   location: NonNullable<RulebookLink["location"]>,
 ): string {
-  return `page ${location.page} · ${location.column} column · ${location.section}`;
+  return `page ${location.page - 1} · ${location.column} column · ${location.section}`;
 }

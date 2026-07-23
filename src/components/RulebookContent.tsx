@@ -1,5 +1,5 @@
 import ReactMarkdown from "react-markdown";
-import type { ReactNode } from "react";
+import { isValidElement, type ReactNode } from "react";
 import type {
   Section,
   SectionContentNode,
@@ -40,6 +40,7 @@ export function RulebookContent({
           <ReactMarkdown
             components={{
               img: MarkdownImage,
+              li: (props) => MarkdownListItem({ ...props, section }),
               p: MarkdownMediaAsideParagraph,
               strong: (props) => MarkdownStrong({ ...props, section }),
             }}
@@ -118,6 +119,9 @@ function MarkdownStrong({
 function textFromNode(node: ReactNode): string {
   if (typeof node === "string" || typeof node === "number") return String(node);
   if (Array.isArray(node)) return node.map(textFromNode).join("");
+  if (isValidElement<{ children?: ReactNode }>(node)) {
+    return textFromNode(node.props.children);
+  }
   return "";
 }
 
