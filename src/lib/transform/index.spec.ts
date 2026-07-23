@@ -128,6 +128,34 @@ describe("Pipeline", () => {
   });
 });
 
+describe("floatImages", () => {
+  it("floats block images in matched sections", () => {
+    const sections = [
+      s(
+        "1",
+        `${IMG("aaa")}
+
+Body`,
+        { title: "Credits" },
+      ),
+      s("2", IMG("bbb"), { title: "Other" }),
+    ];
+    const rules: Rule[] = [
+      {
+        op: "floatImages",
+        target: { titleRegex: "^Credits$" },
+        direction: "right",
+      },
+    ];
+    const out = applyTransforms(sections, rules, "core");
+
+    expect(out[0].content).toBe(`![float-right](/images/aaa.png)
+
+Body`);
+    expect(out[1].content).toBe(IMG("bbb"));
+  });
+});
+
 describe("extractFooter", () => {
   it("splits a trailing image pair (no copyright text) into a new L1 section", () => {
     const sections = [

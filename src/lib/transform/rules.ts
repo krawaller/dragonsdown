@@ -76,4 +76,9 @@ export const TRANSFORMS: Rule[] = [
     target: "ALL",
     title: "Credits",
   },
+  {
+    op: "floatImages",
+    target: { titleRegex: "^Credits$" },
+    direction: "right",
+  },
 ];

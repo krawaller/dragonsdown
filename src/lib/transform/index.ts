@@ -7,7 +7,8 @@ export type Rule =
   | AddTagRule
   | ExtractFooterRule
   | MoveImageRule
-  | MoveImagesRule;
+  | MoveImagesRule
+  | FloatImagesRule;
 
 export type IgnoreImagesRule = {
   op: "ignoreImages";
@@ -21,6 +22,12 @@ export type AddTagRule = {
   target: Target;
   /** A single tag or several to apply at once. Duplicates are skipped. */
   tag: string | string[];
+};
+
+export type FloatImagesRule = {
+  op: "floatImages";
+  target: Target;
+  direction: "left" | "right";
 };
 
 /**
@@ -107,6 +114,15 @@ function applyRule(sections: Section[], rule: Rule): Section[] {
         const missing = toAdd.filter((t) => !existing.includes(t));
         if (missing.length === 0) return s;
         return { ...s, tags: [...existing, ...missing] };
+      });
+    }
+    case "floatImages": {
+      const ids = selectMatchingIds(rule.target, sections);
+      if (ids.size === 0) return sections;
+      return sections.map((s) => {
+        if (!ids.has(s.id)) return s;
+        const content = floatImages(s.content, rule.direction);
+        return content === s.content ? s : { ...s, content };
       });
     }
     case "extractFooter":
@@ -206,6 +222,14 @@ function moveOneImage(
 // layout (`/images/pdf/<hash>.<ext>`); the hash group is what we match against
 // `imageIds`.
 const IMAGE_REF_RE = /!\[\]\(\/images\/(?:[a-z]+\/)?([a-f0-9]+)\.[a-z]+\)/g;
+
+function floatImages(content: string, direction: "left" | "right"): string {
+  const display = `float-${direction}`;
+  return content.replace(
+    /!\[\]\((\/images\/(?:[a-z]+\/)?[a-f0-9]+\.[a-z]+)\)/g,
+    `![${display}]($1)`,
+  );
+}
 
 function stripImages(content: string, imageIds: readonly string[]): string {
   if (!imageIds.length) return content;
