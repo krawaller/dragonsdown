@@ -10,9 +10,13 @@ import monsterReferenceAliases from "../../data/manual/monster-reference-aliases
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
 import {
   RULEBOOKS,
+  contentNodesForMarkdown,
   loadSections,
+  markdownFromContentNodes,
   type Rulebook,
   type Section,
+  type SectionContentNode,
+  type SectionImageContentNode,
   type SectionLocation,
 } from "./rulebooks";
 
@@ -30,6 +34,7 @@ export type RulebookLink = {
   sectionId: string;
   sectionTitle: string;
   content: string;
+  contentNodes?: SectionContentNode[];
   anchor?: string;
   icon?: string;
   icons?: string[];
@@ -44,11 +49,9 @@ type RelatedClassAbilityMap = {
 };
 type RulebookLinkPreview = {
   content: string;
+  contentNodes: SectionContentNode[];
   icons?: string[];
 };
-
-const LEADING_FLOAT_IMAGE_RE =
-  /^([-*+]\s+)?!\[float-(?:left|right)(?:-companion)?\]\(([^)]*)\)\s*/;
 
 export async function resolveRulebookLinks(
   query: RulebookLinkQuery,
@@ -321,6 +324,7 @@ function rulebookLinkForSection(
     sectionId: section.id,
     sectionTitle: section.title,
     content: preview.content,
+    contentNodes: preview.contentNodes,
     anchor,
     icon: icons.length === 1 ? icons[0] : undefined,
     icons: icons.length > 1 ? icons : undefined,
@@ -342,23 +346,35 @@ function linkPreviewFor(
   const content = anchor
     ? (markdownSliceForAnchor(section.content, anchor) ?? section.content)
     : section.content;
-  return promoteLeadingFloatImages(content);
+  const contentNodes = anchor
+    ? contentNodesForMarkdown(content)
+    : (section.contentNodes ?? contentNodesForMarkdown(content));
+  return promoteLeadingPreviewImages(contentNodes);
 }
 
-function promoteLeadingFloatImages(content: string): RulebookLinkPreview {
+function promoteLeadingPreviewImages(
+  contentNodes: SectionContentNode[],
+): RulebookLinkPreview {
   const icons: string[] = [];
-  let remaining = content.trimStart();
+  const remaining = [...contentNodes];
 
-  while (true) {
-    const match = remaining.match(LEADING_FLOAT_IMAGE_RE);
-    if (!match) break;
-
-    const bullet = match[1] ?? "";
-    icons.push(match[2]);
-    remaining = `${bullet}${remaining.slice(match[0].length).trimStart()}`;
+  while (isPreviewIconImage(remaining[0])) {
+    const image = remaining[0];
+    icons.push(image.src);
+    remaining.shift();
   }
 
-  return { content: remaining, icons: icons.length > 0 ? icons : undefined };
+  return {
+    content: markdownFromContentNodes(remaining),
+    contentNodes: remaining,
+    icons: icons.length > 0 ? icons : undefined,
+  };
+}
+
+function isPreviewIconImage(
+  node: SectionContentNode | undefined,
+): node is SectionImageContentNode {
+  return Boolean(node && node.kind === "image");
 }
 
 function childSections(sections: Section[], parent: Section): Section[] {

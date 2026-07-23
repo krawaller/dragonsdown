@@ -19,6 +19,28 @@ export type SectionLocation = {
   section: "top" | "middle" | "bottom";
 };
 
+export type SectionMarkdownContentNode = {
+  kind: "markdown";
+  markdown: string;
+};
+
+export type SectionImageDisplay =
+  | "block"
+  | "float-left"
+  | "float-left-companion"
+  | "float-right"
+  | "float-right-companion";
+
+export type SectionImageContentNode = {
+  kind: "image";
+  src: string;
+  display: SectionImageDisplay;
+};
+
+export type SectionContentNode =
+  | SectionMarkdownContentNode
+  | SectionImageContentNode;
+
 export type Section = {
   /** Hierarchical id like "2.1.0.3"; digit count equals `level`. */
   id: string;
@@ -36,6 +58,8 @@ export type Section = {
   icons?: string[];
   /** Markdown: **bold**, *italic*, `- ` bullets, `![](/images/<hash>.<ext>)` */
   content: string;
+  /** Structured content nodes derived from markdown for renderers. */
+  contentNodes?: SectionContentNode[];
   /** Free-form labels added by transform rules (e.g. "classAdvantage"). */
   tags?: string[];
 };
@@ -111,5 +135,63 @@ export async function loadSections(book: Rulebook): Promise<Section[]> {
   const file = path.join(DATA_DIR, book.fileName);
   const raw = await fs.readFile(file, "utf-8");
   const parsed = JSON.parse(raw) as RulebookFile;
-  return parsed.content;
+  return parsed.content.map(withContentNodes);
+}
+
+export function contentNodesForMarkdown(
+  markdown: string,
+): SectionContentNode[] {
+  return markdown
+    .trim()
+    .split(/\n{2,}/)
+    .flatMap(contentNodesForMarkdownBlock);
+}
+
+export function markdownFromContentNodes(nodes: SectionContentNode[]): string {
+  return nodes.map(markdownForContentNode).filter(Boolean).join("\n\n");
+}
+
+function withContentNodes(section: Section): Section {
+  return { ...section, contentNodes: contentNodesForMarkdown(section.content) };
+}
+
+function contentNodesForMarkdownBlock(block: string): SectionContentNode[] {
+  const nodes: SectionContentNode[] = [];
+  let remaining = block.trimStart();
+
+  while (true) {
+    const match = remaining.match(
+      /^([-*+]\s+)?!\[(float-left|float-left-companion|float-right|float-right-companion|)\]\(([^)]*)\)\s*/,
+    );
+    if (!match) break;
+
+    const bullet = match[1] ?? "";
+    const display = imageDisplayForAlt(match[2]);
+    nodes.push({ kind: "image", src: match[3], display });
+    remaining = `${bullet}${remaining.slice(match[0].length).trimStart()}`;
+  }
+
+  if (remaining) nodes.push({ kind: "markdown", markdown: remaining });
+  return nodes;
+}
+
+function imageDisplayForAlt(alt: string): SectionImageDisplay {
+  if (
+    alt === "float-left" ||
+    alt === "float-left-companion" ||
+    alt === "float-right" ||
+    alt === "float-right-companion"
+  ) {
+    return alt;
+  }
+  return "block";
+}
+
+function markdownForContentNode(node: SectionContentNode): string {
+  if (node.kind === "markdown") return node.markdown;
+  return `![${imageAltForDisplay(node.display)}](${node.src})`;
+}
+
+function imageAltForDisplay(display: SectionImageDisplay): string {
+  return display === "block" ? "" : display;
 }

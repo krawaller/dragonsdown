@@ -1,15 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
-import type { ReactNode } from "react";
 import type { HeadingStyle, Section, SectionLevel } from "@/lib/rulebooks";
-import {
-  sectionAnchorIdFor,
-  sectionContentAnchorIdFor,
-} from "@/lib/rulebook-anchors";
+import { sectionAnchorIdFor } from "@/lib/rulebook-anchors";
 import { shortNameForSource } from "@/lib/docs";
 import { findCards } from "@/lib/tts/lookup";
 import { CardImages } from "./CardImages";
+import { RulebookContent } from "./RulebookContent";
 
 const HEADING_TAG: Record<SectionLevel, "h2" | "h3" | "h4" | "h5" | "h6"> = {
   1: "h2",
@@ -111,67 +107,16 @@ export function SectionView({
       {cards.length > 0 && <CardImages cards={cards} />}
       {section.content && (
         <div className="rulebook-content prose prose-zinc dark:prose-invert max-w-none">
-          <ReactMarkdown
-            components={{
-              img: MarkdownImage,
-              strong: (props) => MarkdownStrong({ ...props, section }),
-            }}
-          >
-            {section.content}
-          </ReactMarkdown>
+          <RulebookContent
+            nodes={
+              section.contentNodes ?? [
+                { kind: "markdown", markdown: section.content },
+              ]
+            }
+            section={section}
+          />
         </div>
       )}
     </section>
   );
 }
-
-function MarkdownStrong({
-  children,
-  section,
-}: {
-  children?: ReactNode;
-  section: Section;
-}) {
-  const text = textFromNode(children);
-  const anchor = text.match(/^(.*):$/)?.[1]?.trim();
-  return (
-    <strong
-      id={anchor ? sectionContentAnchorIdFor(section, anchor) : undefined}
-      className={anchor ? "scroll-mt-6" : undefined}
-    >
-      {children}
-    </strong>
-  );
-}
-
-function textFromNode(node: ReactNode): string {
-  if (typeof node === "string" || typeof node === "number") return String(node);
-  if (Array.isArray(node)) return node.map(textFromNode).join("");
-  return "";
-}
-
-/* eslint-disable @next/next/no-img-element */
-function MarkdownImage({ alt, src }: { alt?: string; src?: string | Blob }) {
-  if (typeof src !== "string") return null;
-  const isInline = alt === "inline";
-  const isFloatLeft = alt === "float-left" || alt === "float-left-companion";
-  const isFloatRight = alt === "float-right" || alt === "float-right-companion";
-  const shouldClear = alt === "float-left" || alt === "float-right";
-  const clearClass = shouldClear ? "clear-both " : "";
-  return (
-    <img
-      src={src}
-      alt={isInline || isFloatLeft || isFloatRight ? "" : (alt ?? "")}
-      className={
-        isInline
-          ? "not-prose inline-block h-[1.35em] w-auto align-[-0.2em]"
-          : isFloatLeft
-            ? `not-prose ${clearClass}float-left mr-4 mb-2 mt-1 h-16 w-16 object-contain`
-            : isFloatRight
-              ? `not-prose ${clearClass}float-right ml-4 mb-2 mt-1 h-16 w-16 object-contain`
-              : undefined
-      }
-    />
-  );
-}
-/* eslint-enable @next/next/no-img-element */

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
 import type { RulebookLink } from "@/lib/rulebook-links";
+import { RulebookContent } from "./RulebookContent";
 
 export function RulebookLinks({
   links,
@@ -65,7 +65,13 @@ export function RulebookLinks({
                     Contents
                   </summary>
                   <div className="prose prose-zinc dark:prose-invert max-w-none p-3 text-sm">
-                    <ReactMarkdown>{link.content}</ReactMarkdown>
+                    <RulebookContent
+                      nodes={
+                        link.contentNodes ?? [
+                          { kind: "markdown", markdown: link.content },
+                        ]
+                      }
+                    />
                   </div>
                 </details>
               )}

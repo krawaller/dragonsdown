@@ -78,6 +78,12 @@ describe("resolveRulebookLinks", () => {
         sectionTitle: "Desert Clearings",
         icon: "/images/pdf/f6844a13fa69d074640779670fc8c922d3b7f162.jpeg",
         content: expect.not.stringContaining("![float-right]"),
+        contentNodes: expect.arrayContaining([
+          expect.objectContaining({
+            kind: "markdown",
+            markdown: expect.stringContaining("Dreadful Desert tiles"),
+          }),
+        ]),
       }),
     ]);
   });
