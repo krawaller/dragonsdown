@@ -1366,11 +1366,15 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Heroes receive Outlaw Tokens when they complete Atrocity missions or attack other Heroes and Natives of the realm.",
+      "content": "Heroes receive Outlaw Tokens when they complete Atrocity missions or attack other Heroes and Natives of the realm.\n\n![Annotated hero chip and targeting token reference](/images/annotations/bd8b6266547cf680845e4671ae8cbc6c0035803d.png)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Heroes receive Outlaw Tokens when they complete Atrocity missions or attack other Heroes and Natives of the realm."
+        },
+        {
+          "kind": "markdown",
+          "markdown": "![Annotated hero chip and targeting token reference](/images/annotations/bd8b6266547cf680845e4671ae8cbc6c0035803d.png)"
         }
       ]
     },
@@ -1472,20 +1476,11 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "The back side of the Reference Cards show the possible curses a Hero could receive during the game. When a hero receives a non-instant effect curse, place a Status Cubes in the appropriate box on the curse Reference Card.\n\n![](/images/pdf/d604a4c93aae8b22fec1e7b867fcb394794463ff.jpeg)\n\nHero Chip Targeting Token Outlaw Token\n\n![](/images/pdf/e610a67fe572fa22657d313974619594f08d1c71.jpeg)\n\nMight Cube\n\nSpeed Cube Magic Cubes\n\nStatus Cube\n\nHeart (Action Cube for all purposes)\n\nReference Card Front (Scoring) Reference Card Back (Curses)\n\n![](/images/pdf/c79003e1fd83f1d0e4bc6a670ed170e75ce10cc0.jpeg)",
+      "content": "The back side of the Reference Cards show the possible curses a Hero could receive during the game. When a hero receives a non-instant effect curse, place a Status Cubes in the appropriate box on the curse Reference Card.\n\n![](/images/pdf/e610a67fe572fa22657d313974619594f08d1c71.jpeg)\n\nMight Cube\n\nSpeed Cube Magic Cubes\n\nStatus Cube\n\nHeart (Action Cube for all purposes)\n\nReference Card Front (Scoring) Reference Card Back (Curses)\n\n![](/images/pdf/c79003e1fd83f1d0e4bc6a670ed170e75ce10cc0.jpeg)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "The back side of the Reference Cards show the possible curses a Hero could receive during the game. When a hero receives a non-instant effect curse, place a Status Cubes in the appropriate box on the curse Reference Card."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/d604a4c93aae8b22fec1e7b867fcb394794463ff.jpeg",
-          "display": "block"
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Hero Chip Targeting Token Outlaw Token"
         },
         {
           "kind": "image",

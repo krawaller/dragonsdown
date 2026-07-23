@@ -136,5 +136,13 @@
       "Miscellaneous Storage (Status Cubes, etc.)",
       "Class Card Slot"
     ]
+  },
+  {
+    "doc": "core",
+    "page": 11,
+    "target": { "titleRegex": "^Outlaw Tokens$" },
+    "bbox": [465, 93, 775, 216],
+    "alt": "Annotated hero chip and targeting token reference",
+    "expectedTexts": ["Outlaw Token"]
   }
 ]
