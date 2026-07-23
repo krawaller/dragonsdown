@@ -752,7 +752,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Dragons Down is a world full of magic. Heroes can enchant the land, cast spells, learn new spells, and buy spells from Merchants. The layout of Spell Cards is very similar to the layout of Item and Treasure Cards, but adds some additional information like duration, targeting, and Magic Cube requirements.\n\nSpells are explained in detail later in these rules.\n\nHidden Box Alert Box Sneak Box\n\n![Annotated spell card reference](/images/annotations/ccfa959b58d927c31bbbb69cf65f49c829d7c0b8.png)"
+      "content": "Dragons Down is a world full of magic. Heroes can enchant the land, cast spells, learn new spells, and buy spells from Merchants. The layout of Spell Cards is very similar to the layout of Item and Treasure Cards, but adds some additional information like duration, targeting, and Magic Cube requirements.\n\nSpells are explained in detail later in these rules.\n\n![Annotated spell card reference](/images/annotations/ccfa959b58d927c31bbbb69cf65f49c829d7c0b8.png)"
     },
     {
       "id": "5.0.17",
@@ -765,7 +765,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "The Hero Board is a representation of the Hero, their status, and their equipment. The player places their Lineage and Class Cards together to form their Hero, their Action Cubes and Hearts in the healthy box, inactive cards face-down in the backpack and active cards face-up in the positions that match the card’s position symbols. Spells are placed underneath the Hero Board.\n\nAction Cubes and Hearts in the healthy box are considered healthy (*usable*). During the game, a Hero’s Action Cubes (*including Hearts*) may be moved to the wounded box to show that those Action Cubes are wounded (*unusable*).\n\nThe top of the Hero Board shows the various actions a Hero may take during their Action Phase. The black arrow in the upper left is the symbol for all actions. The symbol for each individual action is shown next to its description.\n\nMake Noise Box Actions Reference\n\n![](/images/pdf/9618b62900a6db13eddfd21b82196e98cfc1ee3f.jpeg)\n\nMiscellaneous Position\n\nTwo-Slot Positions\n\nBackpack\n\nMiscellaneous Storage (Status Cubes, etc.)\n\nHealthy Box Wounded Box Lineage Card Slot Class Card Slot"
+      "content": "The Hero Board is a representation of the Hero, their status, and their equipment. The player places their Lineage and Class Cards together to form their Hero, their Action Cubes and Hearts in the healthy box, inactive cards face-down in the backpack and active cards face-up in the positions that match the card’s position symbols. Spells are placed underneath the Hero Board.\n\nAction Cubes and Hearts in the healthy box are considered healthy (*usable*). During the game, a Hero’s Action Cubes (*including Hearts*) may be moved to the wounded box to show that those Action Cubes are wounded (*unusable*).\n\nThe top of the Hero Board shows the various actions a Hero may take during their Action Phase. The black arrow in the upper left is the symbol for all actions. The symbol for each individual action is shown next to its description.\n\n![Annotated hero board reference](/images/annotations/c69ffa47b459efb71069393a156b27a482410149.png)"
     },
     {
       "id": "5.0.18",

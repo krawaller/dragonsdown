@@ -124,5 +124,17 @@
     "bbox": [402, 88, 599, 292],
     "alt": "Annotated spell card reference",
     "expectedTexts": ["Requirements"]
+  },
+  {
+    "doc": "core",
+    "page": 10,
+    "target": { "titleRegex": "^Hero Board$" },
+    "bbox": [316, 329, 830, 807],
+    "alt": "Annotated hero board reference",
+    "expectedTexts": [
+      "Make Noise Box",
+      "Miscellaneous Storage (Status Cubes, etc.)",
+      "Class Card Slot"
+    ]
   }
 ]
