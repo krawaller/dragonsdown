@@ -29,13 +29,16 @@ export default async function EquipmentDetailPage({
   const { slug } = await params;
   const entry = getEquipmentBySlug(slug);
   if (!entry) notFound();
+  const hasLegendaryTreasure = entry.decks.includes("legendary");
   const sourceCards = equipmentSourceCards(entry);
-  const legendaryLocations = getLegendaryLocationsForEquipment(entry.name);
+  const legendaryLocations = hasLegendaryTreasure
+    ? getLegendaryLocationsForEquipment(entry.name)
+    : [];
   const rulebookLinks = await resolveEquipmentRulebookLinks({
     name: entry.name,
     hasTreasure: entry.treasures.length > 0,
     hasItem: entry.item !== undefined,
-    hasLegendaryTreasure: entry.decks.includes("legendary"),
+    hasLegendaryTreasure,
   });
 
   return (
@@ -73,7 +76,8 @@ export default async function EquipmentDetailPage({
       {legendaryLocations.length > 0 && (
         <section className="mb-8 rounded border border-zinc-200 dark:border-zinc-800 p-4">
           <h2 className="text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-2">
-            Legendary Location{legendaryLocations.length === 1 ? "" : "s"}
+            Connected Legendary Location
+            {legendaryLocations.length === 1 ? "" : "s"}
           </h2>
           <div className="flex flex-wrap gap-2">
             {legendaryLocations.map((location) => (
