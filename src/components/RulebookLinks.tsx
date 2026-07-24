@@ -58,9 +58,7 @@ function RulebookLinkCard({ link }: { link: RulebookLink }) {
           )}
           <span className="flex min-w-0 flex-1 flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <span className="min-w-0 max-w-full truncate font-medium">
-              {link.anchor
-                ? `${link.sectionTitle}: ${link.anchor}`
-                : link.sectionTitle}
+              {rulebookLinkDisplayTitle(link)}
             </span>
             <Link
               href={link.href}
@@ -115,6 +113,13 @@ function RulebookLinkCard({ link }: { link: RulebookLink }) {
         </div>
       )}
     </div>
+  );
+}
+
+function rulebookLinkDisplayTitle(link: RulebookLink): string {
+  return (
+    link.title ??
+    (link.anchor ? `${link.sectionTitle}: ${link.anchor}` : link.sectionTitle)
   );
 }
 

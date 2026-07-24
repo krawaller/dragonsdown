@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { ClassAdvantageCard } from "@/components/ClassAdvantageCard";
 import { RulebookLinks } from "@/components/RulebookLinks";
-import { resolveClassAdvantageRulebookLinks } from "@/lib/rulebook-links";
+import { resolveClassRulebookLinks } from "@/lib/rulebook-links";
 import type { TTSClassTile } from "@/lib/tts";
 import { getAllClasses, getClassBySlug } from "@/lib/tts/lookup";
 
@@ -21,9 +21,10 @@ export default async function ClassPage({
   if (!entry) notFound();
   const ttsClass = entry.classes[0];
   if (!ttsClass) notFound();
-  const rulebookLinks = await resolveClassAdvantageRulebookLinks(
-    ttsClass.advantageTitle,
-  );
+  const rulebookLinks = await resolveClassRulebookLinks({
+    slug: entry.slug,
+    advantageTitle: ttsClass.advantageTitle,
+  });
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">

@@ -7,6 +7,8 @@ import {
 import { slugify } from "./slug";
 import { normalizeTitle } from "./tts";
 import { getAllClasses } from "./tts/lookup";
+import classRules from "../../data/manual/class-rules.json";
+import lineageRules from "../../data/manual/lineage-rules.json";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
 import wildernessTokenRules from "../../data/manual/wilderness-token-rules.json";
@@ -28,6 +30,7 @@ export type RulebookLinkQuery = {
   doc: typeof ANY_DOC | string;
   headings: string[];
   anchor?: string;
+  title?: string;
 };
 
 export type RulebookLink = {
@@ -35,6 +38,7 @@ export type RulebookLink = {
   docTitle: string;
   sectionId: string;
   sectionTitle: string;
+  title?: string;
   content: string;
   contentNodes?: SectionContentNode[];
   anchor?: string;
@@ -49,7 +53,7 @@ type RelatedClassAbilityMap = {
   monsterGroups?: Record<string, string[]>;
   sites?: Record<string, string[]>;
 };
-type WildernessTokenRulebookLinkMap = Record<string, RulebookLinkQuery[]>;
+type ManualRulebookLinkMap = Record<string, RulebookLinkQuery[]>;
 type RulebookLinkPreview = {
   content: string;
   contentNodes: SectionContentNode[];
@@ -65,7 +69,7 @@ export async function resolveRulebookLinks(
   const links = await Promise.all(
     books.map(async (book) => {
       const sections = await loadSections(book);
-      return resolveSections(book, sections, query.headings, query.anchor);
+      return resolveSections(book, sections, query);
     }),
   );
 
@@ -177,6 +181,24 @@ export async function resolveClassAdvantageRulebookLinks(
   });
 }
 
+export async function resolveClassRulebookLinks({
+  slug,
+  advantageTitle,
+}: {
+  slug: string;
+  advantageTitle: string;
+}): Promise<RulebookLink[]> {
+  const links = await Promise.all([
+    resolveClassAdvantageRulebookLinks(advantageTitle),
+    resolveManualRulebookLinksForSlug(
+      classRules as ManualRulebookLinkMap,
+      slug,
+    ),
+  ]);
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
 export async function resolveLineageAdvantageRulebookLinks(
   advantageTitle: string,
 ): Promise<RulebookLink[]> {
@@ -187,6 +209,24 @@ export async function resolveLineageAdvantageRulebookLinks(
       lineageAdvantageTitleAlternatives(advantageTitle).join("|"),
     ],
   });
+}
+
+export async function resolveLineageRulebookLinks({
+  slug,
+  advantageTitle,
+}: {
+  slug: string;
+  advantageTitle: string;
+}): Promise<RulebookLink[]> {
+  const links = await Promise.all([
+    resolveLineageAdvantageRulebookLinks(advantageTitle),
+    resolveManualRulebookLinksForSlug(
+      lineageRules as ManualRulebookLinkMap,
+      slug,
+    ),
+  ]);
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
 export async function resolveSpellRulebookLinks(
@@ -293,7 +333,17 @@ export async function resolveOptionalRulebookLinks(
 export async function resolveWildernessTokenRulebookLinks(
   slug: string,
 ): Promise<RulebookLink[]> {
-  const ruleQueries = wildernessTokenRulebookQueriesForSlug(slug);
+  return resolveManualRulebookLinksForSlug(
+    wildernessTokenRules as ManualRulebookLinkMap,
+    slug,
+  );
+}
+
+async function resolveManualRulebookLinksForSlug(
+  rules: ManualRulebookLinkMap,
+  slug: string,
+): Promise<RulebookLink[]> {
+  const ruleQueries = manualRulebookQueriesForSlug(rules, slug);
   if (!ruleQueries) return [];
 
   const links = await Promise.all(
@@ -303,14 +353,20 @@ export async function resolveWildernessTokenRulebookLinks(
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
-function wildernessTokenRulebookQueriesForSlug(
+function manualRulebookQueriesForSlug(
+  rules: ManualRulebookLinkMap,
   slug: string,
 ): RulebookLinkQuery[] | undefined {
-  const rules = wildernessTokenRules as WildernessTokenRulebookLinkMap;
   return (
     rules[slug] ??
-    Object.entries(rules).find(([key]) => slugify(key) === slug)?.[1]
+    Object.entries(rules).find(([key]) =>
+      manualRuleKeyMatchesSlug(key, slug),
+    )?.[1]
   );
+}
+
+function manualRuleKeyMatchesSlug(key: string, slug: string): boolean {
+  return titleForms(normalizeTitle(key)).some((form) => slugify(form) === slug);
 }
 
 function rulebooksForQuery(doc: RulebookLinkQuery["doc"]): Rulebook[] {
@@ -321,9 +377,9 @@ function rulebooksForQuery(doc: RulebookLinkQuery["doc"]): Rulebook[] {
 function resolveSections(
   book: Rulebook,
   sections: Section[],
-  headings: string[],
-  anchor?: string,
+  query: RulebookLinkQuery,
 ): RulebookLink[] {
+  const { headings, anchor, title } = query;
   let candidates = sections.filter((section) =>
     titlesMatch(section.title, headings[0]),
   );
@@ -337,7 +393,7 @@ function resolveSections(
   }
 
   return candidates.map((section) =>
-    rulebookLinkForSection(book, section, anchor),
+    rulebookLinkForSection(book, section, anchor, title),
   );
 }
 
@@ -345,6 +401,7 @@ function rulebookLinkForSection(
   book: Rulebook,
   section: Section,
   anchor?: string,
+  title?: string,
 ): RulebookLink {
   const preview = linkPreviewFor(section, anchor);
   const icons = [
@@ -358,6 +415,7 @@ function rulebookLinkForSection(
     docTitle: book.title,
     sectionId: section.id,
     sectionTitle: section.title,
+    title,
     content: preview.content,
     contentNodes: preview.contentNodes,
     anchor,

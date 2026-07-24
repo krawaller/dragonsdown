@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
-import { resolveLineageAdvantageRulebookLinks } from "@/lib/rulebook-links";
+import { resolveLineageRulebookLinks } from "@/lib/rulebook-links";
 import type { TTSClassSetupCube, TTSClassSetupSide } from "@/lib/tts";
 import { getAllLineages, getLineageBySlug } from "@/lib/tts/lookup";
 
@@ -20,9 +20,10 @@ export default async function LineagePage({
   if (!entry) notFound();
   const lineage = entry.lineages[0];
   if (!lineage) notFound();
-  const rulebookLinks = await resolveLineageAdvantageRulebookLinks(
-    lineage.advantageTitle,
-  );
+  const rulebookLinks = await resolveLineageRulebookLinks({
+    slug: entry.slug,
+    advantageTitle: lineage.advantageTitle,
+  });
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
