@@ -8,7 +8,7 @@ export default async function MagicPage() {
     await Promise.all(
       MAGIC_TYPES.map(
         async (type) =>
-          [type.id, await resolveMagicRulebookLinks(type.id)] as const,
+          [type.id, await resolveMagicRulebookLinks(type.id, "core")] as const,
       ),
     ),
   );

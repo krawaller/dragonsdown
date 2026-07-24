@@ -9,6 +9,7 @@ import { normalizeTitle } from "./tts";
 import { getAllClasses } from "./tts/lookup";
 import classRules from "../../data/manual/class-rules.json";
 import lineageRules from "../../data/manual/lineage-rules.json";
+import magicLinks from "../../data/manual/magic-links.json";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
 import wildernessTokenRules from "../../data/manual/wilderness-token-rules.json";
@@ -31,6 +32,10 @@ export type RulebookLinkQuery = {
   headings: string[];
   anchor?: string;
   title?: string;
+  preferIconIndex?: number;
+  includeChildren?: boolean;
+  anchorIndex?: number;
+  anchorRange?: [number, number];
 };
 
 export type RulebookLink = {
@@ -54,6 +59,13 @@ type RelatedClassAbilityMap = {
   sites?: Record<string, string[]>;
 };
 type ManualRulebookLinkMap = Record<string, RulebookLinkQuery[]>;
+type MagicRulebookLinkMap = Record<
+  string,
+  {
+    classes?: string[];
+    rulebookLinks?: RulebookLinkQuery[];
+  }
+>;
 type RulebookLinkPreview = {
   content: string;
   contentNodes: SectionContentNode[];
@@ -73,7 +85,10 @@ export async function resolveRulebookLinks(
     }),
   );
 
-  return links.flat().sort(compareRulebookLinks);
+  const resolvedLinks = links.flat();
+  return query.includeChildren
+    ? resolvedLinks
+    : resolvedLinks.sort(compareRulebookLinks);
 }
 
 export async function resolveSiteRulebookLinks(
@@ -306,10 +321,33 @@ export async function resolveMagicRulebookLinks(
   const type = getMagicTypeById(magic);
   if (!type) return [];
 
-  return resolveRulebookLinks({
-    doc,
+  const spellManifestLinks = await resolveRulebookLinks({
+    doc: doc === ANY_DOC ? "core" : doc,
     headings: ["Spell Manifest", type.heading],
   });
+
+  if (doc !== ANY_DOC) return spellManifestLinks;
+
+  const manualLinks = await resolveMagicManualRulebookLinks(type.id);
+  return uniqueRulebookLinks([...spellManifestLinks, ...manualLinks]);
+}
+
+async function resolveMagicManualRulebookLinks(
+  magic: string,
+): Promise<RulebookLink[]> {
+  const references = (magicLinks as MagicRulebookLinkMap)[magic];
+  if (!references) return [];
+
+  const links = await Promise.all([
+    ...uniqueRulebookQueries(references.rulebookLinks).map((query) =>
+      resolveRulebookLinks(query),
+    ),
+    ...uniqueNonEmpty(references.classes ?? [])
+      .flatMap(classAdvantageTitlesForClassReference)
+      .map(resolveClassAdvantageRulebookLinks),
+  ]);
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
 export async function resolveOptionalRulebookLinks(
@@ -379,7 +417,15 @@ function resolveSections(
   sections: Section[],
   query: RulebookLinkQuery,
 ): RulebookLink[] {
-  const { headings, anchor, title } = query;
+  const {
+    headings,
+    anchor,
+    title,
+    preferIconIndex,
+    includeChildren,
+    anchorIndex,
+    anchorRange,
+  } = query;
   let candidates = sections.filter((section) =>
     titlesMatch(section.title, headings[0]),
   );
@@ -393,17 +439,91 @@ function resolveSections(
   }
 
   return candidates.map((section) =>
-    rulebookLinkForSection(book, section, anchor, title),
+    rulebookLinkForIndexedSection(book, sections, section, {
+      anchor,
+      title,
+      preferIconIndex,
+      anchorIndex,
+      anchorRange,
+      childSections: includeChildren ? childSections(sections, section) : [],
+    }),
   );
+}
+
+function rulebookLinkForIndexedSection(
+  book: Rulebook,
+  sections: Section[],
+  section: Section,
+  options: {
+    anchor?: string;
+    title?: string;
+    preferIconIndex?: number;
+    anchorIndex?: number;
+    anchorRange?: [number, number];
+    childSections?: Section[];
+  },
+): RulebookLink {
+  const children = childSections(sections, section);
+  const indexedChild = indexedChildSection(children, options.anchorIndex);
+  if (indexedChild) {
+    return rulebookLinkForSection(book, indexedChild, {
+      title: options.title,
+      preferIconIndex: options.preferIconIndex,
+    });
+  }
+
+  const rangedChildren = rangedChildSections(children, options.anchorRange);
+  if (rangedChildren.length > 0) {
+    return rulebookLinkForSection(book, section, {
+      title: options.title,
+      preferIconIndex: options.preferIconIndex,
+      childSections: rangedChildren,
+    });
+  }
+
+  return rulebookLinkForSection(book, section, options);
+}
+
+function indexedChildSection(
+  sections: Section[],
+  anchorIndex: number | undefined,
+): Section | undefined {
+  if (anchorIndex === undefined) return undefined;
+  return sections[anchorIndex];
+}
+
+function rangedChildSections(
+  sections: Section[],
+  anchorRange: [number, number] | undefined,
+): Section[] {
+  if (anchorRange === undefined) return [];
+  const [start, end] = normalizedInclusiveRange(anchorRange);
+  return sections.slice(start, end + 1);
 }
 
 function rulebookLinkForSection(
   book: Rulebook,
   section: Section,
-  anchor?: string,
-  title?: string,
+  options: {
+    anchor?: string;
+    title?: string;
+    preferIconIndex?: number;
+    anchorIndex?: number;
+    anchorRange?: [number, number];
+    childSections?: Section[];
+  } = {},
 ): RulebookLink {
-  const preview = linkPreviewFor(section, anchor);
+  const {
+    anchor,
+    title,
+    preferIconIndex,
+    anchorIndex,
+    anchorRange,
+    childSections = [],
+  } = options;
+  const preview = linkPreviewFor(section, anchor, anchorIndex, anchorRange);
+  const childPreview = childPreviewFor(childSections);
+  const contentNodes = [...preview.contentNodes, ...childPreview.contentNodes];
   const icons = [
     ...(section.icon ? [section.icon] : []),
     ...(section.icons ?? []),
@@ -416,14 +536,51 @@ function rulebookLinkForSection(
     sectionId: section.id,
     sectionTitle: section.title,
     title,
-    content: preview.content,
-    contentNodes: preview.contentNodes,
+    content: markdownFromContentNodes(contentNodes),
+    contentNodes,
     anchor,
-    icon: icons.length === 1 ? icons[0] : undefined,
-    icons: icons.length > 1 ? icons : undefined,
+    icon: iconForRulebookLink(icons, preferIconIndex),
+    icons: iconsForRulebookLink(icons, preferIconIndex),
     location: section.location,
     href: `/${book.slug}#${linkAnchorIdFor(section, anchor)}`,
   };
+}
+
+function childPreviewFor(sections: Section[]): RulebookLinkPreview {
+  const contentNodes = sections.flatMap((section) => {
+    const preview = linkPreviewFor(section);
+    return [
+      { kind: "markdown" as const, markdown: `### ${section.title}` },
+      ...preview.contentNodes,
+    ];
+  });
+
+  return {
+    content: markdownFromContentNodes(contentNodes),
+    contentNodes,
+  };
+}
+
+function iconForRulebookLink(
+  icons: string[],
+  preferIconIndex?: number,
+): string | undefined {
+  if (
+    preferIconIndex !== undefined &&
+    preferIconIndex >= 0 &&
+    preferIconIndex < icons.length
+  ) {
+    return icons[preferIconIndex];
+  }
+  return icons.length === 1 ? icons[0] : undefined;
+}
+
+function iconsForRulebookLink(
+  icons: string[],
+  preferIconIndex?: number,
+): string[] | undefined {
+  if (preferIconIndex !== undefined) return undefined;
+  return icons.length > 1 ? icons : undefined;
 }
 
 function linkAnchorIdFor(section: Section, anchor?: string): string {
@@ -435,12 +592,31 @@ function linkAnchorIdFor(section: Section, anchor?: string): string {
 function linkPreviewFor(
   section: Section,
   anchor?: string,
+  anchorIndex?: number,
+  anchorRange?: [number, number],
 ): RulebookLinkPreview {
+  if (anchorIndex !== undefined && section.contentNodes?.[anchorIndex]) {
+    return promoteLeadingPreviewImages([section.contentNodes[anchorIndex]]);
+  }
+  if (anchorRange !== undefined && section.contentNodes) {
+    const [start, end] = normalizedInclusiveRange(anchorRange);
+    return promoteLeadingPreviewImages(
+      section.contentNodes.slice(start, end + 1),
+    );
+  }
+
   const content = anchor
     ? (markdownSliceForAnchor(section.content, anchor) ?? section.content)
     : section.content;
   const contentNodes = contentNodesForMarkdown(content);
   return promoteLeadingPreviewImages(contentNodes);
+}
+
+function normalizedInclusiveRange([start, end]: [number, number]): [
+  number,
+  number,
+] {
+  return start <= end ? [start, end] : [end, start];
 }
 
 function promoteLeadingPreviewImages(
@@ -496,6 +672,14 @@ function normalizeRulebookHeadingTitle(title: string): string {
 
 function titleAlternatives(title: string): string[] {
   return title.split("|").map((part) => part.trim());
+}
+
+function uniqueRulebookQueries(
+  queries: RulebookLinkQuery[] = [],
+): RulebookLinkQuery[] {
+  return Array.from(
+    new Map(queries.map((query) => [JSON.stringify(query), query])).values(),
+  );
 }
 
 function lineageAdvantageTitleAlternatives(title: string): string[] {
@@ -644,6 +828,20 @@ function classAdvantageTitlesForClassName(name: string): string[] {
     (entry) => normalizeTitle(entry.name) === normalizedName,
   );
   if (!classEntry) return [name];
+
+  return uniqueNonEmpty(
+    classEntry.classes.map((entry) => entry.advantageTitle ?? classEntry.name),
+  );
+}
+
+function classAdvantageTitlesForClassReference(reference: string): string[] {
+  const normalizedReference = normalizeTitle(reference);
+  const classEntry = getAllClasses().find(
+    (entry) =>
+      entry.slug === slugify(reference) ||
+      normalizeTitle(entry.name) === normalizedReference,
+  );
+  if (!classEntry) return [reference];
 
   return uniqueNonEmpty(
     classEntry.classes.map((entry) => entry.advantageTitle ?? classEntry.name),

@@ -41,8 +41,10 @@ export default async function MagicTypePage({
       ),
     ),
   );
-  const rulebookLinks = rulebookLinksByMagic.get(type.id) ?? [];
-  const icon = rulebookLinks.find((link) => Boolean(link.icon))?.icon;
+  const rulebookLinks = await resolveMagicRulebookLinks(type.id);
+  const icon = rulebookLinksByMagic
+    .get(type.id)
+    ?.find((link) => Boolean(link.icon))?.icon;
   const magicIcons = magicIconMap(rulebookLinksByMagic);
   const colorLabel = type.label.replace(/ Magic$/, "");
 
