@@ -1,0 +1,138 @@
+{
+  "alert": {
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Alert"]
+      }
+    ]
+  },
+  "sneak": {
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Sneak - or- Make Noise"]
+      }
+    ]
+  },
+  "make noise": {
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Sneak - or- Make Noise"],
+        "preferIconIndex": 1
+      }
+    ]
+  },
+  "enchant": {
+    "classes": ["enchanter"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Enchant"]
+      }
+    ]
+  },
+  "explore": {
+    "classes": ["explorer"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Explore"]
+      }
+    ]
+  },
+  "move": {
+    "classes": ["explorer"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Move"]
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["Ruthless Riverlands", "River Clearings"],
+        "anchorRange": [1, 3]
+      },
+      {
+        "doc": "core",
+        "headings": ["OTHER RULES", "Flying"]
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["Ruthless Riverlands", "Swimming"]
+      },
+      {
+        "doc": "core",
+        "headings": ["OPTIONAL RULES", "Enchanted Paths"]
+      }
+    ]
+  },
+  "search": {
+    "classes": ["ranger"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Search"]
+      }
+    ]
+  },
+  "learn": {
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Learn"]
+      }
+    ]
+  },
+  "loot": {
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Loot"]
+      }
+    ]
+  },
+  "rest": {
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Rest"]
+      }
+    ]
+  },
+  "trade": {
+    "classes": ["knight"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["The actions:", "Trade"]
+      },
+      {
+        "doc": "core",
+        "headings": ["OTHER RULES", "Haggling"]
+      }
+    ]
+  },
+  "hire": {
+    "rulebookLinks": [
+      {
+        "doc": "natives-and-legends",
+        "headings": ["DRAGONS DOWN: NATIVES", "Hiring Natives"]
+      },
+      {
+        "doc": "natives-and-legends",
+        "headings": ["DRAGONS DOWN: NATIVES", "Haggling with Natives"]
+      },
+      {
+        "doc": "natives-and-legends",
+        "headings": ["DRAGONS DOWN: NATIVES", "Hired Natives"]
+      },
+      {
+        "doc": "natives-and-legends",
+        "headings": ["DRAGONS DOWN: NATIVES", "Hired Natives in Combat"],
+        "includeChildren": true
+      }
+    ]
+  }
+}
