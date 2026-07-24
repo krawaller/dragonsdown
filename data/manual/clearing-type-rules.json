@@ -65,5 +65,21 @@
         "headings": ["Dreadful Deserts", "Desert Clearings"]
       }
     ]
+  },
+  "river": {
+    "rulebookLinks": [
+      {
+        "doc": "eastern-reaches",
+        "headings": ["Ruthless Riverlands", "River Clearings"]
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["Ruthless Riverlands", "Ferries"]
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["Ruthless Riverlands", "Swimming"]
+      }
+    ]
   }
 }
