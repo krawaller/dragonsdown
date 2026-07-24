@@ -6,7 +6,7 @@ import {
 } from "./rulebook-anchors";
 import { slugify } from "./slug";
 import { normalizeTitle } from "./tts";
-import { getAllClasses } from "./tts/lookup";
+import { getAllClasses, getAllSpells } from "./tts/lookup";
 import classRules from "../../data/manual/class-rules.json";
 import lineageRules from "../../data/manual/lineage-rules.json";
 import magicLinks from "../../data/manual/magic-links.json";
@@ -247,10 +247,38 @@ export async function resolveLineageRulebookLinks({
 export async function resolveSpellRulebookLinks(
   spellTitle: string,
 ): Promise<RulebookLink[]> {
-  return resolveRulebookLinks({
+  const links = await resolveRulebookLinks({
     doc: ANY_DOC,
     headings: ["Spell Manifest", spellTitle],
   });
+  const icon = await spellMagicIconFor(spellTitle);
+  if (!icon) return links;
+
+  return links.map((link) => ({
+    ...link,
+    icon,
+    icons: undefined,
+  }));
+}
+
+async function spellMagicIconFor(
+  spellTitle: string,
+): Promise<string | undefined> {
+  const spell = spellEntryForTitle(spellTitle)?.spells[0];
+  const magic = spell?.magic[0];
+  if (!magic) return undefined;
+
+  const links = await resolveMagicRulebookLinks(magic, "core");
+  return links.find((link) => Boolean(link.icon))?.icon;
+}
+
+function spellEntryForTitle(spellTitle: string) {
+  const normalizedTitle = normalizeTitle(spellTitle);
+  const slug = slugify(spellTitle);
+  return getAllSpells().find(
+    (entry) =>
+      entry.slug === slug || normalizeTitle(entry.name) === normalizedTitle,
+  );
 }
 
 export async function resolveEquipmentRulebookLinks({

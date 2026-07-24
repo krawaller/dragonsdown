@@ -59,6 +59,7 @@
     ]
   },
   "move": {
+    "spells": ["trail blaze", "fly"],
     "classes": ["explorer", "soulless"],
     "rulebookLinks": [
       {
@@ -66,7 +67,7 @@
         "headings": ["The actions:", "Move"]
       },
       {
-        "doc": "eastern-reaches",
+        "doc": "eastern-reaches-reaches",
         "headings": ["Ruthless Riverlands", "River Clearings"],
         "anchorRange": [1, 3]
       },
@@ -75,7 +76,7 @@
         "headings": ["OTHER RULES", "Flying"]
       },
       {
-        "doc": "eastern-reaches",
+        "doc": "eastern-reaches-reaches",
         "headings": ["Ruthless Riverlands", "Swimming"]
       },
       {
@@ -85,6 +86,7 @@
     ]
   },
   "search": {
+    "spells": ["Nature’s Help"],
     "classes": ["barbarian", "ranger"],
     "rulebookLinks": [
       {
@@ -103,10 +105,15 @@
     ]
   },
   "loot": {
+    "spells": ["divination"],
     "rulebookLinks": [
       {
         "doc": "core",
         "headings": ["The actions:", "Loot"]
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["OPTIONAL RULES", "Watchful Guardians"]
       }
     ]
   },
@@ -120,6 +127,7 @@
     ]
   },
   "trade": {
+    "spells": ["charismagic"],
     "classes": ["black knight", "outcast"],
     "rulebookLinks": [
       {
@@ -133,6 +141,7 @@
     ]
   },
   "hire": {
+    "spells": ["charismagic", "orc call"],
     "classes": ["beastmaster", "burgess"],
     "rulebookLinks": [
       {
@@ -151,6 +160,16 @@
         "doc": "natives-and-legends",
         "headings": ["DRAGONS DOWN: NATIVES", "Hired Natives in Combat"],
         "includeChildren": true
+      }
+    ]
+  },
+  "hide": {
+    "lineages": ["halfling"],
+    "rulebookLinks": [
+      {
+        "doc": "core",
+        "headings": ["Reactions", "Hide"],
+        "title": "Hide (reaction)"
       }
     ]
   }

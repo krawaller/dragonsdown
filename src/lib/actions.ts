@@ -1,15 +1,19 @@
 import { slugify } from "./slug";
 import {
   resolveClassAdvantageRulebookLinks,
+  resolveLineageAdvantageRulebookLinks,
   resolveRulebookLinks,
+  resolveSpellRulebookLinks,
   type RulebookLink,
   type RulebookLinkQuery,
 } from "./rulebook-links";
 import actionRules from "../../data/manual/action-rules.json";
-import { getClassBySlug } from "./tts/lookup";
+import { getClassBySlug, getLineageBySlug, getSpellBySlug } from "./tts/lookup";
 
 type ActionRuleEntry = {
   classes?: string[];
+  lineages?: string[];
+  spells?: string[];
   rulebookLinks: RulebookLinkQuery[];
 };
 
@@ -17,6 +21,8 @@ export type ActionEntry = {
   name: string;
   slug: string;
   classes: string[];
+  lineages: string[];
+  spells: string[];
   rulebookLinks: RulebookLink[];
   icon?: string;
 };
@@ -41,12 +47,21 @@ async function actionEntryFor(
   entry: ActionRuleEntry,
 ): Promise<ActionEntry> {
   const classSlugs = entry.classes ?? [];
-  const rulebookLinks = await resolveActionRulebookLinks(entry, classSlugs);
+  const lineageSlugs = entry.lineages ?? [];
+  const spellSlugs = entry.spells ?? [];
+  const rulebookLinks = await resolveActionRulebookLinks(
+    entry,
+    classSlugs,
+    lineageSlugs,
+    spellSlugs,
+  );
 
   return {
     name: actionNameFor(name),
     slug: slugify(name),
     classes: classSlugs,
+    lineages: lineageSlugs,
+    spells: spellSlugs,
     rulebookLinks,
     icon: iconForAction(rulebookLinks),
   };
@@ -55,11 +70,19 @@ async function actionEntryFor(
 async function resolveActionRulebookLinks(
   entry: ActionRuleEntry,
   classSlugs: string[],
+  lineageSlugs: string[],
+  spellSlugs: string[],
 ): Promise<RulebookLink[]> {
   const links = await Promise.all([
     ...entry.rulebookLinks.map((query) => resolveRulebookLinks(query)),
     ...uniqueSlugs(classSlugs).map((classSlug) =>
       resolveClassRulebookLinks(classSlug),
+    ),
+    ...uniqueSlugs(lineageSlugs).map((lineageSlug) =>
+      resolveLineageRulebookLinks(lineageSlug),
+    ),
+    ...uniqueSlugs(spellSlugs).map((spellSlug) =>
+      resolveActionSpellRulebookLinks(spellSlug),
     ),
   ]);
 
@@ -76,6 +99,29 @@ async function resolveClassRulebookLinks(
   }
 
   return resolveClassAdvantageRulebookLinks(ttsClass.advantageTitle);
+}
+
+async function resolveLineageRulebookLinks(
+  lineageSlug: string,
+): Promise<RulebookLink[]> {
+  const entry = getLineageBySlug(slugify(lineageSlug));
+  const lineage = entry?.lineages[0];
+  if (!entry || !lineage) {
+    throw new Error(`Unknown action lineage rule reference: ${lineageSlug}`);
+  }
+
+  return resolveLineageAdvantageRulebookLinks(lineage.advantageTitle);
+}
+
+async function resolveActionSpellRulebookLinks(
+  spellSlug: string,
+): Promise<RulebookLink[]> {
+  const entry = getSpellBySlug(slugify(spellSlug));
+  if (!entry) {
+    throw new Error(`Unknown action spell rule reference: ${spellSlug}`);
+  }
+
+  return resolveSpellRulebookLinks(entry.name);
 }
 
 function uniqueSlugs(slugs: string[]): string[] {
