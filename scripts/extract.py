@@ -47,6 +47,7 @@ BLACKISH = {0x000000, 0x231F20}
 
 BG_COVERAGE_THRESHOLD = 0.7
 BG_PAGE_FRACTION = 0.5
+FLOAT_IMAGE_MIN_SIZE = 27
 FLOAT_IMAGE_GAP_MIN = -4
 FLOAT_IMAGE_GAP_MAX = 28
 
@@ -670,7 +671,10 @@ def find_floated_images(
         ix0, iy0, ix1, iy1 = image_block["bbox"]
         width = ix1 - ix0
         height = iy1 - iy0
-        if 28 <= width <= 180 and 28 <= height <= 220:
+        if (
+            FLOAT_IMAGE_MIN_SIZE <= width <= 180
+            and FLOAT_IMAGE_MIN_SIZE <= height <= 220
+        ):
             image_blocks.append((image_block, url, (ix0, iy0, ix1, iy1)))
 
     def companion_images(
