@@ -30,7 +30,7 @@ export default async function ActionsPage() {
               <div>
                 <h2 className="text-lg font-semibold">{action.name}</h2>
                 <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-                  {action.rulebookLinks.length} rulebook link
+                  {action.rulebookLinks.length} link
                   {action.rulebookLinks.length === 1 ? "" : "s"}
                 </p>
               </div>
