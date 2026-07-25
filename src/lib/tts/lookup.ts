@@ -1339,6 +1339,8 @@ export type CivilisationTokenNameEntry = {
   tokens: CivilisationTokenListEntry[];
 };
 
+export type MerchantEntry = CivilisationTokenNameEntry;
+
 export type MapTileEntry = TTSMapTile & {
   slug: string;
   terrainPack: string;
@@ -1446,6 +1448,20 @@ export function getCivilisationTokenBySlug(
   slug: string,
 ): CivilisationTokenNameEntry | undefined {
   return getAllCivilisationTokenNames().find((entry) => entry.slug === slug);
+}
+
+export function getAllMerchants(): MerchantEntry[] {
+  const merchantNames = new Set(
+    getAllBoards().flatMap((entry) => entry.board.merchants),
+  );
+
+  return getAllCivilisationTokenNames().filter((entry) =>
+    merchantNames.has(entry.name),
+  );
+}
+
+export function getMerchantBySlug(slug: string): MerchantEntry | undefined {
+  return getAllMerchants().find((entry) => entry.slug === slug);
 }
 
 export function getAllMapTiles(): MapTileEntry[] {

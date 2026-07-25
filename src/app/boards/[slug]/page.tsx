@@ -8,7 +8,7 @@ import { getBoardPositionForItem } from "@/lib/board-positions";
 import {
   getAllBoards,
   getBoardBySlug,
-  getCivilisationTokenBySlug,
+  getMerchantBySlug,
   getSiteBySlug,
   getWildernessTokenBySlug,
 } from "@/lib/tts/lookup";
@@ -145,12 +145,12 @@ function resolveSiteTarget(name: string): LinkTarget | null {
 
 function resolveMerchantTarget(name: string): LinkTarget | null {
   const slug = slugify(name);
-  const civilisationToken = getCivilisationTokenBySlug(slug);
-  if (civilisationToken) {
-    const token = civilisationToken.tokens[0];
+  const merchant = getMerchantBySlug(slug);
+  if (merchant) {
+    const token = merchant.tokens[0];
     return {
       name,
-      href: `/civilisation-tokens/${civilisationToken.slug}`,
+      href: `/merchants/${merchant.slug}`,
       imageURL: token.imageSecondaryURL || token.imageURL,
     };
   }

@@ -1,22 +1,19 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CivilisationTokenDetail } from "@/components/CivilisationTokenDetail";
-import {
-  getAllCivilisationTokenNames,
-  getCivilisationTokenBySlug,
-} from "@/lib/tts/lookup";
+import { getAllMerchants, getMerchantBySlug } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
-  return getAllCivilisationTokenNames().map((entry) => ({ slug: entry.slug }));
+  return getAllMerchants().map((entry) => ({ slug: entry.slug }));
 }
 
-export default async function CivilisationTokenPage({
+export default async function MerchantPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const entry = getCivilisationTokenBySlug(slug);
+  const entry = getMerchantBySlug(slug);
   if (!entry) notFound();
 
   return (
@@ -26,8 +23,8 @@ export default async function CivilisationTokenPage({
           ← All docs
         </Link>
         <span aria-hidden="true">/</span>
-        <Link href="/civilisation-tokens" className="hover:underline">
-          Civilisation Tokens
+        <Link href="/merchants" className="hover:underline">
+          Merchants
         </Link>
       </div>
       <h1 className="text-4xl font-bold mt-4 mb-2">{entry.name}</h1>
