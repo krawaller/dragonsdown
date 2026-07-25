@@ -44,6 +44,7 @@ export type RulebookLink = {
   sectionId: string;
   sectionTitle: string;
   title?: string;
+  optionalRule?: boolean;
   content: string;
   contentNodes?: SectionContentNode[];
   anchor?: string;
@@ -473,9 +474,14 @@ function resolveSections(
       preferIconIndex,
       anchorIndex,
       anchorRange,
+      optionalRule: headingsTargetOptionalRule(headings),
       childSections: includeChildren ? childSections(sections, section) : [],
     }),
   );
+}
+
+function headingsTargetOptionalRule(headings: string[]): boolean {
+  return headings.some((heading) => titlesMatch(heading, "OPTIONAL RULES"));
 }
 
 function rulebookLinkForIndexedSection(
@@ -488,6 +494,7 @@ function rulebookLinkForIndexedSection(
     preferIconIndex?: number;
     anchorIndex?: number;
     anchorRange?: [number, number];
+    optionalRule?: boolean;
     childSections?: Section[];
   },
 ): RulebookLink {
@@ -497,6 +504,7 @@ function rulebookLinkForIndexedSection(
     return rulebookLinkForSection(book, indexedChild, {
       title: options.title,
       preferIconIndex: options.preferIconIndex,
+      optionalRule: options.optionalRule,
     });
   }
 
@@ -505,6 +513,7 @@ function rulebookLinkForIndexedSection(
     return rulebookLinkForSection(book, section, {
       title: options.title,
       preferIconIndex: options.preferIconIndex,
+      optionalRule: options.optionalRule,
       childSections: rangedChildren,
     });
   }
@@ -538,6 +547,7 @@ function rulebookLinkForSection(
     preferIconIndex?: number;
     anchorIndex?: number;
     anchorRange?: [number, number];
+    optionalRule?: boolean;
     childSections?: Section[];
   } = {},
 ): RulebookLink {
@@ -547,6 +557,7 @@ function rulebookLinkForSection(
     preferIconIndex,
     anchorIndex,
     anchorRange,
+    optionalRule,
     childSections = [],
   } = options;
   const preview = linkPreviewFor(section, anchor, anchorIndex, anchorRange);
@@ -564,6 +575,7 @@ function rulebookLinkForSection(
     sectionId: section.id,
     sectionTitle: section.title,
     title,
+    optionalRule,
     content: markdownFromContentNodes(contentNodes),
     contentNodes,
     anchor,

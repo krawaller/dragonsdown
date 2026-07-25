@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
+import { getClearingTypeIcon } from "@/lib/clearing-types";
 import { terrainPackSummary } from "@/lib/terrain-packs";
 import {
   getAllTerrainPacks,
@@ -370,9 +371,19 @@ function ClearingTypeTile({ entry }: { entry: TerrainPackClearingTypeEntry }) {
       href={`/clearing-types/${entry.slug}`}
       className="rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
     >
-      <div className="flex items-baseline justify-between gap-3">
-        <h3 className="text-base font-semibold">{entry.label}</h3>
-        <span className="text-lg font-semibold tabular-nums">
+      <div className="flex items-start justify-between gap-3">
+        <span className="flex min-w-0 items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={getClearingTypeIcon(entry.id)}
+            alt=""
+            className="h-10 w-10 shrink-0 object-contain"
+          />
+          <h3 className="min-w-0 text-base font-semibold leading-5">
+            {entry.label}
+          </h3>
+        </span>
+        <span className="shrink-0 text-lg font-semibold tabular-nums">
           {formatPercentage(entry.percentage)}
         </span>
       </div>

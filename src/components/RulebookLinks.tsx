@@ -57,9 +57,7 @@ function RulebookLinkCard({ link }: { link: RulebookLink }) {
             </span>
           )}
           <span className="flex min-w-0 flex-1 flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <span className="min-w-0 max-w-full truncate font-medium">
-              {rulebookLinkDisplayTitle(link)}
-            </span>
+            <RulebookLinkTitle link={link} />
             <Link
               href={link.href}
               className="min-w-0 max-w-full truncate text-xs text-zinc-500 hover:underline dark:text-zinc-400"
@@ -113,6 +111,19 @@ function RulebookLinkCard({ link }: { link: RulebookLink }) {
         </div>
       )}
     </div>
+  );
+}
+
+function RulebookLinkTitle({ link }: { link: RulebookLink }) {
+  return (
+    <span className="flex min-w-0 max-w-full items-baseline gap-1.5 font-medium">
+      {link.optionalRule && (
+        <span className="shrink-0 text-zinc-500 dark:text-zinc-400">
+          Optional rule
+        </span>
+      )}
+      <span className="min-w-0 truncate">{rulebookLinkDisplayTitle(link)}</span>
+    </span>
   );
 }
 

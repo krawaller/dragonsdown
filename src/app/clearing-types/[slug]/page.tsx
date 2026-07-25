@@ -14,7 +14,12 @@ import {
   type RulebookLink,
   type RulebookLinkQuery,
 } from "@/lib/rulebook-links";
-import { getClassBySlug, getLineageBySlug } from "@/lib/tts/lookup";
+import {
+  getAllTerrainPacks,
+  getClassBySlug,
+  getLineageBySlug,
+  type TerrainPackEntry,
+} from "@/lib/tts/lookup";
 import clearingTypeRules from "../../../../data/manual/clearing-type-rules.json";
 
 export function generateStaticParams() {
@@ -30,6 +35,7 @@ export default async function ClearingTypePage({
   const clearingType = getClearingTypeBySlug(slug);
   if (!clearingType) notFound();
   const rulebookLinks = await resolveClearingTypeRulebookLinks(clearingType.id);
+  const terrainPacks = terrainPacksForClearingType(clearingType.id);
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
@@ -66,6 +72,21 @@ export default async function ClearingTypePage({
         className="mb-10"
       />
 
+      {terrainPacks.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-xl font-semibold mb-3">Terrain Packs</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {terrainPacks.map((entry) => (
+              <TerrainPackClearingTypeTile
+                key={entry.slug}
+                entry={entry}
+                clearingTypeLabel={clearingType.label}
+              />
+            ))}
+          </div>
+        </section>
+      )}
+
       <section>
         <h2 className="text-xl font-semibold mb-3">Map Tiles</h2>
         <div className="flex flex-wrap gap-2">
@@ -86,6 +107,95 @@ export default async function ClearingTypePage({
       </section>
     </main>
   );
+}
+
+type ClearingTypeTerrainPackEntry = {
+  name: string;
+  slug: string;
+  iconUrl?: string;
+  count: number;
+  percentage: number;
+};
+
+function terrainPacksForClearingType(
+  clearingType: ClearingTypeId,
+): ClearingTypeTerrainPackEntry[] {
+  return getAllTerrainPacks()
+    .flatMap((pack) => {
+      const entry = pack.clearingTypes.find((type) => type.id === clearingType);
+      return entry
+        ? [
+            {
+              name: terrainPackDisplayName(pack),
+              slug: pack.slug,
+              iconUrl: pack.iconUrl,
+              count: entry.count,
+              percentage: entry.percentage,
+            },
+          ]
+        : [];
+    })
+    .sort(
+      (left, right) =>
+        right.percentage - left.percentage ||
+        left.name.localeCompare(right.name),
+    );
+}
+
+function TerrainPackClearingTypeTile({
+  clearingTypeLabel,
+  entry,
+}: {
+  clearingTypeLabel: string;
+  entry: ClearingTypeTerrainPackEntry;
+}) {
+  return (
+    <Link
+      href={`/terrain-packs/${entry.slug}`}
+      className="rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+    >
+      <div className="flex items-start justify-between gap-3">
+        <span className="flex min-w-0 items-center gap-3">
+          {entry.iconUrl && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={entry.iconUrl}
+              alt=""
+              className="h-10 w-10 shrink-0 rounded border border-zinc-200 bg-zinc-100 object-cover dark:border-zinc-800 dark:bg-zinc-900"
+            />
+          )}
+          <h3 className="min-w-0 text-base font-semibold leading-5">
+            {entry.name}
+          </h3>
+        </span>
+        <span className="shrink-0 text-lg font-semibold tabular-nums">
+          {formatPercentage(entry.percentage)}
+        </span>
+      </div>
+      <div className="mt-3 h-2 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-900">
+        <span
+          className="block h-full rounded-full bg-zinc-700 dark:bg-zinc-300"
+          style={{ width: `${entry.percentage}%` }}
+        />
+      </div>
+      <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
+        {entry.count} {singularClearingTypeLabel(clearingTypeLabel)} clearing
+        {entry.count === 1 ? "" : "s"}
+      </p>
+    </Link>
+  );
+}
+
+function singularClearingTypeLabel(label: string): string {
+  return label.toLowerCase().replace(/s$/u, "");
+}
+
+function terrainPackDisplayName(pack: TerrainPackEntry): string {
+  return pack.slug === "neutral" ? "Always in use" : pack.name;
+}
+
+function formatPercentage(value: number): string {
+  return `${Math.round(value)}%`;
 }
 
 type ClearingTypeRuleReferences = Partial<
