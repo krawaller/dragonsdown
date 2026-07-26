@@ -92,7 +92,7 @@ export default async function BoardPage({
 
           {merchants.length > 0 && (
             <section>
-              <h2 className="text-xl font-semibold mb-4">Merchant Tokens</h2>
+              <h2 className="text-xl font-semibold mb-4">Merchants</h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {merchants.map(({ name, href, imageURL }) => (
                   <Link key={name} href={href} className="group block">

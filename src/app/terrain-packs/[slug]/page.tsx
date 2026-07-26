@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import { getClearingTypeIcon } from "@/lib/clearing-types";
@@ -201,25 +202,10 @@ function TerrainBox({
   count: number;
   children: React.ReactNode;
 }) {
-  if (count === 0) return null;
-
   return (
-    <details
-      open
-      className="rounded border border-zinc-200 dark:border-zinc-800"
-    >
-      <summary className="cursor-pointer list-none px-4 py-3 sm:px-5 sm:py-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors">
-        <div className="flex flex-wrap items-baseline justify-between gap-3">
-          <h2 className="text-xl font-semibold">{title}</h2>
-          <p className="text-sm text-zinc-500 dark:text-zinc-400">
-            {count} item{count === 1 ? "" : "s"}
-          </p>
-        </div>
-      </summary>
-      <div className="border-t border-zinc-200 dark:border-zinc-800 p-4 sm:p-5">
-        {children}
-      </div>
-    </details>
+    <CollapsibleBox title={title} count={count}>
+      {children}
+    </CollapsibleBox>
   );
 }
 

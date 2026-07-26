@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { OptionalRuleLinks } from "@/components/OptionalRuleLinks";
 import { SiteGrid } from "@/components/SiteGrid";
 import { SITE_FACE_URL } from "@/lib/tts";
@@ -34,25 +35,21 @@ export default async function SitesPage() {
         className="mb-8"
       />
       <div className="space-y-6">
-        <details
-          open
-          className="rounded border border-zinc-200 dark:border-zinc-800 p-4"
+        <CollapsibleBox
+          title="Site Token Sites"
+          count={properSiteEntries.length}
+          countLabel={`${properSiteEntries.length} site${properSiteEntries.length === 1 ? "" : "s"}`}
         >
-          <summary className="cursor-pointer text-lg font-semibold">
-            Site Token Sites ({properSiteEntries.length})
-          </summary>
-          <SiteGrid entries={properSiteEntries} className="mt-6" />
-        </details>
+          <SiteGrid entries={properSiteEntries} />
+        </CollapsibleBox>
 
-        <details
-          open
-          className="rounded border border-zinc-200 dark:border-zinc-800 p-4"
+        <CollapsibleBox
+          title="Wilderness Token Sites"
+          count={wildernessTokenSiteEntries.length}
+          countLabel={`${wildernessTokenSiteEntries.length} site${wildernessTokenSiteEntries.length === 1 ? "" : "s"}`}
         >
-          <summary className="cursor-pointer text-lg font-semibold">
-            Wilderness Token Sites ({wildernessTokenSiteEntries.length})
-          </summary>
-          <SiteGrid entries={wildernessTokenSiteEntries} className="mt-6" />
-        </details>
+          <SiteGrid entries={wildernessTokenSiteEntries} />
+        </CollapsibleBox>
       </div>
     </main>
   );
