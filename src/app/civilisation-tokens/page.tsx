@@ -1,22 +1,19 @@
 import Link from "next/link";
-import { Suspense } from "react";
-import { CivilisationTokenBrowser } from "@/components/CivilisationTokenBrowser";
-import { getAllCivilisationTokenTerrains } from "@/lib/tts/lookup";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
+import {
+  CIVILISATION_TOKEN_NEUTRAL_TERRAIN,
+  getAllCivilisationTokenTerrains,
+  getAllTerrainPacks,
+  type CivilisationTokenTerrainEntry,
+} from "@/lib/tts/lookup";
 
 export default function CivilisationTokensPage() {
   const terrains = getAllCivilisationTokenTerrains();
-  const totalImages = terrains.reduce(
-    (sum, terrain) => sum + terrain.tokens.length,
-    0,
+  const terrainPacksByName = new Map(
+    getAllTerrainPacks().map((pack) => [pack.name, pack]),
   );
-  const totalPhysical = terrains.reduce(
-    (sum, terrain) =>
-      sum +
-      terrain.tokens.reduce(
-        (terrainSum, token) =>
-          terrainSum + token.locations.reduce((n, loc) => n + loc.count, 0),
-        0,
-      ),
+  const total = terrains.reduce(
+    (sum, terrain) => sum + terrainTokenTotalCount(terrain),
     0,
   );
 
@@ -30,12 +27,105 @@ export default function CivilisationTokensPage() {
       </Link>
       <h1 className="text-4xl font-bold mt-4 mb-2">Civilisation Tokens</h1>
       <p className="text-sm text-zinc-500 mb-8">
-        {totalImages} token images · {totalPhysical} physical tokens across{" "}
-        {terrains.length} groups
+        {tokenCountLabel(total)} across {terrains.length} terrain packs
       </p>
-      <Suspense fallback={null}>
-        <CivilisationTokenBrowser terrains={terrains} />
-      </Suspense>
+      <div className="space-y-6">
+        {terrains.map((terrain) => {
+          const tokenCount = terrainTokenTotalCount(terrain);
+          const pack = terrainPacksByName.get(terrain.terrain);
+
+          return (
+            <CollapsibleBox
+              key={terrain.terrain}
+              title={
+                <TerrainPackTitle
+                  name={terrainDisplayName(terrain.terrain)}
+                  iconUrl={pack?.iconUrl}
+                />
+              }
+              count={tokenCount}
+              countLabel={tokenCountLabel(tokenCount)}
+            >
+              <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+                {terrain.tokens.map((token) => (
+                  <section
+                    key={`${token.terrainGroup}-${token.displayName}-${token.imageSecondaryURL}`}
+                    className="flex flex-col gap-1"
+                  >
+                    <Link
+                      href={`/civilisation-tokens/${token.slug}`}
+                      className="overflow-hidden rounded border border-zinc-200 transition hover:ring-2 hover:ring-zinc-400 dark:border-zinc-800"
+                      aria-label={`View ${token.displayName}`}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={token.imageSecondaryURL || token.imageURL}
+                        alt={token.displayName}
+                        className="block aspect-square w-full bg-zinc-100 object-cover dark:bg-zinc-900"
+                      />
+                    </Link>
+                    <h2 className="mt-1 text-base font-semibold">
+                      <Link
+                        href={`/civilisation-tokens/${token.slug}`}
+                        className="hover:underline"
+                      >
+                        {token.displayName}
+                      </Link>
+                    </h2>
+                    <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                      {tokenCountLabel(tokenTotalCount(token))}
+                    </p>
+                  </section>
+                ))}
+              </div>
+            </CollapsibleBox>
+          );
+        })}
+      </div>
     </main>
   );
+}
+
+function TerrainPackTitle({
+  name,
+  iconUrl,
+}: {
+  name: string;
+  iconUrl?: string;
+}) {
+  return (
+    <span className="inline-flex items-center gap-3 align-middle">
+      {iconUrl && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={iconUrl}
+          alt=""
+          className="h-8 w-8 shrink-0 rounded border border-zinc-200 bg-zinc-100 object-cover dark:border-zinc-800 dark:bg-zinc-900"
+        />
+      )}
+      <span>{name}</span>
+    </span>
+  );
+}
+
+function terrainDisplayName(terrain: string): string {
+  return terrain === CIVILISATION_TOKEN_NEUTRAL_TERRAIN
+    ? "Always in use"
+    : terrain;
+}
+
+function tokenTotalCount(
+  token: CivilisationTokenTerrainEntry["tokens"][number],
+): number {
+  return token.locations.reduce((sum, loc) => sum + loc.count, 0);
+}
+
+function tokenCountLabel(count: number): string {
+  return `${count} token${count === 1 ? "" : "s"}`;
+}
+
+function terrainTokenTotalCount(
+  terrain: CivilisationTokenTerrainEntry,
+): number {
+  return terrain.tokens.reduce((sum, token) => sum + tokenTotalCount(token), 0);
 }
