@@ -7,20 +7,8 @@ import {
   getAllClearingTypes,
   getClearingTypeBySlug,
 } from "@/lib/clearing-types";
-import {
-  resolveClassAdvantageRulebookLinks,
-  resolveLineageAdvantageRulebookLinks,
-  resolveRulebookLinks,
-  type RulebookLink,
-  type RulebookLinkQuery,
-} from "@/lib/rulebook-links";
-import {
-  getAllTerrainPacks,
-  getClassBySlug,
-  getLineageBySlug,
-  type TerrainPackEntry,
-} from "@/lib/tts/lookup";
-import clearingTypeRules from "../../../../data/manual/clearing-type-rules.json";
+import { resolveClearingTypeRulebookLinks } from "@/lib/rulebook-links";
+import { getAllTerrainPacks, type TerrainPackEntry } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
   return getAllClearingTypes().map((entry) => ({ slug: entry.slug }));
@@ -197,98 +185,3 @@ function terrainPackDisplayName(pack: TerrainPackEntry): string {
 function formatPercentage(value: number): string {
   return `${Math.round(value)}%`;
 }
-
-type ClearingTypeRuleReferences = Partial<
-  Record<
-    ClearingTypeId,
-    {
-      classes?: string[];
-      lineages?: string[];
-      rulebookLinks?: RulebookLinkQuery[];
-    }
-  >
->;
-
-async function resolveClearingTypeRulebookLinks(
-  clearingType: ClearingTypeId,
-): Promise<RulebookLink[]> {
-  const references = (clearingTypeRules as ClearingTypeRuleReferences)[
-    clearingType
-  ];
-  if (!references) return [];
-
-  const links = await Promise.all([
-    ...uniqueRulebookQueries(references.rulebookLinks).map((query) =>
-      resolveRulebookLinks(query),
-    ),
-    ...uniqueSlugs(references.lineages).map((slug) =>
-      resolveLineageRulebookLinks(slug),
-    ),
-    ...uniqueSlugs(references.classes).map((slug) =>
-      resolveClassRulebookLinks(slug),
-    ),
-  ]);
-
-  return uniqueRulebookLinks(links.flat());
-}
-
-async function resolveClassRulebookLinks(
-  slug: string,
-): Promise<RulebookLink[]> {
-  const entry = getClassBySlug(CLASS_RULE_ALIASES[slug] ?? slug);
-  const ttsClass = entry?.classes[0];
-  if (!entry || !ttsClass) {
-    throw new Error(`Unknown clearing type class rule reference: ${slug}`);
-  }
-  return resolveClassAdvantageRulebookLinks(ttsClass.advantageTitle);
-}
-
-async function resolveLineageRulebookLinks(
-  slug: string,
-): Promise<RulebookLink[]> {
-  const entry = getLineageBySlug(slug);
-  const lineage = entry?.lineages[0];
-  if (!entry || !lineage) {
-    throw new Error(`Unknown clearing type lineage rule reference: ${slug}`);
-  }
-  return resolveLineageAdvantageRulebookLinks(lineage.advantageTitle);
-}
-
-function uniqueSlugs(slugs: string[] = []): string[] {
-  return Array.from(new Set(slugs));
-}
-
-function uniqueRulebookQueries(
-  queries: RulebookLinkQuery[] = [],
-): RulebookLinkQuery[] {
-  return Array.from(
-    new Map(
-      queries.map(
-        (query) =>
-          [
-            `${query.doc}:${query.headings.join("|")}:${query.anchor ?? ""}`,
-            query,
-          ] as const,
-      ),
-    ).values(),
-  );
-}
-
-function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {
-  return Array.from(
-    new Map(
-      links.map(
-        (link) =>
-          [
-            `${link.docSlug}:${link.sectionId}:${link.anchor ?? ""}`,
-            link,
-          ] as const,
-      ),
-    ).values(),
-  );
-}
-
-const CLASS_RULE_ALIASES: Record<string, string> = {
-  fighter: "warrior",
-  thief: "rogue",
-};

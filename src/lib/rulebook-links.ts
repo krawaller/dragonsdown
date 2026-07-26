@@ -410,6 +410,15 @@ export async function resolveWildernessTokenRulebookLinks(
   );
 }
 
+export async function resolveClearingTypeRulebookLinks(
+  slug: string,
+): Promise<RulebookLink[]> {
+  return resolveRuleReferenceLinksForSlug(
+    ruleReferences.clearingTypes as RuleReferenceMap,
+    slug,
+  );
+}
+
 async function resolveRuleReferenceLinksForSlug(
   rules: RuleReferenceMap,
   slug: string,
@@ -891,10 +900,10 @@ function classAdvantageTitlesForClassName(name: string): string[] {
 
 function classAdvantageTitlesForClassReference(reference: string): string[] {
   const normalizedReference = normalizeTitle(reference);
+  const slug = CLASS_RULE_ALIASES[slugify(reference)] ?? slugify(reference);
   const classEntry = getAllClasses().find(
     (entry) =>
-      entry.slug === slugify(reference) ||
-      normalizeTitle(entry.name) === normalizedReference,
+      entry.slug === slug || normalizeTitle(entry.name) === normalizedReference,
   );
   if (!classEntry) return [reference];
 
@@ -951,3 +960,8 @@ function compareRulebookLinks(a: RulebookLink, b: RulebookLink): number {
     a.sectionId.localeCompare(b.sectionId)
   );
 }
+
+const CLASS_RULE_ALIASES: Record<string, string> = {
+  fighter: "warrior",
+  thief: "rogue",
+};
