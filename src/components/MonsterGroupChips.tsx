@@ -10,15 +10,18 @@ type Zoom = { imageURL: string; name: string; face: string };
 export function MonsterGroupStack({
   group,
   hrefBase = "/monster-groups",
+  summaryKind = "monster",
 }: {
   group: MonsterGroupEntry;
   hrefBase?: string;
+  summaryKind?: "monster" | "monsterIndex" | "native";
 }) {
   const preview = group.chips.slice(0, 4);
   const totalCopies = group.chips.reduce(
     (sum, chip) => sum + chipTotalCount(chip),
     0,
   );
+  const totalSites = group.sites.length + group.legendaryLocations.length;
 
   return (
     <Link
@@ -48,42 +51,84 @@ export function MonsterGroupStack({
       <h2 className="text-lg font-semibold group-hover:underline">
         {group.prettyName}
       </h2>
-      <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-        {group.chips.length} chip{" "}
-        {group.chips.length === 1 ? "image" : "images"}
-        {" · "}
-        {totalCopies} total
-      </p>
-      {(group.mapTiles.length > 0 ||
-        group.sites.length > 0 ||
-        group.legendaryLocations.length > 0 ||
-        group.nativeSummons.length > 0) && (
+      {summaryKind === "native" ? (
+        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+          {chipCountLabel(totalCopies)} ·{" "}
+          {locationCountLabel(group.nativeSummons.length)}
+        </p>
+      ) : summaryKind === "monsterIndex" ? (
+        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+          {monsterIndexSummary(totalCopies, totalSites, group.mapTiles.length)}
+        </p>
+      ) : (
         <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-          {group.nativeSummons.length > 0 ? (
-            <>
-              {group.nativeSummons.length} location{" "}
-              {group.nativeSummons.length === 1 ? "link" : "links"}
-            </>
-          ) : (
-            <>
-              {group.mapTiles.length} map tile{" "}
-              {group.mapTiles.length === 1 ? "link" : "links"}
-              {" · "}
-              {group.sites.length} site{" "}
-              {group.sites.length === 1 ? "link" : "links"}
-              {group.legendaryLocations.length > 0 && (
-                <>
-                  {" · "}
-                  {group.legendaryLocations.length} legendary location{" "}
-                  {group.legendaryLocations.length === 1 ? "link" : "links"}
-                </>
-              )}
-            </>
-          )}
+          {group.chips.length} chip{" "}
+          {group.chips.length === 1 ? "image" : "images"}
+          {" · "}
+          {totalCopies} total
         </p>
       )}
+      {summaryKind === "monster" &&
+        (group.mapTiles.length > 0 ||
+          group.sites.length > 0 ||
+          group.legendaryLocations.length > 0 ||
+          group.nativeSummons.length > 0) && (
+          <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
+            {group.nativeSummons.length > 0 ? (
+              <>
+                {group.nativeSummons.length} location{" "}
+                {group.nativeSummons.length === 1 ? "link" : "links"}
+              </>
+            ) : (
+              <>
+                {group.mapTiles.length} map tile{" "}
+                {group.mapTiles.length === 1 ? "link" : "links"}
+                {" · "}
+                {group.sites.length} site{" "}
+                {group.sites.length === 1 ? "link" : "links"}
+                {group.legendaryLocations.length > 0 && (
+                  <>
+                    {" · "}
+                    {group.legendaryLocations.length} legendary location{" "}
+                    {group.legendaryLocations.length === 1 ? "link" : "links"}
+                  </>
+                )}
+              </>
+            )}
+          </p>
+        )}
     </Link>
   );
+}
+
+function chipCountLabel(count: number): string {
+  return `${count} chip${count === 1 ? "" : "s"}`;
+}
+
+function locationCountLabel(count: number): string {
+  return `${count} location${count === 1 ? "" : "s"}`;
+}
+
+function siteCountLabel(count: number): string {
+  return `${count} site${count === 1 ? "" : "s"}`;
+}
+
+function tileCountLabel(count: number): string {
+  return `${count} tile${count === 1 ? "" : "s"}`;
+}
+
+function monsterIndexSummary(
+  chips: number,
+  sites: number,
+  tiles: number,
+): string {
+  return [
+    chipCountLabel(chips),
+    sites > 0 ? siteCountLabel(sites) : undefined,
+    tiles > 0 ? tileCountLabel(tiles) : undefined,
+  ]
+    .filter((part): part is string => Boolean(part))
+    .join(" · ");
 }
 
 export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
@@ -137,27 +182,9 @@ export function MonsterGroupChipList({ group }: { group: MonsterGroupEntry }) {
                 </div>
                 <div className="min-w-0">
                   <h2 className="text-base font-semibold">{displayName}</h2>
-                  {displayName !== group.prettyName && (
-                    <p className="mt-0.5 text-xs text-zinc-500 dark:text-zinc-400">
-                      {group.prettyName}
-                    </p>
-                  )}
                   <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-                    {total} physical {total === 1 ? "chip" : "chips"}
+                    {total} chip{total === 1 ? "" : "s"}
                   </p>
-                  <ul className="mt-3 space-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-                    {chip.locations.map((location) => (
-                      <li
-                        key={`${location.ancestry.join("/")}-${location.count}`}
-                      >
-                        {location.ancestry.length > 0
-                          ? location.ancestry.join(" / ")
-                          : "Loose"}
-                        {" · "}
-                        {location.count}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             </section>

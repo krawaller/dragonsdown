@@ -12,6 +12,11 @@
       {
         "doc": "core",
         "headings": ["The actions:", "Sneak - or- Make Noise"]
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["OPTIONAL RULES", "Terrain Effects"],
+        "anchor": "Woods Clearing"
       }
     ]
   },
@@ -170,6 +175,11 @@
         "doc": "core",
         "headings": ["Reactions", "Hide"],
         "title": "Hide (reaction)"
+      },
+      {
+        "doc": "eastern-reaches",
+        "headings": ["OPTIONAL RULES", "Terrain Effects"],
+        "anchor": "Woods Clearing"
       }
     ]
   }

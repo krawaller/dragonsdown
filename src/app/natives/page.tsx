@@ -15,7 +15,7 @@ export default function NativesPage() {
       </Link>
       <h1 className="text-4xl font-bold mt-4 mb-2">Natives</h1>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        {groups.length} groups from the TTS chip index
+        {groups.length} groups
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {groups.map((group) => (
@@ -23,6 +23,7 @@ export default function NativesPage() {
             key={group.slug}
             group={group}
             hrefBase="/natives"
+            summaryKind="native"
           />
         ))}
       </div>

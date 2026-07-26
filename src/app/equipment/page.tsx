@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { SpriteCell } from "@/components/CardSprite";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
 import {
@@ -55,7 +56,7 @@ function EquipmentDeckDetails({
 }) {
   return (
     <CollapsibleBox
-      title={group.title}
+      title={<EquipmentDeckTitle group={group} />}
       count={group.entries.length}
       countLabel={`${group.entries.length} names · ${group.cards} card${
         group.cards === 1 ? "" : "s"
@@ -72,6 +73,46 @@ function EquipmentDeckDetails({
       </div>
     </CollapsibleBox>
   );
+}
+
+function EquipmentDeckTitle({ group }: { group: EquipmentDeckGroup }) {
+  const card = representativeDeckCard(group);
+
+  return (
+    <span className="inline-flex items-center gap-3 align-middle">
+      {card && <DeckBackIcon card={card} />}
+      <span>{group.title}</span>
+    </span>
+  );
+}
+
+function DeckBackIcon({ card }: { card: EquipmentDeckEntry["cards"][number] }) {
+  const numWidth = card.uniqueBack ? card.numWidth : 1;
+  const numHeight = card.uniqueBack ? card.numHeight : 1;
+  const row = card.uniqueBack ? card.row : 0;
+  const col = card.uniqueBack ? card.col : 0;
+  const style: CSSProperties = {
+    backgroundImage: `url(${card.backURL})`,
+    backgroundSize: `${numWidth * 100}% ${numHeight * 100}%`,
+    backgroundPosition: `${(col / Math.max(numWidth - 1, 1)) * 100}% ${
+      (row / Math.max(numHeight - 1, 1)) * 100
+    }%`,
+    backgroundRepeat: "no-repeat",
+  };
+
+  return (
+    <span
+      aria-hidden="true"
+      className="block w-7 shrink-0 rounded border border-zinc-200 bg-zinc-100 bg-cover shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+      style={{ ...style, aspectRatio: "5 / 7" }}
+    />
+  );
+}
+
+function representativeDeckCard(
+  group: EquipmentDeckGroup,
+): EquipmentDeckEntry["cards"][number] | undefined {
+  return group.entries.find((entry) => entry.cards.length > 0)?.cards[0];
 }
 
 function EquipmentTile({
