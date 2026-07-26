@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MissionLinks } from "@/components/MissionLinks";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
+import { MissionCardLinks } from "@/components/MissionCardLinks";
 import type { MapTile } from "@/components/MapTileViewer";
+import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import {
   getAllCivLocations,
   getCivLocationBySlug,
+  getNativeGroupBySlug,
   getMissionsForTarget,
   getNativeGroupsForCivLocation,
   getWildernessTokenBySlug,
@@ -30,6 +33,10 @@ export default async function CivLocationPage({
   );
   const wildernessToken = getWildernessTokenBySlug(entry.slug);
   const nativeGroups = getNativeGroupsForCivLocation(name);
+  const nativeGroupEntries = nativeGroups.flatMap((group) => {
+    const nativeGroup = getNativeGroupBySlug(group.slug);
+    return nativeGroup ? [nativeGroup] : [];
+  });
   const missions = getMissionsForTarget(name);
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
@@ -100,26 +107,32 @@ export default async function CivLocationPage({
           </Link>
         </section>
       )}
-      {nativeGroups.length > 0 && (
-        <section className="mt-8">
-          <h2 className="text-sm font-medium mb-2">Native Groups</h2>
-          <div className="flex flex-wrap gap-2">
-            {nativeGroups.map((group) => (
-              <Link
+      <div className="mt-8">
+        <CollapsibleBox
+          title="Native Groups"
+          count={nativeGroupEntries.length}
+          countLabel={`${nativeGroupEntries.length} group${nativeGroupEntries.length === 1 ? "" : "s"}`}
+        >
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {nativeGroupEntries.map((group) => (
+              <MonsterGroupStack
                 key={group.slug}
-                href={`/natives/${group.slug}`}
-                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-              >
-                <span className="font-medium">{group.name}</span>
-                <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                  {group.natives.join(", ")}
-                </span>
-              </Link>
+                group={group}
+                hrefBase="/natives"
+              />
             ))}
           </div>
-        </section>
-      )}
-      <MissionLinks missions={missions} className="mt-8" />
+        </CollapsibleBox>
+      </div>
+      <div className="mt-8">
+        <CollapsibleBox
+          title="Related Missions"
+          count={missions.length}
+          countLabel={`${missions.length} mission${missions.length === 1 ? "" : "s"}`}
+        >
+          <MissionCardLinks missions={missions} />
+        </CollapsibleBox>
+      </div>
     </main>
   );
 }

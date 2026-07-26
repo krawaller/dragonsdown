@@ -81,9 +81,9 @@ export default async function MonsterGroupPage({
 
       <div className="mb-10 space-y-6">
         <CollapsibleBox
-          title="Summoning Sources"
+          title="Appears at"
           count={sourceCount}
-          countLabel={`${sourceCount} source${sourceCount === 1 ? "" : "s"}`}
+          countLabel={`${sourceCount} location${sourceCount === 1 ? "" : "s"}`}
         >
           <SummoningSourceGrid group={group} />
         </CollapsibleBox>

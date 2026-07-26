@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoardPositionLinks } from "@/components/BoardPositionLinks";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionLinks } from "@/components/MissionLinks";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { resolveWildernessTokenRulebookLinks } from "@/lib/rulebook-links";
@@ -114,37 +115,46 @@ export default async function WildernessTokenPage({
         className="mb-8"
       />
 
-      <div className="overflow-hidden rounded border border-zinc-200 dark:border-zinc-800">
-        {entry.tokens.map((token) => {
-          const pack = terrainPacksByName.get(token.terrain);
+      <CollapsibleBox
+        title="Occurrences per Terrain Pack"
+        count={total}
+        countLabel={tokenCountLabel(total)}
+      >
+        <div className="overflow-hidden rounded border border-zinc-200 dark:border-zinc-800">
+          {entry.tokens.map((token) => {
+            const pack = terrainPacksByName.get(token.terrain);
 
-          return (
-            <Link
-              key={`${token.terrain}-${token.imageURL}`}
-              href={terrainPackHref(pack)}
-              aria-label={`View ${token.terrain}`}
-              className="grid grid-cols-[4.5rem_minmax(0,1fr)] gap-4 border-b border-zinc-200 p-4 transition last:border-b-0 hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900 sm:grid-cols-[5rem_minmax(0,1fr)]"
-            >
-              <TerrainPackIcon terrain={token.terrain} pack={pack} />
-              <span className="flex min-w-0 flex-wrap gap-3">
-                {Array.from({ length: tokenTotalCount(token) }, (_, index) => (
-                  <span
-                    key={`${token.terrain}-${token.imageURL}-${index}`}
-                    className="size-20 overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 sm:size-24"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={token.imageURL}
-                      alt={`${entry.name} ${token.terrain}`}
-                      className="block size-full object-cover"
-                    />
-                  </span>
-                ))}
-              </span>
-            </Link>
-          );
-        })}
-      </div>
+            return (
+              <Link
+                key={`${token.terrain}-${token.imageURL}`}
+                href={terrainPackHref(pack)}
+                aria-label={`View ${token.terrain}`}
+                className="grid grid-cols-[4.5rem_minmax(0,1fr)] gap-4 border-b border-zinc-200 p-4 transition last:border-b-0 hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900 sm:grid-cols-[5rem_minmax(0,1fr)]"
+              >
+                <TerrainPackIcon terrain={token.terrain} pack={pack} />
+                <span className="flex min-w-0 flex-wrap gap-3">
+                  {Array.from(
+                    { length: tokenTotalCount(token) },
+                    (_, index) => (
+                      <span
+                        key={`${token.terrain}-${token.imageURL}-${index}`}
+                        className="size-20 overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 sm:size-24"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={token.imageURL}
+                          alt={`${entry.name} ${token.terrain}`}
+                          className="block size-full object-cover"
+                        />
+                      </span>
+                    ),
+                  )}
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+      </CollapsibleBox>
     </main>
   );
 }

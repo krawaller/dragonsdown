@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
+import type { MapTile } from "@/components/MapTileViewer";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
 import { NativeCivilisationCard } from "@/components/NativeCivilisationCard";
 import { RulebookLinks } from "@/components/RulebookLinks";
@@ -21,6 +22,7 @@ import {
   type MonsterSpellEntry,
   type NativeGroupSummon,
 } from "@/lib/tts/lookup";
+import mapTiles from "../../../../data/extracted-from-tts/map-tiles.json";
 
 export function generateStaticParams() {
   return getAllNativeGroups().map((entry) => ({ slug: entry.slug }));
@@ -81,9 +83,9 @@ export default async function NativePage({
 
       <div className="mb-10 space-y-6">
         <CollapsibleBox
-          title="Summoning Sources"
+          title="Appears at"
           count={group.nativeSummons.length}
-          countLabel={`${group.nativeSummons.length} source${group.nativeSummons.length === 1 ? "" : "s"}`}
+          countLabel={`${group.nativeSummons.length} location${group.nativeSummons.length === 1 ? "" : "s"}`}
         >
           <SummoningSourceGrid summons={group.nativeSummons} />
         </CollapsibleBox>
@@ -154,11 +156,18 @@ function SummoningSourceTile({ summon }: { summon: NativeGroupSummon }) {
             className="mt-0.5 h-7 w-7 shrink-0 object-contain"
           />
         )}
-        <h2 className="min-w-0 text-sm font-semibold leading-5">
-          <Link href={summon.href} className="hover:underline">
-            {summon.name}
-          </Link>
-        </h2>
+        <div className="min-w-0">
+          <h2 className="text-sm font-semibold leading-5">
+            <Link href={summon.href} className="hover:underline">
+              {summon.name}
+            </Link>
+          </h2>
+          {source?.subtitle && (
+            <p className="text-xs text-zinc-500 dark:text-zinc-400">
+              {source.subtitle}
+            </p>
+          )}
+        </div>
       </div>
     </section>
   );
@@ -166,26 +175,40 @@ function SummoningSourceTile({ summon }: { summon: NativeGroupSummon }) {
 
 function summoningSourceDetails(
   summon: NativeGroupSummon,
-): { imageUrl?: string; terrainIconUrl?: string } | undefined {
+):
+  | { imageUrl?: string; terrainIconUrl?: string; subtitle?: string }
+  | undefined {
   const [, kind, slug] = summon.href.split("/");
   if (kind === "civ-locations") {
     const location = getCivLocationBySlug(slug);
-    const terrainPack = location
-      ? (location.location.terrainPack ??
-        terrainPackNameForCivLocation(location.slug))
-      : undefined;
-    return location
-      ? {
-          imageUrl: location.location.imageURL,
-          terrainIconUrl: terrainPackIconUrl(terrainPack),
-        }
-      : undefined;
+    if (!location) return undefined;
+
+    const wildernessToken = getWildernessTokenBySlug(slug)?.tokens[0];
+    if (wildernessToken && !isMapTileCivLocation(location.name)) {
+      return {
+        imageUrl: location.location.imageURL,
+        subtitle: "wilderness token location",
+        terrainIconUrl: terrainPackIconUrl(
+          wildernessToken.terrainPack ?? wildernessToken.terrain,
+        ),
+      };
+    }
+
+    const terrainPack =
+      location.location.terrainPack ??
+      terrainPackNameForCivLocation(location.slug);
+    return {
+      imageUrl: location.location.imageURL,
+      subtitle: "map tile location",
+      terrainIconUrl: terrainPackIconUrl(terrainPack),
+    };
   }
   if (kind === "wilderness-tokens") {
     const token = getWildernessTokenBySlug(slug)?.tokens[0];
     return token
       ? {
           imageUrl: token.imageURL,
+          subtitle: "wilderness token location",
           terrainIconUrl: terrainPackIconUrl(
             token.terrainPack ?? token.terrain,
           ),
@@ -193,6 +216,12 @@ function summoningSourceDetails(
       : undefined;
   }
   return undefined;
+}
+
+function isMapTileCivLocation(name: string): boolean {
+  return (mapTiles as MapTile[]).some(
+    (tile) => tile.name === name && tile.clearings.length === 4,
+  );
 }
 
 function terrainPackNameForCivLocation(slug: string): string | undefined {
