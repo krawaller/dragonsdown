@@ -6,12 +6,12 @@ import {
 } from "./rulebook-anchors";
 import { slugify } from "./slug";
 import { normalizeTitle } from "./tts";
-import { getAllClasses, getAllSpells } from "./tts/lookup";
-import classRules from "../../data/manual/class-rules.json";
+import { getAllClasses, getAllLineages, getAllSpells } from "./tts/lookup";
 import lineageRules from "../../data/manual/lineage-rules.json";
 import magicLinks from "../../data/manual/magic-links.json";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
+import ruleReferences from "../../data/manual/rule-references.json";
 import wildernessTokenRules from "../../data/manual/wilderness-token-rules.json";
 import {
   RULEBOOKS,
@@ -60,6 +60,13 @@ type RelatedClassAbilityMap = {
   sites?: Record<string, string[]>;
 };
 type ManualRulebookLinkMap = Record<string, RulebookLinkQuery[]>;
+type RuleReferenceEntry = {
+  classes?: string[];
+  lineages?: string[];
+  spells?: string[];
+  rulebookLinks?: RulebookLinkQuery[];
+};
+type RuleReferenceMap = Record<string, RuleReferenceEntry>;
 type MagicRulebookLinkMap = Record<
   string,
   {
@@ -206,8 +213,8 @@ export async function resolveClassRulebookLinks({
 }): Promise<RulebookLink[]> {
   const links = await Promise.all([
     resolveClassAdvantageRulebookLinks(advantageTitle),
-    resolveManualRulebookLinksForSlug(
-      classRules as ManualRulebookLinkMap,
+    resolveRuleReferenceLinksForSlug(
+      ruleReferences.classes as RuleReferenceMap,
       slug,
     ),
   ]);
@@ -420,10 +427,47 @@ async function resolveManualRulebookLinksForSlug(
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
+async function resolveRuleReferenceLinksForSlug(
+  rules: RuleReferenceMap,
+  slug: string,
+): Promise<RulebookLink[]> {
+  const entry = manualRuleReferenceEntryForSlug(rules, slug);
+  if (!entry) return [];
+
+  const links = await Promise.all([
+    ...uniqueRulebookQueries(entry.rulebookLinks).map((query) =>
+      resolveRulebookLinks(query),
+    ),
+    ...uniqueNonEmpty(entry.classes ?? [])
+      .flatMap(classAdvantageTitlesForClassReference)
+      .map(resolveClassAdvantageRulebookLinks),
+    ...uniqueNonEmpty(entry.lineages ?? [])
+      .flatMap(lineageAdvantageTitlesForLineageReference)
+      .map(resolveLineageAdvantageRulebookLinks),
+    ...uniqueNonEmpty(entry.spells ?? [])
+      .flatMap(spellTitlesForSpellReference)
+      .map(resolveSpellRulebookLinks),
+  ]);
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
 function manualRulebookQueriesForSlug(
   rules: ManualRulebookLinkMap,
   slug: string,
 ): RulebookLinkQuery[] | undefined {
+  return (
+    rules[slug] ??
+    Object.entries(rules).find(([key]) =>
+      manualRuleKeyMatchesSlug(key, slug),
+    )?.[1]
+  );
+}
+
+function manualRuleReferenceEntryForSlug(
+  rules: RuleReferenceMap,
+  slug: string,
+): RuleReferenceEntry | undefined {
   return (
     rules[slug] ??
     Object.entries(rules).find(([key]) =>
@@ -886,6 +930,36 @@ function classAdvantageTitlesForClassReference(reference: string): string[] {
   return uniqueNonEmpty(
     classEntry.classes.map((entry) => entry.advantageTitle ?? classEntry.name),
   );
+}
+
+function lineageAdvantageTitlesForLineageReference(
+  reference: string,
+): string[] {
+  const normalizedReference = normalizeTitle(reference);
+  const lineageEntry = getAllLineages().find(
+    (entry) =>
+      entry.slug === slugify(reference) ||
+      normalizeTitle(entry.name) === normalizedReference,
+  );
+  if (!lineageEntry) return [reference];
+
+  return uniqueNonEmpty(
+    lineageEntry.lineages.map(
+      (entry) => entry.advantageTitle ?? lineageEntry.name,
+    ),
+  );
+}
+
+function spellTitlesForSpellReference(reference: string): string[] {
+  const normalizedReference = normalizeTitle(reference);
+  const spellEntry = getAllSpells().find(
+    (entry) =>
+      entry.slug === slugify(reference) ||
+      normalizeTitle(entry.name) === normalizedReference,
+  );
+  if (!spellEntry) return [reference];
+
+  return [spellEntry.name];
 }
 
 function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {

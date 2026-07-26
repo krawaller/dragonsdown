@@ -184,5 +184,40 @@
         }
       ]
     }
+  },
+  "classes": {
+    "druid": {
+      "rulebookLinks": [
+        {
+          "doc": "eastern-reaches",
+          "headings": ["One-Time Rules & Component Adjustments", "Druid Class"],
+          "title": "Rule adjustment"
+        }
+      ]
+    },
+    "illusionist": {
+      "rulebookLinks": [
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "One-Time Rules & Component Adjustments",
+            "Illusionist Class"
+          ],
+          "title": "Rule adjustment"
+        }
+      ]
+    },
+    "warlock": {
+      "rulebookLinks": [
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "One-Time Rules & Component Adjustments",
+            "Warlock Class"
+          ],
+          "title": "Rule adjustment"
+        }
+      ]
+    }
   }
 }
