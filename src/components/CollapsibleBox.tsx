@@ -8,7 +8,7 @@ export function CollapsibleBox({
   countLabel,
   children,
 }: {
-  title: string;
+  title: ReactNode;
   count?: number;
   countLabel?: string;
   children: ReactNode;
