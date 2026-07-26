@@ -812,5 +812,34 @@
         }
       ]
     }
+  },
+  "magic": {
+    "blue": {
+      "classes": [
+        "conjurer",
+        "runesword"
+      ]
+    },
+    "green": {
+      "classes": [
+        "druid"
+      ]
+    },
+    "purple": {
+      "classes": [
+        "battle-mage"
+      ]
+    },
+    "black": {
+      "classes": [
+        "decayed"
+      ]
+    },
+    "white": {
+      "classes": [
+        "decayed",
+        "disciple"
+      ]
+    }
   }
 }

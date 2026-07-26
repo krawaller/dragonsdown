@@ -7,7 +7,6 @@ import {
 import { slugify } from "./slug";
 import { normalizeTitle } from "./tts";
 import { getAllClasses, getAllLineages, getAllSpells } from "./tts/lookup";
-import magicLinks from "../../data/manual/magic-links.json";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
 import ruleReferences from "../../data/manual/rule-references.json";
@@ -64,13 +63,6 @@ type RuleReferenceEntry = {
   rulebookLinks?: RulebookLinkQuery[];
 };
 type RuleReferenceMap = Record<string, RuleReferenceEntry>;
-type MagicRulebookLinkMap = Record<
-  string,
-  {
-    classes?: string[];
-    rulebookLinks?: RulebookLinkQuery[];
-  }
->;
 type RulebookLinkPreview = {
   content: string;
   contentNodes: SectionContentNode[];
@@ -368,19 +360,10 @@ export async function resolveMagicRulebookLinks(
 async function resolveMagicManualRulebookLinks(
   magic: string,
 ): Promise<RulebookLink[]> {
-  const references = (magicLinks as MagicRulebookLinkMap)[magic];
-  if (!references) return [];
-
-  const links = await Promise.all([
-    ...uniqueRulebookQueries(references.rulebookLinks).map((query) =>
-      resolveRulebookLinks(query),
-    ),
-    ...uniqueNonEmpty(references.classes ?? [])
-      .flatMap(classAdvantageTitlesForClassReference)
-      .map(resolveClassAdvantageRulebookLinks),
-  ]);
-
-  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+  return resolveRuleReferenceLinksForSlug(
+    ruleReferences.magic as RuleReferenceMap,
+    magic,
+  );
 }
 
 export async function resolveOptionalRulebookLinks(
