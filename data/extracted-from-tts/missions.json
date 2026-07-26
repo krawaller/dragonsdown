@@ -18,6 +18,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "description": "Complete at Mariners",
       "completeAt": [
         "Mariners"
@@ -81,6 +87,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -108,6 +120,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -142,6 +160,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -173,6 +197,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "cunning"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -239,6 +269,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -268,6 +304,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -295,6 +337,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -322,6 +370,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -351,6 +405,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -378,6 +438,12 @@
       ],
       "kind": "quest",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 2,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Village",
       "completeAt": [
         "Village"
@@ -402,7 +468,13 @@
         "Plains Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "plains"
+      "terrainPack": "plains",
+      "stats": {
+        "gold": 7,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      }
     }
   ],
   "Crafting Gear": [
@@ -426,6 +498,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -461,6 +539,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -490,6 +574,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "deserts",
+      "stats": {
+        "gold": 0,
+        "fame": 10,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -517,6 +607,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -546,6 +642,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 0,
+        "fame": 10,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -578,6 +680,12 @@
       ],
       "kind": "quest",
       "terrainPack": "oasis",
+      "stats": {
+        "gold": 0,
+        "fame": 10,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -607,6 +715,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "deserts",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -634,6 +748,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "deserts",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "cunning"
+      },
       "description": "Complete at Aurorans",
       "completeAt": [
         "Aurorans"
@@ -661,6 +781,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -697,6 +823,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "points": {
@@ -729,6 +861,12 @@
       ],
       "kind": "quest",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -753,6 +891,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -783,6 +927,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -816,6 +966,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "description": "Complete at Wardens",
       "completeAt": [
         "Wardens"
@@ -840,6 +996,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 5,
+        "fame": 15,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -869,6 +1031,12 @@
       ],
       "kind": "quest",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 0,
+        "fame": 10,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -898,6 +1066,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 10,
+        "fame": 10,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -925,7 +1099,13 @@
         "Caves  Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "caves"
+      "terrainPack": "caves",
+      "stats": {
+        "gold": 7,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      }
     }
   ],
   "Forester": [
@@ -946,6 +1126,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -974,6 +1160,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "cunning"
+      },
       "rewards": {
         "steal": {
           "points": {
@@ -1006,6 +1198,12 @@
       ],
       "kind": "quest",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 2,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -1030,6 +1228,12 @@
       ],
       "kind": "quest",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 2,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -1055,6 +1259,12 @@
       ],
       "kind": "quest",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 10,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Knights",
       "completeAt": [
         "Knights"
@@ -1080,6 +1290,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -1109,6 +1325,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -1136,6 +1358,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -1167,6 +1395,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "points": {
@@ -1199,6 +1433,12 @@
       ],
       "kind": "quest",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 2,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -1224,6 +1464,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "description": "Complete at Knights",
       "completeAt": [
         "Knights"
@@ -1252,6 +1498,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1281,7 +1533,13 @@
         "Swamps Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "swamps"
+      "terrainPack": "swamps",
+      "stats": {
+        "gold": 7,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      }
     }
   ],
   "Misplaced Ore": [
@@ -1303,6 +1561,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Dwarves",
       "completeAt": [
         "Dwarves"
@@ -1328,6 +1592,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "description": "Complete at Villagers",
       "completeAt": [
         "Villagers"
@@ -1356,6 +1626,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1387,6 +1663,12 @@
       ],
       "kind": "quest",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 0,
+        "fame": 0,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -1416,6 +1698,12 @@
       ],
       "kind": "quest",
       "terrainPack": "riverlands",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 2,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -1443,6 +1731,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 10,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "rewards": {
         "attributes": {
           "charisma": 1
@@ -1474,6 +1768,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 5,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "cunning"
+      },
       "rewards": {
         "drawCards": {
           "spell": 5
@@ -1505,6 +1805,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
+      "stats": {
+        "gold": 7,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1533,6 +1839,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "oasis",
+      "stats": {
+        "gold": 5,
+        "fame": 15,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -1560,6 +1872,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "riverlands",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1591,6 +1909,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 0,
+        "attribute": "cunning"
+      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -1624,6 +1948,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1662,6 +1992,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "deserts",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "steal": {
           "points": {
@@ -1696,6 +2032,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 9,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "drawCards": {
           "item": 1
@@ -1727,6 +2069,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -1760,6 +2108,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1794,6 +2148,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "oasis",
+      "stats": {
+        "gold": 0,
+        "fame": 10,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -1824,6 +2184,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "deserts",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -1849,6 +2215,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
+      "stats": {
+        "gold": 0,
+        "fame": 15,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Mariners.\nRemove for co-op modes.",
       "completeAt": [
         "Mariners"
@@ -1874,6 +2246,12 @@
       ],
       "kind": "quest",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Dwarves",
       "completeAt": [
         "Dwarves"
@@ -1898,6 +2276,12 @@
       ],
       "kind": "quest",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -1922,6 +2306,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "caves",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -1946,6 +2336,12 @@
       ],
       "kind": "quest",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -1972,6 +2368,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "oasis",
+      "stats": {
+        "gold": 5,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Nomads",
       "completeAt": [
         "Nomads"
@@ -1996,6 +2398,12 @@
       ],
       "kind": "quest",
       "terrainPack": "deserts",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -2020,7 +2428,13 @@
         "Woods Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "woods"
+      "terrainPack": "woods",
+      "stats": {
+        "gold": 7,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      }
     }
   ],
   "Surveyor": [
@@ -2041,6 +2455,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Village",
       "completeAt": [
         "Village"
@@ -2065,6 +2485,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -2089,6 +2515,12 @@
       ],
       "kind": "quest",
       "terrainPack": "deserts",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 2,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -2113,6 +2545,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -2140,6 +2578,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 5,
+        "fame": 15,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -2167,6 +2611,12 @@
       ],
       "kind": "quest",
       "terrainPack": "riverlands",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -2194,6 +2644,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "steal": {
           "points": {
@@ -2226,7 +2682,13 @@
         "Woods Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "woods"
+      "terrainPack": "woods",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "charisma"
+      }
     }
   ],
   "Tree Herder": [
@@ -2247,6 +2709,12 @@
       ],
       "kind": "quest",
       "terrainPack": "woods",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 2,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -2275,6 +2743,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 15,
+        "fame": 0,
+        "legend": 0,
+        "attribute": "wisdom"
+      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -2307,6 +2781,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 5,
+        "fame": 15,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -2334,6 +2814,12 @@
       ],
       "kind": "atrocity",
       "terrainPack": "swamps",
+      "stats": {
+        "gold": 0,
+        "fame": 20,
+        "legend": 1,
+        "attribute": "cunning"
+      },
       "rewards": {
         "outlaw": 1
       },
@@ -2361,6 +2847,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
+      "stats": {
+        "gold": 20,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "charisma"
+      },
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -2387,6 +2879,12 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
+      "stats": {
+        "gold": 10,
+        "fame": 10,
+        "legend": 0,
+        "attribute": "charisma"
+      },
       "rewards": {
         "attributes": {
           "charisma": 1
@@ -2416,6 +2914,12 @@
       ],
       "kind": "quest",
       "terrainPack": "plains",
+      "stats": {
+        "gold": 0,
+        "fame": 5,
+        "legend": 1,
+        "attribute": "wisdom"
+      },
       "description": "Complete at Village",
       "completeAt": [
         "Village"

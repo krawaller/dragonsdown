@@ -1,6 +1,305 @@
 [
   {
     "source": "dd_all_exp",
+    "raw": "Betrayer",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 2,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Black Follower",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 3,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Blood Offerer",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 4,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Cruel Kidnapper",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 5,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Cursed Threads",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 6,
+    "stats": {
+      "gold": 0,
+      "fame": 10,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Dark Worshipper",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 7,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Decapitator",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 8,
+    "stats": {
+      "gold": 0,
+      "fame": 10,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Desert Avenger",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 0,
+    "col": 9,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Dwarven Foe",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 0,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Evil Minion",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 1,
+    "stats": {
+      "gold": 5,
+      "fame": 15,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Fire Blighter",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 2,
+    "stats": {
+      "gold": 10,
+      "fame": 10,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Human Sacrificer",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 3,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Jail Breaker",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 4,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Pool Profaner",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 5,
+    "stats": {
+      "gold": 5,
+      "fame": 15,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Port Sacker",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 6,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Proven Rogue",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 7,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 0,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Ruthless Raider",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 8,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Sand Butcher",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 1,
+    "col": 9,
+    "stats": {
+      "gold": 0,
+      "fame": 10,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Temple Defiler",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 2,
+    "col": 1,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Tent Burner",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 2,
+    "col": 2,
+    "stats": {
+      "gold": 5,
+      "fame": 15,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Unwelcome Guest",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 2,
+    "col": 5,
+    "stats": {
+      "gold": 5,
+      "fame": 15,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Vile Assassin",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 2,
+    "col": 6,
+    "stats": {
+      "gold": 0,
+      "fame": 20,
+      "legend": 1,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Adrift Sailor",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 2,
+    "col": 7,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
     "raw": "Alcohol",
     "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
     "row": 2,
@@ -14,10 +313,803 @@
   },
   {
     "source": "dd_all_exp",
+    "raw": "Alpiner",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 2,
+    "col": 9,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Artifacts",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 1,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Banned Charts",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 2,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Bashkirian Tools",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 3,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Beast Traps",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 4,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Body Parts",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 5,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Clothing",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 7,
+    "stats": {
+      "gold": 7,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Crafting Gear",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 8,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Desert Water",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 3,
+    "col": 9,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Detrium",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 0,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Down Payment",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 1,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Eldritch Goods",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 2,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Errant Convict",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 3,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Food & Ale",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 4,
+    "stats": {
+      "gold": 7,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Forester",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 5,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Foul Letters",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 6,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Illegal Goods",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 8,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "King's Edicts",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 4,
+    "col": 9,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Lost Banner",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 0,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Medicine",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 1,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Message",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 2,
+    "stats": {
+      "gold": 7,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Misplaced Ore",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 3,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Missing Figure",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 4,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "New Maps",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 6,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Offer Letter",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 7,
+    "stats": {
+      "gold": 15,
+      "fame": 10,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Old Books",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 8,
+    "stats": {
+      "gold": 5,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "cunning"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Package",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 5,
+    "col": 9,
+    "stats": {
+      "gold": 7,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Provisions",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 0,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Rare Herbs",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 1,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Raw Material",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 2,
+    "stats": {
+      "gold": 9,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Sale Goods",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 5,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Sand Trekker",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 6,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Sea Explorer",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 7,
+    "stats": {
+      "gold": 0,
+      "fame": 15,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Spelunker",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 8,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Spirit Seeker",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+    "row": 6,
+    "col": 9,
+    "stats": {
+      "gold": 5,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Supplies",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 0,
+    "stats": {
+      "gold": 7,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Surveyor",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 1,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Swamper",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 2,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Trade Goods",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 3,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Treant Seeds",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 4,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Unknown Things",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 5,
+    "stats": {
+      "gold": 15,
+      "fame": 0,
+      "legend": 0,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Watercourser",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 7,
+    "stats": {
+      "gold": 20,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Whispers",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 0,
+    "col": 8,
+    "stats": {
+      "gold": 10,
+      "fame": 10,
+      "legend": 0,
+      "attribute": "charisma"
+    }
+  },
+  {
+    "source": "dd_all_exp",
     "raw": "Bat Hawker",
     "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
     "row": 1,
     "col": 0,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Centaur Scourge",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 1,
+    "col": 2,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 2,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Desert Avenger",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 1,
+    "col": 4,
+    "stats": {
+      "gold": 0,
+      "fame": 10,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Dragon Slayer",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 1,
+    "col": 5,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Feud Stopper",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 1,
+    "col": 6,
+    "stats": {
+      "gold": 0,
+      "fame": 10,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Giant Hunter",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 1,
+    "col": 8,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 2,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Goblin Blight",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 1,
+    "col": 9,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 2,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Griffon Tamer",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 0,
+    "stats": {
+      "gold": 10,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Lizard Ruin",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 2,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 2,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "New Patrol Route",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 3,
+    "stats": {
+      "gold": 0,
+      "fame": 0,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Oculus Reaper",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 4,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 2,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Skink Slasher",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 6,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Snake Grinder",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 7,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Spider Smiter",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 8,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Sting Breaker",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 2,
+    "col": 9,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Swarm Bane",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 3,
+    "col": 0,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 2,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Tide Tamer",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 3,
+    "col": 1,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 1,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Tree Herder",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 3,
+    "col": 2,
+    "stats": {
+      "gold": 0,
+      "fame": 5,
+      "legend": 2,
+      "attribute": "wisdom"
+    }
+  },
+  {
+    "source": "dd_all_exp",
+    "raw": "Wolf Butcher",
+    "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+    "row": 3,
+    "col": 3,
     "stats": {
       "gold": 0,
       "fame": 5,
