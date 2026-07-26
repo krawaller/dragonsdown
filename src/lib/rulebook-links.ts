@@ -11,7 +11,6 @@ import magicLinks from "../../data/manual/magic-links.json";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
 import ruleReferences from "../../data/manual/rule-references.json";
-import wildernessTokenRules from "../../data/manual/wilderness-token-rules.json";
 import {
   RULEBOOKS,
   contentNodesForMarkdown,
@@ -58,7 +57,6 @@ type RelatedClassAbilityMap = {
   monsterGroups?: Record<string, string[]>;
   sites?: Record<string, string[]>;
 };
-type ManualRulebookLinkMap = Record<string, RulebookLinkQuery[]>;
 type RuleReferenceEntry = {
   classes?: string[];
   lineages?: string[];
@@ -406,24 +404,10 @@ export async function resolveOptionalRulebookLinks(
 export async function resolveWildernessTokenRulebookLinks(
   slug: string,
 ): Promise<RulebookLink[]> {
-  return resolveManualRulebookLinksForSlug(
-    wildernessTokenRules as ManualRulebookLinkMap,
+  return resolveRuleReferenceLinksForSlug(
+    ruleReferences.wildernessTokens as RuleReferenceMap,
     slug,
   );
-}
-
-async function resolveManualRulebookLinksForSlug(
-  rules: ManualRulebookLinkMap,
-  slug: string,
-): Promise<RulebookLink[]> {
-  const ruleQueries = manualRulebookQueriesForSlug(rules, slug);
-  if (!ruleQueries) return [];
-
-  const links = await Promise.all(
-    ruleQueries.map((query) => resolveRulebookLinks(query)),
-  );
-
-  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
 }
 
 async function resolveRuleReferenceLinksForSlug(
@@ -449,18 +433,6 @@ async function resolveRuleReferenceLinksForSlug(
   ]);
 
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
-}
-
-function manualRulebookQueriesForSlug(
-  rules: ManualRulebookLinkMap,
-  slug: string,
-): RulebookLinkQuery[] | undefined {
-  return (
-    rules[slug] ??
-    Object.entries(rules).find(([key]) =>
-      manualRuleKeyMatchesSlug(key, slug),
-    )?.[1]
-  );
 }
 
 function manualRuleReferenceEntryForSlug(

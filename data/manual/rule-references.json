@@ -4,7 +4,10 @@
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Alert"]
+          "headings": [
+            "The actions:",
+            "Alert"
+          ]
         }
       ]
     },
@@ -12,11 +15,17 @@
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Sneak - or- Make Noise"]
+          "headings": [
+            "The actions:",
+            "Sneak - or- Make Noise"
+          ]
         },
         {
           "doc": "eastern-reaches",
-          "headings": ["OPTIONAL RULES", "Terrain Effects"],
+          "headings": [
+            "OPTIONAL RULES",
+            "Terrain Effects"
+          ],
           "anchor": "Woods Clearing"
         }
       ]
@@ -25,161 +34,273 @@
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Sneak - or- Make Noise"],
+          "headings": [
+            "The actions:",
+            "Sneak - or- Make Noise"
+          ],
           "preferIconIndex": 1
         }
       ]
     },
     "enchant": {
-      "classes": ["enchanter"],
+      "classes": [
+        "enchanter"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Enchant"]
+          "headings": [
+            "The actions:",
+            "Enchant"
+          ]
         },
         {
           "doc": "core",
-          "headings": ["OPTIONAL RULES", "Enchantment Limit"]
+          "headings": [
+            "OPTIONAL RULES",
+            "Enchantment Limit"
+          ]
         },
         {
           "doc": "core",
-          "headings": ["OPTIONAL RULES", "Enchanted Paths"]
+          "headings": [
+            "OPTIONAL RULES",
+            "Enchanted Paths"
+          ]
         },
         {
           "doc": "natives-and-legends",
-          "headings": ["OPTIONAL RULES", "Enchantment Depletion"]
+          "headings": [
+            "OPTIONAL RULES",
+            "Enchantment Depletion"
+          ]
         },
         {
           "doc": "natives-and-legends",
-          "headings": ["OPTIONAL RULES", "Expanded Enchantment"]
+          "headings": [
+            "OPTIONAL RULES",
+            "Expanded Enchantment"
+          ]
         }
       ]
     },
     "explore": {
-      "classes": ["explorer"],
+      "classes": [
+        "explorer"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Explore"]
+          "headings": [
+            "The actions:",
+            "Explore"
+          ]
         }
       ]
     },
     "move": {
-      "spells": ["trail blaze", "fly"],
-      "classes": ["explorer", "soulless"],
+      "spells": [
+        "trail blaze",
+        "fly"
+      ],
+      "classes": [
+        "explorer",
+        "soulless"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Move"]
+          "headings": [
+            "The actions:",
+            "Move"
+          ]
         },
         {
           "doc": "eastern-reaches-reaches",
-          "headings": ["Ruthless Riverlands", "River Clearings"],
-          "anchorRange": [1, 3]
+          "headings": [
+            "Ruthless Riverlands",
+            "River Clearings"
+          ],
+          "anchorRange": [
+            1,
+            3
+          ]
         },
         {
           "doc": "core",
-          "headings": ["OTHER RULES", "Flying"]
+          "headings": [
+            "OTHER RULES",
+            "Flying"
+          ]
         },
         {
           "doc": "eastern-reaches-reaches",
-          "headings": ["Ruthless Riverlands", "Swimming"]
+          "headings": [
+            "Ruthless Riverlands",
+            "Swimming"
+          ]
         },
         {
           "doc": "core",
-          "headings": ["OPTIONAL RULES", "Enchanted Paths"]
+          "headings": [
+            "OPTIONAL RULES",
+            "Enchanted Paths"
+          ]
         }
       ]
     },
     "search": {
-      "spells": ["Nature’s Help"],
-      "classes": ["barbarian", "ranger"],
+      "spells": [
+        "Nature’s Help"
+      ],
+      "classes": [
+        "barbarian",
+        "ranger"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Search"]
+          "headings": [
+            "The actions:",
+            "Search"
+          ]
         }
       ]
     },
     "learn": {
-      "classes": ["wizard"],
+      "classes": [
+        "wizard"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Learn"]
+          "headings": [
+            "The actions:",
+            "Learn"
+          ]
         }
       ]
     },
     "loot": {
-      "spells": ["divination"],
+      "spells": [
+        "divination"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Loot"]
+          "headings": [
+            "The actions:",
+            "Loot"
+          ]
         },
         {
           "doc": "eastern-reaches",
-          "headings": ["OPTIONAL RULES", "Watchful Guardians"]
+          "headings": [
+            "OPTIONAL RULES",
+            "Watchful Guardians"
+          ]
         }
       ]
     },
     "rest": {
-      "classes": ["knight"],
+      "classes": [
+        "knight"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Rest"]
+          "headings": [
+            "The actions:",
+            "Rest"
+          ]
         }
       ]
     },
     "trade": {
-      "spells": ["charismagic"],
-      "classes": ["black knight", "outcast"],
+      "spells": [
+        "charismagic"
+      ],
+      "classes": [
+        "black knight",
+        "outcast"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["The actions:", "Trade"]
+          "headings": [
+            "The actions:",
+            "Trade"
+          ]
         },
         {
           "doc": "core",
-          "headings": ["OTHER RULES", "Haggling"]
+          "headings": [
+            "OTHER RULES",
+            "Haggling"
+          ]
         }
       ]
     },
     "hire": {
-      "spells": ["charismagic", "orc call"],
-      "classes": ["beastmaster", "burgess"],
+      "spells": [
+        "charismagic",
+        "orc call"
+      ],
+      "classes": [
+        "beastmaster",
+        "burgess"
+      ],
       "rulebookLinks": [
         {
           "doc": "natives-and-legends",
-          "headings": ["DRAGONS DOWN: NATIVES", "Hiring Natives"]
+          "headings": [
+            "DRAGONS DOWN: NATIVES",
+            "Hiring Natives"
+          ]
         },
         {
           "doc": "natives-and-legends",
-          "headings": ["DRAGONS DOWN: NATIVES", "Haggling with Natives"]
+          "headings": [
+            "DRAGONS DOWN: NATIVES",
+            "Haggling with Natives"
+          ]
         },
         {
           "doc": "natives-and-legends",
-          "headings": ["DRAGONS DOWN: NATIVES", "Hired Natives"]
+          "headings": [
+            "DRAGONS DOWN: NATIVES",
+            "Hired Natives"
+          ]
         },
         {
           "doc": "natives-and-legends",
-          "headings": ["DRAGONS DOWN: NATIVES", "Hired Natives in Combat"],
+          "headings": [
+            "DRAGONS DOWN: NATIVES",
+            "Hired Natives in Combat"
+          ],
           "includeChildren": true
         }
       ]
     },
     "hide": {
-      "lineages": ["halfling"],
+      "lineages": [
+        "halfling"
+      ],
       "rulebookLinks": [
         {
           "doc": "core",
-          "headings": ["Reactions", "Hide"],
+          "headings": [
+            "Reactions",
+            "Hide"
+          ],
           "title": "Hide (reaction)"
         },
         {
           "doc": "eastern-reaches",
-          "headings": ["OPTIONAL RULES", "Terrain Effects"],
+          "headings": [
+            "OPTIONAL RULES",
+            "Terrain Effects"
+          ],
           "anchor": "Woods Clearing"
         }
       ]
@@ -190,7 +311,10 @@
       "rulebookLinks": [
         {
           "doc": "eastern-reaches",
-          "headings": ["One-Time Rules & Component Adjustments", "Druid Class"],
+          "headings": [
+            "One-Time Rules & Component Adjustments",
+            "Druid Class"
+          ],
           "title": "Rule adjustment"
         }
       ]
@@ -230,6 +354,330 @@
             "Gnomes Lineage"
           ],
           "title": "Rule adjustment"
+        }
+      ]
+    }
+  },
+  "wildernessTokens": {
+    "abyss": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "battlefield": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "buried temple": {
+      "rulebookLinks": [
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "New Map Tokens",
+            "Wilderness Tokens"
+          ],
+          "anchor": "Buried Temple:"
+        },
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "One-Time Rules & Component Adjustments",
+            "Special Locations Wilderness Tokens"
+          ]
+        }
+      ]
+    },
+    "campfire": {
+      "rulebookLinks": [
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "New Map Tokens",
+            "Wilderness Tokens"
+          ],
+          "anchor": "Campfire/Encampment/Inn:"
+        }
+      ]
+    },
+    "discovery": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Discovery:"
+        },
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "New Map Tokens",
+            "Wilderness Tokens"
+          ],
+          "anchor": "Discovery:"
+        },
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "OPTIONAL RULES",
+            "Earned Rewards"
+          ]
+        }
+      ]
+    },
+    "dwarven-ruins": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Forgotten City/Dwarven Ruins:"
+        },
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "One-Time Rules & Component Adjustments",
+            "Special Locations Wilderness Tokens"
+          ]
+        }
+      ]
+    },
+    "encampment": {
+      "rulebookLinks": [
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "New Map Tokens",
+            "Wilderness Tokens"
+          ],
+          "anchor": "Campfire/Encampment/Inn:"
+        }
+      ]
+    },
+    "forgotten-city": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Forgotten City/Dwarven Ruins:"
+        },
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "One-Time Rules & Component Adjustments",
+            "Special Locations Wilderness Tokens"
+          ]
+        }
+      ]
+    },
+    "gate": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        },
+        {
+          "doc": "core",
+          "headings": [
+            "The actions:",
+            "Move"
+          ],
+          "anchor": "Gates:"
+        }
+      ]
+    },
+    "grove": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "inn": {
+      "rulebookLinks": [
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "New Map Tokens",
+            "Wilderness Tokens"
+          ],
+          "anchor": "Campfire/Encampment/Inn:"
+        }
+      ]
+    },
+    "item": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Item:"
+        },
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "OPTIONAL RULES",
+            "Earned Rewards"
+          ]
+        }
+      ]
+    },
+    "lost-battalion": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "mausoleum": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Treasure:"
+        }
+      ]
+    },
+    "oasis": {
+      "rulebookLinks": [
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "New Map Tokens",
+            "Wilderness Tokens"
+          ],
+          "anchor": "Oasis:"
+        }
+      ]
+    },
+    "secret-cache": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "site": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Site:"
+        }
+      ]
+    },
+    "terrace": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "treasure": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Treasure:"
+        },
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "OPTIONAL RULES",
+            "Earned Rewards"
+          ]
+        }
+      ]
+    },
+    "wreck": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "wrecked-wagons": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
+        }
+      ]
+    },
+    "ziggurat": {
+      "rulebookLinks": [
+        {
+          "doc": "core",
+          "headings": [
+            "Place Tokens:",
+            "Wilderness tiles:"
+          ],
+          "anchor": "Numbered Token:"
         }
       ]
     }
