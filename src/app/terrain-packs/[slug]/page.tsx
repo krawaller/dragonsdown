@@ -7,12 +7,14 @@ import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import { getClearingTypeIcon } from "@/lib/clearing-types";
 import { terrainPackSummary } from "@/lib/terrain-packs";
 import {
+  getAllMerchants,
   getAllTerrainPacks,
   getTerrainPackBySlug,
   type EquipmentDeck,
   type BoardEntry,
   type TerrainPackClearingTypeEntry,
   type CivilisationTokenNameEntry,
+  type MerchantEntry,
   type MapTileEntry,
   type TerrainPackMonsterEntry,
   type TerrainPackNativeEntry,
@@ -34,6 +36,11 @@ export default async function TerrainPackPage({
   const { slug } = await params;
   const pack = getTerrainPackBySlug(slug);
   if (!pack) notFound();
+  const wildernessTokenCount = wildernessTokenPackTotalCount(
+    pack.wildernessTokens,
+    pack.name,
+  );
+  const merchants = terrainPackMerchants(pack);
 
   return (
     <main className="mx-auto max-w-7xl px-6 py-12">
@@ -72,7 +79,7 @@ export default async function TerrainPackPage({
         </TerrainBox>
 
         <TerrainBox
-          title="Civilisation Tokens"
+          title="Civilization Tokens"
           count={pack.civilisationTokens.length}
         >
           <LinkedGrid>
@@ -86,9 +93,22 @@ export default async function TerrainPackPage({
           </LinkedGrid>
         </TerrainBox>
 
+        <TerrainBox title="Merchants" count={merchants.length}>
+          <LinkedGrid>
+            {merchants.map((entry) => (
+              <MerchantTile
+                key={entry.slug}
+                entry={entry}
+                packName={pack.name}
+              />
+            ))}
+          </LinkedGrid>
+        </TerrainBox>
+
         <TerrainBox
           title="Wilderness Tokens"
-          count={pack.wildernessTokens.length}
+          count={wildernessTokenCount}
+          countLabel={tokenCountLabel(wildernessTokenCount)}
         >
           <LinkedGrid>
             {pack.wildernessTokens.map((entry) => (
@@ -116,7 +136,10 @@ export default async function TerrainPackPage({
           <MissionCardLinks missions={pack.uniqueMissions} />
         </TerrainBox>
 
-        <TerrainBox title="Civ Locations" count={pack.civLocations.length}>
+        <TerrainBox
+          title="Civilization Locations"
+          count={pack.civLocations.length}
+        >
           <LinkedGrid>
             {pack.civLocations.map((entry) => (
               <ImageTile
@@ -145,7 +168,7 @@ export default async function TerrainPackPage({
         </TerrainBox>
 
         <TerrainBox
-          title="Other Natives and Monsters"
+          title="Other Native/Monster Groups"
           count={pack.natives.length + pack.monsters.length}
         >
           <NativeGrid>
@@ -166,7 +189,7 @@ export default async function TerrainPackPage({
           </ClearingTypeGrid>
         </TerrainBox>
 
-        <TerrainBox title="Sites" count={pack.sites.length}>
+        <TerrainBox title="Treasure Sites" count={pack.sites.length}>
           <LinkedGrid>
             {pack.sites.map((entry) => (
               <SiteTile key={entry.slug} entry={entry} />
@@ -196,14 +219,16 @@ function terrainPackDisplayName(pack: TerrainPackEntry): string {
 function TerrainBox({
   title,
   count,
+  countLabel,
   children,
 }: {
   title: string;
   count: number;
+  countLabel?: string;
   children: React.ReactNode;
 }) {
   return (
-    <CollapsibleBox title={title} count={count}>
+    <CollapsibleBox title={title} count={count} countLabel={countLabel}>
       {children}
     </CollapsibleBox>
   );
@@ -256,6 +281,29 @@ function CivilisationTokenTile({
   return (
     <ImageTile
       href={`/civilisation-tokens/${entry.slug}`}
+      name={entry.name}
+      imageUrl={token.imageSecondaryURL || token.imageURL}
+      subtitle={tokenCountLabel(civilisationTokenTotalCount(token))}
+      imageClassName="object-cover"
+    />
+  );
+}
+
+function MerchantTile({
+  entry,
+  packName,
+}: {
+  entry: MerchantEntry;
+  packName: string;
+}) {
+  const token =
+    entry.tokens.find(
+      (tokenImage) =>
+        (tokenImage.terrainPack ?? tokenImage.terrainGroup) === packName,
+    ) ?? entry.tokens[0];
+  return (
+    <ImageTile
+      href={`/merchants/${entry.slug}`}
       name={entry.name}
       imageUrl={token.imageSecondaryURL || token.imageURL}
       subtitle={token.attribute ?? token.gmNotes ?? token.terrainGroup}
@@ -380,7 +428,7 @@ function ClearingTypeTile({ entry }: { entry: TerrainPackClearingTypeEntry }) {
         />
       </div>
       <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-        {entry.count} clearing side{entry.count === 1 ? "" : "s"}
+        {entry.count} clearing{entry.count === 1 ? "" : "s"}
       </p>
     </Link>
   );
@@ -458,15 +506,48 @@ function ImageTile({
 function wildernessTokenSubtitle(
   token: WildernessTokenNameEntry["tokens"][number],
 ): string {
-  return [token.clearing ? `clearing ${token.clearing}` : undefined, token.draw]
-    .filter(Boolean)
-    .join(" · ");
+  return tokenCountLabel(wildernessTokenTotalCount(token));
+}
+
+function civilisationTokenTotalCount(
+  token: CivilisationTokenNameEntry["tokens"][number],
+): number {
+  return token.locations.reduce((sum, location) => sum + location.count, 0);
+}
+
+function wildernessTokenPackTotalCount(
+  entries: WildernessTokenNameEntry[],
+  packName: string,
+): number {
+  return entries.reduce((sum, entry) => {
+    const token =
+      entry.tokens.find((tokenImage) => tokenImage.terrain === packName) ??
+      entry.tokens[0];
+    return sum + wildernessTokenTotalCount(token);
+  }, 0);
+}
+
+function wildernessTokenTotalCount(
+  token: WildernessTokenNameEntry["tokens"][number],
+): number {
+  return token.locations.reduce((sum, location) => sum + location.count, 0);
+}
+
+function tokenCountLabel(count: number): string {
+  return `${count} token${count === 1 ? "" : "s"}`;
 }
 
 function nativeMonsterBoxTitle(pack: TerrainPackEntry): string {
   return pack.slug === "neutral"
-    ? "Natives and Monsters"
-    : "Unique Natives and Monsters";
+    ? "Native/Monster Groups"
+    : "Unique Native/Monster Groups";
+}
+
+function terrainPackMerchants(pack: TerrainPackEntry): MerchantEntry[] {
+  const merchantNames = new Set(
+    pack.boards.flatMap((entry) => entry.board.merchants),
+  );
+  return getAllMerchants().filter((entry) => merchantNames.has(entry.name));
 }
 
 function equipmentDeckLabel(deck: EquipmentDeck): string {

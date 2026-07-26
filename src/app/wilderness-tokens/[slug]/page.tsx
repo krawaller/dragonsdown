@@ -6,6 +6,7 @@ import { RulebookLinks } from "@/components/RulebookLinks";
 import { resolveWildernessTokenRulebookLinks } from "@/lib/rulebook-links";
 import {
   getCivLocationBySlug,
+  getAllTerrainPacks,
   getAllWildernessTokenNames,
   getBoardsForMerchant,
   getBoardsForSite,
@@ -36,6 +37,9 @@ export default async function WildernessTokenPage({
   const nativeGroups = getNativeGroupsForWildernessToken(entry.name);
   const missions = getMissionsForTarget(entry.name);
   const rulebookLinks = await resolveWildernessTokenRulebookLinks(entry.slug);
+  const terrainPacksByName = new Map(
+    getAllTerrainPacks().map((pack) => [pack.name, pack]),
+  );
 
   const total = entry.tokens.reduce(
     (sum, token) => sum + tokenTotalCount(token),
@@ -55,7 +59,7 @@ export default async function WildernessTokenPage({
       </div>
       <h1 className="text-4xl font-bold mt-4 mb-2">{entry.name}</h1>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        {entry.tokens.length} images · {total} physical tokens
+        {tokenCountLabel(total)}
       </p>
 
       {civLocation && (
@@ -110,52 +114,76 @@ export default async function WildernessTokenPage({
         className="mb-8"
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {entry.tokens.map((token) => (
-          <section
-            key={`${token.terrain}-${token.imageURL}`}
-            className="flex flex-col gap-2"
-          >
-            <div className="rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={token.imageURL}
-                alt={`${entry.name} ${token.terrain}`}
-                className="block w-full aspect-square object-cover"
-              />
-            </div>
-            <div>
-              <h2 className="text-base font-semibold">{token.terrain}</h2>
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                {wildernessTokenDetails(token)} · {tokenTotalCount(token)} total
-              </p>
-            </div>
-            <ul className="space-y-1 text-xs text-zinc-500 dark:text-zinc-400">
-              {token.locations.map((location) => (
-                <li key={`${location.ancestry.join("/")}-${location.count}`}>
-                  {location.ancestry.length > 0
-                    ? location.ancestry.join(" / ")
-                    : "Loose"}
-                  {" · "}
-                  {location.count}
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+      <div className="overflow-hidden rounded border border-zinc-200 dark:border-zinc-800">
+        {entry.tokens.map((token) => {
+          const pack = terrainPacksByName.get(token.terrain);
+
+          return (
+            <Link
+              key={`${token.terrain}-${token.imageURL}`}
+              href={terrainPackHref(pack)}
+              aria-label={`View ${token.terrain}`}
+              className="grid grid-cols-[4.5rem_minmax(0,1fr)] gap-4 border-b border-zinc-200 p-4 transition last:border-b-0 hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900 sm:grid-cols-[5rem_minmax(0,1fr)]"
+            >
+              <TerrainPackIcon terrain={token.terrain} pack={pack} />
+              <span className="flex min-w-0 flex-wrap gap-3">
+                {Array.from({ length: tokenTotalCount(token) }, (_, index) => (
+                  <span
+                    key={`${token.terrain}-${token.imageURL}-${index}`}
+                    className="size-20 overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 sm:size-24"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={token.imageURL}
+                      alt={`${entry.name} ${token.terrain}`}
+                      className="block size-full object-cover"
+                    />
+                  </span>
+                ))}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </main>
   );
 }
 
-function wildernessTokenDetails(token: WildernessTokenListEntry): string {
-  if (token.clearing !== undefined) return `clearing ${token.clearing}`;
-  if (token.draw !== undefined) return `draw ${token.draw}`;
-  return token.terrain;
-}
-
 function tokenTotalCount(token: WildernessTokenListEntry): number {
   return token.locations.reduce((sum, loc) => sum + loc.count, 0);
+}
+
+function tokenCountLabel(count: number): string {
+  return `${count} token${count === 1 ? "" : "s"}`;
+}
+
+function TerrainPackIcon({
+  terrain,
+  pack,
+}: {
+  terrain: string;
+  pack?: { slug: string; iconUrl?: string };
+}) {
+  return (
+    <span className="flex size-14 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900 sm:size-16">
+      {pack?.iconUrl ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={pack.iconUrl}
+          alt=""
+          className="block size-full object-cover"
+        />
+      ) : (
+        <span className="px-1 text-center text-xs font-medium text-zinc-600 dark:text-zinc-400">
+          {terrain}
+        </span>
+      )}
+    </span>
+  );
+}
+
+function terrainPackHref(pack: { slug: string } | undefined): string {
+  return pack ? `/terrain-packs/${pack.slug}` : "/terrain-packs";
 }
 
 function uniqueBoards(boards: BoardEntry[]): BoardEntry[] {
