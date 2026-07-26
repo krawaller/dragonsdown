@@ -7,7 +7,7 @@ import {
   type RulebookLink,
   type RulebookLinkQuery,
 } from "./rulebook-links";
-import actionRules from "../../data/manual/action-rules.json";
+import ruleReferences from "../../data/manual/rule-references.json";
 import { getClassBySlug, getLineageBySlug, getSpellBySlug } from "./tts/lookup";
 
 type ActionRuleEntry = {
@@ -29,9 +29,9 @@ export type ActionEntry = {
 
 export async function getAllActions(): Promise<ActionEntry[]> {
   return Promise.all(
-    Object.entries(actionRules as Record<string, ActionRuleEntry>).map(
-      async ([name, entry]) => actionEntryFor(name, entry),
-    ),
+    Object.entries(
+      ruleReferences.actions as Record<string, ActionRuleEntry>,
+    ).map(async ([name, entry]) => actionEntryFor(name, entry)),
   );
 }
 
