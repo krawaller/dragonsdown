@@ -219,5 +219,19 @@
         }
       ]
     }
+  },
+  "lineages": {
+    "gnomes": {
+      "rulebookLinks": [
+        {
+          "doc": "eastern-reaches",
+          "headings": [
+            "One-Time Rules & Component Adjustments",
+            "Gnomes Lineage"
+          ],
+          "title": "Rule adjustment"
+        }
+      ]
+    }
   }
 }

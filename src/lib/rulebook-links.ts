@@ -7,7 +7,6 @@ import {
 import { slugify } from "./slug";
 import { normalizeTitle } from "./tts";
 import { getAllClasses, getAllLineages, getAllSpells } from "./tts/lookup";
-import lineageRules from "../../data/manual/lineage-rules.json";
 import magicLinks from "../../data/manual/magic-links.json";
 import monsterReferenceAliases from "../../data/manual/monster-reference-aliases.json";
 import relatedClassAbilities from "../../data/manual/related-class-abilities.json";
@@ -241,15 +240,15 @@ export async function resolveLineageRulebookLinks({
   slug: string;
   advantageTitle: string;
 }): Promise<RulebookLink[]> {
-  const links = await Promise.all([
+  const [advantageLinks, referenceLinks] = await Promise.all([
     resolveLineageAdvantageRulebookLinks(advantageTitle),
-    resolveManualRulebookLinksForSlug(
-      lineageRules as ManualRulebookLinkMap,
+    resolveRuleReferenceLinksForSlug(
+      ruleReferences.lineages as RuleReferenceMap,
       slug,
     ),
   ]);
 
-  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+  return uniqueRulebookLinks([...advantageLinks, ...referenceLinks]);
 }
 
 export async function resolveSpellRulebookLinks(
