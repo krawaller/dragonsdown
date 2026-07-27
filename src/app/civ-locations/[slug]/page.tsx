@@ -4,6 +4,7 @@ import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
 import type { MapTile } from "@/components/MapTileViewer";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
+import { slugify } from "@/lib/slug";
 import {
   getAllCivLocations,
   getCivLocationBySlug,
@@ -67,7 +68,7 @@ export default async function CivLocationPage({
         <section className="mt-8 max-w-xs">
           <h2 className="text-sm font-medium mb-2">Civ tile</h2>
           <Link
-            href={`/map-tiles?${mapTileParams(mapTile).toString()}`}
+            href={mapTileHref(mapTile)}
             className="block overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -78,7 +79,7 @@ export default async function CivLocationPage({
             />
           </Link>
           <Link
-            href={`/map-tiles?${mapTileParams(mapTile).toString()}`}
+            href={mapTileHref(mapTile)}
             className="mt-2 block text-sm font-medium hover:underline"
           >
             {mapTile.name}
@@ -137,10 +138,6 @@ export default async function CivLocationPage({
   );
 }
 
-function mapTileParams(tile: MapTile): URLSearchParams {
-  const params = new URLSearchParams();
-  params.set("terrain", tile.terrain);
-  params.set("tile", tile.name);
-  params.set("side", "front");
-  return params;
+function mapTileHref(tile: MapTile): string {
+  return `/map-tiles/${slugify(tile.name)}`;
 }

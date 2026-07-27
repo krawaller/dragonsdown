@@ -1,69 +1,18 @@
 import Link from "next/link";
-import { Suspense } from "react";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import {
-  MapTileViewer,
-  type MapTile,
-  type MapTileCivLocation,
-  type MapTileMonsterGroup,
-  type MapTileMission,
-} from "@/components/MapTileViewer";
-import {
-  getAllCivLocations,
-  getMissionsForMapTile,
-  getMonsterGroupsForMapTile,
+  getAllTerrainPacks,
+  type MapTileEntry,
+  type TerrainPackEntry,
 } from "@/lib/tts/lookup";
-import { getClearingTypeTiles } from "@/lib/clearing-types";
-import { MAGIC_TYPES } from "@/lib/magic";
-import { resolveMagicRulebookLinks } from "@/lib/rulebook-links";
-import tiles from "../../../data/extracted-from-tts/map-tiles.json";
-import { promises as fs } from "fs";
-import { join } from "path";
 
-export default async function MapTilesPage() {
-  const mapTiles = withClearingTypes(tiles as MapTile[]);
-  const civLocations: MapTileCivLocation[] = getAllCivLocations().map(
-    ({ name, slug, location }) => ({
-      name,
-      slug,
-      imageUrl: location.imageURL,
-    }),
+export default function MapTilesPage() {
+  const terrainPacks = getAllTerrainPacks().filter(
+    (pack) => pack.mapTiles.length > 0,
   );
-  const monsterGroups: MapTileMonsterGroup[] = mapTiles.flatMap((tile) =>
-    getMonsterGroupsForMapTile(tile.terrain, tile.name).map((group) => ({
-      ...group,
-      tileName: tile.name,
-      terrain: tile.terrain,
-    })),
-  );
-  const missions: MapTileMission[] = mapTiles.flatMap((tile) =>
-    getMissionsForMapTile(tile.terrain, tile.name).map((mission) => ({
-      tileName: tile.name,
-      terrain: tile.terrain,
-      name: mission.name,
-      slug: mission.slug,
-      descriptions: mission.descriptions,
-    })),
-  );
-
-  const connectionsPath = join(
-    process.cwd(),
-    "data/manual/map-tile-connections.json",
-  );
-  const connectionsData = JSON.parse(
-    await fs.readFile(connectionsPath, "utf-8"),
-  ) as Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >;
-  const magicIcons = Object.fromEntries(
-    await Promise.all(
-      MAGIC_TYPES.map(async (type) => {
-        const icon = (await resolveMagicRulebookLinks(type.id, "core")).find(
-          (link) => Boolean(link.icon),
-        )?.icon;
-        return [type.id, icon ?? ""] as const;
-      }),
-    ),
+  const total = terrainPacks.reduce(
+    (sum, pack) => sum + pack.mapTiles.length,
+    0,
   );
 
   return (
@@ -74,38 +23,73 @@ export default async function MapTilesPage() {
       >
         ← All docs
       </Link>
-      <h1 className="text-4xl font-bold mt-4 mb-8">Map Tiles</h1>
-      <Suspense fallback={null}>
-        <MapTileViewer
-          tiles={mapTiles}
-          civLocations={civLocations}
-          monsterGroups={monsterGroups}
-          missions={missions}
-          mapTileConnections={connectionsData}
-          magicIcons={magicIcons}
-        />
-      </Suspense>
+      <h1 className="text-4xl font-bold mt-4 mb-2">Map Tiles</h1>
+      <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
+        {tileCountLabel(total)} across {terrainPacks.length} terrain packs
+      </p>
+      <div className="space-y-6">
+        {terrainPacks.map((pack) => (
+          <CollapsibleBox
+            key={pack.slug}
+            title={<TerrainPackTitle pack={pack} />}
+            count={pack.mapTiles.length}
+            countLabel={tileCountLabel(pack.mapTiles.length)}
+          >
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+              {pack.mapTiles.map((tile) => (
+                <MapTileCard key={`${tile.terrain}-${tile.name}`} tile={tile} />
+              ))}
+            </div>
+          </CollapsibleBox>
+        ))}
+      </div>
     </main>
   );
 }
 
-function withClearingTypes(mapTiles: MapTile[]): MapTile[] {
-  const clearingTypesByTile = new Map(
-    getClearingTypeTiles().map((tile) => [tileKey(tile), tile]),
+function TerrainPackTitle({ pack }: { pack: TerrainPackEntry }) {
+  return (
+    <span className="inline-flex items-center gap-3 align-middle">
+      {pack.iconUrl && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={pack.iconUrl}
+          alt=""
+          className="h-8 w-8 shrink-0 rounded border border-zinc-200 bg-zinc-100 object-cover dark:border-zinc-800 dark:bg-zinc-900"
+        />
+      )}
+      <span>{pack.slug === "neutral" ? "Always in use" : pack.name}</span>
+    </span>
   );
-  return mapTiles.map((tile) => {
-    const clearingTypeTile = clearingTypesByTile.get(tileKey(tile));
-    if (!clearingTypeTile) return tile;
-    return {
-      ...tile,
-      clearings: tile.clearings.map((clearing, index) => ({
-        ...clearing,
-        type: clearingTypeTile.clearings[index]?.type,
-      })),
-    };
-  });
 }
 
-function tileKey(tile: { terrain: string; name: string }): string {
-  return `${tile.terrain}\u0000${tile.name}`;
+function MapTileCard({ tile }: { tile: MapTileEntry }) {
+  return (
+    <section className="flex min-w-0 flex-col gap-1">
+      <Link
+        href={tile.href}
+        className="overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition hover:ring-2 hover:ring-zinc-400 dark:border-zinc-800 dark:bg-zinc-900"
+        aria-label={`View ${tile.name}`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={tile.imageUrl}
+          alt={tile.name}
+          className="block aspect-square w-full -rotate-[30deg] object-contain p-4"
+        />
+      </Link>
+      <h2 className="mt-1 text-base font-semibold leading-6">
+        <Link href={tile.href} className="hover:underline">
+          {tile.name}
+        </Link>
+      </h2>
+      <p className="text-xs text-zinc-500 dark:text-zinc-400">
+        {tile.terrain} · {tile.clearings.length} clearings
+      </p>
+    </section>
+  );
+}
+
+function tileCountLabel(count: number): string {
+  return `${count} map tile${count === 1 ? "" : "s"}`;
 }

@@ -8,6 +8,7 @@ import {
   resolveMagicRulebookLinks,
   type RulebookLink,
 } from "@/lib/rulebook-links";
+import { slugify } from "@/lib/slug";
 import type { TTSClassSetupCube, TTSSpell, TTSSpellCard } from "@/lib/tts";
 import {
   getClassesForMagicCube,
@@ -105,15 +106,10 @@ export default async function MagicTypePage({
           </h2>
           <div className="flex flex-wrap gap-2">
             {tilesWithColorPaths.map((tile) => {
-              const params = new URLSearchParams({
-                terrain: tile.terrain,
-                tile: tile.name,
-                side: tile.side ?? "front",
-              });
               return (
                 <Link
                   key={`${tile.name}-${tile.side}`}
-                  href={`/map-tiles?${params.toString()}`}
+                  href={`/map-tiles/${slugify(tile.name)}`}
                   className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
                 >
                   {tile.name}

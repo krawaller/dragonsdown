@@ -11,10 +11,12 @@ export function MonsterGroupStack({
   group,
   hrefBase = "/monster-groups",
   summaryKind = "monster",
+  subtitle,
 }: {
   group: MonsterGroupEntry;
   hrefBase?: string;
   summaryKind?: "monster" | "monsterIndex" | "native";
+  subtitle?: string;
 }) {
   const preview = group.chips.slice(0, 4);
   const totalCopies = group.chips.reduce(
@@ -51,7 +53,11 @@ export function MonsterGroupStack({
       <h2 className="text-lg font-semibold group-hover:underline">
         {group.prettyName}
       </h2>
-      {summaryKind === "native" ? (
+      {subtitle ? (
+        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+          {subtitle}
+        </p>
+      ) : summaryKind === "native" ? (
         <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
           {chipCountLabel(totalCopies)} ·{" "}
           {locationCountLabel(group.nativeSummons.length)}
@@ -68,7 +74,8 @@ export function MonsterGroupStack({
           {totalCopies} total
         </p>
       )}
-      {summaryKind === "monster" &&
+      {!subtitle &&
+        summaryKind === "monster" &&
         (group.mapTiles.length > 0 ||
           group.sites.length > 0 ||
           group.legendaryLocations.length > 0 ||

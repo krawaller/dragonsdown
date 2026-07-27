@@ -71,19 +71,13 @@ export function getClearingTypeTiles(): ClearingTypeTile[] {
 }
 
 export function mapTileHref({
-  terrain,
   tileName,
-  side,
 }: {
   terrain: string;
   tileName: string;
   side: MapTileSide;
 }): string {
-  const params = new URLSearchParams();
-  params.set("terrain", terrain);
-  params.set("tile", tileName);
-  params.set("side", side);
-  return `/map-tiles?${params.toString()}`;
+  return `/map-tiles/${slugify(tileName)}`;
 }
 
 function clearingTypeEntry(type: ClearingTypeId): ClearingTypeEntry {

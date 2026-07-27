@@ -1470,7 +1470,7 @@ export function getAllMapTiles(): MapTileEntry[] {
       ...tile,
       slug: slugify(tile.name),
       terrainPack: mapTileTerrainPack(tile),
-      href: `/map-tiles?${mapTileParams(tile).toString()}`,
+      href: `/map-tiles/${slugify(tile.name)}`,
     }))
     .sort(
       (a, b) =>
@@ -1642,14 +1642,6 @@ function mapTileTerrainPack(tile: TTSMapTile): string {
   return "terrainPack" in tile && typeof tile.terrainPack === "string"
     ? tile.terrainPack
     : tile.terrain;
-}
-
-function mapTileParams(tile: TTSMapTile): URLSearchParams {
-  const params = new URLSearchParams();
-  params.set("terrain", tile.terrain);
-  params.set("tile", tile.name);
-  params.set("side", "front");
-  return params;
 }
 
 function clearingTypesForTerrainPack(
@@ -2563,12 +2555,7 @@ function getNativeCivilisationCard(
 }
 
 function mapTileHref(terrain: string, tileName: string): string {
-  const params = new URLSearchParams({
-    terrain,
-    tile: tileName,
-    side: "front",
-  });
-  return `/map-tiles?${params.toString()}`;
+  return `/map-tiles/${slugify(tileName)}`;
 }
 
 function siteMonsterHref(name: string): string {
