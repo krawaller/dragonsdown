@@ -3,7 +3,7 @@
 import { useEffect, useMemo } from "react";
 import Link from "next/link";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
-import { MagicCube, type MagicIcons } from "@/components/MagicCube";
+import type { MagicIcons } from "@/components/MagicCube";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
@@ -604,13 +604,13 @@ function MagicColorIcon({
   color: string;
   magicIcons?: MagicIcons;
 }) {
+  const iconUrl = magicIcons ? magicIconFor(magicIcons, color) : undefined;
+
   return (
-    <span className="flex size-12 shrink-0 items-center justify-center rounded border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
-      {magicIcons ? (
-        <MagicCube
-          cube={{ count: 1, color, type: "cube" }}
-          magicIcons={magicIcons}
-        />
+    <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+      {iconUrl ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={iconUrl} alt="" className="block size-full object-contain" />
       ) : (
         <span className="text-xs font-medium capitalize">
           {color.slice(0, 1)}
@@ -618,6 +618,13 @@ function MagicColorIcon({
       )}
     </span>
   );
+}
+
+function magicIconFor(
+  magicIcons: MagicIcons,
+  color: string,
+): string | undefined {
+  return magicIcons instanceof Map ? magicIcons.get(color) : magicIcons[color];
 }
 
 function magicColorLabel(color: string): string {
@@ -821,14 +828,9 @@ function SecretPathMagicColors({
           <Link
             key={color}
             href={`/magic/${color}`}
-            className="inline-flex items-center gap-2 rounded border border-zinc-200 bg-white px-2 py-1 text-xs font-medium hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900 transition-colors"
+            className="inline-flex items-center gap-2 rounded border border-zinc-200 bg-white p-2 pr-3 text-xs font-medium hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900 transition-colors"
           >
-            {magicIcons ? (
-              <MagicCube
-                cube={{ count: 1, color, type: "cube" }}
-                magicIcons={magicIcons}
-              />
-            ) : null}
+            <MagicColorIcon color={color} magicIcons={magicIcons} />
             <span>{magicColorLabel(color)}</span>
           </Link>
         ))}

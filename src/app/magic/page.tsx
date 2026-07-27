@@ -36,12 +36,16 @@ export default async function MagicPage() {
             <Link
               key={type.id}
               href={`/magic/${type.slug}`}
-              className="rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+              className="flex items-center gap-4 rounded border border-zinc-200 p-4 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
             >
-              <MagicIcon icon={icon} label={type.label} className="mb-4" />
-              <span className="block text-lg font-semibold">{type.label}</span>
-              <span className="mt-1 block text-sm text-zinc-500 dark:text-zinc-400">
-                {spells.length} spell{spells.length === 1 ? "" : "s"}
+              <MagicIcon icon={icon} label={type.label} />
+              <span className="min-w-0">
+                <span className="block text-lg font-semibold">
+                  {type.label}
+                </span>
+                <span className="mt-1 block text-sm text-zinc-500 dark:text-zinc-400">
+                  {spells.length} spell{spells.length === 1 ? "" : "s"}
+                </span>
               </span>
             </Link>
           );
@@ -74,7 +78,7 @@ function MagicIcon({
     <img
       src={icon}
       alt={`${label} icon`}
-      className={`${className} block h-10 w-10 rounded border border-zinc-200 bg-zinc-100 object-contain p-1 dark:border-zinc-800 dark:bg-zinc-900`}
+      className={`${className} block h-10 w-10 rounded border border-zinc-200 bg-zinc-100 object-contain dark:border-zinc-800 dark:bg-zinc-900`}
     />
   );
 }

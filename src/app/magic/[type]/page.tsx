@@ -271,7 +271,7 @@ function MagicIcon({ icon, label }: { icon?: string; label: string }) {
     <img
       src={icon}
       alt={`${label} icon`}
-      className="block h-14 w-14 rounded border border-zinc-200 bg-zinc-100 object-contain p-1 dark:border-zinc-800 dark:bg-zinc-900"
+      className="block h-14 w-14 rounded border border-zinc-200 bg-zinc-100 object-contain dark:border-zinc-800 dark:bg-zinc-900"
     />
   );
 }
