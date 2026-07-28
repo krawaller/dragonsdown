@@ -31,6 +31,7 @@ export default async function EquipmentDetailPage({
   if (!entry) notFound();
   const hasLegendaryTreasure = entry.decks.includes("legendary");
   const sourceCards = equipmentSourceCards(entry);
+  const deckSubtitle = entry.decks.map(equipmentDeckLabel).join(" / ");
   const legendaryLocations = hasLegendaryTreasure
     ? getLegendaryLocationsForEquipment(entry.name)
     : [];
@@ -53,23 +54,10 @@ export default async function EquipmentDetailPage({
         </Link>
       </div>
 
-      <div className="mt-4 mb-8 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <h1 className="text-4xl font-bold mb-3">{entry.name}</h1>
-          <div className="flex flex-wrap gap-2">
-            {entry.decks.map((deck) => (
-              <span
-                key={deck}
-                className="rounded border border-zinc-200 dark:border-zinc-800 px-2 py-1 text-xs uppercase text-zinc-500 dark:text-zinc-400"
-              >
-                {equipmentDeckLabel(deck)}
-              </span>
-            ))}
-          </div>
-        </div>
-        <p className="text-sm text-zinc-500 dark:text-zinc-400">
-          {entry.copies} physical cop{entry.copies === 1 ? "y" : "ies"} ·{" "}
-          {sourceCards.length} source card{sourceCards.length === 1 ? "" : "s"}
+      <div className="mt-4 mb-8">
+        <h1 className="text-4xl font-bold">{entry.name}</h1>
+        <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+          {deckSubtitle}
         </p>
       </div>
 
