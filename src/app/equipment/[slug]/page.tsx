@@ -8,11 +8,14 @@ import type { TTSItemCard, TTSTreasureCard } from "@/lib/tts";
 import { slugify } from "@/lib/slug";
 import {
   getAllEquipment,
+  getAllTerrainPacks,
   getClassBySlug,
   getEquipmentBySlug,
   getLegendaryLocationsForEquipment,
   type EquipmentDeck,
   type EquipmentEntry,
+  type LegendaryLocationEntry,
+  type TerrainPackEntry,
 } from "@/lib/tts/lookup";
 
 type TreasureCardLink = NonNullable<TTSTreasureCard["cardLinks"]>[number];
@@ -35,6 +38,7 @@ export default async function EquipmentDetailPage({
   const legendaryLocations = hasLegendaryTreasure
     ? getLegendaryLocationsForEquipment(entry.name)
     : [];
+  const terrainPack = uniqueTerrainPackForEquipment(entry);
   const rulebookLinks = await resolveEquipmentRulebookLinks({
     name: entry.name,
     hasTreasure: entry.treasures.length > 0,
@@ -54,32 +58,18 @@ export default async function EquipmentDetailPage({
         </Link>
       </div>
 
-      <div className="mt-4 mb-8">
-        <h1 className="text-4xl font-bold">{entry.name}</h1>
-        <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-          {deckSubtitle}
-        </p>
+      <div className="mt-4 mb-8 flex flex-wrap items-start justify-between gap-3">
+        <div className="min-w-0">
+          <h1 className="text-4xl font-bold">{entry.name}</h1>
+          <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+            {deckSubtitle}
+          </p>
+        </div>
+        <HeaderContextLinks
+          legendaryLocations={legendaryLocations}
+          terrainPack={terrainPack}
+        />
       </div>
-
-      {legendaryLocations.length > 0 && (
-        <section className="mb-8 rounded border border-zinc-200 dark:border-zinc-800 p-4">
-          <h2 className="text-sm font-medium text-zinc-500 dark:text-zinc-400 mb-2">
-            Connected Legendary Location
-            {legendaryLocations.length === 1 ? "" : "s"}
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {legendaryLocations.map((location) => (
-              <Link
-                key={location.slug}
-                href={`/legendary-locations/${location.slug}`}
-                className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm font-semibold hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-              >
-                {location.name}
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
 
       <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_22rem] gap-10">
         <div className="space-y-10">
@@ -117,6 +107,80 @@ export default async function EquipmentDetailPage({
         </aside>
       </div>
     </main>
+  );
+}
+
+function HeaderContextLinks({
+  legendaryLocations,
+  terrainPack,
+}: {
+  legendaryLocations: LegendaryLocationEntry[];
+  terrainPack?: TerrainPackEntry;
+}) {
+  if (legendaryLocations.length === 0 && !terrainPack) return null;
+
+  return (
+    <div className="flex flex-wrap justify-end gap-2">
+      {terrainPack && (
+        <HeaderContextLink
+          href={`/terrain-packs/${terrainPack.slug}`}
+          label="Terrain pack"
+          value={terrainPack.name}
+          imageUrl={terrainPack.iconUrl}
+        />
+      )}
+      {legendaryLocations.map((location) => (
+        <HeaderContextLink
+          key={location.slug}
+          href={`/legendary-locations/${location.slug}`}
+          label="Legendary location"
+          value={location.name}
+          imageUrl={location.locations[0]?.siteToken?.imageURL}
+        />
+      ))}
+    </div>
+  );
+}
+
+function uniqueTerrainPackForEquipment(entry: EquipmentEntry) {
+  const matchingPacks = getAllTerrainPacks().filter((pack) =>
+    pack.terrainTreasures.some((treasure) => treasure.slug === entry.slug),
+  );
+
+  return matchingPacks.length === 1 ? matchingPacks[0] : undefined;
+}
+
+function HeaderContextLink({
+  href,
+  label,
+  value,
+  imageUrl,
+}: {
+  href: string;
+  label: string;
+  value: string;
+  imageUrl?: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="inline-flex max-w-64 min-w-0 items-center gap-2 rounded border border-zinc-200 bg-white px-2.5 py-2 text-xs transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
+    >
+      {imageUrl && (
+        <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={imageUrl} alt="" className="block size-full object-cover" />
+        </span>
+      )}
+      <span className="min-w-0">
+        <span className="block text-[0.6875rem] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+          {label}
+        </span>
+        <span className="block truncate font-medium text-zinc-900 dark:text-zinc-100">
+          {value}
+        </span>
+      </span>
+    </Link>
   );
 }
 

@@ -7,6 +7,7 @@ import type {
 } from "@/lib/rulebooks";
 import {
   markdownBlockAnchorFor,
+  markdownBlockMatchesAnchor,
   sectionContentAnchorIdFor,
 } from "@/lib/rulebook-anchors";
 
@@ -41,7 +42,8 @@ export function RulebookContent({
             components={{
               img: MarkdownImage,
               li: (props) => MarkdownListItem({ ...props, section }),
-              p: MarkdownMediaAsideParagraph,
+              p: (props) =>
+                MarkdownParagraph({ ...props, section, className: "mt-0" }),
               strong: (props) => MarkdownStrong({ ...props, section }),
             }}
           >
@@ -57,6 +59,7 @@ export function RulebookContent({
         components={{
           img: MarkdownImage,
           li: (props) => MarkdownListItem({ ...props, section }),
+          p: (props) => MarkdownParagraph({ ...props, section }),
           strong: (props) => MarkdownStrong({ ...props, section }),
         }}
       >
@@ -66,8 +69,31 @@ export function RulebookContent({
   });
 }
 
-function MarkdownMediaAsideParagraph({ children }: { children?: ReactNode }) {
-  return <p className="mt-0">{children}</p>;
+function MarkdownParagraph({
+  children,
+  className,
+  section,
+}: {
+  children?: ReactNode;
+  className?: string;
+  section?: Section;
+}) {
+  const text = textFromNode(children);
+  const anchor = paragraphAnchorFor(text);
+  return (
+    <p
+      id={
+        section && anchor
+          ? sectionContentAnchorIdFor(section, anchor)
+          : undefined
+      }
+      className={[className, section && anchor ? "scroll-mt-6" : undefined]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      {children}
+    </p>
+  );
 }
 
 function MarkdownListItem({
@@ -114,6 +140,12 @@ function MarkdownStrong({
       {children}
     </strong>
   );
+}
+
+function paragraphAnchorFor(text: string): string | undefined {
+  const sentence = text.match(/^(.+?[.!?])(?:\s|$)/)?.[1]?.trim();
+  if (!sentence) return undefined;
+  return markdownBlockMatchesAnchor(text, sentence) ? sentence : undefined;
 }
 
 function textFromNode(node: ReactNode): string {

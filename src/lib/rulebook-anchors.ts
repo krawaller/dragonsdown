@@ -28,10 +28,8 @@ export function markdownSliceForAnchor(
   anchor: string,
 ): string | undefined {
   const blocks = markdown.trim().split(/\n{2,}/);
-  const start = blocks.findIndex(
-    (block) =>
-      anchorSlugFor(markdownBlockAnchorFor(block) ?? "") ===
-      anchorSlugFor(anchor),
+  const start = blocks.findIndex((block) =>
+    markdownBlockMatchesAnchor(block, anchor),
   );
   if (start === -1) return undefined;
 
@@ -47,6 +45,20 @@ export function markdownBlockAnchorFor(
 ): string | undefined {
   return (
     pseudoHeadingAnchorFor(markdownBlock) ?? listItemAnchorFor(markdownBlock)
+  );
+}
+
+export function markdownBlockMatchesAnchor(
+  markdownBlock: string,
+  anchor: string,
+): boolean {
+  const blockAnchor = markdownBlockAnchorFor(markdownBlock);
+  if (blockAnchor && anchorSlugFor(blockAnchor) === anchorSlugFor(anchor)) {
+    return true;
+  }
+
+  return normalizedMarkdownText(markdownBlock).startsWith(
+    normalizedMarkdownText(anchor),
   );
 }
 
@@ -80,4 +92,17 @@ function listItemAnchorFor(markdownBlock: string): string | undefined {
     /^\d+\s+\p{Lu}[\p{L}'’]*(?:\s+\p{Lu}[\p{L}'’]*){0,3}/u,
   )?.[0];
   return numberedPhrase?.trim();
+}
+
+function normalizedMarkdownText(markdown: string): string {
+  return normalizeTitle(
+    markdown
+      .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
+      .replace(/\[[^\]]*\]\(([^)]*)\)/g, "$1")
+      .replace(/[*_`#>]/g, ""),
+  )
+    .replace(/[.:]+$/g, "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
 }

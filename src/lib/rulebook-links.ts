@@ -50,6 +50,7 @@ export type RulebookLink = {
   icons?: string[];
   location?: SectionLocation;
   href: string;
+  ruleReferenceSortGroup?: number;
 };
 
 type MonsterReferenceAliasMap = Record<string, string | string[]>;
@@ -291,14 +292,17 @@ export async function resolveEquipmentRulebookLinks({
   hasLegendaryTreasure: boolean;
 }): Promise<RulebookLink[]> {
   const slug = slugify(name);
+  const treasureLinks = hasTreasure
+    ? await resolveTreasureRulebookLinks(name)
+    : [];
   const dynamicTags = equipmentRuleReferenceTags({
     name,
-    hasTreasure,
+    hasEpicTreasure: hasEpicTreasureDescription(treasureLinks),
     hasItem,
     hasLegendaryTreasure,
   });
   const links = await Promise.all([
-    hasTreasure ? resolveTreasureRulebookLinks(name) : Promise.resolve([]),
+    Promise.resolve(treasureLinks),
     resolveRuleReferenceLinksForSlug(
       ruleReferences.equipment as RuleReferenceMap,
       slug,
@@ -311,20 +315,24 @@ export async function resolveEquipmentRulebookLinks({
 
 function equipmentRuleReferenceTags({
   name,
-  hasTreasure,
+  hasEpicTreasure,
   hasItem,
   hasLegendaryTreasure,
 }: {
   name: string;
-  hasTreasure: boolean;
+  hasEpicTreasure: boolean;
   hasItem: boolean;
   hasLegendaryTreasure: boolean;
 }): string[] {
   return [
-    ...(hasTreasure ? ["_epic-treasure"] : []),
+    ...(hasEpicTreasure ? ["_epic-treasure"] : []),
     ...(hasLegendaryTreasure ? ["_legendary-treasure"] : []),
     ...(hasItem && isHorseEquipment(name) ? ["_horse"] : []),
   ];
+}
+
+function hasEpicTreasureDescription(links: RulebookLink[]): boolean {
+  return links.some((link) => /\bEpic Treasure\b/i.test(link.content));
 }
 
 async function resolveTreasureRulebookLinks(
@@ -428,27 +436,44 @@ async function resolveRuleReferenceLinksForSlug(
   const entries = uniqueNonEmpty([slug, ...additionalSlugs]).flatMap(
     (entrySlug) => {
       const entry = manualRuleReferenceEntryForSlug(rules, entrySlug);
-      return entry ? [entry] : [];
+      return entry ? [{ entrySlug, entry }] : [];
     },
   );
   if (entries.length === 0) return [];
 
+  const links = await Promise.all(
+    entries.map(async ({ entrySlug, entry }) => {
+      const entryLinks = await resolveRuleReferenceEntryLinks(entry);
+      const sortGroup = entrySlug.startsWith("_") ? 1 : 0;
+      return entryLinks.map((link) => ({
+        ...link,
+        ruleReferenceSortGroup: sortGroup,
+      }));
+    }),
+  );
+
+  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
+async function resolveRuleReferenceEntryLinks(
+  entry: RuleReferenceEntry,
+): Promise<RulebookLink[]> {
   const links = await Promise.all([
-    ...uniqueRulebookQueries(
-      entries.flatMap((entry) => entry.rulebookLinks ?? []),
-    ).map((query) => resolveRulebookLinks(query)),
-    ...uniqueNonEmpty(entries.flatMap((entry) => entry.classes ?? []))
+    ...uniqueRulebookQueries(entry.rulebookLinks ?? []).map((query) =>
+      resolveRulebookLinks(query),
+    ),
+    ...uniqueNonEmpty(entry.classes ?? [])
       .flatMap(classAdvantageTitlesForClassReference)
       .map(resolveClassAdvantageRulebookLinks),
-    ...uniqueNonEmpty(entries.flatMap((entry) => entry.lineages ?? []))
+    ...uniqueNonEmpty(entry.lineages ?? [])
       .flatMap(lineageAdvantageTitlesForLineageReference)
       .map(resolveLineageAdvantageRulebookLinks),
-    ...uniqueNonEmpty(entries.flatMap((entry) => entry.spells ?? []))
+    ...uniqueNonEmpty(entry.spells ?? [])
       .flatMap(spellTitlesForSpellReference)
       .map(resolveSpellRulebookLinks),
   ]);
 
-  return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+  return links.flat();
 }
 
 function manualRuleReferenceEntryForSlug(
@@ -968,6 +993,7 @@ function uniqueRulebookLinks(links: RulebookLink[]): RulebookLink[] {
 
 function compareRulebookLinks(a: RulebookLink, b: RulebookLink): number {
   return (
+    (a.ruleReferenceSortGroup ?? 0) - (b.ruleReferenceSortGroup ?? 0) ||
     a.docTitle.localeCompare(b.docTitle) ||
     a.sectionTitle.localeCompare(b.sectionTitle) ||
     (a.anchor ?? "").localeCompare(b.anchor ?? "") ||

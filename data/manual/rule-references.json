@@ -568,7 +568,9 @@
         {
           "doc": "core",
           "headings": ["Action Phase", "Loot"],
-          "anchor": "A player may reveal cards in their backpack at any time"
+          "title": "Epic loot points reward",
+          "anchor": "A player may reveal cards in their backpack at any time.",
+          "omitIcon": true
         }
       ]
     },
