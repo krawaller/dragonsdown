@@ -7,10 +7,12 @@ import {
 import { getBoardPositionForItem } from "@/lib/board-positions";
 import {
   getAllBoards,
+  getAllTerrainPacks,
   getBoardBySlug,
   getMerchantBySlug,
   getSiteBySlug,
   getWildernessTokenBySlug,
+  type TerrainPackEntry,
 } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
@@ -27,6 +29,10 @@ export default async function BoardPage({
   if (!entry) notFound();
 
   const { title, board } = entry;
+  const terrainPackName = board.terrainPack ?? board.terrain;
+  const terrainPack = getAllTerrainPacks().find(
+    (pack) => pack.name === terrainPackName,
+  );
   const sites = board.sites
     .map(resolveSiteTarget)
     .filter((site): site is LinkTarget => site !== null);
@@ -41,6 +47,10 @@ export default async function BoardPage({
         : null;
     })
     .filter((target): target is BoardAreaLink => target !== null);
+  const subtitle = boardContentsLabel({
+    merchants: merchants.length,
+    treasureSites: sites.length,
+  });
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -53,10 +63,15 @@ export default async function BoardPage({
           Boards
         </Link>
       </div>
-      <h1 className="text-4xl font-bold mt-4 mb-2">{title}</h1>
-      <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        {board.terrain}
-      </p>
+      <div className="mt-4 mb-8 flex flex-wrap items-start justify-between gap-3">
+        <div className="min-w-0">
+          <h1 className="text-4xl font-bold">{title}</h1>
+          <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+            {subtitle}
+          </p>
+        </div>
+        <HeaderContextLinks terrainPack={terrainPack} />
+      </div>
 
       <BoardImageToggle
         title={title}
@@ -123,6 +138,80 @@ type LinkTarget = {
   href: string;
   imageURL: string;
 };
+
+function HeaderContextLinks({
+  terrainPack,
+}: {
+  terrainPack?: TerrainPackEntry;
+}) {
+  if (!terrainPack) return null;
+
+  return (
+    <div className="flex flex-wrap justify-end gap-2">
+      <HeaderContextLink
+        href={`/terrain-packs/${terrainPack.slug}`}
+        label="Terrain pack"
+        value={
+          terrainPack.slug === "neutral" ? "Always in use" : terrainPack.name
+        }
+        imageUrl={terrainPack.iconUrl}
+      />
+    </div>
+  );
+}
+
+function HeaderContextLink({
+  href,
+  label,
+  value,
+  imageUrl,
+}: {
+  href: string;
+  label: string;
+  value: string;
+  imageUrl?: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="inline-flex min-w-0 items-center gap-2 rounded border border-zinc-200 bg-white px-2.5 py-2 text-xs transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
+    >
+      {imageUrl && (
+        <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={imageUrl} alt="" className="block size-full object-cover" />
+        </span>
+      )}
+      <span className="min-w-0">
+        <span className="block text-[0.6875rem] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+          {label}
+        </span>
+        <span className="block truncate font-medium text-zinc-900 dark:text-zinc-100">
+          {value}
+        </span>
+      </span>
+    </Link>
+  );
+}
+
+function boardContentsLabel({
+  merchants,
+  treasureSites,
+}: {
+  merchants: number;
+  treasureSites: number;
+}): string {
+  const parts = [];
+  if (merchants > 0) {
+    parts.push(`${merchants} merchant${merchants === 1 ? "" : "s"}`);
+  }
+  if (treasureSites > 0) {
+    parts.push(
+      `${treasureSites} treasure site${treasureSites === 1 ? "" : "s"}`,
+    );
+  }
+  return parts.length > 0 ? parts.join(" and ") : "Empty board";
+}
 
 function resolveSiteTarget(name: string): LinkTarget | null {
   const slug = slugify(name);

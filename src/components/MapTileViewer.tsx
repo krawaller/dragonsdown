@@ -264,22 +264,22 @@ export function MapTileViewer({
       )}
 
       <section className="min-w-0">
-        <div className="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
           <div>
             <Heading className="text-2xl font-semibold">
               {selectedTile.name}
             </Heading>
             <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              {selectedTile.terrain} · {mapTileKindLabel(selectedTile)}
+              {mapTileKindLabel(selectedTile)}
               {showTileControls ? ` · ${selectedSide}` : ""}
             </p>
-            {!showTileControls && (
-              <HeaderContextLinks
-                terrainPack={terrainPack}
-                civLocation={selectedCivLocation}
-              />
-            )}
           </div>
+          {!showTileControls && (
+            <HeaderContextLinks
+              terrainPack={terrainPack}
+              civLocation={selectedCivLocation}
+            />
+          )}
         </div>
 
         {showTileControls && mapTileConnections && selectedTile && (
@@ -486,7 +486,7 @@ function HeaderContextLinks({
   if (!terrainPack && !civLocation) return null;
 
   return (
-    <div className="mt-3 flex flex-wrap gap-2">
+    <div className="flex flex-wrap justify-end gap-2">
       {terrainPack && (
         <HeaderContextLink
           href={`/terrain-packs/${terrainPack.slug}`}

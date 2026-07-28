@@ -18,9 +18,7 @@ export function SiteGrid({
           name={name}
           href={`/sites/${slug}`}
           imageURL={site.imageSecondaryURL}
-          subtitle={
-            site.ancestry.length > 0 ? site.ancestry.join(" / ") : undefined
-          }
+          subtitle={site.terrainPack}
         />
       ))}
     </div>
