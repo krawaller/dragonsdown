@@ -30,6 +30,7 @@ export type RulebookLinkQuery = {
   anchor?: string;
   title?: string;
   preferIconIndex?: number;
+  omitIcon?: boolean;
   includeChildren?: boolean;
   anchorIndex?: number;
   anchorRange?: [number, number];
@@ -289,24 +290,41 @@ export async function resolveEquipmentRulebookLinks({
   hasItem: boolean;
   hasLegendaryTreasure: boolean;
 }): Promise<RulebookLink[]> {
+  const slug = slugify(name);
+  const dynamicTags = equipmentRuleReferenceTags({
+    name,
+    hasTreasure,
+    hasItem,
+    hasLegendaryTreasure,
+  });
   const links = await Promise.all([
     hasTreasure ? resolveTreasureRulebookLinks(name) : Promise.resolve([]),
-    hasLegendaryTreasure
-      ? resolveRulebookLinks({
-          doc: "natives-and-legends",
-          headings: ["DRAGONS DOWN: LEGENDS", "Game Components"],
-          anchor: "7 Legendary Treasures",
-        })
-      : Promise.resolve([]),
-    hasItem && isHorseEquipment(name)
-      ? resolveRulebookLinks({
-          doc: ANY_DOC,
-          headings: ["Horse Cards"],
-        })
-      : Promise.resolve([]),
+    resolveRuleReferenceLinksForSlug(
+      ruleReferences.equipment as RuleReferenceMap,
+      slug,
+      dynamicTags,
+    ),
   ]);
 
   return uniqueRulebookLinks(links.flat()).sort(compareRulebookLinks);
+}
+
+function equipmentRuleReferenceTags({
+  name,
+  hasTreasure,
+  hasItem,
+  hasLegendaryTreasure,
+}: {
+  name: string;
+  hasTreasure: boolean;
+  hasItem: boolean;
+  hasLegendaryTreasure: boolean;
+}): string[] {
+  return [
+    ...(hasTreasure ? ["_epic-treasure"] : []),
+    ...(hasLegendaryTreasure ? ["_legendary-treasure"] : []),
+    ...(hasItem && isHorseEquipment(name) ? ["_horse"] : []),
+  ];
 }
 
 async function resolveTreasureRulebookLinks(
@@ -405,21 +423,27 @@ export async function resolveClearingTypeRulebookLinks(
 async function resolveRuleReferenceLinksForSlug(
   rules: RuleReferenceMap,
   slug: string,
+  additionalSlugs: string[] = [],
 ): Promise<RulebookLink[]> {
-  const entry = manualRuleReferenceEntryForSlug(rules, slug);
-  if (!entry) return [];
+  const entries = uniqueNonEmpty([slug, ...additionalSlugs]).flatMap(
+    (entrySlug) => {
+      const entry = manualRuleReferenceEntryForSlug(rules, entrySlug);
+      return entry ? [entry] : [];
+    },
+  );
+  if (entries.length === 0) return [];
 
   const links = await Promise.all([
-    ...uniqueRulebookQueries(entry.rulebookLinks).map((query) =>
-      resolveRulebookLinks(query),
-    ),
-    ...uniqueNonEmpty(entry.classes ?? [])
+    ...uniqueRulebookQueries(
+      entries.flatMap((entry) => entry.rulebookLinks ?? []),
+    ).map((query) => resolveRulebookLinks(query)),
+    ...uniqueNonEmpty(entries.flatMap((entry) => entry.classes ?? []))
       .flatMap(classAdvantageTitlesForClassReference)
       .map(resolveClassAdvantageRulebookLinks),
-    ...uniqueNonEmpty(entry.lineages ?? [])
+    ...uniqueNonEmpty(entries.flatMap((entry) => entry.lineages ?? []))
       .flatMap(lineageAdvantageTitlesForLineageReference)
       .map(resolveLineageAdvantageRulebookLinks),
-    ...uniqueNonEmpty(entry.spells ?? [])
+    ...uniqueNonEmpty(entries.flatMap((entry) => entry.spells ?? []))
       .flatMap(spellTitlesForSpellReference)
       .map(resolveSpellRulebookLinks),
   ]);
@@ -458,6 +482,7 @@ function resolveSections(
     anchor,
     title,
     preferIconIndex,
+    omitIcon,
     includeChildren,
     anchorIndex,
     anchorRange,
@@ -479,6 +504,7 @@ function resolveSections(
       anchor,
       title,
       preferIconIndex,
+      omitIcon,
       anchorIndex,
       anchorRange,
       optionalRule: headingsTargetOptionalRule(headings),
@@ -499,6 +525,7 @@ function rulebookLinkForIndexedSection(
     anchor?: string;
     title?: string;
     preferIconIndex?: number;
+    omitIcon?: boolean;
     anchorIndex?: number;
     anchorRange?: [number, number];
     optionalRule?: boolean;
@@ -511,6 +538,7 @@ function rulebookLinkForIndexedSection(
     return rulebookLinkForSection(book, indexedChild, {
       title: options.title,
       preferIconIndex: options.preferIconIndex,
+      omitIcon: options.omitIcon,
       optionalRule: options.optionalRule,
     });
   }
@@ -520,6 +548,7 @@ function rulebookLinkForIndexedSection(
     return rulebookLinkForSection(book, section, {
       title: options.title,
       preferIconIndex: options.preferIconIndex,
+      omitIcon: options.omitIcon,
       optionalRule: options.optionalRule,
       childSections: rangedChildren,
     });
@@ -552,6 +581,7 @@ function rulebookLinkForSection(
     anchor?: string;
     title?: string;
     preferIconIndex?: number;
+    omitIcon?: boolean;
     anchorIndex?: number;
     anchorRange?: [number, number];
     optionalRule?: boolean;
@@ -562,6 +592,7 @@ function rulebookLinkForSection(
     anchor,
     title,
     preferIconIndex,
+    omitIcon,
     anchorIndex,
     anchorRange,
     optionalRule,
@@ -586,8 +617,8 @@ function rulebookLinkForSection(
     content: markdownFromContentNodes(contentNodes),
     contentNodes,
     anchor,
-    icon: iconForRulebookLink(icons, preferIconIndex),
-    icons: iconsForRulebookLink(icons, preferIconIndex),
+    icon: omitIcon ? undefined : iconForRulebookLink(icons, preferIconIndex),
+    icons: omitIcon ? undefined : iconsForRulebookLink(icons, preferIconIndex),
     location: section.location,
     href: `/${book.slug}#${linkAnchorIdFor(section, anchor)}`,
   };
