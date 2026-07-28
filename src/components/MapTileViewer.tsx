@@ -33,6 +33,12 @@ export type MapTileClearing = {
   type?: [ClearingTypeId, ClearingTypeId];
 };
 
+type MapTileClearingTypeEntry = {
+  id: ClearingTypeId;
+  frontCount: number;
+  backCount: number;
+};
+
 export type MapTileCivLocation = {
   name: string;
   slug: string;
@@ -126,10 +132,6 @@ export function MapTileViewer({
           mission.tileName === selectedTile.name,
       )
     : [];
-  const selectedMagicColors =
-    selectedTile && mapTileConnections
-      ? secretPathMagicColors(selectedTile.name, mapTileConnections)
-      : [];
   const selectedClearingTypes = selectedTile
     ? mapTileClearingTypes(selectedTile)
     : [];
@@ -297,12 +299,7 @@ export function MapTileViewer({
           />
         ) : (
           <CollapsibleBox
-            title={
-              <TileImagesTitle
-                magicColors={selectedMagicColors}
-                magicIcons={magicIcons}
-              />
-            }
+            title="Tile Images"
             count={selectedTile.imageSecondaryUrl ? 2 : 1}
             countLabel={
               selectedTile.imageSecondaryUrl ? "front and back" : "front"
@@ -314,6 +311,7 @@ export function MapTileViewer({
                 side="front"
                 imageUrl={selectedTile.imageUrl}
                 mapTileConnections={mapTileConnections}
+                magicIcons={magicIcons}
               />
               {selectedTile.imageSecondaryUrl && (
                 <MapTileFacePanel
@@ -321,6 +319,7 @@ export function MapTileViewer({
                   side="back"
                   imageUrl={selectedTile.imageSecondaryUrl}
                   mapTileConnections={mapTileConnections}
+                  magicIcons={magicIcons}
                 />
               )}
             </div>
@@ -372,6 +371,7 @@ function MapTileFacePanel({
   side,
   imageUrl,
   mapTileConnections,
+  magicIcons,
 }: {
   tile: MapTile;
   side: "front" | "back";
@@ -380,24 +380,29 @@ function MapTileFacePanel({
     string,
     { front: { paths: unknown[] }; back: { paths: unknown[] } }
   >;
+  magicIcons?: MagicIcons;
 }) {
   const secretPathCounts = mapTileConnections
     ? secretPathColorCounts(tile.name, side, mapTileConnections)
     : [];
   const secretPathSummary = secretPathCountSummary(secretPathCounts);
+  const magicColors = secretPathCounts.map(({ color }) => color);
 
   return (
     <section className="flex min-w-0 flex-col gap-2">
       <MapTileFace tile={tile} imageUrl={imageUrl} side={side} />
-      <div className="min-w-0">
-        <h2 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
-          {sideLabel(side)}
-        </h2>
-        {secretPathSummary && (
-          <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
-            {secretPathSummary}
-          </p>
-        )}
+      <div className="flex min-w-0 items-start gap-2">
+        <FaceMagicLinks colors={magicColors} magicIcons={magicIcons} />
+        <div className="min-w-0">
+          <h2 className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            {sideLabel(side)}
+          </h2>
+          {secretPathSummary && (
+            <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+              {secretPathSummary}
+            </p>
+          )}
+        </div>
       </div>
     </section>
   );
@@ -538,35 +543,31 @@ function HeaderContextLink({
   );
 }
 
-function TileImagesTitle({
-  magicColors,
+function FaceMagicLinks({
+  colors,
   magicIcons,
 }: {
-  magicColors: string[];
+  colors: string[];
   magicIcons?: MagicIcons;
 }) {
-  if (magicColors.length === 0) return "Tile Images";
+  if (colors.length === 0) return null;
 
   return (
-    <span className="inline-flex flex-wrap items-center gap-3 align-middle">
-      <span>Tile Images</span>
-      <span className="inline-flex flex-wrap gap-1.5">
-        {magicColors.map((color) => (
-          <Link
-            key={color}
-            href={`/magic/${color}`}
-            aria-label={`${magicColorLabel(color)} Magic`}
-            onClick={(event) => event.stopPropagation()}
-            className="inline-flex size-8 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
-          >
-            <MagicColorIcon
-              color={color}
-              magicIcons={magicIcons}
-              className="size-full rounded-none border-0"
-            />
-          </Link>
-        ))}
-      </span>
+    <span className="inline-flex flex-wrap gap-1.5">
+      {colors.map((color) => (
+        <Link
+          key={color}
+          href={`/magic/${color}`}
+          aria-label={`${magicColorLabel(color)} Magic`}
+          className="inline-flex size-7 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+        >
+          <MagicColorIcon
+            color={color}
+            magicIcons={magicIcons}
+            className="size-full rounded-none border-0"
+          />
+        </Link>
+      ))}
     </span>
   );
 }
@@ -574,7 +575,7 @@ function TileImagesTitle({
 function ClearingTypesBox({
   clearingTypes,
 }: {
-  clearingTypes: ClearingTypeId[];
+  clearingTypes: MapTileClearingTypeEntry[];
 }) {
   return (
     <div className="mt-6">
@@ -584,8 +585,8 @@ function ClearingTypesBox({
         countLabel={`${clearingTypes.length} type${clearingTypes.length === 1 ? "" : "s"}`}
       >
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {clearingTypes.map((type) => (
-            <ClearingTypeCard key={type} type={type} />
+          {clearingTypes.map((entry) => (
+            <ClearingTypeCard key={entry.id} entry={entry} />
           ))}
         </div>
       </CollapsibleBox>
@@ -593,30 +594,50 @@ function ClearingTypesBox({
   );
 }
 
-function ClearingTypeCard({ type }: { type: ClearingTypeId }) {
+function ClearingTypeCard({ entry }: { entry: MapTileClearingTypeEntry }) {
   return (
     <Link
-      href={`/clearing-types/${type}`}
+      href={`/clearing-types/${entry.id}`}
       className="flex min-w-0 items-center gap-3 rounded border border-zinc-200 p-3 text-sm transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
     >
       <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={getClearingTypeIcon(type)}
+          src={getClearingTypeIcon(entry.id)}
           alt=""
           className="block size-full object-contain p-1"
         />
       </span>
       <span className="min-w-0">
         <span className="block truncate font-medium">
-          {getClearingTypeLabel(type)}
+          {getClearingTypeLabel(entry.id)}
         </span>
         <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-          Clearing type
+          {clearingTypeCountLabel(entry)}
         </span>
       </span>
     </Link>
   );
+}
+
+function clearingTypeCountLabel({
+  frontCount,
+  backCount,
+}: MapTileClearingTypeEntry): string {
+  if (frontCount > 0 && backCount > 0 && frontCount === backCount) {
+    return clearingCountLabel(frontCount);
+  }
+  if (frontCount > 0 && backCount === 0) {
+    return `${clearingCountLabel(frontCount)} on front`;
+  }
+  if (backCount > 0 && frontCount === 0) {
+    return `${clearingCountLabel(backCount)} on back`;
+  }
+  return `${clearingCountLabel(frontCount)} on front and ${backCount} on back`;
+}
+
+function clearingCountLabel(count: number): string {
+  return `${count} clearing${count === 1 ? "" : "s"}`;
 }
 
 function MagicColorIcon({
@@ -686,16 +707,30 @@ function secretPathMagicColors(
   return [...colors].sort();
 }
 
-function mapTileClearingTypes(tile: MapTile): ClearingTypeId[] {
-  const types = new Set<ClearingTypeId>();
+function mapTileClearingTypes(tile: MapTile): MapTileClearingTypeEntry[] {
+  const counts = new Map<
+    ClearingTypeId,
+    { frontCount: number; backCount: number }
+  >();
   for (const clearing of tile.clearings) {
     if (!clearing.type) continue;
-    types.add(clearing.type[0]);
-    types.add(clearing.type[1]);
+    const [frontType, backType] = clearing.type;
+    const frontCounts = counts.get(frontType) ?? {
+      frontCount: 0,
+      backCount: 0,
+    };
+    frontCounts.frontCount += 1;
+    counts.set(frontType, frontCounts);
+
+    const backCounts = counts.get(backType) ?? { frontCount: 0, backCount: 0 };
+    backCounts.backCount += 1;
+    counts.set(backType, backCounts);
   }
-  return [...types].sort((a, b) =>
-    getClearingTypeLabel(a).localeCompare(getClearingTypeLabel(b)),
-  );
+  return [...counts.entries()]
+    .map(([id, entry]) => ({ id, ...entry }))
+    .sort((a, b) =>
+      getClearingTypeLabel(a.id).localeCompare(getClearingTypeLabel(b.id)),
+    );
 }
 
 function secretPathColorCounts(
