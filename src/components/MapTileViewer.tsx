@@ -559,7 +559,7 @@ function FaceMagicLinks({
           key={color}
           href={`/magic/${color}`}
           aria-label={`${magicColorLabel(color)} Magic`}
-          className="inline-flex size-7 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          className="inline-flex size-10 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
         >
           <MagicColorIcon
             color={color}
@@ -686,25 +686,6 @@ function magicColorLabel(color: string): string {
     universal: "Universal",
   };
   return colorLabels[color] ?? color;
-}
-
-function secretPathMagicColors(
-  tileName: string,
-  connections: Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >,
-): string[] {
-  const colors = new Set<string>();
-  for (const side of ["front", "back"] as const) {
-    const paths = secretPathSidePaths(tileName, side, connections);
-    if (!paths) continue;
-    for (const path of paths) {
-      const color = secretPathColor(path);
-      if (color) colors.add(color);
-    }
-  }
-  return [...colors].sort();
 }
 
 function mapTileClearingTypes(tile: MapTile): MapTileClearingTypeEntry[] {
