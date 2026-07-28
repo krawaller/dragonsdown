@@ -3,6 +3,7 @@
 import { useEffect, useMemo } from "react";
 import Link from "next/link";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
+import { MissionCardLinks } from "@/components/MissionCardLinks";
 import type { MagicIcons } from "@/components/MagicCube";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -11,7 +12,7 @@ import {
   getClearingTypeLabel,
   type ClearingTypeId,
 } from "@/lib/clearing-types";
-import type { MonsterGroupEntry } from "@/lib/tts/lookup";
+import type { MissionEntry, MonsterGroupEntry } from "@/lib/tts/lookup";
 
 const TILE_COORDINATE_EXTENT = 3;
 const TILE_DISPLAY_ROTATION_DEGREES = -30;
@@ -51,12 +52,9 @@ export type MapTileMonsterGroup = {
   role: "wandering" | "local";
 };
 
-export type MapTileMission = {
+export type MapTileMission = MissionEntry & {
   tileName: string;
   terrain: string;
-  name: string;
-  slug: string;
-  descriptions: string[];
 };
 
 export function MapTileViewer({
@@ -128,12 +126,17 @@ export function MapTileViewer({
           mission.tileName === selectedTile.name,
       )
     : [];
+  const selectedMagicColors =
+    selectedTile && mapTileConnections
+      ? secretPathMagicColors(selectedTile.name, mapTileConnections)
+      : [];
+  const selectedClearingTypes = selectedTile
+    ? mapTileClearingTypes(selectedTile)
+    : [];
 
   useEffect(() => {
     if (!selectedTile) return;
-    if (!showTileControls) {
-      return;
-    }
+    if (!showTileControls) return;
 
     const hasValidTerrain = terrains.includes(terrainParam);
     const hasValidTile = terrainTiles.some((tile) => tile.name === tileParam);
@@ -155,7 +158,7 @@ export function MapTileViewer({
     searchParams,
     selectedTile,
     showTileControls,
-    selectedSide,
+    showBack,
     sideParam,
     terrain,
     terrainParam,
@@ -268,6 +271,12 @@ export function MapTileViewer({
               {selectedTile.terrain} · {mapTileKindLabel(selectedTile)}
               {showTileControls ? ` · ${selectedSide}` : ""}
             </p>
+            {!showTileControls && (
+              <HeaderContextLinks
+                terrainPack={terrainPack}
+                civLocation={selectedCivLocation}
+              />
+            )}
           </div>
         </div>
 
@@ -287,42 +296,41 @@ export function MapTileViewer({
             side={selectedSide}
           />
         ) : (
-          <>
-            <CollapsibleBox
-              title="Tile Images"
-              count={selectedTile.imageSecondaryUrl ? 2 : 1}
-              countLabel={
-                selectedTile.imageSecondaryUrl ? "front and back" : "front"
-              }
-            >
-              <div className="grid gap-6 sm:grid-cols-2">
+          <CollapsibleBox
+            title={
+              <TileImagesTitle
+                magicColors={selectedMagicColors}
+                magicIcons={magicIcons}
+              />
+            }
+            count={selectedTile.imageSecondaryUrl ? 2 : 1}
+            countLabel={
+              selectedTile.imageSecondaryUrl ? "front and back" : "front"
+            }
+          >
+            <div className="grid gap-6 sm:grid-cols-2">
+              <MapTileFacePanel
+                tile={selectedTile}
+                side="front"
+                imageUrl={selectedTile.imageUrl}
+                mapTileConnections={mapTileConnections}
+              />
+              {selectedTile.imageSecondaryUrl && (
                 <MapTileFacePanel
                   tile={selectedTile}
-                  side="front"
-                  imageUrl={selectedTile.imageUrl}
+                  side="back"
+                  imageUrl={selectedTile.imageSecondaryUrl}
                   mapTileConnections={mapTileConnections}
                 />
-                {selectedTile.imageSecondaryUrl && (
-                  <MapTileFacePanel
-                    tile={selectedTile}
-                    side="back"
-                    imageUrl={selectedTile.imageSecondaryUrl}
-                    mapTileConnections={mapTileConnections}
-                  />
-                )}
-              </div>
-            </CollapsibleBox>
-          </>
+              )}
+            </div>
+          </CollapsibleBox>
         )}
-        {!showTileControls && selectedTile && (
-          <LinkedItemsBox
-            tile={selectedTile}
-            terrainPack={terrainPack}
-            civLocation={selectedCivLocation}
-            mapTileConnections={mapTileConnections}
-            magicIcons={magicIcons}
-          />
+
+        {!showTileControls && selectedClearingTypes.length > 0 && (
+          <ClearingTypesBox clearingTypes={selectedClearingTypes} />
         )}
+
         {selectedMonsterGroups.length > 0 && (
           <div className="mt-6">
             <CollapsibleBox
@@ -342,26 +350,17 @@ export function MapTileViewer({
             </CollapsibleBox>
           </div>
         )}
+
         {selectedMissions.length > 0 && (
-          <section className="mt-6">
-            <h3 className="text-lg font-semibold mb-3">Missions</h3>
-            <div className="flex flex-wrap gap-2">
-              {selectedMissions.map((mission) => (
-                <Link
-                  key={mission.slug}
-                  href={`/missions/${mission.slug}`}
-                  className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-                >
-                  <span className="font-medium">{mission.name}</span>
-                  {mission.descriptions.length > 0 && (
-                    <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                      {mission.descriptions[0]}
-                    </span>
-                  )}
-                </Link>
-              ))}
-            </div>
-          </section>
+          <div className="mt-6">
+            <CollapsibleBox
+              title="Missions"
+              count={selectedMissions.length}
+              countLabel={`${selectedMissions.length} mission${selectedMissions.length === 1 ? "" : "s"}`}
+            >
+              <MissionCardLinks missions={selectedMissions} />
+            </CollapsibleBox>
+          </div>
         )}
       </section>
     </div>
@@ -472,78 +471,121 @@ function mapTileKindLabel(tile: MapTile): string {
   return tile.clearings.length === 4 ? "Civilisation tile" : "Wilderness tile";
 }
 
-function LinkedItemsBox({
-  tile,
+function HeaderContextLinks({
   terrainPack,
   civLocation,
-  mapTileConnections,
-  magicIcons,
 }: {
-  tile: MapTile;
   terrainPack?: MapTileTerrainPack;
   civLocation?: MapTileCivLocation;
-  mapTileConnections?: Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >;
+}) {
+  if (!terrainPack && !civLocation) return null;
+
+  return (
+    <div className="mt-3 flex flex-wrap gap-2">
+      {terrainPack && (
+        <HeaderContextLink
+          href={`/terrain-packs/${terrainPack.slug}`}
+          label="Terrain pack"
+          value={
+            terrainPack.slug === "neutral" ? "Always in use" : terrainPack.name
+          }
+          imageUrl={terrainPack.iconUrl}
+        />
+      )}
+      {civLocation && (
+        <HeaderContextLink
+          href={`/civ-locations/${civLocation.slug}`}
+          label="Civ location"
+          value={civLocation.name}
+          imageUrl={civLocation.imageUrl}
+        />
+      )}
+    </div>
+  );
+}
+
+function HeaderContextLink({
+  href,
+  label,
+  value,
+  imageUrl,
+}: {
+  href: string;
+  label: string;
+  value: string;
+  imageUrl?: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="inline-flex min-w-0 items-center gap-2 rounded border border-zinc-200 bg-white px-2.5 py-2 text-xs transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
+    >
+      {imageUrl && (
+        <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={imageUrl} alt="" className="block size-full object-cover" />
+        </span>
+      )}
+      <span className="min-w-0">
+        <span className="block text-[0.6875rem] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+          {label}
+        </span>
+        <span className="block truncate font-medium text-zinc-900 dark:text-zinc-100">
+          {value}
+        </span>
+      </span>
+    </Link>
+  );
+}
+
+function TileImagesTitle({
+  magicColors,
+  magicIcons,
+}: {
+  magicColors: string[];
   magicIcons?: MagicIcons;
 }) {
-  const magicColors = mapTileConnections
-    ? secretPathMagicColors(tile.name, mapTileConnections)
-    : [];
-  const clearingTypes = mapTileClearingTypes(tile);
-  const count =
-    (terrainPack ? 1 : 0) +
-    magicColors.length +
-    clearingTypes.length +
-    (civLocation ? 1 : 0);
+  if (magicColors.length === 0) return "Tile Images";
 
+  return (
+    <span className="inline-flex flex-wrap items-center gap-3 align-middle">
+      <span>Tile Images</span>
+      <span className="inline-flex flex-wrap gap-1.5">
+        {magicColors.map((color) => (
+          <Link
+            key={color}
+            href={`/magic/${color}`}
+            aria-label={`${magicColorLabel(color)} Magic`}
+            onClick={(event) => event.stopPropagation()}
+            className="inline-flex size-8 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+          >
+            <MagicColorIcon
+              color={color}
+              magicIcons={magicIcons}
+              className="size-full rounded-none border-0"
+            />
+          </Link>
+        ))}
+      </span>
+    </span>
+  );
+}
+
+function ClearingTypesBox({
+  clearingTypes,
+}: {
+  clearingTypes: ClearingTypeId[];
+}) {
   return (
     <div className="mt-6">
       <CollapsibleBox
-        title="Related items"
-        count={count}
-        countLabel={`${count} link${count === 1 ? "" : "s"}`}
+        title="Clearing Types"
+        count={clearingTypes.length}
+        countLabel={`${clearingTypes.length} type${clearingTypes.length === 1 ? "" : "s"}`}
       >
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {terrainPack && (
-            <LinkedItemCard
-              href={`/terrain-packs/${terrainPack.slug}`}
-              title={
-                terrainPack.slug === "neutral"
-                  ? "Always in use"
-                  : terrainPack.name
-              }
-              subtitle="Terrain pack"
-              imageUrl={terrainPack.iconUrl}
-            />
-          )}
-          {magicColors.map((color) => (
-            <LinkedItemCard
-              key={color}
-              href={`/magic/${color}`}
-              title={magicColorLabel(color)}
-              subtitle="Magic"
-              icon={<MagicColorIcon color={color} magicIcons={magicIcons} />}
-            />
-          ))}
-          {civLocation && (
-            <LinkedItemCard
-              href={`/civ-locations/${civLocation.slug}`}
-              title={civLocation.name}
-              subtitle="Civ location"
-              imageUrl={civLocation.imageUrl}
-            />
-          )}
           {clearingTypes.map((type) => (
-            <LinkedItemCard
-              key={type}
-              href={`/clearing-types/${type}`}
-              title={getClearingTypeLabel(type)}
-              subtitle="Clearing type"
-              imageUrl={getClearingTypeIcon(type)}
-              imageClassName="object-contain p-1"
-            />
+            <ClearingTypeCard key={type} type={type} />
           ))}
         </div>
       </CollapsibleBox>
@@ -551,46 +593,26 @@ function LinkedItemsBox({
   );
 }
 
-function LinkedItemCard({
-  href,
-  title,
-  subtitle,
-  imageUrl,
-  imageClassName = "object-cover",
-  icon,
-}: {
-  href: string;
-  title: string;
-  subtitle: string;
-  imageUrl?: string;
-  imageClassName?: string;
-  icon?: React.ReactNode;
-}) {
+function ClearingTypeCard({ type }: { type: ClearingTypeId }) {
   return (
     <Link
-      href={href}
+      href={`/clearing-types/${type}`}
       className="flex min-w-0 items-center gap-3 rounded border border-zinc-200 p-3 text-sm transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
     >
-      {icon ?? (
-        <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
-          {imageUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={imageUrl}
-              alt=""
-              className={`block size-full ${imageClassName}`}
-            />
-          ) : (
-            <span className="text-xs font-medium text-zinc-500 dark:text-zinc-400">
-              {title.slice(0, 1)}
-            </span>
-          )}
-        </span>
-      )}
+      <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={getClearingTypeIcon(type)}
+          alt=""
+          className="block size-full object-contain p-1"
+        />
+      </span>
       <span className="min-w-0">
-        <span className="block truncate font-medium">{title}</span>
+        <span className="block truncate font-medium">
+          {getClearingTypeLabel(type)}
+        </span>
         <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-          {subtitle}
+          Clearing type
         </span>
       </span>
     </Link>
@@ -600,14 +622,18 @@ function LinkedItemCard({
 function MagicColorIcon({
   color,
   magicIcons,
+  className = "size-12 rounded border border-zinc-200 dark:border-zinc-800",
 }: {
   color: string;
   magicIcons?: MagicIcons;
+  className?: string;
 }) {
   const iconUrl = magicIcons ? magicIconFor(magicIcons, color) : undefined;
 
   return (
-    <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+    <span
+      className={`flex shrink-0 items-center justify-center overflow-hidden bg-zinc-100 dark:bg-zinc-900 ${className}`}
+    >
       {iconUrl ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={iconUrl} alt="" className="block size-full object-contain" />

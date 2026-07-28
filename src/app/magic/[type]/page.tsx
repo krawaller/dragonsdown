@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MagicCube } from "@/components/MagicCube";
 import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
@@ -9,13 +10,14 @@ import {
   type RulebookLink,
 } from "@/lib/rulebook-links";
 import { slugify } from "@/lib/slug";
-import type { TTSClassSetupCube, TTSSpell, TTSSpellCard } from "@/lib/tts";
+import type { TTSClassSetupCube } from "@/lib/tts";
 import {
   getClassesForMagicCube,
+  getAllMapTiles,
   getSpellsByMagic,
+  type MapTileEntry,
   type MagicCubeStartingClass,
 } from "@/lib/tts/lookup";
-import mapTiles from "../../../../data/extracted-from-tts/map-tiles.json";
 
 export function generateStaticParams() {
   return MAGIC_TYPES.map((type) => ({ type: type.slug }));
@@ -58,7 +60,7 @@ export default async function MagicTypePage({
 
   const tilesWithColorPaths = getTilesWithColorPaths(
     type.id,
-    mapTiles as Array<{ name: string; terrain: string }>,
+    getAllMapTiles(),
     mapTileConnections,
   );
 
@@ -90,80 +92,65 @@ export default async function MagicTypePage({
         className="mb-10 max-w-3xl"
       />
 
-      {type.id !== "universal" && (
-        <MagicCubeClasses
-          colorLabel={colorLabel}
-          entries={classEntries}
-          magicIcons={magicIcons}
-          className="mb-10 max-w-3xl"
-        />
-      )}
-
-      {tilesWithColorPaths.length > 0 && (
-        <section className="mb-10">
-          <h2 className="text-xl font-semibold mb-4">
-            Map Tiles with {colorLabel} Secret Paths
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {tilesWithColorPaths.map((tile) => {
+      <div className="space-y-6">
+        <CollapsibleBox
+          title="Spells"
+          count={entries.length}
+          countLabel={`${entries.length} spell${entries.length === 1 ? "" : "s"}`}
+        >
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+            {entries.map((entry) => {
+              const spell = entry.spells[0];
+              const card = spell?.spellCards[0] ?? spell?.cards[0];
               return (
-                <Link
-                  key={`${tile.name}-${tile.side}`}
-                  href={`/map-tiles/${slugify(tile.name)}`}
-                  className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-                >
-                  {tile.name}
-                  {tile.frontHasColor && tile.backHasColor
-                    ? null
-                    : tile.backHasColor
-                      ? " (back)"
-                      : " (front)"}
-                </Link>
+                <section key={entry.slug} className="flex flex-col gap-2">
+                  <Link
+                    href={`/spells/${entry.slug}`}
+                    className="overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition hover:ring-2 hover:ring-zinc-400 dark:border-zinc-800 dark:bg-zinc-900"
+                    aria-label={`View ${entry.name}`}
+                  >
+                    {card ? (
+                      <SpriteCell card={card} className="w-full" />
+                    ) : (
+                      <span className="block aspect-[5/7] w-full" />
+                    )}
+                  </Link>
+                  <div>
+                    <h3 className="text-base font-semibold">
+                      <Link
+                        href={`/spells/${entry.slug}`}
+                        className="hover:underline"
+                      >
+                        {entry.name}
+                      </Link>
+                    </h3>
+                  </div>
+                </section>
               );
             })}
           </div>
-        </section>
-      )}
+        </CollapsibleBox>
 
-      <section>
-        <h2 className="text-xl font-semibold mb-4">Spells</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {entries.map((entry) => {
-            const spell = entry.spells[0];
-            const card = spell?.spellCards[0] ?? spell?.cards[0];
-            return (
-              <section key={entry.slug} className="flex flex-col gap-2">
-                <Link
-                  href={`/spells/${entry.slug}`}
-                  className="rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition"
-                  aria-label={`View ${entry.name}`}
-                >
-                  {card ? (
-                    <SpriteCell card={card} className="w-full" />
-                  ) : (
-                    <span className="block w-full aspect-[5/7]" />
-                  )}
-                </Link>
-                <div>
-                  <h3 className="text-base font-semibold">
-                    <Link
-                      href={`/spells/${entry.slug}`}
-                      className="hover:underline"
-                    >
-                      {entry.name}
-                    </Link>
-                  </h3>
-                  {spell && (
-                    <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                      {copySummary(spell)}
-                    </p>
-                  )}
-                </div>
-              </section>
-            );
-          })}
-        </div>
-      </section>
+        <CollapsibleBox
+          title={`Map Tiles with ${colorLabel} Secret Paths`}
+          count={tilesWithColorPaths.length}
+          countLabel={`${tilesWithColorPaths.length} tile${tilesWithColorPaths.length === 1 ? "" : "s"}`}
+        >
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+            {tilesWithColorPaths.map((tile) => (
+              <MagicMapTileCard key={tile.slug} tile={tile} />
+            ))}
+          </div>
+        </CollapsibleBox>
+
+        {type.id !== "universal" && (
+          <MagicCubeClasses
+            colorLabel={colorLabel}
+            entries={classEntries}
+            magicIcons={magicIcons}
+          />
+        )}
+      </div>
     </main>
   );
 }
@@ -172,18 +159,17 @@ function MagicCubeClasses({
   colorLabel,
   entries,
   magicIcons,
-  className = "",
 }: {
   colorLabel: string;
   entries: MagicCubeStartingClass[];
   magicIcons: Map<string, string>;
-  className?: string;
 }) {
   return (
-    <section className={className}>
-      <h2 className="text-xl font-semibold mb-4">
-        Classes With {colorLabel} Cubes
-      </h2>
+    <CollapsibleBox
+      title={`Classes With ${colorLabel} Cubes`}
+      count={entries.length}
+      countLabel={`${entries.length} class${entries.length === 1 ? "" : "es"}`}
+    >
       <div className="rounded border border-zinc-200 dark:border-zinc-800 divide-y divide-zinc-200 dark:divide-zinc-800">
         {entries.map((entry) => (
           <div
@@ -215,7 +201,7 @@ function MagicCubeClasses({
           </div>
         ))}
       </div>
-    </section>
+    </CollapsibleBox>
   );
 }
 
@@ -232,6 +218,39 @@ function magicIconMap(
   return icons;
 }
 
+function MagicMapTileCard({ tile }: { tile: MapTileColorPathEntry }) {
+  return (
+    <section className="flex min-w-0 flex-col gap-1">
+      <Link
+        href={tile.href}
+        className="overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition hover:ring-2 hover:ring-zinc-400 dark:border-zinc-800 dark:bg-zinc-900"
+        aria-label={`View ${tile.name}`}
+      >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={tile.imageUrl}
+          alt={tile.name}
+          className="block aspect-square w-full -rotate-[30deg] object-contain p-4"
+        />
+      </Link>
+      <h3 className="mt-1 text-base font-semibold leading-6">
+        <Link href={tile.href} className="hover:underline">
+          {tile.name}
+        </Link>
+      </h3>
+      <p className="text-xs text-zinc-500 dark:text-zinc-400">
+        {mapTileSideLabel(tile)}
+      </p>
+    </section>
+  );
+}
+
+function mapTileSideLabel(tile: MapTileColorPathEntry): string {
+  if (tile.frontHasColor && tile.backHasColor) return "front and back";
+  if (tile.backHasColor) return "back";
+  return "front";
+}
+
 function magicCubeKey(cube: TTSClassSetupCube): string {
   return [
     cube.type,
@@ -239,21 +258,6 @@ function magicCubeKey(cube: TTSClassSetupCube): string {
     cube.color ?? "",
     cube.colors?.join("/") ?? "",
   ].join(":");
-}
-
-function copySummary(spell: TTSSpell): string {
-  return [
-    copyCountLabel("Spells", spellCopies(spell.spellCards)),
-    copyCountLabel("Hero Starting", spellCopies(spell.startingSpellCards)),
-  ].join(" · ");
-}
-
-function spellCopies(cards: TTSSpellCard[]): number {
-  return cards.reduce((total, card) => total + card.copies, 0);
-}
-
-function copyCountLabel(label: string, copies: number): string {
-  return `${label} ${copies} cop${copies === 1 ? "y" : "ies"}`;
 }
 
 function MagicIcon({ icon, label }: { icon?: string; label: string }) {
@@ -278,25 +282,13 @@ function MagicIcon({ icon, label }: { icon?: string; label: string }) {
 
 function getTilesWithColorPaths(
   colorId: string,
-  mapTiles: Array<{ name: string; terrain: string }>,
+  mapTiles: MapTileEntry[],
   connections: Record<
     string,
     { front: { paths: unknown[] }; back: { paths: unknown[] } }
   >,
-): Array<{
-  name: string;
-  terrain: string;
-  side?: string;
-  frontHasColor: boolean;
-  backHasColor: boolean;
-}> {
-  const tilesWithColor: Array<{
-    name: string;
-    terrain: string;
-    side?: string;
-    frontHasColor: boolean;
-    backHasColor: boolean;
-  }> = [];
+): MapTileColorPathEntry[] {
+  const tilesWithColor: MapTileColorPathEntry[] = [];
   const processedTiles = new Set<string>();
 
   for (const tile of mapTiles) {
@@ -322,8 +314,7 @@ function getTilesWithColorPaths(
             : "front";
 
       tilesWithColor.push({
-        name: tile.name,
-        terrain: tile.terrain,
+        ...tile,
         side,
         frontHasColor,
         backHasColor,
@@ -333,6 +324,12 @@ function getTilesWithColorPaths(
 
   return tilesWithColor;
 }
+
+type MapTileColorPathEntry = MapTileEntry & {
+  side?: string;
+  frontHasColor: boolean;
+  backHasColor: boolean;
+};
 
 function hasColorInPaths(
   paths: unknown[] | undefined,

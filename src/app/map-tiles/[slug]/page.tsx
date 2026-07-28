@@ -69,11 +69,9 @@ export default async function MapTilePage({
     selectedTile.terrain,
     selectedTile.name,
   ).map((mission) => ({
+    ...mission,
     tileName: selectedTile.name,
     terrain: selectedTile.terrain,
-    name: mission.name,
-    slug: mission.slug,
-    descriptions: mission.descriptions,
   }));
 
   const connectionsPath = join(
