@@ -113,6 +113,27 @@ export async function resolveSiteRulebookLinks(
   );
 }
 
+export async function resolveLegendaryLocationRulebookLinks(
+  name: string,
+  kind: "site" | "test",
+): Promise<RulebookLink[]> {
+  const [manifestLinks, typeLinks] = await Promise.all([
+    resolveRulebookLinks({
+      doc: ANY_DOC,
+      headings: ["Legendary Location Manifest", name],
+    }),
+    resolveRuleReferenceLinksForSlug(
+      ruleReferences["legendary-location"] as RuleReferenceMap,
+      slugify(name),
+      [`_legendary_location_${kind}`],
+    ),
+  ]);
+
+  return uniqueRulebookLinks([...manifestLinks, ...typeLinks]).sort(
+    compareRulebookLinks,
+  );
+}
+
 export async function resolveMonsterRulebookLinks(
   groupName: string,
   individualNames: string[] = [],

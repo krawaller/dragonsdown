@@ -562,6 +562,34 @@
       ]
     }
   },
+  "legendary-location": {
+    "_legendary_location_site": {
+      "rulebookLinks": [
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "DRAGONS DOWN: LEGENDS",
+            "Legendary Locations",
+            "Types of Legendary Locations"
+          ],
+          "anchor": "Sites:"
+        }
+      ]
+    },
+    "_legendary_location_test": {
+      "rulebookLinks": [
+        {
+          "doc": "natives-and-legends",
+          "headings": [
+            "DRAGONS DOWN: LEGENDS",
+            "Legendary Locations",
+            "Types of Legendary Locations"
+          ],
+          "anchor": "Tests:"
+        }
+      ]
+    }
+  },
   "equipment": {
     "_epic-treasure": {
       "rulebookLinks": [

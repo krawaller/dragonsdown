@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { RulebookLinks } from "@/components/RulebookLinks";
-import { ANY_DOC, resolveRulebookLinks } from "@/lib/rulebook-links";
+import { resolveLegendaryLocationRulebookLinks } from "@/lib/rulebook-links";
 import { slugify } from "@/lib/slug";
 import {
   normalizeTitle,
@@ -119,29 +119,6 @@ export default async function LegendaryLocationPage({
       </div>
     </main>
   );
-}
-
-async function resolveLegendaryLocationRulebookLinks(
-  name: string,
-  kind: "site" | "test",
-) {
-  const [manifestLinks, typeLinks] = await Promise.all([
-    resolveRulebookLinks({
-      doc: ANY_DOC,
-      headings: ["Legendary Location Manifest", name],
-    }),
-    resolveRulebookLinks({
-      doc: "natives-and-legends",
-      headings: [
-        "DRAGONS DOWN: LEGENDS",
-        "Legendary Locations",
-        "Types of Legendary Locations",
-      ],
-      anchor: kind === "site" ? "Sites:" : "Tests:",
-    }),
-  ]);
-
-  return [...manifestLinks, ...typeLinks];
 }
 
 function TreasureBlock({
