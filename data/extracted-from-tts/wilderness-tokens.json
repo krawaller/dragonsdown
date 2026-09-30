@@ -268,6 +268,135 @@
       ]
     }
   ],
+  "Hostile Hills": [
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Hostile Hills",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Discovery%20-%20Front%20-%2075in%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "HILLS Minor"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Discovery",
+      "draw": 1
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Hostile Hills",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953950180/5A867E0E1700B5C931AD563C57A9917A43FA14E4/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hostile HILLS"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Gate",
+      "clearing": 4
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Hostile Hills",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "BT Hills"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [
+            "FC Hills"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Item"
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Hostile Hills",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hostile HILLS"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Site"
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Hostile Hills",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Stone%20Circle%20-%20Front%20-%2075in%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hostile HILLS"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Stone Circle",
+      "clearing": 3,
+      "nicknames": [
+        "Stone Circle"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Hostile Hills",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953929149/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "DR Hills"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [
+            "Hostile HILLS"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Treasure"
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Hostile Hills",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Watchtower%20-%20Front%20-%2075in%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hostile HILLS"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Watchtower",
+      "clearing": 2,
+      "nicknames": [
+        "Watchtower"
+      ]
+    }
+  ],
   "Malevolent Mountains": [
     {
       "source": "dd_all_exp",
@@ -745,6 +874,123 @@
         {
           "ancestry": [
             "BT Swamps"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Treasure"
+    }
+  ],
+  "Tangled Thickets": [
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Tangled Thickets",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20Veiled%20Enclave%20-%20Front%20-%2075in%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Tangled THICKETS",
+            "THICKETS Wilderness Tokens"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Enclave",
+      "clearing": 6,
+      "nicknames": [
+        "Enclave"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Tangled Thickets",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953930761/8987958A6C56605B278E20F0F63330E848A84CF7/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Tangled THICKETS",
+            "THICKETS Wilderness Tokens"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Gate",
+      "clearing": 1
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Tangled Thickets",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953902435/92271F5B049D41D87CAEFC6C88E785D6F39B4DED/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "FC Thickets"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Item"
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Tangled Thickets",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953907206/14E2A089F4937F3C97AE2E94E921153BB2D482CD/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Tangled THICKETS",
+            "THICKETS Wilderness Tokens"
+          ],
+          "count": 2
+        }
+      ],
+      "name": "Site"
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Tangled Thickets",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20Totem%20Shrine%20-%20Front%20-%2075in%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Tangled THICKETS",
+            "THICKETS Wilderness Tokens"
+          ],
+          "count": 1
+        }
+      ],
+      "name": "Totems",
+      "clearing": 5,
+      "nicknames": [
+        "Totems"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "terrainPack": "Tangled Thickets",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953929149/49C1F47CEAE1797A54C8869D58CDA1065635ED9C/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20-%20Back%20-%2075in%20x9.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Treasure"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [
+            "BT Thickets"
+          ],
+          "count": 1
+        },
+        {
+          "ancestry": [
+            "DR Thickets"
           ],
           "count": 1
         }

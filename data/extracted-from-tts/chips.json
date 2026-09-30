@@ -358,7 +358,8 @@
           ],
           "count": 4
         }
-      ]
+      ],
+      "name": "Crag Fiend Lobber"
     },
     {
       "source": "dd_all_exp",
@@ -372,7 +373,8 @@
           ],
           "count": 4
         }
-      ]
+      ],
+      "name": "Crag Fiend Spiker"
     }
   ],
   "Cultists": [
@@ -388,7 +390,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Cult Leader"
     },
     {
       "source": "dd_all_exp",
@@ -402,7 +405,8 @@
           ],
           "count": 7
         }
-      ]
+      ],
+      "name": "Cult Member"
     }
   ],
   "Cursed": [
@@ -1225,7 +1229,8 @@
           ],
           "count": 4
         }
-      ]
+      ],
+      "name": "Bow"
     },
     {
       "source": "dd_all_exp",
@@ -1239,7 +1244,8 @@
           ],
           "count": 4
         }
-      ]
+      ],
+      "name": "Club"
     },
     {
       "source": "dd_all_exp",
@@ -1253,7 +1259,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Priest"
     },
     {
       "source": "dd_all_exp",
@@ -1267,7 +1274,8 @@
           ],
           "count": 1
         }
-      ]
+      ],
+      "name": "Champion"
     }
   ],
   "JuvenileDragons": [
@@ -2437,7 +2445,8 @@
           ],
           "count": 3
         }
-      ]
+      ],
+      "name": "Stone Golem"
     }
   ],
   "StormDrakes": [
@@ -2754,7 +2763,8 @@
           ],
           "count": 4
         }
-      ]
+      ],
+      "name": "Wyvern"
     }
   ]
 }

@@ -2855,6 +2855,7 @@ end`;
 
 describe("extractWildernessTokens", () => {
   const cavesBack = WILDERNESS_TOKEN_BACK_URLS["Cruel Caves"];
+  const hillsBack = WILDERNESS_TOKEN_BACK_URLS["Hostile Hills"];
   const plainsBack = WILDERNESS_TOKEN_BACK_URLS["Perilous Plains"];
   const wildernessToken = (front: string, back = cavesBack, nick = "") => ({
     Name: "Custom_Tile",
@@ -2889,6 +2890,38 @@ describe("extractWildernessTokens", () => {
     expect(
       Object.keys(extractWildernessTokens(save, "eastern")).sort(),
     ).toEqual(["Cruel Caves", "Perilous Plains"]);
+  });
+
+  it("extracts Wildlands Hills wilderness tokens by their terrain back", () => {
+    const save = {
+      ObjectStates: [
+        wildernessToken(
+          "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Watchtower%20-%20Front%20-%2075in%20x1.png",
+          hillsBack,
+          "Watchtower",
+        ),
+        wildernessToken(
+          "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Stone%20Circle%20-%20Front%20-%2075in%20x1.png",
+          hillsBack,
+          "Stone Circle",
+        ),
+      ],
+    };
+
+    expect(extractWildernessTokens(save, "wildlands")["Hostile Hills"]).toEqual(
+      [
+        expect.objectContaining({
+          name: "Stone Circle",
+          clearing: 3,
+          nicknames: ["Stone Circle"],
+        }),
+        expect.objectContaining({
+          name: "Watchtower",
+          clearing: 2,
+          nicknames: ["Watchtower"],
+        }),
+      ],
+    );
   });
 
   it("preserves nicknames when the source has them", () => {

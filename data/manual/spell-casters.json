@@ -21,6 +21,9 @@
   "Doppelganger": {
     "front": ["Siren"]
   },
+  "Earthquake": {
+    "back": ["Revenant"]
+  },
   "Elemental": {
     "front": ["Lizardfolk Shaman"]
   },
@@ -29,7 +32,10 @@
   },
   "Fireball": {
     "front": ["Great Drake", "Omnicrux"],
-    "back": ["Adult Dragons", "Great Wyrm", "Sand Wyrms"]
+    "back": ["Adult Dragons", "Great Wyrm", "Sand Wyrms", "Emberwyrm", "Wyvern"]
+  },
+  "Foresight": {
+    "front": ["Revenant"]
   },
   "Gale Blast": {
     "back": ["Merfolk Mage 2"]
@@ -43,6 +49,9 @@
   "Lightning": {
     "front": ["Storm Drake"]
   },
+  "Magic Snare": {
+    "front": ["Jaguar Priest"]
+  },
   "Mana Shield": {
     "front": ["Lamia"]
   },
@@ -54,6 +63,9 @@
   },
   "Rot": {
     "front": ["Mummy"]
+  },
+  "Shift Focus": {
+    "front": ["Cult Leader"]
   },
   "Teleport": {
     "front": ["Titan"]

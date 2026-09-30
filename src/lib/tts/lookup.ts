@@ -438,6 +438,7 @@ export function getSpellsForMonster(
   monsterNames: string | string[],
 ): MonsterSpellEntry[] {
   const names = Array.isArray(monsterNames) ? monsterNames : [monsterNames];
+  const [groupName, ...chipNames] = names;
   const idx = getSpellCastersIndex();
   const results: MonsterSpellEntry[] = [];
   for (const [spellName, entry] of Object.entries(idx)) {
@@ -446,7 +447,10 @@ export function getSpellsForMonster(
     for (const side of ["front", "back"] as const) {
       for (const casterName of entry[side] ?? []) {
         if (
-          names.some((name) => spellCasterMatchesMonsterName(casterName, name))
+          spellCasterMatchesGroupName(casterName, groupName) ||
+          chipNames.some((name) =>
+            spellCasterMatchesExactName(casterName, name),
+          )
         ) {
           sidesSet.add(side);
           if (!casterNames.includes(casterName)) casterNames.push(casterName);
@@ -522,14 +526,14 @@ function groupForCaster(
   monsterName: string,
 ): MonsterGroupEntry | undefined {
   return groups.find((entry) => {
-    if (spellCasterMatchesMonsterName(monsterName, entry.prettyName)) {
+    if (spellCasterMatchesGroupName(monsterName, entry.prettyName)) {
       return true;
     }
     if (
       entry.chips.some(
         (chip) =>
           chip.monsterName &&
-          spellCasterMatchesMonsterName(monsterName, chip.monsterName),
+          spellCasterMatchesExactName(monsterName, chip.monsterName),
       )
     ) {
       return true;
@@ -538,15 +542,27 @@ function groupForCaster(
   });
 }
 
-function spellCasterMatchesMonsterName(
+function spellCasterMatchesGroupName(
+  casterName: string,
+  groupName: string | undefined,
+): boolean {
+  if (!groupName) return false;
+  return normalizedNameVariants(casterName).some((normalizedCaster) =>
+    normalizedNameVariants(groupName).some(
+      (normalizedGroup) =>
+        normalizedCaster === normalizedGroup ||
+        normalizedCaster.startsWith(`${normalizedGroup} `),
+    ),
+  );
+}
+
+function spellCasterMatchesExactName(
   casterName: string,
   monsterName: string,
 ): boolean {
   return normalizedNameVariants(casterName).some((normalizedCaster) =>
     normalizedNameVariants(monsterName).some(
-      (normalizedMonster) =>
-        normalizedCaster === normalizedMonster ||
-        normalizedCaster.startsWith(`${normalizedMonster} `),
+      (normalizedMonster) => normalizedCaster === normalizedMonster,
     ),
   );
 }

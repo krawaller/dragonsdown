@@ -556,6 +556,8 @@ export const WILDERNESS_TOKEN_BACK_URLS: Record<string, string> = {
     "https://steamusercontent-a.akamaihd.net/ugc/2260307376260351024/6CF77C9E8D346A1E95D9661ED39603A18B7CE05D/",
   "Dreadful Deserts":
     "https://steamusercontent-a.akamaihd.net/ugc/9991230868268597569/6E69E7B591B526F02AA2E6C7153256D809FBE2DE/",
+  "Hostile Hills":
+    "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20-%20Back%20-%2075in%20x9.png",
   "Malevolent Mountains":
     "https://steamusercontent-a.akamaihd.net/ugc/2458481068953948516/DA5AD395AB771B3C28E3311E23961413D550EF53/",
   "Perilous Plains":
@@ -564,6 +566,8 @@ export const WILDERNESS_TOKEN_BACK_URLS: Record<string, string> = {
     "https://steamusercontent-a.akamaihd.net/ugc/16048769196775711127/40EEC30C00B227F8842FD729C1E718016C490D02/",
   "Sinister Swamps":
     "https://steamusercontent-a.akamaihd.net/ugc/2261434080453722963/DD6BB1FC4CADB87E954A85E7309B0186E7951033/",
+  "Tangled Thickets":
+    "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20-%20Back%20-%2075in%20x9.png",
   "Wicked Woods":
     "https://steamusercontent-a.akamaihd.net/ugc/2260307376260373279/394607BD68A2660A3317FFA8F22DF9490FBA436B/",
 };
@@ -638,6 +642,31 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
   "https://steamusercontent-a.akamaihd.net/ugc/2458481068953908897/BC773FB63D1582EE29D0BFA26E4278B82BA29752/":
     {
       name: "Discovery",
+    },
+  "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Discovery%20-%20Front%20-%2075in%20x1.png":
+    {
+      name: "Discovery",
+      draw: 1,
+    },
+  "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Watchtower%20-%20Front%20-%2075in%20x1.png":
+    {
+      name: "Watchtower",
+      clearing: 2,
+    },
+  "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Hills%20Stone%20Circle%20-%20Front%20-%2075in%20x1.png":
+    {
+      name: "Stone Circle",
+      clearing: 3,
+    },
+  "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20Totem%20Shrine%20-%20Front%20-%2075in%20x1.png":
+    {
+      name: "Totems",
+      clearing: 5,
+    },
+  "https://dragonsdowndata.com/data/DDTTS/wildernesstoken%20Thickets%20Veiled%20Enclave%20-%20Front%20-%2075in%20x1.png":
+    {
+      name: "Enclave",
+      clearing: 6,
     },
   "https://steamusercontent-a.akamaihd.net/ugc/51329810045297576/72C99BA10F336999632077D3425591AA40825828/":
     {

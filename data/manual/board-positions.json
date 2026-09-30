@@ -19,6 +19,13 @@
   {
     "topStrip": "high",
     "rows": [
+      ["Burrow", "Stone Circle"],
+      ["Watchtower", "Outfitter"]
+    ]
+  },
+  {
+    "topStrip": "high",
+    "rows": [
       ["Chamber", "Crypt"],
       ["Hoard", "Scholar"]
     ]

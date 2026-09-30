@@ -1,4 +1,42 @@
 {
+  "Wyverns": [
+    {
+      "name": "Wyvern",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Wyvern%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Wyvern%20Back%20x4.png"
+    }
+  ],
+  "Stone Golems": [
+    {
+      "name": "Stone Golem",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Front%20x3.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Back%20x3.png"
+    }
+  ],
+  "Cultists": [
+    {
+      "name": "Cult Leader",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Leader%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Leader%20Back%20x1.png"
+    },
+    {
+      "name": "Cult Member",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Member%20Front%20x7.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Member%20Back%20x7.png"
+    }
+  ],
+  "Crag Fiends": [
+    {
+      "name": "Crag Fiend Lobber",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Lobber%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Lobber%20Back%20x4.png"
+    },
+    {
+      "name": "Crag Fiend Spiker",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Spiker%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Spiker%20Back%20x4.png"
+    }
+  ],
   "Goblins": [
     {
       "name": "King",
@@ -41,6 +79,28 @@
       "name": "Queen",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9225658430800702647/38693AAC365818CA8E4DE5772D0CC924ED6AF5A9/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17945833962132182002/9CA42FF9D96152C619B954266C710483C7906D60/"
+    }
+  ],
+  "Jaguar": [
+    {
+      "name": "Bow",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Bow%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Bow%20Back%20x4.png"
+    },
+    {
+      "name": "Champion",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Champion%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Champion%20Back%20x1.png"
+    },
+    {
+      "name": "Club",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Club%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Club%20Back%20x4.png"
+    },
+    {
+      "name": "Priest",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Priest%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Priest%20Back%20x1.png"
     }
   ],
   "Kobolds": [
