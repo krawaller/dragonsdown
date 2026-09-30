@@ -2465,6 +2465,7 @@ const NATIVE_CHIP_GROUPS = new Set(
     "consul",
     "dwarves",
     "elves",
+    "hunters",
     "knights",
     "mariners",
     "nomads",

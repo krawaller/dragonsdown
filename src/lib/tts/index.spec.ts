@@ -2548,12 +2548,12 @@ NativesAlt = {
     expect(extractNativeSummons(save, "wildlands")).toMatchObject({
       "Native Setup": [
         { group: "Guard", natives: ["Guard Leader", "Guard 2"] },
-        { group: "Hunters", natives: ["Hunters Leader"] },
+        { group: "Hunters", natives: ["Hunter Leader"] },
         { group: "Tribe", natives: ["Tribe Leader"] },
       ],
       "Trading Post": [
         { group: "Guard", natives: ["Guard Leader", "Guard 2"] },
-        { group: "Hunters", natives: ["Hunters Leader"] },
+        { group: "Hunters", natives: ["Hunter Leader"] },
         { group: "Tribe", natives: ["Tribe Leader"] },
       ],
     });

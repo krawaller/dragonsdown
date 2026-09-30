@@ -1180,23 +1180,23 @@
       "source": "dd_all_exp",
       "group": "Hunters",
       "natives": [
-        "Hunters Leader",
-        "Hunters 2",
-        "Hunters 3"
+        "Hunter Leader",
+        "Hunter 2",
+        "Hunter 3"
       ],
       "nativeChips": [
         {
-          "name": "Hunters Leader",
+          "name": "Hunter Leader",
           "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%20Leader%20Front.png",
           "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%20Leader%20Back.png"
         },
         {
-          "name": "Hunters 2",
+          "name": "Hunter 2",
           "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%202%20Front.png",
           "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%202%20Back.png"
         },
         {
-          "name": "Hunters 3",
+          "name": "Hunter 3",
           "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%203%20Front.png",
           "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%203%20Back.png"
         }
@@ -2164,23 +2164,23 @@
       "source": "dd_all_exp",
       "group": "Hunters",
       "natives": [
-        "Hunters Leader",
-        "Hunters 2",
-        "Hunters 3"
+        "Hunter Leader",
+        "Hunter 2",
+        "Hunter 3"
       ],
       "nativeChips": [
         {
-          "name": "Hunters Leader",
+          "name": "Hunter Leader",
           "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%20Leader%20Front.png",
           "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%20Leader%20Back.png"
         },
         {
-          "name": "Hunters 2",
+          "name": "Hunter 2",
           "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%202%20Front.png",
           "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%202%20Back.png"
         },
         {
-          "name": "Hunters 3",
+          "name": "Hunter 3",
           "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%203%20Front.png",
           "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%203%20Back.png"
         }

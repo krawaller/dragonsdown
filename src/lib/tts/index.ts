@@ -484,6 +484,11 @@ export type NativeIndex = Record<string, TTSNativeGroup[]>;
 export const CIVILISATION_REFERENCE_CARD_FACE_URL =
   "https://dragonsdowndata.com/data/titles/AllCivilizationandReferenceCardsFront.png";
 
+const CIVILISATION_REFERENCE_CARD_FACE_URLS = new Set([
+  CIVILISATION_REFERENCE_CARD_FACE_URL,
+  "https://dragonsdowndata.com/data/y/titles/AllCivilizationandReferenceCardsFront.png",
+]);
+
 export const CIVILISATION_TOKEN_FACE_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/";
 
@@ -2899,7 +2904,7 @@ function nativeCivilisationCards(
   const index = new Map<string, TTSCardImage>();
   for (const { card, ancestry } of cards) {
     const image = imageFor(card, source, ancestry);
-    if (!image || image.faceURL !== CIVILISATION_REFERENCE_CARD_FACE_URL) {
+    if (!image || !CIVILISATION_REFERENCE_CARD_FACE_URLS.has(image.faceURL)) {
       continue;
     }
     const name = nativeCivilisationCardName(card, image);
@@ -3342,10 +3347,18 @@ function nativeChipFor(
 function nativeNameForLabel(label: string, group: string): string {
   const trimmed = label.trim();
   if (/^\d+$/.test(trimmed) || /^leader$/i.test(trimmed)) {
-    return `${group} ${prettifyNativeLabel(trimmed)}`;
+    return `${nativeChipNameGroupLabel(group)} ${prettifyNativeLabel(trimmed)}`;
   }
   return prettifyNativeLabel(trimmed);
 }
+
+function nativeChipNameGroupLabel(group: string): string {
+  return NATIVE_CHIP_NAME_GROUP_LABELS[normalizeTitle(group)] ?? group;
+}
+
+const NATIVE_CHIP_NAME_GROUP_LABELS: Record<string, string> = {
+  Hunters: "Hunter",
+};
 
 function prettifyNativeLabel(label: string): string {
   return prettifyChipName(label.replace(/([A-Za-z])(\d+)/g, "$1 $2"));
