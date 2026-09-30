@@ -18,6 +18,7 @@ import {
   extractSpecialists,
   extractSpells,
   extractTreasures,
+  extractWeatherCards,
   extractWildernessTokens,
   extractSites,
   missionCellKey,
@@ -32,6 +33,7 @@ import {
   SITE_FACE_URL,
   SPECIALIST_TOKEN_BACK_URL,
   TREASURE_CARD_BACK_URL,
+  WEATHER_CARD_BACK_URL,
   SPELL_CARD_BACK_URL,
   WILDERNESS_TOKEN_BACK_URLS,
   WILDERNESS_TOKEN_FRONT_METADATA,
@@ -3413,6 +3415,51 @@ describe("extractLegendaryLocations", () => {
         name: "The Lamp",
         card: expect.objectContaining({ row: 0, col: 1 }),
       },
+    ]);
+  });
+});
+
+describe("extractWeatherCards", () => {
+  it("extracts weather cards with descriptions, seasons, and copy counts", () => {
+    const weatherDeck = { ...SAMPLE_DECK, BackURL: WEATHER_CARD_BACK_URL };
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Weather",
+          ContainedObjects: [
+            {
+              ...card("Fog", 108, "1", weatherDeck),
+              Description:
+                "Lasts 4 turns. Reveal the next Weather Card on turn 4.",
+              Tags: ["Autumn", "Spring", "Winter"],
+            },
+            {
+              ...card("Fog", 108, "1", weatherDeck),
+              Description:
+                "Lasts 4 turns. Reveal the next Weather Card on turn 4.",
+              Tags: ["Autumn"],
+            },
+            card("Not Weather", 109, "1", SAMPLE_DECK),
+          ],
+        },
+      ],
+    };
+
+    const out = extractWeatherCards(save, "wildlands");
+
+    expect(Object.keys(out)).toEqual(["Fog"]);
+    expect(out.Fog).toEqual([
+      expect.objectContaining({
+        source: "wildlands",
+        backURL: WEATHER_CARD_BACK_URL,
+        row: 0,
+        col: 8,
+        description: "Lasts 4 turns. Reveal the next Weather Card on turn 4.",
+        seasons: ["Spring", "Autumn", "Winter"],
+        copies: 2,
+        locations: [{ ancestry: ["Weather"], count: 2 }],
+      }),
     ]);
   });
 });

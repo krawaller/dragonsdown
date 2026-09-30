@@ -29,6 +29,7 @@ import {
   extractSites,
   extractSpells,
   extractTreasures,
+  extractWeatherCards,
   extractWildernessTokens,
   isSameCell,
   mergeTreasureCardLinks,
@@ -58,6 +59,7 @@ import {
   type SpellIndex,
   type SpellManifestReference,
   type TreasureIndex,
+  type WeatherIndex,
   type TTSTreasureCard,
   type TTSCivilisationToken,
   type TTSMapTile,
@@ -144,6 +146,7 @@ async function main(): Promise<void> {
   const natives: NativeIndex = {};
   const nativeSummons: NativeSummonIndex = {};
   const specialists: SpecialistIndex = {};
+  const weatherCards: WeatherIndex = {};
   let mapTiles: TTSMapTile[] = [];
 
   for (const file of files) {
@@ -174,9 +177,10 @@ async function main(): Promise<void> {
     const nativeIndex = extractNatives(save, stem);
     const nativeSummonIndex = extractNativeSummons(save, stem);
     const specialistIndex = extractSpecialists(save, stem);
+    const weatherIndex = extractWeatherCards(save, stem);
     mapTiles = extractMapTiles(save);
     console.log(
-      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(spellIndex)} spells / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(treasureIndex)} treasures / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups / ${countEntries(specialistIndex)} specialists`,
+      `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(spellIndex)} spells / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(treasureIndex)} treasures / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups / ${countEntries(specialistIndex)} specialists / ${countEntries(weatherIndex)} weather cards`,
     );
 
     boards.push(...boardIndex);
@@ -313,6 +317,34 @@ async function main(): Promise<void> {
     }
     for (const [name, items] of Object.entries(specialistIndex)) {
       (specialists[name] ??= []).push(...items);
+    }
+    for (const [name, cards] of Object.entries(weatherIndex)) {
+      const bucket = (weatherCards[name] ??= []);
+      for (const card of cards) {
+        const existing = bucket.find((entry) => isSameCell(entry, card));
+        if (existing) {
+          existing.copies += card.copies;
+          existing.tags = mergeTags(existing.tags, card.tags);
+          existing.seasons = mergeStringArrays(
+            existing.seasons,
+            card.seasons,
+          ) as typeof existing.seasons;
+          existing.description ||= card.description;
+          for (const loc of card.locations) {
+            const match = existing.locations.find((l) =>
+              sameAncestry(l.ancestry, loc.ancestry),
+            );
+            if (match) match.count += loc.count;
+            else existing.locations.push({ ...loc });
+          }
+        } else {
+          bucket.push({
+            ...card,
+            seasons: card.seasons ? [...card.seasons] : undefined,
+            locations: card.locations.map((l) => ({ ...l })),
+          });
+        }
+      }
     }
     // Chips dedup by URL pair across sources; per-ancestry counts are summed.
     for (const [name, items] of Object.entries(chipIndex)) {
@@ -460,6 +492,7 @@ async function main(): Promise<void> {
   await writeSorted(path.join(OUT_DIR, "natives.json"), natives);
   await writeSorted(path.join(OUT_DIR, "native-summons.json"), nativeSummons);
   await writeSorted(path.join(OUT_DIR, "specialists.json"), specialists);
+  await writeSorted(path.join(OUT_DIR, "weather-cards.json"), weatherCards);
   console.log(`→ boards.json: ${boards.length} boards total`);
   console.log(
     `→ cards.json: ${Object.keys(cards).length} names, ${countEntries(cards)} cards total`,
@@ -515,6 +548,9 @@ async function main(): Promise<void> {
   );
   console.log(
     `→ specialists.json: ${Object.keys(specialists).length} names, ${countEntries(specialists)} specialists total`,
+  );
+  console.log(
+    `→ weather-cards.json: ${Object.keys(weatherCards).length} names, ${countEntries(weatherCards)} cards total`,
   );
 }
 

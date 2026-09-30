@@ -57,6 +57,9 @@ export const SPELL_CARD_BACK_URL =
 export const HERO_STARTING_SPELL_CARD_BACK_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/";
 
+export const WEATHER_CARD_BACK_URL =
+  "https://dragonsdowndata.com/data/weather/wBack.png";
+
 export const SPECIALIST_TOKEN_BACK_URL =
   "https://dragonsdowndata.com/data/specialists/spBack.png";
 
@@ -112,6 +115,22 @@ export type TTSTreasureCard = TTSCardImage & {
 
 /** Output written to data/treasures.json. Keyed by normalized `Nickname`. */
 export type TreasureIndex = Record<string, TTSTreasureCard[]>;
+
+export type TTSWeatherSeason = "Spring" | "Summer" | "Autumn" | "Winter";
+
+export type TTSWeatherCard = TTSCardImage & {
+  /** Raw TTS card description containing duration, reveal timing, and game effect. */
+  description?: string;
+  /** Seasons from the TTS card tags in which this card can appear. */
+  seasons?: TTSWeatherSeason[];
+  /** Total number of physical copies found for this exact card image cell. */
+  copies: number;
+  /** Per-container physical-copy breakdown. */
+  locations: { ancestry: string[]; count: number }[];
+};
+
+/** Output written to data/extracted-from-tts/weather-cards.json. Keyed by normalized `Nickname`. */
+export type WeatherIndex = Record<string, TTSWeatherCard[]>;
 
 export type TTSLegendarySiteToken = {
   source: string;
@@ -947,6 +966,66 @@ export function extractItems(root: unknown, source: string): ItemIndex {
     }
   }
   return index;
+}
+
+export function extractWeatherCards(
+  root: unknown,
+  source: string,
+): WeatherIndex {
+  const index: WeatherIndex = {};
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const image = imageFor(card, source, ancestry);
+    if (!image || image.backURL !== WEATHER_CARD_BACK_URL) continue;
+    const key = normalizeTitle(raw);
+    const description = card.Description?.trim();
+    const seasons = weatherSeasons(card.Tags);
+    const bucket = (index[key] ??= []);
+    const existing = bucket.find((entry) => isSameCell(entry, image));
+    if (existing) {
+      existing.copies += 1;
+      existing.tags = mergeTags(existing.tags, image.tags);
+      existing.seasons = mergeWeatherSeasons(existing.seasons, seasons);
+      if (!existing.description && description)
+        existing.description = description;
+      addToLocations(existing.locations, ancestry);
+    } else {
+      const entry: TTSWeatherCard = {
+        ...image,
+        copies: 1,
+        locations: [{ ancestry, count: 1 }],
+      };
+      if (description) entry.description = description;
+      if (seasons.length) entry.seasons = seasons;
+      bucket.push(entry);
+    }
+  }
+  return index;
+}
+
+function weatherSeasons(tags: string[] | undefined): TTSWeatherSeason[] {
+  return (tags ?? [])
+    .filter((tag): tag is TTSWeatherSeason =>
+      ["Spring", "Summer", "Autumn", "Winter"].includes(tag),
+    )
+    .sort((a, b) => weatherSeasonOrder(a) - weatherSeasonOrder(b));
+}
+
+function mergeWeatherSeasons(
+  a: TTSWeatherSeason[] | undefined,
+  b: TTSWeatherSeason[] | undefined,
+): TTSWeatherSeason[] | undefined {
+  if (!a?.length && !b?.length) return undefined;
+  return [...new Set([...(a ?? []), ...(b ?? [])])].sort(
+    (left, right) => weatherSeasonOrder(left) - weatherSeasonOrder(right),
+  );
+}
+
+function weatherSeasonOrder(season: TTSWeatherSeason): number {
+  return ["Spring", "Summer", "Autumn", "Winter"].indexOf(season);
 }
 
 export function extractTreasures(root: unknown, source: string): TreasureIndex {

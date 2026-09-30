@@ -1,0 +1,1018 @@
+{
+  "Clear": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 6 turns. Reveal the next Weather Card on turn 5. No effect on game play.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Clouds": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. No effect on game play.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. No effect on game play.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Cold": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cold is in effect, a hero that ends their Action Phase in an Unsheltered Clearing must have spent 1 Action that turn to stay warm. If they did not, they must take 1 wound of their choice.",
+      "seasons": [
+        "Spring",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Cool": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. No effect on game play.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Corrupted": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. At the beginning of each turn, randomly select one magic color. Until the end of the turn, magic cubes of the selected color may not be used for any purpose, and no enchantments of that color may occur. Immediately remove all existing enchantments of the selected color. These restrictions also apply to Monsters and Natives, but do not affect a Dragon's Fireball.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Cursed": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cursed is in effect, a hero who ends their Action Phase in an Unsheltered Clearing must either take 1 wound of their choice or receive a random Curse.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cursed is in effect, a hero who ends their Action Phase in an Unsheltered Clearing must either take 1 wound of their choice or receive a random Curse.",
+      "seasons": [
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Dark Omens": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Roll the Summoning Dice twice during Monster Activation.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Dreamlike": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 2. All Heroes receive +1 action during their Action Phase.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 2. All Heroes receive +1 action during their Action Phase.",
+      "seasons": [
+        "Summer"
+      ]
+    }
+  ],
+  "Enchanted": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. At the beginning of each turn, randomly select one magic color. Until the end of the turn, Map Tiles are considered to be enchanted with the selected magic color. Ignore all other enchantments and enchanted effects. Do not flip over any Map Tiles",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Fog": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result on the Search Dice.",
+      "seasons": [
+        "Spring",
+        "Autumn",
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result on the Search Dice.",
+      "seasons": [
+        "Autumn"
+      ]
+    }
+  ],
+  "Gloom": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. All Heroes receive -1 action during their Action Phase.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "High Winds": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. All flying and swimming movement actions require +1 action.",
+      "seasons": [
+        "Summer",
+        "Autumn"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. All flying and swimming movement actions require +1 action.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Hot": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Hot is in effect, a hero who ends their Action Phase in an Unsheltered Clearing takes 1 wound of their choice.",
+      "seasons": [
+        "Summer"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 1,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Spring",
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Hot is in effect, a hero who ends their Action Phase in an Unsheltered Clearing takes 1 wound of their choice.",
+      "seasons": [
+        "Spring",
+        "Summer"
+      ]
+    }
+  ],
+  "Icebound": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 0,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. All Swamp and Water Clearings are treated as Plains Clearings. If playing with the Terrain Effects optional rules, those clearings are treated as Plains Clearings. Additionally, Heroes that spend one or more actions in an Unsheltered Clearing while Icebound is in effect must spend one action during their Action Phase to stay warm or take one wound of their choice at the end of their Action Phase.",
+      "seasons": [
+        "Winter"
+      ]
+    }
+  ],
+  "Primal": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. Both the Wandering and Local Monster Number Die summon one additional Monster.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. Both the Wandering and Local Monster Number Die summon one additional Monster.",
+      "seasons": [
+        "Summer"
+      ]
+    }
+  ],
+  "Rain": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Rain is in effect, a hero loses 1 action during their Action Phase unless they end their Action Phase in a Sheltered Clearing.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 2,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Rain is in effect, a hero loses 1 action during their Action Phase unless they end their Action Phase in a Sheltered Clearing.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Snow": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost, even if Swimming, but not if Flying.",
+      "seasons": [
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost, even if Swimming, but not if Flying.",
+      "seasons": [
+        "Spring",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Snow Storms": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost or take one wound of their choice, even if flying or swimming.",
+      "seasons": [
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost or take one wound of their choice, even if flying or swimming.",
+      "seasons": [
+        "Spring",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Thunder Storms": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Thunderstorms are in effect, a hero who ends their Action Phase in an Unsheltered Mountain, Plains, River, or Swamp Clearing must take 1 wound of their choice.",
+      "seasons": [
+        "Summer"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 8,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Summer"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Thunderstorms are in effect, a hero who ends their Action Phase in an Unsheltered Mountain, Plains, River, or Swamp Clearing must take 1 wound of their choice.",
+      "seasons": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ]
+    }
+  ]
+}

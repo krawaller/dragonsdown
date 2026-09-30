@@ -55,6 +55,8 @@ import {
   type TTSSite,
   type TreasureIndex,
   type TTSWildernessToken,
+  type TTSWeatherCard,
+  type WeatherIndex,
   type WildernessTokenIndex,
 } from ".";
 import aliasesData from "../../../data/manual/tts-aliases.json";
@@ -95,6 +97,7 @@ const MAP_TILES_FILE = path.join(EXTRACTED_TTS_DIR, "map-tiles.json");
 const NATIVE_SUMMONS_FILE = path.join(EXTRACTED_TTS_DIR, "native-summons.json");
 const NATIVES_FILE = path.join(EXTRACTED_TTS_DIR, "natives.json");
 const SPECIALISTS_FILE = path.join(EXTRACTED_TTS_DIR, "specialists.json");
+const WEATHER_CARDS_FILE = path.join(EXTRACTED_TTS_DIR, "weather-cards.json");
 const MISSIONS_FILE = path.join(EXTRACTED_TTS_DIR, "missions.json");
 const MISSION_FEATURE_FILE = path.join(
   process.cwd(),
@@ -137,6 +140,7 @@ let cachedMapTiles: TTSMapTile[] | null = null;
 let cachedNativeIndex: NativeIndex | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
 let cachedSpecialistIndex: SpecialistIndex | null = null;
+let cachedWeatherIndex: WeatherIndex | null = null;
 let cachedMissionIndex: MissionIndex | null = null;
 let cachedMissionFeatureIndex: Record<string, string | string[]> | null = null;
 let cachedSpellCasters: Record<
@@ -336,6 +340,12 @@ function getSpecialistIndex(): SpecialistIndex {
   if (cachedSpecialistIndex !== null) return cachedSpecialistIndex;
   cachedSpecialistIndex = readJsonOrEmpty<SpecialistIndex>(SPECIALISTS_FILE);
   return cachedSpecialistIndex;
+}
+
+function getWeatherIndex(): WeatherIndex {
+  if (cachedWeatherIndex !== null) return cachedWeatherIndex;
+  cachedWeatherIndex = readJsonOrEmpty<WeatherIndex>(WEATHER_CARDS_FILE);
+  return cachedWeatherIndex;
 }
 
 function getMissionIndex(): MissionIndex {
@@ -707,6 +717,13 @@ export type SpecialistEntry = {
   specialists: TTSSpecialist[];
 };
 
+export type WeatherCardEntry = {
+  name: string;
+  slug: string;
+  cards: TTSWeatherCard[];
+  copies: number;
+};
+
 export type ItemStartingClass = {
   name: string;
   slug: string;
@@ -818,6 +835,17 @@ export function getAllSpecialists(): SpecialistEntry[] {
       name,
       slug: slugify(name),
       specialists,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getAllWeatherCards(): WeatherCardEntry[] {
+  return Object.entries(getWeatherIndex())
+    .map(([name, cards]) => ({
+      name,
+      slug: slugify(name),
+      cards,
+      copies: cards.reduce((total, card) => total + card.copies, 0),
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
