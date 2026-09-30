@@ -8,7 +8,7 @@
     "location": {
       "page": 6,
       "column": "right",
-      "section": "top"
+      "section": "middle"
     },
     "content": "For each of the following Terrain Packs **not** in play (*Cruel Caves, Malevolent* *Mountains, Dreadful Deserts*), randomly remove one item or treasure Wilderness Token from each Terrain Pack without looking at the removed token. This ensures an exciting game with ample Treasure Sites to find and loot.",
     "contentNodes": [
@@ -202,7 +202,7 @@
     "location": {
       "page": 7,
       "column": "left",
-      "section": "top"
+      "section": "middle"
     },
     "content": "No Civilization Location, except for the last one filled, may be without a Merchant. If both the first and second Civilization Token drawn for a Civilization Location are empty tokens, return one token and redraw until a non-empty token is drawn. This ensures that at least one Merchant is available at each Civilization Location.",
     "contentNodes": [
@@ -259,7 +259,7 @@
     "location": {
       "page": 6,
       "column": "right",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "When a Hero finds a Treasure Site, deal one Spell Card face-down onto the Treasure Site from the Spell Card Deck. A Hero who has discovered the Treasure Site may look at this Spell Card at any time while in the clearing. If the Hero has a matching Magic Cube, they may attempt to learn the spell as if the site were a Spell Scroll by using a Learn Action while in the same clearing. Ignore this card during Loot Actions.",
     "contentNodes": [
@@ -362,7 +362,7 @@
     "location": {
       "page": 8,
       "column": "right",
-      "section": "top"
+      "section": "middle"
     },
     "content": "This section introduces an optional and simple technique for building random maps, which is ideal for the following situations:\n\n- Solo play.\n- Multiplayer games with new players.\n- Setup prior to the arrival of other players.\n\nTo create a random map, perform the following steps until the map is built.\n\n1.\t Shuffle all of the Map Tiles together and place them in a single stack. Place the top Map Tile in the center of the table with the name facing you, random-side up. *Exception: If playing with the Ruthless Riverlands, build* *the entire river first as explained on page 4 of these rules and consider the* *Port tile to be the last Map Tile placed.*\n\n2.\t Move clockwise from the last tile placed to the next empty tile location that is adjacent to two Map Tiles (*ignore this when placing your second Map* *Tile*). Skip tile locations with no connected paths, continuing clock-wise.\n\n3.\t Take the top Map Tile into your hand.\n\n4.\t Place the Map Tile with the name facing you, random-side up, in the selected empty location. If all edges match adjacent Map Tiles: paths to paths and non-paths to non-paths, place it. If it not does fit, rotate the Map Tile clockwise until it fits.\n\n5.\t If it does not fit in any rotation, move clockwise around the edge of the existing map to the next empty tile location that touches two Map Tiles and repeat step 2.\n\n6.\t If the Map Tile will not fit anywhere (*per the rules of step 4 and 5*), place it on the bottom of the tile stack and return to step 2.\n\n7.\t Repeat steps 2-6 until the map is built.",
     "contentNodes": [
@@ -457,9 +457,9 @@
     "title": "Roaming Natives",
     "headingStyle": "pdf-l2",
     "location": {
-      "page": 6,
-      "column": "right",
-      "section": "bottom"
+      "page": 7,
+      "column": "left",
+      "section": "top"
     },
     "content": "During Monster Activation, roll the d6 along with the Summoning Dice. If Unhired Natives are already on a Map Tile containing a Hero when their matching symbol is rolled, the Natives move to the Civilization Location on that Map Tile, even if the Hero is not in the Civilization Location.\n\nWhen Natives are first summoned to a Map Tile, they summon to the clearing indicated by the die roll, not the Civilization Location. If the rolled clearing does not exist, the Natives summon to the Civilization Location.",
     "contentNodes": [
@@ -555,7 +555,7 @@
     "location": {
       "page": 6,
       "column": "right",
-      "section": "top"
+      "section": "middle"
     },
     "content": "A Hero who successfully loots a Treasure Site while its Guardian is present in the clearing must immediately perform a Hide reaction, using all applicable bonuses from Sneak, treasures, Lineage, and other effects. If the Hide reaction fails, the Hero is blocked and becomes unhidden.",
     "contentNodes": [

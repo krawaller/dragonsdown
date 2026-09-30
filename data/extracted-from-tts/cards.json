@@ -3608,6 +3608,18 @@
       "uniqueBack": false
     }
   ],
+  "Jack-o (Trick or Treat)": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/classes/class%20card%20Jacko%20Front.png",
+      "backURL": "https://dragonsdowndata.com/data/classes/class%20card%20Jacko%20Back.png",
+      "numWidth": 1,
+      "numHeight": 1,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false
+    }
+  ],
   "Jail Breaker": [
     {
       "source": "dd_all_exp",
@@ -5509,6 +5521,18 @@
       "ancestry": [
         "Cards EASTERN"
       ]
+    }
+  ],
+  "Scarecrow (Stuffed with Straw)": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/classes/class%20card%20Scarecrow%20Front.png",
+      "backURL": "https://dragonsdowndata.com/data/classes/class%20card%20Scarecrow%20Back.png",
+      "numWidth": 1,
+      "numHeight": 1,
+      "row": 0,
+      "col": 0,
+      "uniqueBack": false
     }
   ],
   "Scepter of the Sorcerer": [

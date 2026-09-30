@@ -8,7 +8,7 @@
     "location": {
       "page": 10,
       "column": "right",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "Epic Treasure. When first revealed, draw 3 spells to attach to the spire. The base price of the amber spire is 5 + the price of the 3 attached spells. Each spell may be cast one time during Combat by placing a Might Cube and a Speed Cube on the amber spire, then remove the Spell Card from the game. The amber spire is not a Spell Book and spells attached to it may not be learned. No Magic Cubes are needed to cast these spells. Cubes may not be placed on other Weapon or Spell Cards when using this card.",
     "tags": [
@@ -28,9 +28,9 @@
     "title": "Aquaria’s Enchiridion",
     "headingStyle": "pdf-l4",
     "location": {
-      "page": 10,
-      "column": "right",
-      "section": "bottom"
+      "page": 11,
+      "column": "left",
+      "section": "top"
     },
     "content": "Epic Treasure. This is a Spell Book for all game purposes that contains 6 spells.",
     "tags": [
@@ -206,7 +206,7 @@
     "location": {
       "page": 11,
       "column": "left",
-      "section": "top"
+      "section": "middle"
     },
     "content": "Epic Treasure. This is a Spell Book for all game purposes that contains 6 spells.",
     "tags": [
@@ -272,7 +272,7 @@
     "location": {
       "page": 11,
       "column": "left",
-      "section": "top"
+      "section": "middle"
     },
     "content": "Epic Treasure. There are two canopic jars in the game. Individually, they have no game effect (*Heroes still earn the reward for possessing an Epic Treasure*). If a single Hero equips both canopic jars at the same time, immediately discard both jars and select and record any revealed Civilization Location in the Adventure Journal.\n\nOnce per game, if that Hero would die or be removed, they instead place their Hero Chip in the recorded Civilization Location and do not die. They lose no Fame, spells, or possessions, including cards gained after finding the canopic jars, and all cubes become healthy. The Hero is undead for the remainder of the game.",
     "tags": [
@@ -500,7 +500,7 @@
     "location": {
       "page": 11,
       "column": "left",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "Epic Treasure. Only in play if using the Ruthless Riverlands Terrain Pack. May use ferries at a cost of 0 Gold.",
     "tags": [
@@ -701,8 +701,8 @@
     "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
-      "column": "left",
-      "section": "bottom"
+      "column": "right",
+      "section": "top"
     },
     "content": "Epic Treasure. Once per turn, may look at the top Treasure Card of a Treasure Site in the same clearing as the Hero.",
     "tags": [
@@ -746,7 +746,7 @@
     "location": {
       "page": 11,
       "column": "right",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "Epic Treasure. The Hero has Flying Ability. See Flying in the core game rulebook.",
     "tags": [
@@ -880,9 +880,9 @@
     "title": "Moon Mirror",
     "headingStyle": "pdf-l4",
     "location": {
-      "page": 11,
-      "column": "right",
-      "section": "bottom"
+      "page": 12,
+      "column": "left",
+      "section": "top"
     },
     "content": "Epic Treasure. May reroll either one of the numbered Summoning Dice once per turn. The effects apply only to the Hero’s clearing with the original die roll applying everywhere else.",
     "tags": [
@@ -1220,16 +1220,16 @@
     "location": {
       "page": 12,
       "column": "right",
-      "section": "middle"
+      "section": "bottom"
     },
-    "content": "Epic Treasure. No flying, swimming, or Ferry Movement within the Map Tile containing the Storm’s Eye. *Exception: If a Hero begins their Action Phase on a* *River Clearing, they may use normal Ferry Movement to move to the nearest Dock* *Clearing.*\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "content": "Epic Treasure. No flying, swimming, or Ferry Movement within the Map Tile containing the Storm’s Eye. *Exception: If a Hero begins their Action Phase on a River* *Clearing, they may use normal Ferry Movement to move to the nearest Dock Clearing* *or Civilization Location.*\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
     ],
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "Epic Treasure. No flying, swimming, or Ferry Movement within the Map Tile containing the Storm’s Eye. *Exception: If a Hero begins their Action Phase on a* *River Clearing, they may use normal Ferry Movement to move to the nearest Dock* *Clearing.*"
+        "markdown": "Epic Treasure. No flying, swimming, or Ferry Movement within the Map Tile containing the Storm’s Eye. *Exception: If a Hero begins their Action Phase on a River* *Clearing, they may use normal Ferry Movement to move to the nearest Dock Clearing* *or Civilization Location.*"
       },
       {
         "kind": "markdown",
@@ -1314,9 +1314,9 @@
     "title": "Tactician’s Grasp",
     "headingStyle": "pdf-l4",
     "location": {
-      "page": 12,
-      "column": "right",
-      "section": "bottom"
+      "page": 13,
+      "column": "left",
+      "section": "top"
     },
     "content": "Epic Treasure. After tactics are revealed, but before attacks are processed (*Step 7* *of Combat*), the Hero may move one Speed Cube from attack speed to maneuver speed or vice versa (*as long as there is an open speed box*). During the clean up phase of Combat, any moved cube is placed in the wounded box.",
     "tags": [
@@ -1340,14 +1340,14 @@
       "column": "left",
       "section": "top"
     },
-    "content": "Epic Treasure. Only in play if using the Dreadful Deserts Terrain Pack. If the tail of the scorpion is in a Plains Clearing, that clearing is treated as if it was a Desert Clearing for all effects. *For example, non-Auroran Lineages ending their turn in the* *clearing would take a wound.*\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
+    "content": "Epic Treasure. Only in play if using the Dreadful Deserts Terrain Pack. All Plains Clearings in the same Map Tile as the Tail of the Scorpion are treated as if they are Desert Clearings for all effects. *For example, non-Auroran Lineages ending their* *turn in a Plains Clearing without a Civilization Location would take a wound.*\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing and anyone entering the clearing immediately takes possession.",
     "tags": [
       "deepTreasure"
     ],
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "Epic Treasure. Only in play if using the Dreadful Deserts Terrain Pack. If the tail of the scorpion is in a Plains Clearing, that clearing is treated as if it was a Desert Clearing for all effects. *For example, non-Auroran Lineages ending their turn in the* *clearing would take a wound.*"
+        "markdown": "Epic Treasure. Only in play if using the Dreadful Deserts Terrain Pack. All Plains Clearings in the same Map Tile as the Tail of the Scorpion are treated as if they are Desert Clearings for all effects. *For example, non-Auroran Lineages ending their* *turn in a Plains Clearing without a Civilization Location would take a wound.*"
       },
       {
         "kind": "markdown",

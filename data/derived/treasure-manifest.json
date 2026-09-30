@@ -96,7 +96,7 @@
     "location": {
       "page": 10,
       "column": "right",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "One-time use. +1 attack speed for the duration of Combat this turn. Does not count against the cube limit each Combat Round.",
     "tags": [
@@ -116,9 +116,9 @@
     "title": "Ancient Map",
     "headingStyle": "pdf-l4",
     "location": {
-      "page": 10,
-      "column": "right",
-      "section": "bottom"
+      "page": 11,
+      "column": "left",
+      "section": "top"
     },
     "content": "Subtract 1 from both dice when performing an action to take treasure from the Treasure Site in which the ancient map was found. It has no bonus at any other Treasure Site. *For example, if found in the Trove, all loot die rolls at the Trove are at* *-1. If found in the Cavernous Pit, future dexterity rolls are at -1.* A die roll of 1 while using the ancient map equals a grabby hands result when looting.",
     "tags": [
@@ -715,21 +715,21 @@
     "id": "9.5.0.24",
     "source": "core",
     "level": 4,
-    "title": "DisEnchanter",
+    "title": "Disenchanter",
     "headingStyle": "pdf-l4",
     "location": {
       "page": 28,
       "column": "right",
       "section": "middle"
     },
-    "content": "While revealed, immediately remove any Magic Cube on the Map Tile containing the DisEnchanter. Disenchanting does not flip the Map Tile over. The Map Tile in which the DisEnchanter is located may not be enchanted for any reason.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
+    "content": "While revealed, immediately remove any Magic Cube on the Map Tile containing the Disenchanter. Disenchanting does not flip the Map Tile over. The Map Tile in which the Disenchanter is located may not be enchanted for any reason.\n\nMust always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up  (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession.",
     "tags": [
       "treasure"
     ],
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "While revealed, immediately remove any Magic Cube on the Map Tile containing the DisEnchanter. Disenchanting does not flip the Map Tile over. The Map Tile in which the DisEnchanter is located may not be enchanted for any reason."
+        "markdown": "While revealed, immediately remove any Magic Cube on the Map Tile containing the Disenchanter. Disenchanting does not flip the Map Tile over. The Map Tile in which the Disenchanter is located may not be enchanted for any reason."
       },
       {
         "kind": "markdown",
@@ -746,7 +746,7 @@
     "location": {
       "page": 11,
       "column": "left",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "During an Alert Action, any Treasure or Item Card may be placed in a random clearing in an adjacent Map Tile.",
     "tags": [
@@ -1097,8 +1097,8 @@
     "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
-      "column": "left",
-      "section": "bottom"
+      "column": "right",
+      "section": "top"
     },
     "content": "Armor. Cancel one sword. The golden shroud may not be struck or destroyed by attacks that hit the Hero.",
     "tags": [
@@ -1229,8 +1229,8 @@
     "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
-      "column": "left",
-      "section": "bottom"
+      "column": "right",
+      "section": "top"
     },
     "content": "Each time a Hero heals a cube due to a rest action, heal two cubes.",
     "tags": [
@@ -1339,8 +1339,8 @@
     "headingStyle": "pdf-l4",
     "location": {
       "page": 11,
-      "column": "left",
-      "section": "bottom"
+      "column": "right",
+      "section": "top"
     },
     "content": "Only in play if using the Dreadful Deserts Terrain Pack. +1 maneuver speed for Combat occuring in a Desert Clearing.",
     "tags": [
@@ -1450,16 +1450,16 @@
     "location": {
       "page": 11,
       "column": "right",
-      "section": "middle"
+      "section": "bottom"
     },
-    "content": "The Hero is considered hidden to all undead without performing a Hide reaction. They may not be blocked or targeted by the undead, though they can still be affected by the effects of non-targeted spells cast by the undead. *For example, a* *Hero wearing the Mantle of the Djinn could strike at an undead Monster using a* *melee weapon and not be targeted by undead in the clearing.*",
+    "content": "The Hero is considered hidden to all undead without performing a Hide reaction. They may not be blocked or targeted by the undead, though they can still be affected by the effects of non-targeted spells cast by the undead. *For example, a Hero wearing* *the Mantle of the Djinn could strike at an undead Monster using a melee weapon and* *not be targeted by undead in the clearing.*",
     "tags": [
       "treasure"
     ],
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "The Hero is considered hidden to all undead without performing a Hide reaction. They may not be blocked or targeted by the undead, though they can still be affected by the effects of non-targeted spells cast by the undead. *For example, a* *Hero wearing the Mantle of the Djinn could strike at an undead Monster using a* *melee weapon and not be targeted by undead in the clearing.*"
+        "markdown": "The Hero is considered hidden to all undead without performing a Hide reaction. They may not be blocked or targeted by the undead, though they can still be affected by the effects of non-targeted spells cast by the undead. *For example, a Hero wearing* *the Mantle of the Djinn could strike at an undead Monster using a melee weapon and* *not be targeted by undead in the clearing.*"
       }
     ]
   },
@@ -1492,9 +1492,9 @@
     "title": "Morsel of Might",
     "headingStyle": "pdf-l4",
     "location": {
-      "page": 11,
-      "column": "right",
-      "section": "bottom"
+      "page": 12,
+      "column": "left",
+      "section": "top"
     },
     "content": "One-time use. Counts as a Might Cube in a might box for the duration of Combat this turn. This cube does not count against the cube limit and a different card may be selected each round of Combat.",
     "tags": [
@@ -1582,7 +1582,7 @@
     "location": {
       "page": 12,
       "column": "left",
-      "section": "top"
+      "section": "middle"
     },
     "content": "Only in play if using the Ruthless Riverlands Terrain Pack. May reroll one Search Die per Search Action while in a River Clearing.",
     "tags": [
@@ -1846,7 +1846,7 @@
     "location": {
       "page": 12,
       "column": "left",
-      "section": "top"
+      "section": "middle"
     },
     "content": "Melee or ranged weapon. Only in play if using the Ruthless Riverlands Terrain Pack. Ripplestrike has +1 attack speed when Combat is occurring in a River Clearing.",
     "tags": [
@@ -1956,7 +1956,7 @@
     "location": {
       "page": 12,
       "column": "left",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "Only in play if using the Dreadful Deserts Terrain Pack. When entering a Desert Clearing, the Hero may continue moving to an adjacent Desert Clearing at no action cost an unlimited number of times during a single action.",
     "tags": [
@@ -2000,7 +2000,7 @@
     "location": {
       "page": 12,
       "column": "left",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "During an Alert Action, may place any one Red Backpack Treasure face-down underneath the Satchel of Suppression. Only one treasure may be in the satchel at any time, but may be replaced. If a Red Backpack Treasure is already underneath the satchel, it is placed face-up in the Hero’s backpack.",
     "tags": [
@@ -2065,8 +2065,8 @@
     "headingStyle": "pdf-l4",
     "location": {
       "page": 12,
-      "column": "left",
-      "section": "bottom"
+      "column": "right",
+      "section": "top"
     },
     "content": "One-time use. +1 Maneuver speed for the duration of Combat this turn. Does not count against the cube limit each Combat Round.",
     "tags": [
@@ -2110,7 +2110,7 @@
     "location": {
       "page": 12,
       "column": "right",
-      "section": "top"
+      "section": "middle"
     },
     "content": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, the spell listed on the card is cast (*see* *Spell Manifest on page 11*). No Magic Cubes are needed to cast this spell.",
     "tags": [
@@ -2512,9 +2512,9 @@
     "title": "Symbol of Recruitment",
     "headingStyle": "pdf-l4",
     "location": {
-      "page": 12,
-      "column": "right",
-      "section": "bottom"
+      "page": 13,
+      "column": "left",
+      "section": "top"
     },
     "content": "May perform one Hire action which does not count against the turn’s action limit.",
     "tags": [
@@ -2646,7 +2646,7 @@
     "location": {
       "page": 11,
       "column": "right",
-      "section": "top"
+      "section": "middle"
     },
     "content": "Legendary Treasure (*earns a reward as an Epic Treasure*). The lamp may only be gained via the Lamp of the Djinni Legendary Treasure Site. When a Hero first takes possession of the lamp, draw 7 Spell Cards and place them on the lamp card. The possessing Hero may look at these cards at any time.\n\nThe Hero may attempt to learn spells from the lamp during the Action Phase via the Learn Action as if the lamp was a Spell Book or Spell Scroll.\n\nDuring Combat, the Hero may place cubes on the lamp in order to cast any of the spells attached to the lamp. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, the selected spell is cast and then removed from the game. No Magic Cubes are needed to cast this spell.\n\nOnce the lamp is used three times the lamp and all attached spells are removed from the game. Casting or learning a spell is counted as a use of the lamp.\n\nThe base price of the lamp is the sum of all spells currently attached to the lamp.",
     "tags": [
@@ -2684,7 +2684,7 @@
     "location": {
       "page": 12,
       "column": "right",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "One-time use. Attacks by this Hero gain +1 sword for the duration of Combat.",
     "tags": [
@@ -2948,7 +2948,7 @@
     "location": {
       "page": 13,
       "column": "left",
-      "section": "top"
+      "section": "middle"
     },
     "content": "One-time use. Remove any Treasure or Item Card from the game that is possessed by the Hero and receive the Gold price of it immediately.",
     "tags": [
