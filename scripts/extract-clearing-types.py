@@ -16,6 +16,8 @@ ClearingType = Literal[
     "swamps",
     "river",
     "desert",
+    "hills",
+    "thickets",
 ]
 
 
@@ -63,6 +65,10 @@ CLEARING_TYPE_ALIASES: dict[str, ClearingType] = {
     "rivers": "river",
     "desert": "desert",
     "deserts": "desert",
+    "hill": "hills",
+    "hills": "hills",
+    "thicket": "thickets",
+    "thickets": "thickets",
 }
 
 

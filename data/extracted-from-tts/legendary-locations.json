@@ -6,7 +6,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+        "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -17,7 +17,7 @@
           "LEGENDS Cards"
         ]
       },
-      "description": "A hero that has found the Adventurer’s Corpse may approach the corpse as one of their actions during their turn. Upon approaching the corpse, complete the following steps. - Shuffle the Holdfast Leathers and the Skull Splitter legendary treasure cards together with any deep treasure cards that are in the site containing the Adventurer's Corpse. Place the shuffled deep treasure cards on top of any treasure cards in the treasure site. The site is looted per normal rules. - The hero receives one random curse. - Remove the Adventurer’s Corpse legendary location card and token from the game.",
+      "description": "A hero that has found the Adventurer's Corpse may approach the corpse as one of their actions during their turn. Upon approaching the corpse, complete the following steps. - Shuffle the Holdfast Leathers and the Skull Splitter legendary treasure cards together with any deep treasure cards that are in the site containing the Adventurer's Corpse. Place the shuffled deep treasure cards on top of any treasure cards in the treasure site. The site is looted per normal rules. - The hero receives one random curse. - Remove the Adventurer's Corpse legendary location card and token from the game.",
       "treasureSetup": {
         "usesContainingSiteDeepTreasures": true,
         "namedTreasures": [
@@ -25,7 +25,7 @@
             "name": "Holdfast Leathers",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -41,7 +41,7 @@
             "name": "Skull Splitter",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -79,7 +79,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+        "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -97,7 +97,7 @@
             "name": "Mageshift Medallion",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -130,7 +130,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+        "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -164,7 +164,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -175,7 +175,7 @@
           "LEGENDS Cards"
         ]
       },
-      "description": "When the Collapsed Passage is first revealed, draw two cards from the deep treasure pile and place them on top of the Collapsed Passage legendary location card. A hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 haggle dice and compare the result to the number of might cubes in the hero’s healthy box. - If either die shows a closed door, the hero receives one wound. - If the hero rolls higher than their might cubes, the attempt fails, but the hero suffers no consequences. - If the hero rolls less than or equal to their might cubes, the attempt succeeds. -- Draw one deep treasure card from the Collapsed Passage card. -- If the final deep treasure card is drawn from the Collapsed Passage, remove the legendary location card and token from the game.",
+      "description": "When the Collapsed Passage is first revealed, draw two cards from the deep treasure pile and place them on top of the Collapsed Passage legendary location card. A hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 haggle dice and compare the result to the number of might cubes in the hero's healthy box. - If either die shows a closed door, the hero receives one wound. - If the hero rolls higher than their might cubes, the attempt fails, but the hero suffers no consequences. - If the hero rolls less than or equal to their might cubes, the attempt succeeds. -- Draw one deep treasure card from the Collapsed Passage card. -- If the final deep treasure card is drawn from the Collapsed Passage, remove the legendary location card and token from the game.",
       "treasureSetup": {
         "deepTreasureCards": 2
       },
@@ -198,7 +198,7 @@
       "kind": "site",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -217,7 +217,7 @@
             "name": "Champion's Plate",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -233,7 +233,7 @@
             "name": "Champion's Blade",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -266,7 +266,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -277,7 +277,7 @@
           "LEGENDS Cards"
         ]
       },
-      "description": "A hero that has found the Infernal Glyphs may attempt to read the glyphs as one of their actions during their turn. Roll the 2 learn spells dice and compare the results to the Infernal Glyphs card. Apply any benefits that would normally apply when learning spells (lineage and class advantages, treasures, spells, etc.). - If both dice show curse symbols, roll both of the numbered summoning dice and summon a number of wandering monsters equal to the gray die and a number of local monsters equal to the black die to the hero’s clearing. Monsters already in the map tile do not move. Arriving monsters will attempt to block the hero immediately.- If one die shows a curse symbol, but the other does not, the hero receives one random curse.- If the hero rolls two spell book symbols, the attempt succeeds.-- If the map tile is not enchanted with both a black and gray cube, flip the map tile and enchant it with a black and a gray cube.-- If the map tile is already enchanted with both a black and gray cube when a success is rolled, draw 3 cards from the top of the spell deck and look at them. The player may select any one spell from those drawn and learn it, earning the reward for learning a spell. The hero must be able to learn the selected spell. Shuffle all spells not learned back into the spells deck.- A hero taking subsequent read the glyphs actions on the same turn after a failed attempt does not need to reroll dice that show spell book symbols.The Infernal Glyphs are a site, and thus permanent. There is no limit to the number of times a hero may attempt to read the glyphs.",
+      "description": "A hero that has found the Infernal Glyphs may attempt to read the glyphs as one of their actions during their turn. Roll the 2 learn spells dice and compare the results to the Infernal Glyphs card. Apply any benefits that would normally apply when learning spells (lineage and class advantages, treasures, spells, etc.). - If both dice show curse symbols, roll both of the numbered summoning dice and summon a number of wandering monsters equal to the gray die and a number of local monsters equal to the black die to the hero's clearing. Monsters already in the map tile do not move. Arriving monsters will attempt to block the hero immediately.- If one die shows a curse symbol, but the other does not, the hero receives one random curse.- If the hero rolls two spell book symbols, the attempt succeeds.-- If the map tile is not enchanted with both a black and gray cube, flip the map tile and enchant it with a black and a gray cube.-- If the map tile is already enchanted with both a black and gray cube when a success is rolled, draw 3 cards from the top of the spell deck and look at them. The player may select any one spell from those drawn and learn it, earning the reward for learning a spell. The hero must be able to learn the selected spell. Shuffle all spells not learned back into the spells deck.- A hero taking subsequent read the glyphs actions on the same turn after a failed attempt does not need to reroll dice that show spell book symbols.The Infernal Glyphs are a site, and thus permanent. There is no limit to the number of times a hero may attempt to read the glyphs.",
       "rewards": {
         "other": [
           "Learn a spell"
@@ -302,7 +302,7 @@
       "kind": "site",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -319,7 +319,7 @@
             "name": "The Lamp",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+              "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -353,7 +353,7 @@
       "kind": "site",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -387,7 +387,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -437,7 +437,7 @@
       "kind": "site",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -448,7 +448,7 @@
           "LEGENDS Cards"
         ]
       },
-      "description": "When the Spellcaster’s Simulacrum is first revealed, draw one card from the deep treasure pile and shuffle it together with the Eternium Grimoire and Arcane Sword legendary treasure cards. Place these cards on top of the Spellcaster’s Simulacrum legendary location card.Once found, heroes may use a loot action to loot the Spellcaster’s Simulacrum as they would any other treasure site. If a hero rolls a 5 on either loot die, they receive a random curse.",
+      "description": "When the Spellcaster's Simulacrum is first revealed, draw one card from the deep treasure pile and shuffle it together with the Eternium Grimoire and Arcane Sword legendary treasure cards. Place these cards on top of the Spellcaster's Simulacrum legendary location card.Once found, heroes may use a loot action to loot the Spellcaster's Simulacrum as they would any other treasure site. If a hero rolls a 5 on either loot die, they receive a random curse.",
       "treasureSetup": {
         "deepTreasureCards": 1,
         "namedTreasures": [
@@ -456,7 +456,7 @@
             "name": "Eternium Grimoire",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -472,7 +472,7 @@
             "name": "Arcane Sword",
             "card": {
               "source": "dd_all_exp",
-              "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures1.png",
+              "faceURL": "https://dragonsdowndata.com/data/w/treasures/AllDeepTreasures1.png",
               "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
               "numWidth": 10,
               "numHeight": 7,
@@ -505,7 +505,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,
@@ -554,7 +554,7 @@
       "kind": "test",
       "card": {
         "source": "dd_all_exp",
-        "faceURL": "https://dragonsdowndata.com/data/treasures/AllDeepTreasures2.png",
+        "faceURL": "https://dragonsdowndata.com/data/y/treasures/AllDeepTreasures2.png",
         "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767702784/21574D78B42D3F86BBA7C9653D7F90B98C37247F/",
         "numWidth": 10,
         "numHeight": 7,

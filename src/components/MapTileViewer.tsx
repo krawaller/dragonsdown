@@ -798,6 +798,8 @@ const CLEARING_TYPE_MARKER_CLASSES: Record<ClearingTypeId, string> = {
   swamps: "bg-yellow-300/45 ring-yellow-800/70",
   river: "bg-blue-500/35 ring-blue-900/70",
   desert: "bg-orange-500/35 ring-orange-900/70",
+  hills: "bg-amber-500/35 ring-amber-900/70",
+  thickets: "bg-emerald-700/35 ring-emerald-950/70",
 };
 
 const CLEARING_TYPE_LABELS: Record<ClearingTypeId, string> = {
@@ -808,6 +810,8 @@ const CLEARING_TYPE_LABELS: Record<ClearingTypeId, string> = {
   swamps: "Swamps",
   river: "River",
   desert: "Desert",
+  hills: "Hills",
+  thickets: "Thickets",
 };
 
 function clearingStyle(clearing: { x: number; y: number }) {

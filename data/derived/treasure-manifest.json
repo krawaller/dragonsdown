@@ -382,6 +382,28 @@
     ]
   },
   {
+    "id": "4.5.0.3",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Boots of Displacement",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "Double the base attack length of all equipped Melee Weapons.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Double the base attack length of all equipped Melee Weapons."
+      }
+    ]
+  },
+  {
     "id": "9.5.0.14",
     "source": "core",
     "level": 4,
@@ -448,6 +470,28 @@
     ]
   },
   {
+    "id": "4.5.0.4",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Burrow King’s Thing",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "May use any Blue Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "May use any Blue Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+      }
+    ]
+  },
+  {
     "id": "5.4.0.8",
     "source": "natives-and-legends",
     "level": 4,
@@ -466,6 +510,28 @@
       {
         "kind": "markdown",
         "markdown": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved, the Hero selects one spell on an active Treasure Card they possess (*not in the backpack*) to be cast. No Magic Cubes are needed to cast this spell. The spell is removed from the game when the spell expires."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.5",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Chameleon Creme",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "One-time Use. May reroll one Monster Die during a Hide attempt made during the Cleanup Step of Combat.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "One-time Use. May reroll one Monster Die during a Hide attempt made during the Cleanup Step of Combat."
       }
     ]
   },
@@ -624,6 +690,68 @@
     ]
   },
   {
+    "id": "4.5.0.6",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Curios",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "One-Time Use. Grants one Action Cube of the indicated color. This cube is removed at the beginning of the Combat Phase of the following turn. Any Spell learned using a Magic Cube granted by a Curio remains learned after that cube is removed, but may only be cast with a Magic Cube of the matching color.\n\n- **Curio of Conjuration:** Blue Magic Cube\n\n- **Curio of Fay:** Yellow Magic Cube\n\n- **Curio of Maneuver:** Brown Speed Cube\n\n- **Curio of Might:** Red Might Cube\n\n- **Curio of Nature:** Green Magic Cube\n\n- **Curio of Power:** Purple Magic Cube\n\n- **Curio of Righteousness:** White Magic Cube\n\n- **Curio of the Black Arts:** Black Magic Cube\n\n- **Curio of Tricks:** Gray Magic Cube\n\n- **Curio of Wizardry:** Any Magic Cube of the Hero’s choice.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "One-Time Use. Grants one Action Cube of the indicated color. This cube is removed at the beginning of the Combat Phase of the following turn. Any Spell learned using a Magic Cube granted by a Curio remains learned after that cube is removed, but may only be cast with a Magic Cube of the matching color."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Conjuration:** Blue Magic Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Fay:** Yellow Magic Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Maneuver:** Brown Speed Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Might:** Red Might Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Nature:** Green Magic Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Power:** Purple Magic Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Righteousness:** White Magic Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of the Black Arts:** Black Magic Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Tricks:** Gray Magic Cube"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Curio of Wizardry:** Any Magic Cube of the Hero’s choice."
+      }
+    ]
+  },
+  {
     "id": "2.5.0.5",
     "source": "desolation",
     "level": 4,
@@ -738,6 +866,28 @@
     ]
   },
   {
+    "id": "4.5.0.7",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Diviner of Vourdanos",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "bottom"
+    },
+    "content": "May reroll one Search Die once per Search Action while in Hills Clearings.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "May reroll one Search Die once per Search Action while in Hills Clearings."
+      }
+    ]
+  },
+  {
     "id": "5.5.0.11",
     "source": "eastern-reaches",
     "level": 4,
@@ -822,6 +972,28 @@
       {
         "kind": "markdown",
         "markdown": "May reroll one Search Die once per Search Action while in a Woods Clearing."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.8",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Elven Etchings",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "May use any Green Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "May use any Green Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
       }
     ]
   },
@@ -1244,6 +1416,28 @@
     ]
   },
   {
+    "id": "4.5.0.10",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Heartwood Totem",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "May reroll one Search Die once per Search Action while in Thickets Clearings.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "May reroll one Search Die once per Search Action while in Thickets Clearings."
+      }
+    ]
+  },
+  {
     "id": "5.4.0.21",
     "source": "natives-and-legends",
     "level": 4,
@@ -1288,6 +1482,28 @@
     ]
   },
   {
+    "id": "4.5.0.11",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Horizon Hexmark",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "May use any Gray Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "May use any Gray Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+      }
+    ]
+  },
+  {
     "id": "9.5.0.39",
     "source": "core",
     "level": 4,
@@ -1306,6 +1522,28 @@
       {
         "kind": "markdown",
         "markdown": "One-time use. Cubes may not be placed on other Weapon or Spell Cards when using this card. When this attack is resolved the Fiery Chasm spell is cast. No Magic Cubes are needed to cast this spell."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.12",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Hourglass of Echoes",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "One-time use. When using a One-Time Use Treasure or Item, may discard the Hourglass of Echoes instead. The Treasure or Item being used is not discarded.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "One-time use. When using a One-Time Use Treasure or Item, may discard the Hourglass of Echoes instead. The Treasure or Item being used is not discarded."
       }
     ]
   },
@@ -1372,6 +1610,28 @@
       {
         "kind": "markdown",
         "markdown": "One-time use. When in a Civilization Location, the Hero may discard up to two of their Outlaw Tokens. May not be used to discard other player’s Outlaw Tokens."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.13",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Ledger of Promises",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "When revealed, draw and attach 4 Missions to the Ledger of Promises. While equipped, may complete these Missions as if they were the Hero’s active Missions. These Missions do not count against the Hero’s 2 Mission limit.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "When revealed, draw and attach 4 Missions to the Ledger of Promises. While equipped, may complete these Missions as if they were the Hero’s active Missions. These Missions do not count against the Hero’s 2 Mission limit."
       }
     ]
   },
@@ -1548,6 +1808,28 @@
       {
         "kind": "markdown",
         "markdown": "One-time use. The Hero has +1 Cunning, Wisdom, and Charisma this turn. The effects are cumulative with other Treasures."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.15",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Parley Heart",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "Choose 1 enemy. That enemy may not target the Hero for the duration of combat unless the Hero first targets them.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Choose 1 enemy. That enemy may not target the Hero for the duration of combat unless the Hero first targets them."
       }
     ]
   },
@@ -1794,6 +2076,50 @@
     ]
   },
   {
+    "id": "4.5.0.17",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Ravager’s Flail",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "bottom"
+    },
+    "content": "Melee Weapon. One required Might Box on this card is automatically filled and does not count against the Hero’s Cube Limit.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Melee Weapon. One required Might Box on this card is automatically filled and does not count against the Hero’s Cube Limit."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.18",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Ring of Reaching",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "bottom"
+    },
+    "content": "Adds +5 to the Base Attack Length of all attacks.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Adds +5 to the Base Attack Length of all attacks."
+      }
+    ]
+  },
+  {
     "id": "9.5.0.57",
     "source": "core",
     "level": 4,
@@ -1900,6 +2226,28 @@
       {
         "kind": "markdown",
         "markdown": "Receive +1 health while the treasure is equipped."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.20",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Rot Charm",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
       }
     ]
   },
@@ -2146,6 +2494,28 @@
     ]
   },
   {
+    "id": "4.5.0.21",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Silver Tongue",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "The final price paid during a Hire Action, after all haggling, is reduced by 1 Gold, to a minimum of 0.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "The final price paid during a Hire Action, after all haggling, is reduced by 1 Gold, to a minimum of 0."
+      }
+    ]
+  },
+  {
     "id": "2.5.0.21",
     "source": "desolation",
     "level": 4,
@@ -2208,6 +2578,28 @@
       {
         "kind": "markdown",
         "markdown": "Legendary Treasure (*earns a reward as an Epic Treasure*). Melee weapon. One mandatory might box on this card is automatically filled and does not count against the cube limit."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.22",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Skyroad Sigil",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "May use any Purple Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "May use any Purple Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
       }
     ]
   },
@@ -2308,6 +2700,28 @@
     ]
   },
   {
+    "id": "4.5.0.23",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Spinewhisper",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "Melee Weapon. When attacking a target that is not targeting the Hero, this attack occurs at +1 Attack Speed.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Melee Weapon. When attacking a target that is not targeting the Hero, this attack occurs at +1 Attack Speed."
+      }
+    ]
+  },
+  {
     "id": "2.5.0.22",
     "source": "desolation",
     "level": 4,
@@ -2348,6 +2762,50 @@
       {
         "kind": "markdown",
         "markdown": "Melee weapon. Only in play if the Dreadful Deserts Terrain Pack is in use. +1 sword if Combat is occurring in a Desert Clearing."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.24",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Stone of the New Path",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "One-Time Use. Flip the current Map Tile without enchanting it.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "One-Time Use. Flip the current Map Tile without enchanting it."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.26",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Stoneknuckle Gloves",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "Melee Weapon. Equipped in both hand positions instead of a weapon position. The required Might Box is automatically filled and does not require a Might Cube. May be equipped at the same time as another weapon. When attacking with the Stoneknuckle Gloves, place a pink Status Cube on this card to indicate that it is being used instead of the equipped Weapon Card.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Melee Weapon. Equipped in both hand positions instead of a weapon position. The required Might Box is automatically filled and does not require a Might Cube. May be equipped at the same time as another weapon. When attacking with the Stoneknuckle Gloves, place a pink Status Cube on this card to indicate that it is being used instead of the equipped Weapon Card."
       }
     ]
   },
@@ -2764,6 +3222,28 @@
     ]
   },
   {
+    "id": "4.5.0.29",
+    "source": "wildlands",
+    "level": 4,
+    "title": "To Do List",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "bottom"
+    },
+    "content": "When revealed, draw and attach 2 Missions to the To Do List. While equipped, may complete these Missions as if they were the Hero’s active Missions. These Missions do not count against the Hero’s 2 Mission limit.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "When revealed, draw and attach 2 Missions to the To Do List. While equipped, may complete these Missions as if they were the Hero’s active Missions. These Missions do not count against the Hero’s 2 Mission limit."
+      }
+    ]
+  },
+  {
     "id": "9.5.0.87",
     "source": "core",
     "level": 4,
@@ -2984,6 +3464,28 @@
     ]
   },
   {
+    "id": "4.5.0.31",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Venom of the Thousand Bites",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "bottom"
+    },
+    "content": "One-time use. Attacks by this Hero gain +2 swords for the duration of Combat.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "One-time use. Attacks by this Hero gain +2 swords for the duration of Combat."
+      }
+    ]
+  },
+  {
     "id": "9.5.0.97",
     "source": "core",
     "level": 4,
@@ -3050,6 +3552,28 @@
     ]
   },
   {
+    "id": "4.5.0.32",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Whisper Pin",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "bottom"
+    },
+    "content": "One-time use. Acts as a one-time use Skeleton Key. For example, opening the Monolith or Chamber, avoiding hidden traps at the Secret Cache, Hideout, or Wrecked Wagons or avoiding a wound at the Lost Captain’s Locker.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "One-time use. Acts as a one-time use Skeleton Key. For example, opening the Monolith or Chamber, avoiding hidden traps at the Secret Cache, Hideout, or Wrecked Wagons or avoiding a wound at the Lost Captain’s Locker."
+      }
+    ]
+  },
+  {
     "id": "5.4.0.28",
     "source": "natives-and-legends",
     "level": 4,
@@ -3068,6 +3592,28 @@
       {
         "kind": "markdown",
         "markdown": "One-time use. May use all Hidden Paths this turn, even if not found. Used Hidden Paths are not found."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.33",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Windswept Mantle",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 9,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "+1 Maneuver Speed against all Ranged Attacks.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "+1 Maneuver Speed against all Ranged Attacks."
       }
     ]
   },

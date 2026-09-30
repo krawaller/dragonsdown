@@ -15,7 +15,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -32,7 +32,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -103,7 +103,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -120,7 +120,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -191,7 +191,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -208,7 +208,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -279,6 +279,23 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "numWidth": 10,
+          "numHeight": 7,
+          "row": 3,
+          "col": 5,
+          "uniqueBack": false,
+          "copies": 1,
+          "locations": [
+            {
+              "ancestry": [],
+              "count": 1
+            }
+          ]
+        },
+        {
+          "source": "dd_all_exp",
+          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
           "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
@@ -295,23 +312,6 @@
                 "Break Spell"
               ],
               "count": 6
-            }
-          ]
-        },
-        {
-          "source": "dd_all_exp",
-          "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
-          "numWidth": 10,
-          "numHeight": 7,
-          "row": 3,
-          "col": 5,
-          "uniqueBack": false,
-          "copies": 1,
-          "locations": [
-            {
-              "ancestry": [],
-              "count": 1
             }
           ]
         }
@@ -377,7 +377,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -394,7 +394,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -681,7 +681,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -698,7 +698,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -769,7 +769,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -786,7 +786,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -965,7 +965,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -982,7 +982,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -1053,7 +1053,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -1070,7 +1070,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -1249,7 +1249,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -1266,7 +1266,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -1337,7 +1337,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -1354,7 +1354,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -1425,7 +1425,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -1442,7 +1442,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -1729,7 +1729,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -1746,7 +1746,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -1925,7 +1925,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -1942,7 +1942,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -2013,7 +2013,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -2030,7 +2030,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -2101,7 +2101,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -2118,7 +2118,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -2189,7 +2189,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -2206,7 +2206,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -2277,7 +2277,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -2294,7 +2294,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -2797,7 +2797,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -2814,7 +2814,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -2885,7 +2885,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -2902,7 +2902,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 3,
@@ -2973,7 +2973,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -2990,7 +2990,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -3061,7 +3061,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -3078,7 +3078,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -3149,7 +3149,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -3166,7 +3166,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -3993,7 +3993,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -4010,7 +4010,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -4189,7 +4189,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -4206,7 +4206,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -4277,7 +4277,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -4294,7 +4294,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -4689,7 +4689,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -4706,7 +4706,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -5317,7 +5317,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -5334,7 +5334,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -5729,7 +5729,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -5746,7 +5746,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -5925,7 +5925,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -5942,7 +5942,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -6013,7 +6013,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -6030,7 +6030,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -6209,7 +6209,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -6226,7 +6226,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -6297,7 +6297,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -6314,7 +6314,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 0,
@@ -6493,7 +6493,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -6510,7 +6510,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -6581,7 +6581,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -6598,7 +6598,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 2,
@@ -6669,7 +6669,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,
@@ -6686,7 +6686,7 @@
         {
           "source": "dd_all_exp",
           "faceURL": "https://dragonsdowndata.com/data/spells/AllSpells1.png",
-          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770884602/F1189AD6357FAE4A248EFC3A247A558F6B5A8E3E/",
+          "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/",
           "numWidth": 10,
           "numHeight": 7,
           "row": 1,

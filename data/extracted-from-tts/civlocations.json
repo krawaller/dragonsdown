@@ -17,6 +17,15 @@
       ]
     }
   ],
+  "Guard House": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/location%20Guard%20House%20-%20Both%20-%201in%20x1.png",
+      "ancestry": [
+        "Guardhouse"
+      ]
+    }
+  ],
   "Inn": [
     {
       "source": "dd_all_exp",
@@ -87,6 +96,15 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260328529/A7EF57A400BF0473FD2151A4DECDAA0B843523B3/",
       "ancestry": [
         "Sanctuary"
+      ]
+    }
+  ],
+  "Trading Post": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/location%20Trading%20Post%20-%20Both%20-%201in%20x1.png",
+      "ancestry": [
+        "Trading Post"
       ]
     }
   ],

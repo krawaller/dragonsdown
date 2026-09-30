@@ -51,6 +51,20 @@
   },
   {
     "source": "dd_all_exp",
+    "terrainPack": "Hostile Hills",
+    "imageURL": "https://dragonsdowndata.com/data/DDTTS/terrain%20setup%20card%20Hills%20Front%20x1.png",
+    "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/terrain%20setup%20card%20Hills%20Back%20x1.png",
+    "merchants": [
+      "Outfitter"
+    ],
+    "sites": [
+      "Burrow",
+      "Stone Circle",
+      "Watchtower"
+    ]
+  },
+  {
+    "source": "dd_all_exp",
     "terrainPack": "Malevolent Mountains",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519039329/41E3FD0F7E9C8A95B83A525FC80B0919F23D3563/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2323363479519040398/D742302175825846292B19C1B82ED0036C6DB611/",

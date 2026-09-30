@@ -368,6 +368,190 @@
     ]
   },
   {
+    "name": "Cragspire",
+    "terrain": "Hostile Hills",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/hCragspire1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/hCragspire2.png",
+    "clearings": [
+      {
+        "x": -2.4,
+        "y": -1.2
+      },
+      {
+        "x": 0.3,
+        "y": 2.7
+      },
+      {
+        "x": 2.2,
+        "y": -0.7
+      },
+      {
+        "x": 1.9,
+        "y": 1.3
+      },
+      {
+        "x": -0.2,
+        "y": -0.5
+      },
+      {
+        "x": -1.4,
+        "y": 1.9
+      }
+    ]
+  },
+  {
+    "name": "Guard House",
+    "terrain": "Hostile Hills",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/hGuardHouse1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/hGuardhouse2.png",
+    "clearings": [
+      {
+        "x": 0.5,
+        "y": 1.5
+      },
+      {
+        "x": 1.8,
+        "y": -0.4
+      },
+      {
+        "x": -1.8,
+        "y": 1.4
+      },
+      {
+        "x": -1.9,
+        "y": -0.9
+      }
+    ]
+  },
+  {
+    "name": "Rocky Crown",
+    "terrain": "Hostile Hills",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/hRockyCrown1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/hRockyCrown2.png",
+    "clearings": [
+      {
+        "x": -2,
+        "y": -1
+      },
+      {
+        "x": -1.9,
+        "y": 1.5
+      },
+      {
+        "x": 0.5,
+        "y": 2.3
+      },
+      {
+        "x": 2.4,
+        "y": 1
+      },
+      {
+        "x": 1.8,
+        "y": -1.6
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "name": "Shattered Watch",
+    "terrain": "Hostile Hills",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/hShatteredWatch1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/hShatteredWatch2.png",
+    "clearings": [
+      {
+        "x": -2,
+        "y": -0.7
+      },
+      {
+        "x": 0.4,
+        "y": 2.5
+      },
+      {
+        "x": -1.2,
+        "y": 1.3
+      },
+      {
+        "x": 1.4,
+        "y": 0.6
+      },
+      {
+        "x": 2.2,
+        "y": -1
+      },
+      {
+        "x": 0,
+        "y": -1.4
+      }
+    ]
+  },
+  {
+    "name": "Stonegrave",
+    "terrain": "Hostile Hills",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/hStonegrave1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/hStonegrave2.png",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2
+      },
+      {
+        "x": -1.2,
+        "y": 1.6
+      },
+      {
+        "x": 0.6,
+        "y": 2.2
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 1.3,
+        "y": -1.4
+      },
+      {
+        "x": 2.4,
+        "y": 0.8
+      }
+    ]
+  },
+  {
+    "name": "Wretched Ridges",
+    "terrain": "Hostile Hills",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/hWretchedRidges1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/hWretchedRidges2.png",
+    "clearings": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": -1.7,
+        "y": 1.3
+      },
+      {
+        "x": 0.5,
+        "y": 2.3
+      },
+      {
+        "x": 2.5,
+        "y": 1.4
+      },
+      {
+        "x": 1.8,
+        "y": -1.5
+      },
+      {
+        "x": -2.2,
+        "y": -1
+      }
+    ]
+  },
+  {
     "name": "Barriers",
     "terrain": "Malevolent Mountains",
     "imageUrl": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260296740/006E792FE800BC187639981756659B4DD678AEBC/",
@@ -738,8 +922,8 @@
   {
     "name": "Brackish Span",
     "terrain": "Ruthless Riverlands",
-    "imageUrl": "https://activemagicgames.com/TTS/DD/rBrackishSpan1.png",
-    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rBrackishSpan2.png",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/rBrackishSpan1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/rBrackishSpan2.png",
     "clearings": [
       {
         "x": 1.8,
@@ -770,8 +954,8 @@
   {
     "name": "Headwater",
     "terrain": "Ruthless Riverlands",
-    "imageUrl": "https://activemagicgames.com/TTS/DD/rHeadwaters1.png",
-    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rHeadwaters2.png",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/rHeadwaters1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/rHeadwaters2.png",
     "clearings": [
       {
         "x": -2.3,
@@ -802,8 +986,8 @@
   {
     "name": "Port",
     "terrain": "Ruthless Riverlands",
-    "imageUrl": "https://activemagicgames.com/TTS/DD/rPort1.png",
-    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rPort2.png",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/rPort1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/rPort2.png",
     "clearings": [
       {
         "x": 2.2,
@@ -826,8 +1010,8 @@
   {
     "name": "Ravaging Run",
     "terrain": "Ruthless Riverlands",
-    "imageUrl": "https://activemagicgames.com/TTS/DD/rRavagingRun1.png",
-    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rRavagingRun2.png",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/rRavagingRun1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/rRavagingRun2.png",
     "clearings": [
       {
         "x": 1.6,
@@ -858,8 +1042,8 @@
   {
     "name": "Silver Current",
     "terrain": "Ruthless Riverlands",
-    "imageUrl": "https://activemagicgames.com/TTS/DD/rSilverCurrent1.png",
-    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rSilverCurrent2.png",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/rSilverCurrent1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/rSilverCurrent2.png",
     "clearings": [
       {
         "x": 1.8,
@@ -890,8 +1074,8 @@
   {
     "name": "Soleford",
     "terrain": "Ruthless Riverlands",
-    "imageUrl": "https://activemagicgames.com/TTS/DD/rSoleford1.png",
-    "imageSecondaryUrl": "https://activemagicgames.com/TTS/DD/rSoleford2.png",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/rSoleford1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/rSoleford2.png",
     "clearings": [
       {
         "x": 2,
@@ -1100,6 +1284,190 @@
       {
         "x": 0.6,
         "y": 2
+      }
+    ]
+  },
+  {
+    "name": "Bilewater",
+    "terrain": "Tangled Thickets",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/tBilewater1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/tBilewater2.png",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.9
+      },
+      {
+        "x": 0.1,
+        "y": 2
+      },
+      {
+        "x": -2.3,
+        "y": -1.1
+      },
+      {
+        "x": 1.2,
+        "y": -0.8
+      },
+      {
+        "x": -0.5,
+        "y": -0.4
+      },
+      {
+        "x": -1.6,
+        "y": 1.3
+      }
+    ]
+  },
+  {
+    "name": "Choking Green",
+    "terrain": "Tangled Thickets",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/tChokingGreen1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/tChokingGreen2.png",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": 1.2
+      },
+      {
+        "x": 0.1,
+        "y": 2.4
+      },
+      {
+        "x": -1.7,
+        "y": -1.2
+      },
+      {
+        "x": -2.3,
+        "y": 1.1
+      },
+      {
+        "x": 0.2,
+        "y": 0.5
+      },
+      {
+        "x": 2,
+        "y": -1.7
+      }
+    ]
+  },
+  {
+    "name": "Embergrove",
+    "terrain": "Tangled Thickets",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/tEmbergrove1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/tEmbergrove2.png",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2
+      },
+      {
+        "x": -2,
+        "y": 1
+      },
+      {
+        "x": -0.4,
+        "y": 2.3
+      },
+      {
+        "x": 2,
+        "y": 1
+      },
+      {
+        "x": 1.8,
+        "y": -1.2
+      },
+      {
+        "x": 0.1,
+        "y": -0.3
+      }
+    ]
+  },
+  {
+    "name": "The Canopy",
+    "terrain": "Tangled Thickets",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/tTheCanopy1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/tTheCanopy2.png",
+    "clearings": [
+      {
+        "x": 1.9,
+        "y": 0.3
+      },
+      {
+        "x": -0.1,
+        "y": 1.3
+      },
+      {
+        "x": -2.3,
+        "y": -1.2
+      },
+      {
+        "x": -2.2,
+        "y": 0.9
+      },
+      {
+        "x": -0.5,
+        "y": -0.6
+      },
+      {
+        "x": 1.4,
+        "y": -1.5
+      }
+    ]
+  },
+  {
+    "name": "The Wilds",
+    "terrain": "Tangled Thickets",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/tTheWilds1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/tTheWilds2.png",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": 1.1
+      },
+      {
+        "x": 0.1,
+        "y": 2.3
+      },
+      {
+        "x": -1.6,
+        "y": -1.1
+      },
+      {
+        "x": -1.7,
+        "y": 1
+      },
+      {
+        "x": 2.2,
+        "y": -0.9
+      },
+      {
+        "x": 0.3,
+        "y": -0.7
+      }
+    ]
+  },
+  {
+    "name": "Trading Post",
+    "terrain": "Tangled Thickets",
+    "imageUrl": "https://dragonsdowndata.com/data/DDTTS/tTradingPost1.png",
+    "imageSecondaryUrl": "https://dragonsdowndata.com/data/DDTTS/tTradingPost2.png",
+    "clearings": [
+      {
+        "x": -0.6,
+        "y": -1.4
+      },
+      {
+        "x": 0.3,
+        "y": 2.3
+      },
+      {
+        "x": -2.3,
+        "y": 0.5
+      },
+      {
+        "x": 2.2,
+        "y": -0.2
       }
     ]
   },

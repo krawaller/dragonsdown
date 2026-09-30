@@ -616,6 +616,314 @@
     ]
   },
   {
+    "name": "Cragspire",
+    "terrain": "Hostile Hills",
+    "clearings": [
+      {
+        "x": -2.4,
+        "y": -1.2,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": 0.3,
+        "y": 2.7,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": 2.2,
+        "y": -0.7,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 1.9,
+        "y": 1.3,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": -0.2,
+        "y": -0.5,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -1.4,
+        "y": 1.9,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Guard House",
+    "terrain": "Hostile Hills",
+    "clearings": [
+      {
+        "x": 0.5,
+        "y": 1.5,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -0.4,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.8,
+        "y": 1.4,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": -0.9,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rocky Crown",
+    "terrain": "Hostile Hills",
+    "clearings": [
+      {
+        "x": -2,
+        "y": -1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.9,
+        "y": 1.5,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0.5,
+        "y": 2.3,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": 2.4,
+        "y": 1,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -1.6,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shattered Watch",
+    "terrain": "Hostile Hills",
+    "clearings": [
+      {
+        "x": -2,
+        "y": -0.7,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": 0.4,
+        "y": 2.5,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": -1.2,
+        "y": 1.3,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": 1.4,
+        "y": 0.6,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 2.2,
+        "y": -1,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": -1.4,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Stonegrave",
+    "terrain": "Hostile Hills",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": -1.2,
+        "y": 1.6,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": 0.6,
+        "y": 2.2,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 1.3,
+        "y": -1.4,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 2.4,
+        "y": 0.8,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wretched Ridges",
+    "terrain": "Hostile Hills",
+    "clearings": [
+      {
+        "x": 0,
+        "y": 0,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -1.7,
+        "y": 1.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 0.5,
+        "y": 2.3,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": 2.5,
+        "y": 1.4,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -1.5,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.2,
+        "y": -1,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Barriers",
     "terrain": "Malevolent Mountains",
     "clearings": [
@@ -963,8 +1271,8 @@
         "x": 0,
         "y": -1.6,
         "type": [
-          "plains",
-          "plains"
+          "hills",
+          "hills"
         ]
       },
       {
@@ -1209,8 +1517,8 @@
         "x": 1.6,
         "y": -1,
         "type": [
-          "plains",
-          "plains"
+          "mountains",
+          "mountains"
         ]
       },
       {
@@ -1555,7 +1863,7 @@
         "x": -2,
         "y": 0.7,
         "type": [
-          "swamps",
+          "thickets",
           "swamps"
         ]
       },
@@ -1848,6 +2156,314 @@
     ]
   },
   {
+    "name": "Bilewater",
+    "terrain": "Tangled Thickets",
+    "clearings": [
+      {
+        "x": 1.8,
+        "y": 0.9,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 2,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": -2.3,
+        "y": -1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 1.2,
+        "y": -0.8,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": -0.5,
+        "y": -0.4,
+        "type": [
+          "river",
+          "river"
+        ]
+      },
+      {
+        "x": -1.6,
+        "y": 1.3,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Choking Green",
+    "terrain": "Tangled Thickets",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": 1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 2.4,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": -1.7,
+        "y": -1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.3,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.2,
+        "y": 0.5,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": 2,
+        "y": -1.7,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Embergrove",
+    "terrain": "Tangled Thickets",
+    "clearings": [
+      {
+        "x": -2.1,
+        "y": -1.2,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": -2,
+        "y": 1,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": -0.4,
+        "y": 2.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 1.8,
+        "y": -1.2,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": -0.3,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Canopy",
+    "terrain": "Tangled Thickets",
+    "clearings": [
+      {
+        "x": 1.9,
+        "y": 0.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -0.1,
+        "y": 1.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.3,
+        "y": -1.2,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": -2.2,
+        "y": 0.9,
+        "type": [
+          "hills",
+          "hills"
+        ]
+      },
+      {
+        "x": -0.5,
+        "y": -0.6,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": 1.4,
+        "y": -1.5,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Wilds",
+    "terrain": "Tangled Thickets",
+    "clearings": [
+      {
+        "x": 2.1,
+        "y": 1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.1,
+        "y": 2.3,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": -1.6,
+        "y": -1.1,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -1.7,
+        "y": 1,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      },
+      {
+        "x": 2.2,
+        "y": -0.9,
+        "type": [
+          "caves",
+          "caves"
+        ]
+      },
+      {
+        "x": 0.3,
+        "y": -0.7,
+        "type": [
+          "mountains",
+          "mountains"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Trading Post",
+    "terrain": "Tangled Thickets",
+    "clearings": [
+      {
+        "x": -0.6,
+        "y": -1.4,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": 0.3,
+        "y": 2.3,
+        "type": [
+          "woods",
+          "woods"
+        ]
+      },
+      {
+        "x": -2.3,
+        "y": 0.5,
+        "type": [
+          "plains",
+          "plains"
+        ]
+      },
+      {
+        "x": 2.2,
+        "y": -0.2,
+        "type": [
+          "thickets",
+          "thickets"
+        ]
+      }
+    ]
+  },
+  {
     "name": "Deep Woods",
     "terrain": "Wicked Woods",
     "clearings": [
@@ -1909,7 +2525,7 @@
         "x": -0.4,
         "y": 2,
         "type": [
-          "plains",
+          "mountains",
           "plains"
         ]
       },
@@ -1964,7 +2580,7 @@
         "y": 0.9,
         "type": [
           "plains",
-          "plains"
+          "mountains"
         ]
       },
       {
@@ -2025,8 +2641,8 @@
         "x": 0,
         "y": 0.5,
         "type": [
-          "plains",
-          "plains"
+          "woods",
+          "woods"
         ]
       },
       {
@@ -2149,8 +2765,8 @@
         "x": 0,
         "y": -2,
         "type": [
-          "plains",
-          "plains"
+          "woods",
+          "woods"
         ]
       }
     ]

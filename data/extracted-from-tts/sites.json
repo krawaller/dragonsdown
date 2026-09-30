@@ -11,6 +11,30 @@
       "gmNotes": "3"
     }
   ],
+  "Burial Mound": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/sitetoken%20Thickets%20Burial%20Mound%20-%20Front%20-%201in%20x1.png",
+      "ancestry": [
+        "Tangled THICKETS"
+      ],
+      "terrainPack": "Tangled Thickets",
+      "gmNotes": "4"
+    }
+  ],
+  "Burrow": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/sitetoken%20Hills%20Burrow%20-%20Front%20-%201in%20x1.png",
+      "ancestry": [
+        "Hostile HILLS"
+      ],
+      "terrainPack": "Hostile Hills",
+      "gmNotes": "5"
+    }
+  ],
   "Catacombs": [
     {
       "source": "dd_all_exp",
@@ -45,6 +69,18 @@
       ],
       "terrainPack": "Malevolent Mountains",
       "gmNotes": "5"
+    }
+  ],
+  "Fortress": [
+    {
+      "source": "dd_all_exp",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773647040/CFBF0601BB9E72CCACAD1CC46B210D3CBFB9D370/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/sitetoken%20Thickets%20Fortress%20-%20Front%20-%201in%20x1.png",
+      "ancestry": [
+        "Tangled THICKETS"
+      ],
+      "terrainPack": "Tangled Thickets",
+      "gmNotes": "1"
     }
   ],
   "Grotto": [

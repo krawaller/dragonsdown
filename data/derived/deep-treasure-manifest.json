@@ -1,5 +1,49 @@
 [
   {
+    "id": "4.5.0.1",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Aegis of Radiance",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "Epic Treasure. Armor. Armor Value 2. Weight 2. Adds +1 Maneuver Speed.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. Armor Value 2. Weight 2. Adds +1 Maneuver Speed."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.2",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Aftershock",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "Epic Treasure. Melee Weapon. If this weapon hits its target, may give 1 Wound to any other unhidden Hero, Native, or Monster in the Clearing, but not the target of the original attack.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Melee Weapon. If this weapon hits its target, may give 1 Wound to any other unhidden Hero, Native, or Monster in the Clearing, but not the target of the original attack."
+      }
+    ]
+  },
+  {
     "id": "5.5.0.3",
     "source": "eastern-reaches",
     "level": 4,
@@ -466,6 +510,28 @@
     ]
   },
   {
+    "id": "4.5.0.9",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Eye of the Basilisk",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "Epic Treasure. Once per combat, during the Attack Resolution Step, may make one additional attack against any unhidden target that is targeting the Hero. This attack causes 1 Wound, has an Attack Length of 35, and uses the Hero’s Attack Speed to determine whether it hits. May resolve this attack before or after the normal attack.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Once per combat, during the Attack Resolution Step, may make one additional attack against any unhidden target that is targeting the Hero. This attack causes 1 Wound, has an Attack Length of 35, and uses the Hero’s Attack Speed to determine whether it hits. May resolve this attack before or after the normal attack."
+      }
+    ]
+  },
+  {
     "id": "5.4.0.18",
     "source": "natives-and-legends",
     "level": 4,
@@ -896,6 +962,28 @@
     ]
   },
   {
+    "id": "4.5.0.14",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Oracle Lens",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "Epic Treasure. May perform an Alert Action to look at the Treasure Cards in any 1 Treasure Site the Hero has found that is in their Clearing.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May perform an Alert Action to look at the Treasure Cards in any 1 Treasure Site the Hero has found that is in their Clearing."
+      }
+    ]
+  },
+  {
     "id": "2.5.0.15",
     "source": "desolation",
     "level": 4,
@@ -918,6 +1006,28 @@
       {
         "kind": "markdown",
         "markdown": "If playing using the Exploration rules, the Hero may explore as if in a Mountain Clearing regardless of the actual clearing type."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.16",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Phylact of Renewal",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "Epic Treasure. If at least 1 cube is wounded, may perform an Alert Action to permanently remove any number of equipped or Backpack Treasure Cards from the game. For each regular Treasure Card removed, heal 1 wounded cube. For each Epic Treasure Card removed, heal up to 3 wounded cubes.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. If at least 1 cube is wounded, may perform an Alert Action to permanently remove any number of equipped or Backpack Treasure Cards from the game. For each regular Treasure Card removed, heal 1 wounded cube. For each Epic Treasure Card removed, heal up to 3 wounded cubes."
       }
     ]
   },
@@ -1006,6 +1116,33 @@
       {
         "kind": "markdown",
         "markdown": "Epic Treasure. No effect other than being valuable."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.19",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Root Striders",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "left",
+      "section": "bottom"
+    },
+    "content": "Epic Treasure. May enter Swamp and Thickets Clearings for 1 action.\n\n![](/images/pdf/f267600e75cf8b07fd1eb1556371f06649af38f4.png)",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May enter Swamp and Thickets Clearings for 1 action."
+      },
+      {
+        "kind": "image",
+        "src": "/images/pdf/f267600e75cf8b07fd1eb1556371f06649af38f4.png",
+        "display": "block"
       }
     ]
   },
@@ -1212,6 +1349,28 @@
     ]
   },
   {
+    "id": "4.5.0.25",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Stone Giant’s Warbelt",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "Epic Treasure. Once per combat, may increase the damage of 1 Melee Attack by 1. When used, immediately wound 1 cube of the Hero’s choice.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Once per combat, may increase the damage of 1 Melee Attack by 1. When used, immediately wound 1 cube of the Hero’s choice."
+      }
+    ]
+  },
+  {
     "id": "5.5.0.42",
     "source": "eastern-reaches",
     "level": 4,
@@ -1378,6 +1537,50 @@
     ]
   },
   {
+    "id": "4.5.0.27",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Thornhide Brigandine",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "Epic Treasure. Armor. When a Melee Attack hits the Hero, the attacker also suffers 1 Wound.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. When a Melee Attack hits the Hero, the attacker also suffers 1 Wound."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.28",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Titan Steppers",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "Epic Treasure. May enter Hills and Mountain Clearings for 1 action.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. May enter Hills and Mountain Clearings for 1 action."
+      }
+    ]
+  },
+  {
     "id": "9.5.0.95",
     "source": "core",
     "level": 4,
@@ -1422,6 +1625,28 @@
     ]
   },
   {
+    "id": "4.5.0.30",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Veilpiercer",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 8,
+      "column": "right",
+      "section": "bottom"
+    },
+    "content": "Epic Treasure. Ranged Weapon. Does not lose sword icons when striking Armor.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Ranged Weapon. Does not lose sword icons when striking Armor."
+      }
+    ]
+  },
+  {
     "id": "9.5.0.98",
     "source": "core",
     "level": 4,
@@ -1440,6 +1665,28 @@
       {
         "kind": "markdown",
         "markdown": "Epic Treasure. When casting targeted spells, may reroll one or two Hit Dice on each Hit Dice roll."
+      }
+    ]
+  },
+  {
+    "id": "4.5.0.34",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Wyvern Hide Armor",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 9,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "Epic Treasure. Armor. Armor Value 2. Weight 1. Blocks up to two sword icons.",
+    "tags": [
+      "deepTreasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Epic Treasure. Armor. Armor Value 2. Weight 1. Blocks up to two sword icons."
       }
     ]
   }

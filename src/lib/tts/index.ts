@@ -196,6 +196,8 @@ export type MissionTerrainPack =
   | "swamps"
   | "riverlands"
   | "deserts"
+  | "hills"
+  | "thickets"
   | "oasis";
 
 export type MissionKindMap = Record<string, MissionKind>;
@@ -775,17 +777,31 @@ export function resolveCards<T extends TTSCardImage>(
   aliases: AliasMap,
 ): T[] {
   const key = normalizeTitle(title);
-  const direct = index[key];
+  const direct = cardsForNormalizedTitle(key, index);
   if (direct?.length) return direct;
   const aliased = aliases[key];
   if (aliased === undefined) return cardCategoryMatches(key, index);
   const targets = Array.isArray(aliased) ? aliased : [aliased];
   const results: T[] = [];
   for (const target of targets) {
-    const hits = index[normalizeTitle(target)];
+    const hits = cardsForNormalizedTitle(normalizeTitle(target), index);
     if (hits) results.push(...hits);
   }
   return results;
+}
+
+function cardsForNormalizedTitle<T extends TTSCardImage>(
+  key: string,
+  index: Record<string, T[]>,
+): T[] | undefined {
+  const direct = index[key];
+  if (direct) return direct;
+  const lowerKey = key.toLocaleLowerCase();
+  const matches = Object.entries(index).filter(
+    ([title]) => title.toLocaleLowerCase() === lowerKey,
+  );
+  if (matches.length === 0) return undefined;
+  return matches.flatMap(([, cards]) => cards);
 }
 
 function cardCategoryMatches<T extends TTSCardImage>(
@@ -1390,15 +1406,35 @@ export function extractClasses(
   source: string,
   classAdvantages: readonly ClassAdvantageReference[],
 ): ClassIndex {
-  const definitions = classAdvantages.map((entry) => ({
-    name: classNameFromAdvantageTitle(entry.title),
-    title: entry.title,
-  }));
+  const definitions = new Map(
+    classAdvantages.map((entry) => [
+      classComponentKey(classNameFromAdvantageTitle(entry.title)),
+      {
+        name: classNameFromAdvantageTitle(entry.title),
+        title: entry.title,
+      },
+    ]),
+  );
+  const cards: CardWithAncestry[] = [];
+  walk(root, [], cards);
+  for (const { card, ancestry } of cards) {
+    if (!isClassAncestry(ancestry)) continue;
+    const raw = (card.Nickname ?? "").trim();
+    if (!raw) continue;
+    const className = classNameFromAdvantageTitle(raw);
+    const key = classComponentKey(className);
+    if (!definitions.has(key)) {
+      definitions.set(key, { name: className, title: raw });
+    }
+  }
   const namesByKey = new Map(
-    definitions.map((entry) => [classComponentKey(entry.name), entry.name]),
+    [...definitions.values()].map((entry) => [
+      classComponentKey(entry.name),
+      entry.name,
+    ]),
   );
   const index: ClassIndex = {};
-  for (const definition of definitions) {
+  for (const definition of definitions.values()) {
     index[definition.name] = [
       {
         source,
@@ -1409,8 +1445,6 @@ export function extractClasses(
     ];
   }
 
-  const cards: CardWithAncestry[] = [];
-  walk(root, [], cards);
   for (const { card, ancestry } of cards) {
     if (!isClassAncestry(ancestry)) continue;
     const raw = (card.Nickname ?? "").trim();
@@ -2061,6 +2095,8 @@ const MISSION_TERRAIN_PACKS: Record<string, MissionTerrainPack> = {
   "swamps chips": "swamps",
   "riverlands chips": "riverlands",
   "deserts chips": "deserts",
+  "hills chips": "hills",
+  "thickets chips": "thickets",
   oasis: "oasis",
 };
 
@@ -2510,34 +2546,17 @@ export function extractSiteMonsters(
   root: unknown,
   source: string,
 ): SiteMonsterIndex {
-  type SiteMonsterChipInfo = {
-    group: string;
-    imageURL: string;
-    imageSecondaryURL: string;
-  };
-  const chipsByGuid = new Map<string, SiteMonsterChipInfo>();
+  const chipsByGuid = new Map<string, ChipInfo>();
   const chipsByGroup = new Map<string, SiteMonsterChipInfo[]>();
   const index: SiteMonsterIndex = {};
   const objects: Record<string, unknown>[] = [];
 
   collectObjects(root, objects);
-  for (const obj of objects) {
-    const guid = text(obj.GUID);
-    if (!guid) continue;
-    const luaScript = text(obj.LuaScript);
-    const gmNotes = text(obj.GMNotes);
-    if (gmNotes && luaScript.startsWith("chipName =")) {
-      const customImage = isRecord(obj.CustomImage) ? obj.CustomImage : {};
-      const chipInfo = {
-        group: prettifyChipName(gmNotes),
-        imageURL: text(customImage.ImageURL),
-        imageSecondaryURL: text(customImage.ImageSecondaryURL),
-      };
-      chipsByGuid.set(guid, chipInfo);
-      const bucket = chipsByGroup.get(chipInfo.group) ?? [];
-      bucket.push(chipInfo);
-      chipsByGroup.set(chipInfo.group, bucket);
-    }
+  for (const [guid, chipInfo] of chipInfoByGuid(root)) {
+    chipsByGuid.set(guid, chipInfo);
+    const bucket = chipsByGroup.get(chipInfo.group) ?? [];
+    bucket.push(chipInfo);
+    chipsByGroup.set(chipInfo.group, bucket);
   }
 
   for (const obj of objects) {
@@ -2583,6 +2602,17 @@ export function extractSiteMonsters(
     if (entries.length > 0) (index[siteName] ??= []).push(...entries);
   }
 
+  const globalGuardianGroups = globalSiteMonsterGroups(
+    text(isRecord(root) ? root.LuaScript : ""),
+    objects,
+    chipsByGuid,
+    source,
+  );
+  for (const [siteName, entries] of globalGuardianGroups) {
+    if (index[siteName]?.length) continue;
+    index[siteName] = entries;
+  }
+
   return Object.fromEntries(
     Object.entries(index).sort(([a], [b]) => a.localeCompare(b)),
   );
@@ -2601,8 +2631,8 @@ export function extractMapTileMonsters(
     const tile = mapTileFor(obj, ancestors, clearingOffsets);
     if (tile) {
       const luaScript = text(obj.LuaScript);
-      const wandering = monsterGroupsFromLuaFunction(luaScript, "setupW");
-      const local = monsterGroupsFromLuaFunction(luaScript, "setupL");
+      const wandering = mapTileWanderingMonsterGroups(obj, luaScript);
+      const local = mapTileLocalMonsterGroups(obj, luaScript);
       if (wandering.length > 0 || local.length > 0) {
         (index[tile.name] ??= []).push({
           source,
@@ -2636,7 +2666,7 @@ export function extractNativeSummons(
 ): NativeSummonIndex {
   const objects: Record<string, unknown>[] = [];
   collectObjects(root, objects);
-  const chipsByGuid = chipInfoByGuid(objects);
+  const chipsByGuid = chipInfoByGuid(root);
   const index: NativeSummonIndex = {};
 
   const rootLua = isRecord(root) ? text(root.LuaScript) : "";
@@ -2645,6 +2675,13 @@ export function extractNativeSummons(
     nativeGroups.map((group) => [group.group, group]),
   );
   if (nativeGroups.length > 0) index["Native Setup"] = nativeGroups;
+
+  for (const [locationName, groups] of globalNativeSummonGroups(
+    rootLua,
+    nativeGroupsByGroup,
+  )) {
+    addNativeSummonGroups(index, locationName, groups);
+  }
 
   for (const obj of objects) {
     const locationName = text(obj.Nickname);
@@ -2675,7 +2712,7 @@ export function extractNativeSummons(
 export function extractNatives(root: unknown, source: string): NativeIndex {
   const objects: Record<string, unknown>[] = [];
   collectObjects(root, objects);
-  const chipsByGuid = chipInfoByGuid(objects);
+  const chipsByGuid = chipInfoByGuid(root);
   const rootLua = isRecord(root) ? text(root.LuaScript) : "";
   const nativeGroups = nativeGroupsFromRootLua(rootLua, chipsByGuid, source);
   const civilisationCards = nativeCivilisationCards(root, source);
@@ -2727,6 +2764,9 @@ const NATIVE_CIVILISATION_CARD_NAMES = new Set(
     "Consul",
     "Dwarves",
     "Elves",
+    "Guard",
+    "Guards",
+    "Hunters",
     "Knights",
     "Mariners",
     "Nomads",
@@ -2734,6 +2774,7 @@ const NATIVE_CIVILISATION_CARD_NAMES = new Set(
     "Rogues",
     "Sellswords",
     "Soldiers",
+    "Tribe",
     "Villagers",
     "Wardens",
     "Watch",
@@ -2760,6 +2801,124 @@ function nativeCivilisationCardName(
   );
 }
 
+const MAP_TILE_WANDERING_BY_TERRAIN_TAG: Record<string, string> = {
+  CC: "GiantBats",
+  DD: "GiantScorpions",
+  HH: "CragFiends",
+  MM: "JuvenileDragons",
+  PP: "DireWolves",
+  RR: "SeaSerpents",
+  SS: "GiantSerpents",
+  TT: "GiantMaws",
+  WW: "GiantSpiders",
+};
+
+const MAP_TILE_LOCAL_BY_FEATURE_TAG: Record<string, Record<string, string>> = {
+  carrion: {
+    CC: "Trolls",
+    DD: "Greatmanes",
+    HH: "BoulderWights",
+    MM: "Giants",
+    PP: "Owlbears",
+    RR: "Banshees",
+    SS: "Trolls",
+    TT: "Greatfangs",
+    WW: "Owlbears",
+  },
+  heads: {
+    CC: "Orcs",
+    DD: "GiantScarabs",
+    HH: "Reavers",
+    MM: "Orcs",
+    PP: "Orcs",
+    RR: "Merfolk",
+    SS: "Orcs",
+    TT: "Skinners",
+    WW: "Orcs",
+  },
+  roar: {
+    CC: "AdultDragons",
+    DD: "SandWyrms",
+    HH: "Wyverns",
+    MM: "AdultDragons",
+    PP: "AdultDragons",
+    RR: "StormDrakes",
+    SS: "AdultDragons",
+    TT: "Emberwyrms",
+    WW: "AdultDragons",
+  },
+  scratch: {
+    CC: "Goblins",
+    DD: "ShardWings",
+    HH: "Cultists",
+    MM: "Griffons",
+    PP: "Centaurs",
+    RR: "Cyclops",
+    SS: "Lizardfolk",
+    TT: "Jaguar",
+    WW: "Treants",
+  },
+  stench: {
+    CC: "Kobolds",
+    DD: "Lamias",
+    HH: "Raptors",
+    MM: "Ogres",
+    PP: "Kobolds",
+    RR: "Pirates",
+    SS: "Ogres",
+    TT: "Thornjaws",
+    WW: "Gnolls",
+  },
+};
+
+function mapTileWanderingMonsterGroups(
+  obj: Record<string, unknown>,
+  luaScript: string,
+): string[] {
+  const fromLua = monsterGroupsFromLuaFunction(luaScript, "setupW");
+  if (fromLua.length > 0) return fromLua;
+
+  if (mapTileTags(obj).has("CivTile")) return [];
+  const terrainTag = mapTileTerrainTag(obj);
+  const group = terrainTag ? MAP_TILE_WANDERING_BY_TERRAIN_TAG[terrainTag] : "";
+  return group ? [prettifyChipName(group)] : [];
+}
+
+function mapTileLocalMonsterGroups(
+  obj: Record<string, unknown>,
+  luaScript: string,
+): string[] {
+  const fromLua = monsterGroupsFromLuaFunction(luaScript, "setupL");
+  if (fromLua.length > 0) return fromLua;
+
+  const tags = mapTileTags(obj);
+  if (tags.has("CivTile")) return [];
+  const terrainTag = mapTileTerrainTag(obj);
+  if (!terrainTag) return [];
+
+  const groups = new Set<string>();
+  for (const [featureTag, terrainGroups] of Object.entries(
+    MAP_TILE_LOCAL_BY_FEATURE_TAG,
+  )) {
+    const group = terrainGroups[terrainTag];
+    if (tags.has(featureTag) && group) groups.add(prettifyChipName(group));
+  }
+  return [...groups];
+}
+
+function mapTileTerrainTag(obj: Record<string, unknown>): string | undefined {
+  for (const tag of mapTileTags(obj)) {
+    if (tag in MAP_TILE_WANDERING_BY_TERRAIN_TAG) return tag;
+  }
+  return undefined;
+}
+
+function mapTileTags(obj: Record<string, unknown>): Set<string> {
+  const tags = obj.Tags;
+  if (!Array.isArray(tags)) return new Set();
+  return new Set(tags.filter((tag): tag is string => typeof tag === "string"));
+}
+
 function monsterGroupsFromLuaFunction(
   luaScript: string,
   functionName: string,
@@ -2778,15 +2937,17 @@ type ChipInfo = {
   imageSecondaryURL: string;
 };
 
-function chipInfoByGuid(
-  objects: Record<string, unknown>[],
-): Map<string, ChipInfo> {
+type SiteMonsterChipInfo = ChipInfo;
+
+function chipInfoByGuid(root: unknown): Map<string, ChipInfo> {
   const chipsByGuid = new Map<string, ChipInfo>();
-  for (const obj of objects) {
+  const chips: ChipWithAncestry[] = [];
+  walkChips(root, [], chips);
+  for (const { chip: obj } of chips) {
     const guid = text(obj.GUID);
     if (!guid) continue;
     const gmNotes = text(obj.GMNotes);
-    if (!isChipTile(obj) || !gmNotes) continue;
+    if (!gmNotes) continue;
     const customImage = isRecord(obj.CustomImage) ? obj.CustomImage : {};
     chipsByGuid.set(guid, {
       group: prettifyChipName(gmNotes),
@@ -2894,6 +3055,69 @@ function nativeGroupsFromSummonNativesLua(
     });
   }
   return [...groups.values()].sort((a, b) => a.group.localeCompare(b.group));
+}
+
+function globalNativeSummonGroups(
+  luaScript: string,
+  nativeGroupsByGroup: Map<string, TTSNativeSummonGroup>,
+): Map<string, TTSNativeSummonGroup[]> {
+  const index = new Map<string, TTSNativeSummonGroup[]>();
+  for (const tableName of ["Natives", "NativesAlt"]) {
+    const table = luaGlobalTableBody(luaScript, tableName);
+    for (const entry of table.matchAll(
+      /^\s*\["[0-9a-f]{6}"\]\s*=\s*\{([\s\S]*?)^\s*\},?\s*--\s*([^\r\n]*)/gm,
+    )) {
+      const locationName = correctNativeSummonLocationName(entry[2]);
+      if (!locationName) continue;
+      const uncommentedBody = entry[1].replace(/^\s*--.*$/gm, "");
+      const groups = [...uncommentedBody.matchAll(/\bgroup\s*=\s*"([^"]+)"/g)]
+        .map((match) => nativeGroupsByGroup.get(prettifyChipName(match[1])))
+        .filter((group): group is TTSNativeSummonGroup => group !== undefined);
+      addNativeSummonGroupsToMap(index, locationName, groups);
+    }
+  }
+  return index;
+}
+
+function addNativeSummonGroupsToMap(
+  index: Map<string, TTSNativeSummonGroup[]>,
+  locationName: string,
+  groups: TTSNativeSummonGroup[],
+): void {
+  if (groups.length === 0) return;
+  const bucket = index.get(locationName) ?? [];
+  for (const group of groups) {
+    if (bucket.some((existing) => existing.group === group.group)) continue;
+    bucket.push(group);
+  }
+  bucket.sort((a, b) => a.group.localeCompare(b.group));
+  index.set(locationName, bucket);
+}
+
+function correctNativeSummonLocationName(locationName: string): string {
+  const normalized = normalizeTitle(locationName.trim().replace(/\s+/g, " "));
+  return NATIVE_SUMMON_LOCATION_NAME_CORRECTIONS[normalized] ?? normalized;
+}
+
+const NATIVE_SUMMON_LOCATION_NAME_CORRECTIONS: Record<string, string> = {
+  Encampent: "Encampment",
+};
+
+function luaGlobalTableBody(luaScript: string, tableName: string): string {
+  const regex = new RegExp(`(^|\\n)${tableName}\\s*=\\s*\\{`, "g");
+  const match = regex.exec(luaScript);
+  if (!match) return "";
+  const start = match.index + match[1].length;
+  let depth = 0;
+  for (let i = start; i < luaScript.length; i++) {
+    const ch = luaScript[i];
+    if (ch === "{") depth += 1;
+    if (ch === "}") {
+      depth -= 1;
+      if (depth === 0) return luaScript.slice(start, i + 1);
+    }
+  }
+  return "";
 }
 
 function addNativeSummonGroups(
@@ -3007,6 +3231,58 @@ function siteMonsterSourceName(obj: Record<string, unknown>): string {
   const imageURL = text(obj.CustomImage.ImageURL);
   if (imageURL === SITE_FACE_URL) return text(obj.Nickname);
   return WILDERNESS_TOKEN_FRONT_METADATA[imageURL]?.name ?? "";
+}
+
+function globalSiteMonsterGroups(
+  luaScript: string,
+  objects: Record<string, unknown>[],
+  chipsByGuid: Map<string, ChipInfo>,
+  source: string,
+): Map<string, TTSSiteMonsterGroup[]> {
+  const siteNamesByGuid = new Map<string, string>();
+  for (const obj of objects) {
+    const guid = text(obj.GUID);
+    const siteName = siteMonsterSourceName(obj);
+    if (guid && siteName) siteNamesByGuid.set(guid, siteName);
+  }
+
+  const table = luaTableBody(luaScript, "Guardians");
+  const groupsBySite = new Map<string, TTSSiteMonsterGroup[]>();
+  for (const entry of table.matchAll(
+    /\["([0-9a-f]{6})"\]\s*=\s*\{([\s\S]*?)\}\s*,?\s*--\s*([^\r\n]*)/g,
+  )) {
+    const siteGuid = entry[1];
+    const siteName = siteNamesByGuid.get(siteGuid) ?? normalizeTitle(entry[3]);
+    if (!siteName) continue;
+
+    const groups = new Map<
+      string,
+      { monsters: string[]; monsterChips: TTSSiteMonsterChip[] }
+    >();
+    for (const guardian of entry[2].matchAll(
+      /"([0-9a-f]{6})"\s*,?\s*--\s*([^\r\n]*)/g,
+    )) {
+      const chip = chipsByGuid.get(guardian[1]);
+      const monsterName = prettifyChipName(guardian[2].trim()) || chip?.group;
+      if (!monsterName) continue;
+      const group = chip?.group ?? monsterName;
+      const bucket = groups.get(group) ?? { monsters: [], monsterChips: [] };
+      bucket.monsters.push(monsterName);
+      bucket.monsterChips.push(siteMonsterChipFor(monsterName, chip));
+      groups.set(group, bucket);
+    }
+
+    const entries = [...groups.entries()]
+      .map(([group, { monsters, monsterChips }]) => ({
+        source,
+        group,
+        monsters,
+        monsterChips,
+      }))
+      .sort((a, b) => a.group.localeCompare(b.group));
+    if (entries.length > 0) groupsBySite.set(siteName, entries);
+  }
+  return groupsBySite;
 }
 
 function siteMonsterOverride(
@@ -3155,6 +3431,11 @@ const SETUP_CARD_PRINTED_SITES_BY_IMAGE_URL: Record<string, string[]> = {
     ["Monolith", "Wrecked Wagons"],
   "https://steamusercontent-a.akamaihd.net/ugc/16948278958954043783/FC338D6BDE29FE6BD3D2EB5E3CFD64D0E82F59F5/":
     ["Abyss", "Tarn", "Wreck"],
+  "https://dragonsdowndata.com/data/DDTTS/terrain%20setup%20card%20Hills%20Front%20x1.png": [
+    "Burrow",
+    "Stone Circle",
+    "Watchtower",
+  ],
   "https://steamusercontent-a.akamaihd.net/ugc/2323363479519120254/77809A8879191279ADBE84BC48A9E12C272548A7/":
     ["Grotto", "Hideout", "Lost Battalion"],
   "https://steamusercontent-a.akamaihd.net/ugc/2323363479519043888/1148228148CCCE332A638EBED6176E9AE6129254/":
@@ -3481,6 +3762,9 @@ function terrainPackForNickname(nickname: string): string | undefined {
     case "Mountains Chips":
     case "Malevolent MOUNTAINS":
       return "Malevolent Mountains";
+    case "Hills Chips":
+    case "Hostile HILLS":
+      return "Hostile Hills";
     case "Plains Chips":
     case "Perilous PLAINS":
       return "Perilous Plains";
@@ -3492,6 +3776,9 @@ function terrainPackForNickname(nickname: string): string | undefined {
     case "Swamps Chips":
     case "Sinister SWAMPS":
       return "Sinister Swamps";
+    case "Thickets Chips":
+    case "Tangled THICKETS":
+      return "Tangled Thickets";
     case "Woods Chips":
     case "Wicked WOODS":
       return "Wicked Woods";
@@ -3517,7 +3804,7 @@ function walkChips(
   out: ChipWithAncestry[],
 ): void {
   if (!isRecord(obj)) return;
-  if (isChipTile(obj)) {
+  if (isChipTile(obj, ancestry)) {
     out.push({ chip: obj as unknown as ChipObject, ancestry });
   }
   const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
@@ -3530,12 +3817,37 @@ function walkChips(
     for (const s of contained) walkChips(s, childAncestry, out);
 }
 
-function isChipTile(obj: Record<string, unknown>): boolean {
+function isChipTile(
+  obj: Record<string, unknown>,
+  ancestry: string[] = [],
+): boolean {
   if (obj.Name !== "Custom_Tile" || !isRecord(obj.CustomImage)) return false;
   const luaScript = text(obj.LuaScript);
   if (luaScript.startsWith("chipName =")) return true;
+  if (isUnmarkedMonsterChipTile(obj, ancestry)) return true;
   return NATIVE_CIVILISATION_CARD_NAMES.has(
     normalizeTitle(prettifyChipName(text(obj.GMNotes))),
+  );
+}
+
+function isUnmarkedMonsterChipTile(
+  obj: Record<string, unknown>,
+  ancestry: string[],
+): boolean {
+  const gmNotes = text(obj.GMNotes);
+  if (!gmNotes) return false;
+  const customImage = obj.CustomImage as Record<string, unknown>;
+  if (!text(customImage.ImageURL) || !text(customImage.ImageSecondaryURL)) {
+    return false;
+  }
+
+  const nickname = text(obj.Nickname);
+  if (ancestry.some((ancestor) => /\bchips\b/i.test(ancestor))) return true;
+  if (nickname) return false;
+
+  const groupName = normalizeTitle(prettifyChipName(gmNotes));
+  return ancestry.some(
+    (ancestor) => normalizeTitle(prettifyChipName(ancestor)) === groupName,
   );
 }
 

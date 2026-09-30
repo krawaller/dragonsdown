@@ -23,6 +23,18 @@
       ]
     }
   ],
+  "Bilewater": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Tangled Thickets",
+      "wandering": [
+        "Giant Maws"
+      ],
+      "local": [
+        "Greatfangs"
+      ]
+    }
+  ],
   "Black Caves": [
     {
       "source": "dd_all_exp",
@@ -44,6 +56,30 @@
       ],
       "local": [
         "Banshees"
+      ]
+    }
+  ],
+  "Choking Green": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Tangled Thickets",
+      "wandering": [
+        "Giant Maws"
+      ],
+      "local": [
+        "Skinners"
+      ]
+    }
+  ],
+  "Cragspire": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Hostile Hills",
+      "wandering": [
+        "Crag Fiends"
+      ],
+      "local": [
+        "Cultists"
       ]
     }
   ],
@@ -116,6 +152,18 @@
       ],
       "local": [
         "Adult Dragons"
+      ]
+    }
+  ],
+  "Embergrove": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Tangled Thickets",
+      "wandering": [
+        "Giant Maws"
+      ],
+      "local": [
+        "Emberwyrms"
       ]
     }
   ],
@@ -311,6 +359,18 @@
       ]
     }
   ],
+  "Rocky Crown": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Hostile Hills",
+      "wandering": [
+        "Crag Fiends"
+      ],
+      "local": [
+        "Boulder Wights"
+      ]
+    }
+  ],
   "Secret Dens": [
     {
       "source": "dd_all_exp",
@@ -320,6 +380,18 @@
       ],
       "local": [
         "Goblins"
+      ]
+    }
+  ],
+  "Shattered Watch": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Hostile Hills",
+      "wandering": [
+        "Crag Fiends"
+      ],
+      "local": [
+        "Wyverns"
       ]
     }
   ],
@@ -359,6 +431,30 @@
       ]
     }
   ],
+  "Stonegrave": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Hostile Hills",
+      "wandering": [
+        "Crag Fiends"
+      ],
+      "local": [
+        "Wyverns"
+      ]
+    }
+  ],
+  "The Canopy": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Tangled Thickets",
+      "wandering": [
+        "Giant Maws"
+      ],
+      "local": [
+        "Thornjaws"
+      ]
+    }
+  ],
   "The Meadows": [
     {
       "source": "dd_all_exp",
@@ -368,6 +464,18 @@
       ],
       "local": [
         "Adult Dragons"
+      ]
+    }
+  ],
+  "The Wilds": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Tangled Thickets",
+      "wandering": [
+        "Giant Maws"
+      ],
+      "local": [
+        "Jaguar"
       ]
     }
   ],
@@ -416,6 +524,18 @@
       ],
       "local": [
         "Centaurs"
+      ]
+    }
+  ],
+  "Wretched Ridges": [
+    {
+      "source": "dd_all_exp",
+      "terrain": "Hostile Hills",
+      "wandering": [
+        "Crag Fiends"
+      ],
+      "local": [
+        "Raptors"
       ]
     }
   ]

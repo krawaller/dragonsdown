@@ -35,8 +35,8 @@
     {
       "source": "dd_all_exp",
       "group": "aurorans",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12088926178196991054/382524AEE93531F6C9DED13081A5F1C574D4C6C6/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15390529101690067372/1F572C97959E71C72BED3E34EC2FD1B846526BB3/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13641080114364159652/99806F56E4200EA8B8FDF382CB843C997F5D47D1/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17715811173941858197/E67728C262FA65685D3406CE444119A659477220/",
       "locations": [
         {
           "ancestry": [
@@ -63,8 +63,8 @@
     {
       "source": "dd_all_exp",
       "group": "aurorans",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13641080114364159652/99806F56E4200EA8B8FDF382CB843C997F5D47D1/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17715811173941858197/E67728C262FA65685D3406CE444119A659477220/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12088926178196991054/382524AEE93531F6C9DED13081A5F1C574D4C6C6/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15390529101690067372/1F572C97959E71C72BED3E34EC2FD1B846526BB3/",
       "locations": [
         {
           "ancestry": [
@@ -250,6 +250,54 @@
       ]
     }
   ],
+  "Basilisk": [
+    {
+      "source": "dd_all_exp",
+      "group": "Basilisk",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Basilisk%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Basilisk%20Back%20x1.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "BoulderWights": [
+    {
+      "source": "dd_all_exp",
+      "group": "BoulderWights",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Boulder%20Wight%20Front%20x6.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Boulder%20Wight%20Back%20x6.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 6
+        }
+      ]
+    }
+  ],
+  "Carrion": [
+    {
+      "source": "dd_all_exp",
+      "group": "Carrion",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Front%20x5.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Back%20x5.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 5
+        }
+      ]
+    }
+  ],
   "Centaurs": [
     {
       "source": "dd_all_exp",
@@ -297,49 +345,67 @@
       ]
     }
   ],
+  "CragFiends": [
+    {
+      "source": "dd_all_exp",
+      "group": "CragFiends",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Lobber%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Lobber%20Back%20x4.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "CragFiends",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Spiker%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20CF%20Spiker%20Back%20x4.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "Cultists": [
+    {
+      "source": "dd_all_exp",
+      "group": "Cultists",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Leader%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Leader%20Back%20x1.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Cultists",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Member%20Front%20x7.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Cult%20Member%20Back%20x7.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 7
+        }
+      ]
+    }
+  ],
   "Cursed": [
-    {
-      "source": "dd_all_exp",
-      "group": "Cursed",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15747088952838711978/06BA78831935030E11508433A920DDAE5C3BC8DF/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9654082685197593781/B14A6E9F375985633F2990D6F4E591FAF606D60C/",
-      "locations": [
-        {
-          "ancestry": [
-            "Plains Chips"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Cursed",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12479465285217578466/F3B1BD11362473D209B49350041AD465E3A7D6EC/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9633442917725798176/A9DA26BC9BBCC9A127BE0D6A3EE7EF830DCB75AA/",
-      "locations": [
-        {
-          "ancestry": [
-            "Plains Chips"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Cursed",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12248046875806536979/882B0C374E73DA09DF7D23896F21E147DBEB5977/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16463414034816254151/CA94EC7BAF911694F531EB407AC5FB2D6854E1ED/",
-      "locations": [
-        {
-          "ancestry": [
-            "Plains Chips"
-          ],
-          "count": 1
-        }
-      ]
-    },
     {
       "source": "dd_all_exp",
       "group": "Cursed",
@@ -381,6 +447,48 @@
           "count": 1
         }
       ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Cursed",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12479465285217578466/F3B1BD11362473D209B49350041AD465E3A7D6EC/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9633442917725798176/A9DA26BC9BBCC9A127BE0D6A3EE7EF830DCB75AA/",
+      "locations": [
+        {
+          "ancestry": [
+            "Plains Chips"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Cursed",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15747088952838711978/06BA78831935030E11508433A920DDAE5C3BC8DF/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9654082685197593781/B14A6E9F375985633F2990D6F4E591FAF606D60C/",
+      "locations": [
+        {
+          "ancestry": [
+            "Plains Chips"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Cursed",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12248046875806536979/882B0C374E73DA09DF7D23896F21E147DBEB5977/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16463414034816254151/CA94EC7BAF911694F531EB407AC5FB2D6854E1ED/",
+      "locations": [
+        {
+          "ancestry": [
+            "Plains Chips"
+          ],
+          "count": 1
+        }
+      ]
     }
   ],
   "Cylops": [
@@ -404,8 +512,8 @@
     {
       "source": "dd_all_exp",
       "group": "DeathHound",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16714131508828381191/B45F5A4D347A0038BA3AA6D6ED8F14FB1B1676FB/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10343891748676556696/8887D6FC86A4D7B7C1E8FDAE81A72CF978D0B200/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15950956020902826458/88F6E8ED89FDFA7088C3E1A4AD4B19EFC9D0A12A/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13855624410426592139/A3039CCEAE23290EA237E5929907B539997C0185/",
       "locations": [
         {
           "ancestry": [
@@ -418,8 +526,8 @@
     {
       "source": "dd_all_exp",
       "group": "DeathHound",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15950956020902826458/88F6E8ED89FDFA7088C3E1A4AD4B19EFC9D0A12A/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13855624410426592139/A3039CCEAE23290EA237E5929907B539997C0185/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16714131508828381191/B45F5A4D347A0038BA3AA6D6ED8F14FB1B1676FB/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10343891748676556696/8887D6FC86A4D7B7C1E8FDAE81A72CF978D0B200/",
       "locations": [
         {
           "ancestry": [
@@ -541,6 +649,20 @@
     {
       "source": "dd_all_exp",
       "group": "Elementals",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953847866/4C11CE7698F9D9999223527CF649F767E41400D2/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773852433/6F584E70DADEE62031C087B928E8B83B6F353FE4/",
+      "locations": [
+        {
+          "ancestry": [
+            "Elementals"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Elementals",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953846423/A1D6EC5AC753DD768BA7351F406735C31A722263/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773851069/BA7F2A25E539365653C09E88EBA39B0835442374/",
       "locations": [
@@ -557,20 +679,6 @@
       "group": "Elementals",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953845581/BF546349A72AFAC94721E61FB42F56125772773C/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773847779/AA7E350C070281D56DF4F19D0961FC3CC53A87B1/",
-      "locations": [
-        {
-          "ancestry": [
-            "Elementals"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Elementals",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953847866/4C11CE7698F9D9999223527CF649F767E41400D2/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601773852433/6F584E70DADEE62031C087B928E8B83B6F353FE4/",
       "locations": [
         {
           "ancestry": [
@@ -639,6 +747,52 @@
       ]
     }
   ],
+  "Emberwyrms": [
+    {
+      "source": "dd_all_exp",
+      "group": "Emberwyrms",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Ember%20Wyrm%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Ember%20Wyrm%20Back%20x4.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "Fallen": [
+    {
+      "source": "dd_all_exp",
+      "group": "Fallen",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Crew%20Front%20x2.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Crew%20Back%20x2.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Fallen",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Captain%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Captain%20Back%20x1.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
   "GiantBats": [
     {
       "source": "dd_all_exp",
@@ -650,6 +804,22 @@
           "ancestry": [
             "Caves  Chips",
             "Giant Bats"
+          ],
+          "count": 8
+        }
+      ]
+    }
+  ],
+  "GiantMaws": [
+    {
+      "source": "dd_all_exp",
+      "group": "GiantMaws",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Giant%20Maw%20Front%20x8.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Giant%20Maw%20Back%20x8.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
           ],
           "count": 8
         }
@@ -762,22 +932,6 @@
     {
       "source": "dd_all_exp",
       "group": "Goblins",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953788058/576D7F0E1FA1A7DCCA458D709BD5ED5FC11C31DA/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131659281/EF404BF2A0A631B09DBCF9C69F3F473887B898A6/",
-      "locations": [
-        {
-          "ancestry": [
-            "Caves  Chips",
-            "Goblins"
-          ],
-          "count": 4
-        }
-      ],
-      "name": "King"
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Goblins",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953787080/F985688A1B5C6C176A4DD363A4E3A9F7EE8445AB/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002466147798521454/BEF1422D3CB2DCE3B28E17F083AF5D84A747A50B/",
       "locations": [
@@ -790,6 +944,22 @@
         }
       ],
       "name": "Peltast"
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Goblins",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953788058/576D7F0E1FA1A7DCCA458D709BD5ED5FC11C31DA/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131659281/EF404BF2A0A631B09DBCF9C69F3F473887B898A6/",
+      "locations": [
+        {
+          "ancestry": [
+            "Caves  Chips",
+            "Goblins"
+          ],
+          "count": 4
+        }
+      ],
+      "name": "King"
     },
     {
       "source": "dd_all_exp",
@@ -820,6 +990,22 @@
             "Mountains Chips"
           ],
           "count": 1
+        }
+      ]
+    }
+  ],
+  "Greatfangs": [
+    {
+      "source": "dd_all_exp",
+      "group": "Greatfangs",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Greatfang%20Serpent%20Front%20x6.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Greatfang%20Serpent%20Back%20x6.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 6
         }
       ]
     }
@@ -874,6 +1060,66 @@
       ]
     }
   ],
+  "Grimwretch": [
+    {
+      "source": "dd_all_exp",
+      "group": "Grimwretch",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Grimwretch%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Grimwretch%20Back%20x1.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "guards": [
+    {
+      "source": "dd_all_exp",
+      "group": "guards",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Guard%203%20Front.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Guard%203%20Back.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Guardhouse"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "guards",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Guard%20Leader%20Front.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Guard%20Leader%20Back.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Guardhouse"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "guards",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Guard%202%20Front.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Guard%202%20Back.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Guardhouse"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
   "Hag": [
     {
       "source": "dd_all_exp",
@@ -884,6 +1130,50 @@
         {
           "ancestry": [
             "Riverlands Chips"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "hunters": [
+    {
+      "source": "dd_all_exp",
+      "group": "hunters",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%203%20Front.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%203%20Back.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Trading Post"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "hunters",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%202%20Front.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%202%20Back.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Trading Post"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "hunters",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%20Leader%20Front.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/White%20Round%20Hunter%20Leader%20Back.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Trading Post"
           ],
           "count": 1
         }
@@ -922,6 +1212,64 @@
       ]
     }
   ],
+  "Jaguar": [
+    {
+      "source": "dd_all_exp",
+      "group": "Jaguar",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Bow%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Bow%20Back%20x4.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Jaguar",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Club%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Club%20Back%20x4.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 4
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Jaguar",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Priest%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Priest%20Back%20x1.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Jaguar",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Champion%20Front%20x1.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Jaguar%20Champion%20Back%20x1.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
   "JuvenileDragons": [
     {
       "source": "dd_all_exp",
@@ -933,7 +1281,7 @@
           "ancestry": [
             "Juvenile Dragons"
           ],
-          "count": 8
+          "count": 7
         }
       ]
     }
@@ -1069,21 +1417,6 @@
     {
       "source": "dd_all_exp",
       "group": "Lizardfolk",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952405480/E94A0881799BEF89A499DD921C817DFBA54A0C13/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952406124/7709C16CF2930C7E7128C0300031CB4E8DD19489/",
-      "locations": [
-        {
-          "ancestry": [
-            "Swamps Chips",
-            "Lizardfolk"
-          ],
-          "count": 9
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Lizardfolk",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952409644/59750815C01F867E7A41393207512304A1B6EB10/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952410080/32DA7B00D5545A0834C68E6122B0DDD9D9D41E62/",
       "locations": [
@@ -1093,6 +1426,21 @@
             "Lizardfolk"
           ],
           "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Lizardfolk",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952405480/E94A0881799BEF89A499DD921C817DFBA54A0C13/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068952406124/7709C16CF2930C7E7128C0300031CB4E8DD19489/",
+      "locations": [
+        {
+          "ancestry": [
+            "Swamps Chips",
+            "Lizardfolk"
+          ],
+          "count": 9
         }
       ]
     }
@@ -1175,20 +1523,6 @@
     {
       "source": "dd_all_exp",
       "group": "mariners",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11142898611934360885/15DC343C6DC671334DC886068CE12E2401AFD9A9/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16579491103949521439/4541172A60622AB0530C692B44E0387154791871/",
-      "locations": [
-        {
-          "ancestry": [
-            "Port"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "mariners",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16610782663697067579/90E45C8FBAA687D1EFB31E815EAEE3EBBC6D9391/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16252521360614033732/385E524A4D6496957C205A6B3403CF8B7D12BFC6/",
       "locations": [
@@ -1203,8 +1537,8 @@
     {
       "source": "dd_all_exp",
       "group": "mariners",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9871876268881231400/97914B75CA64728D57A4066E743E939F99853818/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11698904483945935515/E8F81C9F4A2A6F340AD088BD826C1B731927A83B/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11142898611934360885/15DC343C6DC671334DC886068CE12E2401AFD9A9/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16579491103949521439/4541172A60622AB0530C692B44E0387154791871/",
       "locations": [
         {
           "ancestry": [
@@ -1227,9 +1561,39 @@
           "count": 1
         }
       ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "mariners",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9871876268881231400/97914B75CA64728D57A4066E743E939F99853818/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11698904483945935515/E8F81C9F4A2A6F340AD088BD826C1B731927A83B/",
+      "locations": [
+        {
+          "ancestry": [
+            "Port"
+          ],
+          "count": 1
+        }
+      ]
     }
   ],
   "Merfolk": [
+    {
+      "source": "dd_all_exp",
+      "group": "Merfolk",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11690454804909599748/480978F7A9619D6291442BE117656763F8419902/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9583676347847606844/FC86C60E1684E2227899DE6EF2EF2EB028CC7781/",
+      "locations": [
+        {
+          "ancestry": [
+            "Riverlands Chips",
+            "Merfolk"
+          ],
+          "count": 6
+        }
+      ],
+      "name": "Warrior"
+    },
     {
       "source": "dd_all_exp",
       "group": "Merfolk",
@@ -1293,22 +1657,6 @@
         }
       ],
       "name": "Queen"
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Merfolk",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/11690454804909599748/480978F7A9619D6291442BE117656763F8419902/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9583676347847606844/FC86C60E1684E2227899DE6EF2EF2EB028CC7781/",
-      "locations": [
-        {
-          "ancestry": [
-            "Riverlands Chips",
-            "Merfolk"
-          ],
-          "count": 6
-        }
-      ],
-      "name": "Warrior"
     }
   ],
   "Mummy": [
@@ -1331,8 +1679,8 @@
     {
       "source": "dd_all_exp",
       "group": "nomads",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14035682570329651806/6DBCCAE09C66F64AE03F426C372A9FEFB4D24B9D/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17760935975547674481/70CF7FEDE418578BC34A16A72BB25F6BF8E2BD45/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15741981104585305055/D4E14B7951D10AF7617964F6134C44D3A3758895/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17475796836636167852/543BDA5437E7EF3E5BA80A318B872307EFF14D2B/",
       "locations": [
         {
           "ancestry": [
@@ -1345,8 +1693,22 @@
     {
       "source": "dd_all_exp",
       "group": "nomads",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13171044435687065995/BE8142E46698E9F97E01FCD3C507825E6191ACC3/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10836921346867602577/224326AF5DBC084EADADAAB9303E6807444AC41F/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17878016086939151760/DB902626BBC45C6DEC0AABE2CF78B38889C0A7E0/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17956837787649068655/F180B055AED31772C4CE2759DEB25A705CA9C689/",
+      "locations": [
+        {
+          "ancestry": [
+            "Oasis"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "nomads",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/14035682570329651806/6DBCCAE09C66F64AE03F426C372A9FEFB4D24B9D/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17760935975547674481/70CF7FEDE418578BC34A16A72BB25F6BF8E2BD45/",
       "locations": [
         {
           "ancestry": [
@@ -1373,36 +1735,22 @@
     {
       "source": "dd_all_exp",
       "group": "nomads",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13171044435687065995/BE8142E46698E9F97E01FCD3C507825E6191ACC3/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10836921346867602577/224326AF5DBC084EADADAAB9303E6807444AC41F/",
+      "locations": [
+        {
+          "ancestry": [
+            "Oasis"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "nomads",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/9795899677972156205/DAEE5402A22D1B202DB8AC1332BA697CF03ED860/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15676966195131142184/004EBB2D7E77187C4AE3DAF8DEC4D8D45B56B584/",
-      "locations": [
-        {
-          "ancestry": [
-            "Oasis"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "nomads",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15741981104585305055/D4E14B7951D10AF7617964F6134C44D3A3758895/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17475796836636167852/543BDA5437E7EF3E5BA80A318B872307EFF14D2B/",
-      "locations": [
-        {
-          "ancestry": [
-            "Oasis"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "nomads",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/17878016086939151760/DB902626BBC45C6DEC0AABE2CF78B38889C0A7E0/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/17956837787649068655/F180B055AED31772C4CE2759DEB25A705CA9C689/",
       "locations": [
         {
           "ancestry": [
@@ -1450,20 +1798,6 @@
     {
       "source": "dd_all_exp",
       "group": "Orcs",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953820639/31F1B096A31F7D0A16BDC1E67C9FA4B410E64AD3/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131677728/1D2E880758CC9F110D8BBA962F0405C800E2496B/",
-      "locations": [
-        {
-          "ancestry": [
-            "Orcs"
-          ],
-          "count": 3
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Orcs",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953800624/34BAF525354B9319C4C43AD9F924DEA9C1DE5D52/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131668740/006ECD1813952F77CF99CFB1C5778D17A2D4B2E4/",
       "locations": [
@@ -1478,8 +1812,22 @@
     {
       "source": "dd_all_exp",
       "group": "Orcs",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953808462/56DFB8BFE7C69747EAF0B87335C0FC80FD485EAD/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131675607/77FC935371D5965D81E85D31AFE4484095DE8A13/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953797954/D72776703997FE2E4970D5CD4A78537264590469/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131673793/4E634A9A6288B2B94244E18F70F79489AE02DAE2/",
+      "locations": [
+        {
+          "ancestry": [
+            "Orcs"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Orcs",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953820639/31F1B096A31F7D0A16BDC1E67C9FA4B410E64AD3/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131677728/1D2E880758CC9F110D8BBA962F0405C800E2496B/",
       "locations": [
         {
           "ancestry": [
@@ -1492,14 +1840,14 @@
     {
       "source": "dd_all_exp",
       "group": "Orcs",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953797954/D72776703997FE2E4970D5CD4A78537264590469/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131673793/4E634A9A6288B2B94244E18F70F79489AE02DAE2/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068953808462/56DFB8BFE7C69747EAF0B87335C0FC80FD485EAD/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131675607/77FC935371D5965D81E85D31AFE4484095DE8A13/",
       "locations": [
         {
           "ancestry": [
             "Orcs"
           ],
-          "count": 1
+          "count": 3
         }
       ]
     },
@@ -1539,22 +1887,6 @@
     {
       "source": "dd_all_exp",
       "group": "Pirates",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12501296330059821983/7171918BDD4FFA6B1BCF22FAC65C40142026F161/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14645777771124407839/2965BE1EAA61182EDD6CD613D9B7AC4AEE5E6920/",
-      "locations": [
-        {
-          "ancestry": [
-            "Riverlands Chips",
-            "Pirates"
-          ],
-          "count": 5
-        }
-      ],
-      "name": "Crewman"
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "Pirates",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10585245099384554849/05CFC8277BB75BB8FE3609D563E18456B87AC9AF/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13730077077099269598/8C4D1E1244BB15017730787D5CBD568E092BBFC7/",
       "locations": [
@@ -1571,18 +1903,18 @@
     {
       "source": "dd_all_exp",
       "group": "Pirates",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13403101809927545496/B8B1229978CE6B54CEB3EA5A1EBDF3FBE3303B36/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16021899067304039134/4384562515FEFD6FF8F31EDF7D9C52BDC8F51350/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12501296330059821983/7171918BDD4FFA6B1BCF22FAC65C40142026F161/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/14645777771124407839/2965BE1EAA61182EDD6CD613D9B7AC4AEE5E6920/",
       "locations": [
         {
           "ancestry": [
             "Riverlands Chips",
             "Pirates"
           ],
-          "count": 1
+          "count": 5
         }
       ],
-      "name": "Captain"
+      "name": "Crewman"
     },
     {
       "source": "dd_all_exp",
@@ -1599,23 +1931,25 @@
         }
       ],
       "name": "First Mate"
-    }
-  ],
-  "priests": [
+    },
     {
       "source": "dd_all_exp",
-      "group": "priests",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951421443/B0ADB0E7E8D019F5C15AAC7741123EB9477534AC/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131797793/0ADE002CF2EBBB96B3D4C61F4DA8FA24C72D714C/",
+      "group": "Pirates",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/13403101809927545496/B8B1229978CE6B54CEB3EA5A1EBDF3FBE3303B36/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16021899067304039134/4384562515FEFD6FF8F31EDF7D9C52BDC8F51350/",
       "locations": [
         {
           "ancestry": [
-            "Sanctuary"
+            "Riverlands Chips",
+            "Pirates"
           ],
           "count": 1
         }
-      ]
-    },
+      ],
+      "name": "Captain"
+    }
+  ],
+  "priests": [
     {
       "source": "dd_all_exp",
       "group": "priests",
@@ -1639,6 +1973,82 @@
         {
           "ancestry": [
             "Sanctuary"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "priests",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951421443/B0ADB0E7E8D019F5C15AAC7741123EB9477534AC/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131797793/0ADE002CF2EBBB96B3D4C61F4DA8FA24C72D714C/",
+      "locations": [
+        {
+          "ancestry": [
+            "Sanctuary"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "Raptors": [
+    {
+      "source": "dd_all_exp",
+      "group": "Raptors",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Rock%20Raptor%20Front%20x6.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Rock%20Raptor%20Back%20x6.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 6
+        }
+      ]
+    }
+  ],
+  "Reavers": [
+    {
+      "source": "dd_all_exp",
+      "group": "Reavers",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Reaver%20Runner%20Front%20x6.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Reaver%20Runner%20Back%20x6.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Reavers",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Reaver%20Marauder%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Reaver%20Marauder%20Back%20x4.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "Revenant": [
+    {
+      "source": "dd_all_exp",
+      "group": "Revenant",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15118776231655188938/69A004654B8323C4A7C08B2DACC51C5512C535E8/",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Revenant%20Back%20x1.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
           ],
           "count": 1
         }
@@ -1926,6 +2336,36 @@
       ]
     }
   ],
+  "Skinners": [
+    {
+      "source": "dd_all_exp",
+      "group": "Skinners",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Axe%20Skinner%20Front%20x5.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Axe%20Skinner%20Back%20x5.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 5
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "Skinners",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Sword%20Skinner%20Front%20x5.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Sword%20Skinner%20Back%20x5.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 5
+        }
+      ]
+    }
+  ],
   "soldiers": [
     {
       "source": "dd_all_exp",
@@ -1984,6 +2424,22 @@
       ]
     }
   ],
+  "StoneGolems": [
+    {
+      "source": "dd_all_exp",
+      "group": "StoneGolems",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Front%20x3.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Back%20x3.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 3
+        }
+      ]
+    }
+  ],
   "StormDrakes": [
     {
       "source": "dd_all_exp",
@@ -1997,6 +2453,22 @@
             "Storm Drakes"
           ],
           "count": 4
+        }
+      ]
+    }
+  ],
+  "Thornjaws": [
+    {
+      "source": "dd_all_exp",
+      "group": "Thornjaws",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Thornjaw%20Front%20x6.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Thornjaw%20Back%20x6.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Thickets Chips"
+          ],
+          "count": 6
         }
       ]
     }
@@ -2055,8 +2527,36 @@
     {
       "source": "dd_all_exp",
       "group": "villagers",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951445417/A4489BEE530075CB4CE2FE0890BBAF7F3A227B4D/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663198104/A2524A1B3D442B44D9369FD55644F521ADD15A52/",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951437447/44A83C0E297D10F8C5FA89B578B149A794A325F6/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053799013/EDA0298CBACF8C7632526E70405C5C608724A77C/",
+      "locations": [
+        {
+          "ancestry": [
+            "Village"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "villagers",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951443028/E7F0BC6BD7D32F3EE587006DADAC0699D52BEA63/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767632295/128B4CEC89A19968B40B686C9BF1DFDE2D3A853D/",
+      "locations": [
+        {
+          "ancestry": [
+            "Village"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "villagers",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951453816/B8EDD498A76A2EA7A9A4207FA6D8B7F4EC98F7EA/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951454244/8BFBC5D71CB8560394088B0CF6F82AC7E167B0FE/",
       "locations": [
         {
           "ancestry": [
@@ -2111,50 +2611,22 @@
     {
       "source": "dd_all_exp",
       "group": "villagers",
+      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951445417/A4489BEE530075CB4CE2FE0890BBAF7F3A227B4D/",
+      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2153343710663198104/A2524A1B3D442B44D9369FD55644F521ADD15A52/",
+      "locations": [
+        {
+          "ancestry": [
+            "Village"
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "group": "villagers",
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951446596/3427907CFD41C441856B71E1CD42FFCF16C53D79/",
       "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453762416/33C24141F971DF0EDA4973374CD5A050A4603A7C/",
-      "locations": [
-        {
-          "ancestry": [
-            "Village"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "villagers",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951437447/44A83C0E297D10F8C5FA89B578B149A794A325F6/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260311182053799013/EDA0298CBACF8C7632526E70405C5C608724A77C/",
-      "locations": [
-        {
-          "ancestry": [
-            "Village"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "villagers",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951453816/B8EDD498A76A2EA7A9A4207FA6D8B7F4EC98F7EA/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951454244/8BFBC5D71CB8560394088B0CF6F82AC7E167B0FE/",
-      "locations": [
-        {
-          "ancestry": [
-            "Village"
-          ],
-          "count": 1
-        }
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "group": "villagers",
-      "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2458481068951443028/E7F0BC6BD7D32F3EE587006DADAC0699D52BEA63/",
-      "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601767632295/128B4CEC89A19968B40B686C9BF1DFDE2D3A853D/",
       "locations": [
         {
           "ancestry": [
@@ -2265,6 +2737,22 @@
             "Woods Chips"
           ],
           "count": 1
+        }
+      ]
+    }
+  ],
+  "Wyverns": [
+    {
+      "source": "dd_all_exp",
+      "group": "Wyverns",
+      "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Wyvern%20Front%20x4.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Wyvern%20Back%20x4.png",
+      "locations": [
+        {
+          "ancestry": [
+            "Hills Chips"
+          ],
+          "count": 4
         }
       ]
     }

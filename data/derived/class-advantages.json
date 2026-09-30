@@ -384,6 +384,29 @@
     ]
   },
   {
+    "id": "4.3.0.1",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Diviner (Shard Charge)",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "top"
+    },
+    "icon": "/images/pdf/055391bc0fedcef4005184fef2f0db4a596c0419.jpeg",
+    "content": "Diviner can channel magical energy into a shard they always have with them, enhancing its power. Using an alert action may place a healthy magic cube on the shard space of their class card (*returning any cube already there* *to their healthy box*). During combat, this cube counts as two cubes of the same color when casting spells. If the cube is wounded during combat, the effect is immediately canceled. At the end of combat the cube is returned to the Hero’s healthy box.",
+    "tags": [
+      "classAdvantage"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Diviner can channel magical energy into a shard they always have with them, enhancing its power. Using an alert action may place a healthy magic cube on the shard space of their class card (*returning any cube already there* *to their healthy box*). During combat, this cube counts as two cubes of the same color when casting spells. If the cube is wounded during combat, the effect is immediately canceled. At the end of combat the cube is returned to the Hero’s healthy box."
+      }
+    ]
+  },
+  {
     "id": "9.2.0.5",
     "source": "core",
     "level": 4,
@@ -522,6 +545,37 @@
     ]
   },
   {
+    "id": "4.3.0.2",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Gravesworn (Dead Speech)",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "top"
+    },
+    "icon": "/images/pdf/0796f2e6d9f5348956ec96ec32a852f2742dc05d.jpeg",
+    "content": "The Gravesworn is protector and researcher of all things undead. Undead do not block or target the Gravesworn, nor may the Gravesworn, or their hired natives, target the undead (*including attacks that target* *the entire Clearing like Fiery Chasm or Earthquake*). The Gravesworn may not loot treasure sites whose protectors are undead Guardians. The Gravesworn may have one undead Monster as a minion (*hired native*) at any time as follows.\n\nUsing a normal Hire Action, the Gravesworn must haggle to reduce the hire price to 1x. The Gravesworn only fails in a haggle attempt by rolling a door symbol. The Gravesworn pays no actual cost to hire an undead Monster. All other Hired Natives rules apply (*From* **Dragons Down: Natives & Legends**). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Gravesworn from hiring other undead Monsters on that same turn, even the same Monster type. The Gravesworn loses Fame when their minion is killed.\n\nThe Gravesworn may not attempt to hire a Monster while they already have a minion. The Gravesworn may not fly using a hired minion (*unlike the Beastmaster*).",
+    "tags": [
+      "classAdvantage"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "The Gravesworn is protector and researcher of all things undead. Undead do not block or target the Gravesworn, nor may the Gravesworn, or their hired natives, target the undead (*including attacks that target* *the entire Clearing like Fiery Chasm or Earthquake*). The Gravesworn may not loot treasure sites whose protectors are undead Guardians. The Gravesworn may have one undead Monster as a minion (*hired native*) at any time as follows."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Using a normal Hire Action, the Gravesworn must haggle to reduce the hire price to 1x. The Gravesworn only fails in a haggle attempt by rolling a door symbol. The Gravesworn pays no actual cost to hire an undead Monster. All other Hired Natives rules apply (*From* **Dragons Down: Natives & Legends**). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Gravesworn from hiring other undead Monsters on that same turn, even the same Monster type. The Gravesworn loses Fame when their minion is killed."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The Gravesworn may not attempt to hire a Monster while they already have a minion. The Gravesworn may not fly using a hired minion (*unlike the Beastmaster*)."
+      }
+    ]
+  },
+  {
     "id": "9.2.0.7",
     "source": "core",
     "level": 4,
@@ -541,6 +595,29 @@
       {
         "kind": "markdown",
         "markdown": "Illusionists are focused on their targets. When casting a spell with a “Target” or “Self or Other” symbol, Illusionists may choose not to wound one Magic Cube in a spell box containing a wound symbol."
+      }
+    ]
+  },
+  {
+    "id": "4.3.0.3",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Inquisitor (King’s Justice)",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "middle"
+    },
+    "icon": "/images/pdf/9a09244d1c746a2eca789725c14c749bc144d6e8.jpeg",
+    "content": "The inquisitor speaks with the king’s voice and act with the king’s hand. The inquisitor does not draw outlaw tokens for any reason.",
+    "tags": [
+      "classAdvantage"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "The inquisitor speaks with the king’s voice and act with the king’s hand. The inquisitor does not draw outlaw tokens for any reason."
       }
     ]
   },
@@ -805,6 +882,33 @@
       {
         "kind": "markdown",
         "markdown": "Runeswords have spent a lifetime learning about artifacts and how to control them. Runeswords may use a blue Magic Cube on any color of magic box on Treasure Cards."
+      }
+    ]
+  },
+  {
+    "id": "4.3.0.4",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Shaman (Totemic Projection)",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "middle"
+    },
+    "icon": "/images/pdf/3d648b3dcde109e4cc38de1c9e8fb346af788f54.jpeg",
+    "content": "The Shaman casts their spirit beyond the bounds of their body, sensing what lies unseen. Shamans may perform a search action in an adjacent map tile containing no wilderness or civilization tokens. Upon a successful search, place a matching token(s) face-down in the tile. The hero may look it, but may not reveal it. No special tokens are triggered.\n\nIf playing using the exploration rules, the hero may explore as if in a mountain clearing to place a map tile, but must search in order to place tokens per the rules explained above.",
+    "tags": [
+      "classAdvantage"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "The Shaman casts their spirit beyond the bounds of their body, sensing what lies unseen. Shamans may perform a search action in an adjacent map tile containing no wilderness or civilization tokens. Upon a successful search, place a matching token(s) face-down in the tile. The hero may look it, but may not reveal it. No special tokens are triggered."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If playing using the exploration rules, the hero may explore as if in a mountain clearing to place a map tile, but must search in order to place tokens per the rules explained above."
       }
     ]
   },

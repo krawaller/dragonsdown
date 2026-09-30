@@ -2,7 +2,7 @@
   "Adrift Sailor": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -18,12 +18,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "description": "Complete at Mariners",
       "completeAt": [
         "Mariners"
@@ -33,7 +27,7 @@
   "Alcohol": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -52,12 +46,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "cunning"
-      },
       "rewards": {
         "steal": {
           "outlaw": 2
@@ -72,7 +60,7 @@
   "Alpiner": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -87,12 +75,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -102,7 +84,7 @@
   "Artifacts": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -120,12 +102,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -143,7 +119,7 @@
   "Banned Charts": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -160,12 +136,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -178,7 +148,7 @@
   "Bashkirian Tools": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -197,12 +167,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "cunning"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -220,7 +184,7 @@
   "Bat Hawker": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -235,12 +199,6 @@
       ],
       "kind": "quest",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -250,7 +208,7 @@
   "Beast Traps": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -269,12 +227,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -289,7 +241,7 @@
   "Betrayer": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -304,12 +256,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -322,7 +268,7 @@
   "Black Follower": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -337,12 +283,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -355,7 +295,7 @@
   "Blood Offerer": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -370,12 +310,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -388,7 +322,7 @@
   "Body Parts": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -405,12 +339,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -420,10 +348,58 @@
       ]
     }
   ],
+  "Bramble Walker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 3,
+      "col": 6,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Thickets Chips"
+      ],
+      "kind": "expedition",
+      "terrainPack": "thickets",
+      "description": "Complete at Trading Post",
+      "completeAt": [
+        "Trading Post"
+      ]
+    }
+  ],
+  "Bug Buster": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Thickets Chips"
+      ],
+      "kind": "quest",
+      "terrainPack": "thickets",
+      "description": "Complete at Trading Post",
+      "completeAt": [
+        "Trading Post"
+      ]
+    }
+  ],
   "Centaur Scourge": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -438,12 +414,6 @@
       ],
       "kind": "quest",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 2,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Village",
       "completeAt": [
         "Village"
@@ -453,7 +423,7 @@
   "Clothing": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -468,19 +438,13 @@
         "Plains Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "plains",
-      "stats": {
-        "gold": 7,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      }
+      "terrainPack": "plains"
     }
   ],
   "Crafting Gear": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -498,12 +462,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -524,7 +482,7 @@
   "Cruel Kidnapper": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -539,12 +497,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -554,10 +506,34 @@
       ]
     }
   ],
+  "Cult Breaker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Hills Chips"
+      ],
+      "kind": "quest",
+      "terrainPack": "hills",
+      "description": "Complete at Guard House",
+      "completeAt": [
+        "Guard House"
+      ]
+    }
+  ],
   "Cursed Threads": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -574,12 +550,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "deserts",
-      "stats": {
-        "gold": 0,
-        "fame": 10,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -592,7 +562,7 @@
   "Dark Worshipper": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -607,12 +577,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -625,7 +589,7 @@
   "Decapitator": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -642,12 +606,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 0,
-        "fame": 10,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -663,7 +621,32 @@
   "Desert Avenger": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "atrocity",
+      "terrainPack": "deserts",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Deserts",
+      "completeAt": [
+        "Deserts"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -680,12 +663,6 @@
       ],
       "kind": "quest",
       "terrainPack": "oasis",
-      "stats": {
-        "gold": 0,
-        "fame": 10,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -697,43 +674,10 @@
       ]
     }
   ],
-  "Desert Marauder": [
-    {
-      "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
-      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
-      "numWidth": 10,
-      "numHeight": 7,
-      "row": 0,
-      "col": 9,
-      "uniqueBack": false,
-      "tags": [
-        "Mission"
-      ],
-      "ancestry": [
-        "Deserts Chips"
-      ],
-      "kind": "atrocity",
-      "terrainPack": "deserts",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
-      "rewards": {
-        "outlaw": 1
-      },
-      "description": "Complete at Deserts",
-      "completeAt": [
-        "Deserts"
-      ]
-    }
-  ],
   "Desert Water": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -748,12 +692,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "deserts",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "cunning"
-      },
       "description": "Complete at Aurorans",
       "completeAt": [
         "Aurorans"
@@ -763,7 +701,7 @@
   "Detrium": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -781,12 +719,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -804,7 +736,7 @@
   "Down Payment": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -823,12 +755,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "points": {
@@ -846,7 +772,7 @@
   "Dragon Slayer": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -861,12 +787,6 @@
       ],
       "kind": "quest",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -876,7 +796,7 @@
   "Dwarven Foe": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -891,12 +811,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -909,7 +823,7 @@
   "Eldritch Goods": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -927,12 +841,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -950,7 +858,7 @@
   "Errant Convict": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -966,12 +874,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "description": "Complete at Wardens",
       "completeAt": [
         "Wardens"
@@ -981,7 +883,7 @@
   "Evil Minion": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -996,12 +898,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 5,
-        "fame": 15,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -1014,7 +910,7 @@
   "Feud Stopper": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1031,12 +927,6 @@
       ],
       "kind": "quest",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 0,
-        "fame": 10,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -1048,10 +938,34 @@
       ]
     }
   ],
+  "Fiend Faller": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 1,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Hills Chips"
+      ],
+      "kind": "quest",
+      "terrainPack": "hills",
+      "description": "Complete at Guard House",
+      "completeAt": [
+        "Guard House"
+      ]
+    }
+  ],
   "Fire Blighter": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1066,12 +980,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 10,
-        "fame": 10,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -1084,7 +992,7 @@
   "Food & Ale": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1099,19 +1007,13 @@
         "Caves  Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "caves",
-      "stats": {
-        "gold": 7,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      }
+      "terrainPack": "caves"
     }
   ],
   "Forester": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1126,12 +1028,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -1141,7 +1037,7 @@
   "Foul Letters": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1160,12 +1056,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "cunning"
-      },
       "rewards": {
         "steal": {
           "points": {
@@ -1180,10 +1070,35 @@
       ]
     }
   ],
+  "Game Meat": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 4,
+      "col": 7,
+      "uniqueBack": false,
+      "tags": [
+        "Guard",
+        "Mission"
+      ],
+      "ancestry": [
+        "Hills Chips"
+      ],
+      "kind": "expedition",
+      "terrainPack": "hills",
+      "description": "Complete at Guards",
+      "completeAt": [
+        "Guards"
+      ]
+    }
+  ],
   "Giant Hunter": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1198,12 +1113,6 @@
       ],
       "kind": "quest",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 2,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Keep",
       "completeAt": [
         "Keep"
@@ -1213,7 +1122,7 @@
   "Goblin Blight": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1228,12 +1137,6 @@
       ],
       "kind": "quest",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 2,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -1243,7 +1146,7 @@
   "Griffon Tamer": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1259,12 +1162,6 @@
       ],
       "kind": "quest",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 10,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Knights",
       "completeAt": [
         "Knights"
@@ -1274,7 +1171,7 @@
   "Human Sacrificer": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1290,12 +1187,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -1308,7 +1199,7 @@
   "Illegal Goods": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1325,12 +1216,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -1340,10 +1225,34 @@
       ]
     }
   ],
+  "Jaguar Doom": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 1,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Thickets Chips"
+      ],
+      "kind": "quest",
+      "terrainPack": "thickets",
+      "description": "Complete at Trading Post",
+      "completeAt": [
+        "Trading Post"
+      ]
+    }
+  ],
   "Jail Breaker": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1358,12 +1267,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -1376,7 +1279,7 @@
   "Kings Edicts": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1395,12 +1298,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "points": {
@@ -1418,7 +1315,7 @@
   "Lizard Ruin": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1433,12 +1330,6 @@
       ],
       "kind": "quest",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 2,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -1448,7 +1339,7 @@
   "Lost Banner": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1464,12 +1355,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "description": "Complete at Knights",
       "completeAt": [
         "Knights"
@@ -1479,7 +1364,7 @@
   "Medicine": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1498,12 +1383,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1518,7 +1397,7 @@
   "Message": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1533,19 +1412,13 @@
         "Swamps Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "swamps",
-      "stats": {
-        "gold": 7,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      }
+      "terrainPack": "swamps"
     }
   ],
   "Misplaced Ore": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1561,12 +1434,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Dwarves",
       "completeAt": [
         "Dwarves"
@@ -1576,7 +1443,7 @@
   "Missing Figure": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1592,22 +1459,41 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "description": "Complete at Villagers",
       "completeAt": [
         "Villagers"
       ]
     }
   ],
+  "Missing Link": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 5,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Hunters",
+        "Mission"
+      ],
+      "ancestry": [
+        "Thickets Chips"
+      ],
+      "kind": "expedition",
+      "terrainPack": "thickets",
+      "description": "Complete at Hunters",
+      "completeAt": [
+        "Hunters"
+      ]
+    }
+  ],
   "New Maps": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1626,12 +1512,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1646,7 +1526,7 @@
   "New Patrol Route": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1663,12 +1543,6 @@
       ],
       "kind": "quest",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 0,
-        "fame": 0,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -1683,7 +1557,7 @@
   "Oculus Reaper": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1698,12 +1572,6 @@
       ],
       "kind": "quest",
       "terrainPack": "riverlands",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 2,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -1713,7 +1581,7 @@
   "Offer Letter": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1731,12 +1599,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 10,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "rewards": {
         "attributes": {
           "charisma": 1
@@ -1751,7 +1613,7 @@
   "Old Books": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1768,12 +1630,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 5,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "cunning"
-      },
       "rewards": {
         "drawCards": {
           "spell": 5
@@ -1788,7 +1644,7 @@
   "Package": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1805,12 +1661,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "mountains",
-      "stats": {
-        "gold": 7,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1824,7 +1674,7 @@
   "Pool Profaner": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1839,12 +1689,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "oasis",
-      "stats": {
-        "gold": 5,
-        "fame": 15,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -1857,7 +1701,7 @@
   "Port Sacker": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1872,12 +1716,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "riverlands",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "steal": {
           "outlaw": 1
@@ -1892,7 +1730,7 @@
   "Proven Rogue": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1909,12 +1747,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 0,
-        "attribute": "cunning"
-      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -1930,7 +1762,7 @@
   "Provisions": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1948,12 +1780,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -1971,10 +1797,35 @@
       ]
     }
   ],
+  "Raptor Master": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Guard",
+        "Mission"
+      ],
+      "ancestry": [
+        "Hills Chips"
+      ],
+      "kind": "quest",
+      "terrainPack": "hills",
+      "description": "Complete at Guards",
+      "completeAt": [
+        "Guards"
+      ]
+    }
+  ],
   "Rare Herbs": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -1992,12 +1843,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "deserts",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "steal": {
           "points": {
@@ -2015,7 +1860,7 @@
   "Raw Material": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2032,12 +1877,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 9,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "drawCards": {
           "item": 1
@@ -2049,10 +1888,34 @@
       ]
     }
   ],
+  "Ridge Roamer": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 6,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Hills Chips"
+      ],
+      "kind": "expedition",
+      "terrainPack": "hills",
+      "description": "Complete at Guard House",
+      "completeAt": [
+        "Guard House"
+      ]
+    }
+  ],
   "Ruthless Raider": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2069,12 +1932,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -2090,7 +1947,7 @@
   "Sale Goods": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2108,12 +1965,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -2131,7 +1982,7 @@
   "Sand Butcher": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2148,12 +1999,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "oasis",
-      "stats": {
-        "gold": 0,
-        "fame": 10,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -2169,7 +2014,7 @@
   "Sand Trekker": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2184,12 +2029,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "deserts",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -2199,7 +2038,7 @@
   "Sea Explorer": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2215,12 +2054,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
-      "stats": {
-        "gold": 0,
-        "fame": 15,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Mariners.\nRemove for co-op modes.",
       "completeAt": [
         "Mariners"
@@ -2230,7 +2063,7 @@
   "Skink Slasher": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2246,12 +2079,6 @@
       ],
       "kind": "quest",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Dwarves",
       "completeAt": [
         "Dwarves"
@@ -2261,7 +2088,7 @@
   "Snake Grinder": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2276,12 +2103,6 @@
       ],
       "kind": "quest",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -2291,7 +2112,7 @@
   "Spelunker": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2306,12 +2127,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "caves",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Mine",
       "completeAt": [
         "Mine"
@@ -2321,7 +2136,7 @@
   "Spider Smiter": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2336,12 +2151,6 @@
       ],
       "kind": "quest",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -2351,7 +2160,7 @@
   "Spirit Seeker": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2368,12 +2177,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "oasis",
-      "stats": {
-        "gold": 5,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Nomads",
       "completeAt": [
         "Nomads"
@@ -2383,7 +2186,7 @@
   "Sting Breaker": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2398,12 +2201,6 @@
       ],
       "kind": "quest",
       "terrainPack": "deserts",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
@@ -2413,7 +2210,7 @@
   "Supplies": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2428,19 +2225,13 @@
         "Woods Chips"
       ],
       "kind": "expedition",
-      "terrainPack": "woods",
-      "stats": {
-        "gold": 7,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      }
+      "terrainPack": "woods"
     }
   ],
   "Surveyor": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2455,12 +2246,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Village",
       "completeAt": [
         "Village"
@@ -2470,7 +2255,7 @@
   "Swamper": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2485,12 +2270,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Outpost",
       "completeAt": [
         "Outpost"
@@ -2500,7 +2279,7 @@
   "Swarm Bane": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2515,22 +2294,43 @@
       ],
       "kind": "quest",
       "terrainPack": "deserts",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 2,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Medina",
       "completeAt": [
         "Medina"
       ]
     }
   ],
+  "Tariff Breaker": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 0,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Hills Chips"
+      ],
+      "kind": "atrocity",
+      "terrainPack": "hills",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Hills",
+      "completeAt": [
+        "Hills"
+      ]
+    }
+  ],
   "Temple Defiler": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2545,12 +2345,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -2563,7 +2357,7 @@
   "Tent Burner": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2578,12 +2372,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 5,
-        "fame": 15,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -2596,7 +2384,7 @@
   "Tide Tamer": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2611,12 +2399,6 @@
       ],
       "kind": "quest",
       "terrainPack": "riverlands",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -2626,7 +2408,7 @@
   "Trade Goods": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2644,12 +2426,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "steal": {
           "points": {
@@ -2664,10 +2440,37 @@
       ]
     }
   ],
+  "Trade Raider": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 2,
+      "col": 3,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Thickets Chips"
+      ],
+      "kind": "atrocity",
+      "terrainPack": "thickets",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Thickets",
+      "completeAt": [
+        "Thickets"
+      ]
+    }
+  ],
   "Treant Seeds": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2683,18 +2486,16 @@
       ],
       "kind": "expedition",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "charisma"
-      }
+      "description": "Complete at Priests",
+      "completeAt": [
+        "Priests"
+      ]
     }
   ],
   "Tree Herder": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2709,12 +2510,6 @@
       ],
       "kind": "quest",
       "terrainPack": "woods",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 2,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Sanctuary",
       "completeAt": [
         "Sanctuary"
@@ -2724,7 +2519,7 @@
   "Unknown Things": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2743,12 +2538,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 15,
-        "fame": 0,
-        "legend": 0,
-        "attribute": "wisdom"
-      },
       "rewards": {
         "steal": {
           "drawCards": {
@@ -2766,7 +2555,7 @@
   "Unwelcome Guest": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2781,12 +2570,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 5,
-        "fame": 15,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -2799,7 +2582,7 @@
   "Vile Assassin": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2814,12 +2597,6 @@
       ],
       "kind": "atrocity",
       "terrainPack": "swamps",
-      "stats": {
-        "gold": 0,
-        "fame": 20,
-        "legend": 1,
-        "attribute": "cunning"
-      },
       "rewards": {
         "outlaw": 1
       },
@@ -2832,7 +2609,7 @@
   "Watercourser": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2847,12 +2624,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "riverlands",
-      "stats": {
-        "gold": 20,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "charisma"
-      },
       "description": "Complete at Port",
       "completeAt": [
         "Port"
@@ -2862,7 +2633,7 @@
   "Whispers": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2879,12 +2650,6 @@
       ],
       "kind": "expedition",
       "terrainPack": "neutral",
-      "stats": {
-        "gold": 10,
-        "fame": 10,
-        "legend": 0,
-        "attribute": "charisma"
-      },
       "rewards": {
         "attributes": {
           "charisma": 1
@@ -2896,10 +2661,42 @@
       ]
     }
   ],
+  "Wildlife Signs": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Merchant",
+        "Mission",
+        "Outfitter",
+        "Steal"
+      ],
+      "ancestry": [
+        "Hills Chips"
+      ],
+      "kind": "expedition",
+      "terrainPack": "hills",
+      "rewards": {
+        "steal": {
+          "outlaw": 1
+        }
+      },
+      "description": "Complete at Outfitter",
+      "completeAt": [
+        "Outfitter"
+      ]
+    }
+  ],
   "Wolf Butcher": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
       "numHeight": 7,
@@ -2914,12 +2711,6 @@
       ],
       "kind": "quest",
       "terrainPack": "plains",
-      "stats": {
-        "gold": 0,
-        "fame": 5,
-        "legend": 1,
-        "attribute": "wisdom"
-      },
       "description": "Complete at Village",
       "completeAt": [
         "Village"

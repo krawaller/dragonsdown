@@ -1,0 +1,1633 @@
+{
+  "version": "1.3",
+  "content": [
+    {
+      "id": "1",
+      "source": "wildlands",
+      "level": 1,
+      "title": "DRAGONS DOWN: WILDLANDS",
+      "headingStyle": "pdf-l1",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "![](/images/pdf/37f74aa0bbf43addc356a799f1c65d453770f235.jpeg)\n\n![](/images/pdf/cb8d1a78f16dacefdd2092d9fa0cbe141ceb3400.jpeg)\n\nVersion 1.4. September 28, 2026\n\n*“Pushing deeper into the wilderness, we found places few had dared to* *explore even before the dragons came. Dense thickets stretched beneath* *canopies of Green interspersed with wild hills. Hidden dangers were in* *every shadowed hollow. Yet there were rumors of forgotten places and* *strange peoples within. I decided to venture into these wildlands to* *discover what adventures await....”*\n\n**Dragons Down: Wildlands** expands Dragons Down by introducing weather and two new Terrain Packs. New components for the Wildlands expansion are marked with a small ![inline](/images/pdf/b81beb4450eca6cfb341eeeb750e2790852f033e.jpeg) in one corner. Counters, round cardboard tokens, and Hero Chips do not have a mark."
+    },
+    {
+      "id": "1.1",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Game Components",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "1.1.1",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Tangled Thickets",
+      "headingStyle": "pdf-l3",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "- 6 Map Tiles\n- X Terrain Pack Setup Card\n- X Title Cards\n- X Wilderness Tokens (*not counting blanks*)\n- X Civilization Tokens\n- X Civilization Location Tokens\n- X Missions\n- X Monster Chips\n- X Native Chips"
+    },
+    {
+      "id": "1.1.2",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Hostile Hills",
+      "headingStyle": "pdf-l3",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "- 6 Map Tiles\n- X Terrain Pack Setup Card\n- X Title Cards\n- X Wilderness Tokens (*not counting blanks*)\n- X Civilization Tokens\n- X Civilization Location Token\n- X Missions\n- X Monster Chips\n- X Native Chips"
+    },
+    {
+      "id": "1.1.3",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Additional Game Components",
+      "headingStyle": "pdf-l3",
+      "location": {
+        "page": 2,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "- X Class Cards\n- X Hero Chips and X Targeting Tokens\n- X Treasure and Deep Treasure Cards\n- X Specialized Merchant Tokens\n- X Item Cards"
+    },
+    {
+      "id": "2",
+      "source": "wildlands",
+      "level": 1,
+      "title": "DRAGONS DOWN: WILDLANDS",
+      "headingStyle": "pdf-l1",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "2.1",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Game Setup",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Players may choose from any of the Terrain Packs, including the two new packs introduced in the Wildlands expansion, in any combination. Shuffle the Map Tiles from the chosen Terrain Packs together to create the Map Tile stack as normal. Players may also select any Lineage and Class for any game of Dragons Down.\n\nThe Tangled Thickets Terrain Pack is a dangerous place, featuring four Treasure Sites filled with exotic treasures and protected by the dangers of the jungle.\n\nThe Hostile Hills Terrain Pack is a perilous land featuring three Treasure Sites, along with Monsters and Natives unique to its rugged terrain."
+    },
+    {
+      "id": "2.2",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Tangled Thickets",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "2.2.1",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Thickets Clearings",
+      "headingStyle": "pdf-l3",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/468d62a7bdd0ef57b64270add4bc0d1368722b8a.jpeg) Tangled Thickets Map Tiles include Thickets Clearings, marked with a purple Thickets icon. Entering a Thickets Clearing costs 2 actions, even if the Hero is using flying movement. A flying Hero pays no additional movement cost when entering a Thickets Clearing from an adjacent Map Tile.\n\nThickets Clearings are overgrown with dense foliage, providing ample opportunities to hide. When using the optional Terrain Effects rules, treat Thickets Clearings as Woods Clearings. Thickets Clearings have no other effect on combat.\n\nThe Tangled Thickets include some unique monsters with special rules as spelled out in the Monster Manifest in the Appendix of these rules."
+    },
+    {
+      "id": "2.3",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Hostile Hills",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": ""
+    },
+    {
+      "id": "2.3.1",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Hills Clearings",
+      "headingStyle": "pdf-l3",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/f0fc8d10e8c142589ac17f410ca7965a7e8a1980.jpeg) Hostile Hills tiles introduce a new type of clearing called a Hills Clearing, marked with a brown Hills icon. Hills Clearings represent areas elevated above the surrounding lands.\n\nEntering a Hills Clearing costs 2 actions unless the Hero is entering from another Hills Clearing or a Mountain Clearing. A Hero using flying movement pays only 1 action to enter a Hills Clearing.\n\nThe Hostile Hills include some unique monsters with special rules as spelled out in the Monster Manifest in the Appendix of these rules."
+    },
+    {
+      "id": "2.4",
+      "source": "wildlands",
+      "level": 2,
+      "title": "New Map Tokens",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": ""
+    },
+    {
+      "id": "2.4.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Civilization Tokens",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 2,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "The Wildlands expansion includes X new Civilization Tokens. When an empty token is revealed, it behaves the same as empty tokens in Dragons Down. When one of the tokens with a Merchant name is revealed, fill the location on the appropriate Merchant board with the listed numbers of treasures, items, and missions. The Merchant behaves exactly the same as a Merchant in Dragons Down."
+    },
+    {
+      "id": "2.4.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Wilderness Tokens",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "The Wildlands expansion adds 18 Wilderness Tokens (*9 tokens for each new Terrain* *Pack*). Mix each of these new tokens into the existing token piles. When moving or exploring a Hero may reveal one of the new tokens. Each new token type is explained below:\n\n- ![float-right](/images/pdf/ddbeaaea8574600f879f4ea62511a4c3c9e72dc1.jpeg) **Discovery**: Draw another Hostile Hills Wilderness Token and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll."
+    },
+    {
+      "id": "3",
+      "source": "wildlands",
+      "level": 1,
+      "title": "OPTIONAL RULES",
+      "headingStyle": "pdf-l1",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Optional rules allow players to customize their experience with Dragons Down. Most of these rules slightly increase the complexity of the game and may be mixed and matched in a modular fashion to maximize thematic immersion and enjoyment."
+    },
+    {
+      "id": "3.1",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Weather",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Weather in Dragons Down introduces changing conditions that affect Heroes as they explore the realm. Each Weather Card represents a specific type of weather or effect, how long it remains in effect, and the effects it has on the game. Some Weather Cards are limited to certain seasons.\n\nWeather can be used with any game modes or scenarios."
+    },
+    {
+      "id": "3.1.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Weather Cards",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Weather Cards contain information on how it is applied in the game.\n\n![float-left](/images/pdf/1b68a45b153bc0581b05cefc330cbdac701bd41a.jpeg) Weather Type Duration (4 turns) Weather Reveal\n\n**Weather Type:** The name at the top of the card identifies the type of weather the card represents.\n\nGame Effects\n\n**Duration:** The numbered spaces show how many turns the weather lasts (*this is also shown* *in the lower left of the card*).\n\nSeasons\n\n**Weather Reveal:** One of the Duration boxes on the Weather Card indicates when the next Weather Card is revealed.\n\n**Game Effects:** These symbols show the rules that are in effect while this Weather Card is active. *For example, the Cold Weather Card shown above indicates that a Hero* *that spends any portion of their turn unsheltered (outside of a Civilization Location or* *Cave Clearing) must either spend an action or take a wound of their choice.*\n\n**Seasons:** The symbols along the bottom of the card indicate the seasons in which this type of weather can occur. The available Seasons are, in order on the cards, Spring, Summer, Autumn, and Winter."
+    },
+    {
+      "id": "3.1.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Game Setup",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 3,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "To include weather in a game, players first choose a Season, either by choice or randomly. Only one Season is used for the entire game.\n\nRemove all Weather Cards that do not show the chosen Season symbol at the bottom of the card. Shuffle the remaining cards and deal 8 of them face down to form the Weather Pile. Return all unused Weather Cards to the box without revealing them.\n\nReveal the top card of the Weather Pile and place it near the game board. Place a pink Status Cube on the first Duration box. This Weather Card is now active and its Game Effects apply."
+    },
+    {
+      "id": "3.1.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Weather Progression",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "At the end of the Battle Phase of each turn, check the active Weather Card.\n\nIf there is another Duration box, advance the pink Status Cube to that box. If the cube enters a box containing a Weather Reveal symbol, reveal the top card of the Weather Pile and place it next to the active Weather Card. This is the next Weather Card that will enter play, but it is not yet active. It is revealed to give players a glimpse of the weather to come for planning purposes.\n\nIt is important to ensure that all players understand the Game Effects of upcoming Weather Cards.\n\nIf there is no next Duration box, the active weather ends. If a next Weather Card has been revealed, it becomes the new active Weather Card. Place it on top of the previous Weather Card, leaving the number in the lower-left corner of the previous card visible as a turn counter. Place the pink Status Cube on the first Duration box of the new active Weather Card. Its Game Effects apply to the next turn of the game.\n\nIf there is no next Weather Card when the active weather ends, the game ends. Process game end normally for the mode or scenario you are playing."
+    },
+    {
+      "id": "3.1.0.4",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Weather Effects",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Effects due to Weather Cards are in addition to any other terrain effects (*e.g.* *movement costs, wounds from Desert Clearings, etc.*)\n\nEach Weather Card is explained in detail in the Weather Card Manifest on page 4."
+    },
+    {
+      "id": "3.1.0.5",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Sheltered and Unsheltered Clearings",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 3,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Weather Cards introduce the concept of Sheltered and Unsheltered Clearings.\n\nA Clearing is Sheltered if it is a Cave or if it contains a Civilization Location.\n\nA Clearing is unsheltered if it does not contain a Civilization Location and is not a Cave Clearing."
+    },
+    {
+      "id": "3.2",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Enhanced Alert",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "When performing an Alert Action, in addition to rearranging equipment, the Hero chooses one of the following benefits. A Hero may perform multiple Alert Actions during a single turn. A Hero must choose a different alert type for each Alert Action."
+    },
+    {
+      "id": "3.2.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Normal Alert",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "During combat this turn, the Hero may place +1 Speed Cube in each round of combat. Place a pink Status Cube on the Alert Box on the Hero Board to indicate that the Hero has chosen Normal Alert this turn."
+    },
+    {
+      "id": "3.2.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Magic Alert",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Choose 1 healthy Magic Cube and place it in the Alert Box on the Hero Board. If the alerted Magic Cube is used to cast a Spell during combat this turn, that Spell gains +1 Attack Speed, even if all Attack Speed boxes are filled. At the end of the round in which the Spell is cast, move the alerted Magic Cube to the Wounded Box.\n\nAn alerted Magic Cube may not be placed in a Spell Box showing a wound symbol. If the alerted Magic Cube is not used to cast a Spell during combat that turn, return it to the Healthy Box."
+    },
+    {
+      "id": "3.2.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Missile Alert",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Place a pink Status Cube on the Ranged Attack icon of an equipped Ranged Weapon Card (*not a Spell Card*). A Hero may only have one Ranged Weapon Card alerted at a time. During combat this turn, when attacking with that weapon, if both Ranged Attack Dice results are negative, the Hero may reroll both dice. If only one, or none, of the Ranged Attack Dice results are negative, then they may not be rerolled."
+    },
+    {
+      "id": "3.3",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Specialists",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/0ac157d86509aa3f5b32be5dad738fd0d9f305c8.jpeg) Throughout the realm, Heroes may encounter remarkable Specialists whose rare talents provide assistance unavailable anywhere else. When using this optional rule, shuffle the Specialist Tokens and place them in a convenient location. Whenever an empty Civilization Token is drawn at a Civilization Location, replace it with a random Specialist Token.\n\nEach Specialist offers a unique service or ability that Heroes may use when they encounter them. Specialists are not Merchants and provide none of the services that Heroes may normally perform. Specialists only offer their unique services, which may be purchased by performing a Trade Action with that Specialist.\n\nThe Base Price for each Specialist’s service is shown below and on their token. The Starting Price is 3 times the Base Price. Heroes may haggle following the standard Haggle rules using their lowest attribute.\n\nAll Specialists are explained in the Specialists Manifest on page 4."
+    },
+    {
+      "id": "3.4",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Stubborn Guardians",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 4,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (*on the Summoning Die from the Core* ***Dragons Down*** *Game*). All other Monsters return when either Monsters Return arrow is rolled."
+    },
+    {
+      "id": "3.5",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Banished Heroes",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 4,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Your hero starts the game banished.\n\n**Ruthless Riverlands Not in Play:** Shuffle all Map Tiles together and place a random wilderness Map Tile to start. The Hero is placed in a random Clearing at game start.\n\n**Ruthless Riverlands in Play:** Players start their Hero in a random Ruthless Riverlands wilderness Map Tile. Place the Hero Chip in a random Dock Clearing.\n\nAfter placing the Hero Chip, reveal and place a Wilderness Token before taking any actions.\n\nFor added difficulty, combine this optional rule with the Wits Only optional rule from the Core **Dragons Down** Game\n\n![](/images/pdf/06df3e174b31d1437b8ddc537afd4994a0048d3a.jpeg)"
+    },
+    {
+      "id": "4",
+      "source": "wildlands",
+      "level": 1,
+      "title": "APPENDIX",
+      "headingStyle": "pdf-l1",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "4.1",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Specialists Manifest",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "4.1.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Broom Hand",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "![float-right](/images/pdf/b96aab0401ae8dc9b1494218992bedde12881702.jpeg) Base Price: 2 Gold. Starting Price: 6 Gold. Fly to an adjacent Map Tile of the your without spending a Move Action. All other flying rules apply."
+    },
+    {
+      "id": "4.1.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Chanter",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice.\n\n![](/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg)"
+    },
+    {
+      "id": "4.1.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "City Mancer",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action.\n\n![](/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg)"
+    },
+    {
+      "id": "4.1.0.4",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Curator",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck.\n\n![](/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg)"
+    },
+    {
+      "id": "4.1.0.5",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Earth Mover",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/45c96c24757ad5900626b5dab1bc36a04722f6c1.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Rotate the Map Tile containing the Earth Mover, or an adjacent Map Tile, to any legal orientation. After rotating, all paths must connect to paths, and all non-paths must connect to non-paths, on adjacent Map Tiles."
+    },
+    {
+      "id": "4.1.0.6",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Fencer",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck.\n\n![](/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg)"
+    },
+    {
+      "id": "4.1.0.7",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Gate Mage",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/a5dad506f1da40018a1d4037dc7416f8418e647b.jpeg) Base Price: 2 Gold. Starting Price: 6 Gold. Move to a Clearing of your choice containing a revealed Gate without spending a Move Action."
+    },
+    {
+      "id": "4.1.0.8",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Healer",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/bc8f0a400a48d5a9e02f0ac10536e9d275e0dc60.jpeg) Base Price: 1 Gold per cube. Starting Price: 3 Gold per cube. Choose how many cubes to heal before rolling any Haggle Dice. Haggle to determine the price per cube, then multiply that price by the number of cubes healed."
+    },
+    {
+      "id": "4.1.0.9",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Magus",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "![float-right](/images/pdf/afaedb32ffc83973151deed55cf7e26d965246f7.jpeg) Base Price: 3 Gold + the Spell’s Price. Starting Price: 3 times the Base Price. Learn 1 Spell Card attached to an equipped Treasure Card. Does not require rolling the Learn Dice."
+    },
+    {
+      "id": "4.1.0.10",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Pathfinder",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "![float-right](/images/pdf/427f2e9c24a7d7ea2238523ed78ccbdfde333674.jpeg) Base Price: 2 Gold. Starting Price: 6 Gold. Find 1 face-up Hidden Path of your choice on a Map Tile up to 2 Map Tiles away from the Pathfinder."
+    },
+    {
+      "id": "4.1.0.11",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Telecrafter",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.\n\n![](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg)"
+    },
+    {
+      "id": "4.2",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Weather Card Manifest",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "4.2.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Clear",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Lasts 6 turns. Reveal the next Weather Card on turn 5. No effect on game play."
+    },
+    {
+      "id": "4.2.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Clouds",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Lasts 5 turns. Reveal the next Weather Card on turn 4. No effect on game play."
+    },
+    {
+      "id": "4.2.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Cold",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cold is in effect, a Hero that ends their Action Phase in an Unsheltered Clearing must have spent 1 Action that turn to stay warm. If they did not, they must take 1 wound of their choice."
+    },
+    {
+      "id": "4.2.0.4",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Cool",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 3. No effect on game play."
+    },
+    {
+      "id": "4.2.0.5",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Corrupted",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. At the beginning of each turn, randomly select one magic color. Until the end of the turn, magic cubes of the selected color may not be used for any purpose, and no enchantments of that color may occur. Immediately remove all existing enchantments of the selected color.\n\nThese restrictions also apply to Monsters and Natives, but do not affect a Dragon’s Fireball."
+    },
+    {
+      "id": "4.2.0.6",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Cursed",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cursed is in effect, a Hero who ends their Action Phase in an Unsheltered Clearing must either take 1 wound of their choice or receive a random Curse."
+    },
+    {
+      "id": "4.2.0.7",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Dark Omens",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Roll the Summoning Dice twice during Monster Activation."
+    },
+    {
+      "id": "4.2.0.8",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Dreamlike",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 2. All Heroes receive +1 action during their Action Phase."
+    },
+    {
+      "id": "4.2.0.9",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Enchanted",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 3. At the beginning of each turn, randomly select one magic color. Until the end of the turn, Map Tiles are considered to be enchanted with that magic color. Ignore all other enchantments and enchanted effects. Do not flip over any Map Tiles."
+    },
+    {
+      "id": "4.2.0.10",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Fog",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 5,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result."
+    },
+    {
+      "id": "4.2.0.11",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Gloom",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. All Heroes receive -1 action during their Action Phase."
+    },
+    {
+      "id": "4.2.0.12",
+      "source": "wildlands",
+      "level": 4,
+      "title": "High Winds",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Lasts 5 turns. Reveal the next Weather Card on turn 4. All Flying and Swimming movement actions require +1 action."
+    },
+    {
+      "id": "4.2.0.13",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Hot",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Hot is in effect, a hero who ends their Action Phase in an Unsheltered Clearing takes 1 wound of their choice."
+    },
+    {
+      "id": "4.2.0.14",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Icebound",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. All Swamp and River Clearings are treated as Plains Clearings. If playing with the Terrain Effects optional rules, those Clearings are treated as Plains Clearings. Additionally, Heroes that spend one or more actions in an Unsheltered Clearing while Icebound in effect must spend one action during their Action Phase to stay warm or take one wound of their choice at the end of their Action Phase."
+    },
+    {
+      "id": "4.2.0.15",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Primal",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 3. Both the Wandering and Local Monster Number Die summon one additional Monster."
+    },
+    {
+      "id": "4.2.0.16",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Rain",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Rain is in effect, a Hero loses 1 action during their Action Phase unless they end their Action Phase in a Sheltered Clearing."
+    },
+    {
+      "id": "4.2.0.17",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Snow",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost, even if Swimming, but not if Flying."
+    },
+    {
+      "id": "4.2.0.18",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Snow Storms",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost or take one wound of their choice, even if Flying or Swimming."
+    },
+    {
+      "id": "4.2.0.19",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Thunder Storms",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Thunderstorms are in effect, a hero who ends their Action Phase in an Unsheltered Mountain, Plains, River, or Swamp Clearing must take 1 wound of their choice."
+    },
+    {
+      "id": "4.3",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Class Advantages",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 6,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "4.3.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Diviner (Shard Charge)",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "right",
+        "section": "top"
+      },
+      "icon": "/images/pdf/055391bc0fedcef4005184fef2f0db4a596c0419.jpeg",
+      "content": "Diviner can channel magical energy into a shard they always have with them, enhancing its power. Using an alert action may place a healthy magic cube on the shard space of their class card (*returning any cube already there* *to their healthy box*). During combat, this cube counts as two cubes of the same color when casting spells. If the cube is wounded during combat, the effect is immediately canceled. At the end of combat the cube is returned to the Hero’s healthy box."
+    },
+    {
+      "id": "4.3.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Gravesworn (Dead Speech)",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "right",
+        "section": "top"
+      },
+      "icon": "/images/pdf/0796f2e6d9f5348956ec96ec32a852f2742dc05d.jpeg",
+      "content": "The Gravesworn is protector and researcher of all things undead. Undead do not block or target the Gravesworn, nor may the Gravesworn, or their hired natives, target the undead (*including attacks that target* *the entire Clearing like Fiery Chasm or Earthquake*). The Gravesworn may not loot treasure sites whose protectors are undead Guardians. The Gravesworn may have one undead Monster as a minion (*hired native*) at any time as follows.\n\nUsing a normal Hire Action, the Gravesworn must haggle to reduce the hire price to 1x. The Gravesworn only fails in a haggle attempt by rolling a door symbol. The Gravesworn pays no actual cost to hire an undead Monster. All other Hired Natives rules apply (*From* **Dragons Down: Natives & Legends**). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Gravesworn from hiring other undead Monsters on that same turn, even the same Monster type. The Gravesworn loses Fame when their minion is killed.\n\nThe Gravesworn may not attempt to hire a Monster while they already have a minion. The Gravesworn may not fly using a hired minion (*unlike the Beastmaster*)."
+    },
+    {
+      "id": "4.3.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Inquisitor (King’s Justice)",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "right",
+        "section": "middle"
+      },
+      "icon": "/images/pdf/9a09244d1c746a2eca789725c14c749bc144d6e8.jpeg",
+      "content": "The inquisitor speaks with the king’s voice and act with the king’s hand. The inquisitor does not draw outlaw tokens for any reason."
+    },
+    {
+      "id": "4.3.0.4",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Shaman (Totemic Projection)",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 6,
+        "column": "right",
+        "section": "middle"
+      },
+      "icon": "/images/pdf/3d648b3dcde109e4cc38de1c9e8fb346af788f54.jpeg",
+      "content": "The Shaman casts their spirit beyond the bounds of their body, sensing what lies unseen. Shamans may perform a search action in an adjacent map tile containing no wilderness or civilization tokens. Upon a successful search, place a matching token(s) face-down in the tile. The hero may look it, but may not reveal it. No special tokens are triggered.\n\nIf playing using the exploration rules, the hero may explore as if in a mountain clearing to place a map tile, but must search in order to place tokens per the rules explained above."
+    },
+    {
+      "id": "4.4",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Monster Manifest",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 7,
+        "column": "left",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "4.4.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "The Cult",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "No one really knows who leads the cult and their members are hard to distinguish. At the end of any combat round in which the Cult Leader is killed, replace the dead Cult Leader chip with a Cult Member chip.\n\n- If any Cult Members are still alive in the combat, randomly choose one and replace its chip with the Cult Leader chip with the same side facing up. Place the replaced Cult Member chip in the Hero’s Trophy Pile.\n\n- If no Cult Members remain in the combat, replace the dead Cult Leader chip with a Cult Member chip from the Monster Tray.\n\n- If there are no Cult Members remaining in either the combat or the Monster Tray, congratulations, you killed the actual Cult Leader. Place the Cult Leader chip in the Hero’s Trophy Pile."
+    },
+    {
+      "id": "4.4.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Wyvern",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "The Wyvern is considered a dragon for all game effects. For example, its Fireball is not a spell, like all dragons."
+    },
+    {
+      "id": "4.4.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Revenant",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "The Revenant casts Foresight while on the front side of its chip. Each time the Revenant casts Foresight, set one of the Summoning Dice as follows, in order:\n\n- **First Foresight:** Set the Local Monster Symbol Die to the symbol matching the Map Tile where the Revenant is located.\n\n- **Second Foresight:** Set the Wandering Monster Symbol Die to the symbol matching the Map Tile where the Revenant is located.\n\n- **Third Foresight:** Set the Local Monster Number Die to its highest-numbered side.\n\n- **Fourth Foresight:** Set the Wandering Monster Number Die to its highest-numbered side.\n\n- **Fifth Foresight:** The spell has no effect."
+    },
+    {
+      "id": "4.4.0.4",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Unique Monsters",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "All Guardians, the Cult Leader, Jaguar Champion, and Jaguar Priest are considered unique Monsters. Unique Monsters are immune to some game effects, such as being selected for the Shape Shift spell."
+    },
+    {
+      "id": "4.5",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Treasure Manifest",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "4.5.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Aegis of Radiance",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Epic Treasure. Armor. Armor Value 2. Weight 2. Adds +1 Maneuver Speed."
+    },
+    {
+      "id": "4.5.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Aftershock",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Epic Treasure. Melee Weapon. If this weapon hits its target, may give 1 Wound to any other unhidden Hero, Native, or Monster in the Clearing, but not the target of the original attack."
+    },
+    {
+      "id": "4.5.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Boots of Displacement",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Double the base attack length of all equipped Melee Weapons."
+    },
+    {
+      "id": "4.5.0.4",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Burrow King’s Thing",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "May use any Blue Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+    },
+    {
+      "id": "4.5.0.5",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Chameleon Creme",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "One-time Use. May reroll one Monster Die during a Hide attempt made during the Cleanup Step of Combat."
+    },
+    {
+      "id": "4.5.0.6",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Curios",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "One-Time Use. Grants one Action Cube of the indicated color. This cube is removed at the beginning of the Combat Phase of the following turn. Any Spell learned using a Magic Cube granted by a Curio remains learned after that cube is removed, but may only be cast with a Magic Cube of the matching color.\n\n- **Curio of Conjuration:** Blue Magic Cube\n\n- **Curio of Fay:** Yellow Magic Cube\n\n- **Curio of Maneuver:** Brown Speed Cube\n\n- **Curio of Might:** Red Might Cube\n\n- **Curio of Nature:** Green Magic Cube\n\n- **Curio of Power:** Purple Magic Cube\n\n- **Curio of Righteousness:** White Magic Cube\n\n- **Curio of the Black Arts:** Black Magic Cube\n\n- **Curio of Tricks:** Gray Magic Cube\n\n- **Curio of Wizardry:** Any Magic Cube of the Hero’s choice."
+    },
+    {
+      "id": "4.5.0.7",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Diviner of Vourdanos",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 7,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "May reroll one Search Die once per Search Action while in Hills Clearings."
+    },
+    {
+      "id": "4.5.0.8",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Elven Etchings",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "May use any Green Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+    },
+    {
+      "id": "4.5.0.9",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Eye of the Basilisk",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Epic Treasure. Once per combat, during the Attack Resolution Step, may make one additional attack against any unhidden target that is targeting the Hero. This attack causes 1 Wound, has an Attack Length of 35, and uses the Hero’s Attack Speed to determine whether it hits. May resolve this attack before or after the normal attack."
+    },
+    {
+      "id": "4.5.0.10",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Heartwood Totem",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "May reroll one Search Die once per Search Action while in Thickets Clearings."
+    },
+    {
+      "id": "4.5.0.11",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Horizon Hexmark",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "May use any Gray Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+    },
+    {
+      "id": "4.5.0.12",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Hourglass of Echoes",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "One-time use. When using a One-Time Use Treasure or Item, may discard the Hourglass of Echoes instead. The Treasure or Item being used is not discarded."
+    },
+    {
+      "id": "4.5.0.13",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Ledger of Promises",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "When revealed, draw and attach 4 Missions to the Ledger of Promises. While equipped, may complete these Missions as if they were the Hero’s active Missions. These Missions do not count against the Hero’s 2 Mission limit."
+    },
+    {
+      "id": "4.5.0.14",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Oracle Lens",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Epic Treasure. May perform an Alert Action to look at the Treasure Cards in any 1 Treasure Site the Hero has found that is in their Clearing."
+    },
+    {
+      "id": "4.5.0.15",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Parley Heart",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Choose 1 enemy. That enemy may not target the Hero for the duration of combat unless the Hero first targets them."
+    },
+    {
+      "id": "4.5.0.16",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Phylact of Renewal",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Epic Treasure. If at least 1 cube is wounded, may perform an Alert Action to permanently remove any number of equipped or Backpack Treasure Cards from the game. For each regular Treasure Card removed, heal 1 wounded cube. For each Epic Treasure Card removed, heal up to 3 wounded cubes."
+    },
+    {
+      "id": "4.5.0.17",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Ravager’s Flail",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "Melee Weapon. One required Might Box on this card is automatically filled and does not count against the Hero’s Cube Limit."
+    },
+    {
+      "id": "4.5.0.18",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Ring of Reaching",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "Adds +5 to the Base Attack Length of all attacks."
+    },
+    {
+      "id": "4.5.0.19",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Root Striders",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "Epic Treasure. May enter Swamp and Thickets Clearings for 1 action.\n\n![](/images/pdf/f267600e75cf8b07fd1eb1556371f06649af38f4.png)"
+    },
+    {
+      "id": "4.5.0.20",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Rot Charm",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+    },
+    {
+      "id": "4.5.0.21",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Silver Tongue",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "The final price paid during a Hire Action, after all haggling, is reduced by 1 Gold, to a minimum of 0."
+    },
+    {
+      "id": "4.5.0.22",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Skyroad Sigil",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "May use any Purple Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+    },
+    {
+      "id": "4.5.0.23",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Spinewhisper",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Melee Weapon. When attacking a target that is not targeting the Hero, this attack occurs at +1 Attack Speed."
+    },
+    {
+      "id": "4.5.0.24",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Stone of the New Path",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "One-Time Use. Flip the current Map Tile without enchanting it."
+    },
+    {
+      "id": "4.5.0.25",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Stone Giant’s Warbelt",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Epic Treasure. Once per combat, may increase the damage of 1 Melee Attack by 1. When used, immediately wound 1 cube of the Hero’s choice."
+    },
+    {
+      "id": "4.5.0.26",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Stoneknuckle Gloves",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Melee Weapon. Equipped in both hand positions instead of a weapon position. The required Might Box is automatically filled and does not require a Might Cube. May be equipped at the same time as another weapon. When attacking with the Stoneknuckle Gloves, place a pink Status Cube on this card to indicate that it is being used instead of the equipped Weapon Card."
+    },
+    {
+      "id": "4.5.0.27",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Thornhide Brigandine",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Epic Treasure. Armor. When a Melee Attack hits the Hero, the attacker also suffers 1 Wound."
+    },
+    {
+      "id": "4.5.0.28",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Titan Steppers",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "middle"
+      },
+      "content": "Epic Treasure. May enter Hills and Mountain Clearings for 1 action."
+    },
+    {
+      "id": "4.5.0.29",
+      "source": "wildlands",
+      "level": 4,
+      "title": "To Do List",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "When revealed, draw and attach 2 Missions to the To Do List. While equipped, may complete these Missions as if they were the Hero’s active Missions. These Missions do not count against the Hero’s 2 Mission limit."
+    },
+    {
+      "id": "4.5.0.30",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Veilpiercer",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "Epic Treasure. Ranged Weapon. Does not lose sword icons when striking Armor."
+    },
+    {
+      "id": "4.5.0.31",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Venom of the Thousand Bites",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "One-time use. Attacks by this Hero gain +2 swords for the duration of Combat."
+    },
+    {
+      "id": "4.5.0.32",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Whisper Pin",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 8,
+        "column": "right",
+        "section": "bottom"
+      },
+      "content": "One-time use. Acts as a one-time use Skeleton Key. For example, opening the Monolith or Chamber, avoiding hidden traps at the Secret Cache, Hideout, or Wrecked Wagons or avoiding a wound at the Lost Captain’s Locker."
+    },
+    {
+      "id": "4.5.0.33",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Windswept Mantle",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 9,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "+1 Maneuver Speed against all Ranged Attacks."
+    },
+    {
+      "id": "4.5.0.34",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Wyvern Hide Armor",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 9,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Epic Treasure. Armor. Armor Value 2. Weight 1. Blocks up to two sword icons."
+    },
+    {
+      "id": "5",
+      "source": "wildlands",
+      "level": 1,
+      "title": "CREDITS AND ACKNOWLEDGMENTS",
+      "headingStyle": "pdf-l1",
+      "location": {
+        "page": 9,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "*Game Design, Development, and Production:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Artwork and Graphic Design:* **Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2027 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**\n\nAdventure Journals for Wildlands can be downloaded and printed at https://www.activemagicgames.com.\n\n***In Memory of Guy DeMers***\n\n*This game is dedicated to the memory of Guy DeMers, who was an amazing* *brother and all-around good human being.*\n\n*When I was eight years old, Guy got me started designing board games.* *Without my big brother, none of my board games would exist. His influence* *will always be a part of the games I create.*\n\n*I love you, Guy.*"
+    },
+    {
+      "id": "5.1",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Specialists Reference",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "5.1.0.1",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Broom Hand",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "![float-right](/images/pdf/b96aab0401ae8dc9b1494218992bedde12881702.jpeg) Base Price: 2 Gold. Starting Price: 6 Gold. Fly to an adjacent Map Tile of the your without spending a Move Action. All other flying rules apply."
+    },
+    {
+      "id": "5.1.0.2",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Chanter",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice.\n\n![](/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg)"
+    },
+    {
+      "id": "5.1.0.3",
+      "source": "wildlands",
+      "level": 4,
+      "title": "City Mancer",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action.\n\n![](/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg)"
+    },
+    {
+      "id": "5.1.0.4",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Curator",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "top"
+      },
+      "content": "Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck.\n\n![](/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg)"
+    },
+    {
+      "id": "5.1.0.5",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Earth Mover",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/45c96c24757ad5900626b5dab1bc36a04722f6c1.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Rotate the Map Tile containing the Earth Mover, or an adjacent Map Tile, to any legal orientation. After rotating, all paths must connect to paths, and all non-paths must connect to non-paths, on adjacent Map Tiles."
+    },
+    {
+      "id": "5.1.0.6",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Fencer",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck.\n\n![](/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg)"
+    },
+    {
+      "id": "5.1.0.7",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Gate Mage",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/a5dad506f1da40018a1d4037dc7416f8418e647b.jpeg) Base Price: 2 Gold. Starting Price: 6 Gold. Move to a Clearing of your choice containing a revealed Gate without spending a Move Action."
+    },
+    {
+      "id": "5.1.0.8",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Healer",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/bc8f0a400a48d5a9e02f0ac10536e9d275e0dc60.jpeg) Base Price: 1 Gold per cube. Starting Price: 3 Gold per cube. Choose how many cubes to heal before rolling any Haggle Dice. Haggle to determine the price per cube, then multiply that price by the number of cubes healed."
+    },
+    {
+      "id": "5.1.0.9",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Magus",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "middle"
+      },
+      "content": "![float-right](/images/pdf/afaedb32ffc83973151deed55cf7e26d965246f7.jpeg) Base Price: 3 Gold + the Spell’s Price. Starting Price: 3 times the Base Price. Learn 1 Spell Card attached to an equipped Treasure Card. Does not require rolling the Learn Dice."
+    },
+    {
+      "id": "5.1.0.10",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Pathfinder",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "![float-right](/images/pdf/427f2e9c24a7d7ea2238523ed78ccbdfde333674.jpeg) Base Price: 2 Gold. Starting Price: 6 Gold. Find 1 face-up Hidden Path of your choice on a Map Tile up to 2 Map Tiles away from the Pathfinder."
+    },
+    {
+      "id": "5.1.0.11",
+      "source": "wildlands",
+      "level": 4,
+      "title": "Telecrafter",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.\n\n![](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg)"
+    },
+    {
+      "id": "5.2",
+      "source": "wildlands",
+      "level": 2,
+      "title": "Native Summoning",
+      "headingStyle": "pdf-l2",
+      "location": {
+        "page": 10,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![](/images/pdf/00ba35bbc83653cd46e2af063af037c2abf8b4fc.jpeg)\n\n![](/images/pdf/806d611b09634b812c149c963d0c49d1d9dcd839.jpeg)\n\n![](/images/pdf/9dfac8d239b1396dc7897e61b0c14f7091178091.jpeg)"
+    },
+    {
+      "id": "5.2.1",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Civilization",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 10,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "5.2.2",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Location",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 10,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "5.2.3",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Terrain",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 10,
+        "column": "right",
+        "section": "top"
+      },
+      "content": ""
+    },
+    {
+      "id": "5.2.4",
+      "source": "wildlands",
+      "level": 3,
+      "title": "Pack",
+      "headingStyle": "pdf-body-bold-11",
+      "location": {
+        "page": 10,
+        "column": "right",
+        "section": "top"
+      },
+      "content": "![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nBashkirs Nomads Sellswords\n\nEncampment\n\nConsul Rogues **Guards** Soldiers\n\n![](/images/pdf/f5aa6c795c088ec0cb8fb1ea7f6cc13f1e18828f.png)\n\nGuard House\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/pdf/356d646ab6238f1c692f3733b40b5f187fa295aa.png)\n\nWatch Soldiers\n\nKeep\n\n**Aurorans**\n\n![](/images/pdf/0d25d9b67499c3b5de5e1a40733230b9dcf93a5d.jpeg)\n\nConsul Rogues Nomads\n\nMedina\n\nConsul **Dwarves**\n\n![](/images/pdf/fa57afa329fc35aec26c59a8d54e9ccc82467099.png)\n\nWatch Soldiers\n\nMine\n\n![](/images/pdf/0d25d9b67499c3b5de5e1a40733230b9dcf93a5d.jpeg)\n\nBashkirs Nomads Sellswords\n\nOasis\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nOutpost\n\nConsul Watch **Mariners** Sellswords\n\n![](/images/pdf/936219b19abc44e0c289bae8beb2284914e70dea.jpeg)\n\nPort\n\nBashkirs Consul **Priests**\n\n![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nElves\n\nSanctuary\n\nConsul **Hunters** Nomads\n\n![](/images/pdf/5da04f2fa8b23de2241be4c48781d440050e65d4.png)\n\nTrading Post\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nVillage\n\nNatives that begin in the Native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing Monsters. Natives that are in a clearing with Monsters are placed in the Native tray."
+    },
+    {
+      "id": "6",
+      "source": "wildlands",
+      "level": 1,
+      "title": "Credits",
+      "location": {
+        "page": 10,
+        "column": "full",
+        "section": "bottom"
+      },
+      "content": "![](/images/pdf/40db40ddeafeb903fb9b89f9a78724413ceba61b.jpeg)\n\n(C) Copyright 2027 Active Magic Games, all rights reserved. No part of this product may be reproduced without specific written permission. The Dragons Down logo and Active Magic Games logo are a trademark of Active Magic Games."
+    }
+  ]
+}

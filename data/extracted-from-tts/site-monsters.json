@@ -36,40 +36,36 @@
       "source": "dd_all_exp",
       "group": "Cursed",
       "monsters": [
-        "Cursed Skeleton",
-        "Cursed Skeleton",
-        "Cursed Skeleton",
-        "Cursed Zombie",
-        "Cursed Zombie",
-        "Cursed Zombie",
+        "Cursed Skeleton1",
+        "Cursed Skeleton2",
+        "Cursed Skeleton3",
+        "Cursed Zombie1",
+        "Cursed Zombie2",
         "Cursed Ghast"
       ],
       "monsterChips": [
         {
-          "name": "Cursed Skeleton",
+          "name": "Cursed Skeleton1",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12479465285217578466/F3B1BD11362473D209B49350041AD465E3A7D6EC/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9633442917725798176/A9DA26BC9BBCC9A127BE0D6A3EE7EF830DCB75AA/"
         },
         {
-          "name": "Cursed Skeleton",
+          "name": "Cursed Skeleton2",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/10432947125161273906/A8005DD76F205BC69E37FEB5E484658E95CA8FA5/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/12242984657337324151/523DC4A32A5F7048DEC228CBF402039ED3D3A54C/"
         },
         {
-          "name": "Cursed Skeleton",
+          "name": "Cursed Skeleton3",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15126722518890347496/ED369401AD5E084FBBE58F5662B860E42AC2F926/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15424754077639618794/DE1CBE86BC6D53BAAFCB4B9E188CFD2E2DCC1488/"
         },
         {
-          "name": "Cursed Zombie",
+          "name": "Cursed Zombie1",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12248046875806536979/882B0C374E73DA09DF7D23896F21E147DBEB5977/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16463414034816254151/CA94EC7BAF911694F531EB407AC5FB2D6854E1ED/"
         },
         {
-          "name": "Cursed Zombie"
-        },
-        {
-          "name": "Cursed Zombie",
+          "name": "Cursed Zombie2",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15747088952838711978/06BA78831935030E11508433A920DDAE5C3BC8DF/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/9654082685197593781/B14A6E9F375985633F2990D6F4E591FAF606D60C/"
         },
@@ -77,6 +73,62 @@
           "name": "Cursed Ghast",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12666820702517353739/C44600174D124164D37A380F96A14B338DDCC0AA/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13264569661305997331/ED8F6AC56926E30E75F0B78B804E191D04F7952E/"
+        }
+      ]
+    }
+  ],
+  "Burial Mound": [
+    {
+      "source": "dd_all_exp",
+      "group": "Revenant",
+      "monsters": [
+        "Revenant"
+      ],
+      "monsterChips": [
+        {
+          "name": "Revenant",
+          "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15118776231655188938/69A004654B8323C4A7C08B2DACC51C5512C535E8/",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Revenant%20Back%20x1.png"
+        }
+      ]
+    }
+  ],
+  "Burrow": [
+    {
+      "source": "dd_all_exp",
+      "group": "Carrion",
+      "monsters": [
+        "Carrion5",
+        "Carrion4",
+        "Carrion3",
+        "Carrion2",
+        "Carrion1"
+      ],
+      "monsterChips": [
+        {
+          "name": "Carrion5",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Front%20x5.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Back%20x5.png"
+        },
+        {
+          "name": "Carrion4",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Front%20x5.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Back%20x5.png"
+        },
+        {
+          "name": "Carrion3",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Front%20x5.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Back%20x5.png"
+        },
+        {
+          "name": "Carrion2",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Front%20x5.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Back%20x5.png"
+        },
+        {
+          "name": "Carrion1",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Front%20x5.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Carrion%20Swarm%20Back%20x5.png"
         }
       ]
     }
@@ -102,11 +154,11 @@
       "source": "dd_all_exp",
       "group": "Titan",
       "monsters": [
-        "Titan"
+        "Chamber"
       ],
       "monsterChips": [
         {
-          "name": "Titan",
+          "name": "Chamber",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986318271/69B73C2C2EDC5C8B78B08DF43B5CE48CA06652F9/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762015691/100FFE38693F878181F72FE1895F0BBD5D138516/"
         }
@@ -125,6 +177,22 @@
           "name": "Lich",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986321348/9DB30C803CB05FDA9C53640DCCB7593B3CBCFD41/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762018417/B34E2D6619C4A73E9A89CC888C02691D44D7FE2B/"
+        }
+      ]
+    }
+  ],
+  "Fortress": [
+    {
+      "source": "dd_all_exp",
+      "group": "Grimwretch",
+      "monsters": [
+        "Grim Wretch"
+      ],
+      "monsterChips": [
+        {
+          "name": "Grim Wretch",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Grimwretch%20Front%20x1.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Grimwretch%20Back%20x1.png"
         }
       ]
     }
@@ -169,7 +237,7 @@
         "Assassin",
         "Cutthroat",
         "Executioner",
-        "Leader"
+        "Bandit Leader"
       ],
       "monsterChips": [
         {
@@ -188,7 +256,7 @@
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131640495/8ECCDE1891DD3BFDC7404BEA6BCF1F67F58C3380/"
         },
         {
-          "name": "Leader",
+          "name": "Bandit Leader",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986340733/0F93177294365781A5458C24803BD47F39B2E664/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131642364/89764375FC67BF67C70BBBDB56D62EF0BADAE081/"
         }
@@ -247,17 +315,17 @@
       "source": "dd_all_exp",
       "group": "Death Hound",
       "monsters": [
-        "Death Hound",
-        "Death Hound"
+        "Death Hound2",
+        "Death Hound1"
       ],
       "monsterChips": [
         {
-          "name": "Death Hound",
+          "name": "Death Hound2",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/16714131508828381191/B45F5A4D347A0038BA3AA6D6ED8F14FB1B1676FB/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/10343891748676556696/8887D6FC86A4D7B7C1E8FDAE81A72CF978D0B200/"
         },
         {
-          "name": "Death Hound",
+          "name": "Death Hound1",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15950956020902826458/88F6E8ED89FDFA7088C3E1A4AD4B19EFC9D0A12A/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/13855624410426592139/A3039CCEAE23290EA237E5929907B539997C0185/"
         }
@@ -288,7 +356,7 @@
         "Assassin",
         "Cutthroat",
         "Executioner",
-        "Leader"
+        "Bandit Leader"
       ],
       "monsterChips": [
         {
@@ -307,7 +375,7 @@
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131640495/8ECCDE1891DD3BFDC7404BEA6BCF1F67F58C3380/"
         },
         {
-          "name": "Leader",
+          "name": "Bandit Leader",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986340733/0F93177294365781A5458C24803BD47F39B2E664/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131642364/89764375FC67BF67C70BBBDB56D62EF0BADAE081/"
         }
@@ -326,6 +394,34 @@
           "name": "Wraith",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986334862/B98D783D90BDB4C4740E6EB6B9404D1A84C080E5/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2175862346721512097/8A8A2675E2AFE05EDC8CC8FCA2FFD51FE17DCD54/"
+        }
+      ]
+    }
+  ],
+  "Stone Circle": [
+    {
+      "source": "dd_all_exp",
+      "group": "Stone Golems",
+      "monsters": [
+        "Golem3",
+        "Golem2",
+        "Golem1"
+      ],
+      "monsterChips": [
+        {
+          "name": "Golem3",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Front%20x3.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Back%20x3.png"
+        },
+        {
+          "name": "Golem2",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Front%20x3.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Back%20x3.png"
+        },
+        {
+          "name": "Golem1",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Front%20x3.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Stone%20Golem%20Back%20x3.png"
         }
       ]
     }
@@ -378,6 +474,22 @@
       ]
     }
   ],
+  "Totems": [
+    {
+      "source": "dd_all_exp",
+      "group": "Basilisk",
+      "monsters": [
+        "Basilisk"
+      ],
+      "monsterChips": [
+        {
+          "name": "Basilisk",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Basilisk%20Front%20x1.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Basilisk%20Back%20x1.png"
+        }
+      ]
+    }
+  ],
   "Trove": [
     {
       "source": "dd_all_exp",
@@ -390,6 +502,34 @@
           "name": "Great Wyrm",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986326126/ABDCFB7355F2181A3FF5322F1513418996E1E8AE/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601762057235/F9907AED3F6A536C929D857450415CE57D999345/"
+        }
+      ]
+    }
+  ],
+  "Watchtower": [
+    {
+      "source": "dd_all_exp",
+      "group": "Fallen",
+      "monsters": [
+        "Fallen Crew2",
+        "Fallen Crew1",
+        "Fallen Captain"
+      ],
+      "monsterChips": [
+        {
+          "name": "Fallen Crew2",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Crew%20Front%20x2.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Crew%20Back%20x2.png"
+        },
+        {
+          "name": "Fallen Crew1",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Crew%20Front%20x2.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Crew%20Back%20x2.png"
+        },
+        {
+          "name": "Fallen Captain",
+          "imageURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Captain%20Front%20x1.png",
+          "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/Red%20Fallen%20Captain%20Back%20x1.png"
         }
       ]
     }
@@ -418,7 +558,7 @@
         "Assassin",
         "Cutthroat",
         "Executioner",
-        "Leader"
+        "Bandit Leader"
       ],
       "monsterChips": [
         {
@@ -437,7 +577,7 @@
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131640495/8ECCDE1891DD3BFDC7404BEA6BCF1F67F58C3380/"
         },
         {
-          "name": "Leader",
+          "name": "Bandit Leader",
           "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607510986340733/0F93177294365781A5458C24803BD47F39B2E664/",
           "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/2260306743131642364/89764375FC67BF67C70BBBDB56D62EF0BADAE081/"
         }

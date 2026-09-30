@@ -1798,12 +1798,16 @@ function missionTerrainPacksForTerrainPack(
       return new Set(["deserts", "oasis"]);
     case "Malevolent Mountains":
       return new Set(["mountains"]);
+    case "Hostile Hills":
+      return new Set(["hills"]);
     case "Perilous Plains":
       return new Set(["plains"]);
     case "Ruthless Riverlands":
       return new Set(["riverlands"]);
     case "Sinister Swamps":
       return new Set(["swamps"]);
+    case "Tangled Thickets":
+      return new Set(["thickets"]);
     case "Wicked Woods":
       return new Set(["woods"]);
     default:

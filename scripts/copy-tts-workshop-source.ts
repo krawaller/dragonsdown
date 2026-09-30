@@ -7,7 +7,7 @@ import { deserialize } from "bson";
 const execFileAsync = promisify(execFile);
 
 const APP_ID = "286160";
-const WORKSHOP_ID = "3062060625";
+const WORKSHOP_ID = "3810433032";
 const TARGET = path.join("data", "downloaded-tts", "dd_all_exp.json");
 const LOCAL_STEAMCMD_ROOT = path.resolve(
   ".cache",

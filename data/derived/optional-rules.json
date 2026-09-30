@@ -19,6 +19,46 @@
     ]
   },
   {
+    "id": "3.5",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Banished Heroes",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "Your hero starts the game banished.\n\n**Ruthless Riverlands Not in Play:** Shuffle all Map Tiles together and place a random wilderness Map Tile to start. The Hero is placed in a random Clearing at game start.\n\n**Ruthless Riverlands in Play:** Players start their Hero in a random Ruthless Riverlands wilderness Map Tile. Place the Hero Chip in a random Dock Clearing.\n\nAfter placing the Hero Chip, reveal and place a Wilderness Token before taking any actions.\n\nFor added difficulty, combine this optional rule with the Wits Only optional rule from the Core **Dragons Down** Game\n\n![](/images/pdf/06df3e174b31d1437b8ddc537afd4994a0048d3a.jpeg)",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Your hero starts the game banished."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**Ruthless Riverlands Not in Play:** Shuffle all Map Tiles together and place a random wilderness Map Tile to start. The Hero is placed in a random Clearing at game start."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**Ruthless Riverlands in Play:** Players start their Hero in a random Ruthless Riverlands wilderness Map Tile. Place the Hero Chip in a random Dock Clearing."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "After placing the Hero Chip, reveal and place a Wilderness Token before taking any actions."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "For added difficulty, combine this optional rule with the Wits Only optional rule from the Core **Dragons Down** Game"
+      },
+      {
+        "kind": "image",
+        "src": "/images/pdf/06df3e174b31d1437b8ddc537afd4994a0048d3a.jpeg",
+        "display": "block"
+      }
+    ]
+  },
+  {
     "id": "8.3",
     "source": "core",
     "level": 2,
@@ -171,6 +211,25 @@
       {
         "kind": "markdown",
         "markdown": "Natives and unique Monsters are not returned to the monster tray (*see the Monster* *Reference on page 26 for a complete list of unique Monsters*)."
+      }
+    ]
+  },
+  {
+    "id": "3.2",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Enhanced Alert",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "When performing an Alert Action, in addition to rearranging equipment, the Hero chooses one of the following benefits. A Hero may perform multiple Alert Actions during a single turn. A Hero must choose a different alert type for each Alert Action.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "When performing an Alert Action, in addition to rearranging equipment, the Hero chooses one of the following benefits. A Hero may perform multiple Alert Actions during a single turn. A Hero must choose a different alert type for each Alert Action."
       }
     ]
   },
@@ -493,6 +552,63 @@
     ]
   },
   {
+    "id": "3.3",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Specialists",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "![float-right](/images/pdf/0ac157d86509aa3f5b32be5dad738fd0d9f305c8.jpeg) Throughout the realm, Heroes may encounter remarkable Specialists whose rare talents provide assistance unavailable anywhere else. When using this optional rule, shuffle the Specialist Tokens and place them in a convenient location. Whenever an empty Civilization Token is drawn at a Civilization Location, replace it with a random Specialist Token.\n\nEach Specialist offers a unique service or ability that Heroes may use when they encounter them. Specialists are not Merchants and provide none of the services that Heroes may normally perform. Specialists only offer their unique services, which may be purchased by performing a Trade Action with that Specialist.\n\nThe Base Price for each Specialist’s service is shown below and on their token. The Starting Price is 3 times the Base Price. Heroes may haggle following the standard Haggle rules using their lowest attribute.\n\nAll Specialists are explained in the Specialists Manifest on page 4.",
+    "contentNodes": [
+      {
+        "kind": "mediaAside",
+        "images": [
+          {
+            "kind": "image",
+            "src": "/images/pdf/0ac157d86509aa3f5b32be5dad738fd0d9f305c8.jpeg",
+            "display": "float-right"
+          }
+        ],
+        "markdown": "Throughout the realm, Heroes may encounter remarkable Specialists whose rare talents provide assistance unavailable anywhere else. When using this optional rule, shuffle the Specialist Tokens and place them in a convenient location. Whenever an empty Civilization Token is drawn at a Civilization Location, replace it with a random Specialist Token."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Each Specialist offers a unique service or ability that Heroes may use when they encounter them. Specialists are not Merchants and provide none of the services that Heroes may normally perform. Specialists only offer their unique services, which may be purchased by performing a Trade Action with that Specialist."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The Base Price for each Specialist’s service is shown below and on their token. The Starting Price is 3 times the Base Price. Heroes may haggle following the standard Haggle rules using their lowest attribute."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "All Specialists are explained in the Specialists Manifest on page 4."
+      }
+    ]
+  },
+  {
+    "id": "3.4",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Stubborn Guardians",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "left",
+      "section": "bottom"
+    },
+    "content": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (*on the Summoning Die from the Core* ***Dragons Down*** *Game*). All other Monsters return when either Monsters Return arrow is rolled.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (*on the Summoning Die from the Core* ***Dragons Down*** *Game*). All other Monsters return when either Monsters Return arrow is rolled."
+      }
+    ]
+  },
+  {
     "id": "4.3",
     "source": "eastern-reaches",
     "level": 2,
@@ -562,6 +678,29 @@
       {
         "kind": "markdown",
         "markdown": "A Hero who successfully loots a Treasure Site while its Guardian is present in the clearing must immediately perform a Hide reaction, using all applicable bonuses from Sneak, treasures, Lineage, and other effects. If the Hide reaction fails, the Hero is blocked and becomes unhidden."
+      }
+    ]
+  },
+  {
+    "id": "3.1",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Weather",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 3,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "Weather in Dragons Down introduces changing conditions that affect Heroes as they explore the realm. Each Weather Card represents a specific type of weather or effect, how long it remains in effect, and the effects it has on the game. Some Weather Cards are limited to certain seasons.\n\nWeather can be used with any game modes or scenarios.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Weather in Dragons Down introduces changing conditions that affect Heroes as they explore the realm. Each Weather Card represents a specific type of weather or effect, how long it remains in effect, and the effects it has on the game. Some Weather Cards are limited to certain seasons."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Weather can be used with any game modes or scenarios."
       }
     ]
   },

@@ -161,6 +161,38 @@
   {
     "source": "dd_all_exp",
     "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/civtoken%20Hills%20Empty%20-%20Front%20-%2075in%20x1.png",
+    "locations": [
+      {
+        "ancestry": [
+          "Hostile HILLS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "empty",
+    "terrainPack": "Hostile Hills"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/civtoken%20Hills%20Outfitter%20-%20Front%20-%2075in%20x1.png",
+    "locations": [
+      {
+        "ancestry": [
+          "Hostile HILLS"
+        ],
+        "count": 1
+      }
+    ],
+    "gmNotes": "merchants",
+    "name": "Outfitter",
+    "attribute": "Charisma",
+    "terrainPack": "Hostile Hills"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
     "imageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/15731405726771244064/3349553B9365D79ECA1E7F56F146F6202A48978A/",
     "locations": [
       {
@@ -287,6 +319,21 @@
     "name": "Artificer",
     "attribute": "Wisdom",
     "terrainPack": "Sinister Swamps"
+  },
+  {
+    "source": "dd_all_exp",
+    "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260337788/3F69B873CF0531BF7F3A5E8C17200B626A98F19D/",
+    "imageSecondaryURL": "https://dragonsdowndata.com/data/DDTTS/civtoken%20Thickets%20Empty%20-%20Front%20-%2075in%20x2.png",
+    "locations": [
+      {
+        "ancestry": [
+          "Tangled THICKETS"
+        ],
+        "count": 2
+      }
+    ],
+    "gmNotes": "empty",
+    "terrainPack": "Tangled Thickets"
   },
   {
     "source": "dd_all_exp",

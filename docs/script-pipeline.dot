@@ -10,7 +10,7 @@ digraph DragonsDownScripts {
   node [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#f8fafc", color="#64748b"];
   edge [fontname="Helvetica", fontsize=10, color="#475569"];
 
-  steam_workshop [label="Steam workshop item\n286160 / 3062060625", shape=folder, fillcolor="#eef2ff"];
+  steam_workshop [label="Steam workshop item\n286160 / 3810433032", shape=folder, fillcolor="#eef2ff"];
   active_magic_pages [label="Active Magic web pages", shape=folder, fillcolor="#eef2ff"];
 
   manual_releases [label="data/manual/releases.json", shape=note, fillcolor="#fff7ed"];

@@ -9,6 +9,8 @@ export const CLEARING_TYPES = [
   { id: "swamps", label: "Swamps" },
   { id: "river", label: "River" },
   { id: "desert", label: "Desert" },
+  { id: "hills", label: "Hills" },
+  { id: "thickets", label: "Thickets" },
 ] as const;
 
 export type ClearingTypeId = (typeof CLEARING_TYPES)[number]["id"];
@@ -119,6 +121,8 @@ const CLEARING_TYPE_ICONS: Record<ClearingTypeId, string> = {
   swamps: "/images/terrain/swamp.png",
   river: "/images/terrain/river.png",
   desert: "/images/terrain/desert.png",
+  hills: "/images/terrain/mountain.png",
+  thickets: "/images/terrain/woods.png",
 };
 
 function occurrenceFor(

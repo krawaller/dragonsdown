@@ -5,6 +5,21 @@
     "back": ["plain", "plain", "desert", "desert", "cave", "cave"]
   },
   {
+    "name": "Medina",
+    "front": ["plains", "desert", "plains", "desert"],
+    "back": ["desert", "plains", "desert", "plains"]
+  },
+  {
+    "name": "Cragspire",
+    "front": ["hills", "hills", "mountains", "hills", "mountains", "hills"],
+    "back": ["hills", "hills", "mountains", "hills", "mountains", "hills"]
+  },
+  {
+    "name": "Bilewater",
+    "front": ["woods", "thickets", "woods", "thickets", "river", "thickets"],
+    "back": ["woods", "thickets", "woods", "thickets", "river", "thickets"]
+  },
+  {
     "name": "Deep Woods",
     "front": ["woods", "woods", "woods", "woods", "woods", "mountains"],
     "back": ["woods", "woods", "woods", "woods", "woods", "mountains"]

@@ -486,6 +486,66 @@ describe("extractClasses", () => {
     expect(classes["Pit Fighter"][0].box).toBe("Eastern Reaches");
   });
 
+  it("discovers TTS class cards missing from the rulebook advantage manifest", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Class WILDLANDS",
+          ContainedObjects: [
+            card("Diviner (Shard charge)", 840, "8", SAMPLE_DECK),
+            tile("Diviner", "diviner.png", "diviner-back.png"),
+            tile(
+              "Diviner token",
+              "diviner-target.png",
+              "diviner-target-back.png",
+              "Diviner",
+            ),
+          ],
+        },
+      ],
+    };
+
+    expect(extractClasses(save, "dd_all_exp", [])).toEqual({
+      Diviner: [
+        {
+          source: "dd_all_exp",
+          name: "Diviner",
+          box: "Wildlands",
+          advantageTitle: "Diviner (Shard charge)",
+          advantageCard: {
+            source: "dd_all_exp",
+            faceURL: SAMPLE_DECK.FaceURL,
+            backURL: SAMPLE_DECK.BackURL,
+            numWidth: SAMPLE_DECK.NumWidth,
+            numHeight: SAMPLE_DECK.NumHeight,
+            row: 4,
+            col: 0,
+            uniqueBack: false,
+            ancestry: ["Class WILDLANDS"],
+          },
+          classToken: {
+            source: "dd_all_exp",
+            name: "Diviner",
+            imageURL: "diviner.png",
+            imageSecondaryURL: "diviner-back.png",
+            ancestry: ["Class WILDLANDS"],
+          },
+          targetingTokens: [
+            {
+              source: "dd_all_exp",
+              name: "Diviner token",
+              imageURL: "diviner-target.png",
+              imageSecondaryURL: "diviner-target-back.png",
+              ancestry: ["Class WILDLANDS"],
+              gmNotes: "Diviner",
+            },
+          ],
+        },
+      ],
+    });
+  });
+
   it("extracts scripted front and back class setup loadouts", () => {
     const assassinLua = `function onLoad()
     createSetupButtons()
@@ -1231,6 +1291,70 @@ describe("extractChips", () => {
     ]);
   });
 
+  it("extracts unmarked monster chips from chip containers", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Hills Chips",
+          ContainedObjects: [
+            {
+              Name: "Custom_Tile",
+              GMNotes: "Reavers",
+              LuaScript: "function onLoad()\n  createSetupButtons()\nend",
+              CustomImage: {
+                ImageURL: "reaver-front.png",
+                ImageSecondaryURL: "reaver-back.png",
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(extractChips(save, "wildlands").Reavers).toEqual([
+      {
+        source: "wildlands",
+        group: "Reavers",
+        imageURL: "reaver-front.png",
+        imageSecondaryURL: "reaver-back.png",
+        locations: [{ ancestry: ["Hills Chips"], count: 1 }],
+      },
+    ]);
+  });
+
+  it("extracts unmarked monster chips from matching group containers", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Adult Dragons",
+          ContainedObjects: [
+            {
+              Name: "Custom_Tile",
+              GMNotes: "AdultDragons",
+              LuaScript: "function onLoad()\n  createSetupButtons()\nend",
+              CustomImage: {
+                ImageURL: "dragon-front.png",
+                ImageSecondaryURL: "dragon-back.png",
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(extractChips(save, "core").AdultDragons).toEqual([
+      {
+        source: "core",
+        group: "AdultDragons",
+        imageURL: "dragon-front.png",
+        imageSecondaryURL: "dragon-back.png",
+        locations: [{ ancestry: ["Adult Dragons"], count: 1 }],
+      },
+    ]);
+  });
+
   it("does not treat arbitrary GMNotes custom tiles as chips", () => {
     const save = {
       ObjectStates: [
@@ -1247,6 +1371,31 @@ describe("extractChips", () => {
     };
 
     expect(extractChips(save, "eastern")).toEqual({});
+  });
+
+  it("does not treat class tokens as unmarked monster chips", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Class DRAGONS DOWN",
+          ContainedObjects: [
+            {
+              Name: "Custom_Tile",
+              Nickname: "Warrior token",
+              GMNotes: "Warrior",
+              LuaScript: "function onLoad() end",
+              CustomImage: {
+                ImageURL: "warrior-front.png",
+                ImageSecondaryURL: "warrior-back.png",
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(extractChips(save, "core")).toEqual({});
   });
 
   it("dedups physical copies into one entry with per-ancestry counts", () => {
@@ -2052,6 +2201,49 @@ describe("extractSiteMonsters", () => {
       ],
     });
   });
+
+  it("extracts guardians from the refreshed global Guardians table", () => {
+    const save = {
+      LuaScript: `Guardians = {
+  ["66290a"] = {"7f1640", --Carrion5
+                "5ade66", --Carrion4
+              }, --Burrow
+}`,
+      ObjectStates: [
+        chip("7f1640", "Carrion"),
+        chip("5ade66", "Carrion"),
+        {
+          GUID: "66290a",
+          Name: "Custom_Tile",
+          Nickname: "Burrow",
+          CustomImage: { ImageURL: SITE_FACE_URL },
+          LuaScript: "function guardian() Global.call('draw_guardian') end",
+        },
+      ],
+    };
+
+    expect(extractSiteMonsters(save, "wildlands")).toEqual({
+      Burrow: [
+        {
+          source: "wildlands",
+          group: "Carrion",
+          monsters: ["Carrion5", "Carrion4"],
+          monsterChips: [
+            {
+              name: "Carrion5",
+              imageURL: "7f1640.png",
+              imageSecondaryURL: "7f1640-back.png",
+            },
+            {
+              name: "Carrion4",
+              imageURL: "5ade66.png",
+              imageSecondaryURL: "5ade66-back.png",
+            },
+          ],
+        },
+      ],
+    });
+  });
 });
 
 describe("extractNativeSummons", () => {
@@ -2311,6 +2503,57 @@ end`,
       ],
     });
   });
+
+  it("extracts native summons from refreshed global Natives tables", () => {
+    const save = {
+      LuaScript: `nativeGroups = {
+  guard = {
+    "22b31c", --Leader
+    "b3d152", --2
+  },
+  hunters = {
+    "97c4f7", --Leader
+  },
+  tribe = {
+    "2fe063", --Leader
+  },
+}
+
+Natives = {
+  ["720eb0"] = {
+    {die = 3, group = "guard"},
+    {die = 3, group = "hunters"},
+    {die = 3, group = "tribe"},
+  },--Trading Post   
+}
+
+NativesAlt = {
+  ["720eb0"] = {
+    {die = 4, group = "guard"},
+    {die = 4, group = "hunters"},
+  },--Trading Post
+}`,
+      ObjectStates: [
+        chip("22b31c", "guards"),
+        chip("b3d152", "guards"),
+        chip("97c4f7", "hunters"),
+        chip("2fe063", "tribe"),
+      ],
+    };
+
+    expect(extractNativeSummons(save, "wildlands")).toMatchObject({
+      "Native Setup": [
+        { group: "Guard", natives: ["Guard Leader", "Guard 2"] },
+        { group: "Hunters", natives: ["Hunters Leader"] },
+        { group: "Tribe", natives: ["Tribe Leader"] },
+      ],
+      "Trading Post": [
+        { group: "Guard", natives: ["Guard Leader", "Guard 2"] },
+        { group: "Hunters", natives: ["Hunters Leader"] },
+        { group: "Tribe", natives: ["Tribe Leader"] },
+      ],
+    });
+  });
 });
 
 describe("extractNatives", () => {
@@ -2465,15 +2708,18 @@ function setupL(rotation)
 local mBags = Global.getTable("bagsMonsters")
 TrollsBag = getObjectFromGUID(mBags["Trolls"])
 end`,
+    tags = ["CC", "carrion"],
   }: {
     guid?: string;
     nickname?: string;
     lua?: string;
+    tags?: string[];
   } = {}) => ({
     GUID: guid,
     Name: "Custom_Tile",
     Nickname: nickname,
     LuaScript: lua,
+    Tags: tags,
     CustomImage: {
       ImageURL: "front.png",
       ImageSecondaryURL: "back.png",
@@ -2521,7 +2767,41 @@ end
 function setupL(rotation)
 end`;
     expect(
-      extractMapTileMonsters(saveWithTile(mapTile({ lua })), "eastern"),
+      extractMapTileMonsters(
+        saveWithTile(mapTile({ lua, tags: [] })),
+        "eastern",
+      ),
+    ).toEqual({});
+  });
+
+  it("extracts map tile monster groups from terrain and feature tags", () => {
+    const lua = `function onLoad()
+end`;
+    expect(
+      extractMapTileMonsters(
+        saveWithTile(mapTile({ lua, tags: ["HH", "roar"] })),
+        "wildlands",
+      ),
+    ).toEqual({
+      "Ancient Hole": [
+        {
+          source: "wildlands",
+          terrain: "Cruel Caves",
+          wandering: ["Crag Fiends"],
+          local: ["Wyverns"],
+        },
+      ],
+    });
+  });
+
+  it("skips civ map tiles when deriving monster groups from tags", () => {
+    const lua = `function onLoad()
+end`;
+    expect(
+      extractMapTileMonsters(
+        saveWithTile(mapTile({ lua, tags: ["CC", "CivTile"] })),
+        "eastern",
+      ),
     ).toEqual({});
   });
 });
@@ -3108,6 +3388,15 @@ describe("resolveCards", () => {
     const out = resolveCards(
       "Champion’s Blade",
       { "Champions Blade": [sampleCard] },
+      {},
+    );
+    expect(out).toHaveLength(1);
+  });
+
+  it("finds direct matches with capitalization differences", () => {
+    const out = resolveCards(
+      "Diviner (Shard Charge)",
+      { "Diviner (Shard charge)": [sampleCard] },
       {},
     );
     expect(out).toHaveLength(1);

@@ -14,5 +14,9 @@
   "eastern_reaches": {
     "file": "Dragons_Down_Eastern_Reaches_single_pages.pdf",
     "version": "1.3"
+  },
+  "wildlands": {
+    "file": "Dragons_Down_Wildlands_single_pages.pdf",
+    "version": "1.3"
   }
 }
