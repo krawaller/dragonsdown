@@ -33,6 +33,7 @@ import {
   type NativeSummonIndex,
   type SiteIndex,
   type SpellIndex,
+  type SpecialistIndex,
   type TTSCardImage,
   type TTSChip,
   type TTSClass,
@@ -44,6 +45,7 @@ import {
   type TTSMissionCard,
   type TTSMissionRewards,
   type TTSMapTile,
+  type TTSSpecialist,
   type TTSTreasureCard,
   type TTSTreasureDeck,
   type TTSCivLocation,
@@ -92,6 +94,7 @@ const MAP_TILE_MONSTERS_FILE = path.join(
 const MAP_TILES_FILE = path.join(EXTRACTED_TTS_DIR, "map-tiles.json");
 const NATIVE_SUMMONS_FILE = path.join(EXTRACTED_TTS_DIR, "native-summons.json");
 const NATIVES_FILE = path.join(EXTRACTED_TTS_DIR, "natives.json");
+const SPECIALISTS_FILE = path.join(EXTRACTED_TTS_DIR, "specialists.json");
 const MISSIONS_FILE = path.join(EXTRACTED_TTS_DIR, "missions.json");
 const MISSION_FEATURE_FILE = path.join(
   process.cwd(),
@@ -133,6 +136,7 @@ let cachedMapTileMonsterIndex: MapTileMonsterIndex | null = null;
 let cachedMapTiles: TTSMapTile[] | null = null;
 let cachedNativeIndex: NativeIndex | null = null;
 let cachedNativeSummonIndex: NativeSummonIndex | null = null;
+let cachedSpecialistIndex: SpecialistIndex | null = null;
 let cachedMissionIndex: MissionIndex | null = null;
 let cachedMissionFeatureIndex: Record<string, string | string[]> | null = null;
 let cachedSpellCasters: Record<
@@ -326,6 +330,12 @@ function getNativeIndex(): NativeIndex {
   if (cachedNativeIndex !== null) return cachedNativeIndex;
   cachedNativeIndex = readJsonOrEmpty<NativeIndex>(NATIVES_FILE);
   return cachedNativeIndex;
+}
+
+function getSpecialistIndex(): SpecialistIndex {
+  if (cachedSpecialistIndex !== null) return cachedSpecialistIndex;
+  cachedSpecialistIndex = readJsonOrEmpty<SpecialistIndex>(SPECIALISTS_FILE);
+  return cachedSpecialistIndex;
 }
 
 function getMissionIndex(): MissionIndex {
@@ -691,6 +701,12 @@ export type SpellEntry = {
   spells: TTSSpell[];
 };
 
+export type SpecialistEntry = {
+  name: string;
+  slug: string;
+  specialists: TTSSpecialist[];
+};
+
 export type ItemStartingClass = {
   name: string;
   slug: string;
@@ -794,6 +810,16 @@ export function getAllSpells(): SpellEntry[] {
 
 export function getSpellBySlug(slug: string): SpellEntry | undefined {
   return getAllSpells().find((entry) => entry.slug === slug);
+}
+
+export function getAllSpecialists(): SpecialistEntry[] {
+  return Object.entries(getSpecialistIndex())
+    .map(([name, specialists]) => ({
+      name,
+      slug: slugify(name),
+      specialists,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
 export function getSpellsByMagic(magic: string): SpellEntry[] {

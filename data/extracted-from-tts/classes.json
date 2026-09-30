@@ -1699,7 +1699,7 @@
     {
       "source": "dd_all_exp",
       "name": "Diviner",
-      "advantageTitle": "Diviner (Shard charge)",
+      "advantageTitle": "Diviner (Shard Charge)",
       "targetingTokens": [
         {
           "source": "dd_all_exp",
@@ -2433,7 +2433,7 @@
     {
       "source": "dd_all_exp",
       "name": "Gravesworn",
-      "advantageTitle": "Gravesworn (Dead speech)",
+      "advantageTitle": "Gravesworn (Dead Speech)",
       "targetingTokens": [
         {
           "source": "dd_all_exp",
@@ -2680,7 +2680,7 @@
     {
       "source": "dd_all_exp",
       "name": "Inquisitor",
-      "advantageTitle": "Inquisitor (Kings justice)",
+      "advantageTitle": "Inquisitor (King’s Justice)",
       "targetingTokens": [
         {
           "source": "dd_all_exp",

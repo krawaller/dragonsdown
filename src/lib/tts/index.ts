@@ -57,6 +57,9 @@ export const SPELL_CARD_BACK_URL =
 export const HERO_STARTING_SPELL_CARD_BACK_URL =
   "https://steamusercontent-a.akamaihd.net/ugc/2002465601770890258/32254FF7A0F7C612D59FBD76A3EFBA8FB6AE8A72/";
 
+export const SPECIALIST_TOKEN_BACK_URL =
+  "https://dragonsdowndata.com/data/specialists/spBack.png";
+
 export type TTSItemCard = TTSCardImage & {
   /** Total number of physical copies found for this exact card image cell. */
   copies: number;
@@ -331,6 +334,22 @@ export type TTSClass = {
 
 /** Output written to data/extracted-from-tts/classes.json. Keyed by class name. */
 export type ClassIndex = Record<string, TTSClass[]>;
+
+export type TTSSpecialist = {
+  source: string;
+  name: string;
+  attribute?: string;
+  tokenCode?: string;
+  basePrice?: string;
+  startingPrice?: string;
+  rule: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+  ancestry: string[];
+};
+
+/** Output written to data/extracted-from-tts/specialists.json. Keyed by Specialist name. */
+export type SpecialistIndex = Record<string, TTSSpecialist[]>;
 
 /** Output written to data/extracted-from-tts/lineages.json. Keyed by lineage name. */
 export type LineageIndex = Record<string, TTSLineage[]>;
@@ -2290,6 +2309,7 @@ function mergeStringValues(
 }
 
 type ChipObject = {
+  GUID?: string;
   GMNotes?: string;
   LuaScript?: string;
   CustomImage: { ImageURL?: string; ImageSecondaryURL?: string };
@@ -2511,6 +2531,33 @@ export function extractCivilisationTokens(
 
   walkTokens(root, []);
   return tokens.sort(compareCivilisationTokens);
+}
+
+export function extractSpecialists(
+  root: unknown,
+  source: string,
+): SpecialistIndex {
+  const index: SpecialistIndex = {};
+  const walkSpecialists = (obj: unknown, ancestry: string[]) => {
+    if (!isRecord(obj)) return;
+
+    if (obj.Name === "Custom_Tile" && isRecord(obj.CustomImage)) {
+      const specialist = specialistFor(obj, source, ancestry);
+      if (specialist) (index[specialist.name] ??= []).push(specialist);
+    }
+
+    const nick = typeof obj.Nickname === "string" ? obj.Nickname.trim() : "";
+    const childAncestry = nick ? [...ancestry, nick] : ancestry;
+    const states = obj.ObjectStates;
+    if (Array.isArray(states))
+      for (const s of states) walkSpecialists(s, childAncestry);
+    const contained = (obj as TTSContainer).ContainedObjects;
+    if (Array.isArray(contained))
+      for (const s of contained) walkSpecialists(s, childAncestry);
+  };
+
+  walkSpecialists(root, []);
+  return index;
 }
 
 export function extractBoards(root: unknown, source: string): BoardIndex {
@@ -3431,11 +3478,8 @@ const SETUP_CARD_PRINTED_SITES_BY_IMAGE_URL: Record<string, string[]> = {
     ["Monolith", "Wrecked Wagons"],
   "https://steamusercontent-a.akamaihd.net/ugc/16948278958954043783/FC338D6BDE29FE6BD3D2EB5E3CFD64D0E82F59F5/":
     ["Abyss", "Tarn", "Wreck"],
-  "https://dragonsdowndata.com/data/DDTTS/terrain%20setup%20card%20Hills%20Front%20x1.png": [
-    "Burrow",
-    "Stone Circle",
-    "Watchtower",
-  ],
+  "https://dragonsdowndata.com/data/DDTTS/terrain%20setup%20card%20Hills%20Front%20x1.png":
+    ["Burrow", "Stone Circle", "Watchtower"],
   "https://steamusercontent-a.akamaihd.net/ugc/2323363479519120254/77809A8879191279ADBE84BC48A9E12C272548A7/":
     ["Grotto", "Hideout", "Lost Battalion"],
   "https://steamusercontent-a.akamaihd.net/ugc/2323363479519043888/1148228148CCCE332A638EBED6176E9AE6129254/":
@@ -3464,6 +3508,53 @@ function civilisationTokenFor(
   if (attribute) token.attribute = attribute;
   if (terrain) token.terrainPack = terrain;
   return token;
+}
+
+function specialistFor(
+  obj: Record<string, unknown>,
+  source: string,
+  ancestry: string[],
+): TTSSpecialist | null {
+  if (!ancestry.includes("Specialists")) return null;
+  const image = obj.CustomImage as Record<string, unknown>;
+  const imageURL = text(image.ImageURL);
+  const imageSecondaryURL = text(image.ImageSecondaryURL);
+  if (imageURL !== SPECIALIST_TOKEN_BACK_URL || !imageSecondaryURL) return null;
+
+  const nickname = text(obj.Nickname);
+  const nameMatch = nickname.match(/^(.+?)\s*\(([^)]+)\)$/);
+  const name = nameMatch
+    ? normalizeTitle(nameMatch[1])
+    : normalizeTitle(nickname);
+  if (!name) return null;
+
+  const parsedRule = specialistRule(text(obj.Description));
+  return {
+    source,
+    name,
+    ...(nameMatch ? { attribute: normalizeTitle(nameMatch[2]) } : {}),
+    ...(text(obj.GMNotes) ? { tokenCode: text(obj.GMNotes) } : {}),
+    ...parsedRule,
+    imageURL,
+    imageSecondaryURL,
+    ancestry,
+  };
+}
+
+function specialistRule(description: string): {
+  basePrice?: string;
+  startingPrice?: string;
+  rule: string;
+} {
+  const match = description.match(
+    /^Base Price:\s*(.*?)\.\s*Starting Price:\s*(.*?)\.\s*([\s\S]*)$/,
+  );
+  if (!match) return { rule: description };
+  return {
+    basePrice: match[1].trim(),
+    startingPrice: match[2].trim(),
+    rule: match[3].trim(),
+  };
 }
 
 function attributeFromCivilisationTokenNickname(nickname: string): string {

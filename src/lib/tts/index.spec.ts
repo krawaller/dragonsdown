@@ -15,6 +15,7 @@ import {
   extractNatives,
   extractNativeSummons,
   extractSiteMonsters,
+  extractSpecialists,
   extractSpells,
   extractTreasures,
   extractWildernessTokens,
@@ -29,6 +30,7 @@ import {
   HERO_STARTING_SPELL_CARD_BACK_URL,
   ITEM_CARD_BACK_URL,
   SITE_FACE_URL,
+  SPECIALIST_TOKEN_BACK_URL,
   TREASURE_CARD_BACK_URL,
   SPELL_CARD_BACK_URL,
   WILDERNESS_TOKEN_BACK_URLS,
@@ -2551,6 +2553,49 @@ NativesAlt = {
         { group: "Guard", natives: ["Guard Leader", "Guard 2"] },
         { group: "Hunters", natives: ["Hunters Leader"] },
         { group: "Tribe", natives: ["Tribe Leader"] },
+      ],
+    });
+  });
+});
+
+describe("extractSpecialists", () => {
+  it("extracts specialist tokens with prices, attribute, and rule text", () => {
+    const save = {
+      ObjectStates: [
+        {
+          Name: "Bag",
+          Nickname: "Specialists",
+          ContainedObjects: [
+            {
+              Name: "Custom_Tile",
+              Nickname: "Broom Hand (Charisma)",
+              GMNotes: "H",
+              Description:
+                "Base Price: 2 Gold. Starting Price: 6 Gold. Fly to an adjacent Map Tile without spending a Move Action.",
+              CustomImage: {
+                ImageURL: SPECIALIST_TOKEN_BACK_URL,
+                ImageSecondaryURL: "broom-hand.png",
+              },
+            },
+          ],
+        },
+      ],
+    };
+
+    expect(extractSpecialists(save, "wildlands")).toEqual({
+      "Broom Hand": [
+        {
+          source: "wildlands",
+          name: "Broom Hand",
+          attribute: "Charisma",
+          tokenCode: "H",
+          basePrice: "2 Gold",
+          startingPrice: "6 Gold",
+          rule: "Fly to an adjacent Map Tile without spending a Move Action.",
+          imageURL: SPECIALIST_TOKEN_BACK_URL,
+          imageSecondaryURL: "broom-hand.png",
+          ancestry: ["Specialists"],
+        },
       ],
     });
   });

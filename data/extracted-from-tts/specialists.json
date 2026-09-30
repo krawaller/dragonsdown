@@ -1,0 +1,189 @@
+{
+  "Broom Hand": [
+    {
+      "source": "dd_all_exp",
+      "name": "Broom Hand",
+      "attribute": "Charisma",
+      "tokenCode": "H",
+      "basePrice": "2 Gold",
+      "startingPrice": "6 Gold",
+      "rule": "Fly to an adjacent Map Tile of the your without spending a Move Action. All other flying rules apply.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spBroomHand.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Chanter": [
+    {
+      "source": "dd_all_exp",
+      "name": "Chanter",
+      "attribute": "Charisma",
+      "tokenCode": "C",
+      "basePrice": "3 Gold",
+      "startingPrice": "9 Gold",
+      "rule": "Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spChanter.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "City Mancer": [
+    {
+      "source": "dd_all_exp",
+      "name": "City Mancer",
+      "attribute": "Charisma",
+      "tokenCode": "D",
+      "basePrice": "3 Gold",
+      "startingPrice": "9 Gold",
+      "rule": "Move to any revealed Civilization Location of your choice without spending a Move Action.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spCityMancer.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Curator": [
+    {
+      "source": "dd_all_exp",
+      "name": "Curator",
+      "attribute": "Lowest",
+      "tokenCode": "N",
+      "basePrice": "5 Gold",
+      "startingPrice": "15 Gold",
+      "rule": "Draw 1 random Treasure Card from the Treasure Deck.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spCurator.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Earth Mover": [
+    {
+      "source": "dd_all_exp",
+      "name": "Earth Mover",
+      "attribute": "Wisdom",
+      "tokenCode": "T",
+      "basePrice": "3 Gold",
+      "startingPrice": "9 Gold",
+      "rule": "Rotate the Map Tile containing the Earth Mover, or an adjacent Map Tile, to any legal orientation. After rotating, all paths must connect to paths, and all non-paths must connect to non-paths, on adjacent Map Tiles.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spEarthMover.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Fencer": [
+    {
+      "source": "dd_all_exp",
+      "name": "Fencer",
+      "attribute": "Cunning",
+      "tokenCode": "T",
+      "basePrice": "3 Gold",
+      "startingPrice": "9 Gold",
+      "rule": "Draw 1 random Item Card from the Item Deck.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spFencer.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Gate Mage": [
+    {
+      "source": "dd_all_exp",
+      "name": "Gate Mage",
+      "attribute": "Cunning",
+      "tokenCode": "D",
+      "basePrice": "2 Gold",
+      "startingPrice": "6 Gold",
+      "rule": "Move to a Clearing of your choice containing a revealed Gate without spending a Move Action.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spGateMage.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Healer": [
+    {
+      "source": "dd_all_exp",
+      "name": "Healer",
+      "attribute": "Wisdom",
+      "tokenCode": "S",
+      "basePrice": "1 Gold per cube",
+      "startingPrice": "3 Gold per cube",
+      "rule": "Respects Wisdom. Choose how many cubes to heal before rolling any Haggle Dice. Haggle to determine the price per cube, then multiply that price by the number of cubes healed.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spHealer.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Magus": [
+    {
+      "source": "dd_all_exp",
+      "name": "Magus",
+      "attribute": "Lowest",
+      "tokenCode": "N",
+      "basePrice": "3 Gold + the Spell's Price",
+      "startingPrice": "3 times the Base Price",
+      "rule": "Learn 1 Spell Card attached to an equipped Treasure Card. Does not require rolling the Learn Dice.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spMagus.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Pathfinder": [
+    {
+      "source": "dd_all_exp",
+      "name": "Pathfinder",
+      "attribute": "Charisma",
+      "tokenCode": "R",
+      "basePrice": "2 Gold",
+      "startingPrice": "6 Gold",
+      "rule": "Find 1 face-up Hidden Path of your choice on a Map Tile up to 2 Map Tiles away from the Pathfinder.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spPathFinder.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ],
+  "Telecrafter": [
+    {
+      "source": "dd_all_exp",
+      "name": "Telecrafter",
+      "attribute": "Cunning",
+      "tokenCode": "M",
+      "basePrice": "3 Gold",
+      "startingPrice": "9 Gold",
+      "rule": "Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.",
+      "imageURL": "https://dragonsdowndata.com/data/specialists/spBack.png",
+      "imageSecondaryURL": "https://dragonsdowndata.com/data/specialists/spTelecrafter.png",
+      "ancestry": [
+        "Specialists",
+        "Specialists"
+      ]
+    }
+  ]
+}
