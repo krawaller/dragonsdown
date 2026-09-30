@@ -796,6 +796,20 @@ export type TTSMapTile = {
   clearings: { x: number; y: number }[];
 };
 
+export type ManualMapTileClearing = {
+  clearing: number;
+  x?: number;
+  y?: number;
+};
+
+export type ManualClearingTypeAnchor = {
+  name: string;
+  guid?: string;
+  front?: string[];
+  back?: string[];
+  clearings?: ManualMapTileClearing[];
+};
+
 export type TTSMapTileMonsterGroup = {
   source: string;
   terrain: string;
@@ -3719,8 +3733,11 @@ function compareCivilisationTokens(
   );
 }
 
-export function extractMapTiles(root: unknown): TTSMapTile[] {
-  const clearingOffsets = extractClearingOffsets(root);
+export function extractMapTiles(
+  root: unknown,
+  clearingAnchors: ManualClearingTypeAnchor[] = [],
+): TTSMapTile[] {
+  const clearingOffsets = extractClearingOffsets(root, clearingAnchors);
   const tiles: TTSMapTile[] = [];
   walkMapTiles(root, [], clearingOffsets, tiles);
   return tiles.sort(
@@ -3933,6 +3950,7 @@ function mapTileFor(
 
 function extractClearingOffsets(
   root: unknown,
+  clearingAnchors: ManualClearingTypeAnchor[] = [],
 ): Map<string, { x: number; y: number }[]> {
   if (!isRecord(root)) return new Map();
   const luaScript = text(root.LuaScript);
@@ -3951,6 +3969,15 @@ function extractClearingOffsets(
         x: Number(match[1]),
         y: Number(match[3]),
       });
+    }
+    for (const anchor of clearingAnchors) {
+      if (anchor.guid !== guid) continue;
+      for (const correction of anchor.clearings ?? []) {
+        const clearing = clearings[correction.clearing - 1];
+        if (!clearing) continue;
+        if (correction.x !== undefined) clearing.x = correction.x;
+        if (correction.y !== undefined) clearing.y = correction.y;
+      }
     }
     if (clearings.length > 0) offsets.set(guid, clearings);
   }

@@ -48,6 +48,7 @@ import {
   type LineageAdvantageReference,
   type LineageIndex,
   type MapTileMonsterIndex,
+  type ManualClearingTypeAnchor,
   type ManualMonsterChipNameIndex,
   type MissionIndex,
   type MissionNicknameCorrection,
@@ -98,6 +99,10 @@ const MONSTER_CHIP_NAMES_FILE = path.join(
   MANUAL_DIR,
   "monster-chip-names.json",
 );
+const CLEARING_TYPE_ANCHORS_FILE = path.join(
+  MANUAL_DIR,
+  "clearing-type-anchors.json",
+);
 
 /** Add to this list if a future save adds content not present in `dd_all_exp.json`. */
 const SOURCE_FILES = ["dd_all_exp.json"];
@@ -116,6 +121,9 @@ async function main(): Promise<void> {
     await readJsonFile<MissionStatsMapping[]>(MISSION_STATS_FILE);
   const manualMonsterChipNames = await readJsonFile<ManualMonsterChipNameIndex>(
     MONSTER_CHIP_NAMES_FILE,
+  );
+  const clearingAnchors = await readJsonFile<ManualClearingTypeAnchor[]>(
+    CLEARING_TYPE_ANCHORS_FILE,
   );
   const classAdvantages = await readJsonFile<ClassAdvantageReference[]>(
     CLASS_ADVANTAGES_FILE,
@@ -178,7 +186,7 @@ async function main(): Promise<void> {
     const nativeSummonIndex = extractNativeSummons(save, stem);
     const specialistIndex = extractSpecialists(save, stem);
     const weatherIndex = extractWeatherCards(save, stem);
-    mapTiles = extractMapTiles(save);
+    mapTiles = extractMapTiles(save, clearingAnchors);
     console.log(
       `${file}: ${boardIndex.length} boards / ${countEntries(cardIndex)} cards / ${countEntries(classIndex)} classes / ${countEntries(lineageIndex)} lineages / ${countEntries(spellIndex)} spells / ${countEntries(chipIndex)} chips / ${countEntries(itemIndex)} item cards / ${countEntries(treasureIndex)} treasures / ${countEntries(legendaryLocationIndex)} legendary locations / ${countEntries(siteIndex)} sites / ${countEntries(siteMonsterIndex)} site-monster groups / ${countEntries(civIndex)} civ-locations / ${civilisationIndex.length} civilisation tokens / ${countEntries(wildernessIndex)} wilderness tokens / ${mapTiles.length} map tiles / ${countEntries(mapTileMonsterIndex)} map-tile monster groups / ${countEntries(missionIndex)} missions / ${countEntries(nativeIndex)} native groups / ${countEntries(nativeSummonIndex)} native summon groups / ${countEntries(specialistIndex)} specialists / ${countEntries(weatherIndex)} weather cards`,
     );

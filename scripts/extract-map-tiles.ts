@@ -1,6 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
-import { extractMapTiles } from "../src/lib/tts";
+import { extractMapTiles, type ManualClearingTypeAnchor } from "../src/lib/tts";
 
 const SOURCE_FILE = path.join(
   process.cwd(),
@@ -10,10 +10,19 @@ const SOURCE_FILE = path.join(
 );
 const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
 const OUT_FILE = path.join(OUT_DIR, "map-tiles.json");
+const CLEARING_TYPE_ANCHORS_FILE = path.join(
+  process.cwd(),
+  "data",
+  "manual",
+  "clearing-type-anchors.json",
+);
 
 async function main(): Promise<void> {
   const save = JSON.parse(await fs.readFile(SOURCE_FILE, "utf-8")) as unknown;
-  const mapTiles = extractMapTiles(save);
+  const clearingAnchors = JSON.parse(
+    await fs.readFile(CLEARING_TYPE_ANCHORS_FILE, "utf-8"),
+  ) as ManualClearingTypeAnchor[];
+  const mapTiles = extractMapTiles(save, clearingAnchors);
 
   await fs.mkdir(OUT_DIR, { recursive: true });
   await fs.writeFile(OUT_FILE, `${JSON.stringify(mapTiles, null, 2)}\n`);

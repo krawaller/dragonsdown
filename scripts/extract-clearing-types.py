@@ -34,7 +34,7 @@ class MapTile(TypedDict):
     clearings: list[Clearing]
 
 
-class ClearingTypeAnchor(TypedDict):
+class ClearingTypeAnchor(TypedDict, total=False):
     name: str
     front: list[str]
     back: list[str]
@@ -92,7 +92,10 @@ def main() -> None:
         f"clearing-types.json: {len(output)} map tiles, "
         f"{clearing_count} clearings, {clearing_count * 2} side labels"
     )
-    print(f"manual anchor check: {sum(len(a['front']) + len(a['back']) for a in anchors)} labels matched")
+    print(
+        "manual anchor check: "
+        f"{sum(len(a['front']) + len(a['back']) for a in anchors if has_anchor_labels(a))} labels matched"
+    )
 
 
 def read_json(path: Path) -> Any:
@@ -116,6 +119,8 @@ def build_prototypes(
 ) -> dict[ClearingType, list[tuple[float, float, float]]]:
     samples: dict[ClearingType, list[tuple[float, float, float]]] = {}
     for anchor in anchors:
+        if not has_anchor_labels(anchor):
+            continue
         tile = tiles_by_name.get(anchor["name"])
         if tile is None:
             raise ValueError(f"unknown map tile in clearing anchors: {anchor['name']}")
@@ -142,6 +147,10 @@ def check_anchor_counts(tile: MapTile, anchor: ClearingTypeAnchor) -> None:
                 f"{anchor['name']}: {side} has {side_count} types, "
                 f"but map tile has {clearing_count} clearings"
             )
+
+
+def has_anchor_labels(anchor: ClearingTypeAnchor) -> bool:
+    return "front" in anchor and "back" in anchor
 
 
 def classify_tiles(
@@ -282,6 +291,8 @@ def anchor_mismatches(
     output_by_name = {tile["name"]: tile for tile in output}
     mismatches = []
     for anchor in anchors:
+        if not has_anchor_labels(anchor):
+            continue
         tile = output_by_name[anchor["name"]]
         for index, clearing in enumerate(tile["clearings"]):
             expected_front = normalize_clearing_type(anchor["front"][index], anchor["name"])

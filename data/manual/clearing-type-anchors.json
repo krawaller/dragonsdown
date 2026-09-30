@@ -20,9 +20,24 @@
     "back": ["woods", "thickets", "woods", "thickets", "river", "thickets"]
   },
   {
+    "name": "Choking Green",
+    "guid": "c1636f",
+    "clearings": [{ "clearing": 6, "x": 2, "y": -1.25 }]
+  },
+  {
+    "name": "Decayed Swamp",
+    "guid": "3b3d33",
+    "clearings": [{ "clearing": 2, "x": -2.05, "y": 0.65 }]
+  },
+  {
     "name": "Deep Woods",
     "front": ["woods", "woods", "woods", "woods", "woods", "mountains"],
     "back": ["woods", "woods", "woods", "woods", "woods", "mountains"]
+  },
+  {
+    "name": "Flatlands",
+    "guid": "27f52c",
+    "clearings": [{ "clearing": 5, "x": 0.25, "y": -2.05 }]
   },
   {
     "name": "Moorland",
@@ -33,6 +48,11 @@
     "name": "Ravaging Run",
     "front": ["plains", "plains", "woods", "river", "river", "river"],
     "back": ["plains", "plains", "woods", "river", "river", "river"]
+  },
+  {
+    "name": "The Canopy",
+    "guid": "7c66e6",
+    "clearings": [{ "clearing": 4, "x": -2.3, "y": 1.25 }]
   },
   {
     "name": "Keep",
