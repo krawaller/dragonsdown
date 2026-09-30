@@ -763,16 +763,18 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice.\n\n![](/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg)",
+      "content": "![float-right](/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -787,16 +789,18 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action.\n\n![](/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg)",
+      "content": "![float-right](/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -811,16 +815,18 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck.\n\n![](/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg)",
+      "content": "![float-right](/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg) Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -861,16 +867,18 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck.\n\n![](/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg)",
+      "content": "![float-right](/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -989,16 +997,18 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.\n\n![](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg)",
+      "content": "![float-right](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -2542,16 +2552,18 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice.\n\n![](/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg)",
+      "content": "![float-right](/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Enchant a Map Tile up to 2 Map Tiles away using a magic color of your choice."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/2d23543eb48b3e42592c8fdfa49a60abf9321de6.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -2566,16 +2578,18 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action.\n\n![](/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg)",
+      "content": "![float-right](/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Move to any revealed Civilization Location of your choice without spending a Move Action."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/85af05104f6503eb3c82ceddef0526388da17c7b.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -2590,16 +2604,18 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck.\n\n![](/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg)",
+      "content": "![float-right](/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg) Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 5 Gold. Starting Price: 15 Gold. Draw 1 random Treasure Card from the Treasure Deck."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/f44838e5b21e5dac81b8ee1b6aeaf747f71a3f5e.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -2640,16 +2656,18 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck.\n\n![](/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg)",
+      "content": "![float-right](/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Draw 1 random Item Card from the Item Deck."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/b31d72a66e55ea9dbd585e6ccf096c2dcaa8b1b3.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -2768,16 +2786,18 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.\n\n![](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg)",
+      "content": "![float-right](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.",
       "contentNodes": [
         {
-          "kind": "markdown",
+          "kind": "mediaAside",
+          "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg",
+              "display": "float-right"
+            }
+          ],
           "markdown": "Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -2792,16 +2812,11 @@
         "column": "right",
         "section": "top"
       },
-      "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![](/images/pdf/00ba35bbc83653cd46e2af063af037c2abf8b4fc.jpeg)\n\n![](/images/pdf/806d611b09634b812c149c963d0c49d1d9dcd839.jpeg)\n\n![](/images/pdf/9dfac8d239b1396dc7897e61b0c14f7091178091.jpeg)",
+      "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![](/images/pdf/806d611b09634b812c149c963d0c49d1d9dcd839.jpeg)\n\n![](/images/pdf/9dfac8d239b1396dc7897e61b0c14f7091178091.jpeg)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Locations to which Native Groups may be summoned in alphabetical order."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/00ba35bbc83653cd46e2af063af037c2abf8b4fc.jpeg",
-          "display": "block"
         },
         {
           "kind": "image",

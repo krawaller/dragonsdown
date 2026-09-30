@@ -731,10 +731,21 @@ def find_floated_images(
             len(right_lines) == 1
             and line_starts_with_bold_label(right_lines[0].line)
         )
-        if (len(left_lines) >= 2 or left_labeled_single) and len(left_lines) >= len(right_lines):
+        small_square_side_icon = abs((ix1 - ix0) - height) <= 8 and max(
+            ix1 - ix0, height
+        ) <= 64
+        left_single_side_icon = (
+            len(left_lines) == 1 and len(right_lines) == 0 and small_square_side_icon
+        )
+        right_single_side_icon = (
+            len(right_lines) == 1 and len(left_lines) == 0 and small_square_side_icon
+        )
+        if (
+            len(left_lines) >= 2 or left_labeled_single or left_single_side_icon
+        ) and len(left_lines) >= len(right_lines):
             direction = "left"
             wrapped_lines = left_lines
-        elif len(right_lines) >= 2 or right_labeled_single:
+        elif len(right_lines) >= 2 or right_labeled_single or right_single_side_icon:
             direction = "right"
             wrapped_lines = right_lines
         if direction is None:
