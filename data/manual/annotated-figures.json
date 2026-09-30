@@ -8,6 +8,20 @@
     "expectedTexts": ["Terrain Pack", "Merchandise available at this Merchant"]
   },
   {
+    "doc": "wildlands",
+    "page": 3,
+    "target": { "titleRegex": "^Weather Cards$" },
+    "bbox": [249, 407, 401, 565],
+    "alt": "Annotated weather card reference",
+    "expectedTexts": [
+      "Weather Type",
+      "Duration",
+      "Weather Reveal",
+      "Game Effects",
+      "Seasons"
+    ]
+  },
+  {
     "doc": "core",
     "page": 7,
     "target": { "titleRegex": "^Map Tiles$" },
