@@ -394,6 +394,10 @@ function terrainPackLabel(pack: MissionTerrainPack): string {
       return "Deserts";
     case "oasis":
       return "Oasis";
+    case "hills":
+      return "Hills";
+    case "thickets":
+      return "Thickets";
   }
 }
 
