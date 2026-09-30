@@ -382,12 +382,19 @@ function getSpellCastersIndex(): Record<
 }
 
 /** Sides on which a monster casts a given spell. */
+export type SpellCasterToken = {
+  name: string;
+  imageURL: string;
+  imageSecondaryURL: string;
+};
+
 export type SpellCasterEntry = {
   monsterName: string;
   sides: ("front" | "back")[];
   monsterSlug: string;
   casterKind: "monster" | "native";
   href: string;
+  token?: SpellCasterToken;
 };
 
 /** Spells cast by a given monster, keyed by side. */
@@ -428,6 +435,7 @@ export function getSpellCastersForSpell(spellName: string): SpellCasterEntry[] {
         monsterSlug: casterLink.slug,
         casterKind: casterLink.kind,
         href: casterLink.href,
+        token: casterLink.token,
       };
     })
     .sort((a, b) => a.monsterName.localeCompare(b.monsterName));
@@ -503,42 +511,73 @@ function groupLinkForCaster(monsterName: string): {
   kind: "monster" | "native";
   slug: string;
   href: string;
+  token?: SpellCasterToken;
 } {
   const native = groupForCaster(getAllNativeGroups(), monsterName);
   if (native) {
     return {
       kind: "native",
-      slug: native.slug,
-      href: `/natives/${native.slug}`,
+      slug: native.entry.slug,
+      href: `/natives/${native.entry.slug}`,
+      token: tokenForCasterMatch(native, monsterName),
     };
   }
   const monster = groupForCaster(getAllMonsterGroups(), monsterName);
-  const slug = monster ? monster.slug : slugify(monsterName);
+  const slug = monster ? monster.entry.slug : slugify(monsterName);
   return {
     kind: "monster",
     slug,
     href: `/monster-groups/${slug}`,
+    token: monster ? tokenForCasterMatch(monster, monsterName) : undefined,
   };
 }
+
+type CasterGroupMatch = {
+  entry: MonsterGroupEntry;
+  chip?: MonsterGroupChip;
+};
 
 function groupForCaster(
   groups: MonsterGroupEntry[],
   monsterName: string,
-): MonsterGroupEntry | undefined {
-  return groups.find((entry) => {
+): CasterGroupMatch | undefined {
+  for (const entry of groups) {
+    const chip = chipForCaster(entry, monsterName);
+    if (chip) return { entry, chip };
     if (spellCasterMatchesGroupName(monsterName, entry.prettyName)) {
-      return true;
+      return { entry };
     }
-    if (
-      entry.chips.some(
-        (chip) =>
-          chip.monsterName &&
-          spellCasterMatchesExactName(monsterName, chip.monsterName),
+  }
+  return undefined;
+}
+
+function tokenForCasterMatch(
+  match: CasterGroupMatch,
+  casterName: string,
+): SpellCasterToken | undefined {
+  const chip = match.chip ?? match.entry.chips[0];
+  if (!chip) return undefined;
+  return {
+    name: chip.monsterName ?? casterName,
+    imageURL: chip.imageURL,
+    imageSecondaryURL: chip.imageSecondaryURL,
+  };
+}
+
+function chipForCaster(
+  entry: MonsterGroupEntry,
+  casterName: string,
+): MonsterGroupChip | undefined {
+  return entry.chips.find((chip) => {
+    if (!chip.monsterName) return false;
+    return (
+      spellCasterMatchesExactName(casterName, chip.monsterName) ||
+      spellCasterMatchesGroupSuffix(
+        casterName,
+        entry.prettyName,
+        chip.monsterName,
       )
-    ) {
-      return true;
-    }
-    return false;
+    );
   });
 }
 
@@ -564,6 +603,20 @@ function spellCasterMatchesExactName(
     normalizedNameVariants(monsterName).some(
       (normalizedMonster) => normalizedCaster === normalizedMonster,
     ),
+  );
+}
+
+function spellCasterMatchesGroupSuffix(
+  casterName: string,
+  groupName: string,
+  chipName: string,
+): boolean {
+  return normalizedNameVariants(casterName).some((normalizedCaster) =>
+    normalizedNameVariants(groupName).some((normalizedGroup) => {
+      if (!normalizedCaster.startsWith(`${normalizedGroup} `)) return false;
+      const suffix = normalizedCaster.slice(normalizedGroup.length + 1);
+      return normalizedNameVariants(chipName).includes(suffix);
+    }),
   );
 }
 

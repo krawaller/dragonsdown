@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { getMagicTypeById, magicLabel } from "@/lib/magic";
 import { resolveSpellRulebookLinks } from "@/lib/rulebook-links";
-import type { TTSSpellCard, TTSSpellDeck } from "@/lib/tts";
+import type { TTSSpellCard, TTSSpellDeck, TTSTreasureCard } from "@/lib/tts";
 import {
   getAllSpells,
   getEquipmentCastersForSpell,
@@ -31,6 +32,9 @@ export default async function SpellPage({
   const rulebookLinks = await resolveSpellRulebookLinks(entry.name);
   const casters = getSpellCastersForSpell(entry.name);
   const equipmentCasters = getEquipmentCastersForSpell(entry.name);
+  const treasureCasterItems = equipmentCasters.flatMap((caster) =>
+    caster.cards.map((card, index) => ({ caster, card, index })),
+  );
   const heroCard = spell.startingSpellCards[0];
   const spellCard = spell.spellCards[0] ?? spell.cards[0];
   const primaryMagic = spell.magic[0];
@@ -119,16 +123,34 @@ export default async function SpellPage({
           <RulebookLinks links={rulebookLinks} heading="Rulebook" />
 
           {(casters.length > 0 || equipmentCasters.length > 0) && (
-            <section>
+            <section className="space-y-4">
               <h2 className="text-xl font-semibold mb-3">Cast By</h2>
-              <div className="flex flex-wrap gap-2">
-                {casters.map((caster) => (
-                  <MonsterCasterLink key={caster.monsterName} caster={caster} />
-                ))}
-                {equipmentCasters.map((caster) => (
-                  <EquipmentCasterLink key={caster.slug} caster={caster} />
-                ))}
-              </div>
+              <CollapsibleBox
+                title="Cast by monsters & natives"
+                count={casters.length}
+              >
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+                  {casters.map((caster) => (
+                    <MonsterCasterCard
+                      key={caster.monsterName}
+                      caster={caster}
+                    />
+                  ))}
+                </div>
+              </CollapsibleBox>
+              <CollapsibleBox
+                title="Cast by treasures"
+                count={treasureCasterItems.length}
+              >
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+                  {treasureCasterItems.map((item) => (
+                    <TreasureCasterCard
+                      key={`${item.caster.slug}-${item.card.faceURL}-${item.card.row}-${item.card.col}-${item.index}`}
+                      item={item}
+                    />
+                  ))}
+                </div>
+              </CollapsibleBox>
             </section>
           )}
         </div>
@@ -154,37 +176,77 @@ export default async function SpellPage({
   );
 }
 
-function MonsterCasterLink({ caster }: { caster: SpellCasterEntry }) {
+function MonsterCasterCard({ caster }: { caster: SpellCasterEntry }) {
+  const token = caster.token;
+  const imageURL = token ? tokenImageForSides(token, caster.sides) : undefined;
+
   return (
     <Link
       href={caster.href}
-      className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+      className="group block rounded border border-zinc-200 p-3 text-center transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
     >
-      <span className="font-medium">{caster.monsterName}</span>
-      <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-        {caster.casterKind === "native" ? "native" : "monster"} ·{" "}
-        {caster.sides.join(" & ")}
-      </span>
+      <figure>
+        {imageURL ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={imageURL}
+            alt={`${caster.monsterName} ${sideLabel(caster.sides)} token`}
+            className="mx-auto aspect-square w-full max-w-28 rounded-full border border-zinc-200 bg-zinc-100 object-cover transition group-hover:ring-2 group-hover:ring-zinc-300 dark:border-zinc-800 dark:bg-zinc-900 dark:group-hover:ring-zinc-700"
+          />
+        ) : (
+          <div className="mx-auto grid aspect-square w-full max-w-28 place-items-center rounded-full border border-zinc-200 bg-zinc-100 text-xs text-zinc-500 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-400">
+            No image
+          </div>
+        )}
+        <figcaption className="mt-3 text-sm font-medium text-zinc-900 dark:text-zinc-100">
+          {caster.monsterName}
+        </figcaption>
+        <p className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+          {sideLabel(caster.sides)}
+        </p>
+      </figure>
     </Link>
   );
 }
 
-function EquipmentCasterLink({
-  caster,
+function TreasureCasterCard({
+  item,
 }: {
-  caster: EquipmentSpellCasterEntry;
+  item: {
+    caster: EquipmentSpellCasterEntry;
+    card: TTSTreasureCard;
+    index: number;
+  };
 }) {
   return (
     <Link
-      href={`/equipment/${caster.slug}`}
-      className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
+      href={`/equipment/${item.caster.slug}`}
+      className="group block rounded border border-zinc-200 p-3 text-center transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
     >
-      <span className="font-medium">{caster.name}</span>
-      <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-        {caster.decks.map(equipmentDeckLabel).join(" & ")}
-      </span>
+      <figure>
+        <SpriteCell
+          card={item.card}
+          className="mx-auto w-full max-w-28 border border-zinc-200 shadow-sm transition group-hover:ring-2 group-hover:ring-zinc-300 dark:border-zinc-800 dark:group-hover:ring-zinc-700"
+        />
+        <figcaption className="mt-3 text-sm font-medium text-zinc-900 dark:text-zinc-100">
+          {item.caster.name}
+        </figcaption>
+      </figure>
     </Link>
   );
+}
+
+function tokenImageForSides(
+  token: NonNullable<SpellCasterEntry["token"]>,
+  sides: SpellCasterEntry["sides"],
+): string {
+  return sides.length === 1 && sides[0] === "back"
+    ? token.imageSecondaryURL
+    : token.imageURL;
+}
+
+function sideLabel(sides: SpellCasterEntry["sides"]): string {
+  return sides.join("/");
 }
 
 function SpellCardSet({
@@ -266,21 +328,6 @@ function deckLabel(deck: TTSSpellDeck): string {
       return "Spells";
     case "heroStartingSpells":
       return "Hero Starting Spells";
-  }
-}
-
-function equipmentDeckLabel(
-  deck: EquipmentSpellCasterEntry["decks"][number],
-): string {
-  switch (deck) {
-    case "item":
-      return "Item";
-    case "treasure":
-      return "Treasure";
-    case "deep-treasure":
-      return "Deep Treasure";
-    case "legendary":
-      return "Legendary Treasure";
   }
 }
 

@@ -4123,8 +4123,8 @@ function imageFor(
 
   const out: TTSCardImage = {
     source,
-    faceURL: deck.FaceURL,
-    backURL: deck.BackURL,
+    faceURL: normalizeCardImageURL(deck.FaceURL),
+    backURL: normalizeCardImageURL(deck.BackURL),
     numWidth: deck.NumWidth,
     numHeight: deck.NumHeight,
     row,
@@ -4136,6 +4136,13 @@ function imageFor(
   }
   if (ancestry.length > 0) out.ancestry = ancestry;
   return out;
+}
+
+function normalizeCardImageURL(url: string): string {
+  return url.replace(
+    "https://dragonsdowndata.com/data/w/treasures/",
+    "https://dragonsdowndata.com/data/treasures/",
+  );
 }
 
 function isRecord(v: unknown): v is Record<string, unknown> {
