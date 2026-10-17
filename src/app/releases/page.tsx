@@ -24,9 +24,7 @@ export default function ReleasesPage() {
             href={`/releases/${release.slug}`}
             className="block rounded-lg border border-zinc-200 px-5 py-4 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
           >
-            <span className="block text-lg font-semibold">
-              {release.title}
-            </span>
+            <span className="block text-lg font-semibold">{release.title}</span>
             <span className="mt-2 block text-sm text-zinc-500 dark:text-zinc-400">
               Version {release.version}
             </span>

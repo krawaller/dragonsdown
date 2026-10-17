@@ -286,7 +286,10 @@ function releaseNativeGroup(release: ReleaseEntry): ReleaseComponentGroup {
     title: "Native Groups",
     items: getAllNativeGroups()
       .filter((entry) => entryHasBox(entry, release.boxName))
-      .map((entry) => ({ name: entry.prettyName, href: `/natives/${entry.slug}` })),
+      .map((entry) => ({
+        name: entry.prettyName,
+        href: `/natives/${entry.slug}`,
+      })),
   };
 }
 
@@ -310,7 +313,8 @@ function releaseWeatherGroup(release: ReleaseEntry): ReleaseComponentGroup {
 
 function entryHasBox(value: unknown, boxName: string): boolean {
   if (!value || typeof value !== "object") return false;
-  if (Array.isArray(value)) return value.some((entry) => entryHasBox(entry, boxName));
+  if (Array.isArray(value))
+    return value.some((entry) => entryHasBox(entry, boxName));
   const record = value as Record<string, unknown>;
   if (record.box === boxName) return true;
   return Object.values(record).some((entry) => entryHasBox(entry, boxName));
