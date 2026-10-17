@@ -44,7 +44,9 @@ export default async function SpellPage({
   );
   const spellCard = spell.spellCards[0] ?? spell.cards[0];
   const casterCount = casters.length + treasureCasterItems.length;
-  const primaryMagic = spell.magic[0] ? getMagicTypeById(spell.magic[0]) : undefined;
+  const primaryMagic = spell.magic[0]
+    ? getMagicTypeById(spell.magic[0])
+    : undefined;
   const magicIcon = primaryMagic
     ? (await resolveMagicRulebookLinks(primaryMagic.id, "core")).find((link) =>
         Boolean(link.icon),
