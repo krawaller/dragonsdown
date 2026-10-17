@@ -1876,6 +1876,10 @@ function itemBoxFromAncestry(ancestry: string[]): string {
   return boxFromAncestry(ancestry) ?? "Dragons Down";
 }
 
+function chipBoxFromAncestry(ancestry: string[]): string {
+  return boxFromAncestry(ancestry) ?? "Dragons Down";
+}
+
 function boxFromAncestry(ancestry: string[]): string | undefined {
   for (const nickname of ancestry) {
     const box = boxForContainerNickname(nickname);
@@ -2557,7 +2561,7 @@ export function extractChips(root: unknown, source: string): ChipIndex {
     );
     if (existing) {
       addToLocations(existing.locations, ancestry);
-      existing.box ??= boxFromAncestry(ancestry);
+      existing.box ??= chipBoxFromAncestry(ancestry);
     } else {
       const entry: TTSChip = {
         source,
@@ -2566,8 +2570,7 @@ export function extractChips(root: unknown, source: string): ChipIndex {
         imageSecondaryURL,
         locations: [{ ancestry, count: 1 }],
       };
-      const box = boxFromAncestry(ancestry);
-      if (box) entry.box = box;
+      entry.box = chipBoxFromAncestry(ancestry);
       bucket.push(entry);
     }
   }

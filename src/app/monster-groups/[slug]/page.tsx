@@ -4,7 +4,12 @@ import { SpriteCell } from "@/components/CardSprite";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
+import {
+  PageHeader,
+  type PageHeaderCategoryLink,
+} from "@/components/PageHeader";
 import { RulebookLinks } from "@/components/RulebookLinks";
+import { getReleaseByBoxName } from "@/lib/releases";
 import { resolveMonsterRulebookLinks } from "@/lib/rulebook-links";
 import type { RulebookLink } from "@/lib/rulebook-links";
 import { chipTotalCount } from "@/lib/tts";
@@ -24,6 +29,7 @@ import {
   type MonsterGroupSiteSummon,
   type MonsterSpellEntry,
   type MonsterGroupEntry,
+  type TerrainPackEntry,
 } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
@@ -52,6 +58,14 @@ export default async function MonsterGroupPage({
     (sum, chip) => sum + chipTotalCount(chip),
     0,
   );
+  const releaseBox = uniqueDefinedValue(group.chips.map((chip) => chip.box));
+  const release = releaseBox ? getReleaseByBoxName(releaseBox) : undefined;
+  const terrainPack = uniqueTerrainPackForMonsterGroup(group);
+  const categories = monsterGroupHeaderCategories({
+    release,
+    group,
+    terrainPack,
+  });
   const sourceCount =
     group.mapTiles.length +
     group.sites.length +
@@ -59,27 +73,19 @@ export default async function MonsterGroupPage({
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
-      <div className="flex flex-wrap gap-3 text-sm text-zinc-600 dark:text-zinc-400">
-        <Link href="/" className="hover:underline">
-          ← All docs
-        </Link>
-        <span aria-hidden="true">/</span>
-        <Link href="/monster-groups" className="hover:underline">
-          Monster Groups
-        </Link>
-      </div>
-      <h1 className="text-4xl font-bold mt-4 mb-2">{group.prettyName}</h1>
-      <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        {chipCountLabel(totalChips)}
-      </p>
-
-      <RulebookLinks
-        links={rulebookLinks}
-        heading="Rulebook"
-        className="mb-10"
+      <PageHeader
+        title={group.prettyName}
+        subtitle={chipCountLabel(totalChips)}
+        categories={categories}
       />
 
-      <div className="mb-10 space-y-6">
+      <div className="space-y-6">
+        <RulebookLinks
+          links={rulebookLinks}
+          heading={null}
+          linksClassName="space-y-6"
+        />
+
         <CollapsibleBox
           title="Appears at"
           count={sourceCount}
@@ -95,21 +101,107 @@ export default async function MonsterGroupPage({
         >
           <MissionCardLinks missions={featuredMissions} />
         </CollapsibleBox>
+
+        {spells.length > 0 && (
+          <MonsterSpellLinks groupName={group.prettyName} spells={spells} />
+        )}
+
+        <CollapsibleBox
+          title="Chips"
+          count={totalChips}
+          countLabel={chipCountLabel(totalChips)}
+        >
+          <MonsterGroupChipList group={displayGroup} />
+        </CollapsibleBox>
       </div>
-
-      {spells.length > 0 && (
-        <MonsterSpellLinks groupName={group.prettyName} spells={spells} />
-      )}
-
-      <CollapsibleBox
-        title="Chips"
-        count={totalChips}
-        countLabel={chipCountLabel(totalChips)}
-      >
-        <MonsterGroupChipList group={displayGroup} />
-      </CollapsibleBox>
     </main>
   );
+}
+
+function monsterGroupHeaderCategories({
+  release,
+  group,
+  terrainPack,
+}: {
+  release?: ReturnType<typeof getReleaseByBoxName>;
+  group: MonsterGroupEntry;
+  terrainPack?: TerrainPackEntry;
+}): PageHeaderCategoryLink[] {
+  const representativeChip = group.chips[0];
+
+  return [
+    ...(release
+      ? [
+          {
+            href: `/releases/${release.slug}`,
+            label: "Release",
+            value: releaseCategoryValue(release),
+            imageUrl: release.iconUrl,
+            imageFit: "contain" as const,
+          },
+        ]
+      : []),
+    {
+      href: "/monster-groups",
+      label: "Component",
+      value: "Monster Chips",
+      imageUrl:
+        representativeChip?.imageSecondaryURL ?? representativeChip?.imageURL,
+      imageFit: "contain",
+    },
+    ...(terrainPack
+      ? [
+          {
+            href: `/terrain-packs/${terrainPack.slug}`,
+            label: "Terrain pack",
+            value:
+              terrainPack.slug === "neutral"
+                ? "Always in use"
+                : terrainPack.name,
+            imageUrl: terrainPack.iconUrl,
+          },
+        ]
+      : []),
+  ];
+}
+
+function uniqueTerrainPackForMonsterGroup(
+  group: MonsterGroupEntry,
+): TerrainPackEntry | undefined {
+  const terrainPackNames = [
+    ...group.sites.map(terrainPackNameForSiteSource),
+    ...group.legendaryLocations.map((summon) =>
+      terrainPackNameForSourceHref(summon.href),
+    ),
+    ...group.mapTiles.map((summon) => {
+      const tile = getAllMapTiles().find(
+        (entry) =>
+          entry.terrain === summon.terrain && entry.name === summon.tileName,
+      );
+      return tile?.terrainPack;
+    }),
+  ];
+  const terrainPackName = uniqueDefinedValue(terrainPackNames);
+  if (!terrainPackName) return undefined;
+  const terrainPacks = getAllTerrainPacks().filter(
+    (pack) => pack.name === terrainPackName,
+  );
+  return terrainPacks.length === 1 ? terrainPacks[0] : undefined;
+}
+
+function uniqueDefinedValue(
+  values: (string | undefined)[],
+): string | undefined {
+  const uniqueValues = new Set(
+    values.filter((value): value is string => !!value),
+  );
+  return uniqueValues.size === 1 ? [...uniqueValues][0] : undefined;
+}
+
+function releaseCategoryValue(
+  release: NonNullable<ReturnType<typeof getReleaseByBoxName>>,
+): string {
+  return release.sourceSlug === "core" ? "Core box" : release.title;
 }
 
 function SummoningSourceGrid({ group }: { group: MonsterGroupEntry }) {
@@ -278,23 +370,21 @@ function MonsterSpellLinks({
   spells: MonsterSpellEntry[];
 }) {
   return (
-    <div className="mb-10">
-      <CollapsibleBox
-        title="Spells"
-        count={spells.length}
-        countLabel={`${spells.length} spell${spells.length === 1 ? "" : "s"}`}
-      >
-        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6">
-          {spells.map((spell) => (
-            <MonsterSpellTile
-              key={spell.spellName}
-              groupName={groupName}
-              spell={spell}
-            />
-          ))}
-        </div>
-      </CollapsibleBox>
-    </div>
+    <CollapsibleBox
+      title="Spells"
+      count={spells.length}
+      countLabel={`${spells.length} spell${spells.length === 1 ? "" : "s"}`}
+    >
+      <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6">
+        {spells.map((spell) => (
+          <MonsterSpellTile
+            key={spell.spellName}
+            groupName={groupName}
+            spell={spell}
+          />
+        ))}
+      </div>
+    </CollapsibleBox>
   );
 }
 
