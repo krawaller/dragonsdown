@@ -59,7 +59,11 @@ import {
   type WeatherIndex,
   type WildernessTokenIndex,
 } from ".";
+import terrainPackReleaseData from "../../../data/manual/terrain-pack-releases.json";
 import aliasesData from "../../../data/manual/tts-aliases.json";
+
+const MANUAL_TERRAIN_PACK_RELEASE_BOXES: Record<string, string> =
+  terrainPackReleaseData;
 
 const EXTRACTED_TTS_DIR = path.join(
   process.cwd(),
@@ -196,7 +200,9 @@ function getItemIndex(): ItemIndex {
 
 function getTreasureIndex(): TreasureIndex {
   if (cachedTreasureIndex !== null) return cachedTreasureIndex;
-  cachedTreasureIndex = readJsonOrEmpty<TreasureIndex>(TREASURES_FILE);
+  cachedTreasureIndex = normalizeTerrainPackBoxesByKey(
+    readJsonOrEmpty<TreasureIndex>(TREASURES_FILE),
+  );
   return cachedTreasureIndex;
 }
 
@@ -211,7 +217,9 @@ function getLegendaryLocationIndex(): LegendaryLocationIndex {
 
 function getSiteIndex(): SiteIndex {
   if (cachedSiteIndex !== null) return cachedSiteIndex;
-  cachedSiteIndex = withPrintedSetupCardSites(getExtractedSiteIndex());
+  cachedSiteIndex = normalizeTerrainPackBoxesByKey(
+    withPrintedSetupCardSites(getExtractedSiteIndex()),
+  );
   return cachedSiteIndex;
 }
 
@@ -239,13 +247,18 @@ function withPrintedSetupCardSites(siteIndex: SiteIndex): SiteIndex {
       );
       if (!token) continue;
 
+      const terrainPack =
+        token.terrainPack ?? board.terrainPack ?? board.terrain;
+      const box = terrainPackReleaseBox(terrainPack) ?? token.box;
+
       next[siteName] = [
         {
           source: token.source,
           imageURL: token.imageURL,
           imageSecondaryURL: token.imageURL,
           ancestry: token.locations.flatMap((location) => location.ancestry),
-          terrainPack: token.terrainPack ?? board.terrainPack ?? board.terrain,
+          terrainPack,
+          ...(box ? { box } : {}),
           gmNotes: token.clearing?.toString(),
         },
       ];
@@ -267,6 +280,8 @@ function getWildernessTokenIndex(): WildernessTokenIndex {
   for (const [terrain, tokens] of Object.entries(data)) {
     for (const token of tokens) {
       if (!token.terrain) token.terrain = terrain;
+      const normalized = withTerrainPackReleaseBox(token);
+      if (normalized !== token) Object.assign(token, normalized);
     }
   }
   cachedWildernessTokenIndex = data;
@@ -319,7 +334,14 @@ function getMapTileMonsterIndex(): MapTileMonsterIndex {
 function getMapTiles(): TTSMapTile[] {
   if (cachedMapTiles !== null) return cachedMapTiles;
   const data = readJsonOrEmpty<unknown>(MAP_TILES_FILE);
-  cachedMapTiles = Array.isArray(data) ? (data as TTSMapTile[]) : [];
+  cachedMapTiles = Array.isArray(data)
+    ? (data as TTSMapTile[]).map((tile) =>
+        withTerrainPackReleaseBox({
+          ...tile,
+          terrainPack: mapTileTerrainPack(tile),
+        }),
+      )
+    : [];
   return cachedMapTiles;
 }
 
@@ -350,7 +372,9 @@ function getWeatherIndex(): WeatherIndex {
 
 function getMissionIndex(): MissionIndex {
   if (cachedMissionIndex !== null) return cachedMissionIndex;
-  cachedMissionIndex = readJsonOrEmpty<MissionIndex>(MISSIONS_FILE);
+  cachedMissionIndex = normalizeTerrainPackBoxesByKey(
+    readJsonOrEmpty<MissionIndex>(MISSIONS_FILE),
+  );
   return cachedMissionIndex;
 }
 
@@ -1590,12 +1614,15 @@ export function getMerchantBySlug(slug: string): MerchantEntry | undefined {
 
 export function getAllMapTiles(): MapTileEntry[] {
   return getMapTiles()
-    .map((tile) => ({
-      ...tile,
-      slug: slugify(tile.name),
-      terrainPack: mapTileTerrainPack(tile),
-      href: `/map-tiles/${slugify(tile.name)}`,
-    }))
+    .map((tile) => {
+      const terrainPack = mapTileTerrainPack(tile);
+      return {
+        ...tile,
+        slug: slugify(tile.name),
+        terrainPack,
+        href: `/map-tiles/${slugify(tile.name)}`,
+      };
+    })
     .sort(
       (a, b) =>
         a.terrainPack.localeCompare(b.terrainPack) ||
@@ -1685,7 +1712,7 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
     return {
       name,
       slug: slugify(name),
-      box: terrainPackBox(packMapTiles),
+      box: terrainPackReleaseBox(name) ?? terrainPackBox(packMapTiles),
       iconUrl: terrainPackIconUrl(name, wildernessTokens),
       boards: boards.filter((board) => boardTerrainPack(board) === name),
       civilisationTokens: civilisationTokens.filter((entry) =>
@@ -1715,6 +1742,72 @@ function terrainPackBox(mapTiles: { box?: string }[]): string | undefined {
     mapTiles.flatMap((tile) => (tile.box ? [tile.box] : [])),
   );
   return boxes.size === 1 ? [...boxes][0] : undefined;
+}
+
+function terrainPackReleaseBox(
+  terrainPackName: string | undefined,
+): string | undefined {
+  if (!terrainPackName) return undefined;
+  for (const key of terrainPackReleaseLookupKeys(terrainPackName)) {
+    const box = MANUAL_TERRAIN_PACK_RELEASE_BOXES[key];
+    if (box) return box;
+  }
+  return undefined;
+}
+
+function terrainPackReleaseLookupKeys(terrainPackName: string): string[] {
+  const keys = [slugify(terrainPackName)];
+  const missionTerrainPack = missionTerrainPackName(terrainPackName);
+  if (missionTerrainPack) keys.push(slugify(missionTerrainPack));
+  return [...new Set(keys)];
+}
+
+function missionTerrainPackName(value: string): string | undefined {
+  switch (value.trim().toLowerCase()) {
+    case "caves":
+      return "Cruel Caves";
+    case "deserts":
+      return "Dreadful Deserts";
+    case "hills":
+      return "Hostile Hills";
+    case "mountains":
+      return "Malevolent Mountains";
+    case "oasis":
+      return "Oasis";
+    case "plains":
+      return "Perilous Plains";
+    case "riverlands":
+      return "Ruthless Riverlands";
+    case "swamps":
+      return "Sinister Swamps";
+    case "thickets":
+      return "Tangled Thickets";
+    case "woods":
+      return "Wicked Woods";
+    default:
+      return undefined;
+  }
+}
+
+function normalizeTerrainPackBoxesByKey<
+  T extends Record<
+    string,
+    { terrain?: string; terrainPack?: string; box?: string }[]
+  >,
+>(index: T): T {
+  return Object.fromEntries(
+    Object.entries(index).map(([key, entries]) => [
+      key,
+      entries.map(withTerrainPackReleaseBox),
+    ]),
+  ) as T;
+}
+
+function withTerrainPackReleaseBox<
+  T extends { terrain?: string; terrainPack?: string; box?: string },
+>(entry: T): T {
+  const box = terrainPackReleaseBox(entry.terrainPack ?? entry.terrain);
+  return box ? { ...entry, box } : entry;
 }
 
 export function getTerrainPackBySlug(

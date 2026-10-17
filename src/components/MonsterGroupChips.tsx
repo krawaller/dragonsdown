@@ -19,6 +19,7 @@ export function MonsterGroupStack({
   subtitle?: string;
 }) {
   const preview = group.chips.slice(0, 4);
+  const previewHeightClass = preview.length <= 1 ? "h-20" : "h-28";
   const totalCopies = group.chips.reduce(
     (sum, chip) => sum + chipTotalCount(chip),
     0,
@@ -30,7 +31,7 @@ export function MonsterGroupStack({
       href={`${hrefBase}/${group.slug}`}
       className="group block rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
     >
-      <div className="relative h-28 mb-4">
+      <div className={`relative mb-4 ${previewHeightClass}`}>
         {preview.map((chip, index) => (
           <span
             key={`${chip.imageURL}-${index}`}

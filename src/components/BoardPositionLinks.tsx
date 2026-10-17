@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import {
   getBoardPositionForItem,
   type BoardPosition,
 } from "@/lib/board-positions";
+import { cropForBoardPosition } from "@/lib/board-position-crop";
 import type { BoardEntry } from "@/lib/tts/lookup";
 
 export function BoardPositionLinks({
@@ -13,11 +15,21 @@ export function BoardPositionLinks({
   itemName,
   headingClassName = "text-sm font-medium",
   className = "mb-8",
+  showHeading = true,
+  showCaption = true,
+  linked = true,
+  displaySides = "toggle",
+  collapsibleTitle = "Board",
 }: {
   boards: BoardEntry[];
   itemName: string;
   headingClassName?: string;
   className?: string;
+  showHeading?: boolean;
+  showCaption?: boolean;
+  linked?: boolean;
+  displaySides?: "toggle" | "both";
+  collapsibleTitle?: string;
 }) {
   const [side, setSide] = useState<"front" | "back">("front");
   if (boards.length === 0) return null;
@@ -26,49 +38,144 @@ export function BoardPositionLinks({
   const position = getBoardPositionForItem(board, itemName);
   const imageURL = side === "back" ? board.imageSecondaryURL : board.imageURL;
 
+  if (displaySides === "both") {
+    return (
+      <section className={className}>
+        <CollapsibleBox
+          title={collapsibleTitle}
+          count={1}
+          countLabel={title}
+          contentClassName="border-t border-zinc-200 p-4 dark:border-zinc-800 sm:p-5"
+        >
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {(["front", "back"] as const).map((boardSide) => (
+              <div key={boardSide} className="min-w-0">
+                <BoardPositionFigure
+                  imageURL={
+                    boardSide === "back"
+                      ? board.imageSecondaryURL
+                      : board.imageURL
+                  }
+                  title={title}
+                  itemName={itemName}
+                  position={position}
+                  side={boardSide}
+                  terrain={board.terrain}
+                  showCaption={false}
+                />
+                <p className="mt-2 text-sm font-medium capitalize text-zinc-900 dark:text-zinc-100">
+                  {boardSide}
+                </p>
+              </div>
+            ))}
+          </div>
+        </CollapsibleBox>
+      </section>
+    );
+  }
+
   return (
     <section className={className}>
-      <div className="mb-2 flex flex-wrap items-center justify-between gap-3">
-        <h2 className={headingClassName}>Board</h2>
-        <div
-          className="inline-flex overflow-hidden rounded border border-zinc-200 text-sm dark:border-zinc-800"
-          aria-label={`${itemName} board side`}
-        >
-          {(["front", "back"] as const).map((option) => (
-            <button
-              key={option}
-              type="button"
-              onClick={() => setSide(option)}
-              className={`px-3 py-1.5 capitalize transition-colors ${
-                side === option
-                  ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950"
-                  : "text-zinc-600 hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-900"
-              }`}
-              aria-pressed={side === option}
-            >
-              {option}
-            </button>
-          ))}
+      {(showHeading || boards.length > 1) && (
+        <div className="mb-2 flex flex-wrap items-center justify-between gap-3">
+          {showHeading ? <h2 className={headingClassName}>Board</h2> : <span />}
+          <div
+            className="inline-flex overflow-hidden rounded border border-zinc-200 text-sm dark:border-zinc-800"
+            aria-label={`${itemName} board side`}
+          >
+            {(["front", "back"] as const).map((option) => (
+              <button
+                key={option}
+                type="button"
+                onClick={() => setSide(option)}
+                className={`px-3 py-1.5 capitalize transition-colors ${
+                  side === option
+                    ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950"
+                    : "text-zinc-600 hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-900"
+                }`}
+                aria-pressed={side === option}
+              >
+                {option}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
-      <Link href={`/boards/${slug}`} className="group block max-w-sm">
-        <span className="block overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition group-hover:ring-2 group-hover:ring-zinc-400 dark:border-zinc-800 dark:bg-zinc-900">
-          <BoardPositionImage
+      )}
+      {linked ? (
+        <Link href={`/boards/${slug}`} className="group block max-w-sm">
+          <BoardPositionFigure
             imageURL={imageURL}
             title={title}
             itemName={itemName}
             position={position}
             side={side}
+            terrain={board.terrain}
+            showCaption={showCaption}
+            linked
           />
-        </span>
-        <span className="mt-2 block text-sm font-medium group-hover:underline">
-          {title}
-        </span>
-        <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-          {board.terrain}
-        </span>
-      </Link>
+        </Link>
+      ) : (
+        <div className="block max-w-sm">
+          <BoardPositionFigure
+            imageURL={imageURL}
+            title={title}
+            itemName={itemName}
+            position={position}
+            side={side}
+            terrain={board.terrain}
+            showCaption={showCaption}
+          />
+        </div>
+      )}
     </section>
+  );
+}
+
+function BoardPositionFigure({
+  imageURL,
+  title,
+  itemName,
+  position,
+  side,
+  terrain,
+  showCaption,
+  linked = false,
+}: {
+  imageURL: string;
+  title: string;
+  itemName: string;
+  position: BoardPosition | null;
+  side: "front" | "back";
+  terrain: string;
+  showCaption: boolean;
+  linked?: boolean;
+}) {
+  return (
+    <>
+      <span
+        className={`block overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition dark:border-zinc-800 dark:bg-zinc-900 ${
+          linked ? "group-hover:ring-2 group-hover:ring-zinc-400" : ""
+        }`}
+      >
+        <BoardPositionImage
+          imageURL={imageURL}
+          title={title}
+          itemName={itemName}
+          position={position}
+          side={side}
+        />
+      </span>
+      {showCaption && (
+        <>
+          <span className="mt-2 block text-sm font-medium group-hover:underline">
+            {title}
+          </span>
+          <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+            {terrain}
+          </span>
+        </>
+      )}
+    </>
   );
 }
 
@@ -98,7 +205,7 @@ function BoardPositionImage({
     );
   }
 
-  const crop = cropForPosition(position);
+  const crop = cropForBoardPosition(position);
   const cropAspectRatio = (imageAspectRatio ?? 1) * (crop.width / crop.height);
   const backgroundSizeX = 100 / crop.width;
   const backgroundSizeY = 100 / crop.height;
@@ -147,60 +254,4 @@ function useImageAspectRatio(imageURL: string): number | null {
   }, [imageURL]);
 
   return measurement?.imageURL === imageURL ? measurement.aspectRatio : null;
-}
-
-function cropForPosition(position: BoardPosition): {
-  left: number;
-  top: number;
-  width: number;
-  height: number;
-} {
-  const topStrip = topStripHeight(position.topStrip);
-  const rowHeight = (1 - topStrip) / position.rows;
-  const columnWidth = 1 / position.columns;
-  const isSingleItemBoard = position.rows === 1 && position.columns === 1;
-  const horizontalInset = columnWidth * 0.02;
-  if (isSingleItemBoard) {
-    const verticalInset = rowHeight * 0.02;
-
-    return {
-      left: horizontalInset,
-      top: topStrip + verticalInset,
-      width: columnWidth - horizontalInset * 2,
-      height: rowHeight - verticalInset * 2,
-    };
-  }
-
-  const singleItemVerticalInset = isSingleItemBoard ? rowHeight * 0.02 : 0;
-  const topOutset = position.rows === 1 ? 0 : rowHeight * 0.03;
-  const topInset =
-    position.rows === 1 && !isSingleItemBoard ? rowHeight * 0.02 : 0;
-  const originalTop = topStrip + position.row * rowHeight;
-  const topWithOutset = Math.max(0, originalTop - topOutset);
-  const appliedTopOutset = originalTop - topWithOutset;
-  const top = topWithOutset + topInset + singleItemVerticalInset;
-  const areaHeight =
-    rowHeight * (isSingleItemBoard ? 0.98 : 0.95) +
-    appliedTopOutset -
-    topInset -
-    singleItemVerticalInset;
-  const areaHorizontalInset = horizontalInset;
-
-  return {
-    left: position.column * columnWidth + areaHorizontalInset,
-    top,
-    width: columnWidth - areaHorizontalInset * 2,
-    height: areaHeight,
-  };
-}
-
-function topStripHeight(topStrip: BoardPosition["topStrip"]): number {
-  switch (topStrip) {
-    case "high":
-      return 0.24;
-    case "low":
-      return 0.16;
-    default:
-      return 0;
-  }
 }

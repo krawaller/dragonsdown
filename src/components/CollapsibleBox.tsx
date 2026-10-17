@@ -31,7 +31,7 @@ export function CollapsibleBox({
   return (
     <details
       open={defaultOpen}
-      className="group rounded border border-zinc-200 dark:border-zinc-800"
+      className="group/collapsible rounded border border-zinc-200 dark:border-zinc-800"
     >
       <summary
         onMouseDown={preventSummaryTextSelection}
@@ -40,7 +40,7 @@ export function CollapsibleBox({
         <span className="flex min-w-0 items-center gap-2">
           <span
             aria-hidden="true"
-            className="flex h-5 w-4 shrink-0 items-center justify-center text-xl leading-none text-zinc-500 transition-transform group-open:rotate-90 dark:text-zinc-400"
+            className="flex h-5 w-4 shrink-0 items-center justify-center text-xl leading-none text-zinc-500 transition-transform group-open/collapsible:rotate-90 dark:text-zinc-400"
           >
             ›
           </span>

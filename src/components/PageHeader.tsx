@@ -1,10 +1,12 @@
 import Link from "next/link";
+import type { BoardPositionCrop } from "@/lib/board-position-crop";
 
 export type PageHeaderCategoryLink = {
   href: string;
   label: string;
   value: string;
   imageUrl?: string;
+  imageCrop?: BoardPositionCrop;
   imageFit?: "contain" | "cover";
 };
 
@@ -53,8 +55,16 @@ function PageHeaderCategoryLink({
   label,
   value,
   imageUrl,
+  imageCrop,
   imageFit = "cover",
 }: PageHeaderCategoryLink) {
+  const backgroundSize = imageCrop
+    ? `${100 / imageCrop.width}% ${100 / imageCrop.height}%`
+    : undefined;
+  const backgroundPosition = imageCrop
+    ? `${imageCrop.width === 1 ? 50 : (imageCrop.left / (1 - imageCrop.width)) * 100}% ${imageCrop.height === 1 ? 50 : (imageCrop.top / (1 - imageCrop.height)) * 100}%`
+    : undefined;
+
   return (
     <Link
       href={href}
@@ -62,12 +72,24 @@ function PageHeaderCategoryLink({
     >
       {imageUrl && (
         <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={imageUrl}
-            alt=""
-            className={`block size-full ${imageFit === "contain" ? "object-contain" : "object-cover"}`}
-          />
+          {imageCrop ? (
+            <span
+              aria-hidden="true"
+              className="block size-full bg-no-repeat"
+              style={{
+                backgroundImage: `url(${JSON.stringify(imageUrl)})`,
+                backgroundPosition,
+                backgroundSize,
+              }}
+            />
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={imageUrl}
+              alt=""
+              className={`block size-full ${imageFit === "contain" ? "object-contain" : "object-cover"}`}
+            />
+          )}
         </span>
       )}
       <span className="min-w-0">

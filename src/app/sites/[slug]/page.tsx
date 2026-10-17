@@ -1,9 +1,17 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoardPositionLinks } from "@/components/BoardPositionLinks";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionLinks } from "@/components/MissionLinks";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
+import {
+  PageHeader,
+  type PageHeaderCategoryLink,
+} from "@/components/PageHeader";
 import { RulebookLinks } from "@/components/RulebookLinks";
+import { cropForBoardPosition } from "@/lib/board-position-crop";
+import { getBoardPositionForItem } from "@/lib/board-positions";
+import { getReleaseByBoxName } from "@/lib/releases";
 import { resolveSiteRulebookLinks } from "@/lib/rulebook-links";
 import {
   getAllSites,
@@ -14,7 +22,7 @@ import {
   getMonsterGroupsForSite,
   getSiteBySlug,
   getWildernessTokenBySlug,
-  type BoardEntry,
+  type SiteEntry,
   type TerrainPackEntry,
   type WildernessTokenNameEntry,
 } from "@/lib/tts/lookup";
@@ -37,77 +45,58 @@ export default async function SitePage({
     entry.site.terrainPack ??
     boards[0]?.board.terrainPack ??
     boards[0]?.board.terrain;
-  const terrainPack = getAllTerrainPacks().find(
-    (pack) => pack.name === terrainPackName,
-  );
-  const subtitle = terrainPack?.name ?? terrainPackName;
+  const terrainPack = uniqueTerrainPackByName(terrainPackName);
+  const releaseBox = entry.site.box ?? terrainPack?.box;
+  const release = releaseBox ? getReleaseByBoxName(releaseBox) : undefined;
+  const subtitle = siteSubtitle(entry.kind);
+  const treasureSiteToken =
+    entry.kind === "proper" ? getWildernessTokenBySlug("site") : undefined;
   const wildernessToken =
-    getWildernessTokenBySlug(entry.slug) ?? getWildernessTokenBySlug("site");
+    entry.kind === "wilderness-token"
+      ? getWildernessTokenBySlug(entry.slug)
+      : undefined;
   const monsterGroups = getMonsterGroupsForSite(entry.name).flatMap((group) => {
     const fullGroup = getMonsterGroupBySlug(group.slug);
     return fullGroup ? [fullGroup] : [];
   });
+  const tokenItems = siteTokenItems({ treasureSiteToken, wildernessToken });
   const missions = getMissionsForTarget(entry.name);
   const rulebookLinks = await resolveSiteRulebookLinks(entry.name);
+  const categories = siteHeaderCategories({
+    release,
+    siteName: entry.name,
+    terrainPack,
+    boards,
+  });
 
   return (
     <main className="mx-auto max-w-5xl px-6 py-12">
-      <div className="flex flex-wrap gap-3 text-sm text-zinc-600 dark:text-zinc-400">
-        <Link href="/" className="hover:underline">
-          ← All docs
-        </Link>
-        <span aria-hidden="true">/</span>
-        <Link href="/sites" className="hover:underline">
-          Sites
-        </Link>
-      </div>
-      <div className="mt-4 mb-8 flex flex-wrap items-start justify-between gap-3">
-        <div className="min-w-0">
-          <h1 className="text-4xl font-bold">{entry.name}</h1>
-          {subtitle && (
-            <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-              {subtitle}
-            </p>
-          )}
-        </div>
-        <HeaderContextLinks
-          terrainPack={terrainPack}
-          boards={boards}
-          wildernessToken={wildernessToken}
-        />
-      </div>
-
-      <div className="max-w-2xl rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={entry.site.imageSecondaryURL}
-          alt={entry.name}
-          className="block w-full aspect-square object-contain"
-        />
-      </div>
-
-      {monsterGroups.length > 0 && (
-        <section className="mt-10">
-          <h2 className="text-xl font-semibold mb-4">Guardian</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {monsterGroups.map((group) => (
-              <MonsterGroupStack key={group.slug} group={group} />
-            ))}
-          </div>
-        </section>
-      )}
-
-      <MissionLinks
-        missions={missions}
-        className="mt-10"
-        headingClassName="text-xl font-semibold mb-4"
+      <PageHeader
+        title={entry.name}
+        subtitle={subtitle}
+        categories={categories}
       />
 
       <BoardPositionLinks
         boards={boards}
         itemName={entry.name}
+        className="mb-10"
+        showHeading={false}
+        showCaption={false}
+        linked={false}
+        displaySides="both"
+        collapsibleTitle="Board Position"
+      />
+
+      <TokensAndGuardiansBox
+        monsterGroups={monsterGroups}
+        tokenItems={tokenItems}
+      />
+
+      <MissionLinks
+        missions={missions}
         className="mt-10"
-        headingClassName="text-xl font-semibold"
+        headingClassName="text-xl font-semibold mb-4"
       />
 
       <RulebookLinks
@@ -119,80 +108,191 @@ export default async function SitePage({
   );
 }
 
-function HeaderContextLinks({
+function siteHeaderCategories({
+  release,
+  siteName,
   terrainPack,
   boards,
+}: {
+  release?: ReturnType<typeof getReleaseByBoxName>;
+  siteName: string;
+  terrainPack?: TerrainPackEntry;
+  boards: ReturnType<typeof getBoardsForSite>;
+}): PageHeaderCategoryLink[] {
+  const treasureSiteIcon = treasureSiteCategoryIcon(boards, siteName);
+
+  return [
+    ...(release
+      ? [
+          {
+            href: `/releases/${release.slug}`,
+            label: "Release",
+            value: releaseCategoryValue(release),
+            imageUrl: release.iconUrl,
+            imageFit: "contain" as const,
+          },
+        ]
+      : []),
+    {
+      href: "/sites",
+      label: "Concept",
+      value: "Treasure Sites",
+      imageUrl: treasureSiteIcon?.imageUrl,
+      imageCrop: treasureSiteIcon?.imageCrop,
+    },
+    ...(terrainPack
+      ? [
+          {
+            href: `/terrain-packs/${terrainPack.slug}`,
+            label: "Terrain pack",
+            value:
+              terrainPack.slug === "neutral"
+                ? "Always in use"
+                : terrainPack.name,
+            imageUrl: terrainPack.iconUrl,
+          },
+        ]
+      : []),
+    ...boards.map((board) => ({
+      href: `/boards/${board.slug}`,
+      label: "Board",
+      value: board.title,
+      imageUrl: board.board.imageURL,
+    })),
+  ];
+}
+
+function treasureSiteCategoryIcon(
+  boards: ReturnType<typeof getBoardsForSite>,
+  siteName: string,
+): Pick<PageHeaderCategoryLink, "imageUrl" | "imageCrop"> | undefined {
+  const board = boards[0];
+  if (!board) return undefined;
+  const position = getBoardPositionForItem(board.board, siteName);
+  if (!position) return { imageUrl: board.board.imageURL };
+  return {
+    imageUrl: board.board.imageURL,
+    imageCrop: cropForBoardPosition(position),
+  };
+}
+
+type SiteTokenItem = {
+  token: WildernessTokenNameEntry;
+  label: string;
+};
+
+function siteTokenItems({
+  treasureSiteToken,
   wildernessToken,
 }: {
-  terrainPack?: TerrainPackEntry;
-  boards: BoardEntry[];
+  treasureSiteToken?: WildernessTokenNameEntry;
   wildernessToken?: WildernessTokenNameEntry;
+}): SiteTokenItem[] {
+  return [
+    ...(treasureSiteToken
+      ? [{ token: treasureSiteToken, label: "Treasure site token" }]
+      : []),
+    ...(wildernessToken
+      ? [{ token: wildernessToken, label: "Wilderness token" }]
+      : []),
+  ];
+}
+
+function TokensAndGuardiansBox({
+  monsterGroups,
+  tokenItems,
+}: {
+  monsterGroups: ReturnType<typeof getMonsterGroupBySlug>[];
+  tokenItems: SiteTokenItem[];
 }) {
-  if (!terrainPack && boards.length === 0 && !wildernessToken) return null;
+  const guardians = monsterGroups.filter(
+    (group): group is NonNullable<ReturnType<typeof getMonsterGroupBySlug>> =>
+      Boolean(group),
+  );
+  const count = guardians.length + tokenItems.length;
 
   return (
-    <div className="flex flex-wrap justify-end gap-2">
-      {terrainPack && (
-        <HeaderContextLink
-          href={`/terrain-packs/${terrainPack.slug}`}
-          label="Terrain pack"
-          value={
-            terrainPack.slug === "neutral" ? "Always in use" : terrainPack.name
-          }
-          imageUrl={terrainPack.iconUrl}
-        />
-      )}
-      {boards.map((board) => (
-        <HeaderContextLink
-          key={board.slug}
-          href={`/boards/${board.slug}`}
-          label="Board"
-          value={board.title}
-          imageUrl={board.board.imageURL}
-        />
-      ))}
-      {wildernessToken && (
-        <HeaderContextLink
-          href={`/wilderness-tokens/${wildernessToken.slug}`}
-          label="Wilderness token"
-          value={wildernessToken.name}
-          imageUrl={wildernessToken.tokens[0]?.imageURL}
-        />
-      )}
-    </div>
+    <section className="mt-10">
+      <CollapsibleBox
+        title="Tokens & Guardians"
+        count={count}
+        countLabel={`${count} item${count === 1 ? "" : "s"}`}
+      >
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          {tokenItems.map((item) => (
+            <SiteTokenTile key={item.label} item={item} />
+          ))}
+          {guardians.map((group) => (
+            <MonsterGroupStack
+              key={group.slug}
+              group={group}
+              subtitle="guardian"
+            />
+          ))}
+        </div>
+      </CollapsibleBox>
+    </section>
   );
 }
 
-function HeaderContextLink({
-  href,
-  label,
-  value,
-  imageUrl,
-}: {
-  href: string;
-  label: string;
-  value: string;
-  imageUrl?: string;
-}) {
+function SiteTokenTile({ item }: { item: SiteTokenItem }) {
+  const preview = item.token.tokens.slice(0, 4);
+  const previewHeightClass = preview.length <= 1 ? "h-20" : "h-28";
   return (
     <Link
-      href={href}
-      className="inline-flex max-w-64 min-w-0 items-center gap-2 rounded border border-zinc-200 bg-white px-2.5 py-2 text-xs transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
+      href={`/wilderness-tokens/${item.token.slug}`}
+      className="group block rounded border border-zinc-200 p-4 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
     >
-      {imageUrl && (
-        <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={imageUrl} alt="" className="block size-full object-cover" />
+      <span className={`relative mb-4 block ${previewHeightClass}`}>
+        {preview.map((token, index) => (
+          <span
+            key={`${token.imageURL}-${index}`}
+            className="absolute block size-20 overflow-hidden rounded border border-zinc-200 bg-zinc-100 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+            style={{
+              left: `${index * 1.55}rem`,
+              top: `${index % 2 === 0 ? 0 : 1.25}rem`,
+              zIndex: preview.length - index,
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={token.imageURL}
+              alt=""
+              className="block size-full object-cover"
+            />
+          </span>
+        ))}
+      </span>
+      <span className="block min-w-0">
+        <span className="block text-lg font-semibold group-hover:underline">
+          {item.token.name}
         </span>
-      )}
-      <span className="min-w-0">
-        <span className="block text-[0.6875rem] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-          {label}
-        </span>
-        <span className="block truncate font-medium text-zinc-900 dark:text-zinc-100">
-          {value}
+        <span className="mt-1 block text-sm text-zinc-500 dark:text-zinc-400">
+          {item.label}
         </span>
       </span>
     </Link>
   );
+}
+
+function uniqueTerrainPackByName(
+  terrainPackName: string | undefined,
+): TerrainPackEntry | undefined {
+  if (!terrainPackName) return undefined;
+  const terrainPacks = getAllTerrainPacks().filter(
+    (pack) => pack.name === terrainPackName,
+  );
+  return terrainPacks.length === 1 ? terrainPacks[0] : undefined;
+}
+
+function releaseCategoryValue(
+  release: NonNullable<ReturnType<typeof getReleaseByBoxName>>,
+): string {
+  return release.sourceSlug === "core" ? "Core box" : release.title;
+}
+
+function siteSubtitle(kind: SiteEntry["kind"]): string {
+  return kind === "wilderness-token"
+    ? "Wilderness token Site"
+    : "Site token Site";
 }
