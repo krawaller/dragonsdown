@@ -130,8 +130,8 @@ const CLEARING_TYPE_ICONS: Record<ClearingTypeId, string> = {
   swamps: "/images/terrain/swamp.png",
   river: "/images/terrain/river.png",
   desert: "/images/terrain/desert.png",
-  hills: "/images/terrain/mountain.png",
-  thickets: "/images/terrain/woods.png",
+  hills: "/images/terrain/hills.png",
+  thickets: "/images/terrain/thickets.png",
 };
 
 function occurrenceFor(

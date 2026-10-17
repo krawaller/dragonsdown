@@ -6,6 +6,7 @@ export function CollapsibleBox({
   title,
   count,
   countLabel,
+  defaultOpen = false,
   headerEnd,
   summaryClassName = "cursor-pointer px-2 py-3 hover:bg-zinc-50 transition-colors dark:hover:bg-zinc-900 sm:px-3 sm:py-4",
   headerClassName = "inline-flex min-w-0 flex-1 flex-wrap items-center justify-between gap-3 align-middle",
@@ -16,6 +17,7 @@ export function CollapsibleBox({
   title: ReactNode;
   count?: number;
   countLabel?: string;
+  defaultOpen?: boolean;
   headerEnd?: ReactNode;
   summaryClassName?: string;
   headerClassName?: string;
@@ -28,7 +30,7 @@ export function CollapsibleBox({
 
   return (
     <details
-      open
+      open={defaultOpen}
       className="group rounded border border-zinc-200 dark:border-zinc-800"
     >
       <summary
