@@ -11,8 +11,8 @@
   },
   {
     "name": "Cragspire",
-    "front": ["hills", "hills", "mountains", "hills", "mountains", "hills"],
-    "back": ["hills", "hills", "mountains", "hills", "mountains", "hills"]
+    "front": ["hills", "hills", "mountains", "plains", "mountains", "hills"],
+    "back": ["hills", "hills", "mountains", "plains", "mountains", "hills"]
   },
   {
     "name": "Bilewater",
