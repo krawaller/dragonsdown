@@ -1,10 +1,16 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   BoardImageToggle,
   type BoardAreaLink,
 } from "@/components/BoardImageToggle";
+import {
+  PageHeader,
+  type PageHeaderCategoryLink,
+} from "@/components/PageHeader";
+import { getBoardImageCropTop } from "@/lib/board-image-crops";
 import { getBoardPositionForItem } from "@/lib/board-positions";
+import { getManualBoardReleaseBox } from "@/lib/board-releases";
+import { getReleaseByBoxName } from "@/lib/releases";
 import {
   getAllBoards,
   getAllTerrainPacks,
@@ -29,10 +35,10 @@ export default async function BoardPage({
   if (!entry) notFound();
 
   const { title, board } = entry;
-  const terrainPackName = board.terrainPack ?? board.terrain;
-  const terrainPack = getAllTerrainPacks().find(
-    (pack) => pack.name === terrainPackName,
-  );
+  const terrainPack = uniqueTerrainPackForBoard(board);
+  const releaseBox =
+    board.box ?? terrainPack?.box ?? getManualBoardReleaseBox(entry.slug);
+  const release = releaseBox ? getReleaseByBoxName(releaseBox) : undefined;
   const sites = board.sites
     .map(resolveSiteTarget)
     .filter((site): site is LinkTarget => site !== null);
@@ -51,84 +57,23 @@ export default async function BoardPage({
     merchants: merchants.length,
     treasureSites: sites.length,
   });
+  const categories = boardHeaderCategories({
+    release,
+    boardIconUrl: board.imageSecondaryURL,
+    terrainPack,
+  });
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
-      <div className="flex flex-wrap gap-3 text-sm text-zinc-600 dark:text-zinc-400">
-        <Link href="/" className="hover:underline">
-          ← All docs
-        </Link>
-        <span aria-hidden="true">/</span>
-        <Link href="/boards" className="hover:underline">
-          Boards
-        </Link>
-      </div>
-      <div className="mt-4 mb-8 flex flex-wrap items-start justify-between gap-3">
-        <div className="min-w-0">
-          <h1 className="text-4xl font-bold">{title}</h1>
-          <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-            {subtitle}
-          </p>
-        </div>
-        <HeaderContextLinks terrainPack={terrainPack} />
-      </div>
+      <PageHeader title={title} subtitle={subtitle} categories={categories} />
 
       <BoardImageToggle
         title={title}
         imageURL={board.imageURL}
         imageSecondaryURL={board.imageSecondaryURL}
         areas={boardAreas}
+        cropTop={getBoardImageCropTop(entry.slug)}
       />
-
-      {(sites.length > 0 || merchants.length > 0) && (
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-          {sites.length > 0 && (
-            <section>
-              <h2 className="text-xl font-semibold mb-4">Sites</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {sites.map(({ name, href, imageURL }) => (
-                  <Link key={name} href={href} className="group block">
-                    <span className="block overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 group-hover:ring-2 group-hover:ring-zinc-400 transition">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={imageURL}
-                        alt={name}
-                        className="block w-full aspect-square object-cover"
-                      />
-                    </span>
-                    <span className="mt-2 block text-sm font-medium group-hover:underline">
-                      {name}
-                    </span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {merchants.length > 0 && (
-            <section>
-              <h2 className="text-xl font-semibold mb-4">Merchants</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                {merchants.map(({ name, href, imageURL }) => (
-                  <Link key={name} href={href} className="group block">
-                    <span className="block overflow-hidden rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 group-hover:ring-2 group-hover:ring-zinc-400 transition">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={imageURL}
-                        alt={name}
-                        className="block w-full aspect-square object-cover"
-                      />
-                    </span>
-                    <span className="mt-2 block text-sm font-medium group-hover:underline">
-                      {name}
-                    </span>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-        </div>
-      )}
     </main>
   );
 }
@@ -139,59 +84,64 @@ type LinkTarget = {
   imageURL: string;
 };
 
-function HeaderContextLinks({
+function boardHeaderCategories({
+  release,
+  boardIconUrl,
   terrainPack,
 }: {
+  release?: ReturnType<typeof getReleaseByBoxName>;
+  boardIconUrl: string;
   terrainPack?: TerrainPackEntry;
-}) {
-  if (!terrainPack) return null;
-
-  return (
-    <div className="flex flex-wrap justify-end gap-2">
-      <HeaderContextLink
-        href={`/terrain-packs/${terrainPack.slug}`}
-        label="Terrain pack"
-        value={
-          terrainPack.slug === "neutral" ? "Always in use" : terrainPack.name
-        }
-        imageUrl={terrainPack.iconUrl}
-      />
-    </div>
-  );
+}): PageHeaderCategoryLink[] {
+  return [
+    ...(release
+      ? [
+          {
+            href: `/releases/${release.slug}`,
+            label: "Release",
+            value: releaseCategoryValue(release),
+            imageUrl: release.iconUrl,
+            imageFit: "contain" as const,
+          },
+        ]
+      : []),
+    {
+      href: "/boards",
+      label: "Component",
+      value: "Boards",
+      imageUrl: boardIconUrl,
+    },
+    ...(terrainPack
+      ? [
+          {
+            href: `/terrain-packs/${terrainPack.slug}`,
+            label: "Terrain pack",
+            value:
+              terrainPack.slug === "neutral"
+                ? "Always in use"
+                : terrainPack.name,
+            imageUrl: terrainPack.iconUrl,
+          },
+        ]
+      : []),
+  ];
 }
 
-function HeaderContextLink({
-  href,
-  label,
-  value,
-  imageUrl,
-}: {
-  href: string;
-  label: string;
-  value: string;
-  imageUrl?: string;
-}) {
-  return (
-    <Link
-      href={href}
-      className="inline-flex min-w-0 items-center gap-2 rounded border border-zinc-200 bg-white px-2.5 py-2 text-xs transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-900"
-    >
-      {imageUrl && (
-        <span className="flex size-8 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={imageUrl} alt="" className="block size-full object-cover" />
-        </span>
-      )}
-      <span className="min-w-0">
-        <span className="block text-[0.6875rem] uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-          {label}
-        </span>
-        <span className="block truncate font-medium text-zinc-900 dark:text-zinc-100">
-          {value}
-        </span>
-      </span>
-    </Link>
+function uniqueTerrainPackForBoard(board: {
+  terrain: string;
+  terrainPack?: string;
+}): TerrainPackEntry | undefined {
+  const terrainPackName = board.terrainPack ?? board.terrain;
+  const terrainPacks = getAllTerrainPacks().filter(
+    (pack) => pack.name === terrainPackName,
   );
+  return terrainPacks.length === 1 ? terrainPacks[0] : undefined;
+}
+
+function releaseCategoryValue(
+  release: NonNullable<ReturnType<typeof getReleaseByBoxName>>,
+): string {
+  return release.sourceSlug === "core" ? "Core box" : release.title;
 }
 
 function boardContentsLabel({

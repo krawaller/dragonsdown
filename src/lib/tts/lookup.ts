@@ -1502,6 +1502,7 @@ export type TerrainPackMissionEntry = MissionEntry;
 export type TerrainPackEntry = {
   name: string;
   slug: string;
+  box?: string;
   iconUrl?: string;
   boards: BoardEntry[];
   civilisationTokens: CivilisationTokenNameEntry[];
@@ -1684,6 +1685,7 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
     return {
       name,
       slug: slugify(name),
+      box: terrainPackBox(packMapTiles),
       iconUrl: terrainPackIconUrl(name, wildernessTokens),
       boards: boards.filter((board) => boardTerrainPack(board) === name),
       civilisationTokens: civilisationTokens.filter((entry) =>
@@ -1706,6 +1708,13 @@ export function getAllTerrainPacks(): TerrainPackEntry[] {
       mapTiles: packMapTiles,
     };
   });
+}
+
+function terrainPackBox(mapTiles: { box?: string }[]): string | undefined {
+  const boxes = new Set(
+    mapTiles.flatMap((tile) => (tile.box ? [tile.box] : [])),
+  );
+  return boxes.size === 1 ? [...boxes][0] : undefined;
 }
 
 export function getTerrainPackBySlug(

@@ -59,6 +59,10 @@ export function getReleaseBySlug(slug: string): ReleaseEntry | undefined {
   return getAllReleases().find((release) => release.slug === slug);
 }
 
+export function getReleaseByBoxName(boxName: string): ReleaseEntry | undefined {
+  return getAllReleases().find((release) => release.boxName === boxName);
+}
+
 export function getReleaseComponentGroups(
   release: ReleaseEntry,
 ): ReleaseComponentGroup[] {

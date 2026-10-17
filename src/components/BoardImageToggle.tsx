@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { BoardPosition } from "@/lib/board-positions";
 
 export type BoardAreaLink = {
@@ -15,40 +15,71 @@ export function BoardImageToggle({
   imageURL,
   imageSecondaryURL,
   areas = [],
+  cropTop = 0,
 }: {
   title: string;
   imageURL: string;
   imageSecondaryURL: string;
   areas?: BoardAreaLink[];
+  cropTop?: number;
 }) {
-  const [showBack, setShowBack] = useState(false);
-  const image = showBack ? imageSecondaryURL : imageURL;
-  const side = showBack ? "back" : "front";
+  const [side, setSide] = useState<"front" | "back">("front");
+  const image = side === "back" ? imageSecondaryURL : imageURL;
+  const imageAspectRatio = useImageAspectRatio(image);
+  const normalizedCropTop = Math.max(0, Math.min(cropTop, 0.8));
+  const visibleCropHeight = 1 - normalizedCropTop;
+  const shouldCrop = normalizedCropTop > 0 && imageAspectRatio !== null;
 
   return (
     <section className="max-w-2xl">
-      <label className="mb-3 inline-flex items-center gap-2 text-sm font-medium">
-        <input
-          type="checkbox"
-          checked={showBack}
-          onChange={(event) => setShowBack(event.target.checked)}
-          className="size-4 rounded border-zinc-300 dark:border-zinc-700"
-        />
-        Show back image
-      </label>
+      <div
+        className="mb-3 inline-flex overflow-hidden rounded border border-zinc-200 text-sm dark:border-zinc-800"
+        aria-label={`${title} board side`}
+      >
+        {(["front", "back"] as const).map((option) => (
+          <button
+            key={option}
+            type="button"
+            onClick={() => setSide(option)}
+            className={`px-3 py-1.5 capitalize transition-colors ${
+              side === option
+                ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950"
+                : "text-zinc-600 hover:bg-zinc-50 dark:text-zinc-300 dark:hover:bg-zinc-900"
+            }`}
+            aria-pressed={side === option}
+          >
+            {option}
+          </button>
+        ))}
+      </div>
       <div className="rounded border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
         <div className="relative">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={image}
-            alt={`${title} ${side}`}
-            className="block h-auto w-full object-contain"
-          />
+          {shouldCrop ? (
+            <span
+              role="img"
+              aria-label={`${title} ${side}`}
+              className="block w-full bg-no-repeat"
+              style={{
+                aspectRatio: imageAspectRatio / visibleCropHeight,
+                backgroundImage: `url(${JSON.stringify(image)})`,
+                backgroundPosition: "50% 100%",
+                backgroundSize: `100% ${100 / visibleCropHeight}%`,
+              }}
+            />
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={image}
+              alt={`${title} ${side}`}
+              className="block h-auto w-full object-contain"
+            />
+          )}
           {areas.map((area) => (
             <BoardAreaAnchor
               key={`${area.href}-${area.name}`}
               area={area}
               boardTitle={title}
+              cropTop={normalizedCropTop}
             />
           ))}
         </div>
@@ -60,11 +91,13 @@ export function BoardImageToggle({
 function BoardAreaAnchor({
   area,
   boardTitle,
+  cropTop,
 }: {
   area: BoardAreaLink;
   boardTitle: string;
+  cropTop: number;
 }) {
-  const box = boxForPosition(area.position);
+  const box = cropBox(boxForPosition(area.position), cropTop);
   return (
     <Link
       href={area.href}
@@ -81,6 +114,46 @@ function BoardAreaAnchor({
       <span className="sr-only">{area.name}</span>
     </Link>
   );
+}
+
+function useImageAspectRatio(imageURL: string): number | null {
+  const [measurement, setMeasurement] = useState<{
+    imageURL: string;
+    aspectRatio: number;
+  } | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    const image = new window.Image();
+    image.onload = () => {
+      if (cancelled || image.naturalHeight === 0) return;
+      setMeasurement({
+        imageURL,
+        aspectRatio: image.naturalWidth / image.naturalHeight,
+      });
+    };
+    image.src = imageURL;
+
+    return () => {
+      cancelled = true;
+    };
+  }, [imageURL]);
+
+  return measurement?.imageURL === imageURL ? measurement.aspectRatio : null;
+}
+
+function cropBox(
+  box: { left: number; top: number; width: number; height: number },
+  cropTop: number,
+): { left: number; top: number; width: number; height: number } {
+  if (cropTop <= 0) return box;
+  const visibleHeight = 1 - cropTop;
+  return {
+    left: box.left,
+    top: (box.top - cropTop) / visibleHeight,
+    width: box.width,
+    height: box.height / visibleHeight,
+  };
 }
 
 function boxForPosition(position: BoardPosition): {
