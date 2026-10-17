@@ -14,8 +14,8 @@ import { getEquipmentBySlug, type EquipmentEntry } from "@/lib/tts/lookup";
 
 export async function ClassAdvantageCard({ setup }: { setup?: TTSClassSetup }) {
   const magicAccess = await magicAccessForSetup(setup);
-  const frontStartingItems = startingItemsForSide(setup?.front.items);
-  const backStartingItems = startingItemsForSide(setup?.back.items);
+  const frontStartingItems = startingItemsForSide(setup?.front?.items);
+  const backStartingItems = startingItemsForSide(setup?.back?.items);
 
   return (
     <section>

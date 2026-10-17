@@ -391,6 +391,7 @@ export type TTSChip = {
   group: string;
   /** Narrative chip name, when TTS metadata only provided the group name. */
   name?: string;
+  box?: string;
   imageURL: string;
   imageSecondaryURL: string;
   /**
