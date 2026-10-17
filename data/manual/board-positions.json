@@ -21,7 +21,11 @@
     "rows": [
       ["Burrow", "Stone Circle"],
       ["Watchtower", "Outfitter"]
-    ]
+    ],
+    "positions": {
+      "Burrow": { "top": 0.23, "height": 0.395 },
+      "Watchtower": { "top": 0.622, "height": 0.358 }
+    }
   },
   {
     "topStrip": "high",

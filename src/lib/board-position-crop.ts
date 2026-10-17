@@ -41,12 +41,26 @@ export function cropForBoardPosition(
     singleItemVerticalInset;
   const areaHorizontalInset = horizontalInset;
 
-  return {
+  return applyBoxOverride(position.box, {
     left: position.column * columnWidth + areaHorizontalInset,
     top,
     width: columnWidth - areaHorizontalInset * 2,
     height: areaHeight,
-  };
+  });
+}
+
+function applyBoxOverride(
+  override: BoardPosition["box"],
+  box: BoardPositionCrop,
+): BoardPositionCrop {
+  return override
+    ? {
+        left: override.left ?? box.left,
+        top: override.top ?? box.top,
+        width: override.width ?? box.width,
+        height: override.height ?? box.height,
+      }
+    : box;
 }
 
 function topStripHeight(topStrip: BoardPosition["topStrip"]): number {

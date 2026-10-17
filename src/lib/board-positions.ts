@@ -7,11 +7,26 @@ export type BoardPosition = {
   row: number;
   rows: number;
   topStrip?: "high" | "low";
+  box?: Partial<{
+    left: number;
+    top: number;
+    width: number;
+    height: number;
+  }>;
 };
 
 type BoardPositionLayout = {
   topStrip?: "high" | "low";
   rows: string[][];
+  positions?: Record<
+    string,
+    Partial<{
+      left: number;
+      top: number;
+      width: number;
+      height: number;
+    }>
+  >;
 };
 
 const BOARD_POSITION_LAYOUTS = boardPositionData as BoardPositionLayout[];
@@ -35,6 +50,7 @@ export function getBoardPositionForItem(
         row,
         rows: layout.rows.length,
         topStrip: layout.topStrip,
+        box: positionBoxOverride(layout, names[column]),
       };
     }
   }
@@ -55,6 +71,18 @@ function layoutForBoard(
 
 function boardPositionKey(names: string[]): string {
   return names.map(normalizeBoardPositionName).sort().join("|");
+}
+
+function positionBoxOverride(
+  layout: BoardPositionLayout,
+  name: string,
+): BoardPosition["box"] {
+  if (!layout.positions) return undefined;
+  const targetName = normalizeBoardPositionName(name);
+  const match = Object.entries(layout.positions).find(
+    ([positionName]) => normalizeBoardPositionName(positionName) === targetName,
+  );
+  return match?.[1];
 }
 
 function normalizeBoardPositionName(name: string): string {
