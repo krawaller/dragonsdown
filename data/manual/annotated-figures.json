@@ -1,206 +1,189 @@
-[
-  {
-    "doc": "core",
-    "page": 7,
-    "target": { "titleRegex": "^Terrain Setup Cards$" },
-    "bbox": [316, 76, 795, 578],
-    "alt": "Annotated terrain setup card reference",
-    "expectedTexts": ["Terrain Pack", "Merchandise available at this Merchant"]
-  },
-  {
-    "doc": "wildlands",
-    "page": 3,
-    "target": { "titleRegex": "^Weather Cards$" },
-    "bbox": [249, 407, 401, 565],
-    "alt": "Annotated weather card reference",
-    "expectedTexts": [
-      "Weather Type",
-      "Duration",
-      "Weather Reveal",
-      "Game Effects",
-      "Seasons"
-    ]
-  },
-  {
-    "doc": "core",
-    "page": 7,
-    "target": { "titleRegex": "^Map Tiles$" },
-    "bbox": [325, 590, 505, 817],
-    "alt": "Annotated map tile reference",
-    "expectedTexts": [
-      "Hidden Path",
-      "Cave Clearing",
-      "Path",
-      "Local Monster and Summoning Symbol"
-    ]
-  },
-  {
-    "doc": "core",
-    "page": 7,
-    "target": { "titleRegex": "^Monster Chips$" },
-    "bbox": [518, 579, 795, 808],
-    "alt": "Annotated monster chip reference",
-    "expectedTexts": ["Monster Name", "Damage", "Health (armored)"]
-  },
-  {
-    "doc": "core",
-    "page": 8,
-    "target": { "titleRegex": "^Civilization Locations$" },
-    "bbox": [437, 75, 531, 190],
-    "alt": "Annotated civilization location reference",
-    "expectedTexts": ["Location Name", "Terrain Pack"]
-  },
-  {
-    "doc": "core",
-    "page": 8,
-    "target": { "titleRegex": "^Natives \\(far right\\)$" },
-    "bbox": [545, 132, 789, 244],
-    "alt": "Annotated native reference",
-    "expectedTexts": [
-      "Attack Length",
-      "Summoning/Respect Symbol (for the Natives & Legends expansion)",
-      "Maneuver Speed"
-    ]
-  },
-  {
-    "doc": "core",
-    "page": 8,
-    "target": { "titleRegex": "^Civilization Tokens$" },
-    "bbox": [442, 236, 570, 333],
-    "alt": "Annotated civilization token reference",
-    "expectedTexts": ["Civilization Token Back", "Terrain Pack"]
-  },
-  {
-    "doc": "core",
-    "page": 8,
-    "target": {
-      "titleRegex": "^Civilization Cards and Titles \\(far right\\)$"
+{
+  "core": [
+    {
+      "page": 7,
+      "target": { "titleRegex": "^Terrain Setup Cards$" },
+      "bbox": [316, 76, 801, 578],
+      "alt": "Annotated terrain setup card reference",
+      "expectedTexts": ["Terrain Pack", "Merchandise available at this Merchant"]
     },
-    "bbox": [630, 254, 824, 471],
-    "alt": "Annotated civilization card reference",
-    "expectedTexts": [
-      "Summoning/Respect Symbol (for the Natives & Legends expansion)",
-      "Requirement"
-    ]
-  },
-  {
-    "doc": "core",
-    "page": 8,
-    "target": { "titleRegex": "^Mission Cards$" },
-    "bbox": [450, 338, 610, 511],
-    "alt": "Annotated mission card reference",
-    "expectedTexts": [
-      "Description",
-      "Gold, Legend Point, Fame, and Bonus Rewards"
-    ]
-  },
-  {
-    "doc": "core",
-    "page": 8,
-    "target": { "titleRegex": "^Wilderness Tokens$" },
-    "bbox": [448, 517, 801, 672],
-    "suppressBbox": [448, 517, 801, 690],
-    "alt": "Annotated wilderness token reference",
-    "expectedTexts": ["Wilderness Tokens Front"]
-  },
-  {
-    "doc": "core",
-    "page": 8,
-    "target": { "titleRegex": "^Treasure Site Tokens$" },
-    "bbox": [470, 672, 650, 807],
-    "alt": "Annotated treasure site token reference",
-    "expectedTexts": ["Treasure Site Token Back", "Terrain Pack"]
-  },
-  {
-    "doc": "core",
-    "page": 9,
-    "target": { "titleRegex": "^Hero Cards$" },
-    "bbox": [350, 77, 792, 382],
-    "alt": "Annotated hero card reference",
-    "expectedTexts": [
-      "Lineage Advantage",
-      "Attributes",
-      "Aim Boxes (used only with optional PvP rules)"
-    ]
-  },
-  {
-    "doc": "core",
-    "page": 9,
-    "target": { "titleRegex": "^Item and Treasure Cards$" },
-    "bbox": [360, 379, 763, 805],
-    "alt": "Annotated item and treasure card reference",
-    "expectedTexts": ["Item Values (permanent effect)"]
-  },
-  {
-    "doc": "core",
-    "page": 20,
-    "target": { "titleRegex": "^Items$" },
-    "bbox": [439, 522, 632, 724],
-    "suppressBbox": [439, 513, 632, 724],
-    "alt": "Annotated item card reference",
-    "expectedTexts": ["Item Values (armor and weight)"]
-  },
-  {
-    "doc": "core",
-    "page": 21,
-    "target": { "titleRegex": "^Epic Treasures$" },
-    "bbox": [33, 96, 219, 294],
-    "suppressBbox": [33, 91, 219, 294],
-    "alt": "Annotated epic treasure card reference",
-    "expectedTexts": ["Item Values (permanent effect)"]
-  },
-  {
-    "doc": "core",
-    "page": 23,
-    "target": { "titleRegex": "^Spells$" },
-    "bbox": [36, 412, 231, 614],
-    "suppressBbox": [36, 411, 231, 614],
-    "alt": "Annotated spell card reference",
-    "expectedTexts": ["Spell Values (various effects)"],
-    "placement": { "beforeText": "Spells are only cast during combat" }
-  },
-  {
-    "doc": "core",
-    "page": 10,
-    "target": { "titleRegex": "^Spells$" },
-    "bbox": [402, 88, 599, 292],
-    "alt": "Annotated spell card reference",
-    "expectedTexts": ["Requirements"]
-  },
-  {
-    "doc": "core",
-    "page": 10,
-    "target": { "titleRegex": "^Hero Board$" },
-    "bbox": [316, 329, 830, 807],
-    "alt": "Annotated hero board reference",
-    "expectedTexts": [
-      "Make Noise Box",
-      "Miscellaneous Storage (Status Cubes, etc.)",
-      "Class Card Slot"
-    ]
-  },
-  {
-    "doc": "core",
-    "page": 11,
-    "target": { "titleRegex": "^Outlaw Tokens$" },
-    "bbox": [465, 93, 775, 216],
-    "alt": "Annotated hero chip and targeting token reference",
-    "expectedTexts": ["Outlaw Token"]
-  },
-  {
-    "doc": "core",
-    "page": 11,
-    "target": { "titleRegex": "^Action Cubes$" },
-    "bbox": [467, 306, 726, 519],
-    "alt": "Annotated action cube reference",
-    "expectedTexts": ["Heart (Action Cube for all purposes)"]
-  },
-  {
-    "doc": "core",
-    "page": 11,
-    "target": { "titleRegex": "^Reference Cards$" },
-    "bbox": [429, 566, 785, 813],
-    "alt": "Annotated reference card reference",
-    "expectedTexts": ["Reference Card Front (Scoring)"]
-  }
-]
+    {
+      "page": 7,
+      "target": { "titleRegex": "^Map Tiles$" },
+      "bbox": [331, 590, 512, 817],
+      "alt": "Annotated map tile reference",
+      "expectedTexts": [
+        "Hidden Path",
+        "Cave Clearing",
+        "Path",
+        "Local Monster and Summoning Symbol"
+      ]
+    },
+    {
+      "page": 7,
+      "target": { "titleRegex": "^Monster Chips$" },
+      "bbox": [518, 579, 795, 808],
+      "alt": "Annotated monster chip reference",
+      "expectedTexts": ["Monster Name", "Damage", "Health (armored)"]
+    },
+    {
+      "page": 8,
+      "target": { "titleRegex": "^Civilization Locations$" },
+      "bbox": [437, 75, 531, 190],
+      "alt": "Annotated civilization location reference",
+      "expectedTexts": ["Location Name", "Terrain Pack"]
+    },
+    {
+      "page": 8,
+      "target": { "titleRegex": "^Natives \\(far right\\)$" },
+      "bbox": [545, 132, 789, 244],
+      "alt": "Annotated native reference",
+      "expectedTexts": [
+        "Attack Length",
+        "Summoning/Respect Symbol (for the Natives & Legends expansion)",
+        "Maneuver Speed"
+      ]
+    },
+    {
+      "page": 8,
+      "target": { "titleRegex": "^Civilization Tokens$" },
+      "bbox": [442, 236, 570, 333],
+      "alt": "Annotated civilization token reference",
+      "expectedTexts": ["Civilization Token Back", "Terrain Pack"]
+    },
+    {
+      "page": 8,
+      "target": {
+        "titleRegex": "^Civilization Cards and Titles \\(far right\\)$"
+      },
+      "bbox": [630, 254, 824, 471],
+      "alt": "Annotated civilization card reference",
+      "expectedTexts": [
+        "Summoning/Respect Symbol (for the Natives & Legends expansion)",
+        "Requirement"
+      ]
+    },
+    {
+      "page": 8,
+      "target": { "titleRegex": "^Mission Cards$" },
+      "bbox": [450, 338, 610, 511],
+      "alt": "Annotated mission card reference",
+      "expectedTexts": [
+        "Description",
+        "Gold, Legend Point, Fame, and Bonus Rewards"
+      ]
+    },
+    {
+      "page": 8,
+      "target": { "titleRegex": "^Wilderness Tokens$" },
+      "bbox": [448, 517, 801, 672],
+      "suppressBbox": [448, 517, 801, 690],
+      "alt": "Annotated wilderness token reference",
+      "expectedTexts": ["Wilderness Tokens Front"]
+    },
+    {
+      "page": 8,
+      "target": { "titleRegex": "^Treasure Site Tokens$" },
+      "bbox": [470, 672, 650, 807],
+      "alt": "Annotated treasure site token reference",
+      "expectedTexts": ["Treasure Site Token Back", "Terrain Pack"]
+    },
+    {
+      "page": 9,
+      "target": { "titleRegex": "^Hero Cards$" },
+      "bbox": [350, 77, 792, 382],
+      "alt": "Annotated hero card reference",
+      "expectedTexts": [
+        "Lineage Advantage",
+        "Attributes",
+        "Aim Boxes (used only with optional PvP rules)"
+      ]
+    },
+    {
+      "page": 9,
+      "target": { "titleRegex": "^Item and Treasure Cards$" },
+      "bbox": [360, 379, 772, 805],
+      "alt": "Annotated item and treasure card reference",
+      "expectedTexts": ["Item Values (permanent effect)"]
+    },
+    {
+      "page": 20,
+      "target": { "titleRegex": "^Items$" },
+      "bbox": [439, 522, 632, 724],
+      "suppressBbox": [439, 513, 632, 724],
+      "alt": "Annotated item card reference",
+      "expectedTexts": ["Item Values (armor and weight)"]
+    },
+    {
+      "page": 21,
+      "target": { "titleRegex": "^Epic Treasures$" },
+      "bbox": [33, 96, 228, 294],
+      "suppressBbox": [33, 91, 228, 294],
+      "alt": "Annotated epic treasure card reference",
+      "expectedTexts": ["Item Values (permanent effect)"]
+    },
+    {
+      "page": 23,
+      "target": { "titleRegex": "^Spells$" },
+      "bbox": [36, 412, 240, 614],
+      "suppressBbox": [36, 411, 240, 614],
+      "alt": "Annotated spell card reference",
+      "expectedTexts": ["Spell Values (various effects)"],
+      "placement": { "beforeText": "Spells are only cast during combat" }
+    },
+    {
+      "page": 10,
+      "target": { "titleRegex": "^Spells$" },
+      "bbox": [402, 88, 599, 292],
+      "alt": "Annotated spell card reference",
+      "expectedTexts": ["Requirements"]
+    },
+    {
+      "page": 10,
+      "target": { "titleRegex": "^Hero Board$" },
+      "bbox": [316, 329, 830, 807],
+      "alt": "Annotated hero board reference",
+      "expectedTexts": [
+        "Make Noise Box",
+        "Miscellaneous Storage (Status Cubes, etc.)",
+        "Class Card Slot"
+      ]
+    },
+    {
+      "page": 11,
+      "target": { "titleRegex": "^Outlaw Tokens$" },
+      "bbox": [465, 93, 784, 216],
+      "alt": "Annotated hero chip and targeting token reference",
+      "expectedTexts": ["Outlaw Token"]
+    },
+    {
+      "page": 11,
+      "target": { "titleRegex": "^Action Cubes$" },
+      "bbox": [467, 306, 744, 519],
+      "alt": "Annotated action cube reference",
+      "expectedTexts": ["Heart (Action Cube for all purposes)"]
+    },
+    {
+      "page": 11,
+      "target": { "titleRegex": "^Reference Cards$" },
+      "bbox": [429, 566, 803, 813],
+      "alt": "Annotated reference card reference",
+      "expectedTexts": ["Reference Card Front (Scoring)"]
+    }
+  ],
+  "wildlands": [
+    {
+      "page": 3,
+      "target": { "titleRegex": "^Weather Cards$" },
+      "bbox": [258, 655, 410, 808],
+      "alt": "Annotated weather card reference",
+      "expectedTexts": [
+        "Weather Type",
+        "Duration",
+        "Weather Reveal",
+        "Game Effects",
+        "Seasons"
+      ]
+    }
+  ]
+}

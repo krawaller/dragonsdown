@@ -888,6 +888,28 @@
     ]
   },
   {
+    "id": "4.5.0.8",
+    "source": "wildlands",
+    "level": 4,
+    "title": "Drums of the Stampede",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 7,
+      "column": "right",
+      "section": "bottom"
+    },
+    "content": "One-time use. Move all Monsters in the Hero’s Clearing to adjacent Clearings using normal or River Paths, but not Hidden Paths. The Hero chooses the destination Clearing for each Monster.",
+    "tags": [
+      "treasure"
+    ],
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "One-time use. Move all Monsters in the Hero’s Clearing to adjacent Clearings using normal or River Paths, but not Hidden Paths. The Hero chooses the destination Clearing for each Monster."
+      }
+    ]
+  },
+  {
     "id": "5.5.0.11",
     "source": "eastern-reaches",
     "level": 4,
@@ -976,15 +998,15 @@
     ]
   },
   {
-    "id": "4.5.0.8",
+    "id": "4.5.0.9",
     "source": "wildlands",
     "level": 4,
     "title": "Elven Etchings",
     "headingStyle": "pdf-l4",
     "location": {
-      "page": 8,
-      "column": "left",
-      "section": "top"
+      "page": 7,
+      "column": "right",
+      "section": "bottom"
     },
     "content": "May use any Green Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
     "tags": [
@@ -1416,7 +1438,7 @@
     ]
   },
   {
-    "id": "4.5.0.10",
+    "id": "4.5.0.11",
     "source": "wildlands",
     "level": 4,
     "title": "Heartwood Totem",
@@ -1482,7 +1504,7 @@
     ]
   },
   {
-    "id": "4.5.0.11",
+    "id": "4.5.0.12",
     "source": "wildlands",
     "level": 4,
     "title": "Horizon Hexmark",
@@ -1526,7 +1548,7 @@
     ]
   },
   {
-    "id": "4.5.0.12",
+    "id": "4.5.0.13",
     "source": "wildlands",
     "level": 4,
     "title": "Hourglass of Echoes",
@@ -1534,7 +1556,7 @@
     "location": {
       "page": 8,
       "column": "left",
-      "section": "middle"
+      "section": "top"
     },
     "content": "One-time use. When using a One-Time Use Treasure or Item, may discard the Hourglass of Echoes instead. The Treasure or Item being used is not discarded.",
     "tags": [
@@ -1614,7 +1636,7 @@
     ]
   },
   {
-    "id": "4.5.0.13",
+    "id": "4.5.0.14",
     "source": "wildlands",
     "level": 4,
     "title": "Ledger of Promises",
@@ -1812,7 +1834,7 @@
     ]
   },
   {
-    "id": "4.5.0.15",
+    "id": "4.5.0.16",
     "source": "wildlands",
     "level": 4,
     "title": "Parley Heart",
@@ -2076,7 +2098,7 @@
     ]
   },
   {
-    "id": "4.5.0.17",
+    "id": "4.5.0.18",
     "source": "wildlands",
     "level": 4,
     "title": "Ravager’s Flail",
@@ -2098,7 +2120,7 @@
     ]
   },
   {
-    "id": "4.5.0.18",
+    "id": "4.5.0.19",
     "source": "wildlands",
     "level": 4,
     "title": "Ring of Reaching",
@@ -2230,17 +2252,17 @@
     ]
   },
   {
-    "id": "4.5.0.20",
+    "id": "4.5.0.21",
     "source": "wildlands",
     "level": 4,
     "title": "Rot Charm",
     "headingStyle": "pdf-l4",
     "location": {
       "page": 8,
-      "column": "right",
-      "section": "top"
+      "column": "left",
+      "section": "bottom"
     },
-    "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
+    "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.\n\n![](/images/pdf/fd56ee5d2ef930ee310c3178a05dd688f3e792c2.png)",
     "tags": [
       "treasure"
     ],
@@ -2248,6 +2270,11 @@
       {
         "kind": "markdown",
         "markdown": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
+      },
+      {
+        "kind": "image",
+        "src": "/images/pdf/fd56ee5d2ef930ee310c3178a05dd688f3e792c2.png",
+        "display": "block"
       }
     ]
   },
@@ -2494,7 +2521,7 @@
     ]
   },
   {
-    "id": "4.5.0.21",
+    "id": "4.5.0.22",
     "source": "wildlands",
     "level": 4,
     "title": "Silver Tongue",
@@ -2582,7 +2609,7 @@
     ]
   },
   {
-    "id": "4.5.0.22",
+    "id": "4.5.0.23",
     "source": "wildlands",
     "level": 4,
     "title": "Skyroad Sigil",
@@ -2700,7 +2727,7 @@
     ]
   },
   {
-    "id": "4.5.0.23",
+    "id": "4.5.0.24",
     "source": "wildlands",
     "level": 4,
     "title": "Spinewhisper",
@@ -2766,7 +2793,7 @@
     ]
   },
   {
-    "id": "4.5.0.24",
+    "id": "4.5.0.25",
     "source": "wildlands",
     "level": 4,
     "title": "Stone of the New Path",
@@ -2774,7 +2801,7 @@
     "location": {
       "page": 8,
       "column": "right",
-      "section": "middle"
+      "section": "top"
     },
     "content": "One-Time Use. Flip the current Map Tile without enchanting it.",
     "tags": [
@@ -2788,7 +2815,7 @@
     ]
   },
   {
-    "id": "4.5.0.26",
+    "id": "4.5.0.27",
     "source": "wildlands",
     "level": 4,
     "title": "Stoneknuckle Gloves",
@@ -3222,7 +3249,7 @@
     ]
   },
   {
-    "id": "4.5.0.29",
+    "id": "4.5.0.30",
     "source": "wildlands",
     "level": 4,
     "title": "To Do List",
@@ -3230,7 +3257,7 @@
     "location": {
       "page": 8,
       "column": "right",
-      "section": "bottom"
+      "section": "middle"
     },
     "content": "When revealed, draw and attach 2 Missions to the To Do List. While equipped, may complete these Missions as if they were the Hero’s active Missions. These Missions do not count against the Hero’s 2 Mission limit.",
     "tags": [
@@ -3464,7 +3491,7 @@
     ]
   },
   {
-    "id": "4.5.0.31",
+    "id": "4.5.0.32",
     "source": "wildlands",
     "level": 4,
     "title": "Venom of the Thousand Bites",
@@ -3552,7 +3579,7 @@
     ]
   },
   {
-    "id": "4.5.0.32",
+    "id": "4.5.0.33",
     "source": "wildlands",
     "level": 4,
     "title": "Whisper Pin",
@@ -3596,7 +3623,7 @@
     ]
   },
   {
-    "id": "4.5.0.33",
+    "id": "4.5.0.34",
     "source": "wildlands",
     "level": 4,
     "title": "Windswept Mantle",

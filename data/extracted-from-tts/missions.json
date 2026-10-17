@@ -621,31 +621,6 @@
   "Desert Avenger": [
     {
       "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
-      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
-      "numWidth": 10,
-      "numHeight": 7,
-      "row": 0,
-      "col": 9,
-      "uniqueBack": false,
-      "tags": [
-        "Mission"
-      ],
-      "ancestry": [
-        "Deserts Chips"
-      ],
-      "kind": "atrocity",
-      "terrainPack": "deserts",
-      "rewards": {
-        "outlaw": 1
-      },
-      "description": "Complete at Deserts",
-      "completeAt": [
-        "Deserts"
-      ]
-    },
-    {
-      "source": "dd_all_exp",
       "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck2.png",
       "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
       "numWidth": 10,
@@ -671,6 +646,33 @@
       "description": "Complete at Nomads",
       "completeAt": [
         "Nomads"
+      ]
+    }
+  ],
+  "Desert Marauder": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/y/missions/AllMissionDeck1.png",
+      "backURL": "https://steamusercontent-a.akamaihd.net/ugc/2002465601770953861/E6D4078F116093559A7045706ECB35A86212E2F4/",
+      "numWidth": 10,
+      "numHeight": 7,
+      "row": 0,
+      "col": 9,
+      "uniqueBack": false,
+      "tags": [
+        "Mission"
+      ],
+      "ancestry": [
+        "Deserts Chips"
+      ],
+      "kind": "atrocity",
+      "terrainPack": "deserts",
+      "rewards": {
+        "outlaw": 1
+      },
+      "description": "Complete at Deserts",
+      "completeAt": [
+        "Deserts"
       ]
     }
   ],
@@ -2047,7 +2049,8 @@
       "uniqueBack": false,
       "tags": [
         "Mariners",
-        "Mission"
+        "Mission",
+        "coop"
       ],
       "ancestry": [
         "Riverlands Chips"

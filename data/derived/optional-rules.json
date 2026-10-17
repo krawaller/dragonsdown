@@ -19,7 +19,7 @@
     ]
   },
   {
-    "id": "3.5",
+    "id": "3.6",
     "source": "wildlands",
     "level": 2,
     "title": "Banished Heroes",
@@ -29,32 +29,23 @@
       "column": "right",
       "section": "top"
     },
-    "content": "Your hero starts the game banished.\n\n**Ruthless Riverlands Not in Play:** Shuffle all Map Tiles together and place a random wilderness Map Tile to start. The Hero is placed in a random Clearing at game start.\n\n**Ruthless Riverlands in Play:** Players start their Hero in a random Ruthless Riverlands wilderness Map Tile. Place the Hero Chip in a random Dock Clearing.\n\nAfter placing the Hero Chip, reveal and place a Wilderness Token before taking any actions.\n\nFor added difficulty, combine this optional rule with the Wits Only optional rule from the Core **Dragons Down** Game\n\n![](/images/pdf/06df3e174b31d1437b8ddc537afd4994a0048d3a.jpeg)",
+    "content": "Heroes start the game banished. Set up the game normally for the chosen game mode. If playing in Exploration Mode without the Ruthless Riverlands, place a random Wilderness Map Tile instead of a Civilization Map Tile.\n\nAfter setting up the map, randomly select one of the Wilderness Map Tiles placed during setup. Place each Hero (or Adventure Party) in a random Clearing on the selected Map Tile.\n\nWhen the first Player Token is revealed on the first turn of the game, immediately reveal and place a Wilderness Token as if the Hero had just entered the Map Tile.\n\nFor added difficulty, combine this optional rule with the Wits Only optional rule from the **Dragons Down** Core Game.",
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "Your hero starts the game banished."
+        "markdown": "Heroes start the game banished. Set up the game normally for the chosen game mode. If playing in Exploration Mode without the Ruthless Riverlands, place a random Wilderness Map Tile instead of a Civilization Map Tile."
       },
       {
         "kind": "markdown",
-        "markdown": "**Ruthless Riverlands Not in Play:** Shuffle all Map Tiles together and place a random wilderness Map Tile to start. The Hero is placed in a random Clearing at game start."
+        "markdown": "After setting up the map, randomly select one of the Wilderness Map Tiles placed during setup. Place each Hero (or Adventure Party) in a random Clearing on the selected Map Tile."
       },
       {
         "kind": "markdown",
-        "markdown": "**Ruthless Riverlands in Play:** Players start their Hero in a random Ruthless Riverlands wilderness Map Tile. Place the Hero Chip in a random Dock Clearing."
+        "markdown": "When the first Player Token is revealed on the first turn of the game, immediately reveal and place a Wilderness Token as if the Hero had just entered the Map Tile."
       },
       {
         "kind": "markdown",
-        "markdown": "After placing the Hero Chip, reveal and place a Wilderness Token before taking any actions."
-      },
-      {
-        "kind": "markdown",
-        "markdown": "For added difficulty, combine this optional rule with the Wits Only optional rule from the Core **Dragons Down** Game"
-      },
-      {
-        "kind": "image",
-        "src": "/images/pdf/06df3e174b31d1437b8ddc537afd4994a0048d3a.jpeg",
-        "display": "block"
+        "markdown": "For added difficulty, combine this optional rule with the Wits Only optional rule from the **Dragons Down** Core Game."
       }
     ]
   },
@@ -552,6 +543,25 @@
     ]
   },
   {
+    "id": "3.5",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Shuttered Markets",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "While Monsters occupy a Clearing containing a Civilization Location, Heroes may not perform Trade Actions in that Clearing, except to swap possessions with another Hero.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "While Monsters occupy a Clearing containing a Civilization Location, Heroes may not perform Trade Actions in that Clearing, except to swap possessions with another Hero."
+      }
+    ]
+  },
+  {
     "id": "3.3",
     "source": "wildlands",
     "level": 2,
@@ -600,11 +610,11 @@
       "column": "left",
       "section": "bottom"
     },
-    "content": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (*on the Summoning Die from the Core* ***Dragons Down*** *Game*). All other Monsters return when either Monsters Return arrow is rolled.",
+    "content": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (on the Summoning Die from the Core ***Dragons Down*** Game). All other Monsters return when either Monsters Return arrow is rolled.",
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (*on the Summoning Die from the Core* ***Dragons Down*** *Game*). All other Monsters return when either Monsters Return arrow is rolled."
+        "markdown": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (on the Summoning Die from the Core ***Dragons Down*** Game). All other Monsters return when either Monsters Return arrow is rolled."
       }
     ]
   },
@@ -640,6 +650,69 @@
       {
         "kind": "markdown",
         "markdown": "- **Caves, Mountains, Deserts, and River Clearing:** No additional effect."
+      }
+    ]
+  },
+  {
+    "id": "3.7",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Terrain Effects Revisited",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "Terrain Effects were introduced in **Dragons Down: Eastern Reaches** and give additional importance to individual Clearing types. These optional rules are repeated here to include the new Clearing types and revise the conditions under which Heroes may ignore Terrain Effects.\n\nThe following Terrain Effects apply whenever a Hero occupies a Clearing of the corresponding type. A Sheltered Hero may **choose** to ignore Terrain Effects.\n\n- **Thickets and Woods Clearings:** Dense foliage provides ample concealment opportunities. Heroes attempting to Hide receive the benefits of Sneaking, even if they did not perform a Sneak Action.\n\n- **Plains Clearing:** The open, featureless terrain offers few places to hide. Heroes attempting to Hide do not receive the benefits of a Sneak Action taken this turn. Magical effects from Treasures and Spells still apply.\n\n- **Swamps Clearing:** The diseased and fetid nature of swamps makes healing nearly impossible. Heroes may not perform a Rest Action.\n\n- **Desert Clearings:** Desert Clearings are hot, barren, and offer little protection from the elements. Heroes ending their Action Phase in a Desert Clearing must immediately suffer 1 wound of their choice.\n\n- **Caves, Hills, Mountains, and River Clearings:** No additional effects.\n\nAll normal terrain rules remain in effect, even when a Hero is Sheltered.\n\n- Movement costs.\n\n- Loss of 1 Action per turn in Cave Clearings.\n\n- All movement and other rules governing River Clearings.\n\n- Restricted Flying movement in Thickets Clearings.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Terrain Effects were introduced in **Dragons Down: Eastern Reaches** and give additional importance to individual Clearing types. These optional rules are repeated here to include the new Clearing types and revise the conditions under which Heroes may ignore Terrain Effects."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The following Terrain Effects apply whenever a Hero occupies a Clearing of the corresponding type. A Sheltered Hero may **choose** to ignore Terrain Effects."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Thickets and Woods Clearings:** Dense foliage provides ample concealment opportunities. Heroes attempting to Hide receive the benefits of Sneaking, even if they did not perform a Sneak Action."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Plains Clearing:** The open, featureless terrain offers few places to hide. Heroes attempting to Hide do not receive the benefits of a Sneak Action taken this turn. Magical effects from Treasures and Spells still apply."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Swamps Clearing:** The diseased and fetid nature of swamps makes healing nearly impossible. Heroes may not perform a Rest Action."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Desert Clearings:** Desert Clearings are hot, barren, and offer little protection from the elements. Heroes ending their Action Phase in a Desert Clearing must immediately suffer 1 wound of their choice."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Caves, Hills, Mountains, and River Clearings:** No additional effects."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "All normal terrain rules remain in effect, even when a Hero is Sheltered."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- Movement costs."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- Loss of 1 Action per turn in Cave Clearings."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- All movement and other rules governing River Clearings."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- Restricted Flying movement in Thickets Clearings."
       }
     ]
   },

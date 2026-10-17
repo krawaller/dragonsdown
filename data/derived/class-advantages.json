@@ -294,7 +294,7 @@
       "column": "left",
       "section": "top"
     },
-    "icon": "/images/pdf/c21595d2b4e67bdabbee81f9763a9f69e054e14b.jpeg",
+    "icon": "/images/pdf/b8c87fe97f54980c97b1ab4a5d00d94fdd9b1737.jpeg",
     "content": "The decayed are torn between the light and the darkness. When the decayed hits an undead with a melee attack, regardless of the amount of damage dealt, they may choose one of the following:\n\n- **Wound a white Magic Cube:** Immediately kill the undead, regardless of the damage dealt. The decayed earns double the Monster’s Fame value.\n\n- **Wound a black Magic Cube:** Cancel the undead’s attack and immediately convert the undead into a permanent Hired Native, following all Native rules. Hired undead may attack unhired undead without penalty.",
     "tags": [
       "classAdvantage"
@@ -325,8 +325,8 @@
       "column": "left",
       "section": "middle"
     },
-    "icon": "/images/pdf/f78580280898575ae8117d29c233a740966a1703.jpeg",
-    "content": "![float-right](/images/pdf/b5ee34fe55aa8c05db2b2fd51359f6434327bf28.jpeg) Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
+    "icon": "/images/pdf/7b03b57ffe99a10c2b00dd5e21da89cd9ee37ead.jpeg",
+    "content": "![float-right](/images/pdf/33c08302a92dcc24c76d2418ee71c3326a85b368.jpeg) Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
     "tags": [
       "classAdvantage"
     ],
@@ -336,7 +336,7 @@
         "images": [
           {
             "kind": "image",
-            "src": "/images/pdf/b5ee34fe55aa8c05db2b2fd51359f6434327bf28.jpeg",
+            "src": "/images/pdf/33c08302a92dcc24c76d2418ee71c3326a85b368.jpeg",
             "display": "float-right"
           }
         ],
@@ -371,7 +371,7 @@
       "column": "left",
       "section": "bottom"
     },
-    "icon": "/images/pdf/d2f51234317c307c91960473c3844f9cb3d06781.jpeg",
+    "icon": "/images/pdf/6771a3168c1497eb707edbef501969490d11da9c.jpeg",
     "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.",
     "tags": [
       "classAdvantage"
@@ -395,14 +395,14 @@
       "section": "top"
     },
     "icon": "/images/pdf/055391bc0fedcef4005184fef2f0db4a596c0419.jpeg",
-    "content": "Diviner can channel magical energy into a shard they always have with them, enhancing its power. Using an alert action may place a healthy magic cube on the shard space of their class card (*returning any cube already there* *to their healthy box*). During combat, this cube counts as two cubes of the same color when casting spells. If the cube is wounded during combat, the effect is immediately canceled. At the end of combat the cube is returned to the Hero’s healthy box.",
+    "content": "Diviner can channel magical energy into a shard they always have with them, enhancing its power. When taking an Alert action may place a healthy magic cube on the shard space of their class card (returning any cube already there to their healthy box), in lieu of the normal Alert action. During combat, this cube counts as two cubes of the same color when casting spells. If the cube is wounded during combat, the effect is immediately canceled. At the end of combat the cube is returned to the Hero’s healthy box.",
     "tags": [
       "classAdvantage"
     ],
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "Diviner can channel magical energy into a shard they always have with them, enhancing its power. Using an alert action may place a healthy magic cube on the shard space of their class card (*returning any cube already there* *to their healthy box*). During combat, this cube counts as two cubes of the same color when casting spells. If the cube is wounded during combat, the effect is immediately canceled. At the end of combat the cube is returned to the Hero’s healthy box."
+        "markdown": "Diviner can channel magical energy into a shard they always have with them, enhancing its power. When taking an Alert action may place a healthy magic cube on the shard space of their class card (returning any cube already there to their healthy box), in lieu of the normal Alert action. During combat, this cube counts as two cubes of the same color when casting spells. If the cube is wounded during combat, the effect is immediately canceled. At the end of combat the cube is returned to the Hero’s healthy box."
       }
     ]
   },
@@ -440,8 +440,8 @@
       "column": "right",
       "section": "top"
     },
-    "icon": "/images/pdf/fd6bfc7217471d24f9661fe5331093d99825cb3c.jpeg",
-    "content": "![float-right](/images/pdf/7f10b9e8fa76748f5be1f3c004f40a6d15c8d42d.jpeg) Duelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
+    "icon": "/images/pdf/b7f2306f691b8facf38211109f94e96b7bb1e415.jpeg",
+    "content": "![float-right](/images/pdf/80b75a8fd510dea0fe3074457bbff8364941cabe.jpeg) Duelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
     "tags": [
       "classAdvantage"
     ],
@@ -451,7 +451,7 @@
         "images": [
           {
             "kind": "image",
-            "src": "/images/pdf/7f10b9e8fa76748f5be1f3c004f40a6d15c8d42d.jpeg",
+            "src": "/images/pdf/80b75a8fd510dea0fe3074457bbff8364941cabe.jpeg",
             "display": "float-right"
           }
         ],
@@ -556,22 +556,22 @@
       "section": "top"
     },
     "icon": "/images/pdf/0796f2e6d9f5348956ec96ec32a852f2742dc05d.jpeg",
-    "content": "The Gravesworn is protector and researcher of all things undead. Undead do not block or target the Gravesworn, nor may the Gravesworn, or their hired natives, target the undead (*including attacks that target* *the entire Clearing like Fiery Chasm or Earthquake*). The Gravesworn may not loot treasure sites whose protectors are undead Guardians. The Gravesworn may have one undead Monster as a minion (*hired native*) at any time as follows.\n\nUsing a normal Hire Action, the Gravesworn must haggle to reduce the hire price to 1x. The Gravesworn only fails in a haggle attempt by rolling a door symbol. The Gravesworn pays no actual cost to hire an undead Monster. All other Hired Natives rules apply (*From* **Dragons Down: Natives & Legends**). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Gravesworn from hiring other undead Monsters on that same turn, even the same Monster type. The Gravesworn loses Fame when their minion is killed.\n\nThe Gravesworn may not attempt to hire a Monster while they already have a minion. The Gravesworn may not fly using a hired minion (*unlike the Beastmaster*).",
+    "content": "The Gravesworn is protector and researcher of all things undead. Undead do not block or target the Gravesworn, nor may the Gravesworn, or their hired natives, target the undead (including attacks that target the entire Clearing like Fiery Chasm or Earthquake). The Gravesworn may not loot treasure sites whose protectors are undead Guardians. The Gravesworn may have one undead Monster as a minion (hired native) at any time as follows.\n\nUsing a normal Hire Action, the Gravesworn must haggle to reduce the hire price to 1x. The Gravesworn only fails in a haggle attempt by rolling a door symbol. The Gravesworn pays no actual cost to hire an undead Monster. All other Hired Natives rules apply (From **Dragons Down: Natives & Legends**). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Gravesworn from hiring other undead Monsters on that same turn, even the same Monster type. The Gravesworn loses Fame when their minion is killed.\n\nThe Gravesworn may not attempt to hire a Monster while they already have a minion. The Gravesworn may not fly using a hired minion (unlike the Beastmaster).",
     "tags": [
       "classAdvantage"
     ],
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "The Gravesworn is protector and researcher of all things undead. Undead do not block or target the Gravesworn, nor may the Gravesworn, or their hired natives, target the undead (*including attacks that target* *the entire Clearing like Fiery Chasm or Earthquake*). The Gravesworn may not loot treasure sites whose protectors are undead Guardians. The Gravesworn may have one undead Monster as a minion (*hired native*) at any time as follows."
+        "markdown": "The Gravesworn is protector and researcher of all things undead. Undead do not block or target the Gravesworn, nor may the Gravesworn, or their hired natives, target the undead (including attacks that target the entire Clearing like Fiery Chasm or Earthquake). The Gravesworn may not loot treasure sites whose protectors are undead Guardians. The Gravesworn may have one undead Monster as a minion (hired native) at any time as follows."
       },
       {
         "kind": "markdown",
-        "markdown": "Using a normal Hire Action, the Gravesworn must haggle to reduce the hire price to 1x. The Gravesworn only fails in a haggle attempt by rolling a door symbol. The Gravesworn pays no actual cost to hire an undead Monster. All other Hired Natives rules apply (*From* **Dragons Down: Natives & Legends**). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Gravesworn from hiring other undead Monsters on that same turn, even the same Monster type. The Gravesworn loses Fame when their minion is killed."
+        "markdown": "Using a normal Hire Action, the Gravesworn must haggle to reduce the hire price to 1x. The Gravesworn only fails in a haggle attempt by rolling a door symbol. The Gravesworn pays no actual cost to hire an undead Monster. All other Hired Natives rules apply (From **Dragons Down: Natives & Legends**). Monsters belong to no group. Thus, a closed door result on a haggle attempt does not prevent the Gravesworn from hiring other undead Monsters on that same turn, even the same Monster type. The Gravesworn loses Fame when their minion is killed."
       },
       {
         "kind": "markdown",
-        "markdown": "The Gravesworn may not attempt to hire a Monster while they already have a minion. The Gravesworn may not fly using a hired minion (*unlike the Beastmaster*)."
+        "markdown": "The Gravesworn may not attempt to hire a Monster while they already have a minion. The Gravesworn may not fly using a hired minion (unlike the Beastmaster)."
       }
     ]
   },
@@ -701,7 +701,7 @@
       "column": "right",
       "section": "middle"
     },
-    "icon": "/images/pdf/98bbf25e8db3a85c2abb265fa8bf88fd5fe7e1c0.jpeg",
+    "icon": "/images/pdf/09b8580ec362dea3bd8e4bf15a47e484a966e6b7.jpeg",
     "content": "Monks are masters of unarmed combat. If a monk has an open weapon position and places no cubes on weapon or spell cards, they strike with their fist with a base damage of 0 might and 1 sword. Additional Might Cubes may be placed on the Class Card to increase the base damage of a monk’s fist strike. If the player places a Might Cube in the box with a wound symbol, that cube is moved to the wounded box during the Cleanup step.",
     "tags": [
       "classAdvantage"
@@ -797,8 +797,8 @@
       "column": "right",
       "section": "bottom"
     },
-    "icon": "/images/pdf/9d2e37cf8a112773c738904bf6a7345999c40471.jpeg",
-    "content": "![float-right](/images/pdf/50deb459ff411078cb8dc0e47653bc94968c1cf2.jpeg) Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.",
+    "icon": "/images/pdf/6b045f683db2d0e91c123e1e1a8519f0b1141058.jpeg",
+    "content": "![float-right](/images/pdf/34ee8ca8d574430e301a89d0576a3365d5469825.jpeg) Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.",
     "tags": [
       "classAdvantage"
     ],
@@ -808,7 +808,7 @@
         "images": [
           {
             "kind": "image",
-            "src": "/images/pdf/50deb459ff411078cb8dc0e47653bc94968c1cf2.jpeg",
+            "src": "/images/pdf/34ee8ca8d574430e301a89d0576a3365d5469825.jpeg",
             "display": "float-right"
           }
         ],
@@ -992,7 +992,7 @@
       "column": "right",
       "section": "bottom"
     },
-    "icon": "/images/pdf/960aefa4a51e8d83533fb3e6f8d8bc44a87419e7.jpeg",
+    "icon": "/images/pdf/613a15add5afaa898f7d7d768e314ed3e8272ca4.jpeg",
     "content": "Vanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.",
     "tags": [
       "classAdvantage"

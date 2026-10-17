@@ -169,7 +169,7 @@
       "column": "left",
       "section": "bottom"
     },
-    "content": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*",
+    "content": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of\n\n dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*",
     "tags": [
       "spell",
       "blackMagic"
@@ -177,7 +177,11 @@
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*"
+        "markdown": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*"
       }
     ]
   },
@@ -292,7 +296,7 @@
       "column": "right",
       "section": "bottom"
     },
-    "content": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster.",
+    "content": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all\n\n rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster.",
     "tags": [
       "spell",
       "blackMagic"
@@ -300,7 +304,11 @@
     "contentNodes": [
       {
         "kind": "markdown",
-        "markdown": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster."
+        "markdown": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster."
       }
     ]
   },
@@ -358,7 +366,7 @@
       "column": "right",
       "section": "bottom"
     },
-    "content": "Self. Permanent. Wound one blue cube. Any Hero, Monster, or Native that targets the caster has an equal chance of instead targeting the doppelganger. After all Hero and Monster Tactics have been revealed, roll the d6 for each Hero, Monster, and Native targeting the caster. On a roll of 1-3, they target the caster. On a roll of 4-6, they target the doppelganger. *Exception: Spells that target “all” in the clearing* (*e.g.* *Fiery Chasm or Malediction*) *target both the caster and the doppelganger*.\n\nThe doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled.",
+    "content": "Self. Permanent. Wound one blue cube. Any Hero, Monster, or Native that targets the caster has an equal chance of instead targeting the doppelganger. After all Hero and Monster Tactics have been revealed, roll the d6 for each Hero, Monster, and Native targeting the caster. On a roll of 1-3, they target the caster. On a roll of 4-6, they target the doppelganger. *Exception: Spells that target “all” in the clearing* (*e.g.* *Fiery Chasm or Malediction*) *target both the caster and the doppelganger*.\n\nThe doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger\n\n is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled.",
     "tags": [
       "spell",
       "blueMagic"
@@ -370,7 +378,11 @@
       },
       {
         "kind": "markdown",
-        "markdown": "The doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled."
+        "markdown": "The doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled."
       }
     ]
   },

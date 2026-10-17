@@ -1129,16 +1129,25 @@ def read_annotated_figures_for_doc(doc_slug: str) -> list[AnnotatedFigure]:
     if not ANNOTATED_FIGURES_FILE.exists():
         return []
     data = json.loads(ANNOTATED_FIGURES_FILE.read_text())
-    if not isinstance(data, list):
+    if isinstance(data, dict):
+        entries = data.get(doc_slug, [])
+        if not isinstance(entries, list):
+            raise TypeError(
+                f"Annotated figures for {doc_slug} must be an array: "
+                f"{ANNOTATED_FIGURES_FILE}"
+            )
+    elif isinstance(data, list):
+        entries = data
+    else:
         raise TypeError(
-            f"Annotated figures file must be an array: {ANNOTATED_FIGURES_FILE}"
+            f"Annotated figures file must be an object or array: {ANNOTATED_FIGURES_FILE}"
         )
 
     figures: list[AnnotatedFigure] = []
-    for index, entry in enumerate(data):
+    for index, entry in enumerate(entries):
         if not isinstance(entry, dict):
             raise TypeError(f"Annotated figure entry #{index + 1} must be an object")
-        doc = entry.get("doc")
+        doc = entry.get("doc", doc_slug)
         if doc != doc_slug:
             continue
         target = entry.get("target")
@@ -1629,6 +1638,14 @@ def process_release(name: str) -> bool:
     return True
 
 
+def release_for_pdf_path(pdf: Path) -> tuple[str, ReleaseEntry] | None:
+    resolved_pdf = pdf.resolve()
+    for name, entry in read_releases().items():
+        if (PDF_DIR / entry.file).resolve() == resolved_pdf:
+            return name, entry
+    return None
+
+
 def main(argv: list[str]) -> None:
     if not argv or argv[0] == "--all":
         process_all()
@@ -1645,6 +1662,10 @@ def main(argv: list[str]) -> None:
             f"Known releases: {known}"
         )
     out = Path(argv[1]) if len(argv) > 1 else None
+    if release := release_for_pdf_path(pdf):
+        name, entry = release
+        process_one(pdf, out, name_override=name, version_override=entry.version)
+        return
     process_one(pdf, out)
 
 

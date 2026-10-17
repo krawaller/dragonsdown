@@ -3,7 +3,7 @@
     {
       "source": "dd_all_exp",
       "name": "Broom Hand",
-      "attribute": "Charisma",
+      "attribute": "Lowest",
       "tokenCode": "H",
       "basePrice": "2 Gold",
       "startingPrice": "6 Gold",
@@ -20,7 +20,7 @@
     {
       "source": "dd_all_exp",
       "name": "Chanter",
-      "attribute": "Charisma",
+      "attribute": "Lowest",
       "tokenCode": "C",
       "basePrice": "3 Gold",
       "startingPrice": "9 Gold",
@@ -37,7 +37,7 @@
     {
       "source": "dd_all_exp",
       "name": "City Mancer",
-      "attribute": "Charisma",
+      "attribute": "Lowest",
       "tokenCode": "D",
       "basePrice": "3 Gold",
       "startingPrice": "9 Gold",
@@ -71,7 +71,7 @@
     {
       "source": "dd_all_exp",
       "name": "Earth Mover",
-      "attribute": "Wisdom",
+      "attribute": "Lowest",
       "tokenCode": "T",
       "basePrice": "3 Gold",
       "startingPrice": "9 Gold",
@@ -88,7 +88,7 @@
     {
       "source": "dd_all_exp",
       "name": "Fencer",
-      "attribute": "Cunning",
+      "attribute": "Lowest",
       "tokenCode": "T",
       "basePrice": "3 Gold",
       "startingPrice": "9 Gold",
@@ -105,7 +105,7 @@
     {
       "source": "dd_all_exp",
       "name": "Gate Mage",
-      "attribute": "Cunning",
+      "attribute": "Lowest",
       "tokenCode": "D",
       "basePrice": "2 Gold",
       "startingPrice": "6 Gold",
@@ -122,7 +122,7 @@
     {
       "source": "dd_all_exp",
       "name": "Healer",
-      "attribute": "Wisdom",
+      "attribute": "Lowest",
       "tokenCode": "S",
       "basePrice": "1 Gold per cube",
       "startingPrice": "3 Gold per cube",
@@ -156,7 +156,7 @@
     {
       "source": "dd_all_exp",
       "name": "Pathfinder",
-      "attribute": "Charisma",
+      "attribute": "Lowest",
       "tokenCode": "R",
       "basePrice": "2 Gold",
       "startingPrice": "6 Gold",
@@ -173,7 +173,7 @@
     {
       "source": "dd_all_exp",
       "name": "Telecrafter",
-      "attribute": "Cunning",
+      "attribute": "Lowest",
       "tokenCode": "M",
       "basePrice": "3 Gold",
       "startingPrice": "9 Gold",

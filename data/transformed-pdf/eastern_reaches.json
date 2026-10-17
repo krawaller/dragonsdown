@@ -12,7 +12,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "![](/images/pdf/37f74aa0bbf43addc356a799f1c65d453770f235.jpeg)\n\n![](/images/pdf/44613200e415f41545bd579b103d3f8234dc5272.jpeg)\n\nVersion 1.3. Septmber 17, 2026\n\n*“The lands to the East had been unexplored even before the dragons devastated* *this place. But there were thriving communities and vast wastelands beyond* *what we knew. I could see boundless deserts and gorges cut by deep riverlands.* *I decided to set foot in these lands to see what adventures await....”*\n\n**Dragons Down: Eastern Reaches** expands Dragons Down by introducing two new cooperative modes of play and two new Terrain Packs. New components for the Eastern Reaches expansion are marked with a small ![inline](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg) in one corner. Counters, round cardboard tokens, and Hero Chips do not have a mark.",
+      "content": "![](/images/pdf/37f74aa0bbf43addc356a799f1c65d453770f235.jpeg)\n\n![](/images/pdf/44613200e415f41545bd579b103d3f8234dc5272.jpeg)\n\nVersion 1.3. October 5, 2026\n\n*“The lands to the East had been unexplored even before the dragons devastated* *this place. But there were thriving communities and vast wastelands beyond* *what we knew. I could see boundless deserts and gorges cut by deep riverlands.* *I decided to set foot in these lands to see what adventures await....”*\n\n**Dragons Down: Eastern Reaches** expands Dragons Down by introducing two new cooperative modes of play and two new Terrain Packs. New components for the Eastern Reaches expansion are marked with a small ![inline](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg) in one corner. Counters, round cardboard tokens, and Hero Chips do not have a mark.",
       "contentNodes": [
         {
           "kind": "image",
@@ -26,7 +26,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "Version 1.3. Septmber 17, 2026"
+          "markdown": "Version 1.3. October 5, 2026"
         },
         {
           "kind": "markdown",
@@ -784,7 +784,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "The Eastern Reaches expansion adds 23 Wilderness Tokens (*one for each existing* *Terrain Pack and 9 tokens for each new Terrain Pack*). Mix each of these new tokens into the existing Wilderness Tokens for any Terrain Packs in play. Some tokens are marked with a + sign on the front face of the token. When moving or exploring a Hero may reveal one of the new tokens. Each new token is explained below:\n\n- ![float-right](/images/pdf/284991a5c6a29732ad8fda60c7a403132b7f77ef.jpeg) **Discovery**: Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n- ![float-right](/images/pdf/1c9033fc7ed39ccb283c56d6faaa168736c9c058.jpeg) **Oasis**: Draw one additional Wilderness Token from the Dreadful Desert Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the larger Oasis location counter in the indicated clearing. *Exception: If the die roll indicates a clearing with a* *Treasure Site or Civilization Location, reroll the die, unless there are no* *available clearings. Draw two Civilization Tokens and place them in the Map* *Tile near the Oasis. For all purposes, the Oasis is a Civilization Location.*\n\n- ![float-right](/images/pdf/953b6a82b549c8b06381a16cb98af5be1c58573e.jpeg) **Buried Temple:** Draw one additional Wilderness Token from each Terrain Setup Card in play and place them in the Map Tile. The revealing Hero receives 1 LP and 5 Fame. *Note the rule* *adjustment for Special Location Wilderness Tokens on page 1 of these rules.*",
+      "content": "The Eastern Reaches expansion adds 23 Wilderness Tokens (*one for each existing* *Terrain Pack and 9 tokens for each new Terrain Pack*). Mix each of these new tokens into the existing Wilderness Tokens for any Terrain Packs in play. Some tokens are marked with a + sign on the front face of the token. When moving or exploring a Hero may reveal one of the new tokens. Each new token is explained below:\n\n- ![float-right](/images/pdf/13685d3e27b817b2e78f1cdacdd12327bd4a11f3.jpeg) **Discovery**: Draw another Wilderness Token from the same Terrain Pack and place it in the Map Tile. The Hero rolls the two Mission Dice and receives the rewards indicated by the dice roll.\n\n- ![float-right](/images/pdf/b12fdd04c67cff115346fd74709f4de31e6b12a9.jpeg) **Oasis**: Draw one additional Wilderness Token from the Dreadful Desert Terrain Pack and place it in the Map Tile per normal rules. Then, roll a die and place the larger Oasis location counter in the indicated clearing. *Exception: If the die roll indicates a clearing with a* *Treasure Site or Civilization Location, reroll the die, unless there are no* *available clearings. Draw two Civilization Tokens and place them in the Map* *Tile near the Oasis. For all purposes, the Oasis is a Civilization Location.*\n\n- ![float-right](/images/pdf/1ee13a68eec1c62773b7f7c66c2f61c047b5b04b.jpeg) **Buried Temple:** Draw one additional Wilderness Token from each Terrain Setup Card in play and place them in the Map Tile. The revealing Hero receives 1 LP and 5 Fame. *Note the rule* *adjustment for Special Location Wilderness Tokens on page 1 of these rules.*",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -795,7 +795,7 @@
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/284991a5c6a29732ad8fda60c7a403132b7f77ef.jpeg",
+              "src": "/images/pdf/13685d3e27b817b2e78f1cdacdd12327bd4a11f3.jpeg",
               "display": "float-right"
             }
           ],
@@ -806,7 +806,7 @@
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/1c9033fc7ed39ccb283c56d6faaa168736c9c058.jpeg",
+              "src": "/images/pdf/b12fdd04c67cff115346fd74709f4de31e6b12a9.jpeg",
               "display": "float-right"
             }
           ],
@@ -817,7 +817,7 @@
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/953b6a82b549c8b06381a16cb98af5be1c58573e.jpeg",
+              "src": "/images/pdf/1ee13a68eec1c62773b7f7c66c2f61c047b5b04b.jpeg",
               "display": "float-right"
             }
           ],
@@ -873,14 +873,14 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "![float-right](/images/pdf/535eb49dd381f118443ef2ce61c109f89d7b66c9.jpeg) Some treasures are specific to the Dreadful Desert Terrain Pack (*cards are* *marked with a desert Terrain Pack symbol next to the* ![inline](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg) ). If the Dreadful Deserts are not in play, remove these cards from play.",
+      "content": "![float-right](/images/pdf/73ee68d2a536f64fd35cb8d79584c79c878cd745.jpeg) Some treasures are specific to the Dreadful Desert Terrain Pack (*cards are* *marked with a desert Terrain Pack symbol next to the* ![inline](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg) ). If the Dreadful Deserts are not in play, remove these cards from play.",
       "contentNodes": [
         {
           "kind": "mediaAside",
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/535eb49dd381f118443ef2ce61c109f89d7b66c9.jpeg",
+              "src": "/images/pdf/73ee68d2a536f64fd35cb8d79584c79c878cd745.jpeg",
               "display": "float-right"
             }
           ],
@@ -899,14 +899,14 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "![float-right](/images/pdf/f177234022f9c856933c959475520300fe800d7f.jpeg) Dreadful Desert tiles include Desert Clearings, marked with an orange Desert Icon. Entering a Desert Clearing costs 1 action.\n\nDesert Clearings are hot, barren, and offer little protection from the elements. If a Hero ends their Action Phase in a Desert Clearing that does not contain a Civilization Location, that Hero immediately suffers 1 wound. Desert Clearings have no effect on Monsters or Natives, including Hired Natives.\n\nDesert Clearings do not affect Combat, although some treasures may grant bonuses or penalties in Desert Clearings.",
+      "content": "![float-right](/images/pdf/c2c81040f0a9a8b47dee222e5e42877ae4e3878f.jpeg) Dreadful Desert tiles include Desert Clearings, marked with an orange Desert Icon. Entering a Desert Clearing costs 1 action.\n\nDesert Clearings are hot, barren, and offer little protection from the elements. If a Hero ends their Action Phase in a Desert Clearing that does not contain a Civilization Location, that Hero immediately suffers 1 wound. Desert Clearings have no effect on Monsters or Natives, including Hired Natives.\n\nDesert Clearings do not affect Combat, although some treasures may grant bonuses or penalties in Desert Clearings.",
       "contentNodes": [
         {
           "kind": "mediaAside",
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/f177234022f9c856933c959475520300fe800d7f.jpeg",
+              "src": "/images/pdf/c2c81040f0a9a8b47dee222e5e42877ae4e3878f.jpeg",
               "display": "float-right"
             }
           ],
@@ -1005,14 +1005,14 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "![float-right](/images/pdf/5eeb36674f55ca356fed52fb07510a5d11e22231.jpeg) Some treasures are specific to the Ruthless Riverlands Terrain Pack (*cards are marked with a Ruthless Riverlands Terrain Pack symbol next to* *the* ![inline](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg) ). If the Riverlands are not in play, remove these cards from play.",
+      "content": "![float-right](/images/pdf/287a6600af2f382db2d7625e3cd36d4d65bf7bf6.jpeg) Some treasures are specific to the Ruthless Riverlands Terrain Pack (*cards are marked with a Ruthless Riverlands Terrain Pack symbol next to* *the* ![inline](/images/pdf/345d91f45589e2721e7738e7e4d808d8f83cb8e3.jpeg) ). If the Riverlands are not in play, remove these cards from play.",
       "contentNodes": [
         {
           "kind": "mediaAside",
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/5eeb36674f55ca356fed52fb07510a5d11e22231.jpeg",
+              "src": "/images/pdf/287a6600af2f382db2d7625e3cd36d4d65bf7bf6.jpeg",
               "display": "float-right"
             }
           ],
@@ -1031,14 +1031,14 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "![float-right](/images/pdf/8a5f67ddb5c79f205e495e6f8d0f2ae2f964b52c.jpeg) Ruthless Riverlands tiles introduce a new type of clearing called a River Clearing. River Clearings are colored white and blue and are marked with a blue River Icon. River Clearings represent water with nearby small islands. Although movement through a River Clearing occurs via the water, Heroes, Natives, and Monsters are assumed to be on the islands within each River Clearing.\n\nA Hero may only enter a River Clearing using a ferry (*see Ferries below*) from an adjacent River Clearing  or a clearing containing a Dock (*hereafter called a Dock or* *Dock Clearing*). *Exception: Heroes may gain the ability to swim (see Page 5)*.\n\nOnce in a River Clearing, a Hero may only move to an adjacent non-River Clearing if it contains a Dock. A Hero may not move between River Clearings without using a ferry unless they have a treasure or spell that allows them to do so, such as flying or swimming (*see Swimming on page 5*).\n\nHeroes may not evade while in a River Clearing unless they have the ability to swim (*see page 5*). If an evading Hero does not have the ability to swim on the subsequent turn, their first move is back to the clearing from which they evaded.",
+      "content": "![float-right](/images/pdf/eadd865374feeb32e5a85118824306ee495aa1da.jpeg) Ruthless Riverlands tiles introduce a new type of clearing called a River Clearing. River Clearings are colored white and blue and are marked with a blue River Icon. River Clearings represent water with nearby small islands. Although movement through a River Clearing occurs via the water, Heroes, Natives, and Monsters are assumed to be on the islands within each River Clearing.\n\nA Hero may only enter a River Clearing using a hidden path or ferry (*see Ferries* *below*), unless a treasure or spell allows another means of movement, such as flying or swimming (*see Swimming on page 5*). From a River Clearing, a non-flying Hero may only move to an adjacent non-River Clearing if it contains a Dock.\n\nHeroes may not evade while in a River Clearing unless they have the ability to swim (*see page 5*). If an evading Hero does not have the ability to swim on the subsequent turn, their first move must be back to the clearing from which they evaded.",
       "contentNodes": [
         {
           "kind": "mediaAside",
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/8a5f67ddb5c79f205e495e6f8d0f2ae2f964b52c.jpeg",
+              "src": "/images/pdf/eadd865374feeb32e5a85118824306ee495aa1da.jpeg",
               "display": "float-right"
             }
           ],
@@ -1046,15 +1046,11 @@
         },
         {
           "kind": "markdown",
-          "markdown": "A Hero may only enter a River Clearing using a ferry (*see Ferries below*) from an adjacent River Clearing  or a clearing containing a Dock (*hereafter called a Dock or* *Dock Clearing*). *Exception: Heroes may gain the ability to swim (see Page 5)*."
+          "markdown": "A Hero may only enter a River Clearing using a hidden path or ferry (*see Ferries* *below*), unless a treasure or spell allows another means of movement, such as flying or swimming (*see Swimming on page 5*). From a River Clearing, a non-flying Hero may only move to an adjacent non-River Clearing if it contains a Dock."
         },
         {
           "kind": "markdown",
-          "markdown": "Once in a River Clearing, a Hero may only move to an adjacent non-River Clearing if it contains a Dock. A Hero may not move between River Clearings without using a ferry unless they have a treasure or spell that allows them to do so, such as flying or swimming (*see Swimming on page 5*)."
-        },
-        {
-          "kind": "markdown",
-          "markdown": "Heroes may not evade while in a River Clearing unless they have the ability to swim (*see page 5*). If an evading Hero does not have the ability to swim on the subsequent turn, their first move is back to the clearing from which they evaded."
+          "markdown": "Heroes may not evade while in a River Clearing unless they have the ability to swim (*see page 5*). If an evading Hero does not have the ability to swim on the subsequent turn, their first move must be back to the clearing from which they evaded."
         }
       ]
     },
@@ -1069,14 +1065,14 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "![float-right](/images/pdf/ec4364573c35f2ae91fe608c9827530b0ffcdab2.jpeg) Local ferries operate along the river between Docks and will transport Heroes for a small fee.\n\nTo use a ferry, a Hero must be in a Dock Clearing or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it. *For example, all clearings in the* *sample image are adjacent to each other.*\n\n- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n- Ferry Movement is resolved one clearing at a time. If Wilderness or Civilization Tokens need to be placed, do so before deciding whether to continue moving.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock, nor reverse direction. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend an additional action to enter it.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster or enemy Natives, but may not pass through such a clearing during a single ferry action.\n- The benefits of a Sneak Action do not apply to hide attempts made during the Action Phase while using Ferry Movement; spell and treasure bonuses, as well as class and lineage advantages, still apply.\n- Ferry Movement costs 1 Gold per clearing entered during the Move Action. Pay the total cost at the end of the action. *Exception: The Witch’s Familiar* *pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry by discarding Treasure or Item Cards with value equal to or greater than the ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** A Hero is in a River Clearing that cannot pay ferry costs, may, as an action, take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties randomly*).",
+      "content": "![float-right](/images/pdf/aa243a3909762444e15d6947f281f617c29ff49e.jpeg) Local ferries operate along the river between Docks and will transport Heroes for a small fee.\n\nFerry movement is from a Clearing containing a Dock (*hereafter* *called a Dock or Dock Clearing*) or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it. *For example, all clearings in the sample image are* *adjacent to each other.*\n\n- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n\n- Ferry Movement is resolved one clearing at a time. If Wilderness or Civilization Tokens need to be placed, do so before deciding whether to continue moving.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock, nor reverse direction. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend an additional action to enter it.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster or enemy Natives, but may not pass through such a clearing during a single ferry action.\n- The benefits of a Sneak Action do not apply to hide attempts made during  the Action Phase while using Ferry Movement; spell and treasure bonuses, as well as class and lineage advantages, still apply.\n- Ferry Movement costs 1 Gold per clearing entered during the Move Action. Pay the total cost at the end of the action. *Exception: The Witch’s* *Familiar pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry by discarding Treasure or Item Cards with value equal to or greater than the ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** A Hero is in a River Clearing that cannot pay ferry costs, may, as an action, take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties randomly*).",
       "contentNodes": [
         {
           "kind": "mediaAside",
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/ec4364573c35f2ae91fe608c9827530b0ffcdab2.jpeg",
+              "src": "/images/pdf/aa243a3909762444e15d6947f281f617c29ff49e.jpeg",
               "display": "float-right"
             }
           ],
@@ -1084,15 +1080,15 @@
         },
         {
           "kind": "markdown",
-          "markdown": "To use a ferry, a Hero must be in a Dock Clearing or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it. *For example, all clearings in the* *sample image are adjacent to each other.*"
+          "markdown": "Ferry movement is from a Clearing containing a Dock (*hereafter* *called a Dock or Dock Clearing*) or a River Clearing. A Dock Clearing is considered adjacent to each River Clearing on either side of it. *For example, all clearings in the sample image are* *adjacent to each other.*"
         },
         {
           "kind": "markdown",
-          "markdown": "- Ferry Movement costs 1 Move Action, regardless of the distance traveled."
+          "markdown": "- Ferry Movement costs 1 Move Action, regardless of the distance traveled.\n- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further."
         },
         {
           "kind": "markdown",
-          "markdown": "- A ferry may move a Hero any number of River Clearings in either direction, up to and including the next Dock Clearing, but no further.\n- Ferry Movement is resolved one clearing at a time. If Wilderness or Civilization Tokens need to be placed, do so before deciding whether to continue moving.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock, nor reverse direction. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend an additional action to enter it.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster or enemy Natives, but may not pass through such a clearing during a single ferry action.\n- The benefits of a Sneak Action do not apply to hide attempts made during the Action Phase while using Ferry Movement; spell and treasure bonuses, as well as class and lineage advantages, still apply.\n- Ferry Movement costs 1 Gold per clearing entered during the Move Action. Pay the total cost at the end of the action. *Exception: The Witch’s Familiar* *pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry by discarding Treasure or Item Cards with value equal to or greater than the ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** A Hero is in a River Clearing that cannot pay ferry costs, may, as an action, take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties randomly*)."
+          "markdown": "- Ferry Movement is resolved one clearing at a time. If Wilderness or Civilization Tokens need to be placed, do so before deciding whether to continue moving.\n- A Hero may stop Ferry Movement in any River Clearing but may not bypass a Dock, nor reverse direction. To ferry beyond a Dock, the Hero must stop in the Dock Clearing and spend a subsequent Move Action to continue Ferry Movement.\n- If the Dock Clearing has an additional movement cost (*e.g. Mountain or* *Swamp*), the Hero must spend an additional action to enter it.\n- A ferry may pick up or drop off a Hero in a clearing containing a Monster or enemy Natives, but may not pass through such a clearing during a single ferry action.\n- The benefits of a Sneak Action do not apply to hide attempts made during  the Action Phase while using Ferry Movement; spell and treasure bonuses, as well as class and lineage advantages, still apply.\n- Ferry Movement costs 1 Gold per clearing entered during the Move Action. Pay the total cost at the end of the action. *Exception: The Witch’s* *Familiar pays no Gold to use ferries (stowaway).*\n- **Bartering:** A Hero may pay for a ferry by discarding Treasure or Item Cards with value equal to or greater than the ferry cost. No change is given, and Red Backpack Treasures may not be used for payment.\n- **Stranded Heroes:** A Hero is in a River Clearing that cannot pay ferry costs, may, as an action, take 1 random wound and gain an Outlaw Token to be moved to the nearest Dock Clearing (*break ties randomly*)."
         }
       ]
     },
@@ -1107,11 +1103,11 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "![](/images/pdf/65dedb709dc371bfbe91fefc5af648aeaba21224.jpeg)\n\nThe Pit Fighter is on the Soleford Map Tile in clearing 2. Clearing 2 allows Ferry Movement as it contains a Dock.\n\nThe Hero uses a single movement action to ferry to clearing 4, then clearing 6 on the Silver Current Map Tile (*immediately revealing* *a Wilderness Token, if required*) and then to clearing 1 on the same Map Tile (*red arrows*). This move of 3 clearings is all done in one action and costs the Hero 3 Gold, which must be paid immediately.\n\nThe Hero could not have moved further on the river with this one action because clearing 1 is a Dock Clearing. Using a second action, the Hero could move to clearing 3 for a cost of 2 more Gold (*yellow arrows*).\n\nUsing a third action, the Hero could move to clearing 2 on the Ravaging Run Map Tile for a cost of 2 more Gold (*purple arrows*).",
+      "content": "![](/images/pdf/cd58ad797b1e5e2b32c3ad1391f194747936cfdb.jpeg)\n\nThe Pit Fighter is on the Soleford Map Tile in clearing 2. Clearing 2 allows Ferry Movement as it contains a Dock.\n\nThe Hero uses a single movement action to ferry to clearing 4, then clearing 6 on the Silver Current Map Tile (*immediately revealing* *a Wilderness Token, if required*) and then to clearing 1 on the same Map Tile (*red arrows*). This move of 3 clearings is all done in one action and costs the Hero 3 Gold, which must be paid immediately.\n\nThe Hero could not have moved further on the river with this one action because clearing 1 is a Dock Clearing. Using a second action, the Hero could move to clearing 3 for a cost of 2 more Gold (*yellow arrows*).\n\nUsing a third action, the Hero could move to clearing 2 on the Ravaging Run Map Tile for a cost of 2 more Gold (*purple arrows*).",
       "contentNodes": [
         {
           "kind": "image",
-          "src": "/images/pdf/65dedb709dc371bfbe91fefc5af648aeaba21224.jpeg",
+          "src": "/images/pdf/cd58ad797b1e5e2b32c3ad1391f194747936cfdb.jpeg",
           "display": "block"
         },
         {
@@ -1143,7 +1139,7 @@
         "column": "right",
         "section": "top"
       },
-      "icon": "/images/pdf/1832b576527074539a95fb40c670ed6a9922755b.jpeg",
+      "icon": "/images/pdf/f0772183e65996f34359f47217d89d6f9707f178.jpeg",
       "content": "Some Monsters have Swimming Ability, and some game effects grant Swimming Ability to Heroes. Swimming is already built into the maneuver speed for Monsters with Swimming Ability. Swimming has no impact during Combat unless specified by a spell or other game effect.\n\nWhen a Hero has Swimming Ability, the Hero may use a Move Action to move between adjacent Dock and River Clearings. This is not ferrying and costs no Gold.\n\nEach move into a River Clearing while swimming costs one action. Movement into a Dock Clearing incurs the normal cost for the clearing type.",
       "contentNodes": [
         {
@@ -1362,7 +1358,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Horse cards contain information that is very similar to other Item Cards, with a few small differences.\n\nHorse Type\n\n![float-left](/images/pdf/5d2ad7beee913549f55dbfe65119dd90348f9e8e.jpeg) Sale Price\n\nItem Values (Health and Strength)\n\n**Health**: If the health value is on a heart, the horse is unarmored. If the value is on a shield, the horse is armored (*the Heavy* *Horse shown here is unarmored*).\n\nLocation (Place next to Hero Board)\n\nItem Type (Regular Item)\n\n**Strength**: The value printed on top of the red cube is the horse’s strength.\n\nPassive Benefits\n\n**Game Effects**: Horses have two sets of benefits - passive and combat benefits.\n\nCombat Benefits\n\n- **Passive Benefits**: The top row shows benefits that are always active when a horse is equipped (*the Heavy Horse above provides +1 Move Action and* *1 extra miscellaneous position on which to equip cards*). If a horse provides one or more extra actions as a passive benefit, these are in addition to the four actions that a Hero may perform in their turn. *For example, a Hero* *riding the Heavy Horse could perform a Move Action + any 4 other actions.*\n\n- **Combat Benefits**: The bottom row shows benefits of having the horse equipped during Combat (*the Heavy Horse above has a maneuver speed of* *1 + the number of Speed Cubes the Hero places on the horse*).",
+      "content": "Horse cards contain information that is very similar to other Item Cards, with a few small differences.\n\nHorse Type\n\n![float-left](/images/pdf/cdf1aa5deee2274ef0a911e51abb8854a0247be6.jpeg) Sale Price\n\nItem Values (Health and Strength)\n\n**Health**: If the health value is on a heart, the horse is unarmored. If the value is on a shield, the horse is armored (*the Heavy* *Horse shown here is unarmored*).\n\nLocation (Place next to Hero Board)\n\nItem Type (Regular Item)\n\n**Strength**: The value printed on top of the red cube is the horse’s strength.\n\nPassive Benefits\n\n**Game Effects**: Horses have two sets of benefits - passive and combat benefits.\n\nCombat Benefits\n\n- **Passive Benefits**: The top row shows benefits that are always active when a horse is equipped (*the Heavy Horse above provides +1 Move Action and* *1 extra miscellaneous position on which to equip cards*). If a horse provides\n\n one or more extra actions as a passive benefit, these are in addition to the four actions that a Hero may perform in their turn. *For example, a Hero* *riding the Heavy Horse could perform a Move Action + any 4 other actions.*\n\n- **Combat Benefits**: The bottom row shows benefits of having the horse equipped during Combat (*the Heavy Horse above has a maneuver speed of* *1 + the number of Speed Cubes the Hero places on the horse*).",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1377,7 +1373,7 @@
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/5d2ad7beee913549f55dbfe65119dd90348f9e8e.jpeg",
+              "src": "/images/pdf/cdf1aa5deee2274ef0a911e51abb8854a0247be6.jpeg",
               "display": "float-left"
             }
           ],
@@ -1417,7 +1413,11 @@
         },
         {
           "kind": "markdown",
-          "markdown": "- **Passive Benefits**: The top row shows benefits that are always active when a horse is equipped (*the Heavy Horse above provides +1 Move Action and* *1 extra miscellaneous position on which to equip cards*). If a horse provides one or more extra actions as a passive benefit, these are in addition to the four actions that a Hero may perform in their turn. *For example, a Hero* *riding the Heavy Horse could perform a Move Action + any 4 other actions.*"
+          "markdown": "- **Passive Benefits**: The top row shows benefits that are always active when a horse is equipped (*the Heavy Horse above provides +1 Move Action and* *1 extra miscellaneous position on which to equip cards*). If a horse provides"
+        },
+        {
+          "kind": "markdown",
+          "markdown": "one or more extra actions as a passive benefit, these are in addition to the four actions that a Hero may perform in their turn. *For example, a Hero* *riding the Heavy Horse could perform a Move Action + any 4 other actions.*"
         },
         {
           "kind": "markdown",
@@ -1692,7 +1692,7 @@
         "column": "left",
         "section": "top"
       },
-      "icon": "/images/pdf/12eeeb0e2231e93801c89176d900c8611329a3d0.jpeg",
+      "icon": "/images/pdf/039cd09ff43cd5dcccccb1dfdece5e755c3fca18.jpeg",
       "content": "Aurorans were born in the desert and are Native to this terrain. Aurorans do not take a wound when they end their Action Phase in a Desert Clearing that does not contain a Civilization Location.",
       "tags": [
         "lineageAdvantage"
@@ -1729,7 +1729,7 @@
         "column": "left",
         "section": "top"
       },
-      "icon": "/images/pdf/c21595d2b4e67bdabbee81f9763a9f69e054e14b.jpeg",
+      "icon": "/images/pdf/b8c87fe97f54980c97b1ab4a5d00d94fdd9b1737.jpeg",
       "content": "The decayed are torn between the light and the darkness. When the decayed hits an undead with a melee attack, regardless of the amount of damage dealt, they may choose one of the following:\n\n- **Wound a white Magic Cube:** Immediately kill the undead, regardless of the damage dealt. The decayed earns double the Monster’s Fame value.\n\n- **Wound a black Magic Cube:** Cancel the undead’s attack and immediately convert the undead into a permanent Hired Native, following all Native rules. Hired undead may attack unhired undead without penalty.",
       "tags": [
         "classAdvantage"
@@ -1760,8 +1760,8 @@
         "column": "left",
         "section": "middle"
       },
-      "icon": "/images/pdf/f78580280898575ae8117d29c233a740966a1703.jpeg",
-      "content": "![float-right](/images/pdf/b5ee34fe55aa8c05db2b2fd51359f6434327bf28.jpeg) Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
+      "icon": "/images/pdf/7b03b57ffe99a10c2b00dd5e21da89cd9ee37ead.jpeg",
+      "content": "![float-right](/images/pdf/33c08302a92dcc24c76d2418ee71c3326a85b368.jpeg) Dervishes are a frenzy of chaos in combat. The dervish has three Targeting Tokens. Use one for Turn Order and keep the other two nearby. When using a melee weapon during the targeting step of Combat, the dervish may place up to three Targeting Tokens in order to indicate its primary, secondary, and tertiary targets. The dervish may not target the same enemy with consecutive attacks.\n\nResolve the attacks as follows:\n\n- Resolve the primary attack normally. If the primary attack misses or does not occur, remove all remaining dervish Targeting Tokens; the secondary and tertiary attacks do not occur.\n\n- If the primary attack hits, leave the secondary and tertiary tokens in place and resolve the secondary attack later in the normal combat order with -1 damage and -1 attack speed. If the secondary attack misses or does not occur, remove the tertiary Targeting Token.\n\n- If the secondary attack hits, leave the tertiary token in place and resolve the tertiary attack later in the normal combat order with -2 damage and -2 attack speed.",
       "tags": [
         "classAdvantage"
       ],
@@ -1771,7 +1771,7 @@
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/b5ee34fe55aa8c05db2b2fd51359f6434327bf28.jpeg",
+              "src": "/images/pdf/33c08302a92dcc24c76d2418ee71c3326a85b368.jpeg",
               "display": "float-right"
             }
           ],
@@ -1806,7 +1806,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "icon": "/images/pdf/d2f51234317c307c91960473c3844f9cb3d06781.jpeg",
+      "icon": "/images/pdf/6771a3168c1497eb707edbef501969490d11da9c.jpeg",
       "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.",
       "tags": [
         "classAdvantage"
@@ -1829,8 +1829,8 @@
         "column": "right",
         "section": "top"
       },
-      "icon": "/images/pdf/fd6bfc7217471d24f9661fe5331093d99825cb3c.jpeg",
-      "content": "![float-right](/images/pdf/7f10b9e8fa76748f5be1f3c004f40a6d15c8d42d.jpeg) Duelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
+      "icon": "/images/pdf/b7f2306f691b8facf38211109f94e96b7bb1e415.jpeg",
+      "content": "![float-right](/images/pdf/80b75a8fd510dea0fe3074457bbff8364941cabe.jpeg) Duelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry.",
       "tags": [
         "classAdvantage"
       ],
@@ -1840,7 +1840,7 @@
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/7f10b9e8fa76748f5be1f3c004f40a6d15c8d42d.jpeg",
+              "src": "/images/pdf/80b75a8fd510dea0fe3074457bbff8364941cabe.jpeg",
               "display": "float-right"
             }
           ],
@@ -1898,7 +1898,7 @@
         "column": "right",
         "section": "middle"
       },
-      "icon": "/images/pdf/98bbf25e8db3a85c2abb265fa8bf88fd5fe7e1c0.jpeg",
+      "icon": "/images/pdf/09b8580ec362dea3bd8e4bf15a47e484a966e6b7.jpeg",
       "content": "Monks are masters of unarmed combat. If a monk has an open weapon position and places no cubes on weapon or spell cards, they strike with their fist with a base damage of 0 might and 1 sword. Additional Might Cubes may be placed on the Class Card to increase the base damage of a monk’s fist strike. If the player places a Might Cube in the box with a wound symbol, that cube is moved to the wounded box during the Cleanup step.",
       "tags": [
         "classAdvantage"
@@ -1921,8 +1921,8 @@
         "column": "right",
         "section": "bottom"
       },
-      "icon": "/images/pdf/9d2e37cf8a112773c738904bf6a7345999c40471.jpeg",
-      "content": "![float-right](/images/pdf/50deb459ff411078cb8dc0e47653bc94968c1cf2.jpeg) Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.",
+      "icon": "/images/pdf/6b045f683db2d0e91c123e1e1a8519f0b1141058.jpeg",
+      "content": "![float-right](/images/pdf/34ee8ca8d574430e301a89d0576a3365d5469825.jpeg) Pit fighters were bred for combat and the glory of the fighting pits. The pit fighter has two Targeting Tokens, one for the left hand and one for the right hand. Use one to determine Turn Order and keep the other nearby. The pit fighter may equip two one-handed weapons simultaneously. During the targeting step of Combat, the pit fighter may place both Targeting Tokens to either attack the same target twice or attack two different targets. Both attacks use the pit fighter’s attack speed as normal and are resolved as two separate attacks.",
       "tags": [
         "classAdvantage"
       ],
@@ -1932,7 +1932,7 @@
           "images": [
             {
               "kind": "image",
-              "src": "/images/pdf/50deb459ff411078cb8dc0e47653bc94968c1cf2.jpeg",
+              "src": "/images/pdf/34ee8ca8d574430e301a89d0576a3365d5469825.jpeg",
               "display": "float-right"
             }
           ],
@@ -1951,7 +1951,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "icon": "/images/pdf/960aefa4a51e8d83533fb3e6f8d8bc44a87419e7.jpeg",
+      "icon": "/images/pdf/613a15add5afaa898f7d7d768e314ed3e8272ca4.jpeg",
       "content": "Vanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.",
       "tags": [
         "classAdvantage"
@@ -1967,7 +1967,7 @@
       "id": "5.3",
       "source": "eastern-reaches",
       "level": 2,
-      "title": "Monster Manifest",
+      "title": "Monster and Treasure Site Manifest",
       "headingStyle": "pdf-l2",
       "location": {
         "page": 10,
@@ -2101,6 +2101,25 @@
       ]
     },
     {
+      "id": "5.3.0.6",
+      "source": "eastern-reaches",
+      "level": 4,
+      "title": "Tomb",
+      "headingStyle": "pdf-l4",
+      "location": {
+        "page": 10,
+        "column": "left",
+        "section": "bottom"
+      },
+      "content": "**Cursed Relics**: Side 2 of the Desert Terrain Pack Setup Card has Cursed Relics in the Tomb. Anytime a Hero loots a treasure from the Tomb, they receive a randomly determined curse.",
+      "contentNodes": [
+        {
+          "kind": "markdown",
+          "markdown": "**Cursed Relics**: Side 2 of the Desert Terrain Pack Setup Card has Cursed Relics in the Tomb. Anytime a Hero loots a treasure from the Tomb, they receive a randomly determined curse."
+        }
+      ]
+    },
+    {
       "id": "5.4",
       "source": "eastern-reaches",
       "level": 2,
@@ -2108,8 +2127,8 @@
       "headingStyle": "pdf-l2",
       "location": {
         "page": 10,
-        "column": "left",
-        "section": "bottom"
+        "column": "right",
+        "section": "top"
       },
       "content": "Ownership of **Dragons Down: Natives & Legends** is required to use Legendary Locations. Refer to page 4 of the **Dragons Down: Natives & Legends** rulebook.",
       "contentNodes": [
@@ -2406,7 +2425,7 @@
       "location": {
         "page": 11,
         "column": "left",
-        "section": "middle"
+        "section": "bottom"
       },
       "content": "Epic Treasure. The Hero may equip two one-handed weapons simultaneously. They may still only place cubes on one weapon per Combat Round, but may select either weapon each Combat Round.",
       "tags": [
@@ -3369,7 +3388,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*",
+      "content": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of\n\n dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*",
       "tags": [
         "spell",
         "blackMagic"
@@ -3377,7 +3396,11 @@
       "contentNodes": [
         {
           "kind": "markdown",
-          "markdown": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*"
+          "markdown": "Combat. Wound one black cube. For this Combat, all Heroes, Monsters, and Natives in the clearing, excluding the caster, have one fewer Heart than normal when determining death during attack resolution (*minimum one*). The effects of"
+        },
+        {
+          "kind": "markdown",
+          "markdown": "dark presence are not cumulative. This spell does not cause Natives to become temporary or permanent enemies of the caster. *For example, Merfolk affected by* *dark presence are killed by an attack that deals one damage, as is a Giant Scarab.*"
         }
       ]
     },
@@ -3530,7 +3553,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "Self. Permanent. Wound one blue cube. Any Hero, Monster, or Native that targets the caster has an equal chance of instead targeting the doppelganger. After all Hero and Monster Tactics have been revealed, roll the d6 for each Hero, Monster, and Native targeting the caster. On a roll of 1-3, they target the caster. On a roll of 4-6, they target the doppelganger. *Exception: Spells that target “all” in the clearing* (*e.g.* *Fiery Chasm or Malediction*) *target both the caster and the doppelganger*.\n\nThe doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled.",
+      "content": "Self. Permanent. Wound one blue cube. Any Hero, Monster, or Native that targets the caster has an equal chance of instead targeting the doppelganger. After all Hero and Monster Tactics have been revealed, roll the d6 for each Hero, Monster, and Native targeting the caster. On a roll of 1-3, they target the caster. On a roll of 4-6, they target the doppelganger. *Exception: Spells that target “all” in the clearing* (*e.g.* *Fiery Chasm or Malediction*) *target both the caster and the doppelganger*.\n\nThe doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger\n\n is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled.",
       "tags": [
         "spell",
         "blueMagic"
@@ -3542,7 +3565,11 @@
         },
         {
           "kind": "markdown",
-          "markdown": "The doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled."
+          "markdown": "The doppelganger has identical statuses/maneuver speeds as the caster at all times (*e.g. if a caster is impacted by Tentacles, so is the doppelganger*). If the doppelganger"
+        },
+        {
+          "kind": "markdown",
+          "markdown": "is hit by any attack, even with no damage such as the Tentacle spell, the spell immediately expires and remaining attacks on the doppelganger are canceled."
         }
       ]
     },

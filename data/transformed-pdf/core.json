@@ -471,7 +471,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "*White bubbles in the sample setup diagram*\n\nPlayers decide which Terrain Packs they will use during this game session. The image to the right shows a sample setup for a game using the Malevolent Mountains and Cruel Caves Terrain Packs.\n\n1.\t Place the Terrain Setup Cards in play near the play area within easy reach of everyone, random side up (side 2 is slightly more difficult). Place the matching Civilization Cards, random side up, below the Terrain Setup Cards.\n\n2.\t For each Terrain Pack in play, shuffle the Wilderness Tokens and place the tokens face-down on the matching space on the Terrain Setup Card.\n\n3.\t Build a single Civilization Token pool by shuffling all of the Civilization Tokens for the Terrain Packs in play together and place them face-down near the Terrain Setup Cards.\n\n4.\t Build a single Treasure Site pool by shuffling all of the Treasure Site Tokens for Terrain Packs in play together and place them face-down near the Terrain Setup Cards.\n\n5.\t Build a single Mission Deck by shuffling together all Mission Cards for Terrain Packs in play (*there is a Terrain Pack icon on the front face of each Mission* *Card*). Place the Mission Deck face-down near the Terrain Setup Cards.\n\n6.\t Separately shuffle the Spell Cards, Treasure Cards, and Deep Treasure Cards and place them in face-down decks near the Terrain Setup Cards. Do not shuffle the Hero Starting Spell deck.\n\n7.\t Monsters: There is no setup required for the Monster Chips. Set the monster trays near the play areas within easy reach of all players.\n\n8.\t Place the Legend Points, Fame, and Gold near the map to form a pool of tokens.\n\n9.\t Shuffle all of the Map Tiles for the Terrain Packs in play. Then follow the instructions on building the map for the scenario/game mode being played. The image to the right shows the map when playing with Open Realm rules where the map is built prior to the start of game play.\n\n10.\t When a Civilization Map Tile is revealed, roll a d6 and place the corresponding Civilization Location in the matching clearing. Reroll any 5s or 6s. Take the Natives listed on the Terrain Setup Card and stack them on the Civilization Location in any order.\n\n![](/images/pdf/e961cf4da33509818ad29a561b5a655cd791499f.jpeg)",
+      "content": "*White bubbles in the sample setup diagram*\n\nPlayers decide which Terrain Packs they will use during this game session. The image to the right shows a sample setup for a game using the Malevolent Mountains and Cruel Caves Terrain Packs.\n\n1.\t Place the Terrain Setup Cards in play near the play area within easy reach of everyone, random side up (side 2 is slightly more difficult). Place the matching Civilization Cards, random side up, below the Terrain Setup Cards.\n\n2.\t For each Terrain Pack in play, shuffle the Wilderness Tokens and place the tokens face-down on the matching space on the Terrain Setup Card.\n\n3.\t Build a single Civilization Token pool by shuffling all of the Civilization Tokens for the Terrain Packs in play together and place them face-down near the Terrain Setup Cards.\n\n4.\t Build a single Treasure Site pool by shuffling all of the Treasure Site Tokens for Terrain Packs in play together and place them face-down near the Terrain Setup Cards.\n\n5.\t Build a single Mission Deck by shuffling together all Mission Cards for Terrain Packs in play (*there is a Terrain Pack icon on the front face of each Mission* *Card*). Place the Mission Deck face-down near the Terrain Setup Cards.\n\n6.\t Separately shuffle the Spell Cards, Treasure Cards, and Deep Treasure Cards and place them in face-down decks near the Terrain Setup Cards. Do not shuffle the Hero Starting Spell deck.\n\n7.\t Monsters: There is no setup required for the Monster Chips. Set the monster trays near the play areas within easy reach of all players.\n\n8.\t Place the Legend Points, Fame, and Gold near the map to form a pool of tokens.\n\n9.\t Shuffle all of the Map Tiles for the Terrain Packs in play. Then follow the instructions on building the map for the scenario/game mode being played. The image to the right shows the map when playing with Open Realm rules where the map is built prior to the start of game play.\n\n10.\t When a Civilization Map Tile is revealed, roll a d6 and place the corresponding Civilization Location in the matching clearing. Reroll any 5s or 6s. Take the Natives listed on the Terrain Setup Card and stack them on the Civilization Location in any order.\n\n![](/images/pdf/dac82026023db01a2bdcf47a80b09389522f7bbb.jpeg)\n\n![](/images/pdf/dbf948bbd3fed69d5cc130041f2f05956dcae591.jpeg)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -523,7 +523,12 @@
         },
         {
           "kind": "image",
-          "src": "/images/pdf/e961cf4da33509818ad29a561b5a655cd791499f.jpeg",
+          "src": "/images/pdf/dac82026023db01a2bdcf47a80b09389522f7bbb.jpeg",
+          "display": "block"
+        },
+        {
+          "kind": "image",
+          "src": "/images/pdf/dbf948bbd3fed69d5cc130041f2f05956dcae591.jpeg",
           "display": "block"
         }
       ]
@@ -961,7 +966,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Only use Terrain Setup Cards for Terrain Packs in play. Terrain Setup Cards show Tokens, Natives, Treasures Sites, Guardians, and Merchants associated with the Terrain Pack. Some Terrain Setup Cards have a red arrow pointing to the Guardian location, which indicates that the Guardian can be summoned to locations from more than one Terrain Setup Card (*used in the Dragons Down: Desolation expansion*).\n\n![Annotated terrain setup card reference](/images/annotations/a13a85a3ee07f9780ae5e632a855d78a1483b100.png)",
+      "content": "Only use Terrain Setup Cards for Terrain Packs in play. Terrain Setup Cards show Tokens, Natives, Treasures Sites, Guardians, and Merchants associated with the Terrain Pack. Some Terrain Setup Cards have a red arrow pointing to the Guardian location, which indicates that the Guardian can be summoned to locations from more than one Terrain Setup Card (*used in the Dragons Down: Desolation expansion*).\n\n![Annotated terrain setup card reference](/images/annotations/536bab488b85b6a1c3504bbcf19e2d016cf30771.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -969,7 +974,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "![Annotated terrain setup card reference](/images/annotations/a13a85a3ee07f9780ae5e632a855d78a1483b100.png)"
+          "markdown": "![Annotated terrain setup card reference](/images/annotations/536bab488b85b6a1c3504bbcf19e2d016cf30771.png)"
         }
       ]
     },
@@ -984,7 +989,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Each Terrain Pack has one Civilization Tile and five Wilderness Tiles, which are used to create a unique map for each game. Wilderness Map Tiles have six circular clearings while Civilization Tiles have four clearings. Heroes, Monsters, Treasure Sites, etc., exist in clearings. Clearing types included in the game are Plains (*white*), Caves (*black*), Mountains (*red*), Woods (*green*), and Swamps (*yellow*). Connecting these clearings are paths and Hidden Paths.\n\nThe components of each Terrain Pack have a common theme. However, the clearings on Map Tiles are not all the same, and will feature other terrain types. *For example, the Map Tile* *shown is from the Cruel Caves Terrain Pack, but clearing 1 is a* *Woods Clearing and clearing 3 is a Plains Clearing.*\n\nThe color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters.\n\n![Annotated map tile reference](/images/annotations/d802d1b9026cfb5a915effd071977b9c632eac26.png)",
+      "content": "Each Terrain Pack has one Civilization Tile and five Wilderness Tiles, which are used to create a unique map for each game. Wilderness Map Tiles have six circular clearings while Civilization Tiles have four clearings. Heroes, Monsters, Treasure Sites, etc., exist in clearings. Clearing types included in the game are Plains (*white*), Caves (*black*), Mountains (*red*), Woods (*green*), and Swamps (*yellow*). Connecting these clearings are paths and Hidden Paths.\n\nThe components of each Terrain Pack have a common theme. However, the clearings on Map Tiles are not all the same, and will feature other terrain types. *For example, the Map Tile* *shown is from the Cruel Caves Terrain Pack, but clearing 1 is a* *Woods Clearing and clearing 3 is a Plains Clearing.*\n\nThe color, name, and symbol on the Map Tile shows the Terrain Pack it is from. Each Wilderness Map Tile has Summoning Symbols, which determine which Monsters are summoned to the Map Tile. Civilization Map Tiles do not summon Monsters.\n\n![Annotated map tile reference](/images/annotations/3a8e81ffc89a374aa14eb0a53163202fbf6279de.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1000,7 +1005,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "![Annotated map tile reference](/images/annotations/d802d1b9026cfb5a915effd071977b9c632eac26.png)"
+          "markdown": "![Annotated map tile reference](/images/annotations/3a8e81ffc89a374aa14eb0a53163202fbf6279de.png)"
         }
       ]
     },
@@ -1015,15 +1020,25 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\n![Annotated monster chip reference](/images/annotations/3eb8cb8a577c27710d098dced3a2ea0fef245c76.png)",
+      "content": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map.\n\n![](/images/pdf/74131229d09b518583089fa7933c8256ec6fa4f1.jpeg)\n\n![](/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg)\n\n![Annotated monster chip reference](/images/annotations/ebef16ccee2a561671fc9ccec5108cc5ed01b76d.png)",
       "contentNodes": [
         {
           "kind": "markdown",
           "markdown": "Monsters in Dragons Down can be regular Monsters (*e.g.* *Giant Spiders*) or Guardians of Treasure Sites (*e.g. Great* *Drake*). Regular Monsters are listed on Map Tiles. Guardians are listed on the Terrain Setup Cards next to the Treasure Site they protect. All Monster Chips should remain in the plastic insert until summoned onto the map."
         },
         {
+          "kind": "image",
+          "src": "/images/pdf/74131229d09b518583089fa7933c8256ec6fa4f1.jpeg",
+          "display": "block"
+        },
+        {
+          "kind": "image",
+          "src": "/images/pdf/56a86c20d5d4b4651e1cdd43f6989e412880340d.jpeg",
+          "display": "block"
+        },
+        {
           "kind": "markdown",
-          "markdown": "![Annotated monster chip reference](/images/annotations/3eb8cb8a577c27710d098dced3a2ea0fef245c76.png)"
+          "markdown": "![Annotated monster chip reference](/images/annotations/ebef16ccee2a561671fc9ccec5108cc5ed01b76d.png)"
         }
       ]
     },
@@ -1203,7 +1218,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Players will play the role of a Hero created by the combination of a Lineage Card and a Class Card. The Hero has the combined characteristics of both cards:\n\n- Two Special Advantages (*one on each card*).\n\n- Attributes: Cunning, Wisdom, and Charisma (*for interactions* *in civilization such as Haggling and completing missions*).\n\n- Health. How hard this Hero can get hit without dying.\n\n- Attack speed. How fast this Hero can potentially attack.\n\n- Maneuver speed. How fast this Hero can dodge attacks.\n\n- Aim boxes (*only used if playing with the optional Player vs.* *Player rules*).\n\n- Starting Action Cubes and equipment for the Hero.\n\n![Annotated hero card reference](/images/annotations/57234e713efe7e4354cdaff36c4d13f7804a4444.png)",
+      "content": "Players will play the role of a Hero created by the combination of a Lineage Card and a Class Card. The Hero has the combined characteristics of both cards:\n\n- Two Special Advantages (*one on each card*).\n\n- Attributes: Cunning, Wisdom, and Charisma (*for interactions* *in civilization such as Haggling and completing missions*).\n\n- Health. How hard this Hero can get hit without dying.\n\n- Attack speed. How fast this Hero can potentially attack.\n\n- Maneuver speed. How fast this Hero can dodge attacks.\n\n- Aim boxes (*only used if playing with the optional Player vs.* *Player rules*).\n\n- Starting Action Cubes and equipment for the Hero.\n\n![Annotated hero card reference](/images/annotations/0829866aeee49dc83b36447b0b47ec4125b68439.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1239,7 +1254,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "![Annotated hero card reference](/images/annotations/57234e713efe7e4354cdaff36c4d13f7804a4444.png)"
+          "markdown": "![Annotated hero card reference](/images/annotations/0829866aeee49dc83b36447b0b47ec4125b68439.png)"
         }
       ]
     },
@@ -1254,7 +1269,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "Item and Treasure Cards are the principal equipment, and means of survival, for Heroes in Dragons Down.\n\n- Items are indicated by a wooden plank for a banner on the card (*e.g. Plate Armor*).\n\n- Treasures are indicated by a brown cloth banner on the card (*e.g. Warblade and Spell Scroll*).\n\n- Epic Treasures, the most valuable treasures in the game, are indicated by a red cloth banner on the card (*e.g. Magical Bowl* *of Mixing*).\n\nAdditional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules.\n\n![Annotated item and treasure card reference](/images/annotations/f9e605317103ec3628f7052a0f51e30900757bf9.png)",
+      "content": "Item and Treasure Cards are the principal equipment, and means of survival, for Heroes in Dragons Down.\n\n- Items are indicated by a wooden plank for a banner on the card (*e.g. Plate Armor*).\n\n- Treasures are indicated by a brown cloth banner on the card (*e.g. Warblade and Spell Scroll*).\n\n- Epic Treasures, the most valuable treasures in the game, are indicated by a red cloth banner on the card (*e.g. Magical Bowl* *of Mixing*).\n\nAdditional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules.\n\n![](/images/pdf/65d29e7f0512c044d2f7b2a4abbc10de889629cf.jpeg)\n\n![Annotated item and treasure card reference](/images/annotations/ad96b59cf1b3bfd2d755bc5841a6990e0deb9353.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1277,8 +1292,13 @@
           "markdown": "Additional information on the cards show the effects of the card and where on the Hero’s body the card is equipped when active. All of this is explained in detail later in these rules."
         },
         {
+          "kind": "image",
+          "src": "/images/pdf/65d29e7f0512c044d2f7b2a4abbc10de889629cf.jpeg",
+          "display": "block"
+        },
+        {
           "kind": "markdown",
-          "markdown": "![Annotated item and treasure card reference](/images/annotations/f9e605317103ec3628f7052a0f51e30900757bf9.png)"
+          "markdown": "![Annotated item and treasure card reference](/images/annotations/ad96b59cf1b3bfd2d755bc5841a6990e0deb9353.png)"
         }
       ]
     },
@@ -1370,7 +1390,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Heroes receive Outlaw Tokens when they complete Atrocity missions or attack other Heroes and Natives of the realm.\n\n![Annotated hero chip and targeting token reference](/images/annotations/bd8b6266547cf680845e4671ae8cbc6c0035803d.png)",
+      "content": "Heroes receive Outlaw Tokens when they complete Atrocity missions or attack other Heroes and Natives of the realm.\n\n![Annotated hero chip and targeting token reference](/images/annotations/4194e21786d64bb65f7c8603f79cb53a63cda920.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1378,7 +1398,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "![Annotated hero chip and targeting token reference](/images/annotations/bd8b6266547cf680845e4671ae8cbc6c0035803d.png)"
+          "markdown": "![Annotated hero chip and targeting token reference](/images/annotations/4194e21786d64bb65f7c8603f79cb53a63cda920.png)"
         }
       ]
     },
@@ -1393,7 +1413,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "During combat, players will place Action Cubes on their Lineage Cards, Class Cards, Item Cards, Treasure Cards, and Spell Cards to attack and survive attacks against them. Action Cubes come in 4 different types:\n\n**Might Cubes:** Might Cubes are red and signify how much strength a Hero is using in an attack. Most often, Might Cubes are placed on weapons in order to cause damage to Monsters in the game.\n\n**Speed Cubes:** Speed Cubes are brown and signify how much effort the Hero is putting into the speed of an attack or the speed of their maneuver to dodge an attack made against them.\n\n**Magic Cubes:** Magic Cubes are black, blue, gray, green, purple, white, or yellow. They represent specialized knowledge possessed by the Hero and are placed on Spell Cards and some Treasures in order to power them for use.\n\n**Hearts:** Hearts represent the health of a Hero. If a Hero ever has no Hearts in their healthy box, they immediately die. Hearts are Action Cubes for all purposes.\n\n![Annotated action cube reference](/images/annotations/824d65460ff07f1a1017395cae422a32832e878d.png)",
+      "content": "During combat, players will place Action Cubes on their Lineage Cards, Class Cards, Item Cards, Treasure Cards, and Spell Cards to attack and survive attacks against them. Action Cubes come in 4 different types:\n\n**Might Cubes:** Might Cubes are red and signify how much strength a Hero is using in an attack. Most often, Might Cubes are placed on weapons in order to cause damage to Monsters in the game.\n\n**Speed Cubes:** Speed Cubes are brown and signify how much effort the Hero is putting into the speed of an attack or the speed of their maneuver to dodge an attack made against them.\n\n**Magic Cubes:** Magic Cubes are black, blue, gray, green, purple, white, or yellow. They represent specialized knowledge possessed by the Hero and are placed on Spell Cards and some Treasures in order to power them for use.\n\n**Hearts:** Hearts represent the health of a Hero. If a Hero ever has no Hearts in their healthy box, they immediately die. Hearts are Action Cubes for all purposes.\n\n![Annotated action cube reference](/images/annotations/d99ab8ea200f58cd07c52f052f461ac8e7dd9ef7.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -1417,7 +1437,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "![Annotated action cube reference](/images/annotations/824d65460ff07f1a1017395cae422a32832e878d.png)"
+          "markdown": "![Annotated action cube reference](/images/annotations/d99ab8ea200f58cd07c52f052f461ac8e7dd9ef7.png)"
         }
       ]
     },
@@ -1451,11 +1471,11 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "![Annotated reference card reference](/images/annotations/eb42a7a18288576142dc6278765c9775e6cfbc60.png)",
+      "content": "![Annotated reference card reference](/images/annotations/8aa6056f478f6ae0f4e79ea2a69609f27394b452.png)",
       "contentNodes": [
         {
           "kind": "markdown",
-          "markdown": "![Annotated reference card reference](/images/annotations/eb42a7a18288576142dc6278765c9775e6cfbc60.png)"
+          "markdown": "![Annotated reference card reference](/images/annotations/8aa6056f478f6ae0f4e79ea2a69609f27394b452.png)"
         }
       ]
     },
@@ -2277,11 +2297,11 @@
         "section": "middle"
       },
       "icon": "/images/pdf/0c61fcfbeabb1b3a8018c0f065d1b3543f46c44d.png",
-      "content": "**Triggers:** An unblocked Hero may make a Hide reaction and gain the Hide status when any of the following occurs: • A Monster blocks a Hero during the Action Phase. • At the end of Monster Activation. • In the Cleanup step if the Hero ambushed this Combat Round. The Hide reaction is free (does *not cost an action*).\n\n![float-right](/images/pdf/0a68611be4bf2613de5584aa4405eed95a4e74ee.jpeg) If a Monster symbol is rolled on either of the dice, the Hide fails and the block is successful. If there are no Monster symbols in the roll result, the Hero gains the hidden status and the block has no effect. Place a pink cube on the hidden box on the Hero Board. If the Hero took the Sneak Action this turn they may ignore one Monster symbol when determining success or failure.\n\nOnce a Hero is hidden, they remain hidden until they move to a new clearing, take the Make Noise action, choose to become unhidden, ambush, or a new turn starts.",
+      "content": "**Triggers:** An unblocked Hero may make a Hide reaction and gain the Hide status when any of the following occurs: • A Monster blocks a Hero during the Action Phase. • At the end of Monster Activation. • In the Cleanup step if the Hero ambushed this Combat Round. The Hide reaction is free (*does not cost an action*).\n\n![float-right](/images/pdf/0a68611be4bf2613de5584aa4405eed95a4e74ee.jpeg) If a Monster symbol is rolled on either of the dice, the Hide fails and the block is successful. If there are no Monster symbols in the roll result, the Hero gains the hidden status and the block has no effect. Place a pink cube on the hidden box on the Hero Board. If the Hero took the Sneak Action this turn they may ignore one Monster symbol when determining success or failure.\n\nOnce a Hero is hidden, they remain hidden until they move to a new clearing, take the Make Noise action, choose to become unhidden, ambush, or a new turn starts.",
       "contentNodes": [
         {
           "kind": "markdown",
-          "markdown": "**Triggers:** An unblocked Hero may make a Hide reaction and gain the Hide status when any of the following occurs: • A Monster blocks a Hero during the Action Phase. • At the end of Monster Activation. • In the Cleanup step if the Hero ambushed this Combat Round. The Hide reaction is free (does *not cost an action*)."
+          "markdown": "**Triggers:** An unblocked Hero may make a Hide reaction and gain the Hide status when any of the following occurs: • A Monster blocks a Hero during the Action Phase. • At the end of Monster Activation. • In the Cleanup step if the Hero ambushed this Combat Round. The Hide reaction is free (*does not cost an action*)."
         },
         {
           "kind": "mediaAside",
@@ -3499,7 +3519,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Treasures that have a brown banner on them are common, regular treasures. Treasures that have a red banner are Epic Treasures. These are the treasures about which legends and stories are told. They are the best treasures in the game and earn Legend Points and Fame for whomever reveals them.\n\nWhen an Epic Treasure Card is revealed for the first time, the revealing player earns 1 LP and 5 Fame. Rewards for each Epic Treasure Card only occurs once per game.\n\n![Annotated epic treasure card reference](/images/annotations/0636df3fea427037e58438c5c630916f5a076661.png)",
+      "content": "Treasures that have a brown banner on them are common, regular treasures. Treasures that have a red banner are Epic Treasures. These are the treasures about which legends and stories are told. They are the best treasures in the game and earn Legend Points and Fame for whomever reveals them.\n\nWhen an Epic Treasure Card is revealed for the first time, the revealing player earns 1 LP and 5 Fame. Rewards for each Epic Treasure Card only occurs once per game.\n\n![Annotated epic treasure card reference](/images/annotations/d0e5b3800558669aa7854fcc59a5c8ecc3b13101.png)",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -3511,7 +3531,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "![Annotated epic treasure card reference](/images/annotations/0636df3fea427037e58438c5c630916f5a076661.png)"
+          "markdown": "![Annotated epic treasure card reference](/images/annotations/d0e5b3800558669aa7854fcc59a5c8ecc3b13101.png)"
         }
       ]
     },
@@ -3526,7 +3546,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "The banners on treasures and items show information as follows:\n\n![float-left](/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg) **Base Price:** This is the price that a Merchant will pay to purchase this card from a Hero. This is also the base price used to calculate how much a Merchant will charge to sell this card to a Hero (*the price is* *always base price x3*)\n\n![float-left](/images/pdf/4eaf14775737eeaafd6db29a4980d31a84758e11.png) **One-time Use:** This card is removed from the game after use. One-time use cards may be used at any time during a player’s turn or in combat, even when first possessed without equipping. Cards with a combat effect may only be used in combat.\n\n![float-left](/images/pdf/911e3bc45a7641e0ce21075efc3edcf4ea7b56de.png) **Armor:** This card is armor with an armor value as printed in the shield symbol. Armor is explained in the combat section on page 16 of these rules.\n\n![float-left](/images/pdf/13755d1d48e3c1c4b68dd7271ab3c91464659c3c.jpeg) **Weight**: This card requires that a Hero has a number of healthy Might Cubes equal to the number shown. If not, the card is immediately unequipped to the Hero’s backpack (*see Equipping on page 21*).\n\n![float-left](/images/pdf/88bc51c71289dfc33594fdaf3fb21e4bed1992a2.png) **Attack Length**: If two attacks have the same attack speed, weapons and spells with higher numbers are resolved before lower numbers. Some weapons have two numbers. See Melee or Ranged below.\n\n![float-left](/images/pdf/2169147b1ec515d033cd3822bf41f1e5dcaa1cfa.png) **Melee**: This card is a melee weapon.\n\n![float-left](/images/pdf/2962811623918904e9e970b4fedffa94c67a875c.png) **Ranged**: This card is a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack as described in the combat section of these rules.\n\n![float-left](/images/pdf/6eef497be977d3b22866df547905aa1a19dd6243.png) **Melee or Ranged**: This weapon may be used as a melee or a ranged weapon. If used as a melee weapon, use the top attack length. If used as a ranged weapon, it is thrown; use the bottom attack length.\n\nWeapons may only be thrown with one hand. When thrown, they are placed to the side of the Hero Board. Thrown weapons are removed from the game permanently if all Monsters in the clearing are not killed during combat this turn.\n\n![float-left](/images/pdf/90415d9ca9cd9a06524ea9093fc9c3b924425d16.png) **Permanent**: The effects of this magic item last for the entire game.\n\n![float-left](/images/pdf/1ccd0fcfa1107235434c8c23404668f3a0a918bb.png) **Combat**: The effects of this treasure last for the duration of the combat. Once combat is over, the effects are terminated.\n\n![float-left](/images/pdf/c8ea73abcf65710a86b82cd5e173d745debdbeb2.png) **Position Neck**: This card is placed on the Hero’s neck when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/56c41aeb413506d6ffa9e0f060a552949317c4ae.png) **Position Waist**: This card is placed on the Hero’s waist when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/dbb150bd5fb34fbf8f65a3d81c0b28e29248b75a.png) **Position Feet**: This card is placed on the Hero’s feet when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/5885eb4a46058337e8e746a077a2a5191fb8b205.png) **Position Head**: This card is placed on the Hero’s head when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/f9272587d5db5c5206a9a8362bbd13852a3000ee.png) **Position Chest**: This card is placed on the Hero’s chest when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/3b39a83391dc787f94b33841851fbdf9e276d424.png) **Position Head and Chest**: This card is placed on the Hero’s head and chest when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards.\n\n![float-left](/images/pdf/1cf6db6cfe389ccd192465df93b47f10e6cf61bd.png) **Position One-handed Weapon**: This card is placed on one of the Hero’s weapon positions (*does not matter which one*) when active and face-down in the backpack when inactive. A Hero may not have two weapons, nor two shields, active at the same time.\n\n![float-left](/images/pdf/41413331b277d3e944d6afe99671402574f1a201.png) **Position Two-handed Weapon**: This card is placed on both of the Hero’s weapon positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards. Spears may be wielded with one or two-hands. The optional might box is only available if using two hands.\n\n![float-left](/images/pdf/0c3a9639f87bd1a153dae11b85d4113845624a52.png) **Position Single Hand**: This card is placed on one of the Hero’s hand positions (*does not matter which one*) when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/1c6603d8ffe1638b1c354aa18c12176b11196d49.png) **Position Two Hands**: This card is placed on both of the Hero’s hand positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions.  Neither position is available for other cards.\n\n![float-left](/images/pdf/09b71b6fc118d9cc55a5a7cbdc806a0add122c40.png) **Position Miscellaneous**: This card is placed on one of the Hero’s miscellaneous positions (*does not matter which one*) when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/6742f700cfbacc25b737889ef31475490cbf324f.png) **Position Backpack**: Cards may always be placed in the backpack. Cards placed in the backpack are face-down, inactive, hidden from other players, and need not be revealed.\n\n![float-left](/images/pdf/24dcd216f9b85f8076a20a406cdaff47a0bae0ca.jpeg) **Position Backpack Special**: This card must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession of the card.\n\n![float-left](/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png) **Instantaneous**: The effects of this treasure occur immediately. The treasure is then removed from the game.",
+      "content": "The banners on treasures and items show information as follows:\n\n![float-left](/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg) **Base Price:** This is the price that a Merchant will pay to purchase this card from a Hero. This is also the base price used to calculate how much a Merchant will charge to sell this card to a Hero (*the price is* *always base price x3*)\n\n![float-left](/images/pdf/4eaf14775737eeaafd6db29a4980d31a84758e11.png) **One-time Use:** This card is removed from the game after use. One-time use cards may be used at any time during a player’s turn or in combat, even when first possessed without equipping. Cards with a combat effect may only be used in combat.\n\n![float-left](/images/pdf/911e3bc45a7641e0ce21075efc3edcf4ea7b56de.png) **Armor:** This card is armor with an armor value as printed in the shield symbol. Armor is explained in the combat section on page 16 of these rules.\n\n![float-left](/images/pdf/13755d1d48e3c1c4b68dd7271ab3c91464659c3c.jpeg) **Weight**: This card requires that a Hero has a number of healthy Might Cubes equal to the number shown. If not, the card is immediately unequipped to the Hero’s backpack (*see Equipping on page 21*).\n\n![float-left](/images/pdf/88bc51c71289dfc33594fdaf3fb21e4bed1992a2.png) **Attack Length**: If two attacks have the same attack speed, weapons and spells with higher numbers are resolved before lower numbers. Some weapons have two numbers. See Melee or Ranged below.\n\n![float-left](/images/pdf/2169147b1ec515d033cd3822bf41f1e5dcaa1cfa.png) **Melee**: This card is a melee weapon.\n\n![float-left](/images/pdf/2962811623918904e9e970b4fedffa94c67a875c.png) **Ranged**: This card is a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack as described in the combat section of these rules.\n\n![float-left](/images/pdf/6eef497be977d3b22866df547905aa1a19dd6243.png) **Melee or Ranged**: This weapon may be used as a melee or a ranged weapon. If used as a melee weapon, use the top attack length. If used as a ranged weapon, it is thrown; use the bottom attack length.\n\nWeapons may only be thrown with one hand. When thrown, they are placed to the side of the Hero Board. Thrown weapons are removed from the game permanently if all Monsters in the clearing are not killed during combat this turn.\n\n![float-left](/images/pdf/90415d9ca9cd9a06524ea9093fc9c3b924425d16.png) **Permanent**: The effects of this magic item last for the entire game.\n\n![float-left](/images/pdf/1ccd0fcfa1107235434c8c23404668f3a0a918bb.png) **Combat**: The effects of this treasure last for the duration of the combat. Once combat is over, the effects are terminated.\n\n![float-left](/images/pdf/c8ea73abcf65710a86b82cd5e173d745debdbeb2.png) **Position Neck**: This card is placed on the Hero’s neck when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/56c41aeb413506d6ffa9e0f060a552949317c4ae.png) **Position Waist**: This card is placed on the Hero’s waist when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/dbb150bd5fb34fbf8f65a3d81c0b28e29248b75a.png) **Position Feet**: This card is placed on the Hero’s feet when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/5885eb4a46058337e8e746a077a2a5191fb8b205.png) **Position Head**: This card is placed on the Hero’s head when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/f9272587d5db5c5206a9a8362bbd13852a3000ee.png) **Position Chest**: This card is placed on the Hero’s chest when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/3b39a83391dc787f94b33841851fbdf9e276d424.png) **Position Head and Chest**: This card is placed on the Hero’s head and chest when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards.\n\n![float-left](/images/pdf/1cf6db6cfe389ccd192465df93b47f10e6cf61bd.png) **Position One-handed Weapon**: This card is placed on one of the Hero’s weapon positions (*does not matter which one*) when active and face-down in the backpack when inactive. A Hero may not have two weapons, nor two shields, active at the same time.\n\n![float-left](/images/pdf/41413331b277d3e944d6afe99671402574f1a201.png) **Position Two-handed Weapon**: This card is placed on both of the Hero’s weapon positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions. Neither position is available for other cards. Spears may be wielded with one or two-hands. The optional might box is only available if using two hands.\n\n![float-left](/images/pdf/0c3a9639f87bd1a153dae11b85d4113845624a52.png) **Position Single Hand**: This card is placed on one of the Hero’s hand positions (*does not matter which one*) when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg) ![float-left](/images/pdf/1c6603d8ffe1638b1c354aa18c12176b11196d49.png) **Position Two Hands**: This card is placed on both of the Hero’s hand positions when active and face-down in the backpack when inactive. Place the card on the white dotted lined area that covers both positions.  Neither position is available for other cards.\n\n![float-left](/images/pdf/09b71b6fc118d9cc55a5a7cbdc806a0add122c40.png) **Position Miscellaneous**: This card is placed on one of the Hero’s miscellaneous positions (*does not matter which one*) when active and face-down in the backpack when inactive.\n\n![float-left](/images/pdf/6742f700cfbacc25b737889ef31475490cbf324f.png) **Position Backpack**: Cards may always be placed in the backpack. Cards placed in the backpack are face-down, inactive, hidden from other players, and need not be revealed.\n\n![float-left](/images/pdf/24dcd216f9b85f8076a20a406cdaff47a0bae0ca.jpeg) **Position Backpack Special**: This card must always be face-up. If face-down and viewed by a Hero, it becomes active and is placed face-up (*Treasure Pile, Merchant, etc.*). If its owner is killed, it is placed face-up in the clearing. Anyone entering the clearing immediately takes possession of the card.\n\n![float-left](/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png) **Instantaneous**: The effects of this treasure occur immediately. The treasure is then removed from the game.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -3748,6 +3768,11 @@
         {
           "kind": "mediaAside",
           "images": [
+            {
+              "kind": "image",
+              "src": "/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg",
+              "display": "float-left"
+            },
             {
               "kind": "image",
               "src": "/images/pdf/1c6603d8ffe1638b1c354aa18c12176b11196d49.png",
@@ -3993,7 +4018,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "One way Heroes access magic is via spells. One deck of Spell Cards is labeled “Hero Starting Spell”, and is only used when a player creates a Hero and selects their starting spells. Do not shuffle this deck. Once Heroes have selected their starting spells, this deck is set aside and not used in this game session. The setup of the deck labeled “Spell”, is described in the setup procedures of these rules. Heroes may cast spells using the cards of either deck. Heroes may learn the same spell from each deck.\n\n![Annotated spell card reference](/images/annotations/bf95645d6167706d02a996d69aca342561181220.png)\n\nSpells are only cast during combat. Spells may be cast each Battle Phase **even if no** **Monsters are present in a clearing**. If the Hero was hidden when the spell was cast, they must attempt a Hide reaction to remain hidden (*See Ambush on page 16*). This hide attempt is not be modified by the Sneak Action or the Halfling ability.\n\nTo cast a spell, take Magic Cubes from the healthy area of your Hero Board, and cover all boxes on the Spell Card with matching colors (*multicolor boxes may be* *covered by any color Magic Cube*). If you cannot cover all the boxes, you cannot cast the spell. *Exception: if the Hero is in an enchanted tile, they may ignore any one spell* *box that matches the color of the tile’s enchantment cube.*\n\nEach spell box type is differentiated by a unique color and symbol.\n\nYou may only cast one spell per Combat Round. Spells that have a duration longer than instantaneous may not be cast again until the spell is broken or expires.\n\nThe tapestry on each Spell Card shows the spells characteristics as follows:\n\n![float-left](/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg) **Price:** The base price of the spell. Spell Cards cannot be bought or sold unless attached to a Spell Book or Spell Scroll. When a Hero buys or sells a Spell Book or Spell Scroll, all spells remain attached to the Treasure Card. The base price of a Spell Book or Spell Scroll is the sum of the spells attached to the Treasure Card (*see page 29 for more information on Spell* *Books and Spell Scrolls*).\n\n![float-left](/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png) **Targeted:** This spell must be targeted at the caster or a single target in the clearing with the caster. If there is a number in the target symbol, the caster may target up to that many targets. The spell only takes effect if the spell hits using normal attack rules. A Hero may voluntarily accept a hit from a targeted spell when cast.\n\n![float-left](/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png) **Self or other:** This spell may be cast on self, another Hero, or a Monster in the same clearing as the caster. The spell does not need to hit to take effect.\n\n![float-left](/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg) **Self:** This spell targets the caster and takes effect when cast.\n\n![float-left](/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png) **Melee:** The casting of this spell acts like a melee weapon. If it hits, treat it like a melee weapon attack per the explanation on the card.\n\n![float-left](/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png) **Ranged:** The casting of this spell acts like a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack.\n\n![float-left](/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png) **Instantaneous:** The spell occurs instantly and then expires.\n\n![float-left](/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png) **Combat:** The spell lasts for the duration of combat or until the caster or target is killed or evades. Then the spell expires.\n\n![float-left](/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png) **Turn:** The spell effects expire at the beginning of the Combat Phase of the following turn. These spells are most commonly used to enhance a Hero’s actions during the next turn.\n\n![float-left](/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png) **Permanent:** The spell is permanent and never expires. Permanent spells can be in two states: active and inactive. Place active permanent spells face-up next to the Hero Board for the targeted Hero or Monster as a reminder that the spell is in effect.\n\n**Active:** When a permanent spell is active, the effects of the spell as described on the card apply. Permanent spells become active in one of four ways:\n\n- When initially cast\n\n- During the activation step of combat.\n\n- Being in a Map Tile enchanted with the matching magic color.\n\n- Being in a clearing with a source of colored magic (*e.g. from a treasure*).\n\n**Inactive:** Active permanent spells become inactive at the start of the following turn’s Combat Phase. When a permanent spell is inactive, its effects do not apply. The spell is inert. Flip the card face-down, but leave it next to the targeted Hero or Monster. If the spell is broken, the Spell Card is returned to the caster to be cast again.\n\nPermanent spells may not be voluntarily broken nor revoked by the caster. Permanent spells are broken in one of three ways:\n\n- The target of the spell dies.\n\n- A Break Spells spell is cast on the target.\n\n- A Hero in a Civilization Location may remove any number of permanent spells from a willing Hero in the clearing for a cost of 5 Gold per permanent spell dispelled.",
+      "content": "One way Heroes access magic is via spells. One deck of Spell Cards is labeled “Hero Starting Spell”, and is only used when a player creates a Hero and selects their starting spells. Do not shuffle this deck. Once Heroes have selected their starting spells, this deck is set aside and not used in this game session. The setup of the deck labeled “Spell”, is described in the setup procedures of these rules. Heroes may cast spells using the cards of either deck. Heroes may learn the same spell from each deck.\n\n![Annotated spell card reference](/images/annotations/7f22af5c2a5490272604f5a84e3ae25781c2d6d5.png)\n\nSpells are only cast during combat. Spells may be cast each Battle Phase **even if no** **Monsters are present in a clearing**. If the Hero was hidden when the spell was cast, they must attempt a Hide reaction to remain hidden (*See Ambush on page 16*). This hide attempt is not be modified by the Sneak Action or the Halfling ability.\n\nTo cast a spell, take Magic Cubes from the healthy area of your Hero Board, and cover all boxes on the Spell Card with matching colors (*multicolor boxes may be* *covered by any color Magic Cube*). If you cannot cover all the boxes, you cannot cast the spell. *Exception: if the Hero is in an enchanted tile, they may ignore any one spell* *box that matches the color of the tile’s enchantment cube.*\n\nEach spell box type is differentiated by a unique color and symbol.\n\nYou may only cast one spell per Combat Round. Spells that have a duration longer than instantaneous may not be cast again until the spell is broken or expires.\n\nThe tapestry on each Spell Card shows the spells characteristics as follows:\n\n![float-left](/images/pdf/c50e3e289ea6ed6c2276811b318e1a1ca72bc241.jpeg) **Price:** The base price of the spell. Spell Cards cannot be bought or sold unless attached to a Spell Book or Spell Scroll. When a Hero buys or sells a Spell Book or Spell Scroll, all spells remain attached to the Treasure Card. The base price of a Spell Book or Spell Scroll is the sum of the spells attached to the Treasure Card (*see page 29 for more information on Spell* *Books and Spell Scrolls*).\n\n![float-left](/images/pdf/8204dd70cc80f32a4dbb4ec9249b05c036215f88.png) **Targeted:** This spell must be targeted at the caster or a single target in the clearing with the caster. If there is a number in the target symbol, the caster may target up to that many targets. The spell only takes effect if the spell hits using normal attack rules. A Hero may voluntarily accept a hit from a targeted spell when cast.\n\n![float-left](/images/pdf/5cf326f1c9dd9710663b39f53cb79f3f0abca3bf.png) **Self or other:** This spell may be cast on self, another Hero, or a Monster in the same clearing as the caster. The spell does not need to hit to take effect.\n\n![float-left](/images/pdf/c35f6a7aa2919e8dd0407c53aedddd82cb7e9ea9.jpeg) **Self:** This spell targets the caster and takes effect when cast.\n\n![float-left](/images/pdf/50e5f4684cf2157ba7fc72ea95969325c8b83d81.png) **Melee:** The casting of this spell acts like a melee weapon. If it hits, treat it like a melee weapon attack per the explanation on the card.\n\n![float-left](/images/pdf/97c27cc71f1793ad23f0696c3e46e5423f73987d.png) **Ranged:** The casting of this spell acts like a ranged weapon. If it hits, roll the Ranged Attack Dice to modify the effects of the attack.\n\n![float-left](/images/pdf/468f9f069735293ba6732ac6f20dc28321a00f74.png) **Instantaneous:** The spell occurs instantly and then expires.\n\n![float-left](/images/pdf/ddb00830ebb024e52040c01662b6cc11fa7123f6.png) **Combat:** The spell lasts for the duration of combat or until the caster or target is killed or evades. Then the spell expires.\n\n![float-left](/images/pdf/1bfaab4777620ee4eea33390cebfc6e17ffb0d79.png) **Turn:** The spell effects expire at the beginning of the Combat Phase of the following turn. These spells are most commonly used to enhance a Hero’s actions during the next turn.\n\n![float-left](/images/pdf/f926bc83f1a9b531c74fd4044e138cf9d65ed37e.png) **Permanent:** The spell is permanent and never expires. Permanent spells can be in two states: active and inactive. Place active permanent spells face-up next to the Hero Board for the targeted Hero or Monster as a reminder that the spell is in effect.\n\n**Active:** When a permanent spell is active, the effects of the spell as described on the card apply. Permanent spells become active in one of four ways:\n\n- When initially cast\n\n- During the activation step of combat.\n\n- Being in a Map Tile enchanted with the matching magic color.\n\n- Being in a clearing with a source of colored magic (*e.g. from a treasure*).\n\n**Inactive:** Active permanent spells become inactive at the start of the following turn’s Combat Phase. When a permanent spell is inactive, its effects do not apply. The spell is inert. Flip the card face-down, but leave it next to the targeted Hero or Monster. If the spell is broken, the Spell Card is returned to the caster to be cast again.\n\nPermanent spells may not be voluntarily broken nor revoked by the caster. Permanent spells are broken in one of three ways:\n\n- The target of the spell dies.\n\n- A Break Spells spell is cast on the target.\n\n- A Hero in a Civilization Location may remove any number of permanent spells from a willing Hero in the clearing for a cost of 5 Gold per permanent spell dispelled.",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -4001,7 +4026,7 @@
         },
         {
           "kind": "markdown",
-          "markdown": "![Annotated spell card reference](/images/annotations/bf95645d6167706d02a996d69aca342561181220.png)"
+          "markdown": "![Annotated spell card reference](/images/annotations/7f22af5c2a5490272604f5a84e3ae25781c2d6d5.png)"
         },
         {
           "kind": "markdown",
@@ -7785,7 +7810,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster.",
+      "content": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all\n\n rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster.",
       "tags": [
         "spell",
         "blackMagic"
@@ -7793,7 +7818,11 @@
       "contentNodes": [
         {
           "kind": "markdown",
-          "markdown": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster."
+          "markdown": "Targeted. Combat. Wound one black cube. If the spell hits, the targeted undead Monster is controlled by the caster for the rest of combat, or until the caster is killed, targets the Monster, or leaves the clearing. If the Monster’s attack has not yet been resolved on the Combat Round in which the spell takes effect, the caster decides if the Monster’s attack is canceled or continues. The caster receives all"
+        },
+        {
+          "kind": "markdown",
+          "markdown": "rewards for kills made by the controlled Monster. The caster receives normal Fame if the undead Monster is killed by the caster."
         }
       ]
     },

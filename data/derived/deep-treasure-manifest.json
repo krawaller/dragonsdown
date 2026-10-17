@@ -430,7 +430,7 @@
     "location": {
       "page": 11,
       "column": "left",
-      "section": "middle"
+      "section": "bottom"
     },
     "content": "Epic Treasure. The Hero may equip two one-handed weapons simultaneously. They may still only place cubes on one weapon per Combat Round, but may select either weapon each Combat Round.",
     "tags": [
@@ -510,7 +510,7 @@
     ]
   },
   {
-    "id": "4.5.0.9",
+    "id": "4.5.0.10",
     "source": "wildlands",
     "level": 4,
     "title": "Eye of the Basilisk",
@@ -962,7 +962,7 @@
     ]
   },
   {
-    "id": "4.5.0.14",
+    "id": "4.5.0.15",
     "source": "wildlands",
     "level": 4,
     "title": "Oracle Lens",
@@ -1010,7 +1010,7 @@
     ]
   },
   {
-    "id": "4.5.0.16",
+    "id": "4.5.0.17",
     "source": "wildlands",
     "level": 4,
     "title": "Phylact of Renewal",
@@ -1120,7 +1120,7 @@
     ]
   },
   {
-    "id": "4.5.0.19",
+    "id": "4.5.0.20",
     "source": "wildlands",
     "level": 4,
     "title": "Root Striders",
@@ -1130,7 +1130,7 @@
       "column": "left",
       "section": "bottom"
     },
-    "content": "Epic Treasure. May enter Swamp and Thickets Clearings for 1 action.\n\n![](/images/pdf/f267600e75cf8b07fd1eb1556371f06649af38f4.png)",
+    "content": "Epic Treasure. May enter Swamp and Thickets Clearings for 1 action.",
     "tags": [
       "deepTreasure"
     ],
@@ -1138,11 +1138,6 @@
       {
         "kind": "markdown",
         "markdown": "Epic Treasure. May enter Swamp and Thickets Clearings for 1 action."
-      },
-      {
-        "kind": "image",
-        "src": "/images/pdf/f267600e75cf8b07fd1eb1556371f06649af38f4.png",
-        "display": "block"
       }
     ]
   },
@@ -1349,7 +1344,7 @@
     ]
   },
   {
-    "id": "4.5.0.25",
+    "id": "4.5.0.26",
     "source": "wildlands",
     "level": 4,
     "title": "Stone Giant’s Warbelt",
@@ -1537,7 +1532,7 @@
     ]
   },
   {
-    "id": "4.5.0.27",
+    "id": "4.5.0.28",
     "source": "wildlands",
     "level": 4,
     "title": "Thornhide Brigandine",
@@ -1559,7 +1554,7 @@
     ]
   },
   {
-    "id": "4.5.0.28",
+    "id": "4.5.0.29",
     "source": "wildlands",
     "level": 4,
     "title": "Titan Steppers",
@@ -1625,7 +1620,7 @@
     ]
   },
   {
-    "id": "4.5.0.30",
+    "id": "4.5.0.31",
     "source": "wildlands",
     "level": 4,
     "title": "Veilpiercer",
@@ -1669,7 +1664,7 @@
     ]
   },
   {
-    "id": "4.5.0.34",
+    "id": "4.5.0.35",
     "source": "wildlands",
     "level": 4,
     "title": "Wyvern Hide Armor",

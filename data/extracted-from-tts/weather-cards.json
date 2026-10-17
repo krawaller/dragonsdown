@@ -135,7 +135,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cold is in effect, a hero that ends their Action Phase in an Unsheltered Clearing must have spent 1 Action that turn to stay warm. If they did not, they must take 1 wound of their choice.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must spend 1 Action to stay warm or take 1 wound of their choice unless they are Sheltered at the end of their Action Phase.",
       "seasons": [
         "Spring",
         "Autumn",
@@ -245,7 +245,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cursed is in effect, a hero who ends their Action Phase in an Unsheltered Clearing must either take 1 wound of their choice or receive a random Curse.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must take 1 wound of their choice or receive a random Curse unless they are Sheltered at the end of their Action Phase.",
       "seasons": [
         "Spring",
         "Summer",
@@ -278,7 +278,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Cursed is in effect, a hero who ends their Action Phase in an Unsheltered Clearing must either take 1 wound of their choice or receive a random Curse.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must take 1 wound of their choice or receive a random Curse unless they are Sheltered at the end of their Action Phase.",
       "seasons": [
         "Autumn",
         "Winter"
@@ -317,6 +317,70 @@
       "seasons": [
         "Spring",
         "Summer",
+        "Autumn",
+        "Winter"
+      ]
+    }
+  ],
+  "Deep Snow": [
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 5,
+      "uniqueBack": false,
+      "tags": [
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must spend 1 additional Action when moving into a Clearing where they would be Unsheltered, even if Swimming, but not if Flying.",
+      "seasons": [
+        "Winter"
+      ]
+    },
+    {
+      "source": "dd_all_exp",
+      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
+      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
+      "numWidth": 10,
+      "numHeight": 3,
+      "row": 2,
+      "col": 4,
+      "uniqueBack": false,
+      "tags": [
+        "Autumn",
+        "Spring",
+        "Winter"
+      ],
+      "ancestry": [
+        "Weather"
+      ],
+      "copies": 1,
+      "locations": [
+        {
+          "ancestry": [
+            "Weather"
+          ],
+          "count": 1
+        }
+      ],
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must spend 1 additional Action when moving into a Clearing where they would be Unsheltered, even if Swimming, but not if Flying.",
+      "seasons": [
+        "Spring",
         "Autumn",
         "Winter"
       ]
@@ -416,7 +480,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. At the beginning of each turn, randomly select one magic color. Until the end of the turn, Map Tiles are considered to be enchanted with the selected magic color. Ignore all other enchantments and enchanted effects. Do not flip over any Map Tiles",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. At the beginning of each turn, randomly select one magic color. Until the end of the turn, all Map Tiles are considered enchanted with that magic color. Ignore all other enchantments and enchantment effects. Do not flip any Map Tiles due to this weather card.Map Tiles may still be enchanted normally, including placing Magic Cubes and flipping Map Tiles. However, these enchantments have no effect until Enchanted weather ends.",
       "seasons": [
         "Spring",
         "Summer",
@@ -452,7 +516,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result on the Search Dice.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result",
       "seasons": [
         "Spring",
         "Autumn",
@@ -483,7 +547,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result on the Search Dice.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result",
       "seasons": [
         "Autumn"
       ]
@@ -552,7 +616,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. All flying and swimming movement actions require +1 action.",
+      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. All Ferrying, Flying, and Swimming movement actions require +1 action.",
       "seasons": [
         "Summer",
         "Autumn"
@@ -585,7 +649,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. All flying and swimming movement actions require +1 action.",
+      "description": "Lasts 5 turns. Reveal the next Weather Card on turn 4. All Ferrying, Flying, and Swimming movement actions require +1 action.",
       "seasons": [
         "Spring",
         "Summer",
@@ -619,7 +683,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Hot is in effect, a hero who ends their Action Phase in an Unsheltered Clearing takes 1 wound of their choice.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. A Hero must take 1 wound of their choice unless they are Sheltered at the end of their Action Phase.",
       "seasons": [
         "Summer"
       ]
@@ -649,7 +713,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Hot is in effect, a hero who ends their Action Phase in an Unsheltered Clearing takes 1 wound of their choice.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. A Hero must take 1 wound of their choice unless they are Sheltered at the end of their Action Phase.",
       "seasons": [
         "Spring",
         "Summer"
@@ -681,7 +745,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. All Swamp and Water Clearings are treated as Plains Clearings. If playing with the Terrain Effects optional rules, those clearings are treated as Plains Clearings. Additionally, Heroes that spend one or more actions in an Unsheltered Clearing while Icebound is in effect must spend one action during their Action Phase to stay warm or take one wound of their choice at the end of their Action Phase.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. All Swamp and River Clearings are treated as Plains Clearings, including when using the Terrain Effects optional rule. No Ferry Movement is allowed. A Hero must spend 1 action to stay warm or take 1 wound of their choice unless they are Sheltered at the end of their Action Phase.",
       "seasons": [
         "Winter"
       ]
@@ -780,7 +844,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Rain is in effect, a hero loses 1 action during their Action Phase unless they end their Action Phase in a Sheltered Clearing.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. A Hero may not perform a Rest Action while Unsheltered",
       "seasons": [
         "Spring",
         "Summer",
@@ -814,74 +878,10 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. While Rain is in effect, a hero loses 1 action during their Action Phase unless they end their Action Phase in a Sheltered Clearing.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 3. A Hero may not perform a Rest Action while Unsheltered",
       "seasons": [
         "Spring",
         "Summer",
-        "Autumn",
-        "Winter"
-      ]
-    }
-  ],
-  "Snow": [
-    {
-      "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
-      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
-      "numWidth": 10,
-      "numHeight": 3,
-      "row": 2,
-      "col": 5,
-      "uniqueBack": false,
-      "tags": [
-        "Winter"
-      ],
-      "ancestry": [
-        "Weather"
-      ],
-      "copies": 1,
-      "locations": [
-        {
-          "ancestry": [
-            "Weather"
-          ],
-          "count": 1
-        }
-      ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost, even if Swimming, but not if Flying.",
-      "seasons": [
-        "Winter"
-      ]
-    },
-    {
-      "source": "dd_all_exp",
-      "faceURL": "https://dragonsdowndata.com/data/weather/WeatherDeck.png",
-      "backURL": "https://dragonsdowndata.com/data/weather/wBack.png",
-      "numWidth": 10,
-      "numHeight": 3,
-      "row": 2,
-      "col": 4,
-      "uniqueBack": false,
-      "tags": [
-        "Autumn",
-        "Spring",
-        "Winter"
-      ],
-      "ancestry": [
-        "Weather"
-      ],
-      "copies": 1,
-      "locations": [
-        {
-          "ancestry": [
-            "Weather"
-          ],
-          "count": 1
-        }
-      ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost, even if Swimming, but not if Flying.",
-      "seasons": [
-        "Spring",
         "Autumn",
         "Winter"
       ]
@@ -912,7 +912,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost or take one wound of their choice, even if flying or swimming.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must spend 1 additional Action or take 1 wound of their choice when moving into a Clearing where they would be Unsheltered, even if Flying or Swimming. No Ferry Movement is allowed. When playing Adventure Party Cooperative Mode, the Party Leader chooses whether to spend the additional Action or take a wound. This choice applies to all members of the party.",
       "seasons": [
         "Winter"
       ]
@@ -943,7 +943,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. Heroes moving into an Unsheltered Clearing must pay +1 action cost or take one wound of their choice, even if flying or swimming.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must spend 1 additional Action or take 1 wound of their choice when moving into a Clearing where they would be Unsheltered, even if Flying or Swimming. No Ferry Movement is allowed. When playing Adventure Party Cooperative Mode, the Party Leader chooses whether to spend the additional Action or take a wound. This choice applies to all members of the party.",
       "seasons": [
         "Spring",
         "Autumn",
@@ -976,7 +976,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Thunderstorms are in effect, a hero who ends their Action Phase in an Unsheltered Mountain, Plains, River, or Swamp Clearing must take 1 wound of their choice.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must take 1 wound of their choice if they are Unsheltered in a Mountain, Plains, River, or Swamp Clearing at the end of their Action Phase.",
       "seasons": [
         "Summer"
       ]
@@ -1007,7 +1007,7 @@
           "count": 1
         }
       ],
-      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. While Thunderstorms are in effect, a hero who ends their Action Phase in an Unsheltered Mountain, Plains, River, or Swamp Clearing must take 1 wound of their choice.",
+      "description": "Lasts 4 turns. Reveal the next Weather Card on turn 4. A Hero must take 1 wound of their choice if they are Unsheltered in a Mountain, Plains, River, or Swamp Clearing at the end of their Action Phase.",
       "seasons": [
         "Spring",
         "Summer",
