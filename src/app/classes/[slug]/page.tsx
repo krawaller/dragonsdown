@@ -5,6 +5,7 @@ import { SpriteCell } from "@/components/CardSprite";
 import { ClassAdvantageCard } from "@/components/ClassAdvantageCard";
 import { classAbilityName } from "@/components/ClassLink";
 import { RulebookLinks } from "@/components/RulebookLinks";
+import { getManualClassChips } from "@/lib/class-chips";
 import { resolveClassRulebookLinks } from "@/lib/rulebook-links";
 import type { TTSCardImage, TTSClassTile } from "@/lib/tts";
 import { getAllClasses, getClassBySlug } from "@/lib/tts/lookup";
@@ -27,6 +28,10 @@ export default async function ClassPage({
     slug: entry.slug,
     advantageTitle: ttsClass.advantageTitle,
   });
+  const classChips = [
+    ...(ttsClass.classToken ? [ttsClass.classToken] : []),
+    ...getManualClassChips(entry.slug),
+  ];
   const hasSidebarTile =
     !ttsClass.advantageCard && Boolean(ttsClass.classToken);
 
@@ -67,14 +72,19 @@ export default async function ClassPage({
             <ClassAdvantageCard setup={ttsClass.setup} />
           )}
 
-          {ttsClass.classToken && (
-            <ClassTileMaterial title="Class Token" tile={ttsClass.classToken} />
+          {classChips.length > 0 && (
+            <ClassTileMaterialList
+              title="Chips"
+              tiles={classChips}
+              unit="chip"
+            />
           )}
 
           {ttsClass.targetingTokens.length > 0 && (
             <ClassTileMaterialList
               title="Targeting Tokens"
               tiles={ttsClass.targetingTokens}
+              unit="token"
             />
           )}
         </div>
@@ -138,39 +148,20 @@ function ClassCardImageFigure({
   );
 }
 
-function ClassTileMaterial({
-  title,
-  tile,
-}: {
-  title: string;
-  tile: TTSClassTile;
-}) {
-  return (
-    <CollapsibleBox
-      title={title}
-      count={2}
-      countLabel="front and back"
-      contentClassName="border-t border-zinc-200 p-4 dark:border-zinc-800"
-    >
-      <div className="max-w-3xl">
-        <ClassTilePair tile={tile} />
-      </div>
-    </CollapsibleBox>
-  );
-}
-
 function ClassTileMaterialList({
   title,
   tiles,
+  unit,
 }: {
   title: string;
   tiles: TTSClassTile[];
+  unit: "chip" | "token";
 }) {
   return (
     <CollapsibleBox
       title={title}
       count={tiles.length}
-      countLabel={`${tiles.length} token${tiles.length === 1 ? "" : "s"} · front and back`}
+      countLabel={`${tiles.length} ${unit}${tiles.length === 1 ? "" : "s"}`}
       contentClassName="border-t border-zinc-200 p-4 dark:border-zinc-800"
     >
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -178,6 +169,7 @@ function ClassTileMaterialList({
           <ClassTilePair
             key={`${tile.imageURL}-${tile.imageSecondaryURL}-${index}`}
             tile={tile}
+            showName={unit === "chip" && tiles.length > 1}
           />
         ))}
       </div>
@@ -185,10 +177,16 @@ function ClassTileMaterialList({
   );
 }
 
-function ClassTilePair({ tile }: { tile: TTSClassTile }) {
+function ClassTilePair({
+  tile,
+  showName = false,
+}: {
+  tile: TTSClassTile;
+  showName?: boolean;
+}) {
   return (
-    <div className="rounded border border-zinc-200 dark:border-zinc-800 p-4">
-      <h3 className="text-base font-semibold mb-3">{tile.name}</h3>
+    <div>
+      {showName && <h3 className="mb-2 text-sm font-semibold">{tile.name}</h3>}
       <div className="grid grid-cols-2 gap-4">
         <figure>
           <TileImage src={tile.imageURL} alt={`${tile.name} front`} />
