@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import type { RulebookLink } from "@/lib/rulebook-links";
+import { CollapsibleBox } from "./CollapsibleBox";
 import { RulebookContent } from "./RulebookContent";
 
 export function RulebookLinks({
@@ -35,95 +35,71 @@ export function RulebookLinks({
 }
 
 function RulebookLinkCard({ link }: { link: RulebookLink }) {
-  const [expanded, setExpanded] = useState(true);
   const icons = link.icons ?? (link.icon ? [link.icon] : []);
+  if (!link.content) return null;
 
   return (
-    <div className="box-border min-w-0 max-w-full overflow-hidden rounded border border-zinc-200 dark:border-zinc-800">
-      <div className="p-3">
-        <div className="flex min-w-0 items-center gap-3 text-sm">
-          {icons.length > 0 && (
-            <span className="flex shrink-0 gap-1">
-              {icons.map((icon) => (
-                <Image
-                  key={icon}
-                  src={icon}
-                  alt=""
-                  width={40}
-                  height={40}
-                  className="h-10 w-10 object-contain"
-                />
-              ))}
-            </span>
-          )}
-          <span className="flex min-w-0 flex-1 flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-            <RulebookLinkTitle link={link} />
-            <Link
-              href={link.href}
-              className="min-w-0 max-w-full truncate text-xs text-zinc-500 hover:underline dark:text-zinc-400"
-            >
-              {targetLabel(link)}
-            </Link>
-          </span>
-        </div>
+    <CollapsibleBox
+      title={<RulebookLinkTitle link={link} icons={icons} />}
+      summaryClassName="cursor-pointer px-2 py-1.5 hover:bg-zinc-50 transition-colors dark:hover:bg-zinc-900 sm:px-3"
+      headerClassName="inline-flex min-h-11 min-w-0 flex-1 flex-wrap items-center justify-between gap-x-4 gap-y-1 align-middle"
+      titleClassName="flex min-w-0 max-w-full items-center gap-2 text-sm font-medium"
+      headerEnd={
+        <Link
+          href={link.href}
+          className="min-w-0 max-w-full self-center truncate text-xs hover:underline"
+          onClick={(event) => event.stopPropagation()}
+        >
+          {targetLabel(link)}
+        </Link>
+      }
+      contentClassName="border-t border-zinc-200 p-3 dark:border-zinc-800"
+    >
+      <div className="prose prose-zinc dark:prose-invert max-w-none text-sm [&>:first-child]:mt-0">
+        <RulebookContent
+          nodes={
+            link.contentNodes ?? [{ kind: "markdown", markdown: link.content }]
+          }
+        />
       </div>
-      {link.content && (
-        <div className="box-border flex min-w-0 max-w-full overflow-hidden border-t border-zinc-200 dark:border-zinc-800">
-          <button
-            type="button"
-            aria-expanded={expanded}
-            aria-label={
-              expanded ? "Collapse rulebook content" : "Expand rulebook content"
-            }
-            className="flex basis-8 shrink-0 cursor-pointer items-start justify-center px-0 py-2 text-zinc-600 hover:text-zinc-950 dark:text-zinc-400 dark:hover:text-zinc-100"
-            onClick={() => setExpanded((current) => !current)}
-          >
-            <span
-              aria-hidden="true"
-              className={`select-none text-center text-xl leading-none transition-transform ${
-                expanded ? "rotate-90" : ""
-              }`}
-            >
-              ›
-            </span>
-          </button>
-          <div
-            className={`min-w-0 flex-1 basis-0 overflow-hidden py-2 pr-3 text-sm ${
-              expanded ? "" : "[contain:inline-size]"
-            }`}
-          >
-            {expanded ? (
-              <div className="prose prose-zinc dark:prose-invert max-w-none [&>:first-child]:mt-0">
-                <RulebookContent
-                  nodes={
-                    link.contentNodes ?? [
-                      { kind: "markdown", markdown: link.content },
-                    ]
-                  }
-                />
-              </div>
-            ) : (
-              <div className="block w-full min-w-0 overflow-hidden truncate whitespace-nowrap [contain:inline-size]">
-                {contentPreview(link.content)}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-    </div>
+    </CollapsibleBox>
   );
 }
 
-function RulebookLinkTitle({ link }: { link: RulebookLink }) {
+function RulebookLinkTitle({
+  link,
+  icons,
+}: {
+  link: RulebookLink;
+  icons: string[];
+}) {
   return (
-    <span className="flex min-w-0 max-w-full items-baseline gap-1.5 font-medium">
-      {link.optionalRule && (
-        <span className="shrink-0 text-zinc-500 dark:text-zinc-400">
-          Optional rule
+    <>
+      {icons.length > 0 && (
+        <span className="flex shrink-0 gap-1">
+          {icons.map((icon) => (
+            <Image
+              key={icon}
+              src={icon}
+              alt=""
+              width={40}
+              height={40}
+              className="h-9 w-9 object-contain"
+            />
+          ))}
         </span>
       )}
-      <span className="min-w-0 truncate">{rulebookLinkDisplayTitle(link)}</span>
-    </span>
+      <span className="flex min-w-0 max-w-full items-baseline gap-1.5">
+        {link.optionalRule && (
+          <span className="shrink-0 text-zinc-500 dark:text-zinc-400">
+            Optional rule
+          </span>
+        )}
+        <span className="min-w-0 truncate">
+          {rulebookLinkDisplayTitle(link)}
+        </span>
+      </span>
+    </>
   );
 }
 
@@ -138,14 +114,6 @@ function targetLabel(link: RulebookLink): string {
   return link.location
     ? `${link.docTitle} · ${locationLabel(link.location)}`
     : link.docTitle;
-}
-
-function contentPreview(content: string): string {
-  return content
-    .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
-    .replace(/[*_`#>\[\]()]/g, "")
-    .replace(/\s+/g, " ")
-    .trim();
 }
 
 function locationLabel(
