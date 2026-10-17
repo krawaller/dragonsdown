@@ -39,6 +39,17 @@ type MapTileClearingTypeEntry = {
   backCount: number;
 };
 
+type MapTileConnections = Record<
+  string,
+  { front: { paths: unknown[] }; back: { paths: unknown[] } }
+>;
+
+type MagicPathTypeEntry = {
+  color: string;
+  frontCount: number;
+  backCount: number;
+};
+
 export type MapTileCivLocation = {
   name: string;
   slug: string;
@@ -78,10 +89,7 @@ export function MapTileViewer({
   civLocations: MapTileCivLocation[];
   monsterGroups: MapTileMonsterGroup[];
   missions: MapTileMission[];
-  mapTileConnections?: Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >;
+  mapTileConnections?: MapTileConnections;
   magicIcons?: MagicIcons;
   terrainPack?: MapTileTerrainPack;
   showTileControls?: boolean;
@@ -135,6 +143,10 @@ export function MapTileViewer({
   const selectedClearingTypes = selectedTile
     ? mapTileClearingTypes(selectedTile)
     : [];
+  const selectedMagicPathTypes =
+    selectedTile && mapTileConnections
+      ? mapTileMagicPathTypes(selectedTile.name, mapTileConnections)
+      : [];
 
   useEffect(() => {
     if (!selectedTile) return;
@@ -330,6 +342,13 @@ export function MapTileViewer({
           <ClearingTypesBox clearingTypes={selectedClearingTypes} />
         )}
 
+        {!showTileControls && selectedMagicPathTypes.length > 0 && (
+          <MagicPathsBox
+            entries={selectedMagicPathTypes}
+            magicIcons={magicIcons}
+          />
+        )}
+
         {selectedMonsterGroups.length > 0 && (
           <div className="mt-6">
             <CollapsibleBox
@@ -376,10 +395,7 @@ function MapTileFacePanel({
   tile: MapTile;
   side: "front" | "back";
   imageUrl: string;
-  mapTileConnections?: Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >;
+  mapTileConnections?: MapTileConnections;
   magicIcons?: MagicIcons;
 }) {
   const secretPathCounts = mapTileConnections
@@ -389,8 +405,13 @@ function MapTileFacePanel({
   const magicColors = secretPathCounts.map(({ color }) => color);
 
   return (
-    <section className="flex min-w-0 flex-col gap-2">
-      <MapTileFace tile={tile} imageUrl={imageUrl} side={side} />
+    <section className="group/tile-image flex min-w-0 flex-col gap-2">
+      <MapTileFace
+        tile={tile}
+        imageUrl={imageUrl}
+        side={side}
+        markerVisibility="hover"
+      />
       <div className="flex min-w-0 items-start gap-2">
         <FaceMagicLinks colors={magicColors} magicIcons={magicIcons} />
         <div className="min-w-0">
@@ -412,11 +433,18 @@ function MapTileFace({
   tile,
   imageUrl,
   side,
+  markerVisibility = "always",
 }: {
   tile: MapTile;
   imageUrl: string;
   side: "front" | "back";
+  markerVisibility?: "always" | "hover";
 }) {
+  const markerLayerClassName =
+    markerVisibility === "hover"
+      ? "absolute inset-0 opacity-0 transition-opacity group-hover/tile-image:opacity-100 group-focus-within/tile-image:opacity-100"
+      : "absolute inset-0";
+
   return (
     <div className="overflow-hidden rounded-lg border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
       <div className="mx-auto flex aspect-square max-h-[72vh] w-full items-center justify-center p-[4%]">
@@ -427,7 +455,7 @@ function MapTileFace({
             alt={`${tile.name} ${side}`}
             className="absolute inset-0 block h-full w-full -rotate-[30deg] object-contain"
           />
-          <div className="absolute inset-0">
+          <div className={markerLayerClassName}>
             {tile.clearings.map((clearing, index) => {
               const clearingType = clearing.type?.[side === "back" ? 1 : 0];
               const markerClass = clearingType
@@ -620,12 +648,90 @@ function ClearingTypeCard({ entry }: { entry: MapTileClearingTypeEntry }) {
   );
 }
 
+function MagicPathsBox({
+  entries,
+  magicIcons,
+}: {
+  entries: MagicPathTypeEntry[];
+  magicIcons?: MagicIcons;
+}) {
+  const totalPaths = entries.reduce(
+    (sum, entry) => sum + entry.frontCount + entry.backCount,
+    0,
+  );
+
+  return (
+    <div className="mt-6">
+      <CollapsibleBox
+        title="Magic Paths"
+        count={entries.length}
+        countLabel={`${entries.length} magic type${entries.length === 1 ? "" : "s"} · ${totalPaths} path${totalPaths === 1 ? "" : "s"}`}
+      >
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {entries.map((entry) => (
+            <MagicPathTypeCard
+              key={entry.color}
+              entry={entry}
+              magicIcons={magicIcons}
+            />
+          ))}
+        </div>
+      </CollapsibleBox>
+    </div>
+  );
+}
+
+function MagicPathTypeCard({
+  entry,
+  magicIcons,
+}: {
+  entry: MagicPathTypeEntry;
+  magicIcons?: MagicIcons;
+}) {
+  return (
+    <Link
+      href={`/magic/${entry.color}`}
+      className="flex min-w-0 items-center gap-3 rounded border border-zinc-200 p-3 text-sm transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
+    >
+      <MagicColorIcon color={entry.color} magicIcons={magicIcons} />
+      <span className="min-w-0">
+        <span className="block truncate font-medium">
+          {magicColorLabel(entry.color)}
+        </span>
+        <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+          {magicPathTypeCountLabel(entry)}
+        </span>
+      </span>
+    </Link>
+  );
+}
+
+function magicPathTypeCountLabel({
+  frontCount,
+  backCount,
+}: MagicPathTypeEntry): string {
+  if (frontCount > 0 && backCount > 0 && frontCount === backCount) {
+    return magicPathCountLabel(frontCount);
+  }
+  if (frontCount > 0 && backCount === 0) {
+    return `${magicPathCountLabel(frontCount)} on front`;
+  }
+  if (backCount > 0 && frontCount === 0) {
+    return `${magicPathCountLabel(backCount)} on back`;
+  }
+  return `${magicPathCountLabel(frontCount)} on front and ${backCount} on back`;
+}
+
+function magicPathCountLabel(count: number): string {
+  return `${count} path${count === 1 ? "" : "s"}`;
+}
+
 function clearingTypeCountLabel({
   frontCount,
   backCount,
 }: MapTileClearingTypeEntry): string {
   if (frontCount > 0 && backCount > 0 && frontCount === backCount) {
-    return clearingCountLabel(frontCount);
+    return `${clearingCountLabel(frontCount)} on each side`;
   }
   if (frontCount > 0 && backCount === 0) {
     return `${clearingCountLabel(frontCount)} on front`;
@@ -717,10 +823,7 @@ function mapTileClearingTypes(tile: MapTile): MapTileClearingTypeEntry[] {
 function secretPathColorCounts(
   tileName: string,
   side: "front" | "back",
-  connections: Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >,
+  connections: MapTileConnections,
 ): { color: string; count: number }[] {
   const paths = secretPathSidePaths(tileName, side, connections);
   if (!paths) return [];
@@ -737,6 +840,32 @@ function secretPathColorCounts(
     .map(([color, count]) => ({ color, count }));
 }
 
+function mapTileMagicPathTypes(
+  tileName: string,
+  connections: MapTileConnections,
+): MagicPathTypeEntry[] {
+  const counts = new Map<string, { frontCount: number; backCount: number }>();
+
+  for (const side of ["front", "back"] as const) {
+    const sidePaths = secretPathSidePaths(tileName, side, connections);
+    if (!sidePaths) continue;
+    for (const path of sidePaths) {
+      const color = secretPathColor(path);
+      if (!color) continue;
+      const entry = counts.get(color) ?? { frontCount: 0, backCount: 0 };
+      if (side === "front") entry.frontCount += 1;
+      else entry.backCount += 1;
+      counts.set(color, entry);
+    }
+  }
+
+  return [...counts.entries()]
+    .map(([color, entry]) => ({ color, ...entry }))
+    .sort((a, b) =>
+      magicColorLabel(a.color).localeCompare(magicColorLabel(b.color)),
+    );
+}
+
 function secretPathCountSummary(
   counts: { color: string; count: number }[],
 ): string | undefined {
@@ -751,18 +880,33 @@ function secretPathCountSummary(
 function secretPathSidePaths(
   tileName: string,
   side: "front" | "back",
-  connections: Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >,
+  connections: MapTileConnections,
 ): unknown[] | undefined {
-  const tileConnections = connections[tileName];
+  const tileConnections = mapTileConnectionFor(tileName, connections);
   if (!tileConnections) return undefined;
   const paths =
     side === "front"
       ? tileConnections.front?.paths
       : tileConnections.back?.paths;
   return Array.isArray(paths) ? paths : undefined;
+}
+
+function mapTileConnectionFor(
+  tileName: string,
+  connections: MapTileConnections,
+): MapTileConnections[string] | undefined {
+  const directMatch = connections[tileName];
+  if (directMatch) return directMatch;
+
+  const normalizedTileName = normalizeConnectionName(tileName);
+  const matchedKey = Object.keys(connections).find(
+    (key) => normalizeConnectionName(key) === normalizedTileName,
+  );
+  return matchedKey ? connections[matchedKey] : undefined;
+}
+
+function normalizeConnectionName(name: string): string {
+  return name.toLocaleLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 function secretPathColor(path: unknown): string | undefined {
@@ -847,10 +991,7 @@ function SecretPathMagicColors({
 }: {
   tileName: string;
   side: "front" | "back";
-  connections: Record<
-    string,
-    { front: { paths: unknown[] }; back: { paths: unknown[] } }
-  >;
+  connections: MapTileConnections;
   magicIcons?: MagicIcons;
 }) {
   const sidePaths = secretPathSidePaths(tileName, side, connections);
