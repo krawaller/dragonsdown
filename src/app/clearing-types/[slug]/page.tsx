@@ -1,8 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import {
+  type ClearingTypeOccurrence,
   type ClearingTypeId,
   getAllClearingTypes,
   getClearingTypeBySlug,
@@ -62,38 +64,67 @@ export default async function ClearingTypePage({
 
       {terrainPacks.length > 0 && (
         <section className="mb-10">
-          <h2 className="text-xl font-semibold mb-3">Terrain Packs</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {terrainPacks.map((entry) => (
-              <TerrainPackClearingTypeTile
-                key={entry.slug}
-                entry={entry}
-                clearingTypeLabel={clearingType.label}
-              />
-            ))}
-          </div>
+          <CollapsibleBox
+            title="Terrain Packs"
+            count={terrainPacks.length}
+            countLabel={`${terrainPacks.length} pack${terrainPacks.length === 1 ? "" : "s"}`}
+          >
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {terrainPacks.map((entry) => (
+                <TerrainPackClearingTypeTile
+                  key={entry.slug}
+                  entry={entry}
+                  clearingTypeLabel={clearingType.label}
+                />
+              ))}
+            </div>
+          </CollapsibleBox>
         </section>
       )}
 
       <section>
-        <h2 className="text-xl font-semibold mb-3">Map Tiles</h2>
-        <div className="flex flex-wrap gap-2">
-          {clearingType.occurrences.map((occurrence) => (
-            <Link
-              key={`${occurrence.terrain}-${occurrence.tileName}-${occurrence.side}`}
-              href={occurrence.href}
-              className="rounded border border-zinc-200 dark:border-zinc-800 px-3 py-2 text-sm hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
-            >
-              <span className="font-medium">{occurrence.tileName}</span>
-              <span className="block text-xs text-zinc-500 dark:text-zinc-400">
-                {occurrence.terrain} · {occurrence.side} · {occurrence.count}{" "}
-                {occurrence.count === 1 ? "clearing" : "clearings"}
-              </span>
-            </Link>
-          ))}
-        </div>
+        <CollapsibleBox
+          title="Map Tiles"
+          count={clearingType.occurrences.length}
+          countLabel={`${clearingType.occurrences.length} tile${clearingType.occurrences.length === 1 ? "" : "s"}`}
+        >
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+            {clearingType.occurrences.map((occurrence) => (
+              <MapTileOccurrenceCard
+                key={`${occurrence.terrain}-${occurrence.tileName}-${occurrence.side}`}
+                occurrence={occurrence}
+              />
+            ))}
+          </div>
+        </CollapsibleBox>
       </section>
     </main>
+  );
+}
+
+function MapTileOccurrenceCard({
+  occurrence,
+}: {
+  occurrence: ClearingTypeOccurrence;
+}) {
+  return (
+    <Link href={occurrence.href} className="group/tile min-w-0 text-sm">
+      <span className="block overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition group-hover/tile:ring-2 group-hover/tile:ring-zinc-400 dark:border-zinc-800 dark:bg-zinc-900">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={occurrence.imageUrl}
+          alt={`${occurrence.tileName} ${occurrence.side}`}
+          className="block aspect-square w-full -rotate-[30deg] object-contain p-4"
+        />
+      </span>
+      <span className="mt-2 block min-w-0 font-medium leading-5 group-hover/tile:underline">
+        {occurrence.tileName} · {occurrence.side}
+      </span>
+      <span className="block text-xs text-zinc-500 dark:text-zinc-400">
+        {occurrence.terrain} · {occurrence.count}{" "}
+        {occurrence.count === 1 ? "clearing" : "clearings"}
+      </span>
+    </Link>
   );
 }
 

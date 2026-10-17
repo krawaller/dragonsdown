@@ -1517,8 +1517,8 @@
         "x": 1.6,
         "y": -1,
         "type": [
-          "mountains",
-          "mountains"
+          "plains",
+          "plains"
         ]
       },
       {
@@ -2525,7 +2525,7 @@
         "x": -0.4,
         "y": 2,
         "type": [
-          "mountains",
+          "plains",
           "plains"
         ]
       },
@@ -2580,7 +2580,7 @@
         "y": 0.9,
         "type": [
           "plains",
-          "mountains"
+          "plains"
         ]
       },
       {

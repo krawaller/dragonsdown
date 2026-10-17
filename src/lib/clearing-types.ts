@@ -1,5 +1,6 @@
 import { slugify } from "@/lib/slug";
 import clearingTypeTiles from "../../data/clearing-types.json";
+import mapTiles from "../../data/extracted-from-tts/map-tiles.json";
 
 export const CLEARING_TYPES = [
   { id: "plains", label: "Plains" },
@@ -33,7 +34,15 @@ export type ClearingTypeOccurrence = {
   terrain: string;
   side: MapTileSide;
   count: number;
+  imageUrl: string;
   href: string;
+};
+
+type ExtractedMapTile = {
+  name: string;
+  terrain: string;
+  imageUrl: string;
+  imageSecondaryUrl: string;
 };
 
 export type ClearingTypeEntry = {
@@ -131,13 +140,24 @@ function occurrenceFor(
   side: MapTileSide,
   count: number,
 ): ClearingTypeOccurrence {
+  const mapTile = mapTileImageFor(tile);
   return {
     tileName: tile.name,
     terrain: tile.terrain,
     side,
     count,
+    imageUrl:
+      side === "back" && mapTile?.imageSecondaryUrl
+        ? mapTile.imageSecondaryUrl
+        : (mapTile?.imageUrl ?? ""),
     href: mapTileHref({ terrain: tile.terrain, tileName: tile.name, side }),
   };
+}
+
+function mapTileImageFor(tile: ClearingTypeTile) {
+  return (mapTiles as ExtractedMapTile[]).find(
+    (entry) => entry.name === tile.name && entry.terrain === tile.terrain,
+  );
 }
 
 function compareOccurrences(

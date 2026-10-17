@@ -35,6 +35,11 @@
     "back": ["woods", "woods", "woods", "woods", "woods", "mountains"]
   },
   {
+    "name": "Elder Woods",
+    "front": ["plains", "woods", "woods", "woods", "woods", "plains"],
+    "back": ["plains", "woods", "woods", "woods", "woods", "plains"]
+  },
+  {
     "name": "Flatlands",
     "guid": "27f52c",
     "clearings": [{ "clearing": 5, "x": 0.25, "y": -2.05 }]
@@ -43,6 +48,11 @@
     "name": "Moorland",
     "front": ["woods", "plains", "swamp", "swamp", "swamp", "swamp"],
     "back": ["woods", "plains", "swamp", "swamp", "swamp", "swamp"]
+  },
+  {
+    "name": "Mirky Woods",
+    "front": ["plains", "plains", "woods", "woods", "swamp", "woods"],
+    "back": ["plains", "plains", "woods", "woods", "swamp", "woods"]
   },
   {
     "name": "Ravaging Run",
