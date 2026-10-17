@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { SpriteCell } from "@/components/CardSprite";
 import { ClassAdvantageCard } from "@/components/ClassAdvantageCard";
+import { classAbilityName } from "@/components/ClassLink";
 import { RulebookLinks } from "@/components/RulebookLinks";
 import { resolveClassRulebookLinks } from "@/lib/rulebook-links";
-import type { TTSClassTile } from "@/lib/tts";
+import type { TTSCardImage, TTSClassTile } from "@/lib/tts";
 import { getAllClasses, getClassBySlug } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
@@ -25,6 +27,8 @@ export default async function ClassPage({
     slug: entry.slug,
     advantageTitle: ttsClass.advantageTitle,
   });
+  const hasSidebarTile =
+    !ttsClass.advantageCard && Boolean(ttsClass.classToken);
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -39,56 +43,98 @@ export default async function ClassPage({
       </div>
       <h1 className="text-4xl font-bold mt-4 mb-2">{entry.name}</h1>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        {ttsClass.advantageTitle}
+        {classAbilityName(entry.name, ttsClass.advantageTitle)}
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_22rem] gap-10">
-        <div className="space-y-10">
+      <div
+        className={
+          hasSidebarTile
+            ? "grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_22rem]"
+            : "space-y-6"
+        }
+      >
+        <div className="space-y-6">
+          <RulebookLinks links={rulebookLinks} heading={null} />
+
           {ttsClass.advantageCard && (
-            <ClassAdvantageCard
+            <ClassCardImagesBox
               name={ttsClass.advantageTitle}
               card={ttsClass.advantageCard}
-              setup={ttsClass.setup}
             />
           )}
 
-          <RulebookLinks links={rulebookLinks} heading="Rulebook" />
+          {ttsClass.advantageCard && (
+            <ClassAdvantageCard setup={ttsClass.setup} />
+          )}
 
           {ttsClass.classToken && (
             <ClassTileMaterial title="Class Token" tile={ttsClass.classToken} />
           )}
 
           {ttsClass.targetingTokens.length > 0 && (
-            <section>
-              <h2 className="text-xl font-semibold mb-4">Targeting Tokens</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {ttsClass.targetingTokens.map((token, index) => (
-                  <ClassTilePair
-                    key={`${token.imageURL}-${token.imageSecondaryURL}-${index}`}
-                    tile={token}
-                  />
-                ))}
-              </div>
-            </section>
+            <ClassTileMaterialList
+              title="Targeting Tokens"
+              tiles={ttsClass.targetingTokens}
+            />
           )}
         </div>
 
-        <aside className="lg:sticky lg:top-8 self-start">
-          {ttsClass.advantageCard ? (
-            <SpriteCell
-              card={ttsClass.advantageCard}
-              className="w-full border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-sm"
-            />
-          ) : ttsClass.classToken ? (
+        {hasSidebarTile && ttsClass.classToken && (
+          <aside className="lg:sticky lg:top-8 self-start">
             <TileImage
               src={ttsClass.classToken.imageURL}
               alt={`${entry.name} class token`}
               className="w-full"
             />
-          ) : null}
-        </aside>
+          </aside>
+        )}
       </div>
     </main>
+  );
+}
+
+function ClassCardImagesBox({
+  name,
+  card,
+}: {
+  name: string;
+  card: TTSCardImage;
+}) {
+  return (
+    <CollapsibleBox
+      title="Class Card Images"
+      count={2}
+      countLabel="front and back"
+      contentClassName="border-t border-zinc-200 p-4 dark:border-zinc-800"
+    >
+      <div className="grid max-w-3xl grid-cols-1 gap-5 sm:grid-cols-2">
+        <ClassCardImageFigure card={card} name={name} side="front" />
+        <ClassCardImageFigure card={card} name={name} side="back" />
+      </div>
+    </CollapsibleBox>
+  );
+}
+
+function ClassCardImageFigure({
+  card,
+  name,
+  side,
+}: {
+  card: TTSCardImage;
+  name: string;
+  side: "front" | "back";
+}) {
+  return (
+    <figure>
+      <SpriteCell
+        card={card}
+        useBack={side === "back"}
+        className="w-full border border-zinc-200 dark:border-zinc-800 overflow-hidden shadow-sm"
+      />
+      <figcaption className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+        {name} {side}
+      </figcaption>
+    </figure>
   );
 }
 
@@ -100,12 +146,42 @@ function ClassTileMaterial({
   tile: TTSClassTile;
 }) {
   return (
-    <section>
-      <h2 className="text-xl font-semibold mb-4">{title}</h2>
+    <CollapsibleBox
+      title={title}
+      count={2}
+      countLabel="front and back"
+      contentClassName="border-t border-zinc-200 p-4 dark:border-zinc-800"
+    >
       <div className="max-w-3xl">
         <ClassTilePair tile={tile} />
       </div>
-    </section>
+    </CollapsibleBox>
+  );
+}
+
+function ClassTileMaterialList({
+  title,
+  tiles,
+}: {
+  title: string;
+  tiles: TTSClassTile[];
+}) {
+  return (
+    <CollapsibleBox
+      title={title}
+      count={tiles.length}
+      countLabel={`${tiles.length} token${tiles.length === 1 ? "" : "s"} · front and back`}
+      contentClassName="border-t border-zinc-200 p-4 dark:border-zinc-800"
+    >
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        {tiles.map((tile, index) => (
+          <ClassTilePair
+            key={`${tile.imageURL}-${tile.imageSecondaryURL}-${index}`}
+            tile={tile}
+          />
+        ))}
+      </div>
+    </CollapsibleBox>
   );
 }
 

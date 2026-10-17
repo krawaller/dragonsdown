@@ -12,14 +12,14 @@ export function RulebookLinks({
   className = "",
 }: {
   links: RulebookLink[];
-  heading?: string;
+  heading?: string | null;
   className?: string;
 }) {
   if (links.length === 0) return null;
 
   return (
     <section className={`min-w-0 max-w-full overflow-hidden ${className}`}>
-      <h2 className="text-xl font-semibold mb-3">{heading}</h2>
+      {heading && <h2 className="text-xl font-semibold mb-3">{heading}</h2>}
       <div className="min-w-0 space-y-3">
         {links.map((link) => {
           return (
