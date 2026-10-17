@@ -5,7 +5,10 @@
       "target": { "titleRegex": "^Terrain Setup Cards$" },
       "bbox": [316, 76, 801, 578],
       "alt": "Annotated terrain setup card reference",
-      "expectedTexts": ["Terrain Pack", "Merchandise available at this Merchant"]
+      "expectedTexts": [
+        "Terrain Pack",
+        "Merchandise available at this Merchant"
+      ]
     },
     {
       "page": 7,
