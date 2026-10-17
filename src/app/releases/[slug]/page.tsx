@@ -34,10 +34,24 @@ export default async function ReleasePage({
         </Link>
       </div>
 
-      <h1 className="text-4xl font-bold mt-4 mb-2">{release.title}</h1>
-      <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        Version {release.version}
-      </p>
+      <div className="mt-4 mb-8 flex items-start gap-4">
+        {release.iconUrl && (
+          <span className="flex size-16 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={release.iconUrl}
+              alt=""
+              className="block size-full object-contain"
+            />
+          </span>
+        )}
+        <div className="min-w-0">
+          <h1 className="text-4xl font-bold">{release.title}</h1>
+          <p className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+            Version {release.version}
+          </p>
+        </div>
+      </div>
 
       <div className="space-y-6">
         {groups.map((group) => (

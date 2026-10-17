@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76" role="img" aria-label="Core">
+  <defs>
+    <linearGradient id="core-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f82f30" />
+      <stop offset="0.46" stop-color="#b90016" />
+      <stop offset="1" stop-color="#5f0010" />
+    </linearGradient>
+    <radialGradient id="core-gloss" cx="0.42" cy="0.18" r="0.74">
+      <stop offset="0" stop-color="#ff7772" stop-opacity="0.72" />
+      <stop offset="0.38" stop-color="#e42329" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#3a0008" stop-opacity="0" />
+    </radialGradient>
+    <filter id="outer-shadow" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.8" flood-color="#10201e" flood-opacity="0.62" />
+      <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#5f7472" flood-opacity="0.52" />
+    </filter>
+  </defs>
+  <rect width="76" height="76" fill="#fff" fill-opacity="0" />
+  <g filter="url(#outer-shadow)">
+    <text
+      x="37.5"
+      y="64"
+      text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="72"
+      font-weight="900"
+      transform="rotate(-3 38 38) scale(0.94 1.06)"
+      stroke="#101214"
+      stroke-width="10"
+      stroke-linejoin="round"
+      paint-order="stroke fill"
+    >C</text>
+    <text
+      x="37.5"
+      y="64"
+      text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="72"
+      font-weight="900"
+      transform="rotate(-3 38 38) scale(0.94 1.06)"
+      stroke="#4f0008"
+      stroke-width="2"
+      fill="url(#core-fill)"
+      stroke-linejoin="round"
+      paint-order="stroke fill"
+    >C</text>
+    <text
+      x="37.5"
+      y="64"
+      text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="72"
+      font-weight="900"
+      transform="rotate(-3 38 38) scale(0.94 1.06)"
+      fill="url(#core-gloss)"
+    >C</text>
+  </g>
+</svg>

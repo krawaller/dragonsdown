@@ -22,6 +22,7 @@ import {
 type ReleaseData = {
   file: string;
   version: string;
+  icon?: string;
 };
 
 export type ReleaseEntry = {
@@ -31,6 +32,7 @@ export type ReleaseEntry = {
   title: string;
   file: string;
   version: string;
+  iconUrl?: string;
   rulebookHref?: string;
 };
 
@@ -95,6 +97,7 @@ function releaseEntryForSource(
     title: rulebook?.title ?? titleCase(slug),
     file: release.file,
     version: release.version,
+    iconUrl: release.icon,
     rulebookHref: rulebook ? `/${rulebook.slug}` : undefined,
   };
 }

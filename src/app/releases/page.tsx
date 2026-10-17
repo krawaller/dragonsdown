@@ -24,7 +24,21 @@ export default function ReleasesPage() {
             href={`/releases/${release.slug}`}
             className="block rounded-lg border border-zinc-200 px-5 py-4 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
           >
-            <span className="block text-lg font-semibold">{release.title}</span>
+            <span className="flex items-center gap-3">
+              {release.iconUrl && (
+                <span className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={release.iconUrl}
+                    alt=""
+                    className="block size-full object-contain"
+                  />
+                </span>
+              )}
+              <span className="block min-w-0 text-lg font-semibold">
+                {release.title}
+              </span>
+            </span>
             <span className="mt-2 block text-sm text-zinc-500 dark:text-zinc-400">
               Version {release.version}
             </span>
