@@ -452,10 +452,10 @@ function MapTileFace({
                   key={`${clearing.x}-${clearing.y}-${index}`}
                   href={`/clearing-types/${clearingType}`}
                   aria-label={`${tile.name} ${side} ${clearingTypeLabel} clearing`}
-                  className={`${className} group z-10 hover:z-20 hover:scale-105 hover:ring-2 hover:ring-zinc-950/70 focus:outline-none focus:ring-2 focus:ring-zinc-950/80 dark:hover:ring-white/80 dark:focus:ring-white/90`}
+                  className={`${className} group/clearing z-10 hover:z-20 hover:scale-105 hover:ring-2 hover:ring-zinc-950/70 focus:outline-none focus:ring-2 focus:ring-zinc-950/80 dark:hover:ring-white/80 dark:focus:ring-white/90`}
                   style={clearingStyle(clearing)}
                 >
-                  <span className="pointer-events-none absolute bottom-full left-1/2 z-30 mb-2 -translate-x-1/2 whitespace-nowrap rounded bg-zinc-950 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg ring-1 ring-white/20 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100 dark:bg-white dark:text-zinc-950">
+                  <span className="pointer-events-none absolute bottom-full left-1/2 z-30 mb-2 -translate-x-1/2 whitespace-nowrap rounded bg-zinc-950 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg ring-1 ring-white/20 transition-opacity group-hover/clearing:opacity-100 group-focus-visible/clearing:opacity-100 dark:bg-white dark:text-zinc-950">
                     {clearingTypeLabel}
                   </span>
                 </Link>
