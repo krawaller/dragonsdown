@@ -1,12 +1,34 @@
 import Link from "next/link";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
-import { OptionalRuleLinks } from "@/components/OptionalRuleLinks";
+import { RulebookLinks } from "@/components/RulebookLinks";
 import { SiteGrid } from "@/components/SiteGrid";
+import {
+  resolveOptionalRulebookLinks,
+  resolveRulebookLinks,
+} from "@/lib/rulebook-links";
 import { SITE_FACE_URL } from "@/lib/tts";
 import { getAllSites } from "@/lib/tts/lookup";
 
 export default async function SitesPage() {
   const entries = getAllSites();
+  const [siteTokenLinks, wildernessSiteLinks, optionalRulebookLinks] =
+    await Promise.all([
+      resolveRulebookLinks({
+        doc: "core",
+        headings: ["Treasure Site Tokens"],
+      }),
+      resolveRulebookLinks({
+        doc: "core",
+        headings: ["Wilderness tiles:"],
+        title: "Wilderness Site Tokens",
+      }),
+      resolveOptionalRulebookLinks(["Magic Sites", "Watchful Guardians"]),
+    ]);
+  const rulebookLinks = [
+    ...siteTokenLinks,
+    ...wildernessSiteLinks,
+    ...optionalRulebookLinks,
+  ];
   const properSiteEntries = entries.filter((entry) => entry.kind === "proper");
   const wildernessTokenSiteEntries = entries.filter(
     (entry) => entry.kind === "wilderness-token",
@@ -30,10 +52,7 @@ export default async function SitesPage() {
       <p className="text-sm text-zinc-500 mb-8">
         {entries.length} treasure sites from the TTS mod
       </p>
-      <OptionalRuleLinks
-        rules={["Magic Sites", "Watchful Guardians"]}
-        className="mb-8"
-      />
+      <RulebookLinks links={rulebookLinks} heading="Rules" className="mb-8" />
       <div className="space-y-6">
         <CollapsibleBox
           title="Site Token Sites"
