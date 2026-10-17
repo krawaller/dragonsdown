@@ -16,6 +16,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "riverlands",
       "description": "Complete at Mariners",
@@ -44,6 +45,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -73,6 +75,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "mountains",
       "description": "Complete at Keep",
@@ -100,6 +103,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "swamps",
       "rewards": {
@@ -134,6 +138,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "caves",
       "rewards": {
@@ -165,6 +170,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -197,6 +203,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "caves",
       "description": "Complete at Mine",
@@ -225,6 +232,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "swamps",
       "rewards": {
@@ -254,6 +262,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "plains",
       "rewards": {
@@ -281,6 +290,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "mountains",
       "rewards": {
@@ -308,6 +318,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "woods",
       "rewards": {
@@ -337,6 +348,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "woods",
       "rewards": {
@@ -364,6 +376,7 @@
       "ancestry": [
         "Thickets Chips"
       ],
+      "box": "Wildlands",
       "kind": "expedition",
       "terrainPack": "thickets",
       "description": "Complete at Trading Post",
@@ -388,6 +401,7 @@
       "ancestry": [
         "Thickets Chips"
       ],
+      "box": "Wildlands",
       "kind": "quest",
       "terrainPack": "thickets",
       "description": "Complete at Trading Post",
@@ -412,6 +426,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "plains",
       "description": "Complete at Village",
@@ -437,6 +452,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "plains"
     }
@@ -460,6 +476,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -495,6 +512,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "swamps",
       "rewards": {
@@ -522,6 +540,7 @@
       "ancestry": [
         "Hills Chips"
       ],
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "hills",
       "description": "Complete at Guard House",
@@ -548,6 +567,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "deserts",
       "rewards": {
@@ -575,6 +595,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "caves",
       "rewards": {
@@ -604,6 +625,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "atrocity",
       "terrainPack": "neutral",
       "rewards": {
@@ -636,6 +658,7 @@
       "ancestry": [
         "Oasis"
       ],
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "oasis",
       "rewards": {
@@ -665,6 +688,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "deserts",
       "rewards": {
@@ -692,6 +716,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "deserts",
       "description": "Complete at Aurorans",
@@ -719,6 +744,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -755,6 +781,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -787,6 +814,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "mountains",
       "description": "Complete at Keep",
@@ -811,6 +839,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "caves",
       "rewards": {
@@ -841,6 +870,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -874,6 +904,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "swamps",
       "description": "Complete at Wardens",
@@ -898,6 +929,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "plains",
       "rewards": {
@@ -927,6 +959,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "quest",
       "terrainPack": "neutral",
       "rewards": {
@@ -956,6 +989,7 @@
       "ancestry": [
         "Hills Chips"
       ],
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "hills",
       "description": "Complete at Guard House",
@@ -980,6 +1014,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "woods",
       "rewards": {
@@ -1008,6 +1043,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "caves"
     }
@@ -1028,6 +1064,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "woods",
       "description": "Complete at Sanctuary",
@@ -1056,6 +1093,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -1089,6 +1127,7 @@
       "ancestry": [
         "Hills Chips"
       ],
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "hills",
       "description": "Complete at Guards",
@@ -1113,6 +1152,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "mountains",
       "description": "Complete at Keep",
@@ -1137,6 +1177,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "caves",
       "description": "Complete at Mine",
@@ -1162,6 +1203,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "mountains",
       "description": "Complete at Knights",
@@ -1187,6 +1229,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "woods",
       "rewards": {
@@ -1216,6 +1259,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "plains",
       "rewards": {
@@ -1243,6 +1287,7 @@
       "ancestry": [
         "Thickets Chips"
       ],
+      "box": "Wildlands",
       "kind": "quest",
       "terrainPack": "thickets",
       "description": "Complete at Trading Post",
@@ -1267,6 +1312,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "mountains",
       "rewards": {
@@ -1298,6 +1344,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -1330,6 +1377,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "swamps",
       "description": "Complete at Outpost",
@@ -1355,6 +1403,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "mountains",
       "description": "Complete at Knights",
@@ -1383,6 +1432,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "plains",
       "rewards": {
@@ -1413,6 +1463,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "swamps"
     }
@@ -1434,6 +1485,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "caves",
       "description": "Complete at Dwarves",
@@ -1459,6 +1511,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "plains",
       "description": "Complete at Villagers",
@@ -1484,6 +1537,7 @@
       "ancestry": [
         "Thickets Chips"
       ],
+      "box": "Wildlands",
       "kind": "expedition",
       "terrainPack": "thickets",
       "description": "Complete at Hunters",
@@ -1512,6 +1566,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -1543,6 +1598,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "quest",
       "terrainPack": "neutral",
       "rewards": {
@@ -1572,6 +1628,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "kind": "quest",
       "terrainPack": "riverlands",
       "description": "Complete at Port",
@@ -1599,6 +1656,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -1630,6 +1688,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "mountains",
       "rewards": {
@@ -1661,6 +1720,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "mountains",
       "rewards": {
@@ -1689,6 +1749,7 @@
       "ancestry": [
         "Oasis"
       ],
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "oasis",
       "rewards": {
@@ -1716,6 +1777,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "kind": "atrocity",
       "terrainPack": "riverlands",
       "rewards": {
@@ -1747,6 +1809,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "atrocity",
       "terrainPack": "neutral",
       "rewards": {
@@ -1780,6 +1843,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -1816,6 +1880,7 @@
       "ancestry": [
         "Hills Chips"
       ],
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "hills",
       "description": "Complete at Guards",
@@ -1843,6 +1908,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "deserts",
       "rewards": {
@@ -1877,6 +1943,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "woods",
       "rewards": {
@@ -1906,6 +1973,7 @@
       "ancestry": [
         "Hills Chips"
       ],
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "hills",
       "description": "Complete at Guard House",
@@ -1932,6 +2000,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "atrocity",
       "terrainPack": "neutral",
       "rewards": {
@@ -1965,6 +2034,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "plains",
       "rewards": {
@@ -1999,6 +2069,7 @@
       "ancestry": [
         "Oasis"
       ],
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "oasis",
       "rewards": {
@@ -2029,6 +2100,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "deserts",
       "description": "Complete at Medina",
@@ -2055,6 +2127,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "riverlands",
       "description": "Complete at Mariners.\nRemove for co-op modes.",
@@ -2080,6 +2153,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "caves",
       "description": "Complete at Dwarves",
@@ -2104,6 +2178,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "swamps",
       "description": "Complete at Outpost",
@@ -2128,6 +2203,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "caves",
       "description": "Complete at Mine",
@@ -2152,6 +2228,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "woods",
       "description": "Complete at Sanctuary",
@@ -2178,6 +2255,7 @@
       "ancestry": [
         "Oasis"
       ],
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "oasis",
       "description": "Complete at Nomads",
@@ -2202,6 +2280,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "deserts",
       "description": "Complete at Medina",
@@ -2227,6 +2306,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "woods"
     }
@@ -2247,6 +2327,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "plains",
       "description": "Complete at Village",
@@ -2271,6 +2352,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "swamps",
       "description": "Complete at Outpost",
@@ -2295,6 +2377,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "deserts",
       "description": "Complete at Medina",
@@ -2319,6 +2402,7 @@
       "ancestry": [
         "Hills Chips"
       ],
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "hills",
       "rewards": {
@@ -2346,6 +2430,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "woods",
       "rewards": {
@@ -2373,6 +2458,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "swamps",
       "rewards": {
@@ -2400,6 +2486,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "kind": "quest",
       "terrainPack": "riverlands",
       "description": "Complete at Port",
@@ -2427,6 +2514,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "riverlands",
       "rewards": {
@@ -2459,6 +2547,7 @@
       "ancestry": [
         "Thickets Chips"
       ],
+      "box": "Wildlands",
       "kind": "atrocity",
       "terrainPack": "thickets",
       "rewards": {
@@ -2487,6 +2576,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "expedition",
       "terrainPack": "woods",
       "description": "Complete at Priests",
@@ -2511,6 +2601,7 @@
       "ancestry": [
         "Woods Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "woods",
       "description": "Complete at Sanctuary",
@@ -2539,6 +2630,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -2571,6 +2663,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "plains",
       "rewards": {
@@ -2598,6 +2691,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
+      "box": "Dragons Down",
       "kind": "atrocity",
       "terrainPack": "swamps",
       "rewards": {
@@ -2625,6 +2719,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "riverlands",
       "description": "Complete at Port",
@@ -2651,6 +2746,7 @@
       "ancestry": [
         "NATIVES Groups"
       ],
+      "box": "Natives and Legends",
       "kind": "expedition",
       "terrainPack": "neutral",
       "rewards": {
@@ -2683,6 +2779,7 @@
       "ancestry": [
         "Hills Chips"
       ],
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "hills",
       "rewards": {
@@ -2712,6 +2809,7 @@
       "ancestry": [
         "Plains Chips"
       ],
+      "box": "Dragons Down",
       "kind": "quest",
       "terrainPack": "plains",
       "description": "Complete at Village",

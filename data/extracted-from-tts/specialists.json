@@ -3,6 +3,7 @@
     {
       "source": "dd_all_exp",
       "name": "Broom Hand",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "H",
       "basePrice": "2 Gold",
@@ -20,6 +21,7 @@
     {
       "source": "dd_all_exp",
       "name": "Chanter",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "C",
       "basePrice": "3 Gold",
@@ -37,6 +39,7 @@
     {
       "source": "dd_all_exp",
       "name": "City Mancer",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "D",
       "basePrice": "3 Gold",
@@ -54,6 +57,7 @@
     {
       "source": "dd_all_exp",
       "name": "Curator",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "N",
       "basePrice": "5 Gold",
@@ -71,6 +75,7 @@
     {
       "source": "dd_all_exp",
       "name": "Earth Mover",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "T",
       "basePrice": "3 Gold",
@@ -88,6 +93,7 @@
     {
       "source": "dd_all_exp",
       "name": "Fencer",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "T",
       "basePrice": "3 Gold",
@@ -105,6 +111,7 @@
     {
       "source": "dd_all_exp",
       "name": "Gate Mage",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "D",
       "basePrice": "2 Gold",
@@ -122,6 +129,7 @@
     {
       "source": "dd_all_exp",
       "name": "Healer",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "S",
       "basePrice": "1 Gold per cube",
@@ -139,6 +147,7 @@
     {
       "source": "dd_all_exp",
       "name": "Magus",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "N",
       "basePrice": "3 Gold + the Spell's Price",
@@ -156,6 +165,7 @@
     {
       "source": "dd_all_exp",
       "name": "Pathfinder",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "R",
       "basePrice": "2 Gold",
@@ -173,6 +183,7 @@
     {
       "source": "dd_all_exp",
       "name": "Telecrafter",
+      "box": "Wildlands",
       "attribute": "Lowest",
       "tokenCode": "M",
       "basePrice": "3 Gold",

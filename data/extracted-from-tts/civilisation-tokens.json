@@ -11,6 +11,7 @@
         "count": 2
       }
     ],
+    "box": "Natives and Legends",
     "gmNotes": "empty"
   },
   {
@@ -25,6 +26,7 @@
         "count": 1
       }
     ],
+    "box": "Natives and Legends",
     "gmNotes": "merchants",
     "name": "Armorer",
     "attribute": "Charisma"
@@ -41,6 +43,7 @@
         "count": 1
       }
     ],
+    "box": "Natives and Legends",
     "gmNotes": "merchants",
     "name": "Fortune Teller",
     "attribute": "Cunning"
@@ -57,6 +60,7 @@
         "count": 1
       }
     ],
+    "box": "Natives and Legends",
     "gmNotes": "merchants",
     "name": "Mystic",
     "attribute": "Smallest Attribute"
@@ -73,6 +77,7 @@
         "count": 1
       }
     ],
+    "box": "Natives and Legends",
     "gmNotes": "merchants",
     "name": "Peddler",
     "attribute": "Wisdom"
@@ -89,6 +94,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "empty",
     "terrainPack": "Cruel Caves"
   },
@@ -104,6 +110,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "merchants",
     "name": "Astrologer",
     "attribute": "Wisdom",
@@ -121,6 +128,7 @@
         "count": 2
       }
     ],
+    "box": "Desolation",
     "gmNotes": "empty",
     "terrainPack": "Dreadful Deserts"
   },
@@ -136,6 +144,7 @@
         "count": 1
       }
     ],
+    "box": "Desolation",
     "gmNotes": "merchants",
     "name": "Herbalist",
     "attribute": "Wisdom",
@@ -153,6 +162,7 @@
         "count": 1
       }
     ],
+    "box": "Desolation",
     "gmNotes": "merchants",
     "name": "Silk Dealer",
     "attribute": "Cunning",
@@ -170,6 +180,7 @@
         "count": 1
       }
     ],
+    "box": "Desolation",
     "gmNotes": "empty",
     "terrainPack": "Hostile Hills"
   },
@@ -185,6 +196,7 @@
         "count": 1
       }
     ],
+    "box": "Desolation",
     "gmNotes": "merchants",
     "name": "Outfitter",
     "attribute": "Charisma",
@@ -202,6 +214,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "empty",
     "terrainPack": "Malevolent Mountains"
   },
@@ -217,6 +230,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "merchants",
     "name": "Scholar",
     "attribute": "Cunning",
@@ -234,6 +248,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "merchants",
     "name": "Smuggler",
     "attribute": "Smallest Attribute",
@@ -251,6 +266,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "merchants",
     "name": "Vendor",
     "attribute": "Charisma",
@@ -268,6 +284,7 @@
         "count": 1
       }
     ],
+    "box": "Eastern Reaches",
     "gmNotes": "empty",
     "terrainPack": "Ruthless Riverlands"
   },
@@ -283,6 +300,7 @@
         "count": 1
       }
     ],
+    "box": "Eastern Reaches",
     "gmNotes": "merchants",
     "name": "Foreigner",
     "attribute": "Charisma",
@@ -300,6 +318,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "empty",
     "terrainPack": "Sinister Swamps"
   },
@@ -315,6 +334,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "merchants",
     "name": "Artificer",
     "attribute": "Wisdom",
@@ -332,6 +352,7 @@
         "count": 2
       }
     ],
+    "box": "Wildlands",
     "gmNotes": "empty",
     "terrainPack": "Tangled Thickets"
   },
@@ -347,6 +368,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "merchants",
     "name": "Crone",
     "attribute": "Cunning",
@@ -364,6 +386,7 @@
         "count": 1
       }
     ],
+    "box": "Dragons Down",
     "gmNotes": "merchants",
     "name": "Smith",
     "attribute": "Charisma",

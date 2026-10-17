@@ -37,6 +37,8 @@ export type TTSCardImage = {
    * disambiguating cards by their physical location in the TTS save.
    */
   ancestry?: string[];
+  /** Product box inferred from the top-level TTS container ancestry. */
+  box?: string;
 };
 
 /** Output written to data/extracted-from-tts/cards.json. Keyed by normalized `Nickname`. */
@@ -111,6 +113,7 @@ export type TTSTreasureCard = TTSCardImage & {
   cardLinks?: TTSTreasureCardLink[];
   copies: number;
   locations: { ancestry: string[]; count: number }[];
+  box?: string;
 };
 
 /** Output written to data/treasures.json. Keyed by normalized `Nickname`. */
@@ -306,6 +309,7 @@ export type TTSClassTile = {
   imageSecondaryURL: string;
   ancestry: string[];
   gmNotes?: string;
+  box?: string;
 };
 
 export type TTSClassSetupItem = {
@@ -357,6 +361,7 @@ export type ClassIndex = Record<string, TTSClass[]>;
 export type TTSSpecialist = {
   source: string;
   name: string;
+  box?: string;
   attribute?: string;
   tokenCode?: string;
   basePrice?: string;
@@ -497,6 +502,7 @@ export type TTSCivilisationToken = {
   imageURL: string;
   imageSecondaryURL: string;
   locations: { ancestry: string[]; count: number }[];
+  box?: string;
   gmNotes?: string;
   name?: string;
   attribute?: string;
@@ -507,6 +513,7 @@ export type TTSCivilisationToken = {
 export type TTSBoard = {
   source: string;
   terrain: string;
+  box?: string;
   terrainPack?: string;
   imageURL: string;
   imageSecondaryURL: string;
@@ -524,6 +531,7 @@ export type TTSSite = {
   imageURL: string;
   imageSecondaryURL: string;
   ancestry: string[];
+  box?: string;
   terrainPack?: string;
   /** GMNotes string from the TTS tile, often a small numeric tag. */
   gmNotes?: string;
@@ -550,6 +558,7 @@ export type TTSCivLocation = {
   source: string;
   imageURL: string;
   ancestry: string[];
+  box?: string;
   terrainPack?: string;
 };
 
@@ -772,6 +781,7 @@ export const WILDERNESS_TOKEN_FRONT_METADATA: Record<
 export type TTSWildernessToken = {
   source: string;
   terrain: string;
+  box?: string;
   terrainPack?: string;
   name?: string;
   clearing?: number;
@@ -791,6 +801,7 @@ export type BoardIndex = TTSBoard[];
 export type TTSMapTile = {
   name: string;
   terrain: string;
+  box?: string;
   imageUrl: string;
   imageSecondaryUrl: string;
   clearings: { x: number; y: number }[];
@@ -1861,10 +1872,76 @@ const LEGENDARY_TREASURE_NAMES = new Set(
 );
 
 function itemBoxFromAncestry(ancestry: string[]): string {
-  const itemBag = ancestry[0]?.trim().toLowerCase() ?? "";
-  if (itemBag.includes("desolation")) return "Desolation";
-  if (itemBag === "horses") return "Eastern Reaches";
-  return "Dragons Down";
+  return boxFromAncestry(ancestry) ?? "Dragons Down";
+}
+
+function boxFromAncestry(ancestry: string[]): string | undefined {
+  for (const nickname of ancestry) {
+    const box = boxForContainerNickname(nickname);
+    if (box) return box;
+  }
+  return undefined;
+}
+
+function boxForContainerNickname(nickname: string): string | undefined {
+  const normalized = nickname.trim().toLowerCase().replace(/\s+/g, " ");
+  if (!normalized) return undefined;
+  if (normalized.includes("desolation")) return "Desolation";
+  if (normalized.includes("wildlands")) return "Wildlands";
+  if (normalized.includes("eastern")) return "Eastern Reaches";
+  if (normalized.includes("natives")) return "Natives and Legends";
+  if (normalized.includes("dragons down") || normalized.includes("core")) {
+    return "Dragons Down";
+  }
+
+  switch (normalized) {
+    case "horses":
+    case "legends eastern":
+    case "ruthless riverlands":
+    case "riverlands chips":
+    case "riverlands tiles":
+    case "headwaters tile":
+    case "port":
+    case "medina":
+    case "consul":
+      return "Eastern Reaches";
+    case "dreadful deserts":
+    case "deserts chips":
+    case "hostile hills":
+    case "hills chips":
+    case "oasis":
+    case "guardhouse":
+      return "Desolation";
+    case "tangled thickets":
+    case "thickets chips":
+    case "thickets treasure":
+    case "specialists":
+    case "weather":
+      return "Wildlands";
+    case "cruel caves":
+    case "caves chips":
+    case "perilous plains":
+    case "plains chips":
+    case "malevolent mountains":
+    case "mountains chips":
+    case "sinister swamps":
+    case "swamps chips":
+    case "wicked woods":
+    case "woods chips":
+    case "legends cards":
+    case "legends tokens":
+    case "campfire":
+    case "inn":
+    case "encampment":
+    case "keep":
+    case "mine":
+    case "village":
+    case "outpost":
+    case "sanctuary":
+      return "Dragons Down";
+    default:
+      return undefined;
+  }
 }
 
 function isLegendaryContainer(name: string | undefined): boolean {
@@ -2479,14 +2556,18 @@ export function extractChips(root: unknown, source: string): ChipIndex {
     );
     if (existing) {
       addToLocations(existing.locations, ancestry);
+      existing.box ??= boxFromAncestry(ancestry);
     } else {
-      bucket.push({
+      const entry: TTSChip = {
         source,
         group: gm,
         imageURL,
         imageSecondaryURL,
         locations: [{ ancestry, count: 1 }],
-      });
+      };
+      const box = boxFromAncestry(ancestry);
+      if (box) entry.box = box;
+      bucket.push(entry);
     }
   }
   return index;
@@ -2552,6 +2633,8 @@ export function extractSites(root: unknown, source: string): SiteIndex {
       imageSecondaryURL: site.CustomImage.ImageSecondaryURL ?? "",
       ancestry,
     };
+    const box = boxFromAncestry(ancestry);
+    if (box) entry.box = box;
     if (terrainPack) entry.terrainPack = terrainPack;
     const gm = (site.GMNotes ?? "").trim();
     if (gm) entry.gmNotes = gm;
@@ -2606,12 +2689,15 @@ export function extractCivLocations(
     if (!isCivLocationNickname(nick)) continue;
     const key = normalizeTitle(nick);
     const terrainPack = terrainPackForAncestry(ancestry);
-    (index[key] ??= []).push({
+    const entry: TTSCivLocation = {
       source,
       imageURL: obj.CustomImage.ImageURL ?? "",
       ancestry,
-      ...(terrainPack ? { terrainPack } : {}),
-    });
+    };
+    const box = boxFromAncestry(ancestry);
+    if (box) entry.box = box;
+    if (terrainPack) entry.terrainPack = terrainPack;
+    (index[key] ??= []).push(entry);
   }
   return index;
 }
@@ -3634,10 +3720,12 @@ function civilisationTokenFor(
     imageSecondaryURL,
     locations: [{ ancestry, count: 1 }],
   };
+  const box = boxFromAncestry(ancestry);
   const gmNotes = text(obj.GMNotes);
   const name = text(obj.Description);
   const attribute = attributeFromCivilisationTokenNickname(text(obj.Nickname));
   const terrain = terrainPackForAncestry(ancestry);
+  if (box) token.box = box;
   if (gmNotes) token.gmNotes = gmNotes;
   if (name) token.name = name;
   if (attribute) token.attribute = attribute;
@@ -3664,9 +3752,11 @@ function specialistFor(
   if (!name) return null;
 
   const parsedRule = specialistRule(text(obj.Description));
+  const box = boxFromAncestry(ancestry);
   return {
     source,
     name,
+    ...(box ? { box } : {}),
     ...(nameMatch ? { attribute: normalizeTitle(nameMatch[2]) } : {}),
     ...(text(obj.GMNotes) ? { tokenCode: text(obj.GMNotes) } : {}),
     ...parsedRule,
@@ -3782,11 +3872,14 @@ export function extractWildernessTokens(
         if (existing) {
           applyWildernessTokenMetadata(existing, metadata);
           addToLocations(existing.locations, ancestry);
+          existing.box ??= boxFromAncestry(ancestry);
           addNickname(existing, nickname);
         } else {
+          const box = boxFromAncestry(ancestry);
           const entry: TTSWildernessToken = {
             source,
             terrainPack: terrain,
+            ...(box ? { box } : {}),
             imageURL,
             imageSecondaryURL,
             locations: [{ ancestry, count: 1 }],
@@ -3939,13 +4032,25 @@ function mapTileFor(
   const imageSecondaryUrl = text(customImage.ImageSecondaryURL);
   if (!guid || !name || !imageUrl || !imageSecondaryUrl) return null;
 
+  const box = boxFromMapTileAncestors(ancestors);
   return {
     name,
     terrain: terrainForMapTile(parentBag.nickname),
+    ...(box ? { box } : {}),
     imageUrl,
     imageSecondaryUrl,
     clearings,
   };
+}
+
+function boxFromMapTileAncestors(
+  ancestors: MapTileAncestor[],
+): string | undefined {
+  return boxFromAncestry(
+    ancestors.flatMap((ancestor) =>
+      ancestor.nickname ? [ancestor.nickname] : [],
+    ),
+  );
 }
 
 function extractClearingOffsets(
@@ -4175,6 +4280,8 @@ function imageFor(
     out.tags = [...card.Tags].sort();
   }
   if (ancestry.length > 0) out.ancestry = ancestry;
+  const box = boxFromAncestry(ancestry);
+  if (box) out.box = box;
   return out;
 }
 

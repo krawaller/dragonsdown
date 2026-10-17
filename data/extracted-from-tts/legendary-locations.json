@@ -15,7 +15,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "A hero that has found the Adventurer's Corpse may approach the corpse as one of their actions during their turn. Upon approaching the corpse, complete the following steps. - Shuffle the Holdfast Leathers and the Skull Splitter legendary treasure cards together with any deep treasure cards that are in the site containing the Adventurer's Corpse. Place the shuffled deep treasure cards on top of any treasure cards in the treasure site. The site is looted per normal rules. - The hero receives one random curse. - Remove the Adventurer's Corpse legendary location card and token from the game.",
       "treasureSetup": {
@@ -34,7 +35,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "LEGENDS Cards"
-              ]
+              ],
+              "box": "Dragons Down"
             }
           },
           {
@@ -50,7 +52,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "LEGENDS Cards"
-              ]
+              ],
+              "box": "Dragons Down"
             }
           }
         ]
@@ -88,7 +91,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "A hero that has found the arcanis enigma may attempt to solve the puzzle as one of their actions during their turn. Roll the 2 haggle dice. - If either die shows a closed door, the hero receives one random curse and the attempt fails. - If the hero rolls higher than their cunning, the attempt fails, but the hero suffers no consequences. - If the hero rolls less than or equal to their cunning, the attempt succeeds. -- If the map tile is not enchanted with both blue and purple cubes, flip the map tile and enchant it with both blue and purple magic cubes. -- If the map tile is already enchanted with both blue and purple cubes when a success is rolled, the hero receives the Mageshift Medalion. Remove the Arcanis Engima legendary location card and token from the game.",
       "rewards": {
@@ -106,7 +110,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "LEGENDS Cards"
-              ]
+              ],
+              "box": "Dragons Down"
             }
           }
         ]
@@ -139,7 +144,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "When the Cavernous Pit is first revealed, draw two cards from the deep treasure pile and place them on top of the Cavernous Pit legendary location card.A hero that has found the Cavernous Pit may attempt to climb into the pit as one of their actions during their turn. The player places cubes to fill attack speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.- If either die shows a closed door, the hero receives one wound.- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.- If the hero rolls less than or equal to their dexterity, the attempt succeeds.-- Draw one deep treasure card from the Cavernous Pit card.-- If the final deep treasure card is drawn from the Cavernous Pit, remove the Cavernous Pit legendary location card and token from the game.",
       "treasureSetup": {
@@ -173,7 +179,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "When the Collapsed Passage is first revealed, draw two cards from the deep treasure pile and place them on top of the Collapsed Passage legendary location card. A hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 haggle dice and compare the result to the number of might cubes in the hero's healthy box. - If either die shows a closed door, the hero receives one wound. - If the hero rolls higher than their might cubes, the attempt fails, but the hero suffers no consequences. - If the hero rolls less than or equal to their might cubes, the attempt succeeds. -- Draw one deep treasure card from the Collapsed Passage card. -- If the final deep treasure card is drawn from the Collapsed Passage, remove the legendary location card and token from the game.",
       "treasureSetup": {
@@ -207,7 +214,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "When the Grave of the Champion is first revealed, draw one card from the deep treasure pile and shuffle it together with the Champion's Plate and Champion's Blade legendary treasure cards. Place these cards on top of the Grave of the Champion legendary location card.Once found, heroes may use a loot action to loot the Grave of the Champion as they would any other treasure site. When looting the Grave of the Champion, a loot roll of 5 on either loot die causes the hero to receive a random curse",
       "treasureSetup": {
@@ -226,7 +234,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "LEGENDS Cards"
-              ]
+              ],
+              "box": "Dragons Down"
             }
           },
           {
@@ -242,7 +251,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "LEGENDS Cards"
-              ]
+              ],
+              "box": "Dragons Down"
             }
           }
         ]
@@ -275,7 +285,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "A hero that has found the Infernal Glyphs may attempt to read the glyphs as one of their actions during their turn. Roll the 2 learn spells dice and compare the results to the Infernal Glyphs card. Apply any benefits that would normally apply when learning spells (lineage and class advantages, treasures, spells, etc.). - If both dice show curse symbols, roll both of the numbered summoning dice and summon a number of wandering monsters equal to the gray die and a number of local monsters equal to the black die to the hero's clearing. Monsters already in the map tile do not move. Arriving monsters will attempt to block the hero immediately.- If one die shows a curse symbol, but the other does not, the hero receives one random curse.- If the hero rolls two spell book symbols, the attempt succeeds.-- If the map tile is not enchanted with both a black and gray cube, flip the map tile and enchant it with a black and a gray cube.-- If the map tile is already enchanted with both a black and gray cube when a success is rolled, draw 3 cards from the top of the spell deck and look at them. The player may select any one spell from those drawn and learn it, earning the reward for learning a spell. The hero must be able to learn the selected spell. Shuffle all spells not learned back into the spells deck.- A hero taking subsequent read the glyphs actions on the same turn after a failed attempt does not need to reroll dice that show spell book symbols.The Infernal Glyphs are a site, and thus permanent. There is no limit to the number of times a hero may attempt to read the glyphs.",
       "rewards": {
@@ -311,7 +322,8 @@
         "uniqueBack": false,
         "ancestry": [
           "Legends EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "rewards": {
         "namedTreasures": [
@@ -328,7 +340,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "Legends EASTERN"
-              ]
+              ],
+              "box": "Eastern Reaches"
             }
           }
         ]
@@ -362,7 +375,8 @@
         "uniqueBack": false,
         "ancestry": [
           "Legends EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "treasureSetup": {
         "deepTreasureCards": 4
@@ -396,7 +410,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "A hero that has found the Riddle of the Imp may attempt to solve the riddle as one of their actions during their turn. Roll the 2 haggle dice.- If both dice show a closed door, the imp monster chip is placed in the clearing and the imp blocks the hero, even if the hero was hidden. -- During the combat phase, the imp will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.-- If this hero is killed, the imp is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.-- A hero that kills the imp receives the fame value as normal. If killed, the imp chip is taken as a reward and the Riddle of the Imp legendary location card and token is removed from the game.-- If combat ends in the round, the imp chip is returned to the chip tray.- If the hero rolls higher than their wisdom, the hero receives one random curse.- If the hero rolls less than or equal to their wisdom, the attempt succeeds.-- If the map tile is not enchanted with both yellow and another cube, flip the map tile and enchant it with a yellow cube and a magic cube of the players choice (other than yellow).-- If the map tile is already enchanted with both yellow and another cube when a success is rolled, the hero takes the imp chip as a reward and earns the indicated fame value. In addition, the hero may choose any magic cube they wish and places it in their healthy box. Remove the Riddle of the Imp legendary location card and token from the game.",
       "rewards": {
@@ -446,7 +461,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "When the Spellcaster's Simulacrum is first revealed, draw one card from the deep treasure pile and shuffle it together with the Eternium Grimoire and Arcane Sword legendary treasure cards. Place these cards on top of the Spellcaster's Simulacrum legendary location card.Once found, heroes may use a loot action to loot the Spellcaster's Simulacrum as they would any other treasure site. If a hero rolls a 5 on either loot die, they receive a random curse.",
       "treasureSetup": {
@@ -465,7 +481,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "LEGENDS Cards"
-              ]
+              ],
+              "box": "Dragons Down"
             }
           },
           {
@@ -481,7 +498,8 @@
               "uniqueBack": false,
               "ancestry": [
                 "LEGENDS Cards"
-              ]
+              ],
+              "box": "Dragons Down"
             }
           }
         ]
@@ -514,7 +532,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "A hero that has found the Statue of the Templar may attempt to awaken the statue as one of their actions during their turn. Roll the 2 haggle dice.- If both dice show a closed door, the statue monster chip is placed in the clearing and the statue blocks the hero, even if the hero was hidden.-- During the combat phase, the statue will act like a normal monster, except it will challenge and target this hero in all combat rounds, even if other heroes or hired natives are present. If using the optional luring rules, it cannot be lured.-- If this hero is killed, the statue is immediately removed from the map and returned to the chip tray, even in the middle of a combat round.-- A hero that kills the statue receives the fame value as normal. If killed, the statue chip is taken as a reward and the Statue of the Templar legendary location card and token is removed from the game.-- If combat ends in the round, the statue chip is returned to the chip tray.- If one die shows a closed door, the hero receives one random curse.- If the hero rolls higher than their charisma, the attempt fails.- If the hero rolls less than or equal to their charisma, the attempt succeeds.-- If the map tile is not enchanted with both white and green cubes, flip the map tile and enchant it with both white and green cubes.-- If the map tile is already enchanted with both white and green cubes when a success is rolled, the hero takes the statue chip as a hired native at no cost. The statue has an infinite hire term. All other hired natives rules apply (page 3). Remove the Statue of the Templar legendary location card and token from the game.",
       "rewards": {
@@ -563,7 +582,8 @@
         "uniqueBack": false,
         "ancestry": [
           "LEGENDS Cards"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "description": "When the Treacherous Ledge is first revealed, draw two cards from the deep treasure pile and place them on top of the Treacherous Ledge legendary location card. A hero that has found the Treacherous Ledge may attempt to cross the ledge as one of their actions during their turn. The player places cubes to fill maneuver speed boxes on their lineage, class, and treasure cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The hero rolls the 2 haggle dice.- If either die shows a closed door, the hero receives one wound.- If the hero rolls higher than their dexterity, the attempt fails, but the hero suffers no consequences.- If the hero rolls less than or equal to their dexterity, the attempt succeeds.-- Draw one deep treasure card from the Treacherous Ledge card.-- If the final deep treasure card is drawn from the Treacherous Ledge, remove the legendary location card and token from the game.",
       "treasureSetup": {

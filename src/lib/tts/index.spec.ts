@@ -383,6 +383,7 @@ describe("extractClasses", () => {
             col: 0,
             uniqueBack: false,
             ancestry: ["Class DRAGONS DOWN"],
+            box: "Dragons Down",
           },
           classToken: {
             source: "dd_all_exp",
@@ -527,6 +528,7 @@ describe("extractClasses", () => {
             col: 0,
             uniqueBack: false,
             ancestry: ["Class WILDLANDS"],
+            box: "Wildlands",
           },
           classToken: {
             source: "dd_all_exp",
@@ -1320,6 +1322,7 @@ describe("extractChips", () => {
       {
         source: "wildlands",
         group: "Reavers",
+        box: "Desolation",
         imageURL: "reaver-front.png",
         imageSecondaryURL: "reaver-back.png",
         locations: [{ ancestry: ["Hills Chips"], count: 1 }],
@@ -1541,6 +1544,7 @@ describe("extractSites", () => {
         imageURL: SITE_FACE_URL,
         imageSecondaryURL: "art-grotto.png",
         ancestry: ["Sinister SWAMPS"],
+        box: "Dragons Down",
         terrainPack: "Sinister Swamps",
         gmNotes: "6",
       },
@@ -1595,7 +1599,12 @@ describe("extractCivLocations", () => {
     const out = extractCivLocations(save, "eastern");
     expect(Object.keys(out).sort()).toEqual(["Campfire", "Inn"]);
     expect(out["Campfire"]).toEqual([
-      { source: "eastern", imageURL: "fire.png", ancestry: ["Campfire"] },
+      {
+        source: "eastern",
+        imageURL: "fire.png",
+        ancestry: ["Campfire"],
+        box: "Dragons Down",
+      },
     ]);
   });
 
@@ -1629,6 +1638,7 @@ describe("extractCivLocations", () => {
         source: "eastern",
         imageURL: "oasis.png",
         ancestry: ["Oasis"],
+        box: "Desolation",
         terrainPack: "Dreadful Deserts",
       },
     ]);
@@ -1739,6 +1749,7 @@ describe("extractCivilisationTokens", () => {
         gmNotes: "merchants",
         name: "Astrologer",
         attribute: "Wisdom",
+        box: "Dragons Down",
         terrainPack: "Cruel Caves",
         locations: [{ ancestry: ["Cruel CAVES"], count: 1 }],
       },
@@ -2591,6 +2602,7 @@ describe("extractSpecialists", () => {
           name: "Broom Hand",
           attribute: "Charisma",
           tokenCode: "H",
+          box: "Wildlands",
           basePrice: "2 Gold",
           startingPrice: "6 Gold",
           rule: "Fly to an adjacent Map Tile without spending a Move Action.",

@@ -27,7 +27,8 @@
       ],
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Adventurers Corpse": [
@@ -42,7 +43,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Adventurers Toolkit": [
@@ -57,7 +59,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Aegis of Radiance": [
@@ -72,7 +75,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Affliction": [
@@ -99,7 +103,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Air Sword": [
@@ -126,7 +131,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Alchemists mixture": [
@@ -160,7 +166,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Alpiner": [
@@ -178,7 +185,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Amaranth of Action": [
@@ -193,7 +201,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Amber Spire": [
@@ -208,7 +217,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Ancient Map": [
@@ -223,7 +233,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Anti-Magic": [
@@ -250,7 +261,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Arcane Bond": [
@@ -265,7 +277,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Arcane Sword": [
@@ -280,7 +293,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Arcanis Engima": [
@@ -295,7 +309,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Archer (Steady)": [
@@ -310,7 +325,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Artifacts": [
@@ -331,7 +347,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Artificers Concoction": [
@@ -346,7 +363,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -383,7 +401,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Auroran (Desert Born)": [
@@ -398,7 +417,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -411,7 +431,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -424,7 +445,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -437,7 +459,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Band of Sagacity": [
@@ -469,7 +492,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Banner of Legitimacy": [
@@ -484,7 +508,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Banner of the Brigands": [
@@ -499,7 +524,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Barbarian (Mountain Lore)": [
@@ -514,7 +540,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Bard (Musical)": [
@@ -529,7 +556,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Bards Bouzouki": [
@@ -544,7 +572,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Bashkirian Tools": [
@@ -566,7 +595,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Bashkirs": [
@@ -581,7 +611,8 @@
       "uniqueBack": true,
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Bat Hawker": [
@@ -599,7 +630,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Baton of the Lost Prince": [
@@ -614,7 +646,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Battle Axe": [
@@ -632,7 +665,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Battle Mage (Power)": [
@@ -647,7 +681,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Battle Staff": [
@@ -693,7 +728,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Beastmaster (Faunamancy)": [
@@ -708,7 +744,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Bejeweled Breastplate": [
@@ -783,7 +820,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Betrayer": [
@@ -801,7 +839,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Black Follower": [
@@ -819,7 +858,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Black Knight (Feared)": [
@@ -834,7 +874,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Blade of the Scorpion": [
@@ -849,7 +890,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Blood Offerer": [
@@ -867,7 +909,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Body Parts": [
@@ -887,7 +930,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Book of Eternal Sand": [
@@ -902,7 +946,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Boots of Displacement": [
@@ -917,7 +962,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Bow of the Hunt": [
@@ -971,7 +1017,8 @@
       ],
       "ancestry": [
         "Thickets Chips"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Break Spells": [
@@ -1004,7 +1051,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Brigand (Brotherhood)": [
@@ -1019,7 +1067,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Broche of Deflection": [
@@ -1046,7 +1095,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Buckler": [
@@ -1064,7 +1114,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Bug Buster": [
@@ -1082,7 +1133,8 @@
       ],
       "ancestry": [
         "Thickets Chips"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Burgess (Shrewd)": [
@@ -1097,7 +1149,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Burrow Kings Thing": [
@@ -1112,7 +1165,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Calm": [
@@ -1139,7 +1193,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -1152,7 +1207,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Cape of Alteration": [
@@ -1179,7 +1235,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Caustic Blast": [
@@ -1194,7 +1251,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Cavernous Pit": [
@@ -1209,7 +1267,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Centaur Scourge": [
@@ -1227,7 +1286,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Chainmail": [
@@ -1245,7 +1305,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Chameleon Creme": [
@@ -1260,7 +1321,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Champions Blade": [
@@ -1275,7 +1337,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Champions Plate": [
@@ -1290,7 +1353,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Charismagic": [
@@ -1305,7 +1369,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Charismatic Gemstone": [
@@ -1344,7 +1409,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Clashing Ring": [
@@ -1377,7 +1443,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Cleric (Divine Protection)": [
@@ -1392,7 +1459,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Clodpoll Club": [
@@ -1407,7 +1475,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Clothing": [
@@ -1426,7 +1495,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Clouds": [
@@ -1447,7 +1517,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -1466,7 +1537,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Codex of Cognition": [
@@ -1481,7 +1553,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Coin of Passage": [
@@ -1496,7 +1569,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Cold": [
@@ -1516,7 +1590,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Collapsed Passage": [
@@ -1531,7 +1606,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Confuse": [
@@ -1558,7 +1634,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Consul": [
@@ -1573,7 +1650,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Consul"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Cool": [
@@ -1594,7 +1672,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Coronet of the Lost Prince": [
@@ -1609,7 +1688,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Corrupted": [
@@ -1630,7 +1710,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Counterplay": [
@@ -1645,7 +1726,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Crafting Gear": [
@@ -1666,7 +1748,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Crossbow": [
@@ -1699,7 +1782,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Cult Breaker": [
@@ -1717,7 +1801,8 @@
       ],
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Curio of Conjuration": [
@@ -1732,7 +1817,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Fay": [
@@ -1747,7 +1833,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Maneuver": [
@@ -1762,7 +1849,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Might": [
@@ -1777,7 +1865,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Nature": [
@@ -1792,7 +1881,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Power": [
@@ -1807,7 +1897,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Righteousness": [
@@ -1822,7 +1913,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of the Black Arts": [
@@ -1837,7 +1929,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Tricks": [
@@ -1852,7 +1945,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curio of Wizardry": [
@@ -1867,7 +1961,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Curse": [
@@ -1900,7 +1995,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -1917,7 +2013,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Cursed Axe": [
@@ -1932,7 +2029,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Cursed Threads": [
@@ -1952,7 +2050,8 @@
       ],
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Cursed Treasure": [
@@ -1967,7 +2066,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -1980,7 +2080,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -1993,7 +2094,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -2006,7 +2108,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -2054,7 +2157,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Dagger of Bite": [
@@ -2081,7 +2185,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Dark Matter": [
@@ -2114,7 +2219,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Dark Presence": [
@@ -2129,7 +2235,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Dark Worshipper": [
@@ -2147,7 +2254,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Dastanas of the Scorpion": [
@@ -2162,7 +2270,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Decapitator": [
@@ -2182,7 +2291,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Decayed (Duality Vale)": [
@@ -2197,7 +2307,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Decimation": [
@@ -2227,7 +2338,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -2245,7 +2357,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Dervish (Whirling Strike)": [
@@ -2260,7 +2373,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Desert Avenger": [
@@ -2280,7 +2394,8 @@
       ],
       "ancestry": [
         "Oasis"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Desert Marauder": [
@@ -2298,7 +2413,8 @@
       ],
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Desert Water": [
@@ -2316,7 +2432,8 @@
       ],
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Detrium": [
@@ -2337,7 +2454,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Diggers Ruin": [
@@ -2364,7 +2482,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Discord": [
@@ -2427,7 +2546,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Diviner of Vourdanos": [
@@ -2442,7 +2562,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Doppelganger": [
@@ -2457,7 +2578,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Down Payment": [
@@ -2479,7 +2601,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Dragon Slayer": [
@@ -2497,7 +2620,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Dreamlike": [
@@ -2518,7 +2642,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -2534,7 +2659,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Druid (Natural Emanation)": [
@@ -2549,7 +2675,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Drums of the Stampede": [
@@ -2564,7 +2691,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Duelist (Parry)": [
@@ -2579,7 +2707,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Duffel of Displacement": [
@@ -2594,7 +2723,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Dust of Destiny": [
@@ -2666,7 +2796,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Dwarves": [
@@ -2681,7 +2812,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Earthen Cincture": [
@@ -2708,7 +2840,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Eldritch Goods": [
@@ -2729,7 +2862,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Elemental": [
@@ -2822,7 +2956,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Elven Helm": [
@@ -2837,7 +2972,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Elven Shield": [
@@ -2852,7 +2988,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Elven Slippers": [
@@ -2879,7 +3016,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Elves": [
@@ -2894,7 +3032,8 @@
       "uniqueBack": true,
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Enchanted": [
@@ -2915,7 +3054,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Enchanted Treasure": [
@@ -2930,7 +3070,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -2943,7 +3084,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -2956,7 +3098,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -2969,7 +3112,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -3014,7 +3158,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Enfeeble": [
@@ -3029,7 +3174,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Envenom": [
@@ -3056,7 +3202,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Errant Convict": [
@@ -3075,7 +3222,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Eternium Grimoire": [
@@ -3090,7 +3238,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Evil Minion": [
@@ -3108,7 +3257,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Executioner (Intimidation)": [
@@ -3123,7 +3273,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Explorer (Perceptive)": [
@@ -3138,7 +3289,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Explorers Boots": [
@@ -3153,7 +3305,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Eye of the Basilisk": [
@@ -3168,7 +3321,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Fade Essence": [
@@ -3183,7 +3337,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Feud Stopper": [
@@ -3203,7 +3358,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Fiend Faller": [
@@ -3221,7 +3377,8 @@
       ],
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Fiery Chasm": [
@@ -3248,7 +3405,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Fire Blighter": [
@@ -3266,7 +3424,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Fireball": [
@@ -3293,7 +3452,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Floating Disk": [
@@ -3332,7 +3492,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Fog": [
@@ -3352,7 +3513,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -3368,7 +3530,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Food & Ale": [
@@ -3387,7 +3550,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Foresight": [
@@ -3402,7 +3566,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Forester": [
@@ -3420,7 +3585,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Foul Letters": [
@@ -3442,7 +3608,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Gage of the Thief": [
@@ -3469,7 +3636,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Gale Blast": [
@@ -3484,7 +3652,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Game Meat": [
@@ -3503,7 +3672,8 @@
       ],
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Garb of the Gate": [
@@ -3542,7 +3712,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Giant Hunter": [
@@ -3560,7 +3731,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Gloom": [
@@ -3581,7 +3753,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Gloves of Aggression": [
@@ -3608,7 +3781,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     },
     {
       "source": "dd_all_exp",
@@ -3621,7 +3795,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     },
     {
       "source": "dd_all_exp",
@@ -3634,7 +3809,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     },
     {
       "source": "dd_all_exp",
@@ -3647,7 +3823,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Goblin Blight": [
@@ -3665,7 +3842,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Golden Icon": [
@@ -3692,7 +3870,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Good Wind": [
@@ -3707,7 +3886,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Grave of the Champion": [
@@ -3722,7 +3902,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Gravesworn (Dead speech)": [
@@ -3737,7 +3918,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Great Axe": [
@@ -3767,7 +3949,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Great Sword": [
@@ -3785,7 +3968,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Griffon Tamer": [
@@ -3804,7 +3988,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Grommels Talisman": [
@@ -3819,7 +4004,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Guard": [
@@ -3834,7 +4020,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Guard Charm": [
@@ -3849,7 +4036,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -3874,7 +4062,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -3887,7 +4076,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -3900,7 +4090,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -3913,7 +4104,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Half-Orc (Mountaineer)": [
@@ -3928,7 +4120,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -3941,7 +4134,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Lineage DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Halfling (Stealthy)": [
@@ -4013,7 +4207,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Hand of the Lich": [
@@ -4028,7 +4223,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Harmonic Hand Axe": [
@@ -4043,7 +4239,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Hawkeye": [
@@ -4082,7 +4279,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Heartwood Totem": [
@@ -4097,7 +4295,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Heavy Horse": [
@@ -4115,7 +4314,8 @@
       ],
       "ancestry": [
         "Horses"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Helm of True Sight": [
@@ -4130,7 +4330,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Hesitation": [
@@ -4157,7 +4358,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "High Winds": [
@@ -4176,7 +4378,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -4195,7 +4398,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Holdfast Leathers": [
@@ -4210,7 +4414,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Horizon Hexmark": [
@@ -4225,7 +4430,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Horn of the Dark Angel": [
@@ -4255,7 +4461,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -4272,7 +4479,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Hourglass of Echoes": [
@@ -4287,7 +4495,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Human (Adapted)": [
@@ -4348,7 +4557,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Hunters": [
@@ -4363,7 +4573,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Thickets Chips"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Icebound": [
@@ -4381,7 +4592,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Icon of the Dragon": [
@@ -4408,7 +4620,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Illegal Goods": [
@@ -4428,7 +4641,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Illusion": [
@@ -4455,7 +4669,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Incanters Jewel": [
@@ -4482,7 +4697,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Inquisitor (Kings justice)": [
@@ -4497,7 +4713,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Iron Helm": [
@@ -4515,7 +4732,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Iron Skin": [
@@ -4545,7 +4763,8 @@
       ],
       "ancestry": [
         "Thickets Chips"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Jail Breaker": [
@@ -4563,7 +4782,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Jeweled Thiefs Skull": [
@@ -4578,7 +4798,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Khatam of the Quick": [
@@ -4593,7 +4814,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Kings Edicts": [
@@ -4615,7 +4837,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Kings Pardon": [
@@ -4642,7 +4865,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Knights": [
@@ -4657,7 +4881,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Kolah of the Horus eye": [
@@ -4672,7 +4897,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Lamp of the Djinni": [
@@ -4687,7 +4913,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Legends EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Leather Helm": [
@@ -4705,7 +4932,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Leathers": [
@@ -4723,7 +4951,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Ledger of Promises": [
@@ -4738,7 +4967,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Life Armor": [
@@ -4768,7 +4998,8 @@
       ],
       "ancestry": [
         "Horses"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Lightning": [
@@ -4783,7 +5014,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Lizard Ruin": [
@@ -4801,7 +5033,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Long Bow": [
@@ -4834,7 +5067,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Lost Banner": [
@@ -4853,7 +5087,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Lost Captains Locker": [
@@ -4868,7 +5103,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Legends EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Mace": [
@@ -4886,7 +5122,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Mace of Absolution": [
@@ -4901,7 +5138,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Mace of Smiting": [
@@ -4928,7 +5166,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Magewrights Quill": [
@@ -4943,7 +5182,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Magic Carpet": [
@@ -4958,7 +5198,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Magic Snare": [
@@ -4973,7 +5214,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Magical Bowl of Mixing": [
@@ -5000,7 +5242,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Major Heal": [
@@ -5015,7 +5258,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Malediction": [
@@ -5030,7 +5274,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Mana Shield": [
@@ -5045,7 +5290,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Mantle of the Djinn": [
@@ -5060,7 +5306,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Marauder (Fury)": [
@@ -5075,7 +5322,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Mariners": [
@@ -5090,7 +5338,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Medicine": [
@@ -5112,7 +5361,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Mesmerize": [
@@ -5127,7 +5377,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Message": [
@@ -5146,7 +5397,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Minor Mend": [
@@ -5161,7 +5413,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Mirror of Idolatry": [
@@ -5192,7 +5445,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Missing Figure": [
@@ -5211,7 +5465,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Missing Link": [
@@ -5230,7 +5485,8 @@
       ],
       "ancestry": [
         "Thickets Chips"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Mithral Chainmail": [
@@ -5281,7 +5537,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Moon Crystal": [
@@ -5296,7 +5553,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Moon Mirror": [
@@ -5311,7 +5569,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Morning Star": [
@@ -5341,7 +5600,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Move Earth": [
@@ -5368,7 +5628,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Natures Help": [
@@ -5395,7 +5656,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "New Maps": [
@@ -5417,7 +5679,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "New Patrol Route": [
@@ -5437,7 +5700,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Nomads": [
@@ -5452,7 +5716,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Oasis"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Obsidian Dagger": [
@@ -5467,7 +5732,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Oculus Reaper": [
@@ -5485,7 +5751,8 @@
       ],
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Offer Letter": [
@@ -5506,7 +5773,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Old Books": [
@@ -5526,7 +5794,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Open Gate": [
@@ -5553,7 +5822,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Orb of Far Sight": [
@@ -5568,7 +5838,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Orc Call": [
@@ -5583,7 +5854,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Othersight": [
@@ -5598,7 +5870,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Outcast (Overlooked)": [
@@ -5613,7 +5886,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Package": [
@@ -5633,7 +5907,8 @@
       ],
       "ancestry": [
         "Mountains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Paladin (Honor)": [
@@ -5648,7 +5923,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Panacea of Persuasion": [
@@ -5663,7 +5939,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Panoply": [
@@ -5678,7 +5955,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Parley Heart": [
@@ -5693,7 +5971,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Peace": [
@@ -5720,7 +5999,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Pearl of Riversight": [
@@ -5735,7 +6015,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Pebble of Irritation": [
@@ -5750,7 +6031,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Phylact of Renewal": [
@@ -5765,7 +6047,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Pit Fighter (Weaponmaster)": [
@@ -5780,7 +6063,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Plate Armor": [
@@ -5798,7 +6082,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Pool Profaner": [
@@ -5816,7 +6101,8 @@
       ],
       "ancestry": [
         "Oasis"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Port Sacker": [
@@ -5834,7 +6120,8 @@
       ],
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Portable Hole": [
@@ -5849,7 +6136,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Possess": [
@@ -5864,7 +6152,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Potion of Energy": [
@@ -5879,7 +6168,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -5904,7 +6194,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -5929,7 +6220,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -5978,7 +6270,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -6009,7 +6302,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -6025,7 +6319,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Prismatism": [
@@ -6040,7 +6335,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Proven Rogue": [
@@ -6060,7 +6356,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Provisions": [
@@ -6081,7 +6378,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Pyroclasm": [
@@ -6096,7 +6394,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Quick Ring": [
@@ -6128,7 +6427,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -6147,7 +6447,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Ranger (Woods Lore)": [
@@ -6162,7 +6463,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Raptor Master": [
@@ -6181,7 +6483,8 @@
       ],
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Rare Herbs": [
@@ -6202,7 +6505,8 @@
       ],
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Ravagers Flail": [
@@ -6217,7 +6521,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Raw Material": [
@@ -6237,7 +6542,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Reference/Curse card": [
@@ -6267,7 +6573,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Riddle of the Imp": [
@@ -6282,7 +6589,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Ridge Roamer": [
@@ -6300,7 +6608,8 @@
       ],
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Ring of Malevolence": [
@@ -6327,7 +6636,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Ring of Strength": [
@@ -6378,7 +6688,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Riverwalkers": [
@@ -6393,7 +6704,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Robe of the Chanter": [
@@ -6432,7 +6744,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Rogue (Elusive)": [
@@ -6447,7 +6760,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Rogues": [
@@ -6462,7 +6776,8 @@
       "uniqueBack": true,
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Root Striders": [
@@ -6477,7 +6792,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Rot": [
@@ -6492,7 +6808,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Rot Charm": [
@@ -6507,7 +6824,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Rule Undead": [
@@ -6534,7 +6852,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Ruthless Raider": [
@@ -6554,7 +6873,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Sabre of the Fencer": [
@@ -6569,7 +6889,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Safe Haven": [
@@ -6584,7 +6905,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Sale Goods": [
@@ -6605,7 +6927,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Sand Butcher": [
@@ -6625,7 +6948,8 @@
       ],
       "ancestry": [
         "Oasis"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Sand Trekker": [
@@ -6643,7 +6967,8 @@
       ],
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Sandglass of Eternity": [
@@ -6658,7 +6983,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Sandstrider Boots": [
@@ -6673,7 +6999,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Satchel of a Giant": [
@@ -6700,7 +7027,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Scepter of the Sorcerer": [
@@ -6727,7 +7055,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Sea Explorer": [
@@ -6747,7 +7076,8 @@
       ],
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Seafang": [
@@ -6762,7 +7092,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Seal of the False King": [
@@ -6777,7 +7108,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Seed of Speed": [
@@ -6792,7 +7124,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Sellswords": [
@@ -6807,7 +7140,8 @@
       "uniqueBack": true,
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Sending Stones": [
@@ -6822,7 +7156,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Serpent Helm": [
@@ -6837,7 +7172,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shadow Cloak": [
@@ -6864,7 +7200,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shaman (Totemic Projection)": [
@@ -6879,7 +7216,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Shamans Kaftan": [
@@ -6918,7 +7256,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shekel of Future Sight": [
@@ -6933,7 +7272,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shekel of Gloom": [
@@ -6948,7 +7288,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shekel of Shaking": [
@@ -6963,7 +7304,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shekel of Subjucation": [
@@ -6978,7 +7320,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shekel of the Sun": [
@@ -6993,7 +7336,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shekel of the Wind": [
@@ -7008,7 +7352,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shield": [
@@ -7026,7 +7371,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Shield of Defiance": [
@@ -7065,7 +7411,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Shift Focus": [
@@ -7080,7 +7427,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Shoes of the Thief": [
@@ -7110,7 +7458,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Short Sword": [
@@ -7128,7 +7477,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Silver Tongue": [
@@ -7143,7 +7493,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Sin Sword": [
@@ -7158,7 +7509,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Skeleton Key": [
@@ -7189,7 +7541,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Skull Splitter": [
@@ -7204,7 +7557,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Skyroad Sigil": [
@@ -7219,7 +7573,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Sling": [
@@ -7237,7 +7592,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Snake Grinder": [
@@ -7255,7 +7611,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Snow Storms": [
@@ -7273,7 +7630,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -7291,7 +7649,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Soldiers": [
@@ -7306,7 +7665,8 @@
       "uniqueBack": true,
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Sorcerer (Specialized)": [
@@ -7321,7 +7681,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Soul Save": [
@@ -7348,7 +7709,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Sparkler of Wisdom": [
@@ -7378,7 +7740,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Spear of Piercing": [
@@ -7405,7 +7768,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -7418,7 +7782,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -7483,7 +7848,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -7496,7 +7862,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -7509,7 +7876,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -7522,7 +7890,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -7535,7 +7904,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -7548,7 +7918,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     },
     {
       "source": "dd_all_exp",
@@ -7561,7 +7932,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Spell Scroll": [
@@ -7576,7 +7948,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -7589,7 +7962,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     },
     {
       "source": "dd_all_exp",
@@ -7654,7 +8028,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Spelunker": [
@@ -7672,7 +8047,8 @@
       ],
       "ancestry": [
         "Caves  Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Spider Smiter": [
@@ -7690,7 +8066,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Spinewhisper": [
@@ -7705,7 +8082,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Spirit Seeker": [
@@ -7725,7 +8103,8 @@
       ],
       "ancestry": [
         "Oasis"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Staff": [
@@ -7743,7 +8122,8 @@
       ],
       "ancestry": [
         "DESOLATION Items"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Staff of Souls": [
@@ -7758,7 +8138,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Staff of Thaumaturgy": [
@@ -7773,7 +8154,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Staff of the Magi": [
@@ -7788,7 +8170,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Staff of the Sharp Sands": [
@@ -7803,7 +8186,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Statue of the Templar": [
@@ -7818,7 +8202,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Sting Breaker": [
@@ -7836,7 +8221,8 @@
       ],
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Stone Giants Warbelt": [
@@ -7851,7 +8237,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Stone of the New Path": [
@@ -7866,7 +8253,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Stoneknuckle Gloves": [
@@ -7881,7 +8269,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Storms Eye": [
@@ -7896,7 +8285,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Strength": [
@@ -7935,7 +8325,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Sunder": [
@@ -7950,7 +8341,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Supplies": [
@@ -7969,7 +8361,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Surveyor": [
@@ -7987,7 +8380,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Swamper": [
@@ -8005,7 +8399,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Swarm Bane": [
@@ -8023,7 +8418,8 @@
       ],
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Sword of the Lost Prince": [
@@ -8038,7 +8434,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Sword of Torment": [
@@ -8053,7 +8450,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Symbol of Alertness": [
@@ -8140,7 +8538,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Symbol of Rest": [
@@ -8191,7 +8590,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Tail of the Scorpion": [
@@ -8206,7 +8606,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Deserts Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Talaria of the Gladiator": [
@@ -8248,7 +8649,8 @@
       ],
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Teleport": [
@@ -8278,7 +8680,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Temporary Mist Stone": [
@@ -8293,7 +8696,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Tent Burner": [
@@ -8311,7 +8715,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Tentacles": [
@@ -8338,7 +8743,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Legends EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "The Sting": [
@@ -8353,7 +8759,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "The Watch": [
@@ -8368,7 +8775,8 @@
       "uniqueBack": true,
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Thiefs Lucky Coin": [
@@ -8395,7 +8803,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Thunder Storms": [
@@ -8413,7 +8822,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     },
     {
       "source": "dd_all_exp",
@@ -8431,7 +8841,8 @@
       ],
       "ancestry": [
         "Weather"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Tide Tamer": [
@@ -8449,7 +8860,8 @@
       ],
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Time Stone": [
@@ -8476,7 +8888,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Titan Steppers": [
@@ -8491,7 +8904,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "To Do List": [
@@ -8506,7 +8920,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Tome of Conjuring": [
@@ -8617,7 +9032,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Trade Goods": [
@@ -8638,7 +9054,8 @@
       ],
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Trade Raider": [
@@ -8656,7 +9073,8 @@
       ],
       "ancestry": [
         "Thickets Chips"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Trail Blaze": [
@@ -8683,7 +9101,8 @@
       "uniqueBack": false,
       "ancestry": [
         "LEGENDS Cards"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Treant Seeds": [
@@ -8702,7 +9121,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Tree Herder": [
@@ -8720,7 +9140,8 @@
       ],
       "ancestry": [
         "Woods Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Trickster (Illusionary speed)": [
@@ -8735,7 +9156,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Tricksters Stone": [
@@ -8774,7 +9196,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Turn Undead": [
@@ -8808,7 +9231,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Unwelcome Guest": [
@@ -8826,7 +9250,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Vain Blade": [
@@ -8841,7 +9266,8 @@
       "uniqueBack": false,
       "ancestry": [
         "DESOLATION Cards"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Vanguard (Primal Strike)": [
@@ -8856,7 +9282,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Vapor Form": [
@@ -8883,7 +9310,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Venom of the Thousand Bites": [
@@ -8898,7 +9326,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Vile Assassin": [
@@ -8916,7 +9345,8 @@
       ],
       "ancestry": [
         "Swamps Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Vorpal Cutlass": [
@@ -8958,7 +9388,8 @@
       ],
       "ancestry": [
         "Horses"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "War Weavers Needle": [
@@ -8973,7 +9404,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Warblade": [
@@ -9000,7 +9432,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Warrior (Adept)": [
@@ -9015,7 +9448,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DRAGONS DOWN"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Water Weird": [
@@ -9030,7 +9464,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Watercourser": [
@@ -9048,7 +9483,8 @@
       ],
       "ancestry": [
         "Riverlands Chips"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Whisper Pin": [
@@ -9063,7 +9499,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Whispering Compass": [
@@ -9078,7 +9515,8 @@
       "uniqueBack": false,
       "ancestry": [
         "NATIVES Cards"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Whispers": [
@@ -9098,7 +9536,8 @@
       ],
       "ancestry": [
         "NATIVES Groups"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Wildlife Signs": [
@@ -9119,7 +9558,8 @@
       ],
       "ancestry": [
         "Hills Chips"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Wildshape": [
@@ -9134,7 +9574,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Starting Spell EASTERN"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Windswept Mantle": [
@@ -9149,7 +9590,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ],
   "Witch (Imp Familiar)": [
@@ -9164,7 +9606,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class DESOLATION"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Wizard (Studious)": [
@@ -9179,7 +9622,8 @@
       "uniqueBack": true,
       "ancestry": [
         "Class NATIVES"
-      ]
+      ],
+      "box": "Natives and Legends"
     }
   ],
   "Wolf Butcher": [
@@ -9197,7 +9641,8 @@
       ],
       "ancestry": [
         "Plains Chips"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Writ of Redemption": [
@@ -9224,7 +9669,8 @@
       "uniqueBack": false,
       "ancestry": [
         "Cards WILDLANDS"
-      ]
+      ],
+      "box": "Wildlands"
     }
   ]
 }

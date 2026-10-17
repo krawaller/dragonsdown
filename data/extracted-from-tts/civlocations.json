@@ -5,7 +5,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012513538/D64946A821F88E4BBEEAA23B93EDE8F9F008D1B6/",
       "ancestry": [
         "Campfire"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Encampment": [
@@ -14,7 +15,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2459607511012515098/83A2B7E736115178904268D3697B1B8DE15B401B/",
       "ancestry": [
         "Encampment"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Guard House": [
@@ -23,7 +25,8 @@
       "imageURL": "https://dragonsdowndata.com/data/DDTTS/location%20Guard%20House%20-%20Both%20-%201in%20x1.png",
       "ancestry": [
         "Guardhouse"
-      ]
+      ],
+      "box": "Desolation"
     }
   ],
   "Inn": [
@@ -32,7 +35,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/51329810045294752/D6EC045851D1866CA5A197CCD40D508BA5EA6F1E/",
       "ancestry": [
         "Inn"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Keep": [
@@ -41,7 +45,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260326564/5E286D61B755DF54C400C53B42DD35C31230BCFE/",
       "ancestry": [
         "Keep"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Medina": [
@@ -50,7 +55,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/12151218835804852862/D643B21FFAC382ED9ED7DC2C4441983325AA0AE6/",
       "ancestry": [
         "Medina"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Mine": [
@@ -59,7 +65,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260327544/D152EE319A438A5252B3AF58F1A901254C9405E5/",
       "ancestry": [
         "Mine"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Oasis": [
@@ -69,6 +76,7 @@
       "ancestry": [
         "Oasis"
       ],
+      "box": "Desolation",
       "terrainPack": "Dreadful Deserts"
     }
   ],
@@ -78,7 +86,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453710346/67516649C330B90ABFBE0DADCC4BC50C7AA6C046/",
       "ancestry": [
         "Outpost"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Port": [
@@ -87,7 +96,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/15293060858863846884/52798182B3D9F7EF74104488BF04ECF3A23892E2/",
       "ancestry": [
         "Port"
-      ]
+      ],
+      "box": "Eastern Reaches"
     }
   ],
   "Sanctuary": [
@@ -96,7 +106,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2260307376260328529/A7EF57A400BF0473FD2151A4DECDAA0B843523B3/",
       "ancestry": [
         "Sanctuary"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ],
   "Trading Post": [
@@ -114,7 +125,8 @@
       "imageURL": "https://steamusercontent-a.akamaihd.net/ugc/2261434080453709463/BB681A939046A30DA7264D31CE0D9007A5B7DCA3/",
       "ancestry": [
         "Village"
-      ]
+      ],
+      "box": "Dragons Down"
     }
   ]
 }

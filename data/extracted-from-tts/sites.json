@@ -7,6 +7,7 @@
       "ancestry": [
         "Cruel CAVES"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Cruel Caves",
       "gmNotes": "3"
     }
@@ -19,6 +20,7 @@
       "ancestry": [
         "Tangled THICKETS"
       ],
+      "box": "Wildlands",
       "terrainPack": "Tangled Thickets",
       "gmNotes": "4"
     }
@@ -31,6 +33,7 @@
       "ancestry": [
         "Hostile HILLS"
       ],
+      "box": "Desolation",
       "terrainPack": "Hostile Hills",
       "gmNotes": "5"
     }
@@ -43,6 +46,7 @@
       "ancestry": [
         "Cruel CAVES"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Cruel Caves",
       "gmNotes": "4"
     }
@@ -55,6 +59,7 @@
       "ancestry": [
         "Malevolent MOUNTAINS"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Malevolent Mountains",
       "gmNotes": "1"
     }
@@ -67,6 +72,7 @@
       "ancestry": [
         "Malevolent MOUNTAINS"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Malevolent Mountains",
       "gmNotes": "5"
     }
@@ -79,6 +85,7 @@
       "ancestry": [
         "Tangled THICKETS"
       ],
+      "box": "Wildlands",
       "terrainPack": "Tangled Thickets",
       "gmNotes": "1"
     }
@@ -91,6 +98,7 @@
       "ancestry": [
         "Sinister SWAMPS"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Sinister Swamps",
       "gmNotes": "6"
     }
@@ -103,6 +111,7 @@
       "ancestry": [
         "Sinister SWAMPS"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Sinister Swamps",
       "gmNotes": "3"
     }
@@ -115,6 +124,7 @@
       "ancestry": [
         "Malevolent MOUNTAINS"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Malevolent Mountains",
       "gmNotes": "6"
     }
@@ -127,6 +137,7 @@
       "ancestry": [
         "Perilous PLAINS"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Perilous Plains",
       "gmNotes": "2"
     }
@@ -139,6 +150,7 @@
       "ancestry": [
         "Wicked WOODS"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Wicked Woods",
       "gmNotes": "4"
     }
@@ -151,6 +163,7 @@
       "ancestry": [
         "Ruthless RIVERLANDS"
       ],
+      "box": "Eastern Reaches",
       "terrainPack": "Ruthless Riverlands",
       "gmNotes": "6"
     }
@@ -163,6 +176,7 @@
       "ancestry": [
         "Dreadful DESERTS"
       ],
+      "box": "Desolation",
       "terrainPack": "Dreadful Deserts",
       "gmNotes": "3"
     }
@@ -175,6 +189,7 @@
       "ancestry": [
         "Cruel CAVES"
       ],
+      "box": "Dragons Down",
       "terrainPack": "Cruel Caves",
       "gmNotes": "2"
     }

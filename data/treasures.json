@@ -44,6 +44,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -69,6 +70,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -102,6 +104,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -127,6 +130,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -169,6 +173,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -214,6 +219,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -239,6 +245,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -284,6 +291,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -309,6 +317,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -342,6 +351,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -367,6 +377,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -409,6 +420,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -446,6 +458,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -567,6 +580,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -592,6 +606,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -617,6 +632,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -642,6 +658,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -814,6 +831,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -856,6 +874,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -889,6 +908,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1016,6 +1036,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1041,6 +1062,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1066,6 +1088,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1089,6 +1112,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1134,6 +1158,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1171,6 +1196,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1196,6 +1222,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1221,6 +1248,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -1268,6 +1296,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -1313,6 +1342,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1365,6 +1395,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1412,6 +1443,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1437,6 +1469,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1463,6 +1496,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1488,6 +1522,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1513,6 +1548,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1538,6 +1574,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1563,6 +1600,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1588,6 +1626,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1613,6 +1652,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1638,6 +1678,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1663,6 +1704,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1688,6 +1730,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1713,6 +1756,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1738,6 +1782,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1763,6 +1808,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1805,6 +1851,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1828,6 +1875,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -1851,6 +1899,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1874,6 +1923,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -1985,6 +2035,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2022,6 +2073,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2124,6 +2176,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2149,6 +2202,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2174,6 +2228,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2299,6 +2354,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2324,6 +2380,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2349,6 +2406,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2401,6 +2459,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2426,6 +2485,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2456,6 +2516,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2486,6 +2547,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2516,6 +2578,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2623,6 +2686,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2665,6 +2729,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -2690,6 +2755,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2715,6 +2781,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2740,6 +2807,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2765,6 +2833,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2790,6 +2859,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2816,6 +2886,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -2861,6 +2932,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2926,6 +2998,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -2992,6 +3065,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3017,6 +3091,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3042,6 +3117,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3067,6 +3143,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3130,6 +3207,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3155,6 +3233,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3217,6 +3296,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3242,6 +3322,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3267,6 +3348,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3292,6 +3374,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3317,6 +3400,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -3342,6 +3426,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3407,6 +3492,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3452,6 +3538,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3517,6 +3604,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3562,6 +3650,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3587,6 +3676,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3633,6 +3723,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3658,6 +3749,7 @@
       "ancestry": [
         "Legends EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3683,6 +3775,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -3708,6 +3801,7 @@
       "ancestry": [
         "Legends EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3733,6 +3827,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3802,6 +3897,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -3827,6 +3923,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3852,6 +3949,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -3904,6 +4002,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4009,6 +4108,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4035,6 +4135,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4060,6 +4161,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4085,6 +4187,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4140,6 +4243,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4165,6 +4269,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4190,6 +4295,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4215,6 +4321,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4240,6 +4347,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4285,6 +4393,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4311,6 +4420,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4356,6 +4466,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4381,6 +4492,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4426,6 +4538,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4469,6 +4582,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4512,6 +4626,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4595,6 +4710,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4665,6 +4781,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4707,6 +4824,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4759,6 +4877,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4844,6 +4963,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4870,6 +4990,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4936,6 +5057,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -4961,6 +5083,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -4986,6 +5109,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5011,6 +5135,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -5048,6 +5173,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -5074,6 +5200,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -5120,6 +5247,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5165,6 +5293,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5197,6 +5326,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -5222,6 +5352,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5247,6 +5378,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5272,6 +5404,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -5344,6 +5477,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5389,6 +5523,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5439,6 +5574,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5484,6 +5620,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5529,6 +5666,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5562,6 +5700,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5607,6 +5746,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5699,6 +5839,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -5744,6 +5885,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5769,6 +5911,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -5821,6 +5964,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -5858,6 +6002,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5945,6 +6090,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -5976,6 +6122,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6139,6 +6286,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6170,6 +6318,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6201,6 +6350,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6232,6 +6382,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6263,6 +6414,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6294,6 +6446,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6325,6 +6478,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6358,6 +6512,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6389,6 +6544,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6552,6 +6708,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6577,6 +6734,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6614,6 +6772,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6651,6 +6810,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6693,6 +6853,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6730,6 +6891,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6768,6 +6930,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6805,6 +6968,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6830,6 +6994,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6855,6 +7020,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -6880,6 +7046,7 @@
       "ancestry": [
         "Riverlands Chips"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6926,6 +7093,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -6968,6 +7136,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -7010,6 +7179,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -7172,6 +7342,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7257,6 +7428,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -7294,6 +7466,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -7360,6 +7533,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7405,6 +7579,7 @@
       "ancestry": [
         "Legends EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "legendary",
       "copies": 1,
       "locations": [
@@ -7450,6 +7625,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7495,6 +7671,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7540,6 +7717,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7565,6 +7743,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7590,6 +7769,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7775,6 +7955,7 @@
       "ancestry": [
         "LEGENDS Cards"
       ],
+      "box": "Dragons Down",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -7847,6 +8028,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -7872,6 +8054,7 @@
       "ancestry": [
         "DESOLATION Cards"
       ],
+      "box": "Desolation",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -7909,6 +8092,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [
@@ -7956,6 +8140,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -8033,6 +8218,7 @@
       "ancestry": [
         "Cards EASTERN"
       ],
+      "box": "Eastern Reaches",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -8095,6 +8281,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -8120,6 +8307,7 @@
       "ancestry": [
         "NATIVES Cards"
       ],
+      "box": "Natives and Legends",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -8145,6 +8333,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "treasure",
       "copies": 1,
       "locations": [
@@ -8190,6 +8379,7 @@
       "ancestry": [
         "Cards WILDLANDS"
       ],
+      "box": "Wildlands",
       "deck": "deep-treasure",
       "copies": 1,
       "locations": [

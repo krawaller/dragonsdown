@@ -28,7 +28,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -132,7 +133,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -240,7 +242,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -348,7 +351,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -474,7 +478,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -588,7 +593,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
@@ -700,7 +706,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
@@ -804,7 +811,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -912,7 +920,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
@@ -1024,7 +1033,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
@@ -1115,7 +1125,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -1240,7 +1251,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -1357,7 +1369,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -1499,7 +1512,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -1623,7 +1637,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -1724,7 +1739,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class WILDLANDS"
-        ]
+        ],
+        "box": "Wildlands"
       },
       "setup": {
         "front": {
@@ -1860,7 +1876,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -1986,7 +2003,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -2102,7 +2120,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -2219,7 +2238,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -2341,7 +2361,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
@@ -2458,7 +2479,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class WILDLANDS"
-        ]
+        ],
+        "box": "Wildlands"
       },
       "setup": {
         "front": {
@@ -2588,7 +2610,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -2705,7 +2728,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class WILDLANDS"
-        ]
+        ],
+        "box": "Wildlands"
       },
       "setup": {
         "front": {
@@ -2837,7 +2861,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -2945,7 +2970,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -3068,7 +3094,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -3180,7 +3207,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -3276,7 +3304,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
@@ -3406,7 +3435,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
@@ -3516,7 +3546,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -3641,7 +3672,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -3761,7 +3793,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -3887,7 +3920,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -3999,7 +4033,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -4121,7 +4156,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class WILDLANDS"
-        ]
+        ],
+        "box": "Wildlands"
       },
       "setup": {
         "front": {
@@ -4257,7 +4293,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -4374,7 +4411,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -4486,7 +4524,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -4608,7 +4647,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class EASTERN"
-        ]
+        ],
+        "box": "Eastern Reaches"
       },
       "setup": {
         "front": {
@@ -4716,7 +4756,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -4833,7 +4874,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DRAGONS DOWN"
-        ]
+        ],
+        "box": "Dragons Down"
       },
       "setup": {
         "front": {
@@ -4952,7 +4994,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class DESOLATION"
-        ]
+        ],
+        "box": "Desolation"
       },
       "setup": {
         "front": {
@@ -5070,7 +5113,8 @@
         "uniqueBack": true,
         "ancestry": [
           "Class NATIVES"
-        ]
+        ],
+        "box": "Natives and Legends"
       },
       "setup": {
         "front": {
