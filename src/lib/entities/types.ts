@@ -1,12 +1,19 @@
 import type { RulebookLink } from "@/lib/rulebook-links";
+import type { BoardPositionCrop } from "@/lib/board-position-crop";
 import type { TTSCardImage } from "@/lib/tts";
-import type { MissionEntry, MonsterGroupEntry } from "@/lib/tts/lookup";
+import type {
+  BoardEntry,
+  MissionEntry,
+  MonsterGroupEntry,
+  SiteEntry,
+} from "@/lib/tts/lookup";
 
 export type CategoryChip = {
   href: string;
   label: string;
   value: string;
   imageUrl?: string;
+  imageCrop?: BoardPositionCrop;
   imageFit?: "contain" | "cover";
 };
 
@@ -63,4 +70,24 @@ export type MonsterGroupDetail = {
   sources: MonsterSourceDetail[];
   relatedMissions: MissionEntry[];
   spells: SpellTileDetail[];
+};
+
+export type SiteTokenItemDetail = {
+  href?: string;
+  imageUrl: string;
+  name: string;
+  label: string;
+  images?: { imageURL: string }[];
+};
+
+export type SiteDetail = {
+  entry: SiteEntry;
+  subtitle: string;
+  categories: CategoryChip[];
+  boards: BoardEntry[];
+  tokenItems: SiteTokenItemDetail[];
+  guardians: MonsterGroupEntry[];
+  tokenAndGuardianCount: number;
+  relatedMissions: MissionEntry[];
+  rulebookLinks: RulebookLink[];
 };
