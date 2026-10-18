@@ -16,7 +16,6 @@
     "check:lost-battalion": "tsx scripts/check-lost-battalion.ts",
     "transform": "tsx scripts/transform.ts",
     "derive": "tsx scripts/derive.ts",
-    "extract-mission-kinds": "tsx scripts/extract-mission-kinds.ts",
     "extract-tts": "tsx scripts/extract-tts.ts",
     "extract-map-tiles": "tsx scripts/extract-map-tiles.ts",
     "extract-clearing-types": "python3 scripts/extract-clearing-types.py",

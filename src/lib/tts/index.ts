@@ -261,7 +261,6 @@ export type TTSMissionRewards = {
 export type MissionIndex = Record<string, TTSMissionCard[]>;
 
 export type ExtractMissionsOptions = {
-  missionKinds?: MissionKindMap;
   missionNicknameCorrections?: readonly MissionNicknameCorrection[];
   missionStats?: readonly MissionStatsMapping[];
 };
@@ -935,6 +934,7 @@ export function normalizeTitle(s: string): string {
 
 type TTSCardObject = {
   Name: "Card" | "CardCustom";
+  GUID?: string;
   Nickname?: string;
   Description?: string;
   CardID: number;
@@ -1506,6 +1506,7 @@ export function extractMissions(
   options: ExtractMissionsOptions = {},
 ): MissionIndex {
   const index: MissionIndex = {};
+  const missionMetadataByGuid = missionLuaMetadataByGuid(root);
   const cards: CardWithAncestry[] = [];
   walk(root, [], cards);
   for (const { card, ancestry } of cards) {
@@ -1515,9 +1516,11 @@ export function extractMissions(
     const image = imageFor(card, source, ancestry);
     if (!image) continue;
     const mission: TTSMissionCard = { ...image };
-    const kind = options.missionKinds?.[missionCellKey(mission)];
-    if (kind) mission.kind = kind;
-    const terrainPack = missionTerrainPackFromAncestry(mission.ancestry);
+    const metadata = card.GUID ? missionMetadataByGuid.get(card.GUID) : undefined;
+    if (metadata?.kind) mission.kind = metadata.kind;
+    if (metadata?.box) mission.box = metadata.box;
+    const terrainPack =
+      metadata?.terrainPack ?? missionTerrainPackFromAncestry(mission.ancestry);
     if (terrainPack) mission.terrainPack = terrainPack;
     const stats = missionStatsFor(raw, mission, options.missionStats);
     if (stats) mission.stats = stats;
@@ -1544,6 +1547,7 @@ export function extractMissions(
         mission.completeAt,
       );
       if (!existing.kind && mission.kind) existing.kind = mission.kind;
+      if (!existing.box && mission.box) existing.box = mission.box;
       if (!existing.terrainPack && mission.terrainPack) {
         existing.terrainPack = mission.terrainPack;
       }
@@ -2312,6 +2316,118 @@ export function missionCellKey(
   card: Pick<TTSCardImage, "faceURL" | "row" | "col">,
 ): string {
   return `${card.faceURL}#${card.row}:${card.col}`;
+}
+
+type MissionLuaMetadata = {
+  kind?: MissionKind;
+  terrainPack?: MissionTerrainPack;
+  box?: string;
+};
+
+function missionLuaMetadataByGuid(root: unknown): Map<string, MissionLuaMetadata> {
+  const metadataByGuid = new Map<string, MissionLuaMetadata>();
+  for (const luaScript of luaScripts(root)) {
+    const missionsTable = luaTableBody(luaScript, "Missions");
+    if (!missionsTable) continue;
+    for (const match of missionsTable.matchAll(
+      /\["([0-9a-f]{6})"\]\s*=\s*\{([\s\S]*?)\}\s*,\s*--[^\r\n]*/gi,
+    )) {
+      const guid = match[1];
+      const body = match[2];
+      metadataByGuid.set(guid, {
+        kind: missionKindFromLuaType(luaStringField(body, "type")),
+        terrainPack: missionTerrainPackFromLuaPack(luaStringField(body, "pack")),
+        box: missionBoxFromLuaModule(luaStringField(body, "module")),
+      });
+    }
+  }
+  return metadataByGuid;
+}
+
+function luaScripts(root: unknown): string[] {
+  const scripts: string[] = [];
+  collectLuaScripts(root, scripts);
+  return scripts;
+}
+
+function collectLuaScripts(obj: unknown, out: string[]): void {
+  if (!isRecord(obj)) return;
+  const luaScript = text(obj.LuaScript);
+  if (luaScript) out.push(luaScript);
+  const states = obj.ObjectStates;
+  if (Array.isArray(states)) {
+    for (const state of states) collectLuaScripts(state, out);
+  }
+  const contained = (obj as TTSContainer).ContainedObjects;
+  if (Array.isArray(contained)) {
+    for (const item of contained) collectLuaScripts(item, out);
+  }
+}
+
+function luaStringField(body: string, fieldName: string): string | undefined {
+  const match = body.match(
+    new RegExp(`(?:^|,)\\s*${fieldName}\\s*=\\s*"([^"]+)"`),
+  );
+  return match?.[1];
+}
+
+function missionKindFromLuaType(value: string | undefined): MissionKind | undefined {
+  switch (value) {
+    case "red":
+      return "atrocity";
+    case "white":
+      return "quest";
+    case "gold":
+      return "expedition";
+    default:
+      return undefined;
+  }
+}
+
+function missionTerrainPackFromLuaPack(
+  value: string | undefined,
+): MissionTerrainPack | undefined {
+  switch (value) {
+    case "N":
+      return "neutral";
+    case "MM":
+      return "mountains";
+    case "CC":
+      return "caves";
+    case "WW":
+      return "woods";
+    case "PP":
+      return "plains";
+    case "SS":
+      return "swamps";
+    case "DD":
+      return "deserts";
+    case "RR":
+      return "riverlands";
+    case "TT":
+      return "thickets";
+    case "HH":
+      return "hills";
+    default:
+      return undefined;
+  }
+}
+
+function missionBoxFromLuaModule(value: string | undefined): string | undefined {
+  switch (value) {
+    case "DD":
+      return "Dragons Down";
+    case "ER":
+      return "Eastern Reaches";
+    case "DE":
+      return "Desolation";
+    case "N":
+      return "Natives and Legends";
+    case "W":
+      return "Wildlands";
+    default:
+      return undefined;
+  }
 }
 
 const MISSION_TERRAIN_PACKS: Record<string, MissionTerrainPack> = {

@@ -372,9 +372,7 @@ function getWeatherIndex(): WeatherIndex {
 
 function getMissionIndex(): MissionIndex {
   if (cachedMissionIndex !== null) return cachedMissionIndex;
-  cachedMissionIndex = normalizeTerrainPackBoxesByKey(
-    readJsonOrEmpty<MissionIndex>(MISSIONS_FILE),
-  );
+  cachedMissionIndex = readJsonOrEmpty<MissionIndex>(MISSIONS_FILE);
   return cachedMissionIndex;
 }
 

@@ -68,10 +68,6 @@ import {
   type SiteMonsterIndex,
   type WildernessTokenIndex,
 } from "../src/lib/tts";
-import {
-  generateMissionKindMap,
-  MISSION_KIND_MAP_FILE,
-} from "./extract-mission-kinds";
 
 const SOURCES_DIR = path.join(process.cwd(), "data", "downloaded-tts");
 const OUT_DIR = path.join(process.cwd(), "data", "extracted-from-tts");
@@ -110,10 +106,6 @@ const SOURCE_FILES = ["dd_all_exp.json"];
 async function main(): Promise<void> {
   await fs.mkdir(OUT_DIR, { recursive: true });
   const files = SOURCE_FILES;
-  const missionKinds = await generateMissionKindMap({
-    sourceFiles: files,
-    outFile: MISSION_KIND_MAP_FILE,
-  });
   const missionNicknameCorrections = await readJsonFile<
     MissionNicknameCorrection[]
   >(MISSION_NICKNAME_CORRECTIONS_FILE);
@@ -178,7 +170,6 @@ async function main(): Promise<void> {
     const wildernessIndex = extractWildernessTokens(save, stem);
     const mapTileMonsterIndex = extractMapTileMonsters(save, stem);
     const missionIndex = extractMissions(save, stem, {
-      missionKinds,
       missionNicknameCorrections,
       missionStats,
     });

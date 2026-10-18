@@ -21,7 +21,6 @@ import {
   extractWeatherCards,
   extractWildernessTokens,
   extractSites,
-  missionCellKey,
   normalizeTitle,
   prettifyChipName,
   resolveCards,
@@ -69,6 +68,26 @@ function card(nickname: string, cardID: number, deckId: string, deck: object) {
     CardID: cardID,
     CustomDeck: { [deckId]: deck },
   };
+}
+
+function missionLua(entries: string[]): string {
+  return `Missions = {\n${entries.join("\n")}\n}`;
+}
+
+function missionLuaEntry({
+  guid,
+  type,
+  pack = "N",
+  module = "N",
+  name,
+}: {
+  guid: string;
+  type: "red" | "white" | "gold";
+  pack?: string;
+  module?: string;
+  name: string;
+}): string {
+  return `  ["${guid}"] = {type = "${type}", pack = "${pack}", module = "${module}"}, --${name}`;
 }
 
 function tile(
@@ -1009,9 +1028,19 @@ describe("extractMissions", () => {
       FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck1.png",
     };
     const save = {
+      LuaScript: missionLua([
+        missionLuaEntry({
+          guid: "dec001",
+          type: "red",
+          pack: "N",
+          module: "N",
+          name: "Decapitator",
+        }),
+      ]),
       ObjectStates: [
         {
           ...card("Decapitator", 60708, "607", missionDeck1),
+          GUID: "dec001",
           Description: "Complete at Consul",
           Tags: ["Mission", "Natives", "Consul"],
           LuaScript: [
@@ -1029,18 +1058,13 @@ describe("extractMissions", () => {
         },
       ],
     };
-    const missionKinds = {
-      [missionCellKey({
-        faceURL: missionDeck1.FaceURL,
-        row: 0,
-        col: 8,
-      })]: "atrocity" as const,
-    };
 
     expect(
-      extractMissions(save, "dd_all_exp", { missionKinds })["Decapitator"][0],
+      extractMissions(save, "dd_all_exp")["Decapitator"][0],
     ).toMatchObject({
       kind: "atrocity",
+      box: "Natives and Legends",
+      terrainPack: "neutral",
       rewards: {
         drawCards: { deep: 1 },
         points: { gold: 5 },
@@ -1111,9 +1135,19 @@ describe("extractMissions", () => {
       FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
     };
     const save = {
+      LuaScript: missionLua([
+        missionLuaEntry({
+          guid: "abc001",
+          type: "gold",
+          pack: "RR",
+          module: "ER",
+          name: "Trade Goods",
+        }),
+      ]),
       ObjectStates: [
         {
           ...card("Trade Goods", 60803, "608", missionDeck2),
+          GUID: "abc001",
           Description: "Complete at Foreigner",
           Tags: ["Foreigner", "Merchant", "Mission", "Steal"],
           LuaScript: [
@@ -1138,18 +1172,13 @@ describe("extractMissions", () => {
         },
       ],
     };
-    const missionKinds = {
-      [missionCellKey({
-        faceURL: missionDeck2.FaceURL,
-        row: 0,
-        col: 3,
-      })]: "expedition" as const,
-    };
 
     expect(
-      extractMissions(save, "dd_all_exp", { missionKinds })["Trade Goods"][0],
+      extractMissions(save, "dd_all_exp")["Trade Goods"][0],
     ).toMatchObject({
       kind: "expedition",
+      box: "Eastern Reaches",
+      terrainPack: "riverlands",
       rewards: {
         steal: {
           drawCards: { item: 1 },
@@ -1170,30 +1199,36 @@ describe("extractMissions", () => {
       FaceURL: "https://dragonsdowndata.com/data/missions/AllMissionDeck2.png",
     };
     const save = {
+      LuaScript: missionLua([
+        missionLuaEntry({
+          guid: "def001",
+          type: "red",
+          pack: "DD",
+          module: "DE",
+          name: "Desert Avenger",
+        }),
+        missionLuaEntry({
+          guid: "def002",
+          type: "white",
+          pack: "N",
+          module: "N",
+          name: "Desert Avenger",
+        }),
+      ]),
       ObjectStates: [
         {
           ...card("Desert Avenger", 60709, "607", missionDeck1),
+          GUID: "def001",
           Description: "Complete at Deserts",
           Tags: ["Mission"],
         },
         {
           ...card("Desert Avenger", 60814, "608", missionDeck2),
+          GUID: "def002",
           Description: "Complete at Nomads",
           Tags: ["Mission", "Natives", "Nomads"],
         },
       ],
-    };
-    const missionKinds = {
-      [missionCellKey({
-        faceURL: missionDeck1.FaceURL,
-        row: 0,
-        col: 9,
-      })]: "atrocity" as const,
-      [missionCellKey({
-        faceURL: missionDeck2.FaceURL,
-        row: 1,
-        col: 4,
-      })]: "quest" as const,
     };
     const missionNicknameCorrections = [
       {
@@ -1207,7 +1242,6 @@ describe("extractMissions", () => {
     ];
 
     const missions = extractMissions(save, "dd_all_exp", {
-      missionKinds,
       missionNicknameCorrections,
     });
     expect(Object.keys(missions).sort()).toEqual([

@@ -103,7 +103,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "swamps",
       "rewards": {
@@ -232,7 +232,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "swamps",
       "rewards": {
@@ -262,7 +262,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "plains",
       "rewards": {
@@ -426,7 +426,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "plains",
       "description": "Complete at Village",
@@ -452,7 +452,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "plains"
     }
@@ -512,7 +512,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "swamps",
       "rewards": {
@@ -540,7 +540,7 @@
       "ancestry": [
         "Hills Chips"
       ],
-      "box": "Desolation",
+      "box": "Wildlands",
       "kind": "quest",
       "terrainPack": "hills",
       "description": "Complete at Guard House",
@@ -567,7 +567,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
       "terrainPack": "deserts",
       "rewards": {
@@ -658,9 +658,9 @@
       "ancestry": [
         "Oasis"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "quest",
-      "terrainPack": "oasis",
+      "terrainPack": "deserts",
       "rewards": {
         "attributes": {
           "wisdom": 1
@@ -688,7 +688,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
       "terrainPack": "deserts",
       "rewards": {
@@ -716,7 +716,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "deserts",
       "description": "Complete at Aurorans",
@@ -904,7 +904,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "swamps",
       "description": "Complete at Wardens",
@@ -929,7 +929,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "plains",
       "rewards": {
@@ -989,7 +989,7 @@
       "ancestry": [
         "Hills Chips"
       ],
-      "box": "Desolation",
+      "box": "Wildlands",
       "kind": "quest",
       "terrainPack": "hills",
       "description": "Complete at Guard House",
@@ -1014,7 +1014,7 @@
       "ancestry": [
         "Woods Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
       "terrainPack": "woods",
       "rewards": {
@@ -1127,7 +1127,7 @@
       "ancestry": [
         "Hills Chips"
       ],
-      "box": "Desolation",
+      "box": "Wildlands",
       "kind": "expedition",
       "terrainPack": "hills",
       "description": "Complete at Guards",
@@ -1203,7 +1203,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "quest",
       "terrainPack": "mountains",
       "description": "Complete at Knights",
@@ -1229,7 +1229,7 @@
       "ancestry": [
         "Woods Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
       "terrainPack": "woods",
       "rewards": {
@@ -1259,7 +1259,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "plains",
       "rewards": {
@@ -1377,7 +1377,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "swamps",
       "description": "Complete at Outpost",
@@ -1403,7 +1403,7 @@
       "ancestry": [
         "Mountains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "mountains",
       "description": "Complete at Knights",
@@ -1432,7 +1432,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "plains",
       "rewards": {
@@ -1463,7 +1463,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "swamps"
     }
@@ -1485,7 +1485,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "caves",
       "description": "Complete at Dwarves",
@@ -1511,7 +1511,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "plains",
       "description": "Complete at Villagers",
@@ -1749,9 +1749,9 @@
       "ancestry": [
         "Oasis"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
-      "terrainPack": "oasis",
+      "terrainPack": "deserts",
       "rewards": {
         "outlaw": 1
       },
@@ -1880,7 +1880,7 @@
       "ancestry": [
         "Hills Chips"
       ],
-      "box": "Desolation",
+      "box": "Wildlands",
       "kind": "quest",
       "terrainPack": "hills",
       "description": "Complete at Guards",
@@ -1908,7 +1908,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "deserts",
       "rewards": {
@@ -1973,7 +1973,7 @@
       "ancestry": [
         "Hills Chips"
       ],
-      "box": "Desolation",
+      "box": "Wildlands",
       "kind": "expedition",
       "terrainPack": "hills",
       "description": "Complete at Guard House",
@@ -2034,7 +2034,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "plains",
       "rewards": {
@@ -2069,9 +2069,9 @@
       "ancestry": [
         "Oasis"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
-      "terrainPack": "oasis",
+      "terrainPack": "deserts",
       "rewards": {
         "attributes": {
           "intellect": 1
@@ -2100,7 +2100,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "deserts",
       "description": "Complete at Medina",
@@ -2153,7 +2153,7 @@
       "ancestry": [
         "Caves  Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "quest",
       "terrainPack": "caves",
       "description": "Complete at Dwarves",
@@ -2178,7 +2178,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "swamps",
       "description": "Complete at Outpost",
@@ -2255,9 +2255,9 @@
       "ancestry": [
         "Oasis"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "expedition",
-      "terrainPack": "oasis",
+      "terrainPack": "deserts",
       "description": "Complete at Nomads",
       "completeAt": [
         "Nomads"
@@ -2280,7 +2280,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "quest",
       "terrainPack": "deserts",
       "description": "Complete at Medina",
@@ -2327,7 +2327,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "plains",
       "description": "Complete at Village",
@@ -2352,7 +2352,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "expedition",
       "terrainPack": "swamps",
       "description": "Complete at Outpost",
@@ -2377,7 +2377,7 @@
       "ancestry": [
         "Deserts Chips"
       ],
-      "box": "Desolation",
+      "box": "Eastern Reaches",
       "kind": "quest",
       "terrainPack": "deserts",
       "description": "Complete at Medina",
@@ -2402,7 +2402,7 @@
       "ancestry": [
         "Hills Chips"
       ],
-      "box": "Desolation",
+      "box": "Wildlands",
       "kind": "atrocity",
       "terrainPack": "hills",
       "rewards": {
@@ -2458,7 +2458,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
       "terrainPack": "swamps",
       "rewards": {
@@ -2576,7 +2576,7 @@
       "ancestry": [
         "Woods Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "expedition",
       "terrainPack": "woods",
       "description": "Complete at Priests",
@@ -2663,7 +2663,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Eastern Reaches",
       "kind": "atrocity",
       "terrainPack": "plains",
       "rewards": {
@@ -2691,7 +2691,7 @@
       "ancestry": [
         "Swamps Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "atrocity",
       "terrainPack": "swamps",
       "rewards": {
@@ -2779,7 +2779,7 @@
       "ancestry": [
         "Hills Chips"
       ],
-      "box": "Desolation",
+      "box": "Wildlands",
       "kind": "expedition",
       "terrainPack": "hills",
       "rewards": {
@@ -2809,7 +2809,7 @@
       "ancestry": [
         "Plains Chips"
       ],
-      "box": "Dragons Down",
+      "box": "Desolation",
       "kind": "quest",
       "terrainPack": "plains",
       "description": "Complete at Village",
