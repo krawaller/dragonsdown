@@ -100,11 +100,7 @@ export default async function SitePage({
 
       <RelatedMissionsBox missions={missions} />
 
-      <RulebookLinks
-        links={rulebookLinks}
-        heading="Rulebook"
-        className="mt-10"
-      />
+      <RulebookLinks links={rulebookLinks} heading={null} className="mt-10" />
     </main>
   );
 }
