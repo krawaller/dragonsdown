@@ -1,5 +1,13 @@
 import type { RulebookLink } from "@/lib/rulebook-links";
 import type { BoardPositionCrop } from "@/lib/board-position-crop";
+import type { MagicIcons } from "@/components/MagicCube";
+import type {
+  MapTile,
+  MapTileCivLocation,
+  MapTileMission,
+  MapTileMonsterGroup,
+  MapTileTerrainPack,
+} from "@/components/MapTileViewer";
 import type { TTSCardImage } from "@/lib/tts";
 import type {
   BoardEntry,
@@ -9,6 +17,7 @@ import type {
   MissionFeatureKind,
   MissionTargetKind,
   MonsterGroupEntry,
+  MapTileEntry,
   SiteEntry,
   TerrainPackEntry,
   TerrainPackMonsterEntry,
@@ -172,3 +181,19 @@ export type TerrainPackDetail = {
 };
 
 export type { EquipmentDeck };
+
+export type MapTileConnectionsDetail = Record<
+  string,
+  { front: { paths: unknown[] }; back: { paths: unknown[] } }
+>;
+
+export type MapTileDetail = {
+  entry?: MapTileEntry;
+  tile: MapTile;
+  civLocations: MapTileCivLocation[];
+  monsterGroups: MapTileMonsterGroup[];
+  missions: MapTileMission[];
+  mapTileConnections: MapTileConnectionsDetail;
+  magicIcons: MagicIcons;
+  terrainPack?: MapTileTerrainPack;
+};
