@@ -4,11 +4,15 @@ import type { TTSCardImage } from "@/lib/tts";
 import type {
   BoardEntry,
   CivLocationEntry,
+  EquipmentDeck,
   MissionEntry,
   MissionFeatureKind,
   MissionTargetKind,
   MonsterGroupEntry,
   SiteEntry,
+  TerrainPackEntry,
+  TerrainPackMonsterEntry,
+  TerrainPackNativeEntry,
 } from "@/lib/tts/lookup";
 
 export type CategoryChip = {
@@ -116,3 +120,55 @@ export type MissionDetail = {
   categories: CategoryChip[];
   involvements: MissionInvolvementDetail[];
 };
+
+export type TerrainPackImageTileDetail = {
+  key: string;
+  href: string;
+  name: string;
+  imageUrl?: string;
+  subtitle?: string;
+  imageClassName: string;
+};
+
+export type TerrainPackTreasureTileDetail = {
+  key: string;
+  href: string;
+  name: string;
+  card?: TTSCardImage;
+  subtitle: string;
+};
+
+export type TerrainPackClearingTypeDetail = {
+  key: string;
+  href: string;
+  iconUrl: string;
+  label: string;
+  percentage: number;
+  percentageLabel: string;
+  countLabel: string;
+};
+
+export type TerrainPackDetail = {
+  entry: TerrainPackEntry;
+  displayName: string;
+  summary: string;
+  boards: BoardEntry[];
+  civilisationTokens: TerrainPackImageTileDetail[];
+  merchants: TerrainPackImageTileDetail[];
+  wildernessTokens: TerrainPackImageTileDetail[];
+  wildernessTokenCount: number;
+  wildernessTokenCountLabel: string;
+  terrainTreasures: TerrainPackTreasureTileDetail[];
+  missions: MissionEntry[];
+  civLocations: TerrainPackImageTileDetail[];
+  nativeMonsterBoxTitle: string;
+  uniqueNatives: TerrainPackNativeEntry[];
+  uniqueMonsters: TerrainPackMonsterEntry[];
+  natives: TerrainPackNativeEntry[];
+  monsters: TerrainPackMonsterEntry[];
+  clearingTypes: TerrainPackClearingTypeDetail[];
+  sites: TerrainPackImageTileDetail[];
+  mapTiles: TerrainPackImageTileDetail[];
+};
+
+export type { EquipmentDeck };

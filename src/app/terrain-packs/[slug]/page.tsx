@@ -4,28 +4,23 @@ import { SpriteCell } from "@/components/CardSprite";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
-import { getClearingTypeIcon } from "@/lib/clearing-types";
-import { terrainPackSummary } from "@/lib/terrain-packs";
 import {
-  getAllMerchants,
-  getAllTerrainPacks,
-  getTerrainPackBySlug,
-  type EquipmentDeck,
-  type BoardEntry,
-  type TerrainPackClearingTypeEntry,
-  type CivilisationTokenNameEntry,
-  type MerchantEntry,
-  type MapTileEntry,
-  type TerrainPackMonsterEntry,
-  type TerrainPackNativeEntry,
-  type TerrainPackEntry,
-  type TerrainPackSiteEntry,
-  type TerrainPackTreasureEntry,
-  type WildernessTokenNameEntry,
+  getAllTerrainPackDetailSlugs,
+  getTerrainPackDetail,
+} from "@/lib/entities/terrain-packs";
+import type {
+  TerrainPackClearingTypeDetail,
+  TerrainPackImageTileDetail,
+  TerrainPackTreasureTileDetail,
+} from "@/lib/entities/types";
+import type {
+  BoardEntry,
+  TerrainPackMonsterEntry,
+  TerrainPackNativeEntry,
 } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
-  return getAllTerrainPacks().map((entry) => ({ slug: entry.slug }));
+  return getAllTerrainPackDetailSlugs().map((slug) => ({ slug }));
 }
 
 export default async function TerrainPackPage({
@@ -34,13 +29,9 @@ export default async function TerrainPackPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const pack = getTerrainPackBySlug(slug);
+  const pack = getTerrainPackDetail(slug);
   if (!pack) notFound();
-  const wildernessTokenCount = wildernessTokenPackTotalCount(
-    pack.wildernessTokens,
-    pack.name,
-  );
-  const merchants = terrainPackMerchants(pack);
+  const { entry } = pack;
 
   return (
     <main className="mx-auto max-w-7xl px-6 py-12">
@@ -55,18 +46,18 @@ export default async function TerrainPackPage({
       </div>
 
       <div className="mt-4 mb-2 flex items-center gap-4">
-        {pack.iconUrl && (
+        {entry.iconUrl && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={pack.iconUrl}
+            src={entry.iconUrl}
             alt=""
             className="h-16 w-16 shrink-0 rounded border border-zinc-200 bg-zinc-100 object-cover dark:border-zinc-800 dark:bg-zinc-900"
           />
         )}
-        <h1 className="text-4xl font-bold">{terrainPackDisplayName(pack)}</h1>
+        <h1 className="text-4xl font-bold">{pack.displayName}</h1>
       </div>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        {terrainPackSummary(pack)}
+        {pack.summary}
       </p>
 
       <div className="space-y-8">
@@ -84,39 +75,27 @@ export default async function TerrainPackPage({
         >
           <LinkedGrid>
             {pack.civilisationTokens.map((entry) => (
-              <CivilisationTokenTile
-                key={entry.slug}
-                entry={entry}
-                packName={pack.name}
-              />
+              <ImageTile key={entry.key} entry={entry} />
             ))}
           </LinkedGrid>
         </TerrainBox>
 
-        <TerrainBox title="Merchants" count={merchants.length}>
+        <TerrainBox title="Merchants" count={pack.merchants.length}>
           <LinkedGrid>
-            {merchants.map((entry) => (
-              <MerchantTile
-                key={entry.slug}
-                entry={entry}
-                packName={pack.name}
-              />
+            {pack.merchants.map((entry) => (
+              <ImageTile key={entry.key} entry={entry} />
             ))}
           </LinkedGrid>
         </TerrainBox>
 
         <TerrainBox
           title="Wilderness Tokens"
-          count={wildernessTokenCount}
-          countLabel={tokenCountLabel(wildernessTokenCount)}
+          count={pack.wildernessTokenCount}
+          countLabel={pack.wildernessTokenCountLabel}
         >
           <LinkedGrid>
             {pack.wildernessTokens.map((entry) => (
-              <WildernessTokenTile
-                key={entry.slug}
-                entry={entry}
-                packName={pack.name}
-              />
+              <ImageTile key={entry.key} entry={entry} />
             ))}
           </LinkedGrid>
         </TerrainBox>
@@ -127,13 +106,13 @@ export default async function TerrainPackPage({
         >
           <LinkedGrid>
             {pack.terrainTreasures.map((entry) => (
-              <TerrainTreasureTile key={entry.slug} entry={entry} />
+              <TerrainTreasureTile key={entry.key} entry={entry} />
             ))}
           </LinkedGrid>
         </TerrainBox>
 
-        <TerrainBox title="Missions" count={pack.uniqueMissions.length}>
-          <MissionCardLinks missions={pack.uniqueMissions} />
+        <TerrainBox title="Missions" count={pack.missions.length}>
+          <MissionCardLinks missions={pack.missions} />
         </TerrainBox>
 
         <TerrainBox
@@ -142,19 +121,13 @@ export default async function TerrainPackPage({
         >
           <LinkedGrid>
             {pack.civLocations.map((entry) => (
-              <ImageTile
-                key={entry.slug}
-                href={`/civ-locations/${entry.slug}`}
-                name={entry.name}
-                imageUrl={entry.location.imageURL}
-                imageClassName="object-cover"
-              />
+              <ImageTile key={entry.key} entry={entry} />
             ))}
           </LinkedGrid>
         </TerrainBox>
 
         <TerrainBox
-          title={nativeMonsterBoxTitle(pack)}
+          title={pack.nativeMonsterBoxTitle}
           count={pack.uniqueNatives.length + pack.uniqueMonsters.length}
         >
           <NativeGrid>
@@ -184,7 +157,7 @@ export default async function TerrainPackPage({
         <TerrainBox title="Clearing Types" count={pack.clearingTypes.length}>
           <ClearingTypeGrid>
             {pack.clearingTypes.map((entry) => (
-              <ClearingTypeTile key={entry.id} entry={entry} />
+              <ClearingTypeTile key={entry.key} entry={entry} />
             ))}
           </ClearingTypeGrid>
         </TerrainBox>
@@ -192,7 +165,7 @@ export default async function TerrainPackPage({
         <TerrainBox title="Treasure Sites" count={pack.sites.length}>
           <LinkedGrid>
             {pack.sites.map((entry) => (
-              <SiteTile key={entry.slug} entry={entry} />
+              <ImageTile key={entry.key} entry={entry} />
             ))}
           </LinkedGrid>
         </TerrainBox>
@@ -200,20 +173,13 @@ export default async function TerrainPackPage({
         <TerrainBox title="Map Tiles" count={pack.mapTiles.length}>
           <LinkedGrid>
             {pack.mapTiles.map((entry) => (
-              <MapTileTile
-                key={`${entry.terrain}-${entry.name}`}
-                entry={entry}
-              />
+              <ImageTile key={entry.key} entry={entry} />
             ))}
           </LinkedGrid>
         </TerrainBox>
       </div>
     </main>
   );
-}
-
-function terrainPackDisplayName(pack: TerrainPackEntry): string {
-  return pack.slug === "neutral" ? "Always in use" : pack.name;
 }
 
 function TerrainBox({
@@ -266,52 +232,6 @@ function ClearingTypeGrid({ children }: { children: React.ReactNode }) {
   );
 }
 
-function CivilisationTokenTile({
-  entry,
-  packName,
-}: {
-  entry: CivilisationTokenNameEntry;
-  packName: string;
-}) {
-  const token =
-    entry.tokens.find(
-      (tokenImage) =>
-        (tokenImage.terrainPack ?? tokenImage.terrainGroup) === packName,
-    ) ?? entry.tokens[0];
-  return (
-    <ImageTile
-      href={`/civilisation-tokens/${entry.slug}`}
-      name={entry.name}
-      imageUrl={token.imageSecondaryURL || token.imageURL}
-      subtitle={tokenCountLabel(civilisationTokenTotalCount(token))}
-      imageClassName="object-cover"
-    />
-  );
-}
-
-function MerchantTile({
-  entry,
-  packName,
-}: {
-  entry: MerchantEntry;
-  packName: string;
-}) {
-  const token =
-    entry.tokens.find(
-      (tokenImage) =>
-        (tokenImage.terrainPack ?? tokenImage.terrainGroup) === packName,
-    ) ?? entry.tokens[0];
-  return (
-    <ImageTile
-      href={`/merchants/${entry.slug}`}
-      name={entry.name}
-      imageUrl={token.imageSecondaryURL || token.imageURL}
-      subtitle={token.attribute ?? token.gmNotes ?? token.terrainGroup}
-      imageClassName="object-cover"
-    />
-  );
-}
-
 function BoardTile({ entry }: { entry: BoardEntry }) {
   const href = `/boards/${entry.slug}`;
   return (
@@ -342,49 +262,30 @@ function BoardTile({ entry }: { entry: BoardEntry }) {
   );
 }
 
-function WildernessTokenTile({
+function TerrainTreasureTile({
   entry,
-  packName,
 }: {
-  entry: WildernessTokenNameEntry;
-  packName: string;
+  entry: TerrainPackTreasureTileDetail;
 }) {
-  const token =
-    entry.tokens.find((tokenImage) => tokenImage.terrain === packName) ??
-    entry.tokens[0];
-  return (
-    <ImageTile
-      href={`/wilderness-tokens/${entry.slug}`}
-      name={entry.name}
-      imageUrl={token.imageURL}
-      subtitle={wildernessTokenSubtitle(token)}
-      imageClassName="object-cover"
-    />
-  );
-}
-
-function TerrainTreasureTile({ entry }: { entry: TerrainPackTreasureEntry }) {
-  const card = entry.cards[0];
-  const href = `/equipment/${entry.slug}`;
   return (
     <section className="flex min-w-0 flex-col gap-2">
       <Link
-        href={href}
+        href={entry.href}
         className="rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition"
         aria-label={`View ${entry.name}`}
       >
-        {card ? <SpriteCell card={card} className="w-full" /> : null}
+        {entry.card ? (
+          <SpriteCell card={entry.card} className="w-full" />
+        ) : null}
       </Link>
       <div className="min-w-0">
         <h3 className="text-sm font-semibold leading-5">
-          <Link href={href} className="hover:underline">
+          <Link href={entry.href} className="hover:underline">
             {entry.name}
           </Link>
         </h3>
         <p className="text-xs text-zinc-500 dark:text-zinc-400">
-          {entry.decks.map(equipmentDeckLabel).join(" & ")} · {entry.copies} cop
-          {entry.copies === 1 ? "y" : "ies"}
-          {entry.cards.length > 1 ? ` · ${entry.cards.length} variants` : ""}
+          {entry.subtitle}
         </p>
       </div>
     </section>
@@ -399,17 +300,17 @@ function UniqueMonsterTile({ entry }: { entry: TerrainPackMonsterEntry }) {
   return <MonsterGroupStack group={entry} hrefBase="/monster-groups" />;
 }
 
-function ClearingTypeTile({ entry }: { entry: TerrainPackClearingTypeEntry }) {
+function ClearingTypeTile({ entry }: { entry: TerrainPackClearingTypeDetail }) {
   return (
     <Link
-      href={`/clearing-types/${entry.slug}`}
+      href={entry.href}
       className="rounded border border-zinc-200 dark:border-zinc-800 p-4 hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors"
     >
       <div className="flex items-start justify-between gap-3">
         <span className="flex min-w-0 items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={getClearingTypeIcon(entry.id)}
+            src={entry.iconUrl}
             alt=""
             className="h-10 w-10 shrink-0 object-contain"
           />
@@ -418,7 +319,7 @@ function ClearingTypeTile({ entry }: { entry: TerrainPackClearingTypeEntry }) {
           </h3>
         </span>
         <span className="shrink-0 text-lg font-semibold tabular-nums">
-          {formatPercentage(entry.percentage)}
+          {entry.percentageLabel}
         </span>
       </div>
       <div className="mt-3 h-2 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-900">
@@ -428,62 +329,26 @@ function ClearingTypeTile({ entry }: { entry: TerrainPackClearingTypeEntry }) {
         />
       </div>
       <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-        {entry.count} clearing{entry.count === 1 ? "" : "s"}
+        {entry.countLabel}
       </p>
     </Link>
   );
 }
 
-function SiteTile({ entry }: { entry: TerrainPackSiteEntry }) {
-  return (
-    <ImageTile
-      href={entry.href}
-      name={entry.name}
-      imageUrl={entry.imageURL}
-      subtitle={entry.subtitle}
-      imageClassName="object-cover"
-    />
-  );
-}
-
-function MapTileTile({ entry }: { entry: MapTileEntry }) {
-  return (
-    <ImageTile
-      href={entry.href}
-      name={entry.name}
-      imageUrl={entry.imageUrl}
-      subtitle={entry.terrain}
-      imageClassName="-rotate-[30deg] object-contain p-4"
-    />
-  );
-}
-
-function ImageTile({
-  href,
-  name,
-  imageUrl,
-  subtitle,
-  imageClassName,
-}: {
-  href: string;
-  name: string;
-  imageUrl?: string;
-  subtitle?: string;
-  imageClassName: string;
-}) {
+function ImageTile({ entry }: { entry: TerrainPackImageTileDetail }) {
   return (
     <section className="flex min-w-0 flex-col gap-2">
       <Link
-        href={href}
+        href={entry.href}
         className="rounded border border-zinc-200 dark:border-zinc-800 overflow-hidden bg-zinc-100 dark:bg-zinc-900 hover:ring-2 hover:ring-zinc-400 transition"
-        aria-label={`View ${name}`}
+        aria-label={`View ${entry.name}`}
       >
-        {imageUrl ? (
+        {entry.imageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={imageUrl}
-            alt={name}
-            className={`block w-full aspect-square ${imageClassName}`}
+            src={entry.imageUrl}
+            alt={entry.name}
+            className={`block w-full aspect-square ${entry.imageClassName}`}
           />
         ) : (
           <span className="block w-full aspect-square" />
@@ -491,78 +356,16 @@ function ImageTile({
       </Link>
       <div className="min-w-0">
         <h3 className="text-sm font-semibold leading-5">
-          <Link href={href} className="hover:underline">
-            {name}
+          <Link href={entry.href} className="hover:underline">
+            {entry.name}
           </Link>
         </h3>
-        {subtitle && (
-          <p className="text-xs text-zinc-500 dark:text-zinc-400">{subtitle}</p>
+        {entry.subtitle && (
+          <p className="text-xs text-zinc-500 dark:text-zinc-400">
+            {entry.subtitle}
+          </p>
         )}
       </div>
     </section>
   );
-}
-
-function wildernessTokenSubtitle(
-  token: WildernessTokenNameEntry["tokens"][number],
-): string {
-  return tokenCountLabel(wildernessTokenTotalCount(token));
-}
-
-function civilisationTokenTotalCount(
-  token: CivilisationTokenNameEntry["tokens"][number],
-): number {
-  return token.locations.reduce((sum, location) => sum + location.count, 0);
-}
-
-function wildernessTokenPackTotalCount(
-  entries: WildernessTokenNameEntry[],
-  packName: string,
-): number {
-  return entries.reduce((sum, entry) => {
-    const token =
-      entry.tokens.find((tokenImage) => tokenImage.terrain === packName) ??
-      entry.tokens[0];
-    return sum + wildernessTokenTotalCount(token);
-  }, 0);
-}
-
-function wildernessTokenTotalCount(
-  token: WildernessTokenNameEntry["tokens"][number],
-): number {
-  return token.locations.reduce((sum, location) => sum + location.count, 0);
-}
-
-function tokenCountLabel(count: number): string {
-  return `${count} token${count === 1 ? "" : "s"}`;
-}
-
-function nativeMonsterBoxTitle(pack: TerrainPackEntry): string {
-  return pack.slug === "neutral"
-    ? "Native/Monster Groups"
-    : "Unique Native/Monster Groups";
-}
-
-function terrainPackMerchants(pack: TerrainPackEntry): MerchantEntry[] {
-  const merchantNames = new Set(
-    pack.boards.flatMap((entry) => entry.board.merchants),
-  );
-  return getAllMerchants().filter((entry) => merchantNames.has(entry.name));
-}
-
-function equipmentDeckLabel(deck: EquipmentDeck): string {
-  switch (deck) {
-    case "item":
-      return "Item";
-    case "treasure":
-      return "Treasure";
-    case "deep-treasure":
-      return "Deep Treasure";
-    case "legendary":
-      return "Legendary";
-  }
-}
-
-function formatPercentage(value: number): string {
-  return `${Math.round(value)}%`;
 }
