@@ -23,6 +23,7 @@ import type {
   TerrainPackEntry,
   TerrainPackMonsterEntry,
   TerrainPackNativeEntry,
+  WildernessTokenNameEntry,
 } from "@/lib/tts/lookup";
 
 export type CategoryChip = {
@@ -40,6 +41,16 @@ export type BoardDetail = {
   categories: CategoryChip[];
   areas: BoardAreaLink[];
   cropTop: number;
+};
+
+export type CivLocationDetail = {
+  entry: CivLocationEntry;
+  subtitle: string;
+  categories: CategoryChip[];
+  mapTile?: MapTileEntry;
+  wildernessToken?: WildernessTokenNameEntry;
+  nativeGroups: MonsterGroupEntry[];
+  missions: MissionEntry[];
 };
 
 export type ImageTileSource = {
