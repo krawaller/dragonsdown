@@ -138,8 +138,19 @@ export function findRulebook(slug: string): Rulebook | undefined {
   return RULEBOOKS.find((book) => book.slug === slug);
 }
 
+const sectionsByFile = new Map<string, Promise<Section[]>>();
+
 export async function loadSections(book: Rulebook): Promise<Section[]> {
-  const file = path.join(DATA_DIR, book.fileName);
+  const cached = sectionsByFile.get(book.fileName);
+  if (cached) return cached;
+
+  const sections = loadSectionsFromFile(book.fileName);
+  sectionsByFile.set(book.fileName, sections);
+  return sections;
+}
+
+async function loadSectionsFromFile(fileName: string): Promise<Section[]> {
+  const file = path.join(DATA_DIR, fileName);
   const raw = await fs.readFile(file, "utf-8");
   const parsed = JSON.parse(raw) as RulebookFile;
   return parsed.content.map(ensureContentNodes);
