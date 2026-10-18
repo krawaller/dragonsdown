@@ -1,5 +1,6 @@
 import type { RulebookLink } from "@/lib/rulebook-links";
 import type { BoardPositionCrop } from "@/lib/board-position-crop";
+import type { BoardAreaLink } from "@/components/BoardImageToggle";
 import type { MagicIcons } from "@/components/MagicCube";
 import type {
   MapTile,
@@ -31,6 +32,14 @@ export type CategoryChip = {
   imageUrl?: string;
   imageCrop?: BoardPositionCrop;
   imageFit?: "contain" | "cover";
+};
+
+export type BoardDetail = {
+  entry: BoardEntry;
+  subtitle: string;
+  categories: CategoryChip[];
+  areas: BoardAreaLink[];
+  cropTop: number;
 };
 
 export type ImageTileSource = {
