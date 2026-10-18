@@ -53,6 +53,28 @@ export type CivLocationDetail = {
   missions: MissionEntry[];
 };
 
+export type WildernessTokenOccurrenceDetail = {
+  key: string;
+  terrain: string;
+  href: string;
+  terrainPack?: TerrainPackEntry;
+  imageUrl: string;
+  count: number;
+};
+
+export type WildernessTokenDetail = {
+  entry: WildernessTokenNameEntry;
+  total: number;
+  totalLabel: string;
+  categories: CategoryChip[];
+  boards: BoardEntry[];
+  showBoardPositions: boolean;
+  missions: MissionEntry[];
+  rulebookLinks: RulebookLink[];
+  occurrences: WildernessTokenOccurrenceDetail[];
+  siteTokenSites: SiteEntry[];
+};
+
 export type ImageTileSource = {
   imageUrl?: string;
   terrainIconUrl?: string;
