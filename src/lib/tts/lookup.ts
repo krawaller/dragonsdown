@@ -1320,8 +1320,10 @@ export type MissionEntry = Omit<CardEntry, "cards"> & {
   features: MissionFeatureLink[];
 };
 
+let allMissionsCache: MissionEntry[] | undefined;
+
 export function getAllMissions(): MissionEntry[] {
-  return Object.entries(getMissionIndex())
+  allMissionsCache ??= Object.entries(getMissionIndex())
     .map(([name, cards]) => ({
       name,
       slug: slugify(name),
@@ -1336,6 +1338,7 @@ export function getAllMissions(): MissionEntry[] {
       features: missionFeaturesFor(name),
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
+  return allMissionsCache;
 }
 
 export function getMissionBySlug(slug: string): MissionEntry | undefined {

@@ -3,29 +3,17 @@ import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
 import { MissionCardLinks } from "@/components/MissionCardLinks";
-import type { MapTile } from "@/components/MapTileViewer";
 import { MonsterGroupChipList } from "@/components/MonsterGroupChips";
 import { NativeCivilisationCard } from "@/components/NativeCivilisationCard";
 import { RulebookLinks } from "@/components/RulebookLinks";
-import { resolveNativeRulebookLinks } from "@/lib/rulebook-links";
-import { chipTotalCount } from "@/lib/tts";
 import {
-  getAllTerrainPacks,
-  getCivLocationBySlug,
-  getAllNativeGroups,
-  getMissionsFeaturing,
-  getMissionsForTarget,
-  getNativeGroupBySlug,
-  getSpellBySlug,
-  getSpellsForMonster,
-  getWildernessTokenBySlug,
-  type MonsterSpellEntry,
-  type NativeGroupSummon,
-} from "@/lib/tts/lookup";
-import mapTiles from "../../../../data/extracted-from-tts/map-tiles.json";
+  getAllNativeDetailSlugs,
+  getNativeDetail,
+} from "@/lib/entities/natives";
+import type { NativeSummonDetail, SpellTileDetail } from "@/lib/entities/types";
 
 export function generateStaticParams() {
-  return getAllNativeGroups().map((entry) => ({ slug: entry.slug }));
+  return getAllNativeDetailSlugs().map((slug) => ({ slug }));
 }
 
 export default async function NativePage({
@@ -34,23 +22,9 @@ export default async function NativePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const group = getNativeGroupBySlug(slug);
-  if (!group) notFound();
-  const missions = getMissionsForTarget(group.prettyName);
-  const featuredMissions = getMissionsFeaturing(group.prettyName);
-  const relatedMissions = uniqueMissions([...missions, ...featuredMissions]);
-  const chipNames = group.chips.flatMap((chip) =>
-    chip.monsterName ? [chip.monsterName] : [],
-  );
-  const spells = getSpellsForMonster([group.prettyName, ...chipNames]);
-  const rulebookLinks = await resolveNativeRulebookLinks(
-    group.prettyName,
-    chipNames,
-  );
-  const totalChips = group.chips.reduce(
-    (sum, chip) => sum + chipTotalCount(chip),
-    0,
-  );
+  const native = await getNativeDetail(slug);
+  if (!native) notFound();
+  const { group } = native;
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -65,7 +39,7 @@ export default async function NativePage({
       </div>
       <h1 className="text-4xl font-bold mt-4 mb-2">{group.prettyName}</h1>
       <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-8">
-        {chipCountLabel(totalChips)}
+        {native.chipCountLabel}
       </p>
 
       {group.civilisationCard && (
@@ -76,7 +50,7 @@ export default async function NativePage({
       )}
 
       <RulebookLinks
-        links={rulebookLinks}
+        links={native.rulebookLinks}
         heading="Rulebook"
         className="mb-10"
       />
@@ -84,29 +58,27 @@ export default async function NativePage({
       <div className="mb-10 space-y-6">
         <CollapsibleBox
           title="Appears at"
-          count={group.nativeSummons.length}
-          countLabel={`${group.nativeSummons.length} location${group.nativeSummons.length === 1 ? "" : "s"}`}
+          count={native.summons.length}
+          countLabel={`${native.summons.length} location${native.summons.length === 1 ? "" : "s"}`}
         >
-          <SummoningSourceGrid summons={group.nativeSummons} />
+          <SummoningSourceGrid summons={native.summons} />
         </CollapsibleBox>
 
         <CollapsibleBox
           title="Related Missions"
-          count={relatedMissions.length}
-          countLabel={`${relatedMissions.length} mission${relatedMissions.length === 1 ? "" : "s"}`}
+          count={native.relatedMissions.length}
+          countLabel={`${native.relatedMissions.length} mission${native.relatedMissions.length === 1 ? "" : "s"}`}
         >
-          <MissionCardLinks missions={relatedMissions} />
+          <MissionCardLinks missions={native.relatedMissions} />
         </CollapsibleBox>
       </div>
 
-      {spells.length > 0 && (
-        <NativeSpellLinks groupName={group.prettyName} spells={spells} />
-      )}
+      {native.spells.length > 0 && <NativeSpellLinks spells={native.spells} />}
 
       <CollapsibleBox
         title="Chips"
-        count={totalChips}
-        countLabel={chipCountLabel(totalChips)}
+        count={native.totalChips}
+        countLabel={native.chipCountLabel}
       >
         <MonsterGroupChipList group={group} />
       </CollapsibleBox>
@@ -114,7 +86,7 @@ export default async function NativePage({
   );
 }
 
-function SummoningSourceGrid({ summons }: { summons: NativeGroupSummon[] }) {
+function SummoningSourceGrid({ summons }: { summons: NativeSummonDetail[] }) {
   return (
     <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6">
       {summons.map((summon) => (
@@ -124,9 +96,7 @@ function SummoningSourceGrid({ summons }: { summons: NativeGroupSummon[] }) {
   );
 }
 
-function SummoningSourceTile({ summon }: { summon: NativeGroupSummon }) {
-  const source = summoningSourceDetails(summon);
-
+function SummoningSourceTile({ summon }: { summon: NativeSummonDetail }) {
   return (
     <section className="flex min-w-0 flex-col gap-2">
       <Link
@@ -134,10 +104,10 @@ function SummoningSourceTile({ summon }: { summon: NativeGroupSummon }) {
         className="overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition hover:ring-2 hover:ring-zinc-400 dark:border-zinc-800 dark:bg-zinc-900"
         aria-label={`View ${summon.name}`}
       >
-        {source?.imageUrl ? (
+        {summon.imageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={source.imageUrl}
+            src={summon.imageUrl}
             alt={summon.name}
             className="block aspect-square w-full object-cover"
           />
@@ -148,10 +118,10 @@ function SummoningSourceTile({ summon }: { summon: NativeGroupSummon }) {
         )}
       </Link>
       <div className="flex min-w-0 items-start gap-2">
-        {source?.terrainIconUrl && (
+        {summon.terrainIconUrl && (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={source.terrainIconUrl}
+            src={summon.terrainIconUrl}
             alt=""
             className="mt-0.5 h-7 w-7 shrink-0 object-contain"
           />
@@ -162,9 +132,9 @@ function SummoningSourceTile({ summon }: { summon: NativeGroupSummon }) {
               {summon.name}
             </Link>
           </h2>
-          {source?.subtitle && (
+          {summon.subtitle && (
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
-              {source.subtitle}
+              {summon.subtitle}
             </p>
           )}
         </div>
@@ -173,89 +143,7 @@ function SummoningSourceTile({ summon }: { summon: NativeGroupSummon }) {
   );
 }
 
-function summoningSourceDetails(
-  summon: NativeGroupSummon,
-):
-  | { imageUrl?: string; terrainIconUrl?: string; subtitle?: string }
-  | undefined {
-  const [, kind, slug] = summon.href.split("/");
-  if (kind === "civ-locations") {
-    const location = getCivLocationBySlug(slug);
-    if (!location) return undefined;
-
-    const wildernessToken = getWildernessTokenBySlug(slug)?.tokens[0];
-    if (wildernessToken && !isMapTileCivLocation(location.name)) {
-      return {
-        imageUrl: location.location.imageURL,
-        subtitle: "wilderness token location",
-        terrainIconUrl: terrainPackIconUrl(
-          wildernessToken.terrainPack ?? wildernessToken.terrain,
-        ),
-      };
-    }
-
-    const terrainPack =
-      location.location.terrainPack ??
-      terrainPackNameForCivLocation(location.slug);
-    return {
-      imageUrl: location.location.imageURL,
-      subtitle: "map tile location",
-      terrainIconUrl: terrainPackIconUrl(terrainPack),
-    };
-  }
-  if (kind === "wilderness-tokens") {
-    const token = getWildernessTokenBySlug(slug)?.tokens[0];
-    return token
-      ? {
-          imageUrl: token.imageURL,
-          subtitle: "wilderness token location",
-          terrainIconUrl: terrainPackIconUrl(
-            token.terrainPack ?? token.terrain,
-          ),
-        }
-      : undefined;
-  }
-  return undefined;
-}
-
-function isMapTileCivLocation(name: string): boolean {
-  return (mapTiles as MapTile[]).some(
-    (tile) => tile.name === name && tile.clearings.length === 4,
-  );
-}
-
-function terrainPackNameForCivLocation(slug: string): string | undefined {
-  return getAllTerrainPacks().find((pack) =>
-    pack.civLocations.some((location) => location.slug === slug),
-  )?.name;
-}
-
-function terrainPackIconUrl(terrainPack?: string): string | undefined {
-  if (!terrainPack) return undefined;
-  return getAllTerrainPacks().find((pack) => pack.name === terrainPack)
-    ?.iconUrl;
-}
-
-function chipCountLabel(count: number): string {
-  return `${count} chip${count === 1 ? "" : "s"}`;
-}
-
-function uniqueMissions<T extends { slug: string }>(missions: T[]): T[] {
-  const seen = new Set<string>();
-  return missions.filter((mission) => {
-    if (seen.has(mission.slug)) return false;
-    seen.add(mission.slug);
-    return true;
-  });
-}
-
-function NativeSpellLinks({
-  groupName,
-  spells,
-}: {
-  groupName: string;
-  spells: MonsterSpellEntry[];
-}) {
+function NativeSpellLinks({ spells }: { spells: SpellTileDetail[] }) {
   return (
     <div className="mb-10">
       <CollapsibleBox
@@ -265,11 +153,7 @@ function NativeSpellLinks({
       >
         <div className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6">
           {spells.map((spell) => (
-            <NativeSpellTile
-              key={spell.spellName}
-              groupName={groupName}
-              spell={spell}
-            />
+            <NativeSpellTile key={spell.spellName} spell={spell} />
           ))}
         </div>
       </CollapsibleBox>
@@ -277,21 +161,7 @@ function NativeSpellLinks({
   );
 }
 
-function NativeSpellTile({
-  groupName,
-  spell,
-}: {
-  groupName: string;
-  spell: MonsterSpellEntry;
-}) {
-  const entry = getSpellBySlug(spell.spellSlug);
-  const card = entry?.spells[0]?.spellCards[0] ?? entry?.spells[0]?.cards[0];
-  const otherCasters = spell.casterNames.filter((name) => name !== groupName);
-  const subtitle = [
-    ...(otherCasters.length > 0 ? otherCasters : [groupName]),
-    spell.sides.join(" & "),
-  ].join(" · ");
-
+function NativeSpellTile({ spell }: { spell: SpellTileDetail }) {
   return (
     <section className="flex min-w-0 flex-col gap-2">
       <Link
@@ -299,8 +169,8 @@ function NativeSpellTile({
         className="overflow-hidden rounded border border-zinc-200 bg-zinc-100 transition hover:ring-2 hover:ring-zinc-400 dark:border-zinc-800 dark:bg-zinc-900"
         aria-label={`View ${spell.spellName}`}
       >
-        {card ? (
-          <SpriteCell card={card} className="w-full rounded-none" />
+        {spell.card ? (
+          <SpriteCell card={spell.card} className="w-full rounded-none" />
         ) : (
           <span className="flex aspect-[5/7] w-full items-center justify-center p-3 text-center text-sm font-medium text-zinc-600 dark:text-zinc-400">
             {spell.spellName}
@@ -313,7 +183,9 @@ function NativeSpellTile({
             {spell.spellName}
           </Link>
         </h2>
-        <p className="text-xs text-zinc-500 dark:text-zinc-400">{subtitle}</p>
+        <p className="text-xs text-zinc-500 dark:text-zinc-400">
+          {spell.subtitle}
+        </p>
       </div>
     </section>
   );
