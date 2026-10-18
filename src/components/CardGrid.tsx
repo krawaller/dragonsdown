@@ -137,6 +137,8 @@ function missionTargetKindLabel(kind: MissionTargetKind): string {
   switch (kind) {
     case "native":
       return "native";
+    case "monsterGroup":
+      return "monster group";
     case "site":
       return "site";
     case "merchant":

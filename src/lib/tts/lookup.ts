@@ -764,6 +764,7 @@ export type NativeGroupLink = {
 
 export type MissionTargetKind =
   | "native"
+  | "monsterGroup"
   | "site"
   | "merchant"
   | "civLocation"
@@ -2565,6 +2566,7 @@ const NATIVE_CHIP_GROUPS = new Set(
     "consul",
     "dwarves",
     "elves",
+    "guard",
     "hunters",
     "knights",
     "mariners",
@@ -2580,7 +2582,12 @@ const NATIVE_CHIP_GROUPS = new Set(
 );
 
 function isNativeChipGroup(entry: ChipEntry): boolean {
-  return NATIVE_CHIP_GROUPS.has(normalizeTitle(entry.name));
+  return NATIVE_CHIP_GROUPS.has(nativeGroupKey(entry.name));
+}
+
+function nativeGroupKey(name: string): string {
+  const key = normalizeTitle(name).toLowerCase();
+  return key === "guards" ? "guard" : key;
 }
 
 function withMonsterNames(
@@ -2691,7 +2698,7 @@ function nativeNamesByImageForGroup(groupName: string): Map<string, string> {
   ];
   for (const [, entries] of orderedEntries) {
     for (const entry of entries) {
-      if (entry.group !== groupName) continue;
+      if (nativeGroupKey(entry.group) !== nativeGroupKey(groupName)) continue;
       for (const chip of entry.nativeChips ?? []) {
         if (!chip.imageURL || names.has(chip.imageURL)) continue;
         names.set(chip.imageURL, chip.name);
@@ -2765,7 +2772,7 @@ function getNativeSummonsForGroup(groupName: string): NativeGroupSummon[] {
     const href = nativeSummonHref(name);
     if (!href) continue;
     for (const entry of entries) {
-      if (entry.group !== groupName) continue;
+      if (nativeGroupKey(entry.group) !== nativeGroupKey(groupName)) continue;
       summons.push({
         name,
         href,
@@ -2779,7 +2786,11 @@ function getNativeSummonsForGroup(groupName: string): NativeGroupSummon[] {
 function getNativeCivilisationCard(
   groupName: string,
 ): TTSCardImage | undefined {
-  return getNativeIndex()[normalizeTitle(groupName)]?.[0]?.civilisationCard;
+  const groupKey = nativeGroupKey(groupName);
+  const entry = Object.entries(getNativeIndex()).find(
+    ([name]) => nativeGroupKey(name) === groupKey,
+  );
+  return entry?.[1][0]?.civilisationCard;
 }
 
 function mapTileHref(terrain: string, tileName: string): string {
@@ -2842,6 +2853,8 @@ function missionTerrainPacksFor(cards: TTSMissionCard[]): MissionTerrainPack[] {
     "swamps",
     "riverlands",
     "deserts",
+    "hills",
+    "thickets",
     "oasis",
   ];
   const terrainPacks = new Set(
@@ -2953,6 +2966,14 @@ function missionTargetFor(name: string): MissionTargetLink | null {
       name,
       href: mapTileHref(mapTile.terrain, mapTile.name),
       kind: "mapTile",
+    };
+  }
+  const monsterGroup = getMonsterGroupBySlug(slug);
+  if (monsterGroup) {
+    return {
+      name,
+      href: `/monster-groups/${monsterGroup.slug}`,
+      kind: "monsterGroup",
     };
   }
   return null;

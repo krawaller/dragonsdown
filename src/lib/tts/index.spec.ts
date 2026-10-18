@@ -1059,19 +1059,19 @@ describe("extractMissions", () => {
       ],
     };
 
-    expect(
-      extractMissions(save, "dd_all_exp")["Decapitator"][0],
-    ).toMatchObject({
-      kind: "atrocity",
-      box: "Natives and Legends",
-      terrainPack: "neutral",
-      rewards: {
-        drawCards: { deep: 1 },
-        points: { gold: 5 },
-        attributes: { intellect: 1 },
-        outlaw: 1,
+    expect(extractMissions(save, "dd_all_exp")["Decapitator"][0]).toMatchObject(
+      {
+        kind: "atrocity",
+        box: "Natives and Legends",
+        terrainPack: "neutral",
+        rewards: {
+          drawCards: { deep: 1 },
+          points: { gold: 5 },
+          attributes: { intellect: 1 },
+          outlaw: 1,
+        },
       },
-    });
+    );
   });
 
   it("extracts printed mission stats from manual card-cell mappings", () => {
@@ -1173,20 +1173,20 @@ describe("extractMissions", () => {
       ],
     };
 
-    expect(
-      extractMissions(save, "dd_all_exp")["Trade Goods"][0],
-    ).toMatchObject({
-      kind: "expedition",
-      box: "Eastern Reaches",
-      terrainPack: "riverlands",
-      rewards: {
-        steal: {
-          drawCards: { item: 1 },
-          points: { gold: 9 },
-          outlaw: 1,
+    expect(extractMissions(save, "dd_all_exp")["Trade Goods"][0]).toMatchObject(
+      {
+        kind: "expedition",
+        box: "Eastern Reaches",
+        terrainPack: "riverlands",
+        rewards: {
+          steal: {
+            drawCards: { item: 1 },
+            points: { gold: 9 },
+            outlaw: 1,
+          },
         },
       },
-    });
+    );
   });
 
   it("corrects the mislabeled Desert Marauder mission card from manual mappings", () => {
@@ -1284,6 +1284,7 @@ describe("extractChips", () => {
       {
         source: "eastern",
         group: "Trolls",
+        box: "Dragons Down",
         imageURL: "front.png",
         imageSecondaryURL: "back.png",
         locations: [{ ancestry: [], count: 1 }],
@@ -1324,6 +1325,7 @@ describe("extractChips", () => {
       {
         source: "eastern",
         group: "wardens",
+        box: "Dragons Down",
         imageURL: "warden-front.png",
         imageSecondaryURL: "warden-back.png",
         locations: [{ ancestry: [], count: 1 }],
@@ -1389,6 +1391,7 @@ describe("extractChips", () => {
       {
         source: "core",
         group: "AdultDragons",
+        box: "Dragons Down",
         imageURL: "dragon-front.png",
         imageSecondaryURL: "dragon-back.png",
         locations: [{ ancestry: ["Adult Dragons"], count: 1 }],
