@@ -560,6 +560,22 @@
           "headings": ["Ruthless Riverlands", "Swimming"]
         }
       ]
+    },
+    "hills": {
+      "rulebookLinks": [
+        {
+          "doc": "wildlands",
+          "headings": ["Hostile Hills", "Hills Clearings"]
+        }
+      ]
+    },
+    "thickets": {
+      "rulebookLinks": [
+        {
+          "doc": "wildlands",
+          "headings": ["Tangled Thickets", "Thickets Clearings"]
+        }
+      ]
     }
   },
   "legendary-location": {

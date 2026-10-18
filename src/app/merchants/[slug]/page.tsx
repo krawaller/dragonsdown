@@ -52,7 +52,7 @@ export default async function MerchantPage({
     <main className="mx-auto max-w-5xl px-6 py-12">
       <PageHeader
         title={entry.name}
-        subtitle={`${entry.tokens.length} image${entry.tokens.length === 1 ? "" : "s"} · ${totalTokens} physical token${totalTokens === 1 ? "" : "s"}`}
+        subtitle="Merchant"
         categories={categories}
       />
 

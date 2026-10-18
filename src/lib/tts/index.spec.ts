@@ -58,6 +58,7 @@ describe("prettifyChipName", () => {
 
   it("normalizes known TTS chip group typos", () => {
     expect(prettifyChipName("Cylops")).toBe("Cyclops");
+    expect(prettifyChipName("Grimwretch")).toBe("Grim Wretch");
   });
 });
 

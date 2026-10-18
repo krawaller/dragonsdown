@@ -59,7 +59,11 @@ export default async function SitePage({
     const fullGroup = getMonsterGroupBySlug(group.slug);
     return fullGroup ? [fullGroup] : [];
   });
-  const tokenItems = siteTokenItems({ treasureSiteToken, wildernessToken });
+  const tokenItems = siteTokenItems({
+    site: entry,
+    treasureSiteToken,
+    wildernessToken,
+  });
   const missions = getMissionsForTarget(entry.name);
   const rulebookLinks = await resolveSiteRulebookLinks(entry.name);
   const categories = siteHeaderCategories({
@@ -177,25 +181,48 @@ function treasureSiteCategoryIcon(
 }
 
 type SiteTokenItem = {
-  token: WildernessTokenNameEntry;
+  href?: string;
+  imageUrl: string;
+  name: string;
   label: string;
+  images?: { imageURL: string }[];
 };
 
 function siteTokenItems({
+  site,
   treasureSiteToken,
   wildernessToken,
 }: {
+  site: SiteEntry;
   treasureSiteToken?: WildernessTokenNameEntry;
   wildernessToken?: WildernessTokenNameEntry;
 }): SiteTokenItem[] {
   return [
+    {
+      imageUrl: site.site.imageSecondaryURL || site.site.imageURL,
+      name: site.name,
+      label: "Site token",
+    },
     ...(treasureSiteToken
-      ? [{ token: treasureSiteToken, label: "Treasure site token" }]
+      ? [wildernessTokenItem(treasureSiteToken, "Treasure site token")]
       : []),
     ...(wildernessToken
-      ? [{ token: wildernessToken, label: "Wilderness token" }]
+      ? [wildernessTokenItem(wildernessToken, "Wilderness token")]
       : []),
   ];
+}
+
+function wildernessTokenItem(
+  token: WildernessTokenNameEntry,
+  label: string,
+): SiteTokenItem {
+  return {
+    href: `/wilderness-tokens/${token.slug}`,
+    imageUrl: token.tokens[0]?.imageURL ?? "",
+    images: token.tokens.map((entry) => ({ imageURL: entry.imageURL })),
+    name: token.name,
+    label,
+  };
 }
 
 function TokensAndGuardiansBox({
@@ -236,13 +263,10 @@ function TokensAndGuardiansBox({
 }
 
 function SiteTokenTile({ item }: { item: SiteTokenItem }) {
-  const preview = item.token.tokens.slice(0, 4);
+  const preview = item.images ?? [{ imageURL: item.imageUrl }];
   const previewHeightClass = preview.length <= 1 ? "h-20" : "h-28";
-  return (
-    <Link
-      href={`/wilderness-tokens/${item.token.slug}`}
-      className="group block rounded border border-zinc-200 p-4 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
-    >
+  const content = (
+    <>
       <span className={`relative mb-4 block ${previewHeightClass}`}>
         {preview.map((token, index) => (
           <span
@@ -265,12 +289,29 @@ function SiteTokenTile({ item }: { item: SiteTokenItem }) {
       </span>
       <span className="block min-w-0">
         <span className="block text-lg font-semibold group-hover:underline">
-          {item.token.name}
+          {item.name}
         </span>
         <span className="mt-1 block text-sm text-zinc-500 dark:text-zinc-400">
           {item.label}
         </span>
       </span>
+    </>
+  );
+
+  if (!item.href) {
+    return (
+      <div className="group block rounded border border-zinc-200 p-4 dark:border-zinc-800">
+        {content}
+      </div>
+    );
+  }
+
+  return (
+    <Link
+      href={item.href}
+      className="group block rounded border border-zinc-200 p-4 transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
+    >
+      {content}
     </Link>
   );
 }

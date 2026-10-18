@@ -55,6 +55,9 @@
   "Mana Shield": {
     "front": ["Lamia"]
   },
+  "Panoply": {
+    "front": ["Grim Wretch"]
+  },
   "Peace": {
     "front": ["Priest Leader"]
   },

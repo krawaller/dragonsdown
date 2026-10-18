@@ -1223,7 +1223,9 @@ export function getAllNativeGroups(): MonsterGroupEntry[] {
 export function getMonsterGroupBySlug(
   slug: string,
 ): MonsterGroupEntry | undefined {
-  return getAllMonsterGroups().find((entry) => entry.slug === slug);
+  return getAllMonsterGroups().find(
+    (entry) => entry.slug === slug || slugify(entry.name) === slug,
+  );
 }
 
 export function getNativeGroupBySlug(
@@ -1350,8 +1352,11 @@ export function getMissionsForTarget(targetName: string): MissionEntry[] {
 }
 
 export function getMissionsFeaturing(featureName: string): MissionEntry[] {
+  const featureKeys = nameLookupKeys(featureName);
   return getAllMissions().filter((entry) =>
-    entry.features.some((feature) => feature.name === featureName),
+    entry.features.some((feature) =>
+      namesShareLookupKey(feature.name, featureKeys),
+    ),
   );
 }
 
@@ -2505,13 +2510,13 @@ function isSameLegendaryChip(
 function getLegendaryLocationSummonsForMonsterGroup(
   groupName: string,
 ): MonsterGroupLegendaryLocationSummon[] {
-  const groupKey = normalizeTitle(groupName);
+  const groupKeys = nameLookupKeys(groupName);
   return Object.entries(getLegendaryLocationIndex())
     .flatMap(([locationName, locations]) => {
       const monsters = uniqueStrings(
         locations
           .flatMap((location) => location.monsterChips ?? [])
-          .filter((chip) => normalizeTitle(chip.name) === groupKey)
+          .filter((chip) => namesShareLookupKey(chip.name, groupKeys))
           .map((chip) => chip.name),
       );
       return monsters.length > 0
@@ -2751,11 +2756,18 @@ function roleSortValue(role: "wandering" | "local"): number {
 function getMapTileSummonsForMonsterGroup(
   groupName: string,
 ): MonsterGroupMapTileSummon[] {
+  const groupKeys = nameLookupKeys(groupName);
   const summons: MonsterGroupMapTileSummon[] = [];
   for (const [tileName, entries] of Object.entries(getMapTileMonsterIndex())) {
     for (const entry of entries) {
       for (const role of ["wandering", "local"] as const) {
-        if (!entry[role].includes(groupName)) continue;
+        if (
+          !entry[role].some((monster) =>
+            namesShareLookupKey(monster, groupKeys),
+          )
+        ) {
+          continue;
+        }
         summons.push({
           tileName,
           terrain: entry.terrain,
@@ -2776,10 +2788,11 @@ function getMapTileSummonsForMonsterGroup(
 function getSiteSummonsForMonsterGroup(
   groupName: string,
 ): MonsterGroupSiteSummon[] {
+  const groupKeys = nameLookupKeys(groupName);
   const summons: MonsterGroupSiteSummon[] = [];
   for (const [name, entries] of Object.entries(getSiteMonsterIndex())) {
     for (const entry of entries) {
-      if (entry.group !== groupName) continue;
+      if (!namesShareLookupKey(entry.group, groupKeys)) continue;
       const href = siteMonsterHref(name);
       if (!href) continue;
       summons.push({
@@ -2851,7 +2864,11 @@ function missionTargetsFor(cards: TTSMissionCard[]): MissionTargetLink[] {
 function missionFeaturesFor(missionName: string): MissionFeatureLink[] {
   const featureNames = Object.entries(getMissionFeatureIndex()).flatMap(
     ([manualMissionName, feature]) => {
-      if (manualMissionName !== missionName) return [];
+      if (
+        !namesShareLookupKey(manualMissionName, nameLookupKeys(missionName))
+      ) {
+        return [];
+      }
       return Array.isArray(feature) ? feature : [feature];
     },
   );
@@ -3030,13 +3047,45 @@ function missionFeatureFor(name: string): MissionFeatureLink | null {
 function getNativeGroupByFeatureName(
   name: string,
 ): MonsterGroupEntry | undefined {
-  return getAllNativeGroups().find((entry) => entry.prettyName === name);
+  const keys = nameLookupKeys(name);
+  return getAllNativeGroups().find((entry) =>
+    monsterGroupMatchesLookupKeys(entry, keys),
+  );
 }
 
 function getMonsterGroupByFeatureName(
   name: string,
 ): MonsterGroupEntry | undefined {
-  return getAllMonsterGroups().find((entry) => entry.prettyName === name);
+  const keys = nameLookupKeys(name);
+  return getAllMonsterGroups().find((entry) =>
+    monsterGroupMatchesLookupKeys(entry, keys),
+  );
+}
+
+function monsterGroupMatchesLookupKeys(
+  entry: MonsterGroupEntry,
+  keys: Set<string>,
+): boolean {
+  return (
+    namesShareLookupKey(entry.prettyName, keys) ||
+    namesShareLookupKey(entry.name, keys)
+  );
+}
+
+function namesShareLookupKey(name: string, keys: Set<string>): boolean {
+  for (const key of nameLookupKeys(name)) {
+    if (keys.has(key)) return true;
+  }
+  return false;
+}
+
+function nameLookupKeys(name: string): Set<string> {
+  const prettified = prettifyChipName(name);
+  return new Set(
+    [name, prettified]
+      .flatMap((value) => [value, normalizeTitle(value), slugify(value)])
+      .filter(Boolean),
+  );
 }
 
 function uniqueStrings(values: string[]): string[] {

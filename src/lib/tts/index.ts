@@ -851,6 +851,7 @@ export function prettifyChipName(s: string): string {
 
 const CHIP_NAME_ALIASES: Record<string, string> = {
   Cylops: "Cyclops",
+  Grimwretch: "Grim Wretch",
 };
 
 /**
