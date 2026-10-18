@@ -188,7 +188,21 @@ function getSpellIndex(): SpellIndex {
 
 function getChipIndex(): ChipIndex {
   if (cachedChipIndex !== null) return cachedChipIndex;
-  cachedChipIndex = readJsonOrEmpty<ChipIndex>(CHIPS_FILE);
+  cachedChipIndex = normalizeTerrainPackBoxesByKey(
+    Object.fromEntries(
+      Object.entries(readJsonOrEmpty<ChipIndex>(CHIPS_FILE)).map(
+        ([name, chips]) => [
+          name,
+          chips.map((chip) =>
+            withTerrainPackReleaseBox({
+              ...chip,
+              terrainPack: chipTerrainPack(chip),
+            }),
+          ),
+        ],
+      ),
+    ),
+  );
   return cachedChipIndex;
 }
 
@@ -1759,6 +1773,18 @@ function terrainPackReleaseLookupKeys(terrainPackName: string): string[] {
   const missionTerrainPack = missionTerrainPackName(terrainPackName);
   if (missionTerrainPack) keys.push(slugify(missionTerrainPack));
   return [...new Set(keys)];
+}
+
+function chipTerrainPack(chip: TTSChip): string | undefined {
+  for (const location of chip.locations) {
+    const bucket = location.ancestry[0];
+    if (!bucket) continue;
+    const terrainPack = missionTerrainPackName(
+      bucket.replace(/\s+chips$/i, ""),
+    );
+    if (terrainPack) return terrainPack;
+  }
+  return undefined;
 }
 
 function missionTerrainPackName(value: string): string | undefined {

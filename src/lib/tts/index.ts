@@ -391,6 +391,7 @@ export type TTSChip = {
   /** Narrative chip name, when TTS metadata only provided the group name. */
   name?: string;
   box?: string;
+  terrainPack?: string;
   imageURL: string;
   imageSecondaryURL: string;
   /**
@@ -1516,7 +1517,9 @@ export function extractMissions(
     const image = imageFor(card, source, ancestry);
     if (!image) continue;
     const mission: TTSMissionCard = { ...image };
-    const metadata = card.GUID ? missionMetadataByGuid.get(card.GUID) : undefined;
+    const metadata = card.GUID
+      ? missionMetadataByGuid.get(card.GUID)
+      : undefined;
     if (metadata?.kind) mission.kind = metadata.kind;
     if (metadata?.box) mission.box = metadata.box;
     const terrainPack =
@@ -2324,7 +2327,9 @@ type MissionLuaMetadata = {
   box?: string;
 };
 
-function missionLuaMetadataByGuid(root: unknown): Map<string, MissionLuaMetadata> {
+function missionLuaMetadataByGuid(
+  root: unknown,
+): Map<string, MissionLuaMetadata> {
   const metadataByGuid = new Map<string, MissionLuaMetadata>();
   for (const luaScript of luaScripts(root)) {
     const missionsTable = luaTableBody(luaScript, "Missions");
@@ -2336,7 +2341,9 @@ function missionLuaMetadataByGuid(root: unknown): Map<string, MissionLuaMetadata
       const body = match[2];
       metadataByGuid.set(guid, {
         kind: missionKindFromLuaType(luaStringField(body, "type")),
-        terrainPack: missionTerrainPackFromLuaPack(luaStringField(body, "pack")),
+        terrainPack: missionTerrainPackFromLuaPack(
+          luaStringField(body, "pack"),
+        ),
         box: missionBoxFromLuaModule(luaStringField(body, "module")),
       });
     }
@@ -2371,7 +2378,9 @@ function luaStringField(body: string, fieldName: string): string | undefined {
   return match?.[1];
 }
 
-function missionKindFromLuaType(value: string | undefined): MissionKind | undefined {
+function missionKindFromLuaType(
+  value: string | undefined,
+): MissionKind | undefined {
   switch (value) {
     case "red":
       return "atrocity";
@@ -2413,7 +2422,9 @@ function missionTerrainPackFromLuaPack(
   }
 }
 
-function missionBoxFromLuaModule(value: string | undefined): string | undefined {
+function missionBoxFromLuaModule(
+  value: string | undefined,
+): string | undefined {
   switch (value) {
     case "DD":
       return "Dragons Down";

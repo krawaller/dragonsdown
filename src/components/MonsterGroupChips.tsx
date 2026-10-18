@@ -18,13 +18,16 @@ export function MonsterGroupStack({
   summaryKind?: "monster" | "monsterIndex" | "native";
   subtitle?: string;
 }) {
-  const preview = group.chips.slice(0, 4);
+  const preview = group.chips.flatMap((chip) =>
+    Array.from({ length: chipTotalCount(chip) }, () => chip),
+  );
   const previewHeightClass = preview.length <= 1 ? "h-20" : "h-28";
+  const previewOffsetRem = chipStackOffsetRem(preview.length);
   const totalCopies = group.chips.reduce(
     (sum, chip) => sum + chipTotalCount(chip),
     0,
   );
-  const totalSites = group.sites.length + group.legendaryLocations.length;
+  const summary = monsterGroupSummary(group, totalCopies, summaryKind);
 
   return (
     <Link
@@ -37,7 +40,7 @@ export function MonsterGroupStack({
             key={`${chip.imageURL}-${index}`}
             className="absolute block w-20 h-20 rounded-full overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900 shadow-sm"
             style={{
-              left: `${index * 1.55}rem`,
+              left: `${index * previewOffsetRem}rem`,
               top: `${index % 2 === 0 ? 0 : 1.25}rem`,
               zIndex: preview.length - index,
             }}
@@ -58,55 +61,18 @@ export function MonsterGroupStack({
         <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
           {subtitle}
         </p>
-      ) : summaryKind === "native" ? (
-        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-          {chipCountLabel(totalCopies)} ·{" "}
-          {locationCountLabel(group.nativeSummons.length)}
-        </p>
-      ) : summaryKind === "monsterIndex" ? (
-        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-          {monsterIndexSummary(totalCopies, totalSites, group.mapTiles.length)}
-        </p>
       ) : (
-        <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-          {group.chips.length} chip{" "}
-          {group.chips.length === 1 ? "image" : "images"}
-          {" · "}
-          {totalCopies} total
+        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+          {summary}
         </p>
       )}
-      {!subtitle &&
-        summaryKind === "monster" &&
-        (group.mapTiles.length > 0 ||
-          group.sites.length > 0 ||
-          group.legendaryLocations.length > 0 ||
-          group.nativeSummons.length > 0) && (
-          <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-            {group.nativeSummons.length > 0 ? (
-              <>
-                {group.nativeSummons.length} location{" "}
-                {group.nativeSummons.length === 1 ? "link" : "links"}
-              </>
-            ) : (
-              <>
-                {group.mapTiles.length} map tile{" "}
-                {group.mapTiles.length === 1 ? "link" : "links"}
-                {" · "}
-                {group.sites.length} site{" "}
-                {group.sites.length === 1 ? "link" : "links"}
-                {group.legendaryLocations.length > 0 && (
-                  <>
-                    {" · "}
-                    {group.legendaryLocations.length} legendary location{" "}
-                    {group.legendaryLocations.length === 1 ? "link" : "links"}
-                  </>
-                )}
-              </>
-            )}
-          </p>
-        )}
     </Link>
   );
+}
+
+function chipStackOffsetRem(count: number): number {
+  if (count <= 6) return 1.55;
+  return Math.max(0.85, 1.55 - (count - 6) * 0.12);
 }
 
 function chipCountLabel(count: number): string {
@@ -117,23 +83,25 @@ function locationCountLabel(count: number): string {
   return `${count} location${count === 1 ? "" : "s"}`;
 }
 
-function siteCountLabel(count: number): string {
-  return `${count} site${count === 1 ? "" : "s"}`;
+function variantCountLabel(count: number): string {
+  return `${count} variant${count === 1 ? "" : "s"}`;
 }
 
-function tileCountLabel(count: number): string {
-  return `${count} tile${count === 1 ? "" : "s"}`;
-}
-
-function monsterIndexSummary(
-  chips: number,
-  sites: number,
-  tiles: number,
+function monsterGroupSummary(
+  group: MonsterGroupEntry,
+  totalChips: number,
+  summaryKind: "monster" | "monsterIndex" | "native",
 ): string {
+  const locationCount =
+    summaryKind === "native"
+      ? group.nativeSummons.length
+      : group.mapTiles.length +
+        group.sites.length +
+        group.legendaryLocations.length;
   return [
-    chipCountLabel(chips),
-    sites > 0 ? siteCountLabel(sites) : undefined,
-    tiles > 0 ? tileCountLabel(tiles) : undefined,
+    chipCountLabel(totalChips),
+    group.chips.length > 1 ? variantCountLabel(group.chips.length) : undefined,
+    locationCount > 0 ? locationCountLabel(locationCount) : undefined,
   ]
     .filter((part): part is string => Boolean(part))
     .join(" · ");
