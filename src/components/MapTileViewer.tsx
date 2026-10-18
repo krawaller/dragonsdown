@@ -82,6 +82,7 @@ export function MapTileViewer({
   mapTileConnections,
   magicIcons,
   terrainPack,
+  showHeader = true,
   showTileControls = true,
   headingLevel = "h2",
 }: {
@@ -92,6 +93,7 @@ export function MapTileViewer({
   mapTileConnections?: MapTileConnections;
   magicIcons?: MagicIcons;
   terrainPack?: MapTileTerrainPack;
+  showHeader?: boolean;
   showTileControls?: boolean;
   headingLevel?: "h1" | "h2";
 }) {
@@ -276,23 +278,25 @@ export function MapTileViewer({
       )}
 
       <section className="min-w-0">
-        <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
-          <div>
-            <Heading className="text-2xl font-semibold">
-              {selectedTile.name}
-            </Heading>
-            <p className="text-sm text-zinc-500 dark:text-zinc-400">
-              {mapTileKindLabel(selectedTile)}
-              {showTileControls ? ` · ${selectedSide}` : ""}
-            </p>
+        {showHeader && (
+          <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <Heading className="text-2xl font-semibold">
+                {selectedTile.name}
+              </Heading>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                {mapTileKindLabel(selectedTile)}
+                {showTileControls ? ` · ${selectedSide}` : ""}
+              </p>
+            </div>
+            {!showTileControls && (
+              <HeaderContextLinks
+                terrainPack={terrainPack}
+                civLocation={selectedCivLocation}
+              />
+            )}
           </div>
-          {!showTileControls && (
-            <HeaderContextLinks
-              terrainPack={terrainPack}
-              civLocation={selectedCivLocation}
-            />
-          )}
-        </div>
+        )}
 
         {showTileControls && mapTileConnections && selectedTile && (
           <SecretPathMagicColors

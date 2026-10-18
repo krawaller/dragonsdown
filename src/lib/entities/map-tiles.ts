@@ -1,6 +1,7 @@
 import type { MapTile } from "@/components/MapTileViewer";
 import { getClearingTypeTiles } from "@/lib/clearing-types";
 import { MAGIC_TYPES } from "@/lib/magic";
+import { getReleaseByBoxName } from "@/lib/releases";
 import { resolveMagicRulebookLinks } from "@/lib/rulebook-links";
 import { slugify } from "@/lib/slug";
 import {
@@ -13,7 +14,11 @@ import {
 } from "@/lib/tts/lookup";
 import connectionsData from "../../../data/manual/map-tile-connections.json";
 import tiles from "../../../data/extracted-from-tts/map-tiles.json";
-import type { MapTileConnectionsDetail, MapTileDetail } from "./types";
+import type {
+  CategoryChip,
+  MapTileConnectionsDetail,
+  MapTileDetail,
+} from "./types";
 
 const mapTileDetailsBySlug = new Map<
   string,
@@ -48,15 +53,29 @@ async function buildMapTileDetail(
   const terrainPack = getAllTerrainPacks().find(
     (pack) => pack.name === (entry?.terrainPack ?? tile.terrain),
   );
+  const releaseBox = entry?.box ?? terrainPack?.box;
+  const release = releaseBox ? getReleaseByBoxName(releaseBox) : undefined;
+  const civLocations = getAllCivLocations().map(({ name, slug, location }) => ({
+    name,
+    slug,
+    imageUrl: location.imageURL,
+  }));
+  const civLocation =
+    tile.clearings.length === 4
+      ? civLocations.find((location) => location.name === tile.name)
+      : undefined;
 
   return {
     entry,
     tile,
-    civLocations: getAllCivLocations().map(({ name, slug, location }) => ({
-      name,
-      slug,
-      imageUrl: location.imageURL,
-    })),
+    subtitle: mapTileKindLabel(tile),
+    categories: mapTileHeaderCategories({
+      release,
+      tile,
+      terrainPack,
+      civLocation,
+    }),
+    civLocations,
     monsterGroups: getMonsterGroupsForMapTile(tile.terrain, tile.name).flatMap(
       (group) => {
         const monsterGroup = getMonsterGroupBySlug(group.slug);
@@ -80,6 +99,72 @@ async function buildMapTileDetail(
     magicIcons: await magicIcons(),
     terrainPack,
   };
+}
+
+function mapTileHeaderCategories({
+  release,
+  tile,
+  terrainPack,
+  civLocation,
+}: {
+  release?: ReturnType<typeof getReleaseByBoxName>;
+  tile: MapTile;
+  terrainPack: MapTileDetail["terrainPack"];
+  civLocation?: MapTileDetail["civLocations"][number];
+}): CategoryChip[] {
+  return [
+    ...(release
+      ? [
+          {
+            href: `/releases/${release.slug}`,
+            label: "Release",
+            value: releaseCategoryValue(release),
+            imageUrl: release.iconUrl,
+            imageFit: "contain" as const,
+          },
+        ]
+      : []),
+    {
+      href: "/map-tiles",
+      label: "Component",
+      value: "Map tiles",
+      imageUrl: tile.imageUrl,
+      imageFit: "contain",
+    },
+    ...(terrainPack
+      ? [
+          {
+            href: `/terrain-packs/${terrainPack.slug}`,
+            label: "Terrain pack",
+            value:
+              terrainPack.slug === "neutral"
+                ? "Always in use"
+                : terrainPack.name,
+            imageUrl: terrainPack.iconUrl,
+          },
+        ]
+      : []),
+    ...(civLocation
+      ? [
+          {
+            href: `/civ-locations/${civLocation.slug}`,
+            label: "Civilization location",
+            value: civLocation.name,
+            imageUrl: civLocation.imageUrl,
+          },
+        ]
+      : []),
+  ];
+}
+
+function releaseCategoryValue(
+  release: NonNullable<ReturnType<typeof getReleaseByBoxName>>,
+): string {
+  return release.sourceSlug === "core" ? "Core box" : release.title;
+}
+
+function mapTileKindLabel(tile: MapTile): string {
+  return tile.clearings.length === 4 ? "Civilisation tile" : "Wilderness tile";
 }
 
 function withClearingTypes(mapTiles: MapTile[]): MapTile[] {

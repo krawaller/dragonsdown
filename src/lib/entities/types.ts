@@ -190,6 +190,8 @@ export type MapTileConnectionsDetail = Record<
 export type MapTileDetail = {
   entry?: MapTileEntry;
   tile: MapTile;
+  subtitle: string;
+  categories: CategoryChip[];
   civLocations: MapTileCivLocation[];
   monsterGroups: MapTileMonsterGroup[];
   missions: MapTileMission[];
