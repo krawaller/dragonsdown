@@ -14,6 +14,7 @@ import type {
   BoardEntry,
   CivLocationEntry,
   EquipmentDeck,
+  MerchantEntry,
   MissionEntry,
   MissionFeatureKind,
   MissionTargetKind,
@@ -73,6 +74,23 @@ export type WildernessTokenDetail = {
   rulebookLinks: RulebookLink[];
   occurrences: WildernessTokenOccurrenceDetail[];
   siteTokenSites: SiteEntry[];
+};
+
+export type MerchantTokenDetail = {
+  key: string;
+  href: string;
+  imageUrl: string;
+  alt: string;
+};
+
+export type MerchantDetail = {
+  entry: MerchantEntry;
+  categories: CategoryChip[];
+  boards: BoardEntry[];
+  missions: MissionEntry[];
+  tokens: MerchantTokenDetail[];
+  totalTokens: number;
+  totalTokensLabel: string;
 };
 
 export type ImageTileSource = {
