@@ -37,6 +37,9 @@ import {
   getWildernessTokenBySlug,
 } from "@/lib/tts/lookup";
 
+const RELEASES_CATEGORY_ICON_URL =
+  "/images/pdf/37f74aa0bbf43addc356a799f1c65d453770f235.jpeg";
+
 export function generateStaticParams() {
   return getAllReleases().map((release) => ({ slug: release.slug }));
 }
@@ -56,7 +59,7 @@ export default async function ReleasePage({
       <PageHeader
         title={release.title}
         subtitle={`Version ${release.version}`}
-        categories={releaseHeaderCategories(release)}
+        categories={releaseHeaderCategories()}
       />
 
       <div className="space-y-6">
@@ -72,15 +75,13 @@ export default async function ReleasePage({
   );
 }
 
-function releaseHeaderCategories(
-  release: NonNullable<ReturnType<typeof getReleaseBySlug>>,
-): PageHeaderCategoryLink[] {
+function releaseHeaderCategories(): PageHeaderCategoryLink[] {
   return [
     {
       href: "/releases",
       label: "Category",
       value: "Releases",
-      imageUrl: release.iconUrl,
+      imageUrl: RELEASES_CATEGORY_ICON_URL,
       imageFit: "contain",
     },
   ];
