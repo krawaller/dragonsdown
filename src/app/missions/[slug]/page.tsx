@@ -9,6 +9,8 @@ import {
   type PageHeaderCategoryLink,
 } from "@/components/PageHeader";
 import { SiteLink } from "@/components/SiteLink";
+import { cropForBoardPosition } from "@/lib/board-position-crop";
+import { getBoardPositionForItem } from "@/lib/board-positions";
 import { getReleaseByBoxName } from "@/lib/releases";
 import type { MissionKind, MissionTerrainPack, TTSCardImage } from "@/lib/tts";
 import type {
@@ -20,6 +22,7 @@ import type {
 import {
   getAllMissions,
   getAllTerrainPacks,
+  getBoardsForSite,
   getCivLocationBySlug,
   getMissionBySlug,
   getMonsterGroupBySlug,
@@ -166,11 +169,17 @@ function MissionInvolvement({ target }: { target: MissionInvolvementLink }) {
   if (target.kind === "site") {
     const site = slug ? getSiteBySlug(slug) : undefined;
     if (site) {
+      const boardPositionPreview = siteBoardPositionPreview(site.name);
+
       return (
         <SiteLink
           name={site.name}
           href={`/sites/${site.slug}`}
-          imageURL={site.site.imageSecondaryURL}
+          imageURL={
+            boardPositionPreview?.imageUrl ?? site.site.imageSecondaryURL
+          }
+          imageCrop={boardPositionPreview?.imageCrop}
+          size="compact"
           subtitle={site.site.terrainPack}
         />
       );
@@ -202,6 +211,17 @@ function MissionInvolvement({ target }: { target: MissionInvolvementLink }) {
       </span>
     </Link>
   );
+}
+
+function siteBoardPositionPreview(siteName: string) {
+  const board = getBoardsForSite(siteName)[0];
+  if (!board) return undefined;
+  const position = getBoardPositionForItem(board.board, siteName);
+  if (!position) return { imageUrl: board.board.imageURL };
+  return {
+    imageUrl: board.board.imageURL,
+    imageCrop: cropForBoardPosition(position),
+  };
 }
 
 function CivLocationLink({

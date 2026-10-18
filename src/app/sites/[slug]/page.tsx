@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BoardPositionLinks } from "@/components/BoardPositionLinks";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
-import { MissionLinks } from "@/components/MissionLinks";
+import { MissionCardLinks } from "@/components/MissionCardLinks";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
 import {
   PageHeader,
@@ -22,6 +22,7 @@ import {
   getMonsterGroupsForSite,
   getSiteBySlug,
   getWildernessTokenBySlug,
+  type MissionEntry,
   type SiteEntry,
   type TerrainPackEntry,
   type WildernessTokenNameEntry,
@@ -97,11 +98,7 @@ export default async function SitePage({
         tokenItems={tokenItems}
       />
 
-      <MissionLinks
-        missions={missions}
-        className="mt-10"
-        headingClassName="text-xl font-semibold mb-4"
-      />
+      <RelatedMissionsBox missions={missions} />
 
       <RulebookLinks
         links={rulebookLinks}
@@ -109,6 +106,22 @@ export default async function SitePage({
         className="mt-10"
       />
     </main>
+  );
+}
+
+function RelatedMissionsBox({ missions }: { missions: MissionEntry[] }) {
+  if (missions.length === 0) return null;
+
+  return (
+    <section className="mt-10">
+      <CollapsibleBox
+        title="Related Missions"
+        count={missions.length}
+        countLabel={missionCountLabel(missions.length)}
+      >
+        <MissionCardLinks missions={missions} />
+      </CollapsibleBox>
+    </section>
   );
 }
 
@@ -199,6 +212,7 @@ function siteTokenItems({
 }): SiteTokenItem[] {
   return [
     {
+      href: `/site-tokens/${site.slug}`,
       imageUrl: site.site.imageSecondaryURL || site.site.imageURL,
       name: site.name,
       label: "Site token",
@@ -330,6 +344,10 @@ function releaseCategoryValue(
   release: NonNullable<ReturnType<typeof getReleaseByBoxName>>,
 ): string {
   return release.sourceSlug === "core" ? "Core box" : release.title;
+}
+
+function missionCountLabel(count: number): string {
+  return `${count} mission${count === 1 ? "" : "s"}`;
 }
 
 function siteSubtitle(kind: SiteEntry["kind"]): string {

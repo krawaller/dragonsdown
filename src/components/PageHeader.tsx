@@ -31,7 +31,7 @@ export function PageHeader({
           Home
         </Link>
         {categories.map((category) => (
-          <PageHeaderCategoryLink
+          <PageHeaderCategoryChip
             key={`${category.label}-${category.href}`}
             {...category}
           />
@@ -50,7 +50,7 @@ export function PageHeader({
   );
 }
 
-function PageHeaderCategoryLink({
+export function PageHeaderCategoryChip({
   href,
   label,
   value,
