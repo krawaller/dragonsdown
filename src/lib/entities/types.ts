@@ -3,7 +3,10 @@ import type { BoardPositionCrop } from "@/lib/board-position-crop";
 import type { TTSCardImage } from "@/lib/tts";
 import type {
   BoardEntry,
+  CivLocationEntry,
   MissionEntry,
+  MissionFeatureKind,
+  MissionTargetKind,
   MonsterGroupEntry,
   SiteEntry,
 } from "@/lib/tts/lookup";
@@ -90,4 +93,26 @@ export type SiteDetail = {
   tokenAndGuardianCount: number;
   relatedMissions: MissionEntry[];
   rulebookLinks: RulebookLink[];
+};
+
+export type MissionInvolvementDetail = {
+  key: string;
+  kind: MissionTargetKind | MissionFeatureKind;
+  href: string;
+  name: string;
+  native?: MonsterGroupEntry;
+  site?: SiteEntry;
+  sitePreview?: {
+    imageUrl?: string;
+    imageCrop?: BoardPositionCrop;
+  };
+  monsterGroup?: MonsterGroupEntry;
+  civLocation?: CivLocationEntry;
+};
+
+export type MissionDetail = {
+  entry: MissionEntry;
+  subtitle?: string;
+  categories: CategoryChip[];
+  involvements: MissionInvolvementDetail[];
 };

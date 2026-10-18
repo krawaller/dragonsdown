@@ -2,39 +2,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SpriteCell } from "@/components/CardSprite";
 import { CollapsibleBox } from "@/components/CollapsibleBox";
-import { missionKindLabel } from "@/components/MissionKindBadge";
 import { MonsterGroupStack } from "@/components/MonsterGroupChips";
-import {
-  PageHeader,
-  type PageHeaderCategoryLink,
-} from "@/components/PageHeader";
+import { PageHeader } from "@/components/PageHeader";
 import { SiteLink } from "@/components/SiteLink";
-import { cropForBoardPosition } from "@/lib/board-position-crop";
-import { getBoardPositionForItem } from "@/lib/board-positions";
-import { getReleaseByBoxName } from "@/lib/releases";
-import type { MissionKind, MissionTerrainPack, TTSCardImage } from "@/lib/tts";
-import type {
-  MissionFeatureKind,
-  MissionFeatureLink,
-  MissionTargetKind,
-  MissionTargetLink,
-} from "@/lib/tts/lookup";
 import {
-  getAllMissions,
-  getAllTerrainPacks,
-  getBoardsForSite,
-  getCivLocationBySlug,
-  getMissionBySlug,
-  getMonsterGroupBySlug,
-  getNativeGroupBySlug,
-  getSiteBySlug,
-  type TerrainPackEntry,
-} from "@/lib/tts/lookup";
-
-type MissionInvolvementLink = MissionTargetLink | MissionFeatureLink;
+  getAllMissionDetailSlugs,
+  getMissionDetail,
+} from "@/lib/entities/missions";
+import type { MissionInvolvementDetail } from "@/lib/entities/types";
+import type { MissionFeatureKind, MissionTargetKind } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
-  return getAllMissions().map((entry) => ({ slug: entry.slug }));
+  return getAllMissionDetailSlugs().map((slug) => ({ slug }));
 }
 
 export default async function MissionPage({
@@ -43,32 +22,21 @@ export default async function MissionPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const mission = getMissionBySlug(slug);
+  const mission = getMissionDetail(slug);
   if (!mission) notFound();
-  const missionCard = mission.cards[0];
-  const releaseBox = uniqueDefinedValue(mission.cards.map((card) => card.box));
-  const release = releaseBox ? getReleaseByBoxName(releaseBox) : undefined;
-  const terrainPack = uniqueTerrainPackForMission(mission.terrainPacks);
-  const involvements = missionInvolvementLinks(
-    mission.targets,
-    mission.features,
-  );
+  const { entry } = mission;
 
   return (
     <main className="mx-auto max-w-4xl px-6 py-12">
       <PageHeader
-        title={mission.name}
-        subtitle={missionKindSummary(mission.kinds)}
-        categories={missionHeaderCategories({
-          release,
-          missionCard,
-          terrainPack,
-        })}
+        title={entry.name}
+        subtitle={mission.subtitle}
+        categories={mission.categories}
       />
 
       <div className="space-y-6">
         <div className="grid grid-cols-1 justify-items-center gap-4 sm:grid-cols-2">
-          {mission.cards.map((card, index) => (
+          {entry.cards.map((card, index) => (
             <SpriteCell
               key={`${card.faceURL}-${card.row}-${card.col}-${index}`}
               card={card}
@@ -79,15 +47,12 @@ export default async function MissionPage({
 
         <CollapsibleBox
           title="Involves"
-          count={involvements.length}
-          countLabel={`${involvements.length} item${involvements.length === 1 ? "" : "s"}`}
+          count={mission.involvements.length}
+          countLabel={`${mission.involvements.length} item${mission.involvements.length === 1 ? "" : "s"}`}
         >
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {involvements.map((target) => (
-              <MissionInvolvement
-                key={`${target.kind}-${target.href}-${target.name}`}
-                target={target}
-              />
+            {mission.involvements.map((target) => (
+              <MissionInvolvement key={target.key} target={target} />
             ))}
           </div>
         </CollapsibleBox>
@@ -96,69 +61,12 @@ export default async function MissionPage({
   );
 }
 
-function missionHeaderCategories({
-  release,
-  missionCard,
-  terrainPack,
-}: {
-  release?: ReturnType<typeof getReleaseByBoxName>;
-  missionCard: TTSCardImage | undefined;
-  terrainPack?: TerrainPackEntry;
-}): PageHeaderCategoryLink[] {
-  return [
-    ...(release
-      ? [
-          {
-            href: `/releases/${release.slug}`,
-            label: "Release",
-            value: releaseCategoryValue(release),
-            imageUrl: release.iconUrl,
-            imageFit: "contain" as const,
-          },
-        ]
-      : []),
-    {
-      href: "/missions",
-      label: "Component",
-      value: "Mission cards",
-      imageUrl: missionCard?.backURL,
-      imageCrop:
-        missionCard?.uniqueBack === true
-          ? cardImageCrop(missionCard)
-          : undefined,
-      imageFit: "contain",
-    },
-    ...(terrainPack
-      ? [
-          {
-            href: `/terrain-packs/${terrainPack.slug}`,
-            label: "Terrain pack",
-            value: terrainPack.name,
-            imageUrl: terrainPack.iconUrl,
-          },
-        ]
-      : []),
-  ];
-}
-
-function cardImageCrop(card: TTSCardImage) {
-  return {
-    left: card.col / card.numWidth,
-    top: card.row / card.numHeight,
-    width: 1 / card.numWidth,
-    height: 1 / card.numHeight,
-  };
-}
-
-function MissionInvolvement({ target }: { target: MissionInvolvementLink }) {
-  const slug = lastPathSegment(target.href);
-
+function MissionInvolvement({ target }: { target: MissionInvolvementDetail }) {
   if (target.kind === "native") {
-    const native = slug ? getNativeGroupBySlug(slug) : undefined;
-    if (native) {
+    if (target.native) {
       return (
         <MonsterGroupStack
-          group={native}
+          group={target.native}
           hrefBase="/natives"
           summaryKind="native"
         />
@@ -167,36 +75,36 @@ function MissionInvolvement({ target }: { target: MissionInvolvementLink }) {
   }
 
   if (target.kind === "site") {
-    const site = slug ? getSiteBySlug(slug) : undefined;
-    if (site) {
-      const boardPositionPreview = siteBoardPositionPreview(site.name);
-
+    if (target.site) {
       return (
         <SiteLink
-          name={site.name}
-          href={`/sites/${site.slug}`}
+          name={target.site.name}
+          href={`/sites/${target.site.slug}`}
           imageURL={
-            boardPositionPreview?.imageUrl ?? site.site.imageSecondaryURL
+            target.sitePreview?.imageUrl ?? target.site.site.imageSecondaryURL
           }
-          imageCrop={boardPositionPreview?.imageCrop}
+          imageCrop={target.sitePreview?.imageCrop}
           size="compact"
-          subtitle={site.site.terrainPack}
+          subtitle={target.site.site.terrainPack}
         />
       );
     }
   }
 
   if (target.kind === "monsterGroup") {
-    const group = slug ? getMonsterGroupBySlug(slug) : undefined;
-    if (group) {
-      return <MonsterGroupStack group={group} hrefBase="/monster-groups" />;
+    if (target.monsterGroup) {
+      return (
+        <MonsterGroupStack
+          group={target.monsterGroup}
+          hrefBase="/monster-groups"
+        />
+      );
     }
   }
 
   if (target.kind === "civLocation") {
-    const location = slug ? getCivLocationBySlug(slug) : undefined;
-    if (location) {
-      return <CivLocationLink location={location} />;
+    if (target.civLocation) {
+      return <CivLocationLink location={target.civLocation} />;
     }
   }
 
@@ -213,21 +121,10 @@ function MissionInvolvement({ target }: { target: MissionInvolvementLink }) {
   );
 }
 
-function siteBoardPositionPreview(siteName: string) {
-  const board = getBoardsForSite(siteName)[0];
-  if (!board) return undefined;
-  const position = getBoardPositionForItem(board.board, siteName);
-  if (!position) return { imageUrl: board.board.imageURL };
-  return {
-    imageUrl: board.board.imageURL,
-    imageCrop: cropForBoardPosition(position),
-  };
-}
-
 function CivLocationLink({
   location,
 }: {
-  location: NonNullable<ReturnType<typeof getCivLocationBySlug>>;
+  location: NonNullable<MissionInvolvementDetail["civLocation"]>;
 }) {
   const href = `/civ-locations/${location.slug}`;
 
@@ -255,80 +152,6 @@ function CivLocationLink({
       </p>
     </section>
   );
-}
-
-function missionInvolvementLinks(
-  targets: MissionTargetLink[],
-  features: MissionFeatureLink[],
-): MissionInvolvementLink[] {
-  const uniqueLinks = new Map<string, MissionInvolvementLink>();
-  for (const link of [...targets, ...features]) {
-    uniqueLinks.set(`${link.kind}:${link.href}:${link.name}`, link);
-  }
-  return [...uniqueLinks.values()];
-}
-
-function missionKindSummary(kinds: MissionKind[]): string | undefined {
-  if (kinds.length === 0) return undefined;
-  return kinds.map((kind) => missionKindLabel(kind)).join(", ");
-}
-
-function uniqueTerrainPackForMission(
-  missionTerrainPacks: MissionTerrainPack[],
-): TerrainPackEntry | undefined {
-  const uniquePack = uniqueDefinedValue(
-    missionTerrainPacks.filter((pack) => pack !== "neutral"),
-  );
-  const terrainPackName = uniquePack
-    ? terrainPackNameForMissionPack(uniquePack)
-    : undefined;
-  if (!terrainPackName) return undefined;
-  return getAllTerrainPacks().find((pack) => pack.name === terrainPackName);
-}
-
-function terrainPackNameForMissionPack(
-  pack: Exclude<MissionTerrainPack, "neutral">,
-): string | undefined {
-  switch (pack) {
-    case "caves":
-      return "Cruel Caves";
-    case "deserts":
-    case "oasis":
-      return "Dreadful Deserts";
-    case "hills":
-      return "Hostile Hills";
-    case "mountains":
-      return "Malevolent Mountains";
-    case "plains":
-      return "Perilous Plains";
-    case "riverlands":
-      return "Ruthless Riverlands";
-    case "swamps":
-      return "Sinister Swamps";
-    case "thickets":
-      return "Tangled Thickets";
-    case "woods":
-      return "Wicked Woods";
-  }
-}
-
-function uniqueDefinedValue<T extends string>(
-  values: (T | undefined)[],
-): T | undefined {
-  const uniqueValues = new Set(
-    values.filter((value): value is T => value !== undefined),
-  );
-  return uniqueValues.size === 1 ? [...uniqueValues][0] : undefined;
-}
-
-function releaseCategoryValue(
-  release: NonNullable<ReturnType<typeof getReleaseByBoxName>>,
-): string {
-  return release.sourceSlug === "core" ? "Core box" : release.title;
-}
-
-function lastPathSegment(href: string): string | undefined {
-  return href.split("/").filter(Boolean).at(-1);
 }
 
 function missionInvolvementKindLabel(
