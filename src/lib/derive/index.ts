@@ -1,9 +1,5 @@
 import type { Section } from "../rulebooks";
-import {
-  docMatchesTarget,
-  selectMatchingIds,
-  type Target,
-} from "../doc-query";
+import { docMatchesTarget, selectMatchingIds, type Target } from "../doc-query";
 
 /**
  * A "derived doc" is a virtual rulebook assembled by picking sections out of
@@ -52,6 +48,48 @@ export type RulebookInput = {
   slug: string;
   sections: Section[];
 };
+
+export type TreasureDeckIndex = Record<
+  string,
+  readonly { deck: "treasure" | "deep-treasure" | "legendary" }[]
+>;
+
+export function classifyTreasureSections(
+  rulebooks: readonly RulebookInput[],
+  treasures: TreasureDeckIndex,
+): RulebookInput[] {
+  const titleKey = (title: string) =>
+    title.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const decksByTitle = new Map<string, Set<string>>();
+  for (const [title, cards] of Object.entries(treasures)) {
+    const key = titleKey(title);
+    const decks = decksByTitle.get(key) ?? new Set<string>();
+    for (const card of cards) decks.add(card.deck);
+    decksByTitle.set(key, decks);
+  }
+
+  return rulebooks.map((book) => ({
+    ...book,
+    sections: book.sections.map((section) => {
+      if (
+        !section.tags?.some(
+          (tag) => tag === "treasure" || tag === "deepTreasure",
+        )
+      )
+        return section;
+      const decks = decksByTitle.get(titleKey(section.title));
+      if (!decks?.size) return section;
+
+      const tags = section.tags.filter(
+        (tag) => tag !== "treasure" && tag !== "deepTreasure",
+      );
+      if (decks.has("treasure")) tags.push("treasure");
+      if (decks.has("deep-treasure") || decks.has("legendary"))
+        tags.push("deepTreasure");
+      return { ...section, tags };
+    }),
+  }));
+}
 
 /**
  * Run a derived-doc spec against every rulebook and return the resulting

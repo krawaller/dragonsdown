@@ -1,5 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { deriveDocument, type DerivedDoc, type RulebookInput } from ".";
+import {
+  classifyTreasureSections,
+  deriveDocument,
+  type DerivedDoc,
+  type RulebookInput,
+} from ".";
+import { DERIVED_DOCS } from "./docs";
 import type { Section, SectionLevel } from "../rulebooks";
 
 function s(
@@ -43,6 +49,53 @@ const RULEBOOKS: RulebookInput[] = [
   },
 ];
 
+describe("treasure manifest classification", () => {
+  it("uses card decks rather than Epic wording, including legendary and shared variants", () => {
+    const fixtures: RulebookInput[] = [
+      {
+        slug: "core",
+        sections: [
+          s("core", "1", "Battle Staff", { tags: ["treasure", "weapon"] }),
+          s("core", "2", "Ordinary Treasure", { tags: ["deepTreasure"] }),
+          s("core", "3", "Champion's Blade", { tags: ["treasure"] }),
+          s("core", "4", "Cursed Treasure", { tags: ["treasure"] }),
+          s("core", "5", "Future Epic", { tags: ["deepTreasure"] }),
+          s("core", "6", "Battle Staff", {
+            content: "A rules reference, not a manifest entry.",
+          }),
+        ],
+      },
+    ];
+    const inputs = classifyTreasureSections(fixtures, {
+      "Battle Staff": [{ deck: "deep-treasure" }],
+      "Ordinary Treasure": [{ deck: "treasure" }],
+      "Champions Blade": [{ deck: "legendary" }],
+      "Cursed Treasure": [{ deck: "treasure" }, { deck: "deep-treasure" }],
+    });
+    const normalSpec = DERIVED_DOCS.find(
+      (spec) => spec.slug === "treasure-manifest",
+    )!;
+    const deepSpec = DERIVED_DOCS.find(
+      (spec) => spec.slug === "deep-treasure-manifest",
+    )!;
+
+    expect(
+      deriveDocument(normalSpec, inputs).map((section) => section.title),
+    ).toEqual(["Cursed Treasure", "Ordinary Treasure"]);
+    expect(
+      deriveDocument(deepSpec, inputs).map((section) => section.title),
+    ).toEqual([
+      "Battle Staff",
+      "Champion's Blade",
+      "Cursed Treasure",
+      "Future Epic",
+    ]);
+    expect(inputs[0].sections[0].tags).toEqual(["weapon", "deepTreasure"]);
+    expect(inputs[0].sections[5].tags).toBeUndefined();
+    expect(fixtures[0].sections[0].tags).toEqual(["treasure", "weapon"]);
+  });
+});
+
 describe("deriveDocument", () => {
   const optionalRulesSpec: DerivedDoc = {
     slug: "optional-rules",
@@ -68,7 +121,9 @@ describe("deriveDocument", () => {
 
   it("preserves source on each section (provenance)", () => {
     const out = deriveDocument(optionalRulesSpec, RULEBOOKS);
-    const sourcesByTitle = Object.fromEntries(out.map((s) => [s.title, s.source]));
+    const sourcesByTitle = Object.fromEntries(
+      out.map((s) => [s.title, s.source]),
+    );
     expect(sourcesByTitle["Luring"]).toBe("core");
     expect(sourcesByTitle["Difficult Natives"]).toBe("natives-and-legends");
   });
@@ -116,9 +171,15 @@ describe("deriveDocument", () => {
         slug: "core",
         sections: [
           s("core", "9.6.2", "Black Spells", { level: 3 }),
-          s("core", "9.6.2.1", "Affliction", { level: 4, tags: ["spell", "blackMagic"] }),
+          s("core", "9.6.2.1", "Affliction", {
+            level: 4,
+            tags: ["spell", "blackMagic"],
+          }),
           s("core", "9.6.3", "Blue Spells", { level: 3 }),
-          s("core", "9.6.3.1", "Calm", { level: 4, tags: ["spell", "blueMagic"] }),
+          s("core", "9.6.3.1", "Calm", {
+            level: 4,
+            tags: ["spell", "blueMagic"],
+          }),
         ],
       },
       {
@@ -142,13 +203,15 @@ describe("deriveDocument", () => {
       })),
     };
     const out = deriveDocument(spec, fixtures);
-    expect(out.map((s) => `${s.level} ${s.source}/${s.id} ${s.title}`)).toEqual([
-      "1 core/9.6.2 Black Spells",
-      "2 core/9.6.2.1 Affliction",
-      "2 eastern-reaches/3.4.1.1 Banshee",
-      "1 core/9.6.3 Blue Spells",
-      "2 core/9.6.3.1 Calm",
-    ]);
+    expect(out.map((s) => `${s.level} ${s.source}/${s.id} ${s.title}`)).toEqual(
+      [
+        "1 core/9.6.2 Black Spells",
+        "2 core/9.6.2.1 Affliction",
+        "2 eastern-reaches/3.4.1.1 Banshee",
+        "1 core/9.6.3 Blue Spells",
+        "2 core/9.6.3.1 Calm",
+      ],
+    );
   });
 
   it("grouped: skips groups whose header has no match", () => {
@@ -162,7 +225,10 @@ describe("deriveDocument", () => {
       slug: "spells",
       title: "Spells",
       groups: [
-        { header: { titleRegex: "Black Spells" }, items: { tags: "blackMagic" } },
+        {
+          header: { titleRegex: "Black Spells" },
+          items: { tags: "blackMagic" },
+        },
         { header: { titleRegex: "Nonexistent" }, items: { tags: "x" } },
       ],
     };

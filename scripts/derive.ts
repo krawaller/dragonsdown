@@ -3,6 +3,7 @@
  *
  * Run after `npm run transform`. The rulebooks must already be present and
  * transformed; this script doesn't trigger extract/transform itself.
+ * Treasure classification uses the current downloaded TTS save's card decks.
  */
 import { promises as fs } from "node:fs";
 import path from "node:path";
@@ -11,8 +12,9 @@ import {
   loadSections,
   sectionWithContentNodes,
 } from "../src/lib/rulebooks";
-import { deriveDocument } from "../src/lib/derive";
+import { classifyTreasureSections, deriveDocument } from "../src/lib/derive";
 import { DERIVED_DOCS } from "../src/lib/derive/docs";
+import { extractTreasures } from "../src/lib/tts";
 
 const OUT_DIR = path.join(process.cwd(), "data", "derived");
 
@@ -25,9 +27,17 @@ async function main(): Promise<void> {
       sections: await loadSections(book),
     })),
   );
+  const save = JSON.parse(
+    await fs.readFile(
+      path.join(process.cwd(), "data", "downloaded-tts", "dd_all_exp.json"),
+      "utf8",
+    ),
+  );
+  const treasures = extractTreasures(save, "dd_all_exp");
+  const classifiedInputs = classifyTreasureSections(rulebookInputs, treasures);
 
   for (const spec of DERIVED_DOCS) {
-    const sections = deriveDocument(spec, rulebookInputs).map(
+    const sections = deriveDocument(spec, classifiedInputs).map(
       sectionWithContentNodes,
     );
     const outPath = path.join(OUT_DIR, `${spec.slug}.json`);
