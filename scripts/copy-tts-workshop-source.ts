@@ -1,6 +1,7 @@
 import { execFile } from "node:child_process";
 import { readFile, readdir, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import { promisify } from "node:util";
 import { deserialize } from "bson";
 
@@ -108,8 +109,20 @@ function pathKey(pathSegments: (string | number)[]): string {
   return JSON.stringify(pathSegments);
 }
 
-function numbersMatch(left: number, right: number): boolean {
-  return Object.is(left, right) || Math.fround(left) === Math.fround(right);
+function numbersMatch(
+  left: number,
+  right: number,
+  key: string | number | undefined,
+): boolean {
+  if (Object.is(left, right) || Math.fround(left) === Math.fround(right))
+    return true;
+  if (typeof key !== "string" || !isFloatKey(key)) return false;
+
+  const tolerance = Math.max(
+    1e-5,
+    1e-6 * Math.max(Math.abs(left), Math.abs(right)),
+  );
+  return Math.abs(left - right) <= tolerance;
 }
 
 function numberText(
@@ -118,13 +131,20 @@ function numberText(
   tokenMaps: NumberTokenMap[],
 ): string {
   const key = pathKey(pathSegments);
+  const [lastSegment] = pathSegments.slice(-1);
+  const text = normalizedNumberText(value);
   for (const tokens of tokenMaps) {
     const token = tokens.get(key);
-    if (token !== undefined && numbersMatch(Number(token), value)) return token;
+    if (
+      token !== undefined &&
+      (numbersMatch(Number(token), value, lastSegment) ||
+        (typeof lastSegment === "string" &&
+          isFloatKey(lastSegment) &&
+          numbersMatch(Number(token), Number(text), lastSegment)))
+    )
+      return token;
   }
 
-  const text = normalizedNumberText(value);
-  const [lastSegment] = pathSegments.slice(-1);
   if (
     Number.isInteger(value) &&
     typeof lastSegment === "string" &&
@@ -142,7 +162,7 @@ function isFloatKey(key: string): boolean {
   );
 }
 
-function writeJson(
+export function writeJson(
   value: unknown,
   tokenMaps: NumberTokenMap[],
   indent = "",
@@ -183,7 +203,7 @@ function writeJson(
   throw new Error(`Cannot write unsupported JSON value: ${String(value)}`);
 }
 
-function collectNumberTokens(json: string): NumberTokenMap {
+export function collectNumberTokens(json: string): NumberTokenMap {
   const tokens: NumberTokenMap = new Map();
   let index = 0;
 
@@ -393,7 +413,12 @@ async function main() {
   console.log(`Decoded ${source.filePath} -> ${TARGET}`);
 }
 
-main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exitCode = 1;
-});
+if (
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href
+) {
+  main().catch((error) => {
+    console.error(error instanceof Error ? error.message : error);
+    process.exitCode = 1;
+  });
+}
