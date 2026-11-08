@@ -43,13 +43,21 @@ export const DERIVED_DOCS: DerivedDoc[] = [
     sortBy: "title",
   },
   {
+    slug: "all-treasures",
+    title: "All Treasures",
+    pick: { childrenOf: { parent: { titleRegex: "Treasure Manifest" } } },
+    sortBy: "title",
+  },
+  {
     slug: "spell-manifest",
     title: "Spell Manifest",
     groups: SPELL_COLORS().map((color) => ({
       // Use the core book's color heading as the canonical group header.
       header: { doc: "core", titleRegex: `^${color} Spells$` },
       // Items: any section tagged "spell" + the color's magic tag, across all docs.
-      items: { tags: ["spell", `${color[0].toLowerCase()}${color.slice(1)}Magic`] },
+      items: {
+        tags: ["spell", `${color[0].toLowerCase()}${color.slice(1)}Magic`],
+      },
     })),
     sortBy: "title",
   },

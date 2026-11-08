@@ -1901,7 +1901,7 @@
       "column": "left",
       "section": "bottom"
     },
-    "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.\n\n![](/images/pdf/fd56ee5d2ef930ee310c3178a05dd688f3e792c2.png)",
+    "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.",
     "tags": [
       "treasure"
     ],
@@ -1909,11 +1909,6 @@
       {
         "kind": "markdown",
         "markdown": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
-      },
-      {
-        "kind": "image",
-        "src": "/images/pdf/fd56ee5d2ef930ee310c3178a05dd688f3e792c2.png",
-        "display": "block"
       }
     ]
   },

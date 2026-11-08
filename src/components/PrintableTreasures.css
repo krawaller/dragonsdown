@@ -1,0 +1,235 @@
+.printable-treasures {
+  --treasure-ink: #202020;
+  --treasure-rule: #d7d7d7;
+  width: 100%;
+  min-height: 100vh;
+  padding: 32px 20px 48px;
+  color: var(--treasure-ink);
+  background: #f2f3f3;
+  font-family: var(--font-geist-sans), sans-serif;
+  letter-spacing: 0;
+}
+.treasure-toolbar {
+  max-width: 186mm;
+  margin: 0 auto 24px;
+}
+.treasure-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+}
+.treasure-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 18px 0;
+}
+.treasure-title-row h1 {
+  font-size: 28px;
+  font-weight: 650;
+}
+.treasure-title-row p {
+  font-size: 13px;
+  color: #616161;
+}
+.treasure-title-row button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 110px;
+  height: 38px;
+  border-radius: 4px;
+  background: #246447;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+.treasure-title-row button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.treasure-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+.treasure-controls label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.treasure-controls input {
+  width: 100px;
+  accent-color: #246447;
+}
+.treasure-controls output {
+  min-width: 42px;
+  font-variant-numeric: tabular-nums;
+}
+.treasure-paper {
+  box-sizing: content-box;
+  max-width: 186mm;
+  margin: auto;
+  padding: 12mm;
+  background: #fff;
+  box-shadow: 0 1px 8px #00000012;
+}
+.treasure-print-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 3mm;
+  margin-bottom: 4mm;
+  border-bottom: 1px solid var(--treasure-ink);
+}
+.treasure-print-heading h1 {
+  font-size: 14pt;
+  font-weight: 650;
+}
+.treasure-print-heading span {
+  font-size: 9pt;
+}
+.treasure-flow {
+  --treasure-row-gap: 2.5mm;
+}
+.treasure-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--treasure-row-gap);
+  width: 100%;
+  margin-bottom: 3mm;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.treasure-row:last-child {
+  margin-bottom: 0;
+}
+.treasure-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 2mm;
+  max-width: 100%;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.treasure-front {
+  position: relative;
+  flex: none;
+  height: var(--treasure-card-height);
+  width: calc(var(--treasure-card-height) * 5 / 7);
+  overflow: hidden;
+  border-radius: 2px;
+}
+.treasure-front img {
+  position: absolute;
+  max-width: none;
+  object-fit: fill;
+}
+.treasure-front > span {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid var(--treasure-rule);
+  font-size: 8pt;
+}
+.treasure-text {
+  flex: none;
+  width: 42mm;
+  min-width: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: var(--treasure-text-size);
+  line-height: 1.22;
+  overflow-wrap: anywhere;
+}
+.treasure-text h2 {
+  margin: 0 0 1mm;
+  font-size: 1.06em;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.treasure-source {
+  margin-bottom: 1.5mm;
+  color: #666;
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 0.72em;
+  text-transform: capitalize;
+}
+.treasure-description p {
+  margin: 0 0 1mm;
+}
+.treasure-description p:last-child {
+  margin-bottom: 0;
+}
+.treasure-description ul,
+.treasure-description ol {
+  padding-left: 1.2em;
+  margin: 1mm 0;
+}
+.treasure-description ul {
+  list-style: disc;
+}
+.treasure-description ol {
+  list-style: decimal;
+}
+.treasure-description img {
+  max-width: 100%;
+}
+@media (max-width: 820px) {
+  .treasure-paper {
+    padding: 5mm;
+  }
+}
+@media (max-width: 480px) {
+  .printable-treasures {
+    padding: 20px 10px;
+  }
+  .treasure-controls {
+    gap: 10px;
+  }
+  .treasure-controls label {
+    flex-wrap: wrap;
+  }
+}
+@media print {
+  @page {
+    size: auto;
+    margin: 12mm;
+  }
+  html,
+  body {
+    height: auto !important;
+    min-height: 0 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .printable-treasures {
+    padding: 0;
+    min-height: 0;
+    background: #fff;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .treasure-toolbar {
+    display: none;
+  }
+  .treasure-paper {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    box-shadow: none;
+  }
+  .treasure-entry {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .treasure-text {
+    color: #000;
+  }
+}

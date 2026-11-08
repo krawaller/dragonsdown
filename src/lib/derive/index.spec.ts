@@ -50,6 +50,26 @@ const RULEBOOKS: RulebookInput[] = [
 ];
 
 describe("treasure manifest classification", () => {
+  it("includes every deck in All Treasures without duplicating shared entries", () => {
+    const spec = DERIVED_DOCS.find((entry) => entry.slug === "all-treasures")!;
+    const fixtures: RulebookInput[] = [
+      {
+        slug: "core",
+        sections: [
+          s("core", "1", "Treasure Manifest"),
+          s("core", "1.1", "Normal", { tags: ["treasure"] }),
+          s("core", "1.2", "Deep", { tags: ["deepTreasure"] }),
+          s("core", "1.3", "Legendary", { tags: ["deepTreasure"] }),
+          s("core", "1.4", "Shared", { tags: ["treasure", "deepTreasure"] }),
+          s("core", "2", "Unrelated"),
+        ],
+      },
+    ];
+    expect(
+      deriveDocument(spec, fixtures).map((section) => section.title),
+    ).toEqual(["Deep", "Legendary", "Normal", "Shared"]);
+  });
+
   it("uses card decks rather than Epic wording, including legendary and shared variants", () => {
     const fixtures: RulebookInput[] = [
       {

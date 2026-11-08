@@ -34,6 +34,7 @@ export const TRANSFORMS: Rule[] = [
       "ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a",
       "a9c7f5ea9f90a92b540e81a1c5e041e13e2f38f2",
       "cfc11a9615ed255df02a0854ad00c1bcb30520d8",
+      "fd56ee5d2ef930ee310c3178a05dd688f3e792c2",
     ],
   },
   {

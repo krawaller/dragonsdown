@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ALL_DOCS, findDoc, loadDocSections } from "@/lib/docs";
 import { SectionView } from "@/components/SectionView";
+import { PrintableTreasures } from "@/components/PrintableTreasures";
+import { findCards } from "@/lib/tts/lookup";
 
 export function generateStaticParams() {
   return ALL_DOCS.map((doc) => ({ slug: doc.slug }));
@@ -16,6 +18,16 @@ export default async function DocPage({
   const doc = findDoc(slug);
   if (!doc) notFound();
   const sections = await loadDocSections(doc);
+  if (slug === "all-treasures") {
+    return (
+      <PrintableTreasures
+        entries={sections.map((section) => ({
+          section,
+          card: findCards(section.title)[0] ?? null,
+        }))}
+      />
+    );
+  }
   return (
     <main className="mx-auto max-w-3xl px-6 py-12">
       <Link
