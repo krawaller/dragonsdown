@@ -1628,59 +1628,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![](/images/pdf/806d611b09634b812c149c963d0c49d1d9dcd839.jpeg)\n\n![](/images/pdf/9dfac8d239b1396dc7897e61b0c14f7091178091.jpeg)"
-    },
-    {
-      "id": "5.2.1",
-      "source": "wildlands",
-      "level": 3,
-      "title": "Civilization",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 10,
-        "column": "right",
-        "section": "top"
-      },
-      "content": ""
-    },
-    {
-      "id": "5.2.2",
-      "source": "wildlands",
-      "level": 3,
-      "title": "Location",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 10,
-        "column": "right",
-        "section": "top"
-      },
-      "content": ""
-    },
-    {
-      "id": "5.2.3",
-      "source": "wildlands",
-      "level": 3,
-      "title": "Terrain",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 10,
-        "column": "right",
-        "section": "top"
-      },
-      "content": ""
-    },
-    {
-      "id": "5.2.4",
-      "source": "wildlands",
-      "level": 3,
-      "title": "Pack",
-      "headingStyle": "pdf-body-bold-11",
-      "location": {
-        "page": 10,
-        "column": "right",
-        "section": "top"
-      },
-      "content": "![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nCampfire\n\nBashkirs Elves\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nBashkirs Nomads Sellswords\n\nEncampment\n\nConsul Rogues **Guards** Soldiers\n\n![](/images/pdf/f5aa6c795c088ec0cb8fb1ea7f6cc13f1e18828f.png)\n\nGuard House\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nRogues Watch Sellswords\n\nInn\n\nConsul **Knights**\n\n![](/images/pdf/356d646ab6238f1c692f3733b40b5f187fa295aa.png)\n\nWatch Soldiers\n\nKeep\n\n**Aurorans**\n\n![](/images/pdf/8cfc63c075d1f694918096592a3d4b07280129d1.jpeg)\n\nConsul Rogues Nomads\n\nMedina\n\nConsul **Dwarves**\n\n![](/images/pdf/fa57afa329fc35aec26c59a8d54e9ccc82467099.png)\n\nWatch Soldiers\n\nMine\n\n![](/images/pdf/8cfc63c075d1f694918096592a3d4b07280129d1.jpeg)\n\nBashkirs Nomads Sellswords\n\nOasis\n\nConsul Rogues Soldiers **Wardens**\n\n![](/images/pdf/331eec88258e5e4fd0f3f615b2f36febafd5c409.png)\n\nOutpost\n\nConsul Watch **Mariners** Sellswords\n\n![](/images/pdf/cb176950e8771c5c717b90be64a9422d2d1f8fb2.jpeg)\n\nPort\n\nBashkirs Consul **Priests**\n\n![](/images/pdf/7a1ecaa7547f2d7c42be392fb2874cdd2f8dcd84.png)\n\nElves\n\nSanctuary\n\nConsul **Hunters** Nomads\n\n![](/images/pdf/5da04f2fa8b23de2241be4c48781d440050e65d4.png)\n\nTrading Post\n\nConsul Watch Soldiers **Villagers**\n\n![](/images/pdf/ed24770f44cb1eb89c2e7913df43bcea01727773.png)\n\nVillage\n\nNatives that begin in the Native tray   •   **Natives that begin on the map.**\n\nNatives will not summon to a clearing containing Monsters. Natives that are in a clearing with Monsters are placed in the Native tray."
+      "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![Native summoning locations, terrain packs, and native groups](/images/annotations/ee542deb2e787476a035a585920e48038cfeacfe.png)"
     },
     {
       "id": "6",

@@ -187,6 +187,21 @@
         "Game Effects",
         "Seasons"
       ]
+    },
+    {
+      "page": 10,
+      "target": { "titleRegex": "^Native Summoning$" },
+      "bbox": [454, 88, 800, 593],
+      "alt": "Native summoning locations, terrain packs, and native groups",
+      "expectedTexts": [
+        "Civilization",
+        "Terrain Pack",
+        "Campfire",
+        "Mariners",
+        "Village",
+        "Natives that begin in the Native tray",
+        "Natives will not summon to a clearing containing Monsters."
+      ]
     }
   ]
 }

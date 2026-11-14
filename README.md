@@ -98,6 +98,12 @@ If the text instead continues the preceding section, the figures remain with
 that section. Trailing figures do not carry into another column or page.
 Inline images and heading icons retain their existing placement.
 
+Diagrams and tables with positioned text can be preserved as PDF crops via
+`data/manual/annotated-figures.json`. Entries specify the page, target heading,
+crop bounds, alt text, and expected text to validate the crop. The extractor
+replaces text and images inside the bounds with a screenshot, including the
+Native Summoning table on Wildlands' final page.
+
 Run the extractor's placement regression tests with:
 
 ```sh
