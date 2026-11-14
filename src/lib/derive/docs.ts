@@ -16,6 +16,7 @@ export const DERIVED_DOCS: DerivedDoc[] = [
       ],
     },
     sortBy: "title",
+    withChildren: true,
     linksToCards: false,
   },
   {

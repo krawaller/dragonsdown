@@ -168,6 +168,53 @@ describe("deriveDocument", () => {
     expect(out.find((s) => s.title === "Luring extra")).toBeUndefined();
   });
 
+  it("includes optional rule subtrees in document order under alphabetized parents", () => {
+    const spec = DERIVED_DOCS.find((doc) => doc.slug === "optional-rules")!;
+    const fixtures: RulebookInput[] = [
+      {
+        slug: "wildlands",
+        sections: [
+          s("wildlands", "3", "OPTIONAL RULES", { level: 1 }),
+          s("wildlands", "3.1", "Weather"),
+          s("wildlands", "3.1.0.1", "Weather Setup", { level: 4 }),
+          s("wildlands", "3.2", "Enhanced Alert"),
+          s("wildlands", "3.2.0.1", "Normal Alert", {
+            level: 4,
+            content: "Normal alert benefit.",
+          }),
+          s("wildlands", "3.2.0.2", "Magic Alert", { level: 4 }),
+          s("wildlands", "3.2.0.2.1", "Magic Detail", { level: 5 }),
+          s("wildlands", "3.2.0.3", "Missile Alert", { level: 4 }),
+          s("wildlands", "4", "REFERENCE", { level: 1 }),
+          s("wildlands", "4.1", "Unrelated"),
+        ],
+      },
+      {
+        slug: "core",
+        sections: [
+          s("core", "3", "OPTIONAL RULES", { level: 1 }),
+          s("core", "3.2", "Luring"),
+          s("core", "3.2.0.1", "Luring Detail", { level: 4 }),
+        ],
+      },
+    ];
+    const out = deriveDocument(spec, fixtures);
+    expect(out.map((section) => section.title)).toEqual([
+      "Enhanced Alert",
+      "Normal Alert",
+      "Magic Alert",
+      "Magic Detail",
+      "Missile Alert",
+      "Luring",
+      "Luring Detail",
+      "Weather",
+      "Weather Setup",
+    ]);
+    expect(out[1]).toEqual(fixtures[0].sections[4]);
+    expect(out[3]).toEqual(fixtures[0].sections[6]);
+    expect(out[6]).toEqual(fixtures[1].sections[2]);
+  });
+
   it("returns empty when nothing matches", () => {
     const spec: DerivedDoc = {
       slug: "empty",

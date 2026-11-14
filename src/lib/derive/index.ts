@@ -29,6 +29,8 @@ type BaseDerivedDoc = {
 export type FlatDerivedDoc = BaseDerivedDoc & {
   /** Selector applied across every rulebook. */
   pick: Target;
+  /** Include each picked section's descendants beneath it in document order. */
+  withChildren?: boolean;
 };
 
 export type GroupedDerivedDoc = BaseDerivedDoc & {
@@ -146,7 +148,15 @@ function deriveFlat(
   rulebooks: readonly RulebookInput[],
 ): Section[] {
   const picked = selectAcrossRulebooks(spec.pick, rulebooks);
-  return sortSections(picked, spec.sortBy ?? "title");
+  const sorted = sortSections(picked, spec.sortBy ?? "title");
+  if (!spec.withChildren) return sorted;
+  return sorted.flatMap((section) => [
+    section,
+    ...childrenInDocumentOrder(
+      section,
+      rulebooks.find((book) => book.slug === section.source),
+    ),
+  ]);
 }
 
 function deriveGrouped(

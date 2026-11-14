@@ -74,6 +74,10 @@ npm run inspect-fonts data/downloaded-pdf/Dragons_Down_single_pages.pdf
 
 Currently supported ops: `ignoreImages` (drops `![](/images/<hash>.<ext>)` refs by hash).
 
+The Optional Rules aggregation sorts parent rules alphabetically and includes
+their full subsections in source order. Its derived-document spec enables
+`withChildren`; other aggregations keep their existing selection behavior.
+
 ## Heading conventions
 
 Derived from the source styling:
