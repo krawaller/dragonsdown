@@ -1,4 +1,4 @@
-import type { Section } from "../rulebooks";
+import type { Section, SectionLevel } from "../rulebooks";
 import { docMatchesTarget, selectMatchingIds, type Target } from "../doc-query";
 
 /**
@@ -43,6 +43,40 @@ export type DerivedGroup = {
 };
 
 export type SortBy = "title" | "source" | "id";
+
+/**
+ * A "player aid" is a themed rules compilation: hand-picked sections from
+ * across the rulebooks, colocated under synthetic group headers. Unlike
+ * derived docs, the order is authored (specs list picks in reading order,
+ * nothing is sorted) and group headers are not sections from the rulebooks.
+ */
+export type PlayerAidSpec = {
+  slug: string;
+  title: string;
+  /** Short blurb shown under the title on listing and doc pages. */
+  description: string;
+  groups: PlayerAidGroup[];
+};
+
+export type PlayerAidGroup = {
+  /** Synthetic heading, emitted as a level-1 section. */
+  title: string;
+  /** Picks in authored order; each pick's matches keep rulebook order. */
+  items: PlayerAidItem[];
+};
+
+export type PlayerAidItem = {
+  /** Selector applied across every rulebook. */
+  pick: Target;
+  /** Also include every nested subsection of each match, in document order. */
+  withChildren?: boolean;
+};
+
+/**
+ * Tag put on synthetic group-header sections so renderers can treat them
+ * differently (no source link, no id badge, no card lookup).
+ */
+export const SYNTHETIC_HEADER_TAG = "syntheticHeader";
 
 export type RulebookInput = {
   slug: string;
@@ -133,6 +167,65 @@ function deriveGrouped(
     }
   }
   return out;
+}
+
+/**
+ * Build a player aid's section list. Pure: no side effects.
+ *
+ * Each group becomes a synthetic level-1 header (tagged SYNTHETIC_HEADER_TAG)
+ * followed by its picks in authored order. Picked sections are normalized to
+ * level 2; with `withChildren`, nested subsections follow in document order
+ * with their depth relative to the match preserved. A section appearing in
+ * multiple picks is kept only at its first occurrence.
+ */
+export function buildPlayerAid(
+  spec: PlayerAidSpec,
+  rulebooks: readonly RulebookInput[],
+): Section[] {
+  const out: Section[] = [];
+  const seen = new Set<string>();
+
+  const push = (section: Section, level: number) => {
+    const key = `${section.source}/${section.id}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push({ ...section, level: clampLevel(level) });
+  };
+
+  spec.groups.forEach((group, index) => {
+    out.push({
+      id: `${index + 1}`,
+      source: spec.slug,
+      level: 1,
+      title: group.title,
+      content: "",
+      tags: [SYNTHETIC_HEADER_TAG],
+    });
+    for (const item of group.items) {
+      for (const match of selectAcrossRulebooks(item.pick, rulebooks)) {
+        push(match, 2);
+        if (!item.withChildren) continue;
+        const book = rulebooks.find((b) => b.slug === match.source);
+        for (const child of childrenInDocumentOrder(match, book)) {
+          push(child, 2 + child.level - match.level);
+        }
+      }
+    }
+  });
+  return out;
+}
+
+function childrenInDocumentOrder(
+  parent: Section,
+  book: RulebookInput | undefined,
+): Section[] {
+  if (!book) return [];
+  const prefix = parent.id + ".";
+  return book.sections.filter((s) => s.id.startsWith(prefix));
+}
+
+function clampLevel(level: number): SectionLevel {
+  return Math.min(8, Math.max(1, level)) as SectionLevel;
 }
 
 function selectAcrossRulebooks(

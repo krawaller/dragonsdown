@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { HeadingStyle, Section, SectionLevel } from "@/lib/rulebooks";
 import { sectionAnchorIdFor } from "@/lib/rulebook-anchors";
+import { SYNTHETIC_HEADER_TAG } from "@/lib/derive";
 import { shortNameForSource } from "@/lib/docs";
 import { findCards } from "@/lib/tts/lookup";
 import { CardImages } from "./CardImages";
@@ -69,7 +70,8 @@ export function SectionView({
   const Heading = HEADING_TAG[section.level];
   const headingStyle = headingStyleFor(section);
   const anchorId = sectionAnchorIdFor(section);
-  const cards = findCards(section.title);
+  const isSyntheticHeader = section.tags?.includes(SYNTHETIC_HEADER_TAG);
+  const cards = isSyntheticHeader ? [] : findCards(section.title);
   const icons = section.icons ?? (section.icon ? [section.icon] : []);
   if (section.tags?.includes("omittedFinalPageSummary")) {
     return (
@@ -101,7 +103,7 @@ export function SectionView({
           )}
           <span>{section.title}</span>
         </span>
-        {showSource ? (
+        {isSyntheticHeader ? null : showSource ? (
           <Link
             href={`/${section.source}#${anchorId}`}
             className="text-zinc-400 dark:text-zinc-600 font-mono text-sm shrink-0 hover:underline"

@@ -37,16 +37,22 @@ export default async function DocPage({
         ← All docs
       </Link>
       <h1 className="text-4xl font-bold mt-4 mb-2">{doc.title}</h1>
+      {doc.kind === "playerAid" && (
+        <p className="text-zinc-600 dark:text-zinc-400 mb-2">
+          {doc.description}
+        </p>
+      )}
       <p className="text-sm text-zinc-500 mb-8">
         {sections.length} sections
         {doc.kind === "derived" ? " · derived" : ""}
+        {doc.kind === "playerAid" ? " · player aid" : ""}
       </p>
       <div>
         {sections.map((section, i) => (
           <SectionView
             key={i}
             section={section}
-            showSource={doc.kind === "derived"}
+            showSource={doc.kind !== "rulebook"}
           />
         ))}
       </div>

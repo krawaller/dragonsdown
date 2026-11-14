@@ -1,8 +1,11 @@
 import { describe, it, expect } from "vitest";
 import {
+  buildPlayerAid,
   classifyTreasureSections,
   deriveDocument,
+  SYNTHETIC_HEADER_TAG,
   type DerivedDoc,
+  type PlayerAidSpec,
   type RulebookInput,
 } from ".";
 import { DERIVED_DOCS } from "./docs";
@@ -271,5 +274,92 @@ describe("deriveDocument", () => {
     };
     const out = deriveDocument(spec, RULEBOOKS);
     expect(out.map((s) => s.source)).toEqual(["core", "core"]);
+  });
+});
+
+describe("buildPlayerAid", () => {
+  const fixtures: RulebookInput[] = [
+    {
+      slug: "core",
+      sections: [
+        s("core", "6.2.1", "Monster Activation", { level: 3 }),
+        s("core", "6.2.2", "Summoning Example", { level: 3 }),
+        s("core", "6.2.2.1", "Example Detail", { level: 4 }),
+        s("core", "6.2.2.1.1", "Example Tile", { level: 5 }),
+        s("core", "8.9", "Endless Monsters", { level: 2 }),
+      ],
+    },
+    {
+      slug: "natives-and-legends",
+      sections: [s("natives-and-legends", "4.2", "Roaming Monsters")],
+    },
+  ];
+  const spec: PlayerAidSpec = {
+    slug: "monster-activation",
+    title: "Monster Activation",
+    description: "Test aid.",
+    groups: [
+      {
+        title: "Rules",
+        items: [
+          { pick: { doc: "core", titleRegex: "^Monster Activation$" } },
+          { pick: { doc: "core", id: "6.2.2" }, withChildren: true },
+        ],
+      },
+      {
+        title: "Optional Rules",
+        items: [
+          { pick: { titleRegex: "^Roaming Monsters$" } },
+          { pick: { doc: "core", titleRegex: "^Endless Monsters$" } },
+        ],
+      },
+    ],
+  };
+
+  it("emits synthetic L1 headers followed by picks in authored order", () => {
+    const out = buildPlayerAid(spec, fixtures);
+    expect(out.map((x) => `${x.level} ${x.title}`)).toEqual([
+      "1 Rules",
+      "2 Monster Activation",
+      "2 Summoning Example",
+      "3 Example Detail",
+      "4 Example Tile",
+      "1 Optional Rules",
+      "2 Roaming Monsters",
+      "2 Endless Monsters",
+    ]);
+  });
+
+  it("tags headers as synthetic and keeps provenance on picked sections", () => {
+    const out = buildPlayerAid(spec, fixtures);
+    const headers = out.filter((x) =>
+      x.tags?.includes(SYNTHETIC_HEADER_TAG),
+    );
+    expect(headers.map((x) => x.title)).toEqual(["Rules", "Optional Rules"]);
+    const example = out.find((x) => x.title === "Example Tile")!;
+    expect(example.source).toBe("core");
+    expect(example.id).toBe("6.2.2.1.1");
+  });
+
+  it("does not repeat a section matched by multiple picks", () => {
+    const overlapping: PlayerAidSpec = {
+      ...spec,
+      groups: [
+        {
+          title: "Rules",
+          items: [
+            { pick: { doc: "core", id: "6.2.2.1" } },
+            { pick: { doc: "core", id: "6.2.2" }, withChildren: true },
+          ],
+        },
+      ],
+    };
+    const out = buildPlayerAid(overlapping, fixtures);
+    expect(out.map((x) => x.title)).toEqual([
+      "Rules",
+      "Example Detail",
+      "Summoning Example",
+      "Example Tile",
+    ]);
   });
 });

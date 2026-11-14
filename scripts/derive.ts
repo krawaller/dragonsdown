@@ -12,8 +12,9 @@ import {
   loadSections,
   sectionWithContentNodes,
 } from "../src/lib/rulebooks";
-import { classifyTreasureSections, deriveDocument } from "../src/lib/derive";
+import { classifyTreasureSections, buildPlayerAid, deriveDocument } from "../src/lib/derive";
 import { DERIVED_DOCS } from "../src/lib/derive/docs";
+import { PLAYER_AIDS } from "../src/lib/derive/player-aids";
 import { extractTreasures } from "../src/lib/tts";
 
 const OUT_DIR = path.join(process.cwd(), "data", "derived");
@@ -45,6 +46,20 @@ async function main(): Promise<void> {
     const bySource = countBy(sections, (s) => s.source);
     console.log(
       `${spec.slug}.json: ${sections.length} sections (${formatCounts(bySource)})`,
+    );
+  }
+
+  const aidsDir = path.join(OUT_DIR, "player-aids");
+  await fs.mkdir(aidsDir, { recursive: true });
+  for (const spec of PLAYER_AIDS) {
+    const sections = buildPlayerAid(spec, classifiedInputs).map(
+      sectionWithContentNodes,
+    );
+    const outPath = path.join(aidsDir, `${spec.slug}.json`);
+    await fs.writeFile(outPath, JSON.stringify(sections, null, 2));
+    const bySource = countBy(sections, (s) => s.source);
+    console.log(
+      `player-aids/${spec.slug}.json: ${sections.length} sections (${formatCounts(bySource)})`,
     );
   }
 }

@@ -1,0 +1,391 @@
+[
+  {
+    "id": "1",
+    "source": "monster-activation",
+    "level": 1,
+    "title": "The Activation Step",
+    "content": "",
+    "tags": [
+      "syntheticHeader"
+    ],
+    "contentNodes": []
+  },
+  {
+    "id": "5.0.1.2",
+    "source": "core",
+    "level": 2,
+    "title": "Summoning Dice",
+    "headingStyle": "pdf-l4",
+    "location": {
+      "page": 6,
+      "column": "left",
+      "section": "top"
+    },
+    "icon": "/images/pdf/d83e8a933553680d7e5d75224ec903a110d7043d.jpeg",
+    "content": "Four  dice are rolled during the Monster Activation step of the Battle Phase. The dice come in two colors: gray (*Wandering Monster* *Dice*) and black (*Local Monster Dice*).  Each color has two dice; one with summoning symbols and one with numbers that show the number of summoned Monsters that will appear.\n\nThe Wandering Monster Dice summon Monsters that are unique to a Terrain Pack (*e.g. Juvenile Dragons in the Malevolent Mountains*). Wandering Monsters are shown on the bottom left of the Map Tiles from that Terrain Pack.\n\nThe Local Monster Dice summon the Local Monsters and Treasure Site Guardians. The faces of the Local Monster Die show either a Treasure Site Symbol or the various symbols shown on the bottom right of the Map Tiles.\n\nMonster summoning is explained later in these rules.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Four  dice are rolled during the Monster Activation step of the Battle Phase. The dice come in two colors: gray (*Wandering Monster* *Dice*) and black (*Local Monster Dice*).  Each color has two dice; one with summoning symbols and one with numbers that show the number of summoned Monsters that will appear."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The Wandering Monster Dice summon Monsters that are unique to a Terrain Pack (*e.g. Juvenile Dragons in the Malevolent Mountains*). Wandering Monsters are shown on the bottom left of the Map Tiles from that Terrain Pack."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The Local Monster Dice summon the Local Monsters and Treasure Site Guardians. The faces of the Local Monster Die show either a Treasure Site Symbol or the various symbols shown on the bottom right of the Map Tiles."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Monster summoning is explained later in these rules."
+      }
+    ]
+  },
+  {
+    "id": "6.2.1",
+    "source": "core",
+    "level": 2,
+    "title": "Monster Activation",
+    "headingStyle": "pdf-l3",
+    "location": {
+      "page": 15,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "The start player rolls all 4 Summoning Dice. One gray die (*Wandering Monsters*) and one black die (*Local Monsters*) have symbols matching the symbols on the Map Tiles. The other dice contain numbers showing how many Monsters arrive if Monsters are summoned. Process the gray dice first, then the black dice.\n\n**Return Arrow:** If the arrow symbol is rolled do the following:\n\n- ![float-right](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png) **Monsters Return:** Return all Monsters in Map Tiles containing no Heroes to the monster tray.\n\n- **Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero on the Map Tile that is earliest in the Turn Order.\n\n**Summoning symbol:** If the symbol on either of the dice matches a summoning symbol on a Map Tile containing a Hero, the following occurs in order:\n\n**1.\t Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero that is earliest in the Turn Order.\n\n**2.\t Monsters Summon:** The Monster type shown on the Map Tile next to the summoning symbol will summon from the monster tray to the Map Tile. If more than one Hero is in the tile, Monsters are summoned in each clearing containing a Hero beginning with the Hero that is earliest in the Turn Order. Each clearing summons only once regardless of the number of Heroes in the clearing.\n\nThe number of Monsters summoned is equal to the number shown on the die that matches the color of the Summoning Symbol die. Randomly select the indicated Monsters from the monster tray and place them in the Hero’s clearing. If there are not enough Monsters, place what remains.\n\n![](/images/pdf/2662276d8a7c9bedc2585120a308f99184512fec.png)\n\nNote: If the Monster listed on the Map Tile has a         dual dice icon beside the Monster symbol, then the number of Monsters summoned to the tile is the sum of both numbered Summoning Dice.\n\n![float-right](/images/pdf/ee893c2cb876ca12744347bf07c1c8161efd74f5.png) **Treasure Site Symbol:** If the Treasure Site Symbol is rolled on one of the dice and a Map Tile contains one or more Heroes and one or more Treasure Sites then Guardians are summoned. Move all Guardians from wherever they are located to the clearing containing the matching **Treasure Site** for that Guardian, even if that causes the Guardian to leave a clearing containing a Hero, another Map Tile, or the monster tray.\n\nMoved and summoned Monsters are always placed name-side up.\n\nIn player order, each Hero that made noise this turn rolls all of the Summoning Dice again and applies the results to their clearing only.\n\nUnblocked Heroes may choose to take a Hide reaction at the end of Monster Activation in case they wish to be hidden during Combat.\n\nHide reactions are important only when a Monster, Native, or another Hero is in the clearing (*if playing with the optional Player vs. Player rules*).",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "The start player rolls all 4 Summoning Dice. One gray die (*Wandering Monsters*) and one black die (*Local Monsters*) have symbols matching the symbols on the Map Tiles. The other dice contain numbers showing how many Monsters arrive if Monsters are summoned. Process the gray dice first, then the black dice."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**Return Arrow:** If the arrow symbol is rolled do the following:"
+      },
+      {
+        "kind": "mediaAside",
+        "images": [
+          {
+            "kind": "image",
+            "src": "/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png",
+            "display": "float-right"
+          }
+        ],
+        "markdown": "- **Monsters Return:** Return all Monsters in Map Tiles containing no Heroes to the monster tray."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- **Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero on the Map Tile that is earliest in the Turn Order."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**Summoning symbol:** If the symbol on either of the dice matches a summoning symbol on a Map Tile containing a Hero, the following occurs in order:"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**1.\t Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero that is earliest in the Turn Order."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**2.\t Monsters Summon:** The Monster type shown on the Map Tile next to the summoning symbol will summon from the monster tray to the Map Tile. If more than one Hero is in the tile, Monsters are summoned in each clearing containing a Hero beginning with the Hero that is earliest in the Turn Order. Each clearing summons only once regardless of the number of Heroes in the clearing."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "The number of Monsters summoned is equal to the number shown on the die that matches the color of the Summoning Symbol die. Randomly select the indicated Monsters from the monster tray and place them in the Hero’s clearing. If there are not enough Monsters, place what remains."
+      },
+      {
+        "kind": "image",
+        "src": "/images/pdf/2662276d8a7c9bedc2585120a308f99184512fec.png",
+        "display": "block"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Note: If the Monster listed on the Map Tile has a         dual dice icon beside the Monster symbol, then the number of Monsters summoned to the tile is the sum of both numbered Summoning Dice."
+      },
+      {
+        "kind": "mediaAside",
+        "images": [
+          {
+            "kind": "image",
+            "src": "/images/pdf/ee893c2cb876ca12744347bf07c1c8161efd74f5.png",
+            "display": "float-right"
+          }
+        ],
+        "markdown": "**Treasure Site Symbol:** If the Treasure Site Symbol is rolled on one of the dice and a Map Tile contains one or more Heroes and one or more Treasure Sites then Guardians are summoned. Move all Guardians from wherever they are located to the clearing containing the matching **Treasure Site** for that Guardian, even if that causes the Guardian to leave a clearing containing a Hero, another Map Tile, or the monster tray."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Moved and summoned Monsters are always placed name-side up."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "In player order, each Hero that made noise this turn rolls all of the Summoning Dice again and applies the results to their clearing only."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Unblocked Heroes may choose to take a Hide reaction at the end of Monster Activation in case they wish to be hidden during Combat."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Hide reactions are important only when a Monster, Native, or another Hero is in the clearing (*if playing with the optional Player vs. Player rules*)."
+      }
+    ]
+  },
+  {
+    "id": "3.2",
+    "source": "eastern-reaches",
+    "level": 2,
+    "title": "New Summoning Die",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "Roll the additional gray Summoning Die during the Monster Activation phase. Results from all Summoning Dice apply to all Map Tiles. The new die includes a return arrow marked with a dot. To preserve the original probability of a Monster Return result during Monster Activation, ignore this symbol. For a slightly more unpredictable game, treat both return arrow symbols equally.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Roll the additional gray Summoning Die during the Monster Activation phase. Results from all Summoning Dice apply to all Map Tiles. The new die includes a return arrow marked with a dot. To preserve the original probability of a Monster Return result during Monster Activation, ignore this symbol. For a slightly more unpredictable game, treat both return arrow symbols equally."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "source": "monster-activation",
+    "level": 1,
+    "title": "Making Noise",
+    "content": "",
+    "tags": [
+      "syntheticHeader"
+    ],
+    "contentNodes": []
+  },
+  {
+    "id": "6.1.2.3.2",
+    "source": "core",
+    "level": 2,
+    "title": "Sneak - or- Make Noise",
+    "headingStyle": "pdf-l5",
+    "location": {
+      "page": 12,
+      "column": "right",
+      "section": "top"
+    },
+    "icons": [
+      "/images/pdf/af4ee36df7ab7b3b162e2d977d64b6fd36f2ac32.png",
+      "/images/pdf/52966716acc95f703a28049c40c97407acbf1830.png"
+    ],
+    "content": "The Sneak Action improves the odds of a Hero successfully hiding. Place a pink Status Cube in the Sneak box on the Hero Board when a Hero takes a Sneak Action. Heroes that Sneak may ignore one failure die result during all Hide reactions this turn (*see Reactions on page 13*).\n\nA Hero may instead choose to Make Noise. They immediately become unhidden and are blocked if Monsters are present. A Hero may not Sneak and Make Noise in the same turn. Place a pink Status Cube in the Make Noise box on the Hero Board. After Monster Activation, but before Combat, roll the Summoning Dice again for each Hero that made noise this turn. Apply the results only to the clearing containing the Hero rolling the dice using normal summoning rules, ignoring Heroes in all other clearings in the tile.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "The Sneak Action improves the odds of a Hero successfully hiding. Place a pink Status Cube in the Sneak box on the Hero Board when a Hero takes a Sneak Action. Heroes that Sneak may ignore one failure die result during all Hide reactions this turn (*see Reactions on page 13*)."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "A Hero may instead choose to Make Noise. They immediately become unhidden and are blocked if Monsters are present. A Hero may not Sneak and Make Noise in the same turn. Place a pink Status Cube in the Make Noise box on the Hero Board. After Monster Activation, but before Combat, roll the Summoning Dice again for each Hero that made noise this turn. Apply the results only to the clearing containing the Hero rolling the dice using normal summoning rules, ignoring Heroes in all other clearings in the tile."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "source": "monster-activation",
+    "level": 1,
+    "title": "Natives",
+    "content": "",
+    "tags": [
+      "syntheticHeader"
+    ],
+    "contentNodes": []
+  },
+  {
+    "id": "2.6",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Native Summoning",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 3,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "![float-right](/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg) The **Natives expansion includes** a white Native Summoning Die. As part of Monster Activation, roll this die along with the other Summoning Dice.\n\n![float-right](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png) When a Monsters Return result is rolled on the wandering Monster Die, return all Unhired Natives in Map Tiles containing no Heroes to the Native tray. *Exception: The Natives that begin on the map do not return to* *the monster tray via a Monsters Return result (e.g. Knights, Dwarves, etc.).*\n\nAfter processing the gray and black Summoning Dice, Consult the Native Summoning Die. The various symbols on the Native Summoning Die match the symbols printed on the Civilization Cards. Four things need to be true for a Native Group to be summoned to a Civilization Location.\n\n1.\t The Native Summoning Die result needs to match the symbol on the Native Group’s Civilization Card or the die shows the infinity symbol.\n\n2.\t A Hero needs to be in a **Map** **Tile** containing a Civilization Location listed on the Native Group’s Civilization Card.\n\n3.\t There are no Heroes in the **clearing** where the Natives are currently located.\n\n4.\t There are no Monsters in the clearing to which the Natives are being summoned.\n\nIf all of the above are true, then move all unhired members of the matching Native Group from their current locations to the **Civilization Location** in the Map Tile (*not necessarily the same clearing of the Hero in the tile*). Multiple Native Groups can be summoned to the same Civilization Location in a single turn.\n\nIf a Native Group is summoned to multiple Civilization Locations simultaneously, summon the Native Group to the Map Tile containing the player closest to the start player in Turn Order. If there are multiple Civilization Locations that summon a Native Group in a single Map Tile, randomly determine which Civilization Location summons the Natives.\n\n**Natives Flee:** At the end of Monster and Native Summoning, any Unhired Natives that are in the same clearing with one or more Monsters are returned to the Native tray, including the Natives that begin the game on the map (*e.g. Knights, Dwarves, etc.*).",
+    "contentNodes": [
+      {
+        "kind": "mediaAside",
+        "images": [
+          {
+            "kind": "image",
+            "src": "/images/pdf/5011e588d3728084089d663b25651c71d074c659.jpeg",
+            "display": "float-right"
+          }
+        ],
+        "markdown": "The **Natives expansion includes** a white Native Summoning Die. As part of Monster Activation, roll this die along with the other Summoning Dice."
+      },
+      {
+        "kind": "mediaAside",
+        "images": [
+          {
+            "kind": "image",
+            "src": "/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png",
+            "display": "float-right"
+          }
+        ],
+        "markdown": "When a Monsters Return result is rolled on the wandering Monster Die, return all Unhired Natives in Map Tiles containing no Heroes to the Native tray. *Exception: The Natives that begin on the map do not return to* *the monster tray via a Monsters Return result (e.g. Knights, Dwarves, etc.).*"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "After processing the gray and black Summoning Dice, Consult the Native Summoning Die. The various symbols on the Native Summoning Die match the symbols printed on the Civilization Cards. Four things need to be true for a Native Group to be summoned to a Civilization Location."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "1.\t The Native Summoning Die result needs to match the symbol on the Native Group’s Civilization Card or the die shows the infinity symbol."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "2.\t A Hero needs to be in a **Map** **Tile** containing a Civilization Location listed on the Native Group’s Civilization Card."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "3.\t There are no Heroes in the **clearing** where the Natives are currently located."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "4.\t There are no Monsters in the clearing to which the Natives are being summoned."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If all of the above are true, then move all unhired members of the matching Native Group from their current locations to the **Civilization Location** in the Map Tile (*not necessarily the same clearing of the Hero in the tile*). Multiple Native Groups can be summoned to the same Civilization Location in a single turn."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If a Native Group is summoned to multiple Civilization Locations simultaneously, summon the Native Group to the Map Tile containing the player closest to the start player in Turn Order. If there are multiple Civilization Locations that summon a Native Group in a single Map Tile, randomly determine which Civilization Location summons the Natives."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**Natives Flee:** At the end of Monster and Native Summoning, any Unhired Natives that are in the same clearing with one or more Monsters are returned to the Native tray, including the Natives that begin the game on the map (*e.g. Knights, Dwarves, etc.*)."
+      }
+    ]
+  },
+  {
+    "id": "2.7",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Insults",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 3,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "As Step 3 of Monster Activation (*after Monsters Move and Monsters Summon*), all Heroes in a clearing with one or more Unhired Natives must roll two Haggle Dice:\n\n- If neither die shows a closed door, nothing happens.\n\n- If both dice show doors, the Hero has insulted all Native Groups in the clearing (*see Buy Drinks below*).\n\n- If one die shows a door, compare the number rolled on the other die to the matching respected icons of the Hero for **each** Native Group in the clearing. Modify the number of icons by the titles, Outlaw Tokens, spells, treasures, and Elf/Dwarf kin rules as explained in the haggling section on page 3. If the number rolled is higher than the modified number of icons, the Hero has insulted that Native Group. Bonuses to hire, trade, or haggle attempts do not apply to Insult die rolls.\n\n*Remember: No insults occur if a Hero has a Hired Native from the same Native Group.*\n\nExample: A Dwarf warrior is in a clearing with the Dwarves and the Soldiers. The player rolls the Haggle Dice and gets a closed door and the number 3. The Hero possesses two Wisdom icons (*respected by the* *Dwarves*) and receives +1 for being Dwarf kin, thus the Dwarves leave the Hero alone. The Hero possesses only 1 Charisma icon (*respected by the* *Soldiers*) and so the Hero has insulted the Soldiers.\n\n**Buy Drinks:** To keep the peace with insulted Natives, the Hero must spend 1 Gold per unhired member of each insulted Native Group in the clearing. The Hero may choose to Buy Drinks for none, some, or all insulted Native Groups, but must do so as a Native Group (*not by individual Native member*). If the Hero cannot, or chooses not to, Buy Drinks for a Native Group, the Hero becomes temporary enemies with that Native Group (*this may trigger a Hide reaction*).",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "As Step 3 of Monster Activation (*after Monsters Move and Monsters Summon*), all Heroes in a clearing with one or more Unhired Natives must roll two Haggle Dice:"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- If neither die shows a closed door, nothing happens."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- If both dice show doors, the Hero has insulted all Native Groups in the clearing (*see Buy Drinks below*)."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "- If one die shows a door, compare the number rolled on the other die to the matching respected icons of the Hero for **each** Native Group in the clearing. Modify the number of icons by the titles, Outlaw Tokens, spells, treasures, and Elf/Dwarf kin rules as explained in the haggling section on page 3. If the number rolled is higher than the modified number of icons, the Hero has insulted that Native Group. Bonuses to hire, trade, or haggle attempts do not apply to Insult die rolls."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "*Remember: No insults occur if a Hero has a Hired Native from the same Native Group.*"
+      },
+      {
+        "kind": "markdown",
+        "markdown": "Example: A Dwarf warrior is in a clearing with the Dwarves and the Soldiers. The player rolls the Haggle Dice and gets a closed door and the number 3. The Hero possesses two Wisdom icons (*respected by the* *Dwarves*) and receives +1 for being Dwarf kin, thus the Dwarves leave the Hero alone. The Hero possesses only 1 Charisma icon (*respected by the* *Soldiers*) and so the Hero has insulted the Soldiers."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "**Buy Drinks:** To keep the peace with insulted Natives, the Hero must spend 1 Gold per unhired member of each insulted Native Group in the clearing. The Hero may choose to Buy Drinks for none, some, or all insulted Native Groups, but must do so as a Native Group (*not by individual Native member*). If the Hero cannot, or chooses not to, Buy Drinks for a Native Group, the Hero becomes temporary enemies with that Native Group (*this may trigger a Hide reaction*)."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "source": "monster-activation",
+    "level": 1,
+    "title": "Optional Rules",
+    "content": "",
+    "tags": [
+      "syntheticHeader"
+    ],
+    "contentNodes": []
+  },
+  {
+    "id": "4.2",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Roaming Monsters",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 6,
+      "column": "left",
+      "section": "bottom"
+    },
+    "content": "During Monster Activation, roll the d6 along with the Summoning Dice. When Wandering Monsters are first summoned to a Map Tile (*gray dice*), one group of Monsters summon to the clearing indicated by the **die roll**. If the rolled clearing does not exist in the Map Tile, then Wandering Monster summoning happens normally in this Map Tile (*Monsters summon to each clearing containing one or* *more Heroes*). Once in a Map Tile, Wandering Monsters move as per normal rules.\n\nIf a Hero makes noise, all Monsters summoned on the second summoning roll are summoned directly to the Hero’s clearing.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "During Monster Activation, roll the d6 along with the Summoning Dice. When Wandering Monsters are first summoned to a Map Tile (*gray dice*), one group of Monsters summon to the clearing indicated by the **die roll**. If the rolled clearing does not exist in the Map Tile, then Wandering Monster summoning happens normally in this Map Tile (*Monsters summon to each clearing containing one or* *more Heroes*). Once in a Map Tile, Wandering Monsters move as per normal rules."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If a Hero makes noise, all Monsters summoned on the second summoning roll are summoned directly to the Hero’s clearing."
+      }
+    ]
+  },
+  {
+    "id": "4.5",
+    "source": "eastern-reaches",
+    "level": 2,
+    "title": "Roaming Natives",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 7,
+      "column": "left",
+      "section": "top"
+    },
+    "content": "During Monster Activation, roll the d6 along with the Summoning Dice. If Unhired Natives are already on a Map Tile containing a Hero when their matching symbol is rolled, the Natives move to the Civilization Location on that Map Tile, even if the Hero is not in the Civilization Location.\n\nWhen Natives are first summoned to a Map Tile, they summon to the clearing indicated by the die roll, not the Civilization Location. If the rolled clearing does not exist, the Natives summon to the Civilization Location.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "During Monster Activation, roll the d6 along with the Summoning Dice. If Unhired Natives are already on a Map Tile containing a Hero when their matching symbol is rolled, the Natives move to the Civilization Location on that Map Tile, even if the Hero is not in the Civilization Location."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "When Natives are first summoned to a Map Tile, they summon to the clearing indicated by the die roll, not the Civilization Location. If the rolled clearing does not exist, the Natives summon to the Civilization Location."
+      }
+    ]
+  },
+  {
+    "id": "3.4",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Stubborn Guardians",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 4,
+      "column": "left",
+      "section": "bottom"
+    },
+    "content": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (on the Summoning Die from the Core ***Dragons Down*** Game). All other Monsters return when either Monsters Return arrow is rolled.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (on the Summoning Die from the Core ***Dragons Down*** Game). All other Monsters return when either Monsters Return arrow is rolled."
+      }
+    ]
+  }
+]
