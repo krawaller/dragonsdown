@@ -50,6 +50,7 @@ export const PLAYER_AIDS: PlayerAidSpec[] = [
               titleRegex: "^Native Summoning$",
             },
           },
+          { pick: { doc: "wildlands", titleRegex: "^Native Summoning$" } },
           // natives-and-legends 2.7 — insults are Step 3 of Monster Activation
           { pick: { doc: "natives-and-legends", titleRegex: "^Insults$" } },
         ],
@@ -68,6 +69,18 @@ export const PLAYER_AIDS: PlayerAidSpec[] = [
           { pick: { doc: "eastern-reaches", titleRegex: "^Roaming Natives$" } },
           // wildlands 3.4 — Guardians only return on the dot-less arrow
           { pick: { doc: "wildlands", titleRegex: "^Stubborn Guardians$" } },
+          {
+            pick: {
+              doc: "natives-and-legends",
+              titleRegex: "^Difficult Natives$",
+            },
+          },
+          {
+            pick: {
+              doc: "natives-and-legends",
+              titleRegex: "^Native Possessions$",
+            },
+          },
         ],
       },
     ],

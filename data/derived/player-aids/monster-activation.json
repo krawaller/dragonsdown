@@ -270,6 +270,29 @@
     ]
   },
   {
+    "id": "5.2",
+    "source": "wildlands",
+    "level": 2,
+    "title": "Native Summoning",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 10,
+      "column": "right",
+      "section": "top"
+    },
+    "content": "Locations to which Native Groups may be summoned in alphabetical order.\n\n![Native summoning locations, terrain packs, and native groups](/images/annotations/ee542deb2e787476a035a585920e48038cfeacfe.png)",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "Locations to which Native Groups may be summoned in alphabetical order."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "![Native summoning locations, terrain packs, and native groups](/images/annotations/ee542deb2e787476a035a585920e48038cfeacfe.png)"
+      }
+    ]
+  },
+  {
     "id": "2.7",
     "source": "natives-and-legends",
     "level": 2,
@@ -385,6 +408,52 @@
       {
         "kind": "markdown",
         "markdown": "Guardians return to the Monster Trays only when the Monsters Return arrow without the dot is rolled (on the Summoning Die from the Core ***Dragons Down*** Game). All other Monsters return when either Monsters Return arrow is rolled."
+      }
+    ]
+  },
+  {
+    "id": "4.1",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Difficult Natives",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 6,
+      "column": "left",
+      "section": "middle"
+    },
+    "content": "The Buy Drinks step of insults occurs before the Hero rolls the Haggle Dice to determine if Natives are insulted. Do not roll the dice for any Native Groups for which drinks were bought. Heroes may not Buy Drinks once the dice are rolled.",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "The Buy Drinks step of insults occurs before the Hero rolls the Haggle Dice to determine if Natives are insulted. Do not roll the dice for any Native Groups for which drinks were bought. Heroes may not Buy Drinks once the dice are rolled."
+      }
+    ]
+  },
+  {
+    "id": "4.5",
+    "source": "natives-and-legends",
+    "level": 2,
+    "title": "Native Possessions",
+    "headingStyle": "pdf-l2",
+    "location": {
+      "page": 6,
+      "column": "right",
+      "section": "middle"
+    },
+    "content": "When a Native Group is first summoned to the map, including during initial placement, deal one face-down Mission, Item, and Treasure Card next to the Native Civilization Card. Heroes may use a Trade Action while in the same clearing as an **Unhired** Native leader to look at the cards the Native leader possesses and take the mission or buy the item or treasure (*as if the Native leader was a Merchant, including* *all haggle rules*). Heroes may not perform any other trade steps with Native leaders.\n\nIf a mission is to be completed with the Native Group possessing it, discard the Mission Card and draw a new Mission Card for the Native Group.\n\nIf the Native leader is killed discard these cards. *Exception: If no enemy Natives* *remain at the end of Combat in which the Native leader was killed, the Hero that* *struck the death blow receives the Item and Treasure Card.*",
+    "contentNodes": [
+      {
+        "kind": "markdown",
+        "markdown": "When a Native Group is first summoned to the map, including during initial placement, deal one face-down Mission, Item, and Treasure Card next to the Native Civilization Card. Heroes may use a Trade Action while in the same clearing as an **Unhired** Native leader to look at the cards the Native leader possesses and take the mission or buy the item or treasure (*as if the Native leader was a Merchant, including* *all haggle rules*). Heroes may not perform any other trade steps with Native leaders."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If a mission is to be completed with the Native Group possessing it, discard the Mission Card and draw a new Mission Card for the Native Group."
+      },
+      {
+        "kind": "markdown",
+        "markdown": "If the Native leader is killed discard these cards. *Exception: If no enemy Natives* *remain at the end of Combat in which the Native leader was killed, the Hero that* *struck the death blow receives the Item and Treasure Card.*"
       }
     ]
   }
