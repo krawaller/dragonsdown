@@ -312,7 +312,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Discard all pink status cubes from Hired Natives.\n\nSurviving Hired Natives are placed on the Hero’s hire card, even for evading Heroes.\n\nTemporary enemies become friends with all Natives.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "Discard all pink status cubes from Hired Natives.\n\nSurviving Hired Natives are placed on the Hero’s hire card, even for evading Heroes.\n\nTemporary enemies become friends with all Natives."
     },
     {
       "id": "3",
@@ -325,7 +325,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "*“While looting the dead lich’s Crypt, I noticed a small crack in the wall* *opposite the headstone. I started digging at it with my dagger and it gave way!* *Behind it I found a hidden passage marked with mysterious symbols. Will the* *tricks of this devious land never stop? I stepped inside....”*"
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n*“While looting the dead lich’s Crypt, I noticed a small crack in the wall* *opposite the headstone. I started digging at it with my dagger and it gave way!* *Behind it I found a hidden passage marked with mysterious symbols. Will the* *tricks of this devious land never stop? I stepped inside....”*"
     },
     {
       "id": "3.1",
@@ -589,7 +589,7 @@
         "section": "bottom"
       },
       "icon": "/images/pdf/adc3cbf7a005694a54cc7864dd9d1a10520877a7.png",
-      "content": "The Brigand is the former leader of the Bandits that have been plaguing the land of **Dragons Down**. The Brigand begins the game with an Outlaw Token. The Bandits are a Native Group to the Brigand that will neither block, nor attack, the Brigand. The Brigand may hire them in any order (*Bandit Leader last*). The Bandits respect Cunning for any haggle attempts. If the Brigand performs a Loot Action at the Hideout or attacks any unhired Bandit, the Bandits treat the Brigand like any other Hero for the rest of the game and all current Bandit hires of the Brigand are placed back in the Native tray immediately.\n\nWhen the Brigand searches for the Hideout, Secret Cache, or Wrecked Wagons, the search succeeds without rolling any dice and without triggering any hidden traps. When the Brigand finds these Treasure Sites, they draw one Treasure Card from the main Treasure Deck (*not the Treasure Site Pile*), in addition to any normal rewards they receive (*even if not the first to find the Treasure Site*).\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "The Brigand is the former leader of the Bandits that have been plaguing the land of **Dragons Down**. The Brigand begins the game with an Outlaw Token. The Bandits are a Native Group to the Brigand that will neither block, nor attack, the Brigand. The Brigand may hire them in any order (*Bandit Leader last*). The Bandits respect Cunning for any haggle attempts. If the Brigand performs a Loot Action at the Hideout or attacks any unhired Bandit, the Bandits treat the Brigand like any other Hero for the rest of the game and all current Bandit hires of the Brigand are placed back in the Native tray immediately.\n\nWhen the Brigand searches for the Hideout, Secret Cache, or Wrecked Wagons, the search succeeds without rolling any dice and without triggering any hidden traps. When the Brigand finds these Treasure Sites, they draw one Treasure Card from the main Treasure Deck (*not the Treasure Site Pile*), in addition to any normal rewards they receive (*even if not the first to find the Treasure Site*)."
     },
     {
       "id": "5.2.0.4",
@@ -603,7 +603,7 @@
         "section": "top"
       },
       "icon": "/images/pdf/1ad8707503146d01a7aa672d57873e1a55350d12.png",
-      "content": "Burgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value."
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\nBurgesses became wealthy by being shrewd and clever negotiators. The starting price for the Burgess to hire a Native is 3x the Fame value of the Native, not 4x the Fame value."
     },
     {
       "id": "5.2.0.5",
@@ -659,7 +659,7 @@
         "section": "bottom"
       },
       "icon": "/images/pdf/247605709913fdfc186a8350f4f57efaafdd5574.png",
-      "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one Learn Die once per Learn Action.\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
+      "content": "Wizards have spent years reading ancient texts and arcane runes. Wizards may reroll one Learn Die once per Learn Action."
     },
     {
       "id": "5.3",
@@ -672,7 +672,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": ""
+      "content": "![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
     },
     {
       "id": "5.3.0.1",
@@ -1075,7 +1075,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "One-time use. May use all Hidden Paths this turn, even if not found. Used Hidden Paths are not found.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "One-time use. May use all Hidden Paths this turn, even if not found. Used Hidden Paths are not found."
     },
     {
       "id": "5.5",
@@ -1088,7 +1088,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": ""
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
     },
     {
       "id": "5.5.0.1",
@@ -1127,7 +1127,7 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "When the Cavernous Pit is first revealed, draw two cards from the Deep Treasure Deck and place them on top of the Cavernous Pit Card.\n\nA Hero that has found the Cavernous Pit may attempt to climb into the pit as one of their actions during their turn. The player places cubes to fill **attack** speed boxes on their Lineage, Class, and Treasure Cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The Hero rolls the 2 Haggle Dice.\n\n- If either die shows a closed door, the Hero receives one wound.\n\n- If the Hero rolls higher than their dexterity, the attempt fails, but the Hero suffers no consequences.\n\n- If the Hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one Deep Treasure Card from the Cavernous Pit card.\n\nºº If the final Deep Treasure Card is drawn from the Cavernous Pit, remove the Cavernous Pit Card and Token from the game.\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
+      "content": "When the Cavernous Pit is first revealed, draw two cards from the Deep Treasure Deck and place them on top of the Cavernous Pit Card.\n\nA Hero that has found the Cavernous Pit may attempt to climb into the pit as one of their actions during their turn. The player places cubes to fill **attack** speed boxes on their Lineage, Class, and Treasure Cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The Hero rolls the 2 Haggle Dice.\n\n- If either die shows a closed door, the Hero receives one wound.\n\n- If the Hero rolls higher than their dexterity, the attempt fails, but the Hero suffers no consequences.\n\n- If the Hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one Deep Treasure Card from the Cavernous Pit card.\n\nºº If the final Deep Treasure Card is drawn from the Cavernous Pit, remove the Cavernous Pit Card and Token from the game."
     },
     {
       "id": "5.5.0.4",
@@ -1140,7 +1140,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "When the Collapsed Passage is first revealed, draw two cards from the Deep Treasure Deck. Place them on top of the Collapsed Passage Card.\n\nA Hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 Haggle Dice and compare the result to the number of Might Cubes in the Hero’s healthy box.\n\n- If either die shows a closed door, the Hero receives one wound.\n\n- If the Hero rolls higher than their Might Cubes, the attempt fails, but the Hero suffers no consequences.\n\n- If the Hero rolls less than or equal to their Might Cubes, the attempt succeeds.\n\nºº Draw one Deep Treasure Card from the Collapsed Passage card.\n\nºº If the final Deep Treasure Card is drawn from the Collapsed Passage, remove the Collapsed Passage Card and Token from the game."
+      "content": "![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\nWhen the Collapsed Passage is first revealed, draw two cards from the Deep Treasure Deck. Place them on top of the Collapsed Passage Card.\n\nA Hero that has found the Collapsed Passage may attempt to clear the passage as one of their actions during their turn. Roll the 2 Haggle Dice and compare the result to the number of Might Cubes in the Hero’s healthy box.\n\n- If either die shows a closed door, the Hero receives one wound.\n\n- If the Hero rolls higher than their Might Cubes, the attempt fails, but the Hero suffers no consequences.\n\n- If the Hero rolls less than or equal to their Might Cubes, the attempt succeeds.\n\nºº Draw one Deep Treasure Card from the Collapsed Passage card.\n\nºº If the final Deep Treasure Card is drawn from the Collapsed Passage, remove the Collapsed Passage Card and Token from the game."
     },
     {
       "id": "5.5.0.5",
@@ -1218,7 +1218,7 @@
         "column": "left",
         "section": "middle"
       },
-      "content": "When the Treacherous Ledge is first revealed, draw two cards from the Deep Treasure Deck. Place them on top of the Treacherous Ledge Card.\n\nA Hero that has found the Treacherous Ledge may attempt to cross the ledge as one of their actions during their turn. The player places cubes to fill **maneuver** speed boxes on their Lineage, Class, and Treasure Cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The Hero rolls the 2 Haggle Dice.\n\n- If either die shows a closed door, the Hero receives one wound.\n\n- If the Hero rolls higher than their dexterity, the attempt fails, but the Hero suffers no consequences.\n\n- If the Hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one Deep Treasure Card from the Treacherous Ledge card.\n\nºº If the final Deep Treasure Card is drawn from the Treacherous Ledge, remove the Treacherous Ledge Card and Token from the game.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "When the Treacherous Ledge is first revealed, draw two cards from the Deep Treasure Deck. Place them on top of the Treacherous Ledge Card.\n\nA Hero that has found the Treacherous Ledge may attempt to cross the ledge as one of their actions during their turn. The player places cubes to fill **maneuver** speed boxes on their Lineage, Class, and Treasure Cards as they wish. The number of filled boxes is their dexterity. Boxes on weapons do not count. The Hero rolls the 2 Haggle Dice.\n\n- If either die shows a closed door, the Hero receives one wound.\n\n- If the Hero rolls higher than their dexterity, the attempt fails, but the Hero suffers no consequences.\n\n- If the Hero rolls less than or equal to their dexterity, the attempt succeeds.\n\nºº Draw one Deep Treasure Card from the Treacherous Ledge card.\n\nºº If the final Deep Treasure Card is drawn from the Treacherous Ledge, remove the Treacherous Ledge Card and Token from the game."
     },
     {
       "id": "6",
@@ -1231,7 +1231,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n*Game Design and Development:* **Scott DeMers**\n\n*Additional Game Design Concepts:* **Samuel DeMers and George Vourdanos**\n\n*Producer:* **Sean Brown**\n\n*Artwork and Graphic Design:* **Marco Morte & Scott DeMers**\n\n*Rules Editing:* **Scott DeMers and the entire Dragons Down Discord community**\n\n*Game Icons:* **Dragons Down uses icons from Game-Icons.net and the great work** **done by Lorc, Delapouite & other contributors. Some edits were made to icons.**\n\n*(C) Copyright 2025 Active Magic Games, all rights reserved. No part of this product* *may be reproduced without specific written permission. The Dragons Down and Active* *Magic Games logos are a trademark of Active Magic Games. Actual components may* *vary from those shown. Made in China.*\n\n**This is a hobby gaming product and not a toy. It is not intended for use by** **anyone under 14 years of age.**"
     },
     {
       "id": "6.1",

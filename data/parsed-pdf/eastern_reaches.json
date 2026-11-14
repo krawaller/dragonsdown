@@ -298,7 +298,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "The players win or lose as a team. The goal of basic cooperative is to become as famous as possible as a group.\n\nAt the end of the game, or earlier if all Heroes have retired or died, add together the Legend Points of all Heroes and Fame of all Heroes. Then, convert Fame to Legend Points as per the normal rules as if the party was a single Hero, including one LP per surviving Hero if it is the last turn of the game. Finally, roll for all Outlaw Tokens.\n\nThe players win if their total Legend Points are at least equal to 20 per Hero. Players win an epic victory if they scored 30 LPs per Hero. The number of Heroes used in the calculation is the maximum number of Heroes that were simultaneously alive.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "The players win or lose as a team. The goal of basic cooperative is to become as famous as possible as a group.\n\nAt the end of the game, or earlier if all Heroes have retired or died, add together the Legend Points of all Heroes and Fame of all Heroes. Then, convert Fame to Legend Points as per the normal rules as if the party was a single Hero, including one LP per surviving Hero if it is the last turn of the game. Finally, roll for all Outlaw Tokens.\n\nThe players win if their total Legend Points are at least equal to 20 per Hero. Players win an epic victory if they scored 30 LPs per Hero. The number of Heroes used in the calculation is the maximum number of Heroes that were simultaneously alive."
     },
     {
       "id": "2.1.2",
@@ -311,7 +311,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "- **Turn Order:** Heroes may take their action phases in any order by group agreement. If agreement cannot be reached, the Turn Order for all Heroes is determined randomly.\n\n- **Hero Death:** If a Hero dies, the player may restart another Hero according to the rules of the current sandbox (*Open Realm, etc.*). This does not increase the number of Legend Points required to win.\n\n- **Dead Hero Possessions:** At the end of Combat, Heroes in the same clearing as a fallen Hero may redistribute that Hero’s belongings, provided the Hero died this turn and no enemies remain. Spells are returned to the Hero Starting Spell deck or discarded as normal. Any surviving hirelings may be reassigned to another Hero.\n\n- **Decision-Making:** If not unanimous, decisions impacting the entire group (*redistributing dead Hero possessions, etc.*), are decided by a vote of the Heroes. Tied votes are broken randomly.\n\n- **Trading:** Heroes may use the Trade Action to freely exchange any number of discoveries and/or possessions with multiple Heroes in the clearing in any order, including with the same Hero more than once."
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n- **Turn Order:** Heroes may take their action phases in any order by group agreement. If agreement cannot be reached, the Turn Order for all Heroes is determined randomly.\n\n- **Hero Death:** If a Hero dies, the player may restart another Hero according to the rules of the current sandbox (*Open Realm, etc.*). This does not increase the number of Legend Points required to win.\n\n- **Dead Hero Possessions:** At the end of Combat, Heroes in the same clearing as a fallen Hero may redistribute that Hero’s belongings, provided the Hero died this turn and no enemies remain. Spells are returned to the Hero Starting Spell deck or discarded as normal. Any surviving hirelings may be reassigned to another Hero.\n\n- **Decision-Making:** If not unanimous, decisions impacting the entire group (*redistributing dead Hero possessions, etc.*), are decided by a vote of the Heroes. Tied votes are broken randomly.\n\n- **Trading:** Heroes may use the Trade Action to freely exchange any number of discoveries and/or possessions with multiple Heroes in the clearing in any order, including with the same Hero more than once."
     },
     {
       "id": "2.2",
@@ -532,7 +532,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "When playing Explore the Realm and exploring an empty Map Tile location adjacent to a Desert edge, draw a Map Tile as normal. If the drawn Map Tile is not a Desert Map Tile, the player may discard it and draw another Map Tile. A player may do this up to five times during the Explore Action.\n\nA Desert Map Tile may not be discarded in this manner.\n\nNormal exploration rules apply if the drawn Map Tile does not fit.\n\nAfter completing the Explore Action, shuffle all discarded Map Tiles back into the tile stack.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "When playing Explore the Realm and exploring an empty Map Tile location adjacent to a Desert edge, draw a Map Tile as normal. If the drawn Map Tile is not a Desert Map Tile, the player may discard it and draw another Map Tile. A player may do this up to five times during the Explore Action.\n\nA Desert Map Tile may not be discarded in this manner.\n\nNormal exploration rules apply if the drawn Map Tile does not fit.\n\nAfter completing the Explore Action, shuffle all discarded Map Tiles back into the tile stack."
     },
     {
       "id": "3.7",
@@ -545,7 +545,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": ""
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
     },
     {
       "id": "3.7.1",
@@ -901,7 +901,7 @@
         "section": "bottom"
       },
       "icon": "/images/pdf/6771a3168c1497eb707edbef501969490d11da9c.jpeg",
-      "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "The disciple is chosen by the gods to bring peace, knowledge, and harmony to the lands. When the disciple takes possession of any Spell Books, Spell Librams, or Scrolls containing white Spells, they immediately learn those spells without rolling any dice or spending any actions. The disciple gains +1 LP and +5 Fame for each spell learned this way. If playing with the Magic Sites optional rule, the disciple automatically learns any white spells on Treasure Sites they find."
     },
     {
       "id": "5.2.0.4",
@@ -915,7 +915,7 @@
         "section": "top"
       },
       "icon": "/images/pdf/b7f2306f691b8facf38211109f94e96b7bb1e415.jpeg",
-      "content": "![float-right](/images/pdf/80b75a8fd510dea0fe3074457bbff8364941cabe.jpeg) Duelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry."
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\n![float-right](/images/pdf/80b75a8fd510dea0fe3074457bbff8364941cabe.jpeg) Duelists are trained defenders. They have two Targeting Tokens; use the normal one for Turn Order and keep the parry Targeting Token nearby. A duelist may equip two one-handed melee weapons, melee attacking with one and/or parrying a melee attack with the other (*duelists may not parry ranged or spell attacks*).\n\nDuring the targeting step of Combat each round, the duelist may choose one attack target, one parry target, or both. Place one pink cube on the Weapon Card to mark it as the parry weapon tied to the parry Targeting Token. The parry target may be the same as the attack target or a different Monster, Native, or Hero in the clearing. The parry affects one attack from the parry target (*if more than one, the duelist* *chooses which at the end of Hero Tactics*). Resolve the duelist’s attack normally.\n\nWhen the parried attack occurs, check for effect:\n\n- If the parry weapon’s attack speed is greater than the target’s attack speed, the attack is parried and its damage is reduced by the number of cubes on the parry weapon (*ignore swords*).\n\n- If the parry weapon’s attack speed is equal to or less than the target’s attack speed, no parry occurs. No Hit Dice are rolled for the parry."
     },
     {
       "id": "5.2.0.5",
@@ -971,7 +971,7 @@
         "section": "bottom"
       },
       "icon": "/images/pdf/613a15add5afaa898f7d7d768e314ed3e8272ca4.jpeg",
-      "content": "Vanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed.\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
+      "content": "Vanguards are experts at moving fast and striking first. The vanguard’s attack in the first round of Combat is made at +1 attack speed."
     },
     {
       "id": "5.3",
@@ -984,7 +984,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": ""
+      "content": "![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
     },
     {
       "id": "5.3.0.1",
@@ -1283,7 +1283,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Only in play if using the Dreadful Deserts Terrain Pack. The Hero does not receive a wound at the end of their Action Phase when in a Desert Clearing.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "Only in play if using the Dreadful Deserts Terrain Pack. The Hero does not receive a wound at the end of their Action Phase when in a Desert Clearing."
     },
     {
       "id": "5.5.0.14",
@@ -1296,7 +1296,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "Armor. Cancel one sword. The golden shroud may not be struck or destroyed by attacks that hit the Hero."
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\nArmor. Cancel one sword. The golden shroud may not be struck or destroyed by attacks that hit the Hero."
     },
     {
       "id": "5.5.0.15",
@@ -1400,7 +1400,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "Only in play if using the Dreadful Deserts Terrain Pack. May reroll one Search Die per Search Action while in a Desert Clearing.\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
+      "content": "Only in play if using the Dreadful Deserts Terrain Pack. May reroll one Search Die per Search Action while in a Desert Clearing."
     },
     {
       "id": "5.5.0.23",
@@ -1413,7 +1413,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Epic Treasure. May reroll either one of the numbered Summoning Dice once per turn. The effects apply only to the Hero’s clearing with the original die roll applying everywhere else."
+      "content": "![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\nEpic Treasure. May reroll either one of the numbered Summoning Dice once per turn. The effects apply only to the Hero’s clearing with the original die roll applying everywhere else."
     },
     {
       "id": "5.5.0.24",
@@ -2252,7 +2252,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "Self or other. Turn. Wound one yellow cube. Reroll any number of dice one time during one haggle attempt.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "Self or other. Turn. Wound one yellow cube. Reroll any number of dice one time during one haggle attempt."
     },
     {
       "id": "5.6.7.2",
@@ -2265,7 +2265,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "Targeted. Combat. Wound one yellow cube. The Monster or Native does not change tactics for the duration of Combat. Does not affect Guardians or the undead."
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)\n\nTargeted. Combat. Wound one yellow cube. The Monster or Native does not change tactics for the duration of Combat. Does not affect Guardians or the undead."
     },
     {
       "id": "5.6.7.3",

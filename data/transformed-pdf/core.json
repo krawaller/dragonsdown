@@ -2364,7 +2364,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "The start player rolls all 4 Summoning Dice. One gray die (*Wandering Monsters*) and one black die (*Local Monsters*) have symbols matching the symbols on the Map Tiles. The other dice contain numbers showing how many Monsters arrive if Monsters are summoned. Process the gray dice first, then the black dice.\n\n**Return Arrow:** If the arrow symbol is rolled do the following:\n\n- ![float-right](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png) **Monsters Return:** Return all Monsters in Map Tiles containing no Heroes to the monster tray.\n\n- **Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero on the Map Tile that is earliest in the Turn Order.\n\n**Summoning symbol:** If the symbol on either of the dice matches a summoning symbol on a Map Tile containing a Hero, the following occurs in order:\n\n**1.\t Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero that is earliest in the Turn Order.\n\n**2.\t Monsters Summon:** The Monster type shown on the Map Tile next to the summoning symbol will summon from the monster tray to the Map Tile. If more than one Hero is in the tile, Monsters are summoned in each clearing containing a Hero beginning with the Hero that is earliest in the Turn Order. Each clearing summons only once regardless of the number of Heroes in the clearing.\n\nThe number of Monsters summoned is equal to the number shown on the die that matches the color of the Summoning Symbol die. Randomly select the indicated Monsters from the monster tray and place them in the Hero’s clearing. If there are not enough Monsters, place what remains.\n\n![](/images/pdf/2662276d8a7c9bedc2585120a308f99184512fec.png)\n\nNote: If the Monster listed on the Map Tile has a         dual dice icon beside the Monster symbol, then the number of Monsters summoned to the tile is the sum of both numbered Summoning Dice.\n\n![float-right](/images/pdf/ee893c2cb876ca12744347bf07c1c8161efd74f5.png) **Treasure Site Symbol:** If the Treasure Site Symbol is rolled on one of the dice and a Map Tile contains one or more Heroes and one or more Treasure Sites then Guardians are summoned. Move all Guardians from wherever they are located to the clearing containing the matching **Treasure Site** for that Guardian, even if that causes the Guardian to leave a clearing containing a Hero, another Map Tile, or the monster tray.\n\nMoved and summoned Monsters are always placed name-side up.\n\nIn player order, each Hero that made noise this turn rolls all of the Summoning Dice again and applies the results to their clearing only.\n\nUnblocked Heroes may choose to take a Hide reaction at the end of Monster Activation in case they wish to be hidden during Combat.\n\nHide reactions are important only when a Monster, Native, or another Hero is in the clearing (*if playing with the optional Player vs. Player rules*).\n\n![](/images/pdf/67625ed463132a50f3cbf26f5f1b5e4179a52202.jpeg)",
+      "content": "The start player rolls all 4 Summoning Dice. One gray die (*Wandering Monsters*) and one black die (*Local Monsters*) have symbols matching the symbols on the Map Tiles. The other dice contain numbers showing how many Monsters arrive if Monsters are summoned. Process the gray dice first, then the black dice.\n\n**Return Arrow:** If the arrow symbol is rolled do the following:\n\n- ![float-right](/images/pdf/a8e6e21cfcaddc544601f0aeaaacaf6634aef4f6.png) **Monsters Return:** Return all Monsters in Map Tiles containing no Heroes to the monster tray.\n\n- **Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero on the Map Tile that is earliest in the Turn Order.\n\n**Summoning symbol:** If the symbol on either of the dice matches a summoning symbol on a Map Tile containing a Hero, the following occurs in order:\n\n**1.\t Monsters Move:** Monsters in a clearing with a Hero do not move. All other Monsters that are on the Map Tile are moved to the clearing of the Hero that is earliest in the Turn Order.\n\n**2.\t Monsters Summon:** The Monster type shown on the Map Tile next to the summoning symbol will summon from the monster tray to the Map Tile. If more than one Hero is in the tile, Monsters are summoned in each clearing containing a Hero beginning with the Hero that is earliest in the Turn Order. Each clearing summons only once regardless of the number of Heroes in the clearing.\n\nThe number of Monsters summoned is equal to the number shown on the die that matches the color of the Summoning Symbol die. Randomly select the indicated Monsters from the monster tray and place them in the Hero’s clearing. If there are not enough Monsters, place what remains.\n\n![](/images/pdf/2662276d8a7c9bedc2585120a308f99184512fec.png)\n\nNote: If the Monster listed on the Map Tile has a         dual dice icon beside the Monster symbol, then the number of Monsters summoned to the tile is the sum of both numbered Summoning Dice.\n\n![float-right](/images/pdf/ee893c2cb876ca12744347bf07c1c8161efd74f5.png) **Treasure Site Symbol:** If the Treasure Site Symbol is rolled on one of the dice and a Map Tile contains one or more Heroes and one or more Treasure Sites then Guardians are summoned. Move all Guardians from wherever they are located to the clearing containing the matching **Treasure Site** for that Guardian, even if that causes the Guardian to leave a clearing containing a Hero, another Map Tile, or the monster tray.\n\nMoved and summoned Monsters are always placed name-side up.\n\nIn player order, each Hero that made noise this turn rolls all of the Summoning Dice again and applies the results to their clearing only.\n\nUnblocked Heroes may choose to take a Hide reaction at the end of Monster Activation in case they wish to be hidden during Combat.\n\nHide reactions are important only when a Monster, Native, or another Hero is in the clearing (*if playing with the optional Player vs. Player rules*).",
       "contentNodes": [
         {
           "kind": "markdown",
@@ -2440,11 +2440,6 @@
         {
           "kind": "markdown",
           "markdown": "Hide reactions are important only when a Monster, Native, or another Hero is in the clearing (*if playing with the optional Player vs. Player rules*)."
-        },
-        {
-          "kind": "image",
-          "src": "/images/pdf/67625ed463132a50f3cbf26f5f1b5e4179a52202.jpeg",
-          "display": "block"
         }
       ]
     },
@@ -2459,8 +2454,14 @@
         "column": "right",
         "section": "middle"
       },
-      "content": "",
-      "contentNodes": []
+      "content": "![](/images/pdf/67625ed463132a50f3cbf26f5f1b5e4179a52202.jpeg)",
+      "contentNodes": [
+        {
+          "kind": "image",
+          "src": "/images/pdf/67625ed463132a50f3cbf26f5f1b5e4179a52202.jpeg",
+          "display": "block"
+        }
+      ]
     },
     {
       "id": "6.2.2.1",

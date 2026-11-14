@@ -93,6 +93,17 @@ All embedded images are extracted to `public/images/<sha1>.<ext>` and referenced
 
 Filtering: an image is skipped if it covers >70% of any page it appears on, or appears on >50% of pages — this drops the parchment backgrounds and cover-page textures.
 
+Standalone figures before a column's first text attach to that text's heading.
+If the text instead continues the preceding section, the figures remain with
+that section. Trailing figures do not carry into another column or page.
+Inline images and heading icons retain their existing placement.
+
+Run the extractor's placement regression tests with:
+
+```sh
+.venv/bin/python -m unittest discover -s scripts -p 'test_*.py'
+```
+
 ## Known quirks
 
 - Empty-content L1/L2 headings are section banners with no body before the next subheading — not a bug.

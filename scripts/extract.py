@@ -1411,7 +1411,15 @@ def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
             raw_blocks,
             key=lambda b: page_block_sort_key(b, boundary, page.rect),
         )
+        current_column = None
+        column_has_text = False
         for block in blocks:
+            column = page_block_sort_key(block, boundary, page.rect)[0]
+            if column != current_column:
+                if current is not None:
+                    flush_pending_to_current()
+                current_column = column
+                column_has_text = False
             btype = block.get("type")
             is_footer = is_full_width_page_footer(block, page.rect)
             if btype == 0:
@@ -1452,9 +1460,9 @@ def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
             for item in items:
                 kind = item[0]
                 if kind == "image":
-                    # Most images are tied to the currently active section.
-                    # Buffer only when we have not seen any heading yet.
-                    if current is None:
+                    # A leading figure can precede its heading in a new column.
+                    # Body text instead flushes it to the preceding section.
+                    if current is None or not column_has_text:
                         pending_content.append(item[1])
                     else:
                         push(item[1])
@@ -1492,6 +1500,8 @@ def extract(pdf_path: Path, doc_slug: str) -> list[dict]:
                         push(item[1])
                     else:
                         pending_content.append(item[1])
+                if kind != "image":
+                    column_has_text = True
         # End of page: trailing images usually belong to the section that was
         # active on this page. Flushing here avoids cross-page mis-assignment
         # where a positioned image gets attached to an unrelated heading on

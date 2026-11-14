@@ -272,7 +272,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "Effects due to Weather Cards are in addition to any other terrain effects. *For* *example, movement costs, wounds from Desert Clearings, etc.*\n\nEach Weather Card is explained in detail in the Weather Card Manifest on page 4.\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
+      "content": "Effects due to Weather Cards are in addition to any other terrain effects. *For* *example, movement costs, wounds from Desert Clearings, etc.*\n\nEach Weather Card is explained in detail in the Weather Card Manifest on page 4."
     },
     {
       "id": "3.2",
@@ -285,7 +285,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "When performing an Alert Action, in addition to rearranging equipment, the Hero chooses one of the following benefits. A Hero may perform multiple Alert Actions during a single turn. A Hero must choose a different alert type for each Alert Action."
+      "content": "![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\nWhen performing an Alert Action, in addition to rearranging equipment, the Hero chooses one of the following benefits. A Hero may perform multiple Alert Actions during a single turn. A Hero must choose a different alert type for each Alert Action."
     },
     {
       "id": "3.2.0.1",
@@ -558,7 +558,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "![float-right](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "![float-right](/images/pdf/a8ff0561b27b941956878f0637414ed618cc5faa.jpeg) Base Price: 3 Gold. Starting Price: 9 Gold. Teleport to a random Clearing on a Map Tile of your choice up to 2 Map Tiles away."
     },
     {
       "id": "4.2",
@@ -571,7 +571,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": ""
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
     },
     {
       "id": "4.2.0.1",
@@ -701,7 +701,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 3. At the beginning of each turn, randomly select one magic color. Until the end of the turn, all Map Tiles are considered enchanted with that magic color. Ignore all other enchantments and enchantment effects. Do not flip any Map Tiles due to this weather card.\n\nMap Tiles may still be enchanted normally, including placing Magic Cubes and flipping Map Tiles. However, these enchantments have no effect until Enchanted weather ends.\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
+      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 3. At the beginning of each turn, randomly select one magic color. Until the end of the turn, all Map Tiles are considered enchanted with that magic color. Ignore all other enchantments and enchantment effects. Do not flip any Map Tiles due to this weather card.\n\nMap Tiles may still be enchanted normally, including placing Magic Cubes and flipping Map Tiles. However, these enchantments have no effect until Enchanted weather ends."
     },
     {
       "id": "4.2.0.11",
@@ -714,7 +714,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Lasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result."
+      "content": "![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\nLasts 4 turns. Reveal the next Weather Card on turn 4. During each Search Action, Heroes must reroll one successful search result."
     },
     {
       "id": "4.2.0.12",
@@ -978,7 +978,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "All Guardians, the Cult Leader, Jaguar Champion, and Jaguar Priest are considered unique Monsters. Unique Monsters are immune to some game effects, such as being selected for the Shape Shift spell.\n\n![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
+      "content": "All Guardians, the Cult Leader, Jaguar Champion, and Jaguar Priest are considered unique Monsters. Unique Monsters are immune to some game effects, such as being selected for the Shape Shift spell."
     },
     {
       "id": "4.5",
@@ -991,7 +991,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": ""
+      "content": "![](/images/pdf/ca37d61314b21eb8fa98ca7bb77ed4e12fefb87a.jpeg)"
     },
     {
       "id": "4.5.0.1",
@@ -1108,7 +1108,7 @@
         "column": "right",
         "section": "bottom"
       },
-      "content": "May use any Green Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.\n\n![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)"
+      "content": "May use any Green Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
     },
     {
       "id": "4.5.0.10",
@@ -1121,7 +1121,7 @@
         "column": "left",
         "section": "top"
       },
-      "content": "Epic Treasure. Once per combat, during the Attack Resolution Step, may make one additional attack against any unhidden target that is targeting the Hero. This attack causes 1 Wound, has an Attack Length of 35, and uses the Hero’s Attack Speed to determine whether it hits. May resolve this attack before or after the normal attack."
+      "content": "![](/images/pdf/3486f0f0a099b0ad2c78ad2473e124ce7773ac41.jpeg)\n\nEpic Treasure. Once per combat, during the Attack Resolution Step, may make one additional attack against any unhidden target that is targeting the Hero. This attack causes 1 Wound, has an Attack Length of 35, and uses the Hero’s Attack Speed to determine whether it hits. May resolve this attack before or after the normal attack."
     },
     {
       "id": "4.5.0.11",
@@ -1264,7 +1264,7 @@
         "column": "left",
         "section": "bottom"
       },
-      "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found.\n\n![](/images/pdf/fd56ee5d2ef930ee310c3178a05dd688f3e792c2.png)"
+      "content": "May use any Yellow Hidden Paths without first finding them. Using a Hidden Path does not cause it to be found."
     },
     {
       "id": "4.5.0.22",
@@ -1277,7 +1277,7 @@
         "column": "right",
         "section": "top"
       },
-      "content": "The final price paid during a Hire Action, after all haggling, is reduced by 1 Gold, to a minimum of 0."
+      "content": "![](/images/pdf/fd56ee5d2ef930ee310c3178a05dd688f3e792c2.png)\n\nThe final price paid during a Hire Action, after all haggling, is reduced by 1 Gold, to a minimum of 0."
     },
     {
       "id": "4.5.0.23",
